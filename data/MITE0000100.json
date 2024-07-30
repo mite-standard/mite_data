@@ -1,0 +1,70 @@
+{
+    "accession": "MITE0000100",
+    "quality": "medium",
+    "status": "pending",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "N36AXMAR75OH4EWIMJIU5WOH",
+                            "PK3KAPGHQJXJCKMJ4SU7V5JW",
+                            "LEEWIYEZSPCYOCCY6BHNTE54",
+                            "K5UBFDWZSYOHS4HI42NVQMJK"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-05-14",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "PumG",
+        "description": "Amino transferase",
+        "databaseIds": [
+            "uniprot:A0A2R4FXY6",
+            "mibig:BGC0001476"
+        ],
+        "references": [
+            "doi:10.1016/j.chembiol.2018.02.008"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Amination"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#8]-[#6@H]-1-[#6@@H](-[#8])-[#6@@H](-[#8]-[#6@@H]-1-[#6]=O)-[#6]-1=[#6]-[#7]-[#6](=O)-[#7]-[#6]-1=O>>[#7]-[#6]-[#6@H]-1-[#8]-[#6@H](-[#6@H](-[#8])-[#6@@H]-1-[#8])-[#6]-1=[#6]-[#7]-[#6](=O)-[#7]-[#6]-1=O",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "O=C[C@H]1O[C@@H](c2c[nH]c(=O)[nH]c2=O)[C@H](O)[C@@H]1O",
+                    "products": [
+                        "NC[C@H]1O[C@@H](c2c[nH]c(=O)[nH]c2=O)[C@H](O)[C@@H]1O"
+                    ],
+                    "isBalanced": true,
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "Knock-out studies"
+                    ],
+                    "references": [
+                        "doi:10.1016/j.chembiol.2018.02.008"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "accession": "MITE0000066",
+    "quality": "medium",
+    "status": "pending",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "LEEWIYEZSPCYOCCY6BHNTE54"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-04-23",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "RebP",
+        "description": "Cytochrome P-450",
+        "databaseIds": [
+            "uniprot:Q8KIC8",
+            "mibig:BGC0000821"
+        ],
+        "references": [
+            "doi:10.1021/ja9003365"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Oxidation"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#8]-[#6](=O)-[#6]-1=[#6](-[#6]-2=[#6]-[#7]-[#6]-3=[#6](Cl)-[#6]=[#6]-[#6]=[#6]-2-3)-[#6](=[#6](-[#7]-1)-[#6](-[#8])=O)-[#6]-1=[#6]-[#7]-[#6]-2=[#6]-1-[#6]=[#6]-[#6]=[#6]-2Cl>>[#8]-[#6](=O)-[#6]-1=[#6]-2-[#6]-3=[#6](-[#7]-[#6]-4=[#6](Cl)-[#6]=[#6]-[#6]=[#6]-3-4)-[#6]-3=[#6](-[#6]-4=[#6](-[#7]-3)-[#6](Cl)=[#6]-[#6]=[#6]-4)-[#6]-2=[#6](-[#7]-1)-[#6](-[#8])=O",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "O=C(O)c1[nH]c(C(=O)O)c(-c2c[nH]c3c(Cl)cccc23)c1-c1c[nH]c2c(Cl)cccc12",
+                    "products": [
+                        "O=C(O)c1[nH]c(C(=O)O)c2c1c1c3cccc(Cl)c3[nH]c1c1[nH]c3c(Cl)cccc3c12"
+                    ],
+                    "isBalanced": true,
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "Heterologous expression"
+                    ],
+                    "references": [
+                        "doi:10.1021/ja9003365"
+                    ]
+                }
+            ]
+        }
+    ]
+}

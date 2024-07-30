@@ -1,0 +1,70 @@
+{
+    "accession": "MITE0000119",
+    "quality": "medium",
+    "status": "pending",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "WPXPP7X73ILZYNMVMGM7RHIM",
+                            "VMOLOUVCS4IRTX6AW6KNNWOL",
+                            "EKZKD775F36BLONCQ7EXF7ZS"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-05-14",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "ScyL2",
+        "description": "AsaB-like alphaKGDD",
+        "databaseIds": [
+            "genpept:QTE75998.1",
+            "mibig:BGC0002223"
+        ],
+        "references": [
+            "doi:10.1039/d0sc04309e"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#6:24]-[#6:23]-[#6:22]-[#6:21]-[#6:20]-[#6@@H:1]-1-[#6:2]-[#6:9]-2=[#6:8](-[#6:7]-[#6@H:6](-[#6:25]-[#6:26]-[#6:27]-[#6:28])-[#6:5]-[#6:4]-3=[#6:3]-1-[#6:10](=[O:17])-[#8:11]-[#6:12]-3=[O:16])-[#6:13](=[O:18])-[#8:14]-[#6:15]-2=[O:19]>>[#6:24]-[#6:23]-[#6:22]-[#6:21]-[#6:20]-[#6@@H:1]-1-[#6:2]-[#6:9]-2=[#6:8](-[#6:7][C@:6]([#8:29])([#6:25]-[#6:26]-[#6:27]-[#6:28])[#6:5]-[#6:4]-3=[#6:3]-1-[#6:10](=[O:17])-[#8:11]-[#6:12]-3=[O:16])-[#6:13](=[O:18])-[#8:14]-[#6:15]-2=[O:19] |r,c:7,16,37,47|",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "[C@@H:1]1([CH2:20][CH2:21][CH2:22][CH2:23][CH3:24])[CH2:2][C:9]2=[C:8]([CH2:7][C@H:6]([CH2:25][CH2:26][CH2:27][CH3:28])[CH2:5][C:4]3=[C:3]1[C:10](=[O:17])[O:11][C:12]3=[O:16])[C:13](=[O:18])[O:14][C:15]2=[O:19]",
+                    "products": [
+                        "[C@@H:1]1([CH2:20][CH2:21][CH2:22][CH2:23][CH3:24])[CH2:2][C:9]2=[C:8]([CH2:7][C@@:6]([CH2:25][CH2:26][CH2:27][CH3:28])([OH:29])[CH2:5][C:4]3=[C:3]1[C:10](=[O:17])[O:11][C:12]3=[O:16])[C:13](=[O:18])[O:14][C:15]2=[O:19]"
+                    ],
+                    "isBalanced": true,
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "In vitro assay",
+                        "Knock-out studies"
+                    ],
+                    "references": [
+                        "doi:10.1039/d0sc04309e"
+                    ]
+                }
+            ]
+        }
+    ]
+}

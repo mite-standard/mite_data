@@ -1,0 +1,68 @@
+{
+    "accession": "MITE0000117",
+    "quality": "medium",
+    "status": "pending",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "YMNBNYWEKI2BEKVVGTVE6OUH",
+                            "6CADHILFODRMCII55WHSHZ6V"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-04-23",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "stoR",
+        "description": "NADPH dependent reduction of exo-methylene in styrolide B to methyl group in styrolide A",
+        "databaseIds": [
+            "genpept:TMU76675.1",
+            "mibig:BGC0002069"
+        ],
+        "references": [
+            "doi:10.1002/anie.201914154"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Reduction"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "C=C1C=C(C(O1)=O)/C=C/C2=CC=C(C=C2)O>>C[C@@H]3C=C(C(O3)=O)/C=C/C4=CC=C(C=C4)O",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "C=C1C=C(/C=C/c2ccc(O)cc2)C(=O)O1",
+                    "products": [
+                        "C[C@@H]1C=C(/C=C/c2ccc(O)cc2)C(=O)O1"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "Inference from genomic data and chemical structure"
+                    ],
+                    "references": [
+                        "doi:10.1002/anie.201914154"
+                    ]
+                }
+            ]
+        }
+    ]
+}

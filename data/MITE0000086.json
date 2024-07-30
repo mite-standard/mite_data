@@ -1,0 +1,68 @@
+{
+    "accession": "MITE0000086",
+    "quality": "medium",
+    "status": "pending",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "P75FRHHCFPTCPYSP65VDVPHW"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-05-06",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "NapH1",
+        "description": "Vanadium-Dependent Chloroperoxidase",
+        "databaseIds": [
+            "genpept:ABS50458.1",
+            "mibig:BGC0001079"
+        ],
+        "references": [
+            "doi:10.1021/ja201088k"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Heterocyclization",
+                "Halogenation"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#6:27]\\[#6:26](-[#6:28])=[#6:25]\\[#6:24]-[#6:22]\\[#6:21](-[#6:23])=[#6:20]\\[#6:19][C@:8]1([#8:14])[#6:7](=[O:15])-[c:6]2[c:5][c:4](-[#8:13])[c:3](-[#6:16])[c:2](-[#8:11])[c:1]2-[#6:10](=[O:12])[C@@:9]1([Cl:32])[#6:17]\\[#6:18]=[#6:29](\\[#6:30])-[#6:31]>>[#6:27]\\[#6:26](-[#6:28])=[#6:25]\\[#6:24]-[#6:22]\\[#6:21](-[#6:23])=[#6:20]\\[#6:19][C@@:8]12[#8:14][C:29]([#6:30])([#6:31])[#6@H:18](-[*])-[#6:17][C@:9]1([Cl:32])[#6:10](=[O:12])-[c:1]1[c:2](-[#8:11])[c:3](-[#6:16])[c:4](-[#8:13])[c:5][c:6]1-[#6:7]2=[O:15] |r,$;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;_R0;;;;;;;;;;;;;;;;$,atomProp:48.graphicalMarvinProperty&#58;&#58;FormattedLabel.X|",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "CC(C)=CCC/C(C)=C/C[C@]1(O)C(=O)c2cc(O)c(C)c(O)c2C(=O)[C@@]1(Cl)CC=C(C)C",
+                    "products": [
+                        "CC(C)=CCC/C(C)=C/C[C@@]12OC(C)(C)[C@H](Cl)C[C@]1(Cl)C(=O)c1c(cc(O)c(C)c1O)C2=O"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "In vitro assay"
+                    ],
+                    "references": [
+                        "doi:10.1021/ja201088k"
+                    ]
+                }
+            ]
+        }
+    ]
+}

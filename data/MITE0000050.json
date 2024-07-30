@@ -1,0 +1,71 @@
+{
+    "accession": "MITE0000050",
+    "quality": "medium",
+    "status": "pending",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "C62OJVVH7XOTOTFZSJT727YU"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-07-24",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "BotAH",
+        "description": "bottromycin follower-peptide cleaving aminohydrolase from Streptomyces sp. BC16019",
+        "databaseIds": [
+            "genpept:AFV25486.1",
+            "uniprot:K4MV58",
+            "mibig:BGC0000469"
+        ],
+        "references": [
+            "doi:10.1021/jacs.8b12231",
+            "doi:10.1039/d0np00097c"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Hydrolysis"
+            ],
+            "description": "cleavage of modified bottromycin precursor peptide between thiazole8 and Met9.",
+            "reactionSMARTS": {
+                "reactionSMARTS": "([#6:40]-[#6:39](-[#6:41])-[#6@@H:38]1-[#7:37]-[#6:35](=[O:36])-[#6@H:33](-[#6:34])-[#7:32]-[#6:30](=[O:31])-[#6@H:29](-[#6:28])-[#7:27]-[#6:25](=[O:26])-[#6:24]-[#7:23]\\\\[#6:22]-1=[#7:21]/[#6@@H:20](-[#6:42])-[#6:18](=[O:19])-[#7:17]-[#6@@H:15](-[#6:16])-[#6:13](=[O:14])-[#7:12]-[#6@@H:10](-[#6:11])-[#6:9]-1=[#7:43]-[#6@@H:6](-[#6:7]-[#16:8]-1)-[#6:4](=[O:5])-[#7:3]-[#6@@H:2](-[#6:1])-[#6:44](=[O:45])-[#7:46]-[#6@@H:47](-[#6:60])-[#6:48](=[O:49])-[#7:50]-[#6@@H:51](-[#6:52])-[#6:53](=[O:54])-[#7:55]-[#6@@H:56](-[#6:57])-[#6:58]=[O:59])>>([#6:40]-[#6:39](-[#6:41])-[#6@@H:38]1-[#7:37]-[#6:35](=[O:36])-[#6@H:33](-[#6:34])-[#7:32]-[#6:30](=[O:31])-[#6@H:29](-[#6:28])-[#7:27]-[#6:25](=[O:26])-[#6:24]-[#7:23]\\\\[#6:22]-1=[#7:21]/[#6@@H:20](-[#6:42])-[#6:18](=[O:19])-[#7:17]-[#6@@H:15](-[#6:16])-[#6:13](=[O:14])-[#7:12]-[#6@@H:10](-[#6:11])-[#6:9]-1=[#7:43]-[#6@@H:6](-[#6:7]-[#16:8]-1)-[#6:4](-[#8:99])=[O:5])",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "CSCC[C@H](NC(=O)[C@@H]1CSC([C@H](CC(=O)O)NC(=O)[C@@H](NC(=O)[C@@H](/N=C2\\NCC(=O)N3CC[C@H](C)[C@H]3C(=O)N[C@@H](C(C)C)C(=O)N[C@H]2C(C)(C)C)C(C)(C)C)[C@@H](C)c2ccccc2)=N1)C(=O)N[C@H](C(=O)N[C@@H](C)C(=O)N[C@@H](CC(=O)O)C(=O)N[C@@H](Cc1ccccc1)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](CC(=O)O)C(=O)N[C@@H](CC(=O)O)C(=O)N1CCC[C@H]1C(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](C)C(=O)N[C@@H](CCC(=O)O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CO)C(=O)N[C@@H](C)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CCC(=O)O)C(=O)N[C@@H](CCSC)C(=O)N[C@@H](CCC(=O)O)C(=O)N[C@@H](CCC(=O)O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CCC(=O)O)C(=O)N[C@@H](CO)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)NCC(=O)N[C@@H](C)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](CC(=O)O)C(=O)NCC(=O)N[C@@H](CCC(=O)O)C(=O)N[C@@H](C)C(=O)N[C@H](C(=O)N[C@@H](CO)C(=O)O)[C@@H](C)O)[C@@H](C)O",
+                    "products": [
+                        "CC(C)[C@@H]1NC(=O)[C@@H]2[C@@H](C)CCN2C(=O)CN/C(=N\\[C@H](C(=O)N[C@H](C(=O)N[C@@H](CC(=O)O)C2=N[C@H](C(=O)O)CS2)[C@@H](C)c2ccccc2)C(C)(C)C)[C@H](C(C)(C)C)NC1=O"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": true,
+                    "description": "bottromycin A2-precursor peptide after methylation, hetero- and macrocyclization."
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "Heterologous expression"
+                    ],
+                    "references": [
+                        "doi:10.1021/jacs.8b12231"
+                    ]
+                }
+            ]
+        }
+    ]
+}

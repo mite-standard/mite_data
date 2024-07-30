@@ -1,0 +1,68 @@
+{
+    "accession": "MITE0000102",
+    "quality": "medium",
+    "status": "pending",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "YMNBNYWEKI2BEKVVGTVE6OUH",
+                            "FNDAVAB6GIJQLFPWCTUHK6QO"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-05-13",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "TrlE",
+        "description": "Combines hydroxylation, decarboxylation and oxidation to generate tropolone from dihydrotropone-2-carboxylate",
+        "databaseIds": [
+            "uniprot:A0A2S1JZI9",
+            "mibig:BGC0001487"
+        ],
+        "references": [
+            "doi:10.1039/D4SC01715C"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Other"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#8:1]-[#6:4](=[O:2])-[#6:11]-1=[#6:7](-[#8:3])-[#6:6]-[#6:5]=[#6:8]-[#6:9]=[#6:10]-1>>[#8:3]-[#6:7]-1=[#6:6]-[#6:5]=[#6:8]-[#6:9]=[#6:10]-[#6:11]-1=O",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "O=C(O)C1=C(O)CC=CC=C1",
+                    "products": [
+                        "O=c1cccccc1O"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "In vitro assay"
+                    ],
+                    "references": [
+                        "doi:10.1039/D4SC01715C"
+                    ]
+                }
+            ]
+        }
+    ]
+}

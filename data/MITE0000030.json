@@ -1,0 +1,69 @@
+{
+    "accession": "MITE0000030",
+    "quality": "medium",
+    "status": "pending",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "NHJ6M55E7ZEHUFNMEG4QIZWY",
+                            "LS4NEH7WEQDTT7KF4SQJKMYG"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-04-23",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "KtzR",
+        "description": "Flavin-dependent halogenase",
+        "databaseIds": [
+            "uniprot:A8CF74",
+            "mibig:BGC0000378"
+        ],
+        "references": [
+            "doi:10.1021/ja806467a"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Tandem Action of the O2- and FADH2-Dependent Halogenases KtzQ and KtzR Produce 6,7-Dichlorotryptophan for Kutzneride",
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#6]1:[#6]:[#6]:[#6]2:[#6](:[#6]:1):[#6](:[#6]:[#7H]:2)-[#6]-[#6](-[#6](=[#8])-[#8])-[#7]>>[#6]1:[#6]:[#6](:[#6](:[#6]2:[#6]:1:[#6](:[#6]:[#7H]:2)-[#6]-[#6](-[#6](=[#8])-[#8])-[#7])-[#17])-[#17]",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "NC(Cc1c[nH]c2c(Cl)cccc12)C(=O)O",
+                    "products": [
+                        "NC(Cc1c[nH]c2c(Cl)c(Cl)ccc12)C(=O)O"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "In vitro assay"
+                    ],
+                    "references": [
+                        "doi:10.1021/ja806467a"
+                    ]
+                }
+            ]
+        }
+    ]
+}

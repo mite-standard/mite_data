@@ -1,0 +1,68 @@
+{
+    "accession": "MITE0000140",
+    "quality": "medium",
+    "status": "pending",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "SKC4XYF2AQLXBPOFDVNEXQZ2",
+                            "BBWSCHOGTA7AN4ZDDUKGI7WA"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-04-23",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "ankA",
+        "description": "cRY tRNA-dependent cyclodipeptide synthase",
+        "databaseIds": [
+            "genpept:RHZ63462.1",
+            "mibig:new078"
+        ],
+        "references": [
+            "doi:10.1038/s41589-022-01246-6"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Other"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#7:2]-[#6:6](-[#6:7]-[c:8]1[c:9][c:10][c:11](-[#8:1])[c:12][c:13]1)-[#6:5](-[#8:3])=[O:4].[#7:19]-[#6:23](-[#6:24]-[#6:25]-[#6:18]\\[#7:17]=[#6:16](/[#7:14])-[#7:15])-[#6:22](-[#8:20])=[O:21]>>[#7:36]-[#6:37](=[#7:35])-[#7:38]-[#6:39]-[#6:40]-[#6:26]-[#6@@H:29]-1-[#7:30]-[#6:31](=[O:27])-[#6:34](-[#6:42]-[c:43]2[c:44][c:45][c:46](-[#8:41])[c:47][c:48]2)-[#7:32]-[#6:33]-1=[O:28] |r|",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "NC(Cc1ccc(O)cc1)C(=O)O.NC(N)=NCCCC(N)C(=O)O",
+                    "products": [
+                        "N=C(N)NCCC[C@@H]1NC(=O)C(Cc2ccc(O)cc2)NC1=O"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "Heterologous expression"
+                    ],
+                    "references": [
+                        "doi:10.1038/s41589-022-01246-6"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "accession": "MITE0000126",
+    "quality": "medium",
+    "status": "pending",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "NHJ6M55E7ZEHUFNMEG4QIZWY",
+                            "5YHEW7BMWFDRKNSFQDCWZN7L",
+                            "E3BGRDDSXQC4BVVGLJQTVJNI"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-06-08",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "AetF",
+        "description": "Single component flavin-dependent halogenase",
+        "databaseIds": [
+            "uniprot:A0A861B9Z9",
+            "mibig:BGC0002643"
+        ],
+        "references": [
+            "doi:10.1021/jacs.1c12778"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "It is capable of iodinating and brominating arenes and olefins",
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#6]1:[#6]:[#6]:[#6]2:[#6](:[#6]:1):[#6](:[#6]:[#7H]:2)-[#6]-[#6](-[#6](=[#8])-[#8])-[#7]>>[#6]1:[#6]:[#6]2:[#6](:[#6]:[#6]:1-[#35]):[#6](:[#6]:[#7H]:2)-[#6]-[#6](-[#6](=[#8])-[#8])-[#7]>>[#35]-[#6]1:[#6]:[#6]2:[#6](-[#6]-[#6](-[#7])-[#6](-[#8])=[#8]):[#6]:[#7H]:[#6]:2:[#6](-[#35]):[#6]:1",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "NC(Cc1c[nH]c2ccc(Br)cc12)C(=O)O",
+                    "products": [
+                        "NC(Cc1c[nH]c2c(Br)cc(Br)cc12)C(=O)O"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": false
+                },
+                {
+                    "substrate": "NC(Cc1c[nH]c2ccccc12)C(=O)O",
+                    "products": [
+                        "NC(Cc1c[nH]c2ccc(Br)cc12)C(=O)O"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "In vitro assay"
+                    ],
+                    "references": [
+                        "doi:10.1021/jacs.1c12778"
+                    ]
+                }
+            ]
+        }
+    ]
+}

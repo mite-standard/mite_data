@@ -1,0 +1,70 @@
+{
+    "accession": "MITE0000145",
+    "quality": "medium",
+    "status": "pending",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "3UOU7PODQJXIM6BEPUHHRRA5",
+                            "RKFOW2BJ2UIGZ6GYHFZX4BHF",
+                            "XBXL5Y5CH4BE3EYSVTFNOISJ",
+                            "BBWSCHOGTA7AN4ZDDUKGI7WA"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-07-24",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "avaD",
+        "description": "GNAT family Nacetyltransferase",
+        "databaseIds": [
+            "genpept:UZP48216.1",
+            "mibig:new172"
+        ],
+        "references": [
+            "doi:10.1038/s41589-022-01246-6"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Acetylation"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#7:14]-[#6:13](=[#7:15])-[#7:12]-[#6:11]-[#6:10]-[#6:9]-[#6@@H:4]-1-[#7:3]-[#6:2](=[O:7])-[#6@H:1](-[#6:16]-[#6:17]-2=[#6:21]-3-[#6:25]=[#6:24]-[#6:23]=[#6:22]-[#6:20]-3=[#7:19]-[#8:18]-2)-[#7:6]-[#6:5]-1=[O:8]>>[#6:52]-[#6:51](=[O:53])\\[#7:40]=[#6:38](/[#7:39])-[#7:37]-[#6:36]-[#6:35]-[#6:34]-[#6@@H:29]-1-[#7:28]-[#6:27](=[O:32])-[#6@H:26](-[#6:41]-[#6:42]-2=[#6:46]-3-[#6:50]=[#6:49]-[#6:48]=[#6:47]-[#6:45]-3=[#7:44]-[#8:43]-2)-[#7:31]-[#6:30]-1=[O:33] |r,c:13,15,17,20,43,45,47,50|",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "N=C(N)NCCC[C@@H]1NC(=O)[C@H](Cc2onc3ccccc23)NC1=O",
+                    "products": [
+                        "CC(=O)/N=C(\\N)NCCC[C@@H]1NC(=O)[C@H](Cc2onc3ccccc23)NC1=O"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "Heterologous expression"
+                    ],
+                    "references": [
+                        "doi:10.1038/s41589-022-01246-6"
+                    ]
+                }
+            ]
+        }
+    ]
+}

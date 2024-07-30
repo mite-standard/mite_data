@@ -1,0 +1,68 @@
+{
+    "accession": "MITE0000031",
+    "quality": "medium",
+    "status": "pending",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "P75FRHHCFPTCPYSP65VDVPHW"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-05-15",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "SacF",
+        "description": "SAM-dependent methyltransferase",
+        "databaseIds": [
+            "genpept:AAL33761.1",
+            "mibig:BGC0000421"
+        ],
+        "references": [
+            "doi:10.1111/j.1365-2958.2004.04433.x"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#7:1]-[#6:2](-[#6:3]-[c:4]1[c:5][c:6][c:7](-[#8:8])[c:9][c:10]1)-[#6:11](-[#8:13])=[O:12].[#6:14][S+:15]([#6:16]-[#6:17]-[#6@H:18](-[#7+:22])-[#6:19](-[#8-:21])=[O:20])[#6:23]-[#6@H:24]-1-[#8:28]-[#6@H:27](-[#6@H:26](-[#8:39])-[#6@@H:25]-1-[#8:40])-[n:29]1[c:30][n:31][c:32]2[c:33](-[#7:38])[n:34][c:35][n:36][c:37]12>>[#6:14]-[c:6]1[c:5][c:4](-[#6:3]-[#6:2](-[#7:1])-[#6:11](-[#8:13])=[O:12])[c:10][c:9][c:7]1-[#8:8].[#7:38]-[c:33]1[n:34][c:35][n:36][c:37]2[n:29]([c:30][n:31][c:32]12)-[#6@@H:27]-1-[#8:28]-[#6@H:24](-[#6:23]-[#16:15]-[#6:16]-[#6:17]-[#6@H:18](-[#7+:22])-[#6:19](-[#8-:21])=[O:20])-[#6@@H:25](-[#8:40])-[#6@H:26]-1-[#8:39] |r|",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "C[S+](CC[C@H]([NH3+])C(=O)[O-])C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O.NC(Cc1ccc(O)cc1)C(=O)O",
+                    "products": [
+                        "Cc1cc(CC(N)C(=O)O)ccc1O.Nc1ncnc2c1ncn2[C@@H]1O[C@H](CSCC[C@H]([NH3+])C(=O)[O-])[C@@H](O)[C@H]1O"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "In vitro assay",
+                        "Knock-out studies"
+                    ],
+                    "references": [
+                        "doi:10.1111/j.1365-2958.2004.04433.x"
+                    ]
+                }
+            ]
+        }
+    ]
+}
