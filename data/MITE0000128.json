@@ -1,0 +1,69 @@
+{
+    "accession": "MITE0000128",
+    "quality": "medium",
+    "status": "pending",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "M4JYS7EJ6SF34AKXEWFIK3JY",
+                            "4ZBJCWV5NZUBDJXCSIV4TKIA",
+                            "5SRAIADCX5E626OGO7LYHFZD"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-04-25",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "OrfA",
+        "description": " Halogenase, responsible for introducing halogen atoms into specific positions of the albofungin molecule, resulting in chloroalbofungin and bromoalbofungin variants.",
+        "databaseIds": [
+            "genpept:UUL71895.1",
+            "mibig:BGC0002841"
+        ],
+        "references": [
+            "doi:10.1128/aem.00806-22"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#6]-[#8]-[#6@H:13]-1-[#6:12]-[#6:11]-[#6@@H:10](-[#8])-[#6:9]-2=[#6:14]-1-[#8:15]-[#6:16]-1=[#6:17]-3-[#8]-[#6:28]-[#8]-[#6:19]-4-[#6:20]-[#6:21]-5=[#6:4](-[#6:3](-[#8])=[#6:2]-6-[#6:1](=O)-[#7](-[#6])-[#6:25](-[#6:26])=[#6:24]-[#6:23]-6=[#6:22]-5)-[#6:5](-[#6:6](-[#8])=[#6:7]-1-[#6:8]-2=O)=[#6:18]-3-4>>[#6]-[#8]-[#6@H:13]-1-[#6:12]-[#6:11]-[#6@@H:10](-[#8])-[#6:9]-2=[#6:14]-1-[#8:15]-[#6:16]-1=[#6:17]-3-[#8]-[#6:28]-[#8]-[#6:19]-4-[#6:20]-[#6:21]-5=[#6:4](-[#6:3](-[#8])=[#6:2]-6-[#6:1](=O)-[#7](-[#6])-[#6:25](-[#6:26])=[#6:24](Cl)-[#6:23]-6=[#6:22]-5)-[#6:5](-[#6:6](-[#8])=[#6:7]-1-[#6:8]-2=O)=[#6:18]-3-4 |r,$;;;;;;;;;;;;;;;;;;;;;;;;;NH2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;NH2;;;;;;;;;;;;;$,c:7,11,28,31,36,51,55,76,81,t:18,21,41,62,65,72,86,atomProp:25.graphicalMarvinProperty&#58;&#58;FormattedLabel.NH2:63.graphicalMarvinProperty&#58;&#58;FormattedLabel.NH2|",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "CO[C@H]1CC[C@@H](O)c2c1oc1c3c4c(c(O)c1c2=O)-c1c(cc2cc(C)n(C)c(=O)c2c1O)CC4OCO3",
+                    "products": [
+                        "CO[C@H]1CC[C@@H](O)c2c1oc1c3c4c(c(O)c1c2=O)-c1c(cc2c(Cl)c(C)n(C)c(=O)c2c1O)CC4OCO3"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "Knock-out studies"
+                    ],
+                    "references": [
+                        "doi:10.1128/aem.00806-22"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+{
+    "accession": "MITE0000043",
+    "quality": "medium",
+    "status": "pending",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "4ZBJCWV5NZUBDJXCSIV4TKIA",
+                            "P75FRHHCFPTCPYSP65VDVPHW"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-05-14",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "SgvP",
+        "description": "cytochrome P450",
+        "databaseIds": [
+            "genpept:AGN74891.1",
+            "mibig:BGC0000459"
+        ],
+        "references": [
+            "doi:10.1002/cbic.201400062"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Heterocyclization"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#6:33]-[#6@@H:21]-1-[#6:20]\\[#6:19]=[#6:18]\\[#6:16](=[O:17])-[#7:15]-[#6:14]\\[#6:13]=[#6:12]\\[#6:11]=[#6:10]\\[#6@@H:9](-[#8:29])-[#6:8]-[#6@@H:7](-[#8:30])-[#6:6]-[c:5]2[n:4][c:2]([c:1][o:3]2)-[#6:28](=[O:32])-[#7:27]-[#6@H:25](-[#6:26]-[#16:34])-[#6:24]-[#6:23](=[O:31])-[#8:22]-1>>[#6:33]-[#6@@H:21]-1-[#6:20]\\[#6:19]=[#6:18]-2/[#16:34]-[#6:26]-[#6@H:25](-[#6:24]-[#6:23](=[O:31])-[#8:22]-1)-[#7:27]-[#6:28](=[O:32])-[c:2]1[c:1][o:3][c:5](-[#6:6]-[#6@H:7](-[#8:30])-[#6:8]-[#6@H:9](-[#8:29])\\[#6:10]=[#6:11]\\[#6:12]=[#6:13]\\[#6:14]-[#7:15]-[#6:16]-2=[O:17])[n:4]1 |r,c:38,t:3,9,11,61,63|",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "C[C@@H]1CC=CC(=O)NCC=CC=C[C@@H](O)C[C@@H](O)Cc2nc(co2)C(=O)N[C@H](CS)CC(=O)O1",
+                    "products": [
+                        "C[C@@H]1CC=C2SC[C@H](CC(=O)O1)NC(=O)c1coc(n1)C[C@H](O)C[C@H](O)C=CC=CCNC2=O"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "In vitro assay",
+                        "Knock-out studies"
+                    ],
+                    "references": [
+                        "doi:10.26434/chemrxiv-2024-jt6g5",
+                        "doi:10.1002/cbic.201400062"
+                    ]
+                }
+            ]
+        }
+    ]
+}

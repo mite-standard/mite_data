@@ -1,0 +1,98 @@
+{
+    "accession": "MITE0000113",
+    "quality": "medium",
+    "status": "pending",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "M4JYS7EJ6SF34AKXEWFIK3JY",
+                            "YO3TP6VWB5CBNPZKNYNQSKUW"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-04-24",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "NgnD",
+        "description": "[6+4] cycloaddition",
+        "databaseIds": [
+            "genpept:AXG22404.1",
+            "mibig:BGC0002024"
+        ],
+        "references": [
+            "doi:10.1021/acschembio.9b01034"
+        ],
+        "auxiliaryEnzymes": [
+            {
+                "name": "NgnN4",
+                "description": "NgnN4 is responsible for attaching the pyrrole moiety at hydroxyl group at the 9-position of substrate.",
+                "databaseIds": [
+                    "genpept:AXG22420.1"
+                ]
+            },
+            {
+                "name": "NgnO3",
+                "description": "NgnO3 catalyzes the formation of the ether bridge moiety at position C8/C13 of the substrate molecules.",
+                "databaseIds": [
+                    "genpept:AXG22416.1"
+                ]
+            },
+            {
+                "name": "NgnP2",
+                "description": "Hydroxylation at c-18",
+                "databaseIds": [
+                    "genpept:AXG22415.1"
+                ]
+            },
+            {
+                "name": "NgnP1",
+                "description": "Hydroxylation at c-2 ",
+                "databaseIds": [
+                    "genpept:AXG22409.1"
+                ]
+            }
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Cyclization"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#6:19]-[#6:18]-[#6@H:17]1-[#8]-[#6:1](=O)-[#6:2]-[#6:3]\\[#6:4]=[#6:5]\\[#6:6]=[#6:7]\\[#6:8]-[#6@H:9](-[#8])-[#6@H:10](-[#6:20])-[#6@@H:11](-[#8:24])\\[#6:12]=[#6:13]\\[#6:14](\\[#6:21])=[#6]\\[#6@H:16]-1-[#6:22]>>[#6:19]-[#6:18]-[#6@H:17]1-[#8]-[#6:1](=O)-[#6:2]-[#6:3]-[#6:4]-2-[#6:5]=[#6:6]-[#6:7]-3-[#6:8]-[#6@H:9](-[#8])-[#6@H:10](-[#6:20])-[#6@H:11](-[#8:24])-[#6:12]-3-[#6:13]-2\\[#6:14](-[#6:21])=[#6]\\[#6@H:16]-1-[#6:22] |r,c:35,t:8,10,19,22,50|",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "CC[C@H]1OC(=O)CC/C=C/C=C/C[C@H](O)[C@H](C)[C@@H](O)/C=C/C(C)=C/[C@H]1C",
+                    "products": [
+                        "CC[C@H]1OC(=O)CCC2C=CC3C[C@H](O)[C@H](C)[C@H](O)C3C2/C(C)=C/[C@H]1C"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "Knock-out studies"
+                    ],
+                    "references": [
+                        "doi:10.1021/acschembio.9b01034"
+                    ]
+                }
+            ]
+        }
+    ]
+}

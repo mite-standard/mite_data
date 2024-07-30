@@ -1,0 +1,68 @@
+{
+    "accession": "MITE0000122",
+    "quality": "medium",
+    "status": "pending",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "S5E5B42Z3YOMJFLKFTZJZTZN",
+                            "I3D2K5SU7JJDS2LEEQM3W3SO"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-03-20",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "abmA",
+        "description": "Acetyltransferase",
+        "databaseIds": [
+            "uniprot:I1ZAY8",
+            "mibig:BGC0002300"
+        ],
+        "references": [
+            "doi:10.1016/j.jbc.2023.104573"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Acetylation"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#7:10]-[#6@@H:9](-[#6:8]-[#6:7]-[#6:6]-[#7:5]-[#8:4])-[#6:3](-[#8:2])=[O:1]>>[#6:16]-[#6:17](=[O:15])-[#7:18](-[#8:14])-[#6:19]-[#6:20]-[#6:21]-[#6@H:22](-[#7:23])-[#6:13](-[#8:12])=[O:11] |r|",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "N[C@@H](CCCNO)C(=O)O",
+                    "products": [
+                        "CC(=O)N(O)CCC[C@H](N)C(=O)O"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "Knock-out studies"
+                    ],
+                    "references": [
+                        "doi:10.1016/j.jbc.2023.104573"
+                    ]
+                }
+            ]
+        }
+    ]
+}

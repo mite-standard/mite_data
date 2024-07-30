@@ -1,0 +1,67 @@
+{
+    "accession": "MITE0000152",
+    "quality": "medium",
+    "status": "pending",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "ZF6B6VBOHAZ5KYONQR36C2NB"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-04-23",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "ScnB",
+        "description": "P450 installing crosslink",
+        "databaseIds": [
+            "genpept:AKH82808.1",
+            "mibig:new459"
+        ],
+        "references": [
+            "doi:10.1002/anie.202311533"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Biaryl bond formation"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[H][C@]([#7])([#6]-[#6]-[#6](-[#7])=O)[#6](=O)-[#7][C@@]([H])([#6])[#6](=O)-[#7][C@@]([H])([#6]-[#6]-1=[#6]-[#7]-[#6]-2=[#6]-1-[#6]=[#6]-[#6]=[#6]-2)[#6](=O)-[#7][C@@]([H])([#6]-[#6]-[#6]-[#7]-[#6](-[#7])=[#7])[#6](=O)-[#7][C@]([H])([#6](=O)-[#7][C@@]([H])([#6]-[#6]-1=[#6]-[#7]-[#6]-2=[#6]-1-[#6]=[#6]-[#6]=[#6]-2)[#6](-[#8])=O)[C@@]([H])([#6])[#6]-[#6]>>[H][C@]([#7])([#6]-[#6]-[#6](-[#7])=O)[#6](=O)-[#7][C@@]([H])([#6])[#6](=O)-[#7][C@@]1([H])[#6]-[#6]-2=[#6]-[#7]-[#6]-3=[#6]-2-[#6]=[#6]-[#6]=[#6]-3-[#7]-2-[#6]=[#6](-[#6][C@]([H])([#7]-[#6](=O)[C@@]([H])([#7]-[#6](=O)[C@]([H])([#6]-[#6]-[#6]-[#7]-[#6](-[#7])=[#7])[#7]-[#6]1=O)[C@@]([H])([#6])[#6]-[#6])[#6](-[#8])=O)-[#6]-1=[#6]-2-[#6]=[#6]-[#6]=[#6]-1",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "CC[C@H](C)[C@H](NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](C)NC(=O)[C@@H](N)CCC(N)=O)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)O",
+                    "products": [
+                        "CC[C@H](C)[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@@H](NC(=O)[C@H](C)NC(=O)[C@@H](N)CCC(N)=O)Cc2c[nH]c3c(cccc23)-n2cc(c3ccccc32)C[C@@H](C(=O)O)NC1=O"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "In vitro assay"
+                    ],
+                    "references": [
+                        "doi:10.1002/anie.202311533"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "accession": "MITE0000135",
+    "quality": "medium",
+    "status": "pending",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "AP4OPPCC6CSE5F433WMY7TMD",
+                            "RQC4INAEW544B5HWWLI3CX2V"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-06-07",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "THAO",
+        "description": "",
+        "databaseIds": [
+            "genpept:EFH40098.1",
+            "mibig:new052"
+        ],
+        "references": [
+            "doi:10.1038/s41467-020-19153-6"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#6]-[#6@H](-[#6]-[#6]\\[#6]=[#6](/[#6])-[#6]-[#6]\\[#6]=[#6](\\[#6])-[#6])[C@@]1([#6])[#6]-[#6]-[#6]2=[#6]1-[#6]-[#6]-[#6@H]1C([#6])([#6])[#6@@H](-[#8])-[#6]-[#6][C@]21[#6]>>[#6]-[#6@H](-[#6@@H](-[#8])-[#6](=O)\\[#6]=[#6](/[#6])-[#6]-[#6]\\[#6]=[#6](\\[#6])-[#6])[C@@]1([#6])[#6]-[#6]-[#6]2=[#6]1-[#6@@H](-[#8])-[#6]-[#6@H]1C([#6])([#6])[#6@@H](-[#8])-[#6]-[#6][C@]21[#6] |c:17,52|",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "CC(C)=CCC/C(C)=C/CC[C@@H](C)[C@@]1(C)CCC2=C1[C@@H](O)C[C@H]1C(C)(C)[C@@H](O)CC[C@]21C",
+                    "products": [
+                        "CC(C)=CCC/C(C)=C/C(=O)[C@H](O)[C@@H](C)[C@@]1(C)CCC2=C1[C@@H](O)C[C@H]1C(C)(C)[C@@H](O)CC[C@]21C"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "Heterologous expression"
+                    ],
+                    "references": [
+                        "doi:10.1038/s41467-020-19153-6"
+                    ]
+                }
+            ]
+        }
+    ]
+}

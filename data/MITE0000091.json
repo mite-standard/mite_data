@@ -1,0 +1,68 @@
+{
+    "accession": "MITE0000091",
+    "quality": "medium",
+    "status": "pending",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "AP4OPPCC6CSE5F433WMY7TMD",
+                            "RQC4INAEW544B5HWWLI3CX2V"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-06-07",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "CYP71BN1",
+        "description": "",
+        "databaseIds": [
+            "genpept:AGK82807.1",
+            "mibig:BGC0001322"
+        ],
+        "references": [
+            "doi:10.1371/journal.pone.0119302"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Oxidation"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#6]\\[#6](-[#6])=[#6]/[#6]-[#6]\\[#6](-[#6])=[#6]/[#6]-[#6]C1([#6])[#6]-2-[#6]-[#6]3-[#6](-[#6]-2)C13[#6]>>[#6]\\[#6](-[#6])=[#6]\\[#6]-[#6]C1([#6])[#8]-[#6]1-[#6]-[#6]C1([#6])[#6]-2-[#6]-[#6]3-[#6](-[#6]-2)C13[#6]",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "CC(C)=CCC/C(C)=C\\CCC1(C)C2CC3C(C2)C31C",
+                    "products": [
+                        "CC(C)=CCCC1(C)OC1CCC1(C)C2CC3C(C2)C31C"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "Heterologous expression"
+                    ],
+                    "references": [
+                        "doi:10.1371/journal.pone.0119302"
+                    ]
+                }
+            ]
+        }
+    ]
+}

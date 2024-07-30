@@ -1,0 +1,72 @@
+{
+    "accession": "MITE0000127",
+    "quality": "medium",
+    "status": "pending",
+    "comment": "Catalyzes the dibromination of 5-bromoindole on the 3rd then on the 2nd position (doesn't act on tryptophan)",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "NHJ6M55E7ZEHUFNMEG4QIZWY",
+                            "5YHEW7BMWFDRKNSFQDCWZN7L",
+                            "E3BGRDDSXQC4BVVGLJQTVJNI"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-06-08",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "AetA",
+        "description": "Flavin-dependent halogenase",
+        "databaseIds": [
+            "uniprot:A0A861B8S3",
+            "mibig:BGC0002643"
+        ],
+        "references": [
+            "doi:10.1021/jacs.1c12778"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "The first substitution happens on the third carbon of 5-bromoindole, followed by the second carbon, yielding 2,3,5-tribromoindole",
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#6]1:[#6]:[#6]2:[#6](:[#6]:[#6]:[#7H]:2):[#6]:[#6]:1-[#35] >> [#6]1:[#6]:[#6]2:[#6](:[#6]:[#6]:1-[#35]):[#6](:[#6]:[#7H]:2)-[#35]>>[#6]1:[#6]:[#6]2:[#6](:[#6]:[#6]:1-[#35]):[#6](:[#6](:[#7H]:2)-[#35])-[#35]",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "Brc1ccc2[nH]ccc2c1",
+                    "products": [
+                        "Brc1ccc2[nH]cc(Br)c2c1",
+                        "Brc1ccc2[nH]c(Br)c(Br)c2c1"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "In vitro assay"
+                    ],
+                    "references": [
+                        "doi:10.1021/jacs.1c12778"
+                    ]
+                }
+            ]
+        }
+    ]
+}

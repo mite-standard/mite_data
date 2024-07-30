@@ -1,0 +1,73 @@
+{
+    "accession": "MITE0000011",
+    "quality": "medium",
+    "status": "pending",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "W3QOK3QPXTRJDCB4DPJ3LOBQ",
+                            "XBXL5Y5CH4BE3EYSVTFNOISJ",
+                            "MHEG72J5P6EVQJZ6TDG3KBTM",
+                            "RKFOW2BJ2UIGZ6GYHFZX4BHF"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-06-11",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "MpaG",
+        "description": "Catalyzes the O-methylation of demethylmycophenolic acid into mycophenolic acid",
+        "databaseIds": [
+            "uniprot:F1DBB3",
+            "mibig:BGC0000104"
+        ],
+        "references": [
+            "doi:10.1128/AEM.03015-10"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "databaseIds": [
+                "rhea:66696"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#6:21]\\[#6:16](-[#6:17]-[#6:18]-[#6:19](-[#8:20])=[O:22])=[#6:15]/[#6:12]-[c:2]1[c:1](-[#8:11])[c:6]2-[#6:7](=[O:10])-[#8:9]-[#6:8]-[c:5]2[c:4](-[#6:13])[c:3]1-[#8:14]>>[#6:23]-[#8:14]-[c:3]1[c:4](-[#6:13])[c:5]2-[#6:8]-[#8:9]-[#6:7](=[O:10])-[c:6]2[c:1](-[#8:11])[c:2]1-[#6:12]\\[#6:15]=[#6:16](/[#6:21])-[#6:17]-[#6:18]-[#6:19](-[#8:20])=[O:22]",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "[c:1]1([OH:11])[c:2]([CH2:12]/[CH:15]=[C:16](/[CH2:17][CH2:18][C:19]([OH:20])=[O:22])[CH3:21])[c:3]([OH:14])[c:4]([CH3:13])[c:5]2[c:6]1[C:7](=[O:10])[O:9][CH2:8]2",
+                    "products": [
+                        "[c:1]1([OH:11])[c:2]([CH2:12]/[CH:15]=[C:16](/[CH2:17][CH2:18][C:19]([OH:20])=[O:22])[CH3:21])[c:3]([O:14][CH3:23])[c:4]([CH3:13])[c:5]2[c:6]1[C:7](=[O:10])[O:9][CH2:8]2"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "Heterologous expression"
+                    ],
+                    "references": [
+                        "doi:10.1002/cbic.201402600"
+                    ]
+                }
+            ]
+        }
+    ]
+}

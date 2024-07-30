@@ -1,0 +1,74 @@
+{
+    "accession": "MITE0000118",
+    "quality": "medium",
+    "status": "pending",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "IX2YLYLJIFMZ56AG4LPOYV2J",
+                            "U45G63MLSP33JST2JZS23R4V",
+                            "6CADHILFODRMCII55WHSHZ6V",
+                            "MGLE5JJ3S32DQA3YR5WPYH4W"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-05-14",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "AcaR",
+        "description": "NADPH-dependent oxidoreductase - reduction of 4,5-didehydroacaterin to acaterin",
+        "databaseIds": [
+            "genpept:TNB95040.1",
+            "mibig:BGC0002076"
+        ],
+        "references": [
+            "doi:10.1002/anie.201914154",
+            "doi:10.1016/j.bmc.2006.05.039"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Reduction"
+            ],
+            "description": "NADPH-dependent",
+            "reactionSMARTS": {
+                "reactionSMARTS": "C=C1C=C(C(O1)=O)[C@@H](CCCCCCC)O>>CC2C=C(C(O2)=O)[C@@H](CCCCCCC)O",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "C=C1C=C([C@H](O)CCCCCCC)C(=O)O1",
+                    "products": [
+                        "CCCCCCC[C@@H](O)C1=CC(C)OC1=O"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "In vitro assay",
+                        "Heterologous expression"
+                    ],
+                    "references": [
+                        "doi:10.1002/anie.201914154",
+                        "doi:10.1016/j.bmc.2006.05.039"
+                    ]
+                }
+            ]
+        }
+    ]
+}

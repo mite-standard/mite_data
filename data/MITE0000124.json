@@ -1,0 +1,67 @@
+{
+    "accession": "MITE0000124",
+    "quality": "medium",
+    "status": "pending",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "P75FRHHCFPTCPYSP65VDVPHW"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-03-20",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "juiL",
+        "description": "F420-dependent oxidoreductase",
+        "databaseIds": [
+            "genpept:QNL10607.1",
+            "mibig:BGC0002514"
+        ],
+        "references": [
+            "doi:10.1021/acs.orglett.0c02469"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Reduction"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[H][#8:22]-[#6@@H:14](-[#6:15])-[#6:12]-[#6:11](=[O:19])-[c:10]1[c:9]([c:8][c:5]2[c:4][c:3][c:2][c:1](-[#8:21][H])[c:6]2[c:7]1-[#8:20][H])-[#6@@H:13]([H:23])-[#6:16](-[#6:17])=[O:18]>>[H][#8:22]-[#6@@H:14](-[#6:15])-[#6:12]-[#6:11](=[O:19])-[c:10]1[c:9]([c:8][c:5]2[c:4][c:3][c:2][c:1](-[#8:21][H])[c:6]2[c:7]1-[#8:20][H])-[#6@@H:13]([H:23])-[#6@@H:16](-[#6:17])-[#8:18][H] |r,@@:21,47|",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "CC(=O)Cc1cc2cccc(O)c2c(O)c1C(=O)C[C@H](C)O",
+                    "products": [
+                        "C[C@H](O)CC(=O)c1c(C[C@@H](C)O)cc2cccc(O)c2c1O"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "Knock-out studies"
+                    ],
+                    "references": [
+                        "doi:10.1021/acs.orglett.0c02469"
+                    ]
+                }
+            ]
+        }
+    ]
+}

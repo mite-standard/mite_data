@@ -1,0 +1,71 @@
+{
+    "accession": "MITE0000051",
+    "quality": "medium",
+    "status": "pending",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "C62OJVVH7XOTOTFZSJT727YU"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-07-24",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "BotH",
+        "description": "bottromycin epimerase from Streptomyces sp. BC16019",
+        "databaseIds": [
+            "genpept:AFV25485.1",
+            "uniprot:K4MHV9",
+            "mibig:BGC0000469"
+        ],
+        "references": [
+            "doi:10.1038/s41589-020-0624-8",
+            "doi:10.1039/d0np00097c"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Epimerization"
+            ],
+            "description": "epimerization of L-Asp7 to D-Asp7 of modified bottromycin precursor peptide",
+            "reactionSMARTS": {
+                "reactionSMARTS": "([#6:1]-[#6:2]-[#6@@H:3]-1-[#7:4]-[#6:5](=[O:6])-[#6@H:7](-[#6:8])-[#7:9]-[#6:10](=[O:11])-[#6:12]-[#7:13]\\\\[#6:14](=[#7:15]/[#6@@H:16](-[#6:44])-[#6:17](=[O:18])-[#7:19]-[#6@@H:20](-[#6:37]-[c:38]2[c:39][c:40][c:41][c:42][c:43]2)-[#6:21](=[O:22])-[#7:23]-[#6@@H:24](-[#6:25]-[#6:26](-[#8:28])=[O:27])-[#6:29]-2=[#7:30]-[#6@@H:31](-[#6:35]-[#16:36]-2)-[#6:32](-[#8:34])=[O:33])-[#6@@H:45](-[#7:49]-[#6:50]-1=[O:51])-[#6:46](-[#6:47])-[#6:48])>>([#6:1]-[#6:2]-[#6@@H:3]-1-[#7:4]-[#6:5](=[O:6])-[#6@H:7](-[#6:8])-[#7:9]-[#6:10](=[O:11])-[#6:12]-[#7:13]\\\\[#6:14](=[#7:15]/[#6@@H:16](-[#6:44])-[#6:17](=[O:18])-[#7:19]-[#6@@H:20](-[#6:37]-[c:38]2[c:39][c:40][c:41][c:42][c:43]2)-[#6:21](=[O:22])-[#7:23]-[#6@H:24](-[#6:25]-[#6:26](-[#8:28])=[O:27])-[#6:29]-2=[#7:30]-[#6@@H:31](-[#6:35]-[#16:36]-2)-[#6:32](-[#8:34])=[O:33])-[#6@@H:45](-[#7:49]-[#6:50]-1=[O:51])-[#6:46](-[#6:47])-[#6:48])",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "CC(C)[C@@H]1NC(=O)[C@@H]2[C@H](C)CCN2C(=O)CN/C(=N\\[C@H](C(=O)N[C@H](C(=O)N[C@@H](CC(=O)O)C2=N[C@H](C(=O)O)CS2)[C@@H](C)c2ccccc2)C(C)(C)C)[C@H](C(C)(C)C)NC1=O",
+                    "products": [
+                        "CC(C)[C@@H]1NC(=O)[C@@H]2[C@H](C)CCN2C(=O)CN/C(=N\\[C@H](C(=O)N[C@H](C(=O)N[C@H](CC(=O)O)C2=N[C@H](C(=O)O)CS2)[C@@H](C)c2ccccc2)C(C)(C)C)[C@H](C(C)(C)C)NC1=O"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": true,
+                    "description": "bottromycin A2 precursor peptide after follower peptide cleavage"
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "Heterologous expression"
+                    ],
+                    "references": [
+                        "doi:10.1038/s41589-020-0624-8"
+                    ]
+                }
+            ]
+        }
+    ]
+}

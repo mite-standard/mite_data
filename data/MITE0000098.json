@@ -1,0 +1,70 @@
+{
+    "accession": "MITE0000098",
+    "quality": "medium",
+    "status": "pending",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "N36AXMAR75OH4EWIMJIU5WOH",
+                            "PK3KAPGHQJXJCKMJ4SU7V5JW",
+                            "LEEWIYEZSPCYOCCY6BHNTE54",
+                            "K5UBFDWZSYOHS4HI42NVQMJK"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-05-14",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "PumK",
+        "description": "Carboxylate-Amine Ligase",
+        "databaseIds": [
+            "uniprot:A0A2R4FXX8",
+            "mibig:BGC0001476"
+        ],
+        "references": [
+            "doi:10.1016/j.chembiol.2018.02.008"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Other"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#7]-[#6]-[#6@H]-1-[#8]-[#6@H](-[#6@H](-[#8])-[#6@@H]-1-[#8])-[#6]-1=[#6]-[#7]-[#6](=O)-[#7]-[#6]-1=O>>[#7]-[#6@@H](-[#6]-[#6]-[#6](-[#7])=O)-[#6](=O)-[#7]-[#6]-[#6@H]-1-[#8]-[#6@H](-[#6@H](-[#8])-[#6@@H]-1-[#8])-[#6]-1=[#6]-[#7]-[#6](=O)-[#7]-[#6]-1=O",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "NC[C@H]1O[C@@H](c2c[nH]c(=O)[nH]c2=O)[C@H](O)[C@@H]1O",
+                    "products": [
+                        "NC(=O)CC[C@H](N)C(=O)NC[C@H]1O[C@@H](c2c[nH]c(=O)[nH]c2=O)[C@H](O)[C@@H]1O"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "Knock-out studies"
+                    ],
+                    "references": [
+                        "doi:10.1016/j.chembiol.2018.02.008"
+                    ]
+                }
+            ]
+        }
+    ]
+}

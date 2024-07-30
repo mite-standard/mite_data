@@ -1,0 +1,99 @@
+{
+    "accession": "MITE0000150",
+    "quality": "medium",
+    "status": "pending",
+    "comment": "product found in vitro only",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "P75FRHHCFPTCPYSP65VDVPHW"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-04-23",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "CYP158C1",
+        "description": "Cytochrome P450",
+        "databaseIds": [
+            "genpept:AEW97391.1",
+            "mibig:new420"
+        ],
+        "references": [
+            "doi:10.3762/bjoc.18.113"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Biaryl bond formation"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#8:19]-[c:18]1[c:17][c:16][c:15]([c:14][c:13]1)-[#6:12]-1=[#6:11]-[#8:10]-[c:9]2[c:3][c:5](-[#8:4])[c:6][c:7][c:8]2-[#6:2]-1=[O:1]>>[#8:19]-[c:18]1[c:13][c:14][c:15]([c:16][c:17]1)-[#6:12]-1=[#6:11]-[#8:10]-[c:9]2[c:3]([c:4][c:5][c:7](-[#8:6])[c:8]2-[c:36]2[c:35][c:34]([c:33][c:32][c:37]2-[#8:38])-[#6:31]-2=[#6:30]-[#8:29]-[c:28]3[c:27][c:26](-[#8:25])[c:24][c:23][c:22]3-[#6:21]-2=[O:20])-[#6:2]-1=[O:1] |t:8,29,48|",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "O=c1c(-c2ccc(O)cc2)coc2cc(O)ccc12",
+                    "products": [
+                        "O=c1c(-c2ccc(O)c(-c3c(O)ccc4c(=O)c(-c5ccc(O)cc5)coc34)c2)coc2cc(O)ccc12"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "In vitro assay"
+                    ],
+                    "references": [
+                        "doi:10.3762/bjoc.18.113"
+                    ]
+                }
+            ]
+        },
+        {
+            "tailoring": [
+                "Biaryl bond formation"
+            ],
+            "description": "not part of BGC, utilizes exogenous isoflavone to form the dimer products ",
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#8:19]-[c:18]1[c:17][c:16][c:15]([c:14][c:13]1)-[#6:12]-1=[#6:11]-[#8:10]-[c:9]2[c:3][c:5](-[#8:4])[c:6][c:7][c:8]2-[#6:2]-1=[O:1]>>[#8:32]-[c:33]1[c:34][c:35][c:36]([c:37][c:38]1)-[#6:31]-1=[#6:30]-[#8:29]-[c:28]2[c:22]([c:23][c:24][c:26](-[#8:25])[c:27]2-[c:13]2[c:14][c:15]([c:16][c:17][c:18]2-[#8:19])-[#6:12]-2=[#6:11]-[#8:10]-[c:9]3[c:3][c:5](-[#8:4])[c:6][c:7][c:8]3-[#6:2]-2=[O:1])-[#6:21]-1=[O:20] |t:8,29,48|",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "O=c1c(-c2ccc(O)cc2)coc2cc(O)ccc12.O=c1c(-c2ccc(O)cc2)coc2cc(O)ccc12",
+                    "products": [
+                        "O=c1c(-c2ccc(O)cc2-c2c(O)ccc3c(=O)c(-c4ccc(O)cc4)coc23)coc2cc(O)ccc12"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "In vitro assay",
+                        "Heterologous expression"
+                    ],
+                    "references": [
+                        "doi:10.3762/bjoc.18.113"
+                    ]
+                }
+            ]
+        }
+    ]
+}

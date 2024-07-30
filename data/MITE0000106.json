@@ -1,0 +1,69 @@
+{
+    "accession": "MITE0000106",
+    "quality": "medium",
+    "status": "pending",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "CVBS4CX3MGQ2Y6Q45INSO263",
+                            "7ZPV7YL7LI6WACA7MW4GA2DX",
+                            "SJG3CBEHSM6A3I74YXLH6GLA"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-04-23",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "MstE",
+        "description": "terpene cyclase",
+        "databaseIds": [
+            "genpept:ATN39899.1",
+            "mibig:BGC0001664"
+        ],
+        "references": [
+            "doi:10.1002/anie.201611617"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Cyclization"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "C(C=C(C)C)CC(C)=CCC/C(/C)=C/CCC(C)=CCC1C(O)=C(O)C=C(C(O)=O)C=1>>C1CC(C)(C)[C@@]2([H])CC[C@]3(C)[C@@]4([H])CC5C(O)=C(O)C=C(C(O)=O)C=5[C@]4(C)CC[C@@]3([H])[C@]2(C)C1",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "CC(C)=CCCC(C)=CCC/C(C)=C/CCC(C)=CCc1cc(C(=O)O)cc(O)c1O",
+                    "products": [
+                        "CC1(C)CCC[C@@]2(C)[C@@H]3CC[C@@]4(C)c5c(C(=O)O)cc(O)c(O)c5C[C@@H]4[C@@]3(C)CC[C@H]12"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "In vitro assay"
+                    ],
+                    "references": [
+                        "doi:10.1002/anie.201611617"
+                    ]
+                }
+            ]
+        }
+    ]
+}

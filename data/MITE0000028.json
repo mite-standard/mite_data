@@ -1,0 +1,105 @@
+{
+    "accession": "MITE0000028",
+    "quality": "medium",
+    "status": "pending",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "37IOAS4X5OHP34DPN55OLFBF"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-06-07",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "BhaA",
+        "description": "Chlorinates balhimycin precursor at bht2 and bht6.",
+        "databaseIds": [
+            "genpept:AEI58871.1",
+            "mibig:BGC0000311"
+        ],
+        "references": [
+            "doi:10.1016/s1074-5521(02)00101-1",
+            "doi:10.1016/j.jbiotec.2006.04.009",
+            "doi:10.1128/JB.186.18.6093-6100.2004",
+            "doi:10.1039/C7SC00460E"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "The halogenase chlorinates the second bht residue of the balhimycin precursor, probably while the precursor is bound to module 6 of the NRPS. The PCP domain of module 6 might be required for the reaction. The substrate specificity of the enzyme might be less specific than represented in the SMARTS pattern. In order to make the specificity not too broad structures were rather kept in the pattern than left out.",
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#6:5]-[#6:4](-[#6:6])-[#6:3]-[#6@@H:2](-[#7:1])-[#6:7](=[O:8])-[#7:9]-[#6@@H:10]-1-[#6@H:63](-[#8:64])-[c:60]2[c:61][c:62][c:57](-[#8:56]-[c:49]3[c:50][c:51]-4[c:52][c:53](-[#8:48]-[c:45]5[c:44][c:43][c:42]([c:47][c:46]5)-[#6@@H:40](-[#8:41])-[#6@H:30](-[#7:29]-[#6:27](=[O:28])-[#6@H:26](-[#7:25]-[#6:23](=[O:24])-[#6@@H:22]-4-[#7:21]-[#6:19](=[O:20])-[#6@H:14](-[#6:15]-[#6:16](-[#7:17])=[O:18])-[#7:13]-[#6:11]-1=[O:12])-[c:35]1[c:36][c:37][c:38](-[#8:39])[c:33][c:34]1)-[#6:31]=[O:32])[c:54]3-[#8:55])[c:58]([Cl:65])[c:59]2>>[#6:6]-[#6:4](-[#6:5])-[#6:3]-[#6@@H:2](-[#7:1])-[#6:7](=[O:8])-[#7:9]-[#6@@H:10]-1-[#6@H:63](-[#8:64])-[c:60]2[c:61][c:62][c:57](-[#8:56]-[c:49]3[c:50][c:51]-4[c:52][c:53](-[#8:48]-[c:45]5[c:44][c:43][c:42]([c:47][c:46]5Cl)-[#6@@H:40](-[#8:41])-[#6@H:30](-[#7:29]-[#6:27](=[O:28])-[#6@H:26](-[#7:25]-[#6:23](=[O:24])-[#6@@H:22]-4-[#7:21]-[#6:19](=[O:20])-[#6@H:14](-[#6:15]-[#6:16](-[#7:17])=[O:18])-[#7:13]-[#6:11]-1=[O:12])-[c:35]1[c:36][c:37][c:38](-[#8:39])[c:33][c:34]1)-[#6:31]=[O:32])[c:54]3-[#8:55])[c:58]([Cl:65])[c:59]2",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "[NH2:1][C@H:2]([CH2:3][CH:4]([CH3:5])[CH3:6])[C:7](=[O:8])[NH:9][C@H:10]1[C:11](=[O:12])[NH:13][C@@H:14]([CH2:15][C:16]([NH2:17])=[O:18])[C:19](=[O:20])[NH:21][C@H:22]2[C:23](=[O:24])[NH:25][C@H:26]([c:35]3[cH:34][cH:33][c:38]([OH:39])[cH:37][cH:36]3)[C:27](=[O:28])[NH:29][C@H:30]([CH:31]=[O:32])[C@H:40]([OH:41])[c:42]3[cH:43][cH:44][c:45]([cH:46][cH:47]3)[O:48][c:53]3[cH:52][c:51]2[cH:50][c:49]([c:54]3[OH:55])[O:56][c:57]2[c:58]([Cl:65])[cH:59][c:60]([cH:61][cH:62]2)[C@H:63]1[OH:64]",
+                    "products": [
+                        "Cl[c:46]1[c:45]2[cH:44][cH:43][c:42]([cH:47]1)[C@@H:40]([OH:41])[C@@H:30]([CH:31]=[O:32])[NH:29][C:27](=[O:28])[C@@H:26]([c:35]1[cH:34][cH:33][c:38]([OH:39])[cH:37][cH:36]1)[NH:25][C:23](=[O:24])[C@@H:22]1[NH:21][C:19](=[O:20])[C@H:14]([CH2:15][C:16]([NH2:17])=[O:18])[NH:13][C:11](=[O:12])[C@H:10]([NH:9][C:7]([C@H:2]([NH2:1])[CH2:3][CH:4]([CH3:5])[CH3:6])=[O:8])[C@H:63]([OH:64])[c:60]3[cH:59][c:58]([Cl:65])[c:57]([cH:62][cH:61]3)[O:56][c:49]3[cH:50][c:51]1[cH:52][c:53]([c:54]3[OH:55])[O:48]2"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "Knock-out studies"
+                    ],
+                    "references": [
+                        "doi:10.1128/JB.186.18.6093-6100.2004",
+                        "doi:10.1039/C7SC00460E",
+                        "doi:10.1016/s1074-5521(02)00101-1"
+                    ]
+                }
+            ]
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "The halogenase chlorinates the bht residue of the balhimycin precursor, probably while the precursor is bound to module 2 of the NRPS. The PCP domain is probably required for the reaction. The substrate specificity of the enzyme might be less specific than represented in the SMARTS pattern. In order to make the specificity not too broad structures were rather kept in the pattern than left out.",
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#6:16]-[#6:18](-[#6:17])-[#6:19]-[#6@@H:20](-[#7:21])-[#6:15](=[O:14])-[#7:13]-[#6@@H:12](-[#6:11]=[O:10])-[#6@H:2](-[#8:1])-[c:5]1[c:6][c:7][c:8](-[#8:9])[c:3][c:4]1>>[#6:16]-[#6:18](-[#6:17])-[#6:19]-[#6@@H:20](-[#7:21])-[#6:15](=[O:14])-[#7:13]-[#6@@H:12](-[#6:11]=[O:10])-[#6@H:2](-[#8:1])-[c:5]1[c:4][c:3][c:8](-[#8:9])[c:7](Cl)[c:6]1",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "[OH:1][C@H:2]([c:5]1[cH:4][cH:3][c:8]([OH:9])[cH:7][cH:6]1)[C@H:12]([CH:11]=[O:10])[NH:13][C:15](=[O:14])[C@@H:20]([CH2:19][CH:18]([CH3:16])[CH3:17])[NH2:21]",
+                    "products": [
+                        "Cl[c:7]1[cH:6][c:5]([C@@H:2]([OH:1])[C@H:12]([CH:11]=[O:10])[NH:13][C:15](=[O:14])[C@@H:20]([CH2:19][CH:18]([CH3:16])[CH3:17])[NH2:21])[cH:4][cH:3][c:8]1[OH:9]"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "Knock-out studies"
+                    ],
+                    "references": [
+                        "doi:10.1128/JB.186.18.6093-6100.2004",
+                        "doi:10.1039/C7SC00460E",
+                        "doi:10.1016/s1074-5521(02)00101-1"
+                    ]
+                }
+            ]
+        }
+    ]
+}

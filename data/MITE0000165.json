@@ -1,0 +1,68 @@
+{
+    "accession": "MITE0000165",
+    "quality": "medium",
+    "status": "pending",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "XHGUMDYTPFJLKYNSR4GE4XPC",
+                            "EKZKD775F36BLONCQ7EXF7ZS"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-05-14",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "PhoN",
+        "description": "Isomerase",
+        "databaseIds": [
+            "genpept:UPG58743.1",
+            "mibig:new606"
+        ],
+        "references": [
+            "doi:10.1021/acs.orglett.2c01050"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Other"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[H][C@@:5]1([#8:21])[#6:2](-[#6:1])=[#6:4]-[#6:7](=[O:3])-[#6:14](-[#6:17](=[O:13])-[c:18]2[c:15](-[#8:9])[c:10][c:6][c:11][c:16]2-[#8:20])=[#6:8]1-[#6:12]-[#8:19]>>[#6:1]-[#6@@H:2]-1-[#6:4]-[#6:7](=[O:3])-[#6:14](-[#6:17](=[O:13])-[c:18]2[c:15](-[#8:9])[c:10][c:6][c:11][c:16]2-[#8:20])=[#6:8](-[#6:12]-[#8:19])-[#6:5]-1=[O:21] |r,c:4,19,t:39|",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "CC1=CC(=O)C(C(=O)c2c(O)cccc2O)=C(CO)[C@@H]1O",
+                    "products": [
+                        "C[C@@H]1CC(=O)C(C(=O)c2c(O)cccc2O)=C(CO)C1=O"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "Heterologous expression"
+                    ],
+                    "references": [
+                        "doi:10.1021/acs.orglett.2c01050"
+                    ]
+                }
+            ]
+        }
+    ]
+}

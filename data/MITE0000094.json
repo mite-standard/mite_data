@@ -1,0 +1,70 @@
+{
+    "accession": "MITE0000094",
+    "quality": "medium",
+    "status": "pending",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "Z4WHVO6K4QR4NSPFS3BTTXEO",
+                            "SDAWYQYFQDDVDNDD7ZO2XI6Z"
+                        ],
+                        "reviewers": [
+                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                        ],
+                        "date": "2024-03-19",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "TnmK2",
+        "description": "Iterative cofactorless dioxygenase",
+        "databaseIds": [
+            "genpept:AME18011.1",
+            "mibig:BGC0001378"
+        ],
+        "references": [
+            "pubmed:37945897"
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Dioxygenation"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[H][C@:3]12[#6@H:6]-3[C:15]#[C:14]\\[#6:13]=[#6:12]/[C:11]#[C:10][#6@H:5](-[#7:1]-[c:29]4[c:28]1[c:27][c:26](-[#8:30])[c:23]1-[#6:22](=[O:31])-[c:19]5[c:18][c:17][c:16][c:21][c:20]5-[#6:25](=[O:32])-[c:24]41)-[#6:4]2=[#6:9](-[#6:34])-[#6:8]=[#6:7]-3-[#8:2]-[#6:33]>>[#6:33]-[#8:2]-[#6:7](=[O:35])\\[#6:8]=[#6:9](/[#6:34])[C@@:4]12[#8:37][C@@:3]11[#6@H:6](-[#8:36])[C:15]#[C:14]\\[#6:13]=[#6:12]/[C:11]#[C:10][#6@@H:5]2-[#7:1]-[c:29]2[c:28]1[c:27][c:26](-[#8:30])[c:23]1-[#6:22](=[O:31])-[c:19]3[c:18][c:17][c:16][c:21][c:20]3-[#6:25](=[O:32])-[c:24]21 |c:5,36,55,t:33|",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "COC1=CC(C)=C2[C@@H]3C#CC=CC#C[C@H]1[C@H]2c1cc(O)c2c(c1N3)C(=O)c1ccccc1C2=O",
+                    "products": [
+                        "COC(=O)/C=C(\\C)[C@@]12O[C@]13c1cc(O)c4c(c1N[C@H]2C#CC=CC#C[C@H]3O)C(=O)c1ccccc1C4=O"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "In vitro assay",
+                        "Site-directed mutagenesis",
+                        "Knock-out studies"
+                    ],
+                    "references": [
+                        "pubmed:37945897"
+                    ]
+                }
+            ]
+        }
+    ]
+}
