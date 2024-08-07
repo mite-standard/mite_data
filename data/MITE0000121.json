@@ -26,14 +26,15 @@
     "enzyme": {
         "name": "abmB",
         "description": "L-Ornithine N(5)-oxygenase",
-        "databaseIds": [
-            "uniprot:I1ZAY9",
-            "mibig:BGC0002300"
-        ],
         "references": [
             "doi:10.1016/j.jbc.2023.104573",
             "url:https://www.uniprot.org/uniprotkb/I1ZAY9/entry"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "I1ZAY9",
+            "genpept": "AFJ20768.1",
+            "mibig": "BGC0002300"
+        }
     },
     "reactions": [
         {

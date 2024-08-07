@@ -25,13 +25,14 @@
     "enzyme": {
         "name": "SacF",
         "description": "SAM-dependent methyltransferase",
-        "databaseIds": [
-            "genpept:AAL33761.1",
-            "mibig:BGC0000421"
-        ],
         "references": [
             "doi:10.1111/j.1365-2958.2004.04433.x"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "Q5JCL5",
+            "genpept": "AAL33761.1",
+            "mibig": "BGC0000421"
+        }
     },
     "reactions": [
         {

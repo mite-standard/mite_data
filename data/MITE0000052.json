@@ -25,16 +25,16 @@
     "enzyme": {
         "name": "BotC",
         "description": "Thiazole heterocyclisation-catalyzing YacO protein from Streptomyces sp. BC16019",
-        "databaseIds": [
-            "genpept:AFV25482.1",
-            "uniprot:K4MJT7",
-            "mibig:BGC0000469"
-        ],
         "references": [
             "doi:10.1021/jacs.7b09898",
             "doi:10.1039/d0np00097c",
             "doi:10.1021/jacs.7b09899"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "K4MJT7",
+            "genpept": "AFV25482.1",
+            "mibig": "BGC0000469"
+        }
     },
     "reactions": [
         {

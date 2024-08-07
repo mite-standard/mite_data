@@ -26,13 +26,13 @@
     "enzyme": {
         "name": "PhoG",
         "description": "Anthrone oxygenase",
-        "databaseIds": [
-            "genpept:UPG58736.1",
-            "mibig:new606"
-        ],
         "references": [
             "doi:10.1021/acs.orglett.2c01050"
-        ]
+        ],
+        "databaseIds": {
+            "genpept": "UPG58736.1",
+            "mibig": "new606"
+        }
     },
     "reactions": [
         {

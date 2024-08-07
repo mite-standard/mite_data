@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "KtzQ",
         "description": "Flavin-dependent halogenase",
-        "databaseIds": [
-            "genpept:ABV56597.1",
-            "mibig:BGC0000378"
-        ],
         "references": [
             "doi:10.1021/ja806467a"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A8CF75",
+            "genpept": "ABV56597.1",
+            "mibig": "BGC0000378"
+        }
     },
     "reactions": [
         {

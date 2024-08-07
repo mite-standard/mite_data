@@ -25,14 +25,14 @@
     "enzyme": {
         "name": "BotOMT",
         "description": "O-methylating SAM-dependent carboxyl methyltransferase from Streptomyces sp. BC16019",
-        "databaseIds": [
-            "uniprot:K4MJZ1",
-            "genpept:AFV25479.1",
-            "mibig:BGC0000469"
-        ],
         "references": [
             "doi:10.1039/d0np00097c"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "K4MJZ1",
+            "genpept": "AFV25479.1",
+            "mibig": "BGC0000469"
+        }
     },
     "reactions": [
         {

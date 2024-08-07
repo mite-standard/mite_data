@@ -25,13 +25,14 @@
     "enzyme": {
         "name": "RebC",
         "description": "Putative FAD-monooxygenase",
-        "databaseIds": [
-            "uniprot:Q8KI25",
-            "mibig:BGC0000821"
-        ],
         "references": [
             "doi:10.1021/ja063898m"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "Q8KI25",
+            "genpept": "AAN01210.1",
+            "mibig": "BGC0000821"
+        }
     },
     "reactions": [
         {

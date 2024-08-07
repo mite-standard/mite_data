@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "clmM2",
         "description": "O-methyltransferase",
-        "databaseIds": [
-            "genpept:CCC55909.1",
-            "mibig:BGC0000973"
-        ],
         "references": [
             "doi:10.1016/j.chembiol.2012.01.014"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "H1ZYV4",
+            "genpept": "CCC55909.1",
+            "mibig": "BGC0000973"
+        }
     },
     "reactions": [
         {

@@ -25,15 +25,15 @@
     "enzyme": {
         "name": "BotAH",
         "description": "bottromycin follower-peptide cleaving aminohydrolase from Streptomyces sp. BC16019",
-        "databaseIds": [
-            "genpept:AFV25486.1",
-            "uniprot:K4MV58",
-            "mibig:BGC0000469"
-        ],
         "references": [
             "doi:10.1021/jacs.8b12231",
             "doi:10.1039/d0np00097c"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "K4MV58",
+            "genpept": "AFV25486.1",
+            "mibig": "BGC0000469"
+        }
     },
     "reactions": [
         {

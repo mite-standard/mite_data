@@ -28,13 +28,13 @@
     "enzyme": {
         "name": "avaA",
         "description": "cRW tRNA-dependent cyclodipeptide synthase",
-        "databaseIds": [
-            "genpept:UZP48213.1",
-            "mibig:new172"
-        ],
         "references": [
             "doi:10.1038/s41589-022-01246-6"
-        ]
+        ],
+        "databaseIds": {
+            "genpept": "UZP48213.1",
+            "mibig": "new172"
+        }
     },
     "reactions": [
         {

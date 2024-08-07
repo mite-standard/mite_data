@@ -27,13 +27,14 @@
     "enzyme": {
         "name": "pntE",
         "description": "Baeyer-Villiger monooxygenase",
-        "databaseIds": [
-            "uniprot:E3VWI7",
-            "mibig:BGC0000653"
-        ],
         "references": [
             "doi:10.1021/bi1019786"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "E3VWI7",
+            "genpept": "ADO85575.1",
+            "mibig": "BGC0000653"
+        }
     },
     "reactions": [
         {

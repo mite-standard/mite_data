@@ -26,23 +26,23 @@
     "enzyme": {
         "name": "McjB",
         "description": "Lassopeptide ATP-dependent protease (B-protein, cysteine protease-like)",
-        "databaseIds": [
-            "genpept:AAD28495.1",
-            "uniprot:Q9X2V8",
-            "mibig:BGC0000581"
-        ],
         "references": [
             "doi:10.1002/cbic.201200016",
             "doi:10.1128/JB.181.8.2659-2662.1999"
         ],
+        "databaseIds": {
+            "uniprot": "Q9X2V8",
+            "genpept": "AAD28495.1",
+            "mibig": "BGC0000581"
+        },
         "auxiliaryEnzymes": [
             {
                 "name": "McjC",
                 "description": "Lassopeptide ATP-dependent lactam synthetase. Required for precursor cleavage function.",
-                "databaseIds": [
-                    "genpept:AAD28496.1",
-                    "uniprot:Q9X2V9"
-                ]
+                "databaseIds": {
+                    "uniprot": "Q9X2V9",
+                    "genpept": "AAD28496.1"
+                }
             }
         ]
     },

@@ -25,15 +25,15 @@
     "enzyme": {
         "name": "BotH",
         "description": "bottromycin epimerase from Streptomyces sp. BC16019",
-        "databaseIds": [
-            "genpept:AFV25485.1",
-            "uniprot:K4MHV9",
-            "mibig:BGC0000469"
-        ],
         "references": [
             "doi:10.1038/s41589-020-0624-8",
             "doi:10.1039/d0np00097c"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "K4MHV9",
+            "genpept": "AFV25485.1",
+            "mibig": "BGC0000469"
+        }
     },
     "reactions": [
         {

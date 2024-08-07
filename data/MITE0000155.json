@@ -25,13 +25,13 @@
     "enzyme": {
         "name": "SrsB",
         "description": "methyltransferase acting on phenolic lipids to yield alkylresorcinol methyl ethers",
-        "databaseIds": [
-            "genpept:BAG12889.1",
-            "mibig:new600"
-        ],
         "references": [
             "doi:10.1039/c9ob00807a"
-        ]
+        ],
+        "databaseIds": {
+            "genpept": "BAG12889.1",
+            "mibig": "new600"
+        }
     },
     "reactions": [
         {

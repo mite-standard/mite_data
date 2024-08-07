@@ -26,16 +26,17 @@
     "enzyme": {
         "name": "GtfD",
         "description": "Transfers vancosamine onto glucose on hpg4 of vancomycin pseudoaglycone.",
-        "databaseIds": [
-            "genpept:AEI58872.1",
-            "mibig:BGC0000455"
-        ],
         "references": [
             "doi:10.1186/1471-2164-15-363",
             "doi:10.1021/bi036130c",
             "doi:10.1016/S1074-5521(02)00270-3",
             "doi:10.1021/bi010050w"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "P96564",
+            "genpept": "AEI58872.1",
+            "mibig": "BGC0000455"
+        }
     },
     "reactions": [
         {

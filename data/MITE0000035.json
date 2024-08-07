@@ -25,14 +25,15 @@
     "enzyme": {
         "name": "Orf2*",
         "description": "Deacetylates N-acetylglucosaminyl residue on Hpg4 of the teicoplanin precursor.",
-        "databaseIds": [
-            "uniprot:Q70AY4",
-            "mibig:BGC0000440"
-        ],
         "references": [
             "doi:10.1002/cbic.200600308",
             "doi:10.1016/J.CHEMBIOL.2008.05.009"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "Q70AY4",
+            "genpept": "CAE53365.1",
+            "mibig": "BGC0000440"
+        }
     },
     "reactions": [
         {

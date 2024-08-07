@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "borH",
         "description": "Flavin-dependent halogenase",
-        "databaseIds": [
-            "uniprot:M9QSI0",
-            "mibig:BGC0001335"
-        ],
         "references": [
             "doi:10.1002/cbic.201900667"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "M9QSI0",
+            "genpept": "AGI62217.1",
+            "mibig": "BGC0001335"
+        }
     },
     "reactions": [
         {

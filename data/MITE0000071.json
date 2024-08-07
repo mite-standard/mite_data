@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "bmp2",
         "description": "Flavin-dependent halogenase",
-        "databaseIds": [
-            "uniprot:U6BGC3",
-            "mibig:BGC0000891"
-        ],
         "references": [
             "doi:10.1038/nchembio.1564"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "U6BGC3",
+            "genpept": "AHA34035.1",
+            "mibig": "BGC0000891"
+        }
     },
     "reactions": [
         {

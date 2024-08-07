@@ -27,13 +27,13 @@
     "enzyme": {
         "name": "OrfA",
         "description": " Halogenase, responsible for introducing halogen atoms into specific positions of the albofungin molecule, resulting in chloroalbofungin and bromoalbofungin variants.",
-        "databaseIds": [
-            "genpept:UUL71895.1",
-            "mibig:BGC0002841"
-        ],
         "references": [
             "doi:10.1128/aem.00806-22"
-        ]
+        ],
+        "databaseIds": {
+            "genpept": "UUL71895.1",
+            "mibig": "BGC0002841"
+        }
     },
     "reactions": [
         {

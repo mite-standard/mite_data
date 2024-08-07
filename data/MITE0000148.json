@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "ptlE",
         "description": "Baeyer-Villiger monooxygenase",
-        "databaseIds": [
-            "genpept:BAC70705.1",
-            "mibig:new291"
-        ],
         "references": [
             "doi:10.1021/bi060419n"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "Q82IY8",
+            "genpept": "BAC70705.1",
+            "mibig": "new291"
+        }
     },
     "reactions": [
         {

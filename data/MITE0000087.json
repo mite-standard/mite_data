@@ -25,13 +25,14 @@
     "enzyme": {
         "name": "RslO4",
         "description": "Monooxygenase in the Rishirilide Biosynthesis pathway forming a para-quinone substructure",
-        "databaseIds": [
-            "uniprot:W8QLE0",
-            "mibig:BGC0001179"
-        ],
         "references": [
             "pubmed:33763824"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "W8QLE0",
+            "genpept": "AHL46722.1",
+            "mibig": "BGC0001179"
+        }
     },
     "reactions": [
         {

@@ -28,13 +28,14 @@
     "enzyme": {
         "name": "ThnJ",
         "description": "Aminotransferase",
-        "databaseIds": [
-            "genpept:AMR44310.1",
-            "mibig:new017"
-        ],
         "references": [
             "doi:10.1002/cbic.201500670"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A142I758",
+            "genpept": "AMR44310.1",
+            "mibig": "new017"
+        }
     },
     "reactions": [
         {

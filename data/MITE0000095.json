@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "TnmK1",
         "description": "Catalyzes D-ring-forming Michael addition",
-        "databaseIds": [
-            "genpept:AME18010.1",
-            "mibig:BGC0001378"
-        ],
         "references": [
             "pubmed:36279548"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A125SA14",
+            "genpept": "AME18010.1",
+            "mibig": "BGC0001378"
+        }
     },
     "reactions": [
         {

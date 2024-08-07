@@ -25,13 +25,14 @@
     "enzyme": {
         "name": "OxyA",
         "description": "Introduces the second biaryl-ether crosslink between bht2 and hpg4 in the vancomycin precursor.",
-        "databaseIds": [
-            "genpept:AEI58868.1",
-            "mibig:BGC0000455"
-        ],
         "references": [
             "doi:10.1021/acschembio.7b00456"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "F8STX6",
+            "genpept": "AEI58868.1",
+            "mibig": "BGC0000455"
+        }
     },
     "reactions": [
         {

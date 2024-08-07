@@ -26,13 +26,13 @@
     "enzyme": {
         "name": "PhoL",
         "description": "Short-chain dehydrogenases/reductase",
-        "databaseIds": [
-            "genpept:UPG58741.1",
-            "mibig:new606"
-        ],
         "references": [
             "doi:10.1021/acs.orglett.2c01050"
-        ]
+        ],
+        "databaseIds": {
+            "genpept": "UPG58741.1",
+            "mibig": "new606"
+        }
     },
     "reactions": [
         {

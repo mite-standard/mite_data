@@ -27,13 +27,14 @@
     "enzyme": {
         "name": "AetF",
         "description": "Single component flavin-dependent halogenase",
-        "databaseIds": [
-            "uniprot:A0A861B9Z9",
-            "mibig:BGC0002643"
-        ],
         "references": [
             "doi:10.1021/jacs.1c12778"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A861B9Z9",
+            "genpept": "QNL15176.1",
+            "mibig": "BGC0002643"
+        }
     },
     "reactions": [
         {

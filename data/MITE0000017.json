@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "MtmW",
         "description": "ketoreductase",
-        "databaseIds": [
-            "genpept:CAK50787.1",
-            "mibig:BGC0000247"
-        ],
         "references": [
             "doi:10.1002/anie.201910241"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "Q194Q1",
+            "genpept": "CAK50787.1",
+            "mibig": "BGC0000247"
+        }
     },
     "reactions": [
         {

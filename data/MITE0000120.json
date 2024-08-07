@@ -28,13 +28,14 @@
     "enzyme": {
         "name": "ZopL9",
         "description": "AsaB-like alphaKGDD",
-        "databaseIds": [
-            "genpept:QTE75992.1",
-            "mibig:BGC0002224"
-        ],
         "references": [
             "doi:10.1039/d0sc04309e"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A7R6QSV0",
+            "genpept": "QTE75992.1",
+            "mibig": "BGC0002224"
+        }
     },
     "reactions": [
         {

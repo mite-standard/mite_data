@@ -26,15 +26,16 @@
     "enzyme": {
         "name": "tAtf",
         "description": "Transfers acyl groups from acyl-CoA onto the glucosaminyl residue on hpg4 of the teicoplanin precursor.",
-        "databaseIds": [
-            "uniprot:Q70AY4",
-            "mibig:BGC0000440"
-        ],
         "references": [
             "doi:10.1016/s1074-5521(04)00002-x",
             "doi:10.1021/ja0735857",
             "doi:10.1016/j.chembiol.2004.12.005"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "Q70AY4",
+            "genpept": "CAE53365.1",
+            "mibig": "BGC0000440"
+        }
     },
     "reactions": [
         {

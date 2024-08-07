@@ -25,15 +25,16 @@
     "enzyme": {
         "name": "OxyC",
         "description": "P450 monooxygenase, that introduces the second crosslink (biaryl ether) between hpg5 and dhpg7 of the balhimycin precursor.",
-        "databaseIds": [
-            "genpept:AEI58870.1",
-            "mibig:BGC0000311"
-        ],
         "references": [
             "doi:10.1016/j.jbiotec.2006.04.009",
             "doi:10.1128/AAC.43.7.1565",
             "pubmed:12404385"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "F8STX8",
+            "genpept": "AEI58870.1",
+            "mibig": "BGC0000311"
+        }
     },
     "reactions": [
         {

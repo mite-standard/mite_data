@@ -25,13 +25,14 @@
     "enzyme": {
         "name": "NapB2",
         "description": "putative monooxygenase",
-        "databaseIds": [
-            "genpept:ABS50452.1",
-            "mibig:BGC0001079"
-        ],
         "references": [
             "doi:10.1074/jbc.M611046200"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A7KGZ3",
+            "genpept": "ABS50452.1",
+            "mibig": "BGC0001079"
+        }
     },
     "reactions": [
         {

@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "clmAH",
         "description": "amidohydrolase",
-        "databaseIds": [
-            "genpept:CCC55916.1",
-            "mibig:BGC0000973"
-        ],
         "references": [
             "doi:10.1016/j.chembiol.2012.01.014"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "H1ZYT5",
+            "genpept": "CCC55916.1",
+            "mibig": "BGC0000973"
+        }
     },
     "reactions": [
         {

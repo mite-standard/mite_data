@@ -25,13 +25,13 @@
     "enzyme": {
         "name": "PeuJ",
         "description": "FMN-dependent monooxygenase",
-        "databaseIds": [
-            "genpept:ATW47938.1",
-            "mibig:new286"
-        ],
         "references": [
             "doi:10.1007/s00253-023-12385-8"
-        ]
+        ],
+        "databaseIds": {
+            "genpept": "ATW47938.1",
+            "mibig": "new286"
+        }
     },
     "reactions": [
         {

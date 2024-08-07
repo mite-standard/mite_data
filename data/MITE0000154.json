@@ -27,13 +27,14 @@
     "enzyme": {
         "name": "PeuJ",
         "description": "(hydroxylation of peucemycin)",
-        "databaseIds": [
-            "genpept:AWH12915.1",
-            "mibig:new490"
-        ],
         "references": [
             "doi:10.1007/s00253-023-12385-8"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A2S1P8Q4",
+            "genpept": "AWH12915.1",
+            "mibig": "new490"
+        }
     },
     "reactions": [
         {

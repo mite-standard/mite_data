@@ -28,13 +28,14 @@
     "enzyme": {
         "name": "PumK",
         "description": "Carboxylate-Amine Ligase",
-        "databaseIds": [
-            "uniprot:A0A2R4FXX8",
-            "mibig:BGC0001476"
-        ],
         "references": [
             "doi:10.1016/j.chembiol.2018.02.008"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A2R4FXX8",
+            "genpept": "AVT42380.1",
+            "mibig": "BGC0001476"
+        }
     },
     "reactions": [
         {

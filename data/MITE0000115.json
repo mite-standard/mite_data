@@ -26,41 +26,46 @@
     "enzyme": {
         "name": "NgnP2",
         "description": "Hydroxylation at c-18",
-        "databaseIds": [
-            "genpept:AXG22415.1",
-            "mibig:BGC0002024"
-        ],
         "references": [
             "doi:10.1021/acschembio.9b01034"
         ],
+        "databaseIds": {
+            "uniprot": "A0A3S7PZF3",
+            "genpept": "AXG22415.1",
+            "mibig": "BGC0002024"
+        },
         "auxiliaryEnzymes": [
             {
                 "name": "NgnN4",
                 "description": "NgnN4 is responsible for attaching the pyrrole moiety at hydroxyl group at the 9-position of substrate.",
-                "databaseIds": [
-                    "genpept:AXG22420.1"
-                ]
+                "databaseIds": {
+                    "uniprot": "A0A3S7PZH4",
+                    "genpept": "AXG22420.1"
+                }
             },
             {
                 "name": "NgnO3",
                 "description": "NgnO3 catalyzes the formation of the ether bridge moiety at position C8/C13 of the substrate molecules.",
-                "databaseIds": [
-                    "genpept:AXG22416.1"
-                ]
+                "databaseIds": {
+                    "uniprot": "A0A3S7PZF2",
+                    "genpept": "AXG22416.1"
+                }
             },
             {
                 "name": "NgnP1",
                 "description": "Hydroxylation at c-2 ",
-                "databaseIds": [
-                    "genpept:AXG22409.1"
-                ]
+                "databaseIds": {
+                    "uniprot": "A0A3S7Q0I4",
+                    "genpept": "AXG22409.1"
+                }
             },
             {
                 "name": "NgnD",
                 "description": "[6+4] cycloaddition",
-                "databaseIds": [
-                    "genpept:AXG22404.1"
-                ]
+                "databaseIds": {
+                    "uniprot": "A0A3S7PZF0",
+                    "genpept": "AXG22404.1"
+                }
             }
         ]
     },

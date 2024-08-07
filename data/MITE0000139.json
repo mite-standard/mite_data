@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "ankD",
         "description": "pyridoxal-phosphate dependent enzyme ",
-        "databaseIds": [
-            "genpept:RHZ63463.1",
-            "mibig:new078"
-        ],
         "references": [
             "doi:10.1038/s41589-022-01246-6"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A397HQN2",
+            "genpept": "RHZ63463.1",
+            "mibig": "new078"
+        }
     },
     "reactions": [
         {

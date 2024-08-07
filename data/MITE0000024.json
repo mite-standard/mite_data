@@ -27,13 +27,14 @@
     "enzyme": {
         "name": "XanH",
         "description": "FAD Halogenase",
-        "databaseIds": [
-            "genpept:ADE22292.1",
-            "mibig:BGC0000279"
-        ],
         "references": [
             "doi:10.1128/AEM.01225-20"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "I1SKW0",
+            "genpept": "ADE22292.1",
+            "mibig": "BGC0000279"
+        }
     },
     "reactions": [
         {

@@ -25,16 +25,16 @@
     "enzyme": {
         "name": "BotRMT1",
         "description": "Bottromycin-precursor acting rSAM methyltransferase from Streptomyces sp. BC16019.",
-        "databaseIds": [
-            "genpept:AFV25480.1",
-            "uniprot:K4MHV5",
-            "mibig:BGC0000469"
-        ],
         "references": [
             "doi:10.1039/C2SC21190D",
             "doi:10.1039/d0np00097c",
             "doi:10.1016/j.chembiol.2012.08.013"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "K4MHV5",
+            "genpept": "AFV25480.1",
+            "mibig": "BGC0000469"
+        }
     },
     "reactions": [
         {

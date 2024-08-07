@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "TrlE",
         "description": "Combines hydroxylation, decarboxylation and oxidation to generate tropolone from dihydrotropone-2-carboxylate",
-        "databaseIds": [
-            "uniprot:A0A2S1JZI9",
-            "mibig:BGC0001487"
-        ],
         "references": [
             "doi:10.1039/D4SC01715C"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A2S1JZI9",
+            "genpept": "AWF83809.1",
+            "mibig": "BGC0001487"
+        }
     },
     "reactions": [
         {

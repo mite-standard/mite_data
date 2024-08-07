@@ -25,13 +25,14 @@
     "enzyme": {
         "name": "MdpB1",
         "description": "C-methyltransferase",
-        "databaseIds": [
-            "genpept:ABY66020.1",
-            "mibig:BGC0001008"
-        ],
         "references": [
             "doi:10.1021/ja1050814"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "B0BLM5",
+            "genpept": "ABY66020.1",
+            "mibig": "BGC0001008"
+        }
     },
     "reactions": [
         {

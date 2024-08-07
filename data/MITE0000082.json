@@ -25,13 +25,14 @@
     "enzyme": {
         "name": "AgqC",
         "description": "alkylhydroxyhydroquinone methyltransferase",
-        "databaseIds": [
-            "uniprot:I0HIZ1",
-            "mibig:BGC0001077"
-        ],
         "references": [
             "doi:10.1002/cbic.201000628"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "I0HIZ1",
+            "genpept": "BAL92978.1",
+            "mibig": "BGC0001077"
+        }
     },
     "reactions": [
         {

@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "TrlF",
         "description": "Cleaves of CoA from 2-hydroxycyclohepta-1,4,6-triene-1-carboxyl-CoA",
-        "databaseIds": [
-            "uniprot:A0A2S1JZI6",
-            "mibig:BGC0001487"
-        ],
         "references": [
             "doi:10.1039/D4SC01715C"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A2S1JZI6",
+            "genpept": "AWF83810.1",
+            "mibig": "BGC0001487"
+        }
     },
     "reactions": [
         {

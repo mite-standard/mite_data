@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "CYP158C1",
         "description": "Cytochrome P450",
-        "databaseIds": [
-            "genpept:AEW97391.1",
-            "mibig:new420"
-        ],
         "references": [
             "doi:10.3762/bjoc.18.113"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "F8K0I8",
+            "genpept": "AEW97391.1",
+            "mibig": "new420"
+        }
     },
     "reactions": [
         {

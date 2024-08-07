@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "MtmOIV",
         "description": "Oxygenase",
-        "databaseIds": [
-            "genpept:CAK50794.2",
-            "mibig:BGC0000247"
-        ],
         "references": [
             "doi:10.1021/ja055750t"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "Q194P4",
+            "genpept": "CAK50794.2",
+            "mibig": "BGC0000247"
+        }
     },
     "reactions": [
         {

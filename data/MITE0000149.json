@@ -25,13 +25,14 @@
     "enzyme": {
         "name": "MciB",
         "description": "P450 installing crosslink",
-        "databaseIds": [
-            "genpept:SCL44650.1",
-            "mibig:new400"
-        ],
         "references": [
             "doi:10.1002/anie.202311533"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A1C6TS88",
+            "genpept": "SCL44650.1",
+            "mibig": "new400"
+        }
     },
     "reactions": [
         {

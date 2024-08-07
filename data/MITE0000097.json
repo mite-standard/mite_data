@@ -28,13 +28,14 @@
     "enzyme": {
         "name": "PumI",
         "description": "Oxidoreductase",
-        "databaseIds": [
-            "uniprot:A0A2R4FXY7",
-            "mibig:BGC0001476"
-        ],
         "references": [
             "doi:10.1016/j.chembiol.2018.02.008"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A2R4FXY7",
+            "genpept": "AVT42378.1",
+            "mibig": "BGC0001476"
+        }
     },
     "reactions": [
         {

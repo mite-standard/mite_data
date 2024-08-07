@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "TPS21",
         "description": "",
-        "databaseIds": [
-            "genpept:AGK82800.1",
-            "mibig:BGC0001322"
-        ],
         "references": [
             "doi:10.1371/journal.pone.0119302"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "R9R6P6",
+            "genpept": "AGK82800.1",
+            "mibig": "BGC0001322"
+        }
     },
     "reactions": [
         {
