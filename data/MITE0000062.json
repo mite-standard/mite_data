@@ -25,13 +25,14 @@
     "enzyme": {
         "name": "cotB4",
         "description": "Cytochrome P450",
-        "databaseIds": [
-            "genpept:BAI44340.1",
-            "mibig:BGC0000677"
-        ],
         "references": [
             "pubmed:19635410"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "C9K1X7",
+            "genpept": "BAI44340.1",
+            "mibig": "BGC0000677"
+        }
     },
     "reactions": [
         {

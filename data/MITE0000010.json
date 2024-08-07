@@ -27,13 +27,14 @@
     "enzyme": {
         "name": "meiE",
         "description": "Cytochrome P450",
-        "databaseIds": [
-            "genpept:AAM97314.1",
-            "mibig:BGC0000093"
-        ],
         "references": [
             "pubmed:20348291"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "Q6YL50",
+            "genpept": "AAM97314.1",
+            "mibig": "BGC0000093"
+        }
     },
     "reactions": [
         {

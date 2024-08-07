@@ -27,13 +27,14 @@
     "enzyme": {
         "name": "PhmJ",
         "description": "halogenase",
-        "databaseIds": [
-            "genpept:AMH40426.1",
-            "mibig:BGC0001350"
-        ],
         "references": [
             "doi:10.1002/cbic.201500467"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A125SL25",
+            "genpept": "AMH40426.1",
+            "mibig": "BGC0001350"
+        }
     },
     "reactions": [
         {

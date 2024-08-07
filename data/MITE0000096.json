@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "TnmJ",
         "description": "Cofactorless oxygenase",
-        "databaseIds": [
-            "genpept:AME18009.1",
-            "mibig:BGC0001378"
-        ],
         "references": [
             "pubmed:37945897"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A125SA13",
+            "genpept": "AME18009.1",
+            "mibig": "BGC0001378"
+        }
     },
     "reactions": [
         {

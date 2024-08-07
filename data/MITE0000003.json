@@ -25,13 +25,14 @@
     "enzyme": {
         "name": "aviG6",
         "description": "putative methyltransferase",
-        "databaseIds": [
-            "genpept:AAK83186.1",
-            "mibig:BGC0000026"
-        ],
         "references": [
             "pubmed:15489167"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "Q93KV9",
+            "genpept": "AAK83186.1",
+            "mibig": "BGC0000026"
+        }
     },
     "reactions": [
         {

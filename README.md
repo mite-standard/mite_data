@@ -10,13 +10,12 @@ For more information, see the README of the [organisation page ](https://github.
 
 ### with `conda` from GitHub
 
-- `conda create --name mite_data python=3.10`
-- `conda activate mite_data`
-- `conda install -c conda-forge -c schrodinger pymol-bundle`
 - `pip install alphafetcher`
+- `sudo snap install pymol-oss`
 
 ## Quick-start
 
-- `python main.py`
+- Download the enzyme pdbs from AlphaFoldDB: `python main.py`
+- Generate png images with PyMol: `./generate_png.sh`
 
-This will create/update all protein image
+This will create all protein images

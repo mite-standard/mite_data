@@ -27,13 +27,14 @@
     "enzyme": {
         "name": "pntM",
         "description": "Cytochrome p450",
-        "databaseIds": [
-            "uniprot:E3VWI3",
-            "mibig:BGC0000653"
-        ],
         "references": [
             "pubmed:21284395"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "E3VWI3",
+            "genpept": "ADO85571.1",
+            "mibig": "BGC0000653"
+        }
     },
     "reactions": [
         {

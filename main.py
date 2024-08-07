@@ -4,7 +4,6 @@ import json
 from pathlib import Path
 
 from alphafetcher import AlphaFetcher
-import pymol2
 
 dir_data = Path(__file__).parent.joinpath("data")
 dir_pdb = Path(__file__).parent.joinpath("pdb")
@@ -54,23 +53,8 @@ def download_pdbs() -> None:
     dir_pdb.joinpath("pdb_files").rmdir()
 
 
-def store_pngs() -> None:
-    """Use pymol to generate png images from pdb files in pdb dictionary"""
-    for infile in dir_pdb.iterdir():
-        outfile = dir_img.joinpath(f'{infile.stem}.png')
-        if not outfile.exists():
-            with pymol2.PyMOL() as pymol:
-                pymol.cmd.load(str(infile))
-                pymol.cmd.bg_color("white")
-                pymol.cmd.hide("everything")
-                pymol.cmd.show("cartoon")
-                pymol.cmd.spectrum("count", "rainbow", selection="all")
-                pymol.cmd.png(str(outfile), dpi=600)
-
-
 def main():
     download_pdbs()
-    store_pngs()
 
 
 if __name__ == "__main__":

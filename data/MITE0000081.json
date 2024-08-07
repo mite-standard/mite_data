@@ -25,13 +25,14 @@
     "enzyme": {
         "name": "AgqB",
         "description": "alkylresorcinol monooxygenase",
-        "databaseIds": [
-            "uniprot:I0HIZ0",
-            "mibig:BGC0001077"
-        ],
         "references": [
             "doi:10.1002/cbic.201000628"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "I0HIZ0",
+            "genpept": "BAL92977.1",
+            "mibig": "BGC0001077"
+        }
     },
     "reactions": [
         {

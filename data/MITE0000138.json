@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "ankE",
         "description": "NRPS independent siderophore synthetase",
-        "databaseIds": [
-            "genpept:RHZ63459.1",
-            "mibig:new078"
-        ],
         "references": [
             "doi:10.1038/s41589-022-01246-6"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A397HK89",
+            "genpept": "RHZ63459.1",
+            "mibig": "new078"
+        }
     },
     "reactions": [
         {

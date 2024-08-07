@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "SsfM2",
         "description": "O-methyltransferase",
-        "databaseIds": [
-            "genpept:ADE34498.1",
-            "mibig:BGC0000269"
-        ],
         "references": [
             "doi:10.1002/anie.201205426"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "D6MSW0",
+            "genpept": "ADE34498.1",
+            "mibig": "BGC0000269"
+        }
     },
     "reactions": [
         {

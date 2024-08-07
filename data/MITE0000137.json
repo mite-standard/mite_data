@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "ankG",
         "description": "ATP-grasp protein ",
-        "databaseIds": [
-            "genpept:RHZ63466.1",
-            "mibig:new078"
-        ],
         "references": [
             "doi:10.1038/s41589-022-01246-6"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A397HPF2",
+            "genpept": "RHZ63466.1",
+            "mibig": "new078"
+        }
     },
     "reactions": [
         {

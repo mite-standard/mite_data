@@ -25,15 +25,16 @@
     "enzyme": {
         "name": "OxyB",
         "description": "P450 monooxygenase, that introduces the first crosslink (biaryl ether) between hpg4 and bht6 of the balhimycin precursor.",
-        "databaseIds": [
-            "genpept:AEI58869.1",
-            "mibig:BGC0000311"
-        ],
         "references": [
             "doi:10.1016/j.jbiotec.2006.04.009",
             "doi:10.1128/AAC.43.7.1565",
             "pubmed:12404385"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "F8STX7",
+            "genpept": "AEI58869.1",
+            "mibig": "BGC0000311"
+        }
     },
     "reactions": [
         {

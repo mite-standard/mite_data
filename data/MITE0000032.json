@@ -25,13 +25,14 @@
     "enzyme": {
         "name": "SfmM2",
         "description": "SAM-dependent methyltransferase",
-        "databaseIds": [
-            "genpept:ABI22137.1",
-            "mibig:BGC0000422"
-        ],
         "references": [
             "doi:10.1128/JB.00826-07"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "B0CN31",
+            "genpept": "ABI22137.1",
+            "mibig": "BGC0000422"
+        }
     },
     "reactions": [
         {

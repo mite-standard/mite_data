@@ -25,15 +25,16 @@
     "enzyme": {
         "name": "GtfB",
         "description": "Adds N-acetylglucosamine or N-acylglucosamine to Hpg4 of the teicoplanin aglycone.",
-        "databaseIds": [
-            "uniprot:Q6ZZI3",
-            "mibig:BGC0000440"
-        ],
         "references": [
             "doi:10.1099/mic.0.26507-0",
             "doi:10.1016/s1074-5521(04)00002-x",
             "doi:10.1021/ja0735857"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "Q6ZZI3",
+            "genpept": "CAE53364.1",
+            "mibig": "BGC0000440"
+        }
     },
     "reactions": [
         {

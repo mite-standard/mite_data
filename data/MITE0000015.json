@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "MtmMII",
         "description": "C-methyltransferase",
-        "databaseIds": [
-            "genpept:CAK50790.1",
-            "mibig:BGC0000247"
-        ],
         "references": [
             "doi:10.1074/jbc.275.5.3065"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "Q194P8",
+            "genpept": "CAK50790.1",
+            "mibig": "BGC0000247"
+        }
     },
     "reactions": [
         {

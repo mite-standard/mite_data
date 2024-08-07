@@ -28,13 +28,14 @@
     "enzyme": {
         "name": "PumG",
         "description": "Amino transferase",
-        "databaseIds": [
-            "uniprot:A0A2R4FXY6",
-            "mibig:BGC0001476"
-        ],
         "references": [
             "doi:10.1016/j.chembiol.2018.02.008"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A2R4FXY6",
+            "genpept": "AVT42376.1",
+            "mibig": "BGC0001476"
+        }
     },
     "reactions": [
         {

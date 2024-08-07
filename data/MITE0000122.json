@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "abmA",
         "description": "Acetyltransferase",
-        "databaseIds": [
-            "uniprot:I1ZAY8",
-            "mibig:BGC0002300"
-        ],
         "references": [
             "doi:10.1016/j.jbc.2023.104573"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "I1ZAY8",
+            "genpept": "AFJ20767.1",
+            "mibig": "BGC0002300"
+        }
     },
     "reactions": [
         {

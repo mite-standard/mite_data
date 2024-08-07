@@ -27,13 +27,14 @@
     "enzyme": {
         "name": "meiD",
         "description": "O-methyltransferase",
-        "databaseIds": [
-            "genpept:ADC45587.1",
-            "mibig:BGC0000093"
-        ],
         "references": [
             "pubmed:20348291"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "D6C4C6",
+            "genpept": "ADC45587.1",
+            "mibig": "BGC0000093"
+        }
     },
     "reactions": [
         {

@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "PokM3",
         "description": "CoA ligase",
-        "databaseIds": [
-            "genpept:ACN64830.1",
-            "mibig:BGC0001061"
-        ],
         "references": [
             "doi:10.1002/cbic.200800823"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "C0JWB0",
+            "genpept": "ACN64830.1",
+            "mibig": "BGC0001061"
+        }
     },
     "reactions": [
         {

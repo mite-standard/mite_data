@@ -27,13 +27,14 @@
     "enzyme": {
         "name": "cldC",
         "description": "Cytochrome P450",
-        "databaseIds": [
-            "genpept:BAR97452.1",
-            "mibig:BGC0001910"
-        ],
         "references": [
             "pubmed:26507838"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A0H5B5M5",
+            "genpept": "BAR97452.1",
+            "mibig": "BGC0001910"
+        }
     },
     "reactions": [
         {

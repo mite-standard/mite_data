@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "ankA",
         "description": "cRY tRNA-dependent cyclodipeptide synthase",
-        "databaseIds": [
-            "genpept:RHZ63462.1",
-            "mibig:new078"
-        ],
         "references": [
             "doi:10.1038/s41589-022-01246-6"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A397HK51",
+            "genpept": "RHZ63462.1",
+            "mibig": "new078"
+        }
     },
     "reactions": [
         {

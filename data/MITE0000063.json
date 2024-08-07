@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "ptlD",
         "description": "Non-Heme Iron-Dependent Dehydrogenase/Oxygenase",
-        "databaseIds": [
-            "genpept:BAC70706.1",
-            "mibig:BGC0000678"
-        ],
         "references": [
             "doi:10.1021/bi1019786"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "Q82IY7",
+            "genpept": "BAC70706.1",
+            "mibig": "BGC0000678"
+        }
     },
     "reactions": [
         {

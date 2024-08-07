@@ -25,13 +25,14 @@
     "enzyme": {
         "name": "RebP",
         "description": "Cytochrome P-450",
-        "databaseIds": [
-            "uniprot:Q8KIC8",
-            "mibig:BGC0000821"
-        ],
         "references": [
             "doi:10.1021/ja9003365"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "Q8KIC8",
+            "genpept": "AAN01211.1",
+            "mibig": "BGC0000821"
+        }
     },
     "reactions": [
         {

@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "KtzR",
         "description": "Flavin-dependent halogenase",
-        "databaseIds": [
-            "uniprot:A8CF74",
-            "mibig:BGC0000378"
-        ],
         "references": [
             "doi:10.1021/ja806467a"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A8CF74",
+            "genpept": "ABV56598.1",
+            "mibig": "BGC0000378"
+        }
     },
     "reactions": [
         {

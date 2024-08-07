@@ -25,13 +25,14 @@
     "enzyme": {
         "name": "RebH",
         "description": "tryptophane halogenase",
-        "databaseIds": [
-            "uniprot:Q8KHZ8",
-            "mibig:BGC0000821"
-        ],
         "references": [
             "doi:10.1016/s1074-5521(02)00126-6"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "Q8KHZ8",
+            "genpept": "AAN01216.1",
+            "mibig": "BGC0000821"
+        }
     },
     "reactions": [
         {

@@ -25,13 +25,14 @@
     "enzyme": {
         "name": "MdpB2",
         "description": "CoA ligase",
-        "databaseIds": [
-            "genpept:ABY66018.1",
-            "mibig:BGC0001008"
-        ],
         "references": [
             "doi:10.1021/ja1050814"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "B0BLM7",
+            "genpept": "ABY66018.1",
+            "mibig": "BGC0001008"
+        }
     },
     "reactions": [
         {

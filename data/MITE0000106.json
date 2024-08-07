@@ -27,13 +27,14 @@
     "enzyme": {
         "name": "MstE",
         "description": "terpene cyclase",
-        "databaseIds": [
-            "genpept:ATN39899.1",
-            "mibig:BGC0001664"
-        ],
         "references": [
             "doi:10.1002/anie.201611617"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A2D1CM82",
+            "genpept": "ATN39899.1",
+            "mibig": "BGC0001664"
+        }
     },
     "reactions": [
         {

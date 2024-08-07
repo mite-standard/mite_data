@@ -25,13 +25,14 @@
     "enzyme": {
         "name": "juiL",
         "description": "F420-dependent oxidoreductase",
-        "databaseIds": [
-            "genpept:QNL10607.1",
-            "mibig:BGC0002514"
-        ],
         "references": [
             "doi:10.1021/acs.orglett.0c02469"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A7G8Z072",
+            "genpept": "QNL10607.1",
+            "mibig": "BGC0002514"
+        }
     },
     "reactions": [
         {

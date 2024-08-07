@@ -26,20 +26,22 @@
     "enzyme": {
         "name": "TrlC",
         "description": "Oxygenase component of flavoprotein monooxygenase TrlCD, catalyzes subsequent hydroxylation from tropolone to 7-hydroxytropolone and 3,7-dihydroxytropolone",
-        "databaseIds": [
-            "uniprot:A0A2S1JZG6",
-            "mibig:BGC0001487"
-        ],
         "references": [
             "doi:10.1039/d4sc01715c"
         ],
+        "databaseIds": {
+            "uniprot": "A0A2S1JZG6",
+            "genpept": "AWF83807.1",
+            "mibig": "BGC0001487"
+        },
         "auxiliaryEnzymes": [
             {
                 "name": "TrlD",
                 "description": "Reductase component of flavoprotein monooxygenase TrlCD, reduces the flavin cofactor needed for enzyme catalysis",
-                "databaseIds": [
-                    "uniprot:A0A2S1JZG9"
-                ]
+                "databaseIds": {
+                    "uniprot": "A0A2S1JZG9",
+                    "genpept": "AWF83808.1"
+                }
             }
         ]
     },

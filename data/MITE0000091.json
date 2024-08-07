@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "CYP71BN1",
         "description": "",
-        "databaseIds": [
-            "genpept:AGK82807.1",
-            "mibig:BGC0001322"
-        ],
         "references": [
             "doi:10.1371/journal.pone.0119302"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "K4CI56",
+            "genpept": "AGK82807.1",
+            "mibig": "BGC0001322"
+        }
     },
     "reactions": [
         {

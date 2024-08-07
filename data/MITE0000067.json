@@ -25,14 +25,15 @@
     "enzyme": {
         "name": "RebD",
         "description": "Dichlorochromopyrrolate synthase",
-        "databaseIds": [
-            "uniprot:Q8KHV6",
-            "mibig:BGC0000821"
-        ],
         "references": [
             "doi:10.1016/S1074-5521(02)00126-6",
             "doi:10.1021/ja056749x"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "Q8KHV6",
+            "genpept": "AAN01209.1",
+            "mibig": "BGC0000821"
+        }
     },
     "reactions": [
         {

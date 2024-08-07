@@ -25,13 +25,14 @@
     "enzyme": {
         "name": "AgqD",
         "description": "UbiA-like prenyltransferase",
-        "databaseIds": [
-            "uniprot:I0HIZ2",
-            "mibig:BGC0001077"
-        ],
         "references": [
             "doi:10.1002/cbic.201000628"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "I0HIZ2",
+            "genpept": "BAL92979.1",
+            "mibig": "BGC0001077"
+        }
     },
     "reactions": [
         {

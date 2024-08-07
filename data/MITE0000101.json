@@ -27,13 +27,14 @@
     "enzyme": {
         "name": "cxm5",
         "description": "Cytochrome P450",
-        "databaseIds": [
-            "genpept:AVL27080.1",
-            "mibig:BGC0001485"
-        ],
         "references": [
             "doi:10.1016/j.apsb.2017.07.005"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A290YXM6",
+            "genpept": "AVL27080.1",
+            "mibig": "BGC0001485"
+        }
     },
     "reactions": [
         {

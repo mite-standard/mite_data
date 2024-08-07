@@ -27,13 +27,14 @@
     "enzyme": {
         "name": "pntD",
         "description": "Non-Heme Iron-Dependent Dehydrogenase/Oxygenase",
-        "databaseIds": [
-            "uniprot:E3VWI8",
-            "mibig:BGC0000653"
-        ],
         "references": [
             "doi:10.1021/bi1019786"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "E3VWI8",
+            "genpept": "ADO85576.1",
+            "mibig": "BGC0000653"
+        }
     },
     "reactions": [
         {

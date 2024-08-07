@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "MtmMI",
         "description": "O-methyltransferase",
-        "databaseIds": [
-            "genpept:CAK50791.1",
-            "mibig:BGC0000247"
-        ],
         "references": [
             "doi:10.1074/jbc.275.5.3065"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "Q194P7",
+            "genpept": "CAK50791.1",
+            "mibig": "BGC0000247"
+        }
     },
     "reactions": [
         {

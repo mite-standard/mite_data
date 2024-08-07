@@ -27,13 +27,14 @@
     "enzyme": {
         "name": "ScyL2",
         "description": "AsaB-like alphaKGDD",
-        "databaseIds": [
-            "genpept:QTE75998.1",
-            "mibig:BGC0002223"
-        ],
         "references": [
             "doi:10.1039/d0sc04309e"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A8A5D4W2",
+            "genpept": "QTE75998.1",
+            "mibig": "BGC0002223"
+        }
     },
     "reactions": [
         {

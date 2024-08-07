@@ -28,13 +28,14 @@
     "enzyme": {
         "name": "AetA",
         "description": "Flavin-dependent halogenase",
-        "databaseIds": [
-            "uniprot:A0A861B8S3",
-            "mibig:BGC0002643"
-        ],
         "references": [
             "doi:10.1021/jacs.1c12778"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A861B8S3",
+            "genpept": "QNL15171.1",
+            "mibig": "BGC0002643"
+        }
     },
     "reactions": [
         {

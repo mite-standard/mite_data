@@ -25,13 +25,13 @@
     "enzyme": {
         "name": "embB",
         "description": "Cytochrome P450 installing crosslink",
-        "databaseIds": [
-            "genpept:MYS84939.1",
-            "mibig:new658"
-        ],
         "references": [
             "doi:10.1101/2023.11.03.565440"
-        ]
+        ],
+        "databaseIds": {
+            "genpept": "MYS84939.1",
+            "mibig": "new658"
+        }
     },
     "reactions": [
         {

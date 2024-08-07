@@ -28,14 +28,15 @@
     "enzyme": {
         "name": "AcaR",
         "description": "NADPH-dependent oxidoreductase - reduction of 4,5-didehydroacaterin to acaterin",
-        "databaseIds": [
-            "genpept:TNB95040.1",
-            "mibig:BGC0002076"
-        ],
         "references": [
             "doi:10.1002/anie.201914154",
             "doi:10.1016/j.bmc.2006.05.039"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A5C4KWK7",
+            "genpept": "TNB95040.1",
+            "mibig": "BGC0002076"
+        }
     },
     "reactions": [
         {

@@ -26,15 +26,16 @@
     "enzyme": {
         "name": "GtfA",
         "description": "Glycosyltransferase that adds N-acetylglucosamine to Bht6 of the teicplnanin precursor.",
-        "databaseIds": [
-            "uniprot:Q6ZZJ7",
-            "mibig:BGC0000440"
-        ],
         "references": [
             "doi:10.1099/mic.0.26507-0",
             "doi:10.1021/ja0735857",
             "doi:10.1016/S1074-5521(04)00002-X"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "Q6ZZJ7",
+            "genpept": "CAE53349.1",
+            "mibig": "BGC0000440"
+        }
     },
     "reactions": [
         {

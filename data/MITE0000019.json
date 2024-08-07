@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "MtmGIII",
         "description": "glycosyltransferase",
-        "databaseIds": [
-            "genpept:CAK50789.1",
-            "mibig:BGC0000247"
-        ],
         "references": [
             "doi:10.1007/pl00008667"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "Q194P9",
+            "genpept": "CAK50789.1",
+            "mibig": "BGC0000247"
+        }
     },
     "reactions": [
         {

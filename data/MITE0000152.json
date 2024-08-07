@@ -25,13 +25,14 @@
     "enzyme": {
         "name": "ScnB",
         "description": "P450 installing crosslink",
-        "databaseIds": [
-            "genpept:AKH82808.1",
-            "mibig:new459"
-        ],
         "references": [
             "doi:10.1002/anie.202311533"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A0F7N5T9",
+            "genpept": "AKH82808.1",
+            "mibig": "new459"
+        }
     },
     "reactions": [
         {

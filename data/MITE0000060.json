@@ -27,13 +27,14 @@
     "enzyme": {
         "name": "pntI",
         "description": "Cytochrome P450",
-        "databaseIds": [
-            "uniprot:E3VWJ1",
-            "mibig:BGC0000653"
-        ],
         "references": [
             "pubmed:21284395"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "E3VWJ1",
+            "genpept": "ADO85579.1",
+            "mibig": "BGC0000653"
+        }
     },
     "reactions": [
         {

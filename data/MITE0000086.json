@@ -25,13 +25,14 @@
     "enzyme": {
         "name": "NapH1",
         "description": "Vanadium-Dependent Chloroperoxidase",
-        "databaseIds": [
-            "genpept:ABS50458.1",
-            "mibig:BGC0001079"
-        ],
         "references": [
             "doi:10.1021/ja201088k"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A7KGZ9",
+            "genpept": "ABS50458.1",
+            "mibig": "BGC0001079"
+        }
     },
     "reactions": [
         {

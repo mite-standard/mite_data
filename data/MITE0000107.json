@@ -27,13 +27,14 @@
     "enzyme": {
         "name": "Mca",
         "description": "amidase",
-        "databaseIds": [
-            "genpept:BAR97454.1",
-            "mibig:BGC0001910"
-        ],
         "references": [
             "doi:10.1007/s10295-015-1694-6"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A0H5B8U5",
+            "genpept": "BAR97454.1",
+            "mibig": "BGC0001910"
+        }
     },
     "reactions": [
         {

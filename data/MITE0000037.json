@@ -26,15 +26,16 @@
     "enzyme": {
         "name": "GtfE",
         "description": "Transfers glucose onto hpg4 in the vancomycin and teicoplanin aglycone.",
-        "databaseIds": [
-            "genpept:AEI58873.1",
-            "mibig:BGC0000455"
-        ],
         "references": [
             "doi:10.1186/1471-2164-15-363",
             "doi:10.1021/bi010050w",
             "doi:10.1016/S1074-5521(02)00270-3"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "P96565",
+            "genpept": "AEI58873.1",
+            "mibig": "BGC0000455"
+        }
     },
     "reactions": [
         {

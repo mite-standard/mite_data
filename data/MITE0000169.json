@@ -26,13 +26,13 @@
     "enzyme": {
         "name": "ProsC",
         "description": "Short-chain dehydrogenase/reductase",
-        "databaseIds": [
-            "genpept:WPM83322.1",
-            "mibig:new608"
-        ],
         "references": [
             "doi:10.1073/pnas.2310522120"
-        ]
+        ],
+        "databaseIds": {
+            "genpept": "WPM83322.1",
+            "mibig": "new608"
+        }
     },
     "reactions": [
         {

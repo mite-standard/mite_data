@@ -26,14 +26,15 @@
     "enzyme": {
         "name": "GrhO5",
         "description": "Flavoprotein monooxygenase",
-        "databaseIds": [
-            "uniprot:Q8KSX7",
-            "mibig:BGC0000230"
-        ],
         "references": [
             "pubmed:33664266",
             "pubmed:34652045"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "Q8KSX7",
+            "genpept": "AAM33672.1",
+            "mibig": "BGC0000230"
+        }
     },
     "reactions": [
         {

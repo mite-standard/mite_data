@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "SsfM4",
         "description": "C-methyltransferase",
-        "databaseIds": [
-            "genpept:ADE34484.1",
-            "mibig:BGC0000269"
-        ],
         "references": [
             "doi:10.1002/anie.201205426"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "D6MSU6",
+            "genpept": "ADE34484.1",
+            "mibig": "BGC0000269"
+        }
     },
     "reactions": [
         {

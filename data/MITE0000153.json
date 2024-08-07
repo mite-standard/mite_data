@@ -25,13 +25,13 @@
     "enzyme": {
         "name": "sgrB",
         "description": "P450 installing crosslink",
-        "databaseIds": [
-            "uniprot:UPI00068C79B2",
-            "mibig:new472"
-        ],
         "references": [
             "doi:10.1002/anie.202311533"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "UPI00068C79B2",
+            "mibig": "new472"
+        }
     },
     "reactions": [
         {

@@ -25,15 +25,15 @@
     "enzyme": {
         "name": "BotCYP",
         "description": "bottromycin cytochrome P450 from Streptomyces sp. BC16019",
-        "databaseIds": [
-            "uniprot:K4MJU2",
-            "genpept:AFV25487.2",
-            "mibig:BGC0000469"
-        ],
         "references": [
             "doi:10.1021/jacs.0c10361",
             "doi:10.1039/d0np00097c"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "K4MJU2",
+            "genpept": "AFV25487.2",
+            "mibig": "BGC0000469"
+        }
     },
     "reactions": [
         {

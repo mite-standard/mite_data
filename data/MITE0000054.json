@@ -25,20 +25,22 @@
     "enzyme": {
         "name": "MibH",
         "description": "ryptophan-5-Halogenase acting on deschloro-microbisporicin A2",
-        "databaseIds": [
-            "genpept:ADK32563.1",
-            "mibig:BGC0000529"
-        ],
         "references": [
             "doi:10.1021/acschembio.6b01031"
         ],
+        "databaseIds": {
+            "uniprot": "E2IHC5",
+            "genpept": "ADK32563.1",
+            "mibig": "BGC0000529"
+        },
         "auxiliaryEnzymes": [
             {
                 "name": "MibS",
                 "description": "\"Flavin reductase providing FADH2 supply for chlorination\"",
-                "databaseIds": [
-                    "genpept:ADK32564.1"
-                ]
+                "databaseIds": {
+                    "uniprot": "E2IHC6",
+                    "genpept": "ADK32564.1"
+                }
             }
         ]
     },

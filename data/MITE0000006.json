@@ -26,20 +26,21 @@
     "enzyme": {
         "name": "CalO6",
         "description": "O-methyltransferase",
-        "databaseIds": [
-            "genpept:AAM70356.1",
-            "mibig:BGC0000033"
-        ],
         "references": [
             "doi:10.1002/cbic.201402119"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "Q8KND2",
+            "genpept": "AAM70356.1",
+            "mibig": "BGC0000033"
+        }
     },
     "reactions": [
         {
             "tailoring": [
                 "Methylation"
             ],
-            "description": "\u2018R0\u2019 is anticipated to be an ACP (acyl carrier protein) or CoA thioester.",
+            "description": "‘R0’ is anticipated to be an ACP (acyl carrier protein) or CoA thioester.",
             "reactionSMARTS": {
                 "reactionSMARTS": "[#6:7]-[c:1]1[c:2][c:3](-[#8:11])[c:4][c:5](-[#8:10])[c:6]1-[#6:8](-[*])=[O:9]>>[#6:13]-[#8:10]-[c:5]1[c:4][c:3](-[#8:11])[c:2][c:1](-[#6:7])[c:6]1-[#6:8](-[*])=[O:9] |$;;;;;;;;;;_R0;;;;;;;;;;;;;_R0;$|",
                 "isIterative": false
@@ -52,7 +53,7 @@
                     ],
                     "isBalanced": false,
                     "isIntermediate": true,
-                    "description": "\u2018R0\u2019 is anticipated to be an ACP (acyl carrier protein) or CoA thioester."
+                    "description": "‘R0’ is anticipated to be an ACP (acyl carrier protein) or CoA thioester."
                 }
             ],
             "evidence": [

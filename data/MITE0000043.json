@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "SgvP",
         "description": "cytochrome P450",
-        "databaseIds": [
-            "genpept:AGN74891.1",
-            "mibig:BGC0000459"
-        ],
         "references": [
             "doi:10.1002/cbic.201400062"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "R9USI6",
+            "genpept": "AGN74891.1",
+            "mibig": "BGC0000459"
+        }
     },
     "reactions": [
         {

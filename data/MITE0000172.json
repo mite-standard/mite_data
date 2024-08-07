@@ -25,13 +25,14 @@
     "enzyme": {
         "name": "lauB1",
         "description": "Cytochrome P450 installing crosslinks",
-        "databaseIds": [
-            "genpept:BAU86124.1",
-            "mibig:new639"
-        ],
         "references": [
             "doi:10.1101/2023.11.03.565440"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A160P4S3",
+            "genpept": "BAU86124.1",
+            "mibig": "new639"
+        }
     },
     "reactions": [
         {

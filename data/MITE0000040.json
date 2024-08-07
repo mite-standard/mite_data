@@ -26,14 +26,15 @@
     "enzyme": {
         "name": "Vhal",
         "description": "Chlorinates bht 2 and bht 6 of vancomycin.",
-        "databaseIds": [
-            "genpept:AEI58871.1",
-            "mibig:BGC0000455"
-        ],
         "references": [
             "doi:10.1186/1471-2164-15-363",
             "doi:10.1039/D0CC07421G"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "P96563",
+            "genpept": "AEI58871.1",
+            "mibig": "BGC0000455"
+        }
     },
     "reactions": [
         {

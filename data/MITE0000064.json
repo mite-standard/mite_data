@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "ptlI",
         "description": "Cytochrome P450",
-        "databaseIds": [
-            "genpept:BAC70710.1",
-            "mibig:BGC0000678"
-        ],
         "references": [
             "doi:10.1021/ja0639214"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "Q82IY3",
+            "genpept": "BAC70710.1",
+            "mibig": "BGC0000678"
+        }
     },
     "reactions": [
         {

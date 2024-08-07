@@ -25,13 +25,14 @@
     "enzyme": {
         "name": "Vmt",
         "description": "Methylates the N-terminus of the vancomycin backbone.",
-        "databaseIds": [
-            "genpept:AEI58876.1",
-            "mibig:BGC0000455"
-        ],
         "references": [
             "doi:10.1186/1471-2164-15-363"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "E9LY85",
+            "genpept": "AEI58876.1",
+            "mibig": "BGC0000455"
+        }
     },
     "reactions": [
         {

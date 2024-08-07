@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "THAA1",
         "description": "",
-        "databaseIds": [
-            "genpept:EFH40098.1",
-            "mibig:new052"
-        ],
         "references": [
             "doi:10.1038/s41467-020-19153-6"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "D7MKC0",
+            "genpept": "EFH40098.1",
+            "mibig": "new052"
+        }
     },
     "reactions": [
         {

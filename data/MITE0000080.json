@@ -26,13 +26,14 @@
     "enzyme": {
         "name": "PokMT1",
         "description": "C-methyltransferase",
-        "databaseIds": [
-            "genpept:ACN64833.1",
-            "mibig:BGC0001061"
-        ],
         "references": [
             "doi:10.1002/cbic.200800823"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "C0JWB3",
+            "genpept": "ACN64833.1",
+            "mibig": "BGC0001061"
+        }
     },
     "reactions": [
         {

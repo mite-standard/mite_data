@@ -26,13 +26,13 @@
     "enzyme": {
         "name": "stoC",
         "description": "dehydration",
-        "databaseIds": [
-            "genpept:TMU80020.1",
-            "mibig:BGC0002069"
-        ],
         "references": [
             "doi:10.1002/anie.201914154"
-        ]
+        ],
+        "databaseIds": {
+            "genpept": "TMU80020.1",
+            "mibig": "BGC0002069"
+        }
     },
     "reactions": [
         {

@@ -25,13 +25,14 @@
     "enzyme": {
         "name": "TlmF",
         "description": "cytochrome P450",
-        "databaseIds": [
-            "genpept:ALJ49912.1",
-            "mibig:BGC0001237"
-        ],
         "references": [
             "pubmed:28393452"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A0P0G6I4",
+            "genpept": "ALJ49912.1",
+            "mibig": "BGC0001237"
+        }
     },
     "reactions": [
         {

@@ -27,13 +27,14 @@
     "enzyme": {
         "name": "JamD",
         "description": "Flavin-dependent halogenase",
-        "databaseIds": [
-            "genpept:AAS98776.1",
-            "mibig:BGC0001001"
-        ],
         "references": [
             "doi:10.1021/jacs.3c05750"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "Q6E7K6",
+            "genpept": "AAS98776.1",
+            "mibig": "BGC0001001"
+        }
     },
     "reactions": [
         {

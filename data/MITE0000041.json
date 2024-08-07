@@ -25,14 +25,15 @@
     "enzyme": {
         "name": "OxyB",
         "description": "Introduces the first biaryl-ether crosslink between hpg4 and bht6 in the vancomycin precursor.",
-        "databaseIds": [
-            "genpept:AEI58869.1",
-            "mibig:BGC0000455"
-        ],
         "references": [
             "doi:10.1021/ja071038f",
             "doi:10.1002/ANIE.200461278"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "F8STX7",
+            "genpept": "AEI58869.1",
+            "mibig": "BGC0000455"
+        }
     },
     "reactions": [
         {

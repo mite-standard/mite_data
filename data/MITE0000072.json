@@ -25,13 +25,13 @@
     "enzyme": {
         "name": "TdaE",
         "description": "Flavoprotein dioxygenase",
-        "databaseIds": [
-            "uniprot:A0AA86DCY2",
-            "mibig:BGC0000932"
-        ],
         "references": [
             "doi:10.1021/jacs.1c04996"
-        ]
+        ],
+        "databaseIds": {
+            "genpept": "AFO93376.1",
+            "mibig": "BGC0000932"
+        }
     },
     "reactions": [
         {

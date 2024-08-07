@@ -28,13 +28,14 @@
     "enzyme": {
         "name": "GnmP",
         "description": "Persulfide methyltransferase",
-        "databaseIds": [
-            "genpept:ATY69565.1",
-            "mibig:BGC0001611"
-        ],
         "references": [
             "pubmed:34584078"
-        ]
+        ],
+        "databaseIds": {
+            "uniprot": "A0A2H4T153",
+            "genpept": "ATY69565.1",
+            "mibig": "BGC0001611"
+        }
     },
     "reactions": [
         {
