@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.urls]
+"Repository" = "https://github.com/mite-standard/mite_data"
+
+[project]
+name = "mite_data"
+version = "1.0"
+description = "Data storage and auxiliary functions for mite_data."
+readme = "README.md"
+requires-python = ">=3.12"
+license-files = { paths = ["LICENSE"] }
+authors = [
+    { name = "Mitja M. Zdouc", email = "zdoucmm@gmail.com" }
+]
+dependencies = [
+    "AlphaFetcher~=0.2"
+]

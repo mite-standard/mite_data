@@ -1,13 +1,12 @@
-"""Helper script to automatically generate pngs of alphafold pdbs"""
+"""Helper script to automatically download pdbs from alphafoldDB"""
 
 import json
 from pathlib import Path
 
 from alphafetcher import AlphaFetcher
 
-dir_data = Path(__file__).parent.joinpath("data")
-dir_pdb = Path(__file__).parent.joinpath("pdb")
-dir_img = Path(__file__).parent.joinpath("img")
+dir_data = Path(__file__).parent.parent.joinpath("data")
+dir_pdb = Path(__file__).parent.parent.joinpath("pdb")
 
 
 def extract_uniprot_ids() -> list:

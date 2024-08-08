@@ -8,14 +8,14 @@ For more information, see the README of the [organisation page ](https://github.
 
 ## Installation (for image-generation)
 
-### with `conda` from GitHub
+*Nota bene*: This installation will only work on (Ubuntu) Linux.
 
-- `pip install alphafetcher`
+- `hatch env create`
 - `sudo snap install pymol-oss`
 
 ## Quick-start
 
-- Download the enzyme pdbs from AlphaFoldDB: `python main.py`
+- Download the enzyme pdbs from AlphaFoldDB: `hatch run python mite_data/main.py`
 - Generate png images with PyMol: `./generate_png.sh`
 
 This will create all protein images
