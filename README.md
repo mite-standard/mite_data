@@ -1,5 +1,7 @@
 # Overview
 
+[![DOI](https://zenodo.org/badge/834042284.svg)](https://zenodo.org/doi/10.5281/zenodo.13294303)
+
 This repository contains entries following the MITE data standard (`data`).
 
 Furthermore, it provides functionality to generate images of the characterized enzymes, with structures predicted by AlphaFold.
