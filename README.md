@@ -1,10 +1,10 @@
 # Overview
 
-This repository contains entries following the MITE data standard.
+This repository contains entries following the MITE data standard (`data`).
 
 Furthermore, it provides functionality to generate images of the characterized enzymes, with structures predicted by AlphaFold.
 
-For more information, see the README of the [organisation page ](https://github.com/mite-standard).
+For more information, see the README of the [MITE-Standard organisation page](https://github.com/mite-standard).
 
 ## Installation (for image-generation)
 
