@@ -14,10 +14,10 @@
                             "6CADHILFODRMCII55WHSHZ6V"
                         ],
                         "reviewers": [
-                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                            "NJ6R5LEVTYWQEKC4XASTKZBC"
                         ],
                         "date": "2024-04-23",
-                        "comment": "Initial entry."
+                        "comment": "Initial entry. Reviewer fixed reactionSMARTS:reactionSMARTS."
                     }
                 ]
             }
@@ -40,7 +40,7 @@
                 "Reduction"
             ],
             "reactionSMARTS": {
-                "reactionSMARTS": "C=C1C=C(C(O1)=O)/C=C/C2=CC=C(C=C2)O>>C[C@@H]3C=C(C(O3)=O)/C=C/C4=CC=C(C=C4)O",
+                "reactionSMARTS": "[#8:16]-[c:13]1[c:12][c:11][c:10](\\[#6:9]=[#6:8]\\[#6:4]-2=[#6:3]-[#6:2](=[#6:1])-[#8:6]-[#6:5]2=[O:7])[c:15][c:14]1>>[#6:1]-[#6@H:2]-1-[#8:6]-[#6:5](=[O:7])-[#6:4](\\[#6:8]=[#6:9]\\[c:10]2[c:11][c:12][c:13](-[#8:16])[c:14][c:15]2)=[#6:3]-1",
                 "isIterative": false
             },
             "reactions": [
