@@ -15,10 +15,10 @@
                             "IX2YLYLJIFMZ56AG4LPOYV2J"
                         ],
                         "reviewers": [
-                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                            "NJ6R5LEVTYWQEKC4XASTKZBC"
                         ],
                         "date": "2024-05-07",
-                        "comment": "Initial entry."
+                        "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer partially fixed reactions:substrate, validation still not passing. Reviewer partially fixed reactions:products, validation still not passing."
                     }
                 ]
             }
@@ -42,14 +42,14 @@
                 "Hydroxylation"
             ],
             "reactionSMARTS": {
-                "reactionSMARTS": "[#6:11]-[#6:10]\\[#6:9]=[#6:8]\\[#6:5]-1=[#6:6]-2-[#8:1]-[#6:2](-[#6:23]-[#6:22](=[O:24])-[#8:21]-[#6:20]/[#6:18](=[#6:19]\\[#6:25](\\[#6:26]-[#6:30])=[#6:27]\\[#6:28]-[#6:29])/[#6:17]=[#6:16]/[#6:14](-[#8:15])-[#6:12]-2-[#8:13])=[#6:3]-[#6:4]1=[O:7]>>[#6:29]-[#6:28]\\[#6:27]=[#6:25](/[#6:26]-[#6:30])\\[#6:19]=[#6:18]-1/[#6:20]-[#8:21]-[#6:22](=[O:24])-[#6:23]-[#6:2]-2=[#6:3]-[#6:4](=[O:7])-[#6:5](\\[#6:8]=[#6:9]\\[#6:10](-[#6:11])-[#8:31])=[#6:6](-[#8:1]-2)-[#6:12](-[#8:13])-[#6:14](-[#8:15])/[#6:16]=[#6:17]/1 |c:27,53,t:4,21,44,61|",
+                "reactionSMARTS": "[#6:11]-[#6:10]\\[#6:9]=[#6:8]\\[#6:5]-1=[#6:6]-2-[#8:1]-[#6:2](-[#6:23]-[#6:22](=[O:24])-[#8:21]-[#6:20]/[#6:18](=[#6:19]\\[#6:25](\\[#6:26]-[#6:30])=[#6:27]\\[#6:28]-[#6:29])/[#6:17]=[#6:16]/[#6:14](-[#8:15])-[#6:12]-2-[#8:13])=[#6:3]-[#6:4]1=[O:7]>>[#6:29]-[#6:28]\\[#6:27]=[#6:25](/[#6:26]-[#6:30])\\[#6:19]=[#6:18]-1/[#6:20]-[#8:21]-[#6:22](=[O:24])-[#6:23]-[#6:2]-2=[#6:3]-[#6:4](=[O:7])-[#6:5](\\[#6:8]=[#6:9]\\[#6:10](-[#6:11])-[#8:31])=[#6:6](-[#8:1]-2)-[#6:12](-[#8:13])-[#6:14](-[#8:15])/[#6:16]=[#6:17]/1",
                 "isIterative": false
             },
             "reactions": [
                 {
-                    "substrate": "CC/C=C/c1c2oc(cc1=O)CC(=O)OCC(=C\\C(=C\\CC)CC)/C=C/C(O)C2O",
+                    "substrate": "CC\\C=C\\C1=C2OC(CC(=O)OC/C(=C\\C(\\CC)=C\\CC)/C=C/C(O)C2O)=CC1=O",
                     "products": [
-                        "CC/C=C(/C=C1/C=C/C(O)C(O)c2oc(cc(=O)c2/C=C/C(C)O)CC(=O)OC1)CC"
+                        "CC\\C=C(/CC)\\C=C1/COC(=O)CC2=CC(=O)C(\\C=C\\C(C)O)=C(O2)C(O)C(O)/C=C/1"
                     ],
                     "isBalanced": false,
                     "isIntermediate": false
