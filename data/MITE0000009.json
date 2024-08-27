@@ -15,10 +15,10 @@
                             "2QMTKRHHEW7SVXJII2W6QJDH"
                         ],
                         "reviewers": [
-                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                            "C62OJVVH7XOTOTFZSJT727YU"
                         ],
                         "date": "2024-05-14",
-                        "comment": "Initial entry."
+                        "comment": "Initial entry. Reviewer fixed substrate (was identical to product)."
                     }
                 ]
             }
@@ -47,7 +47,7 @@
             },
             "reactions": [
                 {
-                    "substrate": "COC1CC2(O)C(C)=CC=CC(C)CC(C)=CCC3CC(CC4(CCC(C)C(C)O4)O3)OC(=O)C2C=C1C",
+                    "substrate": "OC1C(C)=CC2C(C(=CC=CC(CC(=CCC3OC4(OC(C)C(C)CC4)CC(OC2=O)C3)C)C)C)(O)C1",
                     "products": [
                         "COC1CC2(O)C(C)=CC=CC(C)CC(C)=CCC3CC(CC4(CCC(C)C(C)O4)O3)OC(=O)C2C=C1C"
                     ],
