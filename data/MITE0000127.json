@@ -16,10 +16,11 @@
                             "E3BGRDDSXQC4BVVGLJQTVJNI"
                         ],
                         "reviewers": [
-                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                            "NJ6R5LEVTYWQEKC4XASTKZBC",
+                            "C62OJVVH7XOTOTFZSJT727YU"
                         ],
                         "date": "2024-06-08",
-                        "comment": "Initial entry."
+                        "comment": "Initial entry. Reviewer 1 partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer 1 determined the entry as unfixable (multiple reactions). Reviewer 2 broke up multi-reaction into two distinct ones."
                     }
                 ]
             }
@@ -42,16 +43,45 @@
             "tailoring": [
                 "Halogenation"
             ],
-            "description": "The first substitution happens on the third carbon of 5-bromoindole, followed by the second carbon, yielding 2,3,5-tribromoindole",
+            "description": "Bromination of 5-bromoindole, leading to 3,5-tribromoindole",
             "reactionSMARTS": {
-                "reactionSMARTS": "[#6]1:[#6]:[#6]2:[#6](:[#6]:[#6]:[#7H]:2):[#6]:[#6]:1-[#35] >> [#6]1:[#6]:[#6]2:[#6](:[#6]:[#6]:1-[#35]):[#6](:[#6]:[#7H]:2)-[#35]>>[#6]1:[#6]:[#6]2:[#6](:[#6]:[#6]:1-[#35]):[#6](:[#6](:[#7H]:2)-[#35])-[#35]",
+                "reactionSMARTS": "[#6:1](-[Br:10])1:[#6:9]:[#6:8]2:[#6:4](:[#7:5;h1]:[#6:6]:[#6:7]:2):[#6:3]:[#6:2]:1>>[#6:1](-[Br:10])1:[#6:9]:[#6:8]2:[#6:4](:[#7:5;h1]:[#6:6]:[#6:7](-[Br]):2):[#6:3]:[#6:2]:1",
                 "isIterative": false
             },
             "reactions": [
                 {
                     "substrate": "Brc1ccc2[nH]ccc2c1",
                     "products": [
-                        "Brc1ccc2[nH]cc(Br)c2c1",
+                        "Brc1ccc2[nH]cc(Br)c2c1"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "In vitro assay"
+                    ],
+                    "references": [
+                        "doi:10.1021/jacs.1c12778"
+                    ]
+                }
+            ]
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Bromination of 3,5-bromoindole, leading to 2,3,5-tribromoindole",
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#6:1](-[Br:10])1:[#6:9]:[#6:8]2:[#6:4](:[#7:5;h1]:[#6:6]:[#6:7](-[Br:11]):2):[#6:3]:[#6:2]:1>>[#6:1](-[Br:10])1:[#6:9]:[#6:8]2:[#6:4](:[#7:5;h1]:[#6:6](-[Br:12]):[#6:7](-[Br:11]):2):[#6:3]:[#6:2]:1",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "Brc1ccc2[nH]cc(Br)c2c1",
+                    "products": [
                         "Brc1ccc2[nH]c(Br)c(Br)c2c1"
                     ],
                     "isBalanced": false,
