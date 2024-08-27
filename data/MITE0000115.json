@@ -14,10 +14,10 @@
                             "YO3TP6VWB5CBNPZKNYNQSKUW"
                         ],
                         "reviewers": [
-                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                            "NJ6R5LEVTYWQEKC4XASTKZBC"
                         ],
                         "date": "2024-04-24",
-                        "comment": "Initial entry."
+                        "comment": "Initial entry. Reviewer partially fixed reactions:products, validation still not passing."
                     }
                 ]
             }
@@ -82,7 +82,7 @@
                 {
                     "substrate": "CC[C@H]1OC(=O)[C@@H](O)CC2C=CC3C[C@H](O)[C@H](C)[C@H](O)C3C2/C(C)=C/[C@H]1C",
                     "products": [
-                        "C/C1=C\\[C@@H](C)[C@@H]([C@H](C)O)OC(=O)[C@@H](O)CC2C=CC3C[C@H](O)[C@H](C)[C@H](O)C3C12"
+                        "C[C@H](O)[C@H]1OC(=O)[C@@H](O)CC2C=CC3C[C@H](O)[C@H](C)[C@H](O)C3C2\\C(C)=C\\[C@H]1C"
                     ],
                     "isBalanced": false,
                     "isIntermediate": true

@@ -14,10 +14,10 @@
                             "FNDAVAB6GIJQLFPWCTUHK6QO"
                         ],
                         "reviewers": [
-                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                            "NJ6R5LEVTYWQEKC4XASTKZBC"
                         ],
                         "date": "2024-05-13",
-                        "comment": "Initial entry."
+                        "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer partially fixed reactions:substrate, validation still not passing. Reviewer partially fixed reactions:products, validation still not passing."
                     }
                 ]
             }
@@ -51,14 +51,14 @@
                 "Hydroxylation"
             ],
             "reactionSMARTS": {
-                "reactionSMARTS": "[#8:7]-[#6:3]-1=[#6:4]-[#6:5]=[#6:9]-[#6:8]=[#6:2](-[#8:10])-[#6:1]-1=[O:6]>>[#8:7]-[#6:3]-1=[#6:4]-[#6:5]=[#6:9]-[#6:8](-[#8])=[#6:2](-[#8:10])-[#6:1]-1=[O:6] ",
+                "reactionSMARTS": "[#8:7]-[#6:3]-1=[#6:4]-[#6:5]=[#6:9]-[#6:8]=[#6:2](-[#8:10])-[#6:1]-1=[O:6]>>[#8:7]-[#6:3]-1=[#6:4]-[#6:5]=[#6:9]-[#6:8](-[#8])=[#6:2](-[#8:10])-[#6:1]-1=[O:6]",
                 "isIterative": false
             },
             "reactions": [
                 {
-                    "substrate": "O=c1c(O)ccccc1O",
+                    "substrate": "OC1=CC=CC=C(O)C1=O",
                     "products": [
-                        "O=c1c(O)cccc(O)c1O"
+                        "OC1=CC=CC(O)=C(O)C1=O"
                     ],
                     "isBalanced": false,
                     "isIntermediate": false
