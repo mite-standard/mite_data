@@ -16,10 +16,10 @@
                             "E3BGRDDSXQC4BVVGLJQTVJNI"
                         ],
                         "reviewers": [
-                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                            "NJ6R5LEVTYWQEKC4XASTKZBC"
                         ],
                         "date": "2024-06-08",
-                        "comment": "Initial entry."
+                        "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer determined the entry as unfixable (multiple reactions)."
                     }
                 ]
             }
@@ -44,7 +44,7 @@
             ],
             "description": "The first substitution happens on the third carbon of 5-bromoindole, followed by the second carbon, yielding 2,3,5-tribromoindole",
             "reactionSMARTS": {
-                "reactionSMARTS": "[#6]1:[#6]:[#6]2:[#6](:[#6]:[#6]:[#7H]:2):[#6]:[#6]:1-[#35] >> [#6]1:[#6]:[#6]2:[#6](:[#6]:[#6]:1-[#35]):[#6](:[#6]:[#7H]:2)-[#35]>>[#6]1:[#6]:[#6]2:[#6](:[#6]:[#6]:1-[#35]):[#6](:[#6](:[#7H]:2)-[#35])-[#35]",
+                "reactionSMARTS": "[#6]1:[#6]:[#6]2:[#6](:[#6]:[#6]:[#7H]:2):[#6]:[#6]:1-[#35]>>[#6]1:[#6]:[#6]2:[#6](:[#6]:[#6]:1-[#35]):[#6](:[#6]:[#7H]:2)-[#35]>>[#6]1:[#6]:[#6]2:[#6](:[#6]:[#6]:1-[#35]):[#6](:[#6](:[#7H]:2)-[#35])-[#35]",
                 "isIterative": false
             },
             "reactions": [
