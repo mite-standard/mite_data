@@ -48,9 +48,9 @@
             },
             "reactions": [
                 {
-                    "substrate": "[c:1]1([OH:11])[c:2]([CH2:12]/[CH:15]=[C:16](/[CH2:17][CH2:18][C:19]([OH:20])=[O:22])[CH3:21])[c:3]([OH:14])[c:4]([CH3:13])[c:5]2[c:6]1[C:7](=[O:10])[O:9][CH2:8]2",
+                    "substrate": "C/C(=C\\Cc1c(O)c(C)c2c(c1O)C(=O)OC2)CCC(=O)O",
                     "products": [
-                        "[c:1]1([OH:11])[c:2]([CH2:12]/[CH:15]=[C:16](/[CH2:17][CH2:18][C:19]([OH:20])=[O:22])[CH3:21])[c:3]([O:14][CH3:23])[c:4]([CH3:13])[c:5]2[c:6]1[C:7](=[O:10])[O:9][CH2:8]2"
+                        "COc1c(C)c2c(c(O)c1C/C=C(\\C)CCC(=O)O)C(=O)OC2"
                     ],
                     "isBalanced": false,
                     "isIntermediate": true
