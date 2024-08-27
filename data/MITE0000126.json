@@ -15,10 +15,11 @@
                             "E3BGRDDSXQC4BVVGLJQTVJNI"
                         ],
                         "reviewers": [
-                            "NJ6R5LEVTYWQEKC4XASTKZBC"
+                            "NJ6R5LEVTYWQEKC4XASTKZBC",
+                            "C62OJVVH7XOTOTFZSJT727YU"
                         ],
                         "date": "2024-06-08",
-                        "comment": "Initial entry. Reviewer determined the entry as unfixable (multiple reactions)."
+                        "comment": "Initial entry. Reviewer 1 determined the entry as unfixable (multiple reactions). Reviewer 2 broke up multi-reaction into two distinct ones."
                     }
                 ]
             }
@@ -26,7 +27,7 @@
     },
     "enzyme": {
         "name": "AetF",
-        "description": "Single component flavin-dependent halogenase",
+        "description": "Single component flavin-dependent halogenase, capable of iodinating and brominating arenes and olefins",
         "references": [
             "doi:10.1021/jacs.1c12778"
         ],
@@ -41,9 +42,39 @@
             "tailoring": [
                 "Halogenation"
             ],
-            "description": "It is capable of iodinating and brominating arenes and olefins",
+            "description": "Bromination of L-tryptophan, leading to 5-bromotryptophan",
             "reactionSMARTS": {
-                "reactionSMARTS": "[#6]1:[#6]:[#6]:[#6]2:[#6](:[#6]:1):[#6](:[#6]:[#7H]:2)-[#6]-[#6](-[#6](=[#8])-[#8])-[#7]>>[#6]1:[#6]:[#6]2:[#6](:[#6]:[#6]:1-[#35]):[#6](:[#6]:[#7H]:2)-[#6]-[#6](-[#6](=[#8])-[#8])-[#7]>>[#35]-[#6]1:[#6]:[#6]2:[#6](-[#6]-[#6](-[#7])-[#6](-[#8])=[#8]):[#6]:[#7H]:[#6]:2:[#6](-[#35]):[#6]:1",
+                "reactionSMARTS": "[#7:1]-[#6:2](-[#6:13](-[#8:15])=[#8:14])-[#6:3]-[#6:4]1:[#6:12]2:[#6:7](:[#6:8]:[#6:9]:[#6:10]:[#6:11]:2):[#7:6;h1]:[#6:5]:1>>[#7:1]-[#6:2](-[#6:13](-[#8:15])=[#8:14])-[#6:3]-[#6:4]1:[#6:12]2:[#6:7](:[#6:8]:[#6:9]:[#6:10](:[#6:11]:2)-Br):[#7:6;h1]:[#6:5]:1",
+                "isIterative": false
+            },
+            "reactions": [
+                {
+                    "substrate": "NC(Cc1c[nH]c2ccccc12)C(=O)O",
+                    "products": [
+                        "NC(Cc1c[nH]c2ccc(Br)cc12)C(=O)O"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "In vitro assay"
+                    ],
+                    "references": [
+                        "doi:10.1021/jacs.1c12778"
+                    ]
+                }
+            ]
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Bromination of 5-bromotryptophan, leading to 5,7-bromotryptophan",
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#7:1]-[#6:2](-[#6:13](-[#8:15])=[#8:14])-[#6:3]-[#6:4]1:[#6:12]2:[#6:7](:[#6:8]:[#6:9]:[#6:10](:[#6:11]:2)-[Br:16]):[#7:6;h1]:[#6:5]:1>>[#7:1]-[#6:2](-[#6:13](-[#8:15])=[#8:14])-[#6:3]-[#6:4]1:[#6:12]2:[#6:7](:[#6:8](-Br):[#6:9]:[#6:10](:[#6:11]:2)-[Br:16]):[#7:6;h1]:[#6:5]:1",
                 "isIterative": false
             },
             "reactions": [
@@ -51,14 +82,6 @@
                     "substrate": "NC(Cc1c[nH]c2ccc(Br)cc12)C(=O)O",
                     "products": [
                         "NC(Cc1c[nH]c2c(Br)cc(Br)cc12)C(=O)O"
-                    ],
-                    "isBalanced": false,
-                    "isIntermediate": false
-                },
-                {
-                    "substrate": "NC(Cc1c[nH]c2ccccc12)C(=O)O",
-                    "products": [
-                        "NC(Cc1c[nH]c2ccc(Br)cc12)C(=O)O"
                     ],
                     "isBalanced": false,
                     "isIntermediate": false
