@@ -47,9 +47,9 @@
             },
             "reactions": [
                 {
-                    "substrate": "NCCC[C@H](N)C(=O)O",
+                    "substrate": "NCCC[C@H](N)C(O)=O",
                     "products": [
-                        "N[C@@H](CCCNO)C(=O)O"
+                        "N[C@@H](CCCNO)C(O)=O"
                     ],
                     "isBalanced": false,
                     "isIntermediate": true
