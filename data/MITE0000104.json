@@ -17,7 +17,7 @@
                             "NJ6R5LEVTYWQEKC4XASTKZBC"
                         ],
                         "date": "2024-05-13",
-                        "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer partially fixed reactions:substrate, validation still not passing. Reviewer partially fixed reactions:products, validation still not passing."
+                        "comment": "Initial entry. Reviewer partially fixed general aromaticity."
                     }
                 ]
             }
@@ -51,14 +51,14 @@
                 "Hydroxylation"
             ],
             "reactionSMARTS": {
-                "reactionSMARTS": "[#8:7]-[#6:3]-1=[#6:4]-[#6:5]=[#6:9]-[#6:8]=[#6:2](-[#8:10])-[#6:1]-1=[O:6]>>[#8:7]-[#6:3]-1=[#6:4]-[#6:5]=[#6:9]-[#6:8](-[#8])=[#6:2](-[#8:10])-[#6:1]-1=[O:6]",
+                "reactionSMARTS": "[#8:1]-[c:2]1[c:3][c:4][c:5][c:6][c:7](-[#8:8])[c:9]1=[O:10]>>[#8:7]-[c:6]1[c:5][c:4][c:3][c:2](-[#8:1])[c:10](=[O:11])[c:8]1-[#8:9]",
                 "isIterative": false
             },
             "reactions": [
                 {
-                    "substrate": "OC1=CC=CC=C(O)C1=O",
+                    "substrate": "O=c1c(O)ccccc1O",
                     "products": [
-                        "OC1=CC=CC(O)=C(O)C1=O"
+                        "O=c1c(O)cccc(O)c1O"
                     ],
                     "isBalanced": false,
                     "isIntermediate": false
@@ -80,7 +80,7 @@
                 "Hydroxylation"
             ],
             "reactionSMARTS": {
-                "reactionSMARTS": "[#8:3]-[#6:7]-1=[#6:6]-[#6:5]=[#6:8]-[#6:9]=[#6:10]-[#6:11]-1=O>>[#8:3]-[#6:7]-1=[#6:6]-[#6:5]=[#6:8]-[#6:9]=[#6:10](-[#8])-[#6:11]-1=O",
+                "reactionSMARTS": "[#8:1]-[c:2]1[c:3][c:4][c:5][c:6][c:7][c:8]1=[O:9]>>[#8:1]-[c:2]1[c:3][c:4][c:5][c:6][c:7](-[#8:8])[c:9]1=[O:10]",
                 "isIterative": false
             },
             "reactions": [
