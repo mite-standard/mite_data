@@ -15,10 +15,10 @@
                             "EKZKD775F36BLONCQ7EXF7ZS"
                         ],
                         "reviewers": [
-                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                            "NJ6R5LEVTYWQEKC4XASTKZBC"
                         ],
                         "date": "2024-05-14",
-                        "comment": "Initial entry."
+                        "comment": "Initial entry. Reviewer fixed reactions:substrate. Reviewer fixed reactions:products."
                     }
                 ]
             }
@@ -47,9 +47,9 @@
             },
             "reactions": [
                 {
-                    "substrate": "[C@@H:1]1([CH2:20][CH2:21][CH2:22][CH2:23][CH3:24])[CH2:2][C:9]2=[C:8]([CH2:7][C@H:6]([CH2:25][CH2:26][CH2:27][CH3:28])[CH2:5][C:4]3=[C:3]1[C:10](=[O:17])[O:11][C:12]3=[O:16])[C:13](=[O:18])[O:14][C:15]2=[O:19]",
+                    "substrate": "CCCCC[C@@H]1CC2=C(C[C@H](CCCC)CC3=C1C(=O)OC3=O)C(=O)OC2=O",
                     "products": [
-                        "[C@@H:1]1([CH2:20][CH2:21][CH2:22][CH2:23][CH3:24])[CH2:2][C:9]2=[C:8]([CH2:7][C@@:6]([CH2:25][CH2:26][CH2:27][CH3:28])([OH:29])[CH2:5][C:4]3=[C:3]1[C:10](=[O:17])[O:11][C:12]3=[O:16])[C:13](=[O:18])[O:14][C:15]2=[O:19]"
+                        "CCCCC[C@@H]1CC2=C(C[C@](O)(CCCC)CC3=C1C(=O)OC3=O)C(=O)OC2=O"
                     ],
                     "isBalanced": true,
                     "isIntermediate": false

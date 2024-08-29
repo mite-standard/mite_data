@@ -14,10 +14,10 @@
                             "BRS25WBFDJIPJGRFVYTEPI2R"
                         ],
                         "reviewers": [
-                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                            "NJ6R5LEVTYWQEKC4XASTKZBC"
                         ],
                         "date": "2024-05-14",
-                        "comment": "Initial entry."
+                        "comment": "Initial entry. Reviewer fixed reactions:substrate. Reviewer fixed reactions:products."
                     }
                 ]
             }
@@ -45,9 +45,9 @@
             },
             "reactions": [
                 {
-                    "substrate": "[CH3:1]/[CH:2]=[C:3](/[CH2:4][CH2:5][CH2:6][CH2:7][CH2:8][CH2:9][CH2:10]/[CH:11]=[CH:12]\\[CH:13]=[CH:14]\\[CH:15]=[CH:16]/[CH2:17][c:18]1[cH:19][c:20]([OH:21])[cH:22][c:23]([OH:24])[cH:25]1)[CH3:26]",
+                    "substrate": "C/C=C(\\C)CCCCCCC/C=C\\C=C\\C=C/Cc1cc(O)cc(O)c1",
                     "products": [
-                        "[CH3:1]/[CH:2]=[C:3](/[CH2:4][CH2:5][CH2:6][CH2:7][CH2:8][CH2:9][CH2:10]/[CH:11]=[CH:12]\\[CH:13]=[CH:14]\\[CH:15]=[CH:16]/[CH2:17][c:18]1[cH:19][c:20]([OH:21])[cH:22][c:23]([OH:24])[cH:25]1)[C:26]([OH:27])=[O:28]"
+                        "C/C=C(/CCCCCCC/C=C\\C=C\\C=C/Cc1cc(O)cc(O)c1)C(=O)O"
                     ],
                     "isBalanced": false,
                     "isIntermediate": false

@@ -16,10 +16,10 @@
                             "SKC4XYF2AQLXBPOFDVNEXQZ2"
                         ],
                         "reviewers": [
-                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                            "NJ6R5LEVTYWQEKC4XASTKZBC"
                         ],
                         "date": "2024-07-23",
-                        "comment": "Initial entry."
+                        "comment": "Initial entry. Reviewer fixed reactionSMARTS:reactionSMARTS."
                     }
                 ]
             }
@@ -43,7 +43,7 @@
                 "Amination"
             ],
             "reactionSMARTS": {
-                "reactionSMARTS": "([#8H1:1]-[#6:2](=[O:3])-[c:4]1[c:5][c:6]2[c:7]([nH1:8][c:9]3[c:15][c:13]([Cl:14])[c:12][c:11][c:10]23)[s:16]1)>>[#7:18]-[#8:3]-[#6:2](-[#8H1:1])-[c:4]1[c:5][c:6]2[c:7]([nH1:8][c:9]3[c:15][c:13]([Cl:14])[c:12][c:11][c:10]23)[s:16]1)",
+                "reactionSMARTS": "[#8:14]-[#6:15](=[O:16])-[c:13]1[c:12][c:11]2[c:10]([n:9][c:8]3[c:7][c:6]([Cl:5])[c:4][c:3][c:2]23)[s:1]1>>[#7:17]-[#8:16]-[#6:15](=[O:14])-[c:13]1[c:12][c:11]2[c:10]([n:9][c:8]3[c:7][c:6]([Cl:5])[c:4][c:3][c:2]23)[s:1]1",
                 "isIterative": false
             },
             "reactions": [
