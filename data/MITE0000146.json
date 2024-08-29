@@ -47,7 +47,7 @@
             },
             "reactions": [
                 {
-                    "substrate": "NC(Cc1c[nH]c2ccccc12)C(=O)O.NC(N)=NCCCC(N)C(=O)O",
+                    "substrate": "NC(Cc1c[nH]c2ccccc12)C(=O)O.NC(CCCN=C(N)N)C(O)=O",
                     "products": [
                         "NC(=N)NCCC[C@@H]1NC(=O)[C@H](Cc2c[nH]c3ccccc23)NC1=O"
                     ],

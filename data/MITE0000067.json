@@ -13,10 +13,10 @@
                             "LEEWIYEZSPCYOCCY6BHNTE54"
                         ],
                         "reviewers": [
-                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                            "NJ6R5LEVTYWQEKC4XASTKZBC"
                         ],
                         "date": "2024-04-23",
-                        "comment": "Initial entry."
+                        "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer partially fixed reactions:substrate, validation still not passing. Reviewer partially fixed reactions:products, validation still not passing."
                     }
                 ]
             }
@@ -41,14 +41,14 @@
                 "Oxidation"
             ],
             "reactionSMARTS": {
-                "reactionSMARTS": "[#8]-[#6](=O)-[#6](=O)-[#6]-[#6]-1=[#6]-[#7]-[#6]-2=[#6]-1-[#6]=[#6]-[#6]=[#6]-2Cl>>[#8]-[#6](=O)-[#6]-1=[#6](-[#6]-2=[#6]-[#7]-[#6]-3=[#6](Cl)-[#6]=[#6]-[#6]=[#6]-2-3)-[#6](=[#6](-[#7]-1)-[#6](-[#8])=O)-[#6]-1=[#6]-[#7]-[#6]-2=[#6]-1-[#6]=[#6]-[#6]=[#6]-2Cl",
+                "reactionSMARTS": "[#8:1]-[#6:2](=[O:3])-[#6:4](=[O:5])-[#6:6]-[c:7]1[c:8][n:9][c:10]2[c:15]([Cl:16])[c:14][c:13][c:12][c:11]12>>[#8:1]-[#6:2](=[O:3])-[c:4]1[n:18][c:17](-[#6:19](-[#8:20])=[O:21])[c:16](-[c:22]2[c:23][n:24][c:25]3[c:30]([Cl:31])[c:29][c:28][c:27][c:26]23)[c:5]1-[c:6]1[c:7][n:8][c:9]2[c:10]([Cl:11])[c:12][c:13][c:14][c:15]12",
                 "isIterative": false
             },
             "reactions": [
                 {
-                    "substrate": "O=C(O)C(=O)Cc1c[nH]c2c(Cl)cccc12",
+                    "substrate": "OC(=O)C(=O)Cc1c[nH]c2c(Cl)cccc12",
                     "products": [
-                        "O=C(O)c1[nH]c(C(=O)O)c(-c2c[nH]c3c(Cl)cccc23)c1-c1c[nH]c2c(Cl)cccc12"
+                        "OC(=O)c1[nH]c(C(O)=O)c(-c2c[nH]c3c(Cl)cccc23)c1-c1c[nH]c2c(Cl)cccc12"
                     ],
                     "isBalanced": true,
                     "isIntermediate": true
