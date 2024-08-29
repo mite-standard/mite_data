@@ -49,9 +49,9 @@
             },
             "reactions": [
                 {
-                    "substrate": "[NH2:1][C@H:2]([CH2:3][CH:4]([CH3:5])[CH3:6])[C:7](=[O:8])[NH:9][C@H:10]1[C:11](=[O:12])[NH:13][C@@H:14]([CH2:15][C:16]([NH2:17])=[O:18])[C:19](=[O:20])[NH:21][C@H:22]2[C:23](=[O:24])[NH:25][C@H:26]([c:35]3[cH:34][cH:33][c:38]([OH:39])[cH:37][cH:36]3)[C:27](=[O:28])[NH:29][C@H:30]([CH:31]=[O:32])[C@H:40]([OH:41])[c:42]3[cH:43][cH:44][c:45]([cH:46][cH:47]3)[O:48][c:53]3[cH:52][c:51]2[cH:50][c:49]([c:54]3[OH:55])[O:56][c:57]2[c:58]([Cl:65])[cH:59][c:60]([cH:61][cH:62]2)[C@H:63]1[OH:64]",
+                    "substrate": "CC(C)C[C@@H](N)C(=O)N[C@H]1C(=O)N[C@@H](CC(N)=O)C(=O)N[C@H]2C(=O)N[C@H](c3ccc(O)cc3)C(=O)N[C@H](C=O)[C@H](O)c3ccc(cc3)Oc3cc2cc(c3O)Oc2ccc(cc2Cl)[C@H]1O",
                     "products": [
-                        "Cl[c:46]1[c:45]2[cH:44][cH:43][c:42]([cH:47]1)[C@@H:40]([OH:41])[C@@H:30]([CH:31]=[O:32])[NH:29][C:27](=[O:28])[C@@H:26]([c:35]1[cH:34][cH:33][c:38]([OH:39])[cH:37][cH:36]1)[NH:25][C:23](=[O:24])[C@@H:22]1[NH:21][C:19](=[O:20])[C@H:14]([CH2:15][C:16]([NH2:17])=[O:18])[NH:13][C:11](=[O:12])[C@H:10]([NH:9][C:7]([C@H:2]([NH2:1])[CH2:3][CH:4]([CH3:5])[CH3:6])=[O:8])[C@H:63]([OH:64])[c:60]3[cH:59][c:58]([Cl:65])[c:57]([cH:62][cH:61]3)[O:56][c:49]3[cH:50][c:51]1[cH:52][c:53]([c:54]3[OH:55])[O:48]2"
+                        "CC(C)C[C@@H](N)C(=O)N[C@H]1C(=O)N[C@@H](CC(N)=O)C(=O)N[C@H]2C(=O)N[C@H](c3ccc(O)cc3)C(=O)N[C@H](C=O)[C@H](O)c3ccc(c(Cl)c3)Oc3cc2cc(c3O)Oc2ccc(cc2Cl)[C@H]1O"
                     ],
                     "isBalanced": false,
                     "isIntermediate": true
@@ -81,9 +81,9 @@
             },
             "reactions": [
                 {
-                    "substrate": "[OH:1][C@H:2]([c:5]1[cH:4][cH:3][c:8]([OH:9])[cH:7][cH:6]1)[C@H:12]([CH:11]=[O:10])[NH:13][C:15](=[O:14])[C@@H:20]([CH2:19][CH:18]([CH3:16])[CH3:17])[NH2:21]",
+                    "substrate": "CC(C)C[C@@H](N)C(=O)N[C@@H](C=O)[C@H](O)c1ccc(O)cc1",
                     "products": [
-                        "Cl[c:7]1[cH:6][c:5]([C@@H:2]([OH:1])[C@H:12]([CH:11]=[O:10])[NH:13][C:15](=[O:14])[C@@H:20]([CH2:19][CH:18]([CH3:16])[CH3:17])[NH2:21])[cH:4][cH:3][c:8]1[OH:9]"
+                        "CC(C)C[C@@H](N)C(=O)N[C@@H](C=O)[C@H](O)c1ccc(O)c(Cl)c1"
                     ],
                     "isBalanced": false,
                     "isIntermediate": true
