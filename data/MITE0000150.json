@@ -76,7 +76,7 @@
             },
             "reactions": [
                 {
-                    "substrate": "O=c1c(-c2ccc(O)cc2)coc2cc(O)ccc12.O=c1c(-c2ccc(O)cc2)coc2cc(O)ccc12",
+                    "substrate": "O=c1c(-c2ccc(O)cc2)coc2cc(O)ccc12",
                     "products": [
                         "O=c1c(-c2ccc(O)cc2-c2c(O)ccc3c(=O)c(-c4ccc(O)cc4)coc23)coc2cc(O)ccc12"
                     ],
