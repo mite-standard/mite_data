@@ -16,7 +16,7 @@
                             "NJ6R5LEVTYWQEKC4XASTKZBC"
                         ],
                         "date": "2024-07-23",
-                        "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer partially fixed reactions:substrate, validation still not passing. Reviewer partially fixed reactions:products, validation still not passing."
+                        "comment": "Initial entry. Reviewer fixed general aromaticity."
                     }
                 ]
             }
@@ -39,14 +39,14 @@
                 "Hydroxylation"
             ],
             "reactionSMARTS": {
-                "reactionSMARTS": "[#6:1]-[#6:2]\\[#6:3]=[#6:4]\\[#6:5]-1=[#6:6]-2-[#8:7]-[#6:8](-[#6:9]-[#6:10](=[O:11])-[#8:12]-[#6:13]/[#6:14](=[#6:15]\\[#6:16](\\[#6:17]-[#6:18])=[#6:19]\\[#6:20]-[#6:21])/[#6:22]=[#6:23]/[#6:24](-[#8:25])-[#6:26]-2-[#8:27])=[#6:28]-[#6:29]1=[O:30]>>[#6:1]-[#6:2]\\[#6:3]=[#6:4](/[#6:5]-[#6:6])\\[#6:7]=[#6:8]-1/[#6:9]-[#8:10]-[#6:11](=[O:12])-[#6:13]-[#6:14]-2=[#6:15]-[#6:16](=[O:17])-[#6:18](\\[#6:19]=[#6:20]\\[#6:21](-[#6:22])-[#8:23])=[#6:24](-[#8:25]-2)-[#6:26](-[#8:27])-[#6:28](-[#8:29])/[#6:30]=[#6:31]/1",
+                "reactionSMARTS": "[#6:1]-[#6:2]\\[#6:3]=[#6:4]\\[c:5]1[c:6]-2[o:7][c:8](-[#6:9]-[#6:10](=[O:11])-[#8:12]-[#6:13]/[#6:14](=[#6:15]\\[#6:16](\\[#6:17]-[#6:18])=[#6:19]\\[#6:20]-[#6:21])/[#6:22]=[#6:23]/[#6:24](-[#8:25])-[#6:26]-2-[#8:27])[c:28][c:29]1=[O:30]>>[#6:1]-[#6:2]\\[#6:3]=[#6:4](/[#6:5]-[#6:6])\\[#6:7]=[#6:8]-1/[#6:9]-[#8:10]-[#6:11](=[O:12])-[#6:13]-[c:14]2[c:15][c:16](=[O:17])[c:18](\\[#6:19]=[#6:20]\\[#6:21](-[#6:22])-[#8:23])[c:24]([o:25]2)-[#6:26](-[#8:27])-[#6:28](-[#8:29])/[#6:30]=[#6:31]/1",
                 "isIterative": false
             },
             "reactions": [
                 {
-                    "substrate": "CC\\C=C\\C1=C2OC(CC(=O)OC/C(=C\\C(\\CC)=C\\CC)/C=C/C(O)C2O)=CC1=O",
+                    "substrate": "CC/C=C/c1c2oc(cc1=O)CC(=O)OCC(=C\\C(=C\\CC)CC)/C=C/C(O)C2O",
                     "products": [
-                        "CC\\C=C(/CC)\\C=C1/COC(=O)CC2=CC(=O)C(\\C=C\\C(C)O)=C(O2)C(O)C(O)/C=C/1"
+                        "CC/C=C(/C=C1/C=C/C(O)C(O)c2oc(cc(=O)c2/C=C/C(C)O)CC(=O)OC1)CC"
                     ],
                     "isBalanced": false,
                     "isIntermediate": false
