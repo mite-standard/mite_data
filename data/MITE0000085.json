@@ -13,10 +13,10 @@
                             "P75FRHHCFPTCPYSP65VDVPHW"
                         ],
                         "reviewers": [
-                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                            "NJ6R5LEVTYWQEKC4XASTKZBC"
                         ],
                         "date": "2024-05-06",
-                        "comment": "Initial entry."
+                        "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing."
                     }
                 ]
             }
@@ -40,14 +40,14 @@
                 "Methylation"
             ],
             "reactionSMARTS": {
-                "reactionSMARTS": "[#8:13]-[c:4]1[c:3][c:2](-[#8:11])[c:1]2[c:6]([c:5]1)[c:7](=[O:15])[c:8](-[#8:14])[c:9][c:10]2=[O:12]>>[#6:16]-[c:3]1[c:4](-[#8:13])[c:5][c:6]2[c:1]([c:2]1-[#8:11])[c:10](=[O:12])[c:9][c:8](-[#8:14])[c:7]2=[O:15]",
+                "reactionSMARTS": "[#8:1]-[c:2]1[c:3][c:4](-[#8:5])[c:6]2[c:7]([c:8]1)[c:9](=[O:10])[c:11](-[#8:12])[c:13][c:14]2=[O:15]>>[#6:1]-[c:2]1[c:3](-[#8:4])[c:5][c:6]2[c:7]([c:8]1-[#8:9])[c:10](=[O:11])[c:12][c:13](-[#8:14])[c:15]2=[O:16]",
                 "isIterative": false
             },
             "reactions": [
                 {
-                    "substrate": "O=C1C(O)=CC(=O)c2c(O)cc(O)cc21",
+                    "substrate": "Oc1cc(O)c2c(c1)c(=O)c(O)cc2=O",
                     "products": [
-                        "Cc1c(O)cc2c(c1O)C(=O)C=C(O)C2=O"
+                        "Cc1c(O)cc2c(c1O)c(=O)cc(O)c2=O"
                     ],
                     "isBalanced": false,
                     "isIntermediate": true
