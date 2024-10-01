@@ -16,10 +16,11 @@
                             "SKC4XYF2AQLXBPOFDVNEXQZ2"
                         ],
                         "reviewers": [
-                            "NJ6R5LEVTYWQEKC4XASTKZBC"
+                            "NJ6R5LEVTYWQEKC4XASTKZBC",
+                            "C62OJVVH7XOTOTFZSJT727YU"
                         ],
                         "date": "2024-07-23",
-                        "comment": "Initial entry. Reviewer partially fixed reactions:substrate, validation still not passing. Reviewer partially fixed reactions:products, validation still not passing."
+                        "comment": "Initial entry. Reviewer partially fixed reactions:substrate, validation still not passing. Reviewer partially fixed reactions:products, validation still not passing. Reviewer 2 removed chirality information, reaction passes."
                     }
                 ]
             }
@@ -43,17 +44,18 @@
                 "Deamination"
             ],
             "reactionSMARTS": {
-                "reactionSMARTS": "[#7:13]-[#6@@H:11](-[#6:10]-[c:7]1[c:8][n:9][c:5]2[c:4][c:3]([Cl:14])[c:2][c:1][c:6]12)-[#6:12](-[#8:15])=[O:16]>>[#8:15]-[#6:12](=[O:16])-[#6:11](=[O:17])-[#6:10]-[c:7]1[c:8][n:9][c:5]2[c:4][c:3]([Cl:14])[c:2][c:1][c:6]12 |r|",
+                "reactionSMARTS": "[NH2:1][C:2]([CH2:3][c:4]1[cH:5][nH:6][c:7]2[cH:8][c:9]([Cl:16])[cH:10][cH:11][c:12]12)[C:13]([OH:14])=[O:15]>>[O:1]=[C:2]([CH2:3][c:4]1[cH:5][nH:6][c:7]2[cH:8][c:9]([Cl:16])[cH:10][cH:11][c:12]12)[C:13]([OH:14])=[O:15]",
                 "isIterative": false
             },
             "reactions": [
                 {
-                    "substrate": "N[C@@H](Cc1c[nH]c2cc(Cl)ccc12)C(O)=O",
+                    "substrate": "NC(C(=O)O)Cc1c2c(cc(cc2)Cl)[nH]c1",
                     "products": [
-                        "OC(=O)C(=O)Cc1c[nH]c2cc(Cl)ccc12"
+                        "c12ccc(cc1[nH]cc2CC(C(O)=O)=O)Cl"
                     ],
                     "isBalanced": false,
-                    "isIntermediate": false
+                    "isIntermediate": false,
+                    "description": "Should actually be L-chlorotryptophan."
                 }
             ],
             "evidence": [
