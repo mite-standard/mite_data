@@ -14,10 +14,10 @@
                             "P75FRHHCFPTCPYSP65VDVPHW"
                         ],
                         "reviewers": [
-                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                            "C62OJVVH7XOTOTFZSJT727YU"
                         ],
                         "date": "2024-05-14",
-                        "comment": "Initial entry."
+                        "comment": "Initial entry. Reviewer fixed the expected product according to the cited publication."
                     }
                 ]
             }
@@ -48,7 +48,7 @@
                 {
                     "substrate": "Cc1cccc(O)c1C(=O)O",
                     "products": [
-                        "Cc1ccc(C)c(C(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]2O[C@@H](n3cnc4c(N)ncnc43)[C@H](O)[C@@H]2OP(=O)(O)O)c1O"
+                        "Cc1c(C(SCCNC(CCNC([C@@H](C(COP(OP(OC[C@@H]2[C@@H](OP(O)(O)=O)[C@@H](O)[C@H]([n]3c4c(c(ncn4)N)nc3)O2)(O)=O)(O)=O)(C)C)O)=O)=O)=O)c(O)ccc1"
                     ],
                     "isBalanced": false,
                     "isIntermediate": true
