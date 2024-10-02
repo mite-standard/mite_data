@@ -13,10 +13,10 @@
                             "LEEWIYEZSPCYOCCY6BHNTE54"
                         ],
                         "reviewers": [
-                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                            "C62OJVVH7XOTOTFZSJT727YU"
                         ],
                         "date": "2024-04-23",
-                        "comment": "Initial entry."
+                        "comment": "Initial entry. Reviewer fixed reaction SMARTS format."
                     }
                 ]
             }
@@ -50,7 +50,8 @@
                         "O=C(O)C(=O)Cc1c[nH]c2c(Cl)cccc12"
                     ],
                     "isBalanced": true,
-                    "isIntermediate": true
+                    "isIntermediate": true,
+                    "description": "Should actually be L-chlorotryptophan."
                 }
             ],
             "evidence": [
