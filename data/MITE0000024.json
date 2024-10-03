@@ -15,10 +15,10 @@
                             "4ZBJCWV5NZUBDJXCSIV4TKIA"
                         ],
                         "reviewers": [
-                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                            "C62OJVVH7XOTOTFZSJT727YU"
                         ],
                         "date": "2024-05-14",
-                        "comment": "Initial entry."
+                        "comment": "Initial entry. Reviewer 1 changed reaction SMARTS and substrate/product example to show actual intermediate reaction as described in the publication."
                     }
                 ]
             }
@@ -42,17 +42,18 @@
                 "Halogenation"
             ],
             "reactionSMARTS": {
-                "reactionSMARTS": "CC1=CC2=C(C(N1)=O)C([C@@]3(O)[C@H](C[C@@H]4C5=C3C(O)=C6C(OC7=C(C=CC=C7OC)C6=O)=C5OCO4)C2=O)=O>>CC8=CC9=C(C(N8)=O)C([C@@]%10(O)[C@H](C[C@@H]%11C%12=C%10C(O)=C%13C(OC%14=C(C=CC(Cl)=C%14OC)C%13=O)=C%12OCO%11)C9=O)=O",
+                "reactionSMARTS": "[#8:1]-[#6:2]1:[#6:17]2:[#6:6](:[#6:7](:[#6:9]3:[#6:15](:[#8:16]:2):[#6:14](-[#8:18]-[#6:19]):[#6:13]2-[#6:20]-[#6:21]-[#6:22]4:[#6:34](-[#6:12]:2:[#6:10]:3-[#8:11]):[#6:32](-[#8:33]):[#6:31](:[#6:24](-[#6:25]-[#6:26](=[#8:35])-[#6:27]):[#6:23]:4)-[#6:29](=[#8:30])-[#8:28])=[#8:8]):[#6:5]:[#6:4]:[#6:3]:1>>[#8:1]-[#6:2]1:[#6:17]2:[#6:6](:[#6:7](:[#6:9]3:[#6:15](:[#8:16]:2):[#6:14](-[#8:18]-[#6:19]):[#6:13]2-[#6:20]-[#6:21]-[#6:22]4:[#6:34](-[#6:12]:2:[#6:10]:3-[#8:11]):[#6:32](-[#8:33]):[#6:31](:[#6:24](-[#6:25]-[#6:26](=[#8:35])-[#6:27]):[#6:23]:4)-[#6:29](=[#8:30])-[#8:28])=[#8:8]):[#6:5]:[#6:4]:[#6:3]:1-Cl",
                 "isIterative": false
             },
             "reactions": [
                 {
-                    "substrate": "COc1cccc2c(=O)c3c(O)c4c5c(c3oc12)OCO[C@@H]5C[C@@H]1C(=O)c2cc(C)[nH]c(=O)c2C(=O)[C@]41O",
+                    "substrate": "Oc1c2c(c(c3c(o2)c(OC)c2CCc4c(-c2c3O)c(O)c(c(CC(=O)C)c4)C(=O)O)=O)ccc1",
                     "products": [
-                        "COc1c(Cl)ccc2c(=O)c3c(O)c4c5c(c3oc12)OCO[C@@H]5C[C@@H]1C(=O)c2cc(C)[nH]c(=O)c2C(=O)[C@]41O"
+                        "Oc1c2c(c(c3c(o2)c(OC)c2CCc4c(-c2c3O)c(O)c(c(CC(=O)C)c4)C(=O)O)=O)ccc1Cl"
                     ],
                     "isBalanced": false,
-                    "isIntermediate": true
+                    "isIntermediate": true,
+                    "description": "Intermediate product in the xantholipin biosynthetic pathway. "
                 }
             ],
             "evidence": [
