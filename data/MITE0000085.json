@@ -13,10 +13,11 @@
                             "P75FRHHCFPTCPYSP65VDVPHW"
                         ],
                         "reviewers": [
-                            "NJ6R5LEVTYWQEKC4XASTKZBC"
+                            "NJ6R5LEVTYWQEKC4XASTKZBC",
+                            "C62OJVVH7XOTOTFZSJT727YU"
                         ],
                         "date": "2024-05-06",
-                        "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing."
+                        "comment": "Initial entry. Reviewer 1 partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer 2 fixed aromaticity of SMILES and reaction SMARTS, reaction passing"
                     }
                 ]
             }
@@ -40,14 +41,14 @@
                 "Methylation"
             ],
             "reactionSMARTS": {
-                "reactionSMARTS": "[#8:1]-[c:2]1[c:3][c:4](-[#8:5])[c:6]2[c:7]([c:8]1)[c:9](=[O:10])[c:11](-[#8:12])[c:13][c:14]2=[O:15]>>[#6:1]-[c:2]1[c:3](-[#8:4])[c:5][c:6]2[c:7]([c:8]1-[#8:9])[c:10](=[O:11])[c:12][c:13](-[#8:14])[c:15]2=[O:16]",
+                "reactionSMARTS": "[#8:1]-[#6:2]1:[#6:8]:[#6:7]2-[#6:9](-[#6:11](=[#6:13]-[#6:14](=[#8:15])-[#6:6]:2:[#6:4](-[#8:5]):[#6:3]:1)-[#8:12])=[#8:10]>>[#8:1]-[#6:2]1:[#6:8]:[#6:7]2-[#6:9](-[#6:11](=[#6:13]-[#6:14](=[#8:15])-[#6:6]:2:[#6:4](-[#8:5]):[#6:3]:1-[#6])-[#8:12])=[#8:10]",
                 "isIterative": false
             },
             "reactions": [
                 {
-                    "substrate": "Oc1cc(O)c2c(c1)c(=O)c(O)cc2=O",
+                    "substrate": "Oc1cc2C(C(=CC(=O)c2c(O)c1)O)=O",
                     "products": [
-                        "Cc1c(O)cc2c(c1O)c(=O)cc(O)c2=O"
+                        "Oc1cc2C(C(=CC(=O)c2c(O)c1C)O)=O"
                     ],
                     "isBalanced": false,
                     "isIntermediate": true
