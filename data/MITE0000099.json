@@ -16,10 +16,11 @@
                             "K5UBFDWZSYOHS4HI42NVQMJK"
                         ],
                         "reviewers": [
-                            "NJ6R5LEVTYWQEKC4XASTKZBC"
+                            "NJ6R5LEVTYWQEKC4XASTKZBC",
+                            "C62OJVVH7XOTOTFZSJT727YU"
                         ],
                         "date": "2024-05-14",
-                        "comment": "Initial entry. Reviewer partially fixed general aromaticity."
+                        "comment": "Initial entry. Reviewer partially fixed general aromaticity. Reviewer 2 reworked reaction SMARTS, reaction passes."
                     }
                 ]
             }
@@ -43,7 +44,7 @@
                 "Other"
             ],
             "reactionSMARTS": {
-                "reactionSMARTS": "[#8:1]-[#6:2]-[#6@H:3]-1-[#8:4]-[#6@H:5](-[#6@H:6](-[#8:7])-[#6@@H:8]-1-[#8:9])-[n:10]1[c:11][c:12][c:13](=[O:14])[n:15][c:16]1=[O:17]>>[#8:1]-[#6:2]-[#6@H:3]-1-[#8:4]-[#6@H:5](-[#6@H:6](-[#8:7])-[#6@@H:8]-1-[#8:9])-[c:10]1[c:11][n:12][c:13](=[O:14])[n:15][c:16]1=[O:17]",
+                "reactionSMARTS": "[#8:1]-[#6:2]/[#6@@:3]1-[#6@@:8](\\[#8:9])-[#6@@:6](\\[#8:7])-[#6@:5](/[n:10]2:[#6:16](=[#8:17]):[nH:15]:[#6:13](=[#8:14]):[#6:12]:[#6:11]:2)-[#8:4]-1>>[#8:1]-[#6:2]/[#6@@:3]1-[#6@@:8](\\[#8:9])-[#6@@:6](\\[#8:7])-[#6@:5](/[#6:12]2:[#6:13](=[#8:14]):[nH:15]:[#6:16](=[#8:17]):[nH:10]:[#6:11]:2)-[#8:4]-1",
                 "isIterative": false
             },
             "reactions": [
@@ -52,7 +53,7 @@
                     "products": [
                         "OC[C@H]1O[C@H]([C@H](O)[C@@H]1O)c1c[nH]c(=O)[nH]c1=O"
                     ],
-                    "isBalanced": true,
+                    "isBalanced": false,
                     "isIntermediate": false
                 }
             ],
