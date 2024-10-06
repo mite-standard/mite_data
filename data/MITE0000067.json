@@ -13,10 +13,11 @@
                             "LEEWIYEZSPCYOCCY6BHNTE54"
                         ],
                         "reviewers": [
-                            "NJ6R5LEVTYWQEKC4XASTKZBC"
+                            "NJ6R5LEVTYWQEKC4XASTKZBC",
+                            "C62OJVVH7XOTOTFZSJT727YU"
                         ],
                         "date": "2024-04-23",
-                        "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer partially fixed reactions:substrate, validation still not passing. Reviewer partially fixed reactions:products, validation still not passing."
+                        "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer partially fixed reactions:substrate, validation still not passing. Reviewer partially fixed reactions:products, validation still not passing. Review 2 redrew reaction SMARTS to take into account aromatic nitrogens in heterocycles."
                     }
                 ]
             }
@@ -41,7 +42,7 @@
                 "Oxidation"
             ],
             "reactionSMARTS": {
-                "reactionSMARTS": "[#8:1]-[#6:2](=[O:3])-[#6:4](=[O:5])-[#6:6]-[c:7]1[c:8][n:9][c:10]2[c:15]([Cl:16])[c:14][c:13][c:12][c:11]12>>[#8:1]-[#6:2](=[O:3])-[c:4]1[n:18][c:17](-[#6:19](-[#8:20])=[O:21])[c:16](-[c:22]2[c:23][n:24][c:25]3[c:30]([Cl:31])[c:29][c:28][c:27][c:26]23)[c:5]1-[c:6]1[c:7][n:8][c:9]2[c:10]([Cl:11])[c:12][c:13][c:14][c:15]12",
+                "reactionSMARTS": "[#8:1]-[#6:2](-[#6:4](-[#6:6]-[#6:7]1:[#6:16]2:[#6:10](:[#6:11](:[#6:13]:[#6:14]:[#6:15]:2)-[Cl:12]):[nH:9]:[#6:8]:1)=[#8:5])=[#8:3]>>[#8:1]-[#6:2](-[#6:4]1:[#6:6](-[#6:7]2:[#6:16]3:[#6:10](:[#6:11](:[#6:13]:[#6:14]:[#6:15]:3)-[Cl:12]):[nH:9]:[#6:8]:2):[#6](-[#6]2:[#6]3:[#6](:[#6](:[#6]:[#6]:[#6]:3)-[Cl]):[nH]:[#6]:2):[#6](-[#6](=[#8])-[#8]):[nH]:1)=[#8:3]",
                 "isIterative": false
             },
             "reactions": [
@@ -50,7 +51,7 @@
                     "products": [
                         "OC(=O)c1[nH]c(C(O)=O)c(-c2c[nH]c3c(Cl)cccc23)c1-c1c[nH]c2c(Cl)cccc12"
                     ],
-                    "isBalanced": true,
+                    "isBalanced": false,
                     "isIntermediate": true
                 }
             ],
