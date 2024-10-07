@@ -14,10 +14,10 @@
                             "NHJ6M55E7ZEHUFNMEG4QIZWY"
                         ],
                         "reviewers": [
-                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                            "C62OJVVH7XOTOTFZSJT727YU"
                         ],
                         "date": "2024-05-14",
-                        "comment": "Initial entry."
+                        "comment": "Initial entry. Reviewer 1 added abstract version of reaction"
                     }
                 ]
             }
@@ -36,6 +36,36 @@
         }
     },
     "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#6:1]1:[#6:5]:[#6:4]:[#6:3]:[#7:2;h1]:1>>[Br]-[#6:1]1:[#6:5](-[Br]):[#6:4](-[Br]):[#6:3](-[Br]):[nH:2]:1",
+                "isIterative": false,
+                "description": "Tetra-brominates pyrrolyl-S-CoA"
+            },
+            "reactions": [
+                {
+                    "substrate": "c1ccc[nH]1",
+                    "products": [
+                        "Brc1[nH]c(Br)c(Br)c1Br"
+                    ],
+                    "isBalanced": false,
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "In vitro assay"
+                    ],
+                    "references": [
+                        "doi:10.1073/pnas.1519695113"
+                    ]
+                }
+            ]
+        },
         {
             "tailoring": [
                 "Halogenation"
