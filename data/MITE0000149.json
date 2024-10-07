@@ -32,7 +32,7 @@
         "databaseIds": {
             "uniprot": "A0A1C6TS88",
             "genpept": "SCL44650.1",
-            "mibig": "new400"
+            "mibig": "BGC0003008"
         }
     },
     "reactions": [
