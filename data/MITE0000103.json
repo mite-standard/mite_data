@@ -14,10 +14,11 @@
                             "FNDAVAB6GIJQLFPWCTUHK6QO"
                         ],
                         "reviewers": [
-                            "NJ6R5LEVTYWQEKC4XASTKZBC"
+                            "NJ6R5LEVTYWQEKC4XASTKZBC",
+                            "C62OJVVH7XOTOTFZSJT727YU"
                         ],
                         "date": "2024-05-13",
-                        "comment": "Initial entry. Reviewer fixed reactionSMARTS:reactionSMARTS."
+                        "comment": "Initial entry. Reviewer fixed reactionSMARTS:reactionSMARTS. Reviewer 2 fixed typo."
                     }
                 ]
             }
@@ -25,7 +26,7 @@
     },
     "enzyme": {
         "name": "TrlF",
-        "description": "Cleaves of CoA from 2-hydroxycyclohepta-1,4,6-triene-1-carboxyl-CoA",
+        "description": "Cleaves off CoA from 2-hydroxycyclohepta-1,4,6-triene-1-carboxyl-CoA",
         "references": [
             "doi:10.1039/D4SC01715C"
         ],
