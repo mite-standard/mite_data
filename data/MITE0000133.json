@@ -25,7 +25,7 @@
     },
     "enzyme": {
         "name": "THAH",
-        "description": "Hydroxylation of triterpene.",
+        "description": "Cytochrome P450 enzyme from Arabidopsis lyrata ssp lyrata (Lyre-leaved rock-cress).",
         "references": [
             "doi:10.1038/s41467-020-19153-6"
         ],

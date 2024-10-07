@@ -25,7 +25,7 @@
     },
     "enzyme": {
         "name": "THAS",
-        "description": "Cyclization of modified triterpene",
+        "description": "Oxidosqualene cyclase from Arabidopsis lyrata ssp lyrata (Lyre-leaved rock-cress).",
         "references": [
             "doi:10.1038/s41467-020-19153-6"
         ],
