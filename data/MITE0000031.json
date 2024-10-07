@@ -13,10 +13,11 @@
                             "P75FRHHCFPTCPYSP65VDVPHW"
                         ],
                         "reviewers": [
-                            "NJ6R5LEVTYWQEKC4XASTKZBC"
+                            "NJ6R5LEVTYWQEKC4XASTKZBC",
+                            "C62OJVVH7XOTOTFZSJT727YU"
                         ],
                         "date": "2024-05-15",
-                        "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer partially fixed reactions:substrate, validation still not passing. Reviewer partially fixed reactions:products, validation still not passing."
+                        "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer partially fixed reactions:substrate, validation still not passing. Reviewer partially fixed reactions:products, validation still not passing. Reviewer 2 fixed numbering of reaction SMARTS, removed explicit charges, and reworked substrate/product."
                     }
                 ]
             }
@@ -40,16 +41,17 @@
                 "Methylation"
             ],
             "reactionSMARTS": {
-                "reactionSMARTS": "[#7:1]-[#6:2](-[#6:3]-[c:4]1[c:5][c:6][c:7](-[#8:8])[c:9][c:10]1)-[#6:11](-[#8:12])=[O:13].[#6:14][S+:15]([#6:16]-[#6:17]-[#6@H:18](-[#7+:19])-[#6:20](-[#8-:21])=[O:22])[#6:23]-[#6@H:24]-1-[#8:25]-[#6@H:26](-[#6@H:27](-[#8:28])-[#6@@H:29]-1-[#8:30])-[n:31]1[c:32][n:33][c:34]2[c:35](-[#7:36])[n:37][c:38][n:39][c:40]12>>[#6:1]-[c:2]1[c:3][c:4](-[#6:5]-[#6:6](-[#7:7])-[#6:8](-[#8:9])=[O:10])[c:11][c:12][c:13]1-[#8:14].[#7:15]-[c:16]1[n:17][c:18][n:19][c:20]2[n:21]([c:22][n:23][c:24]12)-[#6@@H:25]-1-[#8:26]-[#6@H:27](-[#6:28]-[#16:29]-[#6:30]-[#6:31]-[#6@H:32](-[#7+:33])-[#6:34](-[#8-:35])=[O:36])-[#6@@H:37](-[#8:38])-[#6@H:39]-1-[#8:40]",
+                "reactionSMARTS": "[#7:1]-[#6:2](-[#6:11](=[#8:13])-[#8:12])-[#6:3]-[#6:4]1:[#6:10]:[#6:9]:[#6:7](-[#8:8]):[#6:6]:[#6:5]:1.[#6:99]-[#16:98](-[#6]-[#6]1-[#6](-[#8])-[#6](-[#8])-[#6](-[#7]2:[#6]3:[#6](:[#6](:[#7]:[#6]:[#7]:3)-[#7]):[#7]:[#6]:2)-[#8]-1)-[#6]-[#6]-[#6](-[#6](=[#8])-[#8])-[#7]>>[#7:1]-[#6:2](-[#6:11](=[#8:13])-[#8:12])-[#6:3]-[#6:4]1:[#6:10]:[#6:9]:[#6:7](-[#8:8]):[#6:6](-[#6]):[#6:5]:1.[#16:98](-[#6]-[#6]1-[#6](-[#8])-[#6](-[#8])-[#6](-[#7]2:[#6]3:[#6](:[#6](:[#7]:[#6]:[#7]:3)-[#7]):[#7]:[#6]:2)-[#8]-1)-[#6]-[#6]-[#6](-[#6](=[#8])-[#8])-[#7]",
                 "isIterative": false
             },
             "reactions": [
                 {
-                    "substrate": "NC(Cc1ccc(O)cc1)C(O)=O.C[S+](CC[C@H]([NH3+])C([O-])=O)C[C@H]1O[C@H]([C@H](O)[C@@H]1O)n1cnc2c(N)ncnc12",
+                    "substrate": "C[S+](CCC([NH3+])C(=O)[O-])CC1OC(n2cnc3c(N)ncnc32)C(O)C1O.NC(Cc1ccc(O)cc1)C(=O)O",
                     "products": [
-                        "Cc1cc(CC(N)C(O)=O)ccc1O", "Nc1ncnc2n(cnc12)[C@@H]1O[C@H](CSCC[C@H]([NH3+])C([O-])=O)[C@@H](O)[C@H]1O"
+                        "Cc1cc(CC(N)C(=O)O)ccc1O",
+                        "Nc1ncnc2c1ncn2C1OC(C[SH+]CCC(N)C(=O)O)C(O)C1O"
                     ],
-                    "isBalanced": false,
+                    "isBalanced": true,
                     "isIntermediate": true
                 }
             ],

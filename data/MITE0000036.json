@@ -14,10 +14,10 @@
                             "37IOAS4X5OHP34DPN55OLFBF"
                         ],
                         "reviewers": [
-                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                            "C62OJVVH7XOTOTFZSJT727YU"
                         ],
                         "date": "2024-05-14",
-                        "comment": "Initial entry."
+                        "comment": "Initial entry. Reviewer 1 fixed reaction SMARTS but had to remove the balanced substrate/product SMILES due to issues with phosphorous chemistry in RDKit."
                     }
                 ]
             }
@@ -44,26 +44,27 @@
             ],
             "description": "The highest catalytic efficiency of the enzyme is achived with the glucosaminyl-teicoplanin pseudoaglycone as substrate.",
             "reactionSMARTS": {
-                "reactionSMARTS": "[#7:1]-[#6@H:10]-1-[#6@H:11](-[#8:12])-[#8:6]-[#6@H:7](-[#6:5]-[#8:4])-[#6@@H:8](-[#8:3])-[#6@@H:9]-1-[#8:2]>>[#6:13]-[#6:14]-[#6:15]-[#6:16](=[O:17])-[#7:1]-[#6@H:10]-1-[#6@H:11](-[#8:12])-[#8:6]-[#6@H:7](-[#6:5]-[#8:4])-[#6@@H:8](-[#8:3])-[#6@@H:9]-1-[#8:2] |Sg:n:13:1-14:ht|",
+                "reactionSMARTS": "[#7:1]\\[#6@@:2]1-[#6@@:95](/[#8:96])-[#6@:93](\\[#8:94])-[#6@@:90](/[#6:91]-[#8:92])-[#8:89]-[#6@:3]-1/[#8:4]>>[#6]-[#6]-[#6]-[#6](=[#8])-[#7:1]\\[#6@@:2]1-[#6@@:95](/[#8:96])-[#6@:93](\\[#8:94])-[#6@@:90](/[#6:91]-[#8:92])-[#8:89]-[#6@:3]-1/[#8:4]",
                 "isIterative": false
             },
             "reactions": [
                 {
-                    "substrate": "[CH3:1][CH2:2][CH2:3][C:4](=[O:5])[S:6][CH2:7][CH2:8][NH:9][C:10](=[O:11])[CH2:12][CH2:13][NH:14][C:15](=[O:16])[C@@H:17]([C:18]([CH3:19])([CH3:20])[CH2:21][O:22][P:23](=[O:24])([OH:25])[O:26][P:27](=[O:28])([OH:29])[O:30][CH2:31][C@@H:32]1[C@@H:33]([O:48][P:49](=[O:50])([OH:51])[OH:52])[C@@H:34]([OH:47])[C@H:35]([n:37]2[cH:38][n:39][c:40]3[c:41]([NH2:46])[n:42][cH:43][n:44][c:45]23)[O:36]1)[OH:53].[NH2:54][C@@H:55]1[C@@H:56]([OH:57])[C@H:58]([OH:59])[C@@H:60]([CH2:61][OH:62])[O:63][C@H:64]1[O:65][c:66]1[c:67]2[cH:103][c:102]3[cH:104][c:105]1[O:106][c:107]1[cH:108][cH:109][c:110]([cH:111][c:112]1[Cl:113])[C@@H:114]([OH:115])[C@@H:116]1[NH:117][C:118](=[O:119])[C@H:120]([NH:121][C:122](=[O:123])[C@@H:101]3[NH:100][C:98](=[O:99])[C@@H:94]3[c:92]4[cH:91][c:89]([OH:90])[cH:88][c:87]([cH:93]4)[O:86][c:85]4[c:83]([OH:84])[cH:82][cH:81][c:80]([cH:146]4)[C@@H:78]([NH2:79])[C:76](=[O:77])[NH:75][C@H:74]([CH2:73][c:72]4[cH:71][cH:70][c:69]([c:148]([Cl:149])[cH:147]4)[O:68]2)[C:96](=[O:97])[NH:95]3)[c:124]2[cH:125][cH:126][c:127]([OH:128])[c:129]([cH:130]2)-[c:131]2[c:132]([OH:133])[cH:134][c:135]([OH:136])[cH:137][c:138]2[C@@H:139]([C:143]([OH:144])=[O:145])[NH:140][C:141]1=[O:142]",
+                    "substrate": "N[C@H]1[C@H](Oc2c3cc4cc2Oc2ccc(cc2Cl)[C@@H](O)[C@@H]2NC(=O)[C@H](NC(=O)[C@@H]4NC(=O)[C@H]4NC(=O)[C@@H](Cc5ccc(c(Cl)c5)O3)NC(=O)[C@H](N)c3ccc(O)c(c3)Oc3cc(O)cc4c3)c3ccc(O)c(c3)-c3c(O)cc(O)cc3[C@@H](C(=O)O)NC2=O)O[C@H](CO)[C@@H](O)[C@@H]1O",
                     "products": [
-                        "[CH3:1][CH2:2][CH2:3][C:4](=[O:5])[NH:54][C@@H:55]1[C@@H:56]([OH:57])[C@H:58]([OH:59])[C@@H:60]([CH2:61][OH:62])[O:63][C@H:64]1[O:65][c:66]1[c:67]2[cH:103][c:102]3[cH:104][c:105]1[O:106][c:107]1[cH:108][cH:109][c:110]([cH:111][c:112]1[Cl:113])[C@@H:114]([OH:115])[C@@H:116]1[NH:117][C:118](=[O:119])[C@H:120]([NH:121][C:122](=[O:123])[C@@H:101]3[NH:100][C:98](=[O:99])[C@@H:94]3[c:92]4[cH:91][c:89]([OH:90])[cH:88][c:87]([cH:93]4)[O:86][c:85]4[c:83]([OH:84])[cH:82][cH:81][c:80]([cH:146]4)[C@@H:78]([NH2:79])[C:76](=[O:77])[NH:75][C@H:74]([CH2:73][c:72]4[cH:71][cH:70][c:69]([c:148]([Cl:149])[cH:147]4)[O:68]2)[C:96](=[O:97])[NH:95]3)[c:124]2[cH:125][cH:126][c:127]([OH:128])[c:129]([cH:130]2)-[c:131]2[c:132]([OH:133])[cH:134][c:135]([OH:136])[cH:137][c:138]2[C@@H:139]([C:143]([OH:144])=[O:145])[NH:140][C:141]1=[O:142].[SH:6][CH2:7][CH2:8][NH:9][C:10](=[O:11])[CH2:12][CH2:13][NH:14][C:15](=[O:16])[C@@H:17]([C:18]([CH3:19])([CH3:20])[CH2:21][O:22][P:23](=[O:24])([OH:25])[O:26][P:27](=[O:28])([OH:29])[O:30][CH2:31][C@@H:32]1[C@@H:33]([O:48][P:49](=[O:50])([OH:51])[OH:52])[C@@H:34]([OH:47])[C@H:35]([n:37]2[cH:38][n:39][c:40]3[c:41]([NH2:46])[n:42][cH:43][n:44][c:45]23)[O:36]1)[OH:53]"
+                        "CCCC(=O)N[C@H]1[C@H](Oc2c3cc4cc2Oc2ccc(cc2Cl)[C@@H](O)[C@@H]2NC(=O)[C@H](NC(=O)[C@@H]4NC(=O)[C@H]4NC(=O)[C@@H](Cc5ccc(c(Cl)c5)O3)NC(=O)[C@H](N)c3ccc(O)c(c3)Oc3cc(O)cc4c3)c3ccc(O)c(c3)-c3c(O)cc(O)cc3[C@@H](C(=O)O)NC2=O)O[C@H](CO)[C@@H](O)[C@@H]1O"
                     ],
-                    "isBalanced": true,
-                    "isIntermediate": true
+                    "isBalanced": false,
+                    "isIntermediate": true,
+                    "description": "acyl-CoA as co-substrate"
                 },
                 {
-                    "substrate": "[CH3:13][CH2:14][CH2:15][C:16](=[O:17])[S:18][CH2:19][CH2:20][NH:21][C:22](=[O:23])[CH2:24][CH2:25][NH:26][C:27](=[O:28])[C@@H:29]([C:30]([CH3:31])([CH3:32])[CH2:33][O:34][P:35](=[O:36])([OH:37])[O:38][P:39](=[O:40])([OH:41])[O:42][CH2:43][C@@H:44]1[C@@H:45]([O:60][P:61](=[O:62])([OH:63])[OH:64])[C@@H:46]([OH:59])[C@H:47]([n:49]2[cH:50][n:51][c:52]3[c:53]([NH2:58])[n:54][cH:55][n:56][c:57]23)[O:48]1)[OH:65].[NH2:1][C@@H:10]1[C@@H:9]([OH:2])[C@H:8]([OH:3])[C@@H:7]([CH2:5][OH:4])[O:6][C@H:11]1[OH:12]",
+                    "substrate": "N[C@@H]1[C@@H](O)[C@H](O)[C@@H](CO)O[C@H]1O",
                     "products": [
-                        "[NH:1]([C@@H:10]1[C@@H:9]([OH:2])[C@H:8]([OH:3])[C@@H:7]([CH2:5][OH:4])[O:6][C@H:11]1[OH:12])[C:16]([CH2:15][CH2:14][CH3:13])=[O:17].[SH:18][CH2:19][CH2:20][NH:21][C:22](=[O:23])[CH2:24][CH2:25][NH:26][C:27](=[O:28])[C@@H:29]([C:30]([CH3:31])([CH3:32])[CH2:33][O:34][P:35](=[O:36])([OH:37])[O:38][P:39](=[O:40])([OH:41])[O:42][CH2:43][C@@H:44]1[C@@H:45]([O:60][P:61](=[O:62])([OH:63])[OH:64])[C@@H:46]([OH:59])[C@H:47]([n:49]2[cH:50][n:51][c:52]3[c:53]([NH2:58])[n:54][cH:55][n:56][c:57]23)[O:48]1)[OH:65]"
+                        "CCCC(=O)N[C@@H]1[C@@H](O)[C@H](O)[C@@H](CO)O[C@H]1O"
                     ],
-                    "isBalanced": true,
+                    "isBalanced": false,
                     "isIntermediate": true,
-                    "description": "Reaction does not occure naturally during teicoplanin biosynthesis."
+                    "description": "Reaction does not occure naturally during teicoplanin biosynthesis; acyl-CoA as co-substrate."
                 }
             ],
             "evidence": [

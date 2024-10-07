@@ -13,10 +13,10 @@
                             "LEEWIYEZSPCYOCCY6BHNTE54"
                         ],
                         "reviewers": [
-                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                            "C62OJVVH7XOTOTFZSJT727YU"
                         ],
                         "date": "2024-04-23",
-                        "comment": "Initial entry."
+                        "comment": "Initial entry. Reviewer fixed reaction SMARTS format."
                     }
                 ]
             }
@@ -40,7 +40,7 @@
                 "Oxidation"
             ],
             "reactionSMARTS": {
-                "reactionSMARTS": "[#7]-[#6](-[#6]-[#6]-1=[#6]-[#7]-[#6]-2=[#6]-1-[#6]=[#6]-[#6]=[#6]-2Cl)-[#6](-[#8])=O>>[#8]-[#6](=O)-[#6](=O)-[#6]-[#6]-1=[#6]-[#7]-[#6]-2=[#6]-1-[#6]=[#6]-[#6]=[#6]-2Cl",
+                "reactionSMARTS": "[NH2:1][CH:2]([CH2:3][c:4]1[cH:5][nH:6][c:7]2[c:8]([Cl:16])[cH:9][cH:10][cH:11][c:12]12)[C:13]([OH:14])=[O:15]>>[O:1]=[C:2]([CH2:3][c:4]1[cH:5][nH:6][c:7]2[c:8]([Cl:16])[cH:9][cH:10][cH:11][c:12]12)[C:13]([OH:14])=[O:15]",
                 "isIterative": false
             },
             "reactions": [
@@ -50,7 +50,8 @@
                         "O=C(O)C(=O)Cc1c[nH]c2c(Cl)cccc12"
                     ],
                     "isBalanced": true,
-                    "isIntermediate": true
+                    "isIntermediate": true,
+                    "description": "Should actually be L-chlorotryptophan."
                 }
             ],
             "evidence": [

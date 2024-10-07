@@ -14,10 +14,10 @@
                             "RQC4INAEW544B5HWWLI3CX2V"
                         ],
                         "reviewers": [
-                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                            "C62OJVVH7XOTOTFZSJT727YU"
                         ],
                         "date": "2024-06-07",
-                        "comment": "Initial entry."
+                        "comment": "Initial entry. Reviewer 1 added description and verified reaction."
                     }
                 ]
             }
@@ -25,13 +25,13 @@
     },
     "enzyme": {
         "name": "THAS",
-        "description": "",
+        "description": "Oxidosqualene cyclase from Arabidopsis lyrata ssp lyrata (Lyre-leaved rock-cress).",
         "references": [
             "doi:10.1038/s41467-020-19153-6"
         ],
         "databaseIds": {
             "genpept": "CAH8278777.1",
-            "mibig": "new052"
+            "mibig": "BGC0002857"
         }
     },
     "reactions": [

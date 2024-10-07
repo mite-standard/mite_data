@@ -32,6 +32,7 @@
             "doi:10.1038/s41589-022-01246-6"
         ],
         "databaseIds": {
+            "uniprot": "P9WEK5",
             "genpept": "UZP48216.1",
             "mibig": "new172"
         }

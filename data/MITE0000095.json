@@ -14,10 +14,11 @@
                             "SDAWYQYFQDDVDNDD7ZO2XI6Z"
                         ],
                         "reviewers": [
-                            "NJ6R5LEVTYWQEKC4XASTKZBC"
+                            "NJ6R5LEVTYWQEKC4XASTKZBC",
+                            "C62OJVVH7XOTOTFZSJT727YU"
                         ],
                         "date": "2024-03-19",
-                        "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing."
+                        "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer 2 reworked reaction SMARTS, reaction passing."
                     }
                 ]
             }
@@ -41,16 +42,16 @@
                 "Cyclization"
             ],
             "reactionSMARTS": {
-                "reactionSMARTS": "[#6:1]-[#8:2]-[#6:3]-1=[#6:4]-[#6:5](-[#6:6])=[#6:7]-2-[#6@@H:8](-[#6:9]=[O:10])-[#6@@H:11]-1[C:12]#[C:13]\\[#6:14]=[#6:15]/[C:16]#[C:17][#6@@H:18]-2-[#7:19]-[c:20]1[c:21][c:22][c:23](-[#8:24])[c:25]2-[#6:26](=[O:27])-[c:28]3[c:29][c:30][c:31][c:32][c:33]3-[#6:34](=[O:35])-[c:36]12>>[#6:1]-[#8:2]-[#6:3]-1=[#6:4]-[#6:5](-[#6:6])=[#6:7]2-[#6@H:8]3-[#7:9]=[#6:10]-4-[#6@H:11](-[#6:12]-[#6:13](=[O:14])-[c:15]5[c:16](-[#8:17])[c:18]6[c:19][c:20][c:21][c:22][c:23]6[c:24](-[#8:25])[c:26]-45)[C@@:27]2([#6:28]=[O:29])[#6@@H:30]-1[C:31]#[C:32]\\[#6:33]=[#6:34]/[C:35]#[C:36]3",
+                "reactionSMARTS": "[CH3:1][O:2][C:3]1[CH:33]2[CH:34]([CH:35]=[O:36])[C:7]([CH:8]([C:27]#[C:28][CH:29]=[CH:30][C:31]#[C:32]2)[NH:9][c:10]2[c:16]3[C:17]([c:19]4[c:24]([C:25](=[O:26])[c:15]3[c:13]([OH:14])[cH:12][cH:11]2)[cH:23][cH:22][cH:21][cH:20]4)=[O:18])=[C:5]([CH3:6])[CH:4]=1>>[CH3:1][O:2][C:3]1[CH:33]2[C:34]3([CH:11]4[CH2:12][C:13]([c:15]5[c:25]([OH:26])[c:24]6[c:19]([cH:20][cH:21][cH:22][cH:23]6)[c:17]([OH:18])[c:16]5[C:10]4=[N:9][CH:8]([C:27]#[C:28][CH:29]=[CH:30][C:31]#[C:32]2)[C:7]3=[C:5]([CH3:6])[CH:4]=1)=[O:14])[CH:35]=[O:36]",
                 "isIterative": false
             },
             "reactions": [
                 {
-                    "substrate": "COC1=CC(C)=C2[C@@H](Nc3ccc(O)c4c3C(=O)c3ccccc3C4=O)C#CC=CC#C[C@H]1[C@@H]2C=O",
+                    "substrate": "COC1=CC(C)=C2C(Nc3ccc(O)c4c3C(=O)c3ccccc3C4=O)C#CC=CC#CC1C2C=O",
                     "products": [
-                        "COC1=CC(C)=C2[C@@H]3C#CC=CC#C[C@H]1[C@]2(C=O)[C@H]1CC(=O)c2c(c(O)c4ccccc4c2O)C1=N3"
+                        "COC1=CC(C)=C2C3C#CC=CC#CC1C2(C=O)C1CC(=O)c2c(c(O)c4ccccc4c2O)C1=N3"
                     ],
-                    "isBalanced": true,
+                    "isBalanced": false,
                     "isIntermediate": false
                 }
             ],

@@ -46,9 +46,9 @@
             },
             "reactions": [
                 {
-                    "substrate": "CO[C@H]1CC[C@@H](O)C2=C1Oc1c3OCOC4Cc5cc6C=C(C)N(C)C(=O)c6c(O)c5-c(c(O)c1C2=O)c34",
+                    "substrate": "CO[C@H]1CC[C@@H](O)c2c1oc1c3c4c(c(O)c1c2=O)-c1c(cc2cc(C)n(C)c(=O)c2c1O)CC4OCO3",
                     "products": [
-                        "CO[C@H]1CC[C@@H](O)C2=C1Oc1c3OCOC4Cc5cc6C(Cl)=C(C)N(C)C(=O)c6c(O)c5-c(c(O)c1C2=O)c34"
+                        "CO[C@H]1CC[C@@H](O)c2c1oc1c3c4c(c(O)c1c2=O)-c1c(cc2c(Cl)c(C)n(C)c(=O)c2c1O)CC4OCO3"
                     ],
                     "isBalanced": false,
                     "isIntermediate": true

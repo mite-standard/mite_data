@@ -14,10 +14,10 @@
                             "RQC4INAEW544B5HWWLI3CX2V"
                         ],
                         "reviewers": [
-                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                            "C62OJVVH7XOTOTFZSJT727YU"
                         ],
                         "date": "2024-06-07",
-                        "comment": "Initial entry."
+                        "comment": "Initial entry. Reviewer 1 added correct number of products for a balanced reaction."
                     }
                 ]
             }
@@ -50,6 +50,8 @@
                 {
                     "substrate": "C=C(C)CCOP(=O)([O-])OP(=O)([O-])[O-].C=C(C)CCOP(=O)([O-])OP(=O)([O-])[O-].C=C(C)CCOP(=O)([O-])OP(=O)([O-])[O-].CC(C)=CCOP(=O)([O-])OP(=O)([O-])[O-]",
                     "products": [
+                        "O=P([O-])([O-])OP(=O)([O-])O",
+                        "O=P([O-])([O-])OP(=O)([O-])O",
                         "O=P([O-])([O-])OP(=O)([O-])O",
                         "CC(C)=CCC/C(C)=C\\CC/C(C)=C\\CC/C(C)=C\\COP(=O)([O-])OP(=O)([O-])[O-]"
                     ],

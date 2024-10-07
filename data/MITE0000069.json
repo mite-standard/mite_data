@@ -13,10 +13,10 @@
                             "LEEWIYEZSPCYOCCY6BHNTE54"
                         ],
                         "reviewers": [
-                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                            "C62OJVVH7XOTOTFZSJT727YU"
                         ],
                         "date": "2024-04-23",
-                        "comment": "Initial entry."
+                        "comment": "Initial entry. Reviewer reworked reaction SMARTS to fix missing numbering"
                     }
                 ]
             }
@@ -40,7 +40,7 @@
                 "Halogenation"
             ],
             "reactionSMARTS": {
-                "reactionSMARTS": "[#7]-[#6](-[#6]-[#6]-1=[#6]-[#7]-[#6]-2=[#6]-1-[#6]=[#6]-[#6]=[#6]-2)-[#6](-[#8])=O>>[#7]-[#6](-[#6]-[#6]-1=[#6]-[#7]-[#6]-2=[#6]-1-[#6]=[#6]-[#6]=[#6]-2Cl)-[#6](-[#8])=O",
+                "reactionSMARTS": "[#7:1]-[#6:2](-[#6:13](-[#8:15])=[#8:14])-[#6:3]-[#6:4]1:[#6:12]2:[#6:7](:[#6:8]:[#6:9]:[#6:10]:[#6:11]:2):[nH:6]:[#6:5]:1>>[#7:1]-[#6:2](-[#6:13](-[#8:15])=[#8:14])-[#6:3]-[#6:4]1:[#6:12]2:[#6:7](:[#6:8](:[#6:9]:[#6:10]:[#6:11]:2)-[Cl]):[nH:6]:[#6:5]:1",
                 "isIterative": false
             },
             "reactions": [
@@ -49,7 +49,7 @@
                     "products": [
                         "NC(Cc1c[nH]c2c(Cl)cccc12)C(=O)O"
                     ],
-                    "isBalanced": true,
+                    "isBalanced": false,
                     "isIntermediate": true
                 }
             ],
