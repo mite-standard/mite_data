@@ -33,6 +33,7 @@
             "doi:10.1038/s41589-022-01246-6"
         ],
         "databaseIds": {
+            "uniprot": "P9WEJ7",
             "genpept": "UZP48213.1",
             "mibig": "new172"
         }
@@ -48,7 +49,7 @@
             },
             "reactions": [
                 {
-                    "substrate": "NC(Cc1c[nH]c2ccccc12)C(=O)O.NC(CCCN=C(N)N)C(O)=O",
+                    "substrate": "NC(Cc1c[nH]c2ccccc12)C(=O)O.NC(N)=NCCCC(N)C(=O)O",
                     "products": [
                         "NC(N)=NCCCC1NC(=O)C(Cc2c[nH]c3ccccc23)NC1=O"
                     ],

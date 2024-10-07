@@ -49,18 +49,18 @@
             },
             "reactions": [
                 {
-                    "substrate": "N[C@H]1[C@H](Oc2c3Oc4c(Cl)cc([C@H]([C@H]5C(=O)N[C@H](C(=O)O)c6c(c(cc(c6)O)O)-c6cc(ccc6O)[C@@H](NC([C@@H]6NC([C@H]7NC(=O)[C@@H](Cc8cc(Cl)c(Oc2cc6c3)cc8)NC(=O)[C@H](N)c2cc(c(cc2)O)Oc2cc7cc(c2)O)=O)=O)C(=O)N5)O)cc4)O[C@H](CO)[C@@H](O)[C@@H]1O",
+                    "substrate": "N[C@H]1[C@H](Oc2c3cc4cc2Oc2ccc(cc2Cl)[C@@H](O)[C@@H]2NC(=O)[C@H](NC(=O)[C@@H]4NC(=O)[C@H]4NC(=O)[C@@H](Cc5ccc(c(Cl)c5)O3)NC(=O)[C@H](N)c3ccc(O)c(c3)Oc3cc(O)cc4c3)c3ccc(O)c(c3)-c3c(O)cc(O)cc3[C@@H](C(=O)O)NC2=O)O[C@H](CO)[C@@H](O)[C@@H]1O",
                     "products": [
-                        "CCCC(N[C@H]1[C@H](Oc2c3Oc4c(Cl)cc([C@H]([C@H]5C(=O)N[C@H](C(=O)O)c6c(c(cc(c6)O)O)-c6cc(ccc6O)[C@@H](NC([C@@H]6NC([C@H]7NC(=O)[C@@H](Cc8cc(Cl)c(Oc2cc6c3)cc8)NC(=O)[C@H](N)c2cc(c(cc2)O)Oc2cc7cc(c2)O)=O)=O)C(=O)N5)O)cc4)O[C@H](CO)[C@@H](O)[C@@H]1O)=O"
+                        "CCCC(=O)N[C@H]1[C@H](Oc2c3cc4cc2Oc2ccc(cc2Cl)[C@@H](O)[C@@H]2NC(=O)[C@H](NC(=O)[C@@H]4NC(=O)[C@H]4NC(=O)[C@@H](Cc5ccc(c(Cl)c5)O3)NC(=O)[C@H](N)c3ccc(O)c(c3)Oc3cc(O)cc4c3)c3ccc(O)c(c3)-c3c(O)cc(O)cc3[C@@H](C(=O)O)NC2=O)O[C@H](CO)[C@@H](O)[C@@H]1O"
                     ],
                     "isBalanced": false,
                     "isIntermediate": true,
                     "description": "acyl-CoA as co-substrate"
                 },
                 {
-                    "substrate": "N[C@H]1[C@H](O)O[C@H](CO)[C@@H](O)[C@@H]1O",
+                    "substrate": "N[C@@H]1[C@@H](O)[C@H](O)[C@@H](CO)O[C@H]1O",
                     "products": [
-                        "N(C(=O)CCC)[C@H]1[C@H](O)O[C@H](CO)[C@@H](O)[C@@H]1O"
+                        "CCCC(=O)N[C@@H]1[C@@H](O)[C@H](O)[C@@H](CO)O[C@H]1O"
                     ],
                     "isBalanced": false,
                     "isIntermediate": true,

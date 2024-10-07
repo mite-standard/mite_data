@@ -46,7 +46,7 @@
             },
             "reactions": [
                 {
-                    "substrate": "NC(C(=O)O)Cc1ccc(O)cc1.C[S+](CC1C(O)C(O)C([n]2c3c(c(ncn3)N)nc2)O1)CCC(C(=O)[O-])[NH3+]",
+                    "substrate": "C[S+](CCC([NH3+])C(=O)[O-])CC1OC(n2cnc3c(N)ncnc32)C(O)C1O.NC(Cc1ccc(O)cc1)C(=O)O",
                     "products": [
                         "Cc1cc(CC(N)C(=O)O)ccc1O",
                         "Nc1ncnc2c1ncn2C1OC(C[SH+]CCC(N)C(=O)O)C(O)C1O"

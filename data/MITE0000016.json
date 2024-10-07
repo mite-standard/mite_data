@@ -46,9 +46,9 @@
             },
             "reactions": [
                 {
-                    "substrate": "COC(C1C(C(O)=O)(OC2OC(C)C(O)C(OC3OC(C)C(O)C(OC4OC(C)C(O)C(O)(C)C4)C3)C2)C(=O)c2c(cc3c(c2O)c(O)c(C)c(OC2OC(C)C(O)C(OC4OC(C)C(O)C(O)C4)C2)c3)C1)C(C(C(=O)C)O)=O",
+                    "substrate": "COC(C(=O)C(O)C(C)=O)C1Cc2cc3cc(OC4CC(OC5CC(O)C(O)C(C)O5)C(O)C(C)O4)c(C)c(O)c3c(O)c2C(=O)C1(OC1CC(OC2CC(OC3CC(C)(O)C(O)C(C)O3)C(O)C(C)O2)C(O)C(C)O1)C(=O)O",
                     "products": [
-                        "COC(C1C(OC2OC(C)C(O)C(OC3OC(C)C(O)C(OC4OC(C)C(O)C(O)(C)C4)C3)C2)C(=O)c2c(cc3c(c2O)c(O)c(C)c(OC2OC(C)C(O)C(OC4OC(C)C(O)C(O)C4)C2)c3)C1)C(C(C(=O)C)O)=O"
+                        "COC(C(=O)C(O)C(C)=O)C1Cc2cc3cc(OC4CC(OC5CC(O)C(O)C(C)O5)C(O)C(C)O4)c(C)c(O)c3c(O)c2C(=O)C1OC1CC(OC2CC(OC3CC(C)(O)C(O)C(C)O3)C(O)C(C)O2)C(O)C(C)O1"
                     ],
                     "isBalanced": false,
                     "isIntermediate": true
@@ -75,9 +75,9 @@
             },
             "reactions": [
                 {
-                    "substrate": "COC1C2C(C(c3c(O)c4c(cc(c(c4O)C)OC4OC(C)C(O)C(OC5OC(C)C(O)C(O)C5)C4)cc3C2)=O)(OC2OC(C)C(O)C(OC3OC(C)C(O)C(OC4OC(C)C(O)C(O)(C)C4)C3)C2)C(=O)OC(C(=O)C)=C1O",
+                    "substrate": "COC1C(O)=C(C(C)=O)OC(=O)C2(OC3CC(OC4CC(OC5CC(C)(O)C(O)C(C)O5)C(O)C(C)O4)C(O)C(C)O3)C(=O)c3c(cc4cc(OC5CC(OC6CC(O)C(O)C(C)O6)C(O)C(C)O5)c(C)c(O)c4c3O)CC12",
                     "products": [
-                        "COC(C1C(C(O)=O)(OC2OC(C)C(O)C(OC3OC(C)C(O)C(OC4OC(C)C(O)C(O)(C)C4)C3)C2)C(=O)c2c(cc3c(c2O)c(O)c(C)c(OC2OC(C)C(O)C(OC4OC(C)C(O)C(O)C4)C2)c3)C1)C(C(C(=O)C)O)=O"
+                        "COC(C(=O)C(O)C(C)=O)C1Cc2cc3cc(OC4CC(OC5CC(O)C(O)C(C)O5)C(O)C(C)O4)c(C)c(O)c3c(O)c2C(=O)C1(OC1CC(OC2CC(OC3CC(C)(O)C(O)C(C)O3)C(O)C(C)O2)C(O)C(C)O1)C(=O)O"
                     ],
                     "isBalanced": false,
                     "isIntermediate": true
@@ -104,9 +104,9 @@
             },
             "reactions": [
                 {
-                    "substrate": "COC1C2C(C(c3c(O)c4c(cc(c(c4O)C)OC4OC(C)C(O)C(OC5OC(C)C(O)C(O)C5)C4)cc3C2)=O)(OC2OC(C)C(O)C(OC3OC(C)C(O)C(OC4OC(C)C(O)C(O)(C)C4)C3)C2)C(=O)C(C(=O)C)=C1O",
+                    "substrate": "COC1C(O)=C(C(C)=O)C(=O)C2(OC3CC(OC4CC(OC5CC(C)(O)C(O)C(C)O5)C(O)C(C)O4)C(O)C(C)O3)C(=O)c3c(cc4cc(OC5CC(OC6CC(O)C(O)C(C)O6)C(O)C(C)O5)c(C)c(O)c4c3O)CC12",
                     "products": [
-                        "COC1C2C(C(c3c(O)c4c(cc(c(c4O)C)OC4OC(C)C(O)C(OC5OC(C)C(O)C(O)C5)C4)cc3C2)=O)(OC2OC(C)C(O)C(OC3OC(C)C(O)C(OC4OC(C)C(O)C(O)(C)C4)C3)C2)C(=O)OC(C(=O)C)=C1O"
+                        "COC1C(O)=C(C(C)=O)OC(=O)C2(OC3CC(OC4CC(OC5CC(C)(O)C(O)C(C)O5)C(O)C(C)O4)C(O)C(C)O3)C(=O)c3c(cc4cc(OC5CC(OC6CC(O)C(O)C(C)O6)C(O)C(C)O5)c(C)c(O)c4c3O)CC12"
                     ],
                     "isBalanced": false,
                     "isIntermediate": true

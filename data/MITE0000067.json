@@ -47,9 +47,9 @@
             },
             "reactions": [
                 {
-                    "substrate": "OC(=O)C(=O)Cc1c[nH]c2c(Cl)cccc12",
+                    "substrate": "O=C(O)C(=O)Cc1c[nH]c2c(Cl)cccc12",
                     "products": [
-                        "OC(=O)c1[nH]c(C(O)=O)c(-c2c[nH]c3c(Cl)cccc23)c1-c1c[nH]c2c(Cl)cccc12"
+                        "O=C(O)c1[nH]c(C(=O)O)c(-c2c[nH]c3c(Cl)cccc23)c1-c1c[nH]c2c(Cl)cccc12"
                     ],
                     "isBalanced": false,
                     "isIntermediate": true

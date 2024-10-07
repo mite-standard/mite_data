@@ -48,7 +48,7 @@
                 {
                     "substrate": "NC(Cc1ccc(O)cc1)C(=O)O.NC(N)=NCCCC(N)C(=O)O",
                     "products": [
-                        "C1(NC(=O)C(NC1=O)CCC/N=C(/N)\\N)Cc1ccc(O)cc1"
+                        "NC(N)=NCCCC1NC(=O)C(Cc2ccc(O)cc2)NC1=O"
                     ],
                     "isBalanced": false,
                     "isIntermediate": true

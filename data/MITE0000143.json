@@ -19,7 +19,7 @@
                             "C62OJVVH7XOTOTFZSJT727YU"
                         ],
                         "date": "2024-07-24",
-                        "comment": "Initial entry. Reviewer 1 fixed reaction SMARTS numbering"
+                        "comment": "Initial entry. Reviewer 1 fixed reaction SMARTS numberingq"
                     }
                 ]
             }
@@ -32,6 +32,7 @@
             "doi:10.1038/s41589-022-01246-6"
         ],
         "databaseIds": {
+            "uniprot": "P9WEK4",
             "genpept": "UZP48215.1",
             "mibig": "new172"
         }

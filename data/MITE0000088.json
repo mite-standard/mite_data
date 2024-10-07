@@ -48,7 +48,7 @@
                 {
                     "substrate": "C/C=C(C)/C=C(C)/C(O)=C(/C)C(=O)[S-]",
                     "products": [
-                        "C/C=C(\\\\C)C1OC1(C)C(O)=C(C)C(=O)[S-]"
+                        "C/C=C(\\C)C1OC1(C)C(O)=C(C)C(=O)[S-]"
                     ],
                     "isBalanced": false,
                     "isIntermediate": true

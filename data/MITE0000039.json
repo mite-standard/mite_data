@@ -46,9 +46,9 @@
             },
             "reactions": [
                 {
-                    "substrate": "N[C@@H](C(N[C@@H]1[C@@H](O)c2cc(Cl)c(cc2)Oc2c(O[C@@H]3[C@H](O[C@@H]4O[C@@H](C)[C@@H](O)[C@](N)(C)C4)[C@@H](O)[C@H](O)[C@@H](CO)O3)c3cc(c2)[C@H](C(N[C@@H]2c4ccc(O)c(c4)-c4c(cc(cc4O)O)[C@@H](C(O)=O)NC(=O)[C@H]([C@H](c4ccc(O3)c(Cl)c4)O)NC2=O)=O)NC(=O)[C@H](CC(=O)N)NC1=O)=O)CC(C)C",
+                    "substrate": "CC(C)C[C@@H](N)C(=O)N[C@H]1C(=O)N[C@@H](CC(N)=O)C(=O)N[C@H]2C(=O)N[C@H]3C(=O)N[C@H](C(=O)N[C@H](C(=O)O)c4cc(O)cc(O)c4-c4cc3ccc4O)[C@@H](O)c3ccc(c(Cl)c3)Oc3cc2cc(c3O[C@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O[C@H]2C[C@](C)(N)[C@H](O)[C@H](C)O2)Oc2ccc(cc2Cl)[C@@H]1O",
                     "products": [
-                        "N(C)[C@H](CC(C)C)C(=O)N[C@H]1C(=O)N[C@@H](CC(N)=O)C(=O)N[C@H]2C(=O)N[C@H]3C(=O)N[C@@H]([C@@H](O)c4cc(Cl)c(Oc5cc2cc(c5O[C@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O[C@H]2C[C@](C)(N)[C@H](O)[C@H](C)O2)Oc2ccc(cc2Cl)[C@@H]1O)cc4)C(=O)N[C@H](C(=O)O)c1cc(O)cc(O)c1-c1cc3ccc1O"
+                        "CN[C@H](CC(C)C)C(=O)N[C@H]1C(=O)N[C@@H](CC(N)=O)C(=O)N[C@H]2C(=O)N[C@H]3C(=O)N[C@H](C(=O)N[C@H](C(=O)O)c4cc(O)cc(O)c4-c4cc3ccc4O)[C@@H](O)c3ccc(c(Cl)c3)Oc3cc2cc(c3O[C@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O[C@H]2C[C@](C)(N)[C@H](O)[C@H](C)O2)Oc2ccc(cc2Cl)[C@@H]1O"
                     ],
                     "isBalanced": false,
                     "isIntermediate": false,
@@ -77,9 +77,9 @@
             },
             "reactions": [
                 {
-                    "substrate": "N[C@@H](C(N[C@@H]1[C@@H](O)c2cc(Cl)c(cc2)Oc2c(O[C@@H]3[C@H](O[C@@H]4O[C@@H](C)[C@@H](O)[C@](N)(C)C4)[C@@H](O)[C@H](O)[C@@H](CO)O3)c3cc(c2)[C@H](C(N[C@@H]2c4ccc(O)c(c4)-c4c(cc(cc4O)O)[C@@H](C(O)=O)NC(=O)[C@H]([C@H](c4ccc(O3)c(Cl)c4)O)NC2=O)=O)NC(=O)[C@H](CC(=O)N)NC1=O)=O)CC(C)C",
+                    "substrate": "CC(C)C[C@@H](N)C(=O)N[C@H]1C(=O)N[C@@H](CC(N)=O)C(=O)N[C@H]2C(=O)N[C@H]3C(=O)N[C@H](C(=O)N[C@H](C(=O)O)c4cc(O)cc(O)c4-c4cc3ccc4O)[C@@H](O)c3ccc(c(Cl)c3)Oc3cc2cc(c3O[C@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O[C@H]2C[C@](C)(N)[C@H](O)[C@H](C)O2)Oc2ccc(cc2Cl)[C@@H]1O",
                     "products": [
-                        "N(C)([C@@H](C(N[C@@H]1[C@@H](O)c2cc(Cl)c(cc2)Oc2c(O[C@@H]3[C@H](O[C@@H]4O[C@@H](C)[C@@H](O)[C@](N)(C)C4)[C@@H](O)[C@H](O)[C@@H](CO)O3)c3cc(c2)[C@H](C(N[C@@H]2c4ccc(O)c(c4)-c4c(cc(cc4O)O)[C@@H](C(O)=O)NC(=O)[C@H]([C@H](c4ccc(O3)c(Cl)c4)O)NC2=O)=O)NC(=O)[C@H](CC(=O)N)NC1=O)=O)CC(C)C)C"
+                        "CC(C)C[C@H](C(=O)N[C@H]1C(=O)N[C@@H](CC(N)=O)C(=O)N[C@H]2C(=O)N[C@H]3C(=O)N[C@H](C(=O)N[C@H](C(=O)O)c4cc(O)cc(O)c4-c4cc3ccc4O)[C@@H](O)c3ccc(c(Cl)c3)Oc3cc2cc(c3O[C@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O[C@H]2C[C@](C)(N)[C@H](O)[C@H](C)O2)Oc2ccc(cc2Cl)[C@@H]1O)N(C)C"
                     ],
                     "isBalanced": false,
                     "isIntermediate": false,

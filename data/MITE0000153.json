@@ -45,9 +45,9 @@
             },
             "reactions": [
                 {
-                    "substrate": "CSCC[C@H](N)C(=O)N[C@@H](CCCNC(N)=N)C(=O)N[C@@H](Cc1c[nH]cn1)C(=O)N[C@@H](C)C(=O)N[C@@H](Cc1c[nH]cn1)C(O)=O",
+                    "substrate": "CSCC[C@H](N)C(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@@H](Cc1c[nH]cn1)C(=O)N[C@@H](C)C(=O)N[C@@H](Cc1c[nH]cn1)C(=O)O",
                     "products": [
-                        "CSCC[C@@H](C(N[C@H](C(N[C@@H]1C(N[C@H](C(N[C@H](C(=O)O)Cc2nc(-c3nc(c[nH]3)C1)[nH]c2)=O)C)=O)=O)CCCNC(=N)N)=O)N"
+                        "CSCC[C@H](N)C(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@H]1Cc2c[nH]c(n2)-c2nc(c[nH]2)C[C@@H](C(=O)O)NC(=O)[C@H](C)NC1=O"
                     ],
                     "isBalanced": false,
                     "isIntermediate": false

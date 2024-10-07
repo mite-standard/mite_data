@@ -47,9 +47,9 @@
             },
             "reactions": [
                 {
-                    "substrate": "CC\\C=C\\C1=C2OC(CC(=O)OC/C(=C\\C(\\CC)=C\\CC)/C=C/C(O)C2O)=CC1=O",
+                    "substrate": "CC/C=C/c1c2oc(cc1=O)CC(=O)OCC(=C\\C(=C\\CC)CC)/C=C/C(O)C2O",
                     "products": [
-                        "CC\\C=C(/CC)\\C=C1/COC(=O)CC2=CC(=O)C(\\C=C\\C(C)O)=C(O2)C(O)C(O)/C=C/1"
+                        "CC/C=C(/C=C1/C=C/C(O)C(O)c2oc(cc(=O)c2/C=C/C(C)O)CC(=O)OC1)CC"
                     ],
                     "isBalanced": false,
                     "isIntermediate": false

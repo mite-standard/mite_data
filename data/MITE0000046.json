@@ -51,7 +51,7 @@
                 {
                     "substrate": "CSCC[C@H](NC(=O)[C@H](CS)NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H]1CCCN1C(=O)CN)C(C)C)C(C)C)C(C)C)C(=O)O",
                     "products": [
-                        "CSCC[C@H](NC([C@@H](NC([C@@H](NC([C@@H](NC([C@H](C(C)(C)C)NC([C@H](C(C)(C)C)NC([C@H](C(C)C)NC([C@H]1N(C(CN)=O)CCC1)=O)=O)=O)=O)Cc1ccccc1)=O)CC(O)=O)=O)CS)=O)C(O)=O"
+                        "CSCC[C@H](NC(=O)[C@H](CS)NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H]1CCCN1C(=O)CN)C(C)C)C(C)(C)C)C(C)(C)C)C(=O)O"
                     ],
                     "isBalanced": false,
                     "isIntermediate": true,

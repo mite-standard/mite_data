@@ -46,7 +46,7 @@
             },
             "reactions": [
                 {
-                    "substrate": "CC[C@H](C)[C@H](NC(=O)[C@H](CCCNC(N)=N)NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](C)NC(=O)[C@@H](N)CCC(N)=O)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(O)=O",
+                    "substrate": "CC[C@H](C)[C@H](NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](C)NC(=O)[C@@H](N)CCC(N)=O)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)O",
                     "products": [
                         "CC[C@H](C)[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@@H](NC(=O)[C@H](C)NC(=O)[C@@H](N)CCC(N)=O)Cc2c[nH]c3c(cccc23)-n2cc(c3ccccc32)C[C@@H](C(=O)O)NC1=O"
                     ],

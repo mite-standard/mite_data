@@ -47,18 +47,18 @@
             },
             "reactions": [
                 {
-                    "substrate": "N(C(=O)CCCCCCCCC)[C@@H]1[C@@H](O)[C@H](O)[C@@H](CO)O[C@H]1Oc1c2Oc3c(Cl)cc([C@H]([C@H]4C(=O)N[C@H](C(O)=O)c5c(c(cc(c5)O)O[C@@H]5[C@@H](O)[C@@H](O)[C@H](O)[C@@H](CO)O5)-c5c(ccc(c5)[C@@H](NC([C@@H]5NC([C@@H]6c7cc(cc(c7)O)Oc7c(ccc(c7)[C@@H](N)C(=O)N[C@H](Cc7cc(Cl)c(Oc1cc5c2)cc7)C(=O)N6)O)=O)=O)C(=O)N4)O)O[C@H]1[C@H](NC(=O)C)[C@@H](O)[C@H](O)[C@@H](CO)O1)cc3",
+                    "substrate": "CCCCCCCCCC(=O)N[C@H]1[C@H](Oc2c3cc4cc2Oc2ccc(cc2Cl)[C@@H](O[C@@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2NC(C)=O)[C@@H]2NC(=O)[C@H](NC(=O)[C@@H]4NC(=O)[C@H]4NC(=O)[C@@H](Cc5ccc(c(Cl)c5)O3)NC(=O)[C@H](N)c3ccc(O)c(c3)Oc3cc(O)cc4c3)c3ccc(O)c(c3)-c3c(O[C@H]4O[C@H](CO)[C@@H](O)[C@H](O)[C@@H]4O)cc(O)cc3[C@@H](C(=O)O)NC2=O)O[C@H](CO)[C@@H](O)[C@@H]1O",
                     "products": [
-                        "N[C@@H]1[C@@H](O)[C@H](O)[C@@H](CO)O[C@H]1Oc1c2Oc3c(Cl)cc([C@H]([C@H]4C(=O)N[C@H](C(O)=O)c5c(c(cc(c5)O)O[C@@H]5[C@@H](O)[C@@H](O)[C@H](O)[C@@H](CO)O5)-c5c(ccc(c5)[C@@H](NC([C@@H]5NC([C@@H]6c7cc(cc(c7)O)Oc7c(ccc(c7)[C@@H](N)C(=O)N[C@H](Cc7cc(Cl)c(Oc1cc5c2)cc7)C(=O)N6)O)=O)=O)C(=O)N4)O)O[C@H]1[C@H](NC(=O)C)[C@@H](O)[C@H](O)[C@@H](CO)O1)cc3"
+                        "CC(=O)N[C@H]1[C@H](O[C@@H]2c3ccc(c(Cl)c3)Oc3cc4cc(c3O[C@@H]3O[C@H](CO)[C@@H](O)[C@H](O)[C@H]3N)Oc3ccc(cc3Cl)C[C@H]3NC(=O)[C@H](N)c5ccc(O)c(c5)Oc5cc(O)cc(c5)[C@H](NC3=O)C(=O)N[C@H]4C(=O)N[C@H]3C(=O)N[C@@H]2C(=O)N[C@H](C(=O)O)c2cc(O)cc(O[C@H]4O[C@H](CO)[C@@H](O)[C@H](O)[C@@H]4O)c2-c2cc3ccc2O)O[C@H](CO)[C@@H](O)[C@@H]1O"
                     ],
                     "isBalanced": false,
                     "isIntermediate": true,
                     "description": "Generic deacylation of a long chain fatty acid."
                 },
                 {
-                    "substrate": "[NH:2]([C@@H:3]1[C@@H:4]([OH:5])[C@H:6]([OH:7])[C@@H:8]([CH2:9][OH:10])[O:11][C@H:12]1[O:13][c:14]1[c:15]2[cH:51][c:50]3[cH:52][c:53]1[O:54][c:55]1[cH:56][cH:57][c:58]([cH:59][c:60]1[Cl:61])[C@@H:62]([OH:63])[C@@H:64]1[NH:65][C:66](=[O:67])[C@H:68]([NH:69][C:70](=[O:71])[C@@H:49]3[NH:48][C:46](=[O:47])[C@@H:42]3[c:40]4[cH:39][c:37]([OH:38])[cH:36][c:35]([cH:41]4)[O:34][c:33]4[c:31]([OH:32])[cH:30][cH:29][c:28]([cH:94]4)[C@@H:26]([NH2:27])[C:24](=[O:25])[NH:23][C@H:22]([CH2:21][c:20]4[cH:19][cH:18][c:17]([c:96]([Cl:97])[cH:95]4)[O:16]2)[C:44](=[O:45])[NH:43]3)[c:72]2[cH:73][cH:74][c:75]([OH:76])[c:77]([cH:78]2)-[c:79]2[c:80]([OH:81])[cH:82][c:83]([OH:84])[cH:85][c:86]2[C@@H:87]([C:91]([OH:92])=[O:93])[NH:88][C:89]1=[O:90])[C:98](=[O:99])[CH3:100]",
+                    "substrate": "CC(=O)N[C@H]1[C@H](Oc2c3cc4cc2Oc2ccc(cc2Cl)[C@@H](O)[C@@H]2NC(=O)[C@H](NC(=O)[C@@H]4NC(=O)[C@H]4NC(=O)[C@@H](Cc5ccc(c(Cl)c5)O3)NC(=O)[C@H](N)c3ccc(O)c(c3)Oc3cc(O)cc4c3)c3ccc(O)c(c3)-c3c(O)cc(O)cc3[C@@H](C(=O)O)NC2=O)O[C@H](CO)[C@@H](O)[C@@H]1O",
                     "products": [
-                        "[NH2:2][C@@H:3]1[C@@H:4]([OH:5])[C@H:6]([OH:7])[C@@H:8]([CH2:9][OH:10])[O:11][C@H:12]1[O:13][c:14]1[c:15]2[cH:51][c:50]3[cH:52][c:53]1[O:54][c:55]1[cH:56][cH:57][c:58]([cH:59][c:60]1[Cl:61])[C@@H:62]([OH:63])[C@@H:64]1[NH:65][C:66](=[O:67])[C@H:68]([NH:69][C:70](=[O:71])[C@@H:49]3[NH:48][C:46](=[O:47])[C@@H:42]3[c:40]4[cH:39][c:37]([OH:38])[cH:36][c:35]([cH:41]4)[O:34][c:33]4[c:31]([OH:32])[cH:30][cH:29][c:28]([cH:94]4)[C@@H:26]([NH2:27])[C:24](=[O:25])[NH:23][C@H:22]([CH2:21][c:20]4[cH:19][cH:18][c:17]([c:96]([Cl:97])[cH:95]4)[O:16]2)[C:44](=[O:45])[NH:43]3)[c:72]2[cH:73][cH:74][c:75]([OH:76])[c:77]([cH:78]2)-[c:79]2[c:80]([OH:81])[cH:82][c:83]([OH:84])[cH:85][c:86]2[C@@H:87]([C:91]([OH:92])=[O:93])[NH:88][C:89]1=[O:90]"
+                        "N[C@H]1[C@H](Oc2c3cc4cc2Oc2ccc(cc2Cl)[C@@H](O)[C@@H]2NC(=O)[C@H](NC(=O)[C@@H]4NC(=O)[C@H]4NC(=O)[C@@H](Cc5ccc(c(Cl)c5)O3)NC(=O)[C@H](N)c3ccc(O)c(c3)Oc3cc(O)cc4c3)c3ccc(O)c(c3)-c3c(O)cc(O)cc3[C@@H](C(=O)O)NC2=O)O[C@H](CO)[C@@H](O)[C@@H]1O"
                     ],
                     "isBalanced": false,
                     "isIntermediate": true,
@@ -87,10 +87,10 @@
             },
             "reactions": [
                 {
-                    "substrate": "N(C(=O)CCCCCCCCC)[C@@H]1[C@@H](O)[C@H](O)[C@@H](CO)O[C@H]1Oc1c2Oc3c(Cl)cc([C@H]([C@H]4C(=O)N[C@H](C(O)=O)c5c(c(cc(c5)O)O[C@@H]5[C@@H](O)[C@@H](O)[C@H](O)[C@@H](CO)O5)-c5c(ccc(c5)[C@@H](NC([C@@H]5NC([C@@H]6c7cc(cc(c7)O)Oc7c(ccc(c7)[C@@H](N)C(=O)N[C@H](Cc7cc(Cl)c(Oc1cc5c2)cc7)C(=O)N6)O)=O)=O)C(=O)N4)O)O[C@H]1[C@H](NC(=O)C)[C@@H](O)[C@H](O)[C@@H](CO)O1)cc3.O",
+                    "substrate": "CCCCCCCCCC(=O)N[C@H]1[C@H](Oc2c3cc4cc2Oc2ccc(cc2Cl)[C@@H](O[C@@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2NC(C)=O)[C@@H]2NC(=O)[C@H](NC(=O)[C@@H]4NC(=O)[C@H]4NC(=O)[C@@H](Cc5ccc(c(Cl)c5)O3)NC(=O)[C@H](N)c3ccc(O)c(c3)Oc3cc(O)cc4c3)c3ccc(O)c(c3)-c3c(O[C@H]4O[C@H](CO)[C@@H](O)[C@H](O)[C@@H]4O)cc(O)cc3[C@@H](C(=O)O)NC2=O)O[C@H](CO)[C@@H](O)[C@@H]1O.O",
                     "products": [
-                        "N[C@@H]1[C@@H](O)[C@H](O)[C@@H](CO)O[C@H]1Oc1c2Oc3c(Cl)cc([C@H]([C@H]4C(=O)N[C@H](C(O)=O)c5c(c(cc(c5)O)O[C@@H]5[C@@H](O)[C@@H](O)[C@H](O)[C@@H](CO)O5)-c5c(ccc(c5)[C@@H](NC([C@@H]5NC([C@@H]6c7cc(cc(c7)O)Oc7c(ccc(c7)[C@@H](N)C(=O)N[C@H](Cc7cc(Cl)c(Oc1cc5c2)cc7)C(=O)N6)O)=O)=O)C(=O)N4)O)O[C@H]1[C@H](NC(=O)C)[C@@H](O)[C@H](O)[C@@H](CO)O1)cc3",
-                        "OC(CCCCCCCCC)=O"
+                        "CC(=O)N[C@H]1[C@H](O[C@@H]2c3ccc(c(Cl)c3)Oc3cc4cc(c3O[C@@H]3O[C@H](CO)[C@@H](O)[C@H](O)[C@H]3N)Oc3ccc(cc3Cl)C[C@H]3NC(=O)[C@H](N)c5ccc(O)c(c5)Oc5cc(O)cc(c5)[C@H](NC3=O)C(=O)N[C@H]4C(=O)N[C@H]3C(=O)N[C@@H]2C(=O)N[C@H](C(=O)O)c2cc(O)cc(O[C@H]4O[C@H](CO)[C@@H](O)[C@H](O)[C@@H]4O)c2-c2cc3ccc2O)O[C@H](CO)[C@@H](O)[C@@H]1O",
+                        "CCCCCCCCCC(=O)O"
                     ],
                     "isBalanced": true,
                     "isIntermediate": true,
@@ -119,10 +119,10 @@
             },
             "reactions": [
                 {
-                    "substrate": "[NH:2]([C@@H:3]1[C@@H:4]([OH:5])[C@H:6]([OH:7])[C@@H:8]([CH2:9][OH:10])[O:11][C@H:12]1[O:13][c:14]1[c:15]2[cH:51][c:50]3[cH:52][c:53]1[O:54][c:55]1[cH:56][cH:57][c:58]([cH:59][c:60]1[Cl:61])[C@@H:62]([OH:63])[C@@H:64]1[NH:65][C:66](=[O:67])[C@H:68]([NH:69][C:70](=[O:71])[C@@H:49]3[NH:48][C:46](=[O:47])[C@@H:42]3[c:40]4[cH:39][c:37]([OH:38])[cH:36][c:35]([cH:41]4)[O:34][c:33]4[c:31]([OH:32])[cH:30][cH:29][c:28]([cH:94]4)[C@@H:26]([NH2:27])[C:24](=[O:25])[NH:23][C@H:22]([CH2:21][c:20]4[cH:19][cH:18][c:17]([c:96]([Cl:97])[cH:95]4)[O:16]2)[C:44](=[O:45])[NH:43]3)[c:72]2[cH:73][cH:74][c:75]([OH:76])[c:77]([cH:78]2)-[c:79]2[c:80]([OH:81])[cH:82][c:83]([OH:84])[cH:85][c:86]2[C@@H:87]([C:91]([OH:92])=[O:93])[NH:88][C:89]1=[O:90])[C:98](=[O:99])[CH3:100].[OH2:1]",
+                    "substrate": "CC(=O)N[C@H]1[C@H](Oc2c3cc4cc2Oc2ccc(cc2Cl)[C@@H](O)[C@@H]2NC(=O)[C@H](NC(=O)[C@@H]4NC(=O)[C@H]4NC(=O)[C@@H](Cc5ccc(c(Cl)c5)O3)NC(=O)[C@H](N)c3ccc(O)c(c3)Oc3cc(O)cc4c3)c3ccc(O)c(c3)-c3c(O)cc(O)cc3[C@@H](C(=O)O)NC2=O)O[C@H](CO)[C@@H](O)[C@@H]1O.O",
                     "products": [
-                        "[NH2:2][C@@H:3]1[C@@H:4]([OH:5])[C@H:6]([OH:7])[C@@H:8]([CH2:9][OH:10])[O:11][C@H:12]1[O:13][c:14]1[c:15]2[cH:51][c:50]3[cH:52][c:53]1[O:54][c:55]1[cH:56][cH:57][c:58]([cH:59][c:60]1[Cl:61])[C@@H:62]([OH:63])[C@@H:64]1[NH:65][C:66](=[O:67])[C@H:68]([NH:69][C:70](=[O:71])[C@@H:49]3[NH:48][C:46](=[O:47])[C@@H:42]3[c:40]4[cH:39][c:37]([OH:38])[cH:36][c:35]([cH:41]4)[O:34][c:33]4[c:31]([OH:32])[cH:30][cH:29][c:28]([cH:94]4)[C@@H:26]([NH2:27])[C:24](=[O:25])[NH:23][C@H:22]([CH2:21][c:20]4[cH:19][cH:18][c:17]([c:96]([Cl:97])[cH:95]4)[O:16]2)[C:44](=[O:45])[NH:43]3)[c:72]2[cH:73][cH:74][c:75]([OH:76])[c:77]([cH:78]2)-[c:79]2[c:80]([OH:81])[cH:82][c:83]([OH:84])[cH:85][c:86]2[C@@H:87]([C:91]([OH:92])=[O:93])[NH:88][C:89]1=[O:90]",
-                        "[OH:1][C:98](=[O:99])[CH3:100]"
+                        "N[C@H]1[C@H](Oc2c3cc4cc2Oc2ccc(cc2Cl)[C@@H](O)[C@@H]2NC(=O)[C@H](NC(=O)[C@@H]4NC(=O)[C@H]4NC(=O)[C@@H](Cc5ccc(c(Cl)c5)O3)NC(=O)[C@H](N)c3ccc(O)c(c3)Oc3cc(O)cc4c3)c3ccc(O)c(c3)-c3c(O)cc(O)cc3[C@@H](C(=O)O)NC2=O)O[C@H](CO)[C@@H](O)[C@@H]1O",
+                        "CC(=O)O"
                     ],
                     "isBalanced": true,
                     "isIntermediate": true,

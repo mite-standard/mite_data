@@ -41,13 +41,12 @@
                 "Halogenation"
             ],
             "reactionSMARTS": {
-                "reactionSMARTS": "[#6:1]1:[#6:5]:[#6:4]:[#6:3]:[#7:2;h1]:1>>[Br]-[#6:1]1:[#6:5](-[Br]):[#6:4](-[Br]):[#6:3](-[Br]):[nH:2]:1",
-                "isIterative": false,
-                "description": "Tetra-brominates pyrrolyl-S-CoA"
+                "reactionSMARTS": "[#6:1]1:[#6:5]:[#6:4]:[#6:3]:[#7:2]:1>>[Br]-[#6:1]1:[#6:5](-[Br]):[#6:4](-[Br]):[#6:3](-[Br]):[nH:2]:1",
+                "isIterative": false
             },
             "reactions": [
                 {
-                    "substrate": "c1ccc[nH]1",
+                    "substrate": "c1cc[nH]c1",
                     "products": [
                         "Brc1[nH]c(Br)c(Br)c1Br"
                     ],

@@ -48,9 +48,9 @@
             },
             "reactions": [
                 {
-                    "substrate": "CC(CC(C(NC(C(NC(C(NC(c1ccc(O)cc1)C(NC(c1ccc(O)cc1)C(NC(C(=O)O)C(c1cc(Cl)c(O)cc1)O)=O)=O)=O)CC(=O)N)=O)C(c1cc(Cl)c(O)cc1)O)=O)N)C",
+                    "substrate": "CC(C)CC(N)C(=O)NC(C(=O)NC(CC(N)=O)C(=O)NC(C(=O)NC(C(=O)NC(C(=O)O)C(O)c1ccc(O)c(Cl)c1)c1ccc(O)cc1)c1ccc(O)cc1)C(O)c1ccc(O)c(Cl)c1",
                     "products": [
-                        "CC(CC(C(NC(C(NC(C(NC1c2cc(Oc3c(cc(cc3)C(O)C(C(=O)O)NC(=O)C(c3ccc(O)cc3)NC1=O)Cl)c(O)cc2)=O)CC(=O)N)=O)C(c1cc(Cl)c(O)cc1)O)=O)N)C"
+                        "CC(C)CC(N)C(=O)NC(C(=O)NC(CC(N)=O)C(=O)NC1C(=O)NC(c2ccc(O)cc2)C(=O)NC(C(=O)O)C(O)c2ccc(c(Cl)c2)Oc2cc1ccc2O)C(O)c1ccc(O)c(Cl)c1"
                     ],
                     "isBalanced": false,
                     "isIntermediate": true,

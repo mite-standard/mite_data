@@ -48,7 +48,7 @@
                 {
                     "substrate": "C[C@@H]1CC(O)=C2C(=O)c3c(O)cccc3O[C@]2(CO)[C@@H]1O",
                     "products": [
-                        "C[C@@H]1CC(O)=C2C(=O)c3c(O)cccc3O[C@]2(COC(C)=O)[C@@H]1OC(C)=O"
+                        "CC(=O)OC[C@]12Oc3cccc(O)c3C(=O)C1=C(O)C[C@@H](C)[C@H]2OC(C)=O"
                     ],
                     "isBalanced": false,
                     "isIntermediate": true

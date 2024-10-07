@@ -49,9 +49,9 @@
             },
             "reactions": [
                 {
-                    "substrate": "O[C@@H]1[C@H](O[C@H]([C@@H]1O)c1c[nH]c(=O)[nH]c1=O)C=O",
+                    "substrate": "O=C[C@H]1O[C@@H](c2c[nH]c(=O)[nH]c2=O)[C@H](O)[C@@H]1O",
                     "products": [
-                        "NC[C@H]1O[C@H]([C@H](O)[C@@H]1O)c1c[nH]c(=O)[nH]c1=O"
+                        "NC[C@H]1O[C@@H](c2c[nH]c(=O)[nH]c2=O)[C@H](O)[C@@H]1O"
                     ],
                     "isBalanced": false,
                     "isIntermediate": false
