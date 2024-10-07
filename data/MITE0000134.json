@@ -14,10 +14,10 @@
                             "RQC4INAEW544B5HWWLI3CX2V"
                         ],
                         "reviewers": [
-                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                            "C62OJVVH7XOTOTFZSJT727YU"
                         ],
                         "date": "2024-06-07",
-                        "comment": "Initial entry."
+                        "comment": "Initial entry. Reviewer 1 added description and verified reaction."
                     }
                 ]
             }
@@ -25,7 +25,7 @@
     },
     "enzyme": {
         "name": "THAS",
-        "description": "",
+        "description": "Cyclization of modified triterpene",
         "references": [
             "doi:10.1038/s41467-020-19153-6"
         ],
