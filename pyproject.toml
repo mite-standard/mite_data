@@ -16,5 +16,64 @@ authors = [
     { name = "Mitja M. Zdouc", email = "zdoucmm@gmail.com" }
 ]
 dependencies = [
-    "AlphaFetcher~=0.2"
+    "argparse~=1.4",
+    "AlphaFetcher~=0.2",
+    "mite-schema~=1.4",
+    "pre-commit~=3.4",
+    "polars~=1.4",
+    "pydantic~=2.8",
+    "pytest~=7.4",
+    "ruff~=0.5"
+]
+
+[project.scripts]
+mite_data = "mite_extras.main:main_cli"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
+pythonpath = [
+    "mite_data"
+]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = [
+    # flake8-bugbear
+    "B",
+    # flake8-comprehensions
+    "C4",
+    # flake8-eradicate/eradicate
+    "ERA",
+    # isort
+    "I",
+    # pep8-naming
+    "N",
+    # flake8-pie
+    "PIE",
+    # pygrep
+    "PGH",
+    # ruff checks
+    "RUF",
+    # flake8-simplify
+    "SIM",
+    # flake8-type-checking
+    "TCH",
+    # flake8-tidy-imports
+    "TID",
+    # pyupgrade
+    "UP",
+]
+ignore = [
+    # whitespace-before-punctuation
+    "E203",
+    # percent-format-invalid-format
+    "E501",
+    # mixed-case-variable-in-class-scope
+    "N815"
 ]
