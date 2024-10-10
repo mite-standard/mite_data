@@ -1,7 +1,6 @@
 {
     "accession": "MITE0000118",
-    "quality": "medium",
-    "status": "pending",
+    "status": "active",
     "changelog": {
         "releases": [
             {
@@ -16,7 +15,7 @@
                             "MGLE5JJ3S32DQA3YR5WPYH4W"
                         ],
                         "reviewers": [
-                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                            "BBBBBBBBBBBBBBBBBBBBBBBB"
                         ],
                         "date": "2024-05-14",
                         "comment": "Initial entry."
@@ -45,8 +44,7 @@
             ],
             "description": "NADPH-dependent",
             "reactionSMARTS": {
-                "reactionSMARTS": "C=C1C=C(C(O1)=O)[C@@H](CCCCCCC)O>>CC2C=C(C(O2)=O)[C@@H](CCCCCCC)O",
-                "isIterative": false
+                "reactionSMARTS": "C=C1C=C(C(O1)=O)[C@@H](CCCCCCC)O>>CC2C=C(C(O2)=O)[C@@H](CCCCCCC)O"
             },
             "reactions": [
                 {
@@ -54,7 +52,6 @@
                     "products": [
                         "CCCCCCC[C@@H](O)C1=CC(C)OC1=O"
                     ],
-                    "isBalanced": false,
                     "isIntermediate": false
                 }
             ],

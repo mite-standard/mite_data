@@ -1,7 +1,6 @@
 {
     "accession": "MITE0000091",
-    "quality": "medium",
-    "status": "pending",
+    "status": "active",
     "changelog": {
         "releases": [
             {
@@ -14,7 +13,7 @@
                             "RQC4INAEW544B5HWWLI3CX2V"
                         ],
                         "reviewers": [
-                            "AAAAAAAAAAAAAAAAAAAAAAAA"
+                            "BBBBBBBBBBBBBBBBBBBBBBBB"
                         ],
                         "date": "2024-06-07",
                         "comment": "Initial entry."
@@ -41,8 +40,7 @@
                 "Oxidation"
             ],
             "reactionSMARTS": {
-                "reactionSMARTS": "[#6]\\[#6](-[#6])=[#6]/[#6]-[#6]\\[#6](-[#6])=[#6]/[#6]-[#6]C1([#6])[#6]-2-[#6]-[#6]3-[#6](-[#6]-2)C13[#6]>>[#6]\\[#6](-[#6])=[#6]\\[#6]-[#6]C1([#6])[#8]-[#6]1-[#6]-[#6]C1([#6])[#6]-2-[#6]-[#6]3-[#6](-[#6]-2)C13[#6]",
-                "isIterative": false
+                "reactionSMARTS": "[#6]\\[#6](-[#6])=[#6]/[#6]-[#6]\\[#6](-[#6])=[#6]/[#6]-[#6]C1([#6])[#6]-2-[#6]-[#6]3-[#6](-[#6]-2)C13[#6]>>[#6]\\[#6](-[#6])=[#6]\\[#6]-[#6]C1([#6])[#8]-[#6]1-[#6]-[#6]C1([#6])[#6]-2-[#6]-[#6]3-[#6](-[#6]-2)C13[#6]"
             },
             "reactions": [
                 {
@@ -50,7 +48,6 @@
                     "products": [
                         "CC(C)=CCCC1(C)OC1CCC1(C)C2CC3C(C2)C31C"
                     ],
-                    "isBalanced": false,
                     "isIntermediate": true
                 }
             ],

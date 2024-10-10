@@ -17,6 +17,9 @@ For more information, see the README of the [MITE-Standard organisation page](ht
 
 ## Quick-start
 
+TBA - Change here
+
+
 - Download the enzyme pdbs from AlphaFoldDB: `hatch run python mite_data/main.py`
 - Generate png images with PyMol: `./generate_png.sh`
 
