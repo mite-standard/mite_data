@@ -1,6 +1,5 @@
 {
     "accession": "MITE0000030",
-    "quality": "medium",
     "status": "pending",
     "changelog": {
         "releases": [
@@ -42,8 +41,7 @@
             ],
             "description": "Tandem Action of the O2- and FADH2-Dependent Halogenases KtzQ and KtzR Produce 6,7-Dichlorotryptophan for Kutzneride",
             "reactionSMARTS": {
-                "reactionSMARTS": "[#6]1:[#6]:[#6]:[#6]2:[#6](:[#6]:1):[#6](:[#6]:[#7H]:2)-[#6]-[#6](-[#6](=[#8])-[#8])-[#7]>>[#6]1:[#6]:[#6](:[#6](:[#6]2:[#6]:1:[#6](:[#6]:[#7H]:2)-[#6]-[#6](-[#6](=[#8])-[#8])-[#7])-[#17])-[#17]",
-                "isIterative": false
+                "reactionSMARTS": "[#6]1:[#6]:[#6]:[#6]2:[#6](:[#6]:1):[#6](:[#6]:[#7H]:2)-[#6]-[#6](-[#6](=[#8])-[#8])-[#7]>>[#6]1:[#6]:[#6](:[#6](:[#6]2:[#6]:1:[#6](:[#6]:[#7H]:2)-[#6]-[#6](-[#6](=[#8])-[#8])-[#7])-[#17])-[#17]"
             },
             "reactions": [
                 {
@@ -51,7 +49,6 @@
                     "products": [
                         "NC(Cc1c[nH]c2c(Cl)c(Cl)ccc12)C(=O)O"
                     ],
-                    "isBalanced": false,
                     "isIntermediate": false
                 }
             ],

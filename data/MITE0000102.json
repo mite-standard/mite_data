@@ -1,6 +1,5 @@
 {
     "accession": "MITE0000102",
-    "quality": "medium",
     "status": "pending",
     "changelog": {
         "releases": [
@@ -41,8 +40,7 @@
                 "Other"
             ],
             "reactionSMARTS": {
-                "reactionSMARTS": "[#8:1]-[#6:4](=[O:2])-[#6:11]-1=[#6:7](-[#8:3])-[#6:6]-[#6:5]=[#6:8]-[#6:9]=[#6:10]-1>>[#8:3]-[#6:7]-1=[#6:6]-[#6:5]=[#6:8]-[#6:9]=[#6:10]-[#6:11]-1=O",
-                "isIterative": false
+                "reactionSMARTS": "[#8:1]-[#6:4](=[O:2])-[#6:11]-1=[#6:7](-[#8:3])-[#6:6]-[#6:5]=[#6:8]-[#6:9]=[#6:10]-1>>[#8:3]-[#6:7]-1=[#6:6]-[#6:5]=[#6:8]-[#6:9]=[#6:10]-[#6:11]-1=O"
             },
             "reactions": [
                 {
@@ -50,7 +48,6 @@
                     "products": [
                         "O=c1cccccc1O"
                     ],
-                    "isBalanced": false,
                     "isIntermediate": false
                 }
             ],

@@ -1,6 +1,5 @@
 {
     "accession": "MITE0000129",
-    "quality": "medium",
     "status": "pending",
     "changelog": {
         "releases": [
@@ -44,8 +43,7 @@
                 "Deamination"
             ],
             "reactionSMARTS": {
-                "reactionSMARTS": "[NH2:1][CH:2]([CH2:3][c:4]1[cH:5][nH:6][c:7]2[cH:8][c:9]([Cl:16])[cH:10][cH:11][c:12]12)[C:13]([OH:14])=[O:15]>>[O:1]=[C:2]([CH2:3][c:4]1[cH:5][nH:6][c:7]2[cH:8][c:9]([Cl:16])[cH:10][cH:11][c:12]12)[C:13]([OH:14])=[O:15]",
-                "isIterative": false
+                "reactionSMARTS": "[NH2:1][CH:2]([CH2:3][c:4]1[cH:5][nH:6][c:7]2[cH:8][c:9]([Cl:16])[cH:10][cH:11][c:12]12)[C:13]([OH:14])=[O:15]>>[O:1]=[C:2]([CH2:3][c:4]1[cH:5][nH:6][c:7]2[cH:8][c:9]([Cl:16])[cH:10][cH:11][c:12]12)[C:13]([OH:14])=[O:15]"
             },
             "reactions": [
                 {
@@ -53,7 +51,6 @@
                     "products": [
                         "O=C(O)C(=O)Cc1c[nH]c2cc(Cl)ccc12"
                     ],
-                    "isBalanced": false,
                     "isIntermediate": false,
                     "description": "Should actually be L-chlorotryptophan."
                 }

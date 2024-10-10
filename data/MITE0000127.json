@@ -1,6 +1,5 @@
 {
     "accession": "MITE0000127",
-    "quality": "medium",
     "status": "pending",
     "comment": "Catalyzes the dibromination of 5-bromoindole on the 3rd then on the 2nd position (doesn't act on tryptophan)",
     "changelog": {
@@ -45,8 +44,7 @@
             ],
             "description": "Bromination of 5-bromoindole, leading to 3,5-tribromoindole",
             "reactionSMARTS": {
-                "reactionSMARTS": "[#6:1](-[Br:10])1:[#6:9]:[#6:8]2:[#6:4](:[#7:5]:[#6:6]:[#6:7]:2):[#6:3]:[#6:2]:1>>[#6:1](-[Br:10])1:[#6:9]:[#6:8]2:[#6:4](:[#7:5]:[#6:6]:[#6:7](-[Br]):2):[#6:3]:[#6:2]:1",
-                "isIterative": false
+                "reactionSMARTS": "[#6:1](-[Br:10])1:[#6:9]:[#6:8]2:[#6:4](:[#7:5]:[#6:6]:[#6:7]:2):[#6:3]:[#6:2]:1>>[#6:1](-[Br:10])1:[#6:9]:[#6:8]2:[#6:4](:[#7:5]:[#6:6]:[#6:7](-[Br]):2):[#6:3]:[#6:2]:1"
             },
             "reactions": [
                 {
@@ -54,7 +52,6 @@
                     "products": [
                         "Brc1ccc2[nH]cc(Br)c2c1"
                     ],
-                    "isBalanced": false,
                     "isIntermediate": false
                 }
             ],
@@ -75,8 +72,7 @@
             ],
             "description": "Bromination of 3,5-bromoindole, leading to 2,3,5-tribromoindole",
             "reactionSMARTS": {
-                "reactionSMARTS": "[#6:1](-[Br:10])1:[#6:9]:[#6:8]2:[#6:4](:[#7:5]:[#6:6]:[#6:7](-[Br:11]):2):[#6:3]:[#6:2]:1>>[#6:1](-[Br:10])1:[#6:9]:[#6:8]2:[#6:4](:[#7:5]:[#6:6](-[Br:12]):[#6:7](-[Br:11]):2):[#6:3]:[#6:2]:1",
-                "isIterative": false
+                "reactionSMARTS": "[#6:1](-[Br:10])1:[#6:9]:[#6:8]2:[#6:4](:[#7:5]:[#6:6]:[#6:7](-[Br:11]):2):[#6:3]:[#6:2]:1>>[#6:1](-[Br:10])1:[#6:9]:[#6:8]2:[#6:4](:[#7:5]:[#6:6](-[Br:12]):[#6:7](-[Br:11]):2):[#6:3]:[#6:2]:1"
             },
             "reactions": [
                 {
@@ -84,7 +80,6 @@
                     "products": [
                         "Brc1ccc2[nH]c(Br)c(Br)c2c1"
                     ],
-                    "isBalanced": false,
                     "isIntermediate": false
                 }
             ],

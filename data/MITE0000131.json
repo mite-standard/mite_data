@@ -1,6 +1,5 @@
 {
     "accession": "MITE0000131",
-    "quality": "medium",
     "status": "pending",
     "changelog": {
         "releases": [
@@ -43,8 +42,7 @@
                 "Amination"
             ],
             "reactionSMARTS": {
-                "reactionSMARTS": "[#8:14]-[#6:15](=[O:16])-[c:13]1[c:12][c:11]2[c:10]([n:9][c:8]3[c:7][c:6]([Cl:5])[c:4][c:3][c:2]23)[s:1]1>>[#7:17]-[#8:16]-[#6:15](=[O:14])-[c:13]1[c:12][c:11]2[c:10]([n:9][c:8]3[c:7][c:6]([Cl:5])[c:4][c:3][c:2]23)[s:1]1",
-                "isIterative": false
+                "reactionSMARTS": "[#8:14]-[#6:15](=[O:16])-[c:13]1[c:12][c:11]2[c:10]([n:9][c:8]3[c:7][c:6]([Cl:5])[c:4][c:3][c:2]23)[s:1]1>>[#7:17]-[#8:16]-[#6:15](=[O:14])-[c:13]1[c:12][c:11]2[c:10]([n:9][c:8]3[c:7][c:6]([Cl:5])[c:4][c:3][c:2]23)[s:1]1"
             },
             "reactions": [
                 {
@@ -52,7 +50,6 @@
                     "products": [
                         "NOC(=O)c1cc2c([nH]c3cc(Cl)ccc32)s1"
                     ],
-                    "isBalanced": false,
                     "isIntermediate": false
                 }
             ],

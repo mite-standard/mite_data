@@ -1,6 +1,5 @@
 {
     "accession": "MITE0000040",
-    "quality": "medium",
     "status": "pending",
     "comment": "There is no study on the substrate specificity for the second chlorination reaction in vancomycin biosynthesis on bht 6 so far.",
     "changelog": {
@@ -43,8 +42,7 @@
             ],
             "description": "The bond to the PCP domain of module 2 of the vancomycin NRPS might be important for the reaction.",
             "reactionSMARTS": {
-                "reactionSMARTS": "[#6:3]-[#6:2](-[#6:1])-[#6:4]-[#6@@H:5](-[#7:6])-[#6:7](=[O:8])-[#7:9]-[#6@@H:10](-[#6:11]=[O:12])-[#6@@H:13](-[#8:14])-[c:15]1[c:22][c:20][c:18](-[#8:19])[c:17][c:16]1>>[#6:1]-[#6:2](-[#6:3])-[#6:4]-[#6@@H:5](-[#7:6])-[#6:7](=[O:8])-[#7:9]-[#6@@H:10](-[#6:11]=[O:12])-[#6@@H:13](-[#8:14])-[c:15]1[c:16][c:17][c:18](-[#8:19])[c:20]([Cl:21])[c:22]1",
-                "isIterative": false
+                "reactionSMARTS": "[#6:3]-[#6:2](-[#6:1])-[#6:4]-[#6@@H:5](-[#7:6])-[#6:7](=[O:8])-[#7:9]-[#6@@H:10](-[#6:11]=[O:12])-[#6@@H:13](-[#8:14])-[c:15]1[c:22][c:20][c:18](-[#8:19])[c:17][c:16]1>>[#6:1]-[#6:2](-[#6:3])-[#6:4]-[#6@@H:5](-[#7:6])-[#6:7](=[O:8])-[#7:9]-[#6@@H:10](-[#6:11]=[O:12])-[#6@@H:13](-[#8:14])-[c:15]1[c:16][c:17][c:18](-[#8:19])[c:20]([Cl:21])[c:22]1"
             },
             "reactions": [
                 {
@@ -52,7 +50,6 @@
                     "products": [
                         "CC(C)C[C@@H](N)C(=O)N[C@@H](C=O)[C@@H](O)c1ccc(O)c(Cl)c1"
                     ],
-                    "isBalanced": false,
                     "isIntermediate": true
                 }
             ],

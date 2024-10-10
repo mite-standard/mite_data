@@ -1,6 +1,5 @@
 {
     "accession": "MITE0000121",
-    "quality": "medium",
     "status": "pending",
     "changelog": {
         "releases": [
@@ -42,8 +41,7 @@
                 "Hydroxylation"
             ],
             "reactionSMARTS": {
-                "reactionSMARTS": "[#7:6]-[#6:5]-[#6:4]-[#6:3]-[#6@H:2](-[#7:1])-[#6:7](-[#8:8])=[O:9]>>[#7:10]-[#6@@H:9](-[#6:8]-[#6:7]-[#6:6]-[#7:5]-[#8:4])-[#6:3](-[#8:2])=[O:1]",
-                "isIterative": false
+                "reactionSMARTS": "[#7:6]-[#6:5]-[#6:4]-[#6:3]-[#6@H:2](-[#7:1])-[#6:7](-[#8:8])=[O:9]>>[#7:10]-[#6@@H:9](-[#6:8]-[#6:7]-[#6:6]-[#7:5]-[#8:4])-[#6:3](-[#8:2])=[O:1]"
             },
             "reactions": [
                 {
@@ -51,7 +49,6 @@
                     "products": [
                         "N[C@@H](CCCNO)C(=O)O"
                     ],
-                    "isBalanced": false,
                     "isIntermediate": true
                 }
             ],
