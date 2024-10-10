@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000034",
-    "status": "pending",
+    "status": "active",
     "comment": "The enzyme seems to be highly specific for the backbone of teicoplanin, as it does not recognize the closely related vancomycin aglycone.",
     "changelog": {
         "releases": [

@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000127",
-    "status": "pending",
+    "status": "active",
     "comment": "Catalyzes the dibromination of 5-bromoindole on the 3rd then on the 2nd position (doesn't act on tryptophan)",
     "changelog": {
         "releases": [

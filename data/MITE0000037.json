@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000037",
-    "status": "pending",
+    "status": "active",
     "comment": "The enzyme accepts the vancomycin and teicoplanin aglycone as substrate. Therefore, the SMARTS was reduced to the maximum common substructure of both glycopeptide precursors. The true substrate specificity might still be broader.",
     "changelog": {
         "releases": [

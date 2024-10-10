@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000042",
-    "status": "pending",
+    "status": "active",
     "comment": "The enzyme accepts the vancomycin and teicoplanin pseudoaglycone as substrate. The substrate tolerance may be even broader than the largest common substructure between vancomycin and teicoplanin.",
     "changelog": {
         "releases": [

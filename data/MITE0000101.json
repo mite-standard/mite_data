@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000101",
-    "status": "pending",
+    "status": "active",
     "comment": "Atom number nine (in the SMARTS reaction) could be methylated, then this reaction leads to the final product",
     "changelog": {
         "releases": [
