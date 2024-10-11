@@ -17,7 +17,7 @@ For more information, see the README of the [MITE-Standard organisation page](ht
 
 ## Quick-start
 
-TBA - Change here
+TBA - Change instructions here
 
 
 - Download the enzyme pdbs from AlphaFoldDB: `hatch run python mite_data/main.py`

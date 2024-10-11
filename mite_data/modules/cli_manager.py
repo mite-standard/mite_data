@@ -23,7 +23,6 @@ SOFTWARE.
 
 import argparse
 from importlib import metadata
-from typing import Self
 
 from pydantic import BaseModel
 
@@ -31,7 +30,8 @@ from pydantic import BaseModel
 class CliManager(BaseModel):
     """Manage command line interface and parsing."""
 
-    def run(self: Self, args: list) -> argparse.Namespace:
+    @staticmethod
+    def run(args: list) -> argparse.Namespace:
         """Run command line interface using argparse.
 
         Arguments:
@@ -40,51 +40,41 @@ class CliManager(BaseModel):
         Returns:
             argparse.Namespace object with command line parameters
         """
-        parser = self.define_cli_args()
-        return parser.parse_args(args)
-
-    @staticmethod
-    def define_cli_args() -> argparse.ArgumentParser:
-        """Define command line interface options.
-
-        Returns:
-            argparse object containing command line interface options.
-        """
         parser = argparse.ArgumentParser(
             description=f"'mite_data' CLI v{metadata.version('mite_data')}.",
             formatter_class=argparse.RawTextHelpFormatter,
         )
 
         parser.add_argument(
-            "update-md",
+            "--update-md",
             action="store_true",
             default=True,
             help="Updates the metadata-cache, runs by default.",
         )
 
         parser.add_argument(
-            "update-img",
+            "--update-img",
             action="store_true",
             default=False,
-            help="Updates the AlphaFold-derived PDB-files and re-generates protein images with PyMol.",
+            help="Updates the AlphaFold-derived PDB-files a nd re-generates protein images with PyMol.",
         )
 
         parser.add_argument(
-            "update-blast",
+            "--update-blast",
             action="store_true",
             default=False,
             help="Updates the Genbank-derived protein FASTA-files and re-generates the BLAST database.",
         )
 
         parser.add_argument(
-            "update-mite",
+            "--update-mite",
             action="store_true",
             default=False,
             help="Runs automated checks on MITE entries and updates to latest schema version using 'mite_extras'.",
         )
 
         parser.add_argument(
-            "update-all",
+            "--update-all",
             action="store_true",
             default=False,
             help="Runs all update actions at once.",
@@ -100,4 +90,4 @@ class CliManager(BaseModel):
             help="Specifies the verboseness of logging (default: 'INFO').",
         )
 
-        return parser
+        return parser.parse_args(args)

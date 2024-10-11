@@ -17,6 +17,7 @@ authors = [
 ]
 dependencies = [
     "argparse~=1.4",
+    "coloredlogs~=15.0",
     "AlphaFetcher~=0.2",
     "mite-schema~=1.4",
     "pre-commit~=3.4",
@@ -27,7 +28,7 @@ dependencies = [
 ]
 
 [project.scripts]
-mite_data = "mite_extras.main:main_cli"
+mite_data = "mite_data.main:main"
 
 [tool.pytest.ini_options]
 minversion = "6.0"
