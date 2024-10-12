@@ -37,6 +37,8 @@ class MetadataManager(BaseModel):
     """Manage metadata collection from MITE entries.
 
     Attributes:
+        src: a Path towards the source directory
+        target: a Path towards the target (storage) directory
         metadata_as: a dict collecting MITE metadata with MITE IDs as keys
         metadata_mibig: a dict collecting MITE metadata with MIBiG IDs as keys
     """
@@ -56,10 +58,10 @@ class MetadataManager(BaseModel):
 
     def run(self: Self) -> None:
         """Class entry point to run methods"""
-        logger.debug("Started update metadata.")
+        logger.debug("Started MetadataManager.")
         self.collect_metadata()
         self.export_json()
-        logger.debug("Completed update metadata.")
+        logger.debug("Completed MetadataManager.")
 
     def collect_metadata(self: Self) -> None:
         """Method to access and collect metadata from MITE entries"""
