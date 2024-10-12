@@ -23,9 +23,11 @@ SOFTWARE.
 
 import json
 import logging
+import subprocess
 from pathlib import Path
 from typing import Self
 
+from alphafetcher import AlphaFetcher
 from pydantic import BaseModel, DirectoryPath, FilePath
 
 logger = logging.getLogger("mite_data")
@@ -64,6 +66,34 @@ class ImageManager(BaseModel):
 
     def download_pdbs(self: Self) -> None:
         """Download PDB-files from AlphaFold using the uniprot acc ids"""
+        logger.debug(
+            "Started download of PDB-files from AlphaFold - this will take some time."
+        )
+
+        fetcher = AlphaFetcher(base_savedir=str(self.target_download))
+        fetcher.add_proteins(proteins=self.uniprot_acc)
+        fetcher.download_all_files(pdb=True, multithread=True, workers=4)
+
+        for infile in self.target_download.joinpath("pdb_files").iterdir():
+            infile.rename(self.target_download / infile.name)
+
+        self.target_download.joinpath("pdb_files").rmdir()
+        logger.debug("Completed download of PDB-files from AlphaFold.")
 
     def create_imgs(self: Self) -> None:
         """Create PNG-images from PDB files using PyMol subprocess"""
+        logger.debug(
+            "Started creating images from PDB files - this will take some time."
+        )
+
+        for infile in self.target_download.iterdir():
+            base_name = infile.stem
+            command = [
+                "pymol-oss.pymol",
+                infile,
+                "-d",
+                f"bg_color white; hide everything; show cartoon; spectrum count, red blue; set opaque_background, 0; png img/{base_name}.png, 0, 0, -1, ray=1; quit;",
+            ]
+            subprocess.run(command)
+
+        logger.debug("Completed creating images from PDB files.")

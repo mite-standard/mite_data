@@ -20,6 +20,6 @@ repos:
       exclude: "metadata"
     - id: pytest
       name: pytest
-      entry: hatch run pytest
+      entry: hatch run pytest tests/
       language: system
       types: [ file, python ]

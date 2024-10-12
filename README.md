@@ -21,9 +21,10 @@ Update all files in repository: `mite_data --update_all`
 
 Update only metadata: `mite_data --update_md`
 
-Update only enzyme visualization (re-download all AlphaFold PDBs): `mite_data --update_img`
+Update only enzyme visualization (re-downloads all AlphaFold PDBs): `mite_data --update_img`.
+Note that this module will fail if you have not installed PyMol-OSS
 
-Update only BLAST database (re-download all protein FASTA files): `mite_data --update_blast`
+Update only BLAST database (re-downloads all protein FASTA files): `mite_data --update_blast`
 
 Update only MITE files to the newest version of `mite_schema`: `mite_data --update_mite`
 
