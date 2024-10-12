@@ -31,6 +31,7 @@ import coloredlogs
 from alphafetcher import AlphaFetcher
 
 from mite_data.modules.cli_manager import CliManager
+from mite_data.modules.metadata_manager import MetadataManager
 
 dir_data = Path(__file__).parent.parent.joinpath("data")
 dir_pdb = Path(__file__).parent.parent.joinpath("pdb")
@@ -115,9 +116,28 @@ def main() -> SystemExit:
 
     logger.debug(f"Started 'mite_data' v{metadata.version('mite_data')} as CLI.")
 
+    if args.update_md or args.update_all:
+        metadata_manager = MetadataManager()
+        metadata_manager.run()
+
+    if args.update_img or args.update_all:
+        logger.debug("Started update protein images.")
+        # TODO MMZ 12.10
+        logger.debug("Completed update protein images.")
+
+    if args.update_blast or args.update_all:
+        logger.debug("Started update BLAST database.")
+        # TODO MMZ 12.10.: write MIBiG ID in header of protein fasta file - key for as_metadata.json
+        logger.debug("Completed update BLAST database.")
+
+    if args.update_mite or args.update_all:
+        logger.debug("Started update MITE entries.")
+        # TODO MMZ 12.10
+        logger.debug("Completed update MITE entries.")
+
     logger.debug(f"Completed 'mite_data' v{metadata.version('mite_data')} as CLI.")
 
-    sys.exit(0)
+    return sys.exit(0)
 
 
 if __name__ == "__main__":

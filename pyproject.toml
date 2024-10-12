@@ -34,7 +34,7 @@ mite_data = "mite_data.main:main"
 minversion = "6.0"
 addopts = "-ra -q"
 testpaths = [
-    "tests",
+    "tests/",
 ]
 pythonpath = [
     "mite_data"

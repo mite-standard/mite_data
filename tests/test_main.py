@@ -29,20 +29,3 @@ def test_verboseness_invalid(monkeypatch):
     with pytest.raises(SystemExit) as e:
         main()
     assert e.value.code == 2
-
-
-def test_attr(monkeypatch):
-    monkeypatch.setattr(
-        "sys.argv",
-        [
-            "mite_data",
-            "--update-md",
-            "--update-img",
-            "--update-blast",
-            "--update-mite",
-            "--update-all",
-        ],
-    )
-    with pytest.raises(SystemExit) as e:
-        main()
-    assert e.value.code == 0

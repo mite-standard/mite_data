@@ -46,35 +46,35 @@ class CliManager(BaseModel):
         )
 
         parser.add_argument(
-            "--update-md",
-            action="store_true",
-            default=True,
-            help="Updates the metadata-cache, runs by default.",
-        )
-
-        parser.add_argument(
-            "--update-img",
+            "--update_md",
             action="store_true",
             default=False,
-            help="Updates the AlphaFold-derived PDB-files a nd re-generates protein images with PyMol.",
+            help="Updates the metadata-cache.",
         )
 
         parser.add_argument(
-            "--update-blast",
+            "--update_img",
+            action="store_true",
+            default=False,
+            help="Updates the AlphaFold-derived PDB-files and re-generates protein images with PyMol.",
+        )
+
+        parser.add_argument(
+            "--update_blast",
             action="store_true",
             default=False,
             help="Updates the Genbank-derived protein FASTA-files and re-generates the BLAST database.",
         )
 
         parser.add_argument(
-            "--update-mite",
+            "--update_mite",
             action="store_true",
             default=False,
             help="Runs automated checks on MITE entries and updates to latest schema version using 'mite_extras'.",
         )
 
         parser.add_argument(
-            "--update-all",
+            "--update_all",
             action="store_true",
             default=False,
             help="Runs all update actions at once.",

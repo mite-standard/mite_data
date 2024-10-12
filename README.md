@@ -17,10 +17,16 @@ For more information, see the README of the [MITE-Standard organisation page](ht
 
 ## Quick-start
 
-TBA - Change instructions here
+Update all files in repository: `mite_data --update_all`
 
+Update only metadata: `mite_data --update_md`
 
-- Download the enzyme pdbs from AlphaFoldDB: `hatch run python mite_data/main.py`
-- Generate png images with PyMol: `./generate_png.sh`
+Update only enzyme visualization (re-download all AlphaFold PDBs): `mite_data --update_img`
 
-This will create all protein images
+Update only BLAST database (re-download all protein FASTA files): `mite_data --update_blast`
+
+Update only MITE files to the newest version of `mite_schema`: `mite_data --update_mite`
+
+## Clean-up
+
+If necessary, remove the environment again with `hatch env remove`

@@ -12,13 +12,14 @@ repos:
     - id: ruff-format
 - repo: local
   hooks:
-    - id: pytest
-      name: pytest
-      entry: hatch run pytest tests/
-      language: system
-      types: [ file, python ]
     - id: mite-schema
       name: mite-schema
       entry: hatch run mite_schema -i
       language: system
       types: [ json ]
+      exclude: "metadata"
+    - id: pytest
+      name: pytest
+      entry: hatch run pytest
+      language: system
+      types: [ file, python ]
