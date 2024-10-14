@@ -31,8 +31,7 @@
         ],
         "databaseIds": {
             "uniprot": "F8K0I8",
-            "genpept": "AEW97391.1",
-            "mibig": "new420"
+            "genpept": "AEW97391.1"
         }
     },
     "reactions": [
