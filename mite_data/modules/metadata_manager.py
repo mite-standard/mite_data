@@ -39,7 +39,6 @@ class MetadataManager(BaseModel):
         src: a Path towards the source directory
         target: a Path towards the target (storage) directory
         metadata_general: a dict collecting MITE metadata with MITE IDs as keys for internal use
-        metadata_as: a dict collecting MITE metadata with MITE IDs as keys for use in antiSMASH
         metadata_mibig: a dict collecting MITE metadata with MIBiG IDs as keys for use in MIBiG
     """
 
@@ -47,14 +46,6 @@ class MetadataManager(BaseModel):
     target: DirectoryPath = Path(__file__).parent.parent.joinpath("metadata/")
     metadata_general: dict = {
         "version_mite_data": f"{metadata.version('mite_data')}",
-        "entries": {},
-    }
-    metadata_as: dict = {
-        "version_mite_data": f"{metadata.version('mite_data')}",
-        "fields": [
-            "accession",
-        ],
-        "base_url": f"https://mite.bioinformatics.nl/repository/@accession@/{metadata.version('mite_data')}",
         "entries": {},
     }
     metadata_mibig: dict = {
@@ -75,7 +66,6 @@ class MetadataManager(BaseModel):
             with open(infile) as file_in:
                 mite_json = json.load(file_in)
             self.extract_metadata_general(mite=mite_json)
-            self.extract_metadata_as(mite=mite_json)
             self.extract_metadata_mibig(mite=mite_json)
 
     def extract_metadata_general(self: Self, mite: dict) -> None:
@@ -90,28 +80,6 @@ class MetadataManager(BaseModel):
                 "description", "No description available"
             ),
             "enzyme_ids": mite["enzyme"]["databaseIds"],
-        }
-
-    def extract_metadata_as(self: Self, mite: dict) -> None:
-        """Extract and stores metadata with MITE IDs as keys
-
-        mite: the MITE JSON derived dict to extract data from
-        """
-        self.metadata_as["entries"][mite["accession"]] = {
-            "accession": mite["accession"],
-            "status": mite["status"],
-            "name": mite["enzyme"]["name"],
-            "description": mite.get("enzyme", {}).get(
-                "description", "No description available"
-            ),
-            "ids": mite["enzyme"]["databaseIds"],
-            "tailoring": list(
-                {
-                    tailoring
-                    for reaction in mite.get("reactions")
-                    for tailoring in reaction.get("tailoring", [])
-                }
-            ),
         }
 
     def extract_metadata_mibig(self: Self, mite: dict) -> None:
@@ -150,11 +118,6 @@ class MetadataManager(BaseModel):
             outfile.write(
                 json.dumps(self.metadata_general, indent=2, ensure_ascii=False)
             )
-
-        with open(
-            self.target.joinpath("metadata_as.json"), "w", encoding="utf-8"
-        ) as outfile:
-            outfile.write(json.dumps(self.metadata_as, indent=2, ensure_ascii=False))
 
         with open(
             self.target.joinpath("metadata_mibig.json"), "w", encoding="utf-8"
