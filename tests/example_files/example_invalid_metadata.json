@@ -1,0 +1,13 @@
+{
+  "version_mite_data": "1.2",
+  "entries": {
+    "MITE0000000": {
+      "status": "active",
+      "enzyme_name": "AbcD",
+      "enzyme_description": "glycosyltransferase",
+      "enzyme_ids": {
+        "mibig": "BGC0000000"
+      }
+    }
+  }
+}

@@ -1,8 +1,12 @@
 {
   "version_mite_data": "1.2",
-  "base_url": "https://mite.bioinformatics.nl/repository/",
+  "fields": [
+    "accession"
+  ],
+  "base_url": "https://mite.bioinformatics.nl/repository/@accession@/1.2",
   "entries": {
     "MITE0000020": {
+      "accession": "MITE0000020",
       "status": "active",
       "name": "MtmGII",
       "description": "glycosyltransferase",
@@ -16,6 +20,7 @@
       ]
     },
     "MITE0000109": {
+      "accession": "MITE0000109",
       "status": "active",
       "name": "CmxA",
       "description": "L-lysine cyclodeaminase",
@@ -25,11 +30,12 @@
         "mibig": "BGC0001945"
       },
       "tailoring": [
-        "Cyclization",
-        "Deamination"
+        "Deamination",
+        "Cyclization"
       ]
     },
     "MITE0000011": {
+      "accession": "MITE0000011",
       "status": "active",
       "name": "MpaG",
       "description": "Catalyzes the O-methylation of demethylmycophenolic acid into mycophenolic acid",
@@ -43,6 +49,7 @@
       ]
     },
     "MITE0000136": {
+      "accession": "MITE0000136",
       "status": "active",
       "name": "THAA1",
       "description": "Acyltransferase subfamily IIIa from Arabidopsis lyrata ssp lyrata (Lyre-leaved rock-cress).",
@@ -56,6 +63,7 @@
       ]
     },
     "MITE0000123": {
+      "accession": "MITE0000123",
       "status": "active",
       "name": "juiM",
       "description": "acetyltransferase",
@@ -69,6 +77,7 @@
       ]
     },
     "MITE0000130": {
+      "accession": "MITE0000130",
       "status": "active",
       "name": "ThnH",
       "description": "tryptophan 6-halogenase",
@@ -82,6 +91,7 @@
       ]
     },
     "MITE0000073": {
+      "accession": "MITE0000073",
       "status": "active",
       "name": "clmAH",
       "description": "amidohydrolase",
@@ -95,6 +105,7 @@
       ]
     },
     "MITE0000028": {
+      "accession": "MITE0000028",
       "status": "active",
       "name": "BhaA",
       "description": "Chlorinates balhimycin precursor at bht2 and bht6.",
@@ -108,6 +119,7 @@
       ]
     },
     "MITE0000115": {
+      "accession": "MITE0000115",
       "status": "active",
       "name": "NgnP2",
       "description": "Hydroxylation at c-18",
@@ -121,6 +133,7 @@
       ]
     },
     "MITE0000079": {
+      "accession": "MITE0000079",
       "status": "active",
       "name": "PokM3",
       "description": "CoA ligase",
@@ -134,6 +147,7 @@
       ]
     },
     "MITE0000069": {
+      "accession": "MITE0000069",
       "status": "active",
       "name": "RebH",
       "description": "tryptophane halogenase",
@@ -147,6 +161,7 @@
       ]
     },
     "MITE0000033": {
+      "accession": "MITE0000033",
       "status": "active",
       "name": "GtfB",
       "description": "Adds N-acetylglucosamine or N-acylglucosamine to Hpg4 of the teicoplanin aglycone.",
@@ -160,6 +175,7 @@
       ]
     },
     "MITE0000139": {
+      "accession": "MITE0000139",
       "status": "active",
       "name": "ankD",
       "description": "pyridoxal-phosphate dependent enzyme",
@@ -173,6 +189,7 @@
       ]
     },
     "MITE0000171": {
+      "accession": "MITE0000171",
       "status": "active",
       "name": "ProsB",
       "description": "Decarboxylase",
@@ -185,6 +202,7 @@
       ]
     },
     "MITE0000168": {
+      "accession": "MITE0000168",
       "status": "active",
       "name": "ProsA",
       "description": "Cytochrome P450",
@@ -197,6 +215,7 @@
       ]
     },
     "MITE0000021": {
+      "accession": "MITE0000021",
       "status": "active",
       "name": "SsfM2",
       "description": "O-methyltransferase",
@@ -210,6 +229,7 @@
       ]
     },
     "MITE0000058": {
+      "accession": "MITE0000058",
       "status": "active",
       "name": "pntD",
       "description": "Non-Heme Iron-Dependent Dehydrogenase/Oxygenase",
@@ -219,11 +239,12 @@
         "mibig": "BGC0000653"
       },
       "tailoring": [
-        "Oxidation",
-        "Dehydration"
+        "Dehydration",
+        "Oxidation"
       ]
     },
     "MITE0000146": {
+      "accession": "MITE0000146",
       "status": "active",
       "name": "avaA",
       "description": "cRW tRNA-dependent cyclodipeptide synthase",
@@ -237,6 +258,7 @@
       ]
     },
     "MITE0000134": {
+      "accession": "MITE0000134",
       "status": "active",
       "name": "THAS",
       "description": "Oxidosqualene cyclase from Arabidopsis lyrata ssp lyrata (Lyre-leaved rock-cress).",
@@ -249,6 +271,7 @@
       ]
     },
     "MITE0000044": {
+      "accession": "MITE0000044",
       "status": "active",
       "name": "BotCYP",
       "description": "bottromycin cytochrome P450 from Streptomyces sp. BC16019",
@@ -263,6 +286,7 @@
       ]
     },
     "MITE0000166": {
+      "accession": "MITE0000166",
       "status": "active",
       "name": "ProsF",
       "description": "O-methyltransferase",
@@ -275,6 +299,7 @@
       ]
     },
     "MITE0000003": {
+      "accession": "MITE0000003",
       "status": "active",
       "name": "aviG6",
       "description": "putative methyltransferase",
@@ -288,6 +313,7 @@
       ]
     },
     "MITE0000088": {
+      "accession": "MITE0000088",
       "status": "active",
       "name": "TlmF",
       "description": "cytochrome P450",
@@ -301,6 +327,7 @@
       ]
     },
     "MITE0000048": {
+      "accession": "MITE0000048",
       "status": "active",
       "name": "BotP",
       "description": "N-terminal methionine cleaving peptidase (bottromycin) from Streptomyces sp. BC16019.",
@@ -314,6 +341,7 @@
       ]
     },
     "MITE0000167": {
+      "accession": "MITE0000167",
       "status": "active",
       "name": "ProsD",
       "description": "Glyoxylase",
@@ -326,6 +354,7 @@
       ]
     },
     "MITE0000036": {
+      "accession": "MITE0000036",
       "status": "active",
       "name": "tAtf",
       "description": "Transfers acyl groups from acyl-CoA onto the glucosaminyl residue on hpg4 of the teicoplanin precursor.",
@@ -339,6 +368,7 @@
       ]
     },
     "MITE0000051": {
+      "accession": "MITE0000051",
       "status": "active",
       "name": "BotH",
       "description": "bottromycin epimerase from Streptomyces sp. BC16019",
@@ -352,6 +382,7 @@
       ]
     },
     "MITE0000053": {
+      "accession": "MITE0000053",
       "status": "active",
       "name": "BotCD",
       "description": "Macroamidine linkage-catalyzing YacO protein from Streptomyces sp. BC16019",
@@ -365,6 +396,7 @@
       ]
     },
     "MITE0000052": {
+      "accession": "MITE0000052",
       "status": "active",
       "name": "BotC",
       "description": "Thiazole heterocyclisation-catalyzing YacO protein from Streptomyces sp. BC16019",
@@ -378,6 +410,7 @@
       ]
     },
     "MITE0000076": {
+      "accession": "MITE0000076",
       "status": "active",
       "name": "JamD",
       "description": "Flavin-dependent halogenase",
@@ -391,6 +424,7 @@
       ]
     },
     "MITE0000116": {
+      "accession": "MITE0000116",
       "status": "active",
       "name": "stoC",
       "description": "dehydration",
@@ -403,6 +437,7 @@
       ]
     },
     "MITE0000064": {
+      "accession": "MITE0000064",
       "status": "active",
       "name": "ptlI",
       "description": "Cytochrome P450",
@@ -416,6 +451,7 @@
       ]
     },
     "MITE0000057": {
+      "accession": "MITE0000057",
       "status": "active",
       "name": "pntE",
       "description": "Baeyer-Villiger monooxygenase",
@@ -429,6 +465,7 @@
       ]
     },
     "MITE0000054": {
+      "accession": "MITE0000054",
       "status": "active",
       "name": "MibH",
       "description": "Tryptophan-5-halogenase acting on deschloro-microbisporicin A2",
@@ -442,6 +479,7 @@
       ]
     },
     "MITE0000065": {
+      "accession": "MITE0000065",
       "status": "active",
       "name": "ptlE",
       "description": "Baeyer-Villiger monooxygenase",
@@ -455,6 +493,7 @@
       ]
     },
     "MITE0000102": {
+      "accession": "MITE0000102",
       "status": "active",
       "name": "TrlE",
       "description": "Combines hydroxylation, decarboxylation and oxidation to generate tropolone from dihydrotropone-2-carboxylate",
@@ -468,6 +507,7 @@
       ]
     },
     "MITE0000095": {
+      "accession": "MITE0000095",
       "status": "active",
       "name": "TnmK1",
       "description": "Catalyzes D-ring-forming Michael addition",
@@ -481,6 +521,7 @@
       ]
     },
     "MITE0000083": {
+      "accession": "MITE0000083",
       "status": "active",
       "name": "AgqD",
       "description": "UbiA-like prenyltransferase",
@@ -494,6 +535,7 @@
       ]
     },
     "MITE0000117": {
+      "accession": "MITE0000117",
       "status": "active",
       "name": "stoR",
       "description": "NADPH dependent reduction of exo-methylene in styrolide B to methyl group in styrolide A",
@@ -506,6 +548,7 @@
       ]
     },
     "MITE0000120": {
+      "accession": "MITE0000120",
       "status": "active",
       "name": "ZopL9",
       "description": "AsaB-like alphaKGDD",
@@ -520,6 +563,7 @@
       ]
     },
     "MITE0000082": {
+      "accession": "MITE0000082",
       "status": "active",
       "name": "AgqC",
       "description": "alkylhydroxyhydroquinone methyltransferase",
@@ -533,6 +577,7 @@
       ]
     },
     "MITE0000041": {
+      "accession": "MITE0000041",
       "status": "active",
       "name": "OxyB",
       "description": "Introduces the first biaryl-ether crosslink between hpg4 and bht6 in the vancomycin precursor.",
@@ -546,6 +591,7 @@
       ]
     },
     "MITE0000135": {
+      "accession": "MITE0000135",
       "status": "active",
       "name": "THAO",
       "description": "Cytochrome P450 enzyme from Arabidopsis lyrata ssp lyrata (Lyre-leaved rock-cress).",
@@ -559,6 +605,7 @@
       ]
     },
     "MITE0000075": {
+      "accession": "MITE0000075",
       "status": "active",
       "name": "clmM2",
       "description": "O-methyltransferase",
@@ -572,6 +619,7 @@
       ]
     },
     "MITE0000096": {
+      "accession": "MITE0000096",
       "status": "active",
       "name": "TnmJ",
       "description": "Cofactorless oxygenase",
@@ -585,6 +633,7 @@
       ]
     },
     "MITE0000122": {
+      "accession": "MITE0000122",
       "status": "active",
       "name": "abmA",
       "description": "Acetyltransferase",
@@ -598,6 +647,7 @@
       ]
     },
     "MITE0000093": {
+      "accession": "MITE0000093",
       "status": "active",
       "name": "PhmJ",
       "description": "halogenase",
@@ -611,6 +661,7 @@
       ]
     },
     "MITE0000023": {
+      "accession": "MITE0000023",
       "status": "active",
       "name": "SsfM1",
       "description": "O-methyltransferase",
@@ -624,6 +675,7 @@
       ]
     },
     "MITE0000045": {
+      "accession": "MITE0000045",
       "status": "active",
       "name": "BotOMT",
       "description": "O-methylating SAM-dependent carboxyl methyltransferase from Streptomyces sp. BC16019",
@@ -637,6 +689,7 @@
       ]
     },
     "MITE0000059": {
+      "accession": "MITE0000059",
       "status": "active",
       "name": "pntM",
       "description": "Cytochrome p450",
@@ -650,6 +703,7 @@
       ]
     },
     "MITE0000103": {
+      "accession": "MITE0000103",
       "status": "active",
       "name": "TrlF",
       "description": "Cleaves off CoA from 2-hydroxycyclohepta-1,4,6-triene-1-carboxyl-CoA",
@@ -663,6 +717,7 @@
       ]
     },
     "MITE0000148": {
+      "accession": "MITE0000148",
       "status": "active",
       "name": "ptlE",
       "description": "Baeyer-Villiger monooxygenase",
@@ -676,6 +731,7 @@
       ]
     },
     "MITE0000034": {
+      "accession": "MITE0000034",
       "status": "active",
       "name": "GtfA",
       "description": "Glycosyltransferase that adds N-acetylglucosamine to Bht6 of the teicoplanin precursor.",
@@ -689,6 +745,7 @@
       ]
     },
     "MITE0000170": {
+      "accession": "MITE0000170",
       "status": "active",
       "name": "ProsK",
       "description": "Cytochrome P450",
@@ -701,6 +758,7 @@
       ]
     },
     "MITE0000056": {
+      "accession": "MITE0000056",
       "status": "active",
       "name": "McjB",
       "description": "Lassopeptide ATP-dependent protease (B-protein, cysteine protease-like)",
@@ -714,6 +772,7 @@
       ]
     },
     "MITE0000067": {
+      "accession": "MITE0000067",
       "status": "active",
       "name": "RebD",
       "description": "Dichlorochromopyrrolate synthase",
@@ -727,6 +786,7 @@
       ]
     },
     "MITE0000031": {
+      "accession": "MITE0000031",
       "status": "active",
       "name": "SacF",
       "description": "SAM-dependent methyltransferase",
@@ -740,6 +800,7 @@
       ]
     },
     "MITE0000164": {
+      "accession": "MITE0000164",
       "status": "active",
       "name": "PhoP",
       "description": "Short-chain dehydrogenases/reductase",
@@ -752,6 +813,7 @@
       ]
     },
     "MITE0000097": {
+      "accession": "MITE0000097",
       "status": "active",
       "name": "PumI",
       "description": "Oxidoreductase",
@@ -765,6 +827,7 @@
       ]
     },
     "MITE0000002": {
+      "accession": "MITE0000002",
       "status": "active",
       "name": "aviG4",
       "description": "putative methyltransferase",
@@ -778,6 +841,7 @@
       ]
     },
     "MITE0000104": {
+      "accession": "MITE0000104",
       "status": "active",
       "name": "TrlC",
       "description": "Oxygenase component of flavoprotein monooxygenase TrlCD, catalyzes subsequent hydroxylation from tropolone to 7-hydroxytropolone and 3,7-dihydroxytropolone",
@@ -791,6 +855,7 @@
       ]
     },
     "MITE0000055": {
+      "accession": "MITE0000055",
       "status": "active",
       "name": "McjC",
       "description": "Lassopeptide ATP-dependent lactam synthetase (C-protein, asparagine synthetase-like)",
@@ -804,6 +869,7 @@
       ]
     },
     "MITE0000111": {
+      "accession": "MITE0000111",
       "status": "active",
       "name": "NgnO3",
       "description": "NgnO3 catalyzes the formation of the ether bridge moiety at position C8/C13 of the substrate molecules.",
@@ -817,6 +883,7 @@
       ]
     },
     "MITE0000009": {
+      "accession": "MITE0000009",
       "status": "active",
       "name": "meiD",
       "description": "O-methyltransferase",
@@ -830,6 +897,7 @@
       ]
     },
     "MITE0000149": {
+      "accession": "MITE0000149",
       "status": "active",
       "name": "MciB",
       "description": "P450 installing crosslink",
@@ -843,6 +911,7 @@
       ]
     },
     "MITE0000085": {
+      "accession": "MITE0000085",
       "status": "active",
       "name": "NapB5",
       "description": "putative methyltransferase",
@@ -856,6 +925,7 @@
       ]
     },
     "MITE0000060": {
+      "accession": "MITE0000060",
       "status": "active",
       "name": "pntI",
       "description": "Cytochrome P450",
@@ -869,6 +939,7 @@
       ]
     },
     "MITE0000019": {
+      "accession": "MITE0000019",
       "status": "active",
       "name": "MtmGIII",
       "description": "glycosyltransferase",
@@ -882,6 +953,7 @@
       ]
     },
     "MITE0000086": {
+      "accession": "MITE0000086",
       "status": "active",
       "name": "NapH1",
       "description": "Vanadium-Dependent Chloroperoxidase",
@@ -891,11 +963,12 @@
         "mibig": "BGC0001079"
       },
       "tailoring": [
-        "Heterocyclization",
-        "Halogenation"
+        "Halogenation",
+        "Heterocyclization"
       ]
     },
     "MITE0000137": {
+      "accession": "MITE0000137",
       "status": "active",
       "name": "ankG",
       "description": "ATP-grasp protein",
@@ -909,6 +982,7 @@
       ]
     },
     "MITE0000141": {
+      "accession": "MITE0000141",
       "status": "active",
       "name": "ankF",
       "description": "o-methyltransferase",
@@ -922,6 +996,7 @@
       ]
     },
     "MITE0000165": {
+      "accession": "MITE0000165",
       "status": "active",
       "name": "PhoN",
       "description": "Isomerase",
@@ -934,6 +1009,7 @@
       ]
     },
     "MITE0000127": {
+      "accession": "MITE0000127",
       "status": "active",
       "name": "AetA",
       "description": "Flavin-dependent halogenase",
@@ -947,6 +1023,7 @@
       ]
     },
     "MITE0000012": {
+      "accession": "MITE0000012",
       "status": "active",
       "name": "GrhO5",
       "description": "Flavoprotein monooxygenase",
@@ -960,6 +1037,7 @@
       ]
     },
     "MITE0000010": {
+      "accession": "MITE0000010",
       "status": "active",
       "name": "meiE",
       "description": "Cytochrome P450",
@@ -974,6 +1052,7 @@
       ]
     },
     "MITE0000008": {
+      "accession": "MITE0000008",
       "status": "active",
       "name": "CalO2",
       "description": "Cytochrome P450me",
@@ -987,6 +1066,7 @@
       ]
     },
     "MITE0000080": {
+      "accession": "MITE0000080",
       "status": "active",
       "name": "PokMT1",
       "description": "C-methyltransferase",
@@ -1000,6 +1080,7 @@
       ]
     },
     "MITE0000018": {
+      "accession": "MITE0000018",
       "status": "active",
       "name": "MtmGIV",
       "description": "glycosyltransferase",
@@ -1013,6 +1094,7 @@
       ]
     },
     "MITE0000091": {
+      "accession": "MITE0000091",
       "status": "active",
       "name": "CYP71BN1",
       "description": "",
@@ -1026,6 +1108,7 @@
       ]
     },
     "MITE0000133": {
+      "accession": "MITE0000133",
       "status": "active",
       "name": "THAH",
       "description": "Cytochrome P450 enzyme from Arabidopsis lyrata ssp lyrata (Lyre-leaved rock-cress).",
@@ -1039,6 +1122,7 @@
       ]
     },
     "MITE0000145": {
+      "accession": "MITE0000145",
       "status": "active",
       "name": "avaD",
       "description": "GNAT family Nacetyltransferase",
@@ -1052,6 +1136,7 @@
       ]
     },
     "MITE0000128": {
+      "accession": "MITE0000128",
       "status": "active",
       "name": "OrfA",
       "description": " Halogenase, responsible for introducing halogen atoms into specific positions of the albofungin molecule, resulting in chloroalbofungin and bromoalbofungin variants.",
@@ -1064,6 +1149,7 @@
       ]
     },
     "MITE0000124": {
+      "accession": "MITE0000124",
       "status": "active",
       "name": "juiL",
       "description": "F420-dependent oxidoreductase",
@@ -1077,6 +1163,7 @@
       ]
     },
     "MITE0000094": {
+      "accession": "MITE0000094",
       "status": "active",
       "name": "TnmK2",
       "description": "Iterative cofactorless dioxygenase",
@@ -1090,6 +1177,7 @@
       ]
     },
     "MITE0000027": {
+      "accession": "MITE0000027",
       "status": "active",
       "name": "OxyC",
       "description": "P450 monooxygenase, that introduces the second crosslink (biaryl ether) between hpg5 and dhpg7 of the balhimycin precursor.",
@@ -1103,6 +1191,7 @@
       ]
     },
     "MITE0000112": {
+      "accession": "MITE0000112",
       "status": "active",
       "name": "ngnp1",
       "description": "Hydroxylation at c-2 ",
@@ -1116,6 +1205,7 @@
       ]
     },
     "MITE0000022": {
+      "accession": "MITE0000022",
       "status": "active",
       "name": "SsfM4",
       "description": "C-methyltransferase",
@@ -1129,6 +1219,7 @@
       ]
     },
     "MITE0000038": {
+      "accession": "MITE0000038",
       "status": "active",
       "name": "OxyA",
       "description": "Introduces the second biaryl-ether crosslink between bht2 and hpg4 in the vancomycin precursor.",
@@ -1142,6 +1233,7 @@
       ]
     },
     "MITE0000118": {
+      "accession": "MITE0000118",
       "status": "active",
       "name": "AcaR",
       "description": "NADPH-dependent oxidoreductase - reduction of 4,5-didehydroacaterin to acaterin",
@@ -1155,6 +1247,7 @@
       ]
     },
     "MITE0000151": {
+      "accession": "MITE0000151",
       "status": "active",
       "name": "pspC",
       "description": "catalyzes three-step oxidations at the C-4 methyl group to carboxylic acid to yield soppiline C",
@@ -1167,6 +1260,7 @@
       ]
     },
     "MITE0000004": {
+      "accession": "MITE0000004",
       "status": "active",
       "name": "aviG5",
       "description": "putative methyltransferase",
@@ -1180,6 +1274,7 @@
       ]
     },
     "MITE0000001": {
+      "accession": "MITE0000001",
       "status": "active",
       "name": "aviG2",
       "description": "putative methyltransferase",
@@ -1193,6 +1288,7 @@
       ]
     },
     "MITE0000100": {
+      "accession": "MITE0000100",
       "status": "active",
       "name": "PumG",
       "description": "Amino transferase",
@@ -1206,6 +1302,7 @@
       ]
     },
     "MITE0000015": {
+      "accession": "MITE0000015",
       "status": "active",
       "name": "MtmMII",
       "description": "C-methyltransferase",
@@ -1219,6 +1316,7 @@
       ]
     },
     "MITE0000105": {
+      "accession": "MITE0000105",
       "status": "active",
       "name": "GnmP",
       "description": "Persulfide methyltransferase",
@@ -1232,6 +1330,7 @@
       ]
     },
     "MITE0000062": {
+      "accession": "MITE0000062",
       "status": "active",
       "name": "cotB4",
       "description": "Cytochrome P450",
@@ -1245,6 +1344,7 @@
       ]
     },
     "MITE0000157": {
+      "accession": "MITE0000157",
       "status": "active",
       "name": "PhoL",
       "description": "Short-chain dehydrogenases/reductase",
@@ -1257,6 +1357,7 @@
       ]
     },
     "MITE0000138": {
+      "accession": "MITE0000138",
       "status": "active",
       "name": "ankE",
       "description": "NRPS independent siderophore synthetase",
@@ -1270,6 +1371,7 @@
       ]
     },
     "MITE0000114": {
+      "accession": "MITE0000114",
       "status": "active",
       "name": "NgnM",
       "description": "NgnM methylates the hydroxyl group at the 2-position of the macrolactone intermediate",
@@ -1283,6 +1385,7 @@
       ]
     },
     "MITE0000147": {
+      "accession": "MITE0000147",
       "status": "active",
       "name": "PeuJ",
       "description": "FMN-dependent monooxygenase",
@@ -1295,6 +1398,7 @@
       ]
     },
     "MITE0000156": {
+      "accession": "MITE0000156",
       "status": "active",
       "name": "PhoM",
       "description": "Flavin-dependent mono-oxygenase",
@@ -1307,6 +1411,7 @@
       ]
     },
     "MITE0000024": {
+      "accession": "MITE0000024",
       "status": "active",
       "name": "XanH",
       "description": "FAD Halogenase",
@@ -1320,6 +1425,7 @@
       ]
     },
     "MITE0000119": {
+      "accession": "MITE0000119",
       "status": "active",
       "name": "ScyL2",
       "description": "AsaB-like alphaKGDD",
@@ -1333,6 +1439,7 @@
       ]
     },
     "MITE0000162": {
+      "accession": "MITE0000162",
       "status": "active",
       "name": "PhoG",
       "description": "Anthrone oxygenase",
@@ -1345,6 +1452,7 @@
       ]
     },
     "MITE0000043": {
+      "accession": "MITE0000043",
       "status": "active",
       "name": "SgvP",
       "description": "cytochrome P450",
@@ -1358,6 +1466,7 @@
       ]
     },
     "MITE0000169": {
+      "accession": "MITE0000169",
       "status": "active",
       "name": "ProsC",
       "description": "Short-chain dehydrogenase/reductase",
@@ -1370,6 +1479,7 @@
       ]
     },
     "MITE0000026": {
+      "accession": "MITE0000026",
       "status": "active",
       "name": "OxyA",
       "description": "P450 monooxygenase, that introduces the second crosslink (biaryl ether) between bht2 and hpg4 of the balhimycin precursor.",
@@ -1383,6 +1493,7 @@
       ]
     },
     "MITE0000032": {
+      "accession": "MITE0000032",
       "status": "active",
       "name": "SfmM2",
       "description": "SAM-dependent methyltransferase",
@@ -1396,6 +1507,7 @@
       ]
     },
     "MITE0000087": {
+      "accession": "MITE0000087",
       "status": "active",
       "name": "RslO4",
       "description": "Monooxygenase in the Rishirilide Biosynthesis pathway forming a para-quinone substructure",
@@ -1409,6 +1521,7 @@
       ]
     },
     "MITE0000005": {
+      "accession": "MITE0000005",
       "status": "active",
       "name": "CalO3",
       "description": "Flavin-dependent halogenase",
@@ -1422,6 +1535,7 @@
       ]
     },
     "MITE0000125": {
+      "accession": "MITE0000125",
       "status": "active",
       "name": "juiL",
       "description": "Cytochrome P450",
@@ -1435,6 +1549,7 @@
       ]
     },
     "MITE0000098": {
+      "accession": "MITE0000098",
       "status": "active",
       "name": "PumK",
       "description": "Carboxylate-Amine Ligase",
@@ -1448,6 +1563,7 @@
       ]
     },
     "MITE0000092": {
+      "accession": "MITE0000092",
       "status": "active",
       "name": "borH",
       "description": "Flavin-dependent halogenase",
@@ -1461,6 +1577,7 @@
       ]
     },
     "MITE0000101": {
+      "accession": "MITE0000101",
       "status": "active",
       "name": "cxm5",
       "description": "Cytochrome P450",
@@ -1474,6 +1591,7 @@
       ]
     },
     "MITE0000161": {
+      "accession": "MITE0000161",
       "status": "active",
       "name": "PhoK",
       "description": "Reductase",
@@ -1482,11 +1600,12 @@
         "mibig": "BGC0003093"
       },
       "tailoring": [
-        "Reduction",
-        "Acetylation"
+        "Acetylation",
+        "Reduction"
       ]
     },
     "MITE0000140": {
+      "accession": "MITE0000140",
       "status": "active",
       "name": "ankA",
       "description": "cRY tRNA-dependent cyclodipeptide synthase",
@@ -1500,6 +1619,7 @@
       ]
     },
     "MITE0000063": {
+      "accession": "MITE0000063",
       "status": "active",
       "name": "ptlD",
       "description": "Non-Heme Iron-Dependent Dehydrogenase/Oxygenase",
@@ -1509,11 +1629,12 @@
         "mibig": "BGC0000678"
       },
       "tailoring": [
-        "Oxidation",
-        "Dehydration"
+        "Dehydration",
+        "Oxidation"
       ]
     },
     "MITE0000108": {
+      "accession": "MITE0000108",
       "status": "active",
       "name": "cldC",
       "description": "Cytochrome P450",
@@ -1527,6 +1648,7 @@
       ]
     },
     "MITE0000159": {
+      "accession": "MITE0000159",
       "status": "active",
       "name": "PhoD",
       "description": "Dehydratase",
@@ -1539,6 +1661,7 @@
       ]
     },
     "MITE0000047": {
+      "accession": "MITE0000047",
       "status": "active",
       "name": "BotRMT3",
       "description": "Bottromycin-precursor acting rSAM methyltransferase from Streptomyces sp. BC16019.",
@@ -1552,6 +1675,7 @@
       ]
     },
     "MITE0000152": {
+      "accession": "MITE0000152",
       "status": "active",
       "name": "ScnB",
       "description": "P450 installing crosslink",
@@ -1565,6 +1689,7 @@
       ]
     },
     "MITE0000143": {
+      "accession": "MITE0000143",
       "status": "active",
       "name": "avaC",
       "description": "kynurenine formamidase",
@@ -1578,6 +1703,7 @@
       ]
     },
     "MITE0000072": {
+      "accession": "MITE0000072",
       "status": "active",
       "name": "TdaE",
       "description": "Flavoprotein dioxygenase",
@@ -1590,6 +1716,7 @@
       ]
     },
     "MITE0000078": {
+      "accession": "MITE0000078",
       "status": "active",
       "name": "MdpB2",
       "description": "CoA ligase",
@@ -1603,6 +1730,7 @@
       ]
     },
     "MITE0000030": {
+      "accession": "MITE0000030",
       "status": "active",
       "name": "KtzR",
       "description": "Flavin-dependent halogenase",
@@ -1616,6 +1744,7 @@
       ]
     },
     "MITE0000025": {
+      "accession": "MITE0000025",
       "status": "active",
       "name": "OxyB",
       "description": "P450 monooxygenase, that introduces the first crosslink (biaryl ether) between hpg4 and bht6 of the balhimycin precursor.",
@@ -1629,6 +1758,7 @@
       ]
     },
     "MITE0000040": {
+      "accession": "MITE0000040",
       "status": "active",
       "name": "Vhal",
       "description": "Chlorinates bht 2 and bht 6 of vancomycin.",
@@ -1642,6 +1772,7 @@
       ]
     },
     "MITE0000160": {
+      "accession": "MITE0000160",
       "status": "active",
       "name": "PhoC",
       "description": "Short-chain dehydrogenases/reductase (SDR)",
@@ -1655,6 +1786,7 @@
       ]
     },
     "MITE0000144": {
+      "accession": "MITE0000144",
       "status": "active",
       "name": "avaB",
       "description": "FAD-dependent monooxygenase ",
@@ -1668,6 +1800,7 @@
       ]
     },
     "MITE0000029": {
+      "accession": "MITE0000029",
       "status": "active",
       "name": "KtzQ",
       "description": "Flavin-dependent halogenase",
@@ -1681,6 +1814,7 @@
       ]
     },
     "MITE0000126": {
+      "accession": "MITE0000126",
       "status": "active",
       "name": "AetF",
       "description": "Single component flavin-dependent halogenase, capable of iodinating and brominating arenes and olefins",
@@ -1694,6 +1828,7 @@
       ]
     },
     "MITE0000014": {
+      "accession": "MITE0000014",
       "status": "active",
       "name": "MtmMI",
       "description": "O-methyltransferase",
@@ -1707,6 +1842,7 @@
       ]
     },
     "MITE0000106": {
+      "accession": "MITE0000106",
       "status": "active",
       "name": "MstE",
       "description": "terpene cyclase",
@@ -1720,6 +1856,7 @@
       ]
     },
     "MITE0000074": {
+      "accession": "MITE0000074",
       "status": "active",
       "name": "clmM1",
       "description": "S-methyltransferase",
@@ -1733,6 +1870,7 @@
       ]
     },
     "MITE0000061": {
+      "accession": "MITE0000061",
       "status": "active",
       "name": "cotB3",
       "description": "Cytochrome P450",
@@ -1746,6 +1884,7 @@
       ]
     },
     "MITE0000050": {
+      "accession": "MITE0000050",
       "status": "active",
       "name": "BotAH",
       "description": "bottromycin follower-peptide cleaving aminohydrolase from Streptomyces sp. BC16019",
@@ -1759,6 +1898,7 @@
       ]
     },
     "MITE0000016": {
+      "accession": "MITE0000016",
       "status": "active",
       "name": "MtmOIV",
       "description": "Oxygenase",
@@ -1773,6 +1913,7 @@
       ]
     },
     "MITE0000110": {
+      "accession": "MITE0000110",
       "status": "active",
       "name": "NgnN4",
       "description": "NgnN4 is responsible for attaching the pyrrole moiety at hydroxyl group at the 9-position of substrate.",
@@ -1786,6 +1927,7 @@
       ]
     },
     "MITE0000173": {
+      "accession": "MITE0000173",
       "status": "active",
       "name": "embB",
       "description": "Cytochrome P450 installing crosslink",
@@ -1798,6 +1940,7 @@
       ]
     },
     "MITE0000131": {
+      "accession": "MITE0000131",
       "status": "active",
       "name": "ThnA",
       "description": "amidotransferase",
@@ -1811,6 +1954,7 @@
       ]
     },
     "MITE0000017": {
+      "accession": "MITE0000017",
       "status": "active",
       "name": "MtmW",
       "description": "ketoreductase",
@@ -1824,6 +1968,7 @@
       ]
     },
     "MITE0000071": {
+      "accession": "MITE0000071",
       "status": "active",
       "name": "bmp2",
       "description": "Flavin-dependent halogenase",
@@ -1837,6 +1982,7 @@
       ]
     },
     "MITE0000099": {
+      "accession": "MITE0000099",
       "status": "active",
       "name": "PumJ",
       "description": "pseudouridine synthase",
@@ -1850,6 +1996,7 @@
       ]
     },
     "MITE0000163": {
+      "accession": "MITE0000163",
       "status": "active",
       "name": "PhoH",
       "description": "Decarboxylase",
@@ -1862,6 +2009,7 @@
       ]
     },
     "MITE0000081": {
+      "accession": "MITE0000081",
       "status": "active",
       "name": "AgqB",
       "description": "alkylresorcinol monooxygenase",
@@ -1875,6 +2023,7 @@
       ]
     },
     "MITE0000158": {
+      "accession": "MITE0000158",
       "status": "active",
       "name": "PhoJ",
       "description": "Dioxygenase",
@@ -1887,6 +2036,7 @@
       ]
     },
     "MITE0000049": {
+      "accession": "MITE0000049",
       "status": "active",
       "name": "BotRMT1",
       "description": "Bottromycin-precursor acting rSAM methyltransferase from Streptomyces sp. BC16019.",
@@ -1900,6 +2050,7 @@
       ]
     },
     "MITE0000090": {
+      "accession": "MITE0000090",
       "status": "active",
       "name": "TPS21",
       "description": "",
@@ -1913,6 +2064,7 @@
       ]
     },
     "MITE0000172": {
+      "accession": "MITE0000172",
       "status": "active",
       "name": "lauB1",
       "description": "Cytochrome P450 installing crosslinks",
@@ -1926,6 +2078,7 @@
       ]
     },
     "MITE0000155": {
+      "accession": "MITE0000155",
       "status": "active",
       "name": "SrsB",
       "description": "methyltransferase acting on phenolic lipids to yield alkylresorcinol methyl ethers",
@@ -1938,6 +2091,7 @@
       ]
     },
     "MITE0000037": {
+      "accession": "MITE0000037",
       "status": "active",
       "name": "GtfE",
       "description": "Transfers glucose onto hpg4 in the vancomycin and teicoplanin aglycone.",
@@ -1951,6 +2105,7 @@
       ]
     },
     "MITE0000007": {
+      "accession": "MITE0000007",
       "status": "active",
       "name": "CalO1",
       "description": "O-methyltransferase",
@@ -1964,6 +2119,7 @@
       ]
     },
     "MITE0000089": {
+      "accession": "MITE0000089",
       "status": "active",
       "name": "CPT2",
       "description": "",
@@ -1977,6 +2133,7 @@
       ]
     },
     "MITE0000084": {
+      "accession": "MITE0000084",
       "status": "active",
       "name": "NapB2",
       "description": "putative monooxygenase",
@@ -1990,6 +2147,7 @@
       ]
     },
     "MITE0000121": {
+      "accession": "MITE0000121",
       "status": "active",
       "name": "abmB",
       "description": "L-Ornithine N(5)-oxygenase",
@@ -2003,6 +2161,7 @@
       ]
     },
     "MITE0000068": {
+      "accession": "MITE0000068",
       "status": "active",
       "name": "RebO",
       "description": "Flavin-dependent L-tryptophan oxidase",
@@ -2016,6 +2175,7 @@
       ]
     },
     "MITE0000107": {
+      "accession": "MITE0000107",
       "status": "active",
       "name": "Mca",
       "description": "amidase",
@@ -2029,6 +2189,7 @@
       ]
     },
     "MITE0000006": {
+      "accession": "MITE0000006",
       "status": "active",
       "name": "CalO6",
       "description": "O-methyltransferase",
@@ -2042,6 +2203,7 @@
       ]
     },
     "MITE0000039": {
+      "accession": "MITE0000039",
       "status": "active",
       "name": "Vmt",
       "description": "Methylates the N-terminus of the vancomycin backbone.",
@@ -2055,6 +2217,7 @@
       ]
     },
     "MITE0000153": {
+      "accession": "MITE0000153",
       "status": "active",
       "name": "sgrB",
       "description": "P450 installing crosslink",
@@ -2067,6 +2230,7 @@
       ]
     },
     "MITE0000066": {
+      "accession": "MITE0000066",
       "status": "active",
       "name": "RebP",
       "description": "Cytochrome P-450",
@@ -2080,6 +2244,7 @@
       ]
     },
     "MITE0000046": {
+      "accession": "MITE0000046",
       "status": "active",
       "name": "botRMT2",
       "description": "Bottromycin-precursor acting rSAM methyltransferase from Streptomyces sp BC16019",
@@ -2093,6 +2258,7 @@
       ]
     },
     "MITE0000113": {
+      "accession": "MITE0000113",
       "status": "active",
       "name": "NgnD",
       "description": "[6+4] cycloaddition",
@@ -2106,6 +2272,7 @@
       ]
     },
     "MITE0000142": {
+      "accession": "MITE0000142",
       "status": "active",
       "name": "ankC",
       "description": "FAD-dependent monooxygenase",
@@ -2119,6 +2286,7 @@
       ]
     },
     "MITE0000013": {
+      "accession": "MITE0000013",
       "status": "active",
       "name": "GrhO6",
       "description": "Flavoprotein monooxygenase",
@@ -2132,6 +2300,7 @@
       ]
     },
     "MITE0000042": {
+      "accession": "MITE0000042",
       "status": "active",
       "name": "GtfD",
       "description": "Transfers vancosamine onto glucose on hpg4 of vancomycin pseudoaglycone.",
@@ -2145,6 +2314,7 @@
       ]
     },
     "MITE0000070": {
+      "accession": "MITE0000070",
       "status": "active",
       "name": "RebC",
       "description": "Putative FAD-monooxygenase",
@@ -2158,6 +2328,7 @@
       ]
     },
     "MITE0000129": {
+      "accession": "MITE0000129",
       "status": "active",
       "name": "ThnJ",
       "description": "Aminotransferase",
@@ -2171,6 +2342,7 @@
       ]
     },
     "MITE0000150": {
+      "accession": "MITE0000150",
       "status": "active",
       "name": "CYP158C1",
       "description": "Cytochrome P450",
@@ -2184,6 +2356,7 @@
       ]
     },
     "MITE0000154": {
+      "accession": "MITE0000154",
       "status": "active",
       "name": "PeuJ",
       "description": "(hydroxylation of peucemycin)",
@@ -2197,6 +2370,7 @@
       ]
     },
     "MITE0000035": {
+      "accession": "MITE0000035",
       "status": "active",
       "name": "Orf2*",
       "description": "Deacetylates N-acetylglucosaminyl residue on Hpg4 of the teicoplanin precursor.",
@@ -2210,6 +2384,7 @@
       ]
     },
     "MITE0000132": {
+      "accession": "MITE0000132",
       "status": "active",
       "name": "THAA2",
       "description": "",
@@ -2223,6 +2398,7 @@
       ]
     },
     "MITE0000077": {
+      "accession": "MITE0000077",
       "status": "active",
       "name": "MdpB1",
       "description": "C-methyltransferase",

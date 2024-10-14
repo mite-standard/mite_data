@@ -28,7 +28,7 @@
         "genpept": "AXM43051.1",
         "mibig": "BGC0001945"
       },
-      "enzyme_tailoring": "Cyclization|Deamination",
+      "enzyme_tailoring": "Deamination|Cyclization",
       "enzyme_refs": [
         "pubmed:30088846"
       ]
@@ -367,7 +367,7 @@
         "genpept": "BAC70706.1",
         "mibig": "BGC0000678"
       },
-      "enzyme_tailoring": "Oxidation|Dehydration",
+      "enzyme_tailoring": "Dehydration|Oxidation",
       "enzyme_refs": [
         "doi:10.1021/bi1019786"
       ]

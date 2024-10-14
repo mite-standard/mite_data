@@ -76,7 +76,12 @@ class BlastManager(BaseModel):
         with open(self.src) as file_in:
             metadata = json.load(file_in)
         for entry in metadata["entries"]:
-            if acc := metadata["entries"][entry]["enzyme_ids"].get("genpept", None):
+            if metadata["entries"][entry]["status"] != "active":
+                logger.debug(
+                    f"BlastManager: MITE entry {metadata["entries"][entry]} has been retired and will not be included in the BLAST DB."
+                )
+                continue
+            elif acc := metadata["entries"][entry]["enzyme_ids"].get("genpept", None):
                 self.genpept_acc.append((entry, acc))
             elif acc := metadata["entries"][entry]["enzyme_ids"].get("uniprot", None):
                 self.uniprot_acc.append((entry, acc))
@@ -129,7 +134,6 @@ class BlastManager(BaseModel):
             return
 
         for entry in self.uniprot_acc:
-            logger.error(entry)
             if (
                 response := requests.get(
                     f"https://rest.uniprot.org/uniprotkb/{entry[1]}.fasta"

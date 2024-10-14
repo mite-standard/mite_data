@@ -1,4 +1,5 @@
 from pathlib import Path
+from urllib.error import HTTPError
 
 import pytest
 
@@ -16,14 +17,22 @@ def blast_manager():
     )
 
 
-def test_extract_accessions(blast_manager):
+def test_extract_accessions_valid(blast_manager):
     blast_manager.extract_accessions()
     assert len(blast_manager.genpept_acc) == 1
     assert len(blast_manager.uniprot_acc) == 1
 
 
+def test_extract_accessions_invalid(blast_manager):
+    blast_manager.src = Path(__file__).parent.parent.joinpath(
+        "example_files/example_invalid_metadata.json"
+    )
+    with pytest.raises(RuntimeError):
+        blast_manager.extract_accessions()
+
+
 def test_download_ncbi(blast_manager):
-    blast_manager.uniprot_acc.append(("CAK50792.1", "A0A346D7L2"))
+    blast_manager.genpept_acc.append(("MITE00000", "CAK50792.1"))
     assert blast_manager.download_ncbi() is None
 
 
@@ -38,8 +47,12 @@ def test_download_uniparc(blast_manager):
 
 
 def test_download_ncbi_fail(blast_manager):
-    pass
+    blast_manager.genpept_acc.append(("MITE00000", "AAAAAAAAAAAAA"))
+    with pytest.raises(HTTPError):
+        blast_manager.download_ncbi()
 
 
 def test_download_uniprot_fail(blast_manager):
-    pass
+    blast_manager.uniprot_acc.append(("MITE00000", "AAAAAAAAAAAAA"))
+    with pytest.raises(RuntimeError):
+        blast_manager.download_uniprot()

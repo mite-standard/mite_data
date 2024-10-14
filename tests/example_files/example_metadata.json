@@ -18,6 +18,15 @@
         "uniprot": "A0A346D7L2",
         "mibig": "BGC0001945"
       }
+    },
+    "MITE0000000": {
+      "status": "retired",
+      "enzyme_name": "AbcD",
+      "enzyme_description": "L-lysine cyclodeaminase",
+      "enzyme_ids": {
+        "mibig": "BGC0000000",
+        "uniprot": "A0A346D7L2"
+      }
     }
   }
 }

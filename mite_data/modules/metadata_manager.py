@@ -51,7 +51,10 @@ class MetadataManager(BaseModel):
     }
     metadata_as: dict = {
         "version_mite_data": f"{metadata.version('mite_data')}",
-        "base_url": "https://mite.bioinformatics.nl/repository/",
+        "fields": [
+            "accession",
+        ],
+        "base_url": f"https://mite.bioinformatics.nl/repository/@accession@/{metadata.version('mite_data')}",
         "entries": {},
     }
     metadata_mibig: dict = {
@@ -95,6 +98,7 @@ class MetadataManager(BaseModel):
         mite: the MITE JSON derived dict to extract data from
         """
         self.metadata_as["entries"][mite["accession"]] = {
+            "accession": mite["accession"],
             "status": mite["status"],
             "name": mite["enzyme"]["name"],
             "description": mite.get("enzyme", {}).get(
