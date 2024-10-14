@@ -23,7 +23,6 @@ SOFTWARE.
 
 import json
 import logging
-from datetime import datetime
 from importlib import metadata
 from pathlib import Path
 from typing import Self
@@ -39,19 +38,23 @@ class MetadataManager(BaseModel):
     Attributes:
         src: a Path towards the source directory
         target: a Path towards the target (storage) directory
-        metadata_as: a dict collecting MITE metadata with MITE IDs as keys
-        metadata_mibig: a dict collecting MITE metadata with MIBiG IDs as keys
+        metadata_general: a dict collecting MITE metadata with MITE IDs as keys for internal use
+        metadata_as: a dict collecting MITE metadata with MITE IDs as keys for use in antiSMASH
+        metadata_mibig: a dict collecting MITE metadata with MIBiG IDs as keys for use in MIBiG
     """
 
     src: DirectoryPath = Path(__file__).parent.parent.joinpath("data/")
     target: DirectoryPath = Path(__file__).parent.parent.joinpath("metadata/")
-    metadata_as: dict = {
-        "created": f"{datetime.now()}",
+    metadata_general: dict = {
         "version_mite_data": f"{metadata.version('mite_data')}",
         "entries": {},
     }
+    metadata_as: dict = {
+        "version_mite_data": f"{metadata.version('mite_data')}",
+        "base_url": "https://mite.bioinformatics.nl/repository/",
+        "entries": {},
+    }
     metadata_mibig: dict = {
-        "created": f"{datetime.now()}",
         "version_mite_data": f"{metadata.version('mite_data')}",
         "entries": {},
     }
@@ -68,8 +71,23 @@ class MetadataManager(BaseModel):
         for infile in self.src.iterdir():
             with open(infile) as file_in:
                 mite_json = json.load(file_in)
+            self.extract_metadata_general(mite=mite_json)
             self.extract_metadata_as(mite=mite_json)
             self.extract_metadata_mibig(mite=mite_json)
+
+    def extract_metadata_general(self: Self, mite: dict) -> None:
+        """Extract and stores metadata with MITE IDs as keys
+
+        mite: the MITE JSON derived dict to extract data from
+        """
+        self.metadata_general["entries"][mite["accession"]] = {
+            "status": mite["status"],
+            "enzyme_name": mite["enzyme"]["name"],
+            "enzyme_description": mite.get("enzyme", {}).get(
+                "description", "No description available"
+            ),
+            "enzyme_ids": mite["enzyme"]["databaseIds"],
+        }
 
     def extract_metadata_as(self: Self, mite: dict) -> None:
         """Extract and stores metadata with MITE IDs as keys
@@ -78,20 +96,17 @@ class MetadataManager(BaseModel):
         """
         self.metadata_as["entries"][mite["accession"]] = {
             "status": mite["status"],
-            "mite_url": f"https://mite.bioinformatics.nl/repository/{mite["accession"]}",
-            "enzyme_name": mite["enzyme"]["name"],
-            "enzyme_description": mite.get("enzyme", {}).get(
+            "name": mite["enzyme"]["name"],
+            "description": mite.get("enzyme", {}).get(
                 "description", "No description available"
             ),
-            "enzyme_ids": mite["enzyme"]["databaseIds"],
-            "enzyme_tailoring": "|".join(
-                list(
-                    {
-                        tailoring
-                        for reaction in mite.get("reactions")
-                        for tailoring in reaction.get("tailoring", [])
-                    }
-                )
+            "ids": mite["enzyme"]["databaseIds"],
+            "tailoring": list(
+                {
+                    tailoring
+                    for reaction in mite.get("reactions")
+                    for tailoring in reaction.get("tailoring", [])
+                }
             ),
         }
 
@@ -125,6 +140,13 @@ class MetadataManager(BaseModel):
 
     def export_json(self: Self) -> None:
         """Exports collected metadata dicts to target dir"""
+        with open(
+            self.target.joinpath("metadata_general.json"), "w", encoding="utf-8"
+        ) as outfile:
+            outfile.write(
+                json.dumps(self.metadata_general, indent=2, ensure_ascii=False)
+            )
+
         with open(
             self.target.joinpath("metadata_as.json"), "w", encoding="utf-8"
         ) as outfile:

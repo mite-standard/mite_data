@@ -1,29 +1,23 @@
 {
-  "created": "2024-10-12 13:28:17.306086",
   "version_mite_data": "1.2",
   "entries": {
     "MITE0000020": {
       "status": "active",
-      "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000020",
       "enzyme_name": "MtmGII",
       "enzyme_description": "glycosyltransferase",
       "enzyme_ids": {
-        "uniprot": "Q194P6",
         "genpept": "CAK50792.1",
         "mibig": "BGC0000247"
-      },
-      "enzyme_tailoring": "Glycosylation"
+      }
     },
     "MITE0000109": {
       "status": "active",
-      "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000109",
       "enzyme_name": "CmxA",
       "enzyme_description": "L-lysine cyclodeaminase",
       "enzyme_ids": {
         "uniprot": "A0A346D7L2",
         "mibig": "BGC0001945"
-      },
-      "enzyme_tailoring": "Deamination|Cyclization"
+      }
     }
   }
 }

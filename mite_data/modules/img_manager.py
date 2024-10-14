@@ -44,7 +44,9 @@ class ImageManager(BaseModel):
     """
 
     uniprot_acc: list = []
-    src: FilePath = Path(__file__).parent.parent.joinpath("metadata/metadata_as.json")
+    src: FilePath = Path(__file__).parent.parent.joinpath(
+        "metadata/metadata_general.json"
+    )
     target_download: DirectoryPath = Path(__file__).parent.parent.joinpath("pdb/")
     target_img: DirectoryPath = Path(__file__).parent.parent.joinpath("img/")
 

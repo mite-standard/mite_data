@@ -52,7 +52,9 @@ class BlastManager(BaseModel):
 
     genpept_acc: list = []
     uniprot_acc: list = []
-    src: FilePath = Path(__file__).parent.parent.joinpath("metadata/metadata_as.json")
+    src: FilePath = Path(__file__).parent.parent.joinpath(
+        "metadata/metadata_general.json"
+    )
     target_download: DirectoryPath = Path(__file__).parent.parent.joinpath("fasta/")
     target_blast: DirectoryPath = Path(__file__).parent.parent.joinpath("blast_lib/")
 
@@ -104,30 +106,45 @@ class BlastManager(BaseModel):
                 fasta_file.write(fasta_data)
 
     def download_uniprot(self: Self) -> None:
-        """Download protein FASTA files from UniProt"""
+        """Download protein FASTA files from UniProt
+
+        Raises:
+            RuntimeError: Could not download UniProt data
+        """
+
+        def _store_file(entry_tuple: tuple, lines: list) -> None:
+            if lines:
+                lines[0] = f">{entry[0]}"
+            else:
+                raise RuntimeError(
+                    f"UniProt download failed on ID {entry_tuple[1]} for MITE entry {entry_tuple[0]}"
+                )
+            payload = "\n".join(lines)
+            with open(
+                self.target_download.joinpath(f"{entry_tuple[1]}.fasta"), "w"
+            ) as fasta_file:
+                fasta_file.write(payload)
+
         if len(self.uniprot_acc) == 0:
             return
 
         for entry in self.uniprot_acc:
-            url = f"https://www.uniprot.org/uniprot/{entry[1]}.fasta"
-            response = requests.get(url)
-
-            # TODO: implement also unipark etc.
-
-            if response.status_code != 200:
+            logger.error(entry)
+            if (
+                response := requests.get(
+                    f"https://rest.uniprot.org/uniprotkb/{entry[1]}.fasta"
+                )
+            ).status_code == 200 or (
+                response := requests.get(
+                    f"https://rest.uniprot.org/uniparc/{entry[1]}.fasta"
+                )
+            ).status_code == 200:
+                _store_file(entry, response.text.strip().split("\n"))
+            else:
                 raise RuntimeError(
                     f"UniProt download failed on ID {entry[1]} for MITE entry {entry[0]}"
                 )
 
-            lines = response.text.strip().split("\n")
-            if lines:
-                lines[0] = f">{entry[0]}"  # Replace the header
-            uniprot_data = "\n".join(lines)
-
-            with open(
-                self.target_download.joinpath(f"{entry[1]}.fasta"), "w"
-            ) as fasta_file:
-                fasta_file.write(uniprot_data)
-
     def generate_blast_db(self: Self) -> None:
         """Starts subprocess to generate a BLAST DB from the (downloaded) protein FASTA files"""
+        # TODO MMZ 14.10. continue here

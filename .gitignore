@@ -1,6 +1,7 @@
 # PROJECT CUSTOM
 .idea/
 .ruff_cache/
+tests/example_files/*.fasta
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

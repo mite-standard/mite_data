@@ -1,5 +1,4 @@
 {
-  "created": "2024-10-12 13:28:17.306558",
   "version_mite_data": "1.2",
   "entries": {
     "BGC0000247": {
@@ -29,7 +28,7 @@
         "genpept": "AXM43051.1",
         "mibig": "BGC0001945"
       },
-      "enzyme_tailoring": "Deamination|Cyclization",
+      "enzyme_tailoring": "Cyclization|Deamination",
       "enzyme_refs": [
         "pubmed:30088846"
       ]
@@ -368,7 +367,7 @@
         "genpept": "BAC70706.1",
         "mibig": "BGC0000678"
       },
-      "enzyme_tailoring": "Dehydration|Oxidation",
+      "enzyme_tailoring": "Oxidation|Dehydration",
       "enzyme_refs": [
         "doi:10.1021/bi1019786"
       ]
@@ -448,7 +447,7 @@
         "genpept": "QTE75992.1",
         "mibig": "BGC0002224"
       },
-      "enzyme_tailoring": "Other|Hydroxylation",
+      "enzyme_tailoring": "Hydroxylation|Other",
       "enzyme_refs": [
         "doi:10.1039/d0sc04309e"
       ]
@@ -596,7 +595,7 @@
         "genpept": "AAM97314.1",
         "mibig": "BGC0000093"
       },
-      "enzyme_tailoring": "Heterocyclization|Hydroxylation",
+      "enzyme_tailoring": "Hydroxylation|Heterocyclization",
       "enzyme_refs": [
         "pubmed:20348291"
       ]
