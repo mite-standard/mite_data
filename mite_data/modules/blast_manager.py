@@ -29,7 +29,6 @@ import subprocess
 from importlib import metadata
 from pathlib import Path
 from typing import Self
-from zipfile import ZipFile
 
 import requests
 from Bio import Entrez
@@ -214,6 +213,9 @@ class BlastManager(BaseModel):
         """Starts subprocess to generate a BLAST DB from the (downloaded) protein FASTA files"""
         logger.debug("Started creating BLAST DB.")
 
+        temp_dir = self.target_blast.joinpath("temp_dir")
+        temp_dir.mkdir(parents=True, exist_ok=True)
+
         command = [
             "makeblastdb",
             "-in",
@@ -221,17 +223,18 @@ class BlastManager(BaseModel):
             "-dbtype",
             "prot",
             "-out",
-            f"{self.target_blast.joinpath("temp_blastfiles")}",
+            f"{temp_dir.joinpath("temp_blastfiles")}",
             "-title",
             f"MITE v{metadata.version('mite_data')} BLAST DB",
         ]
         subprocess.run(command, check=True)
         os.remove(self.target_blast.joinpath(self.concat_filename))
 
-        with ZipFile(self.target_blast.joinpath("MiteBlastDB.zip"), "w") as zip_object:
-            for file in self.target_blast.iterdir():
-                if file.name.startswith("temp_blastfiles"):
-                    zip_object.write(file)
-                    os.remove(file)
+        shutil.make_archive("MiteBlastDB", "zip", temp_dir)
+        shutil.rmtree(temp_dir)
+        shutil.move(
+            src=Path(__file__).parent.parent.parent.joinpath("MiteBlastDB.zip"),
+            dst=self.target_blast,
+        )
 
         logger.debug("Completed creating BLAST DB.")
