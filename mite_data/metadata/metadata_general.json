@@ -57,8 +57,7 @@
       "enzyme_description": "tryptophan 6-halogenase",
       "enzyme_ids": {
         "uniprot": "A0A142I756",
-        "genpept": "AMR44308.1",
-        "mibig": "new017"
+        "genpept": "AMR44308.1"
       }
     },
     "MITE0000073": {
@@ -127,8 +126,7 @@
       "enzyme_description": "pyridoxal-phosphate dependent enzyme",
       "enzyme_ids": {
         "uniprot": "A0A397HQN2",
-        "genpept": "RHZ63463.1",
-        "mibig": "new078"
+        "genpept": "RHZ63463.1"
       }
     },
     "MITE0000171": {
@@ -175,8 +173,7 @@
       "enzyme_description": "cRW tRNA-dependent cyclodipeptide synthase",
       "enzyme_ids": {
         "uniprot": "P9WEJ7",
-        "genpept": "UZP48213.1",
-        "mibig": "new172"
+        "genpept": "UZP48213.1"
       }
     },
     "MITE0000134": {
@@ -510,8 +507,7 @@
       "enzyme_description": "Baeyer-Villiger monooxygenase",
       "enzyme_ids": {
         "uniprot": "Q82IY8",
-        "genpept": "BAC70705.1",
-        "mibig": "new291"
+        "genpept": "BAC70705.1"
       }
     },
     "MITE0000034": {
@@ -688,8 +684,7 @@
       "enzyme_description": "ATP-grasp protein",
       "enzyme_ids": {
         "uniprot": "A0A397HPF2",
-        "genpept": "RHZ63466.1",
-        "mibig": "new078"
+        "genpept": "RHZ63466.1"
       }
     },
     "MITE0000141": {
@@ -698,8 +693,7 @@
       "enzyme_description": "o-methyltransferase",
       "enzyme_ids": {
         "uniprot": "A0A397HK53",
-        "genpept": "RHZ63465.1",
-        "mibig": "new078"
+        "genpept": "RHZ63465.1"
       }
     },
     "MITE0000165": {
@@ -797,8 +791,7 @@
       "enzyme_description": "GNAT family Nacetyltransferase",
       "enzyme_ids": {
         "uniprot": "P9WEK5",
-        "genpept": "UZP48216.1",
-        "mibig": "new172"
+        "genpept": "UZP48216.1"
       }
     },
     "MITE0000128": {
@@ -964,8 +957,7 @@
       "enzyme_description": "NRPS independent siderophore synthetase",
       "enzyme_ids": {
         "uniprot": "A0A397HK89",
-        "genpept": "RHZ63459.1",
-        "mibig": "new078"
+        "genpept": "RHZ63459.1"
       }
     },
     "MITE0000114": {
@@ -1139,8 +1131,7 @@
       "enzyme_description": "cRY tRNA-dependent cyclodipeptide synthase",
       "enzyme_ids": {
         "uniprot": "A0A397HK51",
-        "genpept": "RHZ63462.1",
-        "mibig": "new078"
+        "genpept": "RHZ63462.1"
       }
     },
     "MITE0000063": {
@@ -1198,8 +1189,7 @@
       "enzyme_description": "kynurenine formamidase",
       "enzyme_ids": {
         "uniprot": "P9WEK4",
-        "genpept": "UZP48215.1",
-        "mibig": "new172"
+        "genpept": "UZP48215.1"
       }
     },
     "MITE0000072": {
@@ -1266,8 +1256,7 @@
       "enzyme_description": "FAD-dependent monooxygenase ",
       "enzyme_ids": {
         "uniprot": "P9WEK3",
-        "genpept": "UZP48214.1",
-        "mibig": "new172"
+        "genpept": "UZP48214.1"
       }
     },
     "MITE0000029": {
@@ -1375,8 +1364,7 @@
       "enzyme_description": "amidotransferase",
       "enzyme_ids": {
         "uniprot": "A0A142I749",
-        "genpept": "AMR44301.1",
-        "mibig": "new017"
+        "genpept": "AMR44301.1"
       }
     },
     "MITE0000017": {
@@ -1463,8 +1451,7 @@
       "enzyme_description": "Cytochrome P450 installing crosslinks",
       "enzyme_ids": {
         "uniprot": "A0A160P4S3",
-        "genpept": "BAU86124.1",
-        "mibig": "new639"
+        "genpept": "BAU86124.1"
       }
     },
     "MITE0000155": {
@@ -1611,8 +1598,7 @@
       "enzyme_description": "FAD-dependent monooxygenase",
       "enzyme_ids": {
         "uniprot": "A0A397HQ89",
-        "genpept": "RHZ63464.1",
-        "mibig": "new078"
+        "genpept": "RHZ63464.1"
       }
     },
     "MITE0000013": {
@@ -1651,8 +1637,7 @@
       "enzyme_description": "Aminotransferase",
       "enzyme_ids": {
         "uniprot": "A0A142I758",
-        "genpept": "AMR44310.1",
-        "mibig": "new017"
+        "genpept": "AMR44310.1"
       }
     },
     "MITE0000150": {
@@ -1661,8 +1646,7 @@
       "enzyme_description": "Cytochrome P450",
       "enzyme_ids": {
         "uniprot": "F8K0I8",
-        "genpept": "AEW97391.1",
-        "mibig": "new420"
+        "genpept": "AEW97391.1"
       }
     },
     "MITE0000154": {

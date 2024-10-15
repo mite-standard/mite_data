@@ -46,13 +46,6 @@ class CliManager(BaseModel):
         )
 
         parser.add_argument(
-            "--update_md",
-            action="store_true",
-            default=False,
-            help="Updates the metadata files.",
-        )
-
-        parser.add_argument(
             "--update_img",
             action="store_true",
             default=False,

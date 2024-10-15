@@ -27,6 +27,7 @@ from importlib import metadata
 
 import coloredlogs
 
+from mite_data.modules.blast_manager import BlastManager
 from mite_data.modules.cli_manager import CliManager
 from mite_data.modules.img_manager import ImageManager
 from mite_data.modules.metadata_manager import MetadataManager
@@ -68,18 +69,16 @@ def main() -> SystemExit:
 
     logger.debug(f"Started 'mite_data' v{metadata.version('mite_data')} as CLI.")
 
-    if args.update_md or args.update_all:
-        metadata_manager = MetadataManager()
-        metadata_manager.run()
+    metadata_manager = MetadataManager()
+    metadata_manager.run()
 
     if args.update_img or args.update_all:
         img_manager = ImageManager()
         img_manager.run()
 
     if args.update_blast or args.update_all:
-        logger.debug("Started update BLAST database.")
-        # TODO MMZ 12.10.: write MIBiG ID in header of protein fasta file - key for as_metadata.json
-        logger.debug("Completed update BLAST database.")
+        blast_manager = BlastManager()
+        blast_manager.run()
 
     if args.update_mite or args.update_all:
         logger.debug("Started update MITE entries.")

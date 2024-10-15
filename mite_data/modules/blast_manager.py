@@ -23,7 +23,9 @@ SOFTWARE.
 
 import json
 import logging
+import shutil
 import subprocess
+from importlib import metadata
 from pathlib import Path
 from typing import Self
 
@@ -48,6 +50,7 @@ class BlastManager(BaseModel):
         src: a Path towards the metadata source file
         target_download: a Path towards the fasta file target (storage) directory
         target_blast: a Path towards the blast database storage directory
+        concat_filename: filename of the concatenated fasta file
     """
 
     genpept_acc: list = []
@@ -57,6 +60,7 @@ class BlastManager(BaseModel):
     )
     target_download: DirectoryPath = Path(__file__).parent.parent.joinpath("fasta/")
     target_blast: DirectoryPath = Path(__file__).parent.parent.joinpath("blast_lib/")
+    concat_filename: str = "mite_enzymes_concat.fasta"
 
     def run(self: Self) -> None:
         """Class entry point to run methods"""
@@ -64,6 +68,8 @@ class BlastManager(BaseModel):
         self.extract_accessions()
         self.download_ncbi()
         self.download_uniprot()
+        self.concat_fasta_files()
+        self.validate_nr_files()
         self.generate_blast_db()
         logger.debug("Completed BlastManager.")
 
@@ -74,16 +80,20 @@ class BlastManager(BaseModel):
             RuntimeError: An entry does not have a GenPept or UniProt accession ID.
         """
         with open(self.src) as file_in:
-            metadata = json.load(file_in)
-        for entry in metadata["entries"]:
-            if metadata["entries"][entry]["status"] != "active":
+            metadata_general = json.load(file_in)
+        for entry in metadata_general["entries"]:
+            if metadata_general["entries"][entry]["status"] != "active":
                 logger.debug(
-                    f"BlastManager: MITE entry {metadata["entries"][entry]} has been retired and will not be included in the BLAST DB."
+                    f"BlastManager: MITE entry {metadata_general["entries"][entry]} has been retired and will not be included in the BLAST DB."
                 )
                 continue
-            elif acc := metadata["entries"][entry]["enzyme_ids"].get("genpept", None):
+            elif acc := metadata_general["entries"][entry]["enzyme_ids"].get(
+                "genpept", None
+            ):
                 self.genpept_acc.append((entry, acc))
-            elif acc := metadata["entries"][entry]["enzyme_ids"].get("uniprot", None):
+            elif acc := metadata_general["entries"][entry]["enzyme_ids"].get(
+                "uniprot", None
+            ):
                 self.uniprot_acc.append((entry, acc))
             else:
                 raise RuntimeError(f"{entry} has no GenPept or UniProt ID - FIX ASAP!")
@@ -149,6 +159,63 @@ class BlastManager(BaseModel):
                     f"UniProt download failed on ID {entry[1]} for MITE entry {entry[0]}"
                 )
 
+    def validate_nr_files(self: Self) -> None:
+        """Validate that number of downloaded files equals to number of active entries
+
+        Raises:
+            RuntimeError: Not all files were downloaded
+        """
+        with open(self.src) as file_in:
+            metadata_general = json.load(file_in)
+
+        expected_set = set()
+        for entry in metadata_general["entries"]:
+            if metadata_general["entries"][entry]["status"] == "active":
+                if genpept := metadata_general["entries"][entry]["enzyme_ids"].get(
+                    "genpept", None
+                ):
+                    expected_set.add(f"{genpept}.fasta")
+                else:
+                    expected_set.add(
+                        f"{metadata_general["entries"][entry]["enzyme_ids"].get("uniprot")}.fasta"
+                    )
+
+        present_set = set()
+        for f in self.target_download.iterdir():
+            if f.suffix == ".fasta":
+                present_set.add(f)
+
+        if len(expected_set) != len(present_set):
+            raise RuntimeError(
+                f"BlastManager: Not all expected FASTA files were downloaded. "
+                f"Expected files were: {expected_set}."
+                f"Missing files are: {expected_set.difference(present_set)}."
+            )
+
+    def concat_fasta_files(self: Self) -> None:
+        """Concatenates individual FASTA files into a single one."""
+        with open(self.target_blast.joinpath(self.concat_filename), "w") as outfile:
+            for filename in self.target_download.iterdir():
+                if filename.suffix == ".fasta" and filename != self.concat_filename:
+                    with open(filename) as infile:
+                        shutil.copyfileobj(infile, outfile)
+                        outfile.write("\n")
+
     def generate_blast_db(self: Self) -> None:
         """Starts subprocess to generate a BLAST DB from the (downloaded) protein FASTA files"""
-        # TODO MMZ 14.10. continue here
+        logger.debug("Started creating BLAST DB.")
+
+        command = [
+            "makeblastdb",
+            "-in",
+            f"{self.target_blast.joinpath(self.concat_filename)}",
+            "-dbtype",
+            "prot",
+            "-out",
+            f"{self.target_blast.joinpath("MiteBlastDB")}",
+            "-title",
+            f"MITE v{metadata.version('mite_data')} BLAST DB",
+        ]
+        subprocess.run(command, check=True)
+
+        logger.debug("Completed creating BLAST DB.")

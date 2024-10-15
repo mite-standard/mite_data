@@ -2,6 +2,7 @@
 .idea/
 .ruff_cache/
 tests/example_files/*.fasta
+tests/example_files/MiteBlastDB*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -58,7 +59,6 @@ cover/
 
 # Translations
 *.mo
-*.pot
 
 # Django stuff:
 *.log

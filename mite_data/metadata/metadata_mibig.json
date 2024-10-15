@@ -28,7 +28,7 @@
         "genpept": "AXM43051.1",
         "mibig": "BGC0001945"
       },
-      "enzyme_tailoring": "Deamination|Cyclization",
+      "enzyme_tailoring": "Cyclization|Deamination",
       "enzyme_refs": [
         "pubmed:30088846"
       ]
@@ -81,20 +81,19 @@
         "doi:10.1021/acs.orglett.0c02469"
       ]
     },
-    "new017": {
-      "mite_accession": "MITE0000129",
-      "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000129",
+    "BGC0000000": {
+      "mite_accession": "MITE0000150",
+      "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000150",
       "status": "active",
-      "enzyme_name": "ThnJ",
-      "enzyme_description": "Aminotransferase",
+      "enzyme_name": "CYP158C1",
+      "enzyme_description": "Cytochrome P450",
       "enzyme_ids": {
-        "uniprot": "A0A142I758",
-        "genpept": "AMR44310.1",
-        "mibig": "new017"
+        "uniprot": "F8K0I8",
+        "genpept": "AEW97391.1"
       },
-      "enzyme_tailoring": "Deamination",
+      "enzyme_tailoring": "Biaryl bond formation",
       "enzyme_refs": [
-        "doi:10.1002/cbic.201500670"
+        "doi:10.3762/bjoc.18.113"
       ]
     },
     "BGC0000973": {
@@ -196,22 +195,6 @@
         "doi:10.1016/J.CHEMBIOL.2008.05.009"
       ]
     },
-    "new078": {
-      "mite_accession": "MITE0000142",
-      "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000142",
-      "status": "active",
-      "enzyme_name": "ankC",
-      "enzyme_description": "FAD-dependent monooxygenase",
-      "enzyme_ids": {
-        "uniprot": "A0A397HQ89",
-        "genpept": "RHZ63464.1",
-        "mibig": "new078"
-      },
-      "enzyme_tailoring": "Monooxygenation",
-      "enzyme_refs": [
-        "doi:10.1038/s41589-022-01246-6"
-      ]
-    },
     "BGC0003094": {
       "mite_accession": "MITE0000169",
       "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000169",
@@ -257,22 +240,6 @@
       "enzyme_tailoring": "Oxidation",
       "enzyme_refs": [
         "pubmed:21284395"
-      ]
-    },
-    "new172": {
-      "mite_accession": "MITE0000144",
-      "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000144",
-      "status": "active",
-      "enzyme_name": "avaB",
-      "enzyme_description": "FAD-dependent monooxygenase ",
-      "enzyme_ids": {
-        "uniprot": "P9WEK3",
-        "genpept": "UZP48214.1",
-        "mibig": "new172"
-      },
-      "enzyme_tailoring": "Monooxygenation",
-      "enzyme_refs": [
-        "doi:10.1038/s41589-022-01246-6"
       ]
     },
     "BGC0000469": {
@@ -367,7 +334,7 @@
         "genpept": "BAC70706.1",
         "mibig": "BGC0000678"
       },
-      "enzyme_tailoring": "Dehydration|Oxidation",
+      "enzyme_tailoring": "Oxidation|Dehydration",
       "enzyme_refs": [
         "doi:10.1021/bi1019786"
       ]
@@ -502,22 +469,6 @@
       "enzyme_tailoring": "Halogenation",
       "enzyme_refs": [
         "doi:10.1002/cbic.201500467"
-      ]
-    },
-    "new291": {
-      "mite_accession": "MITE0000148",
-      "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000148",
-      "status": "active",
-      "enzyme_name": "ptlE",
-      "enzyme_description": "Baeyer-Villiger monooxygenase",
-      "enzyme_ids": {
-        "uniprot": "Q82IY8",
-        "genpept": "BAC70705.1",
-        "mibig": "new291"
-      },
-      "enzyme_tailoring": "Oxidation",
-      "enzyme_refs": [
-        "doi:10.1021/bi060419n"
       ]
     },
     "BGC0000581": {
@@ -1031,22 +982,6 @@
         "doi:10.1038/nchembio.1564"
       ]
     },
-    "new639": {
-      "mite_accession": "MITE0000172",
-      "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000172",
-      "status": "active",
-      "enzyme_name": "lauB1",
-      "enzyme_description": "Cytochrome P450 installing crosslinks",
-      "enzyme_ids": {
-        "uniprot": "A0A160P4S3",
-        "genpept": "BAU86124.1",
-        "mibig": "new639"
-      },
-      "enzyme_tailoring": "Biaryl bond formation",
-      "enzyme_refs": [
-        "doi:10.1101/2023.11.03.565440"
-      ]
-    },
     "BGC0003089": {
       "mite_accession": "MITE0000155",
       "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000155",
@@ -1075,22 +1010,6 @@
       "enzyme_tailoring": "Biaryl bond formation",
       "enzyme_refs": [
         "doi:10.1002/anie.202311533"
-      ]
-    },
-    "new420": {
-      "mite_accession": "MITE0000150",
-      "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000150",
-      "status": "active",
-      "enzyme_name": "CYP158C1",
-      "enzyme_description": "Cytochrome P450",
-      "enzyme_ids": {
-        "uniprot": "F8K0I8",
-        "genpept": "AEW97391.1",
-        "mibig": "new420"
-      },
-      "enzyme_tailoring": "Biaryl bond formation",
-      "enzyme_refs": [
-        "doi:10.3762/bjoc.18.113"
       ]
     },
     "BGC0003049": {
