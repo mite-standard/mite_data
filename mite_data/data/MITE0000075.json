@@ -1,0 +1,66 @@
+{
+    "accession": "MITE0000075",
+    "status": "active",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "4CEPXXFDQQ46VQJXBT4B4AUO",
+                            "P75FRHHCFPTCPYSP65VDVPHW"
+                        ],
+                        "reviewers": [
+                            "BBBBBBBBBBBBBBBBBBBBBBBB"
+                        ],
+                        "date": "2024-05-30",
+                        "comment": "Initial entry."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "clmM2",
+        "description": "O-methyltransferase",
+        "references": [
+            "doi:10.1016/j.chembiol.2012.01.014"
+        ],
+        "databaseIds": {
+            "uniprot": "H1ZYV4",
+            "genpept": "CCC55909.1",
+            "mibig": "BGC0000973"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#6:27]-[#16:16]-[c:11]1[c:10](-[#8:25])[c:9][c:8]([n:7][c:12]1-[#6:13](-[$([#1,*])])=[$([#1,*])])-[c:5]1[c:6][c:1][c:2][c:3][n:4]1>>[#6:28]-[#8:25]-[c:10]1[c:9][c:8]([n:7][c:12](-[#6:13](-[$([#1,*])])=[$([#1,*])])[c:11]1-[#16:16]-[#6:27])-[c:5]1[c:6][c:1][c:2][c:3][n:4]1 |$;;;;;;;;;;_R1;_R0;;;;;;;;;;;;;;;_R1;_R0;;;;;;;;;$|"
+            },
+            "reactions": [
+                {
+                    "substrate": "*C(=*)c1nc(-c2ccccn2)cc(O)c1SC",
+                    "products": [
+                        "*C(=*)c1nc(-c2ccccn2)cc(OC)c1SC"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "Inference from genomic data and chemical structure"
+                    ],
+                    "references": [
+                        "doi:10.1016/j.chembiol.2012.01.014"
+                    ]
+                }
+            ]
+        }
+    ]
+}

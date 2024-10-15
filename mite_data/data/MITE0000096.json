@@ -1,0 +1,69 @@
+{
+    "accession": "MITE0000096",
+    "status": "active",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "Z4WHVO6K4QR4NSPFS3BTTXEO",
+                            "SDAWYQYFQDDVDNDD7ZO2XI6Z"
+                        ],
+                        "reviewers": [
+                            "NJ6R5LEVTYWQEKC4XASTKZBC",
+                            "C62OJVVH7XOTOTFZSJT727YU"
+                        ],
+                        "date": "2024-03-19",
+                        "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer 2 fixed reaction SMARTS, reaction passing."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "TnmJ",
+        "description": "Cofactorless oxygenase",
+        "references": [
+            "pubmed:37945897"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A125SA13",
+            "genpept": "AME18009.1",
+            "mibig": "BGC0001378"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Dioxygenation"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#6:1]-[#8:2]-[#6:3]1-[#6:33]2-[#6:34]3(-[#6:11]4-[#6:12]-[#6:13](-[#6:15]5:[#6:25](-[#8:26]):[#6:24]6:[#6:19](:[#6:20]:[#6:21]:[#6:22]:[#6:23]:6):[#6:17](-[#8:18]):[#6:16]:5-[#6:10]-4=[#7:9]-[#6:8](-[#6:27]#[#6:28]-[#6:29]=[#6:30]-[#6:31]#[#6:32]-2)-[#6:7]-3=[#6:5](-[#6:6])-[#6:4]=1)=[#8:14])-[#6:35]=[#8:36]>>[#6:1]-[#8:2]-[#6:3]1-[#6:33]2-[#6:34]3-[#6:11]4:[#6:12]:[#6:13](:[#6:15]5-[#6:25](=[#8:26])-[#6:24]6:[#6:19](:[#6:20]:[#6:21]:[#6:22]:[#6:23]:6)-[#6:17](=[#8:18])-[#6:16]:5:[#6:10]:4-[#7:9]-[#6:8](-[#6:27]#[#6:28]-[#6:29]=[#6:30]-[#6:31]#[#6:32]-2)-[#6:7]-3=[#6:5](-[#6:6])-[#6:4]=1)-[#8:14]"
+            },
+            "reactions": [
+                {
+                    "substrate": "COC1=CC(C)=C2C3C#CC=CC#CC1C2(C=O)C1CC(=O)c2c(c(O)c4ccccc4c2O)C1=N3",
+                    "products": [
+                        "COC1=CC(C)=C2C3C#CC=CC#CC1C2c1cc(O)c2c(c1N3)C(=O)c1ccccc1C2=O"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "In vitro assay",
+                        "Site-directed mutagenesis",
+                        "Knock-out studies"
+                    ],
+                    "references": [
+                        "pubmed:37945897"
+                    ]
+                }
+            ]
+        }
+    ]
+}

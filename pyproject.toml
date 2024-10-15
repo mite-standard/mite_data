@@ -7,7 +7,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "mite_data"
-version = "1.1"
+version = "1.2"
 description = "Data storage and auxiliary functions for mite_data."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -16,5 +16,67 @@ authors = [
     { name = "Mitja M. Zdouc", email = "zdoucmm@gmail.com" }
 ]
 dependencies = [
-    "AlphaFetcher~=0.2"
+    "argparse~=1.4",
+    "biopython~=1.84",
+    "coloredlogs~=15.0",
+    "AlphaFetcher~=0.2",
+    "mite_schema",
+    "pre-commit~=3.4",
+    "polars~=1.4",
+    "pydantic~=2.8",
+    "pytest~=7.4",
+    "requests~=2.32",
+    "ruff~=0.5"
+]
+
+[project.scripts]
+mite_data = "mite_data.main:main"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests/",
+]
+pythonpath = [
+    "mite_data"
+]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = [
+    # flake8-bugbear
+    "B",
+    # flake8-comprehensions
+    "C4",
+    # flake8-eradicate/eradicate
+    "ERA",
+    # isort
+    "I",
+    # pep8-naming
+    "N",
+    # flake8-pie
+    "PIE",
+    # pygrep
+    "PGH",
+    # ruff checks
+    "RUF",
+    # flake8-simplify
+    "SIM",
+    # flake8-type-checking
+    "TCH",
+    # flake8-tidy-imports
+    "TID",
+    # pyupgrade
+    "UP",
+]
+ignore = [
+    # whitespace-before-punctuation
+    "E203",
+    # percent-format-invalid-format
+    "E501",
+    # mixed-case-variable-in-class-scope
+    "N815"
 ]

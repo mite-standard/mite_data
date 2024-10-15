@@ -1,0 +1,66 @@
+{
+    "accession": "MITE0000122",
+    "status": "active",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "S5E5B42Z3YOMJFLKFTZJZTZN",
+                            "I3D2K5SU7JJDS2LEEQM3W3SO"
+                        ],
+                        "reviewers": [
+                            "C62OJVVH7XOTOTFZSJT727YU"
+                        ],
+                        "date": "2024-03-20",
+                        "comment": "Initial entry. Reviewer 1 fixed numbering of reaction SMARTS."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "abmA",
+        "description": "Acetyltransferase",
+        "references": [
+            "doi:10.1016/j.jbc.2023.104573"
+        ],
+        "databaseIds": {
+            "uniprot": "I1ZAY8",
+            "genpept": "AFJ20767.1",
+            "mibig": "BGC0002300"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Acetylation"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#7:1]/[#6@:2](-[#6:8](-[#8:10])=[#8:9])-[#6:3]-[#6:4]-[#6:5]-[#7:6]-[#8:7]>>[#6]-[#6](-[#7:6](-[#6:5]-[#6:4]-[#6:3]-[#6@@:2](-[#6:8](-[#8:10])=[#8:9])/[#7:1])-[#8:7])=[#8]"
+            },
+            "reactions": [
+                {
+                    "substrate": "N[C@@H](CCCNO)C(=O)O",
+                    "products": [
+                        "CC(=O)N(O)CCC[C@H](N)C(=O)O"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "Knock-out studies"
+                    ],
+                    "references": [
+                        "doi:10.1016/j.jbc.2023.104573"
+                    ]
+                }
+            ]
+        }
+    ]
+}

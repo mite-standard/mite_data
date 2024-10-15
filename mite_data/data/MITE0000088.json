@@ -1,0 +1,67 @@
+{
+    "accession": "MITE0000088",
+    "status": "active",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "P75FRHHCFPTCPYSP65VDVPHW"
+                        ],
+                        "reviewers": [
+                            "NJ6R5LEVTYWQEKC4XASTKZBC",
+                            "C62OJVVH7XOTOTFZSJT727YU"
+                        ],
+                        "date": "2024-03-19",
+                        "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer 2 redrew product, reaction passes."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "TlmF",
+        "description": "cytochrome P450",
+        "references": [
+            "pubmed:28393452"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A0P0G6I4",
+            "genpept": "ALJ49912.1",
+            "mibig": "BGC0001237"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Oxidation"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#6:1]\\[#6:2]=[#6:3](/[#6:4])\\[#6:5]=[#6:6](/[#6:7])\\[#6:8](\\[#8:9])=[#6:10](\\[#6:11])-[#6:12](-[#16-:13])=[O:14]>>[#6:1]\\[#6:2]=[#6:3](/[#6:4])-[#6:5]1-[#8:6][C:7]1([#6:8])[#6:9](\\[#8:10])=[#6:11](\\[#6:12])-[#6:13](-[#16-:14])=[O:15]"
+            },
+            "reactions": [
+                {
+                    "substrate": "C/C=C(C)/C=C(C)/C(O)=C(/C)C(=O)[S-]",
+                    "products": [
+                        "C/C=C(\\C)C1OC1(C)C(O)=C(C)C(=O)[S-]"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "Heterologous expression",
+                        "Knock-out studies"
+                    ],
+                    "references": [
+                        "pubmed:28393452"
+                    ]
+                }
+            ]
+        }
+    ]
+}

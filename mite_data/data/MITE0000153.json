@@ -1,0 +1,65 @@
+{
+    "accession": "MITE0000153",
+    "status": "active",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "ZF6B6VBOHAZ5KYONQR36C2NB"
+                        ],
+                        "reviewers": [
+                            "NJ6R5LEVTYWQEKC4XASTKZBC",
+                            "C62OJVVH7XOTOTFZSJT727YU"
+                        ],
+                        "date": "2024-04-23",
+                        "comment": "Initial entry. Reviewer changed substrate that was identical to product (and partially fixed reactionSMARTS:reactionSMARTS), validation still not passing. Reviewer 1 fixed numbering of reaction SMARTS, reaction passes."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "sgrB",
+        "description": "P450 installing crosslink",
+        "references": [
+            "doi:10.1002/anie.202311533"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI00068C79B2",
+            "mibig": "BGC0003046"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Biaryl bond formation"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#6:1]-[#16:2]-[#6:3]-[#6:4]-[#6@@:5](-[#6:7](-[#7:9]/[#6@:10](-[#6:18](-[#7:20]/[#6@:21](-[#6:28](-[#7:30]-[#6@:31](-[#6:33](-[#7:35]/[#6@:36](-[#6:43](=[#8:45])-[#8:44])-[#6:37]-[#6:38]1:[#7:42]:[#6:41]:[nH:40]:[#6:39]:1)=[#8:34])/[#6:32])=[#8:29])-[#6:22]-[#6:23]1:[#7:27]:[#6:26]:[nH:25]:[#6:24]:1)=[#8:19])-[#6:11]-[#6:12]-[#6:13]-[#7:14]-[#6:15](=[#7:17])-[#7:16])=[#8:8])/[#7:6]>>[#6:1]-[#16:2]-[#6:3]-[#6:4]-[#6@@:5](-[#6:7](-[#7:9]/[#6@:10](-[#6:18](-[#7:20]/[#6@@:21]1-[#6:28](-[#7:30]-[#6@:31](-[#6:33](-[#7:35]/[#6@:36](-[#6:43](=[#8:45])-[#8:44])-[#6:37]-[#6:38]2:[#7:42]:[#6&H0:41](-[#6&H0:26]3:[#7:27]:[#6:23](:[#6:24]:[nH:25]:3)-[#6:22]-1):[nH:40]:[#6:39]:2)=[#8:34])/[#6:32])=[#8:29])=[#8:19])-[#6:11]-[#6:12]-[#6:13]-[#7:14]-[#6:15](=[#7:17])-[#7:16])=[#8:8])/[#7:6]"
+            },
+            "reactions": [
+                {
+                    "substrate": "CSCC[C@H](N)C(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@@H](Cc1c[nH]cn1)C(=O)N[C@@H](C)C(=O)N[C@@H](Cc1c[nH]cn1)C(=O)O",
+                    "products": [
+                        "CSCC[C@H](N)C(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@H]1Cc2c[nH]c(n2)-c2nc(c[nH]2)C[C@@H](C(=O)O)NC(=O)[C@H](C)NC1=O"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "In vitro assay"
+                    ],
+                    "references": [
+                        "doi:10.1002/anie.202311533"
+                    ]
+                }
+            ]
+        }
+    ]
+}

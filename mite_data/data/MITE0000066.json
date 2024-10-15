@@ -1,0 +1,66 @@
+{
+    "accession": "MITE0000066",
+    "status": "active",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "LEEWIYEZSPCYOCCY6BHNTE54"
+                        ],
+                        "reviewers": [
+                            "NJ6R5LEVTYWQEKC4XASTKZBC",
+                            "C62OJVVH7XOTOTFZSJT727YU"
+                        ],
+                        "date": "2024-04-23",
+                        "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer 2 reworked reaction SMARTS, reaction passing."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "RebP",
+        "description": "Cytochrome P-450",
+        "references": [
+            "doi:10.1021/ja9003365"
+        ],
+        "databaseIds": {
+            "uniprot": "Q8KIC8",
+            "genpept": "AAN01211.1",
+            "mibig": "BGC0000821"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Oxidation"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#8:1]=[#6:2](-[#6:4]1:[#6:21](-[#6:22]2:[#6:31]3:[#6:25](:[#6:26](:[#6:28]:[#6:29]:[#6:30]:3)-[Cl:27]):[#7:24]:[#6:23]:2):[#6:10](-[#6:11]2:[#6:20]3:[#6:14](:[#6:15](:[#6:17]:[#6:18]:[#6:19]:3)-[Cl:16]):[#7:13]:[#6:12]:2):[#6:6](-[#6:7](-[#8:9])=[#8:8]):[#7:5]:1)-[#8:3]>>[#8:8]=[#6:7](-[#6:6]1:[#6:10]2:[#6:11]3:[#6:12](:[#6:23]4:[#6:22](:[#6:21]:2:[#6:4](-[#6:2](-[#8:3])=[#8:1]):[#7:5]:1):[#6:31]1:[#6:25](:[#6:26](:[#6:28]:[#6:29]:[#6:30]:1)-[Cl:27]):[#7:24]:4):[#7:13]:[#6:14]1:[#6:20]:3:[#6:19]:[#6:18]:[#6:17]:[#6:15]:1-[Cl:16])-[#8:9]"
+            },
+            "reactions": [
+                {
+                    "substrate": "O=C(O)c1[nH]c(C(=O)O)c(-c2c[nH]c3c(Cl)cccc23)c1-c1c[nH]c2c(Cl)cccc12",
+                    "products": [
+                        "O=C(O)c1[nH]c(C(=O)O)c2c1c1c3cccc(Cl)c3[nH]c1c1[nH]c3c(Cl)cccc3c12"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "Heterologous expression"
+                    ],
+                    "references": [
+                        "doi:10.1021/ja9003365"
+                    ]
+                }
+            ]
+        }
+    ]
+}

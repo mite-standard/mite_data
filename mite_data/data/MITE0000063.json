@@ -1,0 +1,95 @@
+{
+    "accession": "MITE0000063",
+    "status": "active",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "P75FRHHCFPTCPYSP65VDVPHW",
+                            "IX2YLYLJIFMZ56AG4LPOYV2J"
+                        ],
+                        "reviewers": [
+                            "C62OJVVH7XOTOTFZSJT727YU"
+                        ],
+                        "date": "2024-05-14",
+                        "comment": "Initial entry. Reviewer 1 fixed reaction SMARTS of reaction 2 by explicitly stating the valence of the dehydrated carbon."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "ptlD",
+        "description": "Non-Heme Iron-Dependent Dehydrogenase/Oxygenase",
+        "references": [
+            "doi:10.1021/bi1019786"
+        ],
+        "databaseIds": {
+            "uniprot": "Q82IY7",
+            "genpept": "BAC70706.1",
+            "mibig": "BGC0000678"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Oxidation"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#6:10][C@:1]1([#6:9])[#6:2]-[#6:3]2-[#6:6]=[#6:7](-[#6@@H:8]3-[#6:11]-[#8:20]-[#6:13](=[O:19])-[#6:12](=[#6:14])[C@:5]23[#6:4]1)-[#6:15](-[#8:16])=[O:17]>>[#6:9][C@@:1]1([#6:10])[#6:2]-[#6:3]2-[#6:6]=[#6:7](-[#6@@H:8]3-[#6:11]-[#8:20]-[#6:13](=[O:19])[C:12]4([#6:14]-[#8:21]4)[C@:5]23[#6:4]1)-[#6:15](-[#8:16])=[O:17] |r,c:5,26,@:20,@@:1|"
+            },
+            "reactions": [
+                {
+                    "substrate": "C=C1C(=O)OC[C@H]2C(C(=O)O)=CC3CC(C)(C)C[C@@]132",
+                    "products": [
+                        "CC1(C)CC2C=C(C(=O)O)[C@@H]3COC(=O)C4(CO4)[C@]23C1"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "In vitro assay",
+                        "Knock-out studies"
+                    ],
+                    "references": [
+                        "doi:10.1021/bi1019786"
+                    ]
+                }
+            ]
+        },
+        {
+            "tailoring": [
+                "Dehydration"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#6:1]\\[#6@:2]1-[#6@@:19]23-[#6@:7](-[#6:8](=[#6:12]-[#6:13]-2-[#6:14]-[#6:15](-[#6:18]\\3)(-[#6:17])-[#6:16])-[#6:9](-[#8:11])=[#8:10])/[#6:6]-[#8:5]-[#6:3]-1=[#8:4]>>[#6:1]=[#6&H0:2]1-[#6@@:19]23-[#6@:7](-[#6:8](=[#6:12]-[#6:13]-2-[#6:14]-[#6:15](-[#6:18]\\3)(-[#6:17])-[#6:16])-[#6:9](-[#8:11])=[#8:10])/[#6:6]-[#8:5]-[#6:3]-1=[#8:4]"
+            },
+            "reactions": [
+                {
+                    "substrate": "C[C@@H]1C(=O)OC[C@H]2C(C(=O)O)=CC3CC(C)(C)C[C@]312",
+                    "products": [
+                        "C=C1C(=O)OC[C@H]2C(C(=O)O)=CC3CC(C)(C)C[C@@]132"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "In vitro assay",
+                        "Knock-out studies"
+                    ],
+                    "references": [
+                        "doi:10.1021/bi1019786"
+                    ]
+                }
+            ]
+        }
+    ]
+}

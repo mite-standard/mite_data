@@ -1,0 +1,68 @@
+{
+    "accession": "MITE0000131",
+    "status": "active",
+    "changelog": {
+        "releases": [
+            {
+                "version": "1.0",
+                "date": "2024-07-30",
+                "entries": [
+                    {
+                        "contributors": [
+                            "5EV2ZHN6GEKCSCIWNEHXDURC",
+                            "4CEPXXFDQQ46VQJXBT4B4AUO",
+                            "P75FRHHCFPTCPYSP65VDVPHW",
+                            "SKC4XYF2AQLXBPOFDVNEXQZ2"
+                        ],
+                        "reviewers": [
+                            "NJ6R5LEVTYWQEKC4XASTKZBC"
+                        ],
+                        "date": "2024-07-23",
+                        "comment": "Initial entry. Reviewer fixed reactionSMARTS:reactionSMARTS."
+                    }
+                ]
+            }
+        ]
+    },
+    "enzyme": {
+        "name": "ThnA",
+        "description": "amidotransferase",
+        "references": [
+            "doi:10.1002/cbic.201500670"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A142I749",
+            "genpept": "AMR44301.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Amination"
+            ],
+            "reactionSMARTS": {
+                "reactionSMARTS": "[#8:14]-[#6:15](=[O:16])-[c:13]1[c:12][c:11]2[c:10]([n:9][c:8]3[c:7][c:6]([Cl:5])[c:4][c:3][c:2]23)[s:1]1>>[#7:17]-[#8:16]-[#6:15](=[O:14])-[c:13]1[c:12][c:11]2[c:10]([n:9][c:8]3[c:7][c:6]([Cl:5])[c:4][c:3][c:2]23)[s:1]1"
+            },
+            "reactions": [
+                {
+                    "substrate": "O=C(O)c1cc2c([nH]c3cc(Cl)ccc32)s1",
+                    "products": [
+                        "NOC(=O)c1cc2c([nH]c3cc(Cl)ccc32)s1"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": [
+                {
+                    "evidenceCode": [
+                        "Heterologous expression",
+                        "Knock-out studies"
+                    ],
+                    "references": [
+                        "doi:10.1002/cbic.201500670"
+                    ]
+                }
+            ]
+        }
+    ]
+}
