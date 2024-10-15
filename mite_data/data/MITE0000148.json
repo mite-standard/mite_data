@@ -1,6 +1,10 @@
 {
     "accession": "MITE0000148",
-    "status": "active",
+    "status": "retired",
+    "retirementReasons":
+        [
+            "Duplicate of MITE0000065."
+        ],
     "changelog": {
         "releases": [
             {
@@ -13,10 +17,10 @@
                             "P75FRHHCFPTCPYSP65VDVPHW"
                         ],
                         "reviewers": [
-                            "BBBBBBBBBBBBBBBBBBBBBBBB"
+                            "C62OJVVH7XOTOTFZSJT727YU"
                         ],
                         "date": "2024-07-23",
-                        "comment": "Initial entry."
+                        "comment": "Initial entry. Reviewer 1 retired entry (duplicate of MITE0000065)"
                     }
                 ]
             }
