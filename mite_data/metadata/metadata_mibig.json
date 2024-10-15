@@ -334,7 +334,7 @@
         "genpept": "BAC70706.1",
         "mibig": "BGC0000678"
       },
-      "enzyme_tailoring": "Oxidation|Dehydration",
+      "enzyme_tailoring": "Dehydration|Oxidation",
       "enzyme_refs": [
         "doi:10.1021/bi1019786"
       ]
@@ -546,7 +546,7 @@
         "genpept": "AAM97314.1",
         "mibig": "BGC0000093"
       },
-      "enzyme_tailoring": "Hydroxylation|Heterocyclization",
+      "enzyme_tailoring": "Heterocyclization|Hydroxylation",
       "enzyme_refs": [
         "pubmed:20348291"
       ]

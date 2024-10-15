@@ -42,7 +42,8 @@ class BlastManager(BaseModel):
 
     Not all MITE entries have NCBI GenPept accessions - some only have UniProt IDs.
     The manager first extracts accessions - MITE file does not have a GenPept ID, it will take
-    the UniProt ID. Download is performed separately, but files are combined into a single BLAST DB.
+    the UniProtKB or UniParc ID.
+    Download is performed separately, but files are combined into a single BLAST DB.
 
     Attributes:
         genpept_acc: a list of uniprot accession IDs for download
@@ -104,6 +105,9 @@ class BlastManager(BaseModel):
             return
 
         for entry in self.genpept_acc:
+            if self.target_download.joinpath(f"{entry[1]}.fasta").exists():
+                continue
+
             handle = Entrez.efetch(
                 db="protein", id=entry[1], rettype="fasta", retmode="text"
             )
@@ -144,6 +148,9 @@ class BlastManager(BaseModel):
             return
 
         for entry in self.uniprot_acc:
+            if self.target_download.joinpath(f"{entry[1]}.fasta").exists():
+                continue
+
             if (
                 response := requests.get(
                     f"https://rest.uniprot.org/uniprotkb/{entry[1]}.fasta"

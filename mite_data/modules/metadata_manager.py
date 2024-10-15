@@ -99,7 +99,7 @@ class MetadataManager(BaseModel):
             ),
             "enzyme_ids": mite["enzyme"]["databaseIds"],
             "enzyme_tailoring": "|".join(
-                list(
+                sorted(
                     {
                         tailoring
                         for reaction in mite.get("reactions")
