@@ -50,6 +50,7 @@ class MetadataManager(BaseModel):
         """
         nr_ncbi = {}
         nr_uniprot = {}
+        errors = []
 
         for entry in self.src.iterdir():
             with open(entry) as infile:
@@ -59,14 +60,14 @@ class MetadataManager(BaseModel):
                 continue
             elif acc := mite_json["enzyme"]["databaseIds"].get("genpept", None):
                 if acc in nr_ncbi:
-                    raise RuntimeError(
+                    errors.append(
                         f"Duplicate entry {entry.name}: {acc} already found in entry {nr_ncbi[acc]}."
                     )
                 else:
                     nr_ncbi[acc] = entry.name
             elif acc := mite_json["enzyme"]["databaseIds"].get("uniprot", None):
                 if acc in nr_uniprot:
-                    raise RuntimeError(
+                    errors.append(
                         f"Duplicate entry {entry.name}: {acc} already found in entry {nr_uniprot[acc]}."
                     )
                 else:
@@ -75,6 +76,9 @@ class MetadataManager(BaseModel):
                 raise RuntimeError(
                     f"Entry {entry.name} has neither an UniProt nor an NCBI GenPept accession."
                 )
+
+        if len(errors) != 0:
+            raise RuntimeError("\n".join(errors))
 
     def validate_entries_passing(self: Self) -> None:
         """Check if MITE entries pass automated validation checks of mite_extras
