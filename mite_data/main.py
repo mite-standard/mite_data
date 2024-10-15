@@ -82,7 +82,7 @@ def main() -> SystemExit:
 
     if args.update_mite or args.update_all:
         logger.debug("Started update MITE entries.")
-        # TODO MMZ 12.10
+        # TODO MMZ 12.10: implement after mite_extras is available via PyPI
         logger.debug("Completed update MITE entries.")
 
     logger.debug(f"Completed 'mite_data' v{metadata.version('mite_data')} as CLI.")
