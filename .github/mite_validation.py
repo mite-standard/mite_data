@@ -61,20 +61,20 @@ class MetadataManager(BaseModel):
             elif acc := mite_json["enzyme"]["databaseIds"].get("genpept", None):
                 if acc in nr_ncbi:
                     errors.append(
-                        f"Duplicate entry {entry.name}: {acc} already found in entry {nr_ncbi[acc]}."
+                        f"Duplicate entry '{entry.name}': GenPept ID '{acc}' already found in entry '{nr_ncbi[acc]}'."
                     )
                 else:
                     nr_ncbi[acc] = entry.name
             elif acc := mite_json["enzyme"]["databaseIds"].get("uniprot", None):
                 if acc in nr_uniprot:
                     errors.append(
-                        f"Duplicate entry {entry.name}: {acc} already found in entry {nr_uniprot[acc]}."
+                        f"Duplicate entry '{entry.name}': Uniprot ID '{acc}' already found in entry '{nr_uniprot[acc]}'."
                     )
                 else:
                     nr_uniprot[acc] = entry.name
             else:
                 raise RuntimeError(
-                    f"Entry {entry.name} has neither an UniProt nor an NCBI GenPept accession."
+                    f"Entry '{entry.name}' has neither an UniProt nor an NCBI GenPept accession."
                 )
 
         if len(errors) != 0:
