@@ -1,5 +1,5 @@
-name: CI Pipeline (PRs and pushes main)
-run-name: Merged to main by ${{ github.actor }}
+name: CI Pipeline Pushes
+run-name: Pushed by ${{ github.actor }}
 on: push
 
 jobs:
