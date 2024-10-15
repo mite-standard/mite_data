@@ -99,6 +99,6 @@ def test_generate_blast_db(blast_manager):
     blast_manager.download_uniprot()
     blast_manager.concat_fasta_files()
     assert blast_manager.generate_blast_db() is None
-    os.remove(Path("tests/example_files/mite_enzymes_concat.fasta"))
     os.remove(Path("tests/example_files/CAK50792.1.fasta"))
     os.remove(Path("tests/example_files/A0A346D7L2.fasta"))
+    os.remove(Path("tests/example_files/MiteBlastDB.zip"))

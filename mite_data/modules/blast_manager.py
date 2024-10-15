@@ -23,11 +23,13 @@ SOFTWARE.
 
 import json
 import logging
+import os
 import shutil
 import subprocess
 from importlib import metadata
 from pathlib import Path
 from typing import Self
+from zipfile import ZipFile
 
 import requests
 from Bio import Entrez
@@ -219,10 +221,17 @@ class BlastManager(BaseModel):
             "-dbtype",
             "prot",
             "-out",
-            f"{self.target_blast.joinpath("MiteBlastDB")}",
+            f"{self.target_blast.joinpath("temp_blastfiles")}",
             "-title",
             f"MITE v{metadata.version('mite_data')} BLAST DB",
         ]
         subprocess.run(command, check=True)
+        os.remove(self.target_blast.joinpath(self.concat_filename))
+
+        with ZipFile(self.target_blast.joinpath("MiteBlastDB.zip"), "w") as zip_object:
+            for file in self.target_blast.iterdir():
+                if file.name.startswith("temp_blastfiles"):
+                    zip_object.write(file)
+                    os.remove(file)
 
         logger.debug("Completed creating BLAST DB.")
