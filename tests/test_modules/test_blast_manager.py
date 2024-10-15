@@ -32,6 +32,7 @@ def test_extract_accessions_invalid(blast_manager):
         blast_manager.extract_accessions()
 
 
+@pytest.mark.slow
 def test_download_ncbi(blast_manager):
     blast_manager.genpept_acc.append(("MITE00000", "CAK50792.1"))
     blast_manager.download_ncbi()
@@ -39,6 +40,7 @@ def test_download_ncbi(blast_manager):
     os.remove(Path("tests/example_files/CAK50792.1.fasta"))
 
 
+@pytest.mark.slow
 def test_download_uniprot(blast_manager):
     blast_manager.uniprot_acc.append(("MITE00000", "A0A346D7L2"))
     blast_manager.download_uniprot()
@@ -46,6 +48,7 @@ def test_download_uniprot(blast_manager):
     os.remove(Path("tests/example_files/A0A346D7L2.fasta"))
 
 
+@pytest.mark.slow
 def test_download_uniparc(blast_manager):
     blast_manager.uniprot_acc.append(("MITE00000", "UPI000000000B"))
     blast_manager.download_uniprot()
@@ -53,18 +56,21 @@ def test_download_uniparc(blast_manager):
     os.remove(Path("tests/example_files/UPI000000000B.fasta"))
 
 
+@pytest.mark.slow
 def test_download_ncbi_fail(blast_manager):
     blast_manager.genpept_acc.append(("MITE00000", "AAAAAAAAAAAAA"))
     with pytest.raises(HTTPError):
         blast_manager.download_ncbi()
 
 
+@pytest.mark.slow
 def test_download_uniprot_fail(blast_manager):
     blast_manager.uniprot_acc.append(("MITE00000", "AAAAAAAAAAAAA"))
     with pytest.raises(RuntimeError):
         blast_manager.download_uniprot()
 
 
+@pytest.mark.slow
 def test_validate_nr_files(blast_manager):
     blast_manager.extract_accessions()
     blast_manager.download_ncbi()
@@ -74,6 +80,7 @@ def test_validate_nr_files(blast_manager):
     os.remove(Path("tests/example_files/A0A346D7L2.fasta"))
 
 
+@pytest.mark.slow
 def test_concat_fasta_files_valid(blast_manager):
     blast_manager.extract_accessions()
     blast_manager.download_ncbi()
@@ -85,6 +92,7 @@ def test_concat_fasta_files_valid(blast_manager):
     os.remove(Path("tests/example_files/A0A346D7L2.fasta"))
 
 
+@pytest.mark.slow
 def test_generate_blast_db(blast_manager):
     blast_manager.extract_accessions()
     blast_manager.download_ncbi()

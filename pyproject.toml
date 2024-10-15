@@ -20,7 +20,7 @@ dependencies = [
     "biopython~=1.84",
     "coloredlogs~=15.0",
     "AlphaFetcher~=0.2",
-    "mite_schema~=1.4",
+    "mite_schema",
     "pre-commit~=3.4",
     "polars~=1.4",
     "pydantic~=2.8",
