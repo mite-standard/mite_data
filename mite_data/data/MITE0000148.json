@@ -1,10 +1,9 @@
 {
     "accession": "MITE0000148",
     "status": "retired",
-    "retirementReasons":
-        [
-            "Duplicate of MITE0000065."
-        ],
+    "retirementReasons": [
+        "Duplicate of MITE0000065."
+    ],
     "changelog": {
         "releases": [
             {
