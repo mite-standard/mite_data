@@ -90,12 +90,15 @@ class ImageManager(BaseModel):
 
         for infile in self.target_download.iterdir():
             base_name = infile.stem
-            command = [
-                "pymol-oss.pymol",
-                infile,
-                "-d",
-                f"bg_color white; hide everything; show cartoon; spectrum count, red blue; set opaque_background, 0; png img/{base_name}.png, 0, 0, -1, ray=1; quit;",
-            ]
-            subprocess.run(command)
+            if self.target_img.joinpath(f"{base_name}.png").exists():
+                continue
+            else:
+                command = [
+                    "pymol-oss.pymol",
+                    infile,
+                    "-d",
+                    f"bg_color white; hide everything; show cartoon; spectrum count, red blue; set opaque_background, 0; png {self.target_img.joinpath(f"{base_name}.png").resolve()}, 0, 0, -1, ray=1; quit;",
+                ]
+                subprocess.run(command)
 
         logger.debug("Completed creating images from PDB files.")

@@ -16,7 +16,7 @@
                             "C62OJVVH7XOTOTFZSJT727YU"
                         ],
                         "date": "2024-06-07",
-                        "comment": "Initial entry. Added numbering to reaction SMARTS and added description."
+                        "comment": "Initial entry. Added numbering to reaction SMARTS and added description. Fixed incorrect databaseIDs."
                     }
                 ]
             }
@@ -29,8 +29,7 @@
             "doi:10.1038/s41467-020-19153-6"
         ],
         "databaseIds": {
-            "uniprot": "D7MKC0",
-            "genpept": "EFH40098.1",
+            "uniprot": "UPI000A29E8C9",
             "mibig": "BGC0002857"
         }
     },

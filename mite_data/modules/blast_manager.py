@@ -86,7 +86,7 @@ class BlastManager(BaseModel):
         for entry in metadata_general["entries"]:
             if metadata_general["entries"][entry]["status"] != "active":
                 logger.debug(
-                    f"BlastManager: MITE entry {metadata_general["entries"][entry]} has been retired and will not be included in the BLAST DB."
+                    f"BlastManager: MITE entry {entry} has been retired and will not be included in the BLAST DB."
                 )
                 continue
             elif acc := metadata_general["entries"][entry]["enzyme_ids"].get(
@@ -233,8 +233,10 @@ class BlastManager(BaseModel):
         shutil.make_archive("MiteBlastDB", "zip", temp_dir)
         shutil.rmtree(temp_dir)
         shutil.move(
-            src=Path(__file__).parent.parent.parent.joinpath("MiteBlastDB.zip"),
-            dst=self.target_blast,
+            src=Path(__file__)
+            .parent.parent.parent.joinpath("MiteBlastDB.zip")
+            .resolve(),
+            dst=self.target_blast.joinpath("MiteBlastDB.zip").resolve(),
         )
 
         logger.debug("Completed creating BLAST DB.")

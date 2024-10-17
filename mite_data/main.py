@@ -31,6 +31,7 @@ from mite_data.modules.blast_manager import BlastManager
 from mite_data.modules.cli_manager import CliManager
 from mite_data.modules.img_manager import ImageManager
 from mite_data.modules.metadata_manager import MetadataManager
+from mite_data.modules.mite_manager import MiteManager
 
 
 def config_logger(verboseness: str) -> logging.Logger:
@@ -72,6 +73,10 @@ def main() -> SystemExit:
     metadata_manager = MetadataManager()
     metadata_manager.run()
 
+    if args.update_mite or args.update_all:
+        mite_manager = MiteManager()
+        mite_manager.run()
+
     if args.update_img or args.update_all:
         img_manager = ImageManager()
         img_manager.run()
@@ -79,11 +84,6 @@ def main() -> SystemExit:
     if args.update_blast or args.update_all:
         blast_manager = BlastManager()
         blast_manager.run()
-
-    if args.update_mite or args.update_all:
-        logger.debug("Started update MITE entries.")
-        # TODO MMZ 12.10: implement after mite_extras is available via PyPI
-        logger.debug("Completed update MITE entries.")
 
     logger.debug(f"Completed 'mite_data' v{metadata.version('mite_data')} as CLI.")
 

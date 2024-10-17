@@ -1,6 +1,9 @@
 {
     "accession": "MITE0000025",
-    "status": "active",
+    "status": "retired",
+    "retirementReasons": [
+        "Entry addresses same enzyme as MITE0000041 (OxyB), but references the wrong MIBiG entry. All information has been transferred to MITE0000041."
+    ],
     "changelog": {
         "releases": [
             {
@@ -15,7 +18,7 @@
                             "C62OJVVH7XOTOTFZSJT727YU"
                         ],
                         "date": "2024-06-07",
-                        "comment": "Initial entry. Reviewer 1 fixed reaction SMARTS formatting."
+                        "comment": "Initial entry. Reviewer 1 fixed reaction SMARTS formatting. Reviewer 1 retired entry in favor of MITE0000041"
                     }
                 ]
             }

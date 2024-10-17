@@ -1,6 +1,9 @@
 {
     "accession": "MITE0000036",
-    "status": "active",
+    "status": "retired",
+    "retirementReasons": [
+        "Duplicate of entry MITE0000035, which was retained because of a more extensive reaction list. All data has been transferred to MITE0000035."
+    ],
     "comment": "Acyltransferase can use acyl-CoA of different acyl chain length and glucosamine free as UDP-glucosamine or bound to hpg4 of teicoplanin pseudoaglycone as substrates.",
     "changelog": {
         "releases": [
@@ -16,7 +19,7 @@
                             "C62OJVVH7XOTOTFZSJT727YU"
                         ],
                         "date": "2024-05-14",
-                        "comment": "Initial entry. Reviewer 1 fixed reaction SMARTS but had to remove the balanced substrate/product SMILES due to issues with phosphorous chemistry in RDKit."
+                        "comment": "Initial entry. Reviewer 1 fixed reaction SMARTS but had to remove the balanced substrate/product SMILES due to issues with phosphorous chemistry in RDKit. Reviewer 1 retired entry in favor of MITE0000035."
                     }
                 ]
             }
