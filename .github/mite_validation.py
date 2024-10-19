@@ -25,10 +25,12 @@ import json
 from pathlib import Path
 from typing import Self
 
+from mite_extras import MiteParser
+from mite_schema import SchemaManager
 from pydantic import BaseModel, DirectoryPath
 
 
-class MetadataManager(BaseModel):
+class CicdManager(BaseModel):
     """Manage methods to validate MITE entries in pre-commit and CI/CD
 
     Attributes:
@@ -40,7 +42,7 @@ class MetadataManager(BaseModel):
     def run(self: Self) -> None:
         """Function to run all validation steps"""
         self.check_duplicates()
-        # TODO MMZ 15.10: implement self.validate_entries_passing()
+        self.validate_entries_passing()
 
     def check_duplicates(self: Self) -> None:
         """Check if multiple MITE entries describe the same enzyme using GenPept/UniProt IDs
@@ -50,6 +52,7 @@ class MetadataManager(BaseModel):
         """
         nr_ncbi = {}
         nr_uniprot = {}
+        errors = []
 
         for entry in self.src.iterdir():
             with open(entry) as infile:
@@ -59,32 +62,54 @@ class MetadataManager(BaseModel):
                 continue
             elif acc := mite_json["enzyme"]["databaseIds"].get("genpept", None):
                 if acc in nr_ncbi:
-                    raise RuntimeError(
-                        f"Duplicate entry {entry.name}: {acc} already found in entry {nr_ncbi[acc]}."
+                    errors.append(
+                        f"Duplicate entry '{entry.name}': GenPept ID '{acc}' already found in entry '{nr_ncbi[acc]}'."
                     )
                 else:
                     nr_ncbi[acc] = entry.name
             elif acc := mite_json["enzyme"]["databaseIds"].get("uniprot", None):
                 if acc in nr_uniprot:
-                    raise RuntimeError(
-                        f"Duplicate entry {entry.name}: {acc} already found in entry {nr_uniprot[acc]}."
+                    errors.append(
+                        f"Duplicate entry '{entry.name}': Uniprot ID '{acc}' already found in entry '{nr_uniprot[acc]}'."
                     )
                 else:
                     nr_uniprot[acc] = entry.name
             else:
                 raise RuntimeError(
-                    f"Entry {entry.name} has neither an UniProt nor an NCBI GenPept accession."
+                    f"Entry '{entry.name}' has neither an UniProt nor an NCBI GenPept accession."
                 )
+
+        if len(errors) != 0:
+            raise RuntimeError("\n".join(errors))
 
     def validate_entries_passing(self: Self) -> None:
         """Check if MITE entries pass automated validation checks of mite_extras
 
         Raises:
-            Exception: MITE entry did not pass the automated validation
+            RuntimeError: MITE entry did not pass the automated validation
         """
-        # TODO MMZ 15.10: implement after mite_extras is available via PyPI
+        schema_manager = SchemaManager()
+        errors = []
+
+        for entry in self.src.iterdir():
+            try:
+                if not entry.name.startswith("MITE"):
+                    continue
+
+                with open(entry) as infile:
+                    input_data = json.load(infile)
+
+                parser = MiteParser()
+                parser.parse_mite_json(data=input_data)
+
+                schema_manager.validate_mite(instance=parser.to_json())
+            except Exception as e:
+                errors.append(f"Error: entry {entry.name} failed validation ({e}).")
+
+        if len(errors) != 0:
+            raise RuntimeError("\n".join(errors))
 
 
 if __name__ == "__main__":
-    manager = MetadataManager()
+    manager = CicdManager()
     manager.run()

@@ -36,8 +36,7 @@
       "enzyme_name": "THAA1",
       "enzyme_description": "Acyltransferase subfamily IIIa from Arabidopsis lyrata ssp lyrata (Lyre-leaved rock-cress).",
       "enzyme_ids": {
-        "uniprot": "D7MKC0",
-        "genpept": "EFH40098.1",
+        "uniprot": "UPI000A29E8C9",
         "mibig": "BGC0002857"
       }
     },
@@ -75,8 +74,8 @@
       "enzyme_name": "BhaA",
       "enzyme_description": "Chlorinates balhimycin precursor at bht2 and bht6.",
       "enzyme_ids": {
-        "uniprot": "P96563",
-        "genpept": "AEI58871.1",
+        "uniprot": "O87676",
+        "genpept": "CAA76550.1",
         "mibig": "BGC0000311"
       }
     },
@@ -244,7 +243,7 @@
       }
     },
     "MITE0000036": {
-      "status": "active",
+      "status": "retired",
       "enzyme_name": "tAtf",
       "enzyme_description": "Transfers acyl groups from acyl-CoA onto the glucosaminyl residue on hpg4 of the teicoplanin precursor.",
       "enzyme_ids": {
@@ -404,7 +403,7 @@
     "MITE0000041": {
       "status": "active",
       "enzyme_name": "OxyB",
-      "enzyme_description": "Introduces the first biaryl-ether crosslink between hpg4 and bht6 in the vancomycin precursor.",
+      "enzyme_description": "Introduces the first biaryl-ether crosslink between hpg4 and bht6 in the vancomycin and balhimycin precursors.",
       "enzyme_ids": {
         "uniprot": "F8STX7",
         "genpept": "AEI58869.1",
@@ -502,7 +501,7 @@
       }
     },
     "MITE0000148": {
-      "status": "active",
+      "status": "retired",
       "enzyme_name": "ptlE",
       "enzyme_description": "Baeyer-Villiger monooxygenase",
       "enzyme_ids": {
@@ -856,7 +855,7 @@
     "MITE0000038": {
       "status": "active",
       "enzyme_name": "OxyA",
-      "enzyme_description": "Introduces the second biaryl-ether crosslink between bht2 and hpg4 in the vancomycin precursor.",
+      "enzyme_description": "Introduces the second biaryl-ether crosslink between bht2 and hpg4 in the vancomycin and balhimycin precursor.",
       "enzyme_ids": {
         "uniprot": "F8STX6",
         "genpept": "AEI58868.1",
@@ -1037,7 +1036,7 @@
       }
     },
     "MITE0000026": {
-      "status": "active",
+      "status": "retired",
       "enzyme_name": "OxyA",
       "enzyme_description": "P450 monooxygenase, that introduces the second crosslink (biaryl ether) between bht2 and hpg4 of the balhimycin precursor.",
       "enzyme_ids": {
@@ -1222,7 +1221,7 @@
       }
     },
     "MITE0000025": {
-      "status": "active",
+      "status": "retired",
       "enzyme_name": "OxyB",
       "enzyme_description": "P450 monooxygenase, that introduces the first crosslink (biaryl ether) between hpg4 and bht6 of the balhimycin precursor.",
       "enzyme_ids": {
@@ -1661,8 +1660,8 @@
     },
     "MITE0000035": {
       "status": "active",
-      "enzyme_name": "Orf2*",
-      "enzyme_description": "Deacetylates N-acetylglucosaminyl residue on Hpg4 of the teicoplanin precursor.",
+      "enzyme_name": "Orf2* a.k.a. tAtf",
+      "enzyme_description": "Deacetylates N-acetylglucosaminyl residue on Hpg4 of the teicoplanin precursor. Transfers acyl groups from acyl-CoA onto the glucosaminyl residue on hpg4 of the teicoplanin precursor.",
       "enzyme_ids": {
         "uniprot": "Q70AY4",
         "genpept": "CAE53365.1",

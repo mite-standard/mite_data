@@ -1,6 +1,9 @@
 {
     "accession": "MITE0000026",
-    "status": "active",
+    "status": "retired",
+    "retirementReasons": [
+        "Entry addresses same enzyme as MITE0000038 (OxyA), but references the wrong MIBiG entry. All information has been transferred to MITE0000038."
+    ],
     "changelog": {
         "releases": [
             {
@@ -16,7 +19,7 @@
                             "C62OJVVH7XOTOTFZSJT727YU"
                         ],
                         "date": "2024-06-07",
-                        "comment": "Initial entry. Reviewer 1 partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer 1 partially fixed reactions:substrate, validation still not passing. Reviewer 1 partially fixed reactions:products, validation still not passing. Reviewer 2 reworked reaction SMARTS from scratch, reaction passing."
+                        "comment": "Initial entry. Reviewer 1 partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer 1 partially fixed reactions:substrate, validation still not passing. Reviewer 1 partially fixed reactions:products, validation still not passing. Reviewer 2 reworked reaction SMARTS from scratch, reaction passing. Reviewer 2 retired entry (duplicate of MITE0000038)."
                     }
                 ]
             }

@@ -115,7 +115,7 @@
     "BGC0000311": {
       "mite_accession": "MITE0000025",
       "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000025",
-      "status": "active",
+      "status": "retired",
       "enzyme_name": "OxyB",
       "enzyme_description": "P450 monooxygenase, that introduces the first crosslink (biaryl ether) between hpg4 and bht6 of the balhimycin precursor.",
       "enzyme_ids": {
@@ -182,17 +182,20 @@
       "mite_accession": "MITE0000035",
       "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000035",
       "status": "active",
-      "enzyme_name": "Orf2*",
-      "enzyme_description": "Deacetylates N-acetylglucosaminyl residue on Hpg4 of the teicoplanin precursor.",
+      "enzyme_name": "Orf2* a.k.a. tAtf",
+      "enzyme_description": "Deacetylates N-acetylglucosaminyl residue on Hpg4 of the teicoplanin precursor. Transfers acyl groups from acyl-CoA onto the glucosaminyl residue on hpg4 of the teicoplanin precursor.",
       "enzyme_ids": {
         "uniprot": "Q70AY4",
         "genpept": "CAE53365.1",
         "mibig": "BGC0000440"
       },
-      "enzyme_tailoring": "Hydrolysis",
+      "enzyme_tailoring": "Acylation|Hydrolysis",
       "enzyme_refs": [
         "doi:10.1002/cbic.200600308",
-        "doi:10.1016/J.CHEMBIOL.2008.05.009"
+        "doi:10.1016/J.CHEMBIOL.2008.05.009",
+        "doi:10.1016/s1074-5521(04)00002-x",
+        "doi:10.1021/ja0735857",
+        "doi:10.1016/j.chembiol.2004.12.005"
       ]
     },
     "BGC0003094": {
