@@ -11,7 +11,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Changed
 
 - FASTA files are now named after the MITE entry they describe
-- The header of FASTA file now contains `>{MITE accession} {genpept_id/uniprotkb_id/uniparc_id` to keep track from where it originates
+- The header of FASTA file now contains `>{MITE accession} {genpept_id/uniprotkb_id/uniparc_id}` to keep track from where it originates
 
 ## [1.2] 19-10-2024
 
