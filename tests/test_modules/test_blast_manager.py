@@ -34,38 +34,38 @@ def test_extract_accessions_invalid(blast_manager):
 
 @pytest.mark.slow
 def test_download_ncbi(blast_manager):
-    blast_manager.genpept_acc.append(("MITE00000", "CAK50792.1"))
+    blast_manager.genpept_acc.append({"entry": "MITE00000", "acc": "CAK50792.1"})
     blast_manager.download_ncbi()
-    assert Path("tests/example_files/CAK50792.1.fasta").exists()
-    os.remove(Path("tests/example_files/CAK50792.1.fasta"))
+    assert Path("tests/example_files/MITE00000.fasta").exists()
+    os.remove(Path("tests/example_files/MITE00000.fasta"))
 
 
 @pytest.mark.slow
 def test_download_uniprot(blast_manager):
-    blast_manager.uniprot_acc.append(("MITE00000", "A0A346D7L2"))
+    blast_manager.uniprot_acc.append({"entry": "MITE00000", "acc": "A0A346D7L2"})
     blast_manager.download_uniprot()
-    assert Path("tests/example_files/A0A346D7L2.fasta").exists()
-    os.remove(Path("tests/example_files/A0A346D7L2.fasta"))
+    assert Path("tests/example_files/MITE00000.fasta").exists()
+    os.remove(Path("tests/example_files/MITE00000.fasta"))
 
 
 @pytest.mark.slow
 def test_download_uniparc(blast_manager):
-    blast_manager.uniprot_acc.append(("MITE00000", "UPI000000000B"))
+    blast_manager.uniprot_acc.append({"entry": "MITE00000", "acc": "UPI000000000B"})
     blast_manager.download_uniprot()
-    assert Path("tests/example_files/UPI000000000B.fasta").exists()
-    os.remove(Path("tests/example_files/UPI000000000B.fasta"))
+    assert Path("tests/example_files/MITE00000.fasta").exists()
+    os.remove(Path("tests/example_files/MITE00000.fasta"))
 
 
 @pytest.mark.slow
 def test_download_ncbi_fail(blast_manager):
-    blast_manager.genpept_acc.append(("MITE00000", "AAAAAAAAAAAAA"))
+    blast_manager.genpept_acc.append({"entry": "MITE00000", "acc": "AAAAAAAAAAAAA"})
     with pytest.raises(HTTPError):
         blast_manager.download_ncbi()
 
 
 @pytest.mark.slow
 def test_download_uniprot_fail(blast_manager):
-    blast_manager.uniprot_acc.append(("MITE00000", "AAAAAAAAAAAAA"))
+    blast_manager.uniprot_acc.append({"entry": "MITE00000", "acc": "AAAAAAAAAAAAA"})
     with pytest.raises(RuntimeError):
         blast_manager.download_uniprot()
 
@@ -76,8 +76,8 @@ def test_validate_nr_files(blast_manager):
     blast_manager.download_ncbi()
     blast_manager.download_uniprot()
     assert blast_manager.validate_nr_files() is None
-    os.remove(Path("tests/example_files/CAK50792.1.fasta"))
-    os.remove(Path("tests/example_files/A0A346D7L2.fasta"))
+    os.remove(Path("tests/example_files/MITE0000020.fasta"))
+    os.remove(Path("tests/example_files/MITE0000109.fasta"))
 
 
 @pytest.mark.slow
@@ -88,8 +88,8 @@ def test_concat_fasta_files_valid(blast_manager):
     blast_manager.concat_fasta_files()
     assert Path("tests/example_files/mite_enzymes_concat.fasta").stat().st_size != 0
     os.remove(Path("tests/example_files/mite_enzymes_concat.fasta"))
-    os.remove(Path("tests/example_files/CAK50792.1.fasta"))
-    os.remove(Path("tests/example_files/A0A346D7L2.fasta"))
+    os.remove(Path("tests/example_files/MITE0000020.fasta"))
+    os.remove(Path("tests/example_files/MITE0000109.fasta"))
 
 
 @pytest.mark.slow
@@ -99,6 +99,6 @@ def test_generate_blast_db(blast_manager):
     blast_manager.download_uniprot()
     blast_manager.concat_fasta_files()
     assert blast_manager.generate_blast_db() is None
-    os.remove(Path("tests/example_files/CAK50792.1.fasta"))
-    os.remove(Path("tests/example_files/A0A346D7L2.fasta"))
+    os.remove(Path("tests/example_files/MITE0000020.fasta"))
+    os.remove(Path("tests/example_files/MITE0000109.fasta"))
     os.remove(Path("tests/example_files/MiteBlastDB.zip"))

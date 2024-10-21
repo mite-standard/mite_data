@@ -8,7 +8,7 @@ Furthermore, the repository contains auxiliary files and scripts to automaticall
 
 - Metadata files summarizing information of all MITE entries in a single file (`mite_data/metadata`)
 - Protein FASTA-files for all active (i.e. non-retired) MITE entries and an accompanying up-to-date BLAST database (`mite_data/fasta` and `mite_data/blast_lib`)
-- Alphafold-predicted enzyme structures and accompanying image files (`mite_data/pdb` and `mite_data/img`)
+- Alphafold-predicted enzyme structures and accompanying image files (`mite_data/pdb` and `mite_data/img`), if available.
 
 When new data is added, auxiliary files must be updated too. Existing fasta and image files will not be overwritten.
 

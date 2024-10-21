@@ -50,7 +50,9 @@ class MiteManager(BaseModel):
 
         for entry in self.src.iterdir():
             try:
-                if not entry.name.startswith("MITE"):
+                if not entry.name.startswith("MITE") or not entry.name.endswith(
+                    ".json"
+                ):
                     continue
 
                 logger.debug(f"MiteManager: started processing of file '{entry.name}'.")
