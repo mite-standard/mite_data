@@ -92,11 +92,11 @@ class BlastManager(BaseModel):
             elif acc := metadata_general["entries"][entry]["enzyme_ids"].get(
                 "genpept", None
             ):
-                self.genpept_acc.append((entry, acc))
+                self.genpept_acc.append({"entry": entry, "acc": acc})
             elif acc := metadata_general["entries"][entry]["enzyme_ids"].get(
                 "uniprot", None
             ):
-                self.uniprot_acc.append((entry, acc))
+                self.uniprot_acc.append({"entry": entry, "acc": acc})
             else:
                 raise RuntimeError(f"{entry} has no GenPept or UniProt ID - FIX ASAP!")
 
@@ -106,22 +106,22 @@ class BlastManager(BaseModel):
             return
 
         for entry in self.genpept_acc:
-            if self.target_download.joinpath(f"{entry[1]}.fasta").exists():
+            if self.target_download.joinpath(f"{entry["entry"]}.fasta").exists():
                 continue
 
             handle = Entrez.efetch(
-                db="protein", id=entry[1], rettype="fasta", retmode="text"
+                db="protein", id=entry["acc"], rettype="fasta", retmode="text"
             )
             fasta_data = handle.read()
             handle.close()
 
             lines = fasta_data.strip().split("\n")
             if lines:
-                lines[0] = f">{entry[0]}"  # Replace the header
+                lines[0] = f">{entry["entry"]} {entry["acc"]}"
             fasta_data = "\n".join(lines)
 
             with open(
-                self.target_download.joinpath(f"{entry[1]}.fasta"), "w"
+                self.target_download.joinpath(f"{entry["entry"]}.fasta"), "w"
             ) as fasta_file:
                 fasta_file.write(fasta_data)
 
@@ -132,16 +132,16 @@ class BlastManager(BaseModel):
             RuntimeError: Could not download UniProt data
         """
 
-        def _store_file(entry_tuple: tuple, lines: list) -> None:
+        def _store_file(data: dict, lines: list) -> None:
             if lines:
-                lines[0] = f">{entry[0]}"
+                lines[0] = f">{data["entry"]} {data["acc"]}"
             else:
                 raise RuntimeError(
-                    f"UniProt download failed on ID {entry_tuple[1]} for MITE entry {entry_tuple[0]}"
+                    f"UniProt download failed on ID {data["acc"]} for MITE entry {data["entry"]}"
                 )
             payload = "\n".join(lines)
             with open(
-                self.target_download.joinpath(f"{entry_tuple[1]}.fasta"), "w"
+                self.target_download.joinpath(f"{data["entry"]}.fasta"), "w"
             ) as fasta_file:
                 fasta_file.write(payload)
 
@@ -149,22 +149,22 @@ class BlastManager(BaseModel):
             return
 
         for entry in self.uniprot_acc:
-            if self.target_download.joinpath(f"{entry[1]}.fasta").exists():
+            if self.target_download.joinpath(f"{entry["entry"]}.fasta").exists():
                 continue
 
             if (
                 response := requests.get(
-                    f"https://rest.uniprot.org/uniprotkb/{entry[1]}.fasta"
+                    f"https://rest.uniprot.org/uniprotkb/{entry["acc"]}.fasta"
                 )
             ).status_code == 200 or (
                 response := requests.get(
-                    f"https://rest.uniprot.org/uniparc/{entry[1]}.fasta"
+                    f"https://rest.uniprot.org/uniparc/{entry["acc"]}.fasta"
                 )
             ).status_code == 200:
-                _store_file(entry, response.text.strip().split("\n"))
+                _store_file(data=entry, lines=response.text.strip().split("\n"))
             else:
                 raise RuntimeError(
-                    f"UniProt download failed on ID {entry[1]} for MITE entry {entry[0]}"
+                    f"UniProt download failed on ID {entry["acc"]} for MITE entry {entry["entry"]}"
                 )
 
     def validate_nr_files(self: Self) -> None:
@@ -187,6 +187,11 @@ class BlastManager(BaseModel):
                     expected_set.add(
                         f"{metadata_general["entries"][entry]["enzyme_ids"].get("uniprot")}.fasta"
                     )
+
+        expected_set = set()
+        for key in metadata_general["entries"]:
+            if metadata_general["entries"][key]["status"] == "active":
+                expected_set.add(key)
 
         present_set = set()
         for f in self.target_download.iterdir():
