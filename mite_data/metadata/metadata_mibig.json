@@ -1,5 +1,5 @@
 {
-  "version_mite_data": "1.3",
+  "version_mite_data": "1.4",
   "entries": {
     "BGC0000247": {
       "mite_accession": "MITE0000017",
@@ -30,7 +30,7 @@
       },
       "enzyme_tailoring": "Cyclization|Deamination",
       "enzyme_refs": [
-        "pubmed:30088846"
+        "doi:10.1002/anie.201808028"
       ]
     },
     "BGC0000104": {
@@ -54,7 +54,7 @@
       "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000132",
       "status": "active",
       "enzyme_name": "THAA2",
-      "enzyme_description": "",
+      "enzyme_description": "No description available",
       "enzyme_ids": {
         "uniprot": "D7MUV7",
         "genpept": "EFH40094.1",
@@ -127,7 +127,7 @@
       "enzyme_refs": [
         "doi:10.1016/j.jbiotec.2006.04.009",
         "doi:10.1128/AAC.43.7.1565",
-        "pubmed:12404385"
+        "doi:10.1002/1521-3773(20011217)40:24%3C4688::aid-anie4688%3E3.0.co;2-m"
       ]
     },
     "BGC0002024": {
@@ -242,7 +242,7 @@
       },
       "enzyme_tailoring": "Oxidation",
       "enzyme_refs": [
-        "pubmed:21284395"
+        "doi:10.1021/ja111279h"
       ]
     },
     "BGC0000469": {
@@ -276,7 +276,7 @@
       },
       "enzyme_tailoring": "Methylation",
       "enzyme_refs": [
-        "pubmed:15489167"
+        "doi:10.1016/j.chembiol.2004.08.016"
       ]
     },
     "BGC0001237": {
@@ -292,7 +292,7 @@
       },
       "enzyme_tailoring": "Oxidation",
       "enzyme_refs": [
-        "pubmed:28393452"
+        "doi:10.1002/cbic.201700090"
       ]
     },
     "BGC0001001": {
@@ -387,7 +387,7 @@
       },
       "enzyme_tailoring": "Dioxygenation",
       "enzyme_refs": [
-        "pubmed:37945897"
+        "doi:10.1038/s41589-023-01476-2"
       ]
     },
     "BGC0001077": {
@@ -454,8 +454,7 @@
       },
       "enzyme_tailoring": "Hydroxylation",
       "enzyme_refs": [
-        "doi:10.1016/j.jbc.2023.104573",
-        "url:https://www.uniprot.org/uniprotkb/I1ZAY9/entry"
+        "doi:10.1016/j.jbc.2023.104573"
       ]
     },
     "BGC0001350": {
@@ -551,7 +550,7 @@
       },
       "enzyme_tailoring": "Heterocyclization|Hydroxylation",
       "enzyme_refs": [
-        "pubmed:20348291"
+        "doi:10.1128/AEM.02262-09"
       ]
     },
     "BGC0003008": {
@@ -615,8 +614,8 @@
       },
       "enzyme_tailoring": "Monooxygenation",
       "enzyme_refs": [
-        "pubmed:33664266",
-        "pubmed:35799824"
+        "doi:10.1038/s41467-021-21432-9",
+        "doi:10.1039/d2sc01952c"
       ]
     },
     "BGC0000033": {
@@ -640,7 +639,7 @@
       "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000089",
       "status": "active",
       "enzyme_name": "CPT2",
-      "enzyme_description": "",
+      "enzyme_description": "No description available",
       "enzyme_ids": {
         "uniprot": "K7WQ45",
         "genpept": "AGK82801.1",
@@ -713,7 +712,7 @@
       },
       "enzyme_tailoring": "Methylation",
       "enzyme_refs": [
-        "pubmed:34584078"
+        "doi:10.1038/s41467-021-25798-8"
       ]
     },
     "BGC0000677": {
@@ -729,7 +728,7 @@
       },
       "enzyme_tailoring": "Hydroxylation",
       "enzyme_refs": [
-        "pubmed:19635410"
+        "doi:10.1016/j.chembiol.2009.06.007"
       ]
     },
     "BGC0002964": {
@@ -824,7 +823,7 @@
       },
       "enzyme_tailoring": "Hydroxylation",
       "enzyme_refs": [
-        "pubmed:33763824"
+        "doi:10.1007/s12033-021-00314-x"
       ]
     },
     "BGC0001335": {
