@@ -26,6 +26,8 @@ For more information, see the README of the [MITE-Standard organisation page](ht
 
 ## Quick-start
 
+Update the MITE metadata files: `mite_data`
+
 Update MITE files to the newest version of `mite_schema`: `mite_data --update_mite`
 
 Update only enzyme visualization (re-downloads all AlphaFold PDBs): `mite_data --update_img`.
