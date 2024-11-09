@@ -1,30 +1,23 @@
 {
     "accession": "MITE0000100",
     "status": "active",
-    "changelog": {
-        "releases": [
-            {
-                "version": "1.0",
-                "date": "2024-07-30",
-                "entries": [
-                    {
-                        "contributors": [
-                            "N36AXMAR75OH4EWIMJIU5WOH",
-                            "PK3KAPGHQJXJCKMJ4SU7V5JW",
-                            "LEEWIYEZSPCYOCCY6BHNTE54",
-                            "K5UBFDWZSYOHS4HI42NVQMJK"
-                        ],
-                        "reviewers": [
-                            "NJ6R5LEVTYWQEKC4XASTKZBC",
-                            "C62OJVVH7XOTOTFZSJT727YU"
-                        ],
-                        "date": "2024-05-14",
-                        "comment": "Initial entry. Reviewer partially fixed general aromaticity. Reviewer 2 fixed reaction SMARTS by specifying explicit hydrogens on aromatic nitrogens, reaction passes."
-                    }
-                ]
-            }
-        ]
-    },
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "N36AXMAR75OH4EWIMJIU5WOH",
+                "PK3KAPGHQJXJCKMJ4SU7V5JW",
+                "LEEWIYEZSPCYOCCY6BHNTE54",
+                "K5UBFDWZSYOHS4HI42NVQMJK"
+            ],
+            "reviewers": [
+                "NJ6R5LEVTYWQEKC4XASTKZBC",
+                "C62OJVVH7XOTOTFZSJT727YU"
+            ],
+            "comment": "Initial entry. Reviewer partially fixed general aromaticity. Reviewer 2 fixed reaction SMARTS by specifying explicit hydrogens on aromatic nitrogens, reaction passes."
+        }
+    ],
     "enzyme": {
         "name": "PumG",
         "description": "Amino transferase",
@@ -42,9 +35,7 @@
             "tailoring": [
                 "Amination"
             ],
-            "reactionSMARTS": {
-                "reactionSMARTS": "[#8:1]\\[#6@:2]1-[#6@@:6](\\[#8:7])-[#6@:5](/[#6:8]2:[#6:14](=[#8:15]):[nH:13]:[#6:11](=[#8:12]):[nH:10]:[#6:9]:2)-[#8:4]-[#6@@:3]-1/[#6:16]=[#8]>>[#7]-[#6:16]/[#6@@:3]1-[#6@@:2](\\[#8:1])-[#6@@:6](\\[#8:7])-[#6@:5](/[#6:8]2:[#6:14](=[#8:15]):[nH:13]:[#6:11](=[#8:12]):[nH:10]:[#6:9]:2)-[#8:4]-1"
-            },
+            "reactionSMARTS": "[#8:1]\\[#6@:2]1-[#6@@:6](\\[#8:7])-[#6@:5](/[#6:8]2:[#6:14](=[#8:15]):[nH:13]:[#6:11](=[#8:12]):[nH:10]:[#6:9]:2)-[#8:4]-[#6@@:3]-1/[#6:16]=[#8]>>[#7]-[#6:16]/[#6@@:3]1-[#6@@:2](\\[#8:1])-[#6@@:6](\\[#8:7])-[#6@:5](/[#6:8]2:[#6:14](=[#8:15]):[nH:13]:[#6:11](=[#8:12]):[nH:10]:[#6:9]:2)-[#8:4]-1",
             "reactions": [
                 {
                     "substrate": "O=C[C@H]1O[C@@H](c2c[nH]c(=O)[nH]c2=O)[C@H](O)[C@@H]1O",
@@ -54,16 +45,14 @@
                     "isIntermediate": false
                 }
             ],
-            "evidence": [
-                {
-                    "evidenceCode": [
-                        "Knock-out studies"
-                    ],
-                    "references": [
-                        "doi:10.1016/j.chembiol.2018.02.008"
-                    ]
-                }
-            ]
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1016/j.chembiol.2018.02.008"
+                ]
+            }
         }
     ]
 }

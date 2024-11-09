@@ -41,8 +41,29 @@ class CicdManager(BaseModel):
 
     def run(self: Self) -> None:
         """Function to run all validation steps"""
+        self.check_pending()
         self.check_duplicates()
         self.validate_entries_passing()
+
+    def check_pending(self: Self) -> None:
+        """Verify that no entry has the status tag 'pending'
+
+        Raises:
+            RuntimeError: Pending entry detected
+        """
+        errors = []
+
+        for entry in self.src.iterdir():
+            with open(entry) as infile:
+                mite_json = json.load(infile)
+
+            if mite_json["status"] == "pending":
+                errors.append(
+                    f"Entry '{entry}' has the status flag 'pending'. This must be set to 'active' before release."
+                )
+
+        if len(errors) != 0:
+            raise RuntimeError("\n".join(errors))
 
     def check_duplicates(self: Self) -> None:
         """Check if multiple MITE entries describe the same enzyme using GenPept/UniProt IDs

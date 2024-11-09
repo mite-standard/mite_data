@@ -1,26 +1,19 @@
 {
     "accession": "MITE0000032",
     "status": "active",
-    "changelog": {
-        "releases": [
-            {
-                "version": "1.0",
-                "date": "2024-07-30",
-                "entries": [
-                    {
-                        "contributors": [
-                            "P75FRHHCFPTCPYSP65VDVPHW"
-                        ],
-                        "reviewers": [
-                            "C62OJVVH7XOTOTFZSJT727YU"
-                        ],
-                        "date": "2024-05-15",
-                        "comment": "Initial entry. Reviewer 1 fixed numbering of reaction SMARTS, removed explicit charges, and reworked substrate/product."
-                    }
-                ]
-            }
-        ]
-    },
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "P75FRHHCFPTCPYSP65VDVPHW"
+            ],
+            "reviewers": [
+                "C62OJVVH7XOTOTFZSJT727YU"
+            ],
+            "comment": "Initial entry. Reviewer 1 fixed numbering of reaction SMARTS, removed explicit charges, and reworked substrate/product."
+        }
+    ],
     "enzyme": {
         "name": "SfmM2",
         "description": "SAM-dependent methyltransferase",
@@ -38,9 +31,7 @@
             "tailoring": [
                 "Methylation"
             ],
-            "reactionSMARTS": {
-                "reactionSMARTS": "[#7:1]-[#6:2](-[#6:11](=[#8:13])-[#8:12])-[#6:3]-[#6:4]1:[#6:10]:[#6:9]:[#6:7](-[#8:8]):[#6:6]:[#6:5]:1.[#6:99]-[#16:98](-[#6]-[#6]1-[#6](-[#8])-[#6](-[#8])-[#6](-[#7]2:[#6]3:[#6](:[#6](:[#7]:[#6]:[#7]:3)-[#7]):[#7]:[#6]:2)-[#8]-1)-[#6]-[#6]-[#6](-[#6](=[#8])-[#8])-[#7]>>[#7:1]-[#6:2](-[#6:11](=[#8:13])-[#8:12])-[#6:3]-[#6:4]1:[#6:10]:[#6:9]:[#6:7](-[#8:8]):[#6:6](-[#6]):[#6:5]:1.[#16:98](-[#6]-[#6]1-[#6](-[#8])-[#6](-[#8])-[#6](-[#7]2:[#6]3:[#6](:[#6](:[#7]:[#6]:[#7]:3)-[#7]):[#7]:[#6]:2)-[#8]-1)-[#6]-[#6]-[#6](-[#6](=[#8])-[#8])-[#7]"
-            },
+            "reactionSMARTS": "[#7:1]-[#6:2](-[#6:11](=[#8:13])-[#8:12])-[#6:3]-[#6:4]1:[#6:10]:[#6:9]:[#6:7](-[#8:8]):[#6:6]:[#6:5]:1.[#6:99]-[#16:98](-[#6]-[#6]1-[#6](-[#8])-[#6](-[#8])-[#6](-[#7]2:[#6]3:[#6](:[#6](:[#7]:[#6]:[#7]:3)-[#7]):[#7]:[#6]:2)-[#8]-1)-[#6]-[#6]-[#6](-[#6](=[#8])-[#8])-[#7]>>[#7:1]-[#6:2](-[#6:11](=[#8:13])-[#8:12])-[#6:3]-[#6:4]1:[#6:10]:[#6:9]:[#6:7](-[#8:8]):[#6:6](-[#6]):[#6:5]:1.[#16:98](-[#6]-[#6]1-[#6](-[#8])-[#6](-[#8])-[#6](-[#7]2:[#6]3:[#6](:[#6](:[#7]:[#6]:[#7]:3)-[#7]):[#7]:[#6]:2)-[#8]-1)-[#6]-[#6]-[#6](-[#6](=[#8])-[#8])-[#7]",
             "reactions": [
                 {
                     "substrate": "C[S+](CCC([NH3+])C(=O)[O-])CC1OC(n2cnc3c(N)ncnc32)C(O)C1O.NC(Cc1ccc(O)cc1)C(=O)O",
@@ -51,16 +42,14 @@
                     "isIntermediate": true
                 }
             ],
-            "evidence": [
-                {
-                    "evidenceCode": [
-                        "In vitro assay"
-                    ],
-                    "references": [
-                        "doi:10.1111/j.1365-2958.2004.04433.x"
-                    ]
-                }
-            ]
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1111/j.1365-2958.2004.04433.x"
+                ]
+            }
         }
     ]
 }

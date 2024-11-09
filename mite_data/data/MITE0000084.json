@@ -1,26 +1,19 @@
 {
     "accession": "MITE0000084",
     "status": "active",
-    "changelog": {
-        "releases": [
-            {
-                "version": "1.0",
-                "date": "2024-07-30",
-                "entries": [
-                    {
-                        "contributors": [
-                            "P75FRHHCFPTCPYSP65VDVPHW"
-                        ],
-                        "reviewers": [
-                            "BBBBBBBBBBBBBBBBBBBBBBBB"
-                        ],
-                        "date": "2024-05-06",
-                        "comment": "Initial entry."
-                    }
-                ]
-            }
-        ]
-    },
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "P75FRHHCFPTCPYSP65VDVPHW"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "Initial entry."
+        }
+    ],
     "enzyme": {
         "name": "NapB2",
         "description": "putative monooxygenase",
@@ -38,9 +31,7 @@
             "tailoring": [
                 "Oxidation"
             ],
-            "reactionSMARTS": {
-                "reactionSMARTS": "[#8:14]-[c:8]1[c:9][c:10](-[#8:12])[c:1]2[c:2](-[#8:11])[c:3][c:4](-[#8:13])[c:5][c:6]2[c:7]1>>[#8:13]-[c:4]1[c:3][c:2](-[#8:11])[c:1]2[c:6]([c:5]1)[c:7](=[O:15])[c:8](-[#8:14])[c:9][c:10]2=[O:12]"
-            },
+            "reactionSMARTS": "[#8:14]-[c:8]1[c:9][c:10](-[#8:12])[c:1]2[c:2](-[#8:11])[c:3][c:4](-[#8:13])[c:5][c:6]2[c:7]1>>[#8:13]-[c:4]1[c:3][c:2](-[#8:11])[c:1]2[c:6]([c:5]1)[c:7](=[O:15])[c:8](-[#8:14])[c:9][c:10]2=[O:12]",
             "reactions": [
                 {
                     "substrate": "Oc1cc(O)c2c(O)cc(O)cc2c1",
@@ -50,17 +41,15 @@
                     "isIntermediate": true
                 }
             ],
-            "evidence": [
-                {
-                    "evidenceCode": [
-                        "Inference from genomic data and chemical structure"
-                    ],
-                    "references": [
-                        "doi:10.1074/jbc.M611046200",
-                        "doi:10.1021/ja201088k"
-                    ]
-                }
-            ]
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure"
+                ],
+                "references": [
+                    "doi:10.1074/jbc.M611046200",
+                    "doi:10.1021/ja201088k"
+                ]
+            }
         }
     ]
 }

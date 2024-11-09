@@ -1,30 +1,22 @@
 {
     "accession": "MITE0000089",
     "status": "active",
-    "changelog": {
-        "releases": [
-            {
-                "version": "1.0",
-                "date": "2024-07-30",
-                "entries": [
-                    {
-                        "contributors": [
-                            "AP4OPPCC6CSE5F433WMY7TMD",
-                            "RQC4INAEW544B5HWWLI3CX2V"
-                        ],
-                        "reviewers": [
-                            "C62OJVVH7XOTOTFZSJT727YU"
-                        ],
-                        "date": "2024-06-07",
-                        "comment": "Initial entry. Reviewer 1 added correct number of products for a balanced reaction."
-                    }
-                ]
-            }
-        ]
-    },
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "AP4OPPCC6CSE5F433WMY7TMD",
+                "RQC4INAEW544B5HWWLI3CX2V"
+            ],
+            "reviewers": [
+                "C62OJVVH7XOTOTFZSJT727YU"
+            ],
+            "comment": "Initial entry. Reviewer 1 added correct number of products for a balanced reaction."
+        }
+    ],
     "enzyme": {
         "name": "CPT2",
-        "description": "",
         "references": [
             "doi:10.1073/pnas.0904113106",
             "doi:10.1105/tpc.113.111013",
@@ -41,9 +33,7 @@
             "tailoring": [
                 "Prenylation"
             ],
-            "reactionSMARTS": {
-                "reactionSMARTS": "[#6]\\[#6](-[#6])=[#6]\\[#6]-[#8]P([#8-])(=O)[#8]P([#8-])([#8-])=O.[#6]-[#6](=[#6])-[#6]-[#6]-[#8]P([#8-])(=O)[#8]P([#8-])([#8-])=O.[#6]-[#6](=[#6])-[#6]-[#6]-[#8]P([#8-])(=O)[#8]P([#8-])([#8-])=O.[#6]-[#6](=[#6])-[#6]-[#6]-[#8]P([#8-])(=O)[#8]P([#8-])([#8-])=O>>[#8]P([#8-])(=O)[#8]P([#8-])([#8-])=O.[#8]P([#8-])(=O)[#8]P([#8-])([#8-])=O.[#8]P([#8-])(=O)[#8]P([#8-])([#8-])=O.[#6]\\[#6](-[#6])=[#6]\\[#6]-[#6]\\[#6](-[#6])=[#6]/[#6]-[#6]\\[#6](-[#6])=[#6]/[#6]-[#6]\\[#6](-[#6])=[#6]/[#6]-[#8]P([#8-])(=O)[#8]P([#8-])([#8-])=O"
-            },
+            "reactionSMARTS": "[#6]\\[#6](-[#6])=[#6]\\[#6]-[#8]P([#8-])(=O)[#8]P([#8-])([#8-])=O.[#6]-[#6](=[#6])-[#6]-[#6]-[#8]P([#8-])(=O)[#8]P([#8-])([#8-])=O.[#6]-[#6](=[#6])-[#6]-[#6]-[#8]P([#8-])(=O)[#8]P([#8-])([#8-])=O.[#6]-[#6](=[#6])-[#6]-[#6]-[#8]P([#8-])(=O)[#8]P([#8-])([#8-])=O>>[#8]P([#8-])(=O)[#8]P([#8-])([#8-])=O.[#8]P([#8-])(=O)[#8]P([#8-])([#8-])=O.[#8]P([#8-])(=O)[#8]P([#8-])([#8-])=O.[#6]\\[#6](-[#6])=[#6]\\[#6]-[#6]\\[#6](-[#6])=[#6]/[#6]-[#6]\\[#6](-[#6])=[#6]/[#6]-[#6]\\[#6](-[#6])=[#6]/[#6]-[#8]P([#8-])(=O)[#8]P([#8-])([#8-])=O",
             "reactions": [
                 {
                     "substrate": "C=C(C)CCOP(=O)([O-])OP(=O)([O-])[O-].C=C(C)CCOP(=O)([O-])OP(=O)([O-])[O-].C=C(C)CCOP(=O)([O-])OP(=O)([O-])[O-].CC(C)=CCOP(=O)([O-])OP(=O)([O-])[O-]",
@@ -56,23 +46,17 @@
                     "isIntermediate": true
                 }
             ],
-            "evidence": [
-                {
-                    "evidenceCode": [
-                        "Heterologous expression"
-                    ],
-                    "references": [
-                        "doi:10.1073/pnas.0904113106"
-                    ]
-                }
-            ],
-            "databaseIds": {
-                "rhea": [
-                    "11328"
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
                 ],
-                "ec": [
-                    "EC 2.5.1.28"
+                "references": [
+                    "doi:10.1073/pnas.0904113106"
                 ]
+            },
+            "databaseIds": {
+                "rhea": "11328",
+                "ec": "2.5.1.28"
             }
         }
     ]

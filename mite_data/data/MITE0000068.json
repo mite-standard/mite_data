@@ -1,26 +1,19 @@
 {
     "accession": "MITE0000068",
     "status": "active",
-    "changelog": {
-        "releases": [
-            {
-                "version": "1.0",
-                "date": "2024-07-30",
-                "entries": [
-                    {
-                        "contributors": [
-                            "LEEWIYEZSPCYOCCY6BHNTE54"
-                        ],
-                        "reviewers": [
-                            "C62OJVVH7XOTOTFZSJT727YU"
-                        ],
-                        "date": "2024-04-23",
-                        "comment": "Initial entry. Reviewer fixed reaction SMARTS format."
-                    }
-                ]
-            }
-        ]
-    },
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "LEEWIYEZSPCYOCCY6BHNTE54"
+            ],
+            "reviewers": [
+                "C62OJVVH7XOTOTFZSJT727YU"
+            ],
+            "comment": "Initial entry. Reviewer fixed reaction SMARTS format."
+        }
+    ],
     "enzyme": {
         "name": "RebO",
         "description": "Flavin-dependent L-tryptophan oxidase",
@@ -38,9 +31,7 @@
             "tailoring": [
                 "Oxidation"
             ],
-            "reactionSMARTS": {
-                "reactionSMARTS": "[NH2:1][CH:2]([CH2:3][c:4]1[cH:5][nH:6][c:7]2[c:8]([Cl:16])[cH:9][cH:10][cH:11][c:12]12)[C:13]([OH:14])=[O:15]>>[O:1]=[C:2]([CH2:3][c:4]1[cH:5][nH:6][c:7]2[c:8]([Cl:16])[cH:9][cH:10][cH:11][c:12]12)[C:13]([OH:14])=[O:15]"
-            },
+            "reactionSMARTS": "[NH2:1][CH:2]([CH2:3][c:4]1[cH:5][nH:6][c:7]2[c:8]([Cl:16])[cH:9][cH:10][cH:11][c:12]12)[C:13]([OH:14])=[O:15]>>[O:1]=[C:2]([CH2:3][c:4]1[cH:5][nH:6][c:7]2[c:8]([Cl:16])[cH:9][cH:10][cH:11][c:12]12)[C:13]([OH:14])=[O:15]",
             "reactions": [
                 {
                     "substrate": "NC(Cc1c[nH]c2c(Cl)cccc12)C(=O)O",
@@ -51,16 +42,14 @@
                     "description": "Should actually be L-chlorotryptophan."
                 }
             ],
-            "evidence": [
-                {
-                    "evidenceCode": [
-                        "Heterologous expression"
-                    ],
-                    "references": [
-                        "doi:10.1128/JB.187.6.2084-2092.2005"
-                    ]
-                }
-            ]
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1128/JB.187.6.2084-2092.2005"
+                ]
+            }
         }
     ]
 }

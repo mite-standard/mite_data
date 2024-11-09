@@ -2,27 +2,20 @@
     "accession": "MITE0000076",
     "status": "active",
     "comment": "Unconventional flavin-dependent halogenase, terminal alkyne halogenase",
-    "changelog": {
-        "releases": [
-            {
-                "version": "1.0",
-                "date": "2024-07-30",
-                "entries": [
-                    {
-                        "contributors": [
-                            "B54ZPFB4PBVBWY2K6JZNBOD5",
-                            "NHJ6M55E7ZEHUFNMEG4QIZWY"
-                        ],
-                        "reviewers": [
-                            "BBBBBBBBBBBBBBBBBBBBBBBB"
-                        ],
-                        "date": "2024-06-11",
-                        "comment": "Initial entry."
-                    }
-                ]
-            }
-        ]
-    },
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "B54ZPFB4PBVBWY2K6JZNBOD5",
+                "NHJ6M55E7ZEHUFNMEG4QIZWY"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "Initial entry."
+        }
+    ],
     "enzyme": {
         "name": "JamD",
         "description": "Flavin-dependent halogenase",
@@ -40,9 +33,7 @@
             "tailoring": [
                 "Halogenation"
             ],
-            "reactionSMARTS": {
-                "reactionSMARTS": "[#6]-[#6]1-[#6]=[#6]-[#6](=[#8])-[#7]-1-[#6](=[#8])-[#6]=[#6](-[#6]-[#6]-[#7]-[#6](=[#8])-[#6]-[#6]-[#6]=[#6]-[#6](-[#6])-[#6]-[#6]-[#6](=[#6]-[#17])-[#6]-[#6]-[#6]-[#6]#[#6])-[#8]-[#6]>>[#6]-[#6]1-[#6]=[#6]-[#6](=[#8])-[#7]-1-[#6](=[#8])-[#6]=[#6](-[#6]-[#6]-[#7]-[#6](=[#8])-[#6]-[#6]-[#6]=[#6]-[#6](-[#6])-[#6]-[#6]-[#6](=[#6]-[#17])-[#6]-[#6]-[#6]-[#6]#[#6]-[#35])-[#8]-[#6]"
-            },
+            "reactionSMARTS": "[#6]-[#6]1-[#6]=[#6]-[#6](=[#8])-[#7]-1-[#6](=[#8])-[#6]=[#6](-[#6]-[#6]-[#7]-[#6](=[#8])-[#6]-[#6]-[#6]=[#6]-[#6](-[#6])-[#6]-[#6]-[#6](=[#6]-[#17])-[#6]-[#6]-[#6]-[#6]#[#6])-[#8]-[#6]>>[#6]-[#6]1-[#6]=[#6]-[#6](=[#8])-[#7]-1-[#6](=[#8])-[#6]=[#6](-[#6]-[#6]-[#7]-[#6](=[#8])-[#6]-[#6]-[#6]=[#6]-[#6](-[#6])-[#6]-[#6]-[#6](=[#6]-[#17])-[#6]-[#6]-[#6]-[#6]#[#6]-[#35])-[#8]-[#6]",
             "reactions": [
                 {
                     "substrate": "C#CCCCC(=CCl)CCC(C)C=CCCC(=O)NCCC(=CC(=O)N1C(=O)C=CC1C)OC",
@@ -52,16 +43,14 @@
                     "isIntermediate": false
                 }
             ],
-            "evidence": [
-                {
-                    "evidenceCode": [
-                        "Heterologous expression"
-                    ],
-                    "references": [
-                        "doi:10.1021/jacs.3c05750"
-                    ]
-                }
-            ]
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1021/jacs.3c05750"
+                ]
+            }
         }
     ]
 }

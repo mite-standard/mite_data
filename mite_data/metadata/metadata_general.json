@@ -1,5 +1,5 @@
 {
-  "version_mite_data": "1.3",
+  "version_mite_data": "1.4",
   "entries": {
     "MITE0000020": {
       "status": "active",
@@ -767,7 +767,7 @@
     "MITE0000091": {
       "status": "active",
       "enzyme_name": "CYP71BN1",
-      "enzyme_description": "",
+      "enzyme_description": "No description available",
       "enzyme_ids": {
         "uniprot": "K4CI56",
         "genpept": "AGK82807.1",
@@ -1437,7 +1437,7 @@
     "MITE0000090": {
       "status": "active",
       "enzyme_name": "TPS21",
-      "enzyme_description": "",
+      "enzyme_description": "No description available",
       "enzyme_ids": {
         "uniprot": "R9R6P6",
         "genpept": "AGK82800.1",
@@ -1485,7 +1485,7 @@
     "MITE0000089": {
       "status": "active",
       "enzyme_name": "CPT2",
-      "enzyme_description": "",
+      "enzyme_description": "No description available",
       "enzyme_ids": {
         "uniprot": "K7WQ45",
         "genpept": "AGK82801.1",
@@ -1671,7 +1671,7 @@
     "MITE0000132": {
       "status": "active",
       "enzyme_name": "THAA2",
-      "enzyme_description": "",
+      "enzyme_description": "No description available",
       "enzyme_ids": {
         "uniprot": "D7MUV7",
         "genpept": "EFH40094.1",

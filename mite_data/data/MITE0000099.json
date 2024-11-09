@@ -1,30 +1,23 @@
 {
     "accession": "MITE0000099",
     "status": "active",
-    "changelog": {
-        "releases": [
-            {
-                "version": "1.0",
-                "date": "2024-07-30",
-                "entries": [
-                    {
-                        "contributors": [
-                            "N36AXMAR75OH4EWIMJIU5WOH",
-                            "PK3KAPGHQJXJCKMJ4SU7V5JW",
-                            "LEEWIYEZSPCYOCCY6BHNTE54",
-                            "K5UBFDWZSYOHS4HI42NVQMJK"
-                        ],
-                        "reviewers": [
-                            "NJ6R5LEVTYWQEKC4XASTKZBC",
-                            "C62OJVVH7XOTOTFZSJT727YU"
-                        ],
-                        "date": "2024-05-14",
-                        "comment": "Initial entry. Reviewer partially fixed general aromaticity. Reviewer 2 reworked reaction SMARTS, reaction passes."
-                    }
-                ]
-            }
-        ]
-    },
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "N36AXMAR75OH4EWIMJIU5WOH",
+                "PK3KAPGHQJXJCKMJ4SU7V5JW",
+                "LEEWIYEZSPCYOCCY6BHNTE54",
+                "K5UBFDWZSYOHS4HI42NVQMJK"
+            ],
+            "reviewers": [
+                "NJ6R5LEVTYWQEKC4XASTKZBC",
+                "C62OJVVH7XOTOTFZSJT727YU"
+            ],
+            "comment": "Initial entry. Reviewer partially fixed general aromaticity. Reviewer 2 reworked reaction SMARTS, reaction passes."
+        }
+    ],
     "enzyme": {
         "name": "PumJ",
         "description": "pseudouridine synthase",
@@ -42,9 +35,7 @@
             "tailoring": [
                 "Other"
             ],
-            "reactionSMARTS": {
-                "reactionSMARTS": "[#8:1]-[#6:2]/[#6@@:3]1-[#6@@:8](\\[#8:9])-[#6@@:6](\\[#8:7])-[#6@:5](/[n:10]2:[#6:16](=[#8:17]):[nH:15]:[#6:13](=[#8:14]):[#6:12]:[#6:11]:2)-[#8:4]-1>>[#8:1]-[#6:2]/[#6@@:3]1-[#6@@:8](\\[#8:9])-[#6@@:6](\\[#8:7])-[#6@:5](/[#6:12]2:[#6:13](=[#8:14]):[nH:15]:[#6:16](=[#8:17]):[nH:10]:[#6:11]:2)-[#8:4]-1"
-            },
+            "reactionSMARTS": "[#8:1]-[#6:2]/[#6@@:3]1-[#6@@:8](\\[#8:9])-[#6@@:6](\\[#8:7])-[#6@:5](/[n:10]2:[#6:16](=[#8:17]):[nH:15]:[#6:13](=[#8:14]):[#6:12]:[#6:11]:2)-[#8:4]-1>>[#8:1]-[#6:2]/[#6@@:3]1-[#6@@:8](\\[#8:9])-[#6@@:6](\\[#8:7])-[#6@:5](/[#6:12]2:[#6:13](=[#8:14]):[nH:15]:[#6:16](=[#8:17]):[nH:10]:[#6:11]:2)-[#8:4]-1",
             "reactions": [
                 {
                     "substrate": "O=c1ccn([C@@H]2O[C@H](CO)[C@@H](O)[C@H]2O)c(=O)[nH]1",
@@ -54,16 +45,14 @@
                     "isIntermediate": false
                 }
             ],
-            "evidence": [
-                {
-                    "evidenceCode": [
-                        "Knock-out studies"
-                    ],
-                    "references": [
-                        "doi:10.1016/j.chembiol.2018.02.008"
-                    ]
-                }
-            ]
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1016/j.chembiol.2018.02.008"
+                ]
+            }
         }
     ]
 }

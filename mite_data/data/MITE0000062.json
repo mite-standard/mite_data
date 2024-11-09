@@ -1,31 +1,24 @@
 {
     "accession": "MITE0000062",
     "status": "active",
-    "changelog": {
-        "releases": [
-            {
-                "version": "1.0",
-                "date": "2024-07-30",
-                "entries": [
-                    {
-                        "contributors": [
-                            "P75FRHHCFPTCPYSP65VDVPHW"
-                        ],
-                        "reviewers": [
-                            "C62OJVVH7XOTOTFZSJT727YU"
-                        ],
-                        "date": "2024-03-20",
-                        "comment": "Initial entry. Reviewer 1 fixed reaction SMARTS, reaction passes."
-                    }
-                ]
-            }
-        ]
-    },
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "P75FRHHCFPTCPYSP65VDVPHW"
+            ],
+            "reviewers": [
+                "C62OJVVH7XOTOTFZSJT727YU"
+            ],
+            "comment": "Initial entry. Reviewer 1 fixed reaction SMARTS, reaction passes."
+        }
+    ],
     "enzyme": {
         "name": "cotB4",
         "description": "Cytochrome P450",
         "references": [
-            "pubmed:19635410"
+            "doi:10.1016/j.chembiol.2009.06.007"
         ],
         "databaseIds": {
             "uniprot": "C9K1X7",
@@ -38,9 +31,7 @@
             "tailoring": [
                 "Hydroxylation"
             ],
-            "reactionSMARTS": {
-                "reactionSMARTS": "[#6:1]-[#6:2](\\[#6@:4]1-[#6:22]2-[#6@@:7](-[#6:9]/[#6@:10]3-[#6@@:15](/[#6:16])-[#6:14]-[#6@:12](\\[#8:13])-[#6@@:11]\\3-[#6@@:17](-[#6:20]-[#6:21]=2)(-[#8:19])/[#6:18])(\\[#6:8])-[#6:6]-[#6:5]-1)-[#6:3]>>[#6:3]-[#6:2](\\[#6@:4]1-[#6:22]2-[#6@@:7](-[#6:9]/[#6@@:10]3\\[#6@@:11](-[#6@@:17](-[#6:20]-[#6:21]=2)(-[#8:19])/[#6:18])-[#6@@:12](\\[#8:13])-[#6:14]-[#6@@:15]-3/[#6:16]-[#8])(\\[#6:8])-[#6:6]-[#6:5]-1)-[#6:1]"
-            },
+            "reactionSMARTS": "[#6:1]-[#6:2](\\[#6@:4]1-[#6:22]2-[#6@@:7](-[#6:9]/[#6@:10]3-[#6@@:15](/[#6:16])-[#6:14]-[#6@:12](\\[#8:13])-[#6@@:11]\\3-[#6@@:17](-[#6:20]-[#6:21]=2)(-[#8:19])/[#6:18])(\\[#6:8])-[#6:6]-[#6:5]-1)-[#6:3]>>[#6:3]-[#6:2](\\[#6@:4]1-[#6:22]2-[#6@@:7](-[#6:9]/[#6@@:10]3\\[#6@@:11](-[#6@@:17](-[#6:20]-[#6:21]=2)(-[#8:19])/[#6:18])-[#6@@:12](\\[#8:13])-[#6:14]-[#6@@:15]-3/[#6:16]-[#8])(\\[#6:8])-[#6:6]-[#6:5]-1)-[#6:1]",
             "reactions": [
                 {
                     "substrate": "CC(C)[C@@H]1CC[C@@]2(C)C[C@@H]3[C@H]([C@@H](O)C[C@@H]3C)[C@](C)(O)CC=C12",
@@ -50,17 +41,15 @@
                     "isIntermediate": false
                 }
             ],
-            "evidence": [
-                {
-                    "evidenceCode": [
-                        "Heterologous expression",
-                        "Knock-out studies"
-                    ],
-                    "references": [
-                        "pubmed:19635410"
-                    ]
-                }
-            ]
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1016/j.chembiol.2009.06.007"
+                ]
+            }
         }
     ]
 }

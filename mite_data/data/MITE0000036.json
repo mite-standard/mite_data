@@ -5,26 +5,19 @@
         "Duplicate of entry MITE0000035, which was retained because of a more extensive reaction list. All data has been transferred to MITE0000035."
     ],
     "comment": "Acyltransferase can use acyl-CoA of different acyl chain length and glucosamine free as UDP-glucosamine or bound to hpg4 of teicoplanin pseudoaglycone as substrates.",
-    "changelog": {
-        "releases": [
-            {
-                "version": "1.0",
-                "date": "2024-07-30",
-                "entries": [
-                    {
-                        "contributors": [
-                            "37IOAS4X5OHP34DPN55OLFBF"
-                        ],
-                        "reviewers": [
-                            "C62OJVVH7XOTOTFZSJT727YU"
-                        ],
-                        "date": "2024-05-14",
-                        "comment": "Initial entry. Reviewer 1 fixed reaction SMARTS but had to remove the balanced substrate/product SMILES due to issues with phosphorous chemistry in RDKit. Reviewer 1 retired entry in favor of MITE0000035."
-                    }
-                ]
-            }
-        ]
-    },
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "37IOAS4X5OHP34DPN55OLFBF"
+            ],
+            "reviewers": [
+                "C62OJVVH7XOTOTFZSJT727YU"
+            ],
+            "comment": "Initial entry. Reviewer 1 fixed reaction SMARTS but had to remove the balanced substrate/product SMILES due to issues with phosphorous chemistry in RDKit. Reviewer 1 retired entry in favor of MITE0000035."
+        }
+    ],
     "enzyme": {
         "name": "tAtf",
         "description": "Transfers acyl groups from acyl-CoA onto the glucosaminyl residue on hpg4 of the teicoplanin precursor.",
@@ -45,9 +38,7 @@
                 "Acylation"
             ],
             "description": "The highest catalytic efficiency of the enzyme is achived with the glucosaminyl-teicoplanin pseudoaglycone as substrate.",
-            "reactionSMARTS": {
-                "reactionSMARTS": "[#7:1]\\[#6@@:2]1-[#6@@:95](/[#8:96])-[#6@:93](\\[#8:94])-[#6@@:90](/[#6:91]-[#8:92])-[#8:89]-[#6@:3]-1/[#8:4]>>[#6]-[#6]-[#6]-[#6](=[#8])-[#7:1]\\[#6@@:2]1-[#6@@:95](/[#8:96])-[#6@:93](\\[#8:94])-[#6@@:90](/[#6:91]-[#8:92])-[#8:89]-[#6@:3]-1/[#8:4]"
-            },
+            "reactionSMARTS": "[#7:1]\\[#6@@:2]1-[#6@@:95](/[#8:96])-[#6@:93](\\[#8:94])-[#6@@:90](/[#6:91]-[#8:92])-[#8:89]-[#6@:3]-1/[#8:4]>>[#6]-[#6]-[#6]-[#6](=[#8])-[#7:1]\\[#6@@:2]1-[#6@@:95](/[#8:96])-[#6@:93](\\[#8:94])-[#6@@:90](/[#6:91]-[#8:92])-[#8:89]-[#6@:3]-1/[#8:4]",
             "reactions": [
                 {
                     "substrate": "N[C@H]1[C@H](Oc2c3cc4cc2Oc2ccc(cc2Cl)[C@@H](O)[C@@H]2NC(=O)[C@H](NC(=O)[C@@H]4NC(=O)[C@H]4NC(=O)[C@@H](Cc5ccc(c(Cl)c5)O3)NC(=O)[C@H](N)c3ccc(O)c(c3)Oc3cc(O)cc4c3)c3ccc(O)c(c3)-c3c(O)cc(O)cc3[C@@H](C(=O)O)NC2=O)O[C@H](CO)[C@@H](O)[C@@H]1O",
@@ -66,17 +57,15 @@
                     "description": "Reaction does not occure naturally during teicoplanin biosynthesis; acyl-CoA as co-substrate."
                 }
             ],
-            "evidence": [
-                {
-                    "evidenceCode": [
-                        "In vitro assay"
-                    ],
-                    "references": [
-                        "doi:10.1016/j.chembiol.2004.12.005",
-                        "doi:10.1016/s1074-5521(04)00002-x"
-                    ]
-                }
-            ]
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1016/j.chembiol.2004.12.005",
+                    "doi:10.1016/s1074-5521(04)00002-x"
+                ]
+            }
         }
     ]
 }

@@ -1,27 +1,20 @@
 {
     "accession": "MITE0000142",
     "status": "active",
-    "changelog": {
-        "releases": [
-            {
-                "version": "1.0",
-                "date": "2024-07-30",
-                "entries": [
-                    {
-                        "contributors": [
-                            "SKC4XYF2AQLXBPOFDVNEXQZ2",
-                            "BBWSCHOGTA7AN4ZDDUKGI7WA"
-                        ],
-                        "reviewers": [
-                            "C62OJVVH7XOTOTFZSJT727YU"
-                        ],
-                        "date": "2024-04-23",
-                        "comment": "Initial entry. Reviewer 1 fixed numbering of reaction SMARTS, reaction passes."
-                    }
-                ]
-            }
-        ]
-    },
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "SKC4XYF2AQLXBPOFDVNEXQZ2",
+                "BBWSCHOGTA7AN4ZDDUKGI7WA"
+            ],
+            "reviewers": [
+                "C62OJVVH7XOTOTFZSJT727YU"
+            ],
+            "comment": "Initial entry. Reviewer 1 fixed numbering of reaction SMARTS, reaction passes."
+        }
+    ],
     "enzyme": {
         "name": "ankC",
         "description": "FAD-dependent monooxygenase",
@@ -38,9 +31,7 @@
             "tailoring": [
                 "Monooxygenation"
             ],
-            "reactionSMARTS": {
-                "reactionSMARTS": "[#7:1]=[#6:2](-[#7:4]-[#6:5]-[#6:6]-[#6:7]\\[#6@:8]1-[#6:22](=[#8:23])-[#7:21]-[#6:12](=[#6:13]-[#6:14]2:[#6:20]:[#6:19]:[#6:17](-[#8:18]):[#6:16]:[#6:15]:2)-[#6:10](=[#8:11])-[#7:9]-1)-[#7:3]>>[#7:1]=[#6:2](-[#7:4]-[#6:5]-[#6:6]-[#6:7]\\[#6@:8]1-[#6:22](=[#8:23])-[#7:21]-[#6:12](=[#6:13]-[#6:14]2:[#6:20]:[#6:19](-[#8]):[#6:17](-[#8:18]):[#6:16]:[#6:15]:2)-[#6:10](=[#8:11])-[#7:9]-1)-[#7:3]"
-            },
+            "reactionSMARTS": "[#7:1]=[#6:2](-[#7:4]-[#6:5]-[#6:6]-[#6:7]\\[#6@:8]1-[#6:22](=[#8:23])-[#7:21]-[#6:12](=[#6:13]-[#6:14]2:[#6:20]:[#6:19]:[#6:17](-[#8:18]):[#6:16]:[#6:15]:2)-[#6:10](=[#8:11])-[#7:9]-1)-[#7:3]>>[#7:1]=[#6:2](-[#7:4]-[#6:5]-[#6:6]-[#6:7]\\[#6@:8]1-[#6:22](=[#8:23])-[#7:21]-[#6:12](=[#6:13]-[#6:14]2:[#6:20]:[#6:19](-[#8]):[#6:17](-[#8:18]):[#6:16]:[#6:15]:2)-[#6:10](=[#8:11])-[#7:9]-1)-[#7:3]",
             "reactions": [
                 {
                     "substrate": "N=C(N)NCCC[C@@H]1NC(=O)/C(=C/c2ccc(O)cc2)NC1=O",
@@ -50,16 +41,14 @@
                     "isIntermediate": true
                 }
             ],
-            "evidence": [
-                {
-                    "evidenceCode": [
-                        "Heterologous expression"
-                    ],
-                    "references": [
-                        "doi:10.1038/s41589-022-01246-6"
-                    ]
-                }
-            ]
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1038/s41589-022-01246-6"
+                ]
+            }
         }
     ]
 }

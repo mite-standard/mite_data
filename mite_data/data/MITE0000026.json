@@ -4,34 +4,27 @@
     "retirementReasons": [
         "Entry addresses same enzyme as MITE0000038 (OxyA), but references the wrong MIBiG entry. All information has been transferred to MITE0000038."
     ],
-    "changelog": {
-        "releases": [
-            {
-                "version": "1.0",
-                "date": "2024-07-30",
-                "entries": [
-                    {
-                        "contributors": [
-                            "37IOAS4X5OHP34DPN55OLFBF"
-                        ],
-                        "reviewers": [
-                            "NJ6R5LEVTYWQEKC4XASTKZBC",
-                            "C62OJVVH7XOTOTFZSJT727YU"
-                        ],
-                        "date": "2024-06-07",
-                        "comment": "Initial entry. Reviewer 1 partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer 1 partially fixed reactions:substrate, validation still not passing. Reviewer 1 partially fixed reactions:products, validation still not passing. Reviewer 2 reworked reaction SMARTS from scratch, reaction passing. Reviewer 2 retired entry (duplicate of MITE0000038)."
-                    }
-                ]
-            }
-        ]
-    },
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "37IOAS4X5OHP34DPN55OLFBF"
+            ],
+            "reviewers": [
+                "NJ6R5LEVTYWQEKC4XASTKZBC",
+                "C62OJVVH7XOTOTFZSJT727YU"
+            ],
+            "comment": "Initial entry. Reviewer 1 partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer 1 partially fixed reactions:substrate, validation still not passing. Reviewer 1 partially fixed reactions:products, validation still not passing. Reviewer 2 reworked reaction SMARTS from scratch, reaction passing. Reviewer 2 retired entry (duplicate of MITE0000038)."
+        }
+    ],
     "enzyme": {
         "name": "OxyA",
         "description": "P450 monooxygenase, that introduces the second crosslink (biaryl ether) between bht2 and hpg4 of the balhimycin precursor.",
         "references": [
             "doi:10.1016/j.jbiotec.2006.04.009",
             "doi:10.1128/AAC.43.7.1565",
-            "pubmed:12404385"
+            "doi:10.1002/1521-3773(20011217)40:24%3C4688::aid-anie4688%3E3.0.co;2-m"
         ],
         "databaseIds": {
             "uniprot": "F8STX6",
@@ -45,9 +38,7 @@
                 "Cyclization"
             ],
             "description": "The reaction might be less specific than depicted in the reaction SMARTS. There is no detailed study on the specificity so far. The reaction occurs probably while the precursor peptide backbone is bound to the NRPS as shown for the closely related vancomycin biosynthesis (doi:10.1002/ANIE.200461278).",
-            "reactionSMARTS": {
-                "reactionSMARTS": "[#6:1]-[#6:2](-[#6:67])-[#6:3]-[#6:4](-[#7:66])-[#6:5](=[#8:65])-[#7:6]-[#6:7](-[#6:55](-[#8:64])-[#6:56]1:[#6:63]:[#6:62]:[#6:60](-[#8:61]):[#6:58](-[Cl:59]):[#6:57]:1)-[#6:8](=[#8:54])-[#7:9]-[#6:10](-[#6:50]-[#6:51](-[#7:53])=[#8:52])-[#6:11](=[#8:49])-[#7:12]-[#6:13]1-[#6:42](=[#8:43])-[#7:41]-[#6:33](-[#6:34]2:[#6:40]:[#6:39]:[#6:37](-[#8:38]):[#6:36]:[#6:35]:2)-[#6:31](=[#8:32])-[#7:30]-[#6:26](-[#6:27](-[#8:29])=[#8:28])-[#6:24](-[#8:25])-[#6:21]2:[#6:22]:[#6:23]:[#6:18](:[#6:19](-[Cl:44]):[#6:20]:2)-[#8:17]-[#6:16]2:[#6:45](:[#6:47]:[#6:48]:[#6:14]-1:[#6:15]:2)-[#8:46]>>[#6:1]-[#6:2](-[#6:67])-[#6:3]-[#6:4](-[#7:66])-[#6:5](=[#8:65])-[#7:6]-[#6:7]1-[#6:55](-[#8:64])-[#6:56]2:[#6:63]:[#6:62]:[#6:60](-[#8:61]-[#6:47]3:[#6:48]:[#6:14]4:[#6:15]:[#6:16](:[#6:45]:3-[#8:46])-[#8:17]-[#6:18]3:[#6:23]:[#6:22]:[#6:21](-[#6:24](-[#6:26](-[#7:30]-[#6:31](-[#6:33](-[#7:41]-[#6:42](=[#8:43])-[#6:13]-4-[#7:12]-[#6:11](=[#8:49])-[#6:10](-[#6:50]-[#6:51](-[#7:53])=[#8:52])-[#7:9]-[#6:8]-1=[#8:54])-[#6:34]1:[#6:40]:[#6:39]:[#6:37](-[#8:38]):[#6:36]:[#6:35]:1)=[#8:32])-[#6:27](-[#8:29])=[#8:28])-[#8:25]):[#6:20]:[#6:19]:3-[Cl:44]):[#6:58](-[Cl:59]):[#6:57]:2"
-            },
+            "reactionSMARTS": "[#6:1]-[#6:2](-[#6:67])-[#6:3]-[#6:4](-[#7:66])-[#6:5](=[#8:65])-[#7:6]-[#6:7](-[#6:55](-[#8:64])-[#6:56]1:[#6:63]:[#6:62]:[#6:60](-[#8:61]):[#6:58](-[Cl:59]):[#6:57]:1)-[#6:8](=[#8:54])-[#7:9]-[#6:10](-[#6:50]-[#6:51](-[#7:53])=[#8:52])-[#6:11](=[#8:49])-[#7:12]-[#6:13]1-[#6:42](=[#8:43])-[#7:41]-[#6:33](-[#6:34]2:[#6:40]:[#6:39]:[#6:37](-[#8:38]):[#6:36]:[#6:35]:2)-[#6:31](=[#8:32])-[#7:30]-[#6:26](-[#6:27](-[#8:29])=[#8:28])-[#6:24](-[#8:25])-[#6:21]2:[#6:22]:[#6:23]:[#6:18](:[#6:19](-[Cl:44]):[#6:20]:2)-[#8:17]-[#6:16]2:[#6:45](:[#6:47]:[#6:48]:[#6:14]-1:[#6:15]:2)-[#8:46]>>[#6:1]-[#6:2](-[#6:67])-[#6:3]-[#6:4](-[#7:66])-[#6:5](=[#8:65])-[#7:6]-[#6:7]1-[#6:55](-[#8:64])-[#6:56]2:[#6:63]:[#6:62]:[#6:60](-[#8:61]-[#6:47]3:[#6:48]:[#6:14]4:[#6:15]:[#6:16](:[#6:45]:3-[#8:46])-[#8:17]-[#6:18]3:[#6:23]:[#6:22]:[#6:21](-[#6:24](-[#6:26](-[#7:30]-[#6:31](-[#6:33](-[#7:41]-[#6:42](=[#8:43])-[#6:13]-4-[#7:12]-[#6:11](=[#8:49])-[#6:10](-[#6:50]-[#6:51](-[#7:53])=[#8:52])-[#7:9]-[#6:8]-1=[#8:54])-[#6:34]1:[#6:40]:[#6:39]:[#6:37](-[#8:38]):[#6:36]:[#6:35]:1)=[#8:32])-[#6:27](-[#8:29])=[#8:28])-[#8:25]):[#6:20]:[#6:19]:3-[Cl:44]):[#6:58](-[Cl:59]):[#6:57]:2",
             "reactions": [
                 {
                     "substrate": "CC(C)CC(N)C(=O)NC(C(=O)NC(CC(N)=O)C(=O)NC1C(=O)NC(c2ccc(O)cc2)C(=O)NC(C(=O)O)C(O)c2ccc(c(Cl)c2)Oc2cc1ccc2O)C(O)c1ccc(O)c(Cl)c1",
@@ -57,17 +48,15 @@
                     "isIntermediate": true
                 }
             ],
-            "evidence": [
-                {
-                    "evidenceCode": [
-                        "Knock-out studies"
-                    ],
-                    "references": [
-                        "pubmed:12404385",
-                        "doi:10.1016/j.jbiotec.2006.04.009"
-                    ]
-                }
-            ]
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1002/1521-3773(20011217)40:24%3C4688::aid-anie4688%3E3.0.co;2-m",
+                    "doi:10.1016/j.jbiotec.2006.04.009"
+                ]
+            }
         }
     ]
 }

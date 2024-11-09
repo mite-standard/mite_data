@@ -1,28 +1,21 @@
 {
     "accession": "MITE0000103",
     "status": "active",
-    "changelog": {
-        "releases": [
-            {
-                "version": "1.0",
-                "date": "2024-07-30",
-                "entries": [
-                    {
-                        "contributors": [
-                            "YMNBNYWEKI2BEKVVGTVE6OUH",
-                            "FNDAVAB6GIJQLFPWCTUHK6QO"
-                        ],
-                        "reviewers": [
-                            "NJ6R5LEVTYWQEKC4XASTKZBC",
-                            "C62OJVVH7XOTOTFZSJT727YU"
-                        ],
-                        "date": "2024-05-13",
-                        "comment": "Initial entry. Reviewer fixed reactionSMARTS:reactionSMARTS. Reviewer 2 fixed typo."
-                    }
-                ]
-            }
-        ]
-    },
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "YMNBNYWEKI2BEKVVGTVE6OUH",
+                "FNDAVAB6GIJQLFPWCTUHK6QO"
+            ],
+            "reviewers": [
+                "NJ6R5LEVTYWQEKC4XASTKZBC",
+                "C62OJVVH7XOTOTFZSJT727YU"
+            ],
+            "comment": "Initial entry. Reviewer fixed reactionSMARTS:reactionSMARTS. Reviewer 2 fixed typo."
+        }
+    ],
     "enzyme": {
         "name": "TrlF",
         "description": "Cleaves off CoA from 2-hydroxycyclohepta-1,4,6-triene-1-carboxyl-CoA",
@@ -40,9 +33,7 @@
             "tailoring": [
                 "Other"
             ],
-            "reactionSMARTS": {
-                "reactionSMARTS": "[#6:1][C:2]([#6:3])([#6:4]-[#8:5][P:6]([#8:7])(=[O:8])[#8:9][P:10]([#8:11])(=[O:12])[#8:13]-[#6:14]-[#6@H:15]-1-[#8:16]-[#6@H:17](-[#6@H:18](-[#8:19])-[#6@@H:20]-1-[#8:21][P:22]([#8:23])([#8:24])=[O:25])-[n:26]1[c:27][n:28][c:29]2[c:30](-[#7:31])[n:32][c:33][n:34][c:35]12)[#6@@H:36](-[#8:37])-[#6:38](=[O:39])-[#7:40]-[#6:41]-[#6:42]-[#6:43](=[O:44])-[#7:45]-[#6:46]-[#6:47]-[#16:48]-[#16:49]-[#6:50](=[O:51])-[#6:52]-1=[#6:53](-[#8:54])-[#6:55]-[#6:56]=[#6:57]-[#6:58]=[#6:59]-1>>[#8:1]-[#6:2](=[O:3])-[#6:4]-1=[#6:5](-[#8:6])-[#6:7]-[#6:8]=[#6:9]-[#6:10]=[#6:11]-1"
-            },
+            "reactionSMARTS": "[#6:1][C:2]([#6:3])([#6:4]-[#8:5][P:6]([#8:7])(=[O:8])[#8:9][P:10]([#8:11])(=[O:12])[#8:13]-[#6:14]-[#6@H:15]-1-[#8:16]-[#6@H:17](-[#6@H:18](-[#8:19])-[#6@@H:20]-1-[#8:21][P:22]([#8:23])([#8:24])=[O:25])-[n:26]1[c:27][n:28][c:29]2[c:30](-[#7:31])[n:32][c:33][n:34][c:35]12)[#6@@H:36](-[#8:37])-[#6:38](=[O:39])-[#7:40]-[#6:41]-[#6:42]-[#6:43](=[O:44])-[#7:45]-[#6:46]-[#6:47]-[#16:48]-[#16:49]-[#6:50](=[O:51])-[#6:52]-1=[#6:53](-[#8:54])-[#6:55]-[#6:56]=[#6:57]-[#6:58]=[#6:59]-1>>[#8:1]-[#6:2](=[O:3])-[#6:4]-1=[#6:5](-[#8:6])-[#6:7]-[#6:8]=[#6:9]-[#6:10]=[#6:11]-1",
             "reactions": [
                 {
                     "substrate": "CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCSSC(=O)C1=C(O)CC=CC=C1",
@@ -52,16 +43,14 @@
                     "isIntermediate": false
                 }
             ],
-            "evidence": [
-                {
-                    "evidenceCode": [
-                        "In vitro assay"
-                    ],
-                    "references": [
-                        "doi:10.1039/D4SC01715C"
-                    ]
-                }
-            ]
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1039/D4SC01715C"
+                ]
+            }
         }
     ]
 }

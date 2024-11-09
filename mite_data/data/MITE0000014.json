@@ -1,27 +1,20 @@
 {
     "accession": "MITE0000014",
     "status": "active",
-    "changelog": {
-        "releases": [
-            {
-                "version": "1.0",
-                "date": "2024-07-30",
-                "entries": [
-                    {
-                        "contributors": [
-                            "MGLE5JJ3S32DQA3YR5WPYH4W",
-                            "P75FRHHCFPTCPYSP65VDVPHW"
-                        ],
-                        "reviewers": [
-                            "BBBBBBBBBBBBBBBBBBBBBBBB"
-                        ],
-                        "date": "2024-06-04",
-                        "comment": "Initial entry."
-                    }
-                ]
-            }
-        ]
-    },
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "MGLE5JJ3S32DQA3YR5WPYH4W",
+                "P75FRHHCFPTCPYSP65VDVPHW"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "Initial entry."
+        }
+    ],
     "enzyme": {
         "name": "MtmMI",
         "description": "O-methyltransferase",
@@ -39,9 +32,7 @@
             "tailoring": [
                 "Methylation"
             ],
-            "reactionSMARTS": {
-                "reactionSMARTS": "[#6:27]-[#6:26](=[O:28])-[#6:16]-1=[#6:17](-[#8:20])-[#6@@H:18](-[#8:19])-[#6:11]2-[#6:12]-[c:9]3[c:10][c:1]4[c:2][c:3](-[#8:25])[c:4][c:5](-[#8:24])[c:6]4[c:7](-[#8:23])[c:8]3-[#6:13](=[O:22])[C:14]2([#8:29])[#6:15]-1=[O:21]>>[#6:30]-[#8:19]-[#6@H:18]-1-[#6:11]2-[#6:12]-[c:9]3[c:10][c:1]4[c:2][c:3](-[#8:25])[c:4][c:5](-[#8:24])[c:6]4[c:7](-[#8:23])[c:8]3-[#6:13](=[O:22])[C:14]2([#8:29])[#6:15](=[O:21])-[#6:16](-[#6:26](-[#6:27])=[O:28])=[#6:17]-1-[#8:20]"
-            },
+            "reactionSMARTS": "[#6:27]-[#6:26](=[O:28])-[#6:16]-1=[#6:17](-[#8:20])-[#6@@H:18](-[#8:19])-[#6:11]2-[#6:12]-[c:9]3[c:10][c:1]4[c:2][c:3](-[#8:25])[c:4][c:5](-[#8:24])[c:6]4[c:7](-[#8:23])[c:8]3-[#6:13](=[O:22])[C:14]2([#8:29])[#6:15]-1=[O:21]>>[#6:30]-[#8:19]-[#6@H:18]-1-[#6:11]2-[#6:12]-[c:9]3[c:10][c:1]4[c:2][c:3](-[#8:25])[c:4][c:5](-[#8:24])[c:6]4[c:7](-[#8:23])[c:8]3-[#6:13](=[O:22])[C:14]2([#8:29])[#6:15](=[O:21])-[#6:16](-[#6:26](-[#6:27])=[O:28])=[#6:17]-1-[#8:20]",
             "reactions": [
                 {
                     "substrate": "CC(=O)C1=C(O)[C@@H](O)C2Cc3cc4cc(O)cc(O)c4c(O)c3C(=O)C2(O)C1=O",
@@ -51,17 +42,15 @@
                     "isIntermediate": true
                 }
             ],
-            "evidence": [
-                {
-                    "evidenceCode": [
-                        "In vitro assay",
-                        "Knock-out studies"
-                    ],
-                    "references": [
-                        "doi:10.1074/jbc.275.5.3065"
-                    ]
-                }
-            ]
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1074/jbc.275.5.3065"
+                ]
+            }
         }
     ]
 }

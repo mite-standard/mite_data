@@ -1,27 +1,20 @@
 {
     "accession": "MITE0000067",
     "status": "active",
-    "changelog": {
-        "releases": [
-            {
-                "version": "1.0",
-                "date": "2024-07-30",
-                "entries": [
-                    {
-                        "contributors": [
-                            "LEEWIYEZSPCYOCCY6BHNTE54"
-                        ],
-                        "reviewers": [
-                            "NJ6R5LEVTYWQEKC4XASTKZBC",
-                            "C62OJVVH7XOTOTFZSJT727YU"
-                        ],
-                        "date": "2024-04-23",
-                        "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer partially fixed reactions:substrate, validation still not passing. Reviewer partially fixed reactions:products, validation still not passing. Review 2 redrew reaction SMARTS to take into account aromatic nitrogens in heterocycles."
-                    }
-                ]
-            }
-        ]
-    },
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "LEEWIYEZSPCYOCCY6BHNTE54"
+            ],
+            "reviewers": [
+                "NJ6R5LEVTYWQEKC4XASTKZBC",
+                "C62OJVVH7XOTOTFZSJT727YU"
+            ],
+            "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer partially fixed reactions:substrate, validation still not passing. Reviewer partially fixed reactions:products, validation still not passing. Review 2 redrew reaction SMARTS to take into account aromatic nitrogens in heterocycles."
+        }
+    ],
     "enzyme": {
         "name": "RebD",
         "description": "Dichlorochromopyrrolate synthase",
@@ -40,9 +33,7 @@
             "tailoring": [
                 "Oxidation"
             ],
-            "reactionSMARTS": {
-                "reactionSMARTS": "[#8:1]-[#6:2](-[#6:4](-[#6:6]-[#6:7]1:[#6:16]2:[#6:10](:[#6:11](:[#6:13]:[#6:14]:[#6:15]:2)-[Cl:12]):[nH:9]:[#6:8]:1)=[#8:5])=[#8:3]>>[#8:1]-[#6:2](-[#6:4]1:[#6:6](-[#6:7]2:[#6:16]3:[#6:10](:[#6:11](:[#6:13]:[#6:14]:[#6:15]:3)-[Cl:12]):[nH:9]:[#6:8]:2):[#6](-[#6]2:[#6]3:[#6](:[#6](:[#6]:[#6]:[#6]:3)-[Cl]):[nH]:[#6]:2):[#6](-[#6](=[#8])-[#8]):[nH]:1)=[#8:3]"
-            },
+            "reactionSMARTS": "[#8:1]-[#6:2](-[#6:4](-[#6:6]-[#6:7]1:[#6:16]2:[#6:10](:[#6:11](:[#6:13]:[#6:14]:[#6:15]:2)-[Cl:12]):[nH:9]:[#6:8]:1)=[#8:5])=[#8:3]>>[#8:1]-[#6:2](-[#6:4]1:[#6:6](-[#6:7]2:[#6:16]3:[#6:10](:[#6:11](:[#6:13]:[#6:14]:[#6:15]:3)-[Cl:12]):[nH:9]:[#6:8]:2):[#6](-[#6]2:[#6]3:[#6](:[#6](:[#6]:[#6]:[#6]:3)-[Cl]):[nH]:[#6]:2):[#6](-[#6](=[#8])-[#8]):[nH]:1)=[#8:3]",
             "reactions": [
                 {
                     "substrate": "O=C(O)C(=O)Cc1c[nH]c2c(Cl)cccc12",
@@ -52,16 +43,14 @@
                     "isIntermediate": true
                 }
             ],
-            "evidence": [
-                {
-                    "evidenceCode": [
-                        "Heterologous expression"
-                    ],
-                    "references": [
-                        "doi:10.1021/ja056749x"
-                    ]
-                }
-            ]
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1021/ja056749x"
+                ]
+            }
         }
     ]
 }

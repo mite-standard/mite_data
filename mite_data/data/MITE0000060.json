@@ -1,33 +1,26 @@
 {
     "accession": "MITE0000060",
     "status": "active",
-    "changelog": {
-        "releases": [
-            {
-                "version": "1.0",
-                "date": "2024-07-30",
-                "entries": [
-                    {
-                        "contributors": [
-                            "QLI3AUYAC552MNLPXGXAKUIB",
-                            "P75FRHHCFPTCPYSP65VDVPHW",
-                            "C5S3TPG4JF6AA26MUEX57QI3"
-                        ],
-                        "reviewers": [
-                            "BBBBBBBBBBBBBBBBBBBBBBBB"
-                        ],
-                        "date": "2024-05-14",
-                        "comment": "Initial entry."
-                    }
-                ]
-            }
-        ]
-    },
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "QLI3AUYAC552MNLPXGXAKUIB",
+                "P75FRHHCFPTCPYSP65VDVPHW",
+                "C5S3TPG4JF6AA26MUEX57QI3"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "Initial entry."
+        }
+    ],
     "enzyme": {
         "name": "pntI",
         "description": "Cytochrome P450",
         "references": [
-            "pubmed:21284395"
+            "doi:10.1021/ja111279h"
         ],
         "databaseIds": {
             "uniprot": "E3VWJ1",
@@ -40,9 +33,7 @@
             "tailoring": [
                 "Oxidation"
             ],
-            "reactionSMARTS": {
-                "reactionSMARTS": "[#6:14]-[#6@@H:12]1-[#6:13]-[#6:11]-[#6@H:8]2-[#6:7](-[#6:15])=[#6:6]-[#6:3]3-[#6:2][C@@:1]([#6:9])([#6:10])[#6:4][C@:5]123>>[#6:14]-[#6@@H:12]1-[#6:13]-[#6:11]-[#6@H:8]2-[#6:7](=[#6:6]-[#6:3]3-[#6:2][C@:1]([#6:10])([#6:9])[#6:4][C@:5]123)-[#6:15](-[#8:16])=[O:17] |r,c:6,22,@:10,@@:24|"
-            },
+            "reactionSMARTS": "[#6:14]-[#6@@H:12]1-[#6:13]-[#6:11]-[#6@H:8]2-[#6:7](-[#6:15])=[#6:6]-[#6:3]3-[#6:2][C@@:1]([#6:9])([#6:10])[#6:4][C@:5]123>>[#6:14]-[#6@@H:12]1-[#6:13]-[#6:11]-[#6@H:8]2-[#6:7](=[#6:6]-[#6:3]3-[#6:2][C@:1]([#6:10])([#6:9])[#6:4][C@:5]123)-[#6:15](-[#8:16])=[O:17] |r,c:6,22,@:10,@@:24|",
             "reactions": [
                 {
                     "substrate": "CC1=CC2CC(C)(C)C[C@@]23[C@H](C)CC[C@@H]13",
@@ -52,16 +43,14 @@
                     "isIntermediate": true
                 }
             ],
-            "evidence": [
-                {
-                    "evidenceCode": [
-                        "Inference from genomic data and chemical structure"
-                    ],
-                    "references": [
-                        "pubmed:21284395"
-                    ]
-                }
-            ]
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure"
+                ],
+                "references": [
+                    "doi:10.1021/ja111279h"
+                ]
+            }
         }
     ]
 }

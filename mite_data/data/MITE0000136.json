@@ -1,27 +1,20 @@
 {
     "accession": "MITE0000136",
     "status": "active",
-    "changelog": {
-        "releases": [
-            {
-                "version": "1.0",
-                "date": "2024-07-30",
-                "entries": [
-                    {
-                        "contributors": [
-                            "AP4OPPCC6CSE5F433WMY7TMD",
-                            "RQC4INAEW544B5HWWLI3CX2V"
-                        ],
-                        "reviewers": [
-                            "C62OJVVH7XOTOTFZSJT727YU"
-                        ],
-                        "date": "2024-06-07",
-                        "comment": "Initial entry. Added numbering to reaction SMARTS and added description. Fixed incorrect databaseIDs."
-                    }
-                ]
-            }
-        ]
-    },
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "AP4OPPCC6CSE5F433WMY7TMD",
+                "RQC4INAEW544B5HWWLI3CX2V"
+            ],
+            "reviewers": [
+                "C62OJVVH7XOTOTFZSJT727YU"
+            ],
+            "comment": "Initial entry. Added numbering to reaction SMARTS and added description. Fixed incorrect databaseIDs."
+        }
+    ],
     "enzyme": {
         "name": "THAA1",
         "description": "Acyltransferase subfamily IIIa from Arabidopsis lyrata ssp lyrata (Lyre-leaved rock-cress).",
@@ -38,9 +31,7 @@
             "tailoring": [
                 "Acetylation"
             ],
-            "reactionSMARTS": {
-                "reactionSMARTS": "[#6:1]-[#6:2](=[#6:4]-[#6:5]-[#6:6]-[#6:7](=[#6:9]-[#6:10](-[#6@@:12](-[#6@:14](-[#6@@:16]1(-[#6:21]2-[#6@:22](-[#6:24]/[#6@@:25]3-[#6@@:33](/[#6:34])(-[#6:20]=2-[#6:19]-[#6:18]-1)-[#6:32]-[#6:31]-[#6@:29](/[#8:30])-[#6:26]-3(-[#6:28])-[#6:27])/[#8:23])/[#6:17])\\[#6:15])\\[#8:13])=[#8:11])-[#6:8])-[#6:3]>>[#6]-[#6](-[#8:13]\\[#6@:12](-[#6@:14](-[#6@@:16]1(-[#6:21]2-[#6@:22](-[#6:24]/[#6@@:25]3-[#6@@:33](/[#6:34])(-[#6:20]=2-[#6:19]-[#6:18]-1)-[#6:32]-[#6:31]-[#6@:29](/[#8:30])-[#6:26]-3(-[#6:28])-[#6:27])/[#8:23])/[#6:17])\\[#6:15])-[#6:10](-[#6:9]=[#6:7](-[#6:6]-[#6:5]-[#6:4]=[#6:2](-[#6:1])-[#6:3])-[#6:8])=[#8:11])=[#8]"
-            },
+            "reactionSMARTS": "[#6:1]-[#6:2](=[#6:4]-[#6:5]-[#6:6]-[#6:7](=[#6:9]-[#6:10](-[#6@@:12](-[#6@:14](-[#6@@:16]1(-[#6:21]2-[#6@:22](-[#6:24]/[#6@@:25]3-[#6@@:33](/[#6:34])(-[#6:20]=2-[#6:19]-[#6:18]-1)-[#6:32]-[#6:31]-[#6@:29](/[#8:30])-[#6:26]-3(-[#6:28])-[#6:27])/[#8:23])/[#6:17])\\[#6:15])\\[#8:13])=[#8:11])-[#6:8])-[#6:3]>>[#6]-[#6](-[#8:13]\\[#6@:12](-[#6@:14](-[#6@@:16]1(-[#6:21]2-[#6@:22](-[#6:24]/[#6@@:25]3-[#6@@:33](/[#6:34])(-[#6:20]=2-[#6:19]-[#6:18]-1)-[#6:32]-[#6:31]-[#6@:29](/[#8:30])-[#6:26]-3(-[#6:28])-[#6:27])/[#8:23])/[#6:17])\\[#6:15])-[#6:10](-[#6:9]=[#6:7](-[#6:6]-[#6:5]-[#6:4]=[#6:2](-[#6:1])-[#6:3])-[#6:8])=[#8:11])=[#8]",
             "reactions": [
                 {
                     "substrate": "CC(C)=CCC/C(C)=C/C(=O)[C@H](O)[C@@H](C)[C@@]1(C)CCC2=C1[C@@H](O)C[C@H]1C(C)(C)[C@@H](O)CC[C@]21C",
@@ -50,16 +41,14 @@
                     "isIntermediate": true
                 }
             ],
-            "evidence": [
-                {
-                    "evidenceCode": [
-                        "Heterologous expression"
-                    ],
-                    "references": [
-                        "doi:10.1038/s41467-020-19153-6"
-                    ]
-                }
-            ]
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1038/s41467-020-19153-6"
+                ]
+            }
         }
     ]
 }

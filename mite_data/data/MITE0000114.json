@@ -1,28 +1,21 @@
 {
     "accession": "MITE0000114",
     "status": "active",
-    "changelog": {
-        "releases": [
-            {
-                "version": "1.0",
-                "date": "2024-07-30",
-                "entries": [
-                    {
-                        "contributors": [
-                            "M4JYS7EJ6SF34AKXEWFIK3JY",
-                            "YO3TP6VWB5CBNPZKNYNQSKUW"
-                        ],
-                        "reviewers": [
-                            "NJ6R5LEVTYWQEKC4XASTKZBC",
-                            "C62OJVVH7XOTOTFZSJT727YU"
-                        ],
-                        "date": "2024-04-24",
-                        "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer partially fixed reactions:substrate, validation still not passing. Reviewer partially fixed reactions:products, validation still not passing. Reviewer 2 reworked reaction SMARTS, reaction passes."
-                    }
-                ]
-            }
-        ]
-    },
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "M4JYS7EJ6SF34AKXEWFIK3JY",
+                "YO3TP6VWB5CBNPZKNYNQSKUW"
+            ],
+            "reviewers": [
+                "NJ6R5LEVTYWQEKC4XASTKZBC",
+                "C62OJVVH7XOTOTFZSJT727YU"
+            ],
+            "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer partially fixed reactions:substrate, validation still not passing. Reviewer partially fixed reactions:products, validation still not passing. Reviewer 2 reworked reaction SMARTS, reaction passes."
+        }
+    ],
     "enzyme": {
         "name": "NgnM",
         "description": "NgnM methylates the hydroxyl group at the 2-position of the macrolactone intermediate",
@@ -82,9 +75,7 @@
             "tailoring": [
                 "Methylation"
             ],
-            "reactionSMARTS": {
-                "reactionSMARTS": "[#6:1]/[#6@@:2](-[#6@@:4]1-[#6@:27](\\[#6:28])-[#6:26]=[#6:24](-[#6:25])/[#6@@:23]2-[#6@:11](-[#6:12]=[#6:13]/[#6@:14]3-[#6@:22]-2\\[#6@@:20](/[#8:21])-[#6@@:18](/[#6:19])-[#6@@:16](/[#8:17])-[#6:15]-3)\\[#6:10]-[#6@:8](\\[#8:9])-[#6:6](=[#8:7])-[#8:5]\\1)-[#8:3]>>[#6]-[#8:9]\\[#6@@:8]1-[#6:6](=[#8:7])-[#8:5]\\[#6@:4](-[#6@@:2](/[#8:3])-[#6:1])-[#6@:27](\\[#6:28])-[#6:26]=[#6:24](-[#6:25])/[#6@@:23]2-[#6@:11](-[#6:12]=[#6:13]/[#6@:14]3-[#6@:22]-2\\[#6@@:20](/[#8:21])-[#6@@:18](/[#6:19])-[#6@@:16](/[#8:17])-[#6:15]-3)\\[#6:10]-1"
-            },
+            "reactionSMARTS": "[#6:1]/[#6@@:2](-[#6@@:4]1-[#6@:27](\\[#6:28])-[#6:26]=[#6:24](-[#6:25])/[#6@@:23]2-[#6@:11](-[#6:12]=[#6:13]/[#6@:14]3-[#6@:22]-2\\[#6@@:20](/[#8:21])-[#6@@:18](/[#6:19])-[#6@@:16](/[#8:17])-[#6:15]-3)\\[#6:10]-[#6@:8](\\[#8:9])-[#6:6](=[#8:7])-[#8:5]\\1)-[#8:3]>>[#6]-[#8:9]\\[#6@@:8]1-[#6:6](=[#8:7])-[#8:5]\\[#6@:4](-[#6@@:2](/[#8:3])-[#6:1])-[#6@:27](\\[#6:28])-[#6:26]=[#6:24](-[#6:25])/[#6@@:23]2-[#6@:11](-[#6:12]=[#6:13]/[#6@:14]3-[#6@:22]-2\\[#6@@:20](/[#8:21])-[#6@@:18](/[#6:19])-[#6@@:16](/[#8:17])-[#6:15]-3)\\[#6:10]-1",
             "reactions": [
                 {
                     "substrate": "C/C1=C\\[C@@H](C)[C@@H]([C@H](C)O)OC(=O)[C@@H](O)C[C@H]2C=C[C@@H]3C[C@H](O)[C@H](C)[C@H](O)[C@H]3[C@H]12",
@@ -94,16 +85,14 @@
                     "isIntermediate": true
                 }
             ],
-            "evidence": [
-                {
-                    "evidenceCode": [
-                        "Knock-out studies"
-                    ],
-                    "references": [
-                        "doi:10.1021/acschembio.9b01034"
-                    ]
-                }
-            ]
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/acschembio.9b01034"
+                ]
+            }
         }
     ]
 }

@@ -1,26 +1,19 @@
 {
     "accession": "MITE0000124",
     "status": "active",
-    "changelog": {
-        "releases": [
-            {
-                "version": "1.0",
-                "date": "2024-07-30",
-                "entries": [
-                    {
-                        "contributors": [
-                            "P75FRHHCFPTCPYSP65VDVPHW"
-                        ],
-                        "reviewers": [
-                            "NJ6R5LEVTYWQEKC4XASTKZBC"
-                        ],
-                        "date": "2024-03-20",
-                        "comment": "Initial entry. Reviewer fixed reactionSMARTS:reactionSMARTS."
-                    }
-                ]
-            }
-        ]
-    },
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "P75FRHHCFPTCPYSP65VDVPHW"
+            ],
+            "reviewers": [
+                "NJ6R5LEVTYWQEKC4XASTKZBC"
+            ],
+            "comment": "Initial entry. Reviewer fixed reactionSMARTS:reactionSMARTS."
+        }
+    ],
     "enzyme": {
         "name": "juiL",
         "description": "F420-dependent oxidoreductase",
@@ -38,9 +31,7 @@
             "tailoring": [
                 "Reduction"
             ],
-            "reactionSMARTS": {
-                "reactionSMARTS": "[#6:3]-[#6@H:2](-[#8:1])-[#6:4]-[#6:5](=[O:6])-[c:7]1[c:8](-[#6:19]-[#6:20](-[#6:21])=[O:22])[c:9][c:10]2[c:11][c:12][c:13][c:14](-[#8:15])[c:16]2[c:17]1-[#8:18]>>[#6:3]-[#6@H:2](-[#8:1])-[#6:4]-[#6:5](=[O:6])-[c:7]1[c:8](-[#6:19]-[#6@@H:20](-[#6:21])-[#8:22])[c:9][c:10]2[c:11][c:12][c:13][c:14](-[#8:15])[c:16]2[c:17]1-[#8:18]"
-            },
+            "reactionSMARTS": "[#6:3]-[#6@H:2](-[#8:1])-[#6:4]-[#6:5](=[O:6])-[c:7]1[c:8](-[#6:19]-[#6:20](-[#6:21])=[O:22])[c:9][c:10]2[c:11][c:12][c:13][c:14](-[#8:15])[c:16]2[c:17]1-[#8:18]>>[#6:3]-[#6@H:2](-[#8:1])-[#6:4]-[#6:5](=[O:6])-[c:7]1[c:8](-[#6:19]-[#6@@H:20](-[#6:21])-[#8:22])[c:9][c:10]2[c:11][c:12][c:13][c:14](-[#8:15])[c:16]2[c:17]1-[#8:18]",
             "reactions": [
                 {
                     "substrate": "CC(=O)Cc1cc2cccc(O)c2c(O)c1C(=O)C[C@H](C)O",
@@ -50,16 +41,14 @@
                     "isIntermediate": true
                 }
             ],
-            "evidence": [
-                {
-                    "evidenceCode": [
-                        "Knock-out studies"
-                    ],
-                    "references": [
-                        "doi:10.1021/acs.orglett.0c02469"
-                    ]
-                }
-            ]
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/acs.orglett.0c02469"
+                ]
+            }
         }
     ]
 }

@@ -1,33 +1,26 @@
 {
     "accession": "MITE0000013",
     "status": "active",
-    "changelog": {
-        "releases": [
-            {
-                "version": "1.0",
-                "date": "2024-07-30",
-                "entries": [
-                    {
-                        "contributors": [
-                            "6QCS3DG25AGWNE77BXBLFKVB",
-                            "HSOJFFPY5IUT4HBQLSN7DGJX"
-                        ],
-                        "reviewers": [
-                            "C62OJVVH7XOTOTFZSJT727YU"
-                        ],
-                        "date": "2024-05-14",
-                        "comment": "Initial entry. Reviewer 1 had to remove part of the reaction SMARTS to allow matching of the intended substrate in RDKit."
-                    }
-                ]
-            }
-        ]
-    },
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "6QCS3DG25AGWNE77BXBLFKVB",
+                "HSOJFFPY5IUT4HBQLSN7DGJX"
+            ],
+            "reviewers": [
+                "C62OJVVH7XOTOTFZSJT727YU"
+            ],
+            "comment": "Initial entry. Reviewer 1 had to remove part of the reaction SMARTS to allow matching of the intended substrate in RDKit."
+        }
+    ],
     "enzyme": {
         "name": "GrhO6",
         "description": "Flavoprotein monooxygenase",
         "references": [
-            "pubmed:33664266",
-            "pubmed:35799824"
+            "doi:10.1038/s41467-021-21432-9",
+            "doi:10.1039/d2sc01952c"
         ],
         "databaseIds": {
             "uniprot": "Q8KSX5",
@@ -40,9 +33,7 @@
             "tailoring": [
                 "Monooxygenation"
             ],
-            "reactionSMARTS": {
-                "reactionSMARTS": "[#6:33]1(-[#6:9]2:[#6:8](-[#8:35]):[#6:7]3:[#6:6](:[#6:4](-[#8:5]):[#6:3](:[#6:38]:[#6:36]:3-[#8:37])-[#8:2]-[#6:1]):[#6:11](:[#6:10]:2-[#6:98](=[#8:99])-[#8:15]-[#6:16]2-1-[#8:17]-[#6:18]1:[#6:23](-[#8:24]):[#6:22]:[#6:21]:[#6:20]:[#6:19]:1-[#6:31]-[#6:32]-2)-[#8:12])=[#8:34]>>[#6:9]12:[#6:8](-[#8:35]):[#6:7]3:[#6:6](:[#6:11](:[#6:10]:1-[#8:15]-[#6:16]1(-[#8:17]-[#6:18]4:[#6:23](-[#8:24]):[#6:22]:[#6:21]:[#6:20]:[#6:19]:4-[#6:31]-[#6:32]-1)-[#6:33]-2=[#8:34])-[#8:12]):[#6:4](-[#8:5]):[#6:3](:[#6:38]:[#6:36]:3-[#8:37])-[#8:2]-[#6:1]"
-            },
+            "reactionSMARTS": "[#6:33]1(-[#6:9]2:[#6:8](-[#8:35]):[#6:7]3:[#6:6](:[#6:4](-[#8:5]):[#6:3](:[#6:38]:[#6:36]:3-[#8:37])-[#8:2]-[#6:1]):[#6:11](:[#6:10]:2-[#6:98](=[#8:99])-[#8:15]-[#6:16]2-1-[#8:17]-[#6:18]1:[#6:23](-[#8:24]):[#6:22]:[#6:21]:[#6:20]:[#6:19]:1-[#6:31]-[#6:32]-2)-[#8:12])=[#8:34]>>[#6:9]12:[#6:8](-[#8:35]):[#6:7]3:[#6:6](:[#6:11](:[#6:10]:1-[#8:15]-[#6:16]1(-[#8:17]-[#6:18]4:[#6:23](-[#8:24]):[#6:22]:[#6:21]:[#6:20]:[#6:19]:4-[#6:31]-[#6:32]-1)-[#6:33]-2=[#8:34])-[#8:12]):[#6:4](-[#8:5]):[#6:3](:[#6:38]:[#6:36]:3-[#8:37])-[#8:2]-[#6:1]",
             "reactions": [
                 {
                     "substrate": "COc1cc(O)c2c(O)c3c(c(O)c2c1O)C(=O)OC1(CCc2cc4cc(C)oc(=O)c4c(O)c2O1)C3=O",
@@ -52,17 +43,15 @@
                     "isIntermediate": true
                 }
             ],
-            "evidence": [
-                {
-                    "evidenceCode": [
-                        "In vitro assay"
-                    ],
-                    "references": [
-                        "pubmed:33664266",
-                        "pubmed:35799824"
-                    ]
-                }
-            ]
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1038/s41467-021-21432-9",
+                    "doi:10.1039/d2sc01952c"
+                ]
+            }
         }
     ]
 }
