@@ -1,27 +1,20 @@
 {
     "accession": "MITE0000163",
     "status": "active",
-    "changelog": {
-        "releases": [
-            {
-                "version": "1.0",
-                "date": "2024-07-30",
-                "entries": [
-                    {
-                        "contributors": [
-                            "XHGUMDYTPFJLKYNSR4GE4XPC",
-                            "EKZKD775F36BLONCQ7EXF7ZS"
-                        ],
-                        "reviewers": [
-                            "BBBBBBBBBBBBBBBBBBBBBBBB"
-                        ],
-                        "date": "2024-05-14",
-                        "comment": "Initial entry."
-                    }
-                ]
-            }
-        ]
-    },
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "XHGUMDYTPFJLKYNSR4GE4XPC",
+                "EKZKD775F36BLONCQ7EXF7ZS"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "Initial entry."
+        }
+    ],
     "enzyme": {
         "name": "PhoH",
         "description": "Decarboxylase",
@@ -38,9 +31,7 @@
             "tailoring": [
                 "Decarboxylation"
             ],
-            "reactionSMARTS": {
-                "reactionSMARTS": "[#6:23][C:22]1([#8:1])[#6:21]-[c:20]2[c:19][c:18]3[c:17][c:16](-[#8:2])[c:15][c:14](-[#8:3])[c:13]3[c:12](-[#8:4])[c:11]2-[#6:10](=[O:9])-[#6:8]1-[#6:7](-[#8-:5])=[O:6]>>[#6:23][C:22]1([#8:1])[#6:8]-[#6:10](=[O:9])-[c:11]2[c:12](-[#8:4])[c:13]3[c:14](-[#8:3])[c:15][c:16](-[#8:2])[c:17][c:18]3[c:19][c:20]2-[#6:21]1"
-            },
+            "reactionSMARTS": "[#6:23][C:22]1([#8:1])[#6:21]-[c:20]2[c:19][c:18]3[c:17][c:16](-[#8:2])[c:15][c:14](-[#8:3])[c:13]3[c:12](-[#8:4])[c:11]2-[#6:10](=[O:9])-[#6:8]1-[#6:7](-[#8-:5])=[O:6]>>[#6:23][C:22]1([#8:1])[#6:8]-[#6:10](=[O:9])-[c:11]2[c:12](-[#8:4])[c:13]3[c:14](-[#8:3])[c:15][c:16](-[#8:2])[c:17][c:18]3[c:19][c:20]2-[#6:21]1",
             "reactions": [
                 {
                     "substrate": "CC1(O)Cc2cc3cc(O)cc(O)c3c(O)c2C(=O)C1C(=O)[O-]",
@@ -50,16 +41,14 @@
                     "isIntermediate": true
                 }
             ],
-            "evidence": [
-                {
-                    "evidenceCode": [
-                        "Heterologous expression"
-                    ],
-                    "references": [
-                        "doi:10.1021/acs.orglett.2c01050"
-                    ]
-                }
-            ]
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1021/acs.orglett.2c01050"
+                ]
+            }
         }
     ]
 }

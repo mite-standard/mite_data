@@ -1,30 +1,23 @@
 {
     "accession": "MITE0000129",
     "status": "active",
-    "changelog": {
-        "releases": [
-            {
-                "version": "1.0",
-                "date": "2024-07-30",
-                "entries": [
-                    {
-                        "contributors": [
-                            "5EV2ZHN6GEKCSCIWNEHXDURC",
-                            "4CEPXXFDQQ46VQJXBT4B4AUO",
-                            "P75FRHHCFPTCPYSP65VDVPHW",
-                            "SKC4XYF2AQLXBPOFDVNEXQZ2"
-                        ],
-                        "reviewers": [
-                            "NJ6R5LEVTYWQEKC4XASTKZBC",
-                            "C62OJVVH7XOTOTFZSJT727YU"
-                        ],
-                        "date": "2024-07-23",
-                        "comment": "Initial entry. Reviewer partially fixed reactions:substrate, validation still not passing. Reviewer partially fixed reactions:products, validation still not passing. Reviewer 2 removed chirality information, reaction passes."
-                    }
-                ]
-            }
-        ]
-    },
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "5EV2ZHN6GEKCSCIWNEHXDURC",
+                "4CEPXXFDQQ46VQJXBT4B4AUO",
+                "P75FRHHCFPTCPYSP65VDVPHW",
+                "SKC4XYF2AQLXBPOFDVNEXQZ2"
+            ],
+            "reviewers": [
+                "NJ6R5LEVTYWQEKC4XASTKZBC",
+                "C62OJVVH7XOTOTFZSJT727YU"
+            ],
+            "comment": "Initial entry. Reviewer partially fixed reactions:substrate, validation still not passing. Reviewer partially fixed reactions:products, validation still not passing. Reviewer 2 removed chirality information, reaction passes."
+        }
+    ],
     "enzyme": {
         "name": "ThnJ",
         "description": "Aminotransferase",
@@ -41,9 +34,7 @@
             "tailoring": [
                 "Deamination"
             ],
-            "reactionSMARTS": {
-                "reactionSMARTS": "[NH2:1][CH:2]([CH2:3][c:4]1[cH:5][nH:6][c:7]2[cH:8][c:9]([Cl:16])[cH:10][cH:11][c:12]12)[C:13]([OH:14])=[O:15]>>[O:1]=[C:2]([CH2:3][c:4]1[cH:5][nH:6][c:7]2[cH:8][c:9]([Cl:16])[cH:10][cH:11][c:12]12)[C:13]([OH:14])=[O:15]"
-            },
+            "reactionSMARTS": "[NH2:1][CH:2]([CH2:3][c:4]1[cH:5][nH:6][c:7]2[cH:8][c:9]([Cl:16])[cH:10][cH:11][c:12]12)[C:13]([OH:14])=[O:15]>>[O:1]=[C:2]([CH2:3][c:4]1[cH:5][nH:6][c:7]2[cH:8][c:9]([Cl:16])[cH:10][cH:11][c:12]12)[C:13]([OH:14])=[O:15]",
             "reactions": [
                 {
                     "substrate": "NC(Cc1c[nH]c2cc(Cl)ccc12)C(=O)O",
@@ -54,18 +45,16 @@
                     "description": "Should actually be L-chlorotryptophan."
                 }
             ],
-            "evidence": [
-                {
-                    "evidenceCode": [
-                        "In vitro assay",
-                        "Heterologous expression",
-                        "Knock-out studies"
-                    ],
-                    "references": [
-                        "doi:10.1002/cbic.201500670"
-                    ]
-                }
-            ]
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Heterologous expression",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1002/cbic.201500670"
+                ]
+            }
         }
     ]
 }

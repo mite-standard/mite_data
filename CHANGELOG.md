@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [1.4] 09-11-2024
+
+### Changed
+
+- Updated entries to adhere to MITE schema version `1.5.1`
+
 ## [1.3] 21-10-2024
 
 ### Changed

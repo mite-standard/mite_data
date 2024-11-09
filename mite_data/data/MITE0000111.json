@@ -1,27 +1,20 @@
 {
     "accession": "MITE0000111",
     "status": "active",
-    "changelog": {
-        "releases": [
-            {
-                "version": "1.0",
-                "date": "2024-07-30",
-                "entries": [
-                    {
-                        "contributors": [
-                            "M4JYS7EJ6SF34AKXEWFIK3JY",
-                            "YO3TP6VWB5CBNPZKNYNQSKUW"
-                        ],
-                        "reviewers": [
-                            "NJ6R5LEVTYWQEKC4XASTKZBC"
-                        ],
-                        "date": "2024-04-24",
-                        "comment": "Initial entry. Reviewer fixed reactionSMARTS:reactionSMARTS. Reviewer fixed reactions:substrate. Reviewer fixed reactions:products."
-                    }
-                ]
-            }
-        ]
-    },
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "M4JYS7EJ6SF34AKXEWFIK3JY",
+                "YO3TP6VWB5CBNPZKNYNQSKUW"
+            ],
+            "reviewers": [
+                "NJ6R5LEVTYWQEKC4XASTKZBC"
+            ],
+            "comment": "Initial entry. Reviewer fixed reactionSMARTS:reactionSMARTS. Reviewer fixed reactions:substrate. Reviewer fixed reactions:products."
+        }
+    ],
     "enzyme": {
         "name": "NgnO3",
         "description": "NgnO3 catalyzes the formation of the ether bridge moiety at position C8/C13 of the substrate molecules.",
@@ -81,9 +74,7 @@
             "tailoring": [
                 "Other"
             ],
-            "reactionSMARTS": {
-                "reactionSMARTS": "[#6:1]-[#8:2]-[#6@H:3]-1-[#6:4]-[#6@H:5]-2-[#6:6]=[#6:7]-[#6@@H:8]-3-[#6:9]-[#6@H:10](-[#8:11])-[#6@H:12](-[#6:13])-[#6@H:14](-[#8:15])-[#6@H:16]-3-[#6@@H:17]-2\\[#6:18](-[#6:19])=[#6:20]\\[#6@@H:21](-[#6:22])-[#6@H:23](-[#8:24]-[#6:25]-1=[O:26])-[#6@H:27](-[#6:28])-[#8:29]>>[#6:1]-[#8:2]-[#6@H:3]-1-[#6:4]-[#6@H:5]2-[#6:6]=[#6:7]-[#6@H:8]-3-[#6@H:9]-4-[#8:10][C@@:11]2([#6@@H:12]-3-[#6@@H:13](-[#8:14])-[#6@@H:15](-[#6:16])-[#6@H:17]-4-[#8:18])\\[#6:19](-[#6:20])=[#6:21]\\[#6@@H:22](-[#6:23])-[#6@H:24](-[#8:25]-[#6:26]-1=[O:27])-[#6@H:28](-[#6:29])-[#8:30]"
-            },
+            "reactionSMARTS": "[#6:1]-[#8:2]-[#6@H:3]-1-[#6:4]-[#6@H:5]-2-[#6:6]=[#6:7]-[#6@@H:8]-3-[#6:9]-[#6@H:10](-[#8:11])-[#6@H:12](-[#6:13])-[#6@H:14](-[#8:15])-[#6@H:16]-3-[#6@@H:17]-2\\[#6:18](-[#6:19])=[#6:20]\\[#6@@H:21](-[#6:22])-[#6@H:23](-[#8:24]-[#6:25]-1=[O:26])-[#6@H:27](-[#6:28])-[#8:29]>>[#6:1]-[#8:2]-[#6@H:3]-1-[#6:4]-[#6@H:5]2-[#6:6]=[#6:7]-[#6@H:8]-3-[#6@H:9]-4-[#8:10][C@@:11]2([#6@@H:12]-3-[#6@@H:13](-[#8:14])-[#6@@H:15](-[#6:16])-[#6@H:17]-4-[#8:18])\\[#6:19](-[#6:20])=[#6:21]\\[#6@@H:22](-[#6:23])-[#6@H:24](-[#8:25]-[#6:26]-1=[O:27])-[#6@H:28](-[#6:29])-[#8:30]",
             "reactions": [
                 {
                     "substrate": "CO[C@H]1C[C@H]2C=C[C@@H]3C[C@H](O)[C@H](C)[C@H](O)[C@H]3[C@@H]2/C(C)=C/[C@@H](C)[C@@H]([C@H](C)O)OC1=O",
@@ -93,16 +84,14 @@
                     "isIntermediate": false
                 }
             ],
-            "evidence": [
-                {
-                    "evidenceCode": [
-                        "Knock-out studies"
-                    ],
-                    "references": [
-                        "doi:10.1021/acschembio.9b01034"
-                    ]
-                }
-            ]
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/acschembio.9b01034"
+                ]
+            }
         }
     ]
 }

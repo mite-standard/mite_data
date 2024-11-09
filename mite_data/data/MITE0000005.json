@@ -1,27 +1,20 @@
 {
     "accession": "MITE0000005",
     "status": "active",
-    "changelog": {
-        "releases": [
-            {
-                "version": "1.0",
-                "date": "2024-07-30",
-                "entries": [
-                    {
-                        "contributors": [
-                            "MGLE5JJ3S32DQA3YR5WPYH4W",
-                            "P75FRHHCFPTCPYSP65VDVPHW"
-                        ],
-                        "reviewers": [
-                            "BBBBBBBBBBBBBBBBBBBBBBBB"
-                        ],
-                        "date": "2024-06-04",
-                        "comment": "Initial entry."
-                    }
-                ]
-            }
-        ]
-    },
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "MGLE5JJ3S32DQA3YR5WPYH4W",
+                "P75FRHHCFPTCPYSP65VDVPHW"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "Initial entry."
+        }
+    ],
     "enzyme": {
         "name": "CalO3",
         "description": "Flavin-dependent halogenase",
@@ -40,9 +33,7 @@
                 "Halogenation"
             ],
             "description": "‘R’ is anticipated to be an ACP or CoA thioester.",
-            "reactionSMARTS": {
-                "reactionSMARTS": "[#6:13]-[#8:10]-[c:5]1[c:4][c:3](-[#8:11])[c:2][c:1](-[#6:7])[c:6]1-[#6:8](-[*])=[O:9]>>[#6:13]-[#8:10]-[c:5]1[c:4][c:3](-[#8:11])[c:2]([I:14])[c:1](-[#6:7])[c:6]1-[#6:8](-[*])=[O:9] |$;;;;;;;;;;;_R0;;;;;;;;;;;;;;_R0;$|"
-            },
+            "reactionSMARTS": "[#6:13]-[#8:10]-[c:5]1[c:4][c:3](-[#8:11])[c:2][c:1](-[#6:7])[c:6]1-[#6:8](-[*])=[O:9]>>[#6:13]-[#8:10]-[c:5]1[c:4][c:3](-[#8:11])[c:2]([I:14])[c:1](-[#6:7])[c:6]1-[#6:8](-[*])=[O:9] |$;;;;;;;;;;;_R0;;;;;;;;;;;;;;_R0;$|",
             "reactions": [
                 {
                     "substrate": "*C(=O)c1c(C)cc(O)cc1OC",
@@ -52,16 +43,14 @@
                     "isIntermediate": true
                 }
             ],
-            "evidence": [
-                {
-                    "evidenceCode": [
-                        "Inference from genomic data and chemical structure"
-                    ],
-                    "references": [
-                        "doi:10.1002/prot.22131"
-                    ]
-                }
-            ]
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure"
+                ],
+                "references": [
+                    "doi:10.1002/prot.22131"
+                ]
+            }
         }
     ]
 }

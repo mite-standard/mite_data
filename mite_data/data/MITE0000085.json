@@ -1,27 +1,20 @@
 {
     "accession": "MITE0000085",
     "status": "active",
-    "changelog": {
-        "releases": [
-            {
-                "version": "1.0",
-                "date": "2024-07-30",
-                "entries": [
-                    {
-                        "contributors": [
-                            "P75FRHHCFPTCPYSP65VDVPHW"
-                        ],
-                        "reviewers": [
-                            "NJ6R5LEVTYWQEKC4XASTKZBC",
-                            "C62OJVVH7XOTOTFZSJT727YU"
-                        ],
-                        "date": "2024-05-06",
-                        "comment": "Initial entry. Reviewer 1 partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer 2 fixed aromaticity of SMILES and reaction SMARTS, reaction passing"
-                    }
-                ]
-            }
-        ]
-    },
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "P75FRHHCFPTCPYSP65VDVPHW"
+            ],
+            "reviewers": [
+                "NJ6R5LEVTYWQEKC4XASTKZBC",
+                "C62OJVVH7XOTOTFZSJT727YU"
+            ],
+            "comment": "Initial entry. Reviewer 1 partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer 2 fixed aromaticity of SMILES and reaction SMARTS, reaction passing"
+        }
+    ],
     "enzyme": {
         "name": "NapB5",
         "description": "putative methyltransferase",
@@ -39,9 +32,7 @@
             "tailoring": [
                 "Methylation"
             ],
-            "reactionSMARTS": {
-                "reactionSMARTS": "[#8:1]-[#6:2]1:[#6:8]:[#6:7]2-[#6:9](-[#6:11](=[#6:13]-[#6:14](=[#8:15])-[#6:6]:2:[#6:4](-[#8:5]):[#6:3]:1)-[#8:12])=[#8:10]>>[#8:1]-[#6:2]1:[#6:8]:[#6:7]2-[#6:9](-[#6:11](=[#6:13]-[#6:14](=[#8:15])-[#6:6]:2:[#6:4](-[#8:5]):[#6:3]:1-[#6])-[#8:12])=[#8:10]"
-            },
+            "reactionSMARTS": "[#8:1]-[#6:2]1:[#6:8]:[#6:7]2-[#6:9](-[#6:11](=[#6:13]-[#6:14](=[#8:15])-[#6:6]:2:[#6:4](-[#8:5]):[#6:3]:1)-[#8:12])=[#8:10]>>[#8:1]-[#6:2]1:[#6:8]:[#6:7]2-[#6:9](-[#6:11](=[#6:13]-[#6:14](=[#8:15])-[#6:6]:2:[#6:4](-[#8:5]):[#6:3]:1-[#6])-[#8:12])=[#8:10]",
             "reactions": [
                 {
                     "substrate": "O=C1C(O)=CC(=O)c2c(O)cc(O)cc21",
@@ -51,17 +42,15 @@
                     "isIntermediate": true
                 }
             ],
-            "evidence": [
-                {
-                    "evidenceCode": [
-                        "Inference from genomic data and chemical structure"
-                    ],
-                    "references": [
-                        "doi:10.1074/jbc.M611046200",
-                        "doi:10.1021/ja201088k"
-                    ]
-                }
-            ]
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure"
+                ],
+                "references": [
+                    "doi:10.1074/jbc.M611046200",
+                    "doi:10.1021/ja201088k"
+                ]
+            }
         }
     ]
 }

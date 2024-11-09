@@ -1,27 +1,20 @@
 {
     "accession": "MITE0000104",
     "status": "active",
-    "changelog": {
-        "releases": [
-            {
-                "version": "1.0",
-                "date": "2024-07-30",
-                "entries": [
-                    {
-                        "contributors": [
-                            "YMNBNYWEKI2BEKVVGTVE6OUH",
-                            "FNDAVAB6GIJQLFPWCTUHK6QO"
-                        ],
-                        "reviewers": [
-                            "NJ6R5LEVTYWQEKC4XASTKZBC"
-                        ],
-                        "date": "2024-05-13",
-                        "comment": "Initial entry. Reviewer partially fixed general aromaticity."
-                    }
-                ]
-            }
-        ]
-    },
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "YMNBNYWEKI2BEKVVGTVE6OUH",
+                "FNDAVAB6GIJQLFPWCTUHK6QO"
+            ],
+            "reviewers": [
+                "NJ6R5LEVTYWQEKC4XASTKZBC"
+            ],
+            "comment": "Initial entry. Reviewer partially fixed general aromaticity."
+        }
+    ],
     "enzyme": {
         "name": "TrlC",
         "description": "Oxygenase component of flavoprotein monooxygenase TrlCD, catalyzes subsequent hydroxylation from tropolone to 7-hydroxytropolone and 3,7-dihydroxytropolone",
@@ -49,9 +42,7 @@
             "tailoring": [
                 "Hydroxylation"
             ],
-            "reactionSMARTS": {
-                "reactionSMARTS": "[#8:1]-[c:2]1[c:3][c:4][c:5][c:6][c:7](-[#8:8])[c:9]1=[O:10]>>[#8:7]-[c:6]1[c:5][c:4][c:3][c:2](-[#8:1])[c:10](=[O:11])[c:8]1-[#8:9]"
-            },
+            "reactionSMARTS": "[#8:1]-[c:2]1[c:3][c:4][c:5][c:6][c:7](-[#8:8])[c:9]1=[O:10]>>[#8:7]-[c:6]1[c:5][c:4][c:3][c:2](-[#8:1])[c:10](=[O:11])[c:8]1-[#8:9]",
             "reactions": [
                 {
                     "substrate": "O=c1c(O)ccccc1O",
@@ -61,24 +52,20 @@
                     "isIntermediate": false
                 }
             ],
-            "evidence": [
-                {
-                    "evidenceCode": [
-                        "In vitro assay"
-                    ],
-                    "references": [
-                        "doi:10.1039/d4sc01715c"
-                    ]
-                }
-            ]
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1039/d4sc01715c"
+                ]
+            }
         },
         {
             "tailoring": [
                 "Hydroxylation"
             ],
-            "reactionSMARTS": {
-                "reactionSMARTS": "[#8:1]-[c:2]1[c:3][c:4][c:5][c:6][c:7][c:8]1=[O:9]>>[#8:1]-[c:2]1[c:3][c:4][c:5][c:6][c:7](-[#8:8])[c:9]1=[O:10]"
-            },
+            "reactionSMARTS": "[#8:1]-[c:2]1[c:3][c:4][c:5][c:6][c:7][c:8]1=[O:9]>>[#8:1]-[c:2]1[c:3][c:4][c:5][c:6][c:7](-[#8:8])[c:9]1=[O:10]",
             "reactions": [
                 {
                     "substrate": "O=c1cccccc1O",
@@ -88,16 +75,14 @@
                     "isIntermediate": true
                 }
             ],
-            "evidence": [
-                {
-                    "evidenceCode": [
-                        "In vitro assay"
-                    ],
-                    "references": [
-                        "doi:10.1039/d4sc01715c"
-                    ]
-                }
-            ]
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1039/d4sc01715c"
+                ]
+            }
         }
     ]
 }

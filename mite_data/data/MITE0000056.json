@@ -1,27 +1,20 @@
 {
     "accession": "MITE0000056",
     "status": "active",
-    "changelog": {
-        "releases": [
-            {
-                "version": "1.0",
-                "date": "2024-07-30",
-                "entries": [
-                    {
-                        "contributors": [
-                            "G42B4RI57WLTDHDCD4PMU3MJ",
-                            "C62OJVVH7XOTOTFZSJT727YU"
-                        ],
-                        "reviewers": [
-                            "BBBBBBBBBBBBBBBBBBBBBBBB"
-                        ],
-                        "date": "2024-07-23",
-                        "comment": "Initial entry."
-                    }
-                ]
-            }
-        ]
-    },
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "G42B4RI57WLTDHDCD4PMU3MJ",
+                "C62OJVVH7XOTOTFZSJT727YU"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "Initial entry."
+        }
+    ],
     "enzyme": {
         "name": "McjB",
         "description": "Lassopeptide ATP-dependent protease (B-protein, cysteine protease-like)",
@@ -51,9 +44,7 @@
                 "Hydrolysis"
             ],
             "description": "ATP-dependent N-terminal cleavage of leader peptide, resulting in immature intermediate core peptide.",
-            "reactionSMARTS": {
-                "reactionSMARTS": "[#6:1]-[#6:2](-[#6:3])-[#6:4]-[#6@H:5](-[#7:6]-[#6:7](=[O:8])-[#6@H:9](-[#6:10]-[#6:11]-[#6:12](-[#7:13])=[O:14])-[#7:15]-[#6:16](=[O:17])-[#6@H:18](-[#6:19]-[#8:20])-[#7:21]-[#6:22](=[O:23])-[#6@H:24](-[#6:25])-[#7:26]-[#6:27](=[O:28])-[#6@H:29](-[#6:30]-[#8:31])-[#7:32]-[#6:33](=[O:34])-[#6@@H:35](-[#7:36])-[#6:37]-[#6:38]-[#6:39]-[#6:40]-[#7:41])-[#6:42](=[O:43])-[#7:44]-[#6@@H:45](-[#6@@H:62](-[#6:63])-[#8:64])-[#6:46](=[O:47])-[#7:48]-[#6@@H:49](-[#6:50]-[#6:51]-[#6:52]-[#6:53]-[#7:54])-[#6:55](=[O:56])-[#7:57]-[#6:58]-[#6:59](-[#7:61])=[O:60]>>[#7:57]-[#6:58]-[#6:59](-[#7:61])=[O:60]"
-            },
+            "reactionSMARTS": "[#6:1]-[#6:2](-[#6:3])-[#6:4]-[#6@H:5](-[#7:6]-[#6:7](=[O:8])-[#6@H:9](-[#6:10]-[#6:11]-[#6:12](-[#7:13])=[O:14])-[#7:15]-[#6:16](=[O:17])-[#6@H:18](-[#6:19]-[#8:20])-[#7:21]-[#6:22](=[O:23])-[#6@H:24](-[#6:25])-[#7:26]-[#6:27](=[O:28])-[#6@H:29](-[#6:30]-[#8:31])-[#7:32]-[#6:33](=[O:34])-[#6@@H:35](-[#7:36])-[#6:37]-[#6:38]-[#6:39]-[#6:40]-[#7:41])-[#6:42](=[O:43])-[#7:44]-[#6@@H:45](-[#6@@H:62](-[#6:63])-[#8:64])-[#6:46](=[O:47])-[#7:48]-[#6@@H:49](-[#6:50]-[#6:51]-[#6:52]-[#6:53]-[#7:54])-[#6:55](=[O:56])-[#7:57]-[#6:58]-[#6:59](-[#7:61])=[O:60]>>[#7:57]-[#6:58]-[#6:59](-[#7:61])=[O:60]",
             "reactions": [
                 {
                     "substrate": "CC[C@H](C)[C@H](NC(=O)CNC(=O)[C@@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](Cc1ccc(O)cc1)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@@H]1CCCN1C(=O)[C@@H](NC(=O)[C@H](Cc1c[nH]cn1)NC(=O)CNC(=O)[C@H](C)NC(=O)CNC(=O)CNC(=O)[C@H](CCCCN)NC(=O)[C@@H](NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](CO)NC(=O)[C@H](C)NC(=O)[C@H](CO)NC(=O)[C@H](CCCCN)NC(=O)[C@H](CCCCN)NC(=O)[C@@H](NC(=O)[C@H](CCC(N)=O)NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)CNC(=O)[C@H](CCCCN)NC(=O)[C@H](C)NC(=O)[C@@H]1CCCN1C(=O)[C@H](CO)NC(=O)[C@@H]1CCCN1C(=O)[C@@H](NC(=O)[C@H](CC(N)=O)NC(=O)[C@H](CC(N)=O)NC(=O)[C@H](CCCCN)NC(=O)[C@H](CCCCN)NC(=O)CNC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CCCCN)NC(=O)[C@H](CC(N)=O)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](Cc1c[nH]cn1)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](Cc1c[nH]cn1)NC(=O)[C@H](CCCCN)NC(=O)[C@@H](NC(=O)[C@@H](N)CCSC)[C@@H](C)CC)C(C)C)C(C)C)[C@@H](C)CC)[C@@H](C)CC)[C@@H](C)O)C(C)C)C(C)C)C(=O)NCC(=O)N[C@H](C(=O)N1CCC[C@H]1C(=O)N[C@H](C(=O)N[C@@H](CO)C(=O)N[C@@H](Cc1ccccc1)C(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)NCC(=O)O)[C@@H](C)CC)[C@@H](C)O",
@@ -64,18 +55,16 @@
                     "description": "Precursor cleavage of the McjA precursor peptide, resulting in the intermediate core peptide before macrolactam formation."
                 }
             ],
-            "evidence": [
-                {
-                    "evidenceCode": [
-                        "Site-directed mutagenesis",
-                        "Heterologous expression"
-                    ],
-                    "references": [
-                        "doi:10.1021/ja910191u",
-                        "doi:10.1002/cbic.201200016"
-                    ]
-                }
-            ]
+            "evidence": {
+                "evidenceCode": [
+                    "Site-directed mutagenesis",
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1021/ja910191u",
+                    "doi:10.1002/cbic.201200016"
+                ]
+            }
         }
     ]
 }
