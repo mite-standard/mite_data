@@ -39,7 +39,7 @@ class MetadataManager(BaseModel):
         src: a Path towards the source directory
         target: a Path towards the target (storage) directory
         metadata_general: a dict collecting MITE metadata with MITE IDs as keys for internal use
-        metadata_mibig: a dict collecting MITE metadata with MIBiG IDs as keys for use in MIBiG
+        metadata_mibig: a list collecting MITE metadata
     """
 
     src: DirectoryPath = Path(__file__).parent.parent.joinpath("data/")
@@ -87,14 +87,16 @@ class MetadataManager(BaseModel):
 
         mite: the MITE JSON derived dict to extract data from
         """
-        self.metadata_mibig["entries"][
-            mite.get("enzyme", {}).get("databaseIds", {}).get("mibig", "BGC0000000")
-        ] = {
-            "mite_accession": mite.get("accession"),
+        mibig = mite.get("enzyme", {}).get("databaseIds", {}).get("mibig")
+        if mibig is None:
+            return
+
+        entry = {
+            "mite_accession": mite["accession"],
             "mite_url": f"https://mite.bioinformatics.nl/repository/{mite["accession"]}",
             "status": mite["status"],
             "enzyme_name": mite["enzyme"]["name"],
-            "enzyme_description": mite.get("enzyme", {}).get(
+            "enzyme_description": mite["enzyme"].get(
                 "description", "No description available"
             ),
             "enzyme_ids": mite["enzyme"]["databaseIds"],
@@ -109,6 +111,11 @@ class MetadataManager(BaseModel):
             ),
             "enzyme_refs": mite["enzyme"]["references"],
         }
+
+        if mibig in self.metadata_mibig["entries"]:
+            self.metadata_mibig["entries"][mibig].append(entry)
+        else:
+            self.metadata_mibig["entries"][mibig] = [entry]
 
     def export_json(self: Self) -> None:
         """Exports collected metadata dicts to target dir"""

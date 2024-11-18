@@ -10,7 +10,11 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Added
 
 - Update data: December-release
+- Added "metadata_cytoscape.csv" to provide metadata for sequence similarity networks (fasta-files)
 
+### Changed
+
+- Update metadata_mibig.json: changed nesting to accommodate multiple mite entries per mibig bgc
 
 ## [1.4] 09-11-2024
 
