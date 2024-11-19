@@ -55,7 +55,7 @@ class MetadataManager(BaseModel):
         "entries": {},
     }
     metadata_efi_est: list = [
-        "key,name,description,tailoring,id_uniprot,id_genpept,id_mibig\n"
+        "key,mite_acc,enzyme_name,enzyme_description,tailoring,id_uniprot,id_genpept,id_mibig\n"
     ]
     fasta_efi_est: list = []
 
@@ -126,10 +126,6 @@ class MetadataManager(BaseModel):
 
     def efi_est_files(self: Self) -> None:
         """Collects data for EFI-EST sequence similarity network"""
-
-        # dump a combined fasta file
-        # dump a combined csv file
-
         fasta_dir = Path(__file__).parent.parent.joinpath("fasta")
 
         index = 0
@@ -144,8 +140,8 @@ class MetadataManager(BaseModel):
 
             key = f"{index}".rjust(7, "z")
             acc = mite_data["accession"]
-            name = mite_data["enzyme"].get("name", "")
-            descr = mite_data["enzyme"].get("description", "")
+            name = mite_data["enzyme"].get("name", "").replace(",", "")
+            descr = mite_data["enzyme"].get("description", "").replace(",", "")
             tail = "|".join(
                 sorted(
                     {
@@ -160,7 +156,7 @@ class MetadataManager(BaseModel):
             mibig = mite_data["enzyme"]["databaseIds"].get("mibig", "")
 
             self.metadata_efi_est.append(
-                f"{key},{acc},'{name}','{descr}',{tail},{uniprot},{genpept},{mibig}\n"
+                f"{key},{acc},{name},{descr},{tail},{uniprot},{genpept},{mibig}\n"
             )
 
             self.fasta_efi_est.append(f"{lines}\n")
