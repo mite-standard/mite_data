@@ -78,5 +78,7 @@ ignore = [
     # percent-format-invalid-format
     "E501",
     # mixed-case-variable-in-class-scope
-    "N815"
+    "N815",
+    # enumerate
+    "SIM113"
 ]
