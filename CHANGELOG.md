@@ -14,6 +14,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ### Changed
 
+- Replaced old IDs with ORCIDs
 - Update metadata_mibig.json: changed nesting to accommodate multiple mite entries per mibig bgc
 
 ## [1.4] 09-11-2024
