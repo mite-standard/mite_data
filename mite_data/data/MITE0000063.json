@@ -6,11 +6,11 @@
             "version": "1",
             "date": "2024-07-30",
             "contributors": [
-                "P75FRHHCFPTCPYSP65VDVPHW",
-                "IX2YLYLJIFMZ56AG4LPOYV2J"
+                "0000-0003-3002-6458",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer 1 fixed reaction SMARTS of reaction 2 by explicitly stating the valence of the dehydrated carbon."
         }

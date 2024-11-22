@@ -6,11 +6,11 @@
             "version": "1",
             "date": "2024-07-30",
             "contributors": [
-                "6QCS3DG25AGWNE77BXBLFKVB",
-                "HSOJFFPY5IUT4HBQLSN7DGJX"
+                "0000-0001-7411-5925",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer reviewed reaction SMARTS and removed partial stereochemistry of the substrate-product reaction pair."
         }

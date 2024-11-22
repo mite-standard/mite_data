@@ -6,13 +6,12 @@
             "version": "1",
             "date": "2024-07-30",
             "contributors": [
-                "3UOU7PODQJXIM6BEPUHHRRA5",
-                "RKFOW2BJ2UIGZ6GYHFZX4BHF",
-                "XBXL5Y5CH4BE3EYSVTFNOISJ",
-                "BBWSCHOGTA7AN4ZDDUKGI7WA"
+                "0000-0002-6258-2080",
+                "0000-0003-2992-1607",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer 1 fixed reaction SMARTS numberingq"
         }

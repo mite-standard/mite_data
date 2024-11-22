@@ -6,11 +6,11 @@
             "version": "1",
             "date": "2024-07-30",
             "contributors": [
-                "ZF6B6VBOHAZ5KYONQR36C2NB"
+                "0000-0002-9152-2562"
             ],
             "reviewers": [
-                "NJ6R5LEVTYWQEKC4XASTKZBC",
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "0000-0001-6534-6609",
+                "0000-0003-0443-9902"
             ],
             "comment": "Initial entry. Reviewer changed substrate that was identical to product (and partially fixed reactionSMARTS:reactionSMARTS), validation still not passing. Reviewer 1 fixed numbering of reaction SMARTS, reaction passes."
         }

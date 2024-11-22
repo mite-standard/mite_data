@@ -6,10 +6,10 @@
             "version": "1",
             "date": "2024-07-30",
             "contributors": [
-                "P75FRHHCFPTCPYSP65VDVPHW"
+                "0000-0003-3002-6458"
             ],
             "reviewers": [
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer reworked reaction SMARTS to make it RDKit-compatible, reaction passes."
         }

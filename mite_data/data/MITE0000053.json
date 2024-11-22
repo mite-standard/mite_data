@@ -6,10 +6,10 @@
             "version": "1",
             "date": "2024-07-30",
             "contributors": [
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "0000-0001-6534-6609"
             ],
             "reviewers": [
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer 1 removed parentheses around reaction SMARTS (falsely indicating an intramolecular reaction), reaction passes."
         }

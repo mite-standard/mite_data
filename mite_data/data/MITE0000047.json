@@ -6,11 +6,11 @@
             "version": "1",
             "date": "2024-07-30",
             "contributors": [
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "0000-0001-6534-6609"
             ],
             "reviewers": [
-                "NJ6R5LEVTYWQEKC4XASTKZBC",
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "0000-0001-6534-6609",
+                "0000-0003-0443-9902"
             ],
             "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer partially fixed reactions:products, validation still not passing. Reviewer 2 fixed numbering issue in reaction SMARTS, reaction passes."
         }

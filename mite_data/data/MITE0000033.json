@@ -6,10 +6,10 @@
             "version": "1",
             "date": "2024-07-30",
             "contributors": [
-                "37IOAS4X5OHP34DPN55OLFBF"
+                "0009-0008-7609-4484"
             ],
             "reviewers": [
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer 1 fixed reaction SMARTS but had to remove the balanced substrate/product SMILES due to issues with phosphorous chemistry in RDKit."
         }
