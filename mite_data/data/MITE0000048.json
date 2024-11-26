@@ -9,14 +9,15 @@
                 "0000-0001-6534-6609"
             ],
             "reviewers": [
-                "0000-0001-6534-6609"
+                "0000-0001-6534-6609",
+                "0000-0002-9747-3423"
             ],
-            "comment": "Initial entry. Reviewer 1 removed parentheses around reaction SMARTS, reaction passes."
+            "comment": "Initial entry. Reviewer 1 removed parentheses around reaction SMARTS, reaction passes. Reviewer 2 switched text of enzyme description and enzyme reaction description."
         }
     ],
     "enzyme": {
         "name": "BotP",
-        "description": "N-terminal methionine cleaving peptidase (bottromycin) from Streptomyces sp. BC16019.",
+        "description": "Peptidase",
         "references": [
             "doi:10.1039/d0np00097c",
             "doi:10.1016/j.chembiol.2012.08.013",
@@ -33,7 +34,7 @@
             "tailoring": [
                 "Hydrolysis"
             ],
-            "description": "Cleavage of N-terminal Met from a NH2-Met-Gly-Pro-Xn chain, exposing a N-terminal Gly.",
+            "description": "Cleavage of N-terminal Met from a NH2-Met-Gly-Pro-Xn chain, exposing a N-terminal Gly; bottromycin biosynthesis in Streptomyces sp. BC16019.",
             "reactionSMARTS": "[#6:1]-[#16:2]-[#6:3]-[#6:4]-[#6@H:5](-[#7H2:6])-[#6:7](=[O:8])-[#7:9]-[#6H2:10]-[#6:11](=[O:12])-[#7:13]-1-[#6:14]-[#6:15]-[#6:16]-[#6@H:17]-1-[#6:18]=[O:19]>>[#7H2:9]-[#6:10]-[#6:11](=[O:12])-[#7:13]-1-[#6:14]-[#6:15]-[#6:16]-[#6@H:17]-1-[#6:18]=[O:19]",
             "reactions": [
                 {
