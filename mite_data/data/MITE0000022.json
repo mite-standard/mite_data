@@ -41,7 +41,7 @@
                     "products": [
                         "Cc1c2cccc(O)c2c(O)c2c(O)c3c(O)c(C(N)=O)c(O)cc3cc12"
                     ],
-                    "isIntermediate": false
+                    "isIntermediate": true
                 }
             ],
             "evidence": {
