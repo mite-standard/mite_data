@@ -1,6 +1,9 @@
 {
     "accession": "MITE0000078",
-    "status": "active",
+    "status": "retired",
+    "retirementReasons": [
+        "Entry described the CoA ligase MdpB2, an enzyme that does not perform tailoring per se and is therefore outside of the scope of MITE. Instead, this enzyme was added as 'Auxiliary Enzyme' to MITE0000077."
+    ],
     "changelog": [
         {
             "version": "1",

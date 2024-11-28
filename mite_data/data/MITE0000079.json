@@ -1,6 +1,9 @@
 {
     "accession": "MITE0000079",
-    "status": "active",
+    "status": "retired",
+    "retirementReasons": [
+        "Entry described the CoA ligase PokM3, an enzyme that does not perform tailoring per se and is therefore outside of the scope of MITE. Instead, this enzyme was added as 'Auxiliary Enzyme' to MITE0000080."
+    ],
     "changelog": [
         {
             "version": "1",
@@ -12,7 +15,7 @@
             "reviewers": [
                 "0000-0001-6534-6609"
             ],
-            "comment": "Initial entry. Reviewer fixed the expected product according to the cited publication."
+            "comment": "Initial entry. Reviewer fixed the expected product according to the cited publication. "
         }
     ],
     "enzyme": {

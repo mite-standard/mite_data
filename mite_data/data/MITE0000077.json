@@ -9,9 +9,9 @@
                 "0000-0003-3002-6458"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0001-6534-6609"
             ],
-            "comment": "Initial entry."
+            "comment": "Initial entry. Reviewer 1 added auxiliary enzyme."
         }
     ],
     "enzyme": {
@@ -24,13 +24,24 @@
             "uniprot": "B0BLM5",
             "genpept": "ABY66020.1",
             "mibig": "BGC0001008"
-        }
+        },
+        "auxiliaryEnzymes": [
+            {
+                "name": "MdpB2",
+                "description": "CoA ligase",
+                "databaseIds": {
+                    "uniprot": "B0BLM7",
+                    "genpept": "ABY66018.1"
+                }
+            }
+        ]
     },
     "reactions": [
         {
             "tailoring": [
                 "Methylation"
             ],
+            "description": "C-methylation of methylsalicylic acid bound to coenzyme A. Auxiliary enzyme MdpB2 needed to load methylsalicylic acid on coenzyme A.",
             "reactionSMARTS": "[#6:8]-[c:2]1[c:3][c:4][c:5][c:6](-[#8:9])[c:1]1-[#6:7](=[O:10])-[#16:11]-[#6:57]-[#6:56]-[#7:55]-[#6:53](=[O:54])-[#6:52]-[#6:51]-[#7:50]-[#6:48](=[O:49])-[#6@H:47](-[#8:58])[C:13]([#6:12])([#6:14])[#6:15]-[#8:16][P:17]([#8:19])(=[O:18])[#8:20][P:21]([#8:23])(=[O:22])[#8:24]-[#6:25]-[#6@H:26]-1-[#8:30]-[#6@H:29](-[#6@H:28](-[#8:41])-[#6@@H:27]-1-[#8:42][P:43]([#8:45])([#8:46])=[O:44])-[n:31]1[c:32][n:33][c:34]2[c:35](-[#7:40])[n:36][c:37][n:38][c:39]12>>[#6:60]-[c:5]1[c:4][c:3][c:2](-[#6:8])[c:1](-[#6:7](=[O:10])-[#16:11]-[#6:57]-[#6:56]-[#7:55]-[#6:53](=[O:54])-[#6:52]-[#6:51]-[#7:50]-[#6:48](=[O:49])-[#6@H:47](-[#8:58])[C:13]([#6:12])([#6:14])[#6:15]-[#8:16][P:17]([#8:19])(=[O:18])[#8:20][P:21]([#8:23])(=[O:22])[#8:24]-[#6:25]-[#6@H:26]-2-[#8:30]-[#6@H:29](-[#6@H:28](-[#8:41])-[#6@@H:27]-2-[#8:42][P:43]([#8:45])([#8:46])=[O:44])-[n:31]2[c:32][n:33][c:34]3[c:35](-[#7:40])[n:36][c:37][n:38][c:39]23)[c:6]1-[#8:9] |r|",
             "reactions": [
                 {
@@ -38,7 +49,8 @@
                     "products": [
                         "Cc1ccc(C)c(C(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]2O[C@@H](n3cnc4c(N)ncnc43)[C@H](O)[C@@H]2OP(=O)(O)O)c1O"
                     ],
-                    "isIntermediate": true
+                    "isIntermediate": true,
+                    "description": "Converts CoA-bound 6-methylsalicylic acid to 3,6-dimethylsalicylic acid"
                 }
             ],
             "evidence": {
