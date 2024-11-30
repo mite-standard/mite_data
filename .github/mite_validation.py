@@ -41,15 +41,15 @@ class CicdManager(BaseModel):
 
     def run(self: Self) -> None:
         """Function to run all validation steps"""
-        self.check_pending()
+        self.check_release_ready()
         self.check_duplicates()
         self.validate_entries_passing()
 
-    def check_pending(self: Self) -> None:
-        """Verify that no entry has the status tag 'pending'
+    def check_release_ready(self: Self) -> None:
+        """Verify that no entry has the status tag 'pending' or the MITE ID MITE9999999
 
         Raises:
-            RuntimeError: Pending entry detected
+            RuntimeError: Pending entry or MITE9999999 detected
         """
         errors = []
 
@@ -60,6 +60,11 @@ class CicdManager(BaseModel):
             if mite_json["status"] == "pending":
                 errors.append(
                     f"Entry '{entry}' has the status flag 'pending'. This must be set to 'active' before release."
+                )
+
+            if mite_json["accession"] == "MITE9999999":
+                errors.append(
+                    f"Entry '{entry}' has the MITE accession 'MITE9999999'. Change this to the correct version before release."
                 )
 
         if len(errors) != 0:
