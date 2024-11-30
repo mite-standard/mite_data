@@ -6,13 +6,14 @@
             "version": "1",
             "date": "2024-07-30",
             "contributors": [
-                "S5E5B42Z3YOMJFLKFTZJZTZN",
-                "I3D2K5SU7JJDS2LEEQM3W3SO"
+                "0000-0001-6660-2715",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "NJ6R5LEVTYWQEKC4XASTKZBC"
+                "0000-0003-0443-9902",
+                "0000-0001-6534-6609"
             ],
-            "comment": "Initial entry. Reviewer fixed reactionSMARTS:reactionSMARTS. Reviewer fixed reactions:substrate. Reviewer fixed reactions:products."
+            "comment": "Initial entry. Reviewer fixed reactionSMARTS:reactionSMARTS. Reviewer fixed reactions:substrate. Reviewer fixed reactions:products. Reviewer 2 fixed reaction SMARTS numbering."
         }
     ],
     "enzyme": {
@@ -32,7 +33,8 @@
             "tailoring": [
                 "Hydroxylation"
             ],
-            "reactionSMARTS": "[#7:6]-[#6:5]-[#6:4]-[#6:3]-[#6@H:2](-[#7:1])-[#6:7](-[#8:8])=[O:9]>>[#7:10]-[#6@@H:9](-[#6:8]-[#6:7]-[#6:6]-[#7:5]-[#8:4])-[#6:3](-[#8:2])=[O:1]",
+            "description": "N-hydroxylation of delta-amine of ornithin",
+            "reactionSMARTS": "[#7:1]-[#6:2]-[#6:3]-[#6:4]-[#6@@:5](-[#6:7](-[#8:9])=[#8:8])/[#7:6]>>[#7:6]/[#6@:5](-[#6:7](-[#8:9])=[#8:8])-[#6:4]-[#6:3]-[#6:2]-[#7:1]-[#8]",
             "reactions": [
                 {
                     "substrate": "NCCC[C@H](N)C(=O)O",

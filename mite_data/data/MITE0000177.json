@@ -1,0 +1,84 @@
+{
+    "accession": "MITE9999999",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-11-14",
+            "contributors": [
+                "0000-0001-6585-0696"
+            ],
+            "reviewers": [
+                "0000-0003-4819-2251",
+                "0000-0002-9747-3423"
+            ],
+            "comment": "Initial entry. Reviewers checked factual correctness of submission, verified Database ID crosslinks and added where possible. References were properly formatted."
+        }
+    ],
+    "enzyme": {
+        "name": "Ple2",
+        "description": "Acetyltransferase",
+        "references": [
+            "doi:10.1038/s41467-017-01659-1",
+            "doi:10.1002/cbic.201700434",
+            "doi:10.1038/srep25202",
+            "doi:10.1039/d2sc06638f"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A6S6QLX9",
+            "genpept": "BCI98770.1",
+            "mibig": "BGC0002181"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Acetylation"
+            ],
+            "description": "Acetylation, O-acetylation of mutilin to produce 14-acetyl-mutilin",
+            "reactionSMARTS": "[#6:1]\\[#6@:2]1-[#6@:22](/[#8:23])-[#6@@:18](-[#6:20]=[#6:21])(\\[#6:19])-[#6:17]-[#6@@:15](\\[#8:16])-[#6@:9]2(\\[#6:14])-[#6@@:10](-[#6:12]-[#6:13]/[#6@@:3]3-1-[#6:7]-[#6:6]-[#6:5](=[#8:8])\\[#6@:4]-3-2)/[#6:11]>>[#6:1]\\[#6@:2]1-[#6@:22](/[#8:23])-[#6@@:18](-[#6:20]=[#6:21])(\\[#6:19])-[#6:17]-[#6@@:15](\\[#8:16]-[#6](=[#8])-[#6])-[#6@:9]2(\\[#6:14])-[#6@@:10](-[#6:12]-[#6:13]/[#6@@:3]3-1-[#6:7]-[#6:6]-[#6:5](=[#8:8])\\[#6@:4]-3-2)/[#6:11]",
+            "reactions": [
+                {
+                    "substrate": "C=C[C@]1(C)C[C@@H](O)[C@]2(C)[C@H](C)CC[C@]3(CCC(=O)[C@H]32)[C@@H](C)[C@@H]1O",
+                    "products": [
+                        "C=C[C@]1(C)C[C@@H](OC(C)=O)[C@]2(C)[C@H](C)CC[C@]3(CCC(=O)[C@H]32)[C@@H](C)[C@@H]1O"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1038/s41467-017-01659-1",
+                    "doi:10.1002/cbic.201700434"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Acetylation"
+            ],
+            "description": "Acetylation, O-acetylation of 3,11-diol-mutilin to produce 3,11-diol-14-acetyl-mutilin",
+            "reactionSMARTS": "[#6:1]/[#6@:2]1(-[#6:23]-[#6@@:21](/[#8:22])-[#6@:19]2(\\[#6:20])-[#6@:12](/[#6:13])-[#6:11]-[#6:10]\\[#6@:9]3(-[#6:18]-[#6:17]-[#6@@:15](\\[#8:16])-[#6@:14]\\3-2)-[#6@@:7](/[#6:8])-[#6@@:5]-1\\[#8:6])-[#6:3]=[#6:4]>>[#6:1]/[#6@:2]1(-[#6:23]-[#6@@:21](/[#8:22]-[#6](=[#8])-[#6])-[#6@:19]2(\\[#6:20])-[#6@:12](/[#6:13])-[#6:11]-[#6:10]\\[#6@:9]3(-[#6:18]-[#6:17]-[#6@@:15](\\[#8:16])-[#6@:14]\\3-2)-[#6@@:7](/[#6:8])-[#6@@:5]-1\\[#8:6])-[#6:3]=[#6:4]",
+            "reactions": [
+                {
+                    "substrate": "C=C[C@]1(C)C[C@@H](O)[C@]2(C)[C@H](C)CC[C@]3(CC[C@@H](O)[C@H]32)[C@@H](C)[C@@H]1O",
+                    "products": [
+                        "C=C[C@]1(C)C[C@@H](OC(C)=O)[C@]2(C)[C@H](C)CC[C@]3(CC[C@@H](O)[C@H]32)[C@@H](C)[C@@H]1O"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1039/d2sc06638f"
+                ]
+            }
+        }
+    ]
+}

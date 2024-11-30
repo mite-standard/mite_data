@@ -6,10 +6,10 @@
             "version": "1",
             "date": "2024-07-30",
             "contributors": [
-                "BRS25WBFDJIPJGRFVYTEPI2R"
+                "0000-0003-4129-2890"
             ],
             "reviewers": [
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer fixed the unsupported nested frequency variation pattern by enumerating the reactions."
         }

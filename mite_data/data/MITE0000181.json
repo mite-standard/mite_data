@@ -1,0 +1,56 @@
+{
+    "accession": "MITE0000181",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-11-20",
+            "contributors": [
+                "0000-0001-6660-2715"
+            ],
+            "reviewers": [
+                "0000-0003-4819-2251"
+            ],
+            "comment": "New entry. Reviewer 1 found no issues."
+        }
+    ],
+    "enzyme": {
+        "name": "FrsC",
+        "description": "specialized dehydrogenase for phenyllactate biosynthesis",
+        "references": [
+            "doi:10.1002/cbic.202100569"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A7S9SW80",
+            "genpept": "QPI18725.1",
+            "mibig": "BGC0002125"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Reduction"
+            ],
+            "description": "Reduction of phenylpyruvate to L-phenyllactate",
+            "reactionSMARTS": "[#6:1]1:[#6:5]:[#6:6]:[#6:4]:[#6:2]:[#6:3]:1-[#6:7]-[#6:8](=[#8])-[#6:9](=[#8:11])-[#8:10]>>[#6:1]1:[#6:5]:[#6:6]:[#6:4]:[#6:2]:[#6:3]:1-[#6:7]-[#6@:8](/[#8])-[#6:9](=[#8:11])-[#8:10]",
+            "reactions": [
+                {
+                    "substrate": "O=C(O)C(=O)Cc1ccccc1",
+                    "products": [
+                        "O=C(O)[C@@H](O)Cc1ccccc1"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Reduction of phenylpyruvate to L-phenyllactate"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1002/cbic.202100569"
+                ]
+            }
+        }
+    ]
+}

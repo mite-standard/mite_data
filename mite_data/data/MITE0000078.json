@@ -1,15 +1,18 @@
 {
     "accession": "MITE0000078",
-    "status": "active",
+    "status": "retired",
+    "retirementReasons": [
+        "Entry described the CoA ligase MdpB2, an enzyme that does not perform tailoring per se and is therefore outside of the scope of MITE. Instead, this enzyme was added as 'Auxiliary Enzyme' to MITE0000077."
+    ],
     "changelog": [
         {
             "version": "1",
             "date": "2024-07-30",
             "contributors": [
-                "P75FRHHCFPTCPYSP65VDVPHW"
+                "0000-0003-3002-6458"
             ],
             "reviewers": [
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer 1 reworked reaction SMARTS."
         }

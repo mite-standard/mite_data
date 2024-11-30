@@ -6,17 +6,18 @@
             "version": "1",
             "date": "2024-07-30",
             "contributors": [
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "0000-0001-6534-6609"
             ],
             "reviewers": [
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "0000-0001-6534-6609",
+                "0000-0002-9747-3423"
             ],
-            "comment": "Initial entry. Reviewer fixed reaction SMARTS, reaction passes."
+            "comment": "Initial entry. Reviewer fixed reaction SMARTS, reaction passes. Reviewer 2 switched text of enzyme description and enzyme reaction description."
         }
     ],
     "enzyme": {
         "name": "BotCYP",
-        "description": "bottromycin cytochrome P450 from Streptomyces sp. BC16019",
+        "description": "cytochrome P450",
         "references": [
             "doi:10.1021/jacs.0c10361",
             "doi:10.1039/d0np00097c"
@@ -30,10 +31,10 @@
     "reactions": [
         {
             "tailoring": [
-                "Oxidation",
-                "Decarboxylation"
+                "Decarboxylation",
+                "Oxidation"
             ],
-            "description": "P450-catalyzed oxidative decarboxylation of terminal thiazoline of bottromycin precursor.",
+            "description": "P450-catalyzed oxidative decarboxylation of terminal thiazoline of bottromycin precursor in Streptomyces sp. BC16019",
             "reactionSMARTS": "[#6:47]-[#6@H:18](\\[#7:17]=[#6:16]-1/[#7:15]-[#6:14]-[#6:12](=[O:13])-[#7:11]-2-[#6:10]-[#6:9]-[#6@@H:7](-[#6:8])-[#6@H:6]-2-[#6:4](=[O:5])-[#7:3]-[#6@@H:2](-[#6:1])-[#6:50](=[O:51])-[#7:49]-[#6@H:48]-1-[#6:52])-[#6:19](=[O:20])-[#7:21]-[#6@@H:22](-[#6@@H:23](-[#6:24])-[c:25]1[c:26][c:27][c:28][c:29][c:30]1)-[#6:31](=[O:32])-[#7:33]-[#6@H:34](-[#6:35]-[#6:36](-[#8:37])=[O:38])-[#6:39]-1=[#7:40]-[#6@@H:41](-[#6:42]-[#16:43]-1)-[#6:44](-[#8H:45])=[O:46]>>[#6:47]-[#6@H:18](\\[#7:17]=[#6:16]-1/[#7:15]-[#6:14]-[#6:12](=[O:13])-[#7:11]-2-[#6:10]-[#6:9]-[#6@@H:7](-[#6:8])-[#6@H:6]-2-[#6:4](=[O:5])-[#7:3]-[#6@@H:2](-[#6:1])-[#6:50](=[O:51])-[#7:49]-[#6@H:48]-1-[#6:52])-[#6:19](=[O:20])-[#7:21]-[#6@@H:22](-[#6@@H:23](-[#6:24])-[c:25]1[c:26][c:27][c:28][c:29][c:30]1)-[#6:31](=[O:32])-[#7:33]-[#6@H:34](-[#6:35]-[#6:36](-[#8:37])=[O:38])-[c:39]1[n:40][c:41][c:42][s:43]1",
             "reactions": [
                 {

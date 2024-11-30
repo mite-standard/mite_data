@@ -6,13 +6,13 @@
             "version": "1",
             "date": "2024-07-30",
             "contributors": [
-                "4CEPXXFDQQ46VQJXBT4B4AUO",
-                "P75FRHHCFPTCPYSP65VDVPHW"
+                "0000-0003-3002-6458",
+                "0000-0001-7044-2419"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0001-6534-6609"
             ],
-            "comment": "Initial entry."
+            "comment": "Initial entry. Reviewer 1 fixed reaction, replaced wildcards in SMILES with full structures."
         }
     ],
     "enzyme": {
@@ -32,14 +32,16 @@
             "tailoring": [
                 "Methylation"
             ],
-            "reactionSMARTS": "[#6:27]-[#16:16]-[c:11]1[c:10](-[#8:25])[c:9][c:8]([n:7][c:12]1-[#6:13](-[$([#1,*])])=[$([#1,*])])-[c:5]1[c:6][c:1][c:2][c:3][n:4]1>>[#6:28]-[#8:25]-[c:10]1[c:9][c:8]([n:7][c:12](-[#6:13](-[$([#1,*])])=[$([#1,*])])[c:11]1-[#16:16]-[#6:27])-[c:5]1[c:6][c:1][c:2][c:3][n:4]1 |$;;;;;;;;;;_R1;_R0;;;;;;;;;;;;;;;_R1;_R0;;;;;;;;;$|",
+            "description": "O-methylation of collismycin D",
+            "reactionSMARTS": "[#6](=[#7]-[#8])-[#6]1:[#6](-[#16]-[#6]):[#6](-[#8]):[#6]:[#6](-[#6]2:[#7]:[#6]:[#6]:[#6]:[#6]:2):[#7]:1>>[#6](=[#7]-[#8])-[#6]1:[#6](-[#16]-[#6]):[#6](-[#8]-[#6]):[#6]:[#6](-[#6]2:[#7]:[#6]:[#6]:[#6]:[#6]:2):[#7]:1",
             "reactions": [
                 {
-                    "substrate": "*C(=*)c1nc(-c2ccccn2)cc(O)c1SC",
+                    "substrate": "CSc1c(O)cc(-c2ccccn2)nc1/C=N/O",
                     "products": [
-                        "*C(=*)c1nc(-c2ccccn2)cc(OC)c1SC"
+                        "COc1cc(-c2ccccn2)nc(C=NO)c1SC"
                     ],
-                    "isIntermediate": false
+                    "isIntermediate": false,
+                    "description": "O-methylation of collismycin D, resulting in collismycin A"
                 }
             ],
             "evidence": {

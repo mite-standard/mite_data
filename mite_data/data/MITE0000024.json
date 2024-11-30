@@ -6,12 +6,11 @@
             "version": "1",
             "date": "2024-07-30",
             "contributors": [
-                "EMAUK5TYS6O5PLPCDCIRFTNF",
-                "NHJ6M55E7ZEHUFNMEG4QIZWY",
-                "4ZBJCWV5NZUBDJXCSIV4TKIA"
+                "0009-0006-9871-5187",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer 1 changed reaction SMARTS and substrate/product example to show actual intermediate reaction as described in the publication."
         }

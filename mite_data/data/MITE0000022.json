@@ -6,20 +6,21 @@
             "version": "1",
             "date": "2024-07-30",
             "contributors": [
-                "MGLE5JJ3S32DQA3YR5WPYH4W",
-                "P75FRHHCFPTCPYSP65VDVPHW"
+                "0000-0003-3002-6458",
+                "0000-0002-9747-3423"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0002-9747-3423"
             ],
-            "comment": "Initial entry."
+            "comment": "Initial entry. Reviewer 1 added reference and added reaction description"
         }
     ],
     "enzyme": {
         "name": "SsfM4",
         "description": "C-methyltransferase",
         "references": [
-            "doi:10.1002/anie.201205426"
+            "doi:10.1002/anie.201205426",
+            "doi:10.1021/ja907852c "
         ],
         "databaseIds": {
             "uniprot": "D6MSU6",
@@ -32,6 +33,7 @@
             "tailoring": [
                 "Methylation"
             ],
+            "description": "SsfM4 catalyzes C6-methylation",
             "reactionSMARTS": "[#7:26]-[#6:24](=[O:25])-[c:16]1[c:17](-[#8:23])[c:18][c:11]2[c:12][c:9]3[c:10][c:1]4[c:2][c:3][c:4][c:5](-[#8:19])[c:6]4[c:7](-[#8:20])[c:8]3[c:13](-[#8:21])[c:14]2[c:15]1-[#8:22]>>[#6:30]-[c:10]1[c:1]2[c:2][c:3][c:4][c:5](-[#8:19])[c:6]2[c:7](-[#8:20])[c:8]2[c:13](-[#8:21])[c:14]3[c:15](-[#8:22])[c:16](-[#6:24](-[#7:26])=[O:25])[c:17](-[#8:23])[c:18][c:11]3[c:12][c:9]12",
             "reactions": [
                 {
@@ -47,7 +49,8 @@
                     "Knock-out studies"
                 ],
                 "references": [
-                    "doi:10.1002/anie.201205426"
+                    "doi:10.1002/anie.201205426",
+                    "doi:10.1021/ja907852c "
                 ]
             }
         }

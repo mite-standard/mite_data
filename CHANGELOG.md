@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5] 30-11-2024
+
+### Added
+
+- Update data: November-release `1.5`
+- Added "metadata_cytoscape.csv" to provide metadata for sequence similarity networks (fasta-files)
+
+### Changed
+
+- Pinned `mite_schema` and `mite_data` dependencies
+- Replaced old IDs with ORCIDs
+- Update metadata_mibig.json: changed nesting to accommodate multiple mite entries per mibig bgc
 
 ## [1.4] 09-11-2024
 

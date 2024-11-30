@@ -6,14 +6,14 @@
             "version": "1",
             "date": "2024-07-30",
             "contributors": [
-                "5EV2ZHN6GEKCSCIWNEHXDURC",
-                "4CEPXXFDQQ46VQJXBT4B4AUO",
-                "P75FRHHCFPTCPYSP65VDVPHW",
-                "SKC4XYF2AQLXBPOFDVNEXQZ2"
+                "0000-0003-3002-6458",
+                "0000-0001-7044-2419",
+                "0000-0002-4187-2863",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "NJ6R5LEVTYWQEKC4XASTKZBC",
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "0000-0001-6534-6609",
+                "0000-0003-0443-9902"
             ],
             "comment": "Initial entry. Reviewer partially fixed reactions:substrate, validation still not passing. Reviewer partially fixed reactions:products, validation still not passing. Reviewer 2 removed chirality information, reaction passes."
         }

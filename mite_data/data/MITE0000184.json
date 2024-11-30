@@ -1,0 +1,70 @@
+{
+    "accession": "MITE0000184",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-11-21",
+            "contributors": [
+                "0000-0001-6660-2715"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "Initial entry. Reviewer 1 checked entries, references and for factual correctness; replaced nitroso group in reaction smarts to a nitro group as shown in the product"
+        }
+    ],
+    "enzyme": {
+        "name": "RufO",
+        "description": "Cytochrome p450 monooxygenase",
+        "references": [
+            "doi:10.1074/jbc.M117.791269",
+            "doi:10.1038/s41467-017-00419-5.",
+            "doi:10.1101/2024.07.12.603347"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A224AU14",
+            "genpept": "BBA20962.1",
+            "mibig": "BGC0001763"
+        },
+        "auxiliaryEnzymes": [
+            {
+                "name": "RufN",
+                "description": "nitroc oxide synthase oxygenase",
+                "databaseIds": {
+                    "uniprot": "A0A224AVD6",
+                    "genpept": "BBA20961.1"
+                }
+            }
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Other"
+            ],
+            "description": "direct nitration of tyrosine in MRYLH pentapeptide",
+            "reactionSMARTS": "[#6:1]-[#16:2]-[#6:3]-[#6:4]-[#6@@:5](-[#6:7](-[#7:9]\\[#6@:10](-[#6:18](-[#7:20]\\[#6@:21](-[#6:30](-[#7:32]\\[#6@:33](-[#6:38](-[#7:40]\\[#6@:41](-[#6:48](-[#8:50])=[#8:49])-[#6:42]-[#6:43]1:[#7:47]:[#6:46]:[nH1:45]:[#6:44]:1)=[#8:39])-[#6:34]-[#6:35](-[#6:37])-[#6:36])=[#8:31])-[#6:22]-[#6:23]1:[#6:29]:[#6:28]:[#6:26](-[#8:27]):[#6:25]:[#6:24]:1)=[#8:19])-[#6:11]-[#6:12]-[#6:13]-[#7:14]-[#6:15](-[#7:17])=[#7:16])=[#8:8])\\[#7:6]>>[#6:1]-[#16:2]-[#6:3]-[#6:4]-[#6@@:5](-[#6:7](-[#7:9]\\[#6@:10](-[#6:18](-[#7:20]\\[#6@:21](-[#6:30](-[#7:32]\\[#6@:33](-[#6:38](-[#7:40]\\[#6@:41](-[#6:48](-[#8:50])=[#8:49])-[#6:42]-[#6:43]1:[#7:47]:[#6:46]:[nH1:45]:[#6:44]:1)=[#8:39])-[#6:34]-[#6:35](-[#6:37])-[#6:36])=[#8:31])-[#6:22]-[#6:23]1:[#6:29]:[#6:28](-[#7;+](-[#8;-])=[#8]):[#6:26](-[#8:27]):[#6:25]:[#6:24]:1)=[#8:19])-[#6:11]-[#6:12]-[#6:13]-[#7:14]-[#6:15](-[#7:17])=[#7:16])=[#8:8])\\[#7:6]",
+            "reactions": [
+                {
+                    "substrate": "CSCC[C@H](N)C(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](Cc1c[nH]cn1)C(=O)O",
+                    "products": [
+                        "CSCC[C@H](N)C(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@@H](Cc1ccc(O)c([N+](=O)[O-])c1)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](Cc1c[nH]cn1)C(=O)O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "direct nitration of tyrosine in MRYLH pentapeptide"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies",
+                    "Site-directed mutagenesis"
+                ],
+                "references": [
+                    "doi:10.1101/2024.07.12.603347"
+                ]
+            }
+        }
+    ]
+}

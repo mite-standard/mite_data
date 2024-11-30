@@ -9,11 +9,11 @@
             "version": "1",
             "date": "2024-07-30",
             "contributors": [
-                "37IOAS4X5OHP34DPN55OLFBF"
+                "0009-0008-7609-4484"
             ],
             "reviewers": [
-                "NJ6R5LEVTYWQEKC4XASTKZBC",
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "0000-0001-6534-6609",
+                "0000-0003-0443-9902"
             ],
             "comment": "Initial entry. Reviewer 1 partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer 1 partially fixed reactions:substrate, validation still not passing. Reviewer 1 partially fixed reactions:products, validation still not passing. Reviewer 2 reworked reaction SMARTS from scratch, reaction passing. Reviewer 2 retired entry (duplicate of MITE0000038)."
         }

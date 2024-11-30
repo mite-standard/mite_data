@@ -7,11 +7,11 @@
             "version": "1",
             "date": "2024-07-30",
             "contributors": [
-                "P75FRHHCFPTCPYSP65VDVPHW"
+                "0000-0003-3002-6458"
             ],
             "reviewers": [
-                "NJ6R5LEVTYWQEKC4XASTKZBC",
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "0000-0001-6534-6609",
+                "0000-0003-0443-9902"
             ],
             "comment": "Initial entry. Partially fixed. Reviewer fixed general aromaticity, validation still not passing. Reviewer two fixed reaction 2 (duplicate reaction SMARTS with erroneous product) and replaced it with the reaction SMARTS described in the referenced publication."
         }
