@@ -41,7 +41,7 @@
                 {
                     "substrate": "CSCC[C@H](NC(=O)[C@H](CS)NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H]1CCCN1C(=O)CN)C(C)C)C(C)C)C(C)C)C(=O)O",
                     "products": [
-                        "CSCC[C@@H](C(O)=O)NC([C@@H](NC([C@@H](NC([C@@H](NC([C@H](C(C)C)NC([C@H](C(C)C)NC([C@H](C(C)C)NC([C@H]1N(C(CN)=O)CC[C@@H]1C)=O)=O)=O)=O)Cc1ccccc1)=O)CC(O)=O)=O)CS)=O"
+                        "CSCC[C@H](NC(=O)[C@H](CS)NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H]1[C@@H](C)CCN1C(=O)CN)C(C)C)C(C)C)C(C)C)C(=O)O"
                     ],
                     "isIntermediate": true,
                     "description": "Bottromycin A2-precursor peptide with cleaved N-terminal Met, first 10 AAs."

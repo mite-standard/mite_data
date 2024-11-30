@@ -1,5 +1,5 @@
 {
-  "version_mite_data": "1.4",
+  "version_mite_data": "1.5",
   "entries": {
     "MITE0000020": {
       "status": "active",
@@ -24,7 +24,7 @@
     "MITE0000011": {
       "status": "active",
       "enzyme_name": "MpaG",
-      "enzyme_description": "Catalyzes the O-methylation of demethylmycophenolic acid into mycophenolic acid",
+      "enzyme_description": "O-methyltransferase",
       "enzyme_ids": {
         "uniprot": "F1DBB3",
         "genpept": "ADY00134.1",
@@ -69,6 +69,16 @@
         "mibig": "BGC0000973"
       }
     },
+    "MITE0000184": {
+      "status": "active",
+      "enzyme_name": "RufO",
+      "enzyme_description": "Cytochrome p450 monooxygenase",
+      "enzyme_ids": {
+        "uniprot": "A0A224AU14",
+        "genpept": "BBA20962.1",
+        "mibig": "BGC0001763"
+      }
+    },
     "MITE0000028": {
       "status": "active",
       "enzyme_name": "BhaA",
@@ -90,7 +100,7 @@
       }
     },
     "MITE0000079": {
-      "status": "active",
+      "status": "retired",
       "enzyme_name": "PokM3",
       "enzyme_description": "CoA ligase",
       "enzyme_ids": {
@@ -112,7 +122,7 @@
     "MITE0000033": {
       "status": "active",
       "enzyme_name": "GtfB",
-      "enzyme_description": "Adds N-acetylglucosamine or N-acylglucosamine to Hpg4 of the teicoplanin aglycone.",
+      "enzyme_description": "Glycosyltransferase",
       "enzyme_ids": {
         "uniprot": "Q6ZZI3",
         "genpept": "CAE53364.1",
@@ -187,7 +197,7 @@
     "MITE0000044": {
       "status": "active",
       "enzyme_name": "BotCYP",
-      "enzyme_description": "bottromycin cytochrome P450 from Streptomyces sp. BC16019",
+      "enzyme_description": "cytochrome P450",
       "enzyme_ids": {
         "uniprot": "K4MJU2",
         "genpept": "AFV25487.2",
@@ -206,7 +216,7 @@
     "MITE0000003": {
       "status": "active",
       "enzyme_name": "aviG6",
-      "enzyme_description": "putative methyltransferase",
+      "enzyme_description": "O-methyltransferase",
       "enzyme_ids": {
         "uniprot": "Q93KV9",
         "genpept": "AAK83186.1",
@@ -226,7 +236,7 @@
     "MITE0000048": {
       "status": "active",
       "enzyme_name": "BotP",
-      "enzyme_description": "N-terminal methionine cleaving peptidase (bottromycin) from Streptomyces sp. BC16019.",
+      "enzyme_description": "Peptidase",
       "enzyme_ids": {
         "uniprot": "K4MHW2",
         "genpept": "AFV25490.1",
@@ -311,6 +321,16 @@
         "mibig": "BGC0000678"
       }
     },
+    "MITE0000187": {
+      "status": "active",
+      "enzyme_name": "HrmI",
+      "enzyme_description": "heme oxygenase-like dinuclear iron enzyme",
+      "enzyme_ids": {
+        "uniprot": "F8S6W0",
+        "genpept": "AEH41787.1",
+        "mibig": "BGC0000374"
+      }
+    },
     "MITE0000057": {
       "status": "active",
       "enzyme_name": "pntE",
@@ -324,7 +344,7 @@
     "MITE0000054": {
       "status": "active",
       "enzyme_name": "MibH",
-      "enzyme_description": "Tryptophan-5-halogenase acting on deschloro-microbisporicin A2",
+      "enzyme_description": "Flavin-dependent halogenase",
       "enzyme_ids": {
         "uniprot": "E2IHC5",
         "genpept": "ADK32563.1",
@@ -382,11 +402,11 @@
     },
     "MITE0000120": {
       "status": "active",
-      "enzyme_name": "ZopL9",
+      "enzyme_name": "ZopL9 a.k.a. ZopK",
       "enzyme_description": "AsaB-like alphaKGDD",
       "enzyme_ids": {
-        "uniprot": "A0A7R6QSV0",
-        "genpept": "QTE75992.1",
+        "uniprot": "A0A7R6QUG3",
+        "genpept": "QTE75983.1",
         "mibig": "BGC0002224"
       }
     },
@@ -473,7 +493,7 @@
     "MITE0000045": {
       "status": "active",
       "enzyme_name": "BotOMT",
-      "enzyme_description": "O-methylating SAM-dependent carboxyl methyltransferase from Streptomyces sp. BC16019",
+      "enzyme_description": "Carboxyl methyltransferase",
       "enzyme_ids": {
         "uniprot": "K4MJZ1",
         "genpept": "AFV25479.1",
@@ -512,7 +532,7 @@
     "MITE0000034": {
       "status": "active",
       "enzyme_name": "GtfA",
-      "enzyme_description": "Glycosyltransferase that adds N-acetylglucosamine to Bht6 of the teicoplanin precursor.",
+      "enzyme_description": "Glycosyltransferase",
       "enzyme_ids": {
         "uniprot": "Q6ZZJ7",
         "genpept": "CAE53349.1",
@@ -567,6 +587,16 @@
         "mibig": "BGC0003093"
       }
     },
+    "MITE0000174": {
+      "status": "active",
+      "enzyme_name": "bytO",
+      "enzyme_description": "cytochrome P450",
+      "enzyme_ids": {
+        "uniprot": "A0A891LYB2",
+        "genpept": "QRM13816.1",
+        "mibig": "BGC0002099"
+      }
+    },
     "MITE0000097": {
       "status": "active",
       "enzyme_name": "PumI",
@@ -580,7 +610,7 @@
     "MITE0000002": {
       "status": "active",
       "enzyme_name": "aviG4",
-      "enzyme_description": "putative methyltransferase",
+      "enzyme_description": "O-methyltransferase",
       "enzyme_ids": {
         "uniprot": "L8PIQ8",
         "genpept": "ELS56114.1",
@@ -825,11 +855,21 @@
     "MITE0000027": {
       "status": "active",
       "enzyme_name": "OxyC",
-      "enzyme_description": "P450 monooxygenase, that introduces the second crosslink (biaryl ether) between hpg5 and dhpg7 of the balhimycin precursor.",
+      "enzyme_description": "Cytochrome P450 monooxygenase",
       "enzyme_ids": {
         "uniprot": "F8STX8",
         "genpept": "AEI58870.1",
         "mibig": "BGC0000311"
+      }
+    },
+    "MITE0000179": {
+      "status": "active",
+      "enzyme_name": "Ple5",
+      "enzyme_description": "Cytochrome P450",
+      "enzyme_ids": {
+        "uniprot": "A0A6S6QPY4",
+        "genpept": "BCI98773.1",
+        "mibig": "BGC0002181"
       }
     },
     "MITE0000112": {
@@ -884,7 +924,7 @@
     "MITE0000004": {
       "status": "active",
       "enzyme_name": "aviG5",
-      "enzyme_description": "putative methyltransferase",
+      "enzyme_description": "O-methyltransferase",
       "enzyme_ids": {
         "uniprot": "Q93KW5",
         "genpept": "AAK83180.1",
@@ -894,7 +934,7 @@
     "MITE0000001": {
       "status": "active",
       "enzyme_name": "aviG2",
-      "enzyme_description": "putative methyltransferase",
+      "enzyme_description": "O-methyltransferase",
       "enzyme_ids": {
         "uniprot": "Q93KW1",
         "genpept": "AAK83184.1",
@@ -919,6 +959,16 @@
         "uniprot": "Q194P8",
         "genpept": "CAK50790.1",
         "mibig": "BGC0000247"
+      }
+    },
+    "MITE0000183": {
+      "status": "active",
+      "enzyme_name": "EryK",
+      "enzyme_description": "Cytochrome P450",
+      "enzyme_ids": {
+        "uniprot": "P48635",
+        "genpept": "CAM00054.1",
+        "mibig": "BGC0000055"
       }
     },
     "MITE0000105": {
@@ -997,6 +1047,16 @@
         "mibig": "BGC0000279"
       }
     },
+    "MITE9999999": {
+      "status": "active",
+      "enzyme_name": "FrsH",
+      "enzyme_description": "non-heme diiron monooxygenase",
+      "enzyme_ids": {
+        "uniprot": "A0A7S9SWM2",
+        "genpept": "QPI18730.1",
+        "mibig": "BGC0002125"
+      }
+    },
     "MITE0000119": {
       "status": "active",
       "enzyme_name": "ScyL2",
@@ -1005,6 +1065,16 @@
         "uniprot": "A0A8A5D4W2",
         "genpept": "QTE75998.1",
         "mibig": "BGC0002223"
+      }
+    },
+    "MITE0000181": {
+      "status": "active",
+      "enzyme_name": "FrsC",
+      "enzyme_description": "specialized dehydrogenase for phenyllactate biosynthesis",
+      "enzyme_ids": {
+        "uniprot": "A0A7S9SW80",
+        "genpept": "QPI18725.1",
+        "mibig": "BGC0002125"
       }
     },
     "MITE0000162": {
@@ -1043,6 +1113,16 @@
         "uniprot": "F8STX6",
         "genpept": "AEI58868.1",
         "mibig": "BGC0000311"
+      }
+    },
+    "MITE0000180": {
+      "status": "active",
+      "enzyme_name": "SLI_0884",
+      "enzyme_description": "Leucyl/Phenylalanil-tRNA-Protein transferase",
+      "enzyme_ids": {
+        "uniprot": "A0A7U9H9E4",
+        "genpept": "EOY45603.1",
+        "mibig": "BGC0001168"
       }
     },
     "MITE0000032": {
@@ -1143,6 +1223,16 @@
         "mibig": "BGC0000678"
       }
     },
+    "MITE0000175": {
+      "status": "active",
+      "enzyme_name": "bytO",
+      "enzyme_description": "cytochrome P450",
+      "enzyme_ids": {
+        "uniprot": "A0A891LWT6",
+        "genpept": "QRM13814.1",
+        "mibig": "BGC0002084"
+      }
+    },
     "MITE0000108": {
       "status": "active",
       "enzyme_name": "cldC",
@@ -1165,11 +1255,21 @@
     "MITE0000047": {
       "status": "active",
       "enzyme_name": "BotRMT3",
-      "enzyme_description": "Bottromycin-precursor acting rSAM methyltransferase from Streptomyces sp. BC16019.",
+      "enzyme_description": "radical SAM methyltransferase",
       "enzyme_ids": {
         "uniprot": "K4MHG1",
         "genpept": "AFV25488.1",
         "mibig": "BGC0000469"
+      }
+    },
+    "MITE0000178": {
+      "status": "active",
+      "enzyme_name": "Ple6",
+      "enzyme_description": "Cytochrome P450",
+      "enzyme_ids": {
+        "uniprot": "A0A6S6QP77",
+        "genpept": "BCI98774.1",
+        "mibig": "BGC0002181"
       }
     },
     "MITE0000152": {
@@ -1201,7 +1301,7 @@
       }
     },
     "MITE0000078": {
-      "status": "active",
+      "status": "retired",
       "enzyme_name": "MdpB2",
       "enzyme_description": "CoA ligase",
       "enzyme_ids": {
@@ -1218,6 +1318,16 @@
         "uniprot": "A8CF74",
         "genpept": "ABV56598.1",
         "mibig": "BGC0000378"
+      }
+    },
+    "MITE0000176": {
+      "status": "active",
+      "enzyme_name": "Ple1",
+      "enzyme_description": "Cytochrome P450",
+      "enzyme_ids": {
+        "uniprot": "A0A6S6QI82",
+        "genpept": "BCI98769.1",
+        "mibig": "BGC0002181"
       }
     },
     "MITE0000025": {
@@ -1465,7 +1575,7 @@
     "MITE0000037": {
       "status": "active",
       "enzyme_name": "GtfE",
-      "enzyme_description": "Transfers glucose onto hpg4 in the vancomycin and teicoplanin aglycone.",
+      "enzyme_description": "Glycosyltransferase",
       "enzyme_ids": {
         "uniprot": "P96565",
         "genpept": "AEI58873.1",
@@ -1542,6 +1652,15 @@
         "mibig": "BGC0000033"
       }
     },
+    "MITE0000182": {
+      "status": "active",
+      "enzyme_name": "SxtN",
+      "enzyme_description": "N-sulfotransferase",
+      "enzyme_ids": {
+        "uniprot": "A0A3G2KSQ1",
+        "genpept": "AYN62308.1"
+      }
+    },
     "MITE0000039": {
       "status": "active",
       "enzyme_name": "Vmt",
@@ -1574,7 +1693,7 @@
     "MITE0000046": {
       "status": "active",
       "enzyme_name": "botRMT2",
-      "enzyme_description": "Bottromycin-precursor acting rSAM methyltransferase from Streptomyces sp BC16019",
+      "enzyme_description": "radical SAM methyltransferase ",
       "enzyme_ids": {
         "uniprot": "K4MJZ5",
         "genpept": "AFV25484.1",
@@ -1613,7 +1732,7 @@
     "MITE0000042": {
       "status": "active",
       "enzyme_name": "GtfD",
-      "enzyme_description": "Transfers vancosamine onto glucose on hpg4 of vancomycin pseudoaglycone.",
+      "enzyme_description": "Glycosyltransferase",
       "enzyme_ids": {
         "uniprot": "P96564",
         "genpept": "AEI58872.1",
@@ -1666,6 +1785,16 @@
         "uniprot": "Q70AY4",
         "genpept": "CAE53365.1",
         "mibig": "BGC0000440"
+      }
+    },
+    "MITE0000186": {
+      "status": "active",
+      "enzyme_name": "HrmF",
+      "enzyme_description": "L-DOPA dioxygenase",
+      "enzyme_ids": {
+        "uniprot": "F8S6V7",
+        "genpept": "AEH41784.1",
+        "mibig": "BGC0000374"
       }
     },
     "MITE0000132": {

@@ -1,0 +1,56 @@
+{
+    "accession": "MITE0000174",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-11-12",
+            "contributors": [
+                "0000-0001-6534-6609"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "Initial entry. Reviewer 1 checked entries, references and for factual correctness"
+        }
+    ],
+    "enzyme": {
+        "name": "bytO",
+        "description": "cytochrome P450",
+        "references": [
+            "doi:10.1016/j.chembiol.2020.11.009"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A891LYB2",
+            "genpept": "QRM13816.1",
+            "mibig": "BGC0002099"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Biaryl bond formation"
+            ],
+            "description": "Introduces a biaryl bond between Y1 and H3, cytochrome P450 from Planomonospora strain ID107089",
+            "reactionSMARTS": "[#8:1]-[#6:2](=[#8:3])-[#6:4](-[#7:5]-[#6:6](=[#8:7])-[#6:8](-[#7:9]-[#6:10](=[#8:11])-[#6:12](-[#7:13])-[#6:17]-[#6:18]1:[#6:19]:[#6:20]:[#6:21](-[#8:22]):[#6:23]:[#6:24]:1)-[#6:25]-[#6:26]1:[#6:27]:[#6:28]:[#6:29]:[#6:30]:[#6:31]:1)-[#6:32]-[#6:33]1:[n;H]:[#6:35]:[#7:36]:[#6:37]:1>>[#8:1]-[#6:2](=[#8:3])-[#6:4]1-[#7:5]-[#6:6](=[#8:7])-[#6:8](-[#6:25]-[#6:26]2:[#6:31]:[#6:30]:[#6:29]:[#6:28]:[#6:27]:2)-[#7:9]-[#6:10](=[#8:11])-[#6:12](-[#7:13])-[#6:17]-[#6:18]2:[#6:19]:[#6:20](:[#6:21](-[#8:22]):[#6:23]:[#6:24]:2)-[#6:35]2:[n;H]:[#6:33](:[#6:37]:[#7:36]:2)-[#6:32]-1",
+            "reactions": [
+                {
+                    "substrate": "CSCCC(N)C(=O)NC(CCCNC(=N)N)C(=O)NC(Cc1ccc(O)cc1)C(=O)NC(Cc1ccccc1)C(=O)NC(Cc1cnc[nH]1)C(=O)O",
+                    "products": [
+                        "CSCCC(N)C(=O)NC(CCCNC(=N)N)C(=O)NC1Cc2ccc(O)c(c2)-c2ncc([nH]2)CC(C(=O)O)NC(=O)C(Cc2ccccc2)NC1=O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Modifies biarylitide YFH precursor MRYFH"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1016/j.chembiol.2020.11.009"
+                ]
+            }
+        }
+    ]
+}

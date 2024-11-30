@@ -1,0 +1,88 @@
+{
+    "accession": "MITE0000180",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-11-19",
+            "contributors": [
+                "0000-0001-7044-2419"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New Entry. Reviewer 1 changed databaseID references to fit strain described in publication, added 4-phosphopantetheine cofactor, added alternative reaction using leucine instead of phenylalanine."
+        }
+    ],
+    "enzyme": {
+        "name": "SLI_0884",
+        "description": "Leucyl/Phenylalanil-tRNA-Protein transferase",
+        "references": [
+            "doi:10.1093/jimb/kuad021",
+            "doi:10.1093/gbe/evt082"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A7U9H9E4",
+            "genpept": "EOY45603.1",
+            "mibig": "BGC0001168"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Other"
+            ],
+            "description": "amide bond formation between arginine, encoded by the A domain of the NRPS-like gene, and phenylalanine provided by their cognate aminoacyl-tRNAs as substrate.",
+            "reactionSMARTS": "[#7:1]-[#6:2](=[#7:4]-[#6:5]-[#6:6]-[#6:7]-[#6@@:8](-[#6:10](-[#16:12]-[#6:32]-[#6:31]-[#7:30]-[#6:28](=[#8:29])-[#6:27]-[#6:26]-[#7:25]-[#6:23](=[#8:24])-[#6@:22](/[#8:33])-[#6:14](-[#6:16]-[#8:17]-[#15:18](-[#8:21])(-[#8:20])=[#8:19])(-[#6:15])-[#6:13])=[#8:11])/[#7:9])-[#7:3]>>[#7:1]-[#6:2](=[#7:4]-[#6:5]-[#6:6]-[#6:7]-[#6@:8](/[#7:9]-[#6](=[#8])-[#6@](-[#6]1:[#6]:[#6]:[#6]:[#6]:[#6]:1)\\[#7])-[#6:10](-[#16:12]-[#6:32]-[#6:31]-[#7:30]-[#6:28](=[#8:29])-[#6:27]-[#6:26]-[#7:25]-[#6:23](=[#8:24])-[#6@:22](/[#8:33])-[#6:14](-[#6:16]-[#8:17]-[#15:18](-[#8:21])(-[#8:20])=[#8:19])(-[#6:13])-[#6:15])=[#8:11])-[#7:3]",
+            "reactions": [
+                {
+                    "substrate": "CC(C)(COP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCSC(=O)[C@@H](N)CCCN=C(N)N",
+                    "products": [
+                        "CC(C)(COP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCSC(=O)[C@H](CCCN=C(N)N)NC(=O)[C@@H](N)c1ccccc1"
+                    ],
+                    "isIntermediate": false,
+                    "description": "dipeptide formation arg-phe"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1093/jimb/kuad021",
+                    "doi:10.1093/gbe/evt082"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Other"
+            ],
+            "description": "amide bond formation between arginine, encoded by the A domain of the NRPS-like gene, and leucine provided by their cognate aminoacyl-tRNAs as substrate.",
+            "reactionSMARTS": "[#7:1]-[#6:2](=[#7:4]-[#6:5]-[#6:6]-[#6:7]-[#6@@:8](-[#6:10](-[#16:12]-[#6:32]-[#6:31]-[#7:30]-[#6:28](=[#8:29])-[#6:27]-[#6:26]-[#7:25]-[#6:23](=[#8:24])-[#6@:22](/[#8:33])-[#6:14](-[#6:16]-[#8:17]-[#15:18](-[#8:21])(-[#8:20])=[#8:19])(-[#6:15])-[#6:13])=[#8:11])/[#7:9])-[#7:3]>>[#7:1]-[#6:2](=[#7:4]-[#6:5]-[#6:6]-[#6:7]-[#6@:8](/[#7:9]-[#6](=[#8])-[#6@@](\\[#7])-[#6]-[#6](-[#6])-[#6])-[#6:10](-[#16:12]-[#6:32]-[#6:31]-[#7:30]-[#6:28](=[#8:29])-[#6:27]-[#6:26]-[#7:25]-[#6:23](=[#8:24])-[#6@:22](/[#8:33])-[#6:14](-[#6:16]-[#8:17]-[#15:18](-[#8:21])(-[#8:20])=[#8:19])(-[#6:13])-[#6:15])=[#8:11])-[#7:3]",
+            "reactions": [
+                {
+                    "substrate": "CC(C)(COP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCSC(=O)[C@@H](N)CCCN=C(N)N",
+                    "products": [
+                        "CC(C)C[C@H](N)C(=O)N[C@@H](CCCN=C(N)N)C(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "dipeptide formation arg-leu"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1093/jimb/kuad021",
+                    "doi:10.1093/gbe/evt082"
+                ]
+            }
+        }
+    ]
+}

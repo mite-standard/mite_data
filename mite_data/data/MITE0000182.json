@@ -1,0 +1,57 @@
+{
+    "accession": "MITE0000182",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-11-21",
+            "contributors": [
+                "0000-0002-8323-5416"
+            ],
+            "reviewers": [
+                "0000-0003-4819-2251"
+            ],
+            "comment": "New entry. Reviewer 1 changed tailoring description from 'sulfation' to 'sulfonation'."
+        }
+    ],
+    "enzyme": {
+        "name": "SxtN",
+        "description": "N-sulfotransferase",
+        "references": [
+            "doi:10.1021/acschembio.8b00608"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A3G2KSQ1",
+            "genpept": "AYN62308.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Sulfonation"
+            ],
+            "description": "N-sulfonation of saxitoxin",
+            "reactionSMARTS": "[#8:1]=[#6:2](-[#8:4]-[#6:5]\\[#6@:6]1-[#6@:10]2-[#6@:17]3(\\[#6:16](-[#8:20])(-[#8:19])-[#6:15]-[#6:14]-[#7:21]-3-[#6:8](-[#7:9])=[#7:7]-1)/[#7:13]-[#6:12](-[#7:18])=[#7:11]/2)-[#7:3]>>[#8:1]=[#6:2](-[#8:4]-[#6:5]\\[#6@:6]1-[#6@:10]2-[#6@:17]3(\\[#6:16](-[#8:19])(-[#8:20])-[#6:15]-[#6:14]-[#7:21]-3-[#6:8](-[#7:9])=[#7:7]-1)/[#7:13]-[#6:12](-[#7:18])=[#7:11]/2)-[#7:3]-[#16](-[#8])(=[#8])=[#8]",
+            "reactions": [
+                {
+                    "substrate": "NC(=O)OC[C@@H]1N=C(N)N2CCC(O)(O)[C@@]23NC(N)=N[C@@H]13",
+                    "products": [
+                        "NC1=N[C@H]2[C@H](COC(=O)NS(=O)(=O)O)N=C(N)N3CCC(O)(O)[C@]23N1"
+                    ],
+                    "isIntermediate": false,
+                    "description": "N-21 sulfonation of saxitoxin to produce Gonyautoxin 5"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure",
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/acschembio.8b00608"
+                ]
+            }
+        }
+    ]
+}
