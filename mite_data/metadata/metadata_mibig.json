@@ -2293,8 +2293,8 @@
         ]
       },
       {
-        "mite_accession": "MITE9999999",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE9999999",
+        "mite_accession": "MITE0000177",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000177",
         "status": "active",
         "enzyme_name": "Ple2",
         "enzyme_description": "Acetyltransferase",
@@ -2527,8 +2527,8 @@
         ]
       },
       {
-        "mite_accession": "MITE9999999",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE9999999",
+        "mite_accession": "MITE0000185",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000185",
         "status": "active",
         "enzyme_name": "FrsH",
         "enzyme_description": "non-heme diiron monooxygenase",

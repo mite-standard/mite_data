@@ -1047,14 +1047,14 @@
         "mibig": "BGC0000279"
       }
     },
-    "MITE9999999": {
+    "MITE0000177": {
       "status": "active",
-      "enzyme_name": "FrsH",
-      "enzyme_description": "non-heme diiron monooxygenase",
+      "enzyme_name": "Ple2",
+      "enzyme_description": "Acetyltransferase",
       "enzyme_ids": {
-        "uniprot": "A0A7S9SWM2",
-        "genpept": "QPI18730.1",
-        "mibig": "BGC0002125"
+        "uniprot": "A0A6S6QLX9",
+        "genpept": "BCI98770.1",
+        "mibig": "BGC0002181"
       }
     },
     "MITE0000119": {
@@ -1270,6 +1270,16 @@
         "uniprot": "A0A6S6QP77",
         "genpept": "BCI98774.1",
         "mibig": "BGC0002181"
+      }
+    },
+    "MITE0000185": {
+      "status": "active",
+      "enzyme_name": "FrsH",
+      "enzyme_description": "non-heme diiron monooxygenase",
+      "enzyme_ids": {
+        "uniprot": "A0A7S9SWM2",
+        "genpept": "QPI18730.1",
+        "mibig": "BGC0002125"
       }
     },
     "MITE0000152": {
