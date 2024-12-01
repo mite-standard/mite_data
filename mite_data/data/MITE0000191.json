@@ -1,0 +1,61 @@
+{
+    "accession": "MITE0000191",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-12-01",
+            "contributors": [
+                "0009-0001-9399-9671"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Initial entry. Reviewer 1 fixed erroneously stated product (patulin) and added reaction databaseId crosslinks."
+        }
+    ],
+    "enzyme": {
+        "name": "PatG",
+        "description": "Decarboxylase",
+        "references": [
+            "doi:10.1016/j.ijfoodmicro.2013.11.020"
+        ],
+        "databaseIds": {
+            "uniprot": "T1PRE6",
+            "genpept": "AIG62133.1",
+            "mibig": "BGC0000120"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Decarboxylation"
+            ],
+            "description": "Decarboxylation of 6-methylsalicylic in the patulin biosynthetic pathway",
+            "reactionSMARTS": "[#6:1]1(:[#6:11]:[#6:10]:[#6:9]:[#6:7](-[#6:8]):[#6:3]:1-[#6](-[#8])=[#8])-[#8:2]>>[#6:1]1(:[#6:11]:[#6:10]:[#6:9]:[#6:7](-[#6:8]):[#6:3]:1)-[#8:2]",
+            "reactions": [
+                {
+                    "substrate": "Cc1cccc(O)c1C(=O)O",
+                    "products": [
+                        "Cc1cccc(O)c1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Conversion of 6-methylsalicylic acid to m-cresol"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1016/j.ijfoodmicro.2013.11.020"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "23112",
+                "ec": "4.1.1.52"
+            }
+        }
+    ]
+}

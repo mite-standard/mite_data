@@ -1,0 +1,55 @@
+{
+    "accession": "MITE0000190",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-12-01",
+            "contributors": [
+                "0009-0002-2037-5945"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Initial entry. Reviewer 1 reworked reaction SMARTS."
+        }
+    ],
+    "enzyme": {
+        "name": "AurH",
+        "description": "Cytochrome P450 Monooxygenase",
+        "references": [
+            "doi:10.1016/j.chembiol.2003.11.009"
+        ],
+        "databaseIds": {
+            "uniprot": "Q70KH6",
+            "genpept": "CAE02604.1",
+            "mibig": "BGC0000024"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "Oxidation leads to furan-formation",
+            "reactionSMARTS": "[#6:1]-[#6:2](-[#6:13]=[#6:14](-[#6:16]-[#6:17]-[#6:18]1:[#6:26](-[#6:27]):[#6:24](=[#8:25]):[#6:22](-[#6:23]):[#6:20](-[#8:21]):[#8:19]:1)-[#6:15])=[#6:3]-[#6:4]1:[#6:12]:[#6:11]:[#6:7](-[#7;+:8](-[#8;-:10])=[#8:9]):[#6:6]:[#6:5]:1>>[#6:1]-[#6:2](=[#6:3]-[#6:4]1:[#6:12]:[#6:11]:[#6:7](-[#7;+:8](-[#8;-:10])=[#8:9]):[#6:6]:[#6:5]:1)-[#6:13]=[#6:14]1-[#6:16]-[#6:17](-[#6:18]2:[#6:26](-[#6:27]):[#6:24](=[#8:25]):[#6:22](-[#6:23]):[#6:20](-[#8:21]):[#8:19]:2)-[#8]-[#6:15]-1",
+            "reactions": [
+                {
+                    "substrate": "CC(=C\\c1ccc([N+](=O)[O-])cc1)/C=C(\\C)CCc1oc(O)c(C)c(=O)c1C",
+                    "products": [
+                        "CC(=Cc1ccc([N+](=O)[O-])cc1)C=C1COC(c2oc(O)c(C)c(=O)c2C)C1"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure"
+                ],
+                "references": [
+                    "doi:10.1016/j.chembiol.2003.11.009"
+                ]
+            }
+        }
+    ]
+}
