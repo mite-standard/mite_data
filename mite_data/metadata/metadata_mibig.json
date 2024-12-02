@@ -768,7 +768,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000167",
         "status": "active",
         "enzyme_name": "ProsD",
-        "enzyme_description": "Glyoxylase",
+        "enzyme_description": "Glyoxalase",
         "enzyme_ids": {
           "genpept": "WPM83323.1",
           "mibig": "BGC0003094"
@@ -1444,6 +1444,24 @@
         ]
       }
     ],
+    "BGC0000120": [
+      {
+        "mite_accession": "MITE0000191",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000191",
+        "status": "active",
+        "enzyme_name": "PatG",
+        "enzyme_description": "Decarboxylase",
+        "enzyme_ids": {
+          "uniprot": "T1PRE6",
+          "genpept": "AIG62133.1",
+          "mibig": "BGC0000120"
+        },
+        "enzyme_tailoring": "Decarboxylation",
+        "enzyme_refs": [
+          "doi:10.1016/j.ijfoodmicro.2013.11.020"
+        ]
+      }
+    ],
     "BGC0001077": [
       {
         "mite_accession": "MITE0000083",
@@ -1672,6 +1690,40 @@
         "enzyme_tailoring": "Halogenation",
         "enzyme_refs": [
           "doi:10.1002/cbic.201500467"
+        ]
+      }
+    ],
+    "BGC0000031": [
+      {
+        "mite_accession": "MITE0000188",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000188",
+        "status": "active",
+        "enzyme_name": "BorI",
+        "enzyme_description": "Cytochrome P450 monooxygenase",
+        "enzyme_ids": {
+          "uniprot": "Q70HZ6",
+          "genpept": "CAE45673.1",
+          "mibig": "BGC0000031"
+        },
+        "enzyme_tailoring": "Dehydration|Hydroxylation|Oxidation",
+        "enzyme_refs": [
+          "doi:10.1111/j.1365-2958.2004.04090.x"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000189",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000189",
+        "status": "active",
+        "enzyme_name": "BorJ",
+        "enzyme_description": "Aminotransferase",
+        "enzyme_ids": {
+          "uniprot": "Q70HZ5",
+          "genpept": "CAE45674.1",
+          "mibig": "BGC0000031"
+        },
+        "enzyme_tailoring": "Amination",
+        "enzyme_refs": [
+          "doi:10.1111/j.1365-2958.2004.04090.x"
         ]
       }
     ],
@@ -2892,6 +2944,24 @@
         "enzyme_tailoring": "Biaryl bond formation",
         "enzyme_refs": [
           "doi:10.1002/anie.202311533"
+        ]
+      }
+    ],
+    "BGC0000024": [
+      {
+        "mite_accession": "MITE0000190",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000190",
+        "status": "active",
+        "enzyme_name": "AurH",
+        "enzyme_description": "Cytochrome P450 Monooxygenase",
+        "enzyme_ids": {
+          "uniprot": "Q70KH6",
+          "genpept": "CAE02604.1",
+          "mibig": "BGC0000024"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1016/j.chembiol.2003.11.009"
         ]
       }
     ],

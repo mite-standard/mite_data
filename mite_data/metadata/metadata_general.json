@@ -246,7 +246,7 @@
     "MITE0000167": {
       "status": "active",
       "enzyme_name": "ProsD",
-      "enzyme_description": "Glyoxylase",
+      "enzyme_description": "Glyoxalase",
       "enzyme_ids": {
         "genpept": "WPM83323.1",
         "mibig": "BGC0003094"
@@ -381,6 +381,16 @@
         "mibig": "BGC0001378"
       }
     },
+    "MITE0000191": {
+      "status": "active",
+      "enzyme_name": "PatG",
+      "enzyme_description": "Decarboxylase",
+      "enzyme_ids": {
+        "uniprot": "T1PRE6",
+        "genpept": "AIG62133.1",
+        "mibig": "BGC0000120"
+      }
+    },
     "MITE0000083": {
       "status": "active",
       "enzyme_name": "AgqD",
@@ -488,6 +498,16 @@
         "uniprot": "D6MSX0",
         "genpept": "ADE34508.1",
         "mibig": "BGC0000269"
+      }
+    },
+    "MITE0000188": {
+      "status": "active",
+      "enzyme_name": "BorI",
+      "enzyme_description": "Cytochrome P450 monooxygenase",
+      "enzyme_ids": {
+        "uniprot": "Q70HZ6",
+        "genpept": "CAE45673.1",
+        "mibig": "BGC0000031"
       }
     },
     "MITE0000045": {
@@ -1749,6 +1769,16 @@
         "mibig": "BGC0000455"
       }
     },
+    "MITE0000189": {
+      "status": "active",
+      "enzyme_name": "BorJ",
+      "enzyme_description": "Aminotransferase",
+      "enzyme_ids": {
+        "uniprot": "Q70HZ5",
+        "genpept": "CAE45674.1",
+        "mibig": "BGC0000031"
+      }
+    },
     "MITE0000070": {
       "status": "active",
       "enzyme_name": "RebC",
@@ -1757,6 +1787,16 @@
         "uniprot": "Q8KI25",
         "genpept": "AAN01210.1",
         "mibig": "BGC0000821"
+      }
+    },
+    "MITE0000190": {
+      "status": "active",
+      "enzyme_name": "AurH",
+      "enzyme_description": "Cytochrome P450 Monooxygenase",
+      "enzyme_ids": {
+        "uniprot": "Q70KH6",
+        "genpept": "CAE02604.1",
+        "mibig": "BGC0000024"
       }
     },
     "MITE0000129": {

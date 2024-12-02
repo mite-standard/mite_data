@@ -67,12 +67,15 @@ class BlastManager(BaseModel):
     def run(self: Self) -> None:
         """Class entry point to run methods"""
         logger.debug("Started BlastManager.")
-        self.extract_accessions()
-        self.download_ncbi()
-        self.download_uniprot()
-        self.concat_fasta_files()
-        self.validate_nr_files()
-        self.generate_blast_db()
+        try:
+            self.extract_accessions()
+            self.download_ncbi()
+            self.download_uniprot()
+            self.concat_fasta_files()
+            self.validate_nr_files()
+            self.generate_blast_db()
+        except Exception as e:
+            logger.error(f"An error has occurred: {e!s}")
         logger.debug("Completed BlastManager.")
 
     def extract_accessions(self: Self) -> None:
@@ -101,12 +104,18 @@ class BlastManager(BaseModel):
                 raise RuntimeError(f"{entry} has no GenPept or UniProt ID - FIX ASAP!")
 
     def download_ncbi(self: Self) -> None:
-        """Download protein FASTA files from NCBI GenPept"""
+        """Download protein FASTA files from NCBI GenPept, skip already existing files."""
         if len(self.genpept_acc) == 0:
+            logger.warning(
+                f"No fasta-files scheduled to be downloaded from NCBI - SKIP"
+            )
             return
 
         for entry in self.genpept_acc:
             if self.target_download.joinpath(f"{entry["entry"]}.fasta").exists():
+                logger.info(
+                    f"File '{self.target_download.joinpath(f"{entry["entry"]}.fasta")}' already exists - SKIP"
+                )
                 continue
 
             handle = Entrez.efetch(
@@ -117,7 +126,7 @@ class BlastManager(BaseModel):
 
             lines = fasta_data.strip().split("\n")
             if lines:
-                lines[0] = f">{entry["entry"]} {entry["acc"]}"
+                lines[0] = f">{entry["entry"]}|{entry["acc"]}"
             fasta_data = "\n".join(lines)
 
             with open(
@@ -134,7 +143,7 @@ class BlastManager(BaseModel):
 
         def _store_file(data: dict, lines: list) -> None:
             if lines:
-                lines[0] = f">{data["entry"]} {data["acc"]}"
+                lines[0] = f">{data["entry"]}|{data["acc"]}"
             else:
                 raise RuntimeError(
                     f"UniProt download failed on ID {data["acc"]} for MITE entry {data["entry"]}"
@@ -146,10 +155,16 @@ class BlastManager(BaseModel):
                 fasta_file.write(payload)
 
         if len(self.uniprot_acc) == 0:
+            logger.warning(
+                f"No fasta-files scheduled to be downloaded from UniProt - SKIP"
+            )
             return
 
         for entry in self.uniprot_acc:
             if self.target_download.joinpath(f"{entry["entry"]}.fasta").exists():
+                logger.info(
+                    f"File '{self.target_download.joinpath(f"{entry["entry"]}.fasta")}' already exists - SKIP"
+                )
                 continue
 
             if (

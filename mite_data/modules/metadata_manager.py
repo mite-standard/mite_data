@@ -133,7 +133,7 @@ class MetadataManager(BaseModel):
             with open(fasta_file) as infile:
                 lines = infile.read()
                 split_lines = lines.splitlines()
-                mite_acc = split_lines[0].split()[0].strip(">")
+                mite_acc = split_lines[0].split("|")[0].strip(">")
 
             with open(self.src.joinpath(f"{mite_acc}.json")) as mite_file:
                 mite_data = json.load(mite_file)

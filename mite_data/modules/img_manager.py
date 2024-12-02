@@ -54,6 +54,7 @@ class ImageManager(BaseModel):
         """Class entry point to run methods"""
         logger.debug("Started ImageManager.")
         self.collect_uniprot_acc()
+        self.remove_existing_from_download()
         self.download_pdbs()
         self.create_imgs()
         logger.debug("Completed ImageManager.")
@@ -66,20 +67,31 @@ class ImageManager(BaseModel):
             if acc := metadata["entries"][entry]["enzyme_ids"].get("uniprot", None):
                 self.uniprot_acc.append(acc)
 
+    def remove_existing_from_download(self: Self) -> None:
+        """Removes already downloaded pdb files"""
+        existing_pdb = self.target_download.glob("*")
+        existing_pdb = (file.stem for file in existing_pdb)
+        uniprot_set = set(self.uniprot_acc).difference(existing_pdb)
+        self.uniprot_acc = list(uniprot_set)
+
     def download_pdbs(self: Self) -> None:
         """Download PDB-files from AlphaFold using the uniprot acc ids"""
         logger.debug(
-            "Started download of PDB-files from AlphaFold - this will take some time."
+            "Started download of PDB-files from AlphaFoldDB - this will take some time."
         )
 
         fetcher = AlphaFetcher(base_savedir=str(self.target_download))
         fetcher.add_proteins(proteins=self.uniprot_acc)
         fetcher.download_all_files(pdb=True, multithread=True, workers=4)
 
-        for infile in self.target_download.joinpath("pdb_files").iterdir():
-            infile.rename(self.target_download / infile.name)
+        try:
+            for infile in self.target_download.joinpath("pdb_files").iterdir():
+                infile.rename(self.target_download / infile.name)
+            self.target_download.joinpath("pdb_files").rmdir()
+        except FileNotFoundError:
+            logger.info("No PDB files downloaded from AlphaFoldDB - SKIP")
+            return
 
-        self.target_download.joinpath("pdb_files").rmdir()
         logger.debug("Completed download of PDB-files from AlphaFold.")
 
     def create_imgs(self: Self) -> None:
