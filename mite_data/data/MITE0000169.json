@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000169",
-    "status": "active",
+    "status": "pending",
     "changelog": [
         {
             "version": "1",
@@ -10,9 +10,9 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0001-6534-6609"
             ],
-            "comment": "Initial entry."
+            "comment": "Initial entry. Reviewer 1 added ProsA as auxiliary enzyme."
         }
     ],
     "enzyme": {
@@ -24,7 +24,16 @@
         "databaseIds": {
             "genpept": "WPM83322.1",
             "mibig": "BGC0003094"
-        }
+        },
+        "auxiliaryEnzymes": [
+            {
+                "name": "ProsA",
+                "description": "Cytochrome P450",
+                "databaseIds": {
+                    "genpept": "WPM83320.1"
+                }
+            }
+        ]
     },
     "reactions": [
         {
