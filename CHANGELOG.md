@@ -7,7 +7,10 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [1.7] UNRELEASED
 
-- Changed header of FASTA files: separator between MITE ID and protein ID becomes a pipe `|` (before: space ` `)
+### Added
+
+- Completed review of entries
+
 
 ## [1.6] 30-11-2024
 

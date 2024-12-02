@@ -179,7 +179,7 @@ zzzz176,MITE0000156,PhoM,Flavin-dependent mono-oxygenase,Monooxygenation,,UPG587
 zzzz177,MITE0000010,meiE,Cytochrome P450,Heterocyclization|Hydroxylation,Q6YL50,AAM97314.1,BGC0000093
 zzzz178,MITE0000191,PatG,Decarboxylase,Decarboxylation,T1PRE6,AIG62133.1,BGC0000120
 zzzz179,MITE0000076,JamD,Flavin-dependent halogenase,Halogenation,Q6E7K6,AAS98776.1,BGC0001001
-zzzz180,MITE0000040,Vhal,Chlorinates bht 2 and bht 6 of vancomycin.,Halogenation,P96563,AEI58871.1,BGC0000455
+zzzz180,MITE0000040,Vhal,Flavin-dependent halogenase,Halogenation,P96563,AEI58871.1,BGC0000455
 zzzz181,MITE0000171,ProsB,Decarboxylase,Decarboxylation,,WPM83321.1,BGC0003094
 zzzz182,MITE0000161,PhoK,Reductase,Acetylation|Reduction,,UPG58740.1,BGC0003093
 zzzz183,MITE0000059,pntM,Cytochrome p450,Other,E3VWI3,ADO85571.1,BGC0000653

@@ -126,7 +126,7 @@ class BlastManager(BaseModel):
 
             lines = fasta_data.strip().split("\n")
             if lines:
-                lines[0] = f">{entry["entry"]}|{entry["acc"]}"
+                lines[0] = f">{entry["entry"]} {entry["acc"]}"
             fasta_data = "\n".join(lines)
 
             with open(
@@ -143,7 +143,7 @@ class BlastManager(BaseModel):
 
         def _store_file(data: dict, lines: list) -> None:
             if lines:
-                lines[0] = f">{data["entry"]}|{data["acc"]}"
+                lines[0] = f">{data["entry"]} {data["acc"]}"
             else:
                 raise RuntimeError(
                     f"UniProt download failed on ID {data["acc"]} for MITE entry {data["entry"]}"

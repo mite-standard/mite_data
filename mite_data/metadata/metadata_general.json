@@ -1,5 +1,5 @@
 {
-  "version_mite_data": "1.5",
+  "version_mite_data": "1.6",
   "entries": {
     "MITE0000020": {
       "status": "active",
@@ -1373,7 +1373,7 @@
     "MITE0000040": {
       "status": "active",
       "enzyme_name": "Vhal",
-      "enzyme_description": "Chlorinates bht 2 and bht 6 of vancomycin.",
+      "enzyme_description": "Flavin-dependent halogenase",
       "enzyme_ids": {
         "uniprot": "P96563",
         "genpept": "AEI58871.1",
