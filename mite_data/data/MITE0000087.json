@@ -9,14 +9,14 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0003-4819-2251"
             ],
-            "comment": "Initial entry."
+            "comment": "Initial entry. Reviewer 1 corrected enzyme type as well as tailoring type to monoxygenase, moved reaction descriptions from enzyme type to appropriate fields, added 'inference from genomic data' and 'ko studies' as evidence, as the authors of the papers used KO and complementation studies as well as bioinformatics to infer the role of this protein in the pathway."
         }
     ],
     "enzyme": {
         "name": "RslO4",
-        "description": "Monooxygenase in the Rishirilide Biosynthesis pathway forming a para-quinone substructure",
+        "description": "Monooxygenase",
         "references": [
             "doi:10.1007/s12033-021-00314-x"
         ],
@@ -29,8 +29,9 @@
     "reactions": [
         {
             "tailoring": [
-                "Hydroxylation"
+                "Monooxygenation"
             ],
+            "description": "RslO4 catalyzes the monooxygenation of an intermediate in the rishirilide biosynthesis pathway",
             "reactionSMARTS": "[#6:1]1:[#6:24]:[#6:23]2:[#6:5](:[#6:6](-[#8:25]):[#6:7]3:[#6:19](-[#8]):[#6:11](-[#6:12](=[#8:18])-[#6:13]-[#6:14]-[#6:15](-[#6:17])-[#6:16]):[#6:10](-[#6:21]):[#6:9]:[#6:8]:3:[#6:22]:2):[#6:3](-[#8:4]):[#6:2]:1>>[#6:1]1:[#6:24]:[#6:23]2:[#6:5](:[#6:6](-[#8:25]):[#6:7]3:[#6:8](:[#6:22]:2)-[#6:9](=[#8:27])-[#6:10](-[#6:21])=[#6:11](-[#6:12](=[#8:18])-[#6:13]-[#6:14]-[#6:15](-[#6:16])-[#6:17])-[#6:19]-3=[#8:26]):[#6:3](-[#8:4]):[#6:2]:1",
             "reactions": [
                 {
@@ -38,11 +39,14 @@
                     "products": [
                         "CC1=C(C(=O)CCC(C)C)C(=O)c2c(cc3cccc(O)c3c2O)C1=O"
                     ],
-                    "isIntermediate": true
+                    "isIntermediate": true,
+                    "description": " Formation of para-quinone substructure in the rishirilide biosynthesis pathway"
                 }
             ],
             "evidence": {
                 "evidenceCode": [
+                    "Inference from genomic data and chemical structure",
+                    "Knock-out studies",
                     "Site-directed mutagenesis"
                 ],
                 "references": [
