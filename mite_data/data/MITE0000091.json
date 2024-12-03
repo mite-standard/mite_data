@@ -9,13 +9,14 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0003-4819-2251"
             ],
-            "comment": "Initial entry."
+            "comment": "Initial entry. Reviewer 1 Changed evidence (the authors overexpressed only the terpene synthase gene, the rest is all inferred), filled enzyme type field, adjusted descriptions and reaction SMARTS to represent the full reaction"
         }
     ],
     "enzyme": {
         "name": "CYP71BN1",
+        "description": "Cytochrome P450",
         "references": [
             "doi:10.1371/journal.pone.0119302"
         ],
@@ -30,19 +31,21 @@
             "tailoring": [
                 "Oxidation"
             ],
-            "reactionSMARTS": "[#6]\\[#6](-[#6])=[#6]/[#6]-[#6]\\[#6](-[#6])=[#6]/[#6]-[#6]C1([#6])[#6]-2-[#6]-[#6]3-[#6](-[#6]-2)C13[#6]>>[#6]\\[#6](-[#6])=[#6]\\[#6]-[#6]C1([#6])[#8]-[#6]1-[#6]-[#6]C1([#6])[#6]-2-[#6]-[#6]3-[#6](-[#6]-2)C13[#6]",
+            "description": "CYP71BN1 catalyzes the two-step oxidation of lycosantalene to lycosantalonol ",
+            "reactionSMARTS": "[#6]\\[#6](-[#6])=[#6]/[#6]-[#6]\\[#6](-[#6])=[#6]/[#6]-[#6][#6;A]1([#6])[#6]-2-[#6]-[#6]3-[#6](-[#6]-2)[#6;A]13[#6]>>[#6]\\[#6](-[#6])=[#6]\\[#6]-[#6][#6;A]([#6])([#8])[#6](=[#8;A])-[#6]-[#6][#6;A]1([#6])[#6]-2-[#6]-[#6]3-[#6](-[#6]-2)[#6;A]13[#6]",
             "reactions": [
                 {
                     "substrate": "CC(C)=CCC/C(C)=C\\CCC1(C)C2CC3C(C2)C31C",
                     "products": [
-                        "CC(C)=CCCC1(C)OC1CCC1(C)C2CC3C(C2)C31C"
+                        "CC(C)=CCCC(C)(O)C(=O)CCC1(C)C2CC3C(C2)C31C"
                     ],
-                    "isIntermediate": true
+                    "isIntermediate": false,
+                    "description": "Two-step oxidation of lycosantalene to lycosantalene"
                 }
             ],
             "evidence": {
                 "evidenceCode": [
-                    "Heterologous expression"
+                    "Inference from genomic data and chemical structure"
                 ],
                 "references": [
                     "doi:10.1371/journal.pone.0119302"

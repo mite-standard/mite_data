@@ -11,14 +11,14 @@
                 "0000-0002-8323-5416"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0001-6660-2715"
             ],
-            "comment": "Initial entry."
+            "comment": "Initial entry. Reviewer 1 expanded enzyme description."
         }
     ],
     "enzyme": {
         "name": "PhmJ",
-        "description": "halogenase",
+        "description": "FAD-dependent halogenase",
         "references": [
             "doi:10.1002/cbic.201500467"
         ],
@@ -41,7 +41,8 @@
                     "products": [
                         "C=C1/C=C(\\C)C[C@H]2C[C@@H](OC(=O)/C=C(C)/C=C/C[C@@H](O)C1)[C@@](C)([C@H](O)/C=C(\\C)C[C@H](O)C(C)(C)[C@H](O)C[C@H](O)[C@@H](C)[C@H](O)C[C@@H](CC(=C)/C(=C\\Br)OC)OC(=O)CCCCCCCCCCCCCCC)O2"
                     ],
-                    "isIntermediate": false
+                    "isIntermediate": false,
+                    "description": "Bromination of vinyl group"
                 }
             ],
             "evidence": {
