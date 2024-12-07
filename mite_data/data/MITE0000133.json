@@ -11,12 +11,12 @@
             "reviewers": [
                 "0000-0001-6534-6609"
             ],
-            "comment": "Initial entry. Reviewer 1 added numbering to reaction SMARTS"
+            "comment": "Initial entry. Reviewer 1 fixed reaction SMARTS numbering and database IDs. The original submission specified RefSeq ID XP_002865585.1, which was changed to its GenPept equivalent."
         }
     ],
     "enzyme": {
         "name": "THAH",
-        "description": "Cytochrome P450 enzyme from Arabidopsis lyrata ssp lyrata (Lyre-leaved rock-cress).",
+        "description": "Cytochrome P450",
         "references": [
             "doi:10.1038/s41467-020-19153-6"
         ],
@@ -32,12 +32,14 @@
                 "Hydroxylation"
             ],
             "reactionSMARTS": "[#6:1]-[#6:2](=[#6:4]-[#6:5]-[#6:6]-[#6:7](=[#6:9]-[#6:10]-[#6:11]-[#6@:12](-[#6@@:14]1(-[#6:19]2-[#6:20]-[#6:21]/[#6@@:22]3-[#6@@:30](/[#6:31])(-[#6:18]=2-[#6:17]-[#6:16]-1)-[#6:29]-[#6:28]-[#6@:26](/[#8:27])-[#6:23]-3(-[#6:25])-[#6:24])/[#6:15])\\[#6:13])-[#6:8])-[#6:3]>>[#6:3]-[#6:2](=[#6:4]-[#6:5]-[#6:6]-[#6:7](=[#6:9]-[#6:10]-[#6:11]-[#6@:12](-[#6@@:14]1(-[#6:19]2-[#6@:20](-[#6:21]/[#6@@:22]3-[#6@@:30](/[#6:31])(-[#6:18]=2-[#6:17]-[#6:16]-1)-[#6:29]-[#6:28]-[#6@:26](/[#8:27])-[#6:23]-3(-[#6:25])-[#6:24])/[#8])/[#6:15])\\[#6:13])-[#6:8])-[#6:1]",
+            "description": "Hydroxylates the intermediate in the thalianin pathway in Arabidopsis thaliana ssp. lyrata",
             "reactions": [
                 {
                     "substrate": "CC(C)=CCC/C(C)=C/CC[C@@H](C)[C@@]1(C)CCC2=C1CC[C@H]1C(C)(C)[C@@H](O)CC[C@]21C",
                     "products": [
                         "CC(C)=CCCC(C)=CCC[C@@H](C)[C@@]1(C)CCC2=C1[C@@H](O)C[C@H]1C(C)(C)[C@@H](O)CC[C@]21C"
                     ],
+                    "description": "Hydroxylates Thalianol to (+)-3beta,7beta-thalianol",
                     "isIntermediate": true
                 }
             ],
