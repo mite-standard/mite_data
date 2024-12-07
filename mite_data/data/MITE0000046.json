@@ -14,17 +14,6 @@
                 "0000-0002-9747-3423"
             ],
             "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer 2 fixed reaction SMARTS numbering. Reviewer 3 switched text of enzyme description and enzyme reaction description."
-        },
-        {
-            "version": "2",
-            "date": "2024-11-25",
-            "contributors": [
-                "0000-0002-9747-3423"
-            ],
-            "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
-            ],
-            "comment": "switched text of enzyme description and enzyme reaction description"
         }
     ],
     "enzyme": {
