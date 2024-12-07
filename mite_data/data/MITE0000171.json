@@ -10,9 +10,9 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0001-6534-6609"
             ],
-            "comment": "Initial entry."
+            "comment": "Initial entry. Reviewer 1 added reaction description."
         }
     ],
     "enzyme": {
@@ -31,6 +31,7 @@
             "tailoring": [
                 "Decarboxylation"
             ],
+            "description": "Decarboxylates the phenolic substrate",
             "reactionSMARTS": "[#6:17]-[c:25]1[c:24][c:23](-[#8:19])[c:22](-[#6:16])[c:21]2-[#8:18]-[c:10]3[c:9](-[#6:5])[c:8](-[#6:3](-[#8:1])=[O:2])[c:7](-[#8:4])[c:11](-[#6:6])[c:12]3-[#8:13]-[#6:15](=[O:14])-[c:20]12>>[#6:5]-[c:9]1[c:8][c:7](-[#8:4])[c:11](-[#6:6])[c:12]2-[#8:13]-[#6:15](=[O:14])-[c:20]3[c:25](-[#6:17])[c:24][c:23](-[#8:19])[c:22](-[#6:16])[c:21]3-[#8:18]-[c:10]12",
             "reactions": [
                 {

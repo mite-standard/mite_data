@@ -10,14 +10,14 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0001-6660-2715"
             ],
-            "comment": "Initial entry."
+            "comment": "Initial entry. Reviewer 1 changed enzyme type and added enzyme description."
         }
     ],
     "enzyme": {
         "name": "TrlE",
-        "description": "Combines hydroxylation, decarboxylation and oxidation to generate tropolone from dihydrotropone-2-carboxylate",
+        "description": "flavoprotein monooxygenase",
         "references": [
             "doi:10.1039/D4SC01715C"
         ],
@@ -32,6 +32,7 @@
             "tailoring": [
                 "Other"
             ],
+            "description": "Combines hydroxylation, decarboxylation and oxidation to generate tropolone from dihydrotropone-2-carboxylate",
             "reactionSMARTS": "[#8:1]-[#6:4](=[O:2])-[#6:11]-1=[#6:7](-[#8:3])-[#6:6]-[#6:5]=[#6:8]-[#6:9]=[#6:10]-1>>[#8:3]-[#6:7]-1=[#6:6]-[#6:5]=[#6:8]-[#6:9]=[#6:10]-[#6:11]-1=O",
             "reactions": [
                 {
@@ -39,7 +40,8 @@
                     "products": [
                         "O=c1cccccc1O"
                     ],
-                    "isIntermediate": false
+                    "isIntermediate": false,
+                    "description": "Combines hydroxylation, decarboxylation and oxidation to generate tropolone from dihydrotropone-2-carboxylate"
                 }
             ],
             "evidence": {

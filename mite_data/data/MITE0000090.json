@@ -9,14 +9,16 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0003-4819-2251"
             ],
-            "comment": "Initial entry."
+            "comment": "Initial entry. Reviewer 1 added enzyme type, added reaction descriptions and added appropriate reference where heterologous expression was carried out."
         }
     ],
     "enzyme": {
         "name": "TPS21",
+        "description": "Terpene cyclase",
         "references": [
+            "doi:10.1021/ja508477e",
             "doi:10.1371/journal.pone.0119302"
         ],
         "databaseIds": {
@@ -30,6 +32,7 @@
             "tailoring": [
                 "Cyclization"
             ],
+            "description": "Cyclization of nerylneryl diphosphate to form lycosantalene",
             "reactionSMARTS": "[#6]\\[#6](-[#6])=[#6]\\[#6]-[#6]\\[#6](-[#6])=[#6]/[#6]-[#6]\\[#6](-[#6])=[#6]/[#6]-[#6]\\[#6](-[#6])=[#6]/[#6]-[#8]P([#8-])(=O)[#8]P([#8-])([#8-])=O>>[#6]\\[#6](-[#6])=[#6]\\[#6]-[#6]\\[#6](-[#6])=[#6]/[#6]-[#6]C1([#6])[#6]-2-[#6]-[#6]3-[#6](-[#6]-2)C13[#6]",
             "reactions": [
                 {
@@ -37,7 +40,8 @@
                     "products": [
                         "CC(C)=CCC/C(C)=C\\CCC1(C)C2CC3C(C2)C31C"
                     ],
-                    "isIntermediate": true
+                    "isIntermediate": true,
+                    "description": "Cyclization of nerylneryl diphosphate to lycosantalene in the first step of the biosynthetic pathway of lycosantalonol "
                 }
             ],
             "evidence": {
@@ -45,7 +49,7 @@
                     "Heterologous expression"
                 ],
                 "references": [
-                    "doi:10.1371/journal.pone.0119302"
+                    "doi:10.1021/ja508477e"
                 ]
             }
         }

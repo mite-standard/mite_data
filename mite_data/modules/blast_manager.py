@@ -67,12 +67,15 @@ class BlastManager(BaseModel):
     def run(self: Self) -> None:
         """Class entry point to run methods"""
         logger.debug("Started BlastManager.")
-        self.extract_accessions()
-        self.download_ncbi()
-        self.download_uniprot()
-        self.concat_fasta_files()
-        self.validate_nr_files()
-        self.generate_blast_db()
+        try:
+            self.extract_accessions()
+            self.download_ncbi()
+            self.download_uniprot()
+            self.concat_fasta_files()
+            self.validate_nr_files()
+            self.generate_blast_db()
+        except Exception as e:
+            logger.error(f"An error has occurred: {e!s}")
         logger.debug("Completed BlastManager.")
 
     def extract_accessions(self: Self) -> None:
@@ -101,12 +104,18 @@ class BlastManager(BaseModel):
                 raise RuntimeError(f"{entry} has no GenPept or UniProt ID - FIX ASAP!")
 
     def download_ncbi(self: Self) -> None:
-        """Download protein FASTA files from NCBI GenPept"""
+        """Download protein FASTA files from NCBI GenPept, skip already existing files."""
         if len(self.genpept_acc) == 0:
+            logger.warning(
+                f"No fasta-files scheduled to be downloaded from NCBI - SKIP"
+            )
             return
 
         for entry in self.genpept_acc:
             if self.target_download.joinpath(f"{entry["entry"]}.fasta").exists():
+                logger.info(
+                    f"File '{self.target_download.joinpath(f"{entry["entry"]}.fasta")}' already exists - SKIP"
+                )
                 continue
 
             handle = Entrez.efetch(
@@ -146,10 +155,16 @@ class BlastManager(BaseModel):
                 fasta_file.write(payload)
 
         if len(self.uniprot_acc) == 0:
+            logger.warning(
+                f"No fasta-files scheduled to be downloaded from UniProt - SKIP"
+            )
             return
 
         for entry in self.uniprot_acc:
             if self.target_download.joinpath(f"{entry["entry"]}.fasta").exists():
+                logger.info(
+                    f"File '{self.target_download.joinpath(f"{entry["entry"]}.fasta")}' already exists - SKIP"
+                )
                 continue
 
             if (
@@ -228,20 +243,19 @@ class BlastManager(BaseModel):
             "-dbtype",
             "prot",
             "-out",
-            f"{temp_dir.joinpath("temp_blastfiles")}",
+            f"{temp_dir.joinpath("mite_blastfiles")}",
             "-title",
             f"MITE v{metadata.version('mite_data')} BLAST DB",
         ]
         subprocess.run(command, check=True)
         os.remove(self.target_blast.joinpath(self.concat_filename))
 
-        shutil.make_archive("MiteBlastDB", "zip", temp_dir)
-        shutil.rmtree(temp_dir)
-        shutil.move(
-            src=Path(__file__)
-            .parent.parent.parent.joinpath("MiteBlastDB.zip")
-            .resolve(),
-            dst=self.target_blast.joinpath("MiteBlastDB.zip").resolve(),
+        shutil.make_archive(
+            base_name=str(self.target_blast.joinpath("MiteBlastDB").resolve()),
+            format="zip",
+            root_dir=temp_dir,
+            base_dir=temp_dir,
         )
+        shutil.rmtree(temp_dir)
 
         logger.debug("Completed creating BLAST DB.")

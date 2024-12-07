@@ -11,13 +11,13 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0001-6534-6609"
             ],
-            "comment": "Initial entry."
+            "comment": "Initial entry. Reviwer 1 reworked reaction SMARTS and added descriptions."
         }
     ],
     "enzyme": {
-        "name": "pntE",
+        "name": "PntE",
         "description": "Baeyer-Villiger monooxygenase",
         "references": [
             "doi:10.1021/bi1019786"
@@ -33,14 +33,16 @@
             "tailoring": [
                 "Oxidation"
             ],
-            "reactionSMARTS": "[#6:14]-[#6@@H:12]1-[#6:13](=[O:19])-[#6:11]-[#6@H:8]2-[#6:7](=[#6:6]-[#6:3]3-[#6:2][C@:1]([#6:10])([#6:9])[#6:4][C@:5]123)-[#6:15](-[#8:16])=[O:17]>>[#6:14]-[#6@@H:12]1-[#6:13](=[O:19])-[#8:20]-[#6:11]-[#6@H:8]2-[#6:7](=[#6:6]-[#6:3]3-[#6:2][C@@:1]([#6:9])([#6:10])[#6:4][C@:5]123)-[#6:15](-[#8:16])=[O:17] |r,c:6,27,@:29,@@:10|",
+            "description": "Catalyzes the flavin-dependent Baeyer-Villiger oxidation in the biosynthesis of pentalenolactone",
+            "reactionSMARTS": "[#6:1]/[#6@:2]1-[#6@@:18]23-[#6@:6](-[#6:7](=[#6:11]-[#6:12]-2-[#6:13]-[#6:14](-[#6:17]/3)(-[#6:16])-[#6:15])-[#6:8](-[#8:10])=[#8:9])\\[#6:5]-[#6:3]-1=[#8:4]>>[#6:1]/[#6@:2]1-[#6@@:18]23-[#6@:6](-[#6:7](=[#6:11]-[#6:12]-2-[#6:13]-[#6:14](-[#6:17]/3)(-[#6:15])-[#6:16])-[#6:8](-[#8:10])=[#8:9])\\[#6:5]-[#8]-[#6:3]-1=[#8:4]",
             "reactions": [
                 {
                     "substrate": "C[C@@H]1C(=O)C[C@H]2C(C(=O)O)=CC3CC(C)(C)C[C@]312",
                     "products": [
                         "C[C@@H]1C(=O)OC[C@H]2C(C(=O)O)=CC3CC(C)(C)C[C@]312"
                     ],
-                    "isIntermediate": true
+                    "isIntermediate": true,
+                    "description": "Converts 1-deoxy-11-oxopentalenic acid to pentalenolactone D"
                 }
             ],
             "evidence": {
@@ -51,6 +53,10 @@
                 "references": [
                     "doi:10.1021/bi1019786"
                 ]
+            },
+            "databaseIds": {
+                "rhea": "34635",
+                "ec": "1.14.13.170"
             }
         }
     ]

@@ -1,7 +1,6 @@
 {
     "accession": "MITE0000076",
     "status": "active",
-    "comment": "Unconventional flavin-dependent halogenase, terminal alkyne halogenase",
     "changelog": [
         {
             "version": "1",
@@ -11,9 +10,9 @@
                 "0000-0002-8323-5416"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0001-6406-4394"
             ],
-            "comment": "Initial entry."
+            "comment": "Initial entry. Reviewer 1 simplified reaction SMARTS as JamD is quite promiscuous. Added descriptions for reactions, and added ionidation example from SI of paper"
         }
     ],
     "enzyme": {
@@ -33,19 +32,47 @@
             "tailoring": [
                 "Halogenation"
             ],
-            "reactionSMARTS": "[#6]-[#6]1-[#6]=[#6]-[#6](=[#8])-[#7]-1-[#6](=[#8])-[#6]=[#6](-[#6]-[#6]-[#7]-[#6](=[#8])-[#6]-[#6]-[#6]=[#6]-[#6](-[#6])-[#6]-[#6]-[#6](=[#6]-[#17])-[#6]-[#6]-[#6]-[#6]#[#6])-[#8]-[#6]>>[#6]-[#6]1-[#6]=[#6]-[#6](=[#8])-[#7]-1-[#6](=[#8])-[#6]=[#6](-[#6]-[#6]-[#7]-[#6](=[#8])-[#6]-[#6]-[#6]=[#6]-[#6](-[#6])-[#6]-[#6]-[#6](=[#6]-[#17])-[#6]-[#6]-[#6]-[#6]#[#6]-[#35])-[#8]-[#6]",
+            "description": "Flavin-dependent bromination of terminal alkyne",
+            "reactionSMARTS": "[C:1][C:2]#[CH1:3]>>[C:1][C:2]#[CH0:3][Br]",
             "reactions": [
                 {
                     "substrate": "C#CCCCC(=CCl)CCC(C)C=CCCC(=O)NCCC(=CC(=O)N1C(=O)C=CC1C)OC",
                     "products": [
                         "COC(=CC(=O)N1C(=O)C=CC1C)CCNC(=O)CCC=CC(C)CCC(=CCl)CCCC#CBr"
                     ],
-                    "isIntermediate": false
+                    "isIntermediate": true,
+                    "description": "Bromination of jamaicamide B to jamaicamide A."
                 }
             ],
             "evidence": {
                 "evidenceCode": [
-                    "Heterologous expression"
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/jacs.3c05750"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Flavin-dependent iodination of terminal alkyne",
+            "reactionSMARTS": "[C:1][C:2]#[CH1:3]>>[C:1][C:2]#[CH0:3][I]",
+            "reactions": [
+                {
+                    "substrate": "C#CCCCC(=CCl)CCC(C)C=CCCC(=O)NCCC(=CC(=O)N1C(=O)C=CC1C)OC",
+                    "products": [
+                        "COC(=CC(=O)N1C(=O)C=CC1C)CCNC(=O)CCC=CC(C)CCC(=CCl)CCCC#CI"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Iodination of jamaicamide B to jamaicamide F."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
                 ],
                 "references": [
                     "doi:10.1021/jacs.3c05750"

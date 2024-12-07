@@ -10,9 +10,9 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0003-4819-2251"
             ],
-            "comment": "Initial entry."
+            "comment": "Initial entry. Reviewer 1 corrected SMARTS, added information in the description fields for the reaction entries."
         }
     ],
     "enzyme": {
@@ -32,15 +32,16 @@
             "tailoring": [
                 "Halogenation"
             ],
-            "description": "Tandem Action of the O2- and FADH2-Dependent Halogenases KtzQ and KtzR Produce 6,7-Dichlorotryptophan for Kutzneride",
-            "reactionSMARTS": "[#6]1:[#6]:[#6]:[#6]2:[#6](:[#6]:1):[#6](:[#6]:[#7H]:2)-[#6]-[#6](-[#6](=[#8])-[#8])-[#7]>>[#6]1:[#6]:[#6](:[#6](:[#6]2:[#6]:1:[#6](:[#6]:[#7H]:2)-[#6]-[#6](-[#6](=[#8])-[#8])-[#7])-[#17])-[#17]",
+            "description": "KtzR is a regiospecific halogenase that catalyzes chlorination at the 6-position of 7-Cl-L-Tryptophan to generate 6,7-diCl-L-Trp.",
+            "reactionSMARTS": "[#6]1:[#6]:[#6]2:[#6](-[#6]-[#6](-[#7])-[#6](-[#8])=[#8]):[#6]:[#7;H]:[#6]:2:[#6](-[Cl]):[#6]:1>>[#6]1:[#6]2:[#6](-[#6]-[#6](-[#7])-[#6](-[#8])=[#8]):[#6]:[#7;H]:[#6]:2:[#6](-[Cl]):[#6](-[Cl]):[#6]:1",
             "reactions": [
                 {
                     "substrate": "NC(Cc1c[nH]c2c(Cl)cccc12)C(=O)O",
                     "products": [
                         "NC(Cc1c[nH]c2c(Cl)c(Cl)ccc12)C(=O)O"
                     ],
-                    "isIntermediate": false
+                    "isIntermediate": true,
+                    "description": "C6 chlorination of 7-Cl-L-tryptophan"
                 }
             ],
             "evidence": {

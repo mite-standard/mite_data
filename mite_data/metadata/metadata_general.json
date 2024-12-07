@@ -1,5 +1,5 @@
 {
-  "version_mite_data": "1.5",
+  "version_mite_data": "1.6",
   "entries": {
     "MITE0000020": {
       "status": "active",
@@ -188,8 +188,9 @@
     "MITE0000134": {
       "status": "active",
       "enzyme_name": "THAS",
-      "enzyme_description": "Oxidosqualene cyclase from Arabidopsis lyrata ssp lyrata (Lyre-leaved rock-cress).",
+      "enzyme_description": "Oxidosqualene cyclase",
       "enzyme_ids": {
+        "uniprot": "UPI000A29AD50",
         "genpept": "CAH8278777.1",
         "mibig": "BGC0002857"
       }
@@ -246,7 +247,7 @@
     "MITE0000167": {
       "status": "active",
       "enzyme_name": "ProsD",
-      "enzyme_description": "Glyoxylase",
+      "enzyme_description": "Glyoxalase",
       "enzyme_ids": {
         "genpept": "WPM83323.1",
         "mibig": "BGC0003094"
@@ -313,7 +314,7 @@
     },
     "MITE0000064": {
       "status": "active",
-      "enzyme_name": "ptlI",
+      "enzyme_name": "PtlI",
       "enzyme_description": "Cytochrome P450",
       "enzyme_ids": {
         "uniprot": "Q82IY3",
@@ -333,7 +334,7 @@
     },
     "MITE0000057": {
       "status": "active",
-      "enzyme_name": "pntE",
+      "enzyme_name": "PntE",
       "enzyme_description": "Baeyer-Villiger monooxygenase",
       "enzyme_ids": {
         "uniprot": "E3VWI7",
@@ -353,7 +354,7 @@
     },
     "MITE0000065": {
       "status": "active",
-      "enzyme_name": "ptlE",
+      "enzyme_name": "PtlE",
       "enzyme_description": "Baeyer-Villiger monooxygenase",
       "enzyme_ids": {
         "uniprot": "Q82IY8",
@@ -364,7 +365,7 @@
     "MITE0000102": {
       "status": "active",
       "enzyme_name": "TrlE",
-      "enzyme_description": "Combines hydroxylation, decarboxylation and oxidation to generate tropolone from dihydrotropone-2-carboxylate",
+      "enzyme_description": "flavoprotein monooxygenase",
       "enzyme_ids": {
         "uniprot": "A0A2S1JZI9",
         "genpept": "AWF83809.1",
@@ -379,6 +380,16 @@
         "uniprot": "A0A125SA14",
         "genpept": "AME18010.1",
         "mibig": "BGC0001378"
+      }
+    },
+    "MITE0000191": {
+      "status": "active",
+      "enzyme_name": "PatG",
+      "enzyme_description": "Decarboxylase",
+      "enzyme_ids": {
+        "uniprot": "A0A075TXZ1",
+        "genpept": "AIG62133.1",
+        "mibig": "BGC0000120"
       }
     },
     "MITE0000083": {
@@ -433,7 +444,7 @@
     "MITE0000135": {
       "status": "active",
       "enzyme_name": "THAO",
-      "enzyme_description": "Cytochrome P450 enzyme from Arabidopsis lyrata ssp lyrata (Lyre-leaved rock-cress).",
+      "enzyme_description": "Cytochrome P450",
       "enzyme_ids": {
         "uniprot": "D7MKC0",
         "genpept": "EFH40098.1",
@@ -473,7 +484,7 @@
     "MITE0000093": {
       "status": "active",
       "enzyme_name": "PhmJ",
-      "enzyme_description": "halogenase",
+      "enzyme_description": "FAD-dependent halogenase",
       "enzyme_ids": {
         "uniprot": "A0A125SL25",
         "genpept": "AMH40426.1",
@@ -490,6 +501,16 @@
         "mibig": "BGC0000269"
       }
     },
+    "MITE0000188": {
+      "status": "active",
+      "enzyme_name": "BorI",
+      "enzyme_description": "Cytochrome P450 monooxygenase",
+      "enzyme_ids": {
+        "uniprot": "Q70HZ6",
+        "genpept": "CAE45673.1",
+        "mibig": "BGC0000031"
+      }
+    },
     "MITE0000045": {
       "status": "active",
       "enzyme_name": "BotOMT",
@@ -502,8 +523,8 @@
     },
     "MITE0000059": {
       "status": "active",
-      "enzyme_name": "pntM",
-      "enzyme_description": "Cytochrome p450",
+      "enzyme_name": "PntM",
+      "enzyme_description": "Cytochrome P450",
       "enzyme_ids": {
         "uniprot": "E3VWI3",
         "genpept": "ADO85571.1",
@@ -551,7 +572,7 @@
     "MITE0000056": {
       "status": "active",
       "enzyme_name": "McjB",
-      "enzyme_description": "Lassopeptide ATP-dependent protease (B-protein, cysteine protease-like)",
+      "enzyme_description": "ATP-dependent protease (cysteine protease-like)",
       "enzyme_ids": {
         "uniprot": "Q9X2V8",
         "genpept": "AAD28495.1",
@@ -583,6 +604,7 @@
       "enzyme_name": "PhoP",
       "enzyme_description": "Short-chain dehydrogenases/reductase",
       "enzyme_ids": {
+        "uniprot": "UPI00205EBDF6",
         "genpept": "UPG58745.1",
         "mibig": "BGC0003093"
       }
@@ -679,7 +701,7 @@
     },
     "MITE0000060": {
       "status": "active",
-      "enzyme_name": "pntI",
+      "enzyme_name": "PntI",
       "enzyme_description": "Cytochrome P450",
       "enzyme_ids": {
         "uniprot": "E3VWJ1",
@@ -797,7 +819,7 @@
     "MITE0000091": {
       "status": "active",
       "enzyme_name": "CYP71BN1",
-      "enzyme_description": "No description available",
+      "enzyme_description": "Cytochrome P450 monooxygenase",
       "enzyme_ids": {
         "uniprot": "K4CI56",
         "genpept": "AGK82807.1",
@@ -807,7 +829,7 @@
     "MITE0000133": {
       "status": "active",
       "enzyme_name": "THAH",
-      "enzyme_description": "Cytochrome P450 enzyme from Arabidopsis lyrata ssp lyrata (Lyre-leaved rock-cress).",
+      "enzyme_description": "Cytochrome P450",
       "enzyme_ids": {
         "uniprot": "D7MKC1",
         "genpept": "EFH41844.1",
@@ -996,6 +1018,7 @@
       "enzyme_name": "PhoL",
       "enzyme_description": "Short-chain dehydrogenases/reductase",
       "enzyme_ids": {
+        "uniprot": "UPI00205DA260",
         "genpept": "UPG58741.1",
         "mibig": "BGC0003093"
       }
@@ -1031,8 +1054,9 @@
     "MITE0000156": {
       "status": "active",
       "enzyme_name": "PhoM",
-      "enzyme_description": "Flavin-dependent mono-oxygenase",
+      "enzyme_description": "Flavin-dependent monooxygenase",
       "enzyme_ids": {
+        "uniprot": "UPI0020464A74",
         "genpept": "UPG58742.1",
         "mibig": "BGC0003093"
       }
@@ -1082,6 +1106,7 @@
       "enzyme_name": "PhoG",
       "enzyme_description": "Anthrone oxygenase",
       "enzyme_ids": {
+        "uniprot": "UPI00206D4B6A",
         "genpept": "UPG58736.1",
         "mibig": "BGC0003093"
       }
@@ -1138,7 +1163,7 @@
     "MITE0000087": {
       "status": "active",
       "enzyme_name": "RslO4",
-      "enzyme_description": "Monooxygenase in the Rishirilide Biosynthesis pathway forming a para-quinone substructure",
+      "enzyme_description": "Monooxygenase",
       "enzyme_ids": {
         "uniprot": "W8QLE0",
         "genpept": "AHL46722.1",
@@ -1248,6 +1273,7 @@
       "enzyme_name": "PhoD",
       "enzyme_description": "Dehydratase",
       "enzyme_ids": {
+        "uniprot": "UPI002070062C",
         "genpept": "UPG58733.1",
         "mibig": "BGC0003093"
       }
@@ -1306,6 +1332,7 @@
       "enzyme_name": "TdaE",
       "enzyme_description": "Flavoprotein dioxygenase",
       "enzyme_ids": {
+        "uniprot": "UPI0001633292",
         "genpept": "AFO93376.1",
         "mibig": "BGC0000932"
       }
@@ -1353,7 +1380,7 @@
     "MITE0000040": {
       "status": "active",
       "enzyme_name": "Vhal",
-      "enzyme_description": "Chlorinates bht 2 and bht 6 of vancomycin.",
+      "enzyme_description": "Flavin-dependent halogenase",
       "enzyme_ids": {
         "uniprot": "P96563",
         "genpept": "AEI58871.1",
@@ -1365,6 +1392,7 @@
       "enzyme_name": "PhoC",
       "enzyme_description": "Short-chain dehydrogenases/reductase (SDR)",
       "enzyme_ids": {
+        "uniprot": "UPI00205CF1EC",
         "genpept": "UPG58732.1",
         "mibig": "BGC0003093"
       }
@@ -1521,7 +1549,8 @@
       "enzyme_name": "PhoH",
       "enzyme_description": "Decarboxylase",
       "enzyme_ids": {
-        "genpept": "UPG58735.1",
+        "uniprot": "UPI0020648AC1",
+        "genpept": "UPG58737.1",
         "mibig": "BGC0003093"
       }
     },
@@ -1540,6 +1569,7 @@
       "enzyme_name": "PhoJ",
       "enzyme_description": "Dioxygenase",
       "enzyme_ids": {
+        "uniprot": "UPI00204975FE",
         "genpept": "UPG58739.1",
         "mibig": "BGC0003093"
       }
@@ -1557,7 +1587,7 @@
     "MITE0000090": {
       "status": "active",
       "enzyme_name": "TPS21",
-      "enzyme_description": "No description available",
+      "enzyme_description": "Terpene cyclase",
       "enzyme_ids": {
         "uniprot": "R9R6P6",
         "genpept": "AGK82800.1",
@@ -1615,7 +1645,7 @@
     "MITE0000084": {
       "status": "active",
       "enzyme_name": "NapB2",
-      "enzyme_description": "putative monooxygenase",
+      "enzyme_description": "Monooxygenase",
       "enzyme_ids": {
         "uniprot": "A7KGZ3",
         "genpept": "ABS50452.1",
@@ -1749,6 +1779,16 @@
         "mibig": "BGC0000455"
       }
     },
+    "MITE0000189": {
+      "status": "active",
+      "enzyme_name": "BorJ",
+      "enzyme_description": "Aminotransferase",
+      "enzyme_ids": {
+        "uniprot": "Q70HZ5",
+        "genpept": "CAE45674.1",
+        "mibig": "BGC0000031"
+      }
+    },
     "MITE0000070": {
       "status": "active",
       "enzyme_name": "RebC",
@@ -1757,6 +1797,16 @@
         "uniprot": "Q8KI25",
         "genpept": "AAN01210.1",
         "mibig": "BGC0000821"
+      }
+    },
+    "MITE0000190": {
+      "status": "active",
+      "enzyme_name": "AurH",
+      "enzyme_description": "Cytochrome P450 Monooxygenase",
+      "enzyme_ids": {
+        "uniprot": "Q70KH6",
+        "genpept": "CAE02604.1",
+        "mibig": "BGC0000024"
       }
     },
     "MITE0000129": {
@@ -1810,7 +1860,7 @@
     "MITE0000132": {
       "status": "active",
       "enzyme_name": "THAA2",
-      "enzyme_description": "No description available",
+      "enzyme_description": "Acetyltransferase",
       "enzyme_ids": {
         "uniprot": "D7MUV7",
         "genpept": "EFH40094.1",

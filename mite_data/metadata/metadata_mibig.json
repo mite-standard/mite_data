@@ -1,5 +1,5 @@
 {
-  "version_mite_data": "1.5",
+  "version_mite_data": "1.6",
   "entries": {
     "BGC0000247": [
       {
@@ -79,7 +79,8 @@
         },
         "enzyme_tailoring": "Methylation",
         "enzyme_refs": [
-          "doi:10.1074/jbc.275.5.3065"
+          "doi:10.1074/jbc.275.5.3065",
+          "doi:10.1186/s12934-020-01368-3"
         ]
       },
       {
@@ -172,8 +173,9 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000134",
         "status": "active",
         "enzyme_name": "THAS",
-        "enzyme_description": "Oxidosqualene cyclase from Arabidopsis lyrata ssp lyrata (Lyre-leaved rock-cress).",
+        "enzyme_description": "Oxidosqualene cyclase",
         "enzyme_ids": {
+          "uniprot": "UPI000A29AD50",
           "genpept": "CAH8278777.1",
           "mibig": "BGC0002857"
         },
@@ -187,7 +189,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000135",
         "status": "active",
         "enzyme_name": "THAO",
-        "enzyme_description": "Cytochrome P450 enzyme from Arabidopsis lyrata ssp lyrata (Lyre-leaved rock-cress).",
+        "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "D7MKC0",
           "genpept": "EFH40098.1",
@@ -203,7 +205,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000133",
         "status": "active",
         "enzyme_name": "THAH",
-        "enzyme_description": "Cytochrome P450 enzyme from Arabidopsis lyrata ssp lyrata (Lyre-leaved rock-cress).",
+        "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "D7MKC1",
           "genpept": "EFH41844.1",
@@ -219,7 +221,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000132",
         "status": "active",
         "enzyme_name": "THAA2",
-        "enzyme_description": "No description available",
+        "enzyme_description": "Acetyltransferase",
         "enzyme_ids": {
           "uniprot": "D7MUV7",
           "genpept": "EFH40094.1",
@@ -637,7 +639,8 @@
         },
         "enzyme_tailoring": "Oxidation",
         "enzyme_refs": [
-          "doi:10.1021/ja063898m"
+          "doi:10.1021/ja063898m",
+          "doi:10.1021/ja0743801"
         ]
       }
     ],
@@ -768,7 +771,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000167",
         "status": "active",
         "enzyme_name": "ProsD",
-        "enzyme_description": "Glyoxylase",
+        "enzyme_description": "Glyoxalase",
         "enzyme_ids": {
           "genpept": "WPM83323.1",
           "mibig": "BGC0003094"
@@ -881,7 +884,7 @@
         "mite_accession": "MITE0000057",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000057",
         "status": "active",
-        "enzyme_name": "pntE",
+        "enzyme_name": "PntE",
         "enzyme_description": "Baeyer-Villiger monooxygenase",
         "enzyme_ids": {
           "uniprot": "E3VWI7",
@@ -897,8 +900,8 @@
         "mite_accession": "MITE0000059",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000059",
         "status": "active",
-        "enzyme_name": "pntM",
-        "enzyme_description": "Cytochrome p450",
+        "enzyme_name": "PntM",
+        "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "E3VWI3",
           "genpept": "ADO85571.1",
@@ -913,7 +916,7 @@
         "mite_accession": "MITE0000060",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000060",
         "status": "active",
-        "enzyme_name": "pntI",
+        "enzyme_name": "PntI",
         "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "E3VWJ1",
@@ -922,7 +925,8 @@
         },
         "enzyme_tailoring": "Oxidation",
         "enzyme_refs": [
-          "doi:10.1021/ja111279h"
+          "doi:10.1021/ja111279h",
+          "doi:10.1128/jb.02079-12"
         ]
       }
     ],
@@ -1246,7 +1250,7 @@
         "mite_accession": "MITE0000064",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000064",
         "status": "active",
-        "enzyme_name": "ptlI",
+        "enzyme_name": "PtlI",
         "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "Q82IY3",
@@ -1262,7 +1266,7 @@
         "mite_accession": "MITE0000065",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000065",
         "status": "active",
-        "enzyme_name": "ptlE",
+        "enzyme_name": "PtlE",
         "enzyme_description": "Baeyer-Villiger monooxygenase",
         "enzyme_ids": {
           "uniprot": "Q82IY8",
@@ -1350,7 +1354,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000102",
         "status": "active",
         "enzyme_name": "TrlE",
-        "enzyme_description": "Combines hydroxylation, decarboxylation and oxidation to generate tropolone from dihydrotropone-2-carboxylate",
+        "enzyme_description": "flavoprotein monooxygenase",
         "enzyme_ids": {
           "uniprot": "A0A2S1JZI9",
           "genpept": "AWF83809.1",
@@ -1441,6 +1445,24 @@
         "enzyme_tailoring": "Dioxygenation",
         "enzyme_refs": [
           "doi:10.1038/s41589-023-01476-2"
+        ]
+      }
+    ],
+    "BGC0000120": [
+      {
+        "mite_accession": "MITE0000191",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000191",
+        "status": "active",
+        "enzyme_name": "PatG",
+        "enzyme_description": "Decarboxylase",
+        "enzyme_ids": {
+          "uniprot": "A0A075TXZ1",
+          "genpept": "AIG62133.1",
+          "mibig": "BGC0000120"
+        },
+        "enzyme_tailoring": "Decarboxylation",
+        "enzyme_refs": [
+          "doi:10.1016/j.ijfoodmicro.2013.11.020"
         ]
       }
     ],
@@ -1557,7 +1579,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000040",
         "status": "active",
         "enzyme_name": "Vhal",
-        "enzyme_description": "Chlorinates bht 2 and bht 6 of vancomycin.",
+        "enzyme_description": "Flavin-dependent halogenase",
         "enzyme_ids": {
           "uniprot": "P96563",
           "genpept": "AEI58871.1",
@@ -1663,7 +1685,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000093",
         "status": "active",
         "enzyme_name": "PhmJ",
-        "enzyme_description": "halogenase",
+        "enzyme_description": "FAD-dependent halogenase",
         "enzyme_ids": {
           "uniprot": "A0A125SL25",
           "genpept": "AMH40426.1",
@@ -1675,13 +1697,47 @@
         ]
       }
     ],
+    "BGC0000031": [
+      {
+        "mite_accession": "MITE0000188",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000188",
+        "status": "active",
+        "enzyme_name": "BorI",
+        "enzyme_description": "Cytochrome P450 monooxygenase",
+        "enzyme_ids": {
+          "uniprot": "Q70HZ6",
+          "genpept": "CAE45673.1",
+          "mibig": "BGC0000031"
+        },
+        "enzyme_tailoring": "Dehydration|Hydroxylation|Oxidation",
+        "enzyme_refs": [
+          "doi:10.1111/j.1365-2958.2004.04090.x"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000189",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000189",
+        "status": "active",
+        "enzyme_name": "BorJ",
+        "enzyme_description": "Aminotransferase",
+        "enzyme_ids": {
+          "uniprot": "Q70HZ5",
+          "genpept": "CAE45674.1",
+          "mibig": "BGC0000031"
+        },
+        "enzyme_tailoring": "Amination",
+        "enzyme_refs": [
+          "doi:10.1111/j.1365-2958.2004.04090.x"
+        ]
+      }
+    ],
     "BGC0000581": [
       {
         "mite_accession": "MITE0000056",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000056",
         "status": "active",
         "enzyme_name": "McjB",
-        "enzyme_description": "Lassopeptide ATP-dependent protease (B-protein, cysteine protease-like)",
+        "enzyme_description": "ATP-dependent protease (cysteine protease-like)",
         "enzyme_ids": {
           "uniprot": "Q9X2V8",
           "genpept": "AAD28495.1",
@@ -1690,7 +1746,8 @@
         "enzyme_tailoring": "Hydrolysis",
         "enzyme_refs": [
           "doi:10.1002/cbic.201200016",
-          "doi:10.1128/JB.181.8.2659-2662.1999"
+          "doi:10.1128/JB.181.8.2659-2662.1999",
+          "doi:10.1002/cbic.201100596"
         ]
       },
       {
@@ -1737,6 +1794,7 @@
         "enzyme_name": "PhoP",
         "enzyme_description": "Short-chain dehydrogenases/reductase",
         "enzyme_ids": {
+          "uniprot": "UPI00205EBDF6",
           "genpept": "UPG58745.1",
           "mibig": "BGC0003093"
         },
@@ -1767,6 +1825,7 @@
         "enzyme_name": "PhoL",
         "enzyme_description": "Short-chain dehydrogenases/reductase",
         "enzyme_ids": {
+          "uniprot": "UPI00205DA260",
           "genpept": "UPG58741.1",
           "mibig": "BGC0003093"
         },
@@ -1780,8 +1839,9 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000156",
         "status": "active",
         "enzyme_name": "PhoM",
-        "enzyme_description": "Flavin-dependent mono-oxygenase",
+        "enzyme_description": "Flavin-dependent monooxygenase",
         "enzyme_ids": {
+          "uniprot": "UPI0020464A74",
           "genpept": "UPG58742.1",
           "mibig": "BGC0003093"
         },
@@ -1797,6 +1857,7 @@
         "enzyme_name": "PhoG",
         "enzyme_description": "Anthrone oxygenase",
         "enzyme_ids": {
+          "uniprot": "UPI00206D4B6A",
           "genpept": "UPG58736.1",
           "mibig": "BGC0003093"
         },
@@ -1827,6 +1888,7 @@
         "enzyme_name": "PhoD",
         "enzyme_description": "Dehydratase",
         "enzyme_ids": {
+          "uniprot": "UPI002070062C",
           "genpept": "UPG58733.1",
           "mibig": "BGC0003093"
         },
@@ -1842,10 +1904,11 @@
         "enzyme_name": "PhoC",
         "enzyme_description": "Short-chain dehydrogenases/reductase (SDR)",
         "enzyme_ids": {
+          "uniprot": "UPI00205CF1EC",
           "genpept": "UPG58732.1",
           "mibig": "BGC0003093"
         },
-        "enzyme_tailoring": "Biaryl bond formation|Reduction",
+        "enzyme_tailoring": "Reduction",
         "enzyme_refs": [
           "doi:10.1021/acs.orglett.2c01050"
         ]
@@ -1857,7 +1920,8 @@
         "enzyme_name": "PhoH",
         "enzyme_description": "Decarboxylase",
         "enzyme_ids": {
-          "genpept": "UPG58735.1",
+          "uniprot": "UPI0020648AC1",
+          "genpept": "UPG58737.1",
           "mibig": "BGC0003093"
         },
         "enzyme_tailoring": "Decarboxylation",
@@ -1872,6 +1936,7 @@
         "enzyme_name": "PhoJ",
         "enzyme_description": "Dioxygenase",
         "enzyme_ids": {
+          "uniprot": "UPI00204975FE",
           "genpept": "UPG58739.1",
           "mibig": "BGC0003093"
         },
@@ -2055,7 +2120,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000084",
         "status": "active",
         "enzyme_name": "NapB2",
-        "enzyme_description": "putative monooxygenase",
+        "enzyme_description": "Monooxygenase",
         "enzyme_ids": {
           "uniprot": "A7KGZ3",
           "genpept": "ABS50452.1",
@@ -2209,7 +2274,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000091",
         "status": "active",
         "enzyme_name": "CYP71BN1",
-        "enzyme_description": "No description available",
+        "enzyme_description": "Cytochrome P450 monooxygenase",
         "enzyme_ids": {
           "uniprot": "K4CI56",
           "genpept": "AGK82807.1",
@@ -2217,6 +2282,7 @@
         },
         "enzyme_tailoring": "Oxidation",
         "enzyme_refs": [
+          "doi:10.1021/ja508477e",
           "doi:10.1371/journal.pone.0119302"
         ]
       },
@@ -2225,7 +2291,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000090",
         "status": "active",
         "enzyme_name": "TPS21",
-        "enzyme_description": "No description available",
+        "enzyme_description": "Terpene cyclase",
         "enzyme_ids": {
           "uniprot": "R9R6P6",
           "genpept": "AGK82800.1",
@@ -2233,6 +2299,7 @@
         },
         "enzyme_tailoring": "Cyclization",
         "enzyme_refs": [
+          "doi:10.1021/ja508477e",
           "doi:10.1371/journal.pone.0119302"
         ]
       },
@@ -2605,13 +2672,13 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000087",
         "status": "active",
         "enzyme_name": "RslO4",
-        "enzyme_description": "Monooxygenase in the Rishirilide Biosynthesis pathway forming a para-quinone substructure",
+        "enzyme_description": "Monooxygenase",
         "enzyme_ids": {
           "uniprot": "W8QLE0",
           "genpept": "AHL46722.1",
           "mibig": "BGC0001179"
         },
-        "enzyme_tailoring": "Hydroxylation",
+        "enzyme_tailoring": "Monooxygenation",
         "enzyme_refs": [
           "doi:10.1007/s12033-021-00314-x"
         ]
@@ -2731,6 +2798,7 @@
         "enzyme_name": "TdaE",
         "enzyme_description": "Flavoprotein dioxygenase",
         "enzyme_ids": {
+          "uniprot": "UPI0001633292",
           "genpept": "AFO93376.1",
           "mibig": "BGC0000932"
         },
@@ -2892,6 +2960,24 @@
         "enzyme_tailoring": "Biaryl bond formation",
         "enzyme_refs": [
           "doi:10.1002/anie.202311533"
+        ]
+      }
+    ],
+    "BGC0000024": [
+      {
+        "mite_accession": "MITE0000190",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000190",
+        "status": "active",
+        "enzyme_name": "AurH",
+        "enzyme_description": "Cytochrome P450 Monooxygenase",
+        "enzyme_ids": {
+          "uniprot": "Q70KH6",
+          "genpept": "CAE02604.1",
+          "mibig": "BGC0000024"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1016/j.chembiol.2003.11.009"
         ]
       }
     ],

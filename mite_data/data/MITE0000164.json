@@ -9,9 +9,9 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0002-8323-5416"
             ],
-            "comment": "Initial entry."
+            "comment": "Initial entry. Reviewer 1 checked crosslinks and factual correctness, added reaction description."
         }
     ],
     "enzyme": {
@@ -21,6 +21,7 @@
             "doi:10.1021/acs.orglett.2c01050"
         ],
         "databaseIds": {
+            "uniprot": "UPI00205EBDF6",
             "genpept": "UPG58745.1",
             "mibig": "BGC0003093"
         }
@@ -30,6 +31,7 @@
             "tailoring": [
                 "Reduction"
             ],
+            "description": "PhoP is a short-chain dehydrogenases/reductase responsible for a reductive cyclisation step in the biosynthesis of phomoxanthone A",
             "reactionSMARTS": "[#6:1]-[#6@@H:2]-1-[#6:4]-[#6:7](=[O:3])-[#6:14](-[#6:17](=[O:13])-[c:18]2[c:15](-[#8:9])[c:10][c:6][c:11][c:16]2-[#8:20])=[#6:8](-[#6:12]-[#8:19])-[#6:5]-1=[O:21]>>[#6:1]-[#6@@H:2]-1-[#6:4]-[#6:7](-[#8:3])=[#6:14]2-[#6:17](=[O:13])-[c:18]3[c:15](-[#8:9])[c:10][c:6][c:11][c:16]3-[#8:20][C@:8]2([#6:12]-[#8:19])[#6@@H:5]-1-[#8:21] |r,t:16,26|",
             "reactions": [
                 {

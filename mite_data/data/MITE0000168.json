@@ -10,9 +10,9 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0001-6534-6609"
             ],
-            "comment": "Initial entry."
+            "comment": "Initial entry. Reviewer 1 added ProsC as auxiliary enzyme."
         }
     ],
     "enzyme": {
@@ -24,7 +24,16 @@
         "databaseIds": {
             "genpept": "WPM83320.1",
             "mibig": "BGC0003094"
-        }
+        },
+        "auxiliaryEnzymes": [
+            {
+                "name": "ProsC",
+                "description": "Short-chain dehydrogenase/reductase",
+                "databaseIds": {
+                    "genpept": "WPM83322.1"
+                }
+            }
+        ]
     },
     "reactions": [
         {

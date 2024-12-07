@@ -9,18 +9,19 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0002-8323-5416"
             ],
-            "comment": "Initial entry."
+            "comment": "Initial entry. Reviewr 1 checked crosslinks and factual correctness, added reaction description"
         }
     ],
     "enzyme": {
         "name": "PhoM",
-        "description": "Flavin-dependent mono-oxygenase",
+        "description": "Flavin-dependent monooxygenase",
         "references": [
             "doi:10.1021/acs.orglett.2c01050"
         ],
         "databaseIds": {
+            "uniprot": "UPI0020464A74",
             "genpept": "UPG58742.1",
             "mibig": "BGC0003093"
         }
@@ -30,6 +31,7 @@
             "tailoring": [
                 "Monooxygenation"
             ],
+            "description": "The monooxygenase PhoM is involved in C5 hydroxlation during biosynethesis of phomoxanthone A",
             "reactionSMARTS": "[#6:1]-[c:2]1[c:4][c:7](-[#8:3])[c:14](-[#6:17](=[O:13])-[c:18]2[c:15](-[#8:9])[c:10][c:6][c:11][c:16]2-[#8:20])[c:8](-[#6:12]-[#8:19])[c:5]1>>[H][C@@:5]1([#8:21])[#6:2](-[#6:1])=[#6:4]-[#6:7](=[O:3])-[#6:14](-[#6:17](=[O:13])-[c:18]2[c:15](-[#8:9])[c:10][c:6][c:11][c:16]2-[#8:20])=[#6:8]1-[#6:12]-[#8:19] |r,c:25,40|",
             "reactions": [
                 {

@@ -11,9 +11,9 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0001-6660-2715"
             ],
-            "comment": "Initial entry."
+            "comment": "Initial entry. Reviewer 1 added reaction description."
         }
     ],
     "enzyme": {
@@ -34,7 +34,7 @@
             "tailoring": [
                 "Reduction"
             ],
-            "description": "NADPH-dependent",
+            "description": "reduction of exocxclic double bond in dehydroacaterin to acaterin",
             "reactionSMARTS": "C=C1C=C(C(O1)=O)[C@@H](CCCCCCC)O>>CC2C=C(C(O2)=O)[C@@H](CCCCCCC)O",
             "reactions": [
                 {
@@ -42,13 +42,14 @@
                     "products": [
                         "CCCCCCC[C@@H](O)C1=CC(C)OC1=O"
                     ],
-                    "isIntermediate": false
+                    "isIntermediate": false,
+                    "description": "reduction of exocxclic double bond in dehydroacaterin to acaterin"
                 }
             ],
             "evidence": {
                 "evidenceCode": [
-                    "In vitro assay",
-                    "Heterologous expression"
+                    "Heterologous expression",
+                    "In vitro assay"
                 ],
                 "references": [
                     "doi:10.1002/anie.201914154",
