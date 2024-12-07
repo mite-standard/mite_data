@@ -33,7 +33,7 @@
             "tailoring": [
                 "Oxidation"
             ],
-            "description": "Catalyzes the flavin-dependent Baeyer-Villiger oxidation in the biosynthesis of pentalenolactone antibiotic",
+            "description": "Catalyzes the flavin-dependent Baeyer-Villiger oxidation in the biosynthesis of pentalenolactone",
             "reactionSMARTS": "[#6:1]/[#6@:2]1-[#6@@:18]23-[#6@:6](-[#6:7](=[#6:11]-[#6:12]-2-[#6:13]-[#6:14](-[#6:17]/3)(-[#6:16])-[#6:15])-[#6:8](-[#8:10])=[#8:9])\\[#6:5]-[#6:3]-1=[#8:4]>>[#6:1]/[#6@:2]1-[#6@@:18]23-[#6@:6](-[#6:7](=[#6:11]-[#6:12]-2-[#6:13]-[#6:14](-[#6:17]/3)(-[#6:15])-[#6:16])-[#6:8](-[#8:10])=[#8:9])\\[#6:5]-[#8]-[#6:3]-1=[#8:4]",
             "reactions": [
                 {
