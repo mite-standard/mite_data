@@ -9,9 +9,9 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0002-8323-5416"
             ],
-            "comment": "Initial entry."
+            "comment": "Initial entry. Reviewer 1 removed erroneous reaction belonging to PhoO."
         }
     ],
     "enzyme": {
@@ -22,39 +22,17 @@
         ],
         "databaseIds": {
             "genpept": "UPG58732.1",
-            "mibig": "BGC0003093"
+            "mibig": "BGC0003093",
+            "uniprot": "UPI00205CF1EC"
         }
     },
     "reactions": [
         {
             "tailoring": [
-                "Biaryl bond formation"
-            ],
-            "description": "Final step of the pathway",
-            "reactionSMARTS": "[#6:1]-[#6@@H:2]-1-[#6:4]-[#6:7](-[#8:3])=[#6:14]2-[#6:17](=[O:13])-[c:18]3[c:15](-[#8:9])[c:10][c:6][c:11][c:16]3-[#8:20][C@:8]2([#6:12]-[#8:19]-[#6:25](-[#6:27])=[O:26])[#6@@H:5]-1-[#8:21]-[#6:22](-[#6:24])=[O:23]>>[#6:1]-[#6@@H:2]-1-[#6:4]-[#6:7](-[#8:3])=[#6:14]2-[#6:17](=[O:13])-[c:18]3[c:15](-[#8:9])[c:10][c:6][c:11]([c:16]3-[#8:20][C@:8]2([#6:12]-[#8:19]-[#6:25](-[#6:27])=[O:26])[#6@@H:5]-1-[#8:21]-[#6:22](-[#6:24])=[O:23])-[c:11]1[c:6][c:10][c:15](-[#8:9])[c:18]2-[#6:17](=[O:13])-[#6:14]3=[#6:7](-[#8:3])-[#6:4]-[#6@@H:2](-[#6:1])-[#6@@H:5](-[#8:21]-[#6:22](-[#6:24])=[O:23])[C@@:8]3([#6:12]-[#8:19]-[#6:25](-[#6:27])=[O:26])[#8:20]-[c:16]12 |r,c:67,t:4,33|",
-            "reactions": [
-                {
-                    "substrate": "CC(=O)OC[C@]12Oc3cccc(O)c3C(=O)C1=C(O)C[C@@H](C)[C@H]2OC(C)=O",
-                    "products": [
-                        "CC(=O)OC[C@]12Oc3c(-c4ccc(O)c5c4O[C@@]4(COC(C)=O)C(=C(O)C[C@@H](C)[C@H]4OC(C)=O)C5=O)ccc(O)c3C(=O)C1=C(O)C[C@@H](C)[C@H]2OC(C)=O"
-                    ],
-                    "isIntermediate": false
-                }
-            ],
-            "evidence": {
-                "evidenceCode": [
-                    "Heterologous expression"
-                ],
-                "references": [
-                    "doi:10.1021/acs.orglett.2c01050"
-                ]
-            }
-        },
-        {
-            "tailoring": [
                 "Reduction"
             ],
             "reactionSMARTS": "[#6:1]-[c:2]1[c:5][c:8](-[#8:4])[c:15]2[c:18](-[#8:14])[c:19]3-[#6:16](=[O:10])-[#6:11]=[#6:7](-[#8:3])-[#6:12]-[c:17]3[c:13](-[#8:20])[c:9]2[c:6]1>>[#6:1]-[c:2]1[c:5][c:8](-[#8:4])[c:15]2[c:18](-[#8:14])[c:19]3-[#6:16](=[O:10])-[#6:11]-[#6@@H:7](-[#8:3])-[#6:12]-[c:17]3[c:13](-[#8:20])[c:9]2[c:6]1 |r,t:11|",
+            "description": "PhoD is a reductase responsible for the reduction of a double bond during biosynthesis of phomoxanthone A",
             "reactions": [
                 {
                     "substrate": "Cc1cc(O)c2c(O)c3c(c(O)c2c1)CC(O)=CC3=O",
