@@ -243,20 +243,19 @@ class BlastManager(BaseModel):
             "-dbtype",
             "prot",
             "-out",
-            f"{temp_dir.joinpath("temp_blastfiles")}",
+            f"{temp_dir.joinpath("mite_blastfiles")}",
             "-title",
             f"MITE v{metadata.version('mite_data')} BLAST DB",
         ]
         subprocess.run(command, check=True)
         os.remove(self.target_blast.joinpath(self.concat_filename))
 
-        shutil.make_archive("MiteBlastDB", "zip", temp_dir)
-        shutil.rmtree(temp_dir)
-        shutil.move(
-            src=Path(__file__)
-            .parent.parent.parent.joinpath("MiteBlastDB.zip")
-            .resolve(),
-            dst=self.target_blast.joinpath("MiteBlastDB.zip").resolve(),
+        shutil.make_archive(
+            base_name=str(self.target_blast.joinpath("MiteBlastDB").resolve()),
+            format="zip",
+            root_dir=temp_dir,
+            base_dir=temp_dir,
         )
+        shutil.rmtree(temp_dir)
 
         logger.debug("Completed creating BLAST DB.")

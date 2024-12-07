@@ -21,8 +21,8 @@
             "doi:10.1038/s41467-020-19153-6"
         ],
         "databaseIds": {
-            "genpept": "CAH8278777.1",
             "uniprot": "UPI000A29AD50",
+            "genpept": "CAH8278777.1",
             "mibig": "BGC0002857"
         }
     },

@@ -21,9 +21,9 @@
             "doi:10.1021/acs.orglett.2c01050"
         ],
         "databaseIds": {
+            "uniprot": "UPI00205EBDF6",
             "genpept": "UPG58745.1",
-            "mibig": "BGC0003093",
-            "uniprot": "UPI00205EBDF6"
+            "mibig": "BGC0003093"
         }
     },
     "reactions": [

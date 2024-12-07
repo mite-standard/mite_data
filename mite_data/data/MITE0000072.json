@@ -21,9 +21,9 @@
             "doi:10.1021/jacs.1c04996"
         ],
         "databaseIds": {
+            "uniprot": "UPI0001633292",
             "genpept": "AFO93376.1",
-            "mibig": "BGC0000932",
-            "uniprot": "UPI0001633292"
+            "mibig": "BGC0000932"
         }
     },
     "reactions": [

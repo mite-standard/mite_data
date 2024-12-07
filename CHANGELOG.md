@@ -11,7 +11,6 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 - Completed review of entries
 
-
 ## [1.6] 30-11-2024
 
 ### Bugfix

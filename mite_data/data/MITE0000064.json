@@ -38,10 +38,10 @@
                 {
                     "substrate": "CC1=CC2CC(C)(C)C[C@@]23[C@H](C)CC[C@@H]13",
                     "products": [
-                        "C[C@@H]1CC[C@H]2C(C(=O)O)=CC3CC(C)(C)C[C@]312"
+                        "C[C@@H]1CC[C@H]2C(C=O)=CC3CC(C)(C)C[C@]312"
                     ],
-                    "description": "Conversion of pentalenene to pentalen-13-al",
-                    "isIntermediate": true
+                    "isIntermediate": true,
+                    "description": "Conversion of pentalenene to pentalen-13-al"
                 }
             ],
             "evidence": {
