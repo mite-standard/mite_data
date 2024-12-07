@@ -9,9 +9,9 @@
                 "0000-0001-6534-6609"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0001-6406-4394"
             ],
-            "comment": "Initial entry."
+            "comment": "Initial entry. Reviewer 1 supplemented description of known reaction to include measured increased enzyme activity in presence of Cobalt(II)."
         }
     ],
     "enzyme": {
@@ -41,7 +41,7 @@
                         "CC(C)[C@@H]1NC(=O)[C@@H]2[C@@H](C)CCN2C(=O)CN/C(=N\\[C@H](C(=O)N[C@H](C(=O)N[C@@H](CC(=O)O)C2=N[C@H](C(=O)O)CS2)[C@@H](C)c2ccccc2)C(C)(C)C)[C@H](C(C)(C)C)NC1=O"
                     ],
                     "isIntermediate": true,
-                    "description": "bottromycin A2-precursor peptide after methylation, hetero- and macrocyclization."
+                    "description": "bottromycin A2-precursor peptide after methylation, hetero- and macrocyclization. Higher activity of enzyme measured in presence of Cobalt(II)."
                 }
             ],
             "evidence": {
