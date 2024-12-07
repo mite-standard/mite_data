@@ -10,17 +10,18 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0002-9747-3423"
             ],
-            "comment": "Initial entry."
+            "comment": "Initial entry. Reviewer 1 changed text of enzyme description and enzyme reaction description, checked factual correctness and links"
         }
     ],
     "enzyme": {
         "name": "McjB",
-        "description": "Lassopeptide ATP-dependent protease (B-protein, cysteine protease-like)",
+        "description": "ATP-dependent protease (cysteine protease-like)",
         "references": [
             "doi:10.1002/cbic.201200016",
-            "doi:10.1128/JB.181.8.2659-2662.1999"
+            "doi:10.1128/JB.181.8.2659-2662.1999",
+            "doi:10.1002/cbic.201100596"
         ],
         "databaseIds": {
             "uniprot": "Q9X2V8",
@@ -30,7 +31,7 @@
         "auxiliaryEnzymes": [
             {
                 "name": "McjC",
-                "description": "Lassopeptide ATP-dependent lactam synthetase. Required for precursor cleavage function.",
+                "description": "ATP-dependent lactam synthetase",
                 "databaseIds": {
                     "uniprot": "Q9X2V9",
                     "genpept": "AAD28496.1"
@@ -57,8 +58,8 @@
             ],
             "evidence": {
                 "evidenceCode": [
-                    "Site-directed mutagenesis",
-                    "Heterologous expression"
+                    "Heterologous expression",
+                    "Site-directed mutagenesis"
                 ],
                 "references": [
                     "doi:10.1021/ja910191u",
