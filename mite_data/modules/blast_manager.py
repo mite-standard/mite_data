@@ -251,10 +251,10 @@ class BlastManager(BaseModel):
         os.remove(self.target_blast.joinpath(self.concat_filename))
 
         shutil.make_archive(
-            base_name=str(self.target_blast.joinpath("MiteBlastDB").resolve()),
+            base_name=str(self.target_blast.joinpath("MiteBlastDB")),
             format="zip",
             root_dir=temp_dir,
-            base_dir=temp_dir,
+            base_dir=".",
         )
         shutil.rmtree(temp_dir)
 

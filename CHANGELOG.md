@@ -5,11 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.8] 08-12-2024
+
+### Bugfix
+
+- Fixed error in BLAST library creation
+
 ## [1.7] 07-12-2024
 
 ### Added
 
-- Completed review of entries
+- Completed review of all contained MITE entries
 
 ## [1.6] 30-11-2024
 
