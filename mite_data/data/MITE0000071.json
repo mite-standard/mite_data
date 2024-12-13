@@ -16,7 +16,7 @@
         }
     ],
     "enzyme": {
-        "name": "bmp2",
+        "name": "Bmp2",
         "description": "Flavin-dependent halogenase",
         "references": [
             "doi:10.1038/nchembio.1564"

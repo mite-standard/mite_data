@@ -16,7 +16,7 @@
         }
     ],
     "enzyme": {
-        "name": "ptlD",
+        "name": "PtlD",
         "description": "Non-Heme Iron-Dependent Dehydrogenase/Oxygenase",
         "references": [
             "doi:10.1021/bi1019786"

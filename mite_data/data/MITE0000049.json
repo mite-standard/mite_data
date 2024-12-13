@@ -16,7 +16,7 @@
     ],
     "enzyme": {
         "name": "BotRMT1",
-        "description": "Bottromycin-precursor acting rSAM methyltransferase from Streptomyces sp. BC16019.",
+        "description": "rSAM methyltransferase",
         "references": [
             "doi:10.1039/C2SC21190D",
             "doi:10.1039/d0np00097c",

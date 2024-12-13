@@ -20,7 +20,7 @@
     ],
     "enzyme": {
         "name": "tAtf",
-        "description": "Transfers acyl groups from acyl-CoA onto the glucosaminyl residue on hpg4 of the teicoplanin precursor.",
+        "description": "Acyltransferase",
         "references": [
             "doi:10.1016/s1074-5521(04)00002-x",
             "doi:10.1021/ja0735857",
@@ -37,7 +37,7 @@
             "tailoring": [
                 "Acylation"
             ],
-            "description": "The highest catalytic efficiency of the enzyme is achived with the glucosaminyl-teicoplanin pseudoaglycone as substrate.",
+            "description": "Deacetylates N-acetylglucosaminyl residue on Hpg4 of the teicoplanin precursor.",
             "reactionSMARTS": "[#7:1]\\[#6@@:2]1-[#6@@:95](/[#8:96])-[#6@:93](\\[#8:94])-[#6@@:90](/[#6:91]-[#8:92])-[#8:89]-[#6@:3]-1/[#8:4]>>[#6]-[#6]-[#6]-[#6](=[#8])-[#7:1]\\[#6@@:2]1-[#6@@:95](/[#8:96])-[#6@:93](\\[#8:94])-[#6@@:90](/[#6:91]-[#8:92])-[#8:89]-[#6@:3]-1/[#8:4]",
             "reactions": [
                 {

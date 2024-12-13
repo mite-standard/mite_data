@@ -1,7 +1,6 @@
 {
     "accession": "MITE0000092",
     "status": "active",
-    "comment": "Tryptophan-6 halogenase",
     "changelog": [
         {
             "version": "1",
@@ -16,7 +15,7 @@
         }
     ],
     "enzyme": {
-        "name": "borH",
+        "name": "BorH",
         "description": "Flavin-dependent halogenase",
         "references": [
             "doi:10.1002/cbic.201900667"

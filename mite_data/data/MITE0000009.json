@@ -17,7 +17,7 @@
         }
     ],
     "enzyme": {
-        "name": "meiD",
+        "name": "MeiD",
         "description": "O-methyltransferase",
         "references": [
             "doi:10.1128/AEM.02262-09"

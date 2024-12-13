@@ -15,7 +15,7 @@
         }
     ],
     "enzyme": {
-        "name": "aviG2",
+        "name": "AviG2",
         "description": "O-methyltransferase",
         "references": [
             "doi:10.1016/j.chembiol.2004.08.016",
