@@ -51,6 +51,10 @@
                 "references": [
                     "doi:10.1021/ja806467a"
                 ]
+            },
+            "databaseIds": {
+                "rhea": "26494",
+                "ec": "1.14.19.9"
             }
         }
     ]

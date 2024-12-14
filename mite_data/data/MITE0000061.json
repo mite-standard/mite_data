@@ -49,6 +49,10 @@
                 "references": [
                     "doi:10.1016/j.chembiol.2009.06.007"
                 ]
+            },
+            "databaseIds": {
+                "rhea": "56820",
+                "ec": "1.14.99.61"
             }
         }
     ]
