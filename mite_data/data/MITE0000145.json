@@ -17,8 +17,8 @@
         }
     ],
     "enzyme": {
-        "name": "avaD",
-        "description": "GNAT family Nacetyltransferase",
+        "name": "AvaD",
+        "description": "GNAT family N-acetyltransferase",
         "references": [
             "doi:10.1038/s41589-022-01246-6"
         ],

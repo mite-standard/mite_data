@@ -18,7 +18,7 @@
         }
     ],
     "enzyme": {
-        "name": "avaA",
+        "name": "AvaA",
         "description": "cRW tRNA-dependent cyclodipeptide synthase",
         "references": [
             "doi:10.1038/s41589-022-01246-6"

@@ -1,6 +1,7 @@
 {
     "accession": "MITE0000155",
     "status": "active",
+    "comment": "Acts on phenolic lipids to yield alkylresorcinol methyl ethers",
     "changelog": [
         {
             "version": "1",
@@ -17,7 +18,7 @@
     ],
     "enzyme": {
         "name": "SrsB",
-        "description": "methyltransferase acting on phenolic lipids to yield alkylresorcinol methyl ethers",
+        "description": "Methyltransferase",
         "references": [
             "doi:10.1039/c9ob00807a"
         ],

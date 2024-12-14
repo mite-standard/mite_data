@@ -1,6 +1,7 @@
 {
     "accession": "MITE0000126",
     "status": "active",
+    "comment": "Capable of iodinating and brominating arenes and olefins",
     "changelog": [
         {
             "version": "1",
@@ -18,7 +19,7 @@
     ],
     "enzyme": {
         "name": "AetF",
-        "description": "Single component flavin-dependent halogenase, capable of iodinating and brominating arenes and olefins",
+        "description": "Flavin-dependent halogenase",
         "references": [
             "doi:10.1021/jacs.1c12778"
         ],

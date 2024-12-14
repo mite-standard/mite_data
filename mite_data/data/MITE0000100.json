@@ -19,7 +19,7 @@
     ],
     "enzyme": {
         "name": "PumG",
-        "description": "Amino transferase",
+        "description": "Aminotransferase",
         "references": [
             "doi:10.1016/j.chembiol.2018.02.008"
         ],

@@ -18,7 +18,7 @@
         }
     ],
     "enzyme": {
-        "name": "cxm5",
+        "name": "Cxm5",
         "description": "Cytochrome P450",
         "references": [
             "doi:10.1016/j.apsb.2017.07.005"

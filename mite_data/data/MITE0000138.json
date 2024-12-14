@@ -16,7 +16,7 @@
         }
     ],
     "enzyme": {
-        "name": "ankE",
+        "name": "AnkE",
         "description": "NRPS independent siderophore synthetase",
         "references": [
             "doi:10.1038/s41589-022-01246-6"
