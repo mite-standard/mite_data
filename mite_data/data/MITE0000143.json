@@ -13,7 +13,7 @@
             "reviewers": [
                 "0000-0001-6534-6609"
             ],
-            "comment": "Initial entry. Reviewer 1 fixed reaction SMARTS numberingq"
+            "comment": "Initial entry. Reviewer 1 fixed reaction SMARTS numbering"
         }
     ],
     "enzyme": {
@@ -49,6 +49,10 @@
                 "references": [
                     "doi:10.1038/s41589-022-01246-6"
                 ]
+            },
+            "databaseIds": {
+                "rhea": "13009",
+                "ec": "3.5.1.9"
             }
         }
     ]

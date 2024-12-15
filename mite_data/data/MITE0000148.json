@@ -51,6 +51,9 @@
                 "references": [
                     "doi:10.1021/bi1019786"
                 ]
+            },
+            "databaseIds": {
+                "rhea": "66944"
             }
         }
     ]
