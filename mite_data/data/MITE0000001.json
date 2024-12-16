@@ -9,9 +9,10 @@
                 "0000-0001-5730-3326"
             ],
             "reviewers": [
-                "0000-0002-9747-3423"
+                "0000-0002-9747-3423",
+                "0000-0001-6534-6609"
             ],
-            "comment": "Initial entry. Reviewer changed from putative methyl transferase to => O-methyl transferase, added reference, replaced CXSMARTS with normal SMARTS."
+            "comment": "Initial entry. Reviewer changed from putative methyl transferase to => O-methyl transferase, added reference. Reviewer 2 replaced CXSMARTS with normal SMARTS."
         }
     ],
     "enzyme": {
