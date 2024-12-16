@@ -9,9 +9,10 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "0000-0002-8323-5416"
+                "0000-0002-8323-5416",
+                "0000-0001-6534-6609"
             ],
-            "comment": "Initial entry. Reviewer 1 checked crosslinks and factual correctness, added reaction description."
+            "comment": "Initial entry. Reviewer 1 checked crosslinks and factual correctness, added reaction description. Reviewer 2 replaced CXSMARTS with normal SMARTS"
         }
     ],
     "enzyme": {
@@ -32,7 +33,7 @@
                 "Reduction"
             ],
             "description": "PhoP is a short-chain dehydrogenases/reductase responsible for a reductive cyclisation step in the biosynthesis of phomoxanthone A",
-            "reactionSMARTS": "[#6:1]-[#6@@H:2]-1-[#6:4]-[#6:7](=[O:3])-[#6:14](-[#6:17](=[O:13])-[c:18]2[c:15](-[#8:9])[c:10][c:6][c:11][c:16]2-[#8:20])=[#6:8](-[#6:12]-[#8:19])-[#6:5]-1=[O:21]>>[#6:1]-[#6@@H:2]-1-[#6:4]-[#6:7](-[#8:3])=[#6:14]2-[#6:17](=[O:13])-[c:18]3[c:15](-[#8:9])[c:10][c:6][c:11][c:16]3-[#8:20][C@:8]2([#6:12]-[#8:19])[#6@@H:5]-1-[#8:21] |r,t:16,26|",
+            "reactionSMARTS": "[#6:1]/[#6@:2]1-[#6:20](=[#8:21])-[#6:17](-[#6:18]-[#8:19])=[#6:6](-[#6:7](-[#6:9]2:[#6:15](-[#8:16]):[#6:14]:[#6:13]:[#6:12]:[#6:10]:2-[#8:11])=[#8:8])-[#6:4](=[#8:5])-[#6:3]-1>>[#6:1]/[#6@:2]1-[#6@@:20](/[#8:21])-[#6@:17]2(-[#8:11]-[#6:10]3:[#6:9](:[#6:15](:[#6:14]:[#6:13]:[#6:12]:3)-[#8:16])-[#6:7](=[#8:8])-[#6:6]-2=[#6:4](-[#8:5])-[#6:3]-1)/[#6:18]-[#8:19]",
             "reactions": [
                 {
                     "substrate": "C[C@@H]1CC(=O)C(C(=O)c2c(O)cccc2O)=C(CO)C1=O",
