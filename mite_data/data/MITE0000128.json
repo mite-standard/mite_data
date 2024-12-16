@@ -12,14 +12,15 @@
             ],
             "reviewers": [
                 "0000-0003-0443-9902",
-                "0000-0001-6534-6609"
+                "0000-0001-6534-6609",
+                "0000-0002-9747-3423"
             ],
-            "comment": "Initial entry. Reviewer 1 fixed general aromaticity. Reviewer 2 added bromination reaction variant"
+            "comment": "Initial entry. Reviewer 1 fixed general aromaticity. Reviewer 2 added bromination reaction variant. Reviewer 3 improved descriptions."
         }
     ],
     "enzyme": {
         "name": "OrfA",
-        "description": "FADH-dependent halogenase",
+        "description": "Halogenase",
         "references": [
             "doi:10.1128/aem.00806-22"
         ],
@@ -33,7 +34,7 @@
             "tailoring": [
                 "Halogenation"
             ],
-            "description": "Chlorination of albofungin",
+            "description": "FADH2-dependent halogenase in the biosynthesis of chloroalbofungin",
             "reactionSMARTS": "[#6:1]-[#8:2]\\[#6@@:3]1-[#6:9]2:[#8:10]:[#6:11]3:[#6:17](:[#6:18](=[#8:19]):[#6:8]:2-[#6@:6](\\[#8:7])-[#6:5]-[#6:4]-1):[#6:15](-[#8:16]):[#6:14]1-[#6:20]2:[#6:32](-[#8:33]):[#6:31]4:[#6:23](:[#6:24]:[#6:25](:[#7:27](:[#6:29]:4=[#8:30])-[#6:28])-[#6:26]):[#6:22]:[#6:21]:2-[#6:34]-[#6:35]2-[#8:36]-[#6:37]-[#8:38]-[#6:12]:3:[#6:13]:1-2>>[#6:1]-[#8:2]\\[#6@@:3]1-[#6:9]2:[#8:10]:[#6:11]3:[#6:17](:[#6:18](=[#8:19]):[#6:8]:2-[#6@:6](\\[#8:7])-[#6:5]-[#6:4]-1):[#6:15](-[#8:16]):[#6:14]1-[#6:20]2:[#6:32](-[#8:33]):[#6:31]4:[#6:23](:[#6:24](:[#6:25](:[#7:27](:[#6:29]:4=[#8:30])-[#6:28])-[#6:26])-Cl):[#6:22]:[#6:21]:2-[#6:34]-[#6:35]2-[#8:36]-[#6:37]-[#8:38]-[#6:12]:3:[#6:13]:1-2",
             "reactions": [
                 {
@@ -41,7 +42,7 @@
                     "products": [
                         "CO[C@H]1CC[C@@H](O)c2c1oc1c3c4c(c(O)c1c2=O)-c1c(cc2c(Cl)c(C)n(C)c(=O)c2c1O)CC4OCO3"
                     ],
-                    "description": "Chlorinated albofungin to chloralbofungin",
+                    "description": "Chlorinates albofungin to chloralbofungin",
                     "isIntermediate": true
                 }
             ],
@@ -58,7 +59,7 @@
             "tailoring": [
                 "Halogenation"
             ],
-            "description": "Bromination of albofungin",
+            "description": "FADH2-dependent halogenase in the biosynthesis of bromoalbofungin variants",
             "reactionSMARTS": "[#6:1]-[#8:2]\\[#6@@:3]1-[#6:9]2:[#8:10]:[#6:11]3:[#6:17](:[#6:18](=[#8:19]):[#6:8]:2-[#6@:6](\\[#8:7])-[#6:5]-[#6:4]-1):[#6:15](-[#8:16]):[#6:14]1-[#6:20]2:[#6:32](-[#8:33]):[#6:31]4:[#6:23](:[#6:24]:[#6:25](:[#7:27](:[#6:29]:4=[#8:30])-[#6:28])-[#6:26]):[#6:22]:[#6:21]:2-[#6:34]-[#6:35]2-[#8:36]-[#6:37]-[#8:38]-[#6:12]:3:[#6:13]:1-2>>[#6:1]-[#8:2]\\[#6@@:3]1-[#6:9]2:[#8:10]:[#6:11]3:[#6:17](:[#6:18](=[#8:19]):[#6:8]:2-[#6@:6](\\[#8:7])-[#6:5]-[#6:4]-1):[#6:15](-[#8:16]):[#6:14]1-[#6:20]2:[#6:32](-[#8:33]):[#6:31]4:[#6:23](:[#6:24](:[#6:25](:[#7:27](:[#6:29]:4=[#8:30])-[#6:28])-[#6:26])-Br):[#6:22]:[#6:21]:2-[#6:34]-[#6:35]2-[#8:36]-[#6:37]-[#8:38]-[#6:12]:3:[#6:13]:1-2",
             "reactions": [
                 {
