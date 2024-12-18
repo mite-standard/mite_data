@@ -80,5 +80,7 @@ ignore = [
     # mixed-case-variable-in-class-scope
     "N815",
     # enumerate
-    "SIM113"
+    "SIM113",
+    # multiple ifs
+    "SIM102"
 ]

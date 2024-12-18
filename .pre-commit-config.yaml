@@ -14,7 +14,7 @@ repos:
   hooks:
     - id: mite-schema
       name: mite-schema
-      entry: hatch run mite_schema -i
+      entry: hatch run python .github/mite_validation.py
       language: system
       types: [ json ]
       exclude: "metadata"
