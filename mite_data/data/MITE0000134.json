@@ -11,7 +11,7 @@
             "reviewers": [
                 "0000-0001-6534-6609"
             ],
-            "comment": "Initial entry. Reviewer 1 fixed reaction SMARTS numbering and database IDs. The original submission specified RefSeq ID XP_020879357.1, which was changed to its GenPept equivalent."
+            "comment": "Initial entry. Reviewer 1 fixed reaction SMARTS numbering and database IDs. The original submission specified RefSeq ID XP_020879357.1, which was changed to its GenPept equivalent. Replaced CXSMARTS with normal SMARTS"
         }
     ],
     "enzyme": {
@@ -32,12 +32,12 @@
                 "Cyclization"
             ],
             "description": "Cyclases the intermediate in the thalianin pathway in Arabidopsis thaliana ssp. lyrata",
-            "reactionSMARTS": "[#6]\\[#6](-[#6])=[#6]\\[#6]-[#6]\\[#6](-[#6])=[#6]\\[#6]-[#6]\\[#6](-[#6])=[#6]\\[#6]-[#6]\\[#6]=[#6](/[#6])-[#6]-[#6]\\[#6]=[#6](/[#6])-[#6]-[#6]-[#6]1-[#8]C1([#6])[#6]>>[#6]-[#6@H](-[#6]-[#6]\\[#6]=[#6](/[#6])-[#6]-[#6]\\[#6]=[#6](/[#6])-[#6])[C@@]1([#6])[#6]-[#6]-[#6]2=[#6]1-[#6]-[#6]-[#6@H]1C([#6])([#6])[#6@@H](-[#8])-[#6]-[#6][C@]21[#6] |r:0,c:48|",
+            "reactionSMARTS": "[#6]-[#6](=[#6]-[#6]-[#6]-[#6](=[#6]-[#6]-[#6]-[#6](=[#6]-[#6]-[#6]-[#6]=[#6](-[#6]-[#6]-[#6]=[#6](-[#6]-[#6]-[#6]1-[#6](-[#6])(-[#6])-[#8]-1)-[#6])-[#6])-[#6])-[#6])-[#6]>>[#6]-[#6](=[#6]-[#6]-[#6]-[#6](=[#6]-[#6]-[#6]-[#6](-[#6]1(-[#6]2-[#6]-[#6]-[#6]3-[#6](-[#6])(-[#6]=2-[#6]-[#6]-1)-[#6]-[#6]-[#6](-[#8])-[#6]-3(-[#6])-[#6])-[#6])-[#6])-[#6])-[#6]",
             "reactions": [
                 {
                     "substrate": "CC(C)=CCC/C(C)=C/CC/C(C)=C/CC/C=C(\\C)CC/C=C(\\C)CCC1OC1(C)C",
                     "products": [
-                        "CC(C)=CCC/C(C)=C/CC[C@@H](C)[C@@]1(C)CCC2=C1CC[C@H]1C(C)(C)[C@@H](O)CC[C@]21C"
+                        "CC(C)=CCCC(C)=CCCC(C)C1(C)CCC2=C1CCC1C2(C)CCC(O)C1(C)C"
                     ],
                     "isIntermediate": true,
                     "description": "Cyclizes 2,3-oxidosqualene to thalianol"
