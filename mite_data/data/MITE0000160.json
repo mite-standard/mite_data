@@ -9,9 +9,10 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "0000-0002-8323-5416"
+                "0000-0002-8323-5416",
+                "0000-0001-6534-6609"
             ],
-            "comment": "Initial entry. Reviewer 1 removed erroneous reaction belonging to PhoO."
+            "comment": "Initial entry. Reviewer 1 removed erroneous reaction belonging to PhoO. Reviewer 2 replaced CXSMARTS with regular SMARTS"
         }
     ],
     "enzyme": {
