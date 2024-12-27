@@ -17,7 +17,7 @@
     ],
     "enzyme": {
         "name": "OxyB",
-        "description": " P450 monooxygenase",
+        "description": "Cytochrome P450 Monooxygenase",
         "references": [
             "doi:10.1016/j.jbiotec.2006.04.009",
             "doi:10.1128/AAC.43.7.1565",
