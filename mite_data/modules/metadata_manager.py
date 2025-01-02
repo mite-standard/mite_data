@@ -40,8 +40,6 @@ class MetadataManager(BaseModel):
         target: a Path towards the target (storage) directory
         metadata_general: a dict collecting MITE metadata with MITE IDs as keys for internal use
         metadata_mibig: a dict collecting MITE metadata
-        metadata_efi_est: a list collecting metadata for efi-est
-        fasta_efi_est: a list collecting fasta data for efi-est
     """
 
     src: DirectoryPath = Path(__file__).parent.parent.joinpath("data/")
@@ -54,18 +52,13 @@ class MetadataManager(BaseModel):
         "version_mite_data": f"{metadata.version('mite_data')}",
         "entries": {},
     }
-    metadata_efi_est: list = [
-        "key,mite_acc,enzyme_name,enzyme_description,tailoring,id_uniprot,id_genpept,id_mibig\n"
-    ]
-    fasta_efi_est: list = []
 
     def run(self: Self) -> None:
         """Class entry point to run methods"""
-        logger.debug("Started MetadataManager.")
+        logger.info("Started MetadataManager.")
         self.collect_metadata()
         self.export_json()
-        self.efi_est_files()
-        logger.debug("Completed MetadataManager.")
+        logger.info("Completed MetadataManager.")
 
     def collect_metadata(self: Self) -> None:
         """Method to access and collect metadata from MITE entries"""
@@ -123,57 +116,6 @@ class MetadataManager(BaseModel):
             self.metadata_mibig["entries"][mibig].append(entry)
         else:
             self.metadata_mibig["entries"][mibig] = [entry]
-
-    def efi_est_files(self: Self) -> None:
-        """Collects data for EFI-EST sequence similarity network"""
-        fasta_dir = Path(__file__).parent.parent.joinpath("fasta")
-
-        index = 0
-        for fasta_file in fasta_dir.iterdir():
-            with open(fasta_file) as infile:
-                lines = infile.read()
-                split_lines = lines.splitlines()
-                mite_acc = split_lines[0].split()[0].strip(">")
-
-            with open(self.src.joinpath(f"{mite_acc}.json")) as mite_file:
-                mite_data = json.load(mite_file)
-
-            key = f"{index}".rjust(7, "z")
-            acc = mite_data["accession"]
-            name = mite_data["enzyme"].get("name", "").replace(",", "")
-            descr = mite_data["enzyme"].get("description", "").replace(",", "")
-            tail = "|".join(
-                sorted(
-                    {
-                        tailoring
-                        for reaction in mite_data.get("reactions")
-                        for tailoring in reaction.get("tailoring", [])
-                    }
-                )
-            )
-            uniprot = mite_data["enzyme"]["databaseIds"].get("uniprot", "")
-            genpept = mite_data["enzyme"]["databaseIds"].get("genpept", "")
-            mibig = mite_data["enzyme"]["databaseIds"].get("mibig", "")
-
-            self.metadata_efi_est.append(
-                f"{key},{acc},{name},{descr},{tail},{uniprot},{genpept},{mibig}\n"
-            )
-
-            self.fasta_efi_est.append(f"{lines}\n")
-
-            index += 1
-
-        with open(
-            self.target.joinpath("metadata_efi_est.csv"), "w", encoding="utf-8"
-        ) as outfile:
-            outfile.writelines(self.metadata_efi_est)
-
-        with open(
-            self.target.joinpath("efi_est.fasta"), "w", encoding="utf-8"
-        ) as outfile:
-            outfile.writelines(self.fasta_efi_est)
-
-        # dump data here
 
     def export_json(self: Self) -> None:
         """Exports collected metadata to target dir"""

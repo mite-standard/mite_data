@@ -17,7 +17,7 @@
         }
     ],
     "enzyme": {
-        "name": "abmB",
+        "name": "AbmB",
         "description": "L-Ornithine N(5)-oxygenase",
         "references": [
             "doi:10.1016/j.jbc.2023.104573"
@@ -51,6 +51,10 @@
                 "references": [
                     "doi:10.1016/j.jbc.2023.104573"
                 ]
+            },
+            "databaseIds": {
+                "rhea": "23228",
+                "ec": "1.14.13.59"
             }
         }
     ]

@@ -17,7 +17,7 @@
     ],
     "enzyme": {
         "name": "TnmK1",
-        "description": "Catalyzes D-ring-forming Michael addition",
+        "description": "Hydrolase.",
         "references": [
             "doi:10.1021/jacs.2c08957"
         ],
@@ -32,6 +32,7 @@
             "tailoring": [
                 "Cyclization"
             ],
+            "description": "Catalyzes D-ring-forming Michael addition",
             "reactionSMARTS": "[CH3:1][O:2][C:3]1[CH:33]2[CH:34]([CH:35]=[O:36])[C:7]([CH:8]([C:27]#[C:28][CH:29]=[CH:30][C:31]#[C:32]2)[NH:9][c:10]2[c:16]3[C:17]([c:19]4[c:24]([C:25](=[O:26])[c:15]3[c:13]([OH:14])[cH:12][cH:11]2)[cH:23][cH:22][cH:21][cH:20]4)=[O:18])=[C:5]([CH3:6])[CH:4]=1>>[CH3:1][O:2][C:3]1[CH:33]2[C:34]3([CH:11]4[CH2:12][C:13]([c:15]5[c:25]([OH:26])[c:24]6[c:19]([cH:20][cH:21][cH:22][cH:23]6)[c:17]([OH:18])[c:16]5[C:10]4=[N:9][CH:8]([C:27]#[C:28][CH:29]=[CH:30][C:31]#[C:32]2)[C:7]3=[C:5]([CH3:6])[CH:4]=1)=[O:14])[CH:35]=[O:36]",
             "reactions": [
                 {

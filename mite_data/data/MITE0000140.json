@@ -1,6 +1,9 @@
 {
     "accession": "MITE0000140",
-    "status": "active",
+    "status": "retired",
+    "retirementReasons": [
+        "AnkA is a gatekeeping enzyme (cyclodipeptide synthase, producing the cyclo-Arg-Tyr diketopiperazine) and not a tailoring enzyme and therefore out of scope of MITE."
+    ],
     "changelog": [
         {
             "version": "1",
@@ -16,7 +19,7 @@
         }
     ],
     "enzyme": {
-        "name": "ankA",
+        "name": "AnkA",
         "description": "cRY tRNA-dependent cyclodipeptide synthase",
         "references": [
             "doi:10.1038/s41589-022-01246-6"
@@ -48,6 +51,9 @@
                 "references": [
                     "doi:10.1038/s41589-022-01246-6"
                 ]
+            },
+            "databaseIds": {
+                "rhea": "79847"
             }
         }
     ]

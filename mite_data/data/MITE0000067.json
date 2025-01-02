@@ -50,6 +50,10 @@
                 "references": [
                     "doi:10.1021/ja056749x"
                 ]
+            },
+            "databaseIds": {
+                "rhea": "27393",
+                "ec": "1.21.98.2"
             }
         }
     ]

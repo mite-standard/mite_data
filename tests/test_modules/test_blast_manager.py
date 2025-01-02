@@ -4,12 +4,12 @@ from urllib.error import HTTPError
 
 import pytest
 
-from mite_data.modules.blast_manager import BlastManager
+from mite_data.modules.fasta_manager import FastaManager
 
 
 @pytest.fixture
 def blast_manager():
-    return BlastManager(
+    return FastaManager(
         src=Path(__file__).parent.parent.joinpath(
             "example_files/example_metadata.json"
         ),
@@ -78,27 +78,3 @@ def test_validate_nr_files(blast_manager):
     assert blast_manager.validate_nr_files() is None
     os.remove(Path("tests/example_files/MITE0000020.fasta"))
     os.remove(Path("tests/example_files/MITE0000109.fasta"))
-
-
-@pytest.mark.slow
-def test_concat_fasta_files_valid(blast_manager):
-    blast_manager.extract_accessions()
-    blast_manager.download_ncbi()
-    blast_manager.download_uniprot()
-    blast_manager.concat_fasta_files()
-    assert Path("tests/example_files/mite_enzymes_concat.fasta").stat().st_size != 0
-    os.remove(Path("tests/example_files/mite_enzymes_concat.fasta"))
-    os.remove(Path("tests/example_files/MITE0000020.fasta"))
-    os.remove(Path("tests/example_files/MITE0000109.fasta"))
-
-
-@pytest.mark.slow
-def test_generate_blast_db(blast_manager):
-    blast_manager.extract_accessions()
-    blast_manager.download_ncbi()
-    blast_manager.download_uniprot()
-    blast_manager.concat_fasta_files()
-    assert blast_manager.generate_blast_db() is None
-    os.remove(Path("tests/example_files/MITE0000020.fasta"))
-    os.remove(Path("tests/example_files/MITE0000109.fasta"))
-    os.remove(Path("tests/example_files/MiteBlastDB.zip"))

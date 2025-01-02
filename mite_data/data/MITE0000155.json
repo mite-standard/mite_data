@@ -1,6 +1,7 @@
 {
     "accession": "MITE0000155",
     "status": "active",
+    "comment": "Acts on phenolic lipids to yield alkylresorcinol methyl ethers",
     "changelog": [
         {
             "version": "1",
@@ -12,12 +13,23 @@
                 "0000-0001-6534-6609",
                 "0000-0003-0443-9902"
             ],
-            "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer 2 replaced frequency variation with enumeration and fixed reaction numbering, reaction passes."
+            "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer 2 replaced frequency variation with enumeration and fixed reaction numbering, reaction passes. "
+        },
+        {
+            "version": "2",
+            "date": "2024-12-09",
+            "contributors": [
+                "0000-0002-9747-3423"
+            ],
+            "reviewers": [
+                "0000-0003-1763-2525"
+            ],
+            "comment": "included reaction description. Reviewer 1 corrected the SMARTS codes and SMILES. There were some carbons too much or too little in the acyl side chain."
         }
     ],
     "enzyme": {
         "name": "SrsB",
-        "description": "methyltransferase acting on phenolic lipids to yield alkylresorcinol methyl ethers",
+        "description": "Methyltransferase",
         "references": [
             "doi:10.1039/c9ob00807a"
         ],
@@ -31,12 +43,13 @@
             "tailoring": [
                 "Methylation"
             ],
-            "reactionSMARTS": "[#6:1]-[#6:2]-[#6:3](-[#6:5]-[#6:6]-[#6:7]-[#6:8]-[#6:9]-[#6:10]-[#6:11]-[#6:12]-[#6:13]-[#6:14]-[#6:15]-[#6:16]-[#6:17]-[#6:18]-[#6:19]1:[#6:26](-[#6:27]):[#6:24](-[#8:25]):[#6:23]:[#6:21](-[#8:22]):[#6:20]:1)-[#6:4]>>[#6:1]-[#6:2]-[#6:3](-[#6:5]-[#6:6]-[#6:7]-[#6:8]-[#6:9]-[#6:10]-[#6:11]-[#6:12]-[#6:13]-[#6:14]-[#6:15]-[#6:16]-[#6:17]-[#6:18]-[#6:19]1:[#6:26](-[#6:27]):[#6:24](-[#8:25]):[#6:23]:[#6:21](-[#8:22]-[#6]):[#6:20]:1)-[#6:4]",
+            "description": "O-methylation of alkylresorcinols to yield alkylresorcinol methyl ethers",
+            "reactionSMARTS": "[#6:1]-[#6:2]-[#6:3](-[#6:4])-[#6:5]-[#6:6]-[#6:7]-[#6:8]-[#6:9]-[#6:10]-[#6:11]-[#6:12]-[#6:13]-[#6:14]-[#6:15]-[#6:16]-[c:19]1[c:20][c:21](-[#8:22])[c:23][c:24](-[#8:25])[c:26]1-[#6:27]>>[#6:1]-[#6:2]-[#6:3](-[#6:4])-[#6:5]-[#6:6]-[#6:7]-[#6:8]-[#6:9]-[#6:10]-[#6:11]-[#6:12]-[#6:13]-[#6:14]-[#6:15]-[#6:16]-[c:19]1[c:20][c:21](-[#8:22]-[#6])[c:23][c:24](-[#8:25])[c:26]1-[#6:27]",
             "reactions": [
                 {
-                    "substrate": "CCC(C)CCCCCCCCCCCCCCc1cc(O)cc(O)c1C",
+                    "substrate": "CCC(CCCCCCCCCCCCc1c(C)c(O)cc(O)c1)C",
                     "products": [
-                        "CCC(C)CCCCCCCCCCCCCCc1cc(OC)cc(O)c1C"
+                        "CCC(CCCCCCCCCCCCc1c(C)c(O)cc(OC)c1)C"
                     ],
                     "isIntermediate": true
                 }
@@ -54,12 +67,13 @@
             "tailoring": [
                 "Methylation"
             ],
-            "reactionSMARTS": "[#6:1]-[#6:2]-[#6:3](-[#6:5]-[#6:6]-[#6:7]-[#6:8]-[#6:9]-[#6:10]-[#6:11]-[#6:12]-[#6:13]-[#6:14]-[#6:15]-[#6:16]-[#6:17]-[#6:18]1:[#6:25](-[#6:26]):[#6:23](-[#8:24]):[#6:22]:[#6:20](-[#8:21]):[#6:19]:1)-[#6:4]>>[#6:1]-[#6:2]-[#6:3](-[#6:5]-[#6:6]-[#6:7]-[#6:8]-[#6:9]-[#6:10]-[#6:11]-[#6:12]-[#6:13]-[#6:14]-[#6:15]-[#6:16]-[#6:17]-[#6:18]1:[#6:25](-[#6:26]):[#6:23](-[#8:24]):[#6:22]:[#6:20](-[#8:21]-[#6]):[#6:19]:1)-[#6:4]",
+            "description": "O-methylation of alkylresorcinols to yield alkylresorcinol methyl ethers",
+            "reactionSMARTS": "[#6:2]-[#6:3](-[#6:4])-[#6:5]-[#6:6]-[#6:7]-[#6:8]-[#6:9]-[#6:10]-[#6:11]-[#6:12]-[#6:13]-[#6:14]-[#6:15]-[#6:16]-[#6:17]-[c:18]1[c:19][c:20](-[#8:21])[c:22][c:23](-[#8:24])[c:25]1-[#6:26]>>[#6]-[#8:21]-[c:20]1[c:22][c:23](-[#8:24])[c:25](-[#6:26])[c:18](-[#6:17]-[#6:16]-[#6:15]-[#6:14]-[#6:13]-[#6:12]-[#6:11]-[#6:10]-[#6:9]-[#6:8]-[#6:7]-[#6:6]-[#6:5]-[#6:3](-[#6:2])-[#6:4])[c:19]1",
             "reactions": [
                 {
-                    "substrate": "CCC(C)CCCCCCCCCCCCCc1cc(O)cc(O)c1C",
+                    "substrate": "CC(CCCCCCCCCCCCCc1c(C)c(O)cc(O)c1)C",
                     "products": [
-                        "CCC(C)CCCCCCCCCCCCCc1cc(OC)cc(O)c1C"
+                        "CC(CCCCCCCCCCCCCc1c(C)c(O)cc(OC)c1)C"
                     ],
                     "isIntermediate": true
                 }
@@ -77,12 +91,13 @@
             "tailoring": [
                 "Methylation"
             ],
-            "reactionSMARTS": "[#6:1]-[#6:2]1:[#6:9](-[#6:10]-[#6:11]-[#6:12]-[#6:13]-[#6:14]-[#6:15]-[#6:16]-[#6:17]-[#6:18]-[#6:19]-[#6:20]-[#6:21]-[#6:22]-[#6:23](-[#6:25])-[#6:24]):[#6:8]:[#6:6](-[#8:7]):[#6:5]:[#6:3]:1-[#8:4]>>[#6]-[#8:7]-[#6:6]1:[#6:8]:[#6:9](-[#6:10]-[#6:11]-[#6:12]-[#6:13]-[#6:14]-[#6:15]-[#6:16]-[#6:17]-[#6:18]-[#6:19]-[#6:20]-[#6:21]-[#6:22]-[#6:23](-[#6:25])-[#6:24]):[#6:2](-[#6:1]):[#6:3](-[#8:4]):[#6:5]:1",
+            "description": "O-methylation of alkylresorcinols to yield alkylresorcinol methyl ethers",
+            "reactionSMARTS": "[#6:24]-[#6:23](-[#6:25])-[#6:21]-[#6:20]-[#6:19]-[#6:18]-[#6:17]-[#6:16]-[#6:15]-[#6:14]-[#6:13]-[#6:12]-[#6:11]-[#6:10]-[c:9]1[c:8][c:6](-[#8:7])[c:5][c:3](-[#8:4])[c:2]1-[#6:1]>>[#6]-[#8:7]-[c:6]1[c:5][c:3](-[#8:4])[c:2](-[#6:1])[c:9](-[#6:10]-[#6:11]-[#6:12]-[#6:13]-[#6:14]-[#6:15]-[#6:16]-[#6:17]-[#6:18]-[#6:19]-[#6:20]-[#6:21]-[#6:23](-[#6:24])-[#6:25])[c:8]1",
             "reactions": [
                 {
-                    "substrate": "Cc1c(O)cc(O)cc1CCCCCCCCCCCCCC(C)C",
+                    "substrate": "CC(CCCCCCCCCCCCc1c(C)c(O)cc(O)c1)C",
                     "products": [
-                        "COc1cc(O)c(C)c(CCCCCCCCCCCCCC(C)C)c1"
+                        "CC(CCCCCCCCCCCCc1c(C)c(O)cc(OC)c1)C"
                     ],
                     "isIntermediate": true
                 }
@@ -100,12 +115,13 @@
             "tailoring": [
                 "Methylation"
             ],
-            "reactionSMARTS": "[#6:1]-[#6:2]1:[#6:9](-[#6:10]-[#6:11]-[#6:12]-[#6:13]-[#6:14]-[#6:15]-[#6:16]-[#6:17]-[#6:18]-[#6:19]-[#6:20]-[#6:21]-[#6:22](-[#6:24])-[#6:23]):[#6:8]:[#6:6](-[#8:7]):[#6:5]:[#6:3]:1-[#8:4]>>[#6]-[#8:7]-[#6:6]1:[#6:8]:[#6:9](-[#6:10]-[#6:11]-[#6:12]-[#6:13]-[#6:14]-[#6:15]-[#6:16]-[#6:17]-[#6:18]-[#6:19]-[#6:20]-[#6:21]-[#6:22](-[#6:24])-[#6:23]):[#6:2](-[#6:1]):[#6:3](-[#8:4]):[#6:5]:1",
+            "description": "O-methylation of alkylresorcinols to yield alkylresorcinol methyl ethers",
+            "reactionSMARTS": "[#6:24]-[#6:22](-[#6:23])-[#6:20]-[#6:19]-[#6:18]-[#6:17]-[#6:16]-[#6:15]-[#6:14]-[#6:13]-[#6:12]-[#6:11]-[#6:10]-[c:9]1[c:8][c:6](-[#8:7])[c:5][c:3](-[#8:4])[c:2]1-[#6:1]>>[#6]-[#8:7]-[c:6]1[c:5][c:3](-[#8:4])[c:2](-[#6:1])[c:9](-[#6:10]-[#6:11]-[#6:12]-[#6:13]-[#6:14]-[#6:15]-[#6:16]-[#6:17]-[#6:18]-[#6:19]-[#6:20]-[#6:22](-[#6:24])-[#6:23])[c:8]1",
             "reactions": [
                 {
-                    "substrate": "Cc1c(O)cc(O)cc1CCCCCCCCCCCCC(C)C",
+                    "substrate": "CC(CCCCCCCCCCCc1c(C)c(O)cc(O)c1)C",
                     "products": [
-                        "COc1cc(O)c(C)c(CCCCCCCCCCCCC(C)C)c1"
+                        "CC(CCCCCCCCCCCc1c(C)c(O)cc(OC)c1)C"
                     ],
                     "isIntermediate": true
                 }

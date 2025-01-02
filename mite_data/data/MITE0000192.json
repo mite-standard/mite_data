@@ -1,0 +1,107 @@
+{
+    "accession": "MITE0000192",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-12-02",
+            "contributors": [
+                "0000-0001-6406-4394"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423",
+                "0000-0002-8323-5416"
+            ],
+            "comment": "Initial entry. Reviewer 1 checked for factual correctness, Database ID crosslinks verified, added where possible"
+        }
+    ],
+    "enzyme": {
+        "name": "CtoA",
+        "description": "Halogenase",
+        "references": [
+            "doi:10.1021/acschembio.5b00523"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A0M4KXQ6",
+            "genpept": "ALD83700.1",
+            "mibig": "BGC0001299"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Dichlorination of chlorotonil precursor.",
+            "reactionSMARTS": "[#6:1]-[#6:2]1-[#6:29]-[#6@@:28]2-[#6@:6](-[#6@:7]3-[#6@@:25](\\[#6:26]=[#6:27]\\2)-[#6@:23](\\[#6:24])-[#6:22]=[#6:21]-[#6:20]=[#6:19]-[#6@:17](/[#6:18])-[#8:16]-[#6:14](=[#8:15])-[#6:13]-[#6:11](=[#8:12])-[#6:10]-[#6:8]\\3=[#8:9])/[#6@:4](/[#6:5])-[#6:3]=1>>[#6:1]-[#6:2]1-[#6:29]-[#6@@:28]2-[#6@:6](-[#6@:7]3-[#6@@:25](\\[#6:26]=[#6:27]\\2)-[#6@:23](\\[#6:24])-[#6:22]=[#6:21]-[#6:20]=[#6:19]-[#6@:17](/[#6:18])-[#8:16]-[#6:14](=[#8:15])-[#6:13]-[#6:11](=[#8:12])-[#6:10](-[Cl])(-[Cl])-[#6:8]\\3=[#8:9])/[#6@:4](/[#6:5])-[#6:3]=1",
+            "reactions": [
+                {
+                    "substrate": "CC1=C[C@@H](C)[C@H]2[C@@H]3C(=O)CC(=O)CC(=O)O[C@@H](C)C=CC=C[C@@H](C)[C@@H]3C=C[C@@H]2C1",
+                    "products": [
+                        "CC1=C[C@@H](C)[C@H]2[C@@H]3C(=O)C(Cl)(Cl)C(=O)CC(=O)O[C@@H](C)C=CC=C[C@@H](C)[C@@H]3C=C[C@@H]2C1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Dichlorenation of chlorotonil A precursor. Requires an unmethylated C2."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure"
+                ],
+                "references": [
+                    "doi:10.1021/acschembio.5b00523"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Dichlorination of chlorotonil precursor.",
+            "reactionSMARTS": "[#6:1]-[#6:2]1-[#6:29]-[#6@@:28]2-[#6@:6](-[#6@:7]3-[#6@@:25](\\[#6:26]=[#6:27]\\2)-[#6@:23](\\[#6:24])-[#6:22]=[#6:21]-[#6:20]=[#6:19]-[#6@:17](/[#6:18])-[#8:16]-[#6:14](=[#8:15])-[#6:13]-[#6:11](=[#8:12])-[#6:10]=[#6:8]\\3-[#8:9])/[#6@:4](/[#6:5])-[#6:3]=1>>[#6:1]-[#6:2]1-[#6:29]-[#6@@:28]2-[#6@:6](-[#6@:7]3-[#6@@:25](\\[#6:26]=[#6:27]\\2)-[#6@:23](\\[#6:24])-[#6:22]=[#6:21]-[#6:20]=[#6:19]-[#6@:17](/[#6:18])-[#8:16]-[#6:14](=[#8:15])-[#6:13]-[#6:11](=[#8:12])-[#6:10](-[Cl])(-[Cl])-[#6:8]\\3=[#8:9])/[#6@:4](/[#6:5])-[#6:3]=1",
+            "reactions": [
+                {
+                    "substrate": "CC1=C[C@@H](C)[C@H]2[C@@H]3C(O)=CC(=O)CC(=O)O[C@@H](C)C=CC=C[C@@H](C)[C@@H]3C=C[C@@H]2C1",
+                    "products": [
+                        "CC1=C[C@@H](C)[C@H]2[C@@H]3C(=O)C(Cl)(Cl)C(=O)CC(=O)O[C@@H](C)C=CC=C[C@@H](C)[C@@H]3C=C[C@@H]2C1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Dichlorenation of chlorotonil A precursor. Requires an unmethylated C2."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure"
+                ],
+                "references": [
+                    "doi:10.1021/acschembio.5b00523"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Dichlorination of chlorotonil precursor.",
+            "reactionSMARTS": "[#6:1]-[#6:2]1-[#6:29]-[#6@@:28]2-[#6@:6](-[#6@:7]3-[#6@@:25](\\[#6:26]=[#6:27]\\2)-[#6@:23](\\[#6:24])-[#6:22]=[#6:21]-[#6:20]=[#6:19]-[#6@:17](/[#6:18])-[#8:16]-[#6:14](=[#8:15])-[#6:13]-[#6:11](-[#8:12])=[#6:10]-[#6:8]\\3=[#8:9])/[#6@:4](/[#6:5])-[#6:3]=1>>[#6:1]-[#6:2]1-[#6:29]-[#6@@:28]2-[#6@:6](-[#6@:7]3-[#6@@:25](\\[#6:26]=[#6:27]\\2)-[#6@:23](\\[#6:24])-[#6:22]=[#6:21]-[#6:20]=[#6:19]-[#6@:17](/[#6:18])-[#8:16]-[#6:14](=[#8:15])-[#6:13]-[#6:11](=[#8:12])-[#6:10](-[Cl])(-[Cl])-[#6:8]\\3=[#8:9])/[#6@:4](/[#6:5])-[#6:3]=1",
+            "reactions": [
+                {
+                    "substrate": "CC1=C[C@@H](C)[C@H]2[C@@H]3C(=O)C=C(O)CC(=O)O[C@@H](C)C=CC=C[C@@H](C)[C@@H]3C=C[C@@H]2C1",
+                    "products": [
+                        "CC1=C[C@@H](C)[C@H]2[C@@H]3C(=O)C(Cl)(Cl)C(=O)CC(=O)O[C@@H](C)C=CC=C[C@@H](C)[C@@H]3C=C[C@@H]2C1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Dichlorenation of chlorotonil A precursor. Requires an unmethylated C2."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure"
+                ],
+                "references": [
+                    "doi:10.1021/acschembio.5b00523"
+                ]
+            }
+        }
+    ]
+}

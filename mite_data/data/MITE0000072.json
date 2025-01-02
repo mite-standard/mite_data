@@ -9,9 +9,10 @@
                 "0000-0001-7411-5925"
             ],
             "reviewers": [
-                "0000-0002-9747-3423"
+                "0000-0002-9747-3423",
+                "0000-0001-6534-6609"
             ],
-            "comment": "Initial entry. Reviewer 1 checked crosslinks, factual correctness, and reaction description, UniProt ID yet unreviewed."
+            "comment": "Initial entry. Reviewer 1 checked crosslinks, factual correctness, and reaction description, UniProt ID yet unreviewed. Reviewer 2 replaced CXSMARTS with normal SMARTS."
         }
     ],
     "enzyme": {
@@ -32,7 +33,7 @@
                 "Dioxygenation"
             ],
             "description": "TdaE relies on its substrate as electron donor (rather than NAD(P)H) for O2 activation and covalent flavin-oxygen adduct formation. Then, TdaE incorporates both O2-derived oxygen atoms into the substrate most likely via transient FlN5OO and FlN5O species, thereby breaking the CoA thioester bond and epoxidizing the tropone ring. ",
-            "reactionSMARTS": "[#6:17][C:16]([#6:18])([#6:19]-[#8:20][P:21]([#8:23])(=[O:22])[#8:24][P:25]([#8:27])(=[O:26])[#8:28]-[#6:29]-[#6:30]-1-[#8:34]-[#6:33](-[#6:32](-[#8:45])-[#6:31]-1-[#8:46][P:47]([#8:49])([#8:50])=[O:48])-[n:35]1[c:36][n:37][c:38]2[c:39](-[#7:44])[n:40][c:41][n:42][c:43]12)[#6:15](-[#8:51])-[#6:13](=[O:14])-[#7:12]-[#6:11]-[#6:10]-[#6:8](=[O:9])-[#7:7]-[#6:6]-[#6:5]-[#16:4]-[#6:2](=[O:3])-[#6:1]-1=[#6:53](-[#8:58])-[#6:54]-[#6:57]=[#6:56]-[#6:55]=[#6:52]-1>>[#8:71]-[#6:2](=[O:3])[C@@:1]12[#8:70]-[#6@@H:52]1-[#6:55]=[#6:56]-[#6:57]=[#6:54]-[#6:53]2=[O:58] |r,c:53,57,59,68,70|",
+            "reactionSMARTS": "[#6]-[#6](-[#6](-[#6](-[#7]-[#6]-[#6]-[#6](-[#7]-[#6]-[#6]-[#16]-[#6:49](-[#6:51]1-[#6:58]=[#6:57]-[#6:56]=[#6:55]-[#6:54]-[#6:52]=1-[#8:53])=[#8:50])=[#8])=[#8])-[#8])(-[#6]-[#8]-[#15](-[#8]-[#15](-[#8]-[#6]-[#6]1-[#6](-[#8]-[#15](-[#8])(-[#8])=[#8])-[#6](-[#8])-[#6](-[#7]2:[#6]3:[#6](:[#6](:[#7]:[#6]:[#7]:3)-[#7]):[#7]:[#6]:2)-[#8]-1)(-[#8])=[#8])(-[#8])=[#8])-[#6]>>[#8]-[#6:49](/[#6@@:51]12-[#8]\\[#6@@:58]-1-[#6:57]=[#6:56]-[#6:55]=[#6:54]-[#6:52]-2=[#8:53])=[#8:50]",
             "reactions": [
                 {
                     "substrate": "CC(C)(COP(=O)(O)OP(=O)(O)OCC1OC(n2cnc3c(N)ncnc32)C(O)C1OP(=O)(O)O)C(O)C(=O)NCCC(=O)NCCSC(=O)C1=C(O)CC=CC=C1",

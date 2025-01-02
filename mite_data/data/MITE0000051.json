@@ -17,7 +17,7 @@
     ],
     "enzyme": {
         "name": "BotH",
-        "description": "bottromycin epimerase from Streptomyces sp. BC16019",
+        "description": "Epimerase",
         "references": [
             "doi:10.1038/s41589-020-0624-8",
             "doi:10.1039/d0np00097c"

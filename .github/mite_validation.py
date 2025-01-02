@@ -23,11 +23,12 @@ SOFTWARE.
 
 import json
 from pathlib import Path
+from sys import argv
 from typing import Self
 
 from mite_extras import MiteParser
 from mite_schema import SchemaManager
-from pydantic import BaseModel, DirectoryPath
+from pydantic import BaseModel, DirectoryPath, model_validator
 
 
 class CicdManager(BaseModel):
@@ -35,107 +36,163 @@ class CicdManager(BaseModel):
 
     Attributes:
         src: a Path towards the source directory
+        fasta: a Path towards to directory containing accompanying fasta files
+        issues: all issues detected during run
+        genpept: a list of genbank accessions in mite_data
+        uniprot: a list of uniprot accessions in mite_data
     """
 
     src: DirectoryPath = Path(__file__).parent.parent.joinpath("mite_data/data/")
+    fasta: DirectoryPath = Path(__file__).parent.parent.joinpath("mite_data/fasta/")
+    issues: list = []
+    genpept: dict = {}
+    uniprot: dict = {}
 
-    def run(self: Self) -> None:
-        """Function to run all validation steps"""
-        self.check_release_ready()
-        self.check_duplicates()
-        self.validate_entries_passing()
-
-    def check_release_ready(self: Self) -> None:
-        """Verify that no entry has the status tag 'pending' or the MITE ID MITE9999999
-
-        Raises:
-            RuntimeError: Pending entry or MITE9999999 detected
-        """
-        errors = []
-
+    @model_validator(mode="after")
+    def fill_accessions(self):
         for entry in self.src.iterdir():
             with open(entry) as infile:
-                mite_json = json.load(infile)
+                data = json.load(infile)
+            if data["status"] != "active":
+                continue
 
-            if mite_json["status"] == "pending":
-                errors.append(
-                    f"Entry '{entry}' has the status flag 'pending'. This must be set to 'active' before release."
+            if acc := data["enzyme"]["databaseIds"].get("genpept", None):
+                if acc in self.genpept:
+                    self.genpept[acc].append(data["accession"])
+                else:
+                    self.genpept[acc] = [data["accession"]]
+
+            if acc := data["enzyme"]["databaseIds"].get("uniprot", None):
+                if acc in self.uniprot:
+                    self.uniprot[acc].append(data["accession"])
+                else:
+                    self.uniprot[acc] = [data["accession"]]
+
+        return self
+
+    def run_file(self: Self, path: str) -> None:
+        """Run a single file against validation functions
+
+        Arguments:
+            path: a file path
+
+        Raises:
+            FileNotFoundError: mite file or mite fasta file not found
+            RuntimeError: one or more issues with files detected
+        """
+        path = Path(path)
+        if not path.exists():
+            raise FileNotFoundError(f"Could not find file '{path}'")
+
+        if not path.name.startswith("MITE"):
+            raise RuntimeError(f"File '{path.name}' does not appear to be a MITE file.")
+
+        if not self.fasta.joinpath(f"{path.stem}.fasta").exists():
+            raise FileNotFoundError(
+                f"File '{path.name}' does not have an accompanying fasta file."
+            )
+
+        with open(path) as infile:
+            data = json.load(infile)
+
+        self.check_release_ready(data=data)
+        self.check_duplicates(data=data)
+        self.validate_entries_passing(data=data)
+
+        if len(self.issues) != 0:
+            raise RuntimeError("\n".join(self.issues))
+
+    def run_data_dir(self: Self) -> None:
+        """Run all files against validation functions
+
+        Raises:
+            FileNotFoundError: mite file or mite fasta file not found
+            RuntimeError: one or more issues with files detected
+        """
+        for path in self.src.iterdir():
+            if not path.exists():
+                raise FileNotFoundError(f"Could not find file '{path}'")
+
+            if not path.name.startswith("MITE"):
+                raise RuntimeError(
+                    f"File '{path.name}' does not appear to be a MITE file."
                 )
 
-            if mite_json["accession"] == "MITE9999999":
-                errors.append(
-                    f"Entry '{entry}' has the MITE accession 'MITE9999999'. Change this to the correct version before release."
+            with open(path) as infile:
+                data = json.load(infile)
+            if data["status"] != "active":
+                continue
+
+            if not self.fasta.joinpath(f"{path.stem}.fasta").exists():
+                raise FileNotFoundError(
+                    f"File '{path.name}' does not have an accompanying fasta file."
                 )
 
-        if len(errors) != 0:
-            raise RuntimeError("\n".join(errors))
+            self.check_release_ready(data=data)
+            self.check_duplicates(data=data)
+            self.validate_entries_passing(data=data)
 
-    def check_duplicates(self: Self) -> None:
+        if len(self.issues) != 0:
+            raise RuntimeError("\n".join(self.issues))
+
+    def check_release_ready(self: Self, data: dict) -> None:
+        """Verify that entry does not have the status tag 'pending' or the MITE ID MITE9999999
+
+        Argument:
+            data: the mite entry data
+        """
+        if data["status"] == "pending":
+            self.issues.append(
+                f"Entry '{data["accession"]}' has the status flag 'pending'. This must be set to 'active' before release."
+            )
+
+        if data["accession"] == "MITE9999999":
+            self.issues.append(
+                f"Entry '{data["accession"]}' has the MITE accession 'MITE9999999'. Change this to the correct accession before release."
+            )
+
+    def check_duplicates(self: Self, data: dict) -> None:
         """Check if multiple MITE entries describe the same enzyme using GenPept/UniProt IDs
 
-        Raises:
-            RuntimeError: Duplicate entry detected OR entry without uniprot or ncbi ID detected
+        Argument:
+            data: the mite entry data
         """
-        nr_ncbi = {}
-        nr_uniprot = {}
-        errors = []
+        if data["status"] != "active":
+            return
 
-        for entry in self.src.iterdir():
-            with open(entry) as infile:
-                mite_json = json.load(infile)
-
-            if mite_json["status"] != "active":
-                continue
-            elif acc := mite_json["enzyme"]["databaseIds"].get("genpept", None):
-                if acc in nr_ncbi:
-                    errors.append(
-                        f"Duplicate entry '{entry.name}': GenPept ID '{acc}' already found in entry '{nr_ncbi[acc]}'."
-                    )
-                else:
-                    nr_ncbi[acc] = entry.name
-            elif acc := mite_json["enzyme"]["databaseIds"].get("uniprot", None):
-                if acc in nr_uniprot:
-                    errors.append(
-                        f"Duplicate entry '{entry.name}': Uniprot ID '{acc}' already found in entry '{nr_uniprot[acc]}'."
-                    )
-                else:
-                    nr_uniprot[acc] = entry.name
-            else:
-                raise RuntimeError(
-                    f"Entry '{entry.name}' has neither an UniProt nor an NCBI GenPept accession."
+        if acc := data["enzyme"]["databaseIds"].get("genpept", None):
+            if len(self.genpept[acc]) > 1:
+                self.issues.append(
+                    f"Multiple entries share the same GenPept ID '{acc}': '{self.genpept[acc]}'"
                 )
 
-        if len(errors) != 0:
-            raise RuntimeError("\n".join(errors))
+        if acc := data["enzyme"]["databaseIds"].get("uniprot", None):
+            if len(self.uniprot[acc]) > 1:
+                self.issues.append(
+                    f"Multiple entries share the same UniProt ID '{acc}': '{self.uniprot[acc]}'"
+                )
 
-    def validate_entries_passing(self: Self) -> None:
+    def validate_entries_passing(self: Self, data: dict) -> None:
         """Check if MITE entries pass automated validation checks of mite_extras
 
-        Raises:
-            RuntimeError: MITE entry did not pass the automated validation
+        Argument:
+            data: the mite entry data
         """
-        schema_manager = SchemaManager()
-        errors = []
-
-        for entry in self.src.iterdir():
-            try:
-                if not entry.name.startswith("MITE"):
-                    continue
-
-                with open(entry) as infile:
-                    input_data = json.load(infile)
-
-                parser = MiteParser()
-                parser.parse_mite_json(data=input_data)
-
-                schema_manager.validate_mite(instance=parser.to_json())
-            except Exception as e:
-                errors.append(f"Error: entry {entry.name} failed validation ({e}).")
-
-        if len(errors) != 0:
-            raise RuntimeError("\n".join(errors))
+        try:
+            parser = MiteParser()
+            parser.parse_mite_json(data=data)
+            schema_manager = SchemaManager()
+            schema_manager.validate_mite(instance=parser.to_json())
+        except Exception as e:
+            self.issues.append(
+                f"Error: entry {data["accession"]} failed validation ({e})."
+            )
 
 
 if __name__ == "__main__":
     manager = CicdManager()
-    manager.run()
+
+    try:
+        manager.run_file(path=argv[1])
+    except IndexError:
+        manager.run_data_dir()

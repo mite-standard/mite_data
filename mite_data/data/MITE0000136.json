@@ -16,7 +16,7 @@
     ],
     "enzyme": {
         "name": "THAA1",
-        "description": "Acyltransferase subfamily IIIa from Arabidopsis lyrata ssp lyrata (Lyre-leaved rock-cress).",
+        "description": "Acyltransferase subfamily IIIa, Arabidopsis lyrata ssp lyrata",
         "references": [
             "doi:10.1038/s41467-020-19153-6"
         ],

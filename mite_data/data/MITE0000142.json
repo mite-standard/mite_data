@@ -16,7 +16,7 @@
         }
     ],
     "enzyme": {
-        "name": "ankC",
+        "name": "AnkC",
         "description": "FAD-dependent monooxygenase",
         "references": [
             "doi:10.1038/s41589-022-01246-6"
@@ -48,6 +48,9 @@
                 "references": [
                     "doi:10.1038/s41589-022-01246-6"
                 ]
+            },
+            "databaseIds": {
+                "rhea": "80211"
             }
         }
     ]

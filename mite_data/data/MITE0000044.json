@@ -17,7 +17,7 @@
     ],
     "enzyme": {
         "name": "BotCYP",
-        "description": "cytochrome P450",
+        "description": "Cytochrome P450",
         "references": [
             "doi:10.1021/jacs.0c10361",
             "doi:10.1039/d0np00097c"

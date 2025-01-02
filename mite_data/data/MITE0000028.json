@@ -16,7 +16,7 @@
     ],
     "enzyme": {
         "name": "BhaA",
-        "description": "Chlorinates balhimycin precursor at bht2 and bht6.",
+        "description": "Halogenase",
         "references": [
             "doi:10.1016/s1074-5521(02)00101-1",
             "doi:10.1016/j.jbiotec.2006.04.009",
@@ -42,6 +42,7 @@
                     "products": [
                         "CC(C)C[C@@H](N)C(=O)N[C@H]1C(=O)N[C@@H](CC(N)=O)C(=O)N[C@H]2C(=O)N[C@H](c3ccc(O)cc3)C(=O)N[C@H](C=O)[C@H](O)c3ccc(c(Cl)c3)Oc3cc2cc(c3O)Oc2ccc(cc2Cl)[C@H]1O"
                     ],
+                    "description": "Chlorinates balhimycin precursor at bht2 and bht6.",
                     "isIntermediate": true
                 }
             ],

@@ -6,9 +6,11 @@
             "version": "1",
             "date": "2024-12-01",
             "contributors": [
+                "0009-0002-2037-5945",
                 "0009-0001-9399-9671"
             ],
             "reviewers": [
+                "0009-0001-3436-5302",
                 "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer 1 fixed erroneously stated product (patulin) and added reaction databaseId crosslinks."

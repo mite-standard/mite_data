@@ -18,7 +18,7 @@
         }
     ],
     "enzyme": {
-        "name": "meiE",
+        "name": "MeiE",
         "description": "Cytochrome P450",
         "references": [
             "doi:10.1128/AEM.02262-09"

@@ -1,6 +1,9 @@
 {
     "accession": "MITE0000146",
-    "status": "active",
+    "status": "retired",
+    "retirementReasons": [
+        "AvaA is a gatekeeping enzyme (cyclodipeptide synthase, producing the cyclo-Arg-Trp diketopiperazine) and not a tailoring enzyme and therefore out of scope of MITE."
+    ],
     "changelog": [
         {
             "version": "1",
@@ -15,10 +18,21 @@
                 "0000-0003-0443-9902"
             ],
             "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer partially fixed reactions:products, validation still not passing. Reviewer 1 fixed numbering of reaction SMARTS, reaction passes."
+        },
+        {
+            "version": "2",
+            "date": "2024-12-15",
+            "contributors": [
+                "0000-0001-6534-6609"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Reviewer1 retired entry: not a tailoring enzyme."
         }
     ],
     "enzyme": {
-        "name": "avaA",
+        "name": "AvaA",
         "description": "cRW tRNA-dependent cyclodipeptide synthase",
         "references": [
             "doi:10.1038/s41589-022-01246-6"

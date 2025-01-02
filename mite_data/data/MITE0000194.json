@@ -1,0 +1,57 @@
+{
+    "accession": "MITE0000194",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-12-07",
+            "contributors": [
+                "0000-0001-6534-6609"
+            ],
+            "reviewers": [
+                "0000-0001-7044-2419"
+            ],
+            "comment": "Initial entry. Check for factual correctness; link to UniParc (the UniProt Archive) as entry was retired in UniProtKB;"
+        }
+    ],
+    "enzyme": {
+        "name": "PhoO",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1021/acs.orglett.2c01050"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI0020472753",
+            "genpept": "UPG58744.1",
+            "mibig": "BGC0003093"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Biaryl bond formation"
+            ],
+            "description": "PhoO dimerizes penexanthone B to phomoxanthone A",
+            "reactionSMARTS": "[#6:1]-[#6:2](-[#8:4]-[#6:5]\\[#6@@:6]12-[#6@:23](/[#8:24]-[#6:25](=[#8:27])-[#6:26])-[#6@:21](/[#6:22])-[#6:20]-[#6:18](-[#8:19])=[#6:17]-1-[#6:15](=[#8:16])-[#6:14]1:[#6:8](:[#6:9]:[#6:10]:[#6:11]:[#6:12]:1-[#8:13])-[#8:7]-2)=[#8:3]>>[#6:1]-[#6:2](-[#8:4]-[#6:5]\\[#6@@:6]12-[#6@:23](/[#8:24]-[#6:25](=[#8:27])-[#6:26])-[#6@:21](/[#6:22])-[#6:20]-[#6:18](-[#8:19])=[#6:17]-1-[#6:15](=[#8:16])-[#6:14]1:[#6:8](:[#6:9](-[#6]3:[#6]:[#6]:[#6](:[#6]4-[#6](-[#6]5=[#6](-[#6]-[#6@](-[#6@@](/[#8]-[#6](=[#8])-[#6])-[#6@]-5(-[#8]-[#6]:3:4)\\[#6]-[#8]-[#6](=[#8])-[#6])/[#6])-[#8])=[#8])-[#8]):[#6:10]:[#6:11]:[#6:12]:1-[#8:13])-[#8:7]-2)=[#8:3]",
+            "reactions": [
+                {
+                    "substrate": "CC(=O)OC[C@]12Oc3cccc(O)c3C(=O)C1=C(O)C[C@@H](C)[C@H]2OC(C)=O",
+                    "products": [
+                        "CC(=O)OC[C@]12Oc3c(-c4ccc(O)c5c4O[C@@]4(COC(C)=O)C(=C(O)C[C@@H](C)[C@H]4OC(C)=O)C5=O)ccc(O)c3C(=O)C1=C(O)C[C@@H](C)[C@H]2OC(C)=O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Dimerization of penexanthone B to phomoxanthone A via biaryl bond formation"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acs.orglett.2c01050"
+                ]
+            }
+        }
+    ]
+}

@@ -17,7 +17,7 @@
     ],
     "enzyme": {
         "name": "TrlE",
-        "description": "flavoprotein monooxygenase",
+        "description": "Flavoprotein monooxygenase",
         "references": [
             "doi:10.1039/D4SC01715C"
         ],

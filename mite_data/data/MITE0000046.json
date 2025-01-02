@@ -17,7 +17,7 @@
         }
     ],
     "enzyme": {
-        "name": "botRMT2",
+        "name": "BotRMT2",
         "description": "radical SAM methyltransferase ",
         "references": [
             "doi:10.1039/C2SC21190D",

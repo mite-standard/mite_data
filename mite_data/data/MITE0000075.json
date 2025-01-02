@@ -16,7 +16,7 @@
         }
     ],
     "enzyme": {
-        "name": "clmM2",
+        "name": "ClmM2",
         "description": "O-methyltransferase",
         "references": [
             "doi:10.1016/j.chembiol.2012.01.014"

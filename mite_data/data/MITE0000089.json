@@ -1,6 +1,9 @@
 {
     "accession": "MITE0000089",
-    "status": "active",
+    "status": "retired",
+    "retirementReasons": [
+        "CPT2 is a gatekeeping enzyme producing the nerylneryl terpene scaffold and not a tailoring enzyme and therefore out of scope of MITE."
+    ],
     "changelog": [
         {
             "version": "1",
@@ -12,10 +15,22 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer 1 added correct number of products for a balanced reaction."
+        },
+        {
+            "version": "2",
+            "date": "2024-12-15",
+            "contributors": [
+                "0000-0001-6534-6609"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Reviewer 1 retired the entry due to being out of scope of MITE."
         }
     ],
     "enzyme": {
         "name": "CPT2",
+        "description": "Nerylneryl diphosphate synthase",
         "references": [
             "doi:10.1073/pnas.0904113106",
             "doi:10.1105/tpc.113.111013",

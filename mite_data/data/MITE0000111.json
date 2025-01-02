@@ -10,14 +10,15 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "0000-0003-0443-9902"
+                "0000-0003-0443-9902",
+                "0000-0002-9747-3423"
             ],
-            "comment": "Initial entry. Reviewer fixed reactionSMARTS:reactionSMARTS. Reviewer fixed reactions:substrate. Reviewer fixed reactions:products."
+            "comment": "Initial entry. Reviewer fixed reactionSMARTS:reactionSMARTS. Reviewer fixed reactions:substrate. Reviewer fixed reactions:products. Reviewer 2 modified enzyme description."
         }
     ],
     "enzyme": {
         "name": "NgnO3",
-        "description": "NgnO3 catalyzes the formation of the ether bridge moiety at position C8/C13 of the substrate molecules.",
+        "description": "Dioxygenase",
         "references": [
             "doi:10.1021/acschembio.9b01034"
         ],
@@ -72,14 +73,16 @@
     "reactions": [
         {
             "tailoring": [
+                "Oxidation",
                 "Other"
             ],
-            "reactionSMARTS": "[#6:1]-[#8:2]-[#6@H:3]-1-[#6:4]-[#6@H:5]-2-[#6:6]=[#6:7]-[#6@@H:8]-3-[#6:9]-[#6@H:10](-[#8:11])-[#6@H:12](-[#6:13])-[#6@H:14](-[#8:15])-[#6@H:16]-3-[#6@@H:17]-2\\[#6:18](-[#6:19])=[#6:20]\\[#6@@H:21](-[#6:22])-[#6@H:23](-[#8:24]-[#6:25]-1=[O:26])-[#6@H:27](-[#6:28])-[#8:29]>>[#6:1]-[#8:2]-[#6@H:3]-1-[#6:4]-[#6@H:5]2-[#6:6]=[#6:7]-[#6@H:8]-3-[#6@H:9]-4-[#8:10][C@@:11]2([#6@@H:12]-3-[#6@@H:13](-[#8:14])-[#6@@H:15](-[#6:16])-[#6@H:17]-4-[#8:18])\\[#6:19](-[#6:20])=[#6:21]\\[#6@@H:22](-[#6:23])-[#6@H:24](-[#8:25]-[#6:26]-1=[O:27])-[#6@H:28](-[#6:29])-[#8:30]",
+            "description": "NgnO3 catalyzes the formation of the ether bridge moiety at position C8/C13 of the substrate molecules.",
+            "reactionSMARTS": "[#6@:1]1(\\[#6:28])-[#6@@:2](\\[#8:29])-[#6:3]-[#6:4]2-[#6:7]=[#6:8]-[#6:9]3-[#6:18]-[#6@:17](\\[#8:19]-[#6:20])-[#6:16](=[#8:21])-[#8:15]/[#6@:14](-[#6@:22](/[#8:24])-[#6:23])-[#6@:13](/[#6:25])-[#6:12]=[#6:11](-[#6:26])-[#6:10]-3-[#6:5]-2-[#6@@:6]-1/[#8:27]>>[#6@:1]1(\\[#6:28])-[#6@@:2](\\[#8:29])-[#6@@:3]2/[#8]/[#6@@&H1:10]34-[#6:11](-[#6:26])=[#6:12]-[#6@@:13](/[#6:25])-[#6@@:14](-[#6@:22](/[#8:24])-[#6:23])/[#8:15]-[#6:16](=[#8:21])-[#6@@:17](\\[#8:19]-[#6:20])-[#6:18]-[#6:9]-3-[#6:8]=[#6:7]-[#6:4]-2-[#6:5]-4-[#6@@:6]-1/[#8:27]",
             "reactions": [
                 {
-                    "substrate": "CO[C@H]1C[C@H]2C=C[C@@H]3C[C@H](O)[C@H](C)[C@H](O)[C@H]3[C@@H]2/C(C)=C/[C@@H](C)[C@@H]([C@H](C)O)OC1=O",
+                    "substrate": "CO[C@H]1CC2C=CC3C[C@H](O)[C@H](C)[C@@H](O)C3C2C(C)=C[C@@H](C)[C@@H]([C@@H](C)O)OC1=O",
                     "products": [
-                        "CO[C@H]1C[C@H]2C=C[C@H]3[C@H]4O[C@]2(/C(C)=C/[C@@H](C)[C@@H]([C@H](C)O)OC1=O)[C@@H]3[C@@H](O)[C@@H](C)[C@H]4O"
+                        "CO[C@H]1CC2C=CC3C4[C@H](O)[C@@H](C)[C@@H](O)[C@@H]3OC24C(C)=C[C@@H](C)[C@@H]([C@@H](C)O)OC1=O"
                     ],
                     "isIntermediate": false
                 }

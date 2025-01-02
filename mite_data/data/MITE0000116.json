@@ -10,14 +10,15 @@
                 "0000-0002-4977-2541"
             ],
             "reviewers": [
-                "0000-0003-0443-9902"
+                "0000-0003-0443-9902",
+                "0000-0002-9747-3423"
             ],
-            "comment": "Initial entry. Reviewer fixed reactionSMARTS:reactionSMARTS."
+            "comment": "Initial entry. Reviewer fixed reactionSMARTS:reactionSMARTS. Reviewer 2 changed enzyme and reaction description"
         }
     ],
     "enzyme": {
-        "name": "stoC",
-        "description": "dehydration",
+        "name": "StoC",
+        "description": "NADH:flavin oxidoreductase",
         "references": [
             "doi:10.1002/anie.201914154"
         ],
@@ -31,6 +32,7 @@
             "tailoring": [
                 "Dehydration"
             ],
+            "description": "Dehydration; elimination of primary alcohol under formation exo-methylene group",
             "reactionSMARTS": "[#8:14]-[#6:13]-[#6:12]-1-[#8:15]-[#6:16](=[O:17])-[#6:10](\\[#6:9]=[#6:8]\\[c:7]2[c:4][c:3][c:2](-[#8:1])[c:5][c:6]2)=[#6:11]-1>>[#8:16]-[c:13]1[c:12][c:11][c:10](\\[#6:9]=[#6:8]\\[#6:4]-2=[#6:3]-[#6:2](=[#6:1])-[#8:6]-[#6:5]2=[O:7])[c:15][c:14]1",
             "reactions": [
                 {
