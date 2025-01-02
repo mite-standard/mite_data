@@ -11,9 +11,10 @@
             ],
             "reviewers": [
                 "0000-0001-6534-6609",
-                "0000-0003-0443-9902"
+                "0000-0003-0443-9902",
+                "0000-0002-9747-3423"
             ],
-            "comment": "Initial entry. Reviewer fixed reactionSMARTS:reactionSMARTS. Reviewer 2 reworked reaction SMARTS numbering"
+            "comment": "Initial entry. Reviewer fixed reactionSMARTS:reactionSMARTS. Reviewer 2 reworked reaction SMARTS numbering. Reviewr 3 changed enzyme and reaction description"
         }
     ],
     "enzyme": {
@@ -65,7 +66,8 @@
     "reactions": [
         {
             "tailoring": [
-                "Hydroxylation"
+                "Hydroxylation",
+                "Oxidation"
             ],
             "description": "Hydroxylation at c-2",
             "reactionSMARTS": "[#6:1]-[#6:2]\\[#6@@:3]1-[#6@:25](\\[#6:26])-[#6:24]=[#6:22](-[#6:23])-[#6:21]2-[#6:9](-[#6:10]=[#6:11]-[#6:12]3-[#6:20]-2-[#6@@:18](/[#8:19])-[#6@@:16](/[#6:17])-[#6@@:14](/[#8:15])-[#6:13]-3)-[#6:8]-[#6:7]-[#6:5](=[#8:6])-[#8:4]-1>>[#6:1]-[#6:2]\\[#6@@:3]1-[#6@:25](\\[#6:26])-[#6:24]=[#6:22](-[#6:23])-[#6:21]2-[#6:9](-[#6:10]=[#6:11]-[#6:12]3-[#6:20]-2-[#6@@:18](/[#8:19])-[#6@@:16](/[#6:17])-[#6@@:14](/[#8:15])-[#6:13]-3)-[#6:8]-[#6@:7](\\[#8])-[#6:5](=[#8:6])-[#8:4]-1",

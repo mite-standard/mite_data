@@ -306,7 +306,7 @@
     "MITE0000116": {
       "status": "active",
       "enzyme_name": "StoC",
-      "enzyme_description": "NADH flavin oxidoreductase",
+      "enzyme_description": "NADH:flavin oxidoreductase",
       "enzyme_ids": {
         "genpept": "TMU80020.1",
         "mibig": "BGC0002069"
@@ -405,7 +405,7 @@
     "MITE0000117": {
       "status": "active",
       "enzyme_name": "StoR",
-      "enzyme_description": "NADPH-dependent reductase",
+      "enzyme_description": "NAD(P)H-dependent oxidoreductase",
       "enzyme_ids": {
         "genpept": "TMU76675.1",
         "mibig": "BGC0002069"
@@ -534,7 +534,7 @@
     "MITE0000103": {
       "status": "active",
       "enzyme_name": "TrlF",
-      "enzyme_description": "1,4,6-cycloheptatriene-1-carboxylic acid decarboxylase",
+      "enzyme_description": "decarboxylase, hydrolase",
       "enzyme_ids": {
         "uniprot": "A0A2S1JZI6",
         "genpept": "AWF83810.1",
@@ -662,7 +662,7 @@
     "MITE0000111": {
       "status": "active",
       "enzyme_name": "NgnO3",
-      "enzyme_description": "Phytanoyl-CoA dioxygenase",
+      "enzyme_description": "Dioxygenase",
       "enzyme_ids": {
         "uniprot": "A0A3S7PZF2",
         "genpept": "AXG22416.1",
@@ -1743,7 +1743,7 @@
     "MITE0000113": {
       "status": "active",
       "enzyme_name": "NgnD",
-      "enzyme_description": "Bispericyclase",
+      "enzyme_description": "Nuclear transport factor 2 family protein",
       "enzyme_ids": {
         "uniprot": "A0A3S7PZF0",
         "genpept": "AXG22404.1",
