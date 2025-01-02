@@ -5,11 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.9] UNRELEASED
+## [1.9] 02-12-2024
 
 ### Added
 
 - Added entries for 12-24 data update
+- Automated fasta-file download via pre-commit
+
+### Changed
+
+- Moved BLAST-library, .pdb-files, and enzyme visualizations to `mite_web`
 
 ## [1.8] 08-12-2024
 

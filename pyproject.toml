@@ -16,10 +16,8 @@ authors = [
     { name = "Mitja M. Zdouc", email = "zdoucmm@gmail.com" }
 ]
 dependencies = [
-    "argparse~=1.4",
     "biopython~=1.84",
     "coloredlogs~=15.0",
-    "AlphaFetcher~=0.2",
     "mite_extras==1.3.1",
     "mite_schema==1.6.0",
     "pre-commit~=3.4",
