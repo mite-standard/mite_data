@@ -1943,6 +1943,23 @@
         ]
       }
     ],
+    "BGC0002126": [
+      {
+        "mite_accession": "MITE0000196",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000196",
+        "status": "active",
+        "enzyme_name": "HynE",
+        "enzyme_description": "alpha-ketoglutarate-dependent dioxygenase",
+        "enzyme_ids": {
+          "genpept": "QWP75301.1",
+          "mibig": "BGC0002126"
+        },
+        "enzyme_tailoring": "Hydroxylation",
+        "enzyme_refs": [
+          "doi:10.1002/anie.202102224"
+        ]
+      }
+    ],
     "BGC0000581": [
       {
         "mite_accession": "MITE0000056",

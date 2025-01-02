@@ -599,6 +599,15 @@
         "mibig": "BGC0003094"
       }
     },
+    "MITE0000196": {
+      "status": "active",
+      "enzyme_name": "HynE",
+      "enzyme_description": "alpha-ketoglutarate-dependent dioxygenase",
+      "enzyme_ids": {
+        "genpept": "QWP75301.1",
+        "mibig": "BGC0002126"
+      }
+    },
     "MITE0000056": {
       "status": "active",
       "enzyme_name": "McjB",

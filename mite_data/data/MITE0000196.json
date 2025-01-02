@@ -1,0 +1,64 @@
+{
+    "accession": "MITE0000196",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-12-04",
+            "contributors": [
+                "0000-0001-6660-2715"
+            ],
+            "reviewers": [
+                "0000-0001-7044-2419"
+            ],
+            "comment": "New entry"
+        }
+    ],
+    "enzyme": {
+        "name": "HynE",
+        "description": "alpha-ketoglutarate-dependent dioxygenase",
+        "references": [
+            "doi:10.1002/anie.202102224"
+        ],
+        "databaseIds": {
+            "genpept": "QWP75301.1",
+            "mibig": "BGC0002126"
+        },
+        "auxiliaryEnzymes": [
+            {
+                "name": "HynA",
+                "description": "nonribosomal peptide synthetase",
+                "databaseIds": {
+                    "genpept": "QWP75305.1"
+                }
+            }
+        ]
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "beta-hydroxylation of PCP-bound asparagine (anti)",
+            "reactionSMARTS": "[#6:1]-[#6:2](-[#6:10](-[#8:22])-[#6:11](-[#7:13]-[#6:14]-[#6:15]-[#6:16](-[#7:18]-[#6:19]-[#6:20]-[#16:21]-[#6:23](=[#8:26])-[#6@:24](/[#7:27])-[#6:25]-[#6:28](=[#8:30])-[#7:29])-[#8:17])-[#8:12])(-[#6:4]-[#8:5]-[#15:6](-[#8:9])(-[#8:8])-[#8:7])-[#6:3]>>[#6:3]-[#6:2](-[#6:10](-[#8:22])-[#6:11](-[#7:13]-[#6:14]-[#6:15]-[#6:16](-[#7:18]-[#6:19]-[#6:20]-[#16:21]-[#6:23](=[#8:26])-[#6@:24](/[#7:27])-[#6@:25](\\[#8])-[#6:28](=[#8:30])-[#7:29])-[#8:17])-[#8:12])(-[#6:4]-[#8:5]-[#15:6](-[#8:8])(-[#8:7])-[#8:9])-[#6:1]",
+            "reactions": [
+                {
+                    "substrate": "CC(C)(CO[PH](O)(O)O)C(O)C(O)NCCC(O)NCCSC(=O)[C@H](N)CC(N)=O",
+                    "products": [
+                        "CC(C)(CO[PH](O)(O)O)C(O)C(O)NCCC(O)NCCSC(=O)[C@H](N)[C@H](O)C(N)=O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "beta-hydroxylation of PCP-bound asparagine (anti)"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1002/anie.202102224"
+                ]
+            }
+        }
+    ]
+}
