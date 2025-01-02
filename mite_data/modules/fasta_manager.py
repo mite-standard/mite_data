@@ -38,6 +38,7 @@ class FastaManager(BaseModel):
     """Manages the download of FASTA files and the building of a BLAST database.
 
     Not all MITE entries have NCBI GenPept accessions - some only have UniProt IDs.
+
     The manager first extracts accessions - MITE file does not have a GenPept ID, it will take
     the UniProtKB or UniParc ID.
 
