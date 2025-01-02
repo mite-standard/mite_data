@@ -56,12 +56,25 @@ class FastaManager(BaseModel):
     target_download: DirectoryPath = Path(__file__).parent.parent.joinpath("fasta/")
 
     def run(self: Self) -> None:
-        """Class entry point to run methods"""
+        """Class entry point to run methods
+
+        Raises:
+            RuntimeError: New fasta files were downloaded (needed to abort pre-commit)
+
+        """
         logger.info("Started FastaManager.")
+        nr_files_pre = len(list(Path(self.target_download).glob("*")))
         try:
             self.extract_accessions()
             self.download_ncbi()
             self.download_uniprot()
+
+            nr_files_post = len(list(Path(self.target_download).glob("*")))
+            if nr_files_pre != nr_files_post:
+                raise RuntimeError(
+                    "Fasta files were downloaded - add them to version control."
+                )
+
         except Exception as e:
             logger.error(f"An error has occurred: {e!s}")
         logger.info("Completed FastaManager.")
