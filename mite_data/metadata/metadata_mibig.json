@@ -1,6 +1,182 @@
 {
   "version_mite_data": "1.6",
   "entries": {
+    "BGC0003093": [
+      {
+        "mite_accession": "MITE0000194",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000194",
+        "status": "active",
+        "enzyme_name": "PhoO",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "UPI0020472753",
+          "genpept": "UPG58744.1",
+          "mibig": "BGC0003093"
+        },
+        "enzyme_tailoring": "Biaryl bond formation",
+        "enzyme_refs": [
+          "doi:10.1021/acs.orglett.2c01050"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000164",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000164",
+        "status": "active",
+        "enzyme_name": "PhoP",
+        "enzyme_description": "Short-chain dehydrogenases/reductase",
+        "enzyme_ids": {
+          "uniprot": "UPI00205EBDF6",
+          "genpept": "UPG58745.1",
+          "mibig": "BGC0003093"
+        },
+        "enzyme_tailoring": "Reduction",
+        "enzyme_refs": [
+          "doi:10.1021/acs.orglett.2c01050"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000165",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000165",
+        "status": "active",
+        "enzyme_name": "PhoN",
+        "enzyme_description": "Isomerase",
+        "enzyme_ids": {
+          "genpept": "UPG58743.1",
+          "mibig": "BGC0003093"
+        },
+        "enzyme_tailoring": "Other",
+        "enzyme_refs": [
+          "doi:10.1021/acs.orglett.2c01050"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000157",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000157",
+        "status": "active",
+        "enzyme_name": "PhoL",
+        "enzyme_description": "Short-chain dehydrogenases/reductase",
+        "enzyme_ids": {
+          "uniprot": "UPI00205DA260",
+          "genpept": "UPG58741.1",
+          "mibig": "BGC0003093"
+        },
+        "enzyme_tailoring": "Reduction",
+        "enzyme_refs": [
+          "doi:10.1021/acs.orglett.2c01050"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000156",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000156",
+        "status": "active",
+        "enzyme_name": "PhoM",
+        "enzyme_description": "Flavin-dependent monooxygenase",
+        "enzyme_ids": {
+          "uniprot": "UPI0020464A74",
+          "genpept": "UPG58742.1",
+          "mibig": "BGC0003093"
+        },
+        "enzyme_tailoring": "Monooxygenation",
+        "enzyme_refs": [
+          "doi:10.1021/acs.orglett.2c01050"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000162",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000162",
+        "status": "active",
+        "enzyme_name": "PhoG",
+        "enzyme_description": "Anthrone oxygenase",
+        "enzyme_ids": {
+          "uniprot": "UPI00206D4B6A",
+          "genpept": "UPG58736.1",
+          "mibig": "BGC0003093"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1021/acs.orglett.2c01050"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000161",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000161",
+        "status": "active",
+        "enzyme_name": "PhoK",
+        "enzyme_description": "Reductase",
+        "enzyme_ids": {
+          "genpept": "UPG58740.1",
+          "mibig": "BGC0003093"
+        },
+        "enzyme_tailoring": "Acetylation|Reduction",
+        "enzyme_refs": [
+          "doi:10.1021/acs.orglett.2c01050"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000159",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000159",
+        "status": "active",
+        "enzyme_name": "PhoD",
+        "enzyme_description": "Dehydratase",
+        "enzyme_ids": {
+          "uniprot": "UPI002070062C",
+          "genpept": "UPG58733.1",
+          "mibig": "BGC0003093"
+        },
+        "enzyme_tailoring": "Dehydration",
+        "enzyme_refs": [
+          "doi:10.1021/acs.orglett.2c01050"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000160",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000160",
+        "status": "active",
+        "enzyme_name": "PhoC",
+        "enzyme_description": "Short-chain dehydrogenases/reductase (SDR)",
+        "enzyme_ids": {
+          "uniprot": "UPI00205CF1EC",
+          "genpept": "UPG58732.1",
+          "mibig": "BGC0003093"
+        },
+        "enzyme_tailoring": "Reduction",
+        "enzyme_refs": [
+          "doi:10.1021/acs.orglett.2c01050"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000163",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000163",
+        "status": "active",
+        "enzyme_name": "PhoH",
+        "enzyme_description": "Decarboxylase",
+        "enzyme_ids": {
+          "uniprot": "UPI0020648AC1",
+          "genpept": "UPG58737.1",
+          "mibig": "BGC0003093"
+        },
+        "enzyme_tailoring": "Decarboxylation",
+        "enzyme_refs": [
+          "doi:10.1021/acs.orglett.2c01050"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000158",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000158",
+        "status": "active",
+        "enzyme_name": "PhoJ",
+        "enzyme_description": "Dioxygenase",
+        "enzyme_ids": {
+          "uniprot": "UPI00204975FE",
+          "genpept": "UPG58739.1",
+          "mibig": "BGC0003093"
+        },
+        "enzyme_tailoring": "Dioxygenation",
+        "enzyme_refs": [
+          "doi:10.1021/acs.orglett.2c01050"
+        ]
+      }
+    ],
     "BGC0000247": [
       {
         "mite_accession": "MITE0000020",
@@ -1802,166 +1978,6 @@
         "enzyme_tailoring": "Methylation",
         "enzyme_refs": [
           "doi:10.1111/j.1365-2958.2004.04433.x"
-        ]
-      }
-    ],
-    "BGC0003093": [
-      {
-        "mite_accession": "MITE0000164",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000164",
-        "status": "active",
-        "enzyme_name": "PhoP",
-        "enzyme_description": "Short-chain dehydrogenases/reductase",
-        "enzyme_ids": {
-          "uniprot": "UPI00205EBDF6",
-          "genpept": "UPG58745.1",
-          "mibig": "BGC0003093"
-        },
-        "enzyme_tailoring": "Reduction",
-        "enzyme_refs": [
-          "doi:10.1021/acs.orglett.2c01050"
-        ]
-      },
-      {
-        "mite_accession": "MITE0000165",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000165",
-        "status": "active",
-        "enzyme_name": "PhoN",
-        "enzyme_description": "Isomerase",
-        "enzyme_ids": {
-          "genpept": "UPG58743.1",
-          "mibig": "BGC0003093"
-        },
-        "enzyme_tailoring": "Other",
-        "enzyme_refs": [
-          "doi:10.1021/acs.orglett.2c01050"
-        ]
-      },
-      {
-        "mite_accession": "MITE0000157",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000157",
-        "status": "active",
-        "enzyme_name": "PhoL",
-        "enzyme_description": "Short-chain dehydrogenases/reductase",
-        "enzyme_ids": {
-          "uniprot": "UPI00205DA260",
-          "genpept": "UPG58741.1",
-          "mibig": "BGC0003093"
-        },
-        "enzyme_tailoring": "Reduction",
-        "enzyme_refs": [
-          "doi:10.1021/acs.orglett.2c01050"
-        ]
-      },
-      {
-        "mite_accession": "MITE0000156",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000156",
-        "status": "active",
-        "enzyme_name": "PhoM",
-        "enzyme_description": "Flavin-dependent monooxygenase",
-        "enzyme_ids": {
-          "uniprot": "UPI0020464A74",
-          "genpept": "UPG58742.1",
-          "mibig": "BGC0003093"
-        },
-        "enzyme_tailoring": "Monooxygenation",
-        "enzyme_refs": [
-          "doi:10.1021/acs.orglett.2c01050"
-        ]
-      },
-      {
-        "mite_accession": "MITE0000162",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000162",
-        "status": "active",
-        "enzyme_name": "PhoG",
-        "enzyme_description": "Anthrone oxygenase",
-        "enzyme_ids": {
-          "uniprot": "UPI00206D4B6A",
-          "genpept": "UPG58736.1",
-          "mibig": "BGC0003093"
-        },
-        "enzyme_tailoring": "Oxidation",
-        "enzyme_refs": [
-          "doi:10.1021/acs.orglett.2c01050"
-        ]
-      },
-      {
-        "mite_accession": "MITE0000161",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000161",
-        "status": "active",
-        "enzyme_name": "PhoK",
-        "enzyme_description": "Reductase",
-        "enzyme_ids": {
-          "genpept": "UPG58740.1",
-          "mibig": "BGC0003093"
-        },
-        "enzyme_tailoring": "Acetylation|Reduction",
-        "enzyme_refs": [
-          "doi:10.1021/acs.orglett.2c01050"
-        ]
-      },
-      {
-        "mite_accession": "MITE0000159",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000159",
-        "status": "active",
-        "enzyme_name": "PhoD",
-        "enzyme_description": "Dehydratase",
-        "enzyme_ids": {
-          "uniprot": "UPI002070062C",
-          "genpept": "UPG58733.1",
-          "mibig": "BGC0003093"
-        },
-        "enzyme_tailoring": "Dehydration",
-        "enzyme_refs": [
-          "doi:10.1021/acs.orglett.2c01050"
-        ]
-      },
-      {
-        "mite_accession": "MITE0000160",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000160",
-        "status": "active",
-        "enzyme_name": "PhoC",
-        "enzyme_description": "Short-chain dehydrogenases/reductase (SDR)",
-        "enzyme_ids": {
-          "uniprot": "UPI00205CF1EC",
-          "genpept": "UPG58732.1",
-          "mibig": "BGC0003093"
-        },
-        "enzyme_tailoring": "Reduction",
-        "enzyme_refs": [
-          "doi:10.1021/acs.orglett.2c01050"
-        ]
-      },
-      {
-        "mite_accession": "MITE0000163",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000163",
-        "status": "active",
-        "enzyme_name": "PhoH",
-        "enzyme_description": "Decarboxylase",
-        "enzyme_ids": {
-          "uniprot": "UPI0020648AC1",
-          "genpept": "UPG58737.1",
-          "mibig": "BGC0003093"
-        },
-        "enzyme_tailoring": "Decarboxylation",
-        "enzyme_refs": [
-          "doi:10.1021/acs.orglett.2c01050"
-        ]
-      },
-      {
-        "mite_accession": "MITE0000158",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000158",
-        "status": "active",
-        "enzyme_name": "PhoJ",
-        "enzyme_description": "Dioxygenase",
-        "enzyme_ids": {
-          "uniprot": "UPI00204975FE",
-          "genpept": "UPG58739.1",
-          "mibig": "BGC0003093"
-        },
-        "enzyme_tailoring": "Dioxygenation",
-        "enzyme_refs": [
-          "doi:10.1021/acs.orglett.2c01050"
         ]
       }
     ],

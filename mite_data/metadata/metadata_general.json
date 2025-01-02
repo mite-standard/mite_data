@@ -1,6 +1,16 @@
 {
   "version_mite_data": "1.6",
   "entries": {
+    "MITE0000194": {
+      "status": "active",
+      "enzyme_name": "PhoO",
+      "enzyme_description": "Cytochrome P450",
+      "enzyme_ids": {
+        "uniprot": "UPI0020472753",
+        "genpept": "UPG58744.1",
+        "mibig": "BGC0003093"
+      }
+    },
     "MITE0000020": {
       "status": "active",
       "enzyme_name": "MtmGII",
