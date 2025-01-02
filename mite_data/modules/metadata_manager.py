@@ -55,10 +55,10 @@ class MetadataManager(BaseModel):
 
     def run(self: Self) -> None:
         """Class entry point to run methods"""
-        logger.debug("Started MetadataManager.")
+        logger.info("Started MetadataManager.")
         self.collect_metadata()
         self.export_json()
-        logger.debug("Completed MetadataManager.")
+        logger.info("Completed MetadataManager.")
 
     def collect_metadata(self: Self) -> None:
         """Method to access and collect metadata from MITE entries"""

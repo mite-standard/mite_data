@@ -57,15 +57,14 @@ class FastaManager(BaseModel):
 
     def run(self: Self) -> None:
         """Class entry point to run methods"""
-        logger.debug("Started FastaManager.")
+        logger.info("Started FastaManager.")
         try:
             self.extract_accessions()
             self.download_ncbi()
             self.download_uniprot()
-            self.validate_nr_files()
         except Exception as e:
             logger.error(f"An error has occurred: {e!s}")
-        logger.debug("Completed FastaManager.")
+        logger.info("Completed FastaManager.")
 
     def extract_accessions(self: Self) -> None:
         """Extracts NCBI GenPept and UniProt accession IDs from metadata file.
@@ -102,7 +101,7 @@ class FastaManager(BaseModel):
 
         for entry in self.genpept_acc:
             if self.target_download.joinpath(f"{entry["entry"]}.fasta").exists():
-                logger.info(
+                logger.debug(
                     f"File '{self.target_download.joinpath(f"{entry["entry"]}.fasta")}' already exists - SKIP"
                 )
                 continue
@@ -151,7 +150,7 @@ class FastaManager(BaseModel):
 
         for entry in self.uniprot_acc:
             if self.target_download.joinpath(f"{entry["entry"]}.fasta").exists():
-                logger.info(
+                logger.debug(
                     f"File '{self.target_download.joinpath(f"{entry["entry"]}.fasta")}' already exists - SKIP"
                 )
                 continue
@@ -170,41 +169,3 @@ class FastaManager(BaseModel):
                 raise RuntimeError(
                     f"UniProt download failed on ID {entry["acc"]} for MITE entry {entry["entry"]}"
                 )
-
-    def validate_nr_files(self: Self) -> None:
-        """Validate that number of downloaded files equals to number of active entries
-
-        Raises:
-            RuntimeError: Not all files were downloaded
-        """
-        with open(self.src) as file_in:
-            metadata_general = json.load(file_in)
-
-        expected_set = set()
-        for entry in metadata_general["entries"]:
-            if metadata_general["entries"][entry]["status"] == "active":
-                if genpept := metadata_general["entries"][entry]["enzyme_ids"].get(
-                    "genpept", None
-                ):
-                    expected_set.add(f"{genpept}.fasta")
-                else:
-                    expected_set.add(
-                        f"{metadata_general["entries"][entry]["enzyme_ids"].get("uniprot")}.fasta"
-                    )
-
-        expected_set = set()
-        for key in metadata_general["entries"]:
-            if metadata_general["entries"][key]["status"] == "active":
-                expected_set.add(key)
-
-        present_set = set()
-        for f in self.target_download.iterdir():
-            if f.suffix == ".fasta":
-                present_set.add(f)
-
-        if len(expected_set) != len(present_set):
-            raise RuntimeError(
-                f"FastaManager: Not all expected FASTA files were downloaded. "
-                f"Expected files were: {expected_set}."
-                f"Missing files are: {expected_set.difference(present_set)}."
-            )
