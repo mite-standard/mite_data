@@ -148,6 +148,15 @@
         "genpept": "RHZ63463.1"
       }
     },
+    "MITE0000197": {
+      "status": "active",
+      "enzyme_name": "HynC",
+      "enzyme_description": "non-heme diiron monooxygenase",
+      "enzyme_ids": {
+        "genpept": "QWP75303.1",
+        "mibig": "BGC0002126"
+      }
+    },
     "MITE0000171": {
       "status": "active",
       "enzyme_name": "ProsB",

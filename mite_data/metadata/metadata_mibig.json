@@ -896,6 +896,38 @@
         ]
       }
     ],
+    "BGC0002126": [
+      {
+        "mite_accession": "MITE0000197",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000197",
+        "status": "active",
+        "enzyme_name": "HynC",
+        "enzyme_description": "non-heme diiron monooxygenase",
+        "enzyme_ids": {
+          "genpept": "QWP75303.1",
+          "mibig": "BGC0002126"
+        },
+        "enzyme_tailoring": "Hydroxylation",
+        "enzyme_refs": [
+          "doi:10.1002/anie.202102224"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000196",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000196",
+        "status": "active",
+        "enzyme_name": "HynE",
+        "enzyme_description": "alpha-ketoglutarate-dependent dioxygenase",
+        "enzyme_ids": {
+          "genpept": "QWP75301.1",
+          "mibig": "BGC0002126"
+        },
+        "enzyme_tailoring": "Hydroxylation",
+        "enzyme_refs": [
+          "doi:10.1002/anie.202102224"
+        ]
+      }
+    ],
     "BGC0003094": [
       {
         "mite_accession": "MITE0000171",
@@ -1940,23 +1972,6 @@
         "enzyme_tailoring": "Amination",
         "enzyme_refs": [
           "doi:10.1111/j.1365-2958.2004.04090.x"
-        ]
-      }
-    ],
-    "BGC0002126": [
-      {
-        "mite_accession": "MITE0000196",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000196",
-        "status": "active",
-        "enzyme_name": "HynE",
-        "enzyme_description": "alpha-ketoglutarate-dependent dioxygenase",
-        "enzyme_ids": {
-          "genpept": "QWP75301.1",
-          "mibig": "BGC0002126"
-        },
-        "enzyme_tailoring": "Hydroxylation",
-        "enzyme_refs": [
-          "doi:10.1002/anie.202102224"
         ]
       }
     ],
