@@ -930,6 +930,25 @@
         ]
       }
     ],
+    "BGC0000851": [
+      {
+        "mite_accession": "MITE0000193",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000193",
+        "status": "active",
+        "enzyme_name": "AlbA",
+        "enzyme_description": "Albonoursin synthase/cyclic dipeptide oxidase",
+        "enzyme_ids": {
+          "uniprot": "Q8GED9",
+          "genpept": "AAN07907.1",
+          "mibig": "BGC0000851"
+        },
+        "enzyme_tailoring": "Dehydrogenation",
+        "enzyme_refs": [
+          "doi:10.1046/j.1432-1327.2001.02038.x",
+          "doi:10.1038/s41467-024-48030-9"
+        ]
+      }
+    ],
     "BGC0000469": [
       {
         "mite_accession": "MITE0000044",

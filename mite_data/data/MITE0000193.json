@@ -1,0 +1,111 @@
+{
+    "accession": "MITE0000193",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-12-19",
+            "contributors": [
+                "0000-0001-6534-6609"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "checked factual correctness, links, included additional reference, mono-dehydro products were omitted for brevity."
+        }
+    ],
+    "enzyme": {
+        "name": "AlbA",
+        "description": "Albonoursin synthase/cyclic dipeptide oxidase",
+        "references": [
+            "doi:10.1046/j.1432-1327.2001.02038.x",
+            "doi:10.1038/s41467-024-48030-9"
+        ],
+        "databaseIds": {
+            "uniprot": "Q8GED9",
+            "genpept": "AAN07907.1",
+            "mibig": "BGC0000851"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Dehydrogenation"
+            ],
+            "description": "Dehydrogenates cyclo(L-Phe-L-Leu) in the scope of the albonoursin biosynthetic pathway",
+            "reactionSMARTS": "[#6:1]-[#6:2](-[#6:19])-[#6:3]-[#6:4]1-[#7:18]-[#6:16](=[#8:17])-[#6:8](-[#6:9]-[#6:10]2:[#6:15]:[#6:14]:[#6:13]:[#6:12]:[#6:11]:2)-[#7:7]-[#6:5]-1=[#8:6]>>[#6:1]-[#6:2](-[#6:19])-[#6:3]=[#6:4]1-[#6:5](=[#8:6])-[#7:7]-[#6:8](=[#6:9]-[#6:10]2:[#6:11]:[#6:12]:[#6:13]:[#6:14]:[#6:15]:2)-[#6:16](=[#8:17])-[#7:18]-1",
+            "reactions": [
+                {
+                    "substrate": "CC(C)CC1NC(=O)C(Cc2ccccc2)NC1=O",
+                    "products": [
+                        "CC(C)C=c1[nH]c(=O)c(=Cc2ccccc2)[nH]c1=O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Generation of the bis-dehydro cyclo(L-Phe-L-Leu)"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1046/j.1432-1327.2001.02038.x"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "35531",
+                "ec": "1.3.3.13"
+            }
+        },
+        {
+            "tailoring": [
+                "Dehydrogenation"
+            ],
+            "description": "Alternative substrate cyclo(L-Trp-L-Trp)",
+            "reactionSMARTS": "[#6:19](-[#6:20]1-[#7:28]-[#6:26](=[#8:27])-[#6:24](-[#6:25]-[#6:10]2:[#6:18]:[nH1:17]:[#6:16]3:[#6:11]:2:[#6:12]:[#6:13]:[#6:14]:[#6:15]:3)-[#7:23]-[#6:21]-1=[#8:22])-[#6:1]1:[#6:2]:[nH1:3]:[#6:4]2:[#6:9]:1:[#6:8]:[#6:7]:[#6:6]:[#6:5]:2>>[#6:19](=[#6:20]1-[#7:28]-[#6:26](=[#8:27])-[#6:24](=[#6:25]-[#6:10]2:[#6:18]:[nH1:17]:[#6:16]3:[#6:11]:2:[#6:12]:[#6:13]:[#6:14]:[#6:15]:3)-[#7:23]-[#6:21]-1=[#8:22])-[#6:1]1:[#6:2]:[nH1:3]:[#6:4]2:[#6:9]:1:[#6:8]:[#6:7]:[#6:6]:[#6:5]:2",
+            "reactions": [
+                {
+                    "substrate": "O=C1NC(Cc2c[nH]c3ccccc23)C(=O)NC1Cc1c[nH]c2ccccc12",
+                    "products": [
+                        "O=c1[nH]c(=Cc2c[nH]c3ccccc23)c(=O)[nH]c1=Cc1c[nH]c2ccccc12"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Generation of the bis-dehydro cyclo(L-Trp-L-Trp)"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1046/j.1432-1327.2001.02038.x"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Dehydrogenation"
+            ],
+            "description": "Alternative substrate cyclo(L-Leu-L-Ala)",
+            "reactionSMARTS": "[#6:1](-[#6:5]1-[#7:13]-[#6:11](=[#8:12])-[#6:9](-[#6:10])-[#7:8]-[#6:6]-1=[#8:7])-[#6:2](-[#6:4])-[#6:3]>>[#6:1](=[#6:5]1-[#7:13]-[#6:11](=[#8:12])-[#6:9](=[#6:10])-[#7:8]-[#6:6]-1=[#8:7])-[#6:2](-[#6:4])-[#6:3]",
+            "reactions": [
+                {
+                    "substrate": "CC(C)CC1NC(=O)C(C)NC1=O",
+                    "products": [
+                        "C=c1[nH]c(=O)c(=CC(C)C)[nH]c1=O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Generation of the bis-dehydro cyclo(L-Leu-L-Ala)"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1046/j.1432-1327.2001.02038.x"
+                ]
+            }
+        }
+    ]
+}

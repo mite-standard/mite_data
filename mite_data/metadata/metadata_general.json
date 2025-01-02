@@ -185,6 +185,16 @@
         "genpept": "UZP48213.1"
       }
     },
+    "MITE0000193": {
+      "status": "active",
+      "enzyme_name": "AlbA",
+      "enzyme_description": "Albonoursin synthase/cyclic dipeptide oxidase",
+      "enzyme_ids": {
+        "uniprot": "Q8GED9",
+        "genpept": "AAN07907.1",
+        "mibig": "BGC0000851"
+      }
+    },
     "MITE0000134": {
       "status": "active",
       "enzyme_name": "THAS",
