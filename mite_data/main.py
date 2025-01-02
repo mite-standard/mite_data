@@ -30,7 +30,7 @@ from mite_data.modules.fasta_manager import FastaManager
 from mite_data.modules.metadata_manager import MetadataManager
 
 logger = logging.getLogger("mite_data")
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.INFO)
 console_handler = logging.StreamHandler(sys.stdout)
 console_handler.setFormatter(
     coloredlogs.ColoredFormatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")

@@ -36,12 +36,14 @@ class CicdManager(BaseModel):
 
     Attributes:
         src: a Path towards the source directory
+        fasta: a Path towards to directory containing accompanying fasta files
         issues: all issues detected during run
         genpept: a list of genbank accessions in mite_data
         uniprot: a list of uniprot accessions in mite_data
     """
 
     src: DirectoryPath = Path(__file__).parent.parent.joinpath("mite_data/data/")
+    fasta: DirectoryPath = Path(__file__).parent.parent.joinpath("mite_data/fasta/")
     issues: list = []
     genpept: dict = {}
     uniprot: dict = {}
@@ -75,7 +77,7 @@ class CicdManager(BaseModel):
             path: a file path
 
         Raises:
-            FileNotFoundError: file not found
+            FileNotFoundError: mite file or mite fasta file not found
             RuntimeError: one or more issues with files detected
         """
         path = Path(path)
@@ -84,6 +86,11 @@ class CicdManager(BaseModel):
 
         if not path.name.startswith("MITE"):
             raise RuntimeError(f"File '{path.name}' does not appear to be a MITE file.")
+
+        if not self.fasta.joinpath(f"{path.stem}.fasta").exists():
+            raise FileNotFoundError(
+                f"File '{path.name}' does not have an accompanying fasta file."
+            )
 
         with open(path) as infile:
             data = json.load(infile)
@@ -99,7 +106,7 @@ class CicdManager(BaseModel):
         """Run all files against validation functions
 
         Raises:
-            FileNotFoundError: file not found
+            FileNotFoundError: mite file or mite fasta file not found
             RuntimeError: one or more issues with files detected
         """
         for path in self.src.iterdir():
@@ -115,6 +122,11 @@ class CicdManager(BaseModel):
                 data = json.load(infile)
             if data["status"] != "active":
                 continue
+
+            if not self.fasta.joinpath(f"{path.stem}.fasta").exists():
+                raise FileNotFoundError(
+                    f"File '{path.name}' does not have an accompanying fasta file."
+                )
 
             self.check_release_ready(data=data)
             self.check_duplicates(data=data)
