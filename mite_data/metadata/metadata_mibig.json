@@ -1390,6 +1390,58 @@
         ]
       }
     ],
+    "BGC0000374": [
+      {
+        "mite_accession": "MITE0000195",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000195",
+        "status": "active",
+        "enzyme_name": "HrmJ",
+        "enzyme_description": "alpha-ketoglutarate-dependent dioxygenase",
+        "enzyme_ids": {
+          "uniprot": "F8S6W1",
+          "genpept": "AEH41788.1",
+          "mibig": "BGC0000374"
+        },
+        "enzyme_tailoring": "Other",
+        "enzyme_refs": [
+          "doi:10.1021/jacs.1c10201",
+          "doi:10.1002/anie.202113189"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000187",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000187",
+        "status": "active",
+        "enzyme_name": "HrmI",
+        "enzyme_description": "heme oxygenase-like dinuclear iron enzyme",
+        "enzyme_ids": {
+          "uniprot": "F8S6W0",
+          "genpept": "AEH41787.1",
+          "mibig": "BGC0000374"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1021/jacs.1c10201",
+          "doi:10.1002/anie.202113189"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000186",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000186",
+        "status": "active",
+        "enzyme_name": "HrmF",
+        "enzyme_description": "L-DOPA dioxygenase",
+        "enzyme_ids": {
+          "uniprot": "F8S6V7",
+          "genpept": "AEH41784.1",
+          "mibig": "BGC0000374"
+        },
+        "enzyme_tailoring": "Other",
+        "enzyme_refs": [
+          "doi:10.1016/j.chembiol.2010.12.018"
+        ]
+      }
+    ],
     "BGC0001001": [
       {
         "mite_accession": "MITE0000076",
@@ -1487,41 +1539,6 @@
         "enzyme_tailoring": "Dehydration|Oxidation",
         "enzyme_refs": [
           "doi:10.1021/bi1019786"
-        ]
-      }
-    ],
-    "BGC0000374": [
-      {
-        "mite_accession": "MITE0000187",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000187",
-        "status": "active",
-        "enzyme_name": "HrmI",
-        "enzyme_description": "heme oxygenase-like dinuclear iron enzyme",
-        "enzyme_ids": {
-          "uniprot": "F8S6W0",
-          "genpept": "AEH41787.1",
-          "mibig": "BGC0000374"
-        },
-        "enzyme_tailoring": "Oxidation",
-        "enzyme_refs": [
-          "doi:10.1021/jacs.1c10201",
-          "doi:10.1002/anie.202113189"
-        ]
-      },
-      {
-        "mite_accession": "MITE0000186",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000186",
-        "status": "active",
-        "enzyme_name": "HrmF",
-        "enzyme_description": "L-DOPA dioxygenase",
-        "enzyme_ids": {
-          "uniprot": "F8S6V7",
-          "genpept": "AEH41784.1",
-          "mibig": "BGC0000374"
-        },
-        "enzyme_tailoring": "Other",
-        "enzyme_refs": [
-          "doi:10.1016/j.chembiol.2010.12.018"
         ]
       }
     ],

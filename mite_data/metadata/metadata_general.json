@@ -264,6 +264,16 @@
         "mibig": "BGC0000469"
       }
     },
+    "MITE0000195": {
+      "status": "active",
+      "enzyme_name": "HrmJ",
+      "enzyme_description": "alpha-ketoglutarate-dependent dioxygenase",
+      "enzyme_ids": {
+        "uniprot": "F8S6W1",
+        "genpept": "AEH41788.1",
+        "mibig": "BGC0000374"
+      }
+    },
     "MITE0000167": {
       "status": "active",
       "enzyme_name": "ProsD",

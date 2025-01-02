@@ -1,0 +1,59 @@
+{
+    "accession": "MITE0000195",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-12-04",
+            "contributors": [
+                "0000-0001-6660-2715"
+            ],
+            "reviewers": [
+                "0000-0001-7044-2419"
+            ],
+            "comment": "New entry"
+        }
+    ],
+    "enzyme": {
+        "name": "HrmJ",
+        "description": "alpha-ketoglutarate-dependent dioxygenase",
+        "references": [
+            "doi:10.1021/jacs.1c10201",
+            "doi:10.1002/anie.202113189"
+        ],
+        "databaseIds": {
+            "uniprot": "F8S6W1",
+            "genpept": "AEH41788.1",
+            "mibig": "BGC0000374"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Other"
+            ],
+            "description": "cyclopropanation (nitronorleucine - nitrocyclopropylalanine)",
+            "reactionSMARTS": "[#7:1]/[#6@:2](-[#6:10](-[#8:12])=[#8:11])-[#6:3]-[#6:4]-[#6:5]-[#6:6]-[#7;+:7](-[#8;-:9])=[#8:8]>>[#7:1]\\[#6@@:2](-[#6:3]/[#6@@:4]1-[#6:5]-[#6@:6]-1\\[#7;+:7](=[#8:8])-[#8;-:9])-[#6:10](=[#8:11])-[#8:12]",
+            "reactions": [
+                {
+                    "substrate": "N[C@@H](CCCC[N+](=O)[O-])C(=O)O",
+                    "products": [
+                        "N[C@@H](C[C@@H]1C[C@H]1[N+](=O)[O-])C(=O)O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "cyclopropanation (nitronorleucine - nitrocyclopropylalanine)"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/jacs.1c10201",
+                    "doi:10.1002/anie.202113189"
+                ]
+            }
+        }
+    ]
+}
