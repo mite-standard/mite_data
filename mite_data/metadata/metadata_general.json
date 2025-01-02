@@ -1416,6 +1416,16 @@
         "mibig": "BGC0000378"
       }
     },
+    "MITE0000192": {
+      "status": "active",
+      "enzyme_name": "CtoA",
+      "enzyme_description": "Halogenase",
+      "enzyme_ids": {
+        "uniprot": "A0A0M4KXQ6",
+        "genpept": "ALD83700.1",
+        "mibig": "BGC0001299"
+      }
+    },
     "MITE0000126": {
       "status": "active",
       "enzyme_name": "AetF",

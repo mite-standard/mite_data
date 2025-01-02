@@ -2876,6 +2876,24 @@
         ]
       }
     ],
+    "BGC0001299": [
+      {
+        "mite_accession": "MITE0000192",
+        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000192",
+        "status": "active",
+        "enzyme_name": "CtoA",
+        "enzyme_description": "Halogenase",
+        "enzyme_ids": {
+          "uniprot": "A0A0M4KXQ6",
+          "genpept": "ALD83700.1",
+          "mibig": "BGC0001299"
+        },
+        "enzyme_tailoring": "Halogenation",
+        "enzyme_refs": [
+          "doi:10.1021/acschembio.5b00523"
+        ]
+      }
+    ],
     "BGC0001664": [
       {
         "mite_accession": "MITE0000106",
