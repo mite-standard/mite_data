@@ -77,6 +77,8 @@ class FastaManager(BaseModel):
 
         except Exception as e:
             logger.error(f"An error has occurred: {e!s}")
+            raise e
+
         logger.info("Completed FastaManager.")
 
     def extract_accessions(self: Self) -> None:
