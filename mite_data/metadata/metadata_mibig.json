@@ -158,7 +158,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000136",
         "status": "active",
         "enzyme_name": "THAA1",
-        "enzyme_description": "Acyltransferase subfamily IIIa from Arabidopsis lyrata ssp lyrata (Lyre-leaved rock-cress).",
+        "enzyme_description": "Acyltransferase subfamily IIIa, Arabidopsis lyrata ssp lyrata",
         "enzyme_ids": {
           "uniprot": "UPI000A29E8C9",
           "mibig": "BGC0002857"
@@ -238,8 +238,8 @@
         "mite_accession": "MITE0000123",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000123",
         "status": "active",
-        "enzyme_name": "juiM",
-        "enzyme_description": "acetyltransferase",
+        "enzyme_name": "JuiM",
+        "enzyme_description": "Acetyltransferase",
         "enzyme_ids": {
           "uniprot": "A0A7G8Z071",
           "genpept": "QNL10606.1",
@@ -254,7 +254,7 @@
         "mite_accession": "MITE0000124",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000124",
         "status": "active",
-        "enzyme_name": "juiL",
+        "enzyme_name": "JuiL",
         "enzyme_description": "F420-dependent oxidoreductase",
         "enzyme_ids": {
           "uniprot": "A0A7G8Z072",
@@ -270,7 +270,7 @@
         "mite_accession": "MITE0000125",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000125",
         "status": "active",
-        "enzyme_name": "juiL",
+        "enzyme_name": "JuiL",
         "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "A0A7G8Z073",
@@ -288,8 +288,8 @@
         "mite_accession": "MITE0000073",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000073",
         "status": "active",
-        "enzyme_name": "clmAH",
-        "enzyme_description": "amidohydrolase",
+        "enzyme_name": "ClmAH",
+        "enzyme_description": "Amidohydrolase",
         "enzyme_ids": {
           "uniprot": "H1ZYT5",
           "genpept": "CCC55916.1",
@@ -304,7 +304,7 @@
         "mite_accession": "MITE0000075",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000075",
         "status": "active",
-        "enzyme_name": "clmM2",
+        "enzyme_name": "ClmM2",
         "enzyme_description": "O-methyltransferase",
         "enzyme_ids": {
           "uniprot": "H1ZYV4",
@@ -320,7 +320,7 @@
         "mite_accession": "MITE0000074",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000074",
         "status": "active",
-        "enzyme_name": "clmM1",
+        "enzyme_name": "ClmM1",
         "enzyme_description": "S-methyltransferase",
         "enzyme_ids": {
           "uniprot": "H1ZYV7",
@@ -359,7 +359,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000028",
         "status": "active",
         "enzyme_name": "BhaA",
-        "enzyme_description": "Chlorinates balhimycin precursor at bht2 and bht6.",
+        "enzyme_description": "Halogenase",
         "enzyme_ids": {
           "uniprot": "O87676",
           "genpept": "CAA76550.1",
@@ -396,7 +396,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000026",
         "status": "retired",
         "enzyme_name": "OxyA",
-        "enzyme_description": "P450 monooxygenase, that introduces the second crosslink (biaryl ether) between bht2 and hpg4 of the balhimycin precursor.",
+        "enzyme_description": "Cytochrome P450 monooxygenase.",
         "enzyme_ids": {
           "uniprot": "F8STX6",
           "genpept": "AEI58868.1",
@@ -414,7 +414,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000025",
         "status": "retired",
         "enzyme_name": "OxyB",
-        "enzyme_description": "P450 monooxygenase, that introduces the first crosslink (biaryl ether) between hpg4 and bht6 of the balhimycin precursor.",
+        "enzyme_description": "Cytochrome P450 monooxygenase",
         "enzyme_ids": {
           "uniprot": "F8STX7",
           "genpept": "AEI58869.1",
@@ -434,7 +434,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000115",
         "status": "active",
         "enzyme_name": "NgnP2",
-        "enzyme_description": "Hydroxylation at c-18",
+        "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "A0A3S7PZF3",
           "genpept": "AXG22415.1",
@@ -450,7 +450,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000111",
         "status": "active",
         "enzyme_name": "NgnO3",
-        "enzyme_description": "NgnO3 catalyzes the formation of the ether bridge moiety at position C8/C13 of the substrate molecules.",
+        "enzyme_description": "Phytanoyl-CoA dioxygenase",
         "enzyme_ids": {
           "uniprot": "A0A3S7PZF2",
           "genpept": "AXG22416.1",
@@ -465,8 +465,8 @@
         "mite_accession": "MITE0000112",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000112",
         "status": "active",
-        "enzyme_name": "ngnp1",
-        "enzyme_description": "Hydroxylation at c-2 ",
+        "enzyme_name": "Ngnp1",
+        "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "A0A3S7Q0I4",
           "genpept": "AXG22409.1",
@@ -482,7 +482,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000114",
         "status": "active",
         "enzyme_name": "NgnM",
-        "enzyme_description": "NgnM methylates the hydroxyl group at the 2-position of the macrolactone intermediate",
+        "enzyme_description": "Methyltransferase",
         "enzyme_ids": {
           "uniprot": "A0A3S7PZH2",
           "genpept": "AXG22413.1",
@@ -498,7 +498,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000110",
         "status": "active",
         "enzyme_name": "NgnN4",
-        "enzyme_description": "NgnN4 is responsible for attaching the pyrrole moiety at hydroxyl group at the 9-position of substrate.",
+        "enzyme_description": "Proline adenyltransferase",
         "enzyme_ids": {
           "uniprot": "A0A3S7PZH4",
           "genpept": "AXG22420.1",
@@ -514,7 +514,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000113",
         "status": "active",
         "enzyme_name": "NgnD",
-        "enzyme_description": "[6+4] cycloaddition",
+        "enzyme_description": "Bispericyclase",
         "enzyme_ids": {
           "uniprot": "A0A3S7PZF0",
           "genpept": "AXG22404.1",
@@ -668,7 +668,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000036",
         "status": "retired",
         "enzyme_name": "tAtf",
-        "enzyme_description": "Transfers acyl groups from acyl-CoA onto the glucosaminyl residue on hpg4 of the teicoplanin precursor.",
+        "enzyme_description": "Acyltransferase",
         "enzyme_ids": {
           "uniprot": "Q70AY4",
           "genpept": "CAE53365.1",
@@ -703,8 +703,8 @@
         "mite_accession": "MITE0000035",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000035",
         "status": "active",
-        "enzyme_name": "Orf2* a.k.a. tAtf",
-        "enzyme_description": "Deacetylates N-acetylglucosaminyl residue on Hpg4 of the teicoplanin precursor. Transfers acyl groups from acyl-CoA onto the glucosaminyl residue on hpg4 of the teicoplanin precursor.",
+        "enzyme_name": "Tcp24 a.k.a Orf2* a.k.a. tAtf",
+        "enzyme_description": "Acyltransferase",
         "enzyme_ids": {
           "uniprot": "Q70AY4",
           "genpept": "CAE53365.1",
@@ -868,7 +868,7 @@
         "mite_accession": "MITE0000058",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000058",
         "status": "active",
-        "enzyme_name": "pntD",
+        "enzyme_name": "PntD",
         "enzyme_description": "Non-Heme Iron-Dependent Dehydrogenase/Oxygenase",
         "enzyme_ids": {
           "uniprot": "E3VWI8",
@@ -936,7 +936,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000044",
         "status": "active",
         "enzyme_name": "BotCYP",
-        "enzyme_description": "cytochrome P450",
+        "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "K4MJU2",
           "genpept": "AFV25487.2",
@@ -971,7 +971,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000051",
         "status": "active",
         "enzyme_name": "BotH",
-        "enzyme_description": "bottromycin epimerase from Streptomyces sp. BC16019",
+        "enzyme_description": "Epimerase",
         "enzyme_ids": {
           "uniprot": "K4MHV9",
           "genpept": "AFV25485.1",
@@ -1006,7 +1006,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000052",
         "status": "active",
         "enzyme_name": "BotC",
-        "enzyme_description": "Thiazole heterocyclisation-catalyzing YacO protein from Streptomyces sp. BC16019",
+        "enzyme_description": "Thiazole heterocyclisation-catalyzing YacO protein",
         "enzyme_ids": {
           "uniprot": "K4MJT7",
           "genpept": "AFV25482.1",
@@ -1058,7 +1058,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000050",
         "status": "active",
         "enzyme_name": "BotAH",
-        "enzyme_description": "bottromycin follower-peptide cleaving aminohydrolase from Streptomyces sp. BC16019",
+        "enzyme_description": "Aminohydrolase",
         "enzyme_ids": {
           "uniprot": "K4MV58",
           "genpept": "AFV25486.1",
@@ -1075,7 +1075,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000049",
         "status": "active",
         "enzyme_name": "BotRMT1",
-        "enzyme_description": "Bottromycin-precursor acting rSAM methyltransferase from Streptomyces sp. BC16019.",
+        "enzyme_description": "rSAM methyltransferase",
         "enzyme_ids": {
           "uniprot": "K4MHV5",
           "genpept": "AFV25480.1",
@@ -1092,7 +1092,7 @@
         "mite_accession": "MITE0000046",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000046",
         "status": "active",
-        "enzyme_name": "botRMT2",
+        "enzyme_name": "BotRMT2",
         "enzyme_description": "radical SAM methyltransferase ",
         "enzyme_ids": {
           "uniprot": "K4MJZ5",
@@ -1112,7 +1112,7 @@
         "mite_accession": "MITE0000003",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000003",
         "status": "active",
-        "enzyme_name": "aviG6",
+        "enzyme_name": "AviG6",
         "enzyme_description": "O-methyltransferase",
         "enzyme_ids": {
           "uniprot": "Q93KV9",
@@ -1129,7 +1129,7 @@
         "mite_accession": "MITE0000002",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000002",
         "status": "active",
-        "enzyme_name": "aviG4",
+        "enzyme_name": "AviG4",
         "enzyme_description": "O-methyltransferase",
         "enzyme_ids": {
           "uniprot": "L8PIQ8",
@@ -1146,7 +1146,7 @@
         "mite_accession": "MITE0000004",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000004",
         "status": "active",
-        "enzyme_name": "aviG5",
+        "enzyme_name": "AviG5",
         "enzyme_description": "O-methyltransferase",
         "enzyme_ids": {
           "uniprot": "Q93KW5",
@@ -1163,7 +1163,7 @@
         "mite_accession": "MITE0000001",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000001",
         "status": "active",
-        "enzyme_name": "aviG2",
+        "enzyme_name": "AviG2",
         "enzyme_description": "O-methyltransferase",
         "enzyme_ids": {
           "uniprot": "Q93KW1",
@@ -1218,8 +1218,8 @@
         "mite_accession": "MITE0000116",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000116",
         "status": "active",
-        "enzyme_name": "stoC",
-        "enzyme_description": "dehydration",
+        "enzyme_name": "StoC",
+        "enzyme_description": "NADH flavin oxidoreductase",
         "enzyme_ids": {
           "genpept": "TMU80020.1",
           "mibig": "BGC0002069"
@@ -1233,8 +1233,8 @@
         "mite_accession": "MITE0000117",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000117",
         "status": "active",
-        "enzyme_name": "stoR",
-        "enzyme_description": "NADPH dependent reduction of exo-methylene in styrolide B to methyl group in styrolide A",
+        "enzyme_name": "StoR",
+        "enzyme_description": "NADPH-dependent reductase",
         "enzyme_ids": {
           "genpept": "TMU76675.1",
           "mibig": "BGC0002069"
@@ -1282,7 +1282,7 @@
         "mite_accession": "MITE0000063",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000063",
         "status": "active",
-        "enzyme_name": "ptlD",
+        "enzyme_name": "PtlD",
         "enzyme_description": "Non-Heme Iron-Dependent Dehydrogenase/Oxygenase",
         "enzyme_ids": {
           "uniprot": "Q82IY7",
@@ -1354,7 +1354,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000102",
         "status": "active",
         "enzyme_name": "TrlE",
-        "enzyme_description": "flavoprotein monooxygenase",
+        "enzyme_description": "Flavoprotein monooxygenase",
         "enzyme_ids": {
           "uniprot": "A0A2S1JZI9",
           "genpept": "AWF83809.1",
@@ -1370,7 +1370,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000103",
         "status": "active",
         "enzyme_name": "TrlF",
-        "enzyme_description": "Cleaves off CoA from 2-hydroxycyclohepta-1,4,6-triene-1-carboxyl-CoA",
+        "enzyme_description": "1,4,6-cycloheptatriene-1-carboxylic acid decarboxylase",
         "enzyme_ids": {
           "uniprot": "A0A2S1JZI6",
           "genpept": "AWF83810.1",
@@ -1386,7 +1386,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000104",
         "status": "active",
         "enzyme_name": "TrlC",
-        "enzyme_description": "Oxygenase component of flavoprotein monooxygenase TrlCD, catalyzes subsequent hydroxylation from tropolone to 7-hydroxytropolone and 3,7-dihydroxytropolone",
+        "enzyme_description": "Oxygenase component of flavoprotein monooxygenase TrlCD",
         "enzyme_ids": {
           "uniprot": "A0A2S1JZG6",
           "genpept": "AWF83807.1",
@@ -1404,7 +1404,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000095",
         "status": "active",
         "enzyme_name": "TnmK1",
-        "enzyme_description": "Catalyzes D-ring-forming Michael addition",
+        "enzyme_description": "Hydrolase.",
         "enzyme_ids": {
           "uniprot": "A0A125SA14",
           "genpept": "AME18010.1",
@@ -1540,13 +1540,13 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000041",
         "status": "active",
         "enzyme_name": "OxyB",
-        "enzyme_description": "Introduces the first biaryl-ether crosslink between hpg4 and bht6 in the vancomycin and balhimycin precursors.",
+        "enzyme_description": "Cytochrome P450 Monooxygenase",
         "enzyme_ids": {
           "uniprot": "F8STX7",
           "genpept": "AEI58869.1",
           "mibig": "BGC0000455"
         },
-        "enzyme_tailoring": "Cyclization",
+        "enzyme_tailoring": "Cyclization|Oxidation",
         "enzyme_refs": [
           "doi:10.1016/j.jbiotec.2006.04.009",
           "doi:10.1128/AAC.43.7.1565",
@@ -1560,13 +1560,13 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000038",
         "status": "active",
         "enzyme_name": "OxyA",
-        "enzyme_description": "Introduces the second biaryl-ether crosslink between bht2 and hpg4 in the vancomycin and balhimycin precursor.",
+        "enzyme_description": "Cytochrome P450 Monooxygenase",
         "enzyme_ids": {
           "uniprot": "F8STX6",
           "genpept": "AEI58868.1",
           "mibig": "BGC0000455"
         },
-        "enzyme_tailoring": "Cyclization",
+        "enzyme_tailoring": "Cyclization|Oxidation",
         "enzyme_refs": [
           "doi:10.1021/acschembio.7b00456",
           "doi:10.1016/j.jbiotec.2006.04.009",
@@ -1614,7 +1614,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000039",
         "status": "active",
         "enzyme_name": "Vmt",
-        "enzyme_description": "Methylates the N-terminus of the vancomycin backbone.",
+        "enzyme_description": "Methyltransferase",
         "enzyme_ids": {
           "uniprot": "E9LY85",
           "genpept": "AEI58876.1",
@@ -1650,7 +1650,7 @@
         "mite_accession": "MITE0000122",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000122",
         "status": "active",
-        "enzyme_name": "abmA",
+        "enzyme_name": "AbmA",
         "enzyme_description": "Acetyltransferase",
         "enzyme_ids": {
           "uniprot": "I1ZAY8",
@@ -1666,7 +1666,7 @@
         "mite_accession": "MITE0000121",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000121",
         "status": "active",
-        "enzyme_name": "abmB",
+        "enzyme_name": "AbmB",
         "enzyme_description": "L-Ornithine N(5)-oxygenase",
         "enzyme_ids": {
           "uniprot": "I1ZAY9",
@@ -1951,7 +1951,7 @@
         "mite_accession": "MITE0000174",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000174",
         "status": "active",
-        "enzyme_name": "bytO",
+        "enzyme_name": "BytO",
         "enzyme_description": "cytochrome P450",
         "enzyme_ids": {
           "uniprot": "A0A891LYB2",
@@ -1986,7 +1986,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000100",
         "status": "active",
         "enzyme_name": "PumG",
-        "enzyme_description": "Amino transferase",
+        "enzyme_description": "Aminotransferase",
         "enzyme_ids": {
           "uniprot": "A0A2R4FXY6",
           "genpept": "AVT42376.1",
@@ -2018,7 +2018,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000099",
         "status": "active",
         "enzyme_name": "PumJ",
-        "enzyme_description": "pseudouridine synthase",
+        "enzyme_description": "Pseudouridine synthase",
         "enzyme_ids": {
           "uniprot": "A0A2R4FXX7",
           "genpept": "AVT42379.1",
@@ -2035,7 +2035,7 @@
         "mite_accession": "MITE0000009",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000009",
         "status": "active",
-        "enzyme_name": "meiD",
+        "enzyme_name": "MeiD",
         "enzyme_description": "O-methyltransferase",
         "enzyme_ids": {
           "uniprot": "D6C4C6",
@@ -2051,7 +2051,7 @@
         "mite_accession": "MITE0000010",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000010",
         "status": "active",
-        "enzyme_name": "meiE",
+        "enzyme_name": "MeiE",
         "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "Q6YL50",
@@ -2154,7 +2154,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000126",
         "status": "active",
         "enzyme_name": "AetF",
-        "enzyme_description": "Single component flavin-dependent halogenase, capable of iodinating and brominating arenes and olefins",
+        "enzyme_description": "Flavin-dependent halogenase",
         "enzyme_ids": {
           "uniprot": "A0A861B9Z9",
           "genpept": "QNL15176.1",
@@ -2306,9 +2306,9 @@
       {
         "mite_accession": "MITE0000089",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000089",
-        "status": "active",
+        "status": "retired",
         "enzyme_name": "CPT2",
-        "enzyme_description": "No description available",
+        "enzyme_description": "Nerylneryl diphosphate synthase",
         "enzyme_ids": {
           "uniprot": "K7WQ45",
           "genpept": "AGK82801.1",
@@ -2328,7 +2328,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000128",
         "status": "active",
         "enzyme_name": "OrfA",
-        "enzyme_description": " Halogenase, responsible for introducing halogen atoms into specific positions of the albofungin molecule, resulting in chloroalbofungin and bromoalbofungin variants.",
+        "enzyme_description": "Halogenase",
         "enzyme_ids": {
           "genpept": "UUL71895.1",
           "mibig": "BGC0002841"
@@ -2422,7 +2422,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000118",
         "status": "active",
         "enzyme_name": "AcaR",
-        "enzyme_description": "NADPH-dependent oxidoreductase - reduction of 4,5-didehydroacaterin to acaterin",
+        "enzyme_description": "NADPH-dependent oxidoreductase",
         "enzyme_ids": {
           "uniprot": "A0A5C4KWK7",
           "genpept": "TNB95040.1",
@@ -2440,8 +2440,8 @@
         "mite_accession": "MITE0000151",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000151",
         "status": "active",
-        "enzyme_name": "pspC",
-        "enzyme_description": "catalyzes three-step oxidations at the C-4 methyl group to carboxylic acid to yield soppiline C",
+        "enzyme_name": "PspC",
+        "enzyme_description": "Cytochrome P450 monooxygenase",
         "enzyme_ids": {
           "uniprot": "P0DUK3",
           "mibig": "BGC0003032"
@@ -2494,7 +2494,7 @@
         "mite_accession": "MITE0000062",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000062",
         "status": "active",
-        "enzyme_name": "cotB4",
+        "enzyme_name": "CotB4",
         "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "C9K1X7",
@@ -2510,7 +2510,7 @@
         "mite_accession": "MITE0000061",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000061",
         "status": "active",
-        "enzyme_name": "cotB3",
+        "enzyme_name": "CotB3",
         "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "C9K1X6",
@@ -2654,7 +2654,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000032",
         "status": "active",
         "enzyme_name": "SfmM2",
-        "enzyme_description": "SAM-dependent methyltransferase",
+        "enzyme_description": "SAM-dependent C-methyltransferase",
         "enzyme_ids": {
           "uniprot": "B0CN31",
           "genpept": "ABI22137.1",
@@ -2689,7 +2689,7 @@
         "mite_accession": "MITE0000092",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000092",
         "status": "active",
-        "enzyme_name": "borH",
+        "enzyme_name": "BorH",
         "enzyme_description": "Flavin-dependent halogenase",
         "enzyme_ids": {
           "uniprot": "M9QSI0",
@@ -2707,7 +2707,7 @@
         "mite_accession": "MITE0000101",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000101",
         "status": "active",
-        "enzyme_name": "cxm5",
+        "enzyme_name": "Cxm5",
         "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "A0A290YXM6",
@@ -2725,7 +2725,7 @@
         "mite_accession": "MITE0000175",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000175",
         "status": "active",
-        "enzyme_name": "bytO",
+        "enzyme_name": "BytO",
         "enzyme_description": "cytochrome P450",
         "enzyme_ids": {
           "uniprot": "A0A891LWT6",
@@ -2743,7 +2743,7 @@
         "mite_accession": "MITE0000108",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000108",
         "status": "active",
-        "enzyme_name": "cldC",
+        "enzyme_name": "CldC",
         "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "A0A0H5B5M5",
@@ -2778,7 +2778,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000152",
         "status": "active",
         "enzyme_name": "ScnB",
-        "enzyme_description": "P450 installing crosslink",
+        "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "A0A0F7N5T9",
           "genpept": "AKH82808.1",
@@ -2916,7 +2916,7 @@
         "mite_accession": "MITE0000071",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000071",
         "status": "active",
-        "enzyme_name": "bmp2",
+        "enzyme_name": "Bmp2",
         "enzyme_description": "Flavin-dependent halogenase",
         "enzyme_ids": {
           "uniprot": "U6BGC3",
@@ -2935,7 +2935,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000155",
         "status": "active",
         "enzyme_name": "SrsB",
-        "enzyme_description": "methyltransferase acting on phenolic lipids to yield alkylresorcinol methyl ethers",
+        "enzyme_description": "Methyltransferase",
         "enzyme_ids": {
           "genpept": "BAG12889.1",
           "mibig": "BGC0003089"
@@ -2951,8 +2951,8 @@
         "mite_accession": "MITE0000153",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000153",
         "status": "active",
-        "enzyme_name": "sgrB",
-        "enzyme_description": "P450 installing crosslink",
+        "enzyme_name": "SgrB",
+        "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "UPI00068C79B2",
           "mibig": "BGC0003046"
@@ -2987,7 +2987,7 @@
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000154",
         "status": "active",
         "enzyme_name": "PeuJ",
-        "enzyme_description": "(hydroxylation of peucemycin)",
+        "enzyme_description": "",
         "enzyme_ids": {
           "uniprot": "A0A2S1P8Q4",
           "genpept": "AWH12915.1",

@@ -23,10 +23,6 @@ SOFTWARE.
 
 import json
 import logging
-import os
-import shutil
-import subprocess
-from importlib import metadata
 from pathlib import Path
 from typing import Self
 
@@ -38,21 +34,18 @@ logger = logging.getLogger("mite_data")
 Entrez.email = "your_email@example.com"  # must be set but does not have to be real
 
 
-class BlastManager(BaseModel):
+class FastaManager(BaseModel):
     """Manages the download of FASTA files and the building of a BLAST database.
 
     Not all MITE entries have NCBI GenPept accessions - some only have UniProt IDs.
     The manager first extracts accessions - MITE file does not have a GenPept ID, it will take
     the UniProtKB or UniParc ID.
-    Download is performed separately, but files are combined into a single BLAST DB.
 
     Attributes:
         genpept_acc: a list of uniprot accession IDs for download
         uniprot_acc: a list of uniprot accession IDs for download
         src: a Path towards the metadata source file
         target_download: a Path towards the fasta file target (storage) directory
-        target_blast: a Path towards the blast database storage directory
-        concat_filename: filename of the concatenated fasta file
     """
 
     genpept_acc: list = []
@@ -61,22 +54,18 @@ class BlastManager(BaseModel):
         "metadata/metadata_general.json"
     )
     target_download: DirectoryPath = Path(__file__).parent.parent.joinpath("fasta/")
-    target_blast: DirectoryPath = Path(__file__).parent.parent.joinpath("blast_lib/")
-    concat_filename: str = "mite_enzymes_concat.fasta"
 
     def run(self: Self) -> None:
         """Class entry point to run methods"""
-        logger.debug("Started BlastManager.")
+        logger.debug("Started FastaManager.")
         try:
             self.extract_accessions()
             self.download_ncbi()
             self.download_uniprot()
-            self.concat_fasta_files()
             self.validate_nr_files()
-            self.generate_blast_db()
         except Exception as e:
             logger.error(f"An error has occurred: {e!s}")
-        logger.debug("Completed BlastManager.")
+        logger.debug("Completed FastaManager.")
 
     def extract_accessions(self: Self) -> None:
         """Extracts NCBI GenPept and UniProt accession IDs from metadata file.
@@ -89,7 +78,7 @@ class BlastManager(BaseModel):
         for entry in metadata_general["entries"]:
             if metadata_general["entries"][entry]["status"] != "active":
                 logger.debug(
-                    f"BlastManager: MITE entry {entry} has been retired and will not be included in the BLAST DB."
+                    f"FastaManager: MITE entry {entry} has been retired and will not be downloaded as fasta file."
                 )
                 continue
             elif acc := metadata_general["entries"][entry]["enzyme_ids"].get(
@@ -215,47 +204,7 @@ class BlastManager(BaseModel):
 
         if len(expected_set) != len(present_set):
             raise RuntimeError(
-                f"BlastManager: Not all expected FASTA files were downloaded. "
+                f"FastaManager: Not all expected FASTA files were downloaded. "
                 f"Expected files were: {expected_set}."
                 f"Missing files are: {expected_set.difference(present_set)}."
             )
-
-    def concat_fasta_files(self: Self) -> None:
-        """Concatenates individual FASTA files into a single one."""
-        with open(self.target_blast.joinpath(self.concat_filename), "w") as outfile:
-            for filename in self.target_download.iterdir():
-                if filename.suffix == ".fasta" and filename != self.concat_filename:
-                    with open(filename) as infile:
-                        shutil.copyfileobj(infile, outfile)
-                        outfile.write("\n")
-
-    def generate_blast_db(self: Self) -> None:
-        """Starts subprocess to generate a BLAST DB from the (downloaded) protein FASTA files"""
-        logger.debug("Started creating BLAST DB.")
-
-        temp_dir = self.target_blast.joinpath("temp_dir")
-        temp_dir.mkdir(parents=True, exist_ok=True)
-
-        command = [
-            "makeblastdb",
-            "-in",
-            f"{self.target_blast.joinpath(self.concat_filename)}",
-            "-dbtype",
-            "prot",
-            "-out",
-            f"{temp_dir.joinpath("mite_blastfiles")}",
-            "-title",
-            f"MITE v{metadata.version('mite_data')} BLAST DB",
-        ]
-        subprocess.run(command, check=True)
-        os.remove(self.target_blast.joinpath(self.concat_filename))
-
-        shutil.make_archive(
-            base_name=str(self.target_blast.joinpath("MiteBlastDB")),
-            format="zip",
-            root_dir=temp_dir,
-            base_dir=".",
-        )
-        shutil.rmtree(temp_dir)
-
-        logger.debug("Completed creating BLAST DB.")

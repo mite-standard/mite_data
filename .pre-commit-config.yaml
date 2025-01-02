@@ -12,6 +12,10 @@ repos:
     - id: ruff-format
 - repo: local
   hooks:
+    - id: mite-update
+      name: mite-update
+      entry: hatch run python ./mite_data/main.py
+      language: system
     - id: mite-validate
       name: mite-validate
       entry: hatch run python .github/mite_validation.py
