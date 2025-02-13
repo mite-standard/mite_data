@@ -12,14 +12,26 @@
                 "0000-0002-9747-3423"
             ],
             "comment": "Initial entry. Reviewer 1 checked entry for correctness, changed enzyme and reaction description"
+        },
+        {
+            "version": "2",
+            "date": "2025-01-16",
+            "contributors": [
+                "0000-0001-6534-6609"
+            ],
+            "reviewers": [
+                "0000-0003-1763-2525"
+            ],
+            "comment": "Fixed typo in enzyme name (Vhal -> VhaA). Reviewer 1 checked for correctness, add reference  (doi.org/10.1039/C4OB00474D), change evidence from 'Knock-out studies' to 'Chemical probe', and remove reference (doi:10.1186/1471-2164-15-363) from evidence section."
         }
     ],
     "enzyme": {
-        "name": "Vhal",
+        "name": "VhaA",
         "description": "Flavin-dependent halogenase",
         "references": [
             "doi:10.1186/1471-2164-15-363",
-            "doi:10.1039/D0CC07421G"
+            "doi:10.1039/D0CC07421G",
+            "doi:10.1039/C4OB00474D"
         ],
         "databaseIds": {
             "uniprot": "P96563",
@@ -45,11 +57,10 @@
             ],
             "evidence": {
                 "evidenceCode": [
-                    "Knock-out studies"
+                    "Chemical probe"
                 ],
                 "references": [
-                    "doi:10.1039/D0CC07421G",
-                    "doi:10.1186/1471-2164-15-363"
+                    "doi:10.1039/D0CC07421G"
                 ]
             }
         }
