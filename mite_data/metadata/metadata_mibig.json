@@ -1,5 +1,5 @@
 {
-  "version_mite_data": "1.6",
+  "version_mite_data": "1.10",
   "entries": {
     "BGC0003093": [
       {
@@ -1822,7 +1822,7 @@
         "mite_accession": "MITE0000040",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000040",
         "status": "active",
-        "enzyme_name": "Vhal",
+        "enzyme_name": "VhaA",
         "enzyme_description": "Flavin-dependent halogenase",
         "enzyme_ids": {
           "uniprot": "P96563",
@@ -1832,7 +1832,8 @@
         "enzyme_tailoring": "Halogenation",
         "enzyme_refs": [
           "doi:10.1186/1471-2164-15-363",
-          "doi:10.1039/D0CC07421G"
+          "doi:10.1039/D0CC07421G",
+          "doi:10.1039/C4OB00474D"
         ]
       },
       {

@@ -1,5 +1,5 @@
 {
-  "version_mite_data": "1.6",
+  "version_mite_data": "1.10",
   "entries": {
     "MITE0000194": {
       "status": "active",
@@ -1427,7 +1427,7 @@
     },
     "MITE0000040": {
       "status": "active",
-      "enzyme_name": "Vhal",
+      "enzyme_name": "VhaA",
       "enzyme_description": "Flavin-dependent halogenase",
       "enzyme_ids": {
         "uniprot": "P96563",
@@ -1590,6 +1590,15 @@
         "uniprot": "U6BGC3",
         "genpept": "AHA34035.1",
         "mibig": "BGC0000891"
+      }
+    },
+    "MITE0000198": {
+      "status": "active",
+      "enzyme_name": "PyrH",
+      "enzyme_description": "Flavin-dependent 5-halogenase",
+      "enzyme_ids": {
+        "uniprot": "A4D0H5",
+        "genpept": "AAU95674.1"
       }
     },
     "MITE0000099": {

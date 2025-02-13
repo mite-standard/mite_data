@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.10] 13-02-2025
+
+### Added
+
+- Added entries for 01-25 data update
+
+### Changed
+
+- Changed the license from "MIT" to "CC0" where applicable
+
 ## [1.9] 02-01-2025
 
 ### Added

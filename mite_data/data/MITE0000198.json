@@ -1,0 +1,86 @@
+{
+    "accession": "MITE0000198",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2025-01-16",
+            "contributors": [
+                "0000-0001-6534-6609"
+            ],
+            "reviewers": [
+                "0000-0003-4819-2251"
+            ],
+            "comment": "Initial entry, RHEA and EC numbers not available for bromination."
+        }
+    ],
+    "enzyme": {
+        "name": "PyrH",
+        "description": "Flavin-dependent 5-halogenase",
+        "references": [
+            "doi:10.1016/j.chembiol.2005.02.005"
+        ],
+        "databaseIds": {
+            "uniprot": "A4D0H5",
+            "genpept": "AAU95674.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Chlorinates free-floating L-tryptophan exclusively in position 5",
+            "reactionSMARTS": "[#7:1]-[#6:2](-[#6:3]-[#6:4]1:[#6:5]:[n;H]:[#6:7]2:[#6:8]:[#6:9]:[#6:10]:[#6:11]:[#6:12]:1:2)-[#6:13](=[#8:14])-[#8:15]>>[#7:1]-[#6:2](-[#6:3]-[#6:4]1:[#6:5]:[n;H]:[#6:7]2:[#6:8]:[#6:9]:[#6:10](-[Cl]):[#6:11]:[#6:12]:1:2)-[#6:13](=[#8:14])-[#8:15]",
+            "reactions": [
+                {
+                    "substrate": "NC(Cc1c[nH]c2ccccc12)C(=O)O",
+                    "products": [
+                        "NC(Cc1c[nH]c2ccc(Cl)cc12)C(=O)O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Chlorinates free-floating L-tryptophan in position 5"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1016/j.chembiol.2005.02.005"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "55896",
+                "ec": "1.14.19.58"
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Brominates free-floating L-tryptophan exclusively in position 5",
+            "reactionSMARTS": "[#7:1]-[#6:2](-[#6:3]-[#6:4]1:[#6:5]:[n;H]:[#6:7]2:[#6:8]:[#6:9]:[#6:10]:[#6:11]:[#6:12]:1:2)-[#6:13](=[#8:14])-[#8:15]>>[#7:1]-[#6:2](-[#6:3]-[#6:4]1:[#6:5]:[n;H]:[#6:7]2:[#6:8]:[#6:9]:[#6:10](-[Br]):[#6:11]:[#6:12]:1:2)-[#6:13](=[#8:14])-[#8:15]",
+            "reactions": [
+                {
+                    "substrate": "NC(Cc1c[nH]c2ccccc12)C(=O)O",
+                    "products": [
+                        "NC(Cc1c[nH]c2ccc(Br)cc12)C(=O)O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Brominates free-floating L-tryptophan in position 5"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1016/j.chembiol.2005.02.005"
+                ]
+            }
+        }
+    ]
+}
