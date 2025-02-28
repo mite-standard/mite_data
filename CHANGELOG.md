@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.12] UNRELEASED
+
+### Added
+
+- 02-25 data update
+
+### Changed
+
+- Changed collaboration documents to organization-level ones
+
 ## [1.11] 13-02-2025
 
 ### Changed
