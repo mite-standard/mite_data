@@ -3002,15 +3002,16 @@
         "mite_accession": "MITE0000173",
         "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000173",
         "status": "active",
-        "enzyme_name": "embB",
-        "enzyme_description": "Cytochrome P450 installing crosslink",
+        "enzyme_name": "ScaB aka EmbB",
+        "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
+          "uniprot": "UPI00039B9B9D",
           "genpept": "MYS84939.1",
           "mibig": "BGC0003121"
         },
         "enzyme_tailoring": "Biaryl bond formation",
         "enzyme_refs": [
-          "doi:10.1101/2023.11.03.565440"
+          "doi:10.1039/D4SC03469D"
         ]
       }
     ],

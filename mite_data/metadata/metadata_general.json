@@ -1556,9 +1556,10 @@
     },
     "MITE0000173": {
       "status": "active",
-      "enzyme_name": "embB",
-      "enzyme_description": "Cytochrome P450 installing crosslink",
+      "enzyme_name": "ScaB aka EmbB",
+      "enzyme_description": "Cytochrome P450",
       "enzyme_ids": {
+        "uniprot": "UPI00039B9B9D",
         "genpept": "MYS84939.1",
         "mibig": "BGC0003121"
       }
