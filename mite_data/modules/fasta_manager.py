@@ -1,4 +1,4 @@
-"""Manages fasta file download and the building of a BLAST database.
+"""Manages fasta file download.
 
 Creative Commons Legal Code
 
@@ -137,7 +137,7 @@ Entrez.email = "your_email@example.com"  # must be set but does not have to be r
 
 
 class FastaManager(BaseModel):
-    """Manages the download of FASTA files and the building of a BLAST database.
+    """Manages the download of FASTA files.
 
     Not all MITE entries have NCBI GenPept accessions - some only have UniProt IDs.
 
