@@ -12,10 +12,21 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "New entry. Reviewer 1 added descriptions to example reactions."
+        },
+        {
+            "version": "2",
+            "date": "2025-06-02",
+            "contributors": [
+                "0000-0003-1763-2525"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Adjusted the enzyme name"
         }
     ],
     "enzyme": {
-        "name": "Ple5",
+        "name": "Ple5 a.k.a. PLE5_RHOPP",
         "description": "Cytochrome P450",
         "references": [
             "doi:10.1038/s41467-017-01659-1",

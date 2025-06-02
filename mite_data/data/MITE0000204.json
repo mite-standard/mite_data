@@ -1,0 +1,64 @@
+{
+    "accession": "MITE0000204",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2025-04-15",
+            "contributors": [
+                "0000-0003-4819-2251"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 refined reaction SMARTS substrate specificity, added stereochemistry information, and added additional example."
+        }
+    ],
+    "enzyme": {
+        "name": "AoL1",
+        "description": "Short-chain dehydrogenase/reductase (SDR)",
+        "references": [
+            "doi:10.1039/d3sc04172g"
+        ],
+        "databaseIds": {
+            "uniprot": "Q2U1B0",
+            "genpept": "BAE64655.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "AoL1 is an SDR responsible for converting 8-hydroxy aristolochene to 8-oxo-aristolochene",
+            "reactionSMARTS": "[#6:1]1-[#6:16]-[#6@:14](\\[#6:15])-[#6@@:4]2(\\[#6:13])-[#6:5]-[#6@@:6](/[#6:10](-[#6:12])=[#6:11])-[#6@@:7](-[#6:9]=[#6:3]-2-[#6:2]-1)\\[#8:8]>>[#6:1]1-[#6:16]-[#6@:14](\\[#6:15])-[#6@@:4]2(\\[#6:13])-[#6:5]-[#6@@:6](/[#6:10](-[#6:12])=[#6:11])-[#6&H0:7](-[#6:9]=[#6:3]-2-[#6:2]-1)=[#8:8]",
+            "reactions": [
+                {
+                    "substrate": "C=C(C)[C@@H]1C[C@@]2(C)C(=C[C@H]1O)CCC[C@@H]2C",
+                    "products": [
+                        "C=C(C)[C@@H]1C[C@@]2(C)C(=CC1=O)CCC[C@@H]2C"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Oxidation of 8-hydroxy group to 8-oxo, resulting in 8-oxo-aristolochene"
+                },
+                {
+                    "substrate": "C=C(C)[C@@H]1C[C@@]2(C)C(=C[C@H]1O)C[C@H](O)C[C@@H]2C",
+                    "products": [
+                        "C=C(C)[C@@H]1C[C@@]2(C)C(=CC1=O)C[C@H](O)C[C@@H]2C"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Oxidation of 2,8-dihydroxy aristolochene to 2-hydroxy,8-oxo-aristolochene"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure",
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1039/d3sc04172g"
+                ]
+            }
+        }
+    ]
+}

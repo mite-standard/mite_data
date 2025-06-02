@@ -1,0 +1,71 @@
+{
+    "accession": "MITE0000210",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2025-03-27",
+            "contributors": [
+                "0000-0002-2715-8954"
+            ],
+            "reviewers": [
+                "0000-0003-4819-2251"
+            ],
+            "comment": "new entry"
+        }
+    ],
+    "enzyme": {
+        "name": "CheE",
+        "description": "Cytochrome P450 monooxygenase",
+        "references": [
+            "doi:10.1021/ja402828w"
+        ],
+        "databaseIds": {
+            "uniprot": "P0CU31",
+            "genpept": "EAQ93007.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Monooxygenation"
+            ],
+            "description": "Stereoselective epoxidation of the olefin at C6-7 in the chaetoglobosin A biosynthesis",
+            "reactionSMARTS": "[#6:1]1(:[#6:36]:[#7:35]:[#6:30]2:[#6:31]:[#6:32]:[#6:33]:[#6:34]:[#6:29]:1:2)-[#6:2]\\[#6@:3]1-[#6@:13]2-[#6@@:7]3(-[#6:27](=[#8:28])-[#6:26]=[#6:25]-[#6:24]-[#6:23]-[#6:21](-[#6:22])=[#6:20]-[#6@@:18](/[#6:19])-[#6:17]-[#6:16]=[#6:15]/[#6@:8]-3-[#6:9]=[#6:10](-[#6:14])-[#6@:11]/2/[#6:12])/[#6:5](=[#8:6])-[#7:4]-1>>[#6:1]1(:[#6:36]:[#7:35]:[#6:30]2:[#6:31]:[#6:32]:[#6:33]:[#6:34]:[#6:29]:1:2)-[#6:2]\\[#6@:3]1-[#6@:13]2-[#6@@:7]3(-[#6:27](=[#8:28])-[#6:26]=[#6:25]-[#6:24]-[#6:23]-[#6:21](-[#6:22])=[#6:20]-[#6@@:18](/[#6:19])-[#6:17]-[#6:16]=[#6:15]/[#6@:8]-3-[#6@@:9]3\\[#8]-[#6@:10]-3(/[#6:14])-[#6@:11]/2/[#6:12])/[#6:5](=[#8:6])-[#7:4]-1",
+            "reactions": [
+                {
+                    "substrate": "CC1=C[C@@H]2/C=C/C[C@H](C)/C=C(/C)CC/C=C/C(=O)[C@]23C(=O)N[C@@H](Cc2c[nH]c4ccccc24)C3[C@@H]1C",
+                    "products": [
+                        "CC1=C[C@@H](C)CC=C[C@H]2[C@@H]3O[C@]3(C)[C@@H](C)C3[C@H](Cc4c[nH]c5ccccc45)NC(=O)[C@]32C(=O)C=CCC1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Epoxidation of prochaetoglobosin I (chaetoglobosin V) at C6-7 to prochaetoglobosin IV"
+                },
+                {
+                    "substrate": "CC1=C[C@@H]2/C=C/C[C@H](C)/C=C(/C)[C@@H](O)[C@@H](O)/C=C/C(=O)[C@]23C(=O)N[C@@H](Cc2c[nH]c4ccccc24)C3[C@@H]1C",
+                    "products": [
+                        "CC1=C[C@@H](C)CC=C[C@H]2[C@@H]3O[C@]3(C)[C@@H](C)C3[C@H](Cc4c[nH]c5ccccc45)NC(=O)[C@]32C(=O)C=C[C@H](O)[C@@H]1O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Epoxidation of cytoglobosin D at C6-7 to 20-dihydro-chaetoglobosin A"
+                },
+                {
+                    "substrate": "CC1=C[C@@H]2/C=C/C[C@H](C)/C=C(/C)[C@@H](O)C(=O)/C=C/C(=O)[C@]23C(=O)N[C@@H](Cc2c[nH]c4ccccc24)C3[C@@H]1C",
+                    "products": [
+                        "CC1=C[C@@H](C)CC=C[C@H]2[C@@H]3O[C@]3(C)[C@@H](C)C3[C@H](Cc4c[nH]c5ccccc45)NC(=O)[C@]32C(=O)C=CC(=O)[C@@H]1O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Epoxidation of chaetoglobosin J at C6-7 to chaetoglobosin A"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/ja402828w"
+                ]
+            }
+        }
+    ]
+}

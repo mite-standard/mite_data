@@ -13,9 +13,25 @@ For more information on MITE, see the README of the [MITE-Standard organisation 
 
 ## For developers
 
-*Nota bene*: This installation will only work on (Ubuntu) Linux.
+*Nota bene*: This installation will only work on (Ubuntu) Linux and assumes a Python installation.
 
-- Install `python 3.12.x`
-- Install hatch (e.g. with `pipx install hatch`)
-- `hatch env create`
-- Update metadata files and download fasta files: `mite_data`
+```commandline
+pip install hatch
+hatch env create
+hatch run pre-commit install
+hatch run pytest
+```
+
+### Adding/modifying entries
+
+- (Create a new branch)
+- Update version in `pyproject.toml`, add changelog to `CHANGELOG.md`
+- Reinstall the package to update version metadata: `hatch env remove && hatch env create`
+- Add new/modify existing entries (*N.B. for new entries, change `accession` and `status`*)
+- Pre-commit will automatically validate and update metadata files upon committing
+- If `pre-commit` was not installed, these steps need to be performed manually:
+
+```commandline
+hatch run python ./mite_data/main.py
+hatch run python .github/mite_validation.py
+```
