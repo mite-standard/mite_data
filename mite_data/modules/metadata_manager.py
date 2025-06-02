@@ -195,7 +195,7 @@ class MetadataManager(BaseModel):
 
         entry = {
             "mite_accession": mite["accession"],
-            "mite_url": f"https://mite.bioinformatics.nl/repository/{mite["accession"]}",
+            "mite_url": f"https://bioregistry.io/mite:{mite['accession']}",
             "status": mite["status"],
             "enzyme_name": mite["enzyme"]["name"],
             "enzyme_description": mite["enzyme"].get(

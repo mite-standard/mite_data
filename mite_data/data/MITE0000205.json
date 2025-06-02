@@ -1,0 +1,105 @@
+{
+    "accession": "MITE0000205",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2025-03-27",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0003-4819-2251",
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewers fixed reaction SMARTS, added stereochemistry."
+        }
+    ],
+    "enzyme": {
+        "name": "XhR1",
+        "description": "Cytochrome P450 Monooxygenase",
+        "references": [
+            "doi:10.1039/d3sc04172g"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A4Z0Z6W8",
+            "genpept": "TGJ85106.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "Hydroxylation of isopropenyl side chain of aristolochene.",
+            "reactionSMARTS": "[#6:1]1-[#6:15]-[#6@:13](\\[#6:14])-[#6@@:4]2(\\[#6:12])-[#6:5]-[#6@@:6](/[#6:9](-[#6:11])~[#6:10])-[#6:7]-[#6:8]=[#6:3]-2-[#6:2]-1>>[#6:1]1-[#6:15]-[#6@:13](\\[#6:14])-[#6@@:4]2(\\[#6:12])-[#6:5]-[#6@@:6](/[#6:9](~[#6:10])-[#6:11]-[#8])-[#6:7]-[#6:8]=[#6:3]-2-[#6:2]-1",
+            "reactions": [
+                {
+                    "substrate": "C=C(C)[C@H]1CC=C2[C@H](O)CC[C@H](C)[C@@]2(C)C1",
+                    "products": [
+                        "C=C(CO)[C@H]1CC=C2[C@H](O)CC[C@H](C)[C@@]2(C)C1"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Hydroxylation of C-13 in isopropenyl side chain"
+                },
+                {
+                    "substrate": "C=C(C)[C@H]1CC=C2C[C@H](O)C[C@H](C)[C@@]2(C)C1",
+                    "products": [
+                        "C=C(CO)[C@H]1CC=C2C[C@H](O)C[C@H](C)[C@@]2(C)C1"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Hydroxylation of C-13 in isopropenyl side chain"
+                },
+                {
+                    "substrate": "CC(C)[C@H]1CC=C2C[C@H](O)C[C@H](C)[C@@]2(C)C1",
+                    "products": [
+                        "CC(CO)[C@H]1CC=C2C[C@H](O)C[C@H](C)[C@@]2(C)C1"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Hydroxylation of C-13 in isopropenyl side chain"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1039/d3sc04172g"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Carboxylation"
+            ],
+            "description": "Carboxylation of isopropenyl side chain of aristolochene.",
+            "reactionSMARTS": "[#6:1]1-[#6:15]-[#6@:13](\\[#6:14])-[#6@@:4]2(\\[#6:12])-[#6:5]-[#6@@:6](/[#6:9](-[#6:11])~[#6:10])-[#6:7]-[#6:8]=[#6:3]-2-[#6:2]-1>>[#6:1]1-[#6:15]-[#6@:13](\\[#6:14])-[#6@@:4]2(\\[#6:12])-[#6:5]-[#6@@:6](/[#6:9](~[#6:10])-[#6:11](=[#8])-[#8])-[#6:7]-[#6:8]=[#6:3]-2-[#6:2]-1",
+            "reactions": [
+                {
+                    "substrate": "CC(C)[C@H]1CC=C2[C@H](O)CC[C@H](C)[C@@]2(C)C1",
+                    "products": [
+                        "CC(C(=O)O)[C@H]1CC=C2[C@H](O)CC[C@H](C)[C@@]2(C)C1"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Carboxylation of C-13 in isopropenyl side chain"
+                },
+                {
+                    "substrate": "C=C(C)[C@H]1CC=C2C[C@H](O)C[C@H](C)[C@@]2(C)C1",
+                    "products": [
+                        "C=C(C(=O)O)[C@H]1CC=C2C[C@H](O)C[C@H](C)[C@@]2(C)C1"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Carboxylation of C-13 in isopropenyl side chain"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1039/d3sc04172g"
+                ]
+            }
+        }
+    ]
+}

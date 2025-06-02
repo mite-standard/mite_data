@@ -1,10 +1,10 @@
 {
-  "version_mite_data": "1.10",
+  "version_mite_data": "1.13",
   "entries": {
     "BGC0003093": [
       {
         "mite_accession": "MITE0000194",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000194",
+        "mite_url": "https://bioregistry.io/mite:MITE0000194",
         "status": "active",
         "enzyme_name": "PhoO",
         "enzyme_description": "Cytochrome P450",
@@ -20,7 +20,7 @@
       },
       {
         "mite_accession": "MITE0000164",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000164",
+        "mite_url": "https://bioregistry.io/mite:MITE0000164",
         "status": "active",
         "enzyme_name": "PhoP",
         "enzyme_description": "Short-chain dehydrogenases/reductase",
@@ -36,7 +36,7 @@
       },
       {
         "mite_accession": "MITE0000165",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000165",
+        "mite_url": "https://bioregistry.io/mite:MITE0000165",
         "status": "active",
         "enzyme_name": "PhoN",
         "enzyme_description": "Isomerase",
@@ -51,7 +51,7 @@
       },
       {
         "mite_accession": "MITE0000157",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000157",
+        "mite_url": "https://bioregistry.io/mite:MITE0000157",
         "status": "active",
         "enzyme_name": "PhoL",
         "enzyme_description": "Short-chain dehydrogenases/reductase",
@@ -67,7 +67,7 @@
       },
       {
         "mite_accession": "MITE0000156",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000156",
+        "mite_url": "https://bioregistry.io/mite:MITE0000156",
         "status": "active",
         "enzyme_name": "PhoM",
         "enzyme_description": "Flavin-dependent monooxygenase",
@@ -83,7 +83,7 @@
       },
       {
         "mite_accession": "MITE0000162",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000162",
+        "mite_url": "https://bioregistry.io/mite:MITE0000162",
         "status": "active",
         "enzyme_name": "PhoG",
         "enzyme_description": "Anthrone oxygenase",
@@ -99,7 +99,7 @@
       },
       {
         "mite_accession": "MITE0000161",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000161",
+        "mite_url": "https://bioregistry.io/mite:MITE0000161",
         "status": "active",
         "enzyme_name": "PhoK",
         "enzyme_description": "Reductase",
@@ -114,7 +114,7 @@
       },
       {
         "mite_accession": "MITE0000159",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000159",
+        "mite_url": "https://bioregistry.io/mite:MITE0000159",
         "status": "active",
         "enzyme_name": "PhoD",
         "enzyme_description": "Dehydratase",
@@ -130,7 +130,7 @@
       },
       {
         "mite_accession": "MITE0000160",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000160",
+        "mite_url": "https://bioregistry.io/mite:MITE0000160",
         "status": "active",
         "enzyme_name": "PhoC",
         "enzyme_description": "Short-chain dehydrogenases/reductase (SDR)",
@@ -146,7 +146,7 @@
       },
       {
         "mite_accession": "MITE0000163",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000163",
+        "mite_url": "https://bioregistry.io/mite:MITE0000163",
         "status": "active",
         "enzyme_name": "PhoH",
         "enzyme_description": "Decarboxylase",
@@ -162,7 +162,7 @@
       },
       {
         "mite_accession": "MITE0000158",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000158",
+        "mite_url": "https://bioregistry.io/mite:MITE0000158",
         "status": "active",
         "enzyme_name": "PhoJ",
         "enzyme_description": "Dioxygenase",
@@ -180,7 +180,7 @@
     "BGC0000247": [
       {
         "mite_accession": "MITE0000020",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000020",
+        "mite_url": "https://bioregistry.io/mite:MITE0000020",
         "status": "active",
         "enzyme_name": "MtmGII",
         "enzyme_description": "glycosyltransferase",
@@ -196,7 +196,7 @@
       },
       {
         "mite_accession": "MITE0000019",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000019",
+        "mite_url": "https://bioregistry.io/mite:MITE0000019",
         "status": "active",
         "enzyme_name": "MtmGIII",
         "enzyme_description": "glycosyltransferase",
@@ -212,7 +212,7 @@
       },
       {
         "mite_accession": "MITE0000018",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000018",
+        "mite_url": "https://bioregistry.io/mite:MITE0000018",
         "status": "active",
         "enzyme_name": "MtmGIV",
         "enzyme_description": "glycosyltransferase",
@@ -228,7 +228,7 @@
       },
       {
         "mite_accession": "MITE0000015",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000015",
+        "mite_url": "https://bioregistry.io/mite:MITE0000015",
         "status": "active",
         "enzyme_name": "MtmMII",
         "enzyme_description": "C-methyltransferase",
@@ -244,7 +244,7 @@
       },
       {
         "mite_accession": "MITE0000014",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000014",
+        "mite_url": "https://bioregistry.io/mite:MITE0000014",
         "status": "active",
         "enzyme_name": "MtmMI",
         "enzyme_description": "O-methyltransferase",
@@ -261,7 +261,7 @@
       },
       {
         "mite_accession": "MITE0000016",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000016",
+        "mite_url": "https://bioregistry.io/mite:MITE0000016",
         "status": "active",
         "enzyme_name": "MtmOIV",
         "enzyme_description": "Oxygenase",
@@ -277,7 +277,7 @@
       },
       {
         "mite_accession": "MITE0000017",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000017",
+        "mite_url": "https://bioregistry.io/mite:MITE0000017",
         "status": "active",
         "enzyme_name": "MtmW",
         "enzyme_description": "ketoreductase",
@@ -295,7 +295,7 @@
     "BGC0001945": [
       {
         "mite_accession": "MITE0000109",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000109",
+        "mite_url": "https://bioregistry.io/mite:MITE0000109",
         "status": "active",
         "enzyme_name": "CmxA",
         "enzyme_description": "L-lysine cyclodeaminase",
@@ -313,7 +313,7 @@
     "BGC0000104": [
       {
         "mite_accession": "MITE0000011",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000011",
+        "mite_url": "https://bioregistry.io/mite:MITE0000011",
         "status": "active",
         "enzyme_name": "MpaG",
         "enzyme_description": "O-methyltransferase",
@@ -331,7 +331,7 @@
     "BGC0002857": [
       {
         "mite_accession": "MITE0000136",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000136",
+        "mite_url": "https://bioregistry.io/mite:MITE0000136",
         "status": "active",
         "enzyme_name": "THAA1",
         "enzyme_description": "Acyltransferase subfamily IIIa, Arabidopsis lyrata ssp lyrata",
@@ -346,7 +346,7 @@
       },
       {
         "mite_accession": "MITE0000134",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000134",
+        "mite_url": "https://bioregistry.io/mite:MITE0000134",
         "status": "active",
         "enzyme_name": "THAS",
         "enzyme_description": "Oxidosqualene cyclase",
@@ -362,7 +362,7 @@
       },
       {
         "mite_accession": "MITE0000135",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000135",
+        "mite_url": "https://bioregistry.io/mite:MITE0000135",
         "status": "active",
         "enzyme_name": "THAO",
         "enzyme_description": "Cytochrome P450",
@@ -378,7 +378,7 @@
       },
       {
         "mite_accession": "MITE0000133",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000133",
+        "mite_url": "https://bioregistry.io/mite:MITE0000133",
         "status": "active",
         "enzyme_name": "THAH",
         "enzyme_description": "Cytochrome P450",
@@ -394,7 +394,7 @@
       },
       {
         "mite_accession": "MITE0000132",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000132",
+        "mite_url": "https://bioregistry.io/mite:MITE0000132",
         "status": "active",
         "enzyme_name": "THAA2",
         "enzyme_description": "Acetyltransferase",
@@ -412,7 +412,7 @@
     "BGC0002514": [
       {
         "mite_accession": "MITE0000123",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000123",
+        "mite_url": "https://bioregistry.io/mite:MITE0000123",
         "status": "active",
         "enzyme_name": "JuiM",
         "enzyme_description": "Acetyltransferase",
@@ -428,7 +428,7 @@
       },
       {
         "mite_accession": "MITE0000124",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000124",
+        "mite_url": "https://bioregistry.io/mite:MITE0000124",
         "status": "active",
         "enzyme_name": "JuiL",
         "enzyme_description": "F420-dependent oxidoreductase",
@@ -444,7 +444,7 @@
       },
       {
         "mite_accession": "MITE0000125",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000125",
+        "mite_url": "https://bioregistry.io/mite:MITE0000125",
         "status": "active",
         "enzyme_name": "JuiL",
         "enzyme_description": "Cytochrome P450",
@@ -462,7 +462,7 @@
     "BGC0000973": [
       {
         "mite_accession": "MITE0000073",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000073",
+        "mite_url": "https://bioregistry.io/mite:MITE0000073",
         "status": "active",
         "enzyme_name": "ClmAH",
         "enzyme_description": "Amidohydrolase",
@@ -478,7 +478,7 @@
       },
       {
         "mite_accession": "MITE0000075",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000075",
+        "mite_url": "https://bioregistry.io/mite:MITE0000075",
         "status": "active",
         "enzyme_name": "ClmM2",
         "enzyme_description": "O-methyltransferase",
@@ -494,7 +494,7 @@
       },
       {
         "mite_accession": "MITE0000074",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000074",
+        "mite_url": "https://bioregistry.io/mite:MITE0000074",
         "status": "active",
         "enzyme_name": "ClmM1",
         "enzyme_description": "S-methyltransferase",
@@ -512,7 +512,7 @@
     "BGC0001763": [
       {
         "mite_accession": "MITE0000184",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000184",
+        "mite_url": "https://bioregistry.io/mite:MITE0000184",
         "status": "active",
         "enzyme_name": "RufO",
         "enzyme_description": "Cytochrome p450 monooxygenase",
@@ -532,7 +532,7 @@
     "BGC0000311": [
       {
         "mite_accession": "MITE0000028",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000028",
+        "mite_url": "https://bioregistry.io/mite:MITE0000028",
         "status": "active",
         "enzyme_name": "BhaA",
         "enzyme_description": "Halogenase",
@@ -551,7 +551,7 @@
       },
       {
         "mite_accession": "MITE0000027",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000027",
+        "mite_url": "https://bioregistry.io/mite:MITE0000027",
         "status": "active",
         "enzyme_name": "OxyC",
         "enzyme_description": "Cytochrome P450 monooxygenase",
@@ -569,7 +569,7 @@
       },
       {
         "mite_accession": "MITE0000026",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000026",
+        "mite_url": "https://bioregistry.io/mite:MITE0000026",
         "status": "retired",
         "enzyme_name": "OxyA",
         "enzyme_description": "Cytochrome P450 monooxygenase.",
@@ -587,7 +587,7 @@
       },
       {
         "mite_accession": "MITE0000025",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000025",
+        "mite_url": "https://bioregistry.io/mite:MITE0000025",
         "status": "retired",
         "enzyme_name": "OxyB",
         "enzyme_description": "Cytochrome P450 monooxygenase",
@@ -607,7 +607,7 @@
     "BGC0002024": [
       {
         "mite_accession": "MITE0000115",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000115",
+        "mite_url": "https://bioregistry.io/mite:MITE0000115",
         "status": "active",
         "enzyme_name": "NgnP2",
         "enzyme_description": "Cytochrome P450",
@@ -623,7 +623,7 @@
       },
       {
         "mite_accession": "MITE0000111",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000111",
+        "mite_url": "https://bioregistry.io/mite:MITE0000111",
         "status": "active",
         "enzyme_name": "NgnO3",
         "enzyme_description": "Dioxygenase",
@@ -639,7 +639,7 @@
       },
       {
         "mite_accession": "MITE0000112",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000112",
+        "mite_url": "https://bioregistry.io/mite:MITE0000112",
         "status": "active",
         "enzyme_name": "Ngnp1",
         "enzyme_description": "Cytochrome P450",
@@ -655,7 +655,7 @@
       },
       {
         "mite_accession": "MITE0000114",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000114",
+        "mite_url": "https://bioregistry.io/mite:MITE0000114",
         "status": "active",
         "enzyme_name": "NgnM",
         "enzyme_description": "Methyltransferase",
@@ -671,7 +671,7 @@
       },
       {
         "mite_accession": "MITE0000110",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000110",
+        "mite_url": "https://bioregistry.io/mite:MITE0000110",
         "status": "active",
         "enzyme_name": "NgnN4",
         "enzyme_description": "Proline adenyltransferase",
@@ -687,7 +687,7 @@
       },
       {
         "mite_accession": "MITE0000113",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000113",
+        "mite_url": "https://bioregistry.io/mite:MITE0000113",
         "status": "active",
         "enzyme_name": "NgnD",
         "enzyme_description": "Nuclear transport factor 2 family protein",
@@ -705,7 +705,7 @@
     "BGC0001061": [
       {
         "mite_accession": "MITE0000079",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000079",
+        "mite_url": "https://bioregistry.io/mite:MITE0000079",
         "status": "retired",
         "enzyme_name": "PokM3",
         "enzyme_description": "CoA ligase",
@@ -721,7 +721,7 @@
       },
       {
         "mite_accession": "MITE0000080",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000080",
+        "mite_url": "https://bioregistry.io/mite:MITE0000080",
         "status": "active",
         "enzyme_name": "PokMT1",
         "enzyme_description": "C-methyltransferase",
@@ -739,7 +739,7 @@
     "BGC0000821": [
       {
         "mite_accession": "MITE0000069",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000069",
+        "mite_url": "https://bioregistry.io/mite:MITE0000069",
         "status": "active",
         "enzyme_name": "RebH",
         "enzyme_description": "tryptophane halogenase",
@@ -755,7 +755,7 @@
       },
       {
         "mite_accession": "MITE0000067",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000067",
+        "mite_url": "https://bioregistry.io/mite:MITE0000067",
         "status": "active",
         "enzyme_name": "RebD",
         "enzyme_description": "Dichlorochromopyrrolate synthase",
@@ -772,7 +772,7 @@
       },
       {
         "mite_accession": "MITE0000068",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000068",
+        "mite_url": "https://bioregistry.io/mite:MITE0000068",
         "status": "active",
         "enzyme_name": "RebO",
         "enzyme_description": "Flavin-dependent L-tryptophan oxidase",
@@ -788,7 +788,7 @@
       },
       {
         "mite_accession": "MITE0000066",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000066",
+        "mite_url": "https://bioregistry.io/mite:MITE0000066",
         "status": "active",
         "enzyme_name": "RebP",
         "enzyme_description": "Cytochrome P-450",
@@ -804,7 +804,7 @@
       },
       {
         "mite_accession": "MITE0000070",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000070",
+        "mite_url": "https://bioregistry.io/mite:MITE0000070",
         "status": "active",
         "enzyme_name": "RebC",
         "enzyme_description": "Putative FAD-monooxygenase",
@@ -823,7 +823,7 @@
     "BGC0000440": [
       {
         "mite_accession": "MITE0000033",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000033",
+        "mite_url": "https://bioregistry.io/mite:MITE0000033",
         "status": "active",
         "enzyme_name": "GtfB",
         "enzyme_description": "Glycosyltransferase",
@@ -841,7 +841,7 @@
       },
       {
         "mite_accession": "MITE0000036",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000036",
+        "mite_url": "https://bioregistry.io/mite:MITE0000036",
         "status": "retired",
         "enzyme_name": "tAtf",
         "enzyme_description": "Acyltransferase",
@@ -859,7 +859,7 @@
       },
       {
         "mite_accession": "MITE0000034",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000034",
+        "mite_url": "https://bioregistry.io/mite:MITE0000034",
         "status": "active",
         "enzyme_name": "GtfA",
         "enzyme_description": "Glycosyltransferase",
@@ -877,7 +877,7 @@
       },
       {
         "mite_accession": "MITE0000035",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000035",
+        "mite_url": "https://bioregistry.io/mite:MITE0000035",
         "status": "active",
         "enzyme_name": "Tcp24 a.k.a Orf2* a.k.a. tAtf",
         "enzyme_description": "Acyltransferase",
@@ -899,7 +899,7 @@
     "BGC0002126": [
       {
         "mite_accession": "MITE0000197",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000197",
+        "mite_url": "https://bioregistry.io/mite:MITE0000197",
         "status": "active",
         "enzyme_name": "HynC",
         "enzyme_description": "non-heme diiron monooxygenase",
@@ -914,7 +914,7 @@
       },
       {
         "mite_accession": "MITE0000196",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000196",
+        "mite_url": "https://bioregistry.io/mite:MITE0000196",
         "status": "active",
         "enzyme_name": "HynE",
         "enzyme_description": "alpha-ketoglutarate-dependent dioxygenase",
@@ -931,7 +931,7 @@
     "BGC0003094": [
       {
         "mite_accession": "MITE0000171",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000171",
+        "mite_url": "https://bioregistry.io/mite:MITE0000171",
         "status": "active",
         "enzyme_name": "ProsB",
         "enzyme_description": "Decarboxylase",
@@ -946,7 +946,7 @@
       },
       {
         "mite_accession": "MITE0000168",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000168",
+        "mite_url": "https://bioregistry.io/mite:MITE0000168",
         "status": "active",
         "enzyme_name": "ProsA",
         "enzyme_description": "Cytochrome P450",
@@ -961,7 +961,7 @@
       },
       {
         "mite_accession": "MITE0000166",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000166",
+        "mite_url": "https://bioregistry.io/mite:MITE0000166",
         "status": "active",
         "enzyme_name": "ProsF",
         "enzyme_description": "O-methyltransferase",
@@ -976,7 +976,7 @@
       },
       {
         "mite_accession": "MITE0000167",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000167",
+        "mite_url": "https://bioregistry.io/mite:MITE0000167",
         "status": "active",
         "enzyme_name": "ProsD",
         "enzyme_description": "Glyoxalase",
@@ -991,7 +991,7 @@
       },
       {
         "mite_accession": "MITE0000170",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000170",
+        "mite_url": "https://bioregistry.io/mite:MITE0000170",
         "status": "active",
         "enzyme_name": "ProsK",
         "enzyme_description": "Cytochrome P450",
@@ -1006,7 +1006,7 @@
       },
       {
         "mite_accession": "MITE0000169",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000169",
+        "mite_url": "https://bioregistry.io/mite:MITE0000169",
         "status": "active",
         "enzyme_name": "ProsC",
         "enzyme_description": "Short-chain dehydrogenase/reductase",
@@ -1020,10 +1020,60 @@
         ]
       }
     ],
+    "BGC0001706": [
+      {
+        "mite_accession": "MITE0000201",
+        "mite_url": "https://bioregistry.io/mite:MITE0000201",
+        "status": "active",
+        "enzyme_name": "NodW",
+        "enzyme_description": "Cytochrome P450 Monooxygenase",
+        "enzyme_ids": {
+          "uniprot": "A0A2I6PJ08",
+          "genpept": "AUM60065.1",
+          "mibig": "BGC0001706"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1021/jacs.7b10909"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000199",
+        "mite_url": "https://bioregistry.io/mite:MITE0000199",
+        "status": "active",
+        "enzyme_name": "NodM",
+        "enzyme_description": "FAD-dependent monooxygenase",
+        "enzyme_ids": {
+          "uniprot": "A0A2I6PIZ2",
+          "genpept": "AUM60051.1",
+          "mibig": "BGC0001706"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1021/jacs.7b10909"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000200",
+        "mite_url": "https://bioregistry.io/mite:MITE0000200",
+        "status": "active",
+        "enzyme_name": "NodB",
+        "enzyme_description": "Terpene cyclase",
+        "enzyme_ids": {
+          "uniprot": "A0A2I6PJ07",
+          "genpept": "AUM60064.1",
+          "mibig": "BGC0001706"
+        },
+        "enzyme_tailoring": "Cyclization",
+        "enzyme_refs": [
+          "doi:10.1021/jacs.7b10909"
+        ]
+      }
+    ],
     "BGC0000269": [
       {
         "mite_accession": "MITE0000021",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000021",
+        "mite_url": "https://bioregistry.io/mite:MITE0000021",
         "status": "active",
         "enzyme_name": "SsfM2",
         "enzyme_description": "O-methyltransferase",
@@ -1039,7 +1089,7 @@
       },
       {
         "mite_accession": "MITE0000023",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000023",
+        "mite_url": "https://bioregistry.io/mite:MITE0000023",
         "status": "active",
         "enzyme_name": "SsfM1",
         "enzyme_description": "O-methyltransferase",
@@ -1055,7 +1105,7 @@
       },
       {
         "mite_accession": "MITE0000022",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000022",
+        "mite_url": "https://bioregistry.io/mite:MITE0000022",
         "status": "active",
         "enzyme_name": "SsfM4",
         "enzyme_description": "C-methyltransferase",
@@ -1074,7 +1124,7 @@
     "BGC0000653": [
       {
         "mite_accession": "MITE0000058",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000058",
+        "mite_url": "https://bioregistry.io/mite:MITE0000058",
         "status": "active",
         "enzyme_name": "PntD",
         "enzyme_description": "Non-Heme Iron-Dependent Dehydrogenase/Oxygenase",
@@ -1090,7 +1140,7 @@
       },
       {
         "mite_accession": "MITE0000057",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000057",
+        "mite_url": "https://bioregistry.io/mite:MITE0000057",
         "status": "active",
         "enzyme_name": "PntE",
         "enzyme_description": "Baeyer-Villiger monooxygenase",
@@ -1106,7 +1156,7 @@
       },
       {
         "mite_accession": "MITE0000059",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000059",
+        "mite_url": "https://bioregistry.io/mite:MITE0000059",
         "status": "active",
         "enzyme_name": "PntM",
         "enzyme_description": "Cytochrome P450",
@@ -1122,7 +1172,7 @@
       },
       {
         "mite_accession": "MITE0000060",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000060",
+        "mite_url": "https://bioregistry.io/mite:MITE0000060",
         "status": "active",
         "enzyme_name": "PntI",
         "enzyme_description": "Cytochrome P450",
@@ -1141,7 +1191,7 @@
     "BGC0000851": [
       {
         "mite_accession": "MITE0000193",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000193",
+        "mite_url": "https://bioregistry.io/mite:MITE0000193",
         "status": "active",
         "enzyme_name": "AlbA",
         "enzyme_description": "Albonoursin synthase/cyclic dipeptide oxidase",
@@ -1160,7 +1210,7 @@
     "BGC0000469": [
       {
         "mite_accession": "MITE0000044",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000044",
+        "mite_url": "https://bioregistry.io/mite:MITE0000044",
         "status": "active",
         "enzyme_name": "BotCYP",
         "enzyme_description": "Cytochrome P450",
@@ -1177,7 +1227,7 @@
       },
       {
         "mite_accession": "MITE0000048",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000048",
+        "mite_url": "https://bioregistry.io/mite:MITE0000048",
         "status": "active",
         "enzyme_name": "BotP",
         "enzyme_description": "Peptidase",
@@ -1195,7 +1245,7 @@
       },
       {
         "mite_accession": "MITE0000051",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000051",
+        "mite_url": "https://bioregistry.io/mite:MITE0000051",
         "status": "active",
         "enzyme_name": "BotH",
         "enzyme_description": "Epimerase",
@@ -1212,7 +1262,7 @@
       },
       {
         "mite_accession": "MITE0000053",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000053",
+        "mite_url": "https://bioregistry.io/mite:MITE0000053",
         "status": "active",
         "enzyme_name": "BotCD",
         "enzyme_description": "Macroamidine linkage-catalyzing YacO protein from Streptomyces sp. BC16019",
@@ -1230,7 +1280,7 @@
       },
       {
         "mite_accession": "MITE0000052",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000052",
+        "mite_url": "https://bioregistry.io/mite:MITE0000052",
         "status": "active",
         "enzyme_name": "BotC",
         "enzyme_description": "Thiazole heterocyclisation-catalyzing YacO protein",
@@ -1248,7 +1298,7 @@
       },
       {
         "mite_accession": "MITE0000045",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000045",
+        "mite_url": "https://bioregistry.io/mite:MITE0000045",
         "status": "active",
         "enzyme_name": "BotOMT",
         "enzyme_description": "Carboxyl methyltransferase",
@@ -1264,7 +1314,7 @@
       },
       {
         "mite_accession": "MITE0000047",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000047",
+        "mite_url": "https://bioregistry.io/mite:MITE0000047",
         "status": "active",
         "enzyme_name": "BotRMT3",
         "enzyme_description": "radical SAM methyltransferase",
@@ -1282,7 +1332,7 @@
       },
       {
         "mite_accession": "MITE0000050",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000050",
+        "mite_url": "https://bioregistry.io/mite:MITE0000050",
         "status": "active",
         "enzyme_name": "BotAH",
         "enzyme_description": "Aminohydrolase",
@@ -1299,7 +1349,7 @@
       },
       {
         "mite_accession": "MITE0000049",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000049",
+        "mite_url": "https://bioregistry.io/mite:MITE0000049",
         "status": "active",
         "enzyme_name": "BotRMT1",
         "enzyme_description": "rSAM methyltransferase",
@@ -1317,7 +1367,7 @@
       },
       {
         "mite_accession": "MITE0000046",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000046",
+        "mite_url": "https://bioregistry.io/mite:MITE0000046",
         "status": "active",
         "enzyme_name": "BotRMT2",
         "enzyme_description": "radical SAM methyltransferase ",
@@ -1337,7 +1387,7 @@
     "BGC0000026": [
       {
         "mite_accession": "MITE0000003",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000003",
+        "mite_url": "https://bioregistry.io/mite:MITE0000003",
         "status": "active",
         "enzyme_name": "AviG6",
         "enzyme_description": "O-methyltransferase",
@@ -1354,7 +1404,7 @@
       },
       {
         "mite_accession": "MITE0000002",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000002",
+        "mite_url": "https://bioregistry.io/mite:MITE0000002",
         "status": "active",
         "enzyme_name": "AviG4",
         "enzyme_description": "O-methyltransferase",
@@ -1371,7 +1421,7 @@
       },
       {
         "mite_accession": "MITE0000004",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000004",
+        "mite_url": "https://bioregistry.io/mite:MITE0000004",
         "status": "active",
         "enzyme_name": "AviG5",
         "enzyme_description": "O-methyltransferase",
@@ -1388,7 +1438,7 @@
       },
       {
         "mite_accession": "MITE0000001",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000001",
+        "mite_url": "https://bioregistry.io/mite:MITE0000001",
         "status": "active",
         "enzyme_name": "AviG2",
         "enzyme_description": "O-methyltransferase",
@@ -1407,7 +1457,7 @@
     "BGC0001237": [
       {
         "mite_accession": "MITE0000088",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000088",
+        "mite_url": "https://bioregistry.io/mite:MITE0000088",
         "status": "active",
         "enzyme_name": "TlmF",
         "enzyme_description": "cytochrome P450",
@@ -1425,7 +1475,7 @@
     "BGC0000374": [
       {
         "mite_accession": "MITE0000195",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000195",
+        "mite_url": "https://bioregistry.io/mite:MITE0000195",
         "status": "active",
         "enzyme_name": "HrmJ",
         "enzyme_description": "alpha-ketoglutarate-dependent dioxygenase",
@@ -1442,7 +1492,7 @@
       },
       {
         "mite_accession": "MITE0000187",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000187",
+        "mite_url": "https://bioregistry.io/mite:MITE0000187",
         "status": "active",
         "enzyme_name": "HrmI",
         "enzyme_description": "heme oxygenase-like dinuclear iron enzyme",
@@ -1459,7 +1509,7 @@
       },
       {
         "mite_accession": "MITE0000186",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000186",
+        "mite_url": "https://bioregistry.io/mite:MITE0000186",
         "status": "active",
         "enzyme_name": "HrmF",
         "enzyme_description": "L-DOPA dioxygenase",
@@ -1477,7 +1527,7 @@
     "BGC0001001": [
       {
         "mite_accession": "MITE0000076",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000076",
+        "mite_url": "https://bioregistry.io/mite:MITE0000076",
         "status": "active",
         "enzyme_name": "JamD",
         "enzyme_description": "Flavin-dependent halogenase",
@@ -1495,7 +1545,7 @@
     "BGC0002069": [
       {
         "mite_accession": "MITE0000116",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000116",
+        "mite_url": "https://bioregistry.io/mite:MITE0000116",
         "status": "active",
         "enzyme_name": "StoC",
         "enzyme_description": "NADH:flavin oxidoreductase",
@@ -1510,7 +1560,7 @@
       },
       {
         "mite_accession": "MITE0000117",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000117",
+        "mite_url": "https://bioregistry.io/mite:MITE0000117",
         "status": "active",
         "enzyme_name": "StoR",
         "enzyme_description": "NAD(P)H-dependent oxidoreductase",
@@ -1527,7 +1577,7 @@
     "BGC0000678": [
       {
         "mite_accession": "MITE0000064",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000064",
+        "mite_url": "https://bioregistry.io/mite:MITE0000064",
         "status": "active",
         "enzyme_name": "PtlI",
         "enzyme_description": "Cytochrome P450",
@@ -1543,7 +1593,7 @@
       },
       {
         "mite_accession": "MITE0000065",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000065",
+        "mite_url": "https://bioregistry.io/mite:MITE0000065",
         "status": "active",
         "enzyme_name": "PtlE",
         "enzyme_description": "Baeyer-Villiger monooxygenase",
@@ -1559,7 +1609,7 @@
       },
       {
         "mite_accession": "MITE0000063",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000063",
+        "mite_url": "https://bioregistry.io/mite:MITE0000063",
         "status": "active",
         "enzyme_name": "PtlD",
         "enzyme_description": "Non-Heme Iron-Dependent Dehydrogenase/Oxygenase",
@@ -1577,7 +1627,7 @@
     "BGC0000529": [
       {
         "mite_accession": "MITE0000054",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000054",
+        "mite_url": "https://bioregistry.io/mite:MITE0000054",
         "status": "active",
         "enzyme_name": "MibH",
         "enzyme_description": "Flavin-dependent halogenase",
@@ -1595,7 +1645,7 @@
     "BGC0001487": [
       {
         "mite_accession": "MITE0000102",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000102",
+        "mite_url": "https://bioregistry.io/mite:MITE0000102",
         "status": "active",
         "enzyme_name": "TrlE",
         "enzyme_description": "Flavoprotein monooxygenase",
@@ -1611,7 +1661,7 @@
       },
       {
         "mite_accession": "MITE0000103",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000103",
+        "mite_url": "https://bioregistry.io/mite:MITE0000103",
         "status": "active",
         "enzyme_name": "TrlF",
         "enzyme_description": "decarboxylase, hydrolase",
@@ -1627,7 +1677,7 @@
       },
       {
         "mite_accession": "MITE0000104",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000104",
+        "mite_url": "https://bioregistry.io/mite:MITE0000104",
         "status": "active",
         "enzyme_name": "TrlC",
         "enzyme_description": "Oxygenase component of flavoprotein monooxygenase TrlCD",
@@ -1645,7 +1695,7 @@
     "BGC0001378": [
       {
         "mite_accession": "MITE0000095",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000095",
+        "mite_url": "https://bioregistry.io/mite:MITE0000095",
         "status": "active",
         "enzyme_name": "TnmK1",
         "enzyme_description": "Hydrolase.",
@@ -1661,7 +1711,7 @@
       },
       {
         "mite_accession": "MITE0000096",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000096",
+        "mite_url": "https://bioregistry.io/mite:MITE0000096",
         "status": "active",
         "enzyme_name": "TnmJ",
         "enzyme_description": "Cofactorless oxygenase",
@@ -1677,7 +1727,7 @@
       },
       {
         "mite_accession": "MITE0000094",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000094",
+        "mite_url": "https://bioregistry.io/mite:MITE0000094",
         "status": "active",
         "enzyme_name": "TnmK2",
         "enzyme_description": "Iterative cofactorless dioxygenase",
@@ -1695,7 +1745,7 @@
     "BGC0000120": [
       {
         "mite_accession": "MITE0000191",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000191",
+        "mite_url": "https://bioregistry.io/mite:MITE0000191",
         "status": "active",
         "enzyme_name": "PatG",
         "enzyme_description": "Decarboxylase",
@@ -1713,7 +1763,7 @@
     "BGC0001077": [
       {
         "mite_accession": "MITE0000083",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000083",
+        "mite_url": "https://bioregistry.io/mite:MITE0000083",
         "status": "active",
         "enzyme_name": "AgqD",
         "enzyme_description": "UbiA-like prenyltransferase",
@@ -1729,7 +1779,7 @@
       },
       {
         "mite_accession": "MITE0000082",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000082",
+        "mite_url": "https://bioregistry.io/mite:MITE0000082",
         "status": "active",
         "enzyme_name": "AgqC",
         "enzyme_description": "alkylhydroxyhydroquinone methyltransferase",
@@ -1745,7 +1795,7 @@
       },
       {
         "mite_accession": "MITE0000081",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000081",
+        "mite_url": "https://bioregistry.io/mite:MITE0000081",
         "status": "active",
         "enzyme_name": "AgqB",
         "enzyme_description": "alkylresorcinol monooxygenase",
@@ -1763,7 +1813,7 @@
     "BGC0002224": [
       {
         "mite_accession": "MITE0000120",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000120",
+        "mite_url": "https://bioregistry.io/mite:MITE0000120",
         "status": "active",
         "enzyme_name": "ZopL9 a.k.a. ZopK",
         "enzyme_description": "AsaB-like alphaKGDD",
@@ -1778,10 +1828,44 @@
         ]
       }
     ],
+    "BGC0002260": [
+      {
+        "mite_accession": "MITE0000203",
+        "mite_url": "https://bioregistry.io/mite:MITE0000203",
+        "status": "active",
+        "enzyme_name": "braC",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "P9WER2",
+          "genpept": "QOE88885.1",
+          "mibig": "BGC0002260"
+        },
+        "enzyme_tailoring": "Hydroxylation|Oxidation",
+        "enzyme_refs": [
+          "doi:10.1039/D0CC03950K"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000202",
+        "mite_url": "https://bioregistry.io/mite:MITE0000202",
+        "status": "active",
+        "enzyme_name": "BraB",
+        "enzyme_description": "N-acetylglucosamine transferase",
+        "enzyme_ids": {
+          "uniprot": "P9WER1",
+          "genpept": "QOE88884.1",
+          "mibig": "BGC0002260"
+        },
+        "enzyme_tailoring": "Glycosylation",
+        "enzyme_refs": [
+          "doi:10.1039/D0CC03950K"
+        ]
+      }
+    ],
     "BGC0000455": [
       {
         "mite_accession": "MITE0000041",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000041",
+        "mite_url": "https://bioregistry.io/mite:MITE0000041",
         "status": "active",
         "enzyme_name": "OxyB",
         "enzyme_description": "Cytochrome P450 Monooxygenase",
@@ -1801,7 +1885,7 @@
       },
       {
         "mite_accession": "MITE0000038",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000038",
+        "mite_url": "https://bioregistry.io/mite:MITE0000038",
         "status": "active",
         "enzyme_name": "OxyA",
         "enzyme_description": "Cytochrome P450 Monooxygenase",
@@ -1820,7 +1904,7 @@
       },
       {
         "mite_accession": "MITE0000040",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000040",
+        "mite_url": "https://bioregistry.io/mite:MITE0000040",
         "status": "active",
         "enzyme_name": "VhaA",
         "enzyme_description": "Flavin-dependent halogenase",
@@ -1838,7 +1922,7 @@
       },
       {
         "mite_accession": "MITE0000037",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000037",
+        "mite_url": "https://bioregistry.io/mite:MITE0000037",
         "status": "active",
         "enzyme_name": "GtfE",
         "enzyme_description": "Glycosyltransferase",
@@ -1856,7 +1940,7 @@
       },
       {
         "mite_accession": "MITE0000039",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000039",
+        "mite_url": "https://bioregistry.io/mite:MITE0000039",
         "status": "active",
         "enzyme_name": "Vmt",
         "enzyme_description": "Methyltransferase",
@@ -1872,7 +1956,7 @@
       },
       {
         "mite_accession": "MITE0000042",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000042",
+        "mite_url": "https://bioregistry.io/mite:MITE0000042",
         "status": "active",
         "enzyme_name": "GtfD",
         "enzyme_description": "Glycosyltransferase",
@@ -1893,7 +1977,7 @@
     "BGC0002300": [
       {
         "mite_accession": "MITE0000122",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000122",
+        "mite_url": "https://bioregistry.io/mite:MITE0000122",
         "status": "active",
         "enzyme_name": "AbmA",
         "enzyme_description": "Acetyltransferase",
@@ -1909,7 +1993,7 @@
       },
       {
         "mite_accession": "MITE0000121",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000121",
+        "mite_url": "https://bioregistry.io/mite:MITE0000121",
         "status": "active",
         "enzyme_name": "AbmB",
         "enzyme_description": "L-Ornithine N(5)-oxygenase",
@@ -1927,7 +2011,7 @@
     "BGC0001350": [
       {
         "mite_accession": "MITE0000093",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000093",
+        "mite_url": "https://bioregistry.io/mite:MITE0000093",
         "status": "active",
         "enzyme_name": "PhmJ",
         "enzyme_description": "FAD-dependent halogenase",
@@ -1945,7 +2029,7 @@
     "BGC0000031": [
       {
         "mite_accession": "MITE0000188",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000188",
+        "mite_url": "https://bioregistry.io/mite:MITE0000188",
         "status": "active",
         "enzyme_name": "BorI",
         "enzyme_description": "Cytochrome P450 monooxygenase",
@@ -1961,7 +2045,7 @@
       },
       {
         "mite_accession": "MITE0000189",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000189",
+        "mite_url": "https://bioregistry.io/mite:MITE0000189",
         "status": "active",
         "enzyme_name": "BorJ",
         "enzyme_description": "Aminotransferase",
@@ -1979,7 +2063,7 @@
     "BGC0000581": [
       {
         "mite_accession": "MITE0000056",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000056",
+        "mite_url": "https://bioregistry.io/mite:MITE0000056",
         "status": "active",
         "enzyme_name": "McjB",
         "enzyme_description": "ATP-dependent protease (cysteine protease-like)",
@@ -1997,7 +2081,7 @@
       },
       {
         "mite_accession": "MITE0000055",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000055",
+        "mite_url": "https://bioregistry.io/mite:MITE0000055",
         "status": "active",
         "enzyme_name": "McjC",
         "enzyme_description": "Lassopeptide ATP-dependent lactam synthetase (C-protein, asparagine synthetase-like)",
@@ -2016,7 +2100,7 @@
     "BGC0000421": [
       {
         "mite_accession": "MITE0000031",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000031",
+        "mite_url": "https://bioregistry.io/mite:MITE0000031",
         "status": "active",
         "enzyme_name": "SacF",
         "enzyme_description": "SAM-dependent methyltransferase",
@@ -2034,7 +2118,7 @@
     "BGC0002099": [
       {
         "mite_accession": "MITE0000174",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000174",
+        "mite_url": "https://bioregistry.io/mite:MITE0000174",
         "status": "active",
         "enzyme_name": "BytO",
         "enzyme_description": "cytochrome P450",
@@ -2052,7 +2136,7 @@
     "BGC0001476": [
       {
         "mite_accession": "MITE0000097",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000097",
+        "mite_url": "https://bioregistry.io/mite:MITE0000097",
         "status": "active",
         "enzyme_name": "PumI",
         "enzyme_description": "Oxidoreductase",
@@ -2068,7 +2152,7 @@
       },
       {
         "mite_accession": "MITE0000100",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000100",
+        "mite_url": "https://bioregistry.io/mite:MITE0000100",
         "status": "active",
         "enzyme_name": "PumG",
         "enzyme_description": "Aminotransferase",
@@ -2084,7 +2168,7 @@
       },
       {
         "mite_accession": "MITE0000098",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000098",
+        "mite_url": "https://bioregistry.io/mite:MITE0000098",
         "status": "active",
         "enzyme_name": "PumK",
         "enzyme_description": "Carboxylate-Amine Ligase",
@@ -2100,7 +2184,7 @@
       },
       {
         "mite_accession": "MITE0000099",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000099",
+        "mite_url": "https://bioregistry.io/mite:MITE0000099",
         "status": "active",
         "enzyme_name": "PumJ",
         "enzyme_description": "Pseudouridine synthase",
@@ -2118,7 +2202,7 @@
     "BGC0000093": [
       {
         "mite_accession": "MITE0000009",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000009",
+        "mite_url": "https://bioregistry.io/mite:MITE0000009",
         "status": "active",
         "enzyme_name": "MeiD",
         "enzyme_description": "O-methyltransferase",
@@ -2134,7 +2218,7 @@
       },
       {
         "mite_accession": "MITE0000010",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000010",
+        "mite_url": "https://bioregistry.io/mite:MITE0000010",
         "status": "active",
         "enzyme_name": "MeiE",
         "enzyme_description": "Cytochrome P450",
@@ -2152,7 +2236,7 @@
     "BGC0003008": [
       {
         "mite_accession": "MITE0000149",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000149",
+        "mite_url": "https://bioregistry.io/mite:MITE0000149",
         "status": "active",
         "enzyme_name": "MciB",
         "enzyme_description": "P450 installing crosslink",
@@ -2170,7 +2254,7 @@
     "BGC0001079": [
       {
         "mite_accession": "MITE0000085",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000085",
+        "mite_url": "https://bioregistry.io/mite:MITE0000085",
         "status": "active",
         "enzyme_name": "NapB5",
         "enzyme_description": "putative methyltransferase",
@@ -2186,7 +2270,7 @@
       },
       {
         "mite_accession": "MITE0000086",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000086",
+        "mite_url": "https://bioregistry.io/mite:MITE0000086",
         "status": "active",
         "enzyme_name": "NapH1",
         "enzyme_description": "Vanadium-Dependent Chloroperoxidase",
@@ -2202,7 +2286,7 @@
       },
       {
         "mite_accession": "MITE0000084",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000084",
+        "mite_url": "https://bioregistry.io/mite:MITE0000084",
         "status": "active",
         "enzyme_name": "NapB2",
         "enzyme_description": "Monooxygenase",
@@ -2220,7 +2304,7 @@
     "BGC0002643": [
       {
         "mite_accession": "MITE0000127",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000127",
+        "mite_url": "https://bioregistry.io/mite:MITE0000127",
         "status": "active",
         "enzyme_name": "AetA",
         "enzyme_description": "Flavin-dependent halogenase",
@@ -2236,7 +2320,7 @@
       },
       {
         "mite_accession": "MITE0000126",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000126",
+        "mite_url": "https://bioregistry.io/mite:MITE0000126",
         "status": "active",
         "enzyme_name": "AetF",
         "enzyme_description": "Flavin-dependent halogenase",
@@ -2254,7 +2338,7 @@
     "BGC0000230": [
       {
         "mite_accession": "MITE0000012",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000012",
+        "mite_url": "https://bioregistry.io/mite:MITE0000012",
         "status": "active",
         "enzyme_name": "GrhO5",
         "enzyme_description": "Flavoprotein monooxygenase",
@@ -2271,7 +2355,7 @@
       },
       {
         "mite_accession": "MITE0000013",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000013",
+        "mite_url": "https://bioregistry.io/mite:MITE0000013",
         "status": "active",
         "enzyme_name": "GrhO6",
         "enzyme_description": "Flavoprotein monooxygenase",
@@ -2290,7 +2374,7 @@
     "BGC0000033": [
       {
         "mite_accession": "MITE0000008",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000008",
+        "mite_url": "https://bioregistry.io/mite:MITE0000008",
         "status": "active",
         "enzyme_name": "CalO2",
         "enzyme_description": "Cytochrome P450me",
@@ -2306,7 +2390,7 @@
       },
       {
         "mite_accession": "MITE0000005",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000005",
+        "mite_url": "https://bioregistry.io/mite:MITE0000005",
         "status": "active",
         "enzyme_name": "CalO3",
         "enzyme_description": "Flavin-dependent halogenase",
@@ -2322,7 +2406,7 @@
       },
       {
         "mite_accession": "MITE0000007",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000007",
+        "mite_url": "https://bioregistry.io/mite:MITE0000007",
         "status": "active",
         "enzyme_name": "CalO1",
         "enzyme_description": "O-methyltransferase",
@@ -2338,7 +2422,7 @@
       },
       {
         "mite_accession": "MITE0000006",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000006",
+        "mite_url": "https://bioregistry.io/mite:MITE0000006",
         "status": "active",
         "enzyme_name": "CalO6",
         "enzyme_description": "O-methyltransferase",
@@ -2356,7 +2440,7 @@
     "BGC0001322": [
       {
         "mite_accession": "MITE0000091",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000091",
+        "mite_url": "https://bioregistry.io/mite:MITE0000091",
         "status": "active",
         "enzyme_name": "CYP71BN1",
         "enzyme_description": "Cytochrome P450 monooxygenase",
@@ -2373,7 +2457,7 @@
       },
       {
         "mite_accession": "MITE0000090",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000090",
+        "mite_url": "https://bioregistry.io/mite:MITE0000090",
         "status": "active",
         "enzyme_name": "TPS21",
         "enzyme_description": "Terpene cyclase",
@@ -2390,7 +2474,7 @@
       },
       {
         "mite_accession": "MITE0000089",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000089",
+        "mite_url": "https://bioregistry.io/mite:MITE0000089",
         "status": "retired",
         "enzyme_name": "CPT2",
         "enzyme_description": "Nerylneryl diphosphate synthase",
@@ -2410,7 +2494,7 @@
     "BGC0002841": [
       {
         "mite_accession": "MITE0000128",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000128",
+        "mite_url": "https://bioregistry.io/mite:MITE0000128",
         "status": "active",
         "enzyme_name": "OrfA",
         "enzyme_description": "Halogenase",
@@ -2427,9 +2511,9 @@
     "BGC0002181": [
       {
         "mite_accession": "MITE0000179",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000179",
+        "mite_url": "https://bioregistry.io/mite:MITE0000179",
         "status": "active",
-        "enzyme_name": "Ple5",
+        "enzyme_name": "Ple5 a.k.a. PLE5_RHOPP",
         "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "A0A6S6QPY4",
@@ -2446,7 +2530,7 @@
       },
       {
         "mite_accession": "MITE0000177",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000177",
+        "mite_url": "https://bioregistry.io/mite:MITE0000177",
         "status": "active",
         "enzyme_name": "Ple2",
         "enzyme_description": "Acetyltransferase",
@@ -2465,7 +2549,7 @@
       },
       {
         "mite_accession": "MITE0000178",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000178",
+        "mite_url": "https://bioregistry.io/mite:MITE0000178",
         "status": "active",
         "enzyme_name": "Ple6",
         "enzyme_description": "Cytochrome P450",
@@ -2484,7 +2568,7 @@
       },
       {
         "mite_accession": "MITE0000176",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000176",
+        "mite_url": "https://bioregistry.io/mite:MITE0000176",
         "status": "active",
         "enzyme_name": "Ple1",
         "enzyme_description": "Cytochrome P450",
@@ -2504,7 +2588,7 @@
     "BGC0002076": [
       {
         "mite_accession": "MITE0000118",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000118",
+        "mite_url": "https://bioregistry.io/mite:MITE0000118",
         "status": "active",
         "enzyme_name": "AcaR",
         "enzyme_description": "NADPH-dependent oxidoreductase",
@@ -2523,7 +2607,7 @@
     "BGC0003032": [
       {
         "mite_accession": "MITE0000151",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000151",
+        "mite_url": "https://bioregistry.io/mite:MITE0000151",
         "status": "active",
         "enzyme_name": "PspC",
         "enzyme_description": "Cytochrome P450 monooxygenase",
@@ -2540,7 +2624,7 @@
     "BGC0000055": [
       {
         "mite_accession": "MITE0000183",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000183",
+        "mite_url": "https://bioregistry.io/mite:MITE0000183",
         "status": "active",
         "enzyme_name": "EryK",
         "enzyme_description": "Cytochrome P450",
@@ -2559,7 +2643,7 @@
     "BGC0001611": [
       {
         "mite_accession": "MITE0000105",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000105",
+        "mite_url": "https://bioregistry.io/mite:MITE0000105",
         "status": "active",
         "enzyme_name": "GnmP",
         "enzyme_description": "Persulfide methyltransferase",
@@ -2577,7 +2661,7 @@
     "BGC0000677": [
       {
         "mite_accession": "MITE0000062",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000062",
+        "mite_url": "https://bioregistry.io/mite:MITE0000062",
         "status": "active",
         "enzyme_name": "CotB4",
         "enzyme_description": "Cytochrome P450",
@@ -2593,7 +2677,7 @@
       },
       {
         "mite_accession": "MITE0000061",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000061",
+        "mite_url": "https://bioregistry.io/mite:MITE0000061",
         "status": "active",
         "enzyme_name": "CotB3",
         "enzyme_description": "Cytochrome P450",
@@ -2611,7 +2695,7 @@
     "BGC0002964": [
       {
         "mite_accession": "MITE0000147",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000147",
+        "mite_url": "https://bioregistry.io/mite:MITE0000147",
         "status": "active",
         "enzyme_name": "PeuJ",
         "enzyme_description": "FMN-dependent monooxygenase",
@@ -2628,7 +2712,7 @@
     "BGC0000279": [
       {
         "mite_accession": "MITE0000024",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000024",
+        "mite_url": "https://bioregistry.io/mite:MITE0000024",
         "status": "active",
         "enzyme_name": "XanH",
         "enzyme_description": "FAD Halogenase",
@@ -2646,7 +2730,7 @@
     "BGC0002223": [
       {
         "mite_accession": "MITE0000119",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000119",
+        "mite_url": "https://bioregistry.io/mite:MITE0000119",
         "status": "active",
         "enzyme_name": "ScyL2",
         "enzyme_description": "AsaB-like alphaKGDD",
@@ -2664,7 +2748,7 @@
     "BGC0002125": [
       {
         "mite_accession": "MITE0000181",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000181",
+        "mite_url": "https://bioregistry.io/mite:MITE0000181",
         "status": "active",
         "enzyme_name": "FrsC",
         "enzyme_description": "specialized dehydrogenase for phenyllactate biosynthesis",
@@ -2680,7 +2764,7 @@
       },
       {
         "mite_accession": "MITE0000185",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000185",
+        "mite_url": "https://bioregistry.io/mite:MITE0000185",
         "status": "active",
         "enzyme_name": "FrsH",
         "enzyme_description": "non-heme diiron monooxygenase",
@@ -2699,7 +2783,7 @@
     "BGC0000459": [
       {
         "mite_accession": "MITE0000043",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000043",
+        "mite_url": "https://bioregistry.io/mite:MITE0000043",
         "status": "active",
         "enzyme_name": "SgvP",
         "enzyme_description": "cytochrome P450",
@@ -2717,7 +2801,7 @@
     "BGC0001168": [
       {
         "mite_accession": "MITE0000180",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000180",
+        "mite_url": "https://bioregistry.io/mite:MITE0000180",
         "status": "active",
         "enzyme_name": "SLI_0884",
         "enzyme_description": "Leucyl/Phenylalanil-tRNA-Protein transferase",
@@ -2736,7 +2820,7 @@
     "BGC0000422": [
       {
         "mite_accession": "MITE0000032",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000032",
+        "mite_url": "https://bioregistry.io/mite:MITE0000032",
         "status": "active",
         "enzyme_name": "SfmM2",
         "enzyme_description": "SAM-dependent C-methyltransferase",
@@ -2754,7 +2838,7 @@
     "BGC0001179": [
       {
         "mite_accession": "MITE0000087",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000087",
+        "mite_url": "https://bioregistry.io/mite:MITE0000087",
         "status": "active",
         "enzyme_name": "RslO4",
         "enzyme_description": "Monooxygenase",
@@ -2772,7 +2856,7 @@
     "BGC0001335": [
       {
         "mite_accession": "MITE0000092",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000092",
+        "mite_url": "https://bioregistry.io/mite:MITE0000092",
         "status": "active",
         "enzyme_name": "BorH",
         "enzyme_description": "Flavin-dependent halogenase",
@@ -2790,7 +2874,7 @@
     "BGC0001485": [
       {
         "mite_accession": "MITE0000101",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000101",
+        "mite_url": "https://bioregistry.io/mite:MITE0000101",
         "status": "active",
         "enzyme_name": "Cxm5",
         "enzyme_description": "Cytochrome P450",
@@ -2808,7 +2892,7 @@
     "BGC0002084": [
       {
         "mite_accession": "MITE0000175",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000175",
+        "mite_url": "https://bioregistry.io/mite:MITE0000175",
         "status": "active",
         "enzyme_name": "BytO",
         "enzyme_description": "cytochrome P450",
@@ -2826,7 +2910,7 @@
     "BGC0001910": [
       {
         "mite_accession": "MITE0000108",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000108",
+        "mite_url": "https://bioregistry.io/mite:MITE0000108",
         "status": "active",
         "enzyme_name": "CldC",
         "enzyme_description": "Cytochrome P450",
@@ -2842,7 +2926,7 @@
       },
       {
         "mite_accession": "MITE0000107",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000107",
+        "mite_url": "https://bioregistry.io/mite:MITE0000107",
         "status": "active",
         "enzyme_name": "Mca",
         "enzyme_description": "amidase",
@@ -2860,7 +2944,7 @@
     "BGC0003035": [
       {
         "mite_accession": "MITE0000152",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000152",
+        "mite_url": "https://bioregistry.io/mite:MITE0000152",
         "status": "active",
         "enzyme_name": "ScnB",
         "enzyme_description": "Cytochrome P450",
@@ -2878,7 +2962,7 @@
     "BGC0000932": [
       {
         "mite_accession": "MITE0000072",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000072",
+        "mite_url": "https://bioregistry.io/mite:MITE0000072",
         "status": "active",
         "enzyme_name": "TdaE",
         "enzyme_description": "Flavoprotein dioxygenase",
@@ -2896,7 +2980,7 @@
     "BGC0001008": [
       {
         "mite_accession": "MITE0000078",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000078",
+        "mite_url": "https://bioregistry.io/mite:MITE0000078",
         "status": "retired",
         "enzyme_name": "MdpB2",
         "enzyme_description": "CoA ligase",
@@ -2912,7 +2996,7 @@
       },
       {
         "mite_accession": "MITE0000077",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000077",
+        "mite_url": "https://bioregistry.io/mite:MITE0000077",
         "status": "active",
         "enzyme_name": "MdpB1",
         "enzyme_description": "C-methyltransferase",
@@ -2930,7 +3014,7 @@
     "BGC0000378": [
       {
         "mite_accession": "MITE0000030",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000030",
+        "mite_url": "https://bioregistry.io/mite:MITE0000030",
         "status": "active",
         "enzyme_name": "KtzR",
         "enzyme_description": "Flavin-dependent halogenase",
@@ -2946,7 +3030,7 @@
       },
       {
         "mite_accession": "MITE0000029",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000029",
+        "mite_url": "https://bioregistry.io/mite:MITE0000029",
         "status": "active",
         "enzyme_name": "KtzQ",
         "enzyme_description": "Flavin-dependent halogenase",
@@ -2964,7 +3048,7 @@
     "BGC0001299": [
       {
         "mite_accession": "MITE0000192",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000192",
+        "mite_url": "https://bioregistry.io/mite:MITE0000192",
         "status": "active",
         "enzyme_name": "CtoA",
         "enzyme_description": "Halogenase",
@@ -2982,7 +3066,7 @@
     "BGC0001664": [
       {
         "mite_accession": "MITE0000106",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000106",
+        "mite_url": "https://bioregistry.io/mite:MITE0000106",
         "status": "active",
         "enzyme_name": "MstE",
         "enzyme_description": "terpene cyclase",
@@ -3000,7 +3084,7 @@
     "BGC0003121": [
       {
         "mite_accession": "MITE0000173",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000173",
+        "mite_url": "https://bioregistry.io/mite:MITE0000173",
         "status": "active",
         "enzyme_name": "ScaB aka EmbB",
         "enzyme_description": "Cytochrome P450",
@@ -3018,7 +3102,7 @@
     "BGC0000891": [
       {
         "mite_accession": "MITE0000071",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000071",
+        "mite_url": "https://bioregistry.io/mite:MITE0000071",
         "status": "active",
         "enzyme_name": "Bmp2",
         "enzyme_description": "Flavin-dependent halogenase",
@@ -3036,7 +3120,7 @@
     "BGC0003089": [
       {
         "mite_accession": "MITE0000155",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000155",
+        "mite_url": "https://bioregistry.io/mite:MITE0000155",
         "status": "active",
         "enzyme_name": "SrsB",
         "enzyme_description": "Methyltransferase",
@@ -3053,7 +3137,7 @@
     "BGC0003046": [
       {
         "mite_accession": "MITE0000153",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000153",
+        "mite_url": "https://bioregistry.io/mite:MITE0000153",
         "status": "active",
         "enzyme_name": "SgrB",
         "enzyme_description": "Cytochrome P450",
@@ -3070,7 +3154,7 @@
     "BGC0000024": [
       {
         "mite_accession": "MITE0000190",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000190",
+        "mite_url": "https://bioregistry.io/mite:MITE0000190",
         "status": "active",
         "enzyme_name": "AurH",
         "enzyme_description": "Cytochrome P450 Monooxygenase",
@@ -3085,10 +3169,28 @@
         ]
       }
     ],
+    "BGC0001881": [
+      {
+        "mite_accession": "MITE0000211",
+        "mite_url": "https://bioregistry.io/mite:MITE0000211",
+        "status": "active",
+        "enzyme_name": "PyiA",
+        "enzyme_description": "O-methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "A0A4P8WAD3",
+          "genpept": "QCS37511.1",
+          "mibig": "BGC0001881"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1021/acs.orglett.9b01344"
+        ]
+      }
+    ],
     "BGC0003049": [
       {
         "mite_accession": "MITE0000154",
-        "mite_url": "https://mite.bioinformatics.nl/repository/MITE0000154",
+        "mite_url": "https://bioregistry.io/mite:MITE0000154",
         "status": "active",
         "enzyme_name": "PeuJ",
         "enzyme_description": "",

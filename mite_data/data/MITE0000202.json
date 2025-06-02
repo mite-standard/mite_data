@@ -1,0 +1,58 @@
+{
+    "accession": "MITE0000202",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2025-05-07",
+            "contributors": [
+                "0000-0002-3823-1416"
+            ],
+            "reviewers": [
+                "0000-0003-4819-2251",
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 fixed stereochemistry; Reviewer 2 removed explicit hydrogens from reaction SMARTS."
+        }
+    ],
+    "enzyme": {
+        "name": "BraB",
+        "description": "N-acetylglucosamine transferase",
+        "references": [
+            "doi:10.1039/D0CC03950K"
+        ],
+        "databaseIds": {
+            "uniprot": "P9WER1",
+            "genpept": "QOE88884.1",
+            "mibig": "BGC0002260"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Glycosylation"
+            ],
+            "description": "Glycosylation",
+            "reactionSMARTS": "[#6:1]-[#6:2](-[#6:15]-[#8:16])=[#6:3]1-[#6:14]-[#6@:11](-[#6:13])(\\[#6:12])-[#6:10]/[#6@@:9]2-[#6@@:4]-1\\[#6:5]-[#6:6]-[#6@@:7]-2/[#6:8]>>[#6:1]-[#6:2](-[#6:15]-[#8:16]-[#6]1-[#8]-[#6@](\\[#6]-[#8])-[#6@@](/[#8])-[#6@](\\[#8])-[#6@]-1/[#7]-[#6](=[#8])-[#6])=[#6:3]1-[#6:14]-[#6@:11](-[#6:12])(\\[#6:13])-[#6:10]/[#6@@:9]2-[#6@@:4]-1\\[#6:5]-[#6:6]-[#6@@:7]-2/[#6:8]",
+            "reactions": [
+                {
+                    "substrate": "C/C(CO)=C1/CC(C)(C)C[C@@H]2[C@@H]1CC[C@@H]2C",
+                    "products": [
+                        "CC(=O)N[C@H]1C(OCC(C)=C2CC(C)(C)C[C@@H]3[C@@H]2CC[C@@H]3C)O[C@H](CO)[C@@H](O)[C@@H]1O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Brasilane A formation"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1039/D0CC03950K"
+                ]
+            }
+        }
+    ]
+}

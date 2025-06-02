@@ -1,0 +1,56 @@
+{
+    "accession": "MITE0000199",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2025-05-10",
+            "contributors": [
+                "0000-0002-3823-1416"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 added more specific description to example"
+        }
+    ],
+    "enzyme": {
+        "name": "NodM",
+        "description": "FAD-dependent monooxygenase",
+        "references": [
+            "doi:10.1021/jacs.7b10909"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A2I6PIZ2",
+            "genpept": "AUM60051.1",
+            "mibig": "BGC0001706"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "Single epoxidation",
+            "reactionSMARTS": "[#6:1](-[#6:2]-[#6:3]-[#6:4](=[#6:13]-[#6:12]1:[#6:16]2:[#6:17]:[#6:18]:[#6:19]:[#6:20]:[#6:15]:2:[#7:14]:[#6:11]:1)-[#6:5])=[#6:6](-[#6:28])-[#6:7]-[#6:8]-[#6:9]=[#6:10](-[#6:27])-[#6:21]-[#6:22]-[#6:23]=[#6:24](-[#6:26])-[#6:25]>>[#6:1](-[#6:2]-[#6:3]-[#6:4](=[#6:13]-[#6:12]1:[#6:16]2:[#6:17]:[#6:18]:[#6:19]:[#6:20]:[#6:15]:2:[#7:14]:[#6:11]:1)-[#6:5])=[#6:6](-[#6:28])-[#6:7]-[#6:8]-[#6:9]1-[#8]-[#6:10]-1(-[#6:27])-[#6:21]-[#6:22]-[#6:23]=[#6:24](-[#6:26])-[#6:25]",
+            "reactions": [
+                {
+                    "substrate": "CC(C)=CCCC(C)=CCC/C(C)=C/CC/C(C)=C/c1c[nH]c2ccccc12",
+                    "products": [
+                        "CC(C)=CCCC1(C)OC1CCC(C)=CCCC(C)=Cc1c[nH]c2ccccc12"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Epoxidation of 3-geranylgeranylindole substrate in nodulisporic acid pathway."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1021/jacs.7b10909"
+                ]
+            }
+        }
+    ]
+}

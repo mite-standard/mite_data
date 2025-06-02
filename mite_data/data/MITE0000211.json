@@ -1,0 +1,56 @@
+{
+    "accession": "MITE0000211",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2025-03-26",
+            "contributors": [
+                "0009-0000-5858-238X"
+            ],
+            "reviewers": [
+                "0000-0003-1763-2525"
+            ],
+            "comment": "New entry. Reviewer 1 performed no changes"
+        }
+    ],
+    "enzyme": {
+        "name": "PyiA",
+        "description": "O-methyltransferase",
+        "references": [
+            "doi:10.1021/acs.orglett.9b01344"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A4P8WAD3",
+            "genpept": "QCS37511.1",
+            "mibig": "BGC0001881"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "Methylation of L-tyrosine",
+            "reactionSMARTS": "[#6:1]1:[#6:6]:[#6:5](-[#6:8]-[#6@@:9](-[#6:11](-[#8:13])=[#8:12])/[#7:10]):[#6:4]:[#6:3]:[#6:2]:1-[#8:7]>>[#6:1]1:[#6:6]:[#6:5](-[#6:8]-[#6@@:9](-[#6:11](-[#8:13])=[#8:12])/[#7:10]):[#6:4]:[#6:3]:[#6:2]:1-[#8:7]-[#6]",
+            "reactions": [
+                {
+                    "substrate": "N[C@@H](Cc1ccc(O)cc1)C(=O)O",
+                    "products": [
+                        "COc1ccc(C[C@H](N)C(=O)O)cc1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "O-methyltyrosine formation"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/acs.orglett.9b01344"
+                ]
+            }
+        }
+    ]
+}
