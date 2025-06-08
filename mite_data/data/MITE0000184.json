@@ -12,6 +12,17 @@
                 "0000-0002-9747-3423"
             ],
             "comment": "Initial entry. Reviewer 1 checked entries, references and for factual correctness; replaced nitroso group in reaction smarts to a nitro group as shown in the product"
+        },
+        {
+            "version": "2",
+            "date": "2024-06-08",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Fixed typo in DOI; replaced preprint DOI."
         }
     ],
     "enzyme": {
@@ -19,8 +30,8 @@
         "description": "Cytochrome p450 monooxygenase",
         "references": [
             "doi:10.1074/jbc.M117.791269",
-            "doi:10.1038/s41467-017-00419-5.",
-            "doi:10.1101/2024.07.12.603347"
+            "doi:10.1038/s41467-017-00419-5",
+            "doi:10.1016/j.chempr.2025.102438"
         ],
         "databaseIds": {
             "uniprot": "A0A224AU14",
