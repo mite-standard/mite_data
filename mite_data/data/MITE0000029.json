@@ -13,6 +13,17 @@
                 "0000-0003-4819-2251"
             ],
             "comment": "Initial entry. Reviewer 1 added information in the description fields for the reaction entries"
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -25,6 +36,11 @@
             "uniprot": "A8CF75",
             "genpept": "ABV56597.1",
             "mibig": "BGC0000378"
+        },
+        "cofactors": {
+            "organic": [
+                "Flavin mononucleotide"
+            ]
         }
     },
     "reactions": [

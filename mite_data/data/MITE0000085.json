@@ -13,6 +13,17 @@
                 "0000-0003-0443-9902"
             ],
             "comment": "Initial entry. Reviewer 1 partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer 2 fixed aromaticity of SMILES and reaction SMARTS, reaction passing"
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -25,6 +36,14 @@
             "uniprot": "A7KH06",
             "genpept": "ABS50465.1",
             "mibig": "BGC0001079"
+        },
+        "cofactors": {
+            "inorganic": [
+                "FeS"
+            ],
+            "organic": [
+                "SAM"
+            ]
         }
     },
     "reactions": [

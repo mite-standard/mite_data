@@ -14,6 +14,17 @@
                 "0000-0002-9747-3423"
             ],
             "comment": "Initial entry. Reviewer 1 switched text of enzyme description and enzyme reaction description"
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -26,6 +37,14 @@
             "uniprot": "F1DBB3",
             "genpept": "ADY00134.1",
             "mibig": "BGC0000104"
+        },
+        "cofactors": {
+            "inorganic": [
+                "FeS"
+            ],
+            "organic": [
+                "SAM"
+            ]
         }
     },
     "reactions": [

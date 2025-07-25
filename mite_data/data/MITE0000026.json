@@ -16,6 +16,17 @@
                 "0000-0003-0443-9902"
             ],
             "comment": "Initial entry. Reviewer 1 partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer 1 partially fixed reactions:substrate, validation still not passing. Reviewer 1 partially fixed reactions:products, validation still not passing. Reviewer 2 reworked reaction SMARTS from scratch, reaction passing. Reviewer 2 retired entry (duplicate of MITE0000038)."
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -30,6 +41,14 @@
             "uniprot": "F8STX6",
             "genpept": "AEI58868.1",
             "mibig": "BGC0000311"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ],
+            "organic": [
+                "Heme"
+            ]
         }
     },
     "reactions": [

@@ -13,6 +13,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer 1 added abstract version of reaction"
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -25,6 +36,11 @@
             "uniprot": "U6BGC3",
             "genpept": "AHA34035.1",
             "mibig": "BGC0000891"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD"
+            ]
         }
     },
     "reactions": [

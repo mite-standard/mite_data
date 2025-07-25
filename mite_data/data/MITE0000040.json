@@ -23,6 +23,17 @@
                 "0000-0003-1763-2525"
             ],
             "comment": "Fixed typo in enzyme name (Vhal -> VhaA). Reviewer 1 checked for correctness, add reference  (doi.org/10.1039/C4OB00474D), change evidence from 'Knock-out studies' to 'Chemical probe', and remove reference (doi:10.1186/1471-2164-15-363) from evidence section."
+        },
+        {
+            "version": "3",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -37,6 +48,11 @@
             "uniprot": "P96563",
             "genpept": "AEI58871.1",
             "mibig": "BGC0000455"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD"
+            ]
         }
     },
     "reactions": [

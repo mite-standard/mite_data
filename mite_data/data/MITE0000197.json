@@ -12,6 +12,17 @@
                 "0000-0001-7044-2419"
             ],
             "comment": "New entry"
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -39,7 +50,12 @@
                     "genpept": "QWP75304.1"
                 }
             }
-        ]
+        ],
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ]
+        }
     },
     "reactions": [
         {

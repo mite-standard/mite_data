@@ -15,6 +15,17 @@
                 "0000-0003-0443-9902"
             ],
             "comment": "Initial entry. Reviewer 1 partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer 1 partially fixed reactions:substrate, validation still not passing. Reviewer 1 partially fixed reactions:products, validation still not passing. Reviewer 2 improved description and reworked reaction SMARTS and substrate/product SMILES, reaction passes."
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -27,6 +38,14 @@
             "uniprot": "Q6YL50",
             "genpept": "AAM97314.1",
             "mibig": "BGC0000093"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ],
+            "organic": [
+                "Heme"
+            ]
         }
     },
     "reactions": [

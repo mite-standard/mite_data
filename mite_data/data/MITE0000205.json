@@ -13,6 +13,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "New entry. Reviewers fixed reaction SMARTS, added stereochemistry."
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -24,6 +35,14 @@
         "databaseIds": {
             "uniprot": "A0A4Z0Z6W8",
             "genpept": "TGJ85106.1"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ],
+            "organic": [
+                "Heme"
+            ]
         }
     },
     "reactions": [

@@ -12,6 +12,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "New entry. Reviewer 1 added reaction databaseID crosslinks."
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -25,6 +36,14 @@
             "uniprot": "P48635",
             "genpept": "CAM00054.1",
             "mibig": "BGC0000055"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ],
+            "organic": [
+                "Heme"
+            ]
         }
     },
     "reactions": [

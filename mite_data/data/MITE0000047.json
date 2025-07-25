@@ -14,6 +14,17 @@
                 "0000-0002-9747-3423"
             ],
             "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer partially fixed reactions:products, validation still not passing. Reviewer 2 fixed numbering issue in reaction SMARTS, reaction passes. Reviewer 3 switched text of enzyme description and enzyme reaction description."
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -28,6 +39,14 @@
             "uniprot": "K4MHG1",
             "genpept": "AFV25488.1",
             "mibig": "BGC0000469"
+        },
+        "cofactors": {
+            "inorganic": [
+                "FeS"
+            ],
+            "organic": [
+                "SAM"
+            ]
         }
     },
     "reactions": [

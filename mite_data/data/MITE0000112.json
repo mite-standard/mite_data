@@ -15,6 +15,17 @@
                 "0000-0002-9747-3423"
             ],
             "comment": "Initial entry. Reviewer fixed reactionSMARTS:reactionSMARTS. Reviewer 2 reworked reaction SMARTS numbering. Reviewr 3 changed enzyme and reaction description"
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -61,7 +72,15 @@
                     "genpept": "AXG22404.1"
                 }
             }
-        ]
+        ],
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ],
+            "organic": [
+                "Heme"
+            ]
+        }
     },
     "reactions": [
         {

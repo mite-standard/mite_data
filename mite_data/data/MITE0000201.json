@@ -12,6 +12,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "New entry. Reviewer 1 adjusted descriptions."
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -24,6 +35,14 @@
             "uniprot": "A0A2I6PJ08",
             "genpept": "AUM60065.1",
             "mibig": "BGC0001706"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ],
+            "organic": [
+                "Heme"
+            ]
         }
     },
     "reactions": [

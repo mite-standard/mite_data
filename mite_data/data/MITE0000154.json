@@ -17,7 +17,7 @@
     ],
     "enzyme": {
         "name": "PeuJ",
-        "description": "",
+        "description": "Monooxygenase",
         "references": [
             "doi:10.1007/s00253-023-12385-8"
         ],

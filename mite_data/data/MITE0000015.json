@@ -14,6 +14,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer 2 replaced CXSMARTS with normal SMARTS"
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0003-4819-2251"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -26,6 +37,14 @@
             "uniprot": "Q194P8",
             "genpept": "CAK50790.1",
             "mibig": "BGC0000247"
+        },
+        "cofactors": {
+            "inorganic": [
+                "FeS"
+            ],
+            "organic": [
+                "SAM"
+            ]
         }
     },
     "reactions": [

@@ -14,6 +14,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer 1 fixed erroneously stated product (patulin) and added reaction databaseId crosslinks."
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0003-4819-2251"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -26,6 +37,11 @@
             "uniprot": "A0A075TXZ1",
             "genpept": "AIG62133.1",
             "mibig": "BGC0000120"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Zn"
+            ]
         }
     },
     "reactions": [

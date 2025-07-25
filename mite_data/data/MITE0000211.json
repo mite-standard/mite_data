@@ -12,6 +12,17 @@
                 "0000-0003-1763-2525"
             ],
             "comment": "New entry. Reviewer 1 performed no changes"
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0003-4819-2251"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -24,6 +35,14 @@
             "uniprot": "A0A4P8WAD3",
             "genpept": "QCS37511.1",
             "mibig": "BGC0001881"
+        },
+        "cofactors": {
+            "inorganic": [
+                "FeS"
+            ],
+            "organic": [
+                "SAM"
+            ]
         }
     },
     "reactions": [

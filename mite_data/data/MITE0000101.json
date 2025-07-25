@@ -15,6 +15,17 @@
                 "0000-0003-0443-9902"
             ],
             "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer 2 fixed reaction SMARTS by specifying explicit hydrogen of aromatic nitrogen and the explicit valence of Carbon nr 14 (zero hydrogen)"
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -27,6 +38,14 @@
             "uniprot": "A0A290YXM6",
             "genpept": "AVL27080.1",
             "mibig": "BGC0001485"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ],
+            "organic": [
+                "Heme"
+            ]
         }
     },
     "reactions": [
