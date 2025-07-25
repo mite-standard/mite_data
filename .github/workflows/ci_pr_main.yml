@@ -24,12 +24,17 @@ jobs:
         run: |
           git fetch origin ${{ github.event.pull_request.base.ref }}
           CHANGED=$(git diff --name-only --diff-filter=AM origin/${{ github.event.pull_request.base.ref }}...HEAD | grep '\.json$' || true)
-          echo "changed=$CHANGED" >> "$GITHUB_OUTPUT"
+          {
+            echo "changed<<EOF"
+            echo "$CHANGED"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
 
       - name: Run validation scripts on changed MITE .json files
+        if: ${{ steps.files.outputs.changed != '' }}
         run: |
           echo "Running validation on changed .json files:"
-          for file in ${{ steps.files.outputs.changed }}; do
+          while IFS= read -r file; do
             echo "  -> $file"
             hatch run python .github/mite_validation.py "$file"
-          done
+          done <<< "${{ steps.files.outputs.changed }}"

@@ -86,6 +86,9 @@ class CicdManager(BaseModel):
         if not path.exists():
             raise FileNotFoundError(f"Could not find file '{path}'")
 
+        if path.name.startswith("metadata"):
+            return
+
         self.check_file_naming(path)
 
         with open(path) as infile:
