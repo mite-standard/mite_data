@@ -10,6 +10,12 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Added
 
 - 06-25 data update
+- added cofactor info
+
+### Changed
+
+- CI/CD: full check only on merge to main
+- CI/CD: pull requests into main update metadata and download fastas
 
 ## [1.13] 02-06-2025
 
