@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000001",
-    "status": "active",
+    "status": "pending",
     "changelog": [
         {
             "version": "1",
@@ -13,6 +13,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer changed from putative methyl transferase to => O-methyl transferase, added reference. Reviewer 2 replaced CXSMARTS with normal SMARTS."
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "test pr"
         }
     ],
     "enzyme": {
@@ -26,6 +37,14 @@
             "uniprot": "Q93KW1",
             "genpept": "AAK83184.1",
             "mibig": "BGC0000026"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
         }
     },
     "reactions": [
