@@ -1,0 +1,35 @@
+name: CI Pipeline Pushes
+run-name: Pushed by ${{ github.actor }}
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Install package with pip
+        run: |
+          pipx install hatch
+          hatch env create
+      
+      - name: Get changed files
+        id: files
+        run: |
+          git fetch origin ${{ github.event.pull_request.base.ref }}
+          CHANGED=$(git diff --name-only --diff-filter=AM origin/${{ github.event.pull_request.base.ref }}...HEAD | grep '\.json$' || true)
+          echo "changed=$CHANGED" >> "$GITHUB_OUTPUT"
+
+      - name: Run validation scripts on changed MITE .json files
+        run: |
+          echo "Running validation on changed .json files:"
+          for file in ${{ steps.files.outputs.changed }}; do
+            echo "  -> $file"
+            hatch run python .github/mite_validation.py "$file"
+          done
