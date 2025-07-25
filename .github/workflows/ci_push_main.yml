@@ -1,5 +1,7 @@
 name: CI Pipeline Pushes
 run-name: Pushed by ${{ github.actor }}
+permissions:
+  contents: read
 on:
   push:
     branches:
