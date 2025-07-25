@@ -13,6 +13,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer 1 changed wildcards to actual representation of co-enzymes"
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -25,6 +36,14 @@
             "uniprot": "Q8KNE5",
             "genpept": "AAM70343.1",
             "mibig": "BGC0000033"
+        },
+        "cofactors": {
+            "inorganic": [
+                "FeS"
+            ],
+            "organic": [
+                "SAM"
+            ]
         }
     },
     "reactions": [

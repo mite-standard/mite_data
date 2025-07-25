@@ -1,5 +1,5 @@
 {
-  "version_mite_data": "1.13",
+  "version_mite_data": "1.14",
   "entries": {
     "BGC0003093": [
       {
@@ -524,8 +524,8 @@
         "enzyme_tailoring": "Other",
         "enzyme_refs": [
           "doi:10.1074/jbc.M117.791269",
-          "doi:10.1038/s41467-017-00419-5.",
-          "doi:10.1101/2024.07.12.603347"
+          "doi:10.1038/s41467-017-00419-5",
+          "doi:10.1016/j.chempr.2025.102438"
         ]
       }
     ],
@@ -3193,7 +3193,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000154",
         "status": "active",
         "enzyme_name": "PeuJ",
-        "enzyme_description": "",
+        "enzyme_description": "Monooxygenase",
         "enzyme_ids": {
           "uniprot": "A0A2S1P8Q4",
           "genpept": "AWH12915.1",

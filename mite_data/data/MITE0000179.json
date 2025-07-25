@@ -23,6 +23,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Adjusted the enzyme name"
+        },
+        {
+            "version": "3",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -38,6 +49,14 @@
             "uniprot": "A0A6S6QPY4",
             "genpept": "BCI98773.1",
             "mibig": "BGC0002181"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ],
+            "organic": [
+                "Heme"
+            ]
         }
     },
     "reactions": [

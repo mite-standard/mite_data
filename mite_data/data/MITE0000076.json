@@ -13,6 +13,17 @@
                 "0000-0001-6406-4394"
             ],
             "comment": "Initial entry. Reviewer 1 simplified reaction SMARTS as JamD is quite promiscuous. Added descriptions for reactions, and added ionidation example from SI of paper"
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -25,6 +36,11 @@
             "uniprot": "Q6E7K6",
             "genpept": "AAS98776.1",
             "mibig": "BGC0001001"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD"
+            ]
         }
     },
     "reactions": [

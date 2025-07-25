@@ -73,6 +73,8 @@ class CicdManager(BaseModel):
     def run_file(self: Self, path: str) -> None:
         """Run a single file against validation functions
 
+        Used by GitHub Actions ci_pr_main.yml and pre-commit
+
         Arguments:
             path: a file path
 
@@ -84,13 +86,10 @@ class CicdManager(BaseModel):
         if not path.exists():
             raise FileNotFoundError(f"Could not find file '{path}'")
 
-        if not path.name.startswith("MITE"):
-            raise RuntimeError(f"File '{path.name}' does not appear to be a MITE file.")
+        if path.name.startswith("metadata"):
+            return
 
-        if not self.fasta.joinpath(f"{path.stem}.fasta").exists():
-            raise FileNotFoundError(
-                f"File '{path.name}' does not have an accompanying fasta file."
-            )
+        self.check_file_naming(path)
 
         with open(path) as infile:
             data = json.load(infile)
@@ -105,6 +104,8 @@ class CicdManager(BaseModel):
     def run_data_dir(self: Self) -> None:
         """Run all files against validation functions
 
+        Used by GitHub Actions ci_push_main.yml
+
         Raises:
             FileNotFoundError: mite file or mite fasta file not found
             RuntimeError: one or more issues with files detected
@@ -113,10 +114,7 @@ class CicdManager(BaseModel):
             if not path.exists():
                 raise FileNotFoundError(f"Could not find file '{path}'")
 
-            if not path.name.startswith("MITE"):
-                raise RuntimeError(
-                    f"File '{path.name}' does not appear to be a MITE file."
-                )
+            self.check_file_naming(path)
 
             with open(path) as infile:
                 data = json.load(infile)
@@ -134,6 +132,17 @@ class CicdManager(BaseModel):
 
         if len(self.issues) != 0:
             raise RuntimeError("\n".join(self.issues))
+
+    def check_file_naming(self: Self, path: Path) -> None:
+        """Check if follows naming
+
+        Args:
+            path: a Path object pointing to file
+        """
+        if not path.name.startswith("MITE") or path.suffix != ".json":
+            self.issues.append(
+                f"File '{path.name}' does not follow naming convention 'MITEnnnnnnn.json'."
+            )
 
     def check_release_ready(self: Self, data: dict) -> None:
         """Verify that entry does not have the status tag 'pending' or the MITE ID MITE9999999

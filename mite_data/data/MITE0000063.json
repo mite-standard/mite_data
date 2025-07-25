@@ -13,6 +13,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer 1 fixed reaction SMARTS of reaction 2 by explicitly stating the valence of the dehydrated carbon and replaced CXSMARTS with regular SMARTS."
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -25,6 +36,11 @@
             "uniprot": "Q82IY7",
             "genpept": "BAC70706.1",
             "mibig": "BGC0000678"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ]
         }
     },
     "reactions": [

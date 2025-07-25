@@ -13,6 +13,17 @@
                 "0000-0002-8323-5416"
             ],
             "comment": "Initial entry. Reviewer 1 checked for factual correctness, Database ID crosslinks verified, added where possible"
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0003-4819-2251"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -25,6 +36,11 @@
             "uniprot": "A0A0M4KXQ6",
             "genpept": "ALD83700.1",
             "mibig": "BGC0001299"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD"
+            ]
         }
     },
     "reactions": [

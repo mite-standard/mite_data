@@ -15,6 +15,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer 1 fixed reaction SMARTS formatting. Reviewer 1 retired entry in favor of MITE0000041"
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -29,6 +40,14 @@
             "uniprot": "F8STX7",
             "genpept": "AEI58869.1",
             "mibig": "BGC0000311"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ],
+            "organic": [
+                "Heme"
+            ]
         }
     },
     "reactions": [

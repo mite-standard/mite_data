@@ -13,6 +13,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer 1 fixed reaction SMARTS numbering."
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -25,6 +36,14 @@
             "uniprot": "R9USI6",
             "genpept": "AGN74891.1",
             "mibig": "BGC0000459"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ],
+            "organic": [
+                "Heme"
+            ]
         }
     },
     "reactions": [

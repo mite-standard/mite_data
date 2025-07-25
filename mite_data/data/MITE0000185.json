@@ -13,6 +13,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Database ID crosslinks verified, added where possible; References properly formatted"
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -36,7 +47,12 @@
                     "genpept": "QPI18723.1"
                 }
             }
-        ]
+        ],
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ]
+        }
     },
     "reactions": [
         {

@@ -1,5 +1,5 @@
 {
-  "version_mite_data": "1.13",
+  "version_mite_data": "1.14",
   "entries": {
     "MITE0000194": {
       "status": "active",
@@ -2008,7 +2008,7 @@
     "MITE0000154": {
       "status": "active",
       "enzyme_name": "PeuJ",
-      "enzyme_description": "",
+      "enzyme_description": "Monooxygenase",
       "enzyme_ids": {
         "uniprot": "A0A2S1P8Q4",
         "genpept": "AWH12915.1",

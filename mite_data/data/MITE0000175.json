@@ -12,6 +12,17 @@
                 "0000-0002-9747-3423"
             ],
             "comment": "Initial entry. Reviewer 1 checked entries, crosslinks, databases and references"
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -24,6 +35,14 @@
             "uniprot": "A0A891LWT6",
             "genpept": "QRM13814.1",
             "mibig": "BGC0002084"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ],
+            "organic": [
+                "Heme"
+            ]
         }
     },
     "reactions": [

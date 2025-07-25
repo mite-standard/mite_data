@@ -13,6 +13,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer 1 fixed numbering of reaction SMARTS, reaction passes."
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -24,6 +35,11 @@
         "databaseIds": {
             "uniprot": "A0A397HQ89",
             "genpept": "RHZ63464.1"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD"
+            ]
         }
     },
     "reactions": [

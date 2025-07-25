@@ -1,10 +1,9 @@
 name: CI Pipeline Pushes
 run-name: Pushed by ${{ github.actor }}
+permissions:
+  contents: read
 on:
   push:
-    branches:
-      - main
-  pull_request:
     branches:
       - main
 
@@ -27,13 +26,13 @@ jobs:
 
       - name: Install package with pip
         run: |
-          python -m pip install --upgrade pip
-          pip install .
+          pipx install hatch
+          hatch env create
 
       - name: Run tests
         run: |
-          pytest
+          hatch run pytest
 
       - name: Run CI/CD validation scripts for MITE entries
         run: |
-          python .github/mite_validation.py
+          hatch run python .github/mite_validation.py

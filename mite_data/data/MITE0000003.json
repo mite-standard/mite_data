@@ -13,6 +13,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer 1 changed from putative methyl transferase to => O-methyl transferase, added reference. Reviewer 2 replaced CXSMARTS with normal SMARTS"
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -26,6 +37,14 @@
             "uniprot": "Q93KV9",
             "genpept": "AAK83186.1",
             "mibig": "BGC0000026"
+        },
+        "cofactors": {
+            "inorganic": [
+                "FeS"
+            ],
+            "organic": [
+                "SAM"
+            ]
         }
     },
     "reactions": [

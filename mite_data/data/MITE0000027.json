@@ -12,6 +12,17 @@
                 "0000-0002-9747-3423"
             ],
             "comment": "Initial entry."
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -26,6 +37,14 @@
             "uniprot": "F8STX8",
             "genpept": "AEI58870.1",
             "mibig": "BGC0000311"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ],
+            "organic": [
+                "Heme"
+            ]
         }
     },
     "reactions": [

@@ -13,6 +13,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer 1 reworked reaction SMARTS and SMILES by removing partial balancing, partial stereochemistry to make RDKit-compatible."
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -25,6 +36,11 @@
             "uniprot": "Q194P4",
             "genpept": "CAK50794.2",
             "mibig": "BGC0000247"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD"
+            ]
         }
     },
     "reactions": [

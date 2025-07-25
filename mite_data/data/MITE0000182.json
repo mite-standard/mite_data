@@ -12,6 +12,17 @@
                 "0000-0003-4819-2251"
             ],
             "comment": "New entry. Reviewer 1 changed tailoring description from 'sulfation' to 'sulfonation'."
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0002-8323-5416"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -23,6 +34,11 @@
         "databaseIds": {
             "uniprot": "A0A3G2KSQ1",
             "genpept": "AYN62308.1"
+        },
+        "cofactors": {
+            "organic": [
+                "PAPS"
+            ]
         }
     },
     "reactions": [

@@ -12,6 +12,17 @@
                 "0000-0001-7044-2419"
             ],
             "comment": "Initial entry. Check for factual correctness; link to UniParc (the UniProt Archive) as entry was retired in UniProtKB;"
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
         }
     ],
     "enzyme": {
@@ -24,6 +35,14 @@
             "uniprot": "UPI0020472753",
             "genpept": "UPG58744.1",
             "mibig": "BGC0003093"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ],
+            "organic": [
+                "Heme"
+            ]
         }
     },
     "reactions": [
