@@ -129,9 +129,99 @@ from importlib import metadata
 from pathlib import Path
 from typing import Self
 
+import requests
 from pydantic import BaseModel, DirectoryPath
 
 logger = logging.getLogger("mite_data")
+
+
+class MibigManager(BaseModel):
+    """Download data and prepare for validation use
+
+    Attributes:
+        record_url: Zenodo URL for mibig: always resolves to latest version
+        location: the location to download data to
+        record: path to the record file
+    """
+
+    record_url: str = "https://zenodo.org/api/records/13367755"
+    location: Path = Path(__file__).parent.parent.joinpath("mibig")
+    record: Path = Path(__file__).parent.parent.joinpath("mibig/mibig_proteins.fasta")
+    proteins: Path = Path(__file__).parent.parent.joinpath("mibig/mibig_proteins.json")
+
+    def run(self) -> None:
+        """Call methods for downloading and moving data"""
+
+        logger.info("MibigManager: Started")
+
+        self.location.mkdir(exist_ok=True)
+
+        if not self.record.exists():
+            self.download_data()
+
+        if not self.proteins.exists():
+            self.organize_data()
+
+        logger.info("MibigManager: Completed")
+
+    def download_data(self) -> None:
+        """Download data from Zenodo
+
+        Raises:
+            RuntimeError: Could not download files
+        """
+        response_metadata = requests.get(self.record_url)
+        if response_metadata.status_code != 200:
+            raise RuntimeError(
+                f"Error fetching 'mibig' record metadata: {response_metadata.status_code}"
+            )
+
+        record_metadata = response_metadata.json()
+
+        for entry in record_metadata["files"]:
+            if entry["key"].endswith("fasta"):
+                response_data = requests.get(entry["links"]["self"])
+
+                if response_data.status_code != 200:
+                    raise RuntimeError(
+                        f"Error downloading 'mibig' record: {response_data.status_code}"
+                    )
+
+                with open(self.record, "wb") as f:
+                    f.write(response_data.content)
+
+        if not self.record.exists():
+            raise RuntimeError(
+                f"Could not find the mibig fasta file in its Zenodo repository (record URL: {self.record_url})"
+            )
+
+    def organize_data(self) -> None:
+        """Extract data, move to location
+
+        Raises:
+            NotADirectoryError: directory not unzipped in expected location
+            RuntimeError: Could not determine data location in downloaded folder
+        """
+        mibig_prot = {}
+
+        with open(self.record) as infile:
+            for line in infile.readlines():
+                if line.startswith(">"):
+                    accs = line.split("|")
+                    mibig = accs[0].removeprefix(">").split(".")[0]
+                    genbank = accs[-1].replace("\n", "")
+
+                if mibig in mibig_prot:
+                    mibig_prot[mibig].add(genbank)
+                else:
+                    mibig_prot[mibig] = set([genbank])
+
+        out = {}
+        for key, val in mibig_prot.items():
+            out[key] = list(val)
+
+        with open(self.proteins, "w", encoding="utf-8") as outfile:
+            outfile.write(json.dumps(out, indent=2, ensure_ascii=False))
 
 
 class MetadataManager(BaseModel):
@@ -146,6 +236,10 @@ class MetadataManager(BaseModel):
 
     src: DirectoryPath = Path(__file__).parent.parent.joinpath("data/")
     target: DirectoryPath = Path(__file__).parent.parent.joinpath("metadata/")
+    mibig_proteins: Path = Path(__file__).parent.parent.joinpath(
+        "mibig/mibig_proteins.json"
+    )
+    mibig_ref: dict = {}
     metadata_general: dict = {
         "version_mite_data": f"{metadata.version('mite_data')}",
         "entries": {},
@@ -158,6 +252,13 @@ class MetadataManager(BaseModel):
     def run(self: Self) -> None:
         """Class entry point to run methods"""
         logger.info("Started MetadataManager.")
+
+        mibig_manager = MibigManager()
+        mibig_manager.run()
+
+        with open(self.mibig_proteins) as file_in:
+            self.mibig_ref = json.load(file_in)
+
         self.collect_metadata()
         self.export_json()
         logger.info("Completed MetadataManager.")
@@ -188,9 +289,36 @@ class MetadataManager(BaseModel):
         """Extract and stores metadata with MIBiG IDs as keys
 
         mite: the MITE JSON derived dict to extract data from
+
+        retain only if:
+        - mite entry has mibig accession
+        - mite entry has a genbank accesssion
+        - if mite genbank acc == mibig genbank acc
+
+        add:
+        - if no description, add placeholder description
         """
-        mibig = mite.get("enzyme", {}).get("databaseIds", {}).get("mibig")
-        if mibig is None:
+        # TODO: add logging
+        mibig_acc = mite.get("enzyme", {}).get("databaseIds", {}).get("mibig")
+        if mibig_acc is None:
+            logger.warning(f'{mite["accession"]} has no MIBiG-accession - SKIP')
+            return
+
+        if mibig_acc not in self.mibig_ref:
+            logger.warning(
+                f'{mite["accession"]}: {mibig_acc!s} is not found in MIBiG fasta file - SKIP'
+            )
+            return
+
+        genpept = mite.get("enzyme", {}).get("databaseIds", {}).get("genpept")
+        if genpept is None:
+            logger.warning(f'{mite["accession"]} has no GenPept-accession - SKIP')
+            return
+
+        if genpept not in self.mibig_ref[mibig_acc]:
+            logger.warning(
+                f'{mite["accession"]}s GenPept-accession {genpept!s} is not found in the corresponding MIBiG BGC - SKIP'
+            )
             return
 
         entry = {
@@ -214,10 +342,10 @@ class MetadataManager(BaseModel):
             "enzyme_refs": mite["enzyme"]["references"],
         }
 
-        if mibig in self.metadata_mibig["entries"]:
-            self.metadata_mibig["entries"][mibig].append(entry)
+        if mibig_acc in self.metadata_mibig["entries"]:
+            self.metadata_mibig["entries"][mibig_acc].append(entry)
         else:
-            self.metadata_mibig["entries"][mibig] = [entry]
+            self.metadata_mibig["entries"][mibig_acc] = [entry]
 
     def export_json(self: Self) -> None:
         """Exports collected metadata to target dir"""
