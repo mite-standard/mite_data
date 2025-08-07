@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000125",
-    "status": "pending",
+    "status": "active",
     "changelog": [
         {
             "version": "1",
@@ -28,10 +28,10 @@
             "version": "3",
             "date": "2025-08-06",
             "contributors": [
-                "0000-0001-6534-6609"
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0001-6534-6609"
             ],
             "comment": "Fixed enzyme name from JuiL to JuiI, added reaction description."
         }
