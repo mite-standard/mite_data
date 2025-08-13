@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000035",
-    "status": "active",
+    "status": "pending",
     "comment": "Acyltransferase can use acyl-CoA of different acyl chain length and glucosamine free as UDP-glucosamine or bound to hpg4 of teicoplanin pseudoaglycone as substrates.",
     "changelog": [
         {
@@ -13,10 +13,21 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer fixed composite SMILES and added a generic version of the reaction. Reviewer 1 added information from retired entry MITE0000036."
+        },
+        {
+            "version": "2",
+            "date": "2025-08-13",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "Fixed enzyme name to be better computer-readable."
         }
     ],
     "enzyme": {
-        "name": "Tcp24 a.k.a Orf2* a.k.a. tAtf",
+        "name": "Tcp24/Orf2*/tAtf",
         "description": "Acyltransferase",
         "references": [
             "doi:10.1002/cbic.200600308",
