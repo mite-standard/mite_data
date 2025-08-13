@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000179",
-    "status": "active",
+    "status": "pending",
     "changelog": [
         {
             "version": "1",
@@ -34,10 +34,21 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Added cofactor information"
+        },
+        {
+            "version": "4",
+            "date": "2025-08-13",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "Fixed enzyme name to be more computer-readable."
         }
     ],
     "enzyme": {
-        "name": "Ple5 a.k.a. PLE5_RHOPP",
+        "name": "Ple5/PLE5_RHOPP",
         "description": "Cytochrome P450",
         "references": [
             "doi:10.1038/s41467-017-01659-1",
@@ -51,11 +62,11 @@
             "mibig": "BGC0002181"
         },
         "cofactors": {
-            "inorganic": [
-                "Fe"
-            ],
             "organic": [
                 "Heme"
+            ],
+            "inorganic": [
+                "Fe"
             ]
         }
     },
