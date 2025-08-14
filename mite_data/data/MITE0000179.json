@@ -44,7 +44,7 @@
             "reviewers": [
                 "0000-0001-6534-6609"
             ],
-            "comment": "Fixed enzyme name to be more computer-readable."
+            "comment": "Fixed enzyme name to be more computer readable."
         }
     ],
     "enzyme": {
