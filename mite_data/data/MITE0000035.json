@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000035",
-    "status": "pending",
+    "status": "active",
     "comment": "Acyltransferase can use acyl-CoA of different acyl chain length and glucosamine free as UDP-glucosamine or bound to hpg4 of teicoplanin pseudoaglycone as substrates.",
     "changelog": [
         {
@@ -21,9 +21,9 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0001-6534-6609"
             ],
-            "comment": "Fixed enzyme name to be better computer-readable."
+            "comment": "Fixed enzyme name to be more computer-readable."
         }
     ],
     "enzyme": {
