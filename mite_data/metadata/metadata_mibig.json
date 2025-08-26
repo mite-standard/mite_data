@@ -189,7 +189,7 @@
         "mite_accession": "MITE0000125",
         "mite_url": "https://bioregistry.io/mite:MITE0000125",
         "status": "active",
-        "enzyme_name": "JuiL",
+        "enzyme_name": "JuiI",
         "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "A0A7G8Z073",
@@ -290,6 +290,24 @@
           "doi:10.1016/j.jbiotec.2006.04.009",
           "doi:10.1128/JB.186.18.6093-6100.2004",
           "doi:10.1039/C7SC00460E"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000027",
+        "mite_url": "https://bioregistry.io/mite:MITE0000027",
+        "status": "active",
+        "enzyme_name": "OxyC",
+        "enzyme_description": "Cytochrome P450 monooxygenase",
+        "enzyme_ids": {
+          "uniprot": "O87675",
+          "genpept": "CAA76549.1",
+          "mibig": "BGC0000311"
+        },
+        "enzyme_tailoring": "Cyclization",
+        "enzyme_refs": [
+          "doi:10.1016/j.jbiotec.2006.04.009",
+          "doi:10.1128/AAC.43.7.1565",
+          "doi:10.1002/1521-3773(20011217)40:24<4688::AID-ANIE4688>3.0.CO;2-M"
         ]
       }
     ],
@@ -484,7 +502,7 @@
         "mite_accession": "MITE0000035",
         "mite_url": "https://bioregistry.io/mite:MITE0000035",
         "status": "active",
-        "enzyme_name": "Tcp24 a.k.a Orf2* a.k.a. tAtf",
+        "enzyme_name": "Tcp24/Orf2*/tAtf",
         "enzyme_description": "Acyltransferase",
         "enzyme_ids": {
           "uniprot": "Q70AY4",
@@ -1796,7 +1814,7 @@
         "mite_accession": "MITE0000179",
         "mite_url": "https://bioregistry.io/mite:MITE0000179",
         "status": "active",
-        "enzyme_name": "Ple5 a.k.a. PLE5_RHOPP",
+        "enzyme_name": "Ple5/PLE5_RHOPP",
         "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "A0A6S6QPY4",
