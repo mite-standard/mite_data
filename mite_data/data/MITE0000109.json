@@ -22,7 +22,7 @@
             "reviewers": [
                 "0000-0001-6534-6609"
             ],
-            "comment": "Reworked reaction SMARTS to implement editorial decision (removed spurious product)."
+            "comment": "Reworked reaction SMARTS to implement editorial decision (removed residual product)."
         }
     ],
     "enzyme": {
