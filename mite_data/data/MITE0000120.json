@@ -13,10 +13,21 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer fixed reactionSMARTS:reactionSMARTS. Reviewer fixed reactions:substrate. Reviewer fixed reactions:products. Reviewer 2 fixed incorrect protein databaseIDs (pointed to ZopA instead); fixed reaction SMARTS numbering"
+        },
+        {
+            "version": "2",
+            "date": "2025-08-13",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Fixed enzyme name to be more computer readable."
         }
     ],
     "enzyme": {
-        "name": "ZopL9 a.k.a. ZopK",
+        "name": "ZopL9/ZopK",
         "description": "AsaB-like alphaKGDD",
         "references": [
             "doi:10.1039/d0sc04309e"
