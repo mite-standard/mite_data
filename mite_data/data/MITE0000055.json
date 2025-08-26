@@ -13,11 +13,22 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer 1 adjusted core peptide recognition pattern to be more explicit."
+        },
+        {
+            "version": "2",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "McjC",
-        "description": "Lassopeptide ATP-dependent lactam synthetase (C-protein, asparagine synthetase-like)",
+        "description": "Macrolactam synthetase",
         "references": [
             "doi:10.1128/jb.181.8.2659-2662.1999",
             "doi:10.1002/cbic.201200016"

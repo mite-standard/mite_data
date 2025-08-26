@@ -24,11 +24,22 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Added cofactor information"
+        },
+        {
+            "version": "3",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "CalO2",
-        "description": "Cytochrome P450me",
+        "description": "Cytochrome P450",
         "references": [
             "doi:10.1002/prot.22131"
         ],

@@ -12,11 +12,22 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer 1 re-drew reaction SMARTS and SMILES to make them RDKit-compatible."
+        },
+        {
+            "version": "2",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "Vmt",
-        "description": "Methyltransferase",
+        "description": "N-methyltransferase",
         "references": [
             "doi:10.1186/1471-2164-15-363"
         ],

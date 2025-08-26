@@ -15,11 +15,22 @@
                 "0000-0002-7493-459X"
             ],
             "comment": "Initial entry. Added reaction description"
+        },
+        {
+            "version": "2",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "ThnH",
-        "description": "tryptophan 6-halogenase",
+        "description": "Tryptophan 6-halogenase",
         "references": [
             "doi:10.1002/cbic.201500670"
         ],
@@ -34,7 +45,7 @@
                 "Halogenation"
             ],
             "description": "chlorinates tryptophan to form 6-Cl-tryptophan (6-Cl-Trp)",
-            "reactionSMARTS": "[#7:13]-[#6@@H:11](-[#6:10]-[c:7]1[c:8][n:9][c:5]2[c:4][c:3][c:2][c:1][c:6]12)-[#6:12](-[#8:15])=[O:16]>>[#7:13]-[#6@@H:11](-[#6:10]-[c:7]1[c:8][n:9][c:5]2[c:4][c:3]([Cl:14])[c:2][c:1][c:6]12)-[#6:12](-[#8:15])=[O:16]",
+            "reactionSMARTS": "[#7:13]-[#6@@H:11](-[#6:10]-[c:7]1[c:8][n:9][c:5]2[c:4][c:3][c:2][c:1][c:6]12)-[#6:12](-[#8:15])=[O:16]>>[#7:13]-[#6@@H:11](-[#6:10]-[c:7]1[c:8][n:9][c:5]2[c:4][c:3]([Cl])[c:2][c:1][c:6]12)-[#6:12](-[#8:15])=[O:16]",
             "reactions": [
                 {
                     "substrate": "N[C@@H](Cc1c[nH]c2ccccc12)C(=O)O",

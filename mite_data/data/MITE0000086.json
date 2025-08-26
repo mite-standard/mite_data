@@ -12,11 +12,22 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer reworked reaction SMARTS to make it RDKit-compatible, reaction passes."
+        },
+        {
+            "version": "2",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "NapH1",
-        "description": "Vanadium-Dependent Chloroperoxidase",
+        "description": "Vanadium-dependent chloroperoxidase ",
         "references": [
             "doi:10.1021/ja201088k"
         ],

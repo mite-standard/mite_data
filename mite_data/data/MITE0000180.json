@@ -12,11 +12,22 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "New Entry. Reviewer 1 changed databaseID references to fit strain described in publication, added 4-phosphopantetheine cofactor, added alternative reaction using leucine instead of phenylalanine."
+        },
+        {
+            "version": "2",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "SLI_0884",
-        "description": "Leucyl/Phenylalanil-tRNA-Protein transferase",
+        "description": "Leucyl/Phenylalanine-tRNA-protein transferase",
         "references": [
             "doi:10.1093/jimb/kuad021",
             "doi:10.1093/gbe/evt082"

@@ -12,11 +12,22 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer 1 reworked reaction SMARTS to remove RDKit-incompatible frequency variation CXSMARTS layer."
+        },
+        {
+            "version": "2",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "AgqC",
-        "description": "alkylhydroxyhydroquinone methyltransferase",
+        "description": "O-methyltransferase",
         "references": [
             "doi:10.1002/cbic.201000628"
         ],

@@ -34,11 +34,22 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Fixed URL formatting. Fixed incorrect GenPept and Uniprot IDs (pointed to Amycolatopsis orientalis instead of balhimycina)."
+        },
+        {
+            "version": "4",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "OxyC",
-        "description": "Cytochrome P450 monooxygenase",
+        "description": "Cytochrome P450",
         "references": [
             "doi:10.1016/j.jbiotec.2006.04.009",
             "doi:10.1128/AAC.43.7.1565",

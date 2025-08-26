@@ -24,11 +24,22 @@
                 "0000-0003-4819-2251"
             ],
             "comment": "Added cofactor information"
+        },
+        {
+            "version": "3",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "MtmW",
-        "description": "ketoreductase",
+        "description": "Ketoreductase",
         "references": [
             "doi:10.1002/anie.201910241"
         ],

@@ -13,11 +13,22 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "New entry. Reviewer 1 fixed stereochemistry; Reviewer 2 removed explicit hydrogens from reaction SMARTS."
+        },
+        {
+            "version": "2",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "BraB",
-        "description": "N-acetylglucosamine transferase",
+        "description": "Glycosyltransferase",
         "references": [
             "doi:10.1039/D0CC03950K"
         ],

@@ -12,11 +12,22 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer fixed the unsupported nested frequency variation pattern by enumerating the reactions."
+        },
+        {
+            "version": "2",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "AgqB",
-        "description": "alkylresorcinol monooxygenase",
+        "description": "Alkylresorcinol monooxygenase",
         "references": [
             "doi:10.1002/cbic.201000628"
         ],

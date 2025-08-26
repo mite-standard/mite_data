@@ -29,11 +29,22 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Reviewer1 retired entry: not a tailoring enzyme."
+        },
+        {
+            "version": "3",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "AvaA",
-        "description": "cRW tRNA-dependent cyclodipeptide synthase",
+        "description": "CRW tRNA-dependent cyclodipeptide synthase",
         "references": [
             "doi:10.1038/s41589-022-01246-6"
         ],

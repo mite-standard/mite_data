@@ -12,11 +12,22 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer 1 removed parentheses around reaction SMARTS (falsely indicating an intramolecular reaction), reaction passes."
+        },
+        {
+            "version": "2",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "BotCD",
-        "description": "Macroamidine linkage-catalyzing YacO protein from Streptomyces sp. BC16019",
+        "description": "YcaO protein",
         "references": [
             "doi:10.1021/jacs.7b09898",
             "doi:10.1039/d0np00097c",

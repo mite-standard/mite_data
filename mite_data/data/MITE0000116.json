@@ -14,11 +14,22 @@
                 "0000-0002-9747-3423"
             ],
             "comment": "Initial entry. Reviewer fixed reactionSMARTS:reactionSMARTS. Reviewer 2 changed enzyme and reaction description"
+        },
+        {
+            "version": "2",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "StoC",
-        "description": "NADH:flavin oxidoreductase",
+        "description": "NADPH-dependent oxidoreductase",
         "references": [
             "doi:10.1002/anie.201914154"
         ],

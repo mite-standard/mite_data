@@ -25,11 +25,22 @@
                 "0000-0002-9747-3423"
             ],
             "comment": "Added cofactor information"
+        },
+        {
+            "version": "3",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "PntD",
-        "description": "Non-Heme Iron-Dependent Dehydrogenase/Oxygenase",
+        "description": "Non-heme iron-dependent dehydrogenase/oxygenase ",
         "references": [
             "doi:10.1021/bi1019786"
         ],

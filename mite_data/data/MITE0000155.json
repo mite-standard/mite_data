@@ -25,11 +25,22 @@
                 "0000-0003-1763-2525"
             ],
             "comment": "included reaction description. Reviewer 1 corrected the SMARTS codes and SMILES. There were some carbons too much or too little in the acyl side chain."
+        },
+        {
+            "version": "3",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "SrsB",
-        "description": "Methyltransferase",
+        "description": "O-methyltransferase",
         "references": [
             "doi:10.1039/c9ob00807a"
         ],

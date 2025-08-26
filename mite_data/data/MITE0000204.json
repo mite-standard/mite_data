@@ -12,11 +12,22 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "New entry. Reviewer 1 refined reaction SMARTS substrate specificity, added stereochemistry information, and added additional example."
+        },
+        {
+            "version": "2",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "AoL1",
-        "description": "Short-chain dehydrogenase/reductase (SDR)",
+        "description": "Short-chain dehydrogenase/reductase",
         "references": [
             "doi:10.1039/d3sc04172g"
         ],
