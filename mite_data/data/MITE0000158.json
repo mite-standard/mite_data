@@ -32,7 +32,7 @@
                 "Dioxygenation"
             ],
             "description": "PhoJ is a dioxygenase involved in a ring-opening strategy to form monodictyphenone as in intermediate in phomoxanthone A biosynthesis",
-            "reactionSMARTS": "[#6:1]-[c:2]1[c:5][c:8](-[#8:4])[c:15]2-[#6:18](=[O:14])-[c:19]3[c:16](-[#8:10])[c:11][c:7][c:12][c:17]3-[#6:13](-[#8:20])-[c:9]2[c:6]1>>[#6:1]-[c:2]1[c:5][c:8](-[#8:4])[c:15](-[#6:18](=[O:14])-[c:19]2[c:16](-[#8:10])[c:11][c:7][c:12][c:17]2-[#8:22])[c:9]([c:6]1)-[#6:13](-[#8:20])=[O:21]",
+            "reactionSMARTS": "[#6:1]-[c:2]1[c:5][c:8](-[#8:4])[c:15]2-[#6:18](=[O:14])-[c:19]3[c:16](-[#8:10])[c:11][c:7][c:12][c:17]3-[#6:13](-[#8:20])-[c:9]2[c:6]1>>[#6:1]-[c:2]1[c:5][c:8](-[#8:4])[c:15](-[#6:18](=[O:14])-[c:19]2[c:16](-[#8:10])[c:11][c:7][c:12][c:17]2-[#8])[c:9]([c:6]1)-[#6:13](-[#8:20])=[O]",
             "reactions": [
                 {
                     "substrate": "Cc1cc(O)c2c(c1)C(O)c1cccc(O)c1C2=O",
