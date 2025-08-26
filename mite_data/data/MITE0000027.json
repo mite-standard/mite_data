@@ -33,7 +33,7 @@
             "reviewers": [
                 "0000-0001-6534-6609"
             ],
-            "comment": "Fixed URL formatting"
+            "comment": "Fixed URL formatting. Fixed incorrect GenPept and Uniprot IDs (pointed to Amycolatopsis orientalis instead of balhimycina)."
         }
     ],
     "enzyme": {
@@ -45,8 +45,8 @@
             "doi:10.1002/1521-3773(20011217)40:24<4688::AID-ANIE4688>3.0.CO;2-M"
         ],
         "databaseIds": {
-            "uniprot": "F8STX8",
-            "genpept": "AEI58870.1",
+            "uniprot": "O87675",
+            "genpept": "CAA76549.1",
             "mibig": "BGC0000311"
         },
         "cofactors": {
