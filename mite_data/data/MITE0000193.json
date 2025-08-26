@@ -23,11 +23,22 @@
                 "0000-0003-4819-2251"
             ],
             "comment": "Added cofactor information"
+        },
+        {
+            "version": "3",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "AlbA",
-        "description": "Albonoursin synthase/cyclic dipeptide oxidase",
+        "description": "Cyclic dipeptide oxidase",
         "references": [
             "doi:10.1046/j.1432-1327.2001.02038.x",
             "doi:10.1038/s41467-024-48030-9"

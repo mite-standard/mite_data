@@ -15,11 +15,22 @@
                 "0000-0003-0443-9902"
             ],
             "comment": "Initial entry. Reviewer partially fixed general aromaticity. Reviewer 2 reworked reaction SMARTS, reaction passes."
+        },
+        {
+            "version": "2",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "PumK",
-        "description": "Carboxylate-Amine Ligase",
+        "description": "Carboxylate-amine ligase",
         "references": [
             "doi:10.1016/j.chembiol.2018.02.008"
         ],

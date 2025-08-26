@@ -12,11 +12,22 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer reworked reaction SMARTS to fix missing numbering"
+        },
+        {
+            "version": "2",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "RebH",
-        "description": "tryptophane halogenase",
+        "description": "Tryptophan halogenase",
         "references": [
             "doi:10.1016/s1074-5521(02)00126-6"
         ],

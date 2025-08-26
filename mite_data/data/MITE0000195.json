@@ -23,11 +23,22 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Added cofactor information"
+        },
+        {
+            "version": "3",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "HrmJ",
-        "description": "alpha-ketoglutarate-dependent dioxygenase",
+        "description": "Alpha-ketoglutarate-dependent dioxygenase ",
         "references": [
             "doi:10.1021/jacs.1c10201",
             "doi:10.1002/anie.202113189"

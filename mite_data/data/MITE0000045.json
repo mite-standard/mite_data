@@ -13,11 +13,22 @@
                 "0000-0002-9747-3423"
             ],
             "comment": "Initial entry. Reviewer fixed reaction SMARTS, reaction passes. Reviewer 2 switched text of enzyme description and enzyme reaction description."
+        },
+        {
+            "version": "2",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "BotOMT",
-        "description": "Carboxyl methyltransferase",
+        "description": "O-methyltransferase",
         "references": [
             "doi:10.1039/d0np00097c"
         ],

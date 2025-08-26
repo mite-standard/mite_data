@@ -25,11 +25,22 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Added cofactor information"
+        },
+        {
+            "version": "3",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "BotRMT2",
-        "description": "radical SAM methyltransferase ",
+        "description": "C-methyltransferase",
         "references": [
             "doi:10.1039/C2SC21190D",
             "doi:10.1039/d0np00097c",

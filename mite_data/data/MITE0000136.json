@@ -12,11 +12,22 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer 1 fixed reaction SMARTS numbering and database IDs. The original submission specified RefSeq ID XP_020871972.1, which was changed to its GenPept equivalent."
+        },
+        {
+            "version": "2",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "THAA1",
-        "description": "Acyltransferase subfamily IIIa, Arabidopsis lyrata ssp lyrata",
+        "description": "Acyltransferase subfamily IIIa",
         "references": [
             "doi:10.1038/s41467-020-19153-6"
         ],

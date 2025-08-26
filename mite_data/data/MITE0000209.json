@@ -12,11 +12,22 @@
                 "0000-0003-4819-2251"
             ],
             "comment": "Initial entry. Reviewer 1 fixed incorrect smarts and smiles (corrected lacton with lactam)."
+        },
+        {
+            "version": "2",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "LrcC",
-        "description": "Lassopeptide lactam synthetase",
+        "description": "Macrolactam synthetase",
         "references": [
             "doi:10.1038/s41586-025-08723-7"
         ],

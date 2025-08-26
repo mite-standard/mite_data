@@ -24,11 +24,22 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Added cofactor information"
+        },
+        {
+            "version": "3",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "NapB5",
-        "description": "putative methyltransferase",
+        "description": "C-methyltransferase",
         "references": [
             "doi:10.1074/jbc.M611046200"
         ],

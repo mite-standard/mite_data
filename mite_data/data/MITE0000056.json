@@ -13,11 +13,22 @@
                 "0000-0002-9747-3423"
             ],
             "comment": "Initial entry. Reviewer 1 changed text of enzyme description and enzyme reaction description, checked factual correctness and links"
+        },
+        {
+            "version": "2",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "McjB",
-        "description": "ATP-dependent protease (cysteine protease-like)",
+        "description": "Peptidase",
         "references": [
             "doi:10.1002/cbic.201200016",
             "doi:10.1128/JB.181.8.2659-2662.1999",

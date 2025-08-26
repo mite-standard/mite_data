@@ -15,11 +15,22 @@
                 "0000-0002-7493-459X"
             ],
             "comment": "Initial entry. Added reaction description"
+        },
+        {
+            "version": "2",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "ThnH",
-        "description": "tryptophan 6-halogenase",
+        "description": "Tryptophan 6-halogenase",
         "references": [
             "doi:10.1002/cbic.201500670"
         ],

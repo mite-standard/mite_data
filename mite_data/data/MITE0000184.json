@@ -34,11 +34,22 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Added cofactor information"
+        },
+        {
+            "version": "4",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "RufO",
-        "description": "Cytochrome p450 monooxygenase",
+        "description": "Cytochrome P450",
         "references": [
             "doi:10.1074/jbc.M117.791269",
             "doi:10.1038/s41467-017-00419-5",

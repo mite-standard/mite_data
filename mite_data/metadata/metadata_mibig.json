@@ -7,7 +7,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000020",
         "status": "active",
         "enzyme_name": "MtmGII",
-        "enzyme_description": "glycosyltransferase",
+        "enzyme_description": "Glycosyltransferase",
         "enzyme_ids": {
           "uniprot": "Q194P6",
           "genpept": "CAK50792.1",
@@ -23,7 +23,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000019",
         "status": "active",
         "enzyme_name": "MtmGIII",
-        "enzyme_description": "glycosyltransferase",
+        "enzyme_description": "Glycosyltransferase",
         "enzyme_ids": {
           "uniprot": "Q194P9",
           "genpept": "CAK50789.1",
@@ -39,7 +39,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000018",
         "status": "active",
         "enzyme_name": "MtmGIV",
-        "enzyme_description": "glycosyltransferase",
+        "enzyme_description": "Glycosyltransferase",
         "enzyme_ids": {
           "uniprot": "Q194Q0",
           "genpept": "CAK50788.1",
@@ -104,7 +104,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000017",
         "status": "active",
         "enzyme_name": "MtmW",
-        "enzyme_description": "ketoreductase",
+        "enzyme_description": "Ketoreductase",
         "enzyme_ids": {
           "uniprot": "Q194Q1",
           "genpept": "CAK50787.1",
@@ -258,7 +258,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000184",
         "status": "active",
         "enzyme_name": "RufO",
-        "enzyme_description": "Cytochrome p450 monooxygenase",
+        "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "A0A224AU14",
           "genpept": "BBA20962.1",
@@ -297,7 +297,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000027",
         "status": "active",
         "enzyme_name": "OxyC",
-        "enzyme_description": "Cytochrome P450 monooxygenase",
+        "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "O87675",
           "genpept": "CAA76549.1",
@@ -365,7 +365,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000114",
         "status": "active",
         "enzyme_name": "NgnM",
-        "enzyme_description": "Methyltransferase",
+        "enzyme_description": "O-methyltransferase",
         "enzyme_ids": {
           "uniprot": "A0A3S7PZH2",
           "genpept": "AXG22413.1",
@@ -525,7 +525,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000197",
         "status": "active",
         "enzyme_name": "HynC",
-        "enzyme_description": "non-heme diiron monooxygenase",
+        "enzyme_description": "Non-heme diiron monooxygenase",
         "enzyme_ids": {
           "genpept": "QWP75303.1",
           "mibig": "BGC0002126"
@@ -540,7 +540,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000196",
         "status": "active",
         "enzyme_name": "HynE",
-        "enzyme_description": "alpha-ketoglutarate-dependent dioxygenase",
+        "enzyme_description": "Alpha-ketoglutarate-dependent dioxygenase ",
         "enzyme_ids": {
           "genpept": "QWP75301.1",
           "mibig": "BGC0002126"
@@ -649,7 +649,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000201",
         "status": "active",
         "enzyme_name": "NodW",
-        "enzyme_description": "Cytochrome P450 Monooxygenase",
+        "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "A0A2I6PJ08",
           "genpept": "AUM60065.1",
@@ -750,7 +750,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000058",
         "status": "active",
         "enzyme_name": "PntD",
-        "enzyme_description": "Non-Heme Iron-Dependent Dehydrogenase/Oxygenase",
+        "enzyme_description": "Non-heme iron-dependent dehydrogenase/oxygenase ",
         "enzyme_ids": {
           "uniprot": "E3VWI8",
           "genpept": "ADO85576.1",
@@ -817,7 +817,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000193",
         "status": "active",
         "enzyme_name": "AlbA",
-        "enzyme_description": "Albonoursin synthase/cyclic dipeptide oxidase",
+        "enzyme_description": "Cyclic dipeptide oxidase",
         "enzyme_ids": {
           "uniprot": "Q8GED9",
           "genpept": "AAN07907.1",
@@ -888,7 +888,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000053",
         "status": "active",
         "enzyme_name": "BotCD",
-        "enzyme_description": "Macroamidine linkage-catalyzing YacO protein from Streptomyces sp. BC16019",
+        "enzyme_description": "YcaO protein",
         "enzyme_ids": {
           "uniprot": "K4MHF8",
           "genpept": "AFV25483.1",
@@ -906,7 +906,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000052",
         "status": "active",
         "enzyme_name": "BotC",
-        "enzyme_description": "Thiazole heterocyclisation-catalyzing YacO protein",
+        "enzyme_description": "YcaO protein",
         "enzyme_ids": {
           "uniprot": "K4MJT7",
           "genpept": "AFV25482.1",
@@ -924,7 +924,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000045",
         "status": "active",
         "enzyme_name": "BotOMT",
-        "enzyme_description": "Carboxyl methyltransferase",
+        "enzyme_description": "O-methyltransferase",
         "enzyme_ids": {
           "uniprot": "K4MJZ1",
           "genpept": "AFV25479.1",
@@ -940,7 +940,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000047",
         "status": "active",
         "enzyme_name": "BotRMT3",
-        "enzyme_description": "radical SAM methyltransferase",
+        "enzyme_description": "C-methyltransferase",
         "enzyme_ids": {
           "uniprot": "K4MHG1",
           "genpept": "AFV25488.1",
@@ -975,7 +975,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000049",
         "status": "active",
         "enzyme_name": "BotRMT1",
-        "enzyme_description": "rSAM methyltransferase",
+        "enzyme_description": "C-methyltransferase",
         "enzyme_ids": {
           "uniprot": "K4MHV5",
           "genpept": "AFV25480.1",
@@ -993,7 +993,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000046",
         "status": "active",
         "enzyme_name": "BotRMT2",
-        "enzyme_description": "radical SAM methyltransferase ",
+        "enzyme_description": "C-methyltransferase",
         "enzyme_ids": {
           "uniprot": "K4MJZ5",
           "genpept": "AFV25484.1",
@@ -1066,7 +1066,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000088",
         "status": "active",
         "enzyme_name": "TlmF",
-        "enzyme_description": "cytochrome P450",
+        "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "A0A0P0G6I4",
           "genpept": "ALJ49912.1",
@@ -1084,7 +1084,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000195",
         "status": "active",
         "enzyme_name": "HrmJ",
-        "enzyme_description": "alpha-ketoglutarate-dependent dioxygenase",
+        "enzyme_description": "Alpha-ketoglutarate-dependent dioxygenase ",
         "enzyme_ids": {
           "uniprot": "F8S6W1",
           "genpept": "AEH41788.1",
@@ -1101,7 +1101,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000187",
         "status": "active",
         "enzyme_name": "HrmI",
-        "enzyme_description": "heme oxygenase-like dinuclear iron enzyme",
+        "enzyme_description": "Heme oxygenase-like dinuclear iron enzyme",
         "enzyme_ids": {
           "uniprot": "F8S6W0",
           "genpept": "AEH41787.1",
@@ -1186,7 +1186,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000063",
         "status": "active",
         "enzyme_name": "PtlD",
-        "enzyme_description": "Non-Heme Iron-Dependent Dehydrogenase/Oxygenase",
+        "enzyme_description": "Non-heme iron-dependent dehydrogenase/oxygenase ",
         "enzyme_ids": {
           "uniprot": "Q82IY7",
           "genpept": "BAC70706.1",
@@ -1256,7 +1256,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000082",
         "status": "active",
         "enzyme_name": "AgqC",
-        "enzyme_description": "alkylhydroxyhydroquinone methyltransferase",
+        "enzyme_description": "O-methyltransferase",
         "enzyme_ids": {
           "uniprot": "I0HIZ1",
           "genpept": "BAL92978.1",
@@ -1272,7 +1272,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000081",
         "status": "active",
         "enzyme_name": "AgqB",
-        "enzyme_description": "alkylresorcinol monooxygenase",
+        "enzyme_description": "Alkylresorcinol monooxygenase",
         "enzyme_ids": {
           "uniprot": "I0HIZ0",
           "genpept": "BAL92977.1",
@@ -1306,7 +1306,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000202",
         "status": "active",
         "enzyme_name": "BraB",
-        "enzyme_description": "N-acetylglucosamine transferase",
+        "enzyme_description": "Glycosyltransferase",
         "enzyme_ids": {
           "uniprot": "P9WER1",
           "genpept": "QOE88884.1",
@@ -1324,7 +1324,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000041",
         "status": "active",
         "enzyme_name": "OxyB",
-        "enzyme_description": "Cytochrome P450 Monooxygenase",
+        "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "F8STX7",
           "genpept": "AEI58869.1",
@@ -1344,7 +1344,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000038",
         "status": "active",
         "enzyme_name": "OxyA",
-        "enzyme_description": "Cytochrome P450 Monooxygenase",
+        "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "F8STX6",
           "genpept": "AEI58868.1",
@@ -1399,7 +1399,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000039",
         "status": "active",
         "enzyme_name": "Vmt",
-        "enzyme_description": "Methyltransferase",
+        "enzyme_description": "N-methyltransferase",
         "enzyme_ids": {
           "uniprot": "E9LY85",
           "genpept": "AEI58876.1",
@@ -1470,7 +1470,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000188",
         "status": "active",
         "enzyme_name": "BorI",
-        "enzyme_description": "Cytochrome P450 monooxygenase",
+        "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "Q70HZ6",
           "genpept": "CAE45673.1",
@@ -1504,7 +1504,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000056",
         "status": "active",
         "enzyme_name": "McjB",
-        "enzyme_description": "ATP-dependent protease (cysteine protease-like)",
+        "enzyme_description": "Peptidase",
         "enzyme_ids": {
           "uniprot": "Q9X2V8",
           "genpept": "AAD28495.1",
@@ -1522,7 +1522,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000055",
         "status": "active",
         "enzyme_name": "McjC",
-        "enzyme_description": "Lassopeptide ATP-dependent lactam synthetase (C-protein, asparagine synthetase-like)",
+        "enzyme_description": "Macrolactam synthetase",
         "enzyme_ids": {
           "uniprot": "Q9X2V9",
           "genpept": "AAD28496.1",
@@ -1541,7 +1541,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000031",
         "status": "active",
         "enzyme_name": "SacF",
-        "enzyme_description": "SAM-dependent methyltransferase",
+        "enzyme_description": "C-methyltransferase",
         "enzyme_ids": {
           "uniprot": "Q5JCL5",
           "genpept": "AAL33761.1",
@@ -1559,7 +1559,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000174",
         "status": "active",
         "enzyme_name": "BytO",
-        "enzyme_description": "cytochrome P450",
+        "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "A0A891LYB2",
           "genpept": "QRM13816.1",
@@ -1611,7 +1611,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000085",
         "status": "active",
         "enzyme_name": "NapB5",
-        "enzyme_description": "putative methyltransferase",
+        "enzyme_description": "C-methyltransferase",
         "enzyme_ids": {
           "uniprot": "A7KH06",
           "genpept": "ABS50465.1",
@@ -1627,7 +1627,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000086",
         "status": "active",
         "enzyme_name": "NapH1",
-        "enzyme_description": "Vanadium-Dependent Chloroperoxidase",
+        "enzyme_description": "Vanadium-dependent chloroperoxidase ",
         "enzyme_ids": {
           "uniprot": "A7KGZ9",
           "genpept": "ABS50458.1",
@@ -1695,7 +1695,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000008",
         "status": "active",
         "enzyme_name": "CalO2",
-        "enzyme_description": "Cytochrome P450me",
+        "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "Q8KND6",
           "genpept": "AAM94799.1",
@@ -1761,7 +1761,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000091",
         "status": "active",
         "enzyme_name": "CYP71BN1",
-        "enzyme_description": "Cytochrome P450 monooxygenase",
+        "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "K4CI56",
           "genpept": "AGK82807.1",
@@ -1998,7 +1998,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000181",
         "status": "active",
         "enzyme_name": "FrsC",
-        "enzyme_description": "specialized dehydrogenase for phenyllactate biosynthesis",
+        "enzyme_description": "Dehydrogenase",
         "enzyme_ids": {
           "uniprot": "A0A7S9SW80",
           "genpept": "QPI18725.1",
@@ -2014,7 +2014,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000185",
         "status": "active",
         "enzyme_name": "FrsH",
-        "enzyme_description": "non-heme diiron monooxygenase",
+        "enzyme_description": "Non-heme diiron monooxygenase",
         "enzyme_ids": {
           "uniprot": "A0A7S9SWM2",
           "genpept": "QPI18730.1",
@@ -2033,7 +2033,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000043",
         "status": "active",
         "enzyme_name": "SgvP",
-        "enzyme_description": "cytochrome P450",
+        "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "R9USI6",
           "genpept": "AGN74891.1",
@@ -2051,7 +2051,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000180",
         "status": "active",
         "enzyme_name": "SLI_0884",
-        "enzyme_description": "Leucyl/Phenylalanil-tRNA-Protein transferase",
+        "enzyme_description": "Leucyl/Phenylalanine-tRNA-protein transferase",
         "enzyme_ids": {
           "uniprot": "A0A7U9H9E4",
           "genpept": "EOY45603.1",
@@ -2070,7 +2070,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000032",
         "status": "active",
         "enzyme_name": "SfmM2",
-        "enzyme_description": "SAM-dependent C-methyltransferase",
+        "enzyme_description": "C-methyltransferase",
         "enzyme_ids": {
           "uniprot": "B0CN31",
           "genpept": "ABI22137.1",
@@ -2142,7 +2142,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000175",
         "status": "active",
         "enzyme_name": "BytO",
-        "enzyme_description": "cytochrome P450",
+        "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "A0A891LWT6",
           "genpept": "QRM13814.1",
@@ -2176,7 +2176,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000107",
         "status": "active",
         "enzyme_name": "Mca",
-        "enzyme_description": "amidase",
+        "enzyme_description": "Amidase",
         "enzyme_ids": {
           "uniprot": "A0A0H5B8U5",
           "genpept": "BAR97454.1",
@@ -2298,7 +2298,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000155",
         "status": "active",
         "enzyme_name": "SrsB",
-        "enzyme_description": "Methyltransferase",
+        "enzyme_description": "O-methyltransferase",
         "enzyme_ids": {
           "genpept": "BAG12889.1",
           "mibig": "BGC0003089"
@@ -2315,7 +2315,7 @@
         "mite_url": "https://bioregistry.io/mite:MITE0000190",
         "status": "active",
         "enzyme_name": "AurH",
-        "enzyme_description": "Cytochrome P450 Monooxygenase",
+        "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "Q70KH6",
           "genpept": "CAE02604.1",

@@ -15,11 +15,22 @@
                 "0000-0002-9747-3423"
             ],
             "comment": "Initial entry. Reviewer fixed reactionSMARTS:reactionSMARTS. Reviewer 2 fixed typo. Reviewer 3 changed enzyme and reaction description"
+        },
+        {
+            "version": "2",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "TrlF",
-        "description": "decarboxylase, hydrolase",
+        "description": "Decarboxylase/Hydrolase",
         "references": [
             "doi:10.1039/D4SC01715C"
         ],

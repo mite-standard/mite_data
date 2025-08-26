@@ -24,11 +24,22 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Added cofactor information"
+        },
+        {
+            "version": "3",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
         }
     ],
     "enzyme": {
         "name": "FrsH",
-        "description": "non-heme diiron monooxygenase",
+        "description": "Non-heme diiron monooxygenase",
         "references": [
             "doi:10.1038/s41467-020-20418-3",
             "doi:10.1021/acschembio.3c00106"
