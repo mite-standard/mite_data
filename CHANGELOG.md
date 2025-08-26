@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [1.17] 26-08-2025
+
+### Changed
+
+- Miscellaneous fixes in context of manuscript revision
+- MITE dependencies (`mite_schema`, `mite_extras`) resolve to most up-to-date version
+- Implemented `uv` as project installer
+
 ## [1.16] 05-08-2025
 
 ### Changed
