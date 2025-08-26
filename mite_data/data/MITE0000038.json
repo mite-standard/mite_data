@@ -25,6 +25,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Added cofactor information"
+        },
+        {
+            "version": "3",
+            "date": "2025-08-13",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Fixed URL formatting"
         }
     ],
     "enzyme": {
@@ -34,7 +45,7 @@
             "doi:10.1021/acschembio.7b00456",
             "doi:10.1016/j.jbiotec.2006.04.009",
             "doi:10.1128/AAC.43.7.1565",
-            "doi:10.1002/1521-3773(20011217)40:24%3C4688::aid-anie4688%3E3.0.co;2-m"
+            "doi:10.1002/1521-3773(20011217)40:24<4688::AID-ANIE4688>3.0.CO;2-M"
         ],
         "databaseIds": {
             "uniprot": "F8STX6",
@@ -98,7 +109,7 @@
                     "Knock-out studies"
                 ],
                 "references": [
-                    "doi:10.1002/1521-3773(20011217)40:24%3C4688::aid-anie4688%3E3.0.co;2-m",
+                    "doi:10.1002/1521-3773(20011217)40:24<4688::AID-ANIE4688>3.0.CO;2-M",
                     "doi:10.1016/j.jbiotec.2006.04.009"
                 ]
             }
