@@ -1,0 +1,55 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2025-09-18",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "Lactucin synthase",
+        "description": "Lactucin synthase",
+        "references": [
+            "doi:10.1021/acs.jafc.2c08959"
+        ],
+        "databaseIds": {
+            "genpept": "WFU92790.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "Converts 8-deoxylactucin to lactucin",
+            "reactionSMARTS": "[#6]-[#6]1-[#6]-[#6]\\[#6@]2-[#6](-[#6](-[#8]/[#6@@]-2-[#6@]2-[#6](-[#6]-[#8])=[#6]-[#6](=[#8])-[#6]=1\\2)=[#8])=[#6]>>[#6]-[#6]1-[#6]-[#6@](/[#8])-[#6@]2\\[#6](-[#6](-[#8]/[#6@@]-2-[#6@]2-[#6](-[#6]-[#8])=[#6]-[#6](=[#8])-[#6]=1\\2)=[#8])=[#6]",
+            "reactions": [
+                {
+                    "substrate": "C=C1C(=O)O[C@@H]2[C@H]3C(CO)=CC(=O)C3=C(C)CC[C@@H]12",
+                    "products": [
+                        "C=C1C(=O)O[C@@H]2[C@H]3C(CO)=CC(=O)C3=C(C)C[C@H](O)[C@@H]12"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/acs.jafc.2c08959"
+                ]
+            }
+        }
+    ]
+}
