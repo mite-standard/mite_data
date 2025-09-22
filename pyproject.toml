@@ -16,15 +16,15 @@ authors = [
     { name = "Mitja M. Zdouc", email = "zdoucmm@gmail.com" }
 ]
 dependencies = [
-    "biopython~=1.84",
+    "biopython~=1.85",
     "coloredlogs~=15.0",
     "mite_extras",
     "mite_schema",
-    "pre-commit~=3.4",
-    "pydantic~=2.8",
-    "pytest~=7.4",
+    "pre-commit~=4.3",
+    "pydantic~=2.11",
+    "pytest~=8.4",
     "requests~=2.32",
-    "ruff~=0.5"
+    "ruff~=0.13"
 ]
 
 [project.scripts]
