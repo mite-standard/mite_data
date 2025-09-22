@@ -14,16 +14,16 @@ repos:
   hooks:
     - id: mite-update
       name: mite-update
-      entry: hatch run python ./mite_data/main.py
+      entry: uv run python3 ./mite_data/main.py
       language: system
     - id: mite-validate
       name: mite-validate
-      entry: hatch run python .github/mite_validation.py
+      entry: uv run python3 .github/mite_validation.py
       language: system
       types: [ json ]
       exclude: "metadata"
     - id: pytest
       name: pytest
-      entry: hatch run pytest tests/
+      entry: uv run pytest
       language: system
       types: [ file, python ]
