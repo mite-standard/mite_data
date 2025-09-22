@@ -1,0 +1,144 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "comment": "Lactuca sativa Germacrene A Oxidase",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2025-09-21",
+            "contributors": [
+                "0000-0001-6247-5499"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "New entry. checked reaction and publication. checked references, links and reactions."
+        },
+        {
+            "version": "2",
+            "date": "2025-09-22",
+            "contributors": [
+                "0000-0001-6247-5499"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "LsGAO1",
+        "description": "cytochrome P450",
+        "references": [
+            "doi:10.1074/jbc.M110.111757",
+            "doi:10.1104/pp.19.00629"
+        ],
+        "databaseIds": {
+            "genpept": "ADF32078.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "Converts germacrene A to germacrene A acid via three-step oxidation",
+            "reactionSMARTS": "[#6:1]-[#6:2]1=[#6:3]-[#6:4]-[#6:5]-[#6:6](-[#6:15])=[#6:7]-[#6:8]-[#6@@:9](/[#6:12](-[#6:14])=[#6:13])-[#6:10]-[#6:11]-1>>[#6:1]-[#6:2]1=[#6:3]-[#6:4]-[#6:5]-[#6:6](-[#6:15])=[#6:7]-[#6:8]-[#6@@:9](/[#6:12](-[#6:14](-[#8])=[#8])=[#6:13])-[#6:10]-[#6:11]-1",
+            "reactions": [
+                {
+                    "substrate": "C=C(C)[C@@H]1C/C=C(\\C)CC/C=C(\\C)CC1",
+                    "products": [
+                        "C=C(C(=O)O)[C@@H]1CC=C(C)CCC=C(C)CC1"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1074/jbc.M110.111757",
+                    "doi:10.1104/pp.19.00629"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "Converts amorphadiene to artemisinic acid via three-step oxidation",
+            "reactionSMARTS": "[#6:1]\\[#6@:2]1-[#6@@:7]2/[#6:8]-[#6:9]-[#6:10](-[#6:12])=[#6:11]/[#6@@:6]-2-[#6@:5](/[#6:13](-[#6:15])=[#6:14])-[#6:4]-[#6:3]-1>>[#6:1]\\[#6@:2]1-[#6@@:7]2/[#6:8]-[#6:9]-[#6:10](-[#6:12])=[#6:11]/[#6@@:6]-2-[#6@:5](/[#6:13](-[#6:15](-[#8])=[#8])=[#6:14])-[#6:4]-[#6:3]-1",
+            "reactions": [
+                {
+                    "substrate": "C=C(C)[C@@H]1CC[C@@H](C)[C@@H]2CCC(C)=C[C@@H]21",
+                    "products": [
+                        "C=C(C(=O)O)[C@@H]1CC[C@@H](C)[C@@H]2CCC(C)=C[C@@H]21"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1074/jbc.M110.111757",
+                    "doi:10.1104/pp.19.00629"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "Converts valerenadiene to valerenic acid via three-step oxidation",
+            "reactionSMARTS": "[#6:1]\\[#6@:2]1-[#6@@:10]2-[#6:6](=[#6:7](-[#6:11])-[#6:8]-[#6:9]\\2)-[#6@:5](/[#6:12]=[#6:13](-[#6:15])-[#6:14])-[#6:4]-[#6:3]-1>>[#6:1]\\[#6@:2]1-[#6@@:10]2-[#6:6](=[#6:7](-[#6:11])-[#6:8]-[#6:9]\\2)-[#6@:5](/[#6:12]=[#6:13](-[#6:14](-[#8])=[#8])-[#6:15])-[#6:4]-[#6:3]-1",
+            "reactions": [
+                {
+                    "substrate": "CC(C)=C[C@@H]1CC[C@@H](C)[C@H]2CCC(C)=C12",
+                    "products": [
+                        "CC(=C[C@@H]1CC[C@@H](C)[C@H]2CCC(C)=C12)C(=O)O"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1104/pp.19.00629"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "Converts valencene to nootkatone",
+            "reactionSMARTS": "[#6:1]/[#6@:2]1-[#6@:7]2(/[#6:15])-[#6:8]-[#6@:9](\\[#6:12](-[#6:14])=[#6:13])-[#6:10]-[#6:11]-[#6:6]-2=[#6:5]-[#6:4]-[#6:3]-1>>[#6:1]/[#6@:2]1-[#6@:7]2(/[#6:15])-[#6:8]-[#6@:9](\\[#6:12](-[#6:14])=[#6:13])-[#6:10]-[#6:11]-[#6:6]-2=[#6:5]-[#6:4](=[#8])-[#6:3]-1",
+            "reactions": [
+                {
+                    "substrate": "C=C(C)[C@@H]1CCC2=CCC[C@@H](C)[C@]2(C)C1",
+                    "products": [
+                        "C=C(C)[C@@H]1CCC2=CC(=O)C[C@@H](C)[C@]2(C)C1"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1104/pp.19.00629"
+                ]
+            }
+        }
+    ]
+}
