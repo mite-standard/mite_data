@@ -28,7 +28,7 @@ from typing import Self
 
 from mite_extras import MiteParser
 from mite_schema import SchemaManager
-from pydantic import BaseModel, DirectoryPath, model_validator
+from pydantic import BaseModel, DirectoryPath, FilePath, model_validator
 
 
 class CicdManager(BaseModel):
@@ -37,16 +37,22 @@ class CicdManager(BaseModel):
     Attributes:
         src: a Path towards the source directory
         fasta: a Path towards to directory containing accompanying fasta files
+        reserved_path: Path to json file of reserved accessions
         issues: all issues detected during run
         genpept: a list of genbank accessions in mite_data
         uniprot: a list of uniprot accessions in mite_data
+        reserved: a list of reserved accessions (mustn't be used)
     """
 
     src: DirectoryPath = Path(__file__).parent.parent.joinpath("mite_data/data/")
     fasta: DirectoryPath = Path(__file__).parent.parent.joinpath("mite_data/fasta/")
+    reserved_path: FilePath = Path(__file__).parent.parent.joinpath(
+        "reserved_accessions.json"
+    )
     issues: list = []
     genpept: dict = {}
     uniprot: dict = {}
+    reserved: list = []
 
     @model_validator(mode="after")
     def fill_accessions(self):
@@ -67,7 +73,14 @@ class CicdManager(BaseModel):
                     self.uniprot[acc].append(data["accession"])
                 else:
                     self.uniprot[acc] = [data["accession"]]
+        return self
 
+    @model_validator(mode="after")
+    def get_reserved(self):
+        with open(self.reserved_path) as infile:
+            data = json.load(infile)
+        if data.get("reserved"):
+            self.reserved = [i[0] for i in data.get("reserved")]
         return self
 
     def run_file(self: Self, path: str) -> None:
@@ -107,7 +120,7 @@ class CicdManager(BaseModel):
         Used by GitHub Actions ci_push_main.yml
 
         Raises:
-            FileNotFoundError: mite file or mite fasta file not found
+            FileNotFoundError: mite file not found
             RuntimeError: one or more issues with files detected
         """
         for path in self.src.iterdir():
@@ -119,10 +132,15 @@ class CicdManager(BaseModel):
             with open(path) as infile:
                 data = json.load(infile)
             if data["status"] != "active":
+                if self.fasta.joinpath(f"{path.stem}.fasta").exists():
+                    self.issues.append(
+                        f"File '{path.name}' is not active but still has an accompanying fasta file - remove it. \n"
+                        f"{self.fasta.joinpath(f'{path.stem}.fasta')}"
+                    )
                 continue
 
             if not self.fasta.joinpath(f"{path.stem}.fasta").exists():
-                raise FileNotFoundError(
+                self.issues.append(
                     f"File '{path.name}' does not have an accompanying fasta file."
                 )
 
@@ -155,9 +173,9 @@ class CicdManager(BaseModel):
                 f"Entry '{data["accession"]}' has the status flag 'pending'. This must be set to 'active' before release."
             )
 
-        if data["accession"] == "MITE9999999":
+        if data["accession"] in self.reserved:
             self.issues.append(
-                f"Entry '{data["accession"]}' has the MITE accession 'MITE9999999'. Change this to the correct accession before release."
+                f"The MITE accession '{data["accession"]}' is already reserved. Please change this to another accession number."
             )
 
     def check_duplicates(self: Self, data: dict) -> None:

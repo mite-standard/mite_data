@@ -244,6 +244,16 @@
         "mibig": "BGC0000469"
       }
     },
+    "MITE0000213": {
+      "status": "active",
+      "enzyme_name": "TalE",
+      "enzyme_description": "Kinase",
+      "enzyme_ids": {
+        "uniprot": "A0A4P8VQ75",
+        "genpept": "QCR99099.1",
+        "mibig": "BGC0002573"
+      }
+    },
     "MITE0000166": {
       "status": "active",
       "enzyme_name": "ProsF",
@@ -550,6 +560,15 @@
         "mibig": "BGC0001350"
       }
     },
+    "MITE0000216": {
+      "status": "active",
+      "enzyme_name": "ShyB",
+      "enzyme_description": "Cytochrome P450",
+      "enzyme_ids": {
+        "uniprot": "UPI0001800A9B",
+        "genpept": "ANW19516.1"
+      }
+    },
     "MITE0000204": {
       "status": "active",
       "enzyme_name": "AoL1",
@@ -682,6 +701,15 @@
         "uniprot": "Q8KHV6",
         "genpept": "AAN01209.1",
         "mibig": "BGC0000821"
+      }
+    },
+    "MITE0000215": {
+      "status": "active",
+      "enzyme_name": "CiLCS ",
+      "enzyme_description": "Cytochrome P450",
+      "enzyme_ids": {
+        "uniprot": "UPI0027990047",
+        "genpept": "WFU92790.1"
       }
     },
     "MITE0000031": {
@@ -1908,6 +1936,15 @@
         "mibig": "BGC0000469"
       }
     },
+    "MITE0000214": {
+      "status": "active",
+      "enzyme_name": "LsGAO1",
+      "enzyme_description": "cytochrome P450",
+      "enzyme_ids": {
+        "uniprot": "D5J9U8",
+        "genpept": "ADF32078.1"
+      }
+    },
     "MITE0000113": {
       "status": "active",
       "enzyme_name": "NgnD",
@@ -2023,6 +2060,16 @@
         "uniprot": "Q70AY4",
         "genpept": "CAE53365.1",
         "mibig": "BGC0000440"
+      }
+    },
+    "MITE0000212": {
+      "status": "active",
+      "enzyme_name": "TalC",
+      "enzyme_description": "Deoxysugar transferase",
+      "enzyme_ids": {
+        "uniprot": "A0A4P8VRN9",
+        "genpept": "QCR99101.1",
+        "mibig": "BGC0002573"
       }
     },
     "MITE0000200": {
