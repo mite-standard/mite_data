@@ -1,6 +1,6 @@
 {
-    "accession": "MITE9999999",
-    "status": "pending",
+    "accession": "MITE0000213",
+    "status": "active",
     "comment": "Involved in phosphoramidon/talopeptin biosynthesis",
     "changelog": [
         {
@@ -10,21 +10,36 @@
                 "0000-0001-6534-6609"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0003-4819-2251"
             ],
-            "comment": "New entry."
+            "comment": "New entry. Changed enzyme description to kinase, which is more specific (=enzyme that uses ATP as phosphate donor); added inorganic cofactor Mg."
         }
     ],
     "enzyme": {
         "name": "TalE",
-        "description": "Phosphoryl Transferase",
+        "description": "Kinase",
         "references": [
             "doi:10.1039/C9SC00641A"
+        ],
+        "auxiliaryEnzymes": [
+            {
+                "name": "TalD",
+                "description": "ATP grasp enzyme (gatekeeping)",
+                "databaseIds": {
+                    "uniprot": "A0A4P8VSL5",
+                    "genpept": "QCR99100.1"
+                }
+            }
         ],
         "databaseIds": {
             "uniprot": "A0A4P8VQ75",
             "genpept": "QCR99099.1",
             "mibig": "BGC0002573"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Mg"
+            ]
         }
     },
     "reactions": [
