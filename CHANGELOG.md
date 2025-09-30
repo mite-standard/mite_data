@@ -11,7 +11,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Changed
 
 - Changed installer from `hatch` to `uv`
-- Updated dependencies
+- Updated dependencies & fixed tests to accommodate changes in Biopython's download from NCBI
 - Reworked update procedure
 
 ### Added
