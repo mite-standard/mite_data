@@ -183,6 +183,7 @@ Runs `.github/mite_validation.py/run_data_dir()`:
 - File has an accompanying fasta file
 - Retired files have no accompanying fasta files
 - File is release-ready (correct status, accession not one of [reserved](reserved_accessions.json))
+- Accessions in headers of fasta files match their corresponding IDs in MITE files
 - No duplicates (based on shared GenPept and UniProt IDs)
 - Validation checks of `mite_extras` pass
 

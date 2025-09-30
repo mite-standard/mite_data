@@ -146,6 +146,7 @@ class CicdManager(BaseModel):
 
             self.check_release_ready(data=data)
             self.check_duplicates(data=data)
+            self.check_fasta_header(data=data)
             self.validate_entries_passing(data=data)
 
         if len(self.issues) != 0:
@@ -198,6 +199,30 @@ class CicdManager(BaseModel):
                 self.issues.append(
                     f"Multiple entries share the same UniProt ID '{acc}': '{self.uniprot[acc]}'"
                 )
+
+    def check_fasta_header(self: Self, data: dict) -> None:
+        """Check if MITE file and corresponding FASTA file share headers
+
+        Argument:
+            data: the mite entry data
+        """
+        fasta = self.fasta.joinpath(f"{data["accession"]}.fasta")
+        if not fasta.exists():
+            return
+
+        with open(fasta) as infile:
+            lines = infile.read()
+
+        accession = lines.split()[1]
+        ids = [
+            data["enzyme"]["databaseIds"].get(i, None) for i in ("genpept", "uniprot")
+        ]
+
+        if not accession in ids:
+            self.issues.append(
+                f"{data["accession"]}: database IDs '{ids}' do not match accession in {data["accession"]}.fasta '{accession}'. \n"
+                "Please check if the IDs were updated but the fasta file not."
+            )
 
     def validate_entries_passing(self: Self, data: dict) -> None:
         """Check if MITE entries pass automated validation checks of mite_extras
