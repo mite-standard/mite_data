@@ -1,6 +1,6 @@
 {
-    "accession": "MITE9999999",
-    "status": "pending",
+    "accession": "MITE0000216",
+    "status": "active",
     "changelog": [
         {
             "version": "1",
@@ -9,7 +9,7 @@
                 "0000-0001-6534-6609"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0003-4819-2251"
             ],
             "comment": "New entry."
         }
