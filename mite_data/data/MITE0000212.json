@@ -1,6 +1,6 @@
 {
-    "accession": "MITE9999999",
-    "status": "pending",
+    "accession": "MITE0000212",
+    "status": "active",
     "comment": "Involved in phosphoramidon/talopeptin biosynthesis",
     "changelog": [
         {
@@ -10,9 +10,9 @@
                 "0000-0001-6534-6609"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0003-4819-2251"
             ],
-            "comment": "New entry."
+            "comment": "New entry. Added TalE as auxiliary enzyme (phosphorylation step is required for glycosylation); corrected \"installation of dTDP-L-rhamnose\" to \"installation of L-rhamnose\", since only the sugar moiety is retained, while the dTDP is cleaved off."
         }
     ],
     "enzyme": {
@@ -28,6 +28,14 @@
                 "databaseIds": {
                     "uniprot": "A0A4P8VSL5",
                     "genpept": "QCR99100.1"
+                }
+            },
+            {
+                "name": "TalE",
+                "description": "Kinase",
+                "databaseIds": {
+                    "uniprot": "A0A4P8VQ75",
+                    "genpept": "QCR99099.1"
                 }
             }
         ],
@@ -51,7 +59,7 @@
                         "CC(C)C[C@H](NP(=O)(O)OC1O[C@@H](C)[C@H](O)[C@@H](O)[C@H]1O)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)O"
                     ],
                     "isIntermediate": false,
-                    "description": "Installation of dTDP-L-rhamnose on the phosphoramidon peptidic intermediate, leading to phosphoramidon "
+                    "description": "Installation of L-rhamnose on the phosphoramidon peptidic intermediate, leading to phosphoramidon "
                 }
             ],
             "evidence": {
