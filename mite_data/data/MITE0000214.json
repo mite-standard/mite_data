@@ -1,6 +1,6 @@
 {
-    "accession": "MITE9999999",
-    "status": "pending",
+    "accession": "MITE0000214",
+    "status": "active",
     "comment": "Lactuca sativa Germacrene A Oxidase",
     "changelog": [
         {
@@ -10,9 +10,10 @@
                 "0000-0001-6247-5499"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0002-9747-3423",
+                "0000-0001-6534-6609"
             ],
-            "comment": "New entry."
+            "comment": "New entry. checked reaction and publication. checked references, links and reactions. Reviewer 2 added cofactors."
         }
     ],
     "enzyme": {
@@ -23,7 +24,16 @@
             "doi:10.1104/pp.19.00629"
         ],
         "databaseIds": {
+            "uniprot": "D5J9U8",
             "genpept": "ADF32078.1"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
         }
     },
     "reactions": [
