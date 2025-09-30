@@ -1007,6 +1007,40 @@
         ]
       }
     ],
+    "BGC0002573": [
+      {
+        "mite_accession": "MITE0000213",
+        "mite_url": "https://bioregistry.io/mite:MITE0000213",
+        "status": "active",
+        "enzyme_name": "TalE",
+        "enzyme_description": "Kinase",
+        "enzyme_ids": {
+          "uniprot": "A0A4P8VQ75",
+          "genpept": "QCR99099.1",
+          "mibig": "BGC0002573"
+        },
+        "enzyme_tailoring": "Phosphorylation",
+        "enzyme_refs": [
+          "doi:10.1039/C9SC00641A"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000212",
+        "mite_url": "https://bioregistry.io/mite:MITE0000212",
+        "status": "active",
+        "enzyme_name": "TalC",
+        "enzyme_description": "Deoxysugar transferase",
+        "enzyme_ids": {
+          "uniprot": "A0A4P8VRN9",
+          "genpept": "QCR99101.1",
+          "mibig": "BGC0002573"
+        },
+        "enzyme_tailoring": "Glycosylation",
+        "enzyme_refs": [
+          "doi:10.1039/C9SC00641A"
+        ]
+      }
+    ],
     "BGC0000026": [
       {
         "mite_accession": "MITE0000003",
