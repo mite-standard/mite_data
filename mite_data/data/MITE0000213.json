@@ -1,0 +1,74 @@
+{
+    "accession": "MITE0000213",
+    "status": "active",
+    "comment": "Involved in phosphoramidon/talopeptin biosynthesis",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2025-09-25",
+            "contributors": [
+                "0000-0001-6534-6609"
+            ],
+            "reviewers": [
+                "0000-0003-4819-2251"
+            ],
+            "comment": "New entry. Changed enzyme description to kinase, which is more specific (=enzyme that uses ATP as phosphate donor); added inorganic cofactor Mg."
+        }
+    ],
+    "enzyme": {
+        "name": "TalE",
+        "description": "Kinase",
+        "references": [
+            "doi:10.1039/C9SC00641A"
+        ],
+        "auxiliaryEnzymes": [
+            {
+                "name": "TalD",
+                "description": "ATP grasp enzyme (gatekeeping)",
+                "databaseIds": {
+                    "uniprot": "A0A4P8VSL5",
+                    "genpept": "QCR99100.1"
+                }
+            }
+        ],
+        "databaseIds": {
+            "uniprot": "A0A4P8VQ75",
+            "genpept": "QCR99099.1",
+            "mibig": "BGC0002573"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Mg"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Phosphorylation"
+            ],
+            "description": " Install an N-terminal phosphoramidate on peptidic substrate",
+            "reactionSMARTS": "[#6:1]-[#6:2](-[#6:4]-[#6@@:5](-[#6:7](-[#7:9]\\[#6@:10](-[#6:21](-[#8:23])=[#8:22])-[#6:11]-[#6:12]1:[#6:20]2:[#6:15](:[#6:16]:[#6:17]:[#6:18]:[#6:19]:2):[#7:14]:[#6:13]:1)=[#8:8])/[#7:6])-[#6:3]>>[#6:3]-[#6:2](-[#6:4]-[#6@@:5](-[#6:7](-[#7:9]\\[#6@:10](-[#6:21](-[#8:23])=[#8:22])-[#6:11]-[#6:12]1:[#6:20]2:[#6:15](:[#6:16]:[#6:17]:[#6:18]:[#6:19]:2):[#7:14]:[#6:13]:1)=[#8:8])/[#7:6]-[#15](=[#8])(-[#8])-[#8])-[#6:1]",
+            "reactions": [
+                {
+                    "substrate": "CC(C)C[C@H](N)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)O",
+                    "products": [
+                        "CC(C)C[C@H](NP(=O)(O)O)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Phosphorylation of a L-W dideptide"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1039/C9SC00641A"
+                ]
+            }
+        }
+    ]
+}
