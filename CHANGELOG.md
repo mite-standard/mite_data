@@ -11,10 +11,12 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Changed
 
 - Changed installer from `hatch` to `uv`
+- Updated dependencies
+- Reworked update procedure
 
 ### Added
 
-- data update
+- Data update
 
 ## [1.17] 26-08-2025
 
