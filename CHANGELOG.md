@@ -6,6 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [1.18] UNRELEASED
+
+### Changed
+
+- Changed installer from `hatch` to `uv`
+- Updated dependencies & fixed tests to accommodate changes in Biopython's download from NCBI
+- Reworked update procedure
+
+### Added
+
+- Data update
+
 ## [1.17] 26-08-2025
 
 ### Changed

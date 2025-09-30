@@ -298,10 +298,9 @@ class MetadataManager(BaseModel):
         add:
         - if no description, add placeholder description
         """
-        # TODO: add logging
         mibig_acc = mite.get("enzyme", {}).get("databaseIds", {}).get("mibig")
         if mibig_acc is None:
-            logger.warning(f'{mite["accession"]} has no MIBiG-accession - SKIP')
+            logger.warning(f'{mite["accession"]}: no MIBiG-accession - SKIP')
             return
 
         if mibig_acc not in self.mibig_ref:
@@ -312,12 +311,12 @@ class MetadataManager(BaseModel):
 
         genpept = mite.get("enzyme", {}).get("databaseIds", {}).get("genpept")
         if genpept is None:
-            logger.warning(f'{mite["accession"]} has no GenPept-accession - SKIP')
+            logger.warning(f'{mite["accession"]}: no GenPept-accession - SKIP')
             return
 
         if genpept not in self.mibig_ref[mibig_acc]:
             logger.warning(
-                f'{mite["accession"]}s GenPept-accession {genpept!s} is not found in the corresponding MIBiG BGC - SKIP'
+                f'{mite["accession"]}: GenPept-accession {genpept!s} is not found in the corresponding MIBiG BGC - SKIP'
             )
             return
 
