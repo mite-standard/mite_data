@@ -69,30 +69,26 @@ uv run pytest
 
 ### Updating and CI/CD
 
+*Nota bene:* All described procedures require `pre-commit` to be installed and initiated .
+
 CI/CD via GitHub Actions runs on every PR and push to the `main` branch.
 
 A new release created on the [mite_data](https://github.com/mite-standard/mite_data) GitHub page will automatically relay changes to [Zenodo](https://doi.org/10.5281/zenodo.13294303).
 
 ### Update procedure
 
-1. Merge reviewed pending pull requests into main
-
-
-- Merge reviewed pull requests
-  - Checkout branch
-- (Create a new branch)
-- Update version in `pyproject.toml` and`CHANGELOG.md`
-
-```commandline
-uv sync
-uv run python ./mite_data/main.py
-uv run python .github/mite_validation.py
-```
-
-- Reinstall the package to update version metadata: ``
-- Add new/modify existing entries (*N.B. for new entries, change `accession` and `status`*)
-- Pre-commit will automatically validate and update metadata files upon committing
-- If `pre-commit` was not installed, these steps need to be performed manually:
+1. Merge reviewed pending pull requests (PRs) into main
+   - Fetch changes with `git fetch`
+   - Checkout remote branch with `git checkout -b`
+   - TBA
+2. Create a release branch and update auxilliary files
+   - TBA
+   - Update version in `pyproject.toml` and`CHANGELOG.md`
+   - Sync the package version with `uv sync`
+   - On committing, `pre-commit` should automatically update the metadata and fasta files. If not, run `uv run python ./mite_data/main.py && uv run python .github/mite_validation.py`
+3. Create a PR for the release branch
 
 
 ### CI/CD
+
+TBA
