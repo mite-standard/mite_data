@@ -218,26 +218,30 @@ class FastaManager(BaseModel):
             return
 
         for entry in self.genpept_acc:
-            if self.target_download.joinpath(f"{entry["entry"]}.fasta").exists():
+            path = f"{entry['entry']}.fasta"
+
+            if self.target_download.joinpath(path).exists():
                 logger.debug(
-                    f"File '{self.target_download.joinpath(f"{entry["entry"]}.fasta")}' already exists - SKIP"
+                    f"File {self.target_download.joinpath(path)} already exists - SKIP"
                 )
                 continue
 
             handle = Entrez.efetch(
                 db="protein", id=entry["acc"], rettype="fasta", retmode="text"
             )
-            fasta_data = handle.read()
+            fasta_data = handle.read().strip()
             handle.close()
 
-            lines = fasta_data.strip().split("\n")
-            if lines:
-                lines[0] = f">{entry["entry"]} {entry["acc"]}"
+            lines = fasta_data.splitlines()
+            if not lines or len(lines) == 1:
+                raise ValueError(
+                    f"No sequence found for accession {entry['acc']} for MITE entry {entry['entry']}"
+                )
+
+            lines[0] = f">{entry['entry']} {entry['acc']}"
             fasta_data = "\n".join(lines)
 
-            with open(
-                self.target_download.joinpath(f"{entry["entry"]}.fasta"), "w"
-            ) as fasta_file:
+            with open(self.target_download.joinpath(path), "w") as fasta_file:
                 fasta_file.write(fasta_data)
 
     def download_uniprot(self: Self) -> None:
@@ -247,43 +251,43 @@ class FastaManager(BaseModel):
             RuntimeError: Could not download UniProt data
         """
 
-        def _store_file(data: dict, lines: list) -> None:
-            if lines:
-                lines[0] = f">{data["entry"]} {data["acc"]}"
-            else:
-                raise RuntimeError(
-                    f"UniProt download failed on ID {data["acc"]} for MITE entry {data["entry"]}"
-                )
-            payload = "\n".join(lines)
-            with open(
-                self.target_download.joinpath(f"{data["entry"]}.fasta"), "w"
-            ) as fasta_file:
-                fasta_file.write(payload)
-
-        if len(self.uniprot_acc) == 0:
+        if not self.uniprot_acc:
             logger.warning(
-                f"No fasta-files scheduled to be downloaded from UniProt - SKIP"
+                "No fasta-files scheduled to be downloaded from UniProt - SKIP"
             )
             return
 
         for entry in self.uniprot_acc:
-            if self.target_download.joinpath(f"{entry["entry"]}.fasta").exists():
-                logger.debug(
-                    f"File '{self.target_download.joinpath(f"{entry["entry"]}.fasta")}' already exists - SKIP"
-                )
+            outpath = self.target_download.joinpath(f"{entry['entry']}.fasta")
+
+            if outpath.exists():
+                logger.debug(f"File '{outpath}' already exists - SKIP")
                 continue
 
-            if (
-                response := requests.get(
-                    f"https://rest.uniprot.org/uniprotkb/{entry["acc"]}.fasta"
-                )
-            ).status_code == 200 or (
-                response := requests.get(
-                    f"https://rest.uniprot.org/uniparc/{entry["acc"]}.fasta"
-                )
-            ).status_code == 200:
-                _store_file(data=entry, lines=response.text.strip().split("\n"))
-            else:
+            urls = [
+                f"https://rest.uniprot.org/uniprotkb/{entry['acc']}.fasta",
+                f"https://rest.uniprot.org/uniparc/{entry['acc']}.fasta",
+            ]
+
+            response = None
+            for url in urls:
+                r = requests.get(url)
+                if r.status_code == 200:
+                    response = r
+                    break
+
+            if response is None:
                 raise RuntimeError(
-                    f"UniProt download failed on ID {entry["acc"]} for MITE entry {entry["entry"]}"
+                    f"UniProt download failed on ID {entry['acc']} for MITE entry {entry['entry']}"
                 )
+
+            lines = response.text.strip().splitlines()
+            if len(lines) <= 1:
+                raise RuntimeError(
+                    f"UniProt returned no sequence for ID {entry['acc']} (MITE entry {entry['entry']})"
+                )
+
+            lines[0] = f">{entry['entry']} {entry['acc']}"
+
+            with open(outpath, "w") as fasta_file:
+                fasta_file.write("\n".join(lines))
