@@ -93,7 +93,7 @@ This work was supported by the Netherlands Organization for Scientific Research 
 
 *Nota bene: for details on how to contribute to the MITE project, please refer to [CONTRIBUTING](CONTRIBUTING.md).*
 
-#### With `uv` from GitHub
+#### Installation with `uv` from GitHub
 
 *Note: assumes that `uv` is installed locally - see the methods described [here](https://docs.astral.sh/uv/getting-started/installation/)* 
 
@@ -116,7 +116,7 @@ CI/CD via GitHub Actions runs on every PR and push to the `main` branch.
 
 A new release created on the [mite_data](https://github.com/mite-standard/mite_data) GitHub page will automatically relay changes to [Zenodo](https://doi.org/10.5281/zenodo.13294303).
 
-### Update procedure
+#### Update procedure
 
 1. Merge reviewed pending pull requests (PRs) into main.
    - Fetch changes with `git fetch`.
@@ -140,27 +140,27 @@ A new release created on the [mite_data](https://github.com/mite-standard/mite_d
    - Merge into main
    - When all tests pass: create a new release (syncs data to Zenodo)
 
-### CI/CD
+#### CI/CD
 
 `mite_data` employs automated checks using both `pre-commit` and CI/CD using GitHub Actions. 
 
-## `pre-commit`
+##### `pre-commit`
 
 *Nota bene*: `pre-commit` applies checks only to new/modified files. 
 
-#### Summary of checks
+**Summary of checks**
 
 - `ruff` checks and linting
 - `mite-validate`: runs `.github/mite_validation.py/run_file()`
 - `pytest`: runs pytest
 
-## GitHub CI/CD
+##### GitHub CI/CD
 
-### On PR to main
+**On PR to main**
 
 *Nota bene:* Applies checks only to new/modified files. 
 
-#### Summary of checks
+*Summary of checks*
 
 Runs `.github/mite_validation.py/run_file()`:
 
@@ -170,11 +170,11 @@ Runs `.github/mite_validation.py/run_file()`:
 - No duplicates (based on shared GenPept and UniProt IDs)
 - Validation checks of `mite_extras` pass
 
-### On push to main
+**On push to main**
 
 *Nota bene:* Applies checks to all files (i.e. when a branch is merged into main). 
 
-#### Summary of checks
+*Summary of checks*
 
 Runs `.github/mite_validation.py/run_data_dir()`:
 
