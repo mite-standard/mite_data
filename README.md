@@ -130,10 +130,11 @@ A new release created on the [mite_data](https://github.com/mite-standard/mite_d
    - Repeat for all open PRs on GitHub
 2. Create a release branch and update auxilliary files
    - Fetch changes with `git fetch`.
-   - Create a local branch and push to remote with `git checkout -b <release> && git push origin <release> && git branch --set-upstream-to=origin/<release>`
+   - Create a local branch and push to remote with `git checkout -b <release>`
    - Update version in `pyproject.toml` and `CHANGELOG.md`
    - Sync the package version with `uv sync`
    - Update metadata and add fasta files with `uv run python ./mite_data/main.py && uv run python .github/mite_validation.py`
+   - Push to remote using `git push --set-upstream origin <release>`
 3. Create PR on GitHub
    - Request a review (if applicable)
    - Merge into main
