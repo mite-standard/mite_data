@@ -12,15 +12,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 2
 
-      - name: Install package with pip
-        run: |
-          pipx install hatch
-          hatch env create
-      
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+          cache-dependency-glob: "uv.lock"
+
+      - name: Set up Python
+        run: uv python install
+
+      - name: Install dependencies
+        run: uv sync --all-groups
+
       - name: Get changed files
         id: files
         run: |
@@ -38,5 +45,5 @@ jobs:
           echo "Running validation on changed .json files:"
           while IFS= read -r file; do
             echo "  -> $file"
-            hatch run python .github/mite_validation.py "$file"
+            uv run python .github/mite_validation.py "$file"
           done <<< "${{ steps.files.outputs.changed }}"

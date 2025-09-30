@@ -10,7 +10,7 @@ name = "mite_data"
 version = "1.17"
 description = "Data storage and auxiliary functions for mite_data."
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.12.0,<3.13.0" # because of rdkit 2024 in mite_extras
 license-files = { paths = ["LICENSE"] }
 authors = [
     { name = "Mitja M. Zdouc", email = "zdoucmm@gmail.com" }
