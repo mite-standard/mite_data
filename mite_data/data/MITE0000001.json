@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000001",
-    "status": "active",
+    "status": "pending",
     "changelog": [
         {
             "version": "1",
@@ -24,6 +24,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Added cofactor information"
+        },
+        {
+            "version": "3",
+            "date": "2025-10-01",
+            "contributors": [
+                "0000-0001-6534-6609"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "Submission test."
         }
     ],
     "enzyme": {
@@ -39,11 +50,11 @@
             "mibig": "BGC0000026"
         },
         "cofactors": {
-            "inorganic": [
-                "FeS"
-            ],
             "organic": [
                 "SAM"
+            ],
+            "inorganic": [
+                "FeS"
             ]
         }
     },
