@@ -22,6 +22,10 @@ This repository contains the **single source of truth** of the Minimum Informati
 
 For more information, visit the [MITE Data Standard Organization page](https://github.com/mite-standard) or read our [publication]( https://doi.org/10.1093/nar/gkaf969).
 
+### MITE Accession Reservation
+
+You can reserve MITE Accession IDs for your to-be-published manuscript. Please read more about it in [this issue](https://github.com/mite-standard/mite_data/issues/132).
+
 ## Documentation
 
 This repository contains the **single source of truth** of the Minimum Information about a Tailoring Enzyme (MITE) database.
