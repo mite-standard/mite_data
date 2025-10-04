@@ -1,0 +1,83 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "comment": "GenPept ID was identified via CDS ID LC761678 from SI of Enz Micro Tech paper",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2025-10-02",
+            "contributors": [
+                "0000-0001-6534-6609"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "CYP502B15",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1016/j.enzmictec.2025.110658"
+        ],
+        "auxiliaryEnzymes": [
+            {
+                "name": "Cytochrome P450 oxidoreductase",
+                "description": "Cytochrome P450 oxidoreductase",
+                "databaseIds": {
+                    "uniprot": "UPI000006B1C3",
+                    "genpept": "BAB83588.1"
+                }
+            }
+        ],
+        "databaseIds": {
+            "uniprot": "UPI002B2D1BA0",
+            "genpept": "BED42923.1"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "Modifies various cadinane-type sesquiterpenoids",
+            "reactionSMARTS": "[#6:1]1-[#6:2](-[#6:11])=[#6:3]-[#6:4]2-[#6@@:7](\\[#6:13](-[#6:15])-[#6:14])-[#6:10]-[#6:9]-[#6:8](~[#6:12])-[#6:5]-2-[#6:6]-1>>[#6@@:1]1(\\[#8])-[#6:2](-[#6:11])=[#6:3]-[#6:4]2-[#6@@:7](\\[#6:13](-[#6:15])-[#6:14])-[#6:10]-[#6:9]-[#6:8](~[#6:12])-[#6:5]-2-[#6:6]-1",
+            "reactions": [
+                {
+                    "substrate": "C=C1CC[C@H](C(C)C)C2C=C(C)CCC12",
+                    "products": [
+                        "C=C1CC[C@H](C(C)C)C2C=C(C)[C@H](O)CC12"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Hydroxylation of gamma-cadinene, leading to 3alpha-hydroxy-gamma-cadinene"
+                },
+                {
+                    "substrate": "CC1=CC2[C@@H](C(C)C)CC[C@H](C)[C@]2(O)CC1",
+                    "products": [
+                        "CC1=CC2[C@@H](C(C)C)CC[C@H](C)[C@]2(O)C[C@H]1O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Hydroxylation of epicubenol, leading to 3alpha-hydroxy-epicubenol"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1016/j.enzmictec.2025.110658"
+                ]
+            }
+        }
+    ]
+}
