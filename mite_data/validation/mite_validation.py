@@ -209,6 +209,9 @@ class CicdManager(BaseModel):
         """
         fasta = self.fasta.joinpath(f"{data["accession"]}.fasta")
         if not fasta.exists():
+            self.issues.append(
+                f"File {fasta.name} expected but missing. Must be added before release!"
+            )
             return
 
         with open(fasta) as infile:
