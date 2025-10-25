@@ -10,6 +10,10 @@ repos:
     - id: ruff
       args: [ --fix ]
     - id: ruff-format
+- repo: https://github.com/astral-sh/uv-pre-commit
+  rev: 0.9.5
+  hooks:
+    - id: uv-lock
 - repo: local
   hooks:
     - id: mite-validate
