@@ -110,6 +110,6 @@ def test_validate_entries_passing_valid(cicd_mngr, data):
 
 def test_validate_entries_passing_invalid(cicd_mngr, data):
     data_cp = copy.deepcopy(data)
-    data_cp["enzyme"]["databaseIds"]["uniprot"] = "oinasdoifna"
+    data_cp["reactions"][0]["reactionSMARTS"] = r"[c]>>[c]"
     cicd_mngr.validate_entries_passing(data_cp)
     assert len(cicd_mngr.issues) == 1
