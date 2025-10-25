@@ -33,4 +33,4 @@ jobs:
 
       - name: Run CI/CD validation scripts for MITE entries
         run: |
-          uv run python .github/mite_validation.py
+          uv run python mite_data/validation/mite_validation.py

@@ -165,7 +165,7 @@ class MibigManager(BaseModel):
         logger.info("MibigManager: Completed")
 
     def download_data(self) -> None:
-        """Download data from Zenodo
+        """Download mibig data from Zenodo
 
         Raises:
             RuntimeError: Could not download files

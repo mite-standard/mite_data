@@ -44,8 +44,8 @@ class CicdManager(BaseModel):
         reserved: a list of reserved accessions (mustn't be used)
     """
 
-    src: DirectoryPath = Path(__file__).parent.parent.joinpath("mite_data/data/")
-    fasta: DirectoryPath = Path(__file__).parent.parent.joinpath("mite_data/fasta/")
+    src: DirectoryPath = Path(__file__).parent.parent.joinpath("data/")
+    fasta: DirectoryPath = Path(__file__).parent.parent.joinpath("fasta/")
     reserved_path: FilePath = Path(__file__).parent.parent.joinpath(
         "reserved_accessions.json"
     )

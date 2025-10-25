@@ -41,7 +41,7 @@ def test_download_ncbi(fasta_manager, example_files):
 
 
 def test_download_uniprot(fasta_manager, example_files):
-    fasta_manager.uniprot_acc.append({"entry": "MITE00000", "acc": "A0A346D7L2"})
+    fasta_manager.uniprot_acc.append({"entry": "MITE00000", "acc": "UPI000E33162C"})
     fasta_manager.download_uniprot()
     download = example_files.joinpath("MITE00000.fasta")
     assert download.exists()
