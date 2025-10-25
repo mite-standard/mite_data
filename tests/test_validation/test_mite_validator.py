@@ -113,3 +113,15 @@ def test_validate_entries_passing_invalid(cicd_mngr, data):
     data_cp["reactions"][0]["reactionSMARTS"] = r"[c]>>[c]"
     cicd_mngr.validate_entries_passing(data_cp)
     assert len(cicd_mngr.issues) == 1
+
+
+def test_validate_db_ids_valid(cicd_mngr, data):
+    cicd_mngr.validate_db_ids(data)
+    assert len(cicd_mngr.issues) == 0
+
+
+def test_validate_db_ids_invalid(cicd_mngr, data):
+    data_cp = copy.deepcopy(data)
+    data_cp["enzyme"]["databaseIds"]["genpept"] = "sdtzuio"
+    cicd_mngr.validate_db_ids(data_cp)
+    assert len(cicd_mngr.issues) == 1

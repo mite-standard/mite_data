@@ -27,6 +27,7 @@ from sys import argv
 from typing import Self
 
 from mite_extras import MiteParser
+from mite_extras.processing.validation_manager import IdValidator
 from mite_schema import SchemaManager
 from pydantic import BaseModel, DirectoryPath, FilePath, model_validator
 
@@ -242,6 +243,29 @@ class CicdManager(BaseModel):
         except Exception as e:
             self.issues.append(
                 f"Error: entry {data["accession"]} failed validation ({e})."
+            )
+
+    def validate_db_ids(self: Self, data: dict) -> None:
+        """Check if MITE entry IDs all pass checks
+
+        Argument:
+            data: the mite entry data
+        """
+        id_val = IdValidator()
+
+        try:
+            id_val.cleanup_ids(
+                genpept=data["enzyme"]["databaseIds"].get("genpept", None),
+                uniprot=data["enzyme"]["databaseIds"].get("uniprot", None),
+            )
+
+            if data["enzyme"]["databaseIds"].get("wikidata", None):
+                id_val.validate_wikidata_qid(
+                    qid=data["enzyme"]["databaseIds"]["wikidata"]
+                )
+        except Exception as e:
+            self.issues.append(
+                f"Error: entry {data["accession"]} failed validation of DB crosslinks ({e})."
             )
 
 
