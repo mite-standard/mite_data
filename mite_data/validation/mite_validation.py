@@ -56,6 +56,7 @@ class CicdManager(BaseModel):
 
     @model_validator(mode="after")
     def fill_accessions(self):
+        """Pull out all accession files"""
         for entry in self.src.iterdir():
             with open(entry) as infile:
                 data = json.load(infile)
