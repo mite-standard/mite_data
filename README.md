@@ -126,7 +126,7 @@ A new release created on the [mite_data](https://github.com/mite-standard/mite_d
    - Fetch changes with `git fetch`.
    - Checkout remote branch with `git checkout -b local-<branch-uuid> origin/<branch-uuid>`.
    - Replace content of file `mite_data/data/<uuid>.json` with reviewed content from PR on GitHub.
-   - Replace `status:pending` with `status:active` and coin a new MITE accession number. Check for any [reserved accessions](reserved_accessions.json).
+   - Replace `status:pending` with `status:active` and coin a new MITE accession number. Check for any [reserved accessions](mite_data/reserved_accessions.json).
    - Prepare a commit by running `git add . && git commit -m "reviewed entry"`
    - Push to remote with `git push origin HEAD:<branch-uuid>`
    - On GitHub, merge the respective PR into main and delete the feature branch.
@@ -170,7 +170,7 @@ Runs `.github/mite_validation.py/run_file()`:
 
 - File exists
 - Filename matches convention
-- File is release-ready (correct status, accession not one of [reserved](reserved_accessions.json))
+- File is release-ready (correct status, accession not one of [reserved](mite_data/reserved_accessions.json))
 - No duplicates (based on shared GenPept and UniProt IDs)
 - Validation checks of `mite_extras` pass
 
@@ -186,7 +186,7 @@ Runs `.github/mite_validation.py/run_data_dir()`:
 - Filename matches convention
 - File has an accompanying fasta file
 - Retired files have no accompanying fasta files
-- File is release-ready (correct status, accession not one of [reserved](reserved_accessions.json))
+- File is release-ready (correct status, accession not one of [reserved](mite_data/reserved_accessions.json))
 - Accessions in headers of fasta files match their corresponding IDs in MITE files
 - No duplicates (based on shared GenPept and UniProt IDs)
 - Validation checks of `mite_extras` pass
