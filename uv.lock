@@ -234,7 +234,7 @@ requires-dist = [
 
 [[package]]
 name = "mite-extras"
-version = "1.6.4"
+version = "1.6.5"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "argparse" },
@@ -246,14 +246,14 @@ dependencies = [
     { name = "rdkit" },
     { name = "requests" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f9/a8/a41d6eab49c796068bc8080a605d6112c30179c2af9474b7ba5b23432673/mite_extras-1.6.4.tar.gz", hash = "sha256:8ab187cd5f31fbc0ded0497104a05c0fc222e626b0660a48398c6aed9181e2f2", size = 48038, upload-time = "2025-10-25T14:21:04.523Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/1e/c5/ef13e8fd1500c75b481870653cf30448ff79fe3e9c41a198877308b44d04/mite_extras-1.6.5.tar.gz", hash = "sha256:36f98add8d02c3280b7cce8d9072032f5d16c8e9a86046df64d0d1c483be1b9e", size = 49212, upload-time = "2025-10-25T15:20:47.632Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/a9/7c/8ad9386ecef04f030ea575e0a51ff79e87e2dee63d0466a636b408050fb5/mite_extras-1.6.4-py3-none-any.whl", hash = "sha256:1539f59dd5037bffd5ecf50220240bd63e9e252f8b8a55b7721dd2fa9a4458a4", size = 21322, upload-time = "2025-10-25T14:21:03.223Z" },
+    { url = "https://files.pythonhosted.org/packages/0a/a9/b090273c1e9e19e6b22647a30b55cd7c5ce17a0daf6edf0b33f2f81c5ace/mite_extras-1.6.5-py3-none-any.whl", hash = "sha256:d90ccb36eb662a6c6517f4fe73bd0653f879497eb7543d8e3ce7389015376147", size = 21326, upload-time = "2025-10-25T15:20:46.544Z" },
 ]
 
 [[package]]
 name = "mite-schema"
-version = "1.8.3"
+version = "1.8.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "argparse" },
@@ -261,9 +261,9 @@ dependencies = [
     { name = "jsonschema" },
     { name = "pydantic" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/02/c9/3b6ddc5cfb466d2c7a2563411fb8a86891e86ed6d4b6e09c602d87faa71d/mite_schema-1.8.3.tar.gz", hash = "sha256:e016c8a32244f4a4f39627a1d76eb21fe524e3a8c16b1581cb3788f0ddedb4dd", size = 42660, upload-time = "2025-09-30T18:46:33.516Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/d7/76/dcaa388c911ade7668515311db6523013c95916ed2e6cde1971cf4078009/mite_schema-1.8.4.tar.gz", hash = "sha256:f153188b25849a5cac1df7964dc9dd02532c92648137829cc2b463bac1c8f3fd", size = 47221, upload-time = "2025-10-25T15:13:21.071Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/df/9c/b4b5fdfebed020a78673bdfa6239eea29411cd76675a3bdf81155a3152e1/mite_schema-1.8.3-py3-none-any.whl", hash = "sha256:23fe7a3d2e00c77d2e8079820faafc91c9f34e84e692f379c42abedf69021ab6", size = 10555, upload-time = "2025-09-30T18:46:32.318Z" },
+    { url = "https://files.pythonhosted.org/packages/12/7f/6fdaf1dbc653742d189c3e5c6be4ecbad9a98b5bb1b837d858c06d2641c0/mite_schema-1.8.4-py3-none-any.whl", hash = "sha256:8cb3ac938de4d9237194d5f3970314bb09a6bddc26408d7ca3b1fcd42aea7dd6", size = 10553, upload-time = "2025-10-25T15:13:19.659Z" },
 ]
 
 [[package]]

@@ -16,6 +16,11 @@ repos:
     - id: uv-lock
 - repo: local
   hooks:
+    - id: uv-upgrade
+      name: uv-upgrade
+      pass_filenames: false
+      entry: uv lock --upgrade
+      language: system
     - id: mite-validate
       name: mite-validate
       entry: uv run python mite_data/validation/mite_validation.py
