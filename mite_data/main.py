@@ -256,11 +256,19 @@ class RunManager(BaseModel):
         Raises:
             FileNotFoundError: file not found
         """
+        path = Path(path)
+        if not path.exists():
+            raise FileNotFoundError(f"{path!s}")
+
+        meta_mgr = MetadataManager()
+        meta_mgr.update_single(path)
 
         sys.exit(0)
 
     def run_data_dir(self) -> None:
         """Update all files; exist status 0 = passing"""
+        meta_mgr = MetadataManager()
+        meta_mgr.update_all()
 
         sys.exit(0)
 

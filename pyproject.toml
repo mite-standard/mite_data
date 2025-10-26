@@ -20,6 +20,7 @@ dependencies = [
     "coloredlogs~=15.0",
     "mite_extras",
     "mite_schema",
+    "pandas~=2.3",
     "pre-commit~=4.3",
     "pydantic~=2.11",
     "pytest~=8.4",

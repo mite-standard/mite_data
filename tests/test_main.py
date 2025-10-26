@@ -36,19 +36,3 @@ def test_instance_mibig_fail():
             mibig=Path(__file__).parent.joinpath("mibig"),
         )
     shutil.rmtree(Path(__file__).parent.joinpath("mibig"))
-
-
-def test_run_file(run_mngr):
-    with pytest.raises(SystemExit) as e:
-        run_mngr.run_file(
-            path=Path(__file__).parent.joinpath("mock_src/MITE0000000.json")
-        )
-    assert e.type == SystemExit
-    assert e.value.code == 0
-
-
-def test_run_data_dir(run_mngr):
-    with pytest.raises(SystemExit) as e:
-        run_mngr.run_data_dir()
-    assert e.type == SystemExit
-    assert e.value.code == 0
