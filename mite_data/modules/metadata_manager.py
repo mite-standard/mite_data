@@ -471,6 +471,9 @@ class MetadataManager(BaseModel):
         }
 
         if mibig_acc in self.meta_mibig["entries"]:
-            self.meta_mibig["entries"][mibig_acc].append(entry)
+            if mite_acc not in [
+                i["mite_accession"] for i in self.meta_mibig["entries"][mibig_acc]
+            ]:
+                self.meta_mibig["entries"][mibig_acc].append(entry)
         else:
             self.meta_mibig["entries"][mibig_acc] = [entry]
