@@ -23,6 +23,12 @@ repos:
       language: system
       types: [ json ]
       exclude: "metadata|reserved"
+    - id: mite-validate
+      name: mite-validate
+      entry: uv run python mite_data/validation/mite_validation.py
+      language: system
+      types: [ json ]
+      exclude: "metadata|reserved"
     - id: uv-upgrade
       name: uv-upgrade
       pass_filenames: false
@@ -30,12 +36,6 @@ repos:
       language: system
     - id: pytest
       name: pytest
-      entry: uv run pytest tests/
+      entry: uv run pytest
       language: system
-      types: [ file, python ]
-    - id: mite-validate
-      name: mite-validate
-      entry: uv run python mite_data/validation/mite_validation.py
-      language: system
-      types: [ json ]
-      exclude: "metadata|reserved"
+      pass_filenames: false
