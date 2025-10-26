@@ -18,7 +18,9 @@ def cicd_mngr():
     return CicdManager(
         src=Path(__file__).parent.joinpath("mock_src"),
         fasta=Path(__file__).parent.joinpath("mock_fasta"),
-        reserved_path=Path(__file__).parent.joinpath("mock_reserved.json"),
+        reserved_path=Path(__file__).parent.joinpath(
+            "mock_metadata/mock_reserved.json"
+        ),
     )
 
 

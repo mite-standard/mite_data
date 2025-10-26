@@ -123,15 +123,19 @@ express Statement of Purpose.
     this CC0 or use of the Work.
 """
 
+import json
 import logging
 import sys
+from pathlib import Path
 
 import coloredlogs
+import requests
+from pydantic import BaseModel, DirectoryPath, FilePath, model_validator
 
 from mite_data.modules.fasta_manager import FastaManager
 from mite_data.modules.metadata_manager import MetadataManager
 
-logger = logging.getLogger("mite_data")
+logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 console_handler = logging.StreamHandler(sys.stdout)
 console_handler.setFormatter(
@@ -140,21 +144,132 @@ console_handler.setFormatter(
 logger.addHandler(console_handler)
 
 
-def main() -> SystemExit:
-    """Function to execute main body of code
+class MibigManager(BaseModel):
+    """Download data and prepare for validation use
 
-    Returns:
-        A SystemExit code indicating the outcome of the program (0 passing, 1-n errors)
+    Attributes:
+        mibig_record: Zenodo URL for mibig: always resolves to latest version
+        mibig: the location to download data to
+        fasta: path to the fasta file
     """
 
-    metadata_manager = MetadataManager()
-    metadata_manager.run()
+    mibig_record: str = "https://zenodo.org/api/records/13367755"
+    mibig: Path = Path(__file__).parent.joinpath("mibig")
+    fasta: str = "mibig_proteins.fasta"
+    proteins: str = "mibig_proteins.json"
 
-    fasta_manager = FastaManager()
-    fasta_manager.run()
+    @model_validator(mode="after")
+    def download_mibig(self):
+        if self.mibig.exists():
+            return self
+        self.run()
+        return self
 
-    return sys.exit(0)
+    def run(self) -> None:
+        """Call methods for downloading and moving data"""
+        logger.info("MibigManager: Started")
+        self.mibig.mkdir(exist_ok=True)
+        self.download_data()
+        self.organize_data()
+        logger.info("MibigManager: Completed")
+
+    def download_data(self) -> None:
+        """Download mibig data from Zenodo
+
+        Raises:
+            RuntimeError: Could not download files
+        """
+        response_metadata = requests.get(self.mibig_record)
+        if response_metadata.status_code != 200:
+            raise RuntimeError(
+                f"Error fetching 'mibig' record metadata: {response_metadata.status_code}"
+            )
+
+        record_metadata = response_metadata.json()
+        for entry in record_metadata["files"]:
+            if entry["key"].endswith("fasta"):
+                response_data = requests.get(entry["links"]["self"])
+
+                if response_data.status_code != 200:
+                    raise RuntimeError(
+                        f"Error downloading 'mibig' record: {response_data.status_code}"
+                    )
+
+                with open(self.mibig.joinpath(self.fasta), "wb") as f:
+                    f.write(response_data.content)
+
+        if not self.mibig.joinpath(self.fasta).exists():
+            raise RuntimeError(
+                f"Could not find the MIBiG fasta file in its Zenodo repository (record URL: {self.mibig_record})"
+            )
+
+    def organize_data(self) -> None:
+        """Extract data, move to location
+
+        Raises:
+            RuntimeError: Failed to store file
+        """
+        mibig_prot = {}
+
+        with open(self.mibig.joinpath(self.fasta)) as infile:
+            for line in infile.readlines():
+                if line.startswith(">"):
+                    accs = line.split("|")
+                    mibig = accs[0].removeprefix(">").split(".")[0]
+                    genbank = accs[-1].replace("\n", "")
+
+                if mibig in mibig_prot:
+                    mibig_prot[mibig].add(genbank)
+                else:
+                    mibig_prot[mibig] = set([genbank])
+
+        out = {}
+        for key, val in mibig_prot.items():
+            out[key] = list(val)
+
+        with open(self.mibig.joinpath(self.proteins), "w", encoding="utf-8") as outfile:
+            outfile.write(json.dumps(out, indent=2, ensure_ascii=False))
+
+        if not self.mibig.joinpath(self.proteins).exists():
+            raise RuntimeError(f"Failed to extract protein IDs from MIBiG record")
+
+
+class RunManager(BaseModel):
+    """Orchestrates updating of files
+
+    Attributes:
+        src: mite json src
+        fasta: corresponding fasta files
+        metadata: metadata dir
+    """
+
+    src: DirectoryPath = Path(__file__).parent.joinpath("data/")
+    fasta: DirectoryPath = Path(__file__).parent.joinpath("fasta/")
+    meta: DirectoryPath = Path(__file__).parent.joinpath("metadata/")
+
+    def run_file(self, path: str) -> None:
+        """Run updates based on a single file; exist status 0 = passing
+
+        Arguments:
+            path: a file path
+
+        Raises:
+            FileNotFoundError: file not found
+        """
+
+        sys.exit(0)
+
+    def run_data_dir(self) -> None:
+        """Update all files; exist status 0 = passing"""
+
+        sys.exit(0)
 
 
 if __name__ == "__main__":
-    main()
+    mibig = MibigManager()
+    manager = RunManager()
+
+    try:
+        manager.run_file(path=sys.argv[1])
+    except IndexError:
+        manager.run_data_dir()
