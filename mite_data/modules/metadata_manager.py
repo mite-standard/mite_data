@@ -206,7 +206,6 @@ class MetadataManager(BaseModel):
         self.dump_json(
             path=self.meta.joinpath("metadata_mibig.json"), data=self.meta_mibig
         )
-        self.dump_summary_csv()
 
         logger.info(f"Completed MetadataManager on file {path.name}.")
 
@@ -225,7 +224,6 @@ class MetadataManager(BaseModel):
         self.dump_json(
             path=self.meta.joinpath("metadata_mibig.json"), data=self.meta_mibig
         )
-        self.dump_summary_csv()
 
         logger.info("Completed MetadataManager on all files.")
 

@@ -263,12 +263,18 @@ class RunManager(BaseModel):
         meta_mgr = MetadataManager()
         meta_mgr.update_single(path)
 
+        meta_mgr = MetadataManager()
+        meta_mgr.dump_summary_csv()
+
         sys.exit(0)
 
     def run_data_dir(self) -> None:
         """Update all files; exist status 0 = passing"""
         meta_mgr = MetadataManager()
         meta_mgr.update_all()
+
+        meta_mgr = MetadataManager()
+        meta_mgr.dump_summary_csv()
 
         sys.exit(0)
 
