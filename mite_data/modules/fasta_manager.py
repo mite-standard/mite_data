@@ -135,6 +135,8 @@ from pydantic import BaseModel, DirectoryPath, FilePath
 logger = logging.getLogger("mite_data")
 Entrez.email = "your_email@example.com"  # must be set but does not have to be real
 
+# TODO: Implement in main
+
 
 class FastaManager(BaseModel):
     """Manages the download of FASTA files.
@@ -145,149 +147,106 @@ class FastaManager(BaseModel):
     the UniProtKB or UniParc ID.
 
     Attributes:
-        genpept_acc: a list of uniprot accession IDs for download
-        uniprot_acc: a list of uniprot accession IDs for download
-        src: a Path towards the metadata source file
-        target_download: a Path towards the fasta file target (storage) directory
+        src: mite entries location
+        fasta: fasta file location
     """
 
-    genpept_acc: list = []
-    uniprot_acc: list = []
-    src: FilePath = Path(__file__).parent.parent.joinpath(
-        "metadata/metadata_general.json"
-    )
-    target_download: DirectoryPath = Path(__file__).parent.parent.joinpath("fasta/")
+    src: DirectoryPath = Path(__file__).parent.parent.joinpath("data/")
+    fasta: DirectoryPath = Path(__file__).parent.parent.joinpath("fasta/")
 
-    def run(self: Self) -> None:
-        """Class entry point to run methods
+    def update_all(self) -> None:
+        """Update metadata of all files (overwrite all)"""
+        logger.info("Started FastaManager on all files.")
+        for path in self.src.iterdir():
+            self.update_single(path)
+        logger.info("Completed FastaManager on all files.")
 
-        Raises:
-            RuntimeError: New fasta files were downloaded (needed to abort pre-commit)
+    def update_single(self, path: Path) -> None:
+        """Update fasta of a single file
 
+        Arguments:
+            path: a file path
         """
-        logger.info("Started FastaManager.")
-        nr_files_pre = len(list(Path(self.target_download).glob("*")))
-        try:
-            self.extract_accessions()
-            self.download_ncbi()
-            self.download_uniprot()
+        logger.info(f"Started FastaManager on file {path.name}.")
 
-            nr_files_post = len(list(Path(self.target_download).glob("*")))
-            if nr_files_pre != nr_files_post:
-                raise RuntimeError(
-                    "Fasta files were downloaded - add them to version control."
-                )
+        data = self.load_json(path)
+        ids = data["enzyme"]["databaseIds"]
+        if ids.get("genpept"):
+            self.download_ncbi(data["accession"], ids.get("genpept"))
+        else:
+            self.download_uniprot(data["accession"], ids.get("uniprot"))
 
-        except Exception as e:
-            logger.error(f"An error has occurred: {e!s}")
-            raise e
+        logger.info(f"Completed FastaManager on file {path.name}.")
 
-        logger.info("Completed FastaManager.")
+    @staticmethod
+    def load_json(path: Path) -> dict:
+        """Load JSON-based data
 
-    def extract_accessions(self: Self) -> None:
-        """Extracts NCBI GenPept and UniProt accession IDs from metadata file.
-
-        Raises:
-            RuntimeError: An entry does not have a GenPept or UniProt accession ID.
+        Returns:
+            The loaded JSON as dict
         """
-        with open(self.src) as file_in:
-            metadata_general = json.load(file_in)
-        for entry in metadata_general["entries"]:
-            if metadata_general["entries"][entry]["status"] != "active":
-                logger.debug(
-                    f"FastaManager: MITE entry {entry} has been retired and will not be downloaded as fasta file."
-                )
-                continue
-            elif acc := metadata_general["entries"][entry]["enzyme_ids"].get(
-                "genpept", None
-            ):
-                self.genpept_acc.append({"entry": entry, "acc": acc})
-            elif acc := metadata_general["entries"][entry]["enzyme_ids"].get(
-                "uniprot", None
-            ):
-                self.uniprot_acc.append({"entry": entry, "acc": acc})
-            else:
-                raise RuntimeError(f"{entry} has no GenPept or UniProt ID - FIX ASAP!")
+        with open(path) as fin:
+            return json.load(fin)
 
-    def download_ncbi(self: Self) -> None:
-        """Download protein FASTA files from NCBI GenPept, skip already existing files."""
-        if len(self.genpept_acc) == 0:
-            logger.warning(
-                f"No fasta-files scheduled to be downloaded from NCBI - SKIP"
+    def download_ncbi(self: Self, mite_acc: str, genpept_acc: str) -> None:
+        """Download protein FASTA files from NCBI GenPept
+
+        Args:
+            mite_acc: the MITE accession
+            genpept_acc: the NCBI GenBank accession
+        """
+        handle = Entrez.efetch(
+            db="protein", id=genpept_acc, rettype="fasta", retmode="text"
+        )
+        fasta_data = handle.read().strip()
+        handle.close()
+
+        lines = fasta_data.splitlines()
+        if not lines or len(lines) == 1:
+            raise ValueError(
+                f"{mite_acc}: No sequence found for GenBank Accession {genpept_acc}"
             )
-            return
 
-        for entry in self.genpept_acc:
-            path = f"{entry['entry']}.fasta"
+        lines[0] = f">{mite_acc} {genpept_acc}"
+        fasta_data = "\n".join(lines)
 
-            if self.target_download.joinpath(path).exists():
-                logger.debug(
-                    f"File {self.target_download.joinpath(path)} already exists - SKIP"
-                )
-                continue
+        with open(self.fasta.joinpath(f"{mite_acc}.fasta"), "w") as fout:
+            fout.write(fasta_data)
 
-            handle = Entrez.efetch(
-                db="protein", id=entry["acc"], rettype="fasta", retmode="text"
-            )
-            fasta_data = handle.read().strip()
-            handle.close()
-
-            lines = fasta_data.splitlines()
-            if not lines or len(lines) == 1:
-                raise ValueError(
-                    f"No sequence found for accession {entry['acc']} for MITE entry {entry['entry']}"
-                )
-
-            lines[0] = f">{entry['entry']} {entry['acc']}"
-            fasta_data = "\n".join(lines)
-
-            with open(self.target_download.joinpath(path), "w") as fasta_file:
-                fasta_file.write(fasta_data)
-
-    def download_uniprot(self: Self) -> None:
+    def download_uniprot(self: Self, mite_acc: str, uniprot_acc: str) -> None:
         """Download protein FASTA files from UniProt
+
+        Args:
+            mite_acc: the MITE accession
+            uniprot_acc: the Uniprot accession
 
         Raises:
             RuntimeError: Could not download UniProt data
         """
+        urls = [
+            f"https://rest.uniprot.org/uniprotkb/{uniprot_acc}.fasta",
+            f"https://rest.uniprot.org/uniparc/{uniprot_acc}.fasta",
+        ]
 
-        if not self.uniprot_acc:
-            logger.warning(
-                "No fasta-files scheduled to be downloaded from UniProt - SKIP"
+        response = None
+        for url in urls:
+            r = requests.get(url)
+            if r.status_code == 200:
+                response = r
+                break
+
+        if response is None:
+            raise RuntimeError(
+                f"{mite_acc}: UniProt download failed on ID {uniprot_acc}."
             )
-            return
 
-        for entry in self.uniprot_acc:
-            outpath = self.target_download.joinpath(f"{entry['entry']}.fasta")
+        lines = response.text.strip().splitlines()
+        if len(lines) <= 1:
+            raise RuntimeError(
+                f"{mite_acc}: UniProt download provided no sequence for ID {uniprot_acc}."
+            )
 
-            if outpath.exists():
-                logger.debug(f"File '{outpath}' already exists - SKIP")
-                continue
+        lines[0] = f">{mite_acc} {uniprot_acc}"
 
-            urls = [
-                f"https://rest.uniprot.org/uniprotkb/{entry['acc']}.fasta",
-                f"https://rest.uniprot.org/uniparc/{entry['acc']}.fasta",
-            ]
-
-            response = None
-            for url in urls:
-                r = requests.get(url)
-                if r.status_code == 200:
-                    response = r
-                    break
-
-            if response is None:
-                raise RuntimeError(
-                    f"UniProt download failed on ID {entry['acc']} for MITE entry {entry['entry']}"
-                )
-
-            lines = response.text.strip().splitlines()
-            if len(lines) <= 1:
-                raise RuntimeError(
-                    f"UniProt returned no sequence for ID {entry['acc']} (MITE entry {entry['entry']})"
-                )
-
-            lines[0] = f">{entry['entry']} {entry['acc']}"
-
-            with open(outpath, "w") as fasta_file:
-                fasta_file.write("\n".join(lines))
+        with open(self.fasta.joinpath(f"{mite_acc}.fasta"), "w") as fout:
+            fout.write("\n".join(lines))
