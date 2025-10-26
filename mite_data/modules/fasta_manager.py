@@ -135,8 +135,6 @@ from pydantic import BaseModel, DirectoryPath, FilePath
 logger = logging.getLogger("mite_data")
 Entrez.email = "your_email@example.com"  # must be set but does not have to be real
 
-# TODO: Implement in main
-
 
 class FastaManager(BaseModel):
     """Manages the download of FASTA files.
