@@ -235,19 +235,10 @@ class MibigManager(BaseModel):
 
 
 class RunManager(BaseModel):
-    """Orchestrates updating of files
+    """Orchestrates updating of files"""
 
-    Attributes:
-        src: mite json src
-        fasta: corresponding fasta files
-        metadata: metadata dir
-    """
-
-    src: DirectoryPath = Path(__file__).parent.joinpath("data/")
-    fasta: DirectoryPath = Path(__file__).parent.joinpath("fasta/")
-    meta: DirectoryPath = Path(__file__).parent.joinpath("metadata/")
-
-    def run_file(self, path: str) -> None:
+    @staticmethod
+    def run_file(path: str) -> None:
         """Run updates based on a single file; exist status 0 = passing
 
         Arguments:
@@ -265,14 +256,21 @@ class RunManager(BaseModel):
         meta_mgr = MetadataManager()
         meta_mgr.dump_summary_csv()
 
+        fasta_mgr = FastaManager()
+        fasta_mgr.update_single(path)
+
         sys.exit(0)
 
-    def run_data_dir(self) -> None:
+    @staticmethod
+    def run_data_dir() -> None:
         """Update all files; exist status 0 = passing"""
         meta_mgr = MetadataManager()
         meta_mgr.update_all()
         meta_mgr = MetadataManager()
         meta_mgr.dump_summary_csv()
+
+        fasta_mgr = FastaManager()
+        fasta_mgr.update_all()
 
         sys.exit(0)
 

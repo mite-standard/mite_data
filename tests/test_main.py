@@ -1,4 +1,3 @@
-import json
 import shutil
 from pathlib import Path
 
@@ -8,18 +7,8 @@ from mite_data.main import MibigManager, RunManager
 
 
 @pytest.fixture
-def data():
-    with open(Path(__file__).parent.joinpath("mock_src/MITE0000000.json")) as infile:
-        return json.load(infile)
-
-
-@pytest.fixture
 def run_mngr():
-    return RunManager(
-        src=Path(__file__).parent.joinpath("mock_src"),
-        fasta=Path(__file__).parent.joinpath("mock_fasta"),
-        meta=Path(__file__).parent.joinpath("mock_metadata"),
-    )
+    return RunManager()
 
 
 # Integration
