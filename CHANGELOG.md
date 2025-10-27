@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Added
 
 - Checks for validity of uniprot/genpept/wikidata
+- Generation of molecule files for mite_web
 
 ### Changed
 

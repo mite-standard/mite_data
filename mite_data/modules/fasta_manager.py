@@ -132,7 +132,7 @@ import requests
 from Bio import Entrez
 from pydantic import BaseModel, DirectoryPath, FilePath
 
-logger = logging.getLogger("mite_data")
+logger = logging.getLogger(__name__)
 Entrez.email = "your_email@example.com"  # must be set but does not have to be real
 
 

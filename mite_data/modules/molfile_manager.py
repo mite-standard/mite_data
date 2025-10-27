@@ -1,4 +1,4 @@
-"""Command line interface of update functionality of mite_data
+"""Creates auxiliary files for mite_web
 
 Creative Commons Legal Code
 
@@ -125,172 +125,136 @@ express Statement of Purpose.
 
 import json
 import logging
-import sys
+import pickle
 from pathlib import Path
 
-import coloredlogs
-import requests
-from pydantic import BaseModel, DirectoryPath, FilePath, model_validator
-
-from mite_data.modules.fasta_manager import FastaManager
-from mite_data.modules.metadata_manager import MetadataManager
-from mite_data.modules.molfile_manager import MolFileManager
+import pandas as pd
+from pydantic import BaseModel, DirectoryPath
+from rdkit.Chem import PandasTools, rdChemReactions
 
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
-console_handler = logging.StreamHandler(sys.stdout)
-console_handler.setFormatter(
-    coloredlogs.ColoredFormatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
-)
-logger.addHandler(console_handler)
 
 
-class MibigManager(BaseModel):
-    """Download data and prepare for validation use
+class MolFileManager(BaseModel):
+    """Prepare auxiliary molecule files for mite web
+
+    Only entries with "active" flag are used to compile auxiliary files
 
     Attributes:
-        mibig_record: Zenodo URL for mibig: always resolves to latest version
-        mibig: the location to download data to
-        fasta: path to the fasta file
+        src: mite entries location
+        trgt: metadata location
+        smiles: dict of SMILES be exported as csv file
+        smarts: dict of reaction SMARTS to be exported as csv file
+        pickle_substrates: list with pre-calculated fingerprints for substructure search
+        pickle_products: list with pre-calculated fingerprints for substructure search
+        pickle_smartsfps: dict with pre-calculated reaction smarts fingerprints for search
     """
 
-    mibig_record: str = "https://zenodo.org/api/records/13367755"
-    mibig: Path = Path(__file__).parent.joinpath("mibig")
-    fasta: str = "mibig_proteins.fasta"
-    proteins: str = "mibig_proteins.json"
+    src: DirectoryPath = Path(__file__).parent.parent.joinpath("data/")
+    trgt: DirectoryPath = Path(__file__).parent.parent.joinpath("metadata/")
+    smiles: dict = {"mite_id": [], "substrates": [], "products": []}
+    smarts: dict = {
+        "mite_id": [],
+        "reactionsmarts": [],
+    }
+    pickle_substrates: list = []
+    pickle_products: list = []
+    pickle_smartsfps: dict = {
+        "mite_id": [],
+        "reactionsmarts": [],
+        "reaction_fps": [],
+        "diff_reaction_pfs": [],
+    }
 
-    @model_validator(mode="after")
-    def download_mibig(self):
-        if self.mibig.exists():
-            return self
-        self.run()
-        return self
+    def prepare_files(self) -> None:
+        """Prepare the auxiliary files derived from mite entries
 
-    def run(self) -> None:
-        """Call methods for downloading and moving data"""
-        logger.info("MibigManager: Started")
-        self.mibig.mkdir(exist_ok=True)
-        self.download_data()
-        self.organize_data()
-        logger.info("MibigManager: Completed")
-
-    def download_data(self) -> None:
-        """Download mibig data from Zenodo
-
-        Raises:
-            RuntimeError: Could not download files
+        Only "active" entries are dumped; others are skipped
         """
-        response_metadata = requests.get(self.mibig_record)
-        if response_metadata.status_code != 200:
-            raise RuntimeError(
-                f"Error fetching 'mibig' record metadata: {response_metadata.status_code}"
-            )
+        for entry in self.src.iterdir():
+            with open(entry) as infile:
+                mite_data = json.load(infile)
 
-        record_metadata = response_metadata.json()
-        for entry in record_metadata["files"]:
-            if entry["key"].endswith("fasta"):
-                response_data = requests.get(entry["links"]["self"])
+            if mite_data["status"] != "active":
+                continue
 
-                if response_data.status_code != 200:
-                    raise RuntimeError(
-                        f"Error downloading 'mibig' record: {response_data.status_code}"
-                    )
+            self.prepare_smiles(mite_data)
+            self.prepare_smarts(mite_data)
 
-                with open(self.mibig.joinpath(self.fasta), "wb") as f:
-                    f.write(response_data.content)
+        self.prepare_pickled_smiles()
+        self.prepare_pickled_smarts()
 
-        if not self.mibig.joinpath(self.fasta).exists():
-            raise RuntimeError(
-                f"Could not find the MIBiG fasta file in its Zenodo repository (record URL: {self.mibig_record})"
-            )
-
-    def organize_data(self) -> None:
-        """Extract data, move to location
-
-        Raises:
-            RuntimeError: Failed to store file
-        """
-        mibig_prot = {}
-
-        with open(self.mibig.joinpath(self.fasta)) as infile:
-            for line in infile.readlines():
-                if line.startswith(">"):
-                    accs = line.split("|")
-                    mibig = accs[0].removeprefix(">").split(".")[0]
-                    genbank = accs[-1].replace("\n", "")
-
-                if mibig in mibig_prot:
-                    mibig_prot[mibig].add(genbank)
-                else:
-                    mibig_prot[mibig] = set([genbank])
-
-        out = {}
-        for key, val in mibig_prot.items():
-            out[key] = list(val)
-
-        with open(self.mibig.joinpath(self.proteins), "w", encoding="utf-8") as outfile:
-            outfile.write(json.dumps(out, indent=2, ensure_ascii=False))
-
-        if not self.mibig.joinpath(self.proteins).exists():
-            raise RuntimeError(f"Failed to extract protein IDs from MIBiG record")
-
-
-class RunManager(BaseModel):
-    """Orchestrates updating of files"""
-
-    @staticmethod
-    def run_file(path: str) -> None:
-        """Run updates based on a single file; exist status 0 = passing
+    def prepare_smiles(self, data: dict) -> None:
+        """Create a table of SMILES strings contained in MITE entries
 
         Arguments:
-            path: a file path
-
-        Raises:
-            FileNotFoundError: file not found
+            data: a dict derived from a mite json file
         """
-        path = Path(path)
-        if not path.exists():
-            raise FileNotFoundError(f"{path!s}")
+        for readctionid, reaction in enumerate(data["reactions"], 1):
+            for exampleid, example in enumerate(reaction["reactions"], 1):
+                self.smiles["mite_id"].append(
+                    f"{data['accession']}.reaction{readctionid}.example{exampleid}"
+                )
+                self.smiles["substrates"].append(f"{example['substrate']}")
+                self.smiles["products"].append(f"{'.'.join(example['products'])}")
 
-        meta_mgr = MetadataManager()
-        meta_mgr.update_single(path)
-        # Prevents removing of manual annotations
-        meta_mgr = MetadataManager()
-        meta_mgr.dump_summary_csv()
+    def prepare_smarts(self, data: dict) -> None:
+        """Create a table of reaction SMARTS strings contained in MITE entries
 
-        fasta_mgr = FastaManager()
-        fasta_mgr.update_single(path)
+        Arguments:
+            data: a dict derived from a mite json file
+        """
+        for readctionid, reaction in enumerate(data["reactions"], 1):
+            self.smarts["mite_id"].append(f'{data['accession']}.reaction{readctionid}')
+            self.smarts["reactionsmarts"].append(f"{reaction["reactionSMARTS"]}")
 
-        mlfl_mgr = MolFileManager()
-        mlfl_mgr.prepare_files()
-        mlfl_mgr.dump_files()
+    def prepare_pickled_smiles(self) -> None:
+        """Create a pickle file with pre-calculated SMILES fingerprints"""
+        df = pd.DataFrame(self.smiles)
 
-        sys.exit(0)
+        PandasTools.AddMoleculeColumnToFrame(
+            df,
+            smilesCol="substrates",
+            molCol="ROMol_substrates",
+            includeFingerprints=True,
+        )
+        PandasTools.AddMoleculeColumnToFrame(
+            df, smilesCol="products", molCol="ROMol_products", includeFingerprints=True
+        )
 
-    @staticmethod
-    def run_data_dir() -> None:
-        """Update all files; exist status 0 = passing"""
-        meta_mgr = MetadataManager()
-        meta_mgr.update_all()
-        # Prevents removing of manual annotations
-        meta_mgr = MetadataManager()
-        meta_mgr.dump_summary_csv()
+        self.pickle_substrates = list(df["ROMol_substrates"])
+        self.pickle_products = list(df["ROMol_products"])
 
-        fasta_mgr = FastaManager()
-        fasta_mgr.update_all()
+    def prepare_pickled_smarts(self) -> None:
+        """Create a pickle file of a dict with pre-calculated reaction SMARTS fingerprints"""
+        self.pickle_smartsfps["mite_id"] = self.smarts.get("mite_id")
+        self.pickle_smartsfps["reactionsmarts"] = self.smarts.get("reactionsmarts")
 
-        mlfl_mgr = MolFileManager()
-        mlfl_mgr.prepare_files()
-        mlfl_mgr.dump_files()
+        for smarts in self.smarts.get("reactionsmarts"):
+            self.pickle_smartsfps["reaction_fps"].append(
+                rdChemReactions.CreateStructuralFingerprintForReaction(
+                    rdChemReactions.ReactionFromSmarts(smarts)
+                )
+            )
+            self.pickle_smartsfps["diff_reaction_pfs"].append(
+                rdChemReactions.CreateDifferenceFingerprintForReaction(
+                    rdChemReactions.ReactionFromSmarts(smarts)
+                )
+            )
 
-        sys.exit(0)
+    def dump_files(self) -> None:
+        """Dump the assembled files"""
+        df_smiles = pd.DataFrame(self.smiles)
+        df_smiles.to_csv(path_or_buf=self.trgt.joinpath("dump_smiles.csv"))
 
+        df_smarts = pd.DataFrame(self.smarts)
+        df_smarts.to_csv(path_or_buf=self.trgt.joinpath("dump_smarts.csv"))
 
-if __name__ == "__main__":
-    mibig = MibigManager()
-    manager = RunManager()
+        with open(self.trgt.joinpath("substrate_list.pickle"), "wb") as outfile:
+            pickle.dump(obj=self.pickle_substrates, file=outfile)
 
-    try:
-        manager.run_file(path=sys.argv[1])
-    except IndexError:
-        manager.run_data_dir()
+        with open(self.trgt.joinpath("product_list.pickle"), "wb") as outfile:
+            pickle.dump(obj=self.pickle_products, file=outfile)
+
+        with open(self.trgt.joinpath("reaction_fps.pickle"), "wb") as outfile:
+            pickle.dump(obj=self.pickle_smartsfps, file=outfile)

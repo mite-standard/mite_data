@@ -25,6 +25,7 @@ dependencies = [
     "pydantic~=2.11",
     "pytest~=8.4",
     "requests~=2.32",
+    "rdkit==2024.3.6",
     "ruff~=0.13"
 ]
 
