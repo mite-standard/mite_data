@@ -205,7 +205,7 @@ class CicdManager(BaseModel):
         if not path.exists():
             raise FileNotFoundError(f"Could not find file '{path}'")
 
-        if path.name.startswith("metadata") or path.name.startswith("reserved"):
+        if not path.name.startswith("MITE"):
             return
 
         self.check_file_naming(path)
