@@ -54,7 +54,7 @@
       "enzyme_name": "CmxA",
       "enzyme_description": "L-lysine cyclodeaminase",
       "enzyme_ids": {
-        "uniprot": "A0A346D7L2",
+        "uniprot": "UPI000E33162C",
         "genpept": "AXM43051.1",
         "mibig": "BGC0001945"
       },
@@ -4038,7 +4038,7 @@
       "enzyme_name": "PumJ",
       "enzyme_description": "Pseudouridine synthase",
       "enzyme_ids": {
-        "uniprot": "A0A2R4FXX7",
+        "uniprot": "UPI000D22683E",
         "genpept": "AVT42379.1",
         "mibig": "BGC0001476"
       },

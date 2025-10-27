@@ -24,6 +24,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Added cofactor information"
+        },
+        {
+            "version": "3",
+            "date": "2025-10-27",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Replaced retired UniProtKB ID with UniParc ID"
         }
     ],
     "enzyme": {
@@ -33,7 +44,7 @@
             "doi:10.1002/anie.202311533"
         ],
         "databaseIds": {
-            "uniprot": "A0A0F7N5T9",
+            "uniprot": "UPI00062E048D",
             "genpept": "AKH82808.1",
             "mibig": "BGC0003035"
         },

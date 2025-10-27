@@ -26,6 +26,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Homogenized enzyme descriptions"
+        },
+        {
+            "version": "3",
+            "date": "2025-10-27",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Replaced retired UniProtKB ID with UniParc ID"
         }
     ],
     "enzyme": {
@@ -35,7 +46,7 @@
             "doi:10.1002/cbic.201500670"
         ],
         "databaseIds": {
-            "uniprot": "A0A142I749",
+            "uniprot": "UPI00078D6453",
             "genpept": "AMR44301.1"
         }
     },

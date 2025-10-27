@@ -13,6 +13,17 @@
                 "0000-0003-0443-9902"
             ],
             "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer 2 fixed reaction SMARTS, reaction passing."
+        },
+        {
+            "version": "2",
+            "date": "2025-10-27",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Replaced retired UniProtKB ID with UniParc ID"
         }
     ],
     "enzyme": {
@@ -22,7 +33,7 @@
             "doi:10.1038/s41589-023-01476-2"
         ],
         "databaseIds": {
-            "uniprot": "A0A125SA13",
+            "uniprot": "UPI00076F29F8",
             "genpept": "AME18009.1",
             "mibig": "BGC0001378"
         }
