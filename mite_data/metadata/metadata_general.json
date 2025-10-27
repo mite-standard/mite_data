@@ -4919,6 +4919,28 @@
       "class": "Actinomycetes",
       "order": "Streptosporangiales",
       "family": "Thermomonosporaceae"
+    },
+    "MITE0000218": {
+      "accession": "MITE0000218",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "CYP502B15",
+      "enzyme_description": "Cytochrome P450",
+      "enzyme_ids": {
+        "uniprot": "UPI002B2D1BA0",
+        "genpept": "BED42923.1"
+      },
+      "tailoring": "Hydroxylation",
+      "reaction_description": "Modifies various cadinane-type sesquiterpenoids",
+      "cofactors_organic": "Heme",
+      "cofactors_inorganic": "Fe",
+      "organism": "Not found",
+      "domain": "Not found",
+      "kingdom": "Not found",
+      "phylum": "Not found",
+      "class": "Not found",
+      "order": "Not found",
+      "family": "Not found"
     }
   }
 }

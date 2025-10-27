@@ -18,7 +18,6 @@ repos:
   hooks:
     - id: mite-update
       name: mite-update
-      pass_filenames: false
       entry: uv run python mite_data/main.py
       language: system
       types: [ json ]
@@ -37,5 +36,5 @@ repos:
     - id: pytest
       name: pytest
       entry: uv run pytest
-      language: system
       pass_filenames: false
+      language: system
