@@ -133,6 +133,8 @@ from mite_extras.processing.validation_manager import IdValidator
 from mite_schema import SchemaManager
 from pydantic import BaseModel, DirectoryPath, FilePath, model_validator
 
+from mite_data.modules.fasta_manager import FastaManager
+
 
 class CicdManager(BaseModel):
     """Manage methods to validate MITE entries in pre-commit and CI/CD
@@ -356,12 +358,18 @@ class CicdManager(BaseModel):
             data: the mite entry data
         """
         id_val = IdValidator()
+        fasta_mngr = FastaManager()
 
         try:
-            id_val.cleanup_ids(
-                genpept=data["enzyme"]["databaseIds"].get("genpept", None),
-                uniprot=data["enzyme"]["databaseIds"].get("uniprot", None),
-            )
+            ncbi = data["enzyme"]["databaseIds"].get("genpept", None)
+            if ncbi:
+                fasta_mngr.download_ncbi(mite_acc=data["accession"], genpept_acc=ncbi)
+
+            uniprot = data["enzyme"]["databaseIds"].get("uniprot", None)
+            if ncbi:
+                fasta_mngr.download_uniprot(
+                    mite_acc=data["accession"], uniprot_acc=uniprot
+                )
 
             if data["enzyme"]["databaseIds"].get("wikidata", None):
                 id_val.validate_wikidata_qid(

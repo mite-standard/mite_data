@@ -170,9 +170,13 @@ class FastaManager(BaseModel):
         data = self.load_json(path)
         ids = data["enzyme"]["databaseIds"]
         if ids.get("genpept"):
-            self.download_ncbi(data["accession"], ids.get("genpept"))
+            path, content = self.download_ncbi(data["accession"], ids.get("genpept"))
+            with open(path, "w") as fout:
+                fout.write(content)
         else:
-            self.download_uniprot(data["accession"], ids.get("uniprot"))
+            path, content = self.download_uniprot(data["accession"], ids.get("uniprot"))
+            with open(path, "w") as fout:
+                fout.write("\n".join(content))
 
         logger.info(f"Completed FastaManager on file {path.name}.")
 
@@ -186,12 +190,15 @@ class FastaManager(BaseModel):
         with open(path) as fin:
             return json.load(fin)
 
-    def download_ncbi(self: Self, mite_acc: str, genpept_acc: str) -> None:
+    def download_ncbi(self: Self, mite_acc: str, genpept_acc: str) -> tuple:
         """Download protein FASTA files from NCBI GenPept
 
         Args:
             mite_acc: the MITE accession
             genpept_acc: the NCBI GenBank accession
+
+        Returns:
+            Tuple of path and data for storage
         """
         handle = Entrez.efetch(
             db="protein", id=genpept_acc, rettype="fasta", retmode="text"
@@ -208,15 +215,17 @@ class FastaManager(BaseModel):
         lines[0] = f">{mite_acc} {genpept_acc}"
         fasta_data = "\n".join(lines)
 
-        with open(self.fasta.joinpath(f"{mite_acc}.fasta"), "w") as fout:
-            fout.write(fasta_data)
+        return (self.fasta.joinpath(f"{mite_acc}.fasta"), fasta_data)
 
-    def download_uniprot(self: Self, mite_acc: str, uniprot_acc: str) -> None:
+    def download_uniprot(self: Self, mite_acc: str, uniprot_acc: str) -> tuple:
         """Download protein FASTA files from UniProt
 
         Args:
             mite_acc: the MITE accession
             uniprot_acc: the Uniprot accession
+
+        Returns:
+            A tuple of path and data for download
 
         Raises:
             RuntimeError: Could not download UniProt data
@@ -246,5 +255,4 @@ class FastaManager(BaseModel):
 
         lines[0] = f">{mite_acc} {uniprot_acc}"
 
-        with open(self.fasta.joinpath(f"{mite_acc}.fasta"), "w") as fout:
-            fout.write("\n".join(lines))
+        return (self.fasta.joinpath(f"{mite_acc}.fasta"), lines)
