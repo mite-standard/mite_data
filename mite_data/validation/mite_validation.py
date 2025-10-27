@@ -366,7 +366,7 @@ class CicdManager(BaseModel):
                 fasta_mngr.download_ncbi(mite_acc=data["accession"], genpept_acc=ncbi)
 
             uniprot = data["enzyme"]["databaseIds"].get("uniprot", None)
-            if ncbi:
+            if uniprot:
                 fasta_mngr.download_uniprot(
                     mite_acc=data["accession"], uniprot_acc=uniprot
                 )

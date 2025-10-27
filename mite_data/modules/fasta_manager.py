@@ -215,7 +215,7 @@ class FastaManager(BaseModel):
         lines[0] = f">{mite_acc} {genpept_acc}"
         fasta_data = "\n".join(lines)
 
-        return (self.fasta.joinpath(f"{mite_acc}.fasta"), fasta_data)
+        return self.fasta.joinpath(f"{mite_acc}.fasta"), fasta_data
 
     def download_uniprot(self: Self, mite_acc: str, uniprot_acc: str) -> tuple:
         """Download protein FASTA files from UniProt
@@ -244,15 +244,15 @@ class FastaManager(BaseModel):
 
         if response is None:
             raise RuntimeError(
-                f"{mite_acc}: UniProt download failed on ID {uniprot_acc}."
+                f"{mite_acc}: UniProt download failed on ID {uniprot_acc}"
             )
 
         lines = response.text.strip().splitlines()
         if len(lines) <= 1:
             raise RuntimeError(
-                f"{mite_acc}: UniProt download provided no sequence for ID {uniprot_acc}."
+                f"{mite_acc}: UniProt download provided no sequence for ID {uniprot_acc}"
             )
 
         lines[0] = f">{mite_acc} {uniprot_acc}"
 
-        return (self.fasta.joinpath(f"{mite_acc}.fasta"), lines)
+        return self.fasta.joinpath(f"{mite_acc}.fasta"), lines
