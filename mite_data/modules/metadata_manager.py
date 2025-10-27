@@ -129,166 +129,288 @@ from importlib import metadata
 from pathlib import Path
 from typing import Self
 
+import pandas as pd
 import requests
-from pydantic import BaseModel, DirectoryPath
+from Bio import Entrez, SeqIO
+from pydantic import BaseModel, DirectoryPath, model_validator
 
 logger = logging.getLogger("mite_data")
-
-
-class MibigManager(BaseModel):
-    """Download data and prepare for validation use
-
-    Attributes:
-        record_url: Zenodo URL for mibig: always resolves to latest version
-        location: the location to download data to
-        record: path to the record file
-    """
-
-    record_url: str = "https://zenodo.org/api/records/13367755"
-    location: Path = Path(__file__).parent.parent.joinpath("mibig")
-    record: Path = Path(__file__).parent.parent.joinpath("mibig/mibig_proteins.fasta")
-    proteins: Path = Path(__file__).parent.parent.joinpath("mibig/mibig_proteins.json")
-
-    def run(self) -> None:
-        """Call methods for downloading and moving data"""
-
-        logger.info("MibigManager: Started")
-
-        self.location.mkdir(exist_ok=True)
-
-        if not self.record.exists():
-            self.download_data()
-
-        if not self.proteins.exists():
-            self.organize_data()
-
-        logger.info("MibigManager: Completed")
-
-    def download_data(self) -> None:
-        """Download data from Zenodo
-
-        Raises:
-            RuntimeError: Could not download files
-        """
-        response_metadata = requests.get(self.record_url)
-        if response_metadata.status_code != 200:
-            raise RuntimeError(
-                f"Error fetching 'mibig' record metadata: {response_metadata.status_code}"
-            )
-
-        record_metadata = response_metadata.json()
-
-        for entry in record_metadata["files"]:
-            if entry["key"].endswith("fasta"):
-                response_data = requests.get(entry["links"]["self"])
-
-                if response_data.status_code != 200:
-                    raise RuntimeError(
-                        f"Error downloading 'mibig' record: {response_data.status_code}"
-                    )
-
-                with open(self.record, "wb") as f:
-                    f.write(response_data.content)
-
-        if not self.record.exists():
-            raise RuntimeError(
-                f"Could not find the mibig fasta file in its Zenodo repository (record URL: {self.record_url})"
-            )
-
-    def organize_data(self) -> None:
-        """Extract data, move to location
-
-        Raises:
-            NotADirectoryError: directory not unzipped in expected location
-            RuntimeError: Could not determine data location in downloaded folder
-        """
-        mibig_prot = {}
-
-        with open(self.record) as infile:
-            for line in infile.readlines():
-                if line.startswith(">"):
-                    accs = line.split("|")
-                    mibig = accs[0].removeprefix(">").split(".")[0]
-                    genbank = accs[-1].replace("\n", "")
-
-                if mibig in mibig_prot:
-                    mibig_prot[mibig].add(genbank)
-                else:
-                    mibig_prot[mibig] = set([genbank])
-
-        out = {}
-        for key, val in mibig_prot.items():
-            out[key] = list(val)
-
-        with open(self.proteins, "w", encoding="utf-8") as outfile:
-            outfile.write(json.dumps(out, indent=2, ensure_ascii=False))
 
 
 class MetadataManager(BaseModel):
     """Manage metadata collection from MITE entries.
 
     Attributes:
-        src: a Path towards the source directory
-        target: a Path towards the target (storage) directory
-        metadata_general: a dict collecting MITE metadata with MITE IDs as keys for internal use
-        metadata_mibig: a dict collecting MITE metadata
+        src: MITE data dir path
+        meta: metadata storeage path
+        mibig: MIBiG data path
+        mibig_data: pre-extracted BGC-protein mappings
     """
 
     src: DirectoryPath = Path(__file__).parent.parent.joinpath("data/")
-    target: DirectoryPath = Path(__file__).parent.parent.joinpath("metadata/")
-    mibig_proteins: Path = Path(__file__).parent.parent.joinpath(
-        "mibig/mibig_proteins.json"
-    )
-    mibig_ref: dict = {}
-    metadata_general: dict = {
-        "version_mite_data": f"{metadata.version('mite_data')}",
-        "entries": {},
-    }
-    metadata_mibig: dict = {
-        "version_mite_data": f"{metadata.version('mite_data')}",
-        "entries": {},
-    }
+    meta: DirectoryPath = Path(__file__).parent.parent.joinpath("metadata/")
+    mibig: DirectoryPath = Path(__file__).parent.parent.joinpath("mibig/")
+    mibig_data: dict = {}
+    meta_gen: dict = {}
+    meta_mibig: dict = {}
 
-    def run(self: Self) -> None:
-        """Class entry point to run methods"""
-        logger.info("Started MetadataManager.")
+    @model_validator(mode="after")
+    def populate_mibig_data(self):
+        """Poputates mibig data
 
-        mibig_manager = MibigManager()
-        mibig_manager.run()
-
-        with open(self.mibig_proteins) as file_in:
-            self.mibig_ref = json.load(file_in)
-
-        self.collect_metadata()
-        self.export_json()
-        logger.info("Completed MetadataManager.")
-
-    def collect_metadata(self: Self) -> None:
-        """Method to access and collect metadata from MITE entries"""
-        for infile in self.src.iterdir():
-            with open(infile) as file_in:
-                mite_json = json.load(file_in)
-            self.extract_metadata_general(mite=mite_json)
-            self.extract_metadata_mibig(mite=mite_json)
-
-    def extract_metadata_general(self: Self, mite: dict) -> None:
-        """Extract and stores metadata with MITE IDs as keys
-
-        mite: the MITE JSON derived dict to extract data from
+        Raises:
+            ValueError: MIBiG directory not found
         """
-        self.metadata_general["entries"][mite["accession"]] = {
-            "status": mite["status"],
-            "enzyme_name": mite["enzyme"]["name"],
-            "enzyme_description": mite.get("enzyme", {}).get(
-                "description", "No description available"
-            ),
-            "enzyme_ids": mite["enzyme"]["databaseIds"],
+        if not self.mibig.exists():
+            raise ValueError(f"MIBiG data directory does not exist - ABORT")
+        with open(self.mibig.joinpath("mibig_proteins.json")) as file_in:
+            self.mibig_data = json.load(file_in)
+        return self
+
+    @model_validator(mode="after")
+    def populate_metadata(self):
+        """Poputates metadata if exists"""
+        if self.meta.joinpath("metadata_general.json").exists():
+            with open(self.meta.joinpath("metadata_general.json")) as fin:
+                self.meta_gen = json.load(fin)
+        else:
+            self.meta_gen = {
+                "version_mite_data": f"{metadata.version('mite_data')}",
+                "entries": {},
+            }
+
+        if self.meta.joinpath("metadata_mibig.json").exists():
+            with open(self.meta.joinpath("metadata_mibig.json")) as fin:
+                self.meta_mibig = json.load(fin)
+        else:
+            self.meta_mibig = {
+                "version_mite_data": f"{metadata.version('mite_data')}",
+                "entries": {},
+            }
+        return self
+
+    def update_single(self, path: Path) -> None:
+        """Update metadata of a single file
+
+        Arguments:
+            path: a file path
+        """
+        logger.info(f"Started MetadataManager on file {path.name}.")
+
+        data = self.load_json(path=path)
+        self.extr_meta_gen(data=data)
+        self.extr_meta_mibig(data=data)
+        self.dump_json(
+            path=self.meta.joinpath("metadata_general.json"), data=self.meta_gen
+        )
+        self.dump_json(
+            path=self.meta.joinpath("metadata_mibig.json"), data=self.meta_mibig
+        )
+
+        logger.info(f"Completed MetadataManager on file {path.name}.")
+
+    def update_all(self) -> None:
+        """Update metadata of all files (overwrite all)"""
+        logger.info("Started MetadataManager on all files.")
+
+        for path in self.src.iterdir():
+            data = self.load_json(path=path)
+            self.extr_meta_gen(data=data)
+            self.extr_meta_mibig(data=data)
+
+        self.dump_json(
+            path=self.meta.joinpath("metadata_general.json"), data=self.meta_gen
+        )
+        self.dump_json(
+            path=self.meta.joinpath("metadata_mibig.json"), data=self.meta_mibig
+        )
+
+        logger.info("Completed MetadataManager on all files.")
+
+    @staticmethod
+    def load_json(path: Path) -> dict:
+        """Load JSON-based data
+
+        Returns:
+            The loaded JSON as dict
+        """
+        with open(path) as fin:
+            return json.load(fin)
+
+    @staticmethod
+    def dump_json(path: Path, data: dict) -> None:
+        """Dump dict as JSON
+
+        Params:
+            path: the path to dump data to
+            data: the data to dump
+        """
+        with open(path, "w", encoding="utf-8") as fout:
+            fout.write(json.dumps(data, indent=2, ensure_ascii=False))
+
+    def dump_summary_csv(self):
+        """Dump summary in csv format for mite_web"""
+        dump = {
+            "accession": [],
+            "status": [],
+            "name": [],
+            "tailoring": [],
+            "cofactors_organic": [],
+            "cofactors_inorganic": [],
+            "description": [],
+            "reaction_description": [],
+            "organism": [],
+            "domain": [],
+            "kingdom": [],
+            "phylum": [],
+            "class": [],
+            "order": [],
+            "family": [],
         }
 
-    def extract_metadata_mibig(self: Self, mite: dict) -> None:
-        """Extract and stores metadata with MIBiG IDs as keys
+        keys = sorted(self.meta_gen["entries"].keys())
+        summary = {"entries": {key: self.meta_gen["entries"][key] for key in keys}}
 
-        mite: the MITE JSON derived dict to extract data from
+        for key, val in summary["entries"].items():
+            dump["accession"].append(key)
+            dump["status"].append(val["status"])
+            dump["name"].append(val["enzyme_name"])
+            dump["tailoring"].append(val["tailoring"])
+            dump["cofactors_organic"].append(val["cofactors_organic"])
+            dump["cofactors_inorganic"].append(val["cofactors_inorganic"])
+            dump["description"].append(val["enzyme_description"])
+            dump["reaction_description"].append(val["reaction_description"])
+            dump["organism"].append(val["organism"])
+            dump["domain"].append(val["domain"])
+            dump["kingdom"].append(val["kingdom"])
+            dump["phylum"].append(val["phylum"])
+            dump["class"].append(val["class"])
+            dump["order"].append(val["order"])
+            dump["family"].append(val["family"])
+
+        df = pd.DataFrame(dump)
+        df.to_csv(self.meta.joinpath("summary.csv"), index=False)
+
+    def extr_meta_gen(self, data: dict) -> None:
+        """Extract metadata, store formatted for 'general'
+
+        Params:
+            data: the MITE json
+        """
+        origin = self.get_taxonomy(data)
+
+        meta = {
+            "accession": data["accession"],
+            "status": data["status"],
+            "status_icon": '<i class="bi bi-check-circle-fill"></i>'
+            if data.get("status") == "active"
+            else '<i class="bi bi-circle"></i>',
+            "enzyme_name": data["enzyme"]["name"],
+            "enzyme_description": data.get("enzyme", {}).get(
+                "description", "No description available"
+            ),
+            "enzyme_ids": data["enzyme"]["databaseIds"],
+            "tailoring": "|".join(
+                sorted(
+                    {
+                        tailoring
+                        for reaction in data.get("reactions")
+                        for tailoring in reaction.get("tailoring", [])
+                    }
+                )
+            ),
+            "reaction_description": data["reactions"][0].get(
+                "description", "No description"
+            ),
+            "cofactors_organic": "N/A",
+            "cofactors_inorganic": "N/A",
+            "organism": origin["organism"],
+            "domain": origin["domain"],
+            "kingdom": origin["kingdom"],
+            "phylum": origin["phylum"],
+            "class": origin["class"],
+            "order": origin["order"],
+            "family": origin["family"],
+        }
+
+        if val := data["enzyme"].get("cofactors", {}).get("organic", []):
+            meta["cofactors_organic"] = "|".join(sorted(set(val)))
+
+        if val := data["enzyme"].get("cofactors", {}).get("inorganic", []):
+            meta["cofactors_inorganic"] = "|".join(sorted(set(val)))
+
+        self.meta_gen["entries"][data["accession"]] = meta
+
+    @staticmethod
+    def get_taxonomy(data: dict) -> dict:
+        """Download the organism identifier
+
+        Arguments:
+            data: mite entry
+
+        Returns:
+            A dict of organism info
+        """
+        origin = {
+            "organism": "Not found",
+            "domain": "Not found",
+            "kingdom": "Not found",
+            "phylum": "Not found",
+            "class": "Not found",
+            "order": "Not found",
+            "family": "Not found",
+        }
+
+        if acc := data["enzyme"]["databaseIds"].get("uniprot"):
+            if (
+                response := requests.get(
+                    f"https://rest.uniprot.org/uniprotkb/{acc}.json"
+                )
+            ).status_code == 200 or (
+                response := requests.get(f"https://rest.uniprot.org/uniparc/{acc}.json")
+            ).status_code == 200:
+                content = response.json()
+                record = content.get("organism", {}).get("lineage", None)
+                try:
+                    origin["domain"] = record[0] or "Not found"
+                    origin["kingdom"] = record[1] or "Not found"
+                    origin["phylum"] = record[2] or "Not found"
+                    origin["class"] = record[3] or "Not found"
+                    origin["order"] = record[4] or "Not found"
+                    origin["family"] = record[5] or "Not found"
+                    origin["organism"] = (
+                        content.get("organism", {}).get("scientificName") or "Not found"
+                    )
+                except Exception as e:
+                    logger.warning(
+                        f"Did not find organism information for '{acc}' ({data["accession"]}): {e!s}"
+                    )
+                return origin
+
+        if acc := data["enzyme"]["databaseIds"].get("genpept"):
+            try:
+                handle = Entrez.efetch(
+                    db="protein", id=acc, rettype="gb", retmode="text"
+                )
+                record = SeqIO.read(handle, "genbank")
+                origin["domain"] = record.annotations.get("taxonomy")[0] or "Not found"
+                origin["kingdom"] = record.annotations.get("taxonomy")[1] or "Not found"
+                origin["phylum"] = record.annotations.get("taxonomy")[2] or "Not found"
+                origin["class"] = record.annotations.get("taxonomy")[3] or "Not found"
+                origin["order"] = record.annotations.get("taxonomy")[4] or "Not found"
+                origin["family"] = record.annotations.get("taxonomy")[5] or "Not found"
+                origin["organism"] = record.annotations.get("organism") or "Not found"
+                handle.close()
+            except Exception as e:
+                logger.warning(
+                    f"Did not find organism information for '{acc}' ({data["accession"]}): {e!s}"
+                )
+            return origin
+
+        return origin
+
+    def extr_meta_mibig(self: Self, data: dict) -> None:
+        """Extract and stores metadata with MIBiG IDs as keys
 
         retain only if:
         - mite entry has mibig accession
@@ -297,65 +419,59 @@ class MetadataManager(BaseModel):
 
         add:
         - if no description, add placeholder description
+
+        Params:
+            data: the MITE JSON derived dict to extract data from
+
         """
-        mibig_acc = mite.get("enzyme", {}).get("databaseIds", {}).get("mibig")
-        if mibig_acc is None:
-            logger.warning(f'{mite["accession"]}: no MIBiG-accession - SKIP')
+        mite_acc = data["accession"]
+        mibig_acc = data["enzyme"]["databaseIds"].get("mibig")
+        if not mibig_acc:
+            logger.warning(f"{mite_acc}: no MIBiG-accession - SKIP")
             return
 
-        if mibig_acc not in self.mibig_ref:
+        if mibig_acc not in self.mibig_data:
             logger.warning(
-                f'{mite["accession"]}: {mibig_acc!s} is not found in MIBiG fasta file - SKIP'
+                f"{mite_acc}: {mibig_acc!s} is not found in MIBiG fasta file - SKIP"
             )
             return
 
-        genpept = mite.get("enzyme", {}).get("databaseIds", {}).get("genpept")
-        if genpept is None:
-            logger.warning(f'{mite["accession"]}: no GenPept-accession - SKIP')
+        genpept = data["enzyme"]["databaseIds"].get("genpept")
+        if not genpept:
+            logger.warning(f"{mite_acc}: no GenPept-accession - SKIP")
             return
 
-        if genpept not in self.mibig_ref[mibig_acc]:
+        if genpept not in self.mibig_data[mibig_acc]:
             logger.warning(
-                f'{mite["accession"]}: GenPept-accession {genpept!s} is not found in the corresponding MIBiG BGC - SKIP'
+                f"{mite_acc}: GenPept-accession {genpept!s} is not found in the corresponding MIBiG BGC - SKIP"
             )
             return
 
         entry = {
-            "mite_accession": mite["accession"],
-            "mite_url": f"https://bioregistry.io/mite:{mite['accession']}",
-            "status": mite["status"],
-            "enzyme_name": mite["enzyme"]["name"],
-            "enzyme_description": mite["enzyme"].get(
+            "mite_accession": mite_acc,
+            "mite_url": f"https://bioregistry.io/mite:{mite_acc}",
+            "status": data["status"],
+            "enzyme_name": data["enzyme"]["name"],
+            "enzyme_description": data["enzyme"].get(
                 "description", "No description available"
             ),
-            "enzyme_ids": mite["enzyme"]["databaseIds"],
+            "enzyme_ids": data["enzyme"]["databaseIds"],
             "enzyme_tailoring": "|".join(
                 sorted(
                     {
                         tailoring
-                        for reaction in mite.get("reactions")
+                        for reaction in data.get("reactions")
                         for tailoring in reaction.get("tailoring", [])
                     }
                 )
             ),
-            "enzyme_refs": mite["enzyme"]["references"],
+            "enzyme_refs": data["enzyme"]["references"],
         }
 
-        if mibig_acc in self.metadata_mibig["entries"]:
-            self.metadata_mibig["entries"][mibig_acc].append(entry)
+        if mibig_acc in self.meta_mibig["entries"]:
+            if mite_acc not in [
+                i["mite_accession"] for i in self.meta_mibig["entries"][mibig_acc]
+            ]:
+                self.meta_mibig["entries"][mibig_acc].append(entry)
         else:
-            self.metadata_mibig["entries"][mibig_acc] = [entry]
-
-    def export_json(self: Self) -> None:
-        """Exports collected metadata to target dir"""
-        with open(
-            self.target.joinpath("metadata_general.json"), "w", encoding="utf-8"
-        ) as outfile:
-            outfile.write(
-                json.dumps(self.metadata_general, indent=2, ensure_ascii=False)
-            )
-
-        with open(
-            self.target.joinpath("metadata_mibig.json"), "w", encoding="utf-8"
-        ) as outfile:
-            outfile.write(json.dumps(self.metadata_mibig, indent=2, ensure_ascii=False))
+            self.meta_mibig["entries"][mibig_acc] = [entry]

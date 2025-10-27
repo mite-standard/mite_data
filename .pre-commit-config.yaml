@@ -10,16 +10,31 @@ repos:
     - id: ruff
       args: [ --fix ]
     - id: ruff-format
+- repo: https://github.com/astral-sh/uv-pre-commit
+  rev: 0.9.5
+  hooks:
+    - id: uv-lock
 - repo: local
   hooks:
-    - id: mite-validate
-      name: mite-validate
-      entry: uv run python .github/mite_validation.py
+    - id: mite-update
+      name: mite-update
+      entry: uv run python mite_data/main.py
       language: system
       types: [ json ]
       exclude: "metadata|reserved"
+    - id: mite-validate
+      name: mite-validate
+      entry: uv run python mite_data/validation/mite_validation.py
+      language: system
+      types: [ json ]
+      exclude: "metadata|reserved"
+    - id: uv-upgrade
+      name: uv-upgrade
+      pass_filenames: false
+      entry: uv lock --upgrade
+      language: system
     - id: pytest
       name: pytest
-      entry: uv run pytest tests/
+      entry: uv run pytest
+      pass_filenames: false
       language: system
-      types: [ file, python ]

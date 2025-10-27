@@ -23,6 +23,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Reworked reaction SMARTS to implement editorial decision (removed residual product)."
+        },
+        {
+            "version": "3",
+            "date": "2025-10-27",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Replaced retired UniProtKB ID with UniParc ID"
         }
     ],
     "enzyme": {
@@ -32,7 +43,7 @@
             "doi:10.1002/anie.201808028"
         ],
         "databaseIds": {
-            "uniprot": "A0A346D7L2",
+            "uniprot": "UPI000E33162C",
             "genpept": "AXM43051.1",
             "mibig": "BGC0001945"
         }

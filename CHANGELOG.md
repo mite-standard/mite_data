@@ -6,6 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [1.19] 27-10-2025
+
+### Added
+
+- Checks for validity of uniprot/genpept/wikidata
+- Generation of molecule files for mite_web
+- Added new entries
+
+### Changed
+
+- Fixed retired uniprot IDs
+
+
 ## [1.18] 30-09-2025
 
 ### Changed

@@ -14,6 +14,17 @@
                 "0000-0003-0443-9902"
             ],
             "comment": "Initial entry. Reviewer fixed reactionSMARTS:reactionSMARTS."
+        },
+        {
+            "version": "2",
+            "date": "2025-10-27",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Replaced retired UniProtKB ID with UniParc ID"
         }
     ],
     "enzyme": {
@@ -23,7 +34,7 @@
             "doi:10.1038/s41467-021-25798-8"
         ],
         "databaseIds": {
-            "uniprot": "A0A2H4T153",
+            "uniprot": "UPI000938C7BA",
             "genpept": "ATY69565.1",
             "mibig": "BGC0001611"
         }
