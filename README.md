@@ -24,7 +24,7 @@ For more information, visit the [MITE Data Standard Organization page](https://g
 
 ### MITE Accession Reservation
 
-You can reserve MITE Accession IDs for your to-be-published manuscript. Please read more about it in [this issue](https://github.com/mite-standard/mite_data/issues/132).
+You can reserve MITE Accession IDs for your to-be-published manuscript. Please read more about it in [this discussion](https://github.com/orgs/mite-standard/discussions/7).
 
 ## Documentation
 
@@ -35,12 +35,13 @@ These files are created by user submissions via the [MITE web portal](https://mi
 From there, the [MITE web portal](https://mite.bioinformatics.nl/) and other tools such as antiSMASH pull the data for their own use.
 
 This repository also provides some CLI functionality to generate auxiliary files:
-- Metadata files summarizing information of all MITE entries in a single file (`mite_data/metadata`)
+- Metadata files summarizing information of MITE entries (`mite_data/metadata`)
 - Protein FASTA-files for all active (i.e. non-retired) MITE entries (`mite_data/fasta`)
 
 For feature requests and suggestions, please refer to the [MITE Discussion forum](https://github.com/orgs/mite-standard/discussions/).
 
-For simple data submissions, please refer to the [MITE web portal](https://mite.bioinformatics.nl/). For more complex or large-scale submission, please get in touch with us by e.g. opening an [Issue](http://github.com/mite-standard/mite_data/issues).
+For simple data submissions, please refer to the [MITE web portal](https://mite.bioinformatics.nl/). 
+For more complex or large-scale submission, please get in touch with us by e.g. opening an [Issue](http://github.com/mite-standard/mite_data/issues).
 
 ## System Requirements
 
@@ -63,21 +64,34 @@ Dependencies including exact versions are specified in the [pyproject.toml](./py
 ```commandline
 git clone https://github.com/mite-standard/mite_data
 uv sync
+uv run pre-commit install
 ```
 
 ## Quick Start
 
-To update the auxiliary files, run:
+This CLI serves two purposes:
 
-- `uv run python ./mite_data/main.py`
+- update missing auxiliary files
+- validate files
 
-To validate a single MITE file, run:
+Normally, the CLI automatically start in single-file mode, triggered by `pre-commit`.
+Therefore, whenever a file is committed, `pre-commit` will download missing files, update the metadata, and perform checks.
 
-- `uv run python .github/mite_validation.py <your-mite-file>.json`
+This is equivalent to:
 
-To validate all existing MITE files, run:
+```commandline
+uv run python mite_data/main.py <your-mite-file>.json
+uv run python mite_data/validation/mite_validation.py <your-mite-file>.json
+```
 
-- `uv run python .github/mite_validation.py `
+In some exceptional cases, you may want to trigger a full regeneration of all files.
+
+**Nota bene: This will overwrite all manual taxonomy annotations in the `metadata_general.json` file**
+
+```commandline
+uv run python ./mite_data/main.py
+uv run python mite_data/validation/mite_validation.py 
+```
 
 ## Attribution
 
@@ -97,15 +111,11 @@ This work was supported by the Netherlands Organization for Scientific Research 
 
 *Nota bene: for details on how to contribute to the MITE project, please refer to [CONTRIBUTING](CONTRIBUTING.md).*
 
+For installation instruction, see [above](#installation-guide)
+
 #### Installation with `uv` from GitHub
 
 *Note: assumes that `uv` is installed locally - see the methods described [here](https://docs.astral.sh/uv/getting-started/installation/)* 
-
-```commandline
-git clone https://github.com/mite-standard/mite_data
-uv sync
-uv run pre-commit install
-```
 
 All tests should be passing
 ```commandline
@@ -114,7 +124,7 @@ uv run pytest
 
 ### Updating and CI/CD
 
-*Nota bene:* All described procedures require `pre-commit` to be installed and initiated .
+*Nota bene:* All described procedures require `pre-commit` to be installed and initiated.
 
 CI/CD via GitHub Actions runs on every PR and push to the `main` branch.
 
@@ -137,7 +147,6 @@ A new release created on the [mite_data](https://github.com/mite-standard/mite_d
    - Create a local branch and push to remote with `git checkout -b <release>`
    - Update version in `pyproject.toml` and `CHANGELOG.md`
    - Sync the package version with `uv sync`
-   - Update metadata and add fasta files with `uv run python ./mite_data/main.py && uv run python .github/mite_validation.py`
    - Push to remote using `git push --set-upstream origin <release>`
 3. Create PR on GitHub
    - Request a review (if applicable)
@@ -151,12 +160,6 @@ A new release created on the [mite_data](https://github.com/mite-standard/mite_d
 ##### `pre-commit`
 
 *Nota bene*: `pre-commit` applies checks only to new/modified files. 
-
-**Summary of checks**
-
-- `ruff` checks and linting
-- `mite-validate`: runs `.github/mite_validation.py/run_file()`
-- `pytest`: runs pytest
 
 ##### GitHub CI/CD
 
@@ -173,6 +176,7 @@ Runs `.github/mite_validation.py/run_file()`:
 - File is release-ready (correct status, accession not one of [reserved](mite_data/reserved_accessions.json))
 - No duplicates (based on shared GenPept and UniProt IDs)
 - Validation checks of `mite_extras` pass
+- Validate if all database Ids are correct (using `mite_extras`)
 
 **On push to main**
 
@@ -190,6 +194,7 @@ Runs `.github/mite_validation.py/run_data_dir()`:
 - Accessions in headers of fasta files match their corresponding IDs in MITE files
 - No duplicates (based on shared GenPept and UniProt IDs)
 - Validation checks of `mite_extras` pass
+- Validate if all database Ids are correct (using `mite_extras`)
 
 Additional checks:
 

@@ -214,6 +214,7 @@ class CicdManager(BaseModel):
         self.check_release_ready(data=data)
         self.check_duplicates(data=data)
         self.validate_entries_passing(data=data)
+        self.validate_db_ids(data=data)
 
         if len(self.issues) != 0:
             raise RuntimeError("\n".join(self.issues))
@@ -252,6 +253,7 @@ class CicdManager(BaseModel):
             self.check_duplicates(data=data)
             self.check_fasta_header(data=data)
             self.validate_entries_passing(data=data)
+            self.validate_db_ids(data=data)
 
         if len(self.issues) != 0:
             raise RuntimeError("\n".join(self.issues))
