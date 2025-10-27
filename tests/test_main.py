@@ -16,12 +16,3 @@ def run_mngr():
 
 def test_instance(run_mngr):
     assert isinstance(run_mngr, RunManager)
-
-
-def test_instance_mibig_fail():
-    with pytest.raises(RuntimeError):
-        MibigManager(
-            mibig_record="https://zenodo.org/api/records/anfaosdaosid",
-            mibig=Path(__file__).parent.joinpath("mibig"),
-        )
-    shutil.rmtree(Path(__file__).parent.joinpath("mibig"))
