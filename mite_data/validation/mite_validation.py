@@ -183,6 +183,7 @@ class CicdManager(BaseModel):
 
     @model_validator(mode="after")
     def get_reserved(self):
+        """Get all reserved entries"""
         with open(self.reserved_path) as infile:
             data = json.load(infile)
         if data.get("reserved"):
@@ -204,9 +205,6 @@ class CicdManager(BaseModel):
         path = Path(path)
         if not path.exists():
             raise FileNotFoundError(f"Could not find file '{path}'")
-
-        if not path.name.startswith("MITE"):
-            return
 
         self.check_file_naming(path)
 
