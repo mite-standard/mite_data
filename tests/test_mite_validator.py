@@ -52,17 +52,17 @@ def test_run_dir(cicd_mngr):
 
 def test_check_file_naming_valid(cicd_mngr):
     cicd_mngr.check_file_naming(path=Path("MITE0000001.json"))
-    assert len(cicd_mngr.issues) == 0
+    assert len(cicd_mngr.errors) == 0
 
 
 def test_check_file_naming_invalid(cicd_mngr):
     cicd_mngr.check_file_naming(path=Path("asdfasd"))
-    assert len(cicd_mngr.issues) == 1
+    assert len(cicd_mngr.errors) == 1
 
 
 def test_check_release_ready_valid(cicd_mngr, data):
     cicd_mngr.check_release_ready(data)
-    assert len(cicd_mngr.issues) == 0
+    assert len(cicd_mngr.errors) == 0
 
 
 def test_check_release_ready_invalid(cicd_mngr, data):
@@ -70,12 +70,12 @@ def test_check_release_ready_invalid(cicd_mngr, data):
     data_cp["status"] = "pending"
     data_cp["accession"] = "MITE9999999"
     cicd_mngr.check_release_ready(data_cp)
-    assert len(cicd_mngr.issues) == 2
+    assert len(cicd_mngr.errors) == 2
 
 
 def test_check_duplicates_valid(cicd_mngr, data):
     cicd_mngr.check_duplicates(data)
-    assert len(cicd_mngr.issues) == 0
+    assert len(cicd_mngr.errors) == 0
 
 
 def test_check_duplicates_invalid(cicd_mngr, data):
@@ -83,47 +83,47 @@ def test_check_duplicates_invalid(cicd_mngr, data):
     cicd_mngr.genpept["AAD28496.1"].append("MITE99999")
     cicd_mngr.uniprot["Q9X2V9"].append("MITE99999")
     cicd_mngr.check_duplicates(data)
-    assert len(cicd_mngr.issues) == 2
+    assert len(cicd_mngr.errors) == 2
 
 
 def test_check_fasta_header_valid(cicd_mngr, data):
     cicd_mngr.check_fasta_header(data)
-    assert len(cicd_mngr.issues) == 0
+    assert len(cicd_mngr.errors) == 0
 
 
 def test_check_fasta_header_genpept_invalid(cicd_mngr, data):
     data_cp = copy.deepcopy(data)
     data_cp["enzyme"]["databaseIds"]["genpept"] = "sdtzuio"
     cicd_mngr.check_fasta_header(data_cp)
-    assert len(cicd_mngr.issues) == 1
+    assert len(cicd_mngr.errors) == 1
 
 
 def test_check_fasta_header_filepath_invalid(cicd_mngr, data):
     data_cp = copy.deepcopy(data)
     data_cp["accession"] = "qwertzuji"
     cicd_mngr.check_fasta_header(data_cp)
-    assert len(cicd_mngr.issues) == 1
+    assert len(cicd_mngr.errors) == 1
 
 
 def test_validate_entries_passing_valid(cicd_mngr, data):
     cicd_mngr.validate_entries_passing(data)
-    assert len(cicd_mngr.issues) == 0
+    assert len(cicd_mngr.errors) == 0
 
 
 def test_validate_entries_passing_invalid(cicd_mngr, data):
     data_cp = copy.deepcopy(data)
     data_cp["reactions"][0]["reactionSMARTS"] = r"[c]>>[c]"
     cicd_mngr.validate_entries_passing(data_cp)
-    assert len(cicd_mngr.issues) == 1
+    assert len(cicd_mngr.errors) == 1
 
 
 def test_validate_db_ids_valid(cicd_mngr, data):
     cicd_mngr.validate_db_ids(data)
-    assert len(cicd_mngr.issues) == 0
+    assert len(cicd_mngr.errors) == 0
 
 
 def test_validate_db_ids_invalid(cicd_mngr, data):
     data_cp = copy.deepcopy(data)
     data_cp["enzyme"]["databaseIds"]["genpept"] = "sdtzuio"
     cicd_mngr.validate_db_ids(data_cp)
-    assert len(cicd_mngr.issues) == 1
+    assert len(cicd_mngr.errors) == 1

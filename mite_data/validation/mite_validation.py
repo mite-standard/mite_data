@@ -143,7 +143,8 @@ class CicdManager(BaseModel):
         src: a Path towards the source directory
         fasta: a Path towards to directory containing accompanying fasta files
         reserved_path: Path to json file of reserved accessions
-        issues: all issues detected during run
+        errors: all errors detected during run
+        warnings: all warnings (do not raise errors)
         genpept: a list of genbank accessions in mite_data
         uniprot: a list of uniprot accessions in mite_data
         reserved: a list of reserved accessions (mustn't be used)
@@ -154,7 +155,8 @@ class CicdManager(BaseModel):
     reserved_path: FilePath = Path(__file__).parent.parent.joinpath(
         "reserved_accessions.json"
     )
-    issues: list = []
+    errors: list = []
+    warnings: list = []
     genpept: dict = {}
     uniprot: dict = {}
     reserved: list = []
@@ -183,7 +185,6 @@ class CicdManager(BaseModel):
 
     @model_validator(mode="after")
     def get_reserved(self):
-        """Get all reserved entries"""
         with open(self.reserved_path) as infile:
             data = json.load(infile)
         if data.get("reserved"):
@@ -200,11 +201,14 @@ class CicdManager(BaseModel):
 
         Raises:
             FileNotFoundError: mite file or mite fasta file not found
-            RuntimeError: one or more issues with files detected
+            RuntimeError: one or more errors with files detected
         """
         path = Path(path)
         if not path.exists():
             raise FileNotFoundError(f"Could not find file '{path}'")
+
+        if not path.name.startswith("MITE"):
+            return
 
         self.check_file_naming(path)
 
@@ -216,8 +220,8 @@ class CicdManager(BaseModel):
         self.validate_entries_passing(data=data)
         self.validate_db_ids(data=data)
 
-        if len(self.issues) != 0:
-            raise RuntimeError("\n".join(self.issues))
+        if len(self.errors) != 0:
+            raise RuntimeError("\n".join(self.errors))
 
     def run_data_dir(self: Self) -> None:
         """Run all files against validation functions
@@ -226,7 +230,7 @@ class CicdManager(BaseModel):
 
         Raises:
             FileNotFoundError: mite file not found
-            RuntimeError: one or more issues with files detected
+            RuntimeError: one or more errors with files detected
         """
         for path in self.src.iterdir():
             if not path.exists():
@@ -238,14 +242,14 @@ class CicdManager(BaseModel):
                 data = json.load(infile)
             if data["status"] != "active":
                 if self.fasta.joinpath(f"{path.stem}.fasta").exists():
-                    self.issues.append(
+                    self.errors.append(
                         f"File '{path.name}' is not active but still has an accompanying fasta file - remove it. \n"
                         f"{self.fasta.joinpath(f'{path.stem}.fasta')}"
                     )
                 continue
 
             if not self.fasta.joinpath(f"{path.stem}.fasta").exists():
-                self.issues.append(
+                self.errors.append(
                     f"File '{path.name}' does not have an accompanying fasta file."
                 )
 
@@ -255,8 +259,8 @@ class CicdManager(BaseModel):
             self.validate_entries_passing(data=data)
             self.validate_db_ids(data=data)
 
-        if len(self.issues) != 0:
-            raise RuntimeError("\n".join(self.issues))
+        if len(self.errors) != 0:
+            raise RuntimeError("\n".join(self.errors))
 
     def check_file_naming(self: Self, path: Path) -> None:
         """Check if follows naming
@@ -265,7 +269,7 @@ class CicdManager(BaseModel):
             path: a Path object pointing to file
         """
         if not path.name.startswith("MITE") or path.suffix != ".json":
-            self.issues.append(
+            self.errors.append(
                 f"File '{path.name}' does not follow naming convention 'MITEnnnnnnn.json'."
             )
 
@@ -276,12 +280,12 @@ class CicdManager(BaseModel):
             data: the mite entry data
         """
         if data["status"] == "pending":
-            self.issues.append(
+            self.errors.append(
                 f"Entry '{data["accession"]}' has the status flag 'pending'. This must be set to 'active' before release."
             )
 
         if data["accession"] in self.reserved:
-            self.issues.append(
+            self.errors.append(
                 f"The MITE accession '{data["accession"]}' is already reserved. Please change this to another accession number."
             )
 
@@ -296,13 +300,13 @@ class CicdManager(BaseModel):
 
         if acc := data["enzyme"]["databaseIds"].get("genpept", None):
             if len(self.genpept[acc]) > 1:
-                self.issues.append(
+                self.errors.append(
                     f"Multiple entries share the same GenPept ID '{acc}': '{self.genpept[acc]}'"
                 )
 
         if acc := data["enzyme"]["databaseIds"].get("uniprot", None):
             if len(self.uniprot[acc]) > 1:
-                self.issues.append(
+                self.errors.append(
                     f"Multiple entries share the same UniProt ID '{acc}': '{self.uniprot[acc]}'"
                 )
 
@@ -314,7 +318,7 @@ class CicdManager(BaseModel):
         """
         fasta = self.fasta.joinpath(f"{data["accession"]}.fasta")
         if not fasta.exists():
-            self.issues.append(
+            self.errors.append(
                 f"File {fasta.name} expected but missing. Must be added before release!"
             )
             return
@@ -328,7 +332,7 @@ class CicdManager(BaseModel):
         ]
 
         if not accession in ids:
-            self.issues.append(
+            self.errors.append(
                 f"{data["accession"]}: database IDs '{ids}' do not match accession in {data["accession"]}.fasta '{accession}'. \n"
                 "Please check if the IDs were updated but the fasta file not."
             )
@@ -345,12 +349,12 @@ class CicdManager(BaseModel):
             schema_manager = SchemaManager()
             schema_manager.validate_mite(instance=parser.to_json())
         except Exception as e:
-            self.issues.append(
+            self.errors.append(
                 f"Error: entry {data["accession"]} failed validation ({e})."
             )
 
     def validate_db_ids(self: Self, data: dict) -> None:
-        """Check if MITE entry IDs all pass checks
+        """Check if MITE cross-reference IDs can be accessed
 
         Argument:
             data: the mite entry data
@@ -374,7 +378,7 @@ class CicdManager(BaseModel):
                     qid=data["enzyme"]["databaseIds"]["wikidata"]
                 )
         except Exception as e:
-            self.issues.append(
+            self.errors.append(
                 f"Error: entry {data["accession"]} failed validation of DB crosslinks ({e})."
             )
 
