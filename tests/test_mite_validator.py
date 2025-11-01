@@ -60,17 +60,28 @@ def test_check_file_naming_invalid(cicd_mngr):
     assert len(cicd_mngr.errors) == 1
 
 
-def test_check_release_ready_valid(cicd_mngr, data):
-    cicd_mngr.check_release_ready(data)
+def test_check_status_valid(cicd_mngr, data):
+    cicd_mngr.check_status(data)
     assert len(cicd_mngr.errors) == 0
 
 
-def test_check_release_ready_invalid(cicd_mngr, data):
+def test_check_status_invalid(cicd_mngr, data):
     data_cp = copy.deepcopy(data)
     data_cp["status"] = "pending"
+    cicd_mngr.check_status(data_cp)
+    assert len(cicd_mngr.errors) == 1
+
+
+def test_check_accession_valid(cicd_mngr, data):
+    cicd_mngr.check_accession(data)
+    assert len(cicd_mngr.errors) == 0
+
+
+def test_check_accession_invalid(cicd_mngr, data):
+    data_cp = copy.deepcopy(data)
     data_cp["accession"] = "MITE9999999"
-    cicd_mngr.check_release_ready(data_cp)
-    assert len(cicd_mngr.errors) == 2
+    cicd_mngr.check_accession(data_cp)
+    assert len(cicd_mngr.errors) == 1
 
 
 def test_check_duplicates_valid(cicd_mngr, data):

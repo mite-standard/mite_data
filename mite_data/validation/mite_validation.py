@@ -215,7 +215,8 @@ class CicdManager(BaseModel):
         with open(path) as infile:
             data = json.load(infile)
 
-        self.check_release_ready(data=data)
+        self.check_status(data=data)
+        self.check_accession(data=data)
         self.check_duplicates(data=data)
         self.validate_entries_passing(data=data)
         self.validate_db_ids(data=data)
@@ -253,7 +254,8 @@ class CicdManager(BaseModel):
                     f"File '{path.name}' does not have an accompanying fasta file."
                 )
 
-            self.check_release_ready(data=data)
+            self.check_status(data=data)
+            self.check_accession(data=data)
             self.check_duplicates(data=data)
             self.check_fasta_header(data=data)
             self.validate_entries_passing(data=data)
@@ -273,8 +275,8 @@ class CicdManager(BaseModel):
                 f"File '{path.name}' does not follow naming convention 'MITEnnnnnnn.json'."
             )
 
-    def check_release_ready(self: Self, data: dict) -> None:
-        """Verify that entry does not have the status tag 'pending' or the MITE ID MITE9999999
+    def check_status(self: Self, data: dict) -> None:
+        """Verify that entry does not have the status tag 'pending'
 
         Argument:
             data: the mite entry data
@@ -284,6 +286,12 @@ class CicdManager(BaseModel):
                 f"Entry '{data["accession"]}' has the status flag 'pending'. This must be set to 'active' before release."
             )
 
+    def check_accession(self, data: dict) -> None:
+        """Verify that entry does not have the internally used MITE ID MITE9999999
+
+        Argument:
+            data: the mite entry data
+        """
         if data["accession"] in self.reserved:
             self.errors.append(
                 f"The MITE accession '{data["accession"]}' is already reserved. Please change this to another accession number."
