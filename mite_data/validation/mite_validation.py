@@ -220,6 +220,10 @@ class CicdManager(BaseModel):
         self.check_duplicates(data=data)
         self.validate_entries_passing(data=data)
         self.validate_db_ids(data=data)
+        self.check_match_db_ids(data=data)
+
+        if len(self.warnings) != 0:
+            print("\n".join(self.warnings))
 
         if len(self.errors) != 0:
             raise RuntimeError("\n".join(self.errors))
@@ -362,7 +366,7 @@ class CicdManager(BaseModel):
             )
 
     def validate_db_ids(self: Self, data: dict) -> None:
-        """Check if MITE cross-reference IDs can be accessed
+        """Check if MITE cross-reference IDs can be accessed (=downloaded)
 
         Argument:
             data: the mite entry data
@@ -388,6 +392,40 @@ class CicdManager(BaseModel):
         except Exception as e:
             self.errors.append(
                 f"Error: entry {data["accession"]} failed validation of DB crosslinks ({e})."
+            )
+
+    def check_match_db_ids(self: Self, data: dict) -> None:
+        """Check if uniprot and genpept IDs correspond to each other
+
+        Does currently not work for UniParc - cross-check omitted.
+
+        Argument:
+            data: the mite entry data
+        """
+        id_val = IdValidator()
+
+        uniprot = data["enzyme"]["databaseIds"].get("uniprot", None)
+        genpept = data["enzyme"]["databaseIds"].get("genpept", None)
+
+        if uniprot and uniprot.startswith("UPI"):
+            return
+
+        try:
+            if uniprot and genpept:
+                id_val.cleanup_ids(genpept=genpept, uniprot=uniprot)
+            elif uniprot:
+                match = id_val.cleanup_ids(uniprot=uniprot)
+                self.warnings.append(
+                    f"Warning: {data["accession"]}'s missing GenPept ID {match["genpept"]} can be automatically added using UniProt ID {uniprot}"
+                )
+            elif genpept:
+                match = id_val.cleanup_ids(genpept=genpept)
+                self.warnings.append(
+                    f"Warning: {data["accession"]}'s missing UniProt ID {match["uniprot"]} can be automatically added using GenPept ID {genpept}"
+                )
+        except Exception as e:
+            self.warnings.append(
+                f"Warning: error during EnzymeDatabaseIds validation: {e!s}"
             )
 
 

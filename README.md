@@ -176,7 +176,8 @@ Runs `.github/mite_validation.py/run_file()`:
 - File is release-ready (correct status, accession not one of [reserved](mite_data/reserved_accessions.json))
 - No duplicates (based on shared GenPept and UniProt IDs)
 - Validation checks of `mite_extras` pass
-- Validate if all database Ids are correct (using `mite_extras`)
+- Validate if all database Ids are correct
+- Validate if UniProt and GenPept match each other
 
 **On push to main**
 

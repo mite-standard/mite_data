@@ -138,3 +138,43 @@ def test_validate_db_ids_invalid(cicd_mngr, data):
     data_cp["enzyme"]["databaseIds"]["genpept"] = "sdtzuio"
     cicd_mngr.validate_db_ids(data_cp)
     assert len(cicd_mngr.errors) == 1
+
+
+def test_check_match_db_ids_valid(cicd_mngr, data):
+    cicd_mngr.check_match_db_ids(data)
+    assert len(cicd_mngr.warnings) == 0
+
+
+def test_check_match_db_ids_uniparc_valid(cicd_mngr, data):
+    data_cp = copy.deepcopy(data)
+    data_cp["enzyme"]["databaseIds"]["uniprot"] = "UPI000006B1C3"
+    cicd_mngr.check_match_db_ids(data_cp)
+    assert len(cicd_mngr.warnings) == 0
+
+
+def test_check_match_db_ids_uniprot_invalid(cicd_mngr, data):
+    data_cp = copy.deepcopy(data)
+    data_cp["enzyme"]["databaseIds"]["uniprot"] = "Q93KW5"
+    cicd_mngr.check_match_db_ids(data_cp)
+    assert len(cicd_mngr.warnings) == 1
+
+
+def test_check_match_db_ids_uniprot_missing(cicd_mngr, data):
+    data_cp = copy.deepcopy(data)
+    data_cp["enzyme"]["databaseIds"].pop("uniprot")
+    cicd_mngr.check_match_db_ids(data_cp)
+    assert len(cicd_mngr.warnings) == 1
+
+
+def test_check_match_db_ids_genpept_invalid(cicd_mngr, data):
+    data_cp = copy.deepcopy(data)
+    data_cp["enzyme"]["databaseIds"]["genpept"] = "AAK83180.1"
+    cicd_mngr.check_match_db_ids(data_cp)
+    assert len(cicd_mngr.warnings) == 1
+
+
+def test_check_match_db_ids_genpept_missing(cicd_mngr, data):
+    data_cp = copy.deepcopy(data)
+    data_cp["enzyme"]["databaseIds"].pop("genpept")
+    cicd_mngr.check_match_db_ids(data_cp)
+    assert len(cicd_mngr.warnings) == 1
