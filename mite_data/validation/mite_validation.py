@@ -128,6 +128,7 @@ from pathlib import Path
 from sys import argv
 from typing import Self
 
+import requests
 from mite_extras import MiteParser
 from mite_extras.processing.validation_manager import IdValidator
 from mite_schema import SchemaManager
@@ -232,6 +233,7 @@ class CicdManager(BaseModel):
         self.validate_db_ids(data=data)
         self.check_match_db_ids(data=data)
         self.check_mibig(data=data)
+        self.check_rhea(data=data)
 
         if len(self.warnings) != 0:
             print("\n".join(self.warnings))
@@ -466,6 +468,48 @@ class CicdManager(BaseModel):
         if genpept not in self.mibig_proteins[mibig]:
             self.errors.append(
                 f"Error: entry {data["accession"]}'s GenPept ID {genpept} is not found in the proteins of the referenced MIBiG ID {mibig}."
+            )
+
+    def check_rhea(self: Self, data: dict, timeout: float = 3.0) -> None:
+        """Check if UniProt can be annotated with Rhea ID
+
+        Argument:
+            data: the mite entry data
+        """
+        uniprot = data["enzyme"]["databaseIds"].get("uniprot")
+        if not uniprot:
+            return
+
+        known_rhea = set()
+        for reaction in data["reactions"]:
+            if val := reaction.get("databaseIds", {}).get("rhea"):
+                known_rhea.add(val)
+        try:
+            response = requests.get(
+                url="https://www.rhea-db.org/rhea?",
+                params={
+                    "query": uniprot,
+                    "columns": "rhea-id",
+                    "format": "tsv",
+                    "limit": 10,
+                },
+                timeout=timeout,
+            )
+        except requests.exceptions.ConnectTimeout:
+            self.warnings.append(f"Warning: could not connect to Rhea: Timeout")
+            return
+
+        retrieved_rhea = set()
+        if response.status_code == 200:
+            retrieved_rhea = {
+                i.removeprefix("RHEA:") for i in response.text.split()[2:]
+            }
+
+        if known_rhea != retrieved_rhea:
+            self.warnings.append(
+                f"Warning: entry {data["accession"]} shows mismatch between annotated and retrieved RHEA IDs: \n"
+                f"Annotated RHEA IDs: {sorted(known_rhea)} \n"
+                f"Retrieved RHEA IDs: {sorted(retrieved_rhea)}"
             )
 
 

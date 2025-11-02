@@ -179,6 +179,7 @@ Runs `.github/mite_validation.py/run_file()`:
 - Check if all database Ids are correct (can be accessed/downloaded)
 - Check if UniProt and GenPept match each other (using `mite_extras`)
 - If MIBiG ID was specified, check if GenPept ID matches with MIBiG's protein list
+- Check if MITE entry can be annotated with Rhea ID (based on UniProt ID)
 
 **On push to main**
 

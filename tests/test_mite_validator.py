@@ -214,3 +214,25 @@ def test_check_mibig_genpept_id_invalid(cicd_mngr, data):
     data_cp["enzyme"]["databaseIds"]["genpept"] = "AHH99923.1"
     cicd_mngr.check_mibig(data_cp)
     assert len(cicd_mngr.errors) == 1
+
+
+def test_check_rhea_valid(cicd_mngr, data):
+    data_cp = copy.deepcopy(data)
+    data_cp["enzyme"]["databaseIds"]["uniprot"] = "Q8GED9"
+    data_cp["reactions"][0]["databaseIds"] = {"rhea": "35531"}
+    cicd_mngr.check_rhea(data_cp)
+    assert len(cicd_mngr.warnings) == 0
+
+
+def test_check_rhea_unknown_uniprot(cicd_mngr, data):
+    cicd_mngr.check_rhea(data)
+    assert len(cicd_mngr.warnings) == 0
+
+
+def test_check_rhea_mismatch(cicd_mngr, data):
+    data_cp = copy.deepcopy(data)
+    data_cp["reactions"][0]["databaseIds"] = {
+        "rhea": "35531",
+    }
+    cicd_mngr.check_rhea(data_cp)
+    assert len(cicd_mngr.warnings) == 1
