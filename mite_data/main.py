@@ -162,6 +162,7 @@ class MibigManager(BaseModel):
     @model_validator(mode="after")
     def download_mibig(self):
         if self.mibig.exists():
+            logger.warning("'mibig' directory exists - SKIP")
             return self
         self.run()
         return self

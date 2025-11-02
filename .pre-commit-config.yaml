@@ -21,13 +21,13 @@ repos:
       entry: uv run python mite_data/main.py
       language: system
       types: [ json ]
-      exclude: "metadata|reserved"
+      exclude: "metadata|reserved|mibig"
     - id: mite-validate
       name: mite-validate
       entry: uv run python mite_data/validation/mite_validation.py
       language: system
       types: [ json ]
-      exclude: "metadata|reserved"
+      exclude: "metadata|reserved|mibig"
     - id: uv-upgrade
       name: uv-upgrade
       pass_filenames: false

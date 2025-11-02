@@ -142,6 +142,8 @@ class CicdManager(BaseModel):
     Attributes:
         src: a Path towards the source directory
         fasta: a Path towards to directory containing accompanying fasta files
+        mibig: Path towards mibig proteins file
+        mibig_proteins: dict of MIBiG IDs and corresponding genpepts
         reserved_path: Path to json file of reserved accessions
         errors: all errors detected during run
         warnings: all warnings (do not raise errors)
@@ -152,6 +154,8 @@ class CicdManager(BaseModel):
 
     src: DirectoryPath = Path(__file__).parent.parent.joinpath("data/")
     fasta: DirectoryPath = Path(__file__).parent.parent.joinpath("fasta/")
+    mibig: FilePath = Path(__file__).parent.parent.joinpath("mibig/mibig_proteins.json")
+    mibig_proteins: dict = {}
     reserved_path: FilePath = Path(__file__).parent.parent.joinpath(
         "reserved_accessions.json"
     )
@@ -191,6 +195,12 @@ class CicdManager(BaseModel):
             self.reserved = [i[0] for i in data.get("reserved")]
         return self
 
+    @model_validator(mode="after")
+    def get_mibig_proteins(self):
+        with open(self.mibig) as infile:
+            self.mibig_proteins = json.load(infile)
+        return self
+
     def run_file(self: Self, path: str) -> None:
         """Run a single file against validation functions
 
@@ -221,6 +231,7 @@ class CicdManager(BaseModel):
         self.validate_entries_passing(data=data)
         self.validate_db_ids(data=data)
         self.check_match_db_ids(data=data)
+        self.check_mibig(data=data)
 
         if len(self.warnings) != 0:
             print("\n".join(self.warnings))
@@ -426,6 +437,35 @@ class CicdManager(BaseModel):
         except Exception as e:
             self.warnings.append(
                 f"Warning: error during EnzymeDatabaseIds validation: {e!s}"
+            )
+
+    def check_mibig(self: Self, data: dict) -> None:
+        """Check if genpept part of MIBiG if MIBiG ID was specified
+
+        Argument:
+            data: the mite entry data
+        """
+        mibig = data["enzyme"]["databaseIds"].get("mibig")
+        genpept = data["enzyme"]["databaseIds"].get("genpept")
+
+        if not mibig:
+            return
+
+        if not genpept:
+            self.errors.append(
+                f"Error: entry {data["accession"]} has MIBiG ID {mibig} but no GenPept ID: not allowed."
+            )
+            return
+
+        if mibig not in self.mibig_proteins:
+            self.warnings.append(
+                f"Warning: entry {data["accession"]}'s MIBiG ID {mibig} not found in known MIBiG IDs, perhaps because it is retired. Double-check on MIBiG website if it really exists."
+            )
+            return
+
+        if genpept not in self.mibig_proteins[mibig]:
+            self.errors.append(
+                f"Error: entry {data["accession"]}'s GenPept ID {genpept} is not found in the proteins of the referenced MIBiG ID {mibig}."
             )
 
 

@@ -18,6 +18,7 @@ def cicd_mngr():
     return CicdManager(
         src=Path(__file__).parent.joinpath("mock_src"),
         fasta=Path(__file__).parent.joinpath("mock_fasta"),
+        mibig=Path(__file__).parent.joinpath("mock_metadata/mibig_proteins.json"),
         reserved_path=Path(__file__).parent.joinpath(
             "mock_metadata/mock_reserved.json"
         ),
@@ -178,3 +179,38 @@ def test_check_match_db_ids_genpept_missing(cicd_mngr, data):
     data_cp["enzyme"]["databaseIds"].pop("genpept")
     cicd_mngr.check_match_db_ids(data_cp)
     assert len(cicd_mngr.warnings) == 1
+
+
+def test_check_mibig_valid(cicd_mngr, data):
+    cicd_mngr.check_mibig(data)
+    assert len(cicd_mngr.warnings) == 0
+    assert len(cicd_mngr.errors) == 0
+
+
+def test_check_mibig_mibig_invalid(cicd_mngr, data):
+    data_cp = copy.deepcopy(data)
+    data_cp["enzyme"]["databaseIds"].pop("mibig")
+    cicd_mngr.check_mibig(data_cp)
+    assert len(cicd_mngr.warnings) == 0
+    assert len(cicd_mngr.errors) == 0
+
+
+def test_check_mibig_genpept_invalid(cicd_mngr, data):
+    data_cp = copy.deepcopy(data)
+    data_cp["enzyme"]["databaseIds"].pop("genpept")
+    cicd_mngr.check_mibig(data_cp)
+    assert len(cicd_mngr.errors) == 1
+
+
+def test_check_mibig_id_invalid(cicd_mngr, data):
+    data_cp = copy.deepcopy(data)
+    data_cp["enzyme"]["databaseIds"]["mibig"] = "BGC9999999"
+    cicd_mngr.check_mibig(data_cp)
+    assert len(cicd_mngr.warnings) == 1
+
+
+def test_check_mibig_genpept_id_invalid(cicd_mngr, data):
+    data_cp = copy.deepcopy(data)
+    data_cp["enzyme"]["databaseIds"]["genpept"] = "AHH99923.1"
+    cicd_mngr.check_mibig(data_cp)
+    assert len(cicd_mngr.errors) == 1

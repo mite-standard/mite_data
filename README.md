@@ -176,8 +176,9 @@ Runs `.github/mite_validation.py/run_file()`:
 - File is release-ready (correct status, accession not one of [reserved](mite_data/reserved_accessions.json))
 - No duplicates (based on shared GenPept and UniProt IDs)
 - Validation checks of `mite_extras` pass
-- Validate if all database Ids are correct
-- Validate if UniProt and GenPept match each other
+- Check if all database Ids are correct (can be accessed/downloaded)
+- Check if UniProt and GenPept match each other (using `mite_extras`)
+- If MIBiG ID was specified, check if GenPept ID matches with MIBiG's protein list
 
 **On push to main**
 
@@ -195,7 +196,7 @@ Runs `.github/mite_validation.py/run_data_dir()`:
 - Accessions in headers of fasta files match their corresponding IDs in MITE files
 - No duplicates (based on shared GenPept and UniProt IDs)
 - Validation checks of `mite_extras` pass
-- Validate if all database Ids are correct (using `mite_extras`)
+- Check if all database Ids are correct (can be accessed/downloaded)
 
 Additional checks:
 
