@@ -1,0 +1,55 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2025-11-11",
+            "contributors": [
+                "0000-0002-8834-593X"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "new entry."
+        }
+    ],
+    "enzyme": {
+        "name": "stmC",
+        "description": "glycosyltransferase",
+        "references": [
+            "doi:10.1021/jacs.3c12895"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI0005831253",
+            "genpept": "KIA76014.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Glycosylation"
+            ],
+            "description": "Glycosylation of stromemycin in Aspergillus ustus",
+            "reactionSMARTS": "[#6:1]1:[#6:5](-[#8:17]):[#6:6]:[#6:4](-[#6:22]-[#6:23]-[#6:24]=[#6:25]-[#6:26]=[#6:27]-[#6:28]-[#6:29]-[#6:30]):[#6:2](-[#6:7](=[#8:9])-[#8:8]-[#6:10]2:[#6:14]:[#6:15](-[#6:31]-[#6:32]-[#6:33]=[#6:34]-[#6:35]=[#6:36]-[#6:37]-[#6:38]-[#6:39]):[#6:13](-[#6:19](=[#8:21])-[#8:20]):[#6:11](-[#8:18]):[#6:12]:2):[#6:3]:1-[#8:16]>>[#6:1]1(-[#6]2-[#8]-[#6](-[#6]-[#8])-[#6](-[#8])-[#6](-[#8])-[#6]-2-[#8]):[#6:5](-[#8:17]):[#6:6]:[#6:4](-[#6:22]-[#6:23]-[#6:24]=[#6:25]-[#6:26]=[#6:27]-[#6:28]-[#6:29]-[#6:30]):[#6:2](-[#6:7](=[#8:9])-[#8:8]-[#6:10]2:[#6:14]:[#6:15](-[#6:31]-[#6:32]-[#6:33]=[#6:34]-[#6:35]=[#6:36]-[#6:37]-[#6:38]-[#6:39]):[#6:13](-[#6:19](=[#8:21])-[#8:20]):[#6:11](-[#8:18]):[#6:12]:2):[#6:3]:1-[#8:16]",
+            "reactions": [
+                {
+                    "substrate": "CCCC=CC=CCCc1cc(OC(=O)c2c(O)cc(O)cc2CCC=CC=CCCC)cc(O)c1C(=O)O",
+                    "products": [
+                        "CCCC=CC=CCCc1cc(OC(=O)c2c(CCC=CC=CCCC)cc(O)c(C3OC(CO)C(O)C(O)C3O)c2O)cc(O)c1C(=O)O"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/jacs.3c12895"
+                ]
+            }
+        }
+    ]
+}
