@@ -4941,6 +4941,28 @@
       "class": "Not found",
       "order": "Not found",
       "family": "Not found"
+    },
+    "MITE0000219": {
+      "accession": "MITE0000219",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "BipD",
+      "enzyme_description": "B12-containing rSAM",
+      "enzyme_ids": {
+        "uniprot": "UPI0036D88047",
+        "genpept": "MFF2457816.1"
+      },
+      "tailoring": "Biaryl bond formation",
+      "reaction_description": "Introduction of biaryl-bond between two ortho-tyrosine residues",
+      "cofactors_organic": "Cobalamin|SAM",
+      "cofactors_inorganic": "Fe",
+      "organism": "Not found",
+      "domain": "Not found",
+      "kingdom": "Not found",
+      "phylum": "Not found",
+      "class": "Not found",
+      "order": "Not found",
+      "family": "Not found"
     }
   }
 }
