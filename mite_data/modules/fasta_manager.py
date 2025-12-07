@@ -171,6 +171,11 @@ class FastaManager(BaseModel):
         logger.info(f"Started FastaManager on file {path.name}.")
 
         data = self.load_json(path)
+
+        if data["status"] == "retired":
+            logger.warning(f"MITE entry {path.name} is retired - SKIP download.")
+            return
+
         ids = data["enzyme"]["databaseIds"]
         if ids.get("genpept"):
             path, content = self.download_ncbi(data["accession"], ids.get("genpept"))

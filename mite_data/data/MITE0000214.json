@@ -14,11 +14,22 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "New entry. checked reaction and publication. checked references, links and reactions. Reviewer 2 added cofactors."
+        },
+        {
+            "version": "2",
+            "date": "2025-10-29",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Fixed enzyme description capitalization. Reviewer added RHEA and EC cross-refs"
         }
     ],
     "enzyme": {
         "name": "LsGAO1",
-        "description": "cytochrome P450",
+        "description": "Cytochrome P450",
         "references": [
             "doi:10.1074/jbc.M110.111757",
             "doi:10.1104/pp.19.00629"
@@ -41,6 +52,10 @@
             "tailoring": [
                 "Oxidation"
             ],
+            "databaseIds": {
+                "rhea": "30303",
+                "ec": "1.14.14.95"
+            },
             "description": "Converts germacrene A to germacrene A acid via three-step oxidation",
             "reactionSMARTS": "[#6:1]-[#6:2]1=[#6:3]-[#6:4]-[#6:5]-[#6:6](-[#6:15])=[#6:7]-[#6:8]-[#6@@:9](/[#6:12](-[#6:14])=[#6:13])-[#6:10]-[#6:11]-1>>[#6:1]-[#6:2]1=[#6:3]-[#6:4]-[#6:5]-[#6:6](-[#6:15])=[#6:7]-[#6:8]-[#6@@:9](/[#6:12](-[#6:14](-[#8])=[#8])=[#6:13])-[#6:10]-[#6:11]-1",
             "reactions": [

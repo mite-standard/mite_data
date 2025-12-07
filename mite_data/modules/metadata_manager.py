@@ -372,20 +372,20 @@ class MetadataManager(BaseModel):
                 content = response.json()
                 record = content.get("organism", {}).get("lineage", None)
                 try:
-                    origin["domain"] = record[0] or "Not found"
-                    origin["kingdom"] = record[1] or "Not found"
-                    origin["phylum"] = record[2] or "Not found"
-                    origin["class"] = record[3] or "Not found"
-                    origin["order"] = record[4] or "Not found"
-                    origin["family"] = record[5] or "Not found"
-                    origin["organism"] = (
-                        content.get("organism", {}).get("scientificName") or "Not found"
+                    origin["domain"] = record[0]
+                    origin["kingdom"] = record[1]
+                    origin["phylum"] = record[2]
+                    origin["class"] = record[3]
+                    origin["order"] = record[4]
+                    origin["family"] = record[5]
+                    origin["organism"] = content.get("organism", {}).get(
+                        "scientificName"
                     )
+                    return origin
                 except Exception as e:
                     logger.warning(
-                        f"Did not find organism information for '{acc}' ({data["accession"]}): {e!s}"
+                        f"Did not find organism information for '{acc}' ({data["accession"]}) in UniProt: {e!s}"
                     )
-                return origin
 
         if acc := data["enzyme"]["databaseIds"].get("genpept"):
             try:
@@ -393,19 +393,19 @@ class MetadataManager(BaseModel):
                     db="protein", id=acc, rettype="gb", retmode="text"
                 )
                 record = SeqIO.read(handle, "genbank")
-                origin["domain"] = record.annotations.get("taxonomy")[0] or "Not found"
-                origin["kingdom"] = record.annotations.get("taxonomy")[1] or "Not found"
-                origin["phylum"] = record.annotations.get("taxonomy")[2] or "Not found"
-                origin["class"] = record.annotations.get("taxonomy")[3] or "Not found"
-                origin["order"] = record.annotations.get("taxonomy")[4] or "Not found"
-                origin["family"] = record.annotations.get("taxonomy")[5] or "Not found"
-                origin["organism"] = record.annotations.get("organism") or "Not found"
+                origin["domain"] = record.annotations.get("taxonomy")[0]
+                origin["kingdom"] = record.annotations.get("taxonomy")[1]
+                origin["phylum"] = record.annotations.get("taxonomy")[2]
+                origin["class"] = record.annotations.get("taxonomy")[3]
+                origin["order"] = record.annotations.get("taxonomy")[4]
+                origin["family"] = record.annotations.get("taxonomy")[5]
+                origin["organism"] = record.annotations.get("organism")
                 handle.close()
+                return origin
             except Exception as e:
                 logger.warning(
-                    f"Did not find organism information for '{acc}' ({data["accession"]}): {e!s}"
+                    f"Did not find organism information for '{acc}' ({data["accession"]}) in NCBI Genbank: {e!s}"
                 )
-            return origin
 
         return origin
 

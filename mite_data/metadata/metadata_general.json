@@ -17,12 +17,12 @@
       "cofactors_organic": "Heme",
       "cofactors_inorganic": "Fe",
       "organism": "Diaporthe sp.",
-      "domain": "Not found",
-      "kingdom": "Not found",
-      "phylum": "Not found",
-      "class": "Not found",
-      "order": "Not found",
-      "family": "Not found"
+      "domain": "Eukaryota",
+      "kingdom": "Fungi",
+      "phylum": "Dikarya",
+      "class": "Ascomycota",
+      "order": "Pezizomycotina",
+      "family": "Sordariomycetes"
     },
     "MITE0000020": {
       "accession": "MITE0000020",
@@ -62,13 +62,13 @@
       "reaction_description": "cyclization and deamination of lysine to pipecolic acid",
       "cofactors_organic": "N/A",
       "cofactors_inorganic": "N/A",
-      "organism": "Not found",
-      "domain": "Not found",
-      "kingdom": "Not found",
-      "phylum": "Not found",
-      "class": "Not found",
-      "order": "Not found",
-      "family": "Not found"
+      "organism": "Myxococcus sp.",
+      "domain": "Bacteria",
+      "kingdom": "Pseudomonadati",
+      "phylum": "Myxococcota",
+      "class": "Myxococcia",
+      "order": "Myxococcales",
+      "family": "Cystobacterineae"
     },
     "MITE0000011": {
       "accession": "MITE0000011",
@@ -145,20 +145,20 @@
       "enzyme_name": "ThnH",
       "enzyme_description": "Tryptophan 6-halogenase",
       "enzyme_ids": {
-        "uniprot": "A0A142I756",
+        "uniprot": "UPI00078E7F2F",
         "genpept": "AMR44308.1"
       },
       "tailoring": "Halogenation",
       "reaction_description": "chlorinates tryptophan to form 6-Cl-tryptophan (6-Cl-Trp)",
       "cofactors_organic": "N/A",
       "cofactors_inorganic": "N/A",
-      "organism": "Not found",
-      "domain": "Not found",
-      "kingdom": "Not found",
-      "phylum": "Not found",
-      "class": "Not found",
-      "order": "Not found",
-      "family": "Not found"
+      "organism": "Streptomyces sp. FXJ1.172",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
     },
     "MITE0000073": {
       "accession": "MITE0000073",
@@ -538,13 +538,13 @@
       "reaction_description": "Cyclases the intermediate in the thalianin pathway in Arabidopsis thaliana ssp. lyrata",
       "cofactors_organic": "N/A",
       "cofactors_inorganic": "N/A",
-      "organism": "Not found",
-      "domain": "Not found",
-      "kingdom": "Not found",
-      "phylum": "Not found",
-      "class": "Not found",
-      "order": "Not found",
-      "family": "Not found"
+      "organism": "Arabidopsis lyrata",
+      "domain": "Eukaryota",
+      "kingdom": "Viridiplantae",
+      "phylum": "Streptophyta",
+      "class": "Embryophyta",
+      "order": "Tracheophyta",
+      "family": "Spermatophyta"
     },
     "MITE0000044": {
       "accession": "MITE0000044",
@@ -1239,7 +1239,7 @@
       "enzyme_name": "TnmJ",
       "enzyme_description": "Cofactorless oxygenase",
       "enzyme_ids": {
-        "uniprot": "A0A125SA13",
+        "uniprot": "UPI00076F29F8",
         "genpept": "AME18009.1",
         "mibig": "BGC0001378"
       },
@@ -1247,13 +1247,13 @@
       "reaction_description": "No description",
       "cofactors_organic": "N/A",
       "cofactors_inorganic": "N/A",
-      "organism": "Not found",
-      "domain": "Not found",
-      "kingdom": "Not found",
-      "phylum": "Not found",
-      "class": "Not found",
-      "order": "Not found",
-      "family": "Not found"
+      "organism": "Streptomyces sp. CB03234",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
     },
     "MITE0000122": {
       "accession": "MITE0000122",
@@ -1315,13 +1315,13 @@
       "reaction_description": "Biaryl bond formation between H-Y",
       "cofactors_organic": "Heme",
       "cofactors_inorganic": "Fe",
-      "organism": "Not found",
-      "domain": "Not found",
-      "kingdom": "Not found",
-      "phylum": "Not found",
-      "class": "Not found",
-      "order": "Not found",
-      "family": "Not found"
+      "organism": "Streptomyces clavuligerus",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
     },
     "MITE0000204": {
       "accession": "MITE0000204",
@@ -1653,13 +1653,13 @@
       "reaction_description": "Converts 8-deoxylactucin to lactucin",
       "cofactors_organic": "Heme",
       "cofactors_inorganic": "Fe",
-      "organism": "Not found",
-      "domain": "Not found",
-      "kingdom": "Not found",
-      "phylum": "Not found",
-      "class": "Not found",
-      "order": "Not found",
-      "family": "Not found"
+      "organism": "Cichorium intybus",
+      "domain": "Eukaryota",
+      "kingdom": "Viridiplantae",
+      "phylum": "Streptophyta",
+      "class": "Embryophyta",
+      "order": "Tracheophyta",
+      "family": "Spermatophyta"
     },
     "MITE0000031": {
       "accession": "MITE0000031",
@@ -1699,13 +1699,13 @@
       "reaction_description": "PhoP is a short-chain dehydrogenases/reductase responsible for a reductive cyclisation step in the biosynthesis of phomoxanthone A",
       "cofactors_organic": "N/A",
       "cofactors_inorganic": "N/A",
-      "organism": "Not found",
-      "domain": "Not found",
-      "kingdom": "Not found",
-      "phylum": "Not found",
-      "class": "Not found",
-      "order": "Not found",
-      "family": "Not found"
+      "organism": "Diaporthe sp.",
+      "domain": "Eukaryota",
+      "kingdom": "Fungi",
+      "phylum": "Dikarya",
+      "class": "Ascomycota",
+      "order": "Pezizomycotina",
+      "family": "Sordariomycetes"
     },
     "MITE0000174": {
       "accession": "MITE0000174",
@@ -1737,7 +1737,7 @@
       "enzyme_name": "PumI",
       "enzyme_description": "Oxidoreductase",
       "enzyme_ids": {
-        "uniprot": "A0A2R4FXY7",
+        "uniprot": "UPI000D213889",
         "genpept": "AVT42378.1",
         "mibig": "BGC0001476"
       },
@@ -1745,13 +1745,13 @@
       "reaction_description": "No description",
       "cofactors_organic": "N/A",
       "cofactors_inorganic": "N/A",
-      "organism": "Not found",
-      "domain": "Not found",
-      "kingdom": "Not found",
-      "phylum": "Not found",
-      "class": "Not found",
-      "order": "Not found",
-      "family": "Not found"
+      "organism": "Streptomyces sp.",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
     },
     "MITE0000002": {
       "accession": "MITE0000002",
@@ -2581,7 +2581,7 @@
       "enzyme_name": "PumG",
       "enzyme_description": "Aminotransferase",
       "enzyme_ids": {
-        "uniprot": "A0A2R4FXY6",
+        "uniprot": "UPI000D218CF8",
         "genpept": "AVT42376.1",
         "mibig": "BGC0001476"
       },
@@ -2589,13 +2589,13 @@
       "reaction_description": "No description",
       "cofactors_organic": "N/A",
       "cofactors_inorganic": "N/A",
-      "organism": "Not found",
-      "domain": "Not found",
-      "kingdom": "Not found",
-      "phylum": "Not found",
-      "class": "Not found",
-      "order": "Not found",
-      "family": "Not found"
+      "organism": "Streptomyces sp.",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
     },
     "MITE0000015": {
       "accession": "MITE0000015",
@@ -2650,7 +2650,7 @@
       "enzyme_name": "GnmP",
       "enzyme_description": "Persulfide methyltransferase",
       "enzyme_ids": {
-        "uniprot": "A0A2H4T153",
+        "uniprot": "UPI000938C7BA",
         "genpept": "ATY69565.1",
         "mibig": "BGC0001611"
       },
@@ -2658,13 +2658,13 @@
       "reaction_description": "No description",
       "cofactors_organic": "N/A",
       "cofactors_inorganic": "N/A",
-      "organism": "Not found",
-      "domain": "Not found",
-      "kingdom": "Not found",
-      "phylum": "Not found",
-      "class": "Not found",
-      "order": "Not found",
-      "family": "Not found"
+      "organism": "Streptomyces sp. CB01883",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
     },
     "MITE0000209": {
       "accession": "MITE0000209",
@@ -2725,13 +2725,13 @@
       "reaction_description": "PhoL is responsible for reduction of monodictyphenone towards the biosynthesis of phomoxanthone A",
       "cofactors_organic": "N/A",
       "cofactors_inorganic": "N/A",
-      "organism": "Not found",
-      "domain": "Not found",
-      "kingdom": "Not found",
-      "phylum": "Not found",
-      "class": "Not found",
-      "order": "Not found",
-      "family": "Not found"
+      "organism": "Diaporthe sp.",
+      "domain": "Eukaryota",
+      "kingdom": "Fungi",
+      "phylum": "Dikarya",
+      "class": "Ascomycota",
+      "order": "Pezizomycotina",
+      "family": "Sordariomycetes"
     },
     "MITE0000138": {
       "accession": "MITE0000138",
@@ -2815,13 +2815,13 @@
       "reaction_description": "The monooxygenase PhoM is involved in C5 hydroxlation during biosynethesis of phomoxanthone A",
       "cofactors_organic": "N/A",
       "cofactors_inorganic": "N/A",
-      "organism": "Not found",
-      "domain": "Not found",
-      "kingdom": "Not found",
-      "phylum": "Not found",
-      "class": "Not found",
-      "order": "Not found",
-      "family": "Not found"
+      "organism": "Diaporthe sp.",
+      "domain": "Eukaryota",
+      "kingdom": "Fungi",
+      "phylum": "Dikarya",
+      "class": "Ascomycota",
+      "order": "Pezizomycotina",
+      "family": "Sordariomycetes"
     },
     "MITE0000024": {
       "accession": "MITE0000024",
@@ -2930,13 +2930,13 @@
       "reaction_description": "Responsible for the conversion of emodin anthrone to emodin by oxidation during biosynthesis of phomoxanthone A",
       "cofactors_organic": "N/A",
       "cofactors_inorganic": "N/A",
-      "organism": "Not found",
-      "domain": "Not found",
-      "kingdom": "Not found",
-      "phylum": "Not found",
-      "class": "Not found",
-      "order": "Not found",
-      "family": "Not found"
+      "organism": "Diaporthe sp.",
+      "domain": "Eukaryota",
+      "kingdom": "Fungi",
+      "phylum": "Dikarya",
+      "class": "Ascomycota",
+      "order": "Pezizomycotina",
+      "family": "Sordariomycetes"
     },
     "MITE0000043": {
       "accession": "MITE0000043",
@@ -3128,7 +3128,7 @@
       "enzyme_name": "PumK",
       "enzyme_description": "Carboxylate-amine ligase",
       "enzyme_ids": {
-        "uniprot": "A0A2R4FXX8",
+        "uniprot": "UPI000D1FFAB8",
         "genpept": "AVT42380.1",
         "mibig": "BGC0001476"
       },
@@ -3136,13 +3136,13 @@
       "reaction_description": "No description",
       "cofactors_organic": "N/A",
       "cofactors_inorganic": "N/A",
-      "organism": "Not found",
-      "domain": "Not found",
-      "kingdom": "Not found",
-      "phylum": "Not found",
-      "class": "Not found",
-      "order": "Not found",
-      "family": "Not found"
+      "organism": "Streptomyces sp.",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
     },
     "MITE0000092": {
       "accession": "MITE0000092",
@@ -3151,7 +3151,7 @@
       "enzyme_name": "BorH",
       "enzyme_description": "Flavin-dependent halogenase",
       "enzyme_ids": {
-        "uniprot": "M9QSI0",
+        "uniprot": "UPI0002C6BC4B",
         "genpept": "AGI62217.1",
         "mibig": "BGC0001335"
       },
@@ -3160,8 +3160,8 @@
       "cofactors_organic": "FAD",
       "cofactors_inorganic": "N/A",
       "organism": "Not found",
-      "domain": "Not found",
-      "kingdom": "Not found",
+      "domain": "Bacteria",
+      "kingdom": "environmental samples",
       "phylum": "Not found",
       "class": "Not found",
       "order": "Not found",
@@ -3340,13 +3340,13 @@
       "reaction_description": "PhoD is a dehydratase responsible for the formation of the intermediate chrysophanol during biosynthesis of phomoxanthone A",
       "cofactors_organic": "N/A",
       "cofactors_inorganic": "N/A",
-      "organism": "Not found",
-      "domain": "Not found",
-      "kingdom": "Not found",
-      "phylum": "Not found",
-      "class": "Not found",
-      "order": "Not found",
-      "family": "Not found"
+      "organism": "Diaporthe sp.",
+      "domain": "Eukaryota",
+      "kingdom": "Fungi",
+      "phylum": "Dikarya",
+      "class": "Ascomycota",
+      "order": "Pezizomycotina",
+      "family": "Sordariomycetes"
     },
     "MITE0000047": {
       "accession": "MITE0000047",
@@ -3424,7 +3424,7 @@
       "enzyme_name": "ScnB",
       "enzyme_description": "Cytochrome P450",
       "enzyme_ids": {
-        "uniprot": "A0A0F7N5T9",
+        "uniprot": "UPI00062E048D",
         "genpept": "AKH82808.1",
         "mibig": "BGC0003035"
       },
@@ -3432,13 +3432,13 @@
       "reaction_description": "Installs biaryl crosslink between trp-trp",
       "cofactors_organic": "Heme",
       "cofactors_inorganic": "Fe",
-      "organism": "Not found",
-      "domain": "Not found",
-      "kingdom": "Not found",
-      "phylum": "Not found",
-      "class": "Not found",
-      "order": "Not found",
-      "family": "Not found"
+      "organism": "Streptomyces sp. CNQ-509",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
     },
     "MITE0000143": {
       "accession": "MITE0000143",
@@ -3477,13 +3477,13 @@
       "reaction_description": "TdaE relies on its substrate as electron donor (rather than NAD(P)H) for O2 activation and covalent flavin-oxygen adduct formation. Then, TdaE incorporates both O2-derived oxygen atoms into the substrate most likely via transient FlN5OO and FlN5O species, thereby breaking the CoA thioester bond and epoxidizing the tropone ring. ",
       "cofactors_organic": "N/A",
       "cofactors_inorganic": "N/A",
-      "organism": "Not found",
-      "domain": "Not found",
-      "kingdom": "Not found",
-      "phylum": "Not found",
-      "class": "Not found",
-      "order": "Not found",
-      "family": "Not found"
+      "organism": "Phaeobacter inhibens DSM 17395",
+      "domain": "Bacteria",
+      "kingdom": "Pseudomonadati",
+      "phylum": "Pseudomonadota",
+      "class": "Alphaproteobacteria",
+      "order": "Rhodobacterales",
+      "family": "Roseobacteraceae"
     },
     "MITE0000078": {
       "accession": "MITE0000078",
@@ -3637,13 +3637,13 @@
       "reaction_description": "PhoD is a reductase responsible for the reduction of a double bond during biosynthesis of phomoxanthone A",
       "cofactors_organic": "N/A",
       "cofactors_inorganic": "N/A",
-      "organism": "Not found",
-      "domain": "Not found",
-      "kingdom": "Not found",
-      "phylum": "Not found",
-      "class": "Not found",
-      "order": "Not found",
-      "family": "Not found"
+      "organism": "Diaporthe sp.",
+      "domain": "Eukaryota",
+      "kingdom": "Fungi",
+      "phylum": "Dikarya",
+      "class": "Ascomycota",
+      "order": "Pezizomycotina",
+      "family": "Sordariomycetes"
     },
     "MITE0000144": {
       "accession": "MITE0000144",
@@ -3933,13 +3933,13 @@
       "reaction_description": "W-W biaryl crosslink formation",
       "cofactors_organic": "Heme",
       "cofactors_inorganic": "Fe",
-      "organism": "Not found",
-      "domain": "Not found",
-      "kingdom": "Not found",
-      "phylum": "Not found",
-      "class": "Not found",
-      "order": "Not found",
-      "family": "Not found"
+      "organism": "Streptomyces sp. SID5474",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
     },
     "MITE0000131": {
       "accession": "MITE0000131",
@@ -3948,20 +3948,20 @@
       "enzyme_name": "ThnA",
       "enzyme_description": "Amidotransferase",
       "enzyme_ids": {
-        "uniprot": "A0A142I749",
+        "uniprot": "UPI00078D6453",
         "genpept": "AMR44301.1"
       },
       "tailoring": "Amination",
       "reaction_description": "No description",
       "cofactors_organic": "N/A",
       "cofactors_inorganic": "N/A",
-      "organism": "Not found",
-      "domain": "Not found",
-      "kingdom": "Not found",
-      "phylum": "Not found",
-      "class": "Not found",
-      "order": "Not found",
-      "family": "Not found"
+      "organism": "Streptomyces sp. FXJ1.172",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
     },
     "MITE0000017": {
       "accession": "MITE0000017",
@@ -4046,13 +4046,13 @@
       "reaction_description": "No description",
       "cofactors_organic": "N/A",
       "cofactors_inorganic": "N/A",
-      "organism": "Not found",
-      "domain": "Not found",
-      "kingdom": "Not found",
-      "phylum": "Not found",
-      "class": "Not found",
-      "order": "Not found",
-      "family": "Not found"
+      "organism": "Streptomyces sp.",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
     },
     "MITE0000163": {
       "accession": "MITE0000163",
@@ -4069,13 +4069,13 @@
       "reaction_description": "Decarboxylase responsible for the conversion of atrochrysone carboxylic acid to atrochrysone.",
       "cofactors_organic": "N/A",
       "cofactors_inorganic": "N/A",
-      "organism": "Not found",
-      "domain": "Not found",
-      "kingdom": "Not found",
-      "phylum": "Not found",
-      "class": "Not found",
-      "order": "Not found",
-      "family": "Not found"
+      "organism": "Diaporthe sp.",
+      "domain": "Eukaryota",
+      "kingdom": "Fungi",
+      "phylum": "Dikarya",
+      "class": "Ascomycota",
+      "order": "Pezizomycotina",
+      "family": "Sordariomycetes"
     },
     "MITE0000081": {
       "accession": "MITE0000081",
@@ -4115,13 +4115,13 @@
       "reaction_description": "PhoJ is a dioxygenase involved in a ring-opening strategy to form monodictyphenone as in intermediate in phomoxanthone A biosynthesis",
       "cofactors_organic": "N/A",
       "cofactors_inorganic": "N/A",
-      "organism": "Not found",
-      "domain": "Not found",
-      "kingdom": "Not found",
-      "phylum": "Not found",
-      "class": "Not found",
-      "order": "Not found",
-      "family": "Not found"
+      "organism": "Diaporthe sp.",
+      "domain": "Eukaryota",
+      "kingdom": "Fungi",
+      "phylum": "Dikarya",
+      "class": "Ascomycota",
+      "order": "Pezizomycotina",
+      "family": "Sordariomycetes"
     },
     "MITE0000049": {
       "accession": "MITE0000049",
@@ -4515,7 +4515,7 @@
       "status": "active",
       "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
       "enzyme_name": "LsGAO1",
-      "enzyme_description": "cytochrome P450",
+      "enzyme_description": "Cytochrome P450",
       "enzyme_ids": {
         "uniprot": "D5J9U8",
         "genpept": "ADF32078.1"
@@ -4699,20 +4699,20 @@
       "enzyme_name": "ThnJ",
       "enzyme_description": "Aminotransferase",
       "enzyme_ids": {
-        "uniprot": "A0A142I758",
+        "uniprot": "UPI00078CD00A",
         "genpept": "AMR44310.1"
       },
       "tailoring": "Deamination",
       "reaction_description": "No description",
       "cofactors_organic": "N/A",
       "cofactors_inorganic": "N/A",
-      "organism": "Not found",
-      "domain": "Not found",
-      "kingdom": "Not found",
-      "phylum": "Not found",
-      "class": "Not found",
-      "order": "Not found",
-      "family": "Not found"
+      "organism": "Streptomyces sp. FXJ1.172",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
     },
     "MITE0000211": {
       "accession": "MITE0000211",
@@ -4934,13 +4934,145 @@
       "reaction_description": "Modifies various cadinane-type sesquiterpenoids",
       "cofactors_organic": "Heme",
       "cofactors_inorganic": "Fe",
-      "organism": "Not found",
-      "domain": "Not found",
-      "kingdom": "Not found",
-      "phylum": "Not found",
-      "class": "Not found",
-      "order": "Not found",
-      "family": "Not found"
+      "organism": "Trametes versicolor",
+      "domain": "Eukaryota",
+      "kingdom": "Fungi",
+      "phylum": "Dikarya",
+      "class": "Basidiomycota",
+      "order": "Agaricomycotina",
+      "family": "Agaricomycetes"
+    },
+    "MITE0000219": {
+      "accession": "MITE0000219",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "BipD",
+      "enzyme_description": "B12-containing rSAM",
+      "enzyme_ids": {
+        "uniprot": "UPI0036D88047",
+        "genpept": "MFF2457816.1"
+      },
+      "tailoring": "Biaryl bond formation",
+      "reaction_description": "Introduction of biaryl-bond between two ortho-tyrosine residues",
+      "cofactors_organic": "Cobalamin|SAM",
+      "cofactors_inorganic": "Fe",
+      "organism": "Peribacillus simplex",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Bacillota",
+      "class": "Bacilli",
+      "order": "Bacillales",
+      "family": "Bacillaceae"
+    },
+    "MITE0000217": {
+      "accession": "MITE0000217",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "ChtnH",
+      "enzyme_description": "Pyruvyl transferase",
+      "enzyme_ids": {
+        "uniprot": "UPI000414702F",
+        "genpept": "XOT41316.1"
+      },
+      "tailoring": "Other",
+      "reaction_description": "Pyruvylation of a PUFA synthase-derived alkyl chain via reaction with a diol resulting in a cyclic acetal formation",
+      "cofactors_organic": "N/A",
+      "cofactors_inorganic": "N/A",
+      "organism": "Chitinimonas sp.",
+      "domain": "Bacteria",
+      "kingdom": "Pseudomonadati",
+      "phylum": "Pseudomonadota",
+      "class": "Betaproteobacteria",
+      "order": "Neisseriales",
+      "family": "Chitinibacteraceae"
+    },
+    "MITE0000220": {
+      "accession": "MITE0000220",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "MlaO",
+      "enzyme_description": "Hydroxylation",
+      "enzyme_ids": {
+        "uniprot": "UPI00019B3450",
+        "genpept": "ACO94495.1"
+      },
+      "tailoring": "Hydroxylation",
+      "reaction_description": "Hydroxylation of polyene macrolide scaffold to yield ML-449 in Streptomyces isolate MP39-85",
+      "cofactors_organic": "Heme",
+      "cofactors_inorganic": "N/A",
+      "organism": "Streptomyces sp. MP39-85",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
+    },
+    "MITE0000221": {
+      "accession": "MITE0000221",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "BecO",
+      "enzyme_description": "Hydroxylation",
+      "enzyme_ids": {
+        "uniprot": "UPI00019B338A",
+        "genpept": "ACO94467.1"
+      },
+      "tailoring": "Hydroxylation",
+      "reaction_description": "Hydroxylation of polyene macrolide scaffold to yield BE-14106 in Streptomyces sp. DSM 21069",
+      "cofactors_organic": "Heme",
+      "cofactors_inorganic": "N/A",
+      "organism": "Streptomyces sp. DSM 21069",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
+    },
+    "MITE0000222": {
+      "accession": "MITE0000222",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "CcsB",
+      "enzyme_description": "Baeyer-Villiger monooxygenase",
+      "enzyme_ids": {
+        "uniprot": "A0A068JLH3",
+        "genpept": "AIE17460.1"
+      },
+      "tailoring": "Monooxygenation|Oxidation",
+      "reaction_description": "Oxidative generation of in-line carbonate functional group",
+      "cofactors_organic": "FAD|NADP",
+      "cofactors_inorganic": "N/A",
+      "organism": "Aspergillus clavatus",
+      "domain": "Eukaryota",
+      "kingdom": "Fungi",
+      "phylum": "Dikarya",
+      "class": "Ascomycota",
+      "order": "Pezizomycotina",
+      "family": "Eurotiomycetes"
+    },
+    "MITE0000223": {
+      "accession": "MITE0000223",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "AgcF",
+      "enzyme_description": "Guanidine prenyltransferase",
+      "enzyme_ids": {
+        "uniprot": "UPI001AF07BD7",
+        "genpept": "BCR82584.1"
+      },
+      "tailoring": "Prenylation",
+      "reaction_description": "N-prenylation on guanidine moiety of arginine residue of Argicyclamide C",
+      "cofactors_organic": "N/A",
+      "cofactors_inorganic": "Mg",
+      "organism": "Microcystis aeruginosa",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Cyanobacteriota",
+      "class": "Cyanophyceae",
+      "order": "Oscillatoriophycideae",
+      "family": "Chroococcales"
     }
   }
 }
