@@ -218,3 +218,4 @@ MITE0000216,active,ShyB,Biaryl bond formation,Heme,Fe,Cytochrome P450,Biaryl bon
 MITE0000217,active,ChtnH,Other,N/A,N/A,Pyruvyl transferase,Pyruvylation of a PUFA synthase-derived alkyl chain via reaction with a diol resulting in a cyclic acetal formation,Not found,Not found,Not found,Not found,Not found,Not found,Not found
 MITE0000218,active,CYP502B15,Hydroxylation,Heme,Fe,Cytochrome P450,Modifies various cadinane-type sesquiterpenoids,Not found,Not found,Not found,Not found,Not found,Not found,Not found
 MITE0000219,active,BipD,Biaryl bond formation,Cobalamin|SAM,Fe,B12-containing rSAM,Introduction of biaryl-bond between two ortho-tyrosine residues,Not found,Not found,Not found,Not found,Not found,Not found,Not found
+MITE0000220,active,MlaO,Hydroxylation,Heme,N/A,Hydroxylation,Hydroxylation of polyene macrolide scaffold to yield ML-449 in Streptomyces isolate MP39-85,Not found,Not found,Not found,Not found,Not found,Not found,Not found

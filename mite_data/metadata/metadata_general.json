@@ -4985,6 +4985,28 @@
       "class": "Not found",
       "order": "Not found",
       "family": "Not found"
+    },
+    "MITE0000220": {
+      "accession": "MITE0000220",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "MlaO",
+      "enzyme_description": "Hydroxylation",
+      "enzyme_ids": {
+        "uniprot": "UPI00019B3450",
+        "genpept": "ACO94495.1"
+      },
+      "tailoring": "Hydroxylation",
+      "reaction_description": "Hydroxylation of polyene macrolide scaffold to yield ML-449 in Streptomyces isolate MP39-85",
+      "cofactors_organic": "Heme",
+      "cofactors_inorganic": "N/A",
+      "organism": "Not found",
+      "domain": "Not found",
+      "kingdom": "Not found",
+      "phylum": "Not found",
+      "class": "Not found",
+      "order": "Not found",
+      "family": "Not found"
     }
   }
 }
