@@ -5007,6 +5007,28 @@
       "class": "Not found",
       "order": "Not found",
       "family": "Not found"
+    },
+    "MITE0000221": {
+      "accession": "MITE0000221",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "BecO",
+      "enzyme_description": "Hydroxylation",
+      "enzyme_ids": {
+        "uniprot": "UPI00019B338A",
+        "genpept": "ACO94467.1"
+      },
+      "tailoring": "Hydroxylation",
+      "reaction_description": "Hydroxylation of polyene macrolide scaffold to yield BE-14106 in Streptomyces sp. DSM 21069",
+      "cofactors_organic": "Heme",
+      "cofactors_inorganic": "N/A",
+      "organism": "Not found",
+      "domain": "Not found",
+      "kingdom": "Not found",
+      "phylum": "Not found",
+      "class": "Not found",
+      "order": "Not found",
+      "family": "Not found"
     }
   }
 }
