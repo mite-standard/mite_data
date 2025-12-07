@@ -287,7 +287,8 @@ class RunManager(BaseModel):
         sys.exit(0)
 
 
-if __name__ == "__main__":
+def main() -> None:
+    """Runs main function"""
     mibig = MibigManager()
     manager = RunManager()
 
@@ -295,3 +296,7 @@ if __name__ == "__main__":
         manager.run_file(path=sys.argv[1])
     except IndexError:
         manager.run_data_dir()
+
+
+if __name__ == "__main__":
+    main()

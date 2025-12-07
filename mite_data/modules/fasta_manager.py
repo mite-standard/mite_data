@@ -147,10 +147,12 @@ class FastaManager(BaseModel):
     Attributes:
         src: mite entries location
         fasta: fasta file location
+        timeout: a timeout in seconds
     """
 
     src: DirectoryPath = Path(__file__).parent.parent.joinpath("data/")
     fasta: DirectoryPath = Path(__file__).parent.parent.joinpath("fasta/")
+    timeout: float = 3.0
 
     def update_all(self) -> None:
         """Update metadata of all files (overwrite all)"""
@@ -237,10 +239,15 @@ class FastaManager(BaseModel):
 
         response = None
         for url in urls:
-            r = requests.get(url)
-            if r.status_code == 200:
-                response = r
-                break
+            try:
+                r = requests.get(url, timeout=self.timeout)
+                if r.status_code == 200:
+                    response = r
+                    break
+            except requests.exceptions.ConnectTimeout as e:
+                raise RuntimeError(
+                    "Warning: could not connect to UniProt: Timeout"
+                ) from e
 
         if response is None:
             raise RuntimeError(
