@@ -10,7 +10,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Added
 
 - Checks for MIBiG and Rhea IDs (implemented as warnings in mite_validation)
-- Timeout for UniProt, NCBI connection
+- Timeout for UniProt using requests
+- Timeout for NCBI using concurrent.futures (Biopython Entrez lacks timeout, requests blocked by NCBI servers)
 
 ### Fixed
 
