@@ -123,10 +123,11 @@ express Statement of Purpose.
     this CC0 or use of the Work.
 """
 
+import concurrent.futures
 import json
 import logging
 from pathlib import Path
-from typing import Self
+from typing import Any, Self
 
 import requests
 from Bio import Entrez
@@ -201,22 +202,29 @@ class FastaManager(BaseModel):
 
         Returns:
             Tuple of path and data for storage
-        """
-        url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
-        params = {
-            "db": "protein",
-            "id": genpept_acc,
-            "rettype": "fasta",
-            "retmode": "text",
-        }
-        try:
-            response = requests.get(url, params, timeout=self.timeout)
-        except requests.exceptions.ConnectTimeout as e:
-            raise RuntimeError("Warning: could not connect to NCBI: Timeout") from e
 
-        if response is None:
-            raise RuntimeError(f"{mite_acc}: NCBI download failed on ID {genpept_acc}")
-        lines = response.text.strip().splitlines()
+        Notes:
+            concurrent.futures needed to implement timeout since Biopythons Entrez lacks it and requests is blocked by NCBI
+        """
+
+        def fetch_ncbi(acc: str) -> Any:
+            """Fetch data from NCBI"""
+            handle = Entrez.efetch(
+                db="protein", id=genpept_acc, rettype="fasta", retmode="text"
+            )
+            data = handle.read().strip()
+            handle.close()
+            return data
+
+        with concurrent.futures.ThreadPoolExecutor() as ex:
+            future = ex.submit(fetch_ncbi, genpept_acc)
+
+            try:
+                fasta_data = future.result(timeout=self.timeout)
+            except concurrent.futures.TimeoutError as e:
+                raise RuntimeError("Warning: could not connect to NCBI: Timeout") from e
+
+        lines = fasta_data.splitlines()
 
         if not lines or len(lines) == 1:
             raise ValueError(
