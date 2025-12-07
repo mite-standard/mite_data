@@ -1,0 +1,61 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "comment": "Copper-dependent cyclase",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2025-11-15",
+            "contributors": [
+                "0000-0002-8834-593X"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "new entry."
+        }
+    ],
+    "enzyme": {
+        "name": "ArbB2",
+        "description": "burpitide cyclases/BURP-domain peptide cyclases",
+        "references": [
+            "doi:10.1021/jacs.4c15470"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI000F5D181E"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Cu"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Cyclization"
+            ],
+            "description": "Macrocyclization through side chain cross-links",
+            "reactionSMARTS": "[#6:1]-[#6:2](-[#6:4]\\[#6@@:5](-[#6:18](-[#7:20]\\[#6@:21](-[#6:32](-[#7:34]-[#6:35]-[#6:36](-[#7:38]\\[#6@:39](-[#6:48](-[#8:50])=[#8:49])-[#6:40]-[#6:41]1:[#6:47]:[#6:46]:[#6:44](-[#8:45]):[#6:43]:[#6:42]:1)=[#8:37])=[#8:33])-[#6:22]-[#6:23]1:[#6:31]2:[#6:26](:[#6:27]:[#6:28]:[#6:29]:[#6:30]:2):[#7:25]:[#6:24]:1)=[#8:19])-[#7:6]-[#6:7](-[#6@:9](-[#6:11]-[#6:12]1:[#6:17]:[#6:16]:[#6:15]:[#6:14]:[#6:13]:1)\\[#7:10])=[#8:8])-[#6:3]>>[#6:3]-[#6:2](-[#6:4]1-[#8:45]-[#6:44]2:[#6:43]:[#6:42]:[#6:41](:[#6:47]:[#6:46]:2)-[#6:40]-[#6@@:39](-[#6:48](-[#8:50])=[#8:49])\\[#7:38]-[#6:36](=[#8:37])-[#6:35]-[#7:34]-[#6:32](=[#8:33])-[#6@:21](-[#6:22]-[#6:23]2:[#6:31]3:[#6:26](:[#6:27]:[#6:28]:[#6:29]:[#6:30]:3):[#7:25]:[#6:24]:2)\\[#7:20]-[#6:18](=[#8:19])-[#6@:5]\\1-[#7:6]-[#6:7](-[#6@:9](-[#6:11]-[#6:12]1:[#6:13]:[#6:14]:[#6:15]:[#6:16]:[#6:17]:1)\\[#7:10])=[#8:8])-[#6:1]",
+            "reactions": [
+                {
+                    "substrate": "CC(C)C[C@H](NC(=O)[C@@H](N)Cc1ccccc1)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)NCC(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)O",
+                    "products": [
+                        "CC(C)C1Oc2ccc(cc2)C[C@@H](C(=O)O)NC(=O)CNC(=O)[C@H](Cc2c[nH]c3ccccc23)NC(=O)[C@H]1NC(=O)[C@@H](N)Cc1ccccc1"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Chemical probe",
+                    "Inference from genomic data and chemical structure",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/jacs.4c15470"
+                ]
+            }
+        }
+    ]
+}
