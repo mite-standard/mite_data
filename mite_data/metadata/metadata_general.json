@@ -5029,6 +5029,28 @@
       "class": "Not found",
       "order": "Not found",
       "family": "Not found"
+    },
+    "MITE0000222": {
+      "accession": "MITE0000222",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "CcsB",
+      "enzyme_description": "Baeyer-Villiger monooxygenase",
+      "enzyme_ids": {
+        "uniprot": "A0A068JLH3",
+        "genpept": "AIE17460.1"
+      },
+      "tailoring": "Monooxygenation|Oxidation",
+      "reaction_description": "Oxidative generation of in-line carbonate functional group",
+      "cofactors_organic": "FAD|NADP",
+      "cofactors_inorganic": "N/A",
+      "organism": "Aspergillus clavatus",
+      "domain": "Eukaryota",
+      "kingdom": "Fungi",
+      "phylum": "Dikarya",
+      "class": "Ascomycota",
+      "order": "Pezizomycotina",
+      "family": "Eurotiomycetes"
     }
   }
 }

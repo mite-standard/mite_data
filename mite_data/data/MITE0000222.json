@@ -1,0 +1,65 @@
+{
+    "accession": "MITE0000222",
+    "status": "active",
+    "comment": "Genpept ID was found via locus tag ACLA_078650.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2025-11-11",
+            "contributors": [
+                "0000-0002-8834-593X"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer improved descriptions, added cofactors, replaced uniprot ID."
+        }
+    ],
+    "enzyme": {
+        "name": "CcsB",
+        "description": "Baeyer-Villiger monooxygenase",
+        "references": [
+            "doi:10.1038/nchembio.1527"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A068JLH3",
+            "genpept": "AIE17460.1"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD",
+                "NADP"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Monooxygenation",
+                "Oxidation"
+            ],
+            "description": "Oxidative generation of in-line carbonate functional group",
+            "reactionSMARTS": "[#6:1]\\[#6@@:2]1-[#6:28](=[#8:29])-[#6@@:27](/[#6:30])-[#6:26]=[#6:25]-[#6:23](-[#6@@:11]23\\[#6:12](-[#7:14]-[#6@@:15](/[#6:16]-[#6:17]4:[#6:22]:[#6:21]:[#6:20]:[#6:19]:[#6:18]:4)-[#6@@:10]-2\\[#6@:9](\\[#6:31])-[#6:8](-[#6:32])=[#6:7]-[#6@@:6]-3\\[#6:5]=[#6:4]-[#6:3]-1)=[#8:13])=[#8:24]>>[#6:1]\\[#6@@:2]1-[#6:28](=[#8:29])-[#6@@:27](/[#6:30])-[#6:26]=[#6:25]-[#8]-[#6:23](=[#8:24])-[#8]-[#6@@:11]23\\[#6:12](-[#7:14]-[#6@@:15](/[#6:16]-[#6:17]4:[#6:22]:[#6:21]:[#6:20]:[#6:19]:[#6:18]:4)-[#6@@:10]-2\\[#6@:9](\\[#6:31])-[#6:8](-[#6:32])=[#6:7]-[#6@@:6]-3\\[#6:5]=[#6:4]-[#6:3]-1)=[#8:13]",
+            "reactions": [
+                {
+                    "substrate": "CC1=C[C@@H]2C=CC[C@H](C)C(=O)[C@@H](C)C=CC(=O)[C@]23C(=O)N[C@@H](Cc2ccccc2)[C@@H]3[C@@H]1C",
+                    "products": [
+                        "CC1=C[C@@H]2C=CC[C@H](C)C(=O)[C@@H](C)C=COC(=O)O[C@]23C(=O)N[C@@H](Cc2ccccc2)[C@@H]3[C@@H]1C"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Shows the formation of an in-line carbonate in the macrocyclic portion of cytochalasin E"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1038/nchembio.1527"
+                ]
+            }
+        }
+    ]
+}
