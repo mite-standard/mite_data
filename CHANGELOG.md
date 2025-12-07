@@ -10,7 +10,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Added
 
 - Checks for MIBiG and Rhea IDs (implemented as warnings in mite_validation)
-- Timeout for UniProt connection
+- Timeout for UniProt, NCBI connection
 
 ### Fixed
 

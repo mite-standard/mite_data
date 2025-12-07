@@ -202,13 +202,22 @@ class FastaManager(BaseModel):
         Returns:
             Tuple of path and data for storage
         """
-        handle = Entrez.efetch(
-            db="protein", id=genpept_acc, rettype="fasta", retmode="text"
-        )
-        fasta_data = handle.read().strip()
-        handle.close()
+        url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
+        params = {
+            "db": "protein",
+            "id": genpept_acc,
+            "rettype": "fasta",
+            "retmode": "text",
+        }
+        try:
+            response = requests.get(url, params, timeout=self.timeout)
+        except requests.exceptions.ConnectTimeout as e:
+            raise RuntimeError("Warning: could not connect to NCBI: Timeout") from e
 
-        lines = fasta_data.splitlines()
+        if response is None:
+            raise RuntimeError(f"{mite_acc}: NCBI download failed on ID {genpept_acc}")
+        lines = response.text.strip().splitlines()
+
         if not lines or len(lines) == 1:
             raise ValueError(
                 f"{mite_acc}: No sequence found for GenBank Accession {genpept_acc}"
