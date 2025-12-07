@@ -4963,6 +4963,28 @@
       "class": "Not found",
       "order": "Not found",
       "family": "Not found"
+    },
+    "MITE0000217": {
+      "accession": "MITE0000217",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "ChtnH",
+      "enzyme_description": "Pyruvyl transferase",
+      "enzyme_ids": {
+        "uniprot": "UPI000414702F",
+        "genpept": "XOT41316.1"
+      },
+      "tailoring": "Other",
+      "reaction_description": "Pyruvylation of a PUFA synthase-derived alkyl chain via reaction with a diol resulting in a cyclic acetal formation",
+      "cofactors_organic": "N/A",
+      "cofactors_inorganic": "N/A",
+      "organism": "Not found",
+      "domain": "Not found",
+      "kingdom": "Not found",
+      "phylum": "Not found",
+      "class": "Not found",
+      "order": "Not found",
+      "family": "Not found"
     }
   }
 }

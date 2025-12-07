@@ -215,5 +215,6 @@ MITE0000213,active,TalE,Phosphorylation,N/A,Mg,Kinase, Install an N-terminal pho
 MITE0000214,active,LsGAO1,Oxidation,Heme,Fe,Cytochrome P450,Converts germacrene A to germacrene A acid via three-step oxidation,Lactuca sativa,Eukaryota,Viridiplantae,Streptophyta,Embryophyta,Tracheophyta,Spermatophyta
 MITE0000215,active,CiLCS ,Hydroxylation,Heme,Fe,Cytochrome P450,Converts 8-deoxylactucin to lactucin,Not found,Not found,Not found,Not found,Not found,Not found,Not found
 MITE0000216,active,ShyB,Biaryl bond formation,Heme,Fe,Cytochrome P450,Biaryl bond formation between H-Y,Not found,Not found,Not found,Not found,Not found,Not found,Not found
+MITE0000217,active,ChtnH,Other,N/A,N/A,Pyruvyl transferase,Pyruvylation of a PUFA synthase-derived alkyl chain via reaction with a diol resulting in a cyclic acetal formation,Not found,Not found,Not found,Not found,Not found,Not found,Not found
 MITE0000218,active,CYP502B15,Hydroxylation,Heme,Fe,Cytochrome P450,Modifies various cadinane-type sesquiterpenoids,Not found,Not found,Not found,Not found,Not found,Not found,Not found
 MITE0000219,active,BipD,Biaryl bond formation,Cobalamin|SAM,Fe,B12-containing rSAM,Introduction of biaryl-bond between two ortho-tyrosine residues,Not found,Not found,Not found,Not found,Not found,Not found,Not found
