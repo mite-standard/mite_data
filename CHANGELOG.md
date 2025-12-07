@@ -17,6 +17,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 - CI/CD run for new entries
 - Fixed NCBI/Uniprot organism checks
+- Prevent FASTA file download of retired entries
 
 ## [1.19] 27-10-2025
 
