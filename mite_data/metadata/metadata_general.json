@@ -4515,7 +4515,7 @@
       "status": "active",
       "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
       "enzyme_name": "LsGAO1",
-      "enzyme_description": "cytochrome P450",
+      "enzyme_description": "Cytochrome P450",
       "enzyme_ids": {
         "uniprot": "D5J9U8",
         "genpept": "ADF32078.1"

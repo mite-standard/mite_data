@@ -212,7 +212,7 @@ MITE0000210,active,CheE,Monooxygenation,Heme,Fe,Cytochrome P450,Stereoselective 
 MITE0000211,active,PyiA,Methylation,SAM,FeS,O-methyltransferase,Methylation of L-tyrosine,Pyricularia grisea,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Sordariomycetes
 MITE0000212,active,TalC,Glycosylation,N/A,N/A,Deoxysugar transferase,Glycosylation of phosphoramidon peptidic intermediate with L-rhamnose,Streptomyces mozunensis,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
 MITE0000213,active,TalE,Phosphorylation,N/A,Mg,Kinase, Install an N-terminal phosphoramidate on peptidic substrate,Streptomyces mozunensis,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
-MITE0000214,active,LsGAO1,Oxidation,Heme,Fe,cytochrome P450,Converts germacrene A to germacrene A acid via three-step oxidation,Lactuca sativa,Eukaryota,Viridiplantae,Streptophyta,Embryophyta,Tracheophyta,Spermatophyta
+MITE0000214,active,LsGAO1,Oxidation,Heme,Fe,Cytochrome P450,Converts germacrene A to germacrene A acid via three-step oxidation,Lactuca sativa,Eukaryota,Viridiplantae,Streptophyta,Embryophyta,Tracheophyta,Spermatophyta
 MITE0000215,active,CiLCS ,Hydroxylation,Heme,Fe,Cytochrome P450,Converts 8-deoxylactucin to lactucin,Not found,Not found,Not found,Not found,Not found,Not found,Not found
 MITE0000216,active,ShyB,Biaryl bond formation,Heme,Fe,Cytochrome P450,Biaryl bond formation between H-Y,Not found,Not found,Not found,Not found,Not found,Not found,Not found
 MITE0000218,active,CYP502B15,Hydroxylation,Heme,Fe,Cytochrome P450,Modifies various cadinane-type sesquiterpenoids,Not found,Not found,Not found,Not found,Not found,Not found,Not found

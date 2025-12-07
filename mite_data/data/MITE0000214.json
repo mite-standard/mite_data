@@ -14,11 +14,22 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "New entry. checked reaction and publication. checked references, links and reactions. Reviewer 2 added cofactors."
+        },
+        {
+            "version": "2",
+            "date": "2025-10-29",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Fixed enzyme description capitalization."
         }
     ],
     "enzyme": {
         "name": "LsGAO1",
-        "description": "cytochrome P450",
+        "description": "Cytochrome P450",
         "references": [
             "doi:10.1074/jbc.M110.111757",
             "doi:10.1104/pp.19.00629"
