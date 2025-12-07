@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.20] 07-12-2025
+
+### Added
+
+- Checks for MIBiG and Rhea IDs (implemented as warnings in mite_validation)
+- Timeout for UniProt, NCBI connection
+
+### Fixed
+
+- CI/CD run for new entries
+
 
 ## [1.19] 27-10-2025
 

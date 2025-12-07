@@ -5,9 +5,6 @@ tests/example_files/*.fasta
 tests/example_files/MiteBlastDB*
 ain
 aout
-mite_data/mibig/
-mite_data/mibig_proteins.fasta
-mite_data/mibig_proteins.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -18,6 +18,7 @@ def cicd_mngr():
     return CicdManager(
         src=Path(__file__).parent.joinpath("mock_src"),
         fasta=Path(__file__).parent.joinpath("mock_fasta"),
+        mibig=Path(__file__).parent.joinpath("mock_metadata/mibig_proteins.json"),
         reserved_path=Path(__file__).parent.joinpath(
             "mock_metadata/mock_reserved.json"
         ),
@@ -52,30 +53,41 @@ def test_run_dir(cicd_mngr):
 
 def test_check_file_naming_valid(cicd_mngr):
     cicd_mngr.check_file_naming(path=Path("MITE0000001.json"))
-    assert len(cicd_mngr.issues) == 0
+    assert len(cicd_mngr.errors) == 0
 
 
 def test_check_file_naming_invalid(cicd_mngr):
     cicd_mngr.check_file_naming(path=Path("asdfasd"))
-    assert len(cicd_mngr.issues) == 1
+    assert len(cicd_mngr.errors) == 1
 
 
-def test_check_release_ready_valid(cicd_mngr, data):
-    cicd_mngr.check_release_ready(data)
-    assert len(cicd_mngr.issues) == 0
+def test_check_status_valid(cicd_mngr, data):
+    cicd_mngr.check_status(data)
+    assert len(cicd_mngr.errors) == 0
 
 
-def test_check_release_ready_invalid(cicd_mngr, data):
+def test_check_status_invalid(cicd_mngr, data):
     data_cp = copy.deepcopy(data)
     data_cp["status"] = "pending"
+    cicd_mngr.check_status(data_cp)
+    assert len(cicd_mngr.errors) == 1
+
+
+def test_check_accession_valid(cicd_mngr, data):
+    cicd_mngr.check_accession(data)
+    assert len(cicd_mngr.errors) == 0
+
+
+def test_check_accession_invalid(cicd_mngr, data):
+    data_cp = copy.deepcopy(data)
     data_cp["accession"] = "MITE9999999"
-    cicd_mngr.check_release_ready(data_cp)
-    assert len(cicd_mngr.issues) == 2
+    cicd_mngr.check_accession(data_cp)
+    assert len(cicd_mngr.errors) == 1
 
 
 def test_check_duplicates_valid(cicd_mngr, data):
     cicd_mngr.check_duplicates(data)
-    assert len(cicd_mngr.issues) == 0
+    assert len(cicd_mngr.errors) == 0
 
 
 def test_check_duplicates_invalid(cicd_mngr, data):
@@ -83,47 +95,144 @@ def test_check_duplicates_invalid(cicd_mngr, data):
     cicd_mngr.genpept["AAD28496.1"].append("MITE99999")
     cicd_mngr.uniprot["Q9X2V9"].append("MITE99999")
     cicd_mngr.check_duplicates(data)
-    assert len(cicd_mngr.issues) == 2
+    assert len(cicd_mngr.errors) == 2
 
 
 def test_check_fasta_header_valid(cicd_mngr, data):
     cicd_mngr.check_fasta_header(data)
-    assert len(cicd_mngr.issues) == 0
+    assert len(cicd_mngr.errors) == 0
 
 
 def test_check_fasta_header_genpept_invalid(cicd_mngr, data):
     data_cp = copy.deepcopy(data)
     data_cp["enzyme"]["databaseIds"]["genpept"] = "sdtzuio"
     cicd_mngr.check_fasta_header(data_cp)
-    assert len(cicd_mngr.issues) == 1
+    assert len(cicd_mngr.errors) == 1
 
 
 def test_check_fasta_header_filepath_invalid(cicd_mngr, data):
     data_cp = copy.deepcopy(data)
     data_cp["accession"] = "qwertzuji"
     cicd_mngr.check_fasta_header(data_cp)
-    assert len(cicd_mngr.issues) == 1
+    assert len(cicd_mngr.errors) == 1
 
 
 def test_validate_entries_passing_valid(cicd_mngr, data):
     cicd_mngr.validate_entries_passing(data)
-    assert len(cicd_mngr.issues) == 0
+    assert len(cicd_mngr.errors) == 0
 
 
 def test_validate_entries_passing_invalid(cicd_mngr, data):
     data_cp = copy.deepcopy(data)
     data_cp["reactions"][0]["reactionSMARTS"] = r"[c]>>[c]"
     cicd_mngr.validate_entries_passing(data_cp)
-    assert len(cicd_mngr.issues) == 1
+    assert len(cicd_mngr.errors) == 1
 
 
 def test_validate_db_ids_valid(cicd_mngr, data):
     cicd_mngr.validate_db_ids(data)
-    assert len(cicd_mngr.issues) == 0
+    assert len(cicd_mngr.errors) == 0
 
 
 def test_validate_db_ids_invalid(cicd_mngr, data):
     data_cp = copy.deepcopy(data)
     data_cp["enzyme"]["databaseIds"]["genpept"] = "sdtzuio"
     cicd_mngr.validate_db_ids(data_cp)
-    assert len(cicd_mngr.issues) == 1
+    assert len(cicd_mngr.errors) == 1
+
+
+def test_check_match_db_ids_valid(cicd_mngr, data):
+    cicd_mngr.check_match_db_ids(data)
+    assert len(cicd_mngr.warnings) == 0
+
+
+def test_check_match_db_ids_uniparc_valid(cicd_mngr, data):
+    data_cp = copy.deepcopy(data)
+    data_cp["enzyme"]["databaseIds"]["uniprot"] = "UPI000006B1C3"
+    cicd_mngr.check_match_db_ids(data_cp)
+    assert len(cicd_mngr.warnings) == 0
+
+
+def test_check_match_db_ids_uniprot_invalid(cicd_mngr, data):
+    data_cp = copy.deepcopy(data)
+    data_cp["enzyme"]["databaseIds"]["uniprot"] = "Q93KW5"
+    cicd_mngr.check_match_db_ids(data_cp)
+    assert len(cicd_mngr.warnings) == 1
+
+
+def test_check_match_db_ids_uniprot_missing(cicd_mngr, data):
+    data_cp = copy.deepcopy(data)
+    data_cp["enzyme"]["databaseIds"].pop("uniprot")
+    cicd_mngr.check_match_db_ids(data_cp)
+    assert len(cicd_mngr.warnings) == 1
+
+
+def test_check_match_db_ids_genpept_invalid(cicd_mngr, data):
+    data_cp = copy.deepcopy(data)
+    data_cp["enzyme"]["databaseIds"]["genpept"] = "AAK83180.1"
+    cicd_mngr.check_match_db_ids(data_cp)
+    assert len(cicd_mngr.warnings) == 1
+
+
+def test_check_match_db_ids_genpept_missing(cicd_mngr, data):
+    data_cp = copy.deepcopy(data)
+    data_cp["enzyme"]["databaseIds"].pop("genpept")
+    cicd_mngr.check_match_db_ids(data_cp)
+    assert len(cicd_mngr.warnings) == 1
+
+
+def test_check_mibig_valid(cicd_mngr, data):
+    cicd_mngr.check_mibig(data)
+    assert len(cicd_mngr.warnings) == 0
+    assert len(cicd_mngr.errors) == 0
+
+
+def test_check_mibig_mibig_invalid(cicd_mngr, data):
+    data_cp = copy.deepcopy(data)
+    data_cp["enzyme"]["databaseIds"].pop("mibig")
+    cicd_mngr.check_mibig(data_cp)
+    assert len(cicd_mngr.warnings) == 0
+    assert len(cicd_mngr.errors) == 0
+
+
+def test_check_mibig_genpept_invalid(cicd_mngr, data):
+    data_cp = copy.deepcopy(data)
+    data_cp["enzyme"]["databaseIds"].pop("genpept")
+    cicd_mngr.check_mibig(data_cp)
+    assert len(cicd_mngr.errors) == 1
+
+
+def test_check_mibig_id_invalid(cicd_mngr, data):
+    data_cp = copy.deepcopy(data)
+    data_cp["enzyme"]["databaseIds"]["mibig"] = "BGC9999999"
+    cicd_mngr.check_mibig(data_cp)
+    assert len(cicd_mngr.warnings) == 1
+
+
+def test_check_mibig_genpept_id_invalid(cicd_mngr, data):
+    data_cp = copy.deepcopy(data)
+    data_cp["enzyme"]["databaseIds"]["genpept"] = "AHH99923.1"
+    cicd_mngr.check_mibig(data_cp)
+    assert len(cicd_mngr.errors) == 1
+
+
+def test_check_rhea_valid(cicd_mngr, data):
+    data_cp = copy.deepcopy(data)
+    data_cp["enzyme"]["databaseIds"]["uniprot"] = "Q8GED9"
+    data_cp["reactions"][0]["databaseIds"] = {"rhea": "35531"}
+    cicd_mngr.check_rhea(data_cp)
+    assert len(cicd_mngr.warnings) == 0
+
+
+def test_check_rhea_unknown_uniprot(cicd_mngr, data):
+    cicd_mngr.check_rhea(data)
+    assert len(cicd_mngr.warnings) == 0
+
+
+def test_check_rhea_mismatch(cicd_mngr, data):
+    data_cp = copy.deepcopy(data)
+    data_cp["reactions"][0]["databaseIds"] = {
+        "rhea": "35531",
+    }
+    cicd_mngr.check_rhea(data_cp)
+    assert len(cicd_mngr.warnings) == 1

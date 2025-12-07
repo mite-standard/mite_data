@@ -128,6 +128,7 @@ from pathlib import Path
 from sys import argv
 from typing import Self
 
+import requests
 from mite_extras import MiteParser
 from mite_extras.processing.validation_manager import IdValidator
 from mite_schema import SchemaManager
@@ -142,8 +143,11 @@ class CicdManager(BaseModel):
     Attributes:
         src: a Path towards the source directory
         fasta: a Path towards to directory containing accompanying fasta files
+        mibig: Path towards mibig proteins file
+        mibig_proteins: dict of MIBiG IDs and corresponding genpepts
         reserved_path: Path to json file of reserved accessions
-        issues: all issues detected during run
+        errors: all errors detected during run
+        warnings: all warnings (do not raise errors)
         genpept: a list of genbank accessions in mite_data
         uniprot: a list of uniprot accessions in mite_data
         reserved: a list of reserved accessions (mustn't be used)
@@ -151,10 +155,13 @@ class CicdManager(BaseModel):
 
     src: DirectoryPath = Path(__file__).parent.parent.joinpath("data/")
     fasta: DirectoryPath = Path(__file__).parent.parent.joinpath("fasta/")
+    mibig: FilePath = Path(__file__).parent.parent.joinpath("mibig/mibig_proteins.json")
+    mibig_proteins: dict = {}
     reserved_path: FilePath = Path(__file__).parent.parent.joinpath(
         "reserved_accessions.json"
     )
-    issues: list = []
+    errors: list = []
+    warnings: list = []
     genpept: dict = {}
     uniprot: dict = {}
     reserved: list = []
@@ -189,6 +196,12 @@ class CicdManager(BaseModel):
             self.reserved = [i[0] for i in data.get("reserved")]
         return self
 
+    @model_validator(mode="after")
+    def get_mibig_proteins(self):
+        with open(self.mibig) as infile:
+            self.mibig_proteins = json.load(infile)
+        return self
+
     def run_file(self: Self, path: str) -> None:
         """Run a single file against validation functions
 
@@ -199,7 +212,7 @@ class CicdManager(BaseModel):
 
         Raises:
             FileNotFoundError: mite file or mite fasta file not found
-            RuntimeError: one or more issues with files detected
+            RuntimeError: one or more errors with files detected
         """
         path = Path(path)
         if not path.exists():
@@ -213,13 +226,20 @@ class CicdManager(BaseModel):
         with open(path) as infile:
             data = json.load(infile)
 
-        self.check_release_ready(data=data)
+        self.check_status(data=data)
+        self.check_accession(data=data)
         self.check_duplicates(data=data)
         self.validate_entries_passing(data=data)
         self.validate_db_ids(data=data)
+        self.check_match_db_ids(data=data)
+        self.check_mibig(data=data)
+        self.check_rhea(data=data)
 
-        if len(self.issues) != 0:
-            raise RuntimeError("\n".join(self.issues))
+        if len(self.warnings) != 0:
+            print("\n".join(self.warnings))
+
+        if len(self.errors) != 0:
+            raise RuntimeError("\n".join(self.errors))
 
     def run_data_dir(self: Self) -> None:
         """Run all files against validation functions
@@ -228,7 +248,7 @@ class CicdManager(BaseModel):
 
         Raises:
             FileNotFoundError: mite file not found
-            RuntimeError: one or more issues with files detected
+            RuntimeError: one or more errors with files detected
         """
         for path in self.src.iterdir():
             if not path.exists():
@@ -240,25 +260,26 @@ class CicdManager(BaseModel):
                 data = json.load(infile)
             if data["status"] != "active":
                 if self.fasta.joinpath(f"{path.stem}.fasta").exists():
-                    self.issues.append(
+                    self.errors.append(
                         f"File '{path.name}' is not active but still has an accompanying fasta file - remove it. \n"
                         f"{self.fasta.joinpath(f'{path.stem}.fasta')}"
                     )
                 continue
 
             if not self.fasta.joinpath(f"{path.stem}.fasta").exists():
-                self.issues.append(
+                self.errors.append(
                     f"File '{path.name}' does not have an accompanying fasta file."
                 )
 
-            self.check_release_ready(data=data)
+            self.check_status(data=data)
+            self.check_accession(data=data)
             self.check_duplicates(data=data)
             self.check_fasta_header(data=data)
             self.validate_entries_passing(data=data)
             self.validate_db_ids(data=data)
 
-        if len(self.issues) != 0:
-            raise RuntimeError("\n".join(self.issues))
+        if len(self.errors) != 0:
+            raise RuntimeError("\n".join(self.errors))
 
     def check_file_naming(self: Self, path: Path) -> None:
         """Check if follows naming
@@ -267,23 +288,29 @@ class CicdManager(BaseModel):
             path: a Path object pointing to file
         """
         if not path.name.startswith("MITE") or path.suffix != ".json":
-            self.issues.append(
+            self.errors.append(
                 f"File '{path.name}' does not follow naming convention 'MITEnnnnnnn.json'."
             )
 
-    def check_release_ready(self: Self, data: dict) -> None:
-        """Verify that entry does not have the status tag 'pending' or the MITE ID MITE9999999
+    def check_status(self: Self, data: dict) -> None:
+        """Verify that entry does not have the status tag 'pending'
 
         Argument:
             data: the mite entry data
         """
         if data["status"] == "pending":
-            self.issues.append(
+            self.errors.append(
                 f"Entry '{data["accession"]}' has the status flag 'pending'. This must be set to 'active' before release."
             )
 
+    def check_accession(self, data: dict) -> None:
+        """Verify that entry does not have the internally used MITE ID MITE9999999
+
+        Argument:
+            data: the mite entry data
+        """
         if data["accession"] in self.reserved:
-            self.issues.append(
+            self.errors.append(
                 f"The MITE accession '{data["accession"]}' is already reserved. Please change this to another accession number."
             )
 
@@ -298,13 +325,13 @@ class CicdManager(BaseModel):
 
         if acc := data["enzyme"]["databaseIds"].get("genpept", None):
             if len(self.genpept[acc]) > 1:
-                self.issues.append(
+                self.errors.append(
                     f"Multiple entries share the same GenPept ID '{acc}': '{self.genpept[acc]}'"
                 )
 
         if acc := data["enzyme"]["databaseIds"].get("uniprot", None):
             if len(self.uniprot[acc]) > 1:
-                self.issues.append(
+                self.errors.append(
                     f"Multiple entries share the same UniProt ID '{acc}': '{self.uniprot[acc]}'"
                 )
 
@@ -316,7 +343,7 @@ class CicdManager(BaseModel):
         """
         fasta = self.fasta.joinpath(f"{data["accession"]}.fasta")
         if not fasta.exists():
-            self.issues.append(
+            self.errors.append(
                 f"File {fasta.name} expected but missing. Must be added before release!"
             )
             return
@@ -330,7 +357,7 @@ class CicdManager(BaseModel):
         ]
 
         if not accession in ids:
-            self.issues.append(
+            self.errors.append(
                 f"{data["accession"]}: database IDs '{ids}' do not match accession in {data["accession"]}.fasta '{accession}'. \n"
                 "Please check if the IDs were updated but the fasta file not."
             )
@@ -347,12 +374,12 @@ class CicdManager(BaseModel):
             schema_manager = SchemaManager()
             schema_manager.validate_mite(instance=parser.to_json())
         except Exception as e:
-            self.issues.append(
+            self.errors.append(
                 f"Error: entry {data["accession"]} failed validation ({e})."
             )
 
     def validate_db_ids(self: Self, data: dict) -> None:
-        """Check if MITE entry IDs all pass checks
+        """Check if MITE cross-reference IDs can be accessed (=downloaded)
 
         Argument:
             data: the mite entry data
@@ -376,8 +403,113 @@ class CicdManager(BaseModel):
                     qid=data["enzyme"]["databaseIds"]["wikidata"]
                 )
         except Exception as e:
-            self.issues.append(
+            self.errors.append(
                 f"Error: entry {data["accession"]} failed validation of DB crosslinks ({e})."
+            )
+
+    def check_match_db_ids(self: Self, data: dict) -> None:
+        """Check if uniprot and genpept IDs correspond to each other
+
+        Does currently not work for UniParc - cross-check omitted.
+
+        Argument:
+            data: the mite entry data
+        """
+        id_val = IdValidator()
+
+        uniprot = data["enzyme"]["databaseIds"].get("uniprot", None)
+        genpept = data["enzyme"]["databaseIds"].get("genpept", None)
+
+        if uniprot and uniprot.startswith("UPI"):
+            return
+
+        try:
+            if uniprot and genpept:
+                id_val.cleanup_ids(genpept=genpept, uniprot=uniprot)
+            elif uniprot:
+                match = id_val.cleanup_ids(uniprot=uniprot)
+                self.warnings.append(
+                    f"Warning: {data["accession"]}'s missing GenPept ID {match["genpept"]} can be automatically added using UniProt ID {uniprot}"
+                )
+            elif genpept:
+                match = id_val.cleanup_ids(genpept=genpept)
+                self.warnings.append(
+                    f"Warning: {data["accession"]}'s missing UniProt ID {match["uniprot"]} can be automatically added using GenPept ID {genpept}"
+                )
+        except Exception as e:
+            self.warnings.append(
+                f"Warning: error during EnzymeDatabaseIds validation: {e!s}"
+            )
+
+    def check_mibig(self: Self, data: dict) -> None:
+        """Check if genpept part of MIBiG if MIBiG ID was specified
+
+        Argument:
+            data: the mite entry data
+        """
+        mibig = data["enzyme"]["databaseIds"].get("mibig")
+        genpept = data["enzyme"]["databaseIds"].get("genpept")
+
+        if not mibig:
+            return
+
+        if not genpept:
+            self.errors.append(
+                f"Error: entry {data["accession"]} has MIBiG ID {mibig} but no GenPept ID: not allowed."
+            )
+            return
+
+        if mibig not in self.mibig_proteins:
+            self.warnings.append(
+                f"Warning: entry {data["accession"]}'s MIBiG ID {mibig} not found in known MIBiG IDs, perhaps because it is retired. Double-check on MIBiG website if it really exists."
+            )
+            return
+
+        if genpept not in self.mibig_proteins[mibig]:
+            self.errors.append(
+                f"Error: entry {data["accession"]}'s GenPept ID {genpept} is not found in the proteins of the referenced MIBiG ID {mibig}."
+            )
+
+    def check_rhea(self: Self, data: dict, timeout: float = 3.0) -> None:
+        """Check if UniProt can be annotated with Rhea ID
+
+        Argument:
+            data: the mite entry data
+        """
+        uniprot = data["enzyme"]["databaseIds"].get("uniprot")
+        if not uniprot:
+            return
+
+        known_rhea = set()
+        for reaction in data["reactions"]:
+            if val := reaction.get("databaseIds", {}).get("rhea"):
+                known_rhea.add(val)
+        try:
+            response = requests.get(
+                url="https://www.rhea-db.org/rhea?",
+                params={
+                    "query": uniprot,
+                    "columns": "rhea-id",
+                    "format": "tsv",
+                    "limit": 10,
+                },
+                timeout=timeout,
+            )
+        except requests.exceptions.ConnectTimeout:
+            self.warnings.append(f"Warning: could not connect to Rhea: Timeout")
+            return
+
+        retrieved_rhea = set()
+        if response.status_code == 200:
+            retrieved_rhea = {
+                i.removeprefix("RHEA:") for i in response.text.split()[2:]
+            }
+
+        if known_rhea != retrieved_rhea:
+            self.warnings.append(
+                f"Warning: entry {data["accession"]} shows mismatch between annotated and retrieved RHEA IDs: \n"
+                f"Annotated RHEA IDs: {sorted(known_rhea)} \n"
+                f"Retrieved RHEA IDs: {sorted(retrieved_rhea)}"
             )
 
 
