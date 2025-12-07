@@ -5051,6 +5051,28 @@
       "class": "Ascomycota",
       "order": "Pezizomycotina",
       "family": "Eurotiomycetes"
+    },
+    "MITE0000223": {
+      "accession": "MITE0000223",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "AgcF",
+      "enzyme_description": "Guanidine prenyltransferase",
+      "enzyme_ids": {
+        "uniprot": "UPI001AF07BD7",
+        "genpept": "BCR82584.1"
+      },
+      "tailoring": "Prenylation",
+      "reaction_description": "N-prenylation on guanidine moiety of arginine residue of Argicyclamide C",
+      "cofactors_organic": "N/A",
+      "cofactors_inorganic": "Mg",
+      "organism": "Not found",
+      "domain": "Not found",
+      "kingdom": "Not found",
+      "phylum": "Not found",
+      "class": "Not found",
+      "order": "Not found",
+      "family": "Not found"
     }
   }
 }
