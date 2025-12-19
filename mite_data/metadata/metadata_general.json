@@ -5073,6 +5073,29 @@
       "class": "Cyanophyceae",
       "order": "Oscillatoriophycideae",
       "family": "Chroococcales"
+    },
+    "MITE0000224": {
+      "accession": "MITE0000224",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "AgeMTPT",
+      "enzyme_description": "Bifunctional prenyltransferase/methyltransferase",
+      "enzyme_ids": {
+        "uniprot": "UPI000261A9F7",
+        "genpept": "CCH92966.1",
+        "mibig": "BGC0000483"
+      },
+      "tailoring": "Methylation|Prenylation",
+      "reaction_description": "Prenylation and Methyl esterification at free N- and C-termini of linear peptides",
+      "cofactors_organic": "N/A",
+      "cofactors_inorganic": "N/A",
+      "organism": "Microcystis aeruginosa PCC 9432",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Cyanobacteriota",
+      "class": "Cyanophyceae",
+      "order": "Oscillatoriophycideae",
+      "family": "Chroococcales"
     }
   }
 }

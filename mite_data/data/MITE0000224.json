@@ -1,0 +1,60 @@
+{
+    "accession": "MITE0000224",
+    "status": "active",
+    "comment": "Prenylation and methyl-esterification at free N- and C-termini of linear peptides. Protein is annotated as AgeF1 in the original publication.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2025-11-23",
+            "contributors": [
+                "0000-0002-8834-593X"
+            ],
+            "reviewers": [
+                "0000-0002-8323-5416"
+            ],
+            "comment": "New entry. Updated former protein name (AgeF1). Updated citations."
+        }
+    ],
+    "enzyme": {
+        "name": "AgeMTPT",
+        "description": "Bifunctional prenyltransferase/methyltransferase",
+        "references": [
+            "doi:10.1016/j.chembiol.2013.06.015",
+            "doi:10.1021/jacs.6b12872"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI000261A9F7",
+            "genpept": "CCH92966.1",
+            "mibig": "BGC0000483"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Methylation",
+                "Prenylation"
+            ],
+            "description": "Prenylation and Methyl esterification at free N- and C-termini of linear peptides",
+            "reactionSMARTS": "[#7:1]/[#6@:2](-[#6:10](-[#7:12]/[#6@:13](-[#6:21](-[#7:23]1-[#6@:27](\\[#6:28]2-[#16:35]-[#6:31]-[#6@@:30](-[#6:32](-[#8:34])=[#8:33])/[#7:29]=2)-[#6:26]-[#6:25]-[#6:24]-1)=[#8:22])-[#6:14]-[#6:15]1:[#6:20]:[#6:19]:[#6:18]:[#6:17]:[#6:16]:1)=[#8:11])-[#6:3]-[#6:4]1:[#6:9]:[#6:8]:[#6:7]:[#6:6]:[#6:5]:1>>[#7:1](-[#6:4](-[#6:5]=[#6:6])(-[#6:9])-[#6:3])/[#6@:2](-[#6:10](-[#7:12]/[#6@:13](-[#6:21](-[#7:23]1-[#6@:27](\\[#6:28]2-[#16:35]-[#6:31]-[#6@@:30](-[#6:32](-[#8:34]-[#6])=[#8:33])/[#7:29]=2)-[#6:26]-[#6:25]-[#6:24]-1)=[#8:22])-[#6:14]-[#6:15]1:[#6:20]:[#6:19]:[#6:18]:[#6:17]:[#6:16]:1)=[#8:11])-[#6:3]-[#6:4]1:[#6:5]:[#6:6]:[#6:7]:[#6:8]:[#6:9]:1",
+            "reactions": [
+                {
+                    "substrate": "N[C@@H](Cc1ccccc1)C(=O)N[C@@H](Cc1ccccc1)C(=O)N1CCC[C@H]1C1=N[C@H](C(=O)O)CS1",
+                    "products": [
+                        "C=CC(C)(C)N[C@@H](Cc1ccccc1)C(=O)N[C@@H](Cc1ccccc1)C(=O)N1CCC[C@H]1C1=N[C@H](C(=O)OC)CS1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Prenylation and Methyl esterification at free N- and C-termini of minimal substrate from the biosynthesis of aeruginosamide B"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/jacs.6b12872"
+                ]
+            }
+        }
+    ]
+}
