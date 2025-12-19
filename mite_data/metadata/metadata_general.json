@@ -5117,6 +5117,28 @@
       "class": "Not found",
       "order": "Not found",
       "family": "Not found"
+    },
+    "MITE0000226": {
+      "accession": "MITE0000226",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "StmC",
+      "enzyme_description": "Glycosyltransferase",
+      "enzyme_ids": {
+        "uniprot": "UPI0005831253",
+        "genpept": "KIA76014.1"
+      },
+      "tailoring": "Glycosylation",
+      "reaction_description": "Glycosylation of stromemycin in Aspergillus ustus",
+      "cofactors_organic": "N/A",
+      "cofactors_inorganic": "N/A",
+      "organism": "Aspergillus ustus",
+      "domain": "Eukaryota",
+      "kingdom": "Fungi",
+      "phylum": "Dikarya",
+      "class": "Ascomycota",
+      "order": "Pezizomycotina",
+      "family": "Eurotiomycetes"
     }
   }
 }
