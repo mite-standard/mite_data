@@ -127,7 +127,7 @@
         "mibig": "BGC0002514"
       },
       "tailoring": "Acetylation",
-      "reaction_description": "No description",
+      "reaction_description": "Acetylates the nascent julichrome monomer",
       "cofactors_organic": "N/A",
       "cofactors_inorganic": "N/A",
       "organism": "Streptomyces sampsonii",
