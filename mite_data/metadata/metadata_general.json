@@ -5139,6 +5139,29 @@
       "class": "Ascomycota",
       "order": "Pezizomycotina",
       "family": "Eurotiomycetes"
+    },
+    "MITE0000227": {
+      "accession": "MITE0000227",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "AprY",
+      "enzyme_description": "Oxidase",
+      "enzyme_ids": {
+        "uniprot": "B8NCQ4",
+        "genpept": "EED52437.1",
+        "mibig": "BGC0001306"
+      },
+      "tailoring": "Oxidation",
+      "reaction_description": "Oxidative cyclization of Y2 and Y6 in the FYYTGY hexapeptide, no leader peptide required. The sequence KRFYYTGYKR did not lead to any products",
+      "cofactors_organic": "Ascorbic acid|NADP",
+      "cofactors_inorganic": "Cu",
+      "organism": "Aspergillus flavus (strain ATCC 200026 / FGSC A1120 / IAM 13836 / NRRL 3357 / JCM 12722 / SRRC 167)",
+      "domain": "Eukaryota",
+      "kingdom": "Fungi",
+      "phylum": "Dikarya",
+      "class": "Ascomycota",
+      "order": "Pezizomycotina",
+      "family": "Eurotiomycetes"
     }
   }
 }

@@ -2397,6 +2397,25 @@
           "doi:10.1021/jacs.6b12872"
         ]
       }
+    ],
+    "BGC0001306": [
+      {
+        "mite_accession": "MITE0000227",
+        "mite_url": "https://bioregistry.io/mite:MITE0000227",
+        "status": "active",
+        "enzyme_name": "AprY",
+        "enzyme_description": "Oxidase",
+        "enzyme_ids": {
+          "uniprot": "B8NCQ4",
+          "genpept": "EED52437.1",
+          "mibig": "BGC0001306"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1021/jacs.4c18770",
+          "doi:10.1039/C8OB02824A"
+        ]
+      }
     ]
   }
 }
