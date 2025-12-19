@@ -5096,6 +5096,27 @@
       "class": "Cyanophyceae",
       "order": "Oscillatoriophycideae",
       "family": "Chroococcales"
+    },
+    "MITE0000225": {
+      "accession": "MITE0000225",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "ArbB2",
+      "enzyme_description": "burpitide cyclases/BURP-domain peptide cyclases",
+      "enzyme_ids": {
+        "uniprot": "UPI000F5D181E"
+      },
+      "tailoring": "Cyclization",
+      "reaction_description": "Macrocyclisation of Tyr-phenol-O to Leu-Cβ bond observed in arabipeptin A. A minimum leader sequence KDFESKPGS + follower sequence QG is required for enzymatic activity",
+      "cofactors_organic": "N/A",
+      "cofactors_inorganic": "Cu",
+      "organism": "Not found",
+      "domain": "Not found",
+      "kingdom": "Not found",
+      "phylum": "Not found",
+      "class": "Not found",
+      "order": "Not found",
+      "family": "Not found"
     }
   }
 }
