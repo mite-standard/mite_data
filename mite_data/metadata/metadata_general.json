@@ -5162,6 +5162,28 @@
       "class": "Ascomycota",
       "order": "Pezizomycotina",
       "family": "Eurotiomycetes"
+    },
+    "MITE0000228": {
+      "accession": "MITE0000228",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "LlpCT",
+      "enzyme_description": "Crotonobetainyl-CoA:carnitine CoA-transferase",
+      "enzyme_ids": {
+        "uniprot": "A0A9X8N8D0",
+        "genpept": "SHN27822.1"
+      },
+      "tailoring": "Acylation",
+      "reaction_description": "Transfers different Acyl-CoAs onto tyrosine; reaction shown for yunnansin B. N-terminal SFQEDT essential for enzymatic activity.",
+      "cofactors_organic": "N/A",
+      "cofactors_inorganic": "N/A",
+      "organism": "Streptomyces yunnanensis",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
     }
   }
 }
