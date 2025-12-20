@@ -127,7 +127,7 @@
         "mibig": "BGC0002514"
       },
       "tailoring": "Acetylation",
-      "reaction_description": "No description",
+      "reaction_description": "Acetylates the nascent julichrome monomer",
       "cofactors_organic": "N/A",
       "cofactors_inorganic": "N/A",
       "organism": "Streptomyces sampsonii",
@@ -5073,6 +5073,117 @@
       "class": "Cyanophyceae",
       "order": "Oscillatoriophycideae",
       "family": "Chroococcales"
+    },
+    "MITE0000224": {
+      "accession": "MITE0000224",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "AgeMTPT",
+      "enzyme_description": "Bifunctional prenyltransferase/methyltransferase",
+      "enzyme_ids": {
+        "uniprot": "UPI000261A9F7",
+        "genpept": "CCH92966.1",
+        "mibig": "BGC0000483"
+      },
+      "tailoring": "Methylation|Prenylation",
+      "reaction_description": "Prenylation and Methyl esterification at free N- and C-termini of linear peptides",
+      "cofactors_organic": "N/A",
+      "cofactors_inorganic": "N/A",
+      "organism": "Microcystis aeruginosa PCC 9432",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Cyanobacteriota",
+      "class": "Cyanophyceae",
+      "order": "Oscillatoriophycideae",
+      "family": "Chroococcales"
+    },
+    "MITE0000225": {
+      "accession": "MITE0000225",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "ArbB2",
+      "enzyme_description": "burpitide cyclases/BURP-domain peptide cyclases",
+      "enzyme_ids": {
+        "uniprot": "UPI000F5D181E"
+      },
+      "tailoring": "Cyclization",
+      "reaction_description": "Macrocyclisation of Tyr-phenol-O to Leu-Cβ bond observed in arabipeptin A. A minimum leader sequence KDFESKPGS + follower sequence QG is required for enzymatic activity",
+      "cofactors_organic": "N/A",
+      "cofactors_inorganic": "Cu",
+      "organism": "Not found",
+      "domain": "Not found",
+      "kingdom": "Not found",
+      "phylum": "Not found",
+      "class": "Not found",
+      "order": "Not found",
+      "family": "Not found"
+    },
+    "MITE0000226": {
+      "accession": "MITE0000226",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "StmC",
+      "enzyme_description": "Glycosyltransferase",
+      "enzyme_ids": {
+        "uniprot": "UPI0005831253",
+        "genpept": "KIA76014.1"
+      },
+      "tailoring": "Glycosylation",
+      "reaction_description": "Glycosylation of stromemycin in Aspergillus ustus",
+      "cofactors_organic": "N/A",
+      "cofactors_inorganic": "N/A",
+      "organism": "Aspergillus ustus",
+      "domain": "Eukaryota",
+      "kingdom": "Fungi",
+      "phylum": "Dikarya",
+      "class": "Ascomycota",
+      "order": "Pezizomycotina",
+      "family": "Eurotiomycetes"
+    },
+    "MITE0000227": {
+      "accession": "MITE0000227",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "AprY",
+      "enzyme_description": "Oxidase",
+      "enzyme_ids": {
+        "uniprot": "B8NCQ4",
+        "genpept": "EED52437.1",
+        "mibig": "BGC0001306"
+      },
+      "tailoring": "Oxidation",
+      "reaction_description": "Oxidative cyclization of Y2 and Y6 in the FYYTGY hexapeptide, no leader peptide required. The sequence KRFYYTGYKR did not lead to any products",
+      "cofactors_organic": "Ascorbic acid|NADP",
+      "cofactors_inorganic": "Cu",
+      "organism": "Aspergillus flavus (strain ATCC 200026 / FGSC A1120 / IAM 13836 / NRRL 3357 / JCM 12722 / SRRC 167)",
+      "domain": "Eukaryota",
+      "kingdom": "Fungi",
+      "phylum": "Dikarya",
+      "class": "Ascomycota",
+      "order": "Pezizomycotina",
+      "family": "Eurotiomycetes"
+    },
+    "MITE0000228": {
+      "accession": "MITE0000228",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "LlpCT",
+      "enzyme_description": "Crotonobetainyl-CoA:carnitine CoA-transferase",
+      "enzyme_ids": {
+        "uniprot": "A0A9X8N8D0",
+        "genpept": "SHN27822.1"
+      },
+      "tailoring": "Acylation",
+      "reaction_description": "Transfers different Acyl-CoAs onto tyrosine; reaction shown for yunnansin B. N-terminal SFQEDT essential for enzymatic activity.",
+      "cofactors_organic": "N/A",
+      "cofactors_inorganic": "N/A",
+      "organism": "Streptomyces yunnanensis",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
     }
   }
 }

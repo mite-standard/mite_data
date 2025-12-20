@@ -1,0 +1,71 @@
+{
+    "accession": "MITE0000225",
+    "status": "active",
+    "comment": "Copper-dependent cyclase",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2025-11-15",
+            "contributors": [
+                "0000-0002-8834-593X"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609",
+                "0000-0003-4819-2251"
+            ],
+            "comment": "new entry. Reviewer 1 adjusted reaction SMARTS to include minimally required leader and follower sequences and updated examples."
+        }
+    ],
+    "enzyme": {
+        "name": "ArbB2",
+        "description": "burpitide cyclases/BURP-domain peptide cyclases",
+        "references": [
+            "doi:10.1021/jacs.4c15470"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI000F5D181E"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Cu"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Cyclization"
+            ],
+            "description": "Macrocyclisation of Tyr-phenol-O to Leu-Cβ bond observed in arabipeptin A. A minimum leader sequence KDFESKPGS + follower sequence QG is required for enzymatic activity",
+            "reactionSMARTS": "[#6:1]-[#6:2](-[#6:4]/[#6@@:5](-[#6:81](-[#7:83]-[#6@:84](-[#6:86](-[#7:88]-[#6:89]-[#6:90](-[#7:92]\\[#6@:93](-[#6:102](-[#7:104]\\[#6@:105](-[#6:111](-[#7:113]-[#6:114]-[#6:115](-[#8:117])=[#8:116])=[#8:112])-[#6:106]-[#6:107]-[#6:108](=[#8:110])-[#7:109])=[#8:103])-[#6:94]-[#6:95]1:[#6:101]:[#6:100]:[#6:98](-[#8:99]):[#6:97]:[#6:96]:1)=[#8:91])=[#8:87])\\[#6:85])=[#8:82])-[#7:6]-[#6:7](-[#6@@:9](-[#7:11]-[#6:12](/[#6@@:14](-[#7:17]-[#6:18](-[#6:20]-[#7:21]-[#6:22](/[#6@:24]1-[#7:28](-[#6:29](/[#6@@:31](-[#7:37]-[#6:38](\\[#6@@:40](-[#7:43]-[#6:44](/[#6@@:46](-[#7:52]-[#6:53](/[#6@@:55](-[#7:63]-[#6:64](/[#6@@:66](-[#7:71]-[#6:72](-[#6@:74](-[#6:76]-[#6:77]-[#6:78]-[#6:79]-[#7:80])/[#7:75])=[#8:73])-[#6:67]-[#6:68](-[#8:70])=[#8:69])=[#8:65])-[#6:56]-[#6:57]2:[#6:62]:[#6:61]:[#6:60]:[#6:59]:[#6:58]:2)=[#8:54])-[#6:47]-[#6:48]-[#6:49](-[#8:51])=[#8:50])=[#8:45])-[#6:41]-[#8:42])=[#8:39])-[#6:32]-[#6:33]-[#6:34]-[#6:35]-[#7:36])=[#8:30])-[#6:27]-[#6:26]-[#6:25]-1)=[#8:23])=[#8:19])-[#6:15]-[#8:16])=[#8:13])\\[#6:10])=[#8:8])-[#6:3]>>[#6:3]-[#6:2](-[#6:4]1-[#8:99]-[#6:98]2:[#6:97]:[#6:96]:[#6:95](:[#6:101]:[#6:100]:2)-[#6:94]-[#6@@:93](-[#6:102](-[#7:104]\\[#6@:105](-[#6:111](-[#7:113]-[#6:114]-[#6:115](-[#8:117])=[#8:116])=[#8:112])-[#6:106]-[#6:107]-[#6:108](=[#8:110])-[#7:109])=[#8:103])\\[#7:92]-[#6:90](=[#8:91])-[#6:89]-[#7:88]-[#6:86](=[#8:87])-[#6@:84](\\[#6:85])-[#7:83]-[#6:81](=[#8:82])-[#6@:5]/1-[#7:6]-[#6:7](-[#6@@:9](-[#7:11]-[#6:12](/[#6@@:14](-[#7:17]-[#6:18](-[#6:20]-[#7:21]-[#6:22](/[#6@:24]1-[#7:28](-[#6:29](/[#6@@:31](-[#7:37]-[#6:38](\\[#6@@:40](-[#7:43]-[#6:44](/[#6@@:46](-[#7:52]-[#6:53](/[#6@@:55](-[#7:63]-[#6:64](/[#6@@:66](-[#7:71]-[#6:72](-[#6@:74](-[#6:76]-[#6:77]-[#6:78]-[#6:79]-[#7:80])/[#7:75])=[#8:73])-[#6:67]-[#6:68](-[#8:70])=[#8:69])=[#8:65])-[#6:56]-[#6:57]2:[#6:62]:[#6:61]:[#6:60]:[#6:59]:[#6:58]:2)=[#8:54])-[#6:47]-[#6:48]-[#6:49](-[#8:51])=[#8:50])=[#8:45])-[#6:41]-[#8:42])=[#8:39])-[#6:32]-[#6:33]-[#6:34]-[#6:35]-[#7:36])=[#8:30])-[#6:27]-[#6:26]-[#6:25]-1)=[#8:23])=[#8:19])-[#6:15]-[#8:16])=[#8:13])\\[#6:10])=[#8:8])-[#6:1]",
+            "reactions": [
+                {
+                    "substrate": "CC(C)C[C@H](NC(=O)[C@H](C)NC(=O)[C@H](CO)NC(=O)CNC(=O)[C@@H]1CCCN1C(=O)[C@H](CCCCN)NC(=O)[C@H](CO)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CC(=O)O)NC(=O)[C@@H](N)CCCCN)C(=O)N[C@@H](C)C(=O)NCC(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)N[C@@H](CCC(N)=O)C(=O)NCC(=O)O",
+                    "products": [
+                        "CC(C)C1Oc2ccc(cc2)C[C@@H](C(=O)N[C@@H](CCC(N)=O)C(=O)NCC(=O)O)NC(=O)CNC(=O)[C@H](C)NC(=O)[C@H]1NC(=O)[C@H](C)NC(=O)[C@H](CO)NC(=O)CNC(=O)[C@@H]1CCCN1C(=O)[C@H](CCCCN)NC(=O)[C@H](CO)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CC(=O)O)NC(=O)[C@@H](N)CCCCN"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Minimal recognition sequence ArbA2_62–77 in the wildtype peptide, with the FLWGY core sequence"
+                },
+                {
+                    "substrate": "CC[C@H](C)[C@H](NC(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CO)NC(=O)CNC(=O)[C@@H]1CCCN1C(=O)[C@H](CCCCN)NC(=O)[C@H](CO)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CC(=O)O)NC(=O)[C@@H](N)CCCCN)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)N[C@@H](CCC(N)=O)C(=O)NCC(=O)O",
+                    "products": [
+                        "CC[C@H](C)[C@@H]1NC(=O)[C@@H](NC(=O)[C@H](Cc2ccccc2)NC(=O)[C@H](CO)NC(=O)CNC(=O)[C@@H]2CCCN2C(=O)[C@H](CCCCN)NC(=O)[C@H](CO)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](Cc2ccccc2)NC(=O)[C@H](CC(=O)O)NC(=O)[C@@H](N)CCCCN)C(C(C)C)Oc2ccc(cc2)C[C@@H](C(=O)N[C@@H](CCC(N)=O)C(=O)NCC(=O)O)NC(=O)[C@H](CC(C)C)NC1=O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Minimal recognition sequence ArbA2_62–77 with a mutated core sequence FLILY"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Chemical probe",
+                    "Inference from genomic data and chemical structure",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/jacs.4c15470"
+                ]
+            }
+        }
+    ]
+}
