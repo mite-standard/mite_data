@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000225",
-    "status": "active",
+    "status": "pending",
     "comment": "Copper-dependent cyclase",
     "changelog": [
         {
@@ -14,11 +14,22 @@
                 "0000-0003-4819-2251"
             ],
             "comment": "new entry. Reviewer 1 adjusted reaction SMARTS to include minimally required leader and follower sequences and updated examples."
+        },
+        {
+            "version": "2",
+            "date": "2025-12-21",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "Fixed captialization of enzyme description."
         }
     ],
     "enzyme": {
         "name": "ArbB2",
-        "description": "burpitide cyclases/BURP-domain peptide cyclases",
+        "description": "Burpitide cyclases/BURP-domain peptide cyclases",
         "references": [
             "doi:10.1021/jacs.4c15470"
         ],
