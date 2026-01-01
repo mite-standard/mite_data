@@ -1,0 +1,59 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-01-01",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "NotC",
+        "description": "Prenyltransferase",
+        "references": [
+            "doi:10.1021/ja1049302",
+            "doi:10.1039/C2MD20029E"
+        ],
+        "databaseIds": {
+            "uniprot": "E0Y3X0",
+            "genpept": "ADM34136.1",
+            "mibig": "BGC0001084"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Prenylation"
+            ],
+            "description": "Aromatic prenylation of tryptophan-moiety of 6-OH deoxybrevianamide E in the notoamide D pathway. Enzyme shows high substrate specificity.",
+            "reactionSMARTS": "[#6@:1]12-[#6:20](=[#8:21])-[#7:19]-[#6@@:8](/[#6:9]-[#6:10]3:[#6:18]4:[#6:13](:[#6:14]:[#6:15](-[#8:27]):[#6:16]:[#6:17]:4):[n&H1:12]:[#6:11]:3-[#6:22](-[#6:25])(-[#6:24])-[#6:23]=[#6:26])-[#6:6](=[#8:7])-[#7:5]-1-[#6:4]-[#6:3]-[#6:2]/2>>[#6@:1]12-[#6:20](=[#8:21])-[#7:19]-[#6@@:8](/[#6:9]-[#6:10]3:[#6:18]4:[#6:13](:[#6:14](-[#6]-[#6]=[#6](-[#6])-[#6]):[#6:15](-[#8:27]):[#6:16]:[#6:17]:4):[n&H1:12]:[#6:11]:3-[#6:22](-[#6:24])(-[#6:25])-[#6:23]=[#6:26])-[#6:6](=[#8:7])-[#7:5]-1-[#6:4]-[#6:3]-[#6:2]/2",
+            "reactions": [
+                {
+                    "substrate": "C=CC(C)(C)c1[nH]c2cc(O)ccc2c1C[C@@H]1NC(=O)[C@@H]2CCCN2C1=O",
+                    "products": [
+                        "C=CC(C)(C)c1[nH]c2c(CC=C(C)C)c(O)ccc2c1C[C@@H]1NC(=O)[C@@H]2CCCN2C1=O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Conversion of 6-OH deoxybrevianamide E to notoamide S."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/ja1049302"
+                ]
+            }
+        }
+    ]
+}
