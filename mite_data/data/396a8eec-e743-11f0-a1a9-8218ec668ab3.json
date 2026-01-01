@@ -1,0 +1,98 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-01-01",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "NotB",
+        "description": "FAD-dependent monooxygenase",
+        "references": [
+            "doi:10.1021/ja2093212",
+            "doi:10.1021/ja1049302"
+        ],
+        "databaseIds": {
+            "uniprot": "E1ACP7",
+            "genpept": "ADM34135.1",
+            "mibig": "BGC0001084"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD",
+                "NADP"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Cyclization",
+                "Monooxygenation"
+            ],
+            "description": "Oxidative cyclisation of the notoamide E oxidase in the notoamide pathway,  leading to notoamide C. NotB shows high substrate specificity.",
+            "reactionSMARTS": "[CH3:1][C:2]1([CH3:32])[O:7][c:6]2[cH:8][cH:9][c:10]3[c:14]([CH2:15][C@@H:16]4[NH:26][C:24](=[O:25])[C@H:23]5[N:19]([CH2:20][CH2:21][CH2:22]5)[C:17]4=[O:18])[c:13]([C:27]([CH:30]=[CH2:31])([CH3:29])[CH3:28])[n&H1:12][c:11]3[c:5]2[CH:4]=[CH:3]1>>[CH3:1][C:2]1([CH3:32])[O:7][c:6]2[cH:8][cH:9][c:10]3[C@:14]4(O)[CH2:15][C@@H:16]5[N:26]([C@:13]4([C:27]([CH:30]=[CH2:31])([CH3:29])[CH3:28])[NH:12][c:11]3[c:5]2[CH:4]=[CH:3]1)[C:24](=[O:25])[C@H:23]1[N:19]([CH2:20][CH2:21][CH2:22]1)[C:17]5=[O:18]",
+            "reactions": [
+                {
+                    "substrate": "C=CC(C)(C)c1[nH]c2c3c(ccc2c1C[C@@H]1NC(=O)[C@@H]2CCCN2C1=O)OC(C)(C)C=C3",
+                    "products": [
+                        "C=CC(C)(C)[C@@]12Nc3c(ccc4c3C=CC(C)(C)O4)[C@]1(O)C[C@H]1C(=O)N3CCC[C@H]3C(=O)N12"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Conversion of notoamide E to notoamide C"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/ja2093212"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "62348"
+            }
+        },
+        {
+            "tailoring": [
+                "Cyclization",
+                "Monooxygenation"
+            ],
+            "description": "Oxidative cyclisation of the notoamide E oxidase in the notoamide pathway, leading to notoamide D. NotB shows high substrate specificity.",
+            "reactionSMARTS": "[#6:1]-[#6:2]1(-[#6:32])-[#8:7]-[#6:6]2:[#6:8]:[#6:9]:[#6:10]3:[#6:14](-[#6:15]/[#6@@:16]4-[#7:26]-[#6:24](=[#8:25])-[#6@:23]5-[#7:19](-[#6:20]-[#6:21]-[#6:22]/5)-[#6:17]-4=[#8:18]):[#6:13](-[#6:27](-[#6:30]=[#6:31])(-[#6:29])-[#6:28]):[n&H1:12]:[#6:11]:3:[#6:5]:2-[#6:4]=[#6:3]-1>>[#6:1]-[#6:2]1(-[#6:32])-[#8:7]-[#6:6]2:[#6:8]:[#6:9]:[#6:10]3-[#6@@:14](\\[#6:27](-[#6:30]=[#6:31])(-[#6:29])-[#6:28])(-[#6:15]/[#6@@:16]4-[#7:26]-[#6:24](=[#8:25])-[#6@:23]5-[#7:19](-[#6:20]-[#6:21]-[#6:22]/5)-[#6:17]-4=[#8:18])-[#6:13](=[#8])-[#7:12]-[#6:11]:3:[#6:5]:2-[#6:4]=[#6:3]-1",
+            "reactions": [
+                {
+                    "substrate": "C=CC(C)(C)c1[nH]c2c3c(ccc2c1C[C@@H]1NC(=O)[C@@H]2CCCN2C1=O)OC(C)(C)C=C3",
+                    "products": [
+                        "C=CC(C)(C)[C@]1(C[C@@H]2NC(=O)[C@@H]3CCCN3C2=O)C(=O)Nc2c1ccc1c2C=CC(C)(C)O1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Conversion of notoamide E to notoamide D"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/ja2093212"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "62352"
+            }
+        }
+    ]
+}
