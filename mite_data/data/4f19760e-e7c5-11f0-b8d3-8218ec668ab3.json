@@ -1,0 +1,89 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "comment": "NAD(P)H-dependent medium-chain dehydrogenase/reductase from Lysobacter enzymogenes",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-01-02",
+            "contributors": [
+                "0000-0002-8834-593X"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "new entry."
+        }
+    ],
+    "enzyme": {
+        "name": "OX4",
+        "description": "dehydrogenase/reductase",
+        "references": [
+            "doi:10.1021/jacs.5c04971"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI00019B291A",
+            "genpept": "ACP19697.1"
+        },
+        "cofactors": {
+            "organic": [
+                "NAD",
+                "NADP"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Cyclization",
+                "Reduction"
+            ],
+            "description": "Reductive cyclization to form a 6-membered ring",
+            "reactionSMARTS": "[#6:1]-[#6:2]-[#6:3]1-[#6:7]2-[#6:31]-[#6:8]3-[#6:11]=[#6:12]-[#6:13]=[#6:14]-[#6:15](-[#7:17]-[#6:18]-[#6:19]-[#6:20]-[#6:21]4-[#7:29]-[#6:27](=[#8:28])-[#6:24](=[#6:25](-[#6:35]=[#6:36]-[#6:34]=[#6:33]-[#6:10](-[#8:32])-[#6:9]-3-[#6:6]-2-[#6:5]-[#6:4]-1-[#6:30])-[#8:26])-[#6:22]-4=[#8:23])=[#8:16]>>[#6:1]-[#6:2]-[#6:3]1-[#6:7]2-[#6:31]-[#6:8]3-[#6:11]4-[#6:12]-[#6:13]=[#6:14]-[#6:15](-[#7:17]-[#6:18]-[#6:19]-[#6:20]-[#6:21]5-[#7:29]-[#6:27](=[#8:28])-[#6:24](=[#6:25](-[#6:35]=[#6:36]-[#6:34]-4-[#6:33]-[#6:10](-[#8:32])-[#6:9]-3-[#6:6]-2-[#6:5]-[#6:4]-1-[#6:30])-[#8:26])-[#6:22]-5=[#8:23])=[#8:16]",
+            "reactions": [
+                {
+                    "substrate": "CCC1C(C)CC2C1CC1C=CC=CC(=O)NCCCC3NC(=O)C(=C(O)C=CC=CC(O)C12)C3=O",
+                    "products": [
+                        "CCC1C(C)CC2C1CC1C3CC=CC(=O)NCCCC4NC(=O)C(=C(O)C=CC3CC(O)C12)C4=O"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/jacs.5c04971"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Cyclization",
+                "Reduction"
+            ],
+            "description": "Reductive cyclization to form a 5-membered ring",
+            "reactionSMARTS": "[#6:1]-[#6:2]-[#6:3]1-[#6:7]2-[#6:8]=[#6:9]-[#6:10]3-[#6:14]=[#6]-[#6:16]=[#6:17]-[#6:18](-[#7:20]-[#6:21]-[#6:22]-[#6:23]-[#6:24]4-[#7:34]-[#6:32](=[#8:33])-[#6:27](=[#6:28](-[#8:31])-[#6:29]=[#6:30]-[#6:13]=[#6:12]-[#6:11]-3-[#6:6]-2-[#6:5]-[#6:4]-1-[#6:35])-[#6:25]-4=[#8:26])=[#8:19]>>[#6:1]-[#6:2]-[#6:3]1-[#6:7]2-[#6:8]=[#6:9]-[#6:10]3-[#6:14]4-[#6:1]-[#6:16]=[#6:17]-[#6:18](-[#7:20]-[#6:21]-[#6:22]-[#6:23]-[#6:24]5-[#7:34]-[#6:32](=[#8:33])-[#6:27](=[#6:28](-[#8:31])-[#6:29]=[#6:30]-[#6:13]-4-[#6:12]-[#6:11]-3-[#6:6]-2-[#6:5]-[#6:4]-1-[#6:35])-[#6:25]-5=[#8:26])=[#8:19]",
+            "reactions": [
+                {
+                    "substrate": "CCC1C(C)CC2C3C=CC=CC(O)=C4C(=O)NC(CCCNC(=O)C=CC=CC3C=CC12)C4=O",
+                    "products": [
+                        "CCC1C(C)CC2C1C=CC1C3CC=CC(=O)NCCCC4NC(=O)C(=C(O)C=CC3CC12)C4=O"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/jacs.5c04971"
+                ]
+            }
+        }
+    ]
+}
