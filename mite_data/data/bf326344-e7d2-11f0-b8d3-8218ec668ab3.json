@@ -1,0 +1,57 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "comment": "Forward O-prenylation on threonine and serine residues",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-01-02",
+            "contributors": [
+                "0000-0002-8834-593X"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "new entry."
+        }
+    ],
+    "enzyme": {
+        "name": "TolF",
+        "description": "O-prenyltransferase",
+        "references": [
+            "doi:10.1002/anie.202015975"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI0005EABF2F",
+            "genpept": "EKE97727.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Prenylation"
+            ],
+            "description": "Forward O-prenylation on threonine of tolypamide isolated from Tolypothrix sp. PCC 7601",
+            "reactionSMARTS": "[#7:1]1-[#6:5](-[#6:8](-[#7:10]2-[#6:11]-[#6:12]-[#6:13]-[#6:14]-2-[#6:15]2-[#16:16]-[#6:17]-[#6:18](-[#6:20](=[#8:22])-[#7:21]-[#6:23](-[#6:25]-[#6:26]3:[#6:30]:[#6:31]:[#6:29](-[#8:41]):[#6:27]:[#6:28]:3)-[#6:24]3-[#16:32]-[#6:33]-[#6:34](-[#6:36](=[#8:37])-[#7:6]-[#6:3](-[#6:38](-[#8:40])-[#6:39])-[#6:2]-1=[#8:4])-[#7:35]=3)-[#7:19]=2)=[#8:9])-[#6:7]>>[#7:1]1-[#6:5](-[#6:8](-[#7:10]2-[#6:11]-[#6:12]-[#6:13]-[#6:14]-2-[#6:15]2-[#16:16]-[#6:17]-[#6:18](-[#6:20](=[#8:22])-[#7:21]-[#6:23](-[#6:25]-[#6:26]3:[#6:28]:[#6:27]:[#6:29](-[#8:41]):[#6:31]:[#6:30]:3)-[#6:24]3-[#16:32]-[#6:33]-[#6:34](-[#6:36](=[#8:37])-[#7:6]-[#6:3](-[#6:38](-[#8:40]-[#6:27]-[#6:28]=[#6:26](-[#6:30])-[#6:25])-[#6:39])-[#6:2]-1=[#8:4])-[#7:35]=3)-[#7:19]=2)=[#8:9])-[#6:7]",
+            "reactions": [
+                {
+                    "substrate": "CC1NC(=O)C(C(C)O)NC(=O)C2CSC(=N2)C(Cc2ccc(O)cc2)NC(=O)C2CSC(=N2)C2CCCN2C1=O",
+                    "products": [
+                        "CC(C)=CCOC(C)C1NC(=O)C2CSC(=N2)C(Cc2ccc(O)cc2)NC(=O)C2CSC(=N2)C2CCCN2C(=O)C(C)NC1=O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Forward O-prenylation on threonine of tolypamide"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1002/anie.202015975"
+                ]
+            }
+        }
+    ]
+}
