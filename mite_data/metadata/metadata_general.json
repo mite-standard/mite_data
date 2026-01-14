@@ -5102,7 +5102,7 @@
       "status": "active",
       "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
       "enzyme_name": "ArbB2",
-      "enzyme_description": "burpitide cyclases/BURP-domain peptide cyclases",
+      "enzyme_description": "Burpitide cyclases/BURP-domain peptide cyclases",
       "enzyme_ids": {
         "uniprot": "UPI000F5D181E"
       },
