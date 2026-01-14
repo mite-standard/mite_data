@@ -2416,6 +2416,61 @@
           "doi:10.1039/C8OB02824A"
         ]
       }
+    ],
+    "BGC0000535": [
+      {
+        "mite_accession": "MITE0000235",
+        "mite_url": "https://bioregistry.io/mite:MITE0000235",
+        "status": "active",
+        "enzyme_name": "NisP",
+        "enzyme_description": "Protease",
+        "enzyme_ids": {
+          "uniprot": "D9IXC0",
+          "genpept": "ADJ56357.1",
+          "mibig": "BGC0000535"
+        },
+        "enzyme_tailoring": "Hydrolysis",
+        "enzyme_refs": [
+          "doi:10.1021/acs.biochem.7b00524",
+          "doi:10.1126/science.1121422",
+          "doi:10.1007/s00018-007-7171-2"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000234",
+        "mite_url": "https://bioregistry.io/mite:MITE0000234",
+        "status": "active",
+        "enzyme_name": "NisC",
+        "enzyme_description": "Lanthionine synthetase",
+        "enzyme_ids": {
+          "uniprot": "D9IXB8",
+          "genpept": "ADJ56355.1",
+          "mibig": "BGC0000535"
+        },
+        "enzyme_tailoring": "Cyclization",
+        "enzyme_refs": [
+          "doi:10.1126/science.1121422",
+          "doi:10.1007/s00018-007-7171-2"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000233",
+        "mite_url": "https://bioregistry.io/mite:MITE0000233",
+        "status": "active",
+        "enzyme_name": "NisB",
+        "enzyme_description": "Dehydratase",
+        "enzyme_ids": {
+          "uniprot": "D9IXB6",
+          "genpept": "ADJ56353.1",
+          "mibig": "BGC0000535"
+        },
+        "enzyme_tailoring": "Dehydration",
+        "enzyme_refs": [
+          "doi:10.1021/bi050081h",
+          "doi:10.1007/s00018-007-7171-2",
+          "doi:10.1073/pnas.1222488110"
+        ]
+      }
     ]
   }
 }
