@@ -218,9 +218,6 @@ class CicdManager(BaseModel):
         if not path.exists():
             raise FileNotFoundError(f"Could not find file '{path}'")
 
-        if not path.name.startswith("MITE"):
-            return
-
         self.check_file_naming(path)
 
         with open(path) as infile:
