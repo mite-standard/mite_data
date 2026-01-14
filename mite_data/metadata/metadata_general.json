@@ -5184,6 +5184,27 @@
       "class": "Actinomycetes",
       "order": "Kitasatosporales",
       "family": "Streptomycetaceae"
+    },
+    "MITE0000230": {
+      "accession": "MITE0000230",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "GelB2",
+      "enzyme_description": "Peptidase",
+      "enzyme_ids": {
+        "uniprot": "UPI000F088A46"
+      },
+      "tailoring": "Hydrolysis",
+      "reaction_description": "N-terminal cleavage of gelatinamin leader peptide, resulting in immature intermediate core peptide.",
+      "cofactors_organic": "N/A",
+      "cofactors_inorganic": "N/A",
+      "organism": "Not found",
+      "domain": "Not found",
+      "kingdom": "Not found",
+      "phylum": "Not found",
+      "class": "Not found",
+      "order": "Not found",
+      "family": "Not found"
     }
   }
 }
