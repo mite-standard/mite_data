@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000069",
-    "status": "active",
+    "status": "pending",
     "changelog": [
         {
             "version": "1",
@@ -23,6 +23,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Homogenized enzyme descriptions"
+        },
+        {
+            "version": "3",
+            "date": "2026-01-24",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added reaction description. Reviewer improved description."
         }
     ],
     "enzyme": {
@@ -42,6 +53,7 @@
             "tailoring": [
                 "Halogenation"
             ],
+            "description": "Chlorinates the rebeccamycin intermediate.",
             "reactionSMARTS": "[#7:1]-[#6:2](-[#6:13](-[#8:15])=[#8:14])-[#6:3]-[#6:4]1:[#6:12]2:[#6:7](:[#6:8]:[#6:9]:[#6:10]:[#6:11]:2):[nH:6]:[#6:5]:1>>[#7:1]-[#6:2](-[#6:13](-[#8:15])=[#8:14])-[#6:3]-[#6:4]1:[#6:12]2:[#6:7](:[#6:8](:[#6:9]:[#6:10]:[#6:11]:2)-[Cl]):[nH:6]:[#6:5]:1",
             "reactions": [
                 {
