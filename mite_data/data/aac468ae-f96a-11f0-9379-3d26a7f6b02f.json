@@ -1,68 +1,59 @@
 {
     "accession": "MITE0000069",
-    "status": "pending",
     "changelog": [
         {
-            "version": "1",
-            "date": "2024-07-30",
+            "comment": "Initial entry. Reviewer reworked reaction SMARTS to fix missing numbering",
             "contributors": [
                 "0000-0003-1763-2525"
             ],
+            "date": "2024-07-30",
             "reviewers": [
                 "0000-0001-6534-6609"
             ],
-            "comment": "Initial entry. Reviewer reworked reaction SMARTS to fix missing numbering"
+            "version": "1"
         },
         {
-            "version": "2",
+            "comment": "Homogenized enzyme descriptions",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
             "date": "2025-08-26",
-            "contributors": [
-                "AAAAAAAAAAAAAAAAAAAAAAAA"
-            ],
             "reviewers": [
                 "0000-0001-6534-6609"
             ],
-            "comment": "Homogenized enzyme descriptions"
+            "version": "2"
         },
         {
-            "version": "3",
-            "date": "2026-01-24",
+            "comment": "Added reaction description.",
             "contributors": [
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
+            "date": "2026-01-24",
             "reviewers": [
                 "BBBBBBBBBBBBBBBBBBBBBBBB"
             ],
-            "comment": ""
+            "version": "3"
         }
     ],
     "enzyme": {
-        "name": "RebH",
+        "databaseIds": {
+            "genpept": "AAN01216.1",
+            "mibig": "BGC0000821",
+            "uniprot": "Q8KHZ8"
+        },
         "description": "Tryptophan halogenase",
+        "name": "RebH",
         "references": [
             "doi:10.1016/s1074-5521(02)00126-6"
-        ],
-        "databaseIds": {
-            "uniprot": "Q8KHZ8",
-            "genpept": "AAN01216.1",
-            "mibig": "BGC0000821"
-        }
+        ]
     },
     "reactions": [
         {
-            "tailoring": [
-                "Halogenation"
-            ],
-            "reactionSMARTS": "[#7:1]-[#6:2](-[#6:13](-[#8:15])=[#8:14])-[#6:3]-[#6:4]1:[#6:12]2:[#6:7](:[#6:8]:[#6:9]:[#6:10]:[#6:11]:2):[nH:6]:[#6:5]:1>>[#7:1]-[#6:2](-[#6:13](-[#8:15])=[#8:14])-[#6:3]-[#6:4]1:[#6:12]2:[#6:7](:[#6:8](:[#6:9]:[#6:10]:[#6:11]:2)-[Cl]):[nH:6]:[#6:5]:1",
-            "reactions": [
-                {
-                    "substrate": "NC(Cc1c[nH]c2ccccc12)C(=O)O",
-                    "products": [
-                        "NC(Cc1c[nH]c2c(Cl)cccc12)C(=O)O"
-                    ],
-                    "isIntermediate": true
-                }
-            ],
+            "databaseIds": {
+                "ec": "1.14.19.9",
+                "rhea": "26494"
+            },
+            "description": "Halogenates the rebeccamycin intermediate.",
             "evidence": {
                 "evidenceCode": [
                     "Heterologous expression"
@@ -71,10 +62,20 @@
                     "doi:10.1073/pnas.0500755102"
                 ]
             },
-            "databaseIds": {
-                "rhea": "26494",
-                "ec": "1.14.19.9"
-            }
+            "reactionSMARTS": "[#7:1]-[#6:2](-[#6:13](-[#8:15])=[#8:14])-[#6:3]-[#6:4]1:[#6:12]2:[#6:7](:[#6:8]:[#6:9]:[#6:10]:[#6:11]:2):[nH:6]:[#6:5]:1>>[#7:1]-[#6:2](-[#6:13](-[#8:15])=[#8:14])-[#6:3]-[#6:4]1:[#6:12]2:[#6:7](:[#6:8](:[#6:9]:[#6:10]:[#6:11]:2)-[Cl]):[nH:6]:[#6:5]:1",
+            "reactions": [
+                {
+                    "isIntermediate": true,
+                    "products": [
+                        "NC(Cc1c[nH]c2c(Cl)cccc12)C(=O)O"
+                    ],
+                    "substrate": "NC(Cc1c[nH]c2ccccc12)C(=O)O"
+                }
+            ],
+            "tailoring": [
+                "Halogenation"
+            ]
         }
-    ]
+    ],
+    "status": "pending"
 }
