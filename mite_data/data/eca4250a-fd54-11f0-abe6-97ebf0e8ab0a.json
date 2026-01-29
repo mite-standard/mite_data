@@ -1,44 +1,69 @@
 {
     "accession": "MITE9999999",
-    "status": "pending",
     "changelog": [
         {
-            "version": "1",
-            "date": "2026-01-29",
+            "comment": "New entry.",
             "contributors": [
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
+            "date": "2026-01-29",
             "reviewers": [
                 "BBBBBBBBBBBBBBBBBBBBBBBB"
             ],
-            "comment": "New entry."
+            "version": "1"
         }
     ],
+    "comment": "Nonheme Iron(II) a-Ketoglutarate-Dependent dioxygenase ",
     "enzyme": {
-        "name": "BesE",
-        "databaseIds": {
-            "uniprot": "F8JJ27",
-            "genpept": ""
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ],
+            "organic": [
+                "a-Ketoglutaric acid"
+            ]
         },
+        "databaseIds": {
+            "genpept": "AEW98880.1",
+            "uniprot": "F8JJ27"
+        },
+        "description": "Hydroxylase",
+        "name": "BesE",
         "references": [
-            "doi:"
+            "doi:10.1021/acs.jnatprod.5c01272"
         ]
     },
     "reactions": [
         {
+            "databaseIds": {
+                "rhea": "59900"
+            },
+            "description": "Hydroxylates intermediate in beta-ethynylserine pathway, showing high substrate-specificity.",
             "evidence": {
-                "evidenceCode": [],
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Site-directed mutagenesis"
+                ],
                 "references": [
-                    "doi:"
+                    "doi:10.1021/acs.jnatprod.5c01272"
                 ]
             },
+            "reactionSMARTS": "[#8:1]-[#6:2](=[#8:4])-[#6:3](-[#6:6]-[#6:7]-[#6:8](=[#8:10])-[#7:9]-[#6@@:11](/[#6:13]-[#6:14]~[#6:15])-[#6:12](-[#8:17])=[#8:16])-[#7:5]>>[#8:1]-[#6:2](=[#8:4])-[#6:3](-[#6:6]-[#6:7]-[#6:8](=[#8:10])-[#7:9]-[#6@@:11](/[#6@@:13](/[#8])-[#6:14]~[#6:15])-[#6:12](-[#8:17])=[#8:16])-[#7:5]",
             "reactions": [
                 {
+                    "description": "Converts L-gam,a-glutamyl-L-propargylglycine to L-gamma-glutamyl-(3R)-L-beta-ethynylserine in the beta-ethynylserine pathway",
+                    "isIntermediate": true,
                     "products": [
-                        ""
-                    ]
+                        "C#C[C@H](O)[C@H](NC(=O)CC[C@H](N)C(=O)O)C(=O)O"
+                    ],
+                    "substrate": "C#CC[C@H](NC(=O)CC[C@H](N)C(=O)O)C(=O)O"
                 }
+            ],
+            "tailoring": [
+                "Hydroxylation"
             ]
         }
-    ]
+    ],
+    "status": "pending"
 }
