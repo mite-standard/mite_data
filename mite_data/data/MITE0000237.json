@@ -75,7 +75,7 @@
                         "CCC1C(C)CC2C1C=CC1C3CC=CC(=O)NCCCC4NC(=O)C(=C4O)C(=O)C=CC3CC12"
                     ],
                     "isIntermediate": false,
-                    "description": "Reductive cyclization of (unnamed) ikarugamycin intermediate, leading to ikarugamycin."
+                    "description": "Reductive cyclization of preikarugamycin intermediate, leading to ikarugamycin."
                 }
             ],
             "evidence": {
@@ -101,7 +101,7 @@
                         "CCC1C(C)CC2C1C=CC1C3C=CCC(=O)NCCCC4NC(=O)C(=C4O)C(=O)C=CC3CC12"
                     ],
                     "isIntermediate": false,
-                    "description": "Reductive cyclization of (unnamed) ikarugamycin intermediate, leading to isoikarugamycin."
+                    "description": "Reductive cyclization of preikarugamycin intermediate, leading to isoikarugamycin."
                 }
             ],
             "evidence": {
