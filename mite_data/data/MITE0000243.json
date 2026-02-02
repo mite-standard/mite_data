@@ -1,0 +1,76 @@
+{
+    "accession": "MITE0000243",
+    "status": "active",
+    "comment": "Works in tandem with TamI in tirandamycin biosynthesis in a oxygenation-oxidation-oxygenation cascade.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-01-01",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer fixed typos."
+        }
+    ],
+    "enzyme": {
+        "name": "TamL",
+        "description": "FAD-dependent oxidase",
+        "references": [
+            "doi:10.1002/cbic.200900658",
+            "doi:10.1038/nchem.1087",
+            "doi:10.1021/np9005597"
+        ],
+        "auxiliaryEnzymes": [
+            {
+                "name": "TamI",
+                "description": "Cytochrome P450",
+                "databaseIds": {
+                    "uniprot": "D3Y1J3",
+                    "genpept": "ADC79647.1"
+                }
+            }
+        ],
+        "databaseIds": {
+            "uniprot": "D3Y1I2",
+            "genpept": "ADC79636.1",
+            "mibig": "BGC0001052"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "TamL oxidizes the C-10 hydroxy to a keton in the tirandamycin biosynthetic pathway. High substrate specificity.",
+            "reactionSMARTS": "[#8:1]1-[#6:3]2(-[#8:9]-[#6:10](-[#6:13](-[#6:15]=[#6:16](-[#6:18])-[#6:17]=[#6:19]-[#6:20](=[#6:22]3-[#6:27](=[#8:28])-[#7:26]-[#6:25]-[#6:23]-3=[#8:24])-[#8:21])-[#6:14])-[#6:11](-[#6:2]-1-[#6:8](-[#8])-[#6:6]=[#6:5]-2-[#6:7])-[#6:12])-[#6:4]>>[#8:1]1-[#6:3]2(-[#8:9]-[#6:10](-[#6:13](-[#6:15]=[#6:16](-[#6:18])-[#6:17]=[#6:19]-[#6:20](=[#6:22]3-[#6:27](=[#8:28])-[#7:26]-[#6:25]-[#6:23]-3=[#8:24])-[#8:21])-[#6:14])-[#6:11](-[#6:2]-1-[#6:8](=[#8])-[#6:6]=[#6:5]-2-[#6:7])-[#6:12])-[#6:4]",
+            "reactions": [
+                {
+                    "substrate": "CC(C=CC(O)=C1C(=O)CNC1=O)=CC(C)C1OC2(C)OC(C(O)C=C2C)C1C",
+                    "products": [
+                        "CC(C=CC(O)=C1C(=O)CNC1=O)=CC(C)C1OC2(C)OC(C(=O)C=C2C)C1C"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Oxidizes tirandamycin E to tirandamycin D."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1038/nchem.1087"
+                ]
+            }
+        }
+    ]
+}
