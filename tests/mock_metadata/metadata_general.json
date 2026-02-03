@@ -62,7 +62,7 @@
     },
     "MITE0000130": {
       "status": "active",
-      "enzyme_name": "ThnH",
+      "enzyme_name": "ThenH",
       "enzyme_description": "Tryptophan 6-halogenase",
       "enzyme_ids": {
         "uniprot": "A0A142I756",
@@ -376,7 +376,7 @@
       "enzyme_name": "PtlI",
       "enzyme_description": "Cytochrome P450",
       "enzyme_ids": {
-        "uniprot": "Q82IY3",
+        "uniprot": "Q82IT3",
         "genpept": "BAC70710.1",
         "mibig": "BGC0000678"
       }
@@ -416,7 +416,7 @@
       "enzyme_name": "PtlE",
       "enzyme_description": "Baeyer-Villiger monooxygenase",
       "enzyme_ids": {
-        "uniprot": "Q82IY8",
+        "uniprot": "Q82IT8",
         "genpept": "BAC70705.1",
         "mibig": "BGC0000678"
       }
@@ -643,7 +643,7 @@
       "enzyme_name": "PtlE",
       "enzyme_description": "Baeyer-Villiger monooxygenase",
       "enzyme_ids": {
-        "uniprot": "Q82IY8",
+        "uniprot": "Q82IT8",
         "genpept": "BAC70705.1"
       }
     },
@@ -734,7 +734,7 @@
     },
     "MITE0000174": {
       "status": "active",
-      "enzyme_name": "BytO",
+      "enzyme_name": "ByteO",
       "enzyme_description": "Cytochrome P450",
       "enzyme_ids": {
         "uniprot": "A0A891LYB2",
@@ -931,7 +931,7 @@
     },
     "MITE0000018": {
       "status": "active",
-      "enzyme_name": "MtmGIV",
+      "enzyme_name": "MtmGIVE",
       "enzyme_description": "Glycosyltransferase",
       "enzyme_ids": {
         "uniprot": "Q194Q0",
@@ -951,7 +951,7 @@
     },
     "MITE0000133": {
       "status": "active",
-      "enzyme_name": "THAH",
+      "enzyme_name": "THAN",
       "enzyme_description": "Cytochrome P450",
       "enzyme_ids": {
         "uniprot": "D7MKC1",
@@ -1402,14 +1402,14 @@
       "enzyme_name": "PtlD",
       "enzyme_description": "Non-heme iron-dependent dehydrogenase/oxygenase ",
       "enzyme_ids": {
-        "uniprot": "Q82IY7",
+        "uniprot": "Q82IT7",
         "genpept": "BAC70706.1",
         "mibig": "BGC0000678"
       }
     },
     "MITE0000175": {
       "status": "active",
-      "enzyme_name": "BytO",
+      "enzyme_name": "ByteO",
       "enzyme_description": "Cytochrome P450",
       "enzyme_ids": {
         "uniprot": "A0A891LWT6",
@@ -1694,7 +1694,7 @@
     },
     "MITE0000131": {
       "status": "active",
-      "enzyme_name": "ThnA",
+      "enzyme_name": "ThenA",
       "enzyme_description": "Amidotransferase",
       "enzyme_ids": {
         "uniprot": "A0A142I749",
@@ -2016,7 +2016,7 @@
     },
     "MITE0000129": {
       "status": "active",
-      "enzyme_name": "ThnJ",
+      "enzyme_name": "ThenJ",
       "enzyme_description": "Aminotransferase",
       "enzyme_ids": {
         "uniprot": "A0A142I758",

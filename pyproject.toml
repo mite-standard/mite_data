@@ -1,91 +1,84 @@
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
-
-[project.urls]
-"Repository" = "https://github.com/mite-standard/mite_data"
-
 [project]
 name = "mite_data"
 version = "1.22"
 description = "Data storage and auxiliary functions for mite_data."
 readme = "README.md"
-requires-python = ">=3.12.0,<3.13.0" # because of rdkit 2024 in mite_extras
-license-files = { paths = ["LICENSE"] }
-authors = [
-    { name = "Mitja M. Zdouc", email = "zdoucmm@gmail.com" }
-]
+requires-python = ">=3.12.0,<3.13.0"  # because of rdkit 2024 in mite_extras
+license-files = ["LICENSE"]
+authors = [{ name = "Mitja M. Zdouc", email = "zdoucmm@gmail.com" }]
 dependencies = [
-    "biopython~=1.85",
-    "coloredlogs~=15.0",
-    "mite_extras",
-    "mite_schema",
-    "pandas~=2.3",
-    "pre-commit~=4.3",
-    "pydantic~=2.11",
-    "pytest~=8.4",
-    "requests~=2.32",
-    "rdkit==2024.3.6",
-    "ruff~=0.13"
+  "biopython~=1.85",
+  "coloredlogs~=15.0",
+  "mite_extras",
+  "mite_schema",
+  "pandas~=2.3",
+  "pydantic~=2.11",
+  "rdkit==2024.3.6",
+  "requests~=2.32",
 ]
+
+[project.urls]
+"Repository" = "https://github.com/mite-standard/mite_data"
 
 [project.scripts]
 mite_data = "mite_data.main:main"
 
-[tool.pytest.ini_options]
-minversion = "6.0"
-addopts = "-ra -q"
-testpaths = [
-    "tests/",
-]
-pythonpath = [
-    "mite_data"
+[dependency-groups]
+dev = [
+  "pre-commit~=4.3",
+  "pytest~=8.4",
+  "ruff~=0.13",
 ]
 
-[tool.hatch.envs.default]
-installer = "uv"
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.deptry.package_module_name_map]
+biopython = [
+  "Bio",
+]
+pythonpath = ["mite_data"]
 
 [tool.ruff]
 line-length = 88
 
 [tool.ruff.lint]
 select = [
-    # flake8-bugbear
-    "B",
-    # flake8-comprehensions
-    "C4",
-    # flake8-eradicate/eradicate
-    "ERA",
-    # isort
-    "I",
-    # pep8-naming
-    "N",
-    # flake8-pie
-    "PIE",
-    # pygrep
-    "PGH",
-    # ruff checks
-    "RUF",
-    # flake8-simplify
-    "SIM",
-    # flake8-type-checking
-    "TCH",
-    # flake8-tidy-imports
-    "TID",
-    # pyupgrade
-    "UP",
+  # flake8-bugbear
+  "B",
+  # flake8-comprehensions
+  "C4",
+  # flake8-eradicate/eradicate
+  "ERA",
+  # isort
+  "I",
+  # pep8-naming
+  "N",
+  # flake8-pie
+  "PIE",
+  # pygrep
+  "PGH",
+  # ruff checks
+  "RUF",
+  # flake8-simplify
+  "SIM",
+  # flake8-tidy-imports
+  "TID",
+  # pyupgrade
+  "UP",
 ]
 ignore = [
-    # whitespace-before-punctuation
-    "E203",
-    # percent-format-invalid-format
-    "E501",
-    # mixed-case-variable-in-class-scope
-    "N815",
-    # enumerate
-    "SIM113",
-    # multiple ifs
-    "SIM102",
-    # unnecessary set
-    "C405"
+  # whitespace-before-punctuation
+  "E203",
+  # percent-format-invalid-format
+  "E501",
+  # mixed-case-variable-in-class-scope
+  "N815",
+  # enumerate
+  "SIM113",
+  # multiple ifs
+  "SIM102",
+  # unnecessary set
+  "C405"
 ]

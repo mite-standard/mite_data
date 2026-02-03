@@ -142,7 +142,7 @@
       "accession": "MITE0000130",
       "status": "active",
       "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
-      "enzyme_name": "ThnH",
+      "enzyme_name": "ThenH",
       "enzyme_description": "Tryptophan 6-halogenase",
       "enzyme_ids": {
         "uniprot": "UPI00078E7F2F",
@@ -603,7 +603,7 @@
         "mibig": "BGC0003094"
       },
       "tailoring": "Methylation",
-      "reaction_description": "SAM (S-adenosyl-L-methionine)-depenent O-methylation of roseopurpurin intermediate.",
+      "reaction_description": "SAM (S-adenosyl-L-methionine)-dependent O-methylation of roseopurpurin intermediate.",
       "cofactors_organic": "N/A",
       "cofactors_inorganic": "N/A",
       "organism": "Phaeosphaeria sp.",
@@ -872,7 +872,7 @@
       "enzyme_name": "PtlI",
       "enzyme_description": "Cytochrome P450",
       "enzyme_ids": {
-        "uniprot": "Q82IY3",
+        "uniprot": "Q82IT3",
         "genpept": "BAC70710.1",
         "mibig": "BGC0000678"
       },
@@ -964,7 +964,7 @@
       "enzyme_name": "PtlE",
       "enzyme_description": "Baeyer-Villiger monooxygenase",
       "enzyme_ids": {
-        "uniprot": "Q82IY8",
+        "uniprot": "Q82IT8",
         "genpept": "BAC70705.1",
         "mibig": "BGC0000678"
       },
@@ -1490,7 +1490,7 @@
       "enzyme_name": "PtlE",
       "enzyme_description": "Baeyer-Villiger monooxygenase",
       "enzyme_ids": {
-        "uniprot": "Q82IY8",
+        "uniprot": "Q82IT8",
         "genpept": "BAC70705.1"
       },
       "tailoring": "Oxidation",
@@ -1711,7 +1711,7 @@
       "accession": "MITE0000174",
       "status": "active",
       "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
-      "enzyme_name": "BytO",
+      "enzyme_name": "ByteO",
       "enzyme_description": "Cytochrome P450",
       "enzyme_ids": {
         "uniprot": "A0A891LYB2",
@@ -2167,7 +2167,7 @@
       "accession": "MITE0000018",
       "status": "active",
       "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
-      "enzyme_name": "MtmGIV",
+      "enzyme_name": "MtmGIVE",
       "enzyme_description": "Glycosyltransferase",
       "enzyme_ids": {
         "uniprot": "Q194Q0",
@@ -2213,7 +2213,7 @@
       "accession": "MITE0000133",
       "status": "active",
       "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
-      "enzyme_name": "THAH",
+      "enzyme_name": "THAN",
       "enzyme_description": "Cytochrome P450",
       "enzyme_ids": {
         "uniprot": "D7MKC1",
@@ -2426,7 +2426,7 @@
         "mibig": "BGC0000455"
       },
       "tailoring": "Cyclization|Oxidation",
-      "reaction_description": "Introduces the second biaryl-ether crosslink between bht2 and hpg4 in the vancomycin and balhimycin precursor. The reaction occures while the vancomycin precursor is bound to the PCP of module 6 or 7. The enzyme only accepts the chlorinated precursor.",
+      "reaction_description": "Introduces the second biaryl-ether crosslink between bht2 and hpg4 in the vancomycin and balhimycin precursor. The reaction occurs while the vancomycin precursor is bound to the PCP of module 6 or 7. The enzyme only accepts the chlorinated precursor.",
       "cofactors_organic": "Heme",
       "cofactors_inorganic": "Fe",
       "organism": "Amycolatopsis orientalis",
@@ -3261,7 +3261,7 @@
       "enzyme_name": "PtlD",
       "enzyme_description": "Non-heme iron-dependent dehydrogenase/oxygenase ",
       "enzyme_ids": {
-        "uniprot": "Q82IY7",
+        "uniprot": "Q82IT7",
         "genpept": "BAC70706.1",
         "mibig": "BGC0000678"
       },
@@ -3281,7 +3281,7 @@
       "accession": "MITE0000175",
       "status": "active",
       "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
-      "enzyme_name": "BytO",
+      "enzyme_name": "ByteO",
       "enzyme_description": "Cytochrome P450",
       "enzyme_ids": {
         "uniprot": "A0A891LWT6",
@@ -3943,7 +3943,7 @@
       "accession": "MITE0000131",
       "status": "active",
       "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
-      "enzyme_name": "ThnA",
+      "enzyme_name": "ThenA",
       "enzyme_description": "Amidotransferase",
       "enzyme_ids": {
         "uniprot": "UPI00078D6453",
@@ -4291,7 +4291,7 @@
         "mibig": "BGC0001079"
       },
       "tailoring": "Oxidation",
-      "reaction_description": "Oxidation of 1,3,6,8-tetrahydroxynaphthalene (THN) to flaviolin.",
+      "reaction_description": "Oxidation of 1,3,6,8-tetrahydroxynaphthalene (THEN) to flaviolin.",
       "cofactors_organic": "N/A",
       "cofactors_inorganic": "N/A",
       "organism": "Streptomyces aculeolatus",
@@ -4692,7 +4692,7 @@
       "accession": "MITE0000129",
       "status": "active",
       "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
-      "enzyme_name": "ThnJ",
+      "enzyme_name": "ThenJ",
       "enzyme_description": "Aminotransferase",
       "enzyme_ids": {
         "uniprot": "UPI00078CD00A",
@@ -5924,6 +5924,29 @@
       "class": "Actinomycetes",
       "order": "Kitasatosporales",
       "family": "Streptomycetaceae"
+    },
+    "MITE0000000": {
+      "accession": "MITE0000000",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "McjC",
+      "enzyme_description": "Lassopeptide ATP-dependent lactam synthetase (C-protein, asparagine synthetase-like)",
+      "enzyme_ids": {
+        "uniprot": "Q9X2V9",
+        "genpept": "AAD28496.1",
+        "mibig": "BGC0000581"
+      },
+      "tailoring": "Macrolactam formation",
+      "reaction_description": "Lassopeptide macrolactam formation after N-terminal cleavage: NH2-G-G-X-X-X-X-X-E-Xn-COOH.",
+      "cofactors_organic": "N/A",
+      "cofactors_inorganic": "N/A",
+      "organism": "Escherichia coli",
+      "domain": "Bacteria",
+      "kingdom": "Pseudomonadati",
+      "phylum": "Pseudomonadota",
+      "class": "Gammaproteobacteria",
+      "order": "Enterobacterales",
+      "family": "Enterobacteriaceae"
     }
   }
 }
