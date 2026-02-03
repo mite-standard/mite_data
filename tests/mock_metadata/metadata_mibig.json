@@ -38,7 +38,7 @@
         "mite_accession": "MITE0000018",
         "mite_url": "https://bioregistry.io/mite:MITE0000018",
         "status": "active",
-        "enzyme_name": "MtmGIVE",
+        "enzyme_name": "MtmGIV",
         "enzyme_description": "Glycosyltransferase",
         "enzyme_ids": {
           "uniprot": "Q194Q0",
@@ -1190,7 +1190,7 @@
         "enzyme_name": "PtlI",
         "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
-          "uniprot": "Q82IT3",
+          "uniprot": "Q82IY3",
           "genpept": "BAC70710.1",
           "mibig": "BGC0000678"
         },
@@ -1206,7 +1206,7 @@
         "enzyme_name": "PtlE",
         "enzyme_description": "Baeyer-Villiger monooxygenase",
         "enzyme_ids": {
-          "uniprot": "Q82IT8",
+          "uniprot": "Q82IY8",
           "genpept": "BAC70705.1",
           "mibig": "BGC0000678"
         },
@@ -1222,7 +1222,7 @@
         "enzyme_name": "PtlD",
         "enzyme_description": "Non-heme iron-dependent dehydrogenase/oxygenase ",
         "enzyme_ids": {
-          "uniprot": "Q82IT7",
+          "uniprot": "Q82IY7",
           "genpept": "BAC70706.1",
           "mibig": "BGC0000678"
         },
@@ -1592,7 +1592,7 @@
         "mite_accession": "MITE0000174",
         "mite_url": "https://bioregistry.io/mite:MITE0000174",
         "status": "active",
-        "enzyme_name": "ByteO",
+        "enzyme_name": "BytO",
         "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "A0A891LYB2",
@@ -2175,7 +2175,7 @@
         "mite_accession": "MITE0000175",
         "mite_url": "https://bioregistry.io/mite:MITE0000175",
         "status": "active",
-        "enzyme_name": "ByteO",
+        "enzyme_name": "BytO",
         "enzyme_description": "Cytochrome P450",
         "enzyme_ids": {
           "uniprot": "A0A891LWT6",
