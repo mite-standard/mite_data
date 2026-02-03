@@ -153,7 +153,7 @@ class FastaManager(BaseModel):
 
     src: DirectoryPath = Path(__file__).parent.parent.joinpath("data/")
     fasta: DirectoryPath = Path(__file__).parent.parent.joinpath("fasta/")
-    timeout: float = 3.0
+    timeout: float = 5.0
 
     def update_all(self) -> None:
         """Update metadata of all files (overwrite all)"""
