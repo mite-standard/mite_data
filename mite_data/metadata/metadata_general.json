@@ -2426,7 +2426,7 @@
         "mibig": "BGC0000455"
       },
       "tailoring": "Cyclization|Oxidation",
-      "reaction_description": "Introduces the second biaryl-ether crosslink between bht2 and hpg4 in the vancomycin and balhimycin precursor. The reaction occures while the vancomycin precursor is bound to the PCP of module 6 or 7. The enzyme only accepts the chlorinated precursor.",
+      "reaction_description": "Introduces the second biaryl-ether crosslink between bht2 and hpg4 in the vancomycin and balhimycin precursor. The reaction occurs while the vancomycin precursor is bound to the PCP of module 6 or 7. The enzyme only accepts the chlorinated precursor.",
       "cofactors_organic": "Heme",
       "cofactors_inorganic": "Fe",
       "organism": "Amycolatopsis orientalis",
