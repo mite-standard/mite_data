@@ -215,7 +215,10 @@ class FastaManager(BaseModel):
         def fetch_ncbi(acc: str) -> Any:
             """Fetch data from NCBI"""
             handle = Entrez.efetch(
-                db="protein", id=genpept_acc, rettype="fasta", retmode="text"
+                db="protein",
+                id=genpept_acc,
+                rettype="fasta",
+                retmode="text",
             )
             data = handle.read().strip()
             handle.close()
@@ -233,7 +236,7 @@ class FastaManager(BaseModel):
 
         if not lines or len(lines) == 1:
             raise ValueError(
-                f"{mite_acc}: No sequence found for GenBank Accession {genpept_acc}"
+                f"{mite_acc}: No sequence found for GenBank Accession {genpept_acc}",
             )
 
         lines[0] = f">{mite_acc} {genpept_acc}"
@@ -268,18 +271,18 @@ class FastaManager(BaseModel):
                     break
             except requests.exceptions.ConnectTimeout as e:
                 raise RuntimeError(
-                    "Warning: could not connect to UniProt: Timeout"
+                    "Warning: could not connect to UniProt: Timeout",
                 ) from e
 
         if response is None:
             raise RuntimeError(
-                f"{mite_acc}: UniProt download failed on ID {uniprot_acc}"
+                f"{mite_acc}: UniProt download failed on ID {uniprot_acc}",
             )
 
         lines = response.text.strip().splitlines()
         if len(lines) <= 1:
             raise RuntimeError(
-                f"{mite_acc}: UniProt download provided no sequence for ID {uniprot_acc}"
+                f"{mite_acc}: UniProt download provided no sequence for ID {uniprot_acc}",
             )
 
         lines[0] = f">{mite_acc} {uniprot_acc}"

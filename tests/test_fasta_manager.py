@@ -25,7 +25,7 @@ def test_update_all(fasta_manager):
 def test_update_single(fasta_manager):
     assert (
         fasta_manager.update_single(
-            Path(__file__).parent.joinpath("mock_src/MITE0000000.json")
+            Path(__file__).parent.joinpath("mock_src/MITE0000000.json"),
         )
         is None
     )
@@ -36,7 +36,8 @@ def test_update_single(fasta_manager):
 
 def test_download_ncbi(fasta_manager):
     path, content = fasta_manager.download_ncbi(
-        mite_acc="MITE9999999", genpept_acc="AAD28496.1"
+        mite_acc="MITE9999999",
+        genpept_acc="AAD28496.1",
     )
     assert isinstance(path, Path)
     assert content
@@ -44,7 +45,8 @@ def test_download_ncbi(fasta_manager):
 
 def test_download_uniprot(fasta_manager):
     path, content = fasta_manager.download_uniprot(
-        mite_acc="MITE9999999", uniprot_acc="Q9X2V9"
+        mite_acc="MITE9999999",
+        uniprot_acc="Q9X2V9",
     )
     assert isinstance(path, Path)
     assert content
@@ -66,7 +68,8 @@ def test_download_uniprot_timeout(fasta_manager):
 
 def test_download_uniparc(fasta_manager):
     path, content = fasta_manager.download_uniprot(
-        mite_acc="MITE9999999", uniprot_acc="UPI000E33162C"
+        mite_acc="MITE9999999",
+        uniprot_acc="UPI000E33162C",
     )
     assert isinstance(path, Path)
     assert content

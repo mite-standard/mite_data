@@ -142,7 +142,7 @@
       "accession": "MITE0000130",
       "status": "active",
       "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
-      "enzyme_name": "ThenH",
+      "enzyme_name": "ThnH",
       "enzyme_description": "Tryptophan 6-halogenase",
       "enzyme_ids": {
         "uniprot": "UPI00078E7F2F",

@@ -20,7 +20,7 @@ def cicd_mngr():
         fasta=Path(__file__).parent.joinpath("mock_fasta"),
         mibig=Path(__file__).parent.joinpath("mock_metadata/mibig_proteins.json"),
         reserved_path=Path(__file__).parent.joinpath(
-            "mock_metadata/mock_reserved.json"
+            "mock_metadata/mock_reserved.json",
         ),
     )
 
@@ -38,7 +38,7 @@ def test_instance(cicd_mngr):
 def test_run_file(cicd_mngr):
     assert (
         cicd_mngr.run_file(
-            path=Path(__file__).parent.joinpath("mock_src/MITE0000000.json")
+            path=Path(__file__).parent.joinpath("mock_src/MITE0000000.json"),
         )
         is None
     )

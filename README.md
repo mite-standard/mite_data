@@ -142,7 +142,7 @@ A new release created on the [mite_data](https://github.com/mite-standard/mite_d
    - On GitHub, merge the respective PR into main and delete the feature branch.
    - Locally, checkout the main branch, pull in changes, and remove the local feature branch with `git checkout main && git pull && git branch -d local-<branch-uuid>`
    - Repeat for all open PRs on GitHub
-2. Create a release branch and update auxilliary files
+2. Create a release branch and update auxiliary files
    - Fetch changes with `git fetch`.
    - Create a local branch and push to remote with `git checkout -b <release>`
    - Update version in `pyproject.toml` and `CHANGELOG.md`

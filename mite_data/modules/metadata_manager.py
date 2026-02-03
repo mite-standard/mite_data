@@ -201,10 +201,12 @@ class MetadataManager(BaseModel):
         self.extr_meta_gen(data=data)
         self.extr_meta_mibig(data=data)
         self.dump_json(
-            path=self.meta.joinpath("metadata_general.json"), data=self.meta_gen
+            path=self.meta.joinpath("metadata_general.json"),
+            data=self.meta_gen,
         )
         self.dump_json(
-            path=self.meta.joinpath("metadata_mibig.json"), data=self.meta_mibig
+            path=self.meta.joinpath("metadata_mibig.json"),
+            data=self.meta_mibig,
         )
 
         logger.info(f"Completed MetadataManager on file {path.name}.")
@@ -219,10 +221,12 @@ class MetadataManager(BaseModel):
             self.extr_meta_mibig(data=data)
 
         self.dump_json(
-            path=self.meta.joinpath("metadata_general.json"), data=self.meta_gen
+            path=self.meta.joinpath("metadata_general.json"),
+            data=self.meta_gen,
         )
         self.dump_json(
-            path=self.meta.joinpath("metadata_mibig.json"), data=self.meta_mibig
+            path=self.meta.joinpath("metadata_mibig.json"),
+            data=self.meta_mibig,
         )
 
         logger.info("Completed MetadataManager on all files.")
@@ -307,7 +311,8 @@ class MetadataManager(BaseModel):
             else '<i class="bi bi-circle"></i>',
             "enzyme_name": data["enzyme"]["name"],
             "enzyme_description": data.get("enzyme", {}).get(
-                "description", "No description available"
+                "description",
+                "No description available",
             ),
             "enzyme_ids": data["enzyme"]["databaseIds"],
             "tailoring": "|".join(
@@ -316,11 +321,12 @@ class MetadataManager(BaseModel):
                         tailoring
                         for reaction in data.get("reactions")
                         for tailoring in reaction.get("tailoring", [])
-                    }
-                )
+                    },
+                ),
             ),
             "reaction_description": data["reactions"][0].get(
-                "description", "No description"
+                "description",
+                "No description",
             ),
             "cofactors_organic": "N/A",
             "cofactors_inorganic": "N/A",
@@ -364,7 +370,7 @@ class MetadataManager(BaseModel):
         if acc := data["enzyme"]["databaseIds"].get("uniprot"):
             if (
                 response := requests.get(
-                    f"https://rest.uniprot.org/uniprotkb/{acc}.json"
+                    f"https://rest.uniprot.org/uniprotkb/{acc}.json",
                 )
             ).status_code == 200 or (
                 response := requests.get(f"https://rest.uniprot.org/uniparc/{acc}.json")
@@ -379,18 +385,21 @@ class MetadataManager(BaseModel):
                     origin["order"] = record[4]
                     origin["family"] = record[5]
                     origin["organism"] = content.get("organism", {}).get(
-                        "scientificName"
+                        "scientificName",
                     )
                     return origin
                 except Exception as e:
                     logger.warning(
-                        f"Did not find organism information for '{acc}' ({data["accession"]}) in UniProt: {e!s}"
+                        f"Did not find organism information for '{acc}' ({data['accession']}) in UniProt: {e!s}",
                     )
 
         if acc := data["enzyme"]["databaseIds"].get("genpept"):
             try:
                 handle = Entrez.efetch(
-                    db="protein", id=acc, rettype="gb", retmode="text"
+                    db="protein",
+                    id=acc,
+                    rettype="gb",
+                    retmode="text",
                 )
                 record = SeqIO.read(handle, "genbank")
                 origin["domain"] = record.annotations.get("taxonomy")[0]
@@ -404,7 +413,7 @@ class MetadataManager(BaseModel):
                 return origin
             except Exception as e:
                 logger.warning(
-                    f"Did not find organism information for '{acc}' ({data["accession"]}) in NCBI Genbank: {e!s}"
+                    f"Did not find organism information for '{acc}' ({data['accession']}) in NCBI Genbank: {e!s}",
                 )
 
         return origin
@@ -432,7 +441,7 @@ class MetadataManager(BaseModel):
 
         if mibig_acc not in self.mibig_data:
             logger.warning(
-                f"{mite_acc}: {mibig_acc!s} is not found in MIBiG fasta file - SKIP"
+                f"{mite_acc}: {mibig_acc!s} is not found in MIBiG fasta file - SKIP",
             )
             return
 
@@ -443,7 +452,7 @@ class MetadataManager(BaseModel):
 
         if genpept not in self.mibig_data[mibig_acc]:
             logger.warning(
-                f"{mite_acc}: GenPept-accession {genpept!s} is not found in the corresponding MIBiG BGC - SKIP"
+                f"{mite_acc}: GenPept-accession {genpept!s} is not found in the corresponding MIBiG BGC - SKIP",
             )
             return
 
@@ -453,7 +462,8 @@ class MetadataManager(BaseModel):
             "status": data["status"],
             "enzyme_name": data["enzyme"]["name"],
             "enzyme_description": data["enzyme"].get(
-                "description", "No description available"
+                "description",
+                "No description available",
             ),
             "enzyme_ids": data["enzyme"]["databaseIds"],
             "enzyme_tailoring": "|".join(
@@ -462,8 +472,8 @@ class MetadataManager(BaseModel):
                         tailoring
                         for reaction in data.get("reactions")
                         for tailoring in reaction.get("tailoring", [])
-                    }
-                )
+                    },
+                ),
             ),
             "enzyme_refs": data["enzyme"]["references"],
         }

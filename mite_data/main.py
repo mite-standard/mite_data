@@ -140,7 +140,9 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 console_handler = logging.StreamHandler(sys.stdout)
 console_handler.setFormatter(
-    coloredlogs.ColoredFormatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+    coloredlogs.ColoredFormatter(
+        "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    ),
 )
 logger.addHandler(console_handler)
 
@@ -184,7 +186,7 @@ class MibigManager(BaseModel):
         response_metadata = requests.get(self.mibig_record)
         if response_metadata.status_code != 200:
             raise RuntimeError(
-                f"Error fetching 'mibig' record metadata: {response_metadata.status_code}"
+                f"Error fetching 'mibig' record metadata: {response_metadata.status_code}",
             )
 
         record_metadata = response_metadata.json()
@@ -194,7 +196,7 @@ class MibigManager(BaseModel):
 
                 if response_data.status_code != 200:
                     raise RuntimeError(
-                        f"Error downloading 'mibig' record: {response_data.status_code}"
+                        f"Error downloading 'mibig' record: {response_data.status_code}",
                     )
 
                 with open(self.mibig.joinpath(self.fasta), "wb") as f:
@@ -202,7 +204,7 @@ class MibigManager(BaseModel):
 
         if not self.mibig.joinpath(self.fasta).exists():
             raise RuntimeError(
-                f"Could not find the MIBiG fasta file in its Zenodo repository (record URL: {self.mibig_record})"
+                f"Could not find the MIBiG fasta file in its Zenodo repository (record URL: {self.mibig_record})",
             )
 
     def organize_data(self) -> None:
@@ -223,7 +225,7 @@ class MibigManager(BaseModel):
                 if mibig in mibig_prot:
                     mibig_prot[mibig].add(genbank)
                 else:
-                    mibig_prot[mibig] = set([genbank])
+                    mibig_prot[mibig] = {genbank}
 
         out = {}
         for key, val in mibig_prot.items():

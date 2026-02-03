@@ -193,7 +193,7 @@ class MolFileManager(BaseModel):
         for readctionid, reaction in enumerate(data["reactions"], 1):
             for exampleid, example in enumerate(reaction["reactions"], 1):
                 self.smiles["mite_id"].append(
-                    f"{data['accession']}.reaction{readctionid}.example{exampleid}"
+                    f"{data['accession']}.reaction{readctionid}.example{exampleid}",
                 )
                 self.smiles["substrates"].append(f"{example['substrate']}")
                 self.smiles["products"].append(f"{'.'.join(example['products'])}")
@@ -205,8 +205,8 @@ class MolFileManager(BaseModel):
             data: a dict derived from a mite json file
         """
         for readctionid, reaction in enumerate(data["reactions"], 1):
-            self.smarts["mite_id"].append(f'{data['accession']}.reaction{readctionid}')
-            self.smarts["reactionsmarts"].append(f"{reaction["reactionSMARTS"]}")
+            self.smarts["mite_id"].append(f"{data['accession']}.reaction{readctionid}")
+            self.smarts["reactionsmarts"].append(f"{reaction['reactionSMARTS']}")
 
     def prepare_pickled_smiles(self) -> None:
         """Create a pickle file with pre-calculated SMILES fingerprints"""
@@ -219,7 +219,10 @@ class MolFileManager(BaseModel):
             includeFingerprints=True,
         )
         PandasTools.AddMoleculeColumnToFrame(
-            df, smilesCol="products", molCol="ROMol_products", includeFingerprints=True
+            df,
+            smilesCol="products",
+            molCol="ROMol_products",
+            includeFingerprints=True,
         )
 
         self.pickle_substrates = list(df["ROMol_substrates"])
@@ -233,13 +236,13 @@ class MolFileManager(BaseModel):
         for smarts in self.smarts.get("reactionsmarts"):
             self.pickle_smartsfps["reaction_fps"].append(
                 rdChemReactions.CreateStructuralFingerprintForReaction(
-                    rdChemReactions.ReactionFromSmarts(smarts)
-                )
+                    rdChemReactions.ReactionFromSmarts(smarts),
+                ),
             )
             self.pickle_smartsfps["diff_reaction_pfs"].append(
                 rdChemReactions.CreateDifferenceFingerprintForReaction(
-                    rdChemReactions.ReactionFromSmarts(smarts)
-                )
+                    rdChemReactions.ReactionFromSmarts(smarts),
+                ),
             )
 
     def dump_files(self) -> None:
