@@ -2841,6 +2841,90 @@
           "doi:10.1021/jacs.5c04971"
         ]
       }
+    ],
+    "BGC0000821": [
+      {
+        "mite_accession": "MITE0000069",
+        "mite_url": "https://bioregistry.io/mite:MITE0000069",
+        "status": "active",
+        "enzyme_name": "RebH",
+        "enzyme_description": "Tryptophan halogenase",
+        "enzyme_ids": {
+          "uniprot": "Q8KHZ8",
+          "genpept": "BAC10682.1",
+          "mibig": "BGC0000821"
+        },
+        "enzyme_tailoring": "Halogenation",
+        "enzyme_refs": [
+          "doi:10.1016/s1074-5521(02)00126-6"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000067",
+        "mite_url": "https://bioregistry.io/mite:MITE0000067",
+        "status": "active",
+        "enzyme_name": "RebD",
+        "enzyme_description": "Dichlorochromopyrrolate synthase",
+        "enzyme_ids": {
+          "uniprot": "Q8KHV6",
+          "genpept": "BAC10675.1",
+          "mibig": "BGC0000821"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1016/S1074-5521(02)00126-6",
+          "doi:10.1021/ja056749x"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000068",
+        "mite_url": "https://bioregistry.io/mite:MITE0000068",
+        "status": "active",
+        "enzyme_name": "RebO",
+        "enzyme_description": "Flavin-dependent L-tryptophan oxidase",
+        "enzyme_ids": {
+          "uniprot": "Q8KHS0",
+          "genpept": "BAC10674.1",
+          "mibig": "BGC0000821"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1016/S1074-5521(02)00126-6"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000066",
+        "mite_url": "https://bioregistry.io/mite:MITE0000066",
+        "status": "active",
+        "enzyme_name": "RebP",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "Q8KIC8",
+          "genpept": "BAC10677.1",
+          "mibig": "BGC0000821"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1021/ja9003365"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000070",
+        "mite_url": "https://bioregistry.io/mite:MITE0000070",
+        "status": "active",
+        "enzyme_name": "RebC",
+        "enzyme_description": "Putative FAD-monooxygenase",
+        "enzyme_ids": {
+          "uniprot": "Q8KI25",
+          "genpept": "BAC10676.1",
+          "mibig": "BGC0000821"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1021/ja063898m",
+          "doi:10.1021/ja0743801"
+        ]
+      }
     ]
   }
 }

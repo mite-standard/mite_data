@@ -283,7 +283,7 @@
       "enzyme_description": "Tryptophan halogenase",
       "enzyme_ids": {
         "uniprot": "Q8KHZ8",
-        "genpept": "AAN01216.1",
+        "genpept": "BAC10682.1",
         "mibig": "BGC0000821"
       },
       "tailoring": "Halogenation",
@@ -1624,7 +1624,7 @@
       "enzyme_description": "Dichlorochromopyrrolate synthase",
       "enzyme_ids": {
         "uniprot": "Q8KHV6",
-        "genpept": "AAN01209.1",
+        "genpept": "BAC10675.1",
         "mibig": "BGC0000821"
       },
       "tailoring": "Oxidation",
@@ -1761,8 +1761,7 @@
       "enzyme_description": "O-methyltransferase",
       "enzyme_ids": {
         "uniprot": "L8PIQ8",
-        "genpept": "ELS56114.1",
-        "mibig": "BGC0000026"
+        "genpept": "ELS56114.1"
       },
       "tailoring": "Methylation",
       "reaction_description": "O-methyltransferase and is responsible for methylation of the phenolic hydroxyl group in the dichloroisoeverninic acid moiety ",
@@ -2491,8 +2490,7 @@
       "enzyme_name": "PspC",
       "enzyme_description": "Cytochrome P450",
       "enzyme_ids": {
-        "uniprot": "P0DUK3",
-        "mibig": "BGC0003032"
+        "uniprot": "P0DUK3"
       },
       "tailoring": "Oxidation",
       "reaction_description": "catalyzes three-step oxidations at the C-4 methyl group to carboxylic acid to yield soppiline C",
@@ -3994,8 +3992,7 @@
       "enzyme_description": "Flavin-dependent halogenase",
       "enzyme_ids": {
         "uniprot": "U6BGC3",
-        "genpept": "AHA34035.1",
-        "mibig": "BGC0000891"
+        "genpept": "AHA34035.1"
       },
       "tailoring": "Halogenation",
       "reaction_description": "No description",
@@ -4336,7 +4333,7 @@
       "enzyme_description": "Flavin-dependent L-tryptophan oxidase",
       "enzyme_ids": {
         "uniprot": "Q8KHS0",
-        "genpept": "AAN01208.1",
+        "genpept": "BAC10674.1",
         "mibig": "BGC0000821"
       },
       "tailoring": "Oxidation",
@@ -4449,8 +4446,7 @@
       "enzyme_name": "SgrB",
       "enzyme_description": "Cytochrome P450",
       "enzyme_ids": {
-        "uniprot": "UPI00068C79B2",
-        "mibig": "BGC0003046"
+        "uniprot": "UPI00068C79B2"
       },
       "tailoring": "Biaryl bond formation",
       "reaction_description": "Installs biaryl crosslink between his-his",
@@ -4472,7 +4468,7 @@
       "enzyme_description": "Cytochrome P450",
       "enzyme_ids": {
         "uniprot": "Q8KIC8",
-        "genpept": "AAN01211.1",
+        "genpept": "BAC10677.1",
         "mibig": "BGC0000821"
       },
       "tailoring": "Oxidation",
@@ -4654,7 +4650,7 @@
       "enzyme_description": "Putative FAD-monooxygenase",
       "enzyme_ids": {
         "uniprot": "Q8KI25",
-        "genpept": "AAN01210.1",
+        "genpept": "BAC10676.1",
         "mibig": "BGC0000821"
       },
       "tailoring": "Oxidation",
@@ -4767,8 +4763,7 @@
       "enzyme_description": "Monooxygenase",
       "enzyme_ids": {
         "uniprot": "A0A2S1P8Q4",
-        "genpept": "AWH12915.1",
-        "mibig": "BGC0003049"
+        "genpept": "AWH12915.1"
       },
       "tailoring": "Hydroxylation",
       "reaction_description": "Monooxygenase",
@@ -5891,7 +5886,7 @@
       "enzyme_name": "PcbC",
       "enzyme_description": "Isopenicillin N synthase",
       "enzyme_ids": {
-        "uniprot": "B6HLU0",
+        "uniprot": "UPI0000168962",
         "genpept": "ABA70583.1",
         "mibig": "BGC0000404"
       },
@@ -5899,7 +5894,7 @@
       "reaction_description": "Cyclization of the ACV substrate to isopenicillin N in the biosynthetic pathway of beta-lactam antibiotics",
       "cofactors_organic": "N/A",
       "cofactors_inorganic": "Fe",
-      "organism": "Penicillium rubens (strain ATCC 28089 / DSM 1075 / NRRL 1951 / Wisconsin 54-1255)",
+      "organism": "Penicillium chrysogenum",
       "domain": "Eukaryota",
       "kingdom": "Fungi",
       "phylum": "Dikarya",
