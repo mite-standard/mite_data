@@ -24,6 +24,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Added cofactor information"
+        },
+        {
+            "version": "3",
+            "date": "2026-02-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed nonexisting MIBiG ID."
         }
     ],
     "enzyme": {
@@ -33,8 +44,7 @@
             "doi:10.1002/anie.202311533"
         ],
         "databaseIds": {
-            "uniprot": "UPI00068C79B2",
-            "mibig": "BGC0003046"
+            "uniprot": "UPI00068C79B2"
         },
         "cofactors": {
             "inorganic": [

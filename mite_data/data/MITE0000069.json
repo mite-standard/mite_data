@@ -34,6 +34,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Added reaction description. Reviewer improved description."
+        },
+        {
+            "version": "4",
+            "date": "2026-02-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Fixed genpept ID to correspond with MIBiG."
         }
     ],
     "enzyme": {
@@ -44,7 +55,7 @@
         ],
         "databaseIds": {
             "uniprot": "Q8KHZ8",
-            "genpept": "AAN01216.1",
+            "genpept": "BAC10682.1",
             "mibig": "BGC0000821"
         }
     },

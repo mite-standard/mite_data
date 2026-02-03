@@ -13,6 +13,17 @@
                 "0000-0003-0443-9902"
             ],
             "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer partially fixed reactions:substrate, validation still not passing. Reviewer partially fixed reactions:products, validation still not passing. Review 2 redrew reaction SMARTS to take into account aromatic nitrogens in heterocycles."
+        },
+        {
+            "version": "2",
+            "date": "2026-02-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Fixed genpept ID to correspond with MIBiG."
         }
     ],
     "enzyme": {
@@ -24,7 +35,7 @@
         ],
         "databaseIds": {
             "uniprot": "Q8KHV6",
-            "genpept": "AAN01209.1",
+            "genpept": "BAC10675.1",
             "mibig": "BGC0000821"
         }
     },

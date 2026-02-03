@@ -12,6 +12,17 @@
                 "0000-0002-9747-3423"
             ],
             "comment": "Initial entry. Reviewer 1 checked crosslinks, factual correctness, added reference and reaction description"
+        },
+        {
+            "version": "2",
+            "date": "2026-02-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Fixed genpept ID to correspond with MIBiG."
         }
     ],
     "enzyme": {
@@ -23,7 +34,7 @@
         ],
         "databaseIds": {
             "uniprot": "Q8KI25",
-            "genpept": "AAN01210.1",
+            "genpept": "BAC10676.1",
             "mibig": "BGC0000821"
         }
     },

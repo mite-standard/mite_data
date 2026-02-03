@@ -35,6 +35,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Homogenized enzyme descriptions"
+        },
+        {
+            "version": "3",
+            "date": "2026-02-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed MIBiG reference - does not exist."
         }
     ],
     "enzyme": {
@@ -44,8 +55,7 @@
             "doi:10.1039/c9ob00807a"
         ],
         "databaseIds": {
-            "uniprot": "P0DUK3",
-            "mibig": "BGC0003032"
+            "uniprot": "P0DUK3"
         },
         "cofactors": {
             "inorganic": [
