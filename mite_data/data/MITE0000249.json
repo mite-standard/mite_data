@@ -1,0 +1,68 @@
+{
+    "accession": "MITE0000249",
+    "status": "active",
+    "comment": "Catalyzes the formation of the beta-lactam ring in the biosynthetic pathway of penicillin and related antibiotics.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-01-01",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0003-4819-2251"
+            ],
+            "comment": "New entry. Added original ref and removed another (not relevant) one. Minor corrections to descriptions."
+        }
+    ],
+    "enzyme": {
+        "name": "PcbC",
+        "description": "Isopenicillin N synthase",
+        "references": [
+            "doi:10.1038/ncomms15202",
+            "doi:10.1038/nbt0190-39"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI0000168962",
+            "genpept": "ABA70583.1",
+            "mibig": "BGC0000404"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Cyclization"
+            ],
+            "description": "Cyclization of the ACV substrate to isopenicillin N in the biosynthetic pathway of beta-lactam antibiotics",
+            "reactionSMARTS": "[#6:1]-[#6:2](\\[#6@:4](-[#6:22](=[#8:24])-[#8:23])-[#7:5]-[#6:6](/[#6@@:8](-[#7:11]-[#6:12](-[#6:14]-[#6:15]-[#6:16]-[#6@@:17](-[#6:19](=[#8:21])-[#8:20])/[#7:18])=[#8:13])-[#6:9]-[#16:10])=[#8:7])-[#6:3]>>[#6:3]-[#6:2]1(-[#16:10]-[#6:9]2-[#7:5](-[#6:6](/[#6@:8]-2-[#7:11]-[#6:12](-[#6:14]-[#6:15]-[#6:16]-[#6@@:17](-[#6:19](=[#8:21])-[#8:20])/[#7:18])=[#8:13])=[#8:7])-[#6@:4]\\1-[#6:22](=[#8:24])-[#8:23])-[#6:1]",
+            "reactions": [
+                {
+                    "substrate": "CC(C)[C@@H](NC(=O)[C@H](CS)NC(=O)CCC[C@H](N)C(=O)O)C(=O)O",
+                    "products": [
+                        "CC1(C)SC2[C@H](NC(=O)CCC[C@H](N)C(=O)O)C(=O)N2[C@H]1C(=O)O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Cyclization of δ-(L-α-aminoadipoyl)-L-cysteinyl-D-valine (LLD-ACV) tripeptide to isopenicillin N."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1038/ncomms15202",
+                    "doi:10.1038/nbt0190-39"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "22428",
+                "ec": "1.21.3.1"
+            }
+        }
+    ]
+}

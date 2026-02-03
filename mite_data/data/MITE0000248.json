@@ -1,0 +1,69 @@
+{
+    "accession": "MITE0000248",
+    "status": "active",
+    "comment": "Catalyzes the exchange of the alpha-aminoadipyl side chain of IPN with a phenylacetyl moiety, to yield penicillin G.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-01-01",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0003-4819-2251"
+            ],
+            "comment": "New entry. Added original ref, minor corrections to reaction descriptions. Replaced Uniref database ref with Uniprot ID."
+        }
+    ],
+    "enzyme": {
+        "name": "PenDE",
+        "description": "Acyl-CoA:isopenicillin N N-acyltransferase",
+        "references": [
+            "doi:10.1038/ncomms15202",
+            "doi:10.1128/jb.172.10.5908-5914.1990"
+        ],
+        "databaseIds": {
+            "uniprot": "B6HLT9",
+            "genpept": "ABA70584.1",
+            "mibig": "BGC0000404"
+        },
+        "cofactors": {
+            "organic": [
+                "Coenzyme A"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Acylation"
+            ],
+            "description": "Transacylation of side chain of isopenicillin N in the biosynthetic pathway of penicillin G.",
+            "reactionSMARTS": "[#6:3]-[#6:2]1(-[#16:10]-[#6:9]2-[#7:5](-[#6:6](/[#6@:8]-2-[#7:11]-[#6](-[#6]-[#6]-[#6]-[#6@@](-[#6](=[#8])-[#8])/[#7])=[#8])=[#8:7])-[#6@:4]\\1-[#6:22](=[#8:24])-[#8:23])-[#6:1]>>[#6:3]-[#6:2]1(-[#16:10]-[#6:9]2-[#7:5](-[#6:6](/[#6@:8]-2-[#7:11]-[#6](=[#8])-[#6]-[#6]2:[#6]:[#6]:[#6]:[#6]:[#6]:2)=[#8:7])-[#6@:4]\\1-[#6:22](=[#8:24])-[#8:23])-[#6:1]",
+            "reactions": [
+                {
+                    "substrate": "CC1(C)SC2[C@H](NC(=O)CCC[C@H](N)C(=O)O)C(=O)N2[C@H]1C(=O)O",
+                    "products": [
+                        "CC1(C)SC2[C@H](NC(=O)Cc3ccccc3)C(=O)N2[C@H]1C(=O)O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Transacylation of isopenicillin N to penicillin G (benzylpenicillin) by replacement of alpha-aminoadipyl side chain with phenylacetly moiety. "
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1038/ncomms15202",
+                    "doi:10.1128/jb.172.10.5908-5914.1990"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "20720",
+                "ec": "2.3.1.164"
+            }
+        }
+    ]
+}

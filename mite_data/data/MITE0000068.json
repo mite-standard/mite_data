@@ -23,6 +23,17 @@
                 "0000-0002-9747-3423"
             ],
             "comment": "Added cofactor information"
+        },
+        {
+            "version": "3",
+            "date": "2026-02-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Fixed genpept ID to correspond with MIBiG."
         }
     ],
     "enzyme": {
@@ -33,7 +44,7 @@
         ],
         "databaseIds": {
             "uniprot": "Q8KHS0",
-            "genpept": "AAN01208.1",
+            "genpept": "BAC10674.1",
             "mibig": "BGC0000821"
         },
         "cofactors": {

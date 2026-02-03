@@ -1,5 +1,5 @@
 {
-  "version_mite_data": "1.19",
+  "version_mite_data": "1.22",
   "entries": {
     "MITE0000194": {
       "accession": "MITE0000194",
@@ -283,11 +283,11 @@
       "enzyme_description": "Tryptophan halogenase",
       "enzyme_ids": {
         "uniprot": "Q8KHZ8",
-        "genpept": "AAN01216.1",
+        "genpept": "BAC10682.1",
         "mibig": "BGC0000821"
       },
       "tailoring": "Halogenation",
-      "reaction_description": "No description",
+      "reaction_description": "Chlorinates the rebeccamycin intermediate.",
       "cofactors_organic": "N/A",
       "cofactors_inorganic": "N/A",
       "organism": "Lentzea aerocolonigenes",
@@ -1357,7 +1357,7 @@
         "mibig": "BGC0000269"
       },
       "tailoring": "Methylation",
-      "reaction_description": "No description",
+      "reaction_description": "O-methylation of tetrycycline intermediate.",
       "cofactors_organic": "SAM",
       "cofactors_inorganic": "FeS",
       "organism": "Streptomyces sp. SF2575",
@@ -1624,7 +1624,7 @@
       "enzyme_description": "Dichlorochromopyrrolate synthase",
       "enzyme_ids": {
         "uniprot": "Q8KHV6",
-        "genpept": "AAN01209.1",
+        "genpept": "BAC10675.1",
         "mibig": "BGC0000821"
       },
       "tailoring": "Oxidation",
@@ -1761,8 +1761,7 @@
       "enzyme_description": "O-methyltransferase",
       "enzyme_ids": {
         "uniprot": "L8PIQ8",
-        "genpept": "ELS56114.1",
-        "mibig": "BGC0000026"
+        "genpept": "ELS56114.1"
       },
       "tailoring": "Methylation",
       "reaction_description": "O-methyltransferase and is responsible for methylation of the phenolic hydroxyl group in the dichloroisoeverninic acid moiety ",
@@ -1873,14 +1872,14 @@
       "status": "active",
       "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
       "enzyme_name": "MciB",
-      "enzyme_description": "P450 installing crosslink",
+      "enzyme_description": "Cytochrome P450",
       "enzyme_ids": {
         "uniprot": "A0A1C6TS88",
         "genpept": "SCL44650.1",
         "mibig": "BGC0003008"
       },
       "tailoring": "Biaryl bond formation",
-      "reaction_description": "No description",
+      "reaction_description": "Macrocyclisation of Tyr-Trp via biaryl bond formation.",
       "cofactors_organic": "N/A",
       "cofactors_inorganic": "N/A",
       "organism": "Micromonospora citrea",
@@ -2491,8 +2490,7 @@
       "enzyme_name": "PspC",
       "enzyme_description": "Cytochrome P450",
       "enzyme_ids": {
-        "uniprot": "P0DUK3",
-        "mibig": "BGC0003032"
+        "uniprot": "P0DUK3"
       },
       "tailoring": "Oxidation",
       "reaction_description": "catalyzes three-step oxidations at the C-4 methyl group to carboxylic acid to yield soppiline C",
@@ -2835,7 +2833,7 @@
         "mibig": "BGC0000279"
       },
       "tailoring": "Halogenation",
-      "reaction_description": "No description",
+      "reaction_description": "Chlorinates the xantholipin intermediate.",
       "cofactors_organic": "FAD",
       "cofactors_inorganic": "N/A",
       "organism": "Streptomyces flavogriseus",
@@ -3994,8 +3992,7 @@
       "enzyme_description": "Flavin-dependent halogenase",
       "enzyme_ids": {
         "uniprot": "U6BGC3",
-        "genpept": "AHA34035.1",
-        "mibig": "BGC0000891"
+        "genpept": "AHA34035.1"
       },
       "tailoring": "Halogenation",
       "reaction_description": "No description",
@@ -4336,7 +4333,7 @@
       "enzyme_description": "Flavin-dependent L-tryptophan oxidase",
       "enzyme_ids": {
         "uniprot": "Q8KHS0",
-        "genpept": "AAN01208.1",
+        "genpept": "BAC10674.1",
         "mibig": "BGC0000821"
       },
       "tailoring": "Oxidation",
@@ -4449,8 +4446,7 @@
       "enzyme_name": "SgrB",
       "enzyme_description": "Cytochrome P450",
       "enzyme_ids": {
-        "uniprot": "UPI00068C79B2",
-        "mibig": "BGC0003046"
+        "uniprot": "UPI00068C79B2"
       },
       "tailoring": "Biaryl bond formation",
       "reaction_description": "Installs biaryl crosslink between his-his",
@@ -4472,11 +4468,11 @@
       "enzyme_description": "Cytochrome P450",
       "enzyme_ids": {
         "uniprot": "Q8KIC8",
-        "genpept": "AAN01211.1",
+        "genpept": "BAC10677.1",
         "mibig": "BGC0000821"
       },
       "tailoring": "Oxidation",
-      "reaction_description": "No description",
+      "reaction_description": "Oxidative cyclization of chromopyrrolic acid.",
       "cofactors_organic": "Heme",
       "cofactors_inorganic": "Fe",
       "organism": "Lentzea aerocolonigenes",
@@ -4654,7 +4650,7 @@
       "enzyme_description": "Putative FAD-monooxygenase",
       "enzyme_ids": {
         "uniprot": "Q8KI25",
-        "genpept": "AAN01210.1",
+        "genpept": "BAC10676.1",
         "mibig": "BGC0000821"
       },
       "tailoring": "Oxidation",
@@ -4767,8 +4763,7 @@
       "enzyme_description": "Monooxygenase",
       "enzyme_ids": {
         "uniprot": "A0A2S1P8Q4",
-        "genpept": "AWH12915.1",
-        "mibig": "BGC0003049"
+        "genpept": "AWH12915.1"
       },
       "tailoring": "Hydroxylation",
       "reaction_description": "Monooxygenase",
@@ -5102,7 +5097,7 @@
       "status": "active",
       "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
       "enzyme_name": "ArbB2",
-      "enzyme_description": "burpitide cyclases/BURP-domain peptide cyclases",
+      "enzyme_description": "Burpitide cyclases/BURP-domain peptide cyclases",
       "enzyme_ids": {
         "uniprot": "UPI000F5D181E"
       },
@@ -5178,6 +5173,751 @@
       "cofactors_organic": "N/A",
       "cofactors_inorganic": "N/A",
       "organism": "Streptomyces yunnanensis",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
+    },
+    "MITE0000230": {
+      "accession": "MITE0000230",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "GelB2",
+      "enzyme_description": "Peptidase",
+      "enzyme_ids": {
+        "uniprot": "UPI000F088A46"
+      },
+      "tailoring": "Hydrolysis",
+      "reaction_description": "N-terminal cleavage of gelatinamin leader peptide, resulting in immature intermediate core peptide.",
+      "cofactors_organic": "N/A",
+      "cofactors_inorganic": "N/A",
+      "organism": "Not found",
+      "domain": "Not found",
+      "kingdom": "Not found",
+      "phylum": "Not found",
+      "class": "Not found",
+      "order": "Not found",
+      "family": "Not found"
+    },
+    "MITE0000231": {
+      "accession": "MITE0000231",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "GelP",
+      "enzyme_description": "Transpeptidase, clostripain-like",
+      "enzyme_ids": {
+        "uniprot": "UPI0014766E56"
+      },
+      "tailoring": "Cyclization",
+      "reaction_description": "Introduction of second macrocylce on lassopeptide via hydrolysis of C-terminal amino acid.",
+      "cofactors_organic": "N/A",
+      "cofactors_inorganic": "N/A",
+      "organism": "Not found",
+      "domain": "Not found",
+      "kingdom": "Not found",
+      "phylum": "Not found",
+      "class": "Not found",
+      "order": "Not found",
+      "family": "Not found"
+    },
+    "MITE0000235": {
+      "accession": "MITE0000235",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "NisP",
+      "enzyme_description": "Protease",
+      "enzyme_ids": {
+        "uniprot": "D9IXC0",
+        "genpept": "ADJ56357.1",
+        "mibig": "BGC0000535"
+      },
+      "tailoring": "Hydrolysis",
+      "reaction_description": "Cleavage of nisin precursor peptide (prepeptide) by recognizing the GASPR cleavage site. Presence of lantionine-rings is essential for cleavage in vivo, but not strictly necessary in vitro.",
+      "cofactors_organic": "N/A",
+      "cofactors_inorganic": "N/A",
+      "organism": "Lactococcus lactis subsp. lactis",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Bacillota",
+      "class": "Bacilli",
+      "order": "Lactobacillales",
+      "family": "Streptococcaceae"
+    },
+    "MITE0000234": {
+      "accession": "MITE0000234",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "NisC",
+      "enzyme_description": "Lanthionine synthetase",
+      "enzyme_ids": {
+        "uniprot": "D9IXB8",
+        "genpept": "ADJ56355.1",
+        "mibig": "BGC0000535"
+      },
+      "tailoring": "Cyclization",
+      "reaction_description": "(Methyl-)lanthionine formation between dehydrated Ser/Thr and Cys on nisin precursor peptide modified by NisB.",
+      "cofactors_organic": "N/A",
+      "cofactors_inorganic": "Zn",
+      "organism": "Lactococcus lactis subsp. lactis",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Bacillota",
+      "class": "Bacilli",
+      "order": "Lactobacillales",
+      "family": "Streptococcaceae"
+    },
+    "MITE0000233": {
+      "accession": "MITE0000233",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "NisB",
+      "enzyme_description": "Dehydratase",
+      "enzyme_ids": {
+        "uniprot": "D9IXB6",
+        "genpept": "ADJ56353.1",
+        "mibig": "BGC0000535"
+      },
+      "tailoring": "Dehydration",
+      "reaction_description": "Dehydration of ser/thr in nisin A precursor peptide. Leader peptide with FNLD sequence (\"box\") essential for recognition. ",
+      "cofactors_organic": "Adenosine triphosphate",
+      "cofactors_inorganic": "Mg",
+      "organism": "Lactococcus lactis subsp. lactis",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Bacillota",
+      "class": "Bacilli",
+      "order": "Lactobacillales",
+      "family": "Streptococcaceae"
+    },
+    "MITE0000229": {
+      "accession": "MITE0000229",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "GelC",
+      "enzyme_description": "Macrolactam synthetase",
+      "enzyme_ids": {
+        "uniprot": "UPI000F08A2CC"
+      },
+      "tailoring": "Macrolactam formation",
+      "reaction_description": "Lasso macrocyclisation of gelatinamin intermediate after leader peptide cleavage.",
+      "cofactors_organic": "N/A",
+      "cofactors_inorganic": "N/A",
+      "organism": "Not found",
+      "domain": "Not found",
+      "kingdom": "Not found",
+      "phylum": "Not found",
+      "class": "Not found",
+      "order": "Not found",
+      "family": "Not found"
+    },
+    "MITE0000232": {
+      "accession": "MITE0000232",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "GelT",
+      "enzyme_description": "Acetyltransferase",
+      "enzyme_ids": {
+        "uniprot": "UPI001FE98693"
+      },
+      "tailoring": "Acetylation",
+      "reaction_description": "Acetylation of single C-terminal lysin of gelatinamin B to prevent auto-toxicity.",
+      "cofactors_organic": "Coenzyme A",
+      "cofactors_inorganic": "N/A",
+      "organism": "Not found",
+      "domain": "Not found",
+      "kingdom": "Not found",
+      "phylum": "Not found",
+      "class": "Not found",
+      "order": "Not found",
+      "family": "Not found"
+    },
+    "MITE0000246": {
+      "accession": "MITE0000246",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "NotC",
+      "enzyme_description": "Prenyltransferase",
+      "enzyme_ids": {
+        "uniprot": "E0Y3X0",
+        "genpept": "ADM34136.1",
+        "mibig": "BGC0001084"
+      },
+      "tailoring": "Prenylation",
+      "reaction_description": "Aromatic prenylation of tryptophan-moiety of 6-OH deoxybrevianamide E in the notoamide D pathway. Enzyme shows high substrate specificity.",
+      "cofactors_organic": "N/A",
+      "cofactors_inorganic": "N/A",
+      "organism": "Aspergillus sp. (strain MF297-2)",
+      "domain": "Eukaryota",
+      "kingdom": "Fungi",
+      "phylum": "Dikarya",
+      "class": "Ascomycota",
+      "order": "Pezizomycotina",
+      "family": "Eurotiomycetes"
+    },
+    "MITE0000236": {
+      "accession": "MITE0000236",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "BesE",
+      "enzyme_description": "Hydroxylase",
+      "enzyme_ids": {
+        "uniprot": "F8JJ27",
+        "genpept": "AEW98880.1"
+      },
+      "tailoring": "Hydroxylation",
+      "reaction_description": "Hydroxylates intermediate in beta-ethynylserine pathway, showing high substrate-specificity.",
+      "cofactors_organic": "a-Ketoglutaric acid",
+      "cofactors_inorganic": "Fe",
+      "organism": "Streptantibioticus cattleyicolor (strain ATCC 35852 / DSM 46488 / JCM 4925 / NBRC 14057 / NRRL 8057)",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
+    },
+    "MITE0000245": {
+      "accession": "MITE0000245",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "NotG",
+      "enzyme_description": "Cytochrome P450",
+      "enzyme_ids": {
+        "uniprot": "E1ACQ2",
+        "genpept": "ADM34140.1",
+        "mibig": "BGC0001084"
+      },
+      "tailoring": "Hydroxylation",
+      "reaction_description": "Hydroxylation of deoxybrevianamide E in notoamide biosynthetic pathway.",
+      "cofactors_organic": "Heme",
+      "cofactors_inorganic": "Fe",
+      "organism": "Aspergillus sp. (strain MF297-2)",
+      "domain": "Eukaryota",
+      "kingdom": "Fungi",
+      "phylum": "Dikarya",
+      "class": "Ascomycota",
+      "order": "Pezizomycotina",
+      "family": "Eurotiomycetes"
+    },
+    "MITE0000260": {
+      "accession": "MITE0000260",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "NosG",
+      "enzyme_description": "E1-YcaO didomain protein",
+      "enzyme_ids": {
+        "uniprot": "C6FX46",
+        "genpept": "ACR48336.1",
+        "mibig": "BGC0000610"
+      },
+      "tailoring": "Dehydration|Heterocyclization",
+      "reaction_description": "Cyclodehydration of cystein-thiol with preceding peptide bond",
+      "cofactors_organic": "N/A",
+      "cofactors_inorganic": "N/A",
+      "organism": "Streptomyces actuosus",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
+    },
+    "MITE0000244": {
+      "accession": "MITE0000244",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "NotF",
+      "enzyme_description": "Deoxybrevianamide E synthase",
+      "enzyme_ids": {
+        "uniprot": "E0Y3X1",
+        "genpept": "ADM34139.1",
+        "mibig": "BGC0001084"
+      },
+      "tailoring": "Prenylation",
+      "reaction_description": "Reverse prenylation of brevianamide F in the notoamid pathway, with high substrate specificity (no products for other diketopiperazides).",
+      "cofactors_organic": "N/A",
+      "cofactors_inorganic": "N/A",
+      "organism": "Aspergillus sp. (strain MF297-2)",
+      "domain": "Eukaryota",
+      "kingdom": "Fungi",
+      "phylum": "Dikarya",
+      "class": "Ascomycota",
+      "order": "Pezizomycotina",
+      "family": "Eurotiomycetes"
+    },
+    "MITE0000254": {
+      "accession": "MITE0000254",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "NosC",
+      "enzyme_description": "Cytochrome P450",
+      "enzyme_ids": {
+        "uniprot": "C6FX42",
+        "genpept": "ACR48332.1",
+        "mibig": "BGC0000610"
+      },
+      "tailoring": "Hydroxylation",
+      "reaction_description": "Hydroxylates the pyridin moiety of the nascent nosiheptide intermediate",
+      "cofactors_organic": "Heme",
+      "cofactors_inorganic": "Fe",
+      "organism": "Streptomyces actuosus",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
+    },
+    "MITE0000252": {
+      "accession": "MITE0000252",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "NosB",
+      "enzyme_description": "Cytochrome P450",
+      "enzyme_ids": {
+        "uniprot": "UPI0001AABFA3",
+        "genpept": "ACR48331.1",
+        "mibig": "BGC0000610"
+      },
+      "tailoring": "Hydroxylation",
+      "reaction_description": "NosB hydroxylates the gamma-position of Glu6 in the nosiheptide biosynthetic pathway.",
+      "cofactors_organic": "Heme",
+      "cofactors_inorganic": "Fe",
+      "organism": "Streptomyces actuosus",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
+    },
+    "MITE0000237": {
+      "accession": "MITE0000237",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "PtmC",
+      "enzyme_description": "Alcohol dehydrogenase/reductase",
+      "enzyme_ids": {
+        "uniprot": "UPI00026405E6",
+        "genpept": "APD26282.1",
+        "mibig": "BGC0001726"
+      },
+      "tailoring": "Cyclization|Reduction",
+      "reaction_description": "Reductive cyclization to form a 6-membered ring in pactamide pathway.",
+      "cofactors_organic": "NAD|NADP",
+      "cofactors_inorganic": "N/A",
+      "organism": "Streptomyces pactum",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
+    },
+    "MITE0000240": {
+      "accession": "MITE0000240",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "OX4",
+      "enzyme_description": "Alcohol dehydrogenase/reductase",
+      "enzyme_ids": {
+        "uniprot": "UPI00019B291A",
+        "genpept": "ACP19697.1"
+      },
+      "tailoring": "Cyclization|Reduction",
+      "reaction_description": "Reductive cyclization to form a 6-membered ring.",
+      "cofactors_organic": "NAD|NADP",
+      "cofactors_inorganic": "N/A",
+      "organism": "Lysobacter enzymogenes",
+      "domain": "Bacteria",
+      "kingdom": "Pseudomonadati",
+      "phylum": "Pseudomonadota",
+      "class": "Gammaproteobacteria",
+      "order": "Lysobacterales",
+      "family": "Lysobacteraceae"
+    },
+    "MITE0000253": {
+      "accession": "MITE0000253",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "NosA",
+      "enzyme_description": "Terminal amide synthase",
+      "enzyme_ids": {
+        "uniprot": "C6FX40",
+        "genpept": "ACR48330.1",
+        "mibig": "BGC0000610"
+      },
+      "tailoring": "Other",
+      "reaction_description": "NosA cleaves C-alpha-N bond of terminal enamine in nosiheptide maturation. Presence of hydroxylated pyridin is essential for substrate recognition.",
+      "cofactors_organic": "N/A",
+      "cofactors_inorganic": "N/A",
+      "organism": "Streptomyces actuosus",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
+    },
+    "MITE0000247": {
+      "accession": "MITE0000247",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "NotB",
+      "enzyme_description": "FAD-dependent monooxygenase",
+      "enzyme_ids": {
+        "uniprot": "E1ACP7",
+        "genpept": "ADM34135.1",
+        "mibig": "BGC0001084"
+      },
+      "tailoring": "Cyclization|Monooxygenation",
+      "reaction_description": "Oxidative cyclisation of the notoamide E oxidase in the notoamide pathway, leading to notoamide C. NotB shows high substrate specificity.",
+      "cofactors_organic": "FAD|NADP",
+      "cofactors_inorganic": "N/A",
+      "organism": "Aspergillus sp. (strain MF297-2)",
+      "domain": "Eukaryota",
+      "kingdom": "Fungi",
+      "phylum": "Dikarya",
+      "class": "Ascomycota",
+      "order": "Pezizomycotina",
+      "family": "Eurotiomycetes"
+    },
+    "MITE0000256": {
+      "accession": "MITE0000256",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "NosN",
+      "enzyme_description": "Radical SAM enzyme",
+      "enzyme_ids": {
+        "uniprot": "C6FX53",
+        "genpept": "ACR48343.1",
+        "mibig": "BGC0000610"
+      },
+      "tailoring": "Cyclization|Methylation",
+      "reaction_description": "Completion of 19-membered side ring system in nascent nosiheptide by C1 unit introduction and conjugation with Glu.",
+      "cofactors_organic": "SAM",
+      "cofactors_inorganic": "FeS",
+      "organism": "Streptomyces actuosus",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
+    },
+    "MITE0000241": {
+      "accession": "MITE0000241",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "TolF",
+      "enzyme_description": "O-prenyltransferase",
+      "enzyme_ids": {
+        "uniprot": "UPI0005EABF2F",
+        "genpept": "EKE97727.1"
+      },
+      "tailoring": "Prenylation",
+      "reaction_description": "Forward O-prenylation of threonine residue of precursor peptide to yield tolypamide in Tolypothrix sp. PCC 7601",
+      "cofactors_organic": "N/A",
+      "cofactors_inorganic": "Mg",
+      "organism": "Tolypothrix sp. PCC 7601",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Cyanobacteriota",
+      "class": "Cyanophyceae",
+      "order": "Nostocales",
+      "family": "Tolypothrichaceae"
+    },
+    "MITE0000250": {
+      "accession": "MITE0000250",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "DynA",
+      "enzyme_description": "Radical SAM enzyme",
+      "enzyme_ids": {
+        "uniprot": "A0A1C0U7F5",
+        "genpept": "OCQ53858.1"
+      },
+      "tailoring": "Cyclization",
+      "reaction_description": "Macrocyclization of DynB precursor peptide. Available information indicates that full leader peptide is required for substrate recognition.",
+      "cofactors_organic": "SAM",
+      "cofactors_inorganic": "FeS",
+      "organism": "Photorhabdus australis subsp. thailandensis",
+      "domain": "Bacteria",
+      "kingdom": "Pseudomonadati",
+      "phylum": "Pseudomonadota",
+      "class": "Gammaproteobacteria",
+      "order": "Enterobacterales",
+      "family": "Morganellaceae"
+    },
+    "MITE0000257": {
+      "accession": "MITE0000257",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "NosE",
+      "enzyme_description": "Dehydratase",
+      "enzyme_ids": {
+        "uniprot": "UPI0001AABFA6",
+        "genpept": "ACR48334.1",
+        "mibig": "BGC0000610"
+      },
+      "tailoring": "Dehydration",
+      "reaction_description": "Dehydratation of Ser/Thr residues to Dha/Dhb in the biosynthetic pathway of nosiheptide, after NosIJK-catalyzed addition of MIA. Current knowledge indicates that the full leader peptide is required for substrate recognition.",
+      "cofactors_organic": "Adenosine triphosphate",
+      "cofactors_inorganic": "Mg",
+      "organism": "Streptomyces actuosus",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
+    },
+    "MITE0000243": {
+      "accession": "MITE0000243",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "TamL",
+      "enzyme_description": "FAD-dependent oxidase",
+      "enzyme_ids": {
+        "uniprot": "D3Y1I2",
+        "genpept": "ADC79636.1",
+        "mibig": "BGC0001052"
+      },
+      "tailoring": "Oxidation",
+      "reaction_description": "TamL oxidizes the C-10 hydroxy to a keton in the tirandamycin biosynthetic pathway. High substrate specificity.",
+      "cofactors_organic": "FAD",
+      "cofactors_inorganic": "N/A",
+      "organism": "Streptomyces sp. 307-9",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
+    },
+    "MITE0000258": {
+      "accession": "MITE0000258",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "NosK",
+      "enzyme_description": "Alpha/beta-hydrolase fold protein",
+      "enzyme_ids": {
+        "uniprot": "C6FX50",
+        "genpept": "ACR48340.1",
+        "mibig": "BGC0000610"
+      },
+      "tailoring": "Other",
+      "reaction_description": "Attaches 3-methyl-2-indolic acid (MIA) via through S-MIAylation to Cys8 in the nosiheptin biosynthetic pathway. Current knowledge indicates that the full leader peptide is required for substrate recognition.",
+      "cofactors_organic": "N/A",
+      "cofactors_inorganic": "N/A",
+      "organism": "Streptomyces actuosus",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
+    },
+    "MITE0000251": {
+      "accession": "MITE0000251",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "KwwB",
+      "enzyme_description": "Cytochrome P450",
+      "enzyme_ids": {
+        "uniprot": "UPI0024769448"
+      },
+      "tailoring": "Biaryl bond formation",
+      "reaction_description": "Biaryl formation between Trp-C5 and Trp-N1 at the WxW motif; enzyme has promiscuous substrate specificity.",
+      "cofactors_organic": "Heme",
+      "cofactors_inorganic": "N/A",
+      "organism": "Not found",
+      "domain": "Not found",
+      "kingdom": "Not found",
+      "phylum": "Not found",
+      "class": "Not found",
+      "order": "Not found",
+      "family": "Not found"
+    },
+    "MITE0000248": {
+      "accession": "MITE0000248",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "PenDE",
+      "enzyme_description": "Acyl-CoA:isopenicillin N N-acyltransferase",
+      "enzyme_ids": {
+        "uniprot": "B6HLT9",
+        "genpept": "ABA70584.1",
+        "mibig": "BGC0000404"
+      },
+      "tailoring": "Acylation",
+      "reaction_description": "Transacylation of side chain of isopenicillin N in the biosynthetic pathway of penicillin G.",
+      "cofactors_organic": "Coenzyme A",
+      "cofactors_inorganic": "N/A",
+      "organism": "Penicillium rubens (strain ATCC 28089 / DSM 1075 / NRRL 1951 / Wisconsin 54-1255)",
+      "domain": "Eukaryota",
+      "kingdom": "Fungi",
+      "phylum": "Dikarya",
+      "class": "Ascomycota",
+      "order": "Pezizomycotina",
+      "family": "Eurotiomycetes"
+    },
+    "MITE0000259": {
+      "accession": "MITE0000259",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "NosF",
+      "enzyme_description": "Dehydrogenase",
+      "enzyme_ids": {
+        "uniprot": "UPI0001AABFA7",
+        "genpept": "ACR48335.1",
+        "mibig": "BGC0000610"
+      },
+      "tailoring": "Dehydrogenation",
+      "reaction_description": "Dehydrogenation of thiazolines to thiazoles in nosiheptide pathway. Current data indicates that full leader peptide is required for substrate recognition.",
+      "cofactors_organic": "N/A",
+      "cofactors_inorganic": "N/A",
+      "organism": "Streptomyces actuosus",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
+    },
+    "MITE0000261": {
+      "accession": "MITE0000261",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "NosL",
+      "enzyme_description": "Radical SAM enzyme",
+      "enzyme_ids": {
+        "uniprot": "C6FX51",
+        "genpept": "ACR48341.1",
+        "mibig": "BGC0000610"
+      },
+      "tailoring": "Carboxylation|Deamination|Decarboxylation",
+      "reaction_description": "3-methyl-2-indolic acid (MIA) synthase involved in nosiheptide biosynthesis",
+      "cofactors_organic": "SAM",
+      "cofactors_inorganic": "FeS",
+      "organism": "Streptomyces actuosus",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
+    },
+    "MITE0000239": {
+      "accession": "MITE0000239",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "IkaC",
+      "enzyme_description": "Alcohol dehydrogenase/reductase",
+      "enzyme_ids": {
+        "uniprot": "UPI000588A50D",
+        "genpept": "AJD77025.1",
+        "mibig": "BGC0001435"
+      },
+      "tailoring": "Cyclization|Reduction",
+      "reaction_description": "Reductive cyclization to form a 5-membered ring in ikarugamycin pathway.",
+      "cofactors_organic": "NAD|NADP",
+      "cofactors_inorganic": "N/A",
+      "organism": "Streptomyces sp. ZJ306",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
+    },
+    "MITE0000242": {
+      "accession": "MITE0000242",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "TamI",
+      "enzyme_description": "Cytochrome P450",
+      "enzyme_ids": {
+        "uniprot": "D3Y1J3",
+        "genpept": "ADC79647.1",
+        "mibig": "BGC0001052"
+      },
+      "tailoring": "Hydroxylation|Other",
+      "reaction_description": "Hydroxylation of tirandamycin C as first tailoring step in the tirandamycin pathway. TamI oxygenation requires a specific sequence of oxygenations, showing high substrate specificity.",
+      "cofactors_organic": "Heme",
+      "cofactors_inorganic": "Fe",
+      "organism": "Streptomyces sp. 307-9",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
+    },
+    "MITE0000238": {
+      "accession": "MITE0000238",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "CftD",
+      "enzyme_description": "Alcohol dehydrogenase/reductase",
+      "enzyme_ids": {
+        "uniprot": "UPI001C74EB65",
+        "genpept": "QWM97865.1",
+        "mibig": "BGC0002434"
+      },
+      "tailoring": "Cyclization|Reduction",
+      "reaction_description": "Reductive cyclization to form a 5-membered ring.",
+      "cofactors_organic": "NAD|NADP",
+      "cofactors_inorganic": "N/A",
+      "organism": "Kitasatospora sp.",
+      "domain": "Bacteria",
+      "kingdom": "Bacillati",
+      "phylum": "Actinomycetota",
+      "class": "Actinomycetes",
+      "order": "Kitasatosporales",
+      "family": "Streptomycetaceae"
+    },
+    "MITE0000249": {
+      "accession": "MITE0000249",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "PcbC",
+      "enzyme_description": "Isopenicillin N synthase",
+      "enzyme_ids": {
+        "uniprot": "UPI0000168962",
+        "genpept": "ABA70583.1",
+        "mibig": "BGC0000404"
+      },
+      "tailoring": "Cyclization",
+      "reaction_description": "Cyclization of the ACV substrate to isopenicillin N in the biosynthetic pathway of beta-lactam antibiotics",
+      "cofactors_organic": "N/A",
+      "cofactors_inorganic": "Fe",
+      "organism": "Penicillium chrysogenum",
+      "domain": "Eukaryota",
+      "kingdom": "Fungi",
+      "phylum": "Dikarya",
+      "class": "Ascomycota",
+      "order": "Pezizomycotina",
+      "family": "Eurotiomycetes"
+    },
+    "MITE0000255": {
+      "accession": "MITE0000255",
+      "status": "active",
+      "status_icon": "<i class=\"bi bi-check-circle-fill\"></i>",
+      "enzyme_name": "NosO",
+      "enzyme_description": "Pyridine synthase",
+      "enzyme_ids": {
+        "uniprot": "C6FX54",
+        "genpept": "ACR48344.1",
+        "mibig": "BGC0000610"
+      },
+      "tailoring": "Cyclization",
+      "reaction_description": "Introduction of 23-membered main macrocyclic ring system in nosiheptide via a formal [4+2] cycloaddition reaction, with removal of leader peptide.",
+      "cofactors_organic": "N/A",
+      "cofactors_inorganic": "N/A",
+      "organism": "Streptomyces actuosus",
       "domain": "Bacteria",
       "kingdom": "Bacillati",
       "phylum": "Actinomycetota",

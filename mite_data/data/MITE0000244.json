@@ -1,0 +1,62 @@
+{
+    "accession": "MITE0000244",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-01-01",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "NotF",
+        "description": "Deoxybrevianamide E synthase",
+        "references": [
+            "doi:10.1021/ja1049302"
+        ],
+        "databaseIds": {
+            "uniprot": "E0Y3X1",
+            "genpept": "ADM34139.1",
+            "mibig": "BGC0001084"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Prenylation"
+            ],
+            "description": "Reverse prenylation of brevianamide F in the notoamid pathway, with high substrate specificity (no products for other diketopiperazides).",
+            "reactionSMARTS": "[#6@:1]12-[#6:20](=[#8:21])-[#7:19]-[#6@@:8](/[#6:9]-[#6:10]3:[#6:18]4:[#6:13](:[#6:14]:[#6:15]:[#6:16]:[#6:17]:4):[#7:12]:[#6:11]:3)-[#6:6](=[#8:7])-[#7:5]-1-[#6:4]-[#6:3]-[#6:2]/2>>[#6@:1]12-[#6:20](=[#8:21])-[#7:19]-[#6@@:8](/[#6:9]-[#6:10]3:[#6:18]4:[#6:13](:[#6:14]:[#6:15]:[#6:16]:[#6:17]:4):[#7:12]:[#6:11]:3-[#6](-[#6])(-[#6])-[#6]=[#6])-[#6:6](=[#8:7])-[#7:5]-1-[#6:4]-[#6:3]-[#6:2]/2",
+            "reactions": [
+                {
+                    "substrate": "O=C1N[C@@H](Cc2c[nH]c3ccccc23)C(=O)N2CCC[C@@H]12",
+                    "products": [
+                        "C=CC(C)(C)c1[nH]c2ccccc2c1C[C@@H]1NC(=O)[C@@H]2CCCN2C1=O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Prenylation of diketopiperazide brevianamide F, leading to deoxybrevianamide E."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Site-directed mutagenesis"
+                ],
+                "references": [
+                    "doi:10.1021/ja1049302"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "35943",
+                "ec": "2.5.1.109"
+            }
+        }
+    ]
+}

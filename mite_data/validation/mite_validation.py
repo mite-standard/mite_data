@@ -218,9 +218,6 @@ class CicdManager(BaseModel):
         if not path.exists():
             raise FileNotFoundError(f"Could not find file '{path}'")
 
-        if not path.name.startswith("MITE"):
-            return
-
         self.check_file_naming(path)
 
         with open(path) as infile:
@@ -470,7 +467,7 @@ class CicdManager(BaseModel):
                 f"Error: entry {data["accession"]}'s GenPept ID {genpept} is not found in the proteins of the referenced MIBiG ID {mibig}."
             )
 
-    def check_rhea(self: Self, data: dict, timeout: float = 3.0) -> None:
+    def check_rhea(self: Self, data: dict, timeout: float = 5.0) -> None:
         """Check if UniProt can be annotated with Rhea ID
 
         Argument:

@@ -1,0 +1,62 @@
+{
+    "accession": "MITE0000251",
+    "status": "active",
+    "comment": "UniProt identifier found via RefSeq accession WP_280689238.1",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2025-12-29",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer fixed description."
+        }
+    ],
+    "enzyme": {
+        "name": "KwwB",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1021/acs.orglett.5c04848"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI0024769448"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Biaryl bond formation"
+            ],
+            "description": "Biaryl formation between Trp-C5 and Trp-N1 at the WxW motif; enzyme has promiscuous substrate specificity.",
+            "reactionSMARTS": "[#6:1]-[#6:2](-[#6:4](-[#7:6]-[#6:7](-[#6:18](-[#7:20]-[#6:21](-[#6:23](-[#7:25]-[#6:26](-[#6:37](-[#7:39]-[#6:40](-[#6:42](-[#8:44])=[#8:43])-[#6:41])=[#8:38])-[#6:27]-[#6:28]1:[#6:36]2:[#6:31](:[#6:32]:[#6:33]:[#6:34]:[#6:35]:2):[#7:30]:[#6:29]:1)=[#8:24])-[#6:22])=[#8:19])-[#6:8]-[#6:9]1:[#6:17]2:[#6:12](:[#6:13]:[#6:14]:[#6:15]:[#6:16]:2):[#7:11]:[#6:10]:1)=[#8:5])-[#7:3]>>[#6:1]-[#6:2](-[#6:4](-[#7:6]-[#6:7]1-[#6:18](-[#7:20]-[#6:21](-[#6:23](-[#7:25]-[#6:26](-[#6:37](-[#7:39]-[#6:40](-[#6:42](-[#8:44])=[#8:43])-[#6:41])=[#8:38])-[#6:27]-[#6:28]2:[#6:36]3:[#6:31](:[#6:32]:[#6:33]:[#6:34]:[#6:35]:3):[#7:30](-[#6:15]3:[#6:16]:[#6:17]4:[#6:12](:[#6:13]:[#6:14]:3):[#7:11]:[#6:10]:[#6:9]:4-[#6:8]-1):[#6:29]:2)=[#8:24])-[#6:22])=[#8:19])=[#8:5])-[#7:3]",
+            "reactions": [
+                {
+                    "substrate": "CCC(C)C(NC(=O)C(CCCNC(=N)N)NC(=O)C(Cc1c[nH]cn1)NC(=O)C(CC(C)C)NC(=O)C(NC(=O)C(C)NC(=O)C(C)NC(=O)C(N)CCSC)C(C)C)C(=O)NC(CC(C)C)C(=O)NC(CC(N)=O)C(=O)NC(CCCNC(=N)N)C(=O)NC(CCCCN)C(=O)N1CCCC1C(=O)NC(C)C(=O)NC(CCCNC(=N)N)C(=O)NC(CC(N)=O)C(=O)NC(Cc1c[nH]c2ccccc12)C(=O)NC(Cc1ccccc1)C(=O)NC(Cc1c[nH]c2ccccc12)C(=O)NC(C(=O)O)C(C)C",
+                    "products": [
+                        "CCC(C)C(NC(=O)C(CCCNC(=N)N)NC(=O)C(Cc1c[nH]cn1)NC(=O)C(CC(C)C)NC(=O)C(NC(=O)C(C)NC(=O)C(C)NC(=O)C(N)CCSC)C(C)C)C(=O)NC(CC(C)C)C(=O)NC(CC(N)=O)C(=O)NC(CCCNC(=N)N)C(=O)NC(CCCCN)C(=O)N1CCCC1C(=O)NC(C)C(=O)NC(CCCNC(=N)N)C(=O)NC(CC(N)=O)C(=O)NC1Cc2c[nH]c3ccc(cc23)-n2cc(c3ccccc32)CC(C(=O)NC(C(=O)O)C(C)C)NC(=O)C(Cc2ccccc2)NC1=O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "KwwA precursor peptide sequence MAAVLHRILNRKPARNWFWV"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Site-directed mutagenesis"
+                ],
+                "references": [
+                    "doi:10.1021/acs.orglett.5c04848"
+                ]
+            }
+        }
+    ]
+}

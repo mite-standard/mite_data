@@ -13,6 +13,17 @@
                 "0000-0003-0443-9902"
             ],
             "comment": "Initial entry. Reviewer fixed general aromaticity."
+        },
+        {
+            "version": "2",
+            "date": "2026-02-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed MIBiG ID due to protein mismatch."
         }
     ],
     "enzyme": {
@@ -23,8 +34,7 @@
         ],
         "databaseIds": {
             "uniprot": "A0A2S1P8Q4",
-            "genpept": "AWH12915.1",
-            "mibig": "BGC0003049"
+            "genpept": "AWH12915.1"
         }
     },
     "reactions": [

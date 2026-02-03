@@ -1,0 +1,117 @@
+{
+    "accession": "MITE0000237",
+    "status": "active",
+    "comment": "Reductive cyclization of five- (ikarugamycin) and six-membered (pactamide) rings in polycyclic tetramate macrolactams.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-01-08",
+            "contributors": [
+                "0000-0002-8834-593X"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer replaced reference, added MIBIG corss-ref, fixed depiction of (iso)ikarugamycin, added pactamide."
+        }
+    ],
+    "enzyme": {
+        "name": "PtmC",
+        "description": "Alcohol dehydrogenase/reductase",
+        "references": [
+            "doi:10.1039/C6SC03875A",
+            "doi:10.1021/jacs.5c04971"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI00026405E6",
+            "genpept": "APD26282.1",
+            "mibig": "BGC0001726"
+        },
+        "cofactors": {
+            "organic": [
+                "NAD",
+                "NADP"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Cyclization",
+                "Reduction"
+            ],
+            "description": "Reductive cyclization to form a 6-membered ring in pactamide pathway.",
+            "reactionSMARTS": "[#6:1]-[#6:2]-[#6:3]1-[#6:10]-[#6:9]2-[#6:5](-[#6:6]3-[#6:12]-[#6:13]=[#6:14]-[#6:15]=[#6:16]-[#6:17](=[#8:19])-[#6:18]4-[#6:21](=[#8:25])-[#7:22]-[#6:23](-[#6:26]-[#6:27]-[#6:28]-[#7:29]-[#6:30](-[#6:32]=[#6:33]-[#6:34]=[#6:35]-[#6:7]-3-[#6:8]-2)=[#8:31])-[#6:20]=4-[#8:24])-[#6:4]-1-[#6:11]>>[#6:1]-[#6:2]-[#6:3]1-[#6:10]-[#6:9]2-[#6:5](-[#6:6]3-[#6:12]-[#6:13]-[#6:14]4-[#6:35](-[#6:7]-3-[#6:8]-2)-[#6:34]-[#6:33]=[#6:32]-[#6:30](=[#8:31])-[#7:29]-[#6:28]-[#6:27]-[#6:26]-[#6:23]2-[#6:20](-[#8:24])=[#6:18](-[#6:21](=[#8:25])-[#7:22]-2)-[#6:17](=[#8:19])-[#6:16]=[#6:15]-4)-[#6:4]-1-[#6:11]",
+            "reactions": [
+                {
+                    "substrate": "CCC1CC2CC3C=CC=CC(=O)NCCCC4NC(=O)C(=C4O)C(=O)C=CC=CCC3C2C1C",
+                    "products": [
+                        "CCC1CC2CC3C4CC=CC(=O)NCCCC5NC(=O)C(=C5O)C(=O)C=CC4CCC3C2C1C"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Reductive cyclization of pactamide C, leading to pactamide A."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1039/C6SC03875A"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Cyclization",
+                "Reduction"
+            ],
+            "description": "Reductive cyclization to form a 5-membered ring.",
+            "reactionSMARTS": "[#6:1]1(-[#6:11]-[#6:35])-[#6:5]2-[#6:6]=[#6:9]-[#6:8]3-[#6:13]=[#6:14]-[#6:15]=[#6:16]-[#6:17](=[#8:19])-[#7:18]-[#6:20]-[#6:21]-[#6:22]-[#6:23]4-[#6:25](=[#6:27](-[#6:30](=[#8:32])-[#6:31]=[#6:33]-[#6:34]=[#6:12]-[#6:7]-3-[#6:4]-2-[#6:3]-[#6:2]-1-[#6:10])-[#6:28](=[#8:29])-[#7:24]-4)-[#8:26]>>[#6:1]1(-[#6:11]-[#6:35])-[#6:5]2-[#6:6]=[#6:9]-[#6:8]3-[#6:13]4-[#6:34](-[#6:12]-[#6:7]-3-[#6:4]-2-[#6:3]-[#6:2]-1-[#6:10])-[#6:33]=[#6:31]-[#6:30](=[#8:32])-[#6:27]1-[#6:28](=[#8:29])-[#7:24]-[#6:23](-[#6:25]=1-[#8:26])-[#6:22]-[#6:21]-[#6:20]-[#7:18]-[#6:17](=[#8:19])-[#6:16]=[#6:15]-[#6:14]-4",
+            "reactions": [
+                {
+                    "substrate": "CCC1C(C)CC2C3C=CC=CC(=O)C4=C(O)C(CCCNC(=O)C=CC=CC3C=CC12)NC4=O",
+                    "products": [
+                        "CCC1C(C)CC2C1C=CC1C3CC=CC(=O)NCCCC4NC(=O)C(=C4O)C(=O)C=CC3CC12"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Reductive cyclization of preikarugamycin intermediate, leading to ikarugamycin."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1039/C6SC03875A"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Cyclization",
+                "Reduction"
+            ],
+            "description": "Reductive cyclization to form a 5-membered ring in isoikarugamycin pathway.",
+            "reactionSMARTS": "[#6:1]1(-[#6:11]-[#6:35])-[#6:5]2-[#6:6]=[#6:9]-[#6:8]3-[#6:13]=[#6:14]-[#6:15]=[#6:16]-[#6:17](=[#8:19])-[#7:18]-[#6:20]-[#6:21]-[#6:22]-[#6:23]4-[#6:25](=[#6:27](-[#6:30](=[#8:32])-[#6:31]=[#6:33]-[#6:34]=[#6:12]-[#6:7]-3-[#6:4]-2-[#6:3]-[#6:2]-1-[#6:10])-[#6:28](=[#8:29])-[#7:24]-4)-[#8:26]>>[#6:1]1(-[#6:11]-[#6:35])-[#6:5]2-[#6:6]=[#6:9]-[#6:8]3-[#6:13]4-[#6:34](-[#6:12]-[#6:7]-3-[#6:4]-2-[#6:3]-[#6:2]-1-[#6:10])-[#6:33]=[#6:31]-[#6:30](=[#8:32])-[#6:27]1-[#6:28](=[#8:29])-[#7:24]-[#6:23](-[#6:25]=1-[#8:26])-[#6:22]-[#6:21]-[#6:20]-[#7:18]-[#6:17](=[#8:19])-[#6:16]-[#6:15]=[#6:14]-4",
+            "reactions": [
+                {
+                    "substrate": "CCC1C(C)CC2C3C=CC=CC(=O)C4=C(O)C(CCCNC(=O)C=CC=CC3C=CC12)NC4=O",
+                    "products": [
+                        "CCC1C(C)CC2C1C=CC1C3C=CCC(=O)NCCCC4NC(=O)C(=C4O)C(=O)C=CC3CC12"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Reductive cyclization of preikarugamycin intermediate, leading to isoikarugamycin."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1039/C6SC03875A"
+                ]
+            }
+        }
+    ]
+}

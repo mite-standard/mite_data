@@ -255,8 +255,6 @@ class RunManager(BaseModel):
 
         meta_mgr = MetadataManager()
         meta_mgr.update_single(path)
-        # Prevents removing of manual annotations
-        meta_mgr = MetadataManager()
         meta_mgr.dump_summary_csv()
 
         fasta_mgr = FastaManager()
@@ -273,8 +271,6 @@ class RunManager(BaseModel):
         """Update all files; exist status 0 = passing"""
         meta_mgr = MetadataManager()
         meta_mgr.update_all()
-        # Prevents removing of manual annotations
-        meta_mgr = MetadataManager()
         meta_mgr.dump_summary_csv()
 
         fasta_mgr = FastaManager()

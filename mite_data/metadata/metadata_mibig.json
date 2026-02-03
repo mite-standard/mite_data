@@ -1,5 +1,5 @@
 {
-  "version_mite_data": "1.19",
+  "version_mite_data": "1.22",
   "entries": {
     "BGC0000247": [
       {
@@ -2414,6 +2414,515 @@
         "enzyme_refs": [
           "doi:10.1021/jacs.4c18770",
           "doi:10.1039/C8OB02824A"
+        ]
+      }
+    ],
+    "BGC0000535": [
+      {
+        "mite_accession": "MITE0000235",
+        "mite_url": "https://bioregistry.io/mite:MITE0000235",
+        "status": "active",
+        "enzyme_name": "NisP",
+        "enzyme_description": "Protease",
+        "enzyme_ids": {
+          "uniprot": "D9IXC0",
+          "genpept": "ADJ56357.1",
+          "mibig": "BGC0000535"
+        },
+        "enzyme_tailoring": "Hydrolysis",
+        "enzyme_refs": [
+          "doi:10.1021/acs.biochem.7b00524",
+          "doi:10.1126/science.1121422",
+          "doi:10.1007/s00018-007-7171-2"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000234",
+        "mite_url": "https://bioregistry.io/mite:MITE0000234",
+        "status": "active",
+        "enzyme_name": "NisC",
+        "enzyme_description": "Lanthionine synthetase",
+        "enzyme_ids": {
+          "uniprot": "D9IXB8",
+          "genpept": "ADJ56355.1",
+          "mibig": "BGC0000535"
+        },
+        "enzyme_tailoring": "Cyclization",
+        "enzyme_refs": [
+          "doi:10.1126/science.1121422",
+          "doi:10.1007/s00018-007-7171-2"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000233",
+        "mite_url": "https://bioregistry.io/mite:MITE0000233",
+        "status": "active",
+        "enzyme_name": "NisB",
+        "enzyme_description": "Dehydratase",
+        "enzyme_ids": {
+          "uniprot": "D9IXB6",
+          "genpept": "ADJ56353.1",
+          "mibig": "BGC0000535"
+        },
+        "enzyme_tailoring": "Dehydration",
+        "enzyme_refs": [
+          "doi:10.1021/bi050081h",
+          "doi:10.1007/s00018-007-7171-2",
+          "doi:10.1073/pnas.1222488110"
+        ]
+      }
+    ],
+    "BGC0001084": [
+      {
+        "mite_accession": "MITE0000246",
+        "mite_url": "https://bioregistry.io/mite:MITE0000246",
+        "status": "active",
+        "enzyme_name": "NotC",
+        "enzyme_description": "Prenyltransferase",
+        "enzyme_ids": {
+          "uniprot": "E0Y3X0",
+          "genpept": "ADM34136.1",
+          "mibig": "BGC0001084"
+        },
+        "enzyme_tailoring": "Prenylation",
+        "enzyme_refs": [
+          "doi:10.1021/ja1049302",
+          "doi:10.1039/C2MD20029E"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000245",
+        "mite_url": "https://bioregistry.io/mite:MITE0000245",
+        "status": "active",
+        "enzyme_name": "NotG",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "E1ACQ2",
+          "genpept": "ADM34140.1",
+          "mibig": "BGC0001084"
+        },
+        "enzyme_tailoring": "Hydroxylation",
+        "enzyme_refs": [
+          "doi:10.1021/ja1049302",
+          "doi:10.1039/C2MD20029E"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000244",
+        "mite_url": "https://bioregistry.io/mite:MITE0000244",
+        "status": "active",
+        "enzyme_name": "NotF",
+        "enzyme_description": "Deoxybrevianamide E synthase",
+        "enzyme_ids": {
+          "uniprot": "E0Y3X1",
+          "genpept": "ADM34139.1",
+          "mibig": "BGC0001084"
+        },
+        "enzyme_tailoring": "Prenylation",
+        "enzyme_refs": [
+          "doi:10.1021/ja1049302"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000247",
+        "mite_url": "https://bioregistry.io/mite:MITE0000247",
+        "status": "active",
+        "enzyme_name": "NotB",
+        "enzyme_description": "FAD-dependent monooxygenase",
+        "enzyme_ids": {
+          "uniprot": "E1ACP7",
+          "genpept": "ADM34135.1",
+          "mibig": "BGC0001084"
+        },
+        "enzyme_tailoring": "Cyclization|Monooxygenation",
+        "enzyme_refs": [
+          "doi:10.1021/ja2093212",
+          "doi:10.1021/ja1049302"
+        ]
+      }
+    ],
+    "BGC0000610": [
+      {
+        "mite_accession": "MITE0000260",
+        "mite_url": "https://bioregistry.io/mite:MITE0000260",
+        "status": "active",
+        "enzyme_name": "NosG",
+        "enzyme_description": "E1-YcaO didomain protein",
+        "enzyme_ids": {
+          "uniprot": "C6FX46",
+          "genpept": "ACR48336.1",
+          "mibig": "BGC0000610"
+        },
+        "enzyme_tailoring": "Dehydration|Heterocyclization",
+        "enzyme_refs": [
+          "doi:10.1021/cb900133x ",
+          "doi:10.1021/jacs.5c03922"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000254",
+        "mite_url": "https://bioregistry.io/mite:MITE0000254",
+        "status": "active",
+        "enzyme_name": "NosC",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "C6FX42",
+          "genpept": "ACR48332.1",
+          "mibig": "BGC0000610"
+        },
+        "enzyme_tailoring": "Hydroxylation",
+        "enzyme_refs": [
+          "doi:10.1002/cbic.201300427"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000252",
+        "mite_url": "https://bioregistry.io/mite:MITE0000252",
+        "status": "active",
+        "enzyme_name": "NosB",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "UPI0001AABFA3",
+          "genpept": "ACR48331.1",
+          "mibig": "BGC0000610"
+        },
+        "enzyme_tailoring": "Hydroxylation",
+        "enzyme_refs": [
+          "doi:10.1002/cbic.201300427",
+          "doi:10.1021/cb900133x"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000253",
+        "mite_url": "https://bioregistry.io/mite:MITE0000253",
+        "status": "active",
+        "enzyme_name": "NosA",
+        "enzyme_description": "Terminal amide synthase",
+        "enzyme_ids": {
+          "uniprot": "C6FX40",
+          "genpept": "ACR48330.1",
+          "mibig": "BGC0000610"
+        },
+        "enzyme_tailoring": "Other",
+        "enzyme_refs": [
+          "doi:10.1002/cbic.201300427",
+          "doi:10.1107/S2053230X15011085",
+          "doi:10.1021/cb900133x"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000256",
+        "mite_url": "https://bioregistry.io/mite:MITE0000256",
+        "status": "active",
+        "enzyme_name": "NosN",
+        "enzyme_description": "Radical SAM enzyme",
+        "enzyme_ids": {
+          "uniprot": "C6FX53",
+          "genpept": "ACR48343.1",
+          "mibig": "BGC0000610"
+        },
+        "enzyme_tailoring": "Cyclization|Methylation",
+        "enzyme_refs": [
+          "doi:10.1021/jacs.5c03922",
+          "doi:10.1021/cb900133x"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000257",
+        "mite_url": "https://bioregistry.io/mite:MITE0000257",
+        "status": "active",
+        "enzyme_name": "NosE",
+        "enzyme_description": "Dehydratase",
+        "enzyme_ids": {
+          "uniprot": "UPI0001AABFA6",
+          "genpept": "ACR48334.1",
+          "mibig": "BGC0000610"
+        },
+        "enzyme_tailoring": "Dehydration",
+        "enzyme_refs": [
+          "doi:10.1021/jacs.5c03922",
+          "doi:10.1021/cb900133x"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000258",
+        "mite_url": "https://bioregistry.io/mite:MITE0000258",
+        "status": "active",
+        "enzyme_name": "NosK",
+        "enzyme_description": "Alpha/beta-hydrolase fold protein",
+        "enzyme_ids": {
+          "uniprot": "C6FX50",
+          "genpept": "ACR48340.1",
+          "mibig": "BGC0000610"
+        },
+        "enzyme_tailoring": "Other",
+        "enzyme_refs": [
+          "doi:10.1021/jacs.5c03922",
+          "doi:10.1021/cb900133x"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000259",
+        "mite_url": "https://bioregistry.io/mite:MITE0000259",
+        "status": "active",
+        "enzyme_name": "NosF",
+        "enzyme_description": "Dehydrogenase",
+        "enzyme_ids": {
+          "uniprot": "UPI0001AABFA7",
+          "genpept": "ACR48335.1",
+          "mibig": "BGC0000610"
+        },
+        "enzyme_tailoring": "Dehydrogenation",
+        "enzyme_refs": [
+          "doi:10.1021/cb900133x",
+          "doi:10.1021/jacs.5c03922"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000261",
+        "mite_url": "https://bioregistry.io/mite:MITE0000261",
+        "status": "active",
+        "enzyme_name": "NosL",
+        "enzyme_description": "Radical SAM enzyme",
+        "enzyme_ids": {
+          "uniprot": "C6FX51",
+          "genpept": "ACR48341.1",
+          "mibig": "BGC0000610"
+        },
+        "enzyme_tailoring": "Carboxylation|Deamination|Decarboxylation",
+        "enzyme_refs": [
+          "doi:10.1021/cb900133x",
+          "doi:10.1038/nchembio.512"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000255",
+        "mite_url": "https://bioregistry.io/mite:MITE0000255",
+        "status": "active",
+        "enzyme_name": "NosO",
+        "enzyme_description": "Pyridine synthase",
+        "enzyme_ids": {
+          "uniprot": "C6FX54",
+          "genpept": "ACR48344.1",
+          "mibig": "BGC0000610"
+        },
+        "enzyme_tailoring": "Cyclization",
+        "enzyme_refs": [
+          "doi:10.1021/jacs.5c03922",
+          "doi:10.1021/cb900133x"
+        ]
+      }
+    ],
+    "BGC0001726": [
+      {
+        "mite_accession": "MITE0000237",
+        "mite_url": "https://bioregistry.io/mite:MITE0000237",
+        "status": "active",
+        "enzyme_name": "PtmC",
+        "enzyme_description": "Alcohol dehydrogenase/reductase",
+        "enzyme_ids": {
+          "uniprot": "UPI00026405E6",
+          "genpept": "APD26282.1",
+          "mibig": "BGC0001726"
+        },
+        "enzyme_tailoring": "Cyclization|Reduction",
+        "enzyme_refs": [
+          "doi:10.1039/C6SC03875A",
+          "doi:10.1021/jacs.5c04971"
+        ]
+      }
+    ],
+    "BGC0001052": [
+      {
+        "mite_accession": "MITE0000243",
+        "mite_url": "https://bioregistry.io/mite:MITE0000243",
+        "status": "active",
+        "enzyme_name": "TamL",
+        "enzyme_description": "FAD-dependent oxidase",
+        "enzyme_ids": {
+          "uniprot": "D3Y1I2",
+          "genpept": "ADC79636.1",
+          "mibig": "BGC0001052"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1002/cbic.200900658",
+          "doi:10.1038/nchem.1087",
+          "doi:10.1021/np9005597"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000242",
+        "mite_url": "https://bioregistry.io/mite:MITE0000242",
+        "status": "active",
+        "enzyme_name": "TamI",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "D3Y1J3",
+          "genpept": "ADC79647.1",
+          "mibig": "BGC0001052"
+        },
+        "enzyme_tailoring": "Hydroxylation|Other",
+        "enzyme_refs": [
+          "doi:10.1002/cbic.200900658",
+          "doi:10.1038/nchem.1087",
+          "doi:10.1021/np9005597"
+        ]
+      }
+    ],
+    "BGC0000404": [
+      {
+        "mite_accession": "MITE0000248",
+        "mite_url": "https://bioregistry.io/mite:MITE0000248",
+        "status": "active",
+        "enzyme_name": "PenDE",
+        "enzyme_description": "Acyl-CoA:isopenicillin N N-acyltransferase",
+        "enzyme_ids": {
+          "uniprot": "B6HLT9",
+          "genpept": "ABA70584.1",
+          "mibig": "BGC0000404"
+        },
+        "enzyme_tailoring": "Acylation",
+        "enzyme_refs": [
+          "doi:10.1038/ncomms15202",
+          "doi:10.1128/jb.172.10.5908-5914.1990"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000249",
+        "mite_url": "https://bioregistry.io/mite:MITE0000249",
+        "status": "active",
+        "enzyme_name": "PcbC",
+        "enzyme_description": "Isopenicillin N synthase",
+        "enzyme_ids": {
+          "uniprot": "B6HLU0",
+          "genpept": "ABA70583.1",
+          "mibig": "BGC0000404"
+        },
+        "enzyme_tailoring": "Cyclization",
+        "enzyme_refs": [
+          "doi:10.1038/ncomms15202",
+          "doi:10.1038/nbt0190-39"
+        ]
+      }
+    ],
+    "BGC0001435": [
+      {
+        "mite_accession": "MITE0000239",
+        "mite_url": "https://bioregistry.io/mite:MITE0000239",
+        "status": "active",
+        "enzyme_name": "IkaC",
+        "enzyme_description": "Alcohol dehydrogenase/reductase",
+        "enzyme_ids": {
+          "uniprot": "UPI000588A50D",
+          "genpept": "AJD77025.1",
+          "mibig": "BGC0001435"
+        },
+        "enzyme_tailoring": "Cyclization|Reduction",
+        "enzyme_refs": [
+          "doi:10.1021/jacs.5c04971"
+        ]
+      }
+    ],
+    "BGC0002434": [
+      {
+        "mite_accession": "MITE0000238",
+        "mite_url": "https://bioregistry.io/mite:MITE0000238",
+        "status": "active",
+        "enzyme_name": "CftD",
+        "enzyme_description": "Alcohol dehydrogenase/reductase",
+        "enzyme_ids": {
+          "uniprot": "UPI001C74EB65",
+          "genpept": "QWM97865.1",
+          "mibig": "BGC0002434"
+        },
+        "enzyme_tailoring": "Cyclization|Reduction",
+        "enzyme_refs": [
+          "doi:10.1021/jacs.5c04971"
+        ]
+      }
+    ],
+    "BGC0000821": [
+      {
+        "mite_accession": "MITE0000069",
+        "mite_url": "https://bioregistry.io/mite:MITE0000069",
+        "status": "active",
+        "enzyme_name": "RebH",
+        "enzyme_description": "Tryptophan halogenase",
+        "enzyme_ids": {
+          "uniprot": "Q8KHZ8",
+          "genpept": "BAC10682.1",
+          "mibig": "BGC0000821"
+        },
+        "enzyme_tailoring": "Halogenation",
+        "enzyme_refs": [
+          "doi:10.1016/s1074-5521(02)00126-6"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000067",
+        "mite_url": "https://bioregistry.io/mite:MITE0000067",
+        "status": "active",
+        "enzyme_name": "RebD",
+        "enzyme_description": "Dichlorochromopyrrolate synthase",
+        "enzyme_ids": {
+          "uniprot": "Q8KHV6",
+          "genpept": "BAC10675.1",
+          "mibig": "BGC0000821"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1016/S1074-5521(02)00126-6",
+          "doi:10.1021/ja056749x"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000068",
+        "mite_url": "https://bioregistry.io/mite:MITE0000068",
+        "status": "active",
+        "enzyme_name": "RebO",
+        "enzyme_description": "Flavin-dependent L-tryptophan oxidase",
+        "enzyme_ids": {
+          "uniprot": "Q8KHS0",
+          "genpept": "BAC10674.1",
+          "mibig": "BGC0000821"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1016/S1074-5521(02)00126-6"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000066",
+        "mite_url": "https://bioregistry.io/mite:MITE0000066",
+        "status": "active",
+        "enzyme_name": "RebP",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "Q8KIC8",
+          "genpept": "BAC10677.1",
+          "mibig": "BGC0000821"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1021/ja9003365"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000070",
+        "mite_url": "https://bioregistry.io/mite:MITE0000070",
+        "status": "active",
+        "enzyme_name": "RebC",
+        "enzyme_description": "Putative FAD-monooxygenase",
+        "enzyme_ids": {
+          "uniprot": "Q8KI25",
+          "genpept": "BAC10676.1",
+          "mibig": "BGC0000821"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1021/ja063898m",
+          "doi:10.1021/ja0743801"
         ]
       }
     ]
