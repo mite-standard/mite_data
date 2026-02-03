@@ -9,8 +9,8 @@ authors = [{ name = "Mitja M. Zdouc", email = "zdoucmm@gmail.com" }]
 dependencies = [
   "biopython~=1.85",
   "coloredlogs~=15.0",
-  "mite_extras",
-  "mite_schema",
+  "mite-extras>=1.6.5",
+  "mite-schema>=1.8.4",
   "pandas~=2.3",
   "pydantic~=2.11",
   "rdkit==2024.3.6",
