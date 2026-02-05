@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000166",
-    "status": "pending",
+    "status": "active",
     "changelog": [
         {
             "version": "1",
@@ -21,7 +21,7 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0001-6534-6609"
             ],
             "comment": "Fixed typo in reaction description."
         }
