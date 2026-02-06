@@ -21,7 +21,6 @@ classifiers = [
 
 dependencies = [
     "biopython~=1.85",
-    "coloredlogs~=15.0",
     "mite_extras",
     "mite_schema",
     "pandas~=2.3",
@@ -30,7 +29,7 @@ dependencies = [
     "pytest~=8.4",
     "requests~=2.32",
     "rdkit==2024.3.6",
-    "ruff~=0.13"
+    "ruff~=0.13",
 ]
 
 [project.urls]
