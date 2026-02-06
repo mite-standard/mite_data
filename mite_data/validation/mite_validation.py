@@ -281,6 +281,7 @@ class CicdManager(BaseModel):
     def check_file_naming(self: Self, path: Path) -> None:
         """Check if follows naming
 
+
         Args:
             path: a Path object pointing to file
         """

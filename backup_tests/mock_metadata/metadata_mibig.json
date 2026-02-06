@@ -1,0 +1,2383 @@
+{
+  "version_mite_data": "1.19",
+  "entries": {
+    "BGC0000247": [
+      {
+        "mite_accession": "MITE0000020",
+        "mite_url": "https://bioregistry.io/mite:MITE0000020",
+        "status": "active",
+        "enzyme_name": "MtmGII",
+        "enzyme_description": "Glycosyltransferase",
+        "enzyme_ids": {
+          "uniprot": "Q194P6",
+          "genpept": "CAK50792.1",
+          "mibig": "BGC0000247"
+        },
+        "enzyme_tailoring": "Glycosylation",
+        "enzyme_refs": [
+          "doi:10.1002/cbic.200400309"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000019",
+        "mite_url": "https://bioregistry.io/mite:MITE0000019",
+        "status": "active",
+        "enzyme_name": "MtmGIII",
+        "enzyme_description": "Glycosyltransferase",
+        "enzyme_ids": {
+          "uniprot": "Q194P9",
+          "genpept": "CAK50789.1",
+          "mibig": "BGC0000247"
+        },
+        "enzyme_tailoring": "Glycosylation",
+        "enzyme_refs": [
+          "doi:10.1007/pl00008667"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000018",
+        "mite_url": "https://bioregistry.io/mite:MITE0000018",
+        "status": "active",
+        "enzyme_name": "MtmGIV",
+        "enzyme_description": "Glycosyltransferase",
+        "enzyme_ids": {
+          "uniprot": "Q194Q0",
+          "genpept": "CAK50788.1",
+          "mibig": "BGC0000247"
+        },
+        "enzyme_tailoring": "Glycosylation",
+        "enzyme_refs": [
+          "doi:10.1007/pl00008667"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000015",
+        "mite_url": "https://bioregistry.io/mite:MITE0000015",
+        "status": "active",
+        "enzyme_name": "MtmMII",
+        "enzyme_description": "C-methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "Q194P8",
+          "genpept": "CAK50790.1",
+          "mibig": "BGC0000247"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1074/jbc.275.5.3065"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000014",
+        "mite_url": "https://bioregistry.io/mite:MITE0000014",
+        "status": "active",
+        "enzyme_name": "MtmMI",
+        "enzyme_description": "O-methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "Q194P7",
+          "genpept": "CAK50791.1",
+          "mibig": "BGC0000247"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1074/jbc.275.5.3065",
+          "doi:10.1186/s12934-020-01368-3"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000016",
+        "mite_url": "https://bioregistry.io/mite:MITE0000016",
+        "status": "active",
+        "enzyme_name": "MtmOIV",
+        "enzyme_description": "Oxygenase",
+        "enzyme_ids": {
+          "uniprot": "Q194P4",
+          "genpept": "CAK50794.2",
+          "mibig": "BGC0000247"
+        },
+        "enzyme_tailoring": "Decarboxylation|Oxidation",
+        "enzyme_refs": [
+          "doi:10.1021/ja055750t"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000017",
+        "mite_url": "https://bioregistry.io/mite:MITE0000017",
+        "status": "active",
+        "enzyme_name": "MtmW",
+        "enzyme_description": "Ketoreductase",
+        "enzyme_ids": {
+          "uniprot": "Q194Q1",
+          "genpept": "CAK50787.1",
+          "mibig": "BGC0000247"
+        },
+        "enzyme_tailoring": "Reduction",
+        "enzyme_refs": [
+          "doi:10.1002/anie.201910241"
+        ]
+      }
+    ],
+    "BGC0001945": [
+      {
+        "mite_accession": "MITE0000109",
+        "mite_url": "https://bioregistry.io/mite:MITE0000109",
+        "status": "active",
+        "enzyme_name": "CmxA",
+        "enzyme_description": "L-lysine cyclodeaminase",
+        "enzyme_ids": {
+          "uniprot": "A0A346D7L2",
+          "genpept": "AXM43051.1",
+          "mibig": "BGC0001945"
+        },
+        "enzyme_tailoring": "Cyclization|Deamination",
+        "enzyme_refs": [
+          "doi:10.1002/anie.201808028"
+        ]
+      }
+    ],
+    "BGC0000104": [
+      {
+        "mite_accession": "MITE0000011",
+        "mite_url": "https://bioregistry.io/mite:MITE0000011",
+        "status": "active",
+        "enzyme_name": "MpaG",
+        "enzyme_description": "O-methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "F1DBB3",
+          "genpept": "ADY00134.1",
+          "mibig": "BGC0000104"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1128/AEM.03015-10"
+        ]
+      }
+    ],
+    "BGC0002514": [
+      {
+        "mite_accession": "MITE0000123",
+        "mite_url": "https://bioregistry.io/mite:MITE0000123",
+        "status": "active",
+        "enzyme_name": "JuiM",
+        "enzyme_description": "Acetyltransferase",
+        "enzyme_ids": {
+          "uniprot": "A0A7G8Z071",
+          "genpept": "QNL10606.1",
+          "mibig": "BGC0002514"
+        },
+        "enzyme_tailoring": "Acetylation",
+        "enzyme_refs": [
+          "doi:10.1021/acs.orglett.0c02469"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000124",
+        "mite_url": "https://bioregistry.io/mite:MITE0000124",
+        "status": "active",
+        "enzyme_name": "JuiL",
+        "enzyme_description": "F420-dependent oxidoreductase",
+        "enzyme_ids": {
+          "uniprot": "A0A7G8Z072",
+          "genpept": "QNL10607.1",
+          "mibig": "BGC0002514"
+        },
+        "enzyme_tailoring": "Reduction",
+        "enzyme_refs": [
+          "doi:10.1021/acs.orglett.0c02469"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000125",
+        "mite_url": "https://bioregistry.io/mite:MITE0000125",
+        "status": "active",
+        "enzyme_name": "JuiI",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "A0A7G8Z073",
+          "genpept": "QNL10608.1",
+          "mibig": "BGC0002514"
+        },
+        "enzyme_tailoring": "Biaryl bond formation",
+        "enzyme_refs": [
+          "doi:10.1021/acs.orglett.0c02469"
+        ]
+      }
+    ],
+    "BGC0000973": [
+      {
+        "mite_accession": "MITE0000073",
+        "mite_url": "https://bioregistry.io/mite:MITE0000073",
+        "status": "active",
+        "enzyme_name": "ClmAH",
+        "enzyme_description": "Amidohydrolase",
+        "enzyme_ids": {
+          "uniprot": "H1ZYT5",
+          "genpept": "CCC55916.1",
+          "mibig": "BGC0000973"
+        },
+        "enzyme_tailoring": "Hydrolysis",
+        "enzyme_refs": [
+          "doi:10.1016/j.chembiol.2012.01.014"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000075",
+        "mite_url": "https://bioregistry.io/mite:MITE0000075",
+        "status": "active",
+        "enzyme_name": "ClmM2",
+        "enzyme_description": "O-methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "H1ZYV4",
+          "genpept": "CCC55909.1",
+          "mibig": "BGC0000973"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1016/j.chembiol.2012.01.014"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000074",
+        "mite_url": "https://bioregistry.io/mite:MITE0000074",
+        "status": "active",
+        "enzyme_name": "ClmM1",
+        "enzyme_description": "S-methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "H1ZYV7",
+          "genpept": "CCC55912.1",
+          "mibig": "BGC0000973"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1016/j.chembiol.2012.01.014"
+        ]
+      }
+    ],
+    "BGC0001763": [
+      {
+        "mite_accession": "MITE0000184",
+        "mite_url": "https://bioregistry.io/mite:MITE0000184",
+        "status": "active",
+        "enzyme_name": "RufO",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "A0A224AU14",
+          "genpept": "BBA20962.1",
+          "mibig": "BGC0001763"
+        },
+        "enzyme_tailoring": "Other",
+        "enzyme_refs": [
+          "doi:10.1074/jbc.M117.791269",
+          "doi:10.1038/s41467-017-00419-5",
+          "doi:10.1016/j.chempr.2025.102438"
+        ]
+      }
+    ],
+    "BGC0000311": [
+      {
+        "mite_accession": "MITE0000028",
+        "mite_url": "https://bioregistry.io/mite:MITE0000028",
+        "status": "active",
+        "enzyme_name": "BhaA",
+        "enzyme_description": "Halogenase",
+        "enzyme_ids": {
+          "uniprot": "O87676",
+          "genpept": "CAA76550.1",
+          "mibig": "BGC0000311"
+        },
+        "enzyme_tailoring": "Halogenation",
+        "enzyme_refs": [
+          "doi:10.1016/s1074-5521(02)00101-1",
+          "doi:10.1016/j.jbiotec.2006.04.009",
+          "doi:10.1128/JB.186.18.6093-6100.2004",
+          "doi:10.1039/C7SC00460E"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000027",
+        "mite_url": "https://bioregistry.io/mite:MITE0000027",
+        "status": "active",
+        "enzyme_name": "OxyC",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "O87675",
+          "genpept": "CAA76549.1",
+          "mibig": "BGC0000311"
+        },
+        "enzyme_tailoring": "Cyclization",
+        "enzyme_refs": [
+          "doi:10.1016/j.jbiotec.2006.04.009",
+          "doi:10.1128/AAC.43.7.1565",
+          "doi:10.1002/1521-3773(20011217)40:24<4688::AID-ANIE4688>3.0.CO;2-M"
+        ]
+      }
+    ],
+    "BGC0002024": [
+      {
+        "mite_accession": "MITE0000115",
+        "mite_url": "https://bioregistry.io/mite:MITE0000115",
+        "status": "active",
+        "enzyme_name": "NgnP2",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "A0A3S7PZF3",
+          "genpept": "AXG22415.1",
+          "mibig": "BGC0002024"
+        },
+        "enzyme_tailoring": "Hydroxylation|Monooxygenation|Oxidation",
+        "enzyme_refs": [
+          "doi:10.1021/acschembio.9b01034"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000111",
+        "mite_url": "https://bioregistry.io/mite:MITE0000111",
+        "status": "active",
+        "enzyme_name": "NgnO3",
+        "enzyme_description": "Dioxygenase",
+        "enzyme_ids": {
+          "uniprot": "A0A3S7PZF2",
+          "genpept": "AXG22416.1",
+          "mibig": "BGC0002024"
+        },
+        "enzyme_tailoring": "Other|Oxidation",
+        "enzyme_refs": [
+          "doi:10.1021/acschembio.9b01034"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000112",
+        "mite_url": "https://bioregistry.io/mite:MITE0000112",
+        "status": "active",
+        "enzyme_name": "Ngnp1",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "A0A3S7Q0I4",
+          "genpept": "AXG22409.1",
+          "mibig": "BGC0002024"
+        },
+        "enzyme_tailoring": "Hydroxylation|Oxidation",
+        "enzyme_refs": [
+          "doi:10.1021/acschembio.9b01034"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000114",
+        "mite_url": "https://bioregistry.io/mite:MITE0000114",
+        "status": "active",
+        "enzyme_name": "NgnM",
+        "enzyme_description": "O-methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "A0A3S7PZH2",
+          "genpept": "AXG22413.1",
+          "mibig": "BGC0002024"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1021/acschembio.9b01034"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000110",
+        "mite_url": "https://bioregistry.io/mite:MITE0000110",
+        "status": "active",
+        "enzyme_name": "NgnN4",
+        "enzyme_description": "Proline adenyltransferase",
+        "enzyme_ids": {
+          "uniprot": "A0A3S7PZH4",
+          "genpept": "AXG22420.1",
+          "mibig": "BGC0002024"
+        },
+        "enzyme_tailoring": "Other",
+        "enzyme_refs": [
+          "doi:10.1021/acschembio.9b01034"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000113",
+        "mite_url": "https://bioregistry.io/mite:MITE0000113",
+        "status": "active",
+        "enzyme_name": "NgnD",
+        "enzyme_description": "Nuclear transport factor 2 family protein",
+        "enzyme_ids": {
+          "uniprot": "A0A3S7PZF0",
+          "genpept": "AXG22404.1",
+          "mibig": "BGC0002024"
+        },
+        "enzyme_tailoring": "Cyclization",
+        "enzyme_refs": [
+          "doi:10.1021/acschembio.9b01034"
+        ]
+      }
+    ],
+    "BGC0001061": [
+      {
+        "mite_accession": "MITE0000079",
+        "mite_url": "https://bioregistry.io/mite:MITE0000079",
+        "status": "retired",
+        "enzyme_name": "PokM3",
+        "enzyme_description": "CoA ligase",
+        "enzyme_ids": {
+          "uniprot": "C0JWB0",
+          "genpept": "ACN64830.1",
+          "mibig": "BGC0001061"
+        },
+        "enzyme_tailoring": "Other",
+        "enzyme_refs": [
+          "doi:10.1002/cbic.200800823"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000080",
+        "mite_url": "https://bioregistry.io/mite:MITE0000080",
+        "status": "active",
+        "enzyme_name": "PokMT1",
+        "enzyme_description": "C-methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "C0JWB3",
+          "genpept": "ACN64833.1",
+          "mibig": "BGC0001061"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1002/cbic.200800823"
+        ]
+      }
+    ],
+    "BGC0000440": [
+      {
+        "mite_accession": "MITE0000033",
+        "mite_url": "https://bioregistry.io/mite:MITE0000033",
+        "status": "active",
+        "enzyme_name": "GtfB",
+        "enzyme_description": "Glycosyltransferase",
+        "enzyme_ids": {
+          "uniprot": "Q6ZZI3",
+          "genpept": "CAE53364.1",
+          "mibig": "BGC0000440"
+        },
+        "enzyme_tailoring": "Glycosylation",
+        "enzyme_refs": [
+          "doi:10.1099/mic.0.26507-0",
+          "doi:10.1016/s1074-5521(04)00002-x",
+          "doi:10.1021/ja0735857"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000036",
+        "mite_url": "https://bioregistry.io/mite:MITE0000036",
+        "status": "retired",
+        "enzyme_name": "tAtf",
+        "enzyme_description": "Acyltransferase",
+        "enzyme_ids": {
+          "uniprot": "Q70AY4",
+          "genpept": "CAE53365.1",
+          "mibig": "BGC0000440"
+        },
+        "enzyme_tailoring": "Acylation",
+        "enzyme_refs": [
+          "doi:10.1016/s1074-5521(04)00002-x",
+          "doi:10.1021/ja0735857",
+          "doi:10.1016/j.chembiol.2004.12.005"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000034",
+        "mite_url": "https://bioregistry.io/mite:MITE0000034",
+        "status": "active",
+        "enzyme_name": "GtfA",
+        "enzyme_description": "Glycosyltransferase",
+        "enzyme_ids": {
+          "uniprot": "Q6ZZJ7",
+          "genpept": "CAE53349.1",
+          "mibig": "BGC0000440"
+        },
+        "enzyme_tailoring": "Glycosylation",
+        "enzyme_refs": [
+          "doi:10.1099/mic.0.26507-0",
+          "doi:10.1021/ja0735857",
+          "doi:10.1016/S1074-5521(04)00002-X"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000035",
+        "mite_url": "https://bioregistry.io/mite:MITE0000035",
+        "status": "active",
+        "enzyme_name": "Tcp24/Orf2*/tAtf",
+        "enzyme_description": "Acyltransferase",
+        "enzyme_ids": {
+          "uniprot": "Q70AY4",
+          "genpept": "CAE53365.1",
+          "mibig": "BGC0000440"
+        },
+        "enzyme_tailoring": "Acylation|Hydrolysis",
+        "enzyme_refs": [
+          "doi:10.1002/cbic.200600308",
+          "doi:10.1016/J.CHEMBIOL.2008.05.009",
+          "doi:10.1016/s1074-5521(04)00002-x",
+          "doi:10.1021/ja0735857",
+          "doi:10.1016/j.chembiol.2004.12.005"
+        ]
+      }
+    ],
+    "BGC0002126": [
+      {
+        "mite_accession": "MITE0000197",
+        "mite_url": "https://bioregistry.io/mite:MITE0000197",
+        "status": "active",
+        "enzyme_name": "HynC",
+        "enzyme_description": "Non-heme diiron monooxygenase",
+        "enzyme_ids": {
+          "genpept": "QWP75303.1",
+          "mibig": "BGC0002126"
+        },
+        "enzyme_tailoring": "Hydroxylation",
+        "enzyme_refs": [
+          "doi:10.1002/anie.202102224"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000196",
+        "mite_url": "https://bioregistry.io/mite:MITE0000196",
+        "status": "active",
+        "enzyme_name": "HynE",
+        "enzyme_description": "Alpha-ketoglutarate-dependent dioxygenase ",
+        "enzyme_ids": {
+          "genpept": "QWP75301.1",
+          "mibig": "BGC0002126"
+        },
+        "enzyme_tailoring": "Hydroxylation",
+        "enzyme_refs": [
+          "doi:10.1002/anie.202102224"
+        ]
+      }
+    ],
+    "BGC0003094": [
+      {
+        "mite_accession": "MITE0000171",
+        "mite_url": "https://bioregistry.io/mite:MITE0000171",
+        "status": "active",
+        "enzyme_name": "ProsB",
+        "enzyme_description": "Decarboxylase",
+        "enzyme_ids": {
+          "genpept": "WPM83321.1",
+          "mibig": "BGC0003094"
+        },
+        "enzyme_tailoring": "Decarboxylation",
+        "enzyme_refs": [
+          "doi:10.1073/pnas.2310522120"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000168",
+        "mite_url": "https://bioregistry.io/mite:MITE0000168",
+        "status": "active",
+        "enzyme_name": "ProsA",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "genpept": "WPM83320.1",
+          "mibig": "BGC0003094"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1073/pnas.2310522120"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000166",
+        "mite_url": "https://bioregistry.io/mite:MITE0000166",
+        "status": "active",
+        "enzyme_name": "ProsF",
+        "enzyme_description": "O-methyltransferase",
+        "enzyme_ids": {
+          "genpept": "WPM83325.1",
+          "mibig": "BGC0003094"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1073/pnas.2310522120"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000167",
+        "mite_url": "https://bioregistry.io/mite:MITE0000167",
+        "status": "active",
+        "enzyme_name": "ProsD",
+        "enzyme_description": "Glyoxalase",
+        "enzyme_ids": {
+          "genpept": "WPM83323.1",
+          "mibig": "BGC0003094"
+        },
+        "enzyme_tailoring": "Hydrolysis",
+        "enzyme_refs": [
+          "doi:10.1073/pnas.2310522120"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000170",
+        "mite_url": "https://bioregistry.io/mite:MITE0000170",
+        "status": "active",
+        "enzyme_name": "ProsK",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "genpept": "WPM83319.1",
+          "mibig": "BGC0003094"
+        },
+        "enzyme_tailoring": "Cyclization",
+        "enzyme_refs": [
+          "doi:10.1073/pnas.2310522120"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000169",
+        "mite_url": "https://bioregistry.io/mite:MITE0000169",
+        "status": "active",
+        "enzyme_name": "ProsC",
+        "enzyme_description": "Short-chain dehydrogenase/reductase",
+        "enzyme_ids": {
+          "genpept": "WPM83322.1",
+          "mibig": "BGC0003094"
+        },
+        "enzyme_tailoring": "Reduction",
+        "enzyme_refs": [
+          "doi:10.1073/pnas.2310522120"
+        ]
+      }
+    ],
+    "BGC0001706": [
+      {
+        "mite_accession": "MITE0000201",
+        "mite_url": "https://bioregistry.io/mite:MITE0000201",
+        "status": "active",
+        "enzyme_name": "NodW",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "A0A2I6PJ08",
+          "genpept": "AUM60065.1",
+          "mibig": "BGC0001706"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1021/jacs.7b10909"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000199",
+        "mite_url": "https://bioregistry.io/mite:MITE0000199",
+        "status": "active",
+        "enzyme_name": "NodM",
+        "enzyme_description": "FAD-dependent monooxygenase",
+        "enzyme_ids": {
+          "uniprot": "A0A2I6PIZ2",
+          "genpept": "AUM60051.1",
+          "mibig": "BGC0001706"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1021/jacs.7b10909"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000200",
+        "mite_url": "https://bioregistry.io/mite:MITE0000200",
+        "status": "active",
+        "enzyme_name": "NodB",
+        "enzyme_description": "Terpene cyclase",
+        "enzyme_ids": {
+          "uniprot": "A0A2I6PJ07",
+          "genpept": "AUM60064.1",
+          "mibig": "BGC0001706"
+        },
+        "enzyme_tailoring": "Cyclization",
+        "enzyme_refs": [
+          "doi:10.1021/jacs.7b10909"
+        ]
+      }
+    ],
+    "BGC0000269": [
+      {
+        "mite_accession": "MITE0000021",
+        "mite_url": "https://bioregistry.io/mite:MITE0000021",
+        "status": "active",
+        "enzyme_name": "SsfM2",
+        "enzyme_description": "O-methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "D6MSW0",
+          "genpept": "ADE34498.1",
+          "mibig": "BGC0000269"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1002/anie.201205426"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000023",
+        "mite_url": "https://bioregistry.io/mite:MITE0000023",
+        "status": "active",
+        "enzyme_name": "SsfM1",
+        "enzyme_description": "O-methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "D6MSX0",
+          "genpept": "ADE34508.1",
+          "mibig": "BGC0000269"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1002/anie.201205426"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000022",
+        "mite_url": "https://bioregistry.io/mite:MITE0000022",
+        "status": "active",
+        "enzyme_name": "SsfM4",
+        "enzyme_description": "C-methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "D6MSU6",
+          "genpept": "ADE34484.1",
+          "mibig": "BGC0000269"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1002/anie.201205426",
+          "doi:10.1021/ja907852c "
+        ]
+      }
+    ],
+    "BGC0000653": [
+      {
+        "mite_accession": "MITE0000058",
+        "mite_url": "https://bioregistry.io/mite:MITE0000058",
+        "status": "active",
+        "enzyme_name": "PntD",
+        "enzyme_description": "Non-heme iron-dependent dehydrogenase/oxygenase ",
+        "enzyme_ids": {
+          "uniprot": "E3VWI8",
+          "genpept": "ADO85576.1",
+          "mibig": "BGC0000653"
+        },
+        "enzyme_tailoring": "Dehydration|Oxidation",
+        "enzyme_refs": [
+          "doi:10.1021/bi1019786"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000057",
+        "mite_url": "https://bioregistry.io/mite:MITE0000057",
+        "status": "active",
+        "enzyme_name": "PntE",
+        "enzyme_description": "Baeyer-Villiger monooxygenase",
+        "enzyme_ids": {
+          "uniprot": "E3VWI7",
+          "genpept": "ADO85575.1",
+          "mibig": "BGC0000653"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1021/bi1019786"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000059",
+        "mite_url": "https://bioregistry.io/mite:MITE0000059",
+        "status": "active",
+        "enzyme_name": "PntM",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "E3VWI3",
+          "genpept": "ADO85571.1",
+          "mibig": "BGC0000653"
+        },
+        "enzyme_tailoring": "Other",
+        "enzyme_refs": [
+          "doi:10.1021/ja111279h"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000060",
+        "mite_url": "https://bioregistry.io/mite:MITE0000060",
+        "status": "active",
+        "enzyme_name": "PntI",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "E3VWJ1",
+          "genpept": "ADO85579.1",
+          "mibig": "BGC0000653"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1021/ja111279h",
+          "doi:10.1128/jb.02079-12"
+        ]
+      }
+    ],
+    "BGC0000851": [
+      {
+        "mite_accession": "MITE0000193",
+        "mite_url": "https://bioregistry.io/mite:MITE0000193",
+        "status": "active",
+        "enzyme_name": "AlbA",
+        "enzyme_description": "Cyclic dipeptide oxidase",
+        "enzyme_ids": {
+          "uniprot": "Q8GED9",
+          "genpept": "AAN07907.1",
+          "mibig": "BGC0000851"
+        },
+        "enzyme_tailoring": "Dehydrogenation",
+        "enzyme_refs": [
+          "doi:10.1046/j.1432-1327.2001.02038.x",
+          "doi:10.1038/s41467-024-48030-9"
+        ]
+      }
+    ],
+    "BGC0000469": [
+      {
+        "mite_accession": "MITE0000044",
+        "mite_url": "https://bioregistry.io/mite:MITE0000044",
+        "status": "active",
+        "enzyme_name": "BotCYP",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "K4MJU2",
+          "genpept": "AFV25487.2",
+          "mibig": "BGC0000469"
+        },
+        "enzyme_tailoring": "Decarboxylation|Oxidation",
+        "enzyme_refs": [
+          "doi:10.1021/jacs.0c10361",
+          "doi:10.1039/d0np00097c"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000048",
+        "mite_url": "https://bioregistry.io/mite:MITE0000048",
+        "status": "active",
+        "enzyme_name": "BotP",
+        "enzyme_description": "Peptidase",
+        "enzyme_ids": {
+          "uniprot": "K4MHW2",
+          "genpept": "AFV25490.1",
+          "mibig": "BGC0000469"
+        },
+        "enzyme_tailoring": "Hydrolysis",
+        "enzyme_refs": [
+          "doi:10.1039/d0np00097c",
+          "doi:10.1016/j.chembiol.2012.08.013",
+          "doi:10.1002/cbic.201600406"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000051",
+        "mite_url": "https://bioregistry.io/mite:MITE0000051",
+        "status": "active",
+        "enzyme_name": "BotH",
+        "enzyme_description": "Epimerase",
+        "enzyme_ids": {
+          "uniprot": "K4MHV9",
+          "genpept": "AFV25485.1",
+          "mibig": "BGC0000469"
+        },
+        "enzyme_tailoring": "Epimerization",
+        "enzyme_refs": [
+          "doi:10.1038/s41589-020-0624-8",
+          "doi:10.1039/d0np00097c"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000053",
+        "mite_url": "https://bioregistry.io/mite:MITE0000053",
+        "status": "active",
+        "enzyme_name": "BotCD",
+        "enzyme_description": "YcaO protein",
+        "enzyme_ids": {
+          "uniprot": "K4MHF8",
+          "genpept": "AFV25483.1",
+          "mibig": "BGC0000469"
+        },
+        "enzyme_tailoring": "Cyclization",
+        "enzyme_refs": [
+          "doi:10.1021/jacs.7b09898",
+          "doi:10.1039/d0np00097c",
+          "doi:10.1021/jacs.7b09899"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000052",
+        "mite_url": "https://bioregistry.io/mite:MITE0000052",
+        "status": "active",
+        "enzyme_name": "BotC",
+        "enzyme_description": "YcaO protein",
+        "enzyme_ids": {
+          "uniprot": "K4MJT7",
+          "genpept": "AFV25482.1",
+          "mibig": "BGC0000469"
+        },
+        "enzyme_tailoring": "Heterocyclization",
+        "enzyme_refs": [
+          "doi:10.1021/jacs.7b09898",
+          "doi:10.1039/d0np00097c",
+          "doi:10.1021/jacs.7b09899"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000045",
+        "mite_url": "https://bioregistry.io/mite:MITE0000045",
+        "status": "active",
+        "enzyme_name": "BotOMT",
+        "enzyme_description": "O-methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "K4MJZ1",
+          "genpept": "AFV25479.1",
+          "mibig": "BGC0000469"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1039/d0np00097c"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000047",
+        "mite_url": "https://bioregistry.io/mite:MITE0000047",
+        "status": "active",
+        "enzyme_name": "BotRMT3",
+        "enzyme_description": "C-methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "K4MHG1",
+          "genpept": "AFV25488.1",
+          "mibig": "BGC0000469"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1039/C2SC21190D",
+          "doi:10.1039/d0np00097c",
+          "doi:10.1016/j.chembiol.2012.08.013"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000050",
+        "mite_url": "https://bioregistry.io/mite:MITE0000050",
+        "status": "active",
+        "enzyme_name": "BotAH",
+        "enzyme_description": "Aminohydrolase",
+        "enzyme_ids": {
+          "uniprot": "K4MV58",
+          "genpept": "AFV25486.1",
+          "mibig": "BGC0000469"
+        },
+        "enzyme_tailoring": "Hydrolysis",
+        "enzyme_refs": [
+          "doi:10.1021/jacs.8b12231",
+          "doi:10.1039/d0np00097c"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000049",
+        "mite_url": "https://bioregistry.io/mite:MITE0000049",
+        "status": "active",
+        "enzyme_name": "BotRMT1",
+        "enzyme_description": "C-methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "K4MHV5",
+          "genpept": "AFV25480.1",
+          "mibig": "BGC0000469"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1039/C2SC21190D",
+          "doi:10.1039/d0np00097c",
+          "doi:10.1016/j.chembiol.2012.08.013"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000046",
+        "mite_url": "https://bioregistry.io/mite:MITE0000046",
+        "status": "active",
+        "enzyme_name": "BotRMT2",
+        "enzyme_description": "C-methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "K4MJZ5",
+          "genpept": "AFV25484.1",
+          "mibig": "BGC0000469"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1039/C2SC21190D",
+          "doi:10.1039/d0np00097c",
+          "doi:10.1016/j.chembiol.2012.08.013"
+        ]
+      }
+    ],
+    "BGC0002573": [
+      {
+        "mite_accession": "MITE0000213",
+        "mite_url": "https://bioregistry.io/mite:MITE0000213",
+        "status": "active",
+        "enzyme_name": "TalE",
+        "enzyme_description": "Kinase",
+        "enzyme_ids": {
+          "uniprot": "A0A4P8VQ75",
+          "genpept": "QCR99099.1",
+          "mibig": "BGC0002573"
+        },
+        "enzyme_tailoring": "Phosphorylation",
+        "enzyme_refs": [
+          "doi:10.1039/C9SC00641A"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000212",
+        "mite_url": "https://bioregistry.io/mite:MITE0000212",
+        "status": "active",
+        "enzyme_name": "TalC",
+        "enzyme_description": "Deoxysugar transferase",
+        "enzyme_ids": {
+          "uniprot": "A0A4P8VRN9",
+          "genpept": "QCR99101.1",
+          "mibig": "BGC0002573"
+        },
+        "enzyme_tailoring": "Glycosylation",
+        "enzyme_refs": [
+          "doi:10.1039/C9SC00641A"
+        ]
+      }
+    ],
+    "BGC0000026": [
+      {
+        "mite_accession": "MITE0000003",
+        "mite_url": "https://bioregistry.io/mite:MITE0000003",
+        "status": "active",
+        "enzyme_name": "AviG6",
+        "enzyme_description": "O-methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "Q93KV9",
+          "genpept": "AAK83186.1",
+          "mibig": "BGC0000026"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1016/j.chembiol.2004.08.016",
+          "doi:10.1016/S1074-5521(01)00040-0"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000004",
+        "mite_url": "https://bioregistry.io/mite:MITE0000004",
+        "status": "active",
+        "enzyme_name": "AviG5",
+        "enzyme_description": "O-methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "Q93KW5",
+          "genpept": "AAK83180.1",
+          "mibig": "BGC0000026"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1016/j.chembiol.2004.08.016",
+          "doi:10.1016/S1074-5521(01)00040-0"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000001",
+        "mite_url": "https://bioregistry.io/mite:MITE0000001",
+        "status": "active",
+        "enzyme_name": "AviG2",
+        "enzyme_description": "O-methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "Q93KW1",
+          "genpept": "AAK83184.1",
+          "mibig": "BGC0000026"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1016/j.chembiol.2004.08.016",
+          "doi:10.1016/S1074-5521(01)00040-0"
+        ]
+      }
+    ],
+    "BGC0001237": [
+      {
+        "mite_accession": "MITE0000088",
+        "mite_url": "https://bioregistry.io/mite:MITE0000088",
+        "status": "active",
+        "enzyme_name": "TlmF",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "A0A0P0G6I4",
+          "genpept": "ALJ49912.1",
+          "mibig": "BGC0001237"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1002/cbic.201700090"
+        ]
+      }
+    ],
+    "BGC0000374": [
+      {
+        "mite_accession": "MITE0000195",
+        "mite_url": "https://bioregistry.io/mite:MITE0000195",
+        "status": "active",
+        "enzyme_name": "HrmJ",
+        "enzyme_description": "Alpha-ketoglutarate-dependent dioxygenase ",
+        "enzyme_ids": {
+          "uniprot": "F8S6W1",
+          "genpept": "AEH41788.1",
+          "mibig": "BGC0000374"
+        },
+        "enzyme_tailoring": "Other",
+        "enzyme_refs": [
+          "doi:10.1021/jacs.1c10201",
+          "doi:10.1002/anie.202113189"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000187",
+        "mite_url": "https://bioregistry.io/mite:MITE0000187",
+        "status": "active",
+        "enzyme_name": "HrmI",
+        "enzyme_description": "Heme oxygenase-like dinuclear iron enzyme",
+        "enzyme_ids": {
+          "uniprot": "F8S6W0",
+          "genpept": "AEH41787.1",
+          "mibig": "BGC0000374"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1021/jacs.1c10201",
+          "doi:10.1002/anie.202113189"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000186",
+        "mite_url": "https://bioregistry.io/mite:MITE0000186",
+        "status": "active",
+        "enzyme_name": "HrmF",
+        "enzyme_description": "L-DOPA dioxygenase",
+        "enzyme_ids": {
+          "uniprot": "F8S6V7",
+          "genpept": "AEH41784.1",
+          "mibig": "BGC0000374"
+        },
+        "enzyme_tailoring": "Other",
+        "enzyme_refs": [
+          "doi:10.1016/j.chembiol.2010.12.018"
+        ]
+      }
+    ],
+    "BGC0001001": [
+      {
+        "mite_accession": "MITE0000076",
+        "mite_url": "https://bioregistry.io/mite:MITE0000076",
+        "status": "active",
+        "enzyme_name": "JamD",
+        "enzyme_description": "Flavin-dependent halogenase",
+        "enzyme_ids": {
+          "uniprot": "Q6E7K6",
+          "genpept": "AAS98776.1",
+          "mibig": "BGC0001001"
+        },
+        "enzyme_tailoring": "Halogenation",
+        "enzyme_refs": [
+          "doi:10.1021/jacs.3c05750"
+        ]
+      }
+    ],
+    "BGC0000678": [
+      {
+        "mite_accession": "MITE0000064",
+        "mite_url": "https://bioregistry.io/mite:MITE0000064",
+        "status": "active",
+        "enzyme_name": "PtlI",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "Q82IY3",
+          "genpept": "BAC70710.1",
+          "mibig": "BGC0000678"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1021/ja0639214"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000065",
+        "mite_url": "https://bioregistry.io/mite:MITE0000065",
+        "status": "active",
+        "enzyme_name": "PtlE",
+        "enzyme_description": "Baeyer-Villiger monooxygenase",
+        "enzyme_ids": {
+          "uniprot": "Q82IY8",
+          "genpept": "BAC70705.1",
+          "mibig": "BGC0000678"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1021/bi060419n"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000063",
+        "mite_url": "https://bioregistry.io/mite:MITE0000063",
+        "status": "active",
+        "enzyme_name": "PtlD",
+        "enzyme_description": "Non-heme iron-dependent dehydrogenase/oxygenase ",
+        "enzyme_ids": {
+          "uniprot": "Q82IY7",
+          "genpept": "BAC70706.1",
+          "mibig": "BGC0000678"
+        },
+        "enzyme_tailoring": "Dehydration|Oxidation",
+        "enzyme_refs": [
+          "doi:10.1021/bi1019786"
+        ]
+      }
+    ],
+    "BGC0000529": [
+      {
+        "mite_accession": "MITE0000054",
+        "mite_url": "https://bioregistry.io/mite:MITE0000054",
+        "status": "active",
+        "enzyme_name": "MibH",
+        "enzyme_description": "Flavin-dependent halogenase",
+        "enzyme_ids": {
+          "uniprot": "E2IHC5",
+          "genpept": "ADK32563.1",
+          "mibig": "BGC0000529"
+        },
+        "enzyme_tailoring": "Halogenation",
+        "enzyme_refs": [
+          "doi:10.1021/acschembio.6b01031"
+        ]
+      }
+    ],
+    "BGC0000120": [
+      {
+        "mite_accession": "MITE0000191",
+        "mite_url": "https://bioregistry.io/mite:MITE0000191",
+        "status": "active",
+        "enzyme_name": "PatG",
+        "enzyme_description": "Decarboxylase",
+        "enzyme_ids": {
+          "uniprot": "A0A075TXZ1",
+          "genpept": "AIG62133.1",
+          "mibig": "BGC0000120"
+        },
+        "enzyme_tailoring": "Decarboxylation",
+        "enzyme_refs": [
+          "doi:10.1016/j.ijfoodmicro.2013.11.020"
+        ]
+      }
+    ],
+    "BGC0001077": [
+      {
+        "mite_accession": "MITE0000083",
+        "mite_url": "https://bioregistry.io/mite:MITE0000083",
+        "status": "active",
+        "enzyme_name": "AgqD",
+        "enzyme_description": "UbiA-like prenyltransferase",
+        "enzyme_ids": {
+          "uniprot": "I0HIZ2",
+          "genpept": "BAL92979.1",
+          "mibig": "BGC0001077"
+        },
+        "enzyme_tailoring": "Prenylation",
+        "enzyme_refs": [
+          "doi:10.1002/cbic.201000628"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000082",
+        "mite_url": "https://bioregistry.io/mite:MITE0000082",
+        "status": "active",
+        "enzyme_name": "AgqC",
+        "enzyme_description": "O-methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "I0HIZ1",
+          "genpept": "BAL92978.1",
+          "mibig": "BGC0001077"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1002/cbic.201000628"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000081",
+        "mite_url": "https://bioregistry.io/mite:MITE0000081",
+        "status": "active",
+        "enzyme_name": "AgqB",
+        "enzyme_description": "Alkylresorcinol monooxygenase",
+        "enzyme_ids": {
+          "uniprot": "I0HIZ0",
+          "genpept": "BAL92977.1",
+          "mibig": "BGC0001077"
+        },
+        "enzyme_tailoring": "Hydroxylation",
+        "enzyme_refs": [
+          "doi:10.1002/cbic.201000628"
+        ]
+      }
+    ],
+    "BGC0002260": [
+      {
+        "mite_accession": "MITE0000203",
+        "mite_url": "https://bioregistry.io/mite:MITE0000203",
+        "status": "active",
+        "enzyme_name": "braC",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "P9WER2",
+          "genpept": "QOE88885.1",
+          "mibig": "BGC0002260"
+        },
+        "enzyme_tailoring": "Hydroxylation|Oxidation",
+        "enzyme_refs": [
+          "doi:10.1039/D0CC03950K"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000202",
+        "mite_url": "https://bioregistry.io/mite:MITE0000202",
+        "status": "active",
+        "enzyme_name": "BraB",
+        "enzyme_description": "Glycosyltransferase",
+        "enzyme_ids": {
+          "uniprot": "P9WER1",
+          "genpept": "QOE88884.1",
+          "mibig": "BGC0002260"
+        },
+        "enzyme_tailoring": "Glycosylation",
+        "enzyme_refs": [
+          "doi:10.1039/D0CC03950K"
+        ]
+      }
+    ],
+    "BGC0000455": [
+      {
+        "mite_accession": "MITE0000041",
+        "mite_url": "https://bioregistry.io/mite:MITE0000041",
+        "status": "active",
+        "enzyme_name": "OxyB",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "F8STX7",
+          "genpept": "AEI58869.1",
+          "mibig": "BGC0000455"
+        },
+        "enzyme_tailoring": "Cyclization|Oxidation",
+        "enzyme_refs": [
+          "doi:10.1016/j.jbiotec.2006.04.009",
+          "doi:10.1128/AAC.43.7.1565",
+          "doi:10.1002/1521-3773(20011217)40:24<4688::AID-ANIE4688>3.0.CO;2-M",
+          "doi:10.1021/ja071038f",
+          "doi:10.1002/ANIE.200461278"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000038",
+        "mite_url": "https://bioregistry.io/mite:MITE0000038",
+        "status": "active",
+        "enzyme_name": "OxyA",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "F8STX6",
+          "genpept": "AEI58868.1",
+          "mibig": "BGC0000455"
+        },
+        "enzyme_tailoring": "Cyclization|Oxidation",
+        "enzyme_refs": [
+          "doi:10.1021/acschembio.7b00456",
+          "doi:10.1016/j.jbiotec.2006.04.009",
+          "doi:10.1128/AAC.43.7.1565",
+          "doi:10.1002/1521-3773(20011217)40:24<4688::AID-ANIE4688>3.0.CO;2-M"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000040",
+        "mite_url": "https://bioregistry.io/mite:MITE0000040",
+        "status": "active",
+        "enzyme_name": "VhaA",
+        "enzyme_description": "Flavin-dependent halogenase",
+        "enzyme_ids": {
+          "uniprot": "P96563",
+          "genpept": "AEI58871.1",
+          "mibig": "BGC0000455"
+        },
+        "enzyme_tailoring": "Halogenation",
+        "enzyme_refs": [
+          "doi:10.1186/1471-2164-15-363",
+          "doi:10.1039/D0CC07421G",
+          "doi:10.1039/C4OB00474D"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000037",
+        "mite_url": "https://bioregistry.io/mite:MITE0000037",
+        "status": "active",
+        "enzyme_name": "GtfE",
+        "enzyme_description": "Glycosyltransferase",
+        "enzyme_ids": {
+          "uniprot": "P96565",
+          "genpept": "AEI58873.1",
+          "mibig": "BGC0000455"
+        },
+        "enzyme_tailoring": "Glycosylation",
+        "enzyme_refs": [
+          "doi:10.1186/1471-2164-15-363",
+          "doi:10.1021/bi010050w",
+          "doi:10.1016/S1074-5521(02)00270-3"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000039",
+        "mite_url": "https://bioregistry.io/mite:MITE0000039",
+        "status": "active",
+        "enzyme_name": "Vmt",
+        "enzyme_description": "N-methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "E9LY85",
+          "genpept": "AEI58876.1",
+          "mibig": "BGC0000455"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1186/1471-2164-15-363"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000042",
+        "mite_url": "https://bioregistry.io/mite:MITE0000042",
+        "status": "active",
+        "enzyme_name": "GtfD",
+        "enzyme_description": "Glycosyltransferase",
+        "enzyme_ids": {
+          "uniprot": "P96564",
+          "genpept": "AEI58872.1",
+          "mibig": "BGC0000455"
+        },
+        "enzyme_tailoring": "Glycosylation",
+        "enzyme_refs": [
+          "doi:10.1186/1471-2164-15-363",
+          "doi:10.1021/bi036130c",
+          "doi:10.1016/S1074-5521(02)00270-3",
+          "doi:10.1021/bi010050w"
+        ]
+      }
+    ],
+    "BGC0002300": [
+      {
+        "mite_accession": "MITE0000122",
+        "mite_url": "https://bioregistry.io/mite:MITE0000122",
+        "status": "active",
+        "enzyme_name": "AbmA",
+        "enzyme_description": "Acetyltransferase",
+        "enzyme_ids": {
+          "uniprot": "I1ZAY8",
+          "genpept": "AFJ20767.1",
+          "mibig": "BGC0002300"
+        },
+        "enzyme_tailoring": "Acetylation",
+        "enzyme_refs": [
+          "doi:10.1016/j.jbc.2023.104573"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000121",
+        "mite_url": "https://bioregistry.io/mite:MITE0000121",
+        "status": "active",
+        "enzyme_name": "AbmB",
+        "enzyme_description": "L-Ornithine N(5)-oxygenase",
+        "enzyme_ids": {
+          "uniprot": "I1ZAY9",
+          "genpept": "AFJ20768.1",
+          "mibig": "BGC0002300"
+        },
+        "enzyme_tailoring": "Hydroxylation",
+        "enzyme_refs": [
+          "doi:10.1016/j.jbc.2023.104573"
+        ]
+      }
+    ],
+    "BGC0000031": [
+      {
+        "mite_accession": "MITE0000188",
+        "mite_url": "https://bioregistry.io/mite:MITE0000188",
+        "status": "active",
+        "enzyme_name": "BorI",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "Q70HZ6",
+          "genpept": "CAE45673.1",
+          "mibig": "BGC0000031"
+        },
+        "enzyme_tailoring": "Dehydration|Hydroxylation|Oxidation",
+        "enzyme_refs": [
+          "doi:10.1111/j.1365-2958.2004.04090.x"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000189",
+        "mite_url": "https://bioregistry.io/mite:MITE0000189",
+        "status": "active",
+        "enzyme_name": "BorJ",
+        "enzyme_description": "Aminotransferase",
+        "enzyme_ids": {
+          "uniprot": "Q70HZ5",
+          "genpept": "CAE45674.1",
+          "mibig": "BGC0000031"
+        },
+        "enzyme_tailoring": "Amination",
+        "enzyme_refs": [
+          "doi:10.1111/j.1365-2958.2004.04090.x"
+        ]
+      }
+    ],
+    "BGC0000581": [
+      {
+        "mite_accession": "MITE0000056",
+        "mite_url": "https://bioregistry.io/mite:MITE0000056",
+        "status": "active",
+        "enzyme_name": "McjB",
+        "enzyme_description": "Peptidase",
+        "enzyme_ids": {
+          "uniprot": "Q9X2V8",
+          "genpept": "AAD28495.1",
+          "mibig": "BGC0000581"
+        },
+        "enzyme_tailoring": "Hydrolysis",
+        "enzyme_refs": [
+          "doi:10.1002/cbic.201200016",
+          "doi:10.1128/JB.181.8.2659-2662.1999",
+          "doi:10.1002/cbic.201100596"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000055",
+        "mite_url": "https://bioregistry.io/mite:MITE0000055",
+        "status": "active",
+        "enzyme_name": "McjC",
+        "enzyme_description": "Macrolactam synthetase",
+        "enzyme_ids": {
+          "uniprot": "Q9X2V9",
+          "genpept": "AAD28496.1",
+          "mibig": "BGC0000581"
+        },
+        "enzyme_tailoring": "Macrolactam formation",
+        "enzyme_refs": [
+          "doi:10.1128/jb.181.8.2659-2662.1999",
+          "doi:10.1002/cbic.201200016"
+        ]
+      }
+    ],
+    "BGC0000421": [
+      {
+        "mite_accession": "MITE0000031",
+        "mite_url": "https://bioregistry.io/mite:MITE0000031",
+        "status": "active",
+        "enzyme_name": "SacF",
+        "enzyme_description": "C-methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "Q5JCL5",
+          "genpept": "AAL33761.1",
+          "mibig": "BGC0000421"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1111/j.1365-2958.2004.04433.x"
+        ]
+      }
+    ],
+    "BGC0002099": [
+      {
+        "mite_accession": "MITE0000174",
+        "mite_url": "https://bioregistry.io/mite:MITE0000174",
+        "status": "active",
+        "enzyme_name": "BytO",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "A0A891LYB2",
+          "genpept": "QRM13816.1",
+          "mibig": "BGC0002099"
+        },
+        "enzyme_tailoring": "Biaryl bond formation",
+        "enzyme_refs": [
+          "doi:10.1016/j.chembiol.2020.11.009"
+        ]
+      }
+    ],
+    "BGC0000093": [
+      {
+        "mite_accession": "MITE0000009",
+        "mite_url": "https://bioregistry.io/mite:MITE0000009",
+        "status": "active",
+        "enzyme_name": "MeiD",
+        "enzyme_description": "O-methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "D6C4C6",
+          "genpept": "ADC45587.1",
+          "mibig": "BGC0000093"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1128/AEM.02262-09"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000010",
+        "mite_url": "https://bioregistry.io/mite:MITE0000010",
+        "status": "active",
+        "enzyme_name": "MeiE",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "Q6YL50",
+          "genpept": "AAM97314.1",
+          "mibig": "BGC0000093"
+        },
+        "enzyme_tailoring": "Heterocyclization|Hydroxylation",
+        "enzyme_refs": [
+          "doi:10.1128/AEM.02262-09"
+        ]
+      }
+    ],
+    "BGC0001079": [
+      {
+        "mite_accession": "MITE0000085",
+        "mite_url": "https://bioregistry.io/mite:MITE0000085",
+        "status": "active",
+        "enzyme_name": "NapB5",
+        "enzyme_description": "C-methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "A7KH06",
+          "genpept": "ABS50465.1",
+          "mibig": "BGC0001079"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1074/jbc.M611046200"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000086",
+        "mite_url": "https://bioregistry.io/mite:MITE0000086",
+        "status": "active",
+        "enzyme_name": "NapH1",
+        "enzyme_description": "Vanadium-dependent chloroperoxidase ",
+        "enzyme_ids": {
+          "uniprot": "A7KGZ9",
+          "genpept": "ABS50458.1",
+          "mibig": "BGC0001079"
+        },
+        "enzyme_tailoring": "Halogenation|Heterocyclization",
+        "enzyme_refs": [
+          "doi:10.1021/ja201088k"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000084",
+        "mite_url": "https://bioregistry.io/mite:MITE0000084",
+        "status": "active",
+        "enzyme_name": "NapB2",
+        "enzyme_description": "Monooxygenase",
+        "enzyme_ids": {
+          "uniprot": "A7KGZ3",
+          "genpept": "ABS50452.1",
+          "mibig": "BGC0001079"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1074/jbc.M611046200"
+        ]
+      }
+    ],
+    "BGC0002643": [
+      {
+        "mite_accession": "MITE0000127",
+        "mite_url": "https://bioregistry.io/mite:MITE0000127",
+        "status": "active",
+        "enzyme_name": "AetA",
+        "enzyme_description": "Flavin-dependent halogenase",
+        "enzyme_ids": {
+          "uniprot": "A0A861B8S3",
+          "genpept": "QNL15171.1",
+          "mibig": "BGC0002643"
+        },
+        "enzyme_tailoring": "Halogenation",
+        "enzyme_refs": [
+          "doi:10.1021/jacs.1c12778"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000126",
+        "mite_url": "https://bioregistry.io/mite:MITE0000126",
+        "status": "active",
+        "enzyme_name": "AetF",
+        "enzyme_description": "Flavin-dependent halogenase",
+        "enzyme_ids": {
+          "uniprot": "A0A861B9Z9",
+          "genpept": "QNL15176.1",
+          "mibig": "BGC0002643"
+        },
+        "enzyme_tailoring": "Halogenation",
+        "enzyme_refs": [
+          "doi:10.1021/jacs.1c12778"
+        ]
+      }
+    ],
+    "BGC0000033": [
+      {
+        "mite_accession": "MITE0000008",
+        "mite_url": "https://bioregistry.io/mite:MITE0000008",
+        "status": "active",
+        "enzyme_name": "CalO2",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "Q8KND6",
+          "genpept": "AAM94799.1",
+          "mibig": "BGC0000033"
+        },
+        "enzyme_tailoring": "Hydroxylation",
+        "enzyme_refs": [
+          "doi:10.1002/prot.22131"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000005",
+        "mite_url": "https://bioregistry.io/mite:MITE0000005",
+        "status": "active",
+        "enzyme_name": "CalO3",
+        "enzyme_description": "Flavin-dependent halogenase",
+        "enzyme_ids": {
+          "uniprot": "Q8KND5",
+          "genpept": "AAM70353.1",
+          "mibig": "BGC0000033"
+        },
+        "enzyme_tailoring": "Halogenation",
+        "enzyme_refs": [
+          "doi:10.1002/prot.22131"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000007",
+        "mite_url": "https://bioregistry.io/mite:MITE0000007",
+        "status": "active",
+        "enzyme_name": "CalO1",
+        "enzyme_description": "O-methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "Q8KNE5",
+          "genpept": "AAM70343.1",
+          "mibig": "BGC0000033"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1002/prot.22131"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000006",
+        "mite_url": "https://bioregistry.io/mite:MITE0000006",
+        "status": "active",
+        "enzyme_name": "CalO6",
+        "enzyme_description": "O-methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "Q8KND2",
+          "genpept": "AAM70356.1",
+          "mibig": "BGC0000033"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1002/cbic.201402119"
+        ]
+      }
+    ],
+    "BGC0001322": [
+      {
+        "mite_accession": "MITE0000091",
+        "mite_url": "https://bioregistry.io/mite:MITE0000091",
+        "status": "active",
+        "enzyme_name": "CYP71BN1",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "K4CI56",
+          "genpept": "AGK82807.1",
+          "mibig": "BGC0001322"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1021/ja508477e",
+          "doi:10.1371/journal.pone.0119302"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000090",
+        "mite_url": "https://bioregistry.io/mite:MITE0000090",
+        "status": "active",
+        "enzyme_name": "TPS21",
+        "enzyme_description": "Terpene cyclase",
+        "enzyme_ids": {
+          "uniprot": "R9R6P6",
+          "genpept": "AGK82800.1",
+          "mibig": "BGC0001322"
+        },
+        "enzyme_tailoring": "Cyclization",
+        "enzyme_refs": [
+          "doi:10.1021/ja508477e",
+          "doi:10.1371/journal.pone.0119302"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000089",
+        "mite_url": "https://bioregistry.io/mite:MITE0000089",
+        "status": "retired",
+        "enzyme_name": "CPT2",
+        "enzyme_description": "Nerylneryl diphosphate synthase",
+        "enzyme_ids": {
+          "uniprot": "K7WQ45",
+          "genpept": "AGK82801.1",
+          "mibig": "BGC0001322"
+        },
+        "enzyme_tailoring": "Prenylation",
+        "enzyme_refs": [
+          "doi:10.1073/pnas.0904113106",
+          "doi:10.1105/tpc.113.111013",
+          "doi:10.1371/journal.pone.0119302"
+        ]
+      }
+    ],
+    "BGC0002181": [
+      {
+        "mite_accession": "MITE0000179",
+        "mite_url": "https://bioregistry.io/mite:MITE0000179",
+        "status": "active",
+        "enzyme_name": "Ple5/PLE5_RHOPP",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "A0A6S6QPY4",
+          "genpept": "BCI98773.1",
+          "mibig": "BGC0002181"
+        },
+        "enzyme_tailoring": "Hydroxylation",
+        "enzyme_refs": [
+          "doi:10.1038/s41467-017-01659-1",
+          "doi:10.1002/cbic.201700434",
+          "doi:10.1038/srep25202",
+          "doi:10.1039/d2sc06638f"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000177",
+        "mite_url": "https://bioregistry.io/mite:MITE0000177",
+        "status": "active",
+        "enzyme_name": "Ple2",
+        "enzyme_description": "Acetyltransferase",
+        "enzyme_ids": {
+          "uniprot": "A0A6S6QLX9",
+          "genpept": "BCI98770.1",
+          "mibig": "BGC0002181"
+        },
+        "enzyme_tailoring": "Acetylation",
+        "enzyme_refs": [
+          "doi:10.1038/s41467-017-01659-1",
+          "doi:10.1002/cbic.201700434",
+          "doi:10.1038/srep25202",
+          "doi:10.1039/d2sc06638f"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000178",
+        "mite_url": "https://bioregistry.io/mite:MITE0000178",
+        "status": "active",
+        "enzyme_name": "Ple6",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "A0A6S6QP77",
+          "genpept": "BCI98774.1",
+          "mibig": "BGC0002181"
+        },
+        "enzyme_tailoring": "Hydroxylation",
+        "enzyme_refs": [
+          "doi:10.1038/s41467-017-01659-1",
+          "doi:10.1002/cbic.201700434",
+          "doi:10.1039/d2sc06638f",
+          "doi:10.1038/srep25202"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000176",
+        "mite_url": "https://bioregistry.io/mite:MITE0000176",
+        "status": "active",
+        "enzyme_name": "Ple1",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "A0A6S6QI82",
+          "genpept": "BCI98769.1",
+          "mibig": "BGC0002181"
+        },
+        "enzyme_tailoring": "Hydroxylation",
+        "enzyme_refs": [
+          "doi:10.1038/s41467-017-01659-1",
+          "doi:10.1002/cbic.201700434",
+          "doi:10.1038/srep25202"
+        ]
+      }
+    ],
+    "BGC0000055": [
+      {
+        "mite_accession": "MITE0000183",
+        "mite_url": "https://bioregistry.io/mite:MITE0000183",
+        "status": "active",
+        "enzyme_name": "EryK",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "P48635",
+          "genpept": "CAM00054.1",
+          "mibig": "BGC0000055"
+        },
+        "enzyme_tailoring": "Hydroxylation",
+        "enzyme_refs": [
+          "doi:10.1021/bi00006a006",
+          "doi:10.1111/j.1472-765X.2010.02973.x"
+        ]
+      }
+    ],
+    "BGC0001611": [
+      {
+        "mite_accession": "MITE0000105",
+        "mite_url": "https://bioregistry.io/mite:MITE0000105",
+        "status": "active",
+        "enzyme_name": "GnmP",
+        "enzyme_description": "Persulfide methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "A0A2H4T153",
+          "genpept": "ATY69565.1",
+          "mibig": "BGC0001611"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1038/s41467-021-25798-8"
+        ]
+      }
+    ],
+    "BGC0000677": [
+      {
+        "mite_accession": "MITE0000062",
+        "mite_url": "https://bioregistry.io/mite:MITE0000062",
+        "status": "active",
+        "enzyme_name": "CotB4",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "C9K1X7",
+          "genpept": "BAI44340.1",
+          "mibig": "BGC0000677"
+        },
+        "enzyme_tailoring": "Hydroxylation",
+        "enzyme_refs": [
+          "doi:10.1016/j.chembiol.2009.06.007"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000061",
+        "mite_url": "https://bioregistry.io/mite:MITE0000061",
+        "status": "active",
+        "enzyme_name": "CotB3",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "C9K1X6",
+          "genpept": "BAI44339.1",
+          "mibig": "BGC0000677"
+        },
+        "enzyme_tailoring": "Hydroxylation",
+        "enzyme_refs": [
+          "doi:10.1016/j.chembiol.2009.06.007"
+        ]
+      }
+    ],
+    "BGC0002964": [
+      {
+        "mite_accession": "MITE0000147",
+        "mite_url": "https://bioregistry.io/mite:MITE0000147",
+        "status": "active",
+        "enzyme_name": "PeuJ",
+        "enzyme_description": "FMN-dependent monooxygenase",
+        "enzyme_ids": {
+          "genpept": "ATW47938.1",
+          "mibig": "BGC0002964"
+        },
+        "enzyme_tailoring": "Hydroxylation",
+        "enzyme_refs": [
+          "doi:10.1007/s00253-023-12385-8"
+        ]
+      }
+    ],
+    "BGC0000279": [
+      {
+        "mite_accession": "MITE0000024",
+        "mite_url": "https://bioregistry.io/mite:MITE0000024",
+        "status": "active",
+        "enzyme_name": "XanH",
+        "enzyme_description": "FAD Halogenase",
+        "enzyme_ids": {
+          "uniprot": "I1SKW0",
+          "genpept": "ADE22292.1",
+          "mibig": "BGC0000279"
+        },
+        "enzyme_tailoring": "Halogenation",
+        "enzyme_refs": [
+          "doi:10.1128/AEM.01225-20"
+        ]
+      }
+    ],
+    "BGC0002125": [
+      {
+        "mite_accession": "MITE0000181",
+        "mite_url": "https://bioregistry.io/mite:MITE0000181",
+        "status": "active",
+        "enzyme_name": "FrsC",
+        "enzyme_description": "Dehydrogenase",
+        "enzyme_ids": {
+          "uniprot": "A0A7S9SW80",
+          "genpept": "QPI18725.1",
+          "mibig": "BGC0002125"
+        },
+        "enzyme_tailoring": "Reduction",
+        "enzyme_refs": [
+          "doi:10.1002/cbic.202100569"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000185",
+        "mite_url": "https://bioregistry.io/mite:MITE0000185",
+        "status": "active",
+        "enzyme_name": "FrsH",
+        "enzyme_description": "Non-heme diiron monooxygenase",
+        "enzyme_ids": {
+          "uniprot": "A0A7S9SWM2",
+          "genpept": "QPI18730.1",
+          "mibig": "BGC0002125"
+        },
+        "enzyme_tailoring": "Hydroxylation",
+        "enzyme_refs": [
+          "doi:10.1038/s41467-020-20418-3",
+          "doi:10.1021/acschembio.3c00106"
+        ]
+      }
+    ],
+    "BGC0000459": [
+      {
+        "mite_accession": "MITE0000043",
+        "mite_url": "https://bioregistry.io/mite:MITE0000043",
+        "status": "active",
+        "enzyme_name": "SgvP",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "R9USI6",
+          "genpept": "AGN74891.1",
+          "mibig": "BGC0000459"
+        },
+        "enzyme_tailoring": "Heterocyclization",
+        "enzyme_refs": [
+          "doi:10.1002/cbic.201400062"
+        ]
+      }
+    ],
+    "BGC0001168": [
+      {
+        "mite_accession": "MITE0000180",
+        "mite_url": "https://bioregistry.io/mite:MITE0000180",
+        "status": "active",
+        "enzyme_name": "SLI_0884",
+        "enzyme_description": "Leucyl/Phenylalanine-tRNA-protein transferase",
+        "enzyme_ids": {
+          "uniprot": "A0A7U9H9E4",
+          "genpept": "EOY45603.1",
+          "mibig": "BGC0001168"
+        },
+        "enzyme_tailoring": "Other",
+        "enzyme_refs": [
+          "doi:10.1093/jimb/kuad021",
+          "doi:10.1093/gbe/evt082"
+        ]
+      }
+    ],
+    "BGC0000422": [
+      {
+        "mite_accession": "MITE0000032",
+        "mite_url": "https://bioregistry.io/mite:MITE0000032",
+        "status": "active",
+        "enzyme_name": "SfmM2",
+        "enzyme_description": "C-methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "B0CN31",
+          "genpept": "ABI22137.1",
+          "mibig": "BGC0000422"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1128/JB.00826-07"
+        ]
+      }
+    ],
+    "BGC0001179": [
+      {
+        "mite_accession": "MITE0000087",
+        "mite_url": "https://bioregistry.io/mite:MITE0000087",
+        "status": "active",
+        "enzyme_name": "RslO4",
+        "enzyme_description": "Monooxygenase",
+        "enzyme_ids": {
+          "uniprot": "W8QLE0",
+          "genpept": "AHL46722.1",
+          "mibig": "BGC0001179"
+        },
+        "enzyme_tailoring": "Monooxygenation",
+        "enzyme_refs": [
+          "doi:10.1007/s12033-021-00314-x"
+        ]
+      }
+    ],
+    "BGC0001335": [
+      {
+        "mite_accession": "MITE0000092",
+        "mite_url": "https://bioregistry.io/mite:MITE0000092",
+        "status": "active",
+        "enzyme_name": "BorH",
+        "enzyme_description": "Flavin-dependent halogenase",
+        "enzyme_ids": {
+          "uniprot": "M9QSI0",
+          "genpept": "AGI62217.1",
+          "mibig": "BGC0001335"
+        },
+        "enzyme_tailoring": "Halogenation",
+        "enzyme_refs": [
+          "doi:10.1002/cbic.201900667"
+        ]
+      }
+    ],
+    "BGC0001485": [
+      {
+        "mite_accession": "MITE0000101",
+        "mite_url": "https://bioregistry.io/mite:MITE0000101",
+        "status": "active",
+        "enzyme_name": "Cxm5",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "A0A290YXM6",
+          "genpept": "AVL27080.1",
+          "mibig": "BGC0001485"
+        },
+        "enzyme_tailoring": "Heterocyclization",
+        "enzyme_refs": [
+          "doi:10.1016/j.apsb.2017.07.005"
+        ]
+      }
+    ],
+    "BGC0002084": [
+      {
+        "mite_accession": "MITE0000175",
+        "mite_url": "https://bioregistry.io/mite:MITE0000175",
+        "status": "active",
+        "enzyme_name": "BytO",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "A0A891LWT6",
+          "genpept": "QRM13814.1",
+          "mibig": "BGC0002084"
+        },
+        "enzyme_tailoring": "Biaryl bond formation",
+        "enzyme_refs": [
+          "doi:10.1016/j.chembiol.2020.11.009"
+        ]
+      }
+    ],
+    "BGC0001910": [
+      {
+        "mite_accession": "MITE0000108",
+        "mite_url": "https://bioregistry.io/mite:MITE0000108",
+        "status": "active",
+        "enzyme_name": "CldC",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "A0A0H5B5M5",
+          "genpept": "BAR97452.1",
+          "mibig": "BGC0001910"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1007/s10295-015-1694-6"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000107",
+        "mite_url": "https://bioregistry.io/mite:MITE0000107",
+        "status": "active",
+        "enzyme_name": "Mca",
+        "enzyme_description": "Amidase",
+        "enzyme_ids": {
+          "uniprot": "A0A0H5B8U5",
+          "genpept": "BAR97454.1",
+          "mibig": "BGC0001910"
+        },
+        "enzyme_tailoring": "Hydrolysis",
+        "enzyme_refs": [
+          "doi:10.1007/s10295-015-1694-6"
+        ]
+      }
+    ],
+    "BGC0000932": [
+      {
+        "mite_accession": "MITE0000072",
+        "mite_url": "https://bioregistry.io/mite:MITE0000072",
+        "status": "active",
+        "enzyme_name": "TdaE",
+        "enzyme_description": "Flavoprotein dioxygenase",
+        "enzyme_ids": {
+          "uniprot": "UPI0001633292",
+          "genpept": "AFO93376.1",
+          "mibig": "BGC0000932"
+        },
+        "enzyme_tailoring": "Dioxygenation",
+        "enzyme_refs": [
+          "doi:10.1021/jacs.1c04996"
+        ]
+      }
+    ],
+    "BGC0001008": [
+      {
+        "mite_accession": "MITE0000078",
+        "mite_url": "https://bioregistry.io/mite:MITE0000078",
+        "status": "retired",
+        "enzyme_name": "MdpB2",
+        "enzyme_description": "CoA ligase",
+        "enzyme_ids": {
+          "uniprot": "B0BLM7",
+          "genpept": "ABY66018.1",
+          "mibig": "BGC0001008"
+        },
+        "enzyme_tailoring": "Other",
+        "enzyme_refs": [
+          "doi:10.1021/ja1050814"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000077",
+        "mite_url": "https://bioregistry.io/mite:MITE0000077",
+        "status": "active",
+        "enzyme_name": "MdpB1",
+        "enzyme_description": "C-methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "B0BLM5",
+          "genpept": "ABY66020.1",
+          "mibig": "BGC0001008"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1021/ja1050814"
+        ]
+      }
+    ],
+    "BGC0000378": [
+      {
+        "mite_accession": "MITE0000030",
+        "mite_url": "https://bioregistry.io/mite:MITE0000030",
+        "status": "active",
+        "enzyme_name": "KtzR",
+        "enzyme_description": "Flavin-dependent halogenase",
+        "enzyme_ids": {
+          "uniprot": "A8CF74",
+          "genpept": "ABV56598.1",
+          "mibig": "BGC0000378"
+        },
+        "enzyme_tailoring": "Halogenation",
+        "enzyme_refs": [
+          "doi:10.1021/ja806467a"
+        ]
+      },
+      {
+        "mite_accession": "MITE0000029",
+        "mite_url": "https://bioregistry.io/mite:MITE0000029",
+        "status": "active",
+        "enzyme_name": "KtzQ",
+        "enzyme_description": "Flavin-dependent halogenase",
+        "enzyme_ids": {
+          "uniprot": "A8CF75",
+          "genpept": "ABV56597.1",
+          "mibig": "BGC0000378"
+        },
+        "enzyme_tailoring": "Halogenation",
+        "enzyme_refs": [
+          "doi:10.1021/ja806467a"
+        ]
+      }
+    ],
+    "BGC0001299": [
+      {
+        "mite_accession": "MITE0000192",
+        "mite_url": "https://bioregistry.io/mite:MITE0000192",
+        "status": "active",
+        "enzyme_name": "CtoA",
+        "enzyme_description": "Halogenase",
+        "enzyme_ids": {
+          "uniprot": "A0A0M4KXQ6",
+          "genpept": "ALD83700.1",
+          "mibig": "BGC0001299"
+        },
+        "enzyme_tailoring": "Halogenation",
+        "enzyme_refs": [
+          "doi:10.1021/acschembio.5b00523"
+        ]
+      }
+    ],
+    "BGC0003089": [
+      {
+        "mite_accession": "MITE0000155",
+        "mite_url": "https://bioregistry.io/mite:MITE0000155",
+        "status": "active",
+        "enzyme_name": "SrsB",
+        "enzyme_description": "O-methyltransferase",
+        "enzyme_ids": {
+          "genpept": "BAG12889.1",
+          "mibig": "BGC0003089"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1039/c9ob00807a"
+        ]
+      }
+    ],
+    "BGC0000024": [
+      {
+        "mite_accession": "MITE0000190",
+        "mite_url": "https://bioregistry.io/mite:MITE0000190",
+        "status": "active",
+        "enzyme_name": "AurH",
+        "enzyme_description": "Cytochrome P450",
+        "enzyme_ids": {
+          "uniprot": "Q70KH6",
+          "genpept": "CAE02604.1",
+          "mibig": "BGC0000024"
+        },
+        "enzyme_tailoring": "Oxidation",
+        "enzyme_refs": [
+          "doi:10.1016/j.chembiol.2003.11.009"
+        ]
+      }
+    ],
+    "BGC0001881": [
+      {
+        "mite_accession": "MITE0000211",
+        "mite_url": "https://bioregistry.io/mite:MITE0000211",
+        "status": "active",
+        "enzyme_name": "PyiA",
+        "enzyme_description": "O-methyltransferase",
+        "enzyme_ids": {
+          "uniprot": "A0A4P8WAD3",
+          "genpept": "QCS37511.1",
+          "mibig": "BGC0001881"
+        },
+        "enzyme_tailoring": "Methylation",
+        "enzyme_refs": [
+          "doi:10.1021/acs.orglett.9b01344"
+        ]
+      }
+    ]
+  }
+}

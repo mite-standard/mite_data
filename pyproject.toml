@@ -77,7 +77,9 @@ ignore = [
     # multiple ifs
     "SIM102",
     # unnecessary set
-    "C405"
+    "C405",
+    # return simplification
+    "SIM103"
 ]
 
 [tool.pytest.ini_options]
