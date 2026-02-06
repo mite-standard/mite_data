@@ -9,6 +9,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ### Changed
 
+- Separation of data and code
 - Rework of validation functionality
 - Rework of metadata updating functionality
 - Rework of pre-commit logic

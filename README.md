@@ -1,6 +1,11 @@
 mite_extras
 =========
 
+
+# FULL REFACTOR IN PROGRESS - README not up to date
+
+
+
 [![DOI](https://zenodo.org/badge/834042284.svg)](https://zenodo.org/doi/10.5281/zenodo.13294303)
 
 Contents
