@@ -209,7 +209,7 @@ wheels = [
 [[package]]
 name = "mite-data"
 version = "1.23"
-source = { editable = "." }
+source = { virtual = "." }
 dependencies = [
     { name = "biopython" },
     { name = "coloredlogs" },
