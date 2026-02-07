@@ -1,3 +1,4 @@
+from importlib import metadata
 from pathlib import Path
 
 from pydantic import BaseModel, Field
@@ -22,6 +23,10 @@ class Settings(BaseModel):
     @property
     def timeout(self) -> float:
         return 10
+
+    @property
+    def mite_version(self) -> str:
+        return metadata.version("mite_data")
 
 
 settings = Settings()

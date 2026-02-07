@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from src.config.config import Settings
+from mite_data_lib.config.config import Settings
 
 
 @pytest.fixture
@@ -11,4 +11,4 @@ def settings():
 
 
 def test_settings(settings):
-    assert settings.timeout is not None
+    assert settings.mite_version is not None

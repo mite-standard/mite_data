@@ -6,8 +6,8 @@ from pathlib import Path
 
 import requests
 
-from src.config.config import settings
-from src.models.mibig import MIBiGMetadata
+from mite_data_lib.config.config import settings
+from mite_data_lib.models.mibig import MIBiGMetadata
 
 logger = logging.getLogger(__name__)
 
