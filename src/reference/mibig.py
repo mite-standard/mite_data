@@ -30,15 +30,16 @@ class MIBiGDatasetManager:
         self.data = self.path / "mibig_proteins.json"
         self.metadata = self.path / "metadata.json"
 
-    def ensure_exists(self):
+    def load_data(self) -> dict:
+        """Load stored mibig protein information"""
+        self.ensure_data()
+        return self._load_json(self.data)
+
+    def ensure_data(self):
         """Verify that mibig protein information exists"""
         if self._is_valid_data():
             return
         self._download_and_build()
-
-    def load_data(self) -> dict:
-        """Load stored mibig protein information"""
-        return self._load_json(self.data)
 
     def _is_valid_data(self) -> bool:
         if not self._data_exists() or not self._metadata_exists():
