@@ -8,9 +8,10 @@ class Settings(BaseModel):
     """Centralized config"""
 
     data: Path = Field(
-        default_factory=lambda: Path(__file__).parent.parent.joinpath("mite_data")
+        default_factory=lambda: Path(__file__).parent.parent.parent.joinpath(
+            "mite_data"
+        )
     )
-    src: Path = Field(default_factory=lambda: Path(__file__).parent.parent)
 
     @property
     def mibig_version(self) -> str:
