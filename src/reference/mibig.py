@@ -5,16 +5,11 @@ from io import StringIO
 from pathlib import Path
 
 import requests
-from pydantic import BaseModel
 
 from src.config.config import settings
+from src.models.mibig import MIBiGMetadata
 
 logger = logging.getLogger(__name__)
-
-
-class MIBiGMetadata(BaseModel):
-    version: str
-    record: str
 
 
 class MIBiGDatasetManager:
