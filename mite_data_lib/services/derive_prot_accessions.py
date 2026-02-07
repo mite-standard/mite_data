@@ -1,5 +1,6 @@
 import json
 import logging
+import os
 from hashlib import sha256
 from io import StringIO
 from pathlib import Path
@@ -26,18 +27,25 @@ class DeriveProtAccessions:
         self.prot_acc = self.dump / "mite_prot_accessions.csv"
         self.metadata = self.dump / "artifact_metadata.json"
 
-    def update_prot_acc(self, path: Path):
+    def update_from_entry(self, path: Path):
         """Update data for a single entry"""
         self._ensure_prot_acc()
 
         df = self._load_prot_acc()
-        df.set_index("accession", inplace=True)
 
         metadata = self._load_metadata()
+
+        if metadata.version != settings.mite_version:
+            logger.warning(f"MITE version update detected: rebuilding files")
+            self._build()
+            return
+
         if metadata.hash_mite_prot_acc != self._calculate_sha256(df):
-            raise ValueError(
-                f"Hash-based integrity of {self.prot_acc.name} compromised"
+            logger.warning(
+                f"Hash-based integrity of {self.prot_acc.name} compromised: rebuilding files"
             )
+            self._build()
+            return
 
         if not path.exists():
             raise FileNotFoundError(f"Did not find {path.name}")
@@ -52,8 +60,9 @@ class DeriveProtAccessions:
             }
         )
         df_entry.set_index("accession", inplace=True)
-
-        df.update(df_entry)
+        df = pd.concat([df, df_entry])
+        df = df[~df.index.duplicated(keep="last")]
+        df.sort_index(inplace=True)
         metadata.hash_mite_prot_acc = self._calculate_sha256(df)
 
         self._write_prot_acc(df)
@@ -76,7 +85,7 @@ class DeriveProtAccessions:
 
     def _build(self):
         df_dict = {"accession": [], "status": [], "genpept": [], "uniprot": []}
-        for entry in self.data.iterdir():
+        for entry in sorted(self.data.glob("*.json")):
             data = self._parse_entry(entry)
             df_dict["accession"].append(data["accession"])
             df_dict["status"].append(data["status"])
@@ -84,12 +93,13 @@ class DeriveProtAccessions:
             df_dict["uniprot"].append(data["uniprot"])
 
         df = pd.DataFrame(df_dict)
-        df.sort_values(by=["accession"], ascending=True, inplace=True)
         df.set_index("accession", inplace=True)
+        df.sort_index(inplace=True)
 
         try:
             metadata = self._load_metadata()
             metadata.hash_mite_prot_acc = self._calculate_sha256(df)
+            metadata.version = settings.mite_version
         except FileNotFoundError:
             logger.warning("Could not find artifact metadata - build from scratch")
             metadata = ArtifactMetadata(
@@ -116,17 +126,21 @@ class DeriveProtAccessions:
         return sha256(buffer.getvalue().encode("utf-8")).hexdigest()
 
     def _load_prot_acc(self) -> pd.DataFrame:
-        return pd.read_csv(self.prot_acc)
+        return pd.read_csv(self.prot_acc, index_col="accession")
 
     def _write_prot_acc(self, df: pd.DataFrame):
-        df.to_csv(self.prot_acc, index=True, lineterminator="\n")
+        tmp = self.prot_acc.with_suffix(".tmp")
+        df.to_csv(tmp, index=True, lineterminator="\n")
+        tmp.replace(self.prot_acc)
 
     def _load_metadata(self) -> ArtifactMetadata:
         return ArtifactMetadata(**self._load_json(self.metadata))
 
     def _write_metadata(self, data: ArtifactMetadata):
-        with open(self.metadata, "w", encoding="utf-8") as f:
+        tmp = self.metadata.with_suffix(".tmp")
+        with open(tmp, "w", encoding="utf-8") as f:
             f.write(data.model_dump_json())
+        tmp.replace(self.metadata)
 
     @staticmethod
     def _load_json(path: Path) -> dict:
