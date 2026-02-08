@@ -68,17 +68,20 @@ class ProtAccessionService:
         if not path.exists():
             raise FileNotFoundError(f"Did not find {path.name}")
 
-        entry = self._parse_entry(path)
-        df_entry = pd.DataFrame(
+        data = self._parse_entry(path)
+        if not data:
+            raise RuntimeError(f"Entry status is not set to active: {path.name}")
+
+        df_data = pd.DataFrame(
             {
-                "accession": [entry["accession"]],
-                "status": [entry["status"]],
-                "genpept": [entry["genpept"]],
-                "uniprot": [entry["uniprot"]],
+                "accession": [data["accession"]],
+                "status": [data["status"]],
+                "genpept": [data["genpept"]],
+                "uniprot": [data["uniprot"]],
             }
         )
-        df_entry.set_index("accession", inplace=True)
-        df = pd.concat([df, df_entry])
+        df_data.set_index("accession", inplace=True)
+        df = pd.concat([df, df_data])
         df = df[~df.index.duplicated(keep="last")]
         df.sort_index(inplace=True)
         metadata.hash_mite_prot_acc = self._calculate_sha256(df)
@@ -105,6 +108,8 @@ class ProtAccessionService:
         df_dict = {"accession": [], "status": [], "genpept": [], "uniprot": []}
         for entry in sorted(self.data.glob("*.json")):
             data = self._parse_entry(entry)
+            if not data:
+                continue
             df_dict["accession"].append(data["accession"])
             df_dict["status"].append(data["status"])
             df_dict["genpept"].append(data["genpept"])
@@ -128,8 +133,10 @@ class ProtAccessionService:
         self._write_prot_acc(df)
         self._write_metadata(metadata)
 
-    def _parse_entry(self, path: Path) -> dict:
+    def _parse_entry(self, path: Path) -> dict | None:
         data = self._load_json(path)
+        if data["status"] != "active":
+            return
         return {
             "accession": data["accession"],
             "status": data["status"],
