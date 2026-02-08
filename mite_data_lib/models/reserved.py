@@ -41,23 +41,3 @@ class ReserveService:
             raise RuntimeError(
                 f"Invalid formatting of reserved MITE accession file: {self.path}"
             ) from e
-
-
-class ProteinService:
-    """Load existing MITE-associated protein IDs
-
-    Attributes:
-        path: path to file
-    """
-
-    def __init__(self, path: Path | None):
-        self.path = path or settings.data / "metadata/mite_prot_accessions.csv"
-
-    @cached_property
-    def proteins(self) -> pd.DataFrame:
-        try:
-            return pd.read_csv(self.path)
-        except FileNotFoundError as e:
-            raise RuntimeError(
-                f"Could not find MITE protein accession file: {self.path}"
-            ) from e

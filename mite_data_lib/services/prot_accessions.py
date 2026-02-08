@@ -1,6 +1,6 @@
 import json
 import logging
-import os
+from functools import cached_property
 from hashlib import sha256
 from io import StringIO
 from pathlib import Path
@@ -13,19 +13,36 @@ from mite_data_lib.models.metadata import ArtifactMetadata
 logger = logging.getLogger(__name__)
 
 
-class DeriveProtAccessions:
+class ProtAccessionService:
     """Manages mite accession file artifact generation"""
 
     def __init__(
         self,
-        data: Path = settings.data / "data",
-        dump: Path = settings.data / "metadata",
+        data: Path | None = None,
+        dump: Path | None = None,
+        prot_acc: Path | None = None,
+        metadata: Path | None = None,
     ):
-        self.data = data
-        self.dump = dump
+        self.data = data or settings.data / "data"
+        self.dump = dump or settings.data / "metadata"
+        self.prot_acc = prot_acc or self.dump / "mite_prot_accessions.csv"
+        self.metadata = metadata or self.dump / "artifact_metadata.json"
 
-        self.prot_acc = self.dump / "mite_prot_accessions.csv"
-        self.metadata = self.dump / "artifact_metadata.json"
+    @cached_property
+    def proteins(self) -> pd.DataFrame:
+        if not self._prot_acc_exists():
+            raise FileNotFoundError(f"Not found: {self.prot_acc}")
+
+        if not self._metadata_exists():
+            raise FileNotFoundError(f"Not found: {self.metadata}")
+
+        df = self._load_prot_acc()
+        metadata = self._load_metadata()
+
+        if metadata.hash_mite_prot_acc != self._calculate_sha256(df):
+            raise RuntimeError(f"Hash-based integrity compromised: {self.prot_acc}.")
+
+        return df
 
     def update_from_entry(self, path: Path):
         """Update data for a single entry"""
@@ -42,7 +59,8 @@ class DeriveProtAccessions:
 
         if metadata.hash_mite_prot_acc != self._calculate_sha256(df):
             logger.warning(
-                f"Hash-based integrity of {self.prot_acc.name} compromised: rebuilding files"
+                f"Hash-based integrity compromised: {self.prot_acc}. \n"
+                "Rebuilding files"
             )
             self._build()
             return

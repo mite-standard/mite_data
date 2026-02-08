@@ -2,12 +2,12 @@ from pathlib import Path
 
 import pytest
 
-from mite_data_lib.services.derive_prot_accessions import DeriveProtAccessions
+from mite_data_lib.services.prot_accessions import ProtAccessionService
 
 
 @pytest.fixture
 def prot_acc_model():
-    return DeriveProtAccessions(
+    return ProtAccessionService(
         data=Path("tests/dummy_data/data"),
         dump=Path("tests/dummy_data/metadata"),
     )
@@ -18,3 +18,16 @@ def test_update_prot_acc(prot_acc_model):
         prot_acc_model.update_from_entry(Path("tests/dummy_data/data/MITE0000000.json"))
         is None
     )
+
+
+def test_proteins_valid(prot_acc_model):
+    assert prot_acc_model.proteins is not None
+
+
+def test_proteins_invalid():
+    m = ProtAccessionService(
+        prot_acc=Path("tests/dummy_data/metadata/mite_prot_accessions.csv"),
+        metadata=Path("tests/dummy_data/metadata/invalid.json"),
+    )
+    with pytest.raises(RuntimeError):
+        assert m.proteins
