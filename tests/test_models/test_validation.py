@@ -1,6 +1,5 @@
 from pathlib import Path
 
-from pydantic import ValidationError
 import pytest
 
 from mite_data_lib.models.validation import ReserveService
@@ -12,6 +11,6 @@ def test_reserve_service_valid():
 
 
 def test_reserve_service_invalid():
+    m = ReserveService(path=Path("tests/dummy_data/reserved/invalid.json"))
     with pytest.raises(RuntimeError):
-        m = ReserveService(path=Path("tests/dummy_data/reserved/invalid.json"))
         assert m.reserved

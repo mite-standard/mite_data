@@ -34,5 +34,9 @@ class Settings(BaseModel):
     def mite_pattern(self) -> re.Pattern:
         return re.compile(r"^MITE(\d{7})$")
 
+    @property
+    def mibig_pattern(self) -> re.Pattern:
+        return re.compile(r"^BGC(\d{7})$")
+
 
 settings = Settings()
