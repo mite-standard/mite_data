@@ -4,6 +4,7 @@ from functools import cached_property
 from pathlib import Path
 from typing import Annotated
 
+import pandas as pd
 from pydantic import BaseModel, Field, TypeAdapter, ValidationError
 
 from mite_data_lib.config.config import settings
@@ -39,4 +40,24 @@ class ReserveService:
         except ValidationError as e:
             raise RuntimeError(
                 f"Invalid formatting of reserved MITE accession file: {self.path}"
+            ) from e
+
+
+class ProteinService:
+    """Load existing MITE-associated protein IDs
+
+    Attributes:
+        path: path to file
+    """
+
+    def __init__(self, path: Path | None):
+        self.path = path or settings.data / "metadata/mite_prot_accessions.csv"
+
+    @cached_property
+    def proteins(self) -> pd.DataFrame:
+        try:
+            return pd.read_csv(self.path)
+        except FileNotFoundError as e:
+            raise RuntimeError(
+                f"Could not find MITE protein accession file: {self.path}"
             ) from e
