@@ -1,3 +1,4 @@
+import re
 from importlib import metadata
 from pathlib import Path
 
@@ -28,6 +29,10 @@ class Settings(BaseModel):
     @property
     def mite_version(self) -> str:
         return metadata.version("mite_data")
+
+    @property
+    def mite_pattern(self) -> re.Pattern:
+        return re.compile(r"^MITE(\d{7})$")
 
 
 settings = Settings()

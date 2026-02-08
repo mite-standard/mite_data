@@ -87,7 +87,9 @@ ignore = [
     # unnecessary set
     "C405",
     # return simplification
-    "SIM103"
+    "SIM103",
+    # I like using dict calls
+    "C408"
 ]
 
 [tool.pytest.ini_options]
