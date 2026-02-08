@@ -14,6 +14,7 @@ def entry_valid_runner():
 
 def test_entry_valid(entry_valid_runner):
     e, w = entry_valid_runner.run(data_path / "MITE0000000.json")
+    assert not all([e, w])
 
 
 def test_load_validate_invalid_file(entry_valid_runner):

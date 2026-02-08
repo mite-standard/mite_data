@@ -10,5 +10,5 @@ def naming(
     e = []
     w = []
     if not re.fullmatch(pattern=pattern, string=path.stem):
-        e.append(f"Does not follow naming convention")
+        e.append(f"Does not follow naming convention: {path.stem}.")
     return e, w

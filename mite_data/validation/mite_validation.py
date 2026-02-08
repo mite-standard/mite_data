@@ -234,17 +234,6 @@ class CicdManager(BaseModel):
         if len(self.errors) != 0:
             raise RuntimeError("\n".join(self.errors))
 
-    def check_status(self: Self, data: dict) -> None:
-        """Verify that entry does not have the status tag 'pending'
-
-        Argument:
-            data: the mite entry data
-        """
-        if data["status"] == "pending":
-            self.errors.append(
-                f"Entry '{data["accession"]}' has the status flag 'pending'. This must be set to 'active' before release."
-            )
-
     def check_accession(self, data: dict) -> None:
         """Verify that entry does not have the internally used MITE ID MITE9999999
 
