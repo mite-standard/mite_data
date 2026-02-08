@@ -7,7 +7,7 @@ from mite_schema import SchemaManager
 from mite_data_lib.rules import data_rules, repo_rules
 
 RULES_REPO = [
-    # TODO
+    "naming",
 ]
 
 RULES_DATA = [
@@ -26,7 +26,7 @@ class EntryValidRunner:
         data = self._load_and_validate_schema(path)
 
         for rule in RULES_REPO:
-            e, w = getattr(repo_rules, rule)(data)
+            e, w = getattr(repo_rules, rule)(path)
             self.errors.extend(e)
             self.warnings.extend(w)
 

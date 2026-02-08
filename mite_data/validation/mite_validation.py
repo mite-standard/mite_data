@@ -166,42 +166,6 @@ class CicdManager(BaseModel):
     uniprot: dict = {}
     reserved: list = []
 
-    @model_validator(mode="after")
-    def fill_accessions(self):
-        """Pull out all accession files"""
-        for entry in self.src.iterdir():
-            with open(entry) as infile:
-                data = json.load(infile)
-            if data["status"] != "active":
-                continue
-
-            if acc := data["enzyme"]["databaseIds"].get("genpept", None):
-                if acc in self.genpept:
-                    self.genpept[acc].append(data["accession"])
-                else:
-                    self.genpept[acc] = [data["accession"]]
-
-            if acc := data["enzyme"]["databaseIds"].get("uniprot", None):
-                if acc in self.uniprot:
-                    self.uniprot[acc].append(data["accession"])
-                else:
-                    self.uniprot[acc] = [data["accession"]]
-        return self
-
-    @model_validator(mode="after")
-    def get_reserved(self):
-        with open(self.reserved_path) as infile:
-            data = json.load(infile)
-        if data.get("reserved"):
-            self.reserved = [i[0] for i in data.get("reserved")]
-        return self
-
-    @model_validator(mode="after")
-    def get_mibig_proteins(self):
-        with open(self.mibig) as infile:
-            self.mibig_proteins = json.load(infile)
-        return self
-
     def run_file(self: Self, path: str) -> None:
         """Run a single file against validation functions
 
@@ -358,22 +322,6 @@ class CicdManager(BaseModel):
             self.errors.append(
                 f"{data["accession"]}: database IDs '{ids}' do not match accession in {data["accession"]}.fasta '{accession}'. \n"
                 "Please check if the IDs were updated but the fasta file not."
-            )
-
-    def validate_entries_passing(self: Self, data: dict) -> None:
-        """Check if MITE entries pass automated validation checks of mite_extras
-
-        Argument:
-            data: the mite entry data
-        """
-        try:
-            parser = MiteParser()
-            parser.parse_mite_json(data=data)
-            schema_manager = SchemaManager()
-            schema_manager.validate_mite(instance=parser.to_json())
-        except Exception as e:
-            self.errors.append(
-                f"Error: entry {data["accession"]} failed validation ({e})."
             )
 
     def validate_db_ids(self: Self, data: dict) -> None:

@@ -12,11 +12,8 @@ def entry_valid_runner():
     return EntryValidRunner()
 
 
-def test_load_validate_valid(entry_valid_runner):
-    assert (
-        entry_valid_runner._load_and_validate_schema(data_path / "MITE0000000.json")
-        is not None
-    )
+def test_entry_valid(entry_valid_runner):
+    e, w = entry_valid_runner.run(data_path / "MITE0000000.json")
 
 
 def test_load_validate_invalid_file(entry_valid_runner):
