@@ -24,7 +24,7 @@ class MIBiGProtData(BaseModel):
     """Holds MIBiG protein information"""
 
     model_config = dict(extra="forbid", frozen=True)
-    proteins: list[str]
+    proteins: tuple[str]
 
 
 MIBiGDataAdapter = TypeAdapter(
