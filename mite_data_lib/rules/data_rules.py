@@ -1,4 +1,4 @@
-from mite_data_lib.models.validation import ReserveService
+from mite_data_lib.models.reserved import ReserveService
 
 
 def status(data: dict) -> tuple[list[str], list[str]]:
@@ -18,7 +18,7 @@ def accession(data: dict) -> tuple[list[str], list[str]]:
     return e, w
 
 
-# not already in protein accessions/duplicate (error
+# TODO: not already in protein accessions/duplicate (error
 # db ids are matching (warning
 # mibig check
 # rhea check

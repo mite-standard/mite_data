@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from mite_data_lib.models.validation import ReserveService, ProteinService
+from mite_data_lib.models.reserved import ReserveService, ProteinService
 
 
 def test_reserve_service_valid():
