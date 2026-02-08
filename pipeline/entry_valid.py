@@ -10,7 +10,9 @@ RULES_REPO = [
     "naming",
 ]
 
-RULES_DATA = ["status"]
+RULES_DATA = [
+    "status",
+]
 
 
 class EntryValidRunner:
