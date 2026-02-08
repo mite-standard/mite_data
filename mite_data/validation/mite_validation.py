@@ -178,14 +178,6 @@ class CicdManager(BaseModel):
             FileNotFoundError: mite file or mite fasta file not found
             RuntimeError: one or more errors with files detected
         """
-        path = Path(path)
-        if not path.exists():
-            raise FileNotFoundError(f"Could not find file '{path}'")
-
-        self.check_file_naming(path)
-
-        with open(path) as infile:
-            data = json.load(infile)
 
         self.check_status(data=data)
         self.check_accession(data=data)
@@ -241,18 +233,6 @@ class CicdManager(BaseModel):
 
         if len(self.errors) != 0:
             raise RuntimeError("\n".join(self.errors))
-
-    def check_file_naming(self: Self, path: Path) -> None:
-        """Check if follows naming
-
-
-        Args:
-            path: a Path object pointing to file
-        """
-        if not path.name.startswith("MITE") or path.suffix != ".json":
-            self.errors.append(
-                f"File '{path.name}' does not follow naming convention 'MITEnnnnnnn.json'."
-            )
 
     def check_status(self: Self, data: dict) -> None:
         """Verify that entry does not have the status tag 'pending'
