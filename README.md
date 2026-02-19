@@ -26,7 +26,7 @@ These enzymes play crucial roles in the biosynthesis of secondary or specialized
 This repository contains the **single source of truth** of the Minimum Information about a Tailoring Enzyme (MITE) database.
 
 For more information, visit the [MITE Data Standard Organization page](https://github.com/mite-standard) or read our [publication]( https://doi.org/10.1093/nar/gkaf969).
-
+q
 ### MITE Accession Reservation
 
 You can reserve MITE Accession IDs for your to-be-published manuscript. Please read more about it in [this discussion](https://github.com/orgs/mite-standard/discussions/7).

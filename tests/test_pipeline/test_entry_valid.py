@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from pipeline.entry_valid import EntryValidRunner
+from pipeline.entry_valid import EntryValidRunner, main
 
 data_path = Path("tests/dummy_data/data/")
 
@@ -12,8 +12,8 @@ def entry_valid_runner():
     return EntryValidRunner()
 
 
-def test_entry_valid(entry_valid_runner):
-    e, w = entry_valid_runner.run(data_path / "MITE0000000.json")
+def test_entry_valid(entry_valid_runner, ctx):
+    e, w = entry_valid_runner.run(path=data_path / "MITE0000000.json", ctx=ctx)
     assert not all([e, w])
 
 
@@ -25,3 +25,8 @@ def test_load_validate_invalid_file(entry_valid_runner):
 def test_load_validate_invalid_json(entry_valid_runner):
     with pytest.raises(RuntimeError):
         entry_valid_runner._load_and_validate_schema(data_path / "invalid.json")
+
+
+def test_main_valid(ctx):
+    with pytest.raises(RuntimeError):
+        main(entries=[str(data_path / "MITE0000000.json")], ctx=ctx)

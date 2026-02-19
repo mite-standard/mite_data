@@ -2,6 +2,7 @@ import re
 from pathlib import Path
 
 from mite_data_lib.config.config import settings
+from mite_data_lib.models.validation import ValidationIssue
 
 
 def naming(

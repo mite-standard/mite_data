@@ -123,6 +123,9 @@ express Statement of Purpose.
     this CC0 or use of the Work.
 """
 
+
+# TODO: remove file
+
 import json
 from pathlib import Path
 from sys import argv
@@ -233,17 +236,6 @@ class CicdManager(BaseModel):
 
         if len(self.errors) != 0:
             raise RuntimeError("\n".join(self.errors))
-
-    def check_accession(self, data: dict) -> None:
-        """Verify that entry does not have the internally used MITE ID MITE9999999
-
-        Argument:
-            data: the mite entry data
-        """
-        if data["accession"] in self.reserved:
-            self.errors.append(
-                f"The MITE accession '{data["accession"]}' is already reserved. Please change this to another accession number."
-            )
 
     def check_duplicates(self: Self, data: dict) -> None:
         """Check if multiple MITE entries describe the same enzyme using GenPept/UniProt IDs

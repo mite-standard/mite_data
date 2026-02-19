@@ -12,6 +12,9 @@ from mite_data_lib.models.metadata import ArtifactMetadata
 
 logger = logging.getLogger(__name__)
 
+path_prot_acc = settings.data / "metadata/mite_prot_accessions.csv"
+path_metadata = settings.data / "metadata/artifact_metadata.json"
+
 
 class ProtAccessionService:
     """Manages mite accession file artifact generation"""
@@ -25,8 +28,8 @@ class ProtAccessionService:
     ):
         self.data = data or settings.data / "data"
         self.dump = dump or settings.data / "metadata"
-        self.prot_acc = prot_acc or self.dump / "mite_prot_accessions.csv"
-        self.metadata = metadata or self.dump / "artifact_metadata.json"
+        self.prot_acc = prot_acc or path_prot_acc
+        self.metadata = metadata or path_metadata
 
     @cached_property
     def proteins(self) -> pd.DataFrame:
