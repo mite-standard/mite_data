@@ -2,6 +2,7 @@ import json
 import logging
 import shutil
 from functools import cached_property
+from hashlib import sha256
 from io import StringIO
 from pathlib import Path
 
@@ -41,7 +42,7 @@ class MIBiGDataService:
         """
         if not self._is_valid_data:
             raise RuntimeError(
-                "MIBiG data does not exist or does not match expected version"
+                "MIBiG data does not exist, does not match expected version, or does not result in expected hash. Consider re-generating the artifact."
             )
 
         try:
@@ -60,7 +61,7 @@ class MIBiGDataService:
             )
             return
         logger.info(
-            f"MIBiG data not available or not in the specified version {self.version} - start download"
+            f"MIBiG data not available, not in the expected {self.version}, or shows compromised hash - start download"
         )
         self._download_and_build()
 
@@ -68,8 +69,12 @@ class MIBiGDataService:
         if not self._data_exists() or not self._metadata_exists():
             return False
 
+        data = self._load_json(self.data)
         metadata = self._load_metadata()
+
         if metadata.version != self.version:
+            return False
+        if metadata.hash != self._calculate_sha256(data):
             return False
 
         return True
@@ -82,6 +87,11 @@ class MIBiGDataService:
 
     def _load_metadata(self) -> MIBiGMetadata:
         return MIBiGMetadata(**self._load_json(self.metadata))
+
+    @staticmethod
+    def _calculate_sha256(data: dict) -> str:
+        json_str = json.dumps(data, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+        return sha256(json_str.encode("utf-8")).hexdigest()
 
     def _download_and_build(self):
         """Overwrites if new version is specified"""
@@ -103,10 +113,11 @@ class MIBiGDataService:
                     f"Mismatch between pinned version {self.version} and downloaded version {version}. Is the record link correct?"
                 )
 
-            self._write_json(path=tmp_data, data=self._download_data(metadata))
+            data = self._download_data(metadata)
+            self._write_json(path=tmp_data, data=data)
 
             self._write_json(
-                path=tmp_metadata, data={"version": version, "record": self.record}
+                path=tmp_metadata, data={"version": version, "record": self.record, "hash": self._calculate_sha256(data)}
             )
 
             if self.path.exists():

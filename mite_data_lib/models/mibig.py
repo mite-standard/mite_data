@@ -11,10 +11,12 @@ class MIBiGMetadata(BaseModel):
     Attributes:
         version: MIBiG semantic versioning
         record: URL to Zenodo record of version
+        hash: a sha_256 hash to verify integrity
     """
 
     version: str
     record: str
+    hash: str
 
 
 class MIBiGProtData(BaseModel):
