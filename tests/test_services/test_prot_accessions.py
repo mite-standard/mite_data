@@ -10,6 +10,8 @@ def prot_acc_model():
     return ProtAccessionService(
         data=Path("tests/dummy_data/data"),
         dump=Path("tests/dummy_data/metadata"),
+        metadata=Path("tests/dummy_data/metadata/artifact_metadata.json"),
+        prot_acc=Path("tests/dummy_data/metadata/mite_prot_accessions.csv"),
     )
 
 
