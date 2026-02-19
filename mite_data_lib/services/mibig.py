@@ -1,44 +1,67 @@
 import json
 import logging
 import shutil
+from functools import cached_property
 from io import StringIO
 from pathlib import Path
 
 import requests
+from pydantic import ValidationError
 
 from mite_data_lib.config.config import settings
-from mite_data_lib.models.mibig import MIBiGMetadata
+from mite_data_lib.models.mibig import MIBiGDataAdapter, MIBiGMetadata
 
 logger = logging.getLogger(__name__)
 
 
-class MIBiGDatasetManager:
+class MIBiGDataService:
     """Manages MIBiG reference dataset"""
 
     def __init__(
         self,
-        version: str = settings.mibig_version,
-        record: str = settings.mibig_record,
-        path: Path = settings.data / "mibig",
-        timeout: float = settings.timeout,
+        version: str | None = None,
+        record: str | None = None,
+        path: Path | None = None,
+        timeout: float | None = None,
     ):
-        self.version = version
-        self.record = record
-        self.path = path
-        self.timeout = timeout
+        self.version = version or settings.mibig_version
+        self.record = record or settings.mibig_record
+        self.path = path or settings.data / "mibig"
+        self.timeout = timeout or settings.timeout
 
         self.data = self.path / "mibig_proteins.json"
         self.metadata = self.path / "metadata.json"
 
-    def load_data(self) -> dict:
-        """Load stored mibig protein information"""
-        self.ensure_data()
-        return self._load_json(self.data)
+    @cached_property
+    def mibig_proteins(self) -> dict:
+        """Load stored mibig protein information
 
-    def ensure_data(self):
+        :raise:
+            RuntimeError: mibig data not found
+        """
+        if not self._is_valid_data:
+            raise RuntimeError(
+                "MIBiG data does not exist or does not match expected version"
+            )
+
+        try:
+            raw = self._load_json(self.data)
+            return MIBiGDataAdapter.validate_python(raw)
+        except ValidationError as e:
+            raise RuntimeError(
+                f"Invalid formatting of MIBIG proteins file: {self.path}"
+            ) from e
+
+    def build_artifacts(self):
         """Verify that mibig protein information exists"""
         if self._is_valid_data():
+            logger.info(
+                f"MIBiG data already exists in the specified version {self.version} - skip download"
+            )
             return
+        logger.info(
+            f"MIBiG data not available or not in the specified version {self.version} - start download"
+        )
         self._download_and_build()
 
     def _is_valid_data(self) -> bool:

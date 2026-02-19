@@ -6,6 +6,12 @@ mite_extras
 
 
 
+
+
+manual download of mibig data: `uv run python pipeline/mibig_download.py`
+
+
+
 [![DOI](https://zenodo.org/badge/834042284.svg)](https://zenodo.org/doi/10.5281/zenodo.13294303)
 
 Contents

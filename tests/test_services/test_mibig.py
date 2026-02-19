@@ -2,15 +2,15 @@ from pathlib import Path
 
 import pytest
 
-from mite_data_lib.models.mibig import MIBiGProtService
+from mite_data_lib.services.mibig import MIBiGDataService
 
 
 def test_mibig_prot_valid():
-    m = MIBiGProtService(path=Path("tests/dummy_data/mibig/valid.json"))
+    m = MIBiGDataService(path=Path("tests/dummy_data/mibig_valid/"), version="4.0.1")
     assert m.mibig_proteins.get("BGC0000001") is not None
 
 
 def test_mibig_prot_invalid():
-    m = MIBiGProtService(path=Path("tests/dummy_data/mibig/invalid.json"))
+    m = MIBiGDataService(path=Path("tests/dummy_data/mibig_invalid"))
     with pytest.raises(RuntimeError):
         assert m.mibig_proteins

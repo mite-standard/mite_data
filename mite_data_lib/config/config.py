@@ -23,6 +23,10 @@ class Settings(BaseModel):
         return "https://zenodo.org/api/records/13367755"  # version 4.0.1
 
     @property
+    def mibig_pattern(self) -> re.Pattern:
+        return re.compile(r"^BGC(\d{7})$")
+
+    @property
     def timeout(self) -> float:
         return 10
 
@@ -33,10 +37,6 @@ class Settings(BaseModel):
     @property
     def mite_pattern(self) -> re.Pattern:
         return re.compile(r"^MITE(\d{7})$")
-
-    @property
-    def mibig_pattern(self) -> re.Pattern:
-        return re.compile(r"^BGC(\d{7})$")
 
 
 settings = Settings()
