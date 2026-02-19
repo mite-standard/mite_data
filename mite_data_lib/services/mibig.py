@@ -90,7 +90,9 @@ class MIBiGDataService:
 
     @staticmethod
     def _calculate_sha256(data: dict) -> str:
-        json_str = json.dumps(data, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+        json_str = json.dumps(
+            data, ensure_ascii=False, sort_keys=True, separators=(",", ":")
+        )
         return sha256(json_str.encode("utf-8")).hexdigest()
 
     def _download_and_build(self):
