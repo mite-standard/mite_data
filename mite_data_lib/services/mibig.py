@@ -152,7 +152,7 @@ class MIBiGDataService:
                 else:
                     mibig_prot[mibig] = set([genbank])
 
-        return {key: list(val) for key, val in sorted(mibig_prot.items())}
+        return {key: sorted(val) for key, val in sorted(mibig_prot.items())}
 
     @staticmethod
     def _write_json(path: Path, data: dict):
