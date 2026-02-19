@@ -7,7 +7,6 @@ from mite_extras import MiteParser
 from mite_schema import SchemaManager
 
 from mite_data_lib.config.logging import setup_logger
-from mite_data_lib.models.reserved import ReserveService
 from mite_data_lib.models.validation import (
     DataRule,
     RepoRule,
@@ -16,6 +15,7 @@ from mite_data_lib.models.validation import (
 )
 from mite_data_lib.rules import data_rules, repo_rules
 from mite_data_lib.services.prot_accessions import ProtAccessionService
+from mite_data_lib.services.reserved import ReserveService
 
 logger = logging.getLogger(__name__)
 

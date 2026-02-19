@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from mite_data_lib.models.reserved import ReserveService
+from mite_data_lib.services.reserved import ReserveService
 
 
 def test_reserve_service_valid():

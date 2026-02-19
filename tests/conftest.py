@@ -3,7 +3,7 @@ from pathlib import Path
 import pytest
 
 from mite_data_lib.models.validation import ValidationContext
-from mite_data_lib.models.reserved import ReserveService
+from mite_data_lib.services.reserved import ReserveService
 from mite_data_lib.services.prot_accessions import ProtAccessionService
 
 
