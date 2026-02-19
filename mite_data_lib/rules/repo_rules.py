@@ -6,10 +6,16 @@ from mite_data_lib.models.validation import ValidationIssue
 
 
 def naming(
-    path: Path, pattern: None | re.Pattern = settings.mite_pattern
-) -> tuple[list[str], list[str]]:
+    path: Path,
+) -> tuple[list[ValidationIssue], list[ValidationIssue]]:
     e = []
     w = []
-    if not re.fullmatch(pattern=pattern, string=path.stem):
-        e.append(f"Does not follow naming convention: {path.stem}.")
+    if not re.fullmatch(pattern=settings.mite_pattern, string=path.stem):
+        e.append(
+            ValidationIssue(
+                severity="error",
+                location=str(path),
+                message=f"Does not follow naming convention.",
+            )
+        )
     return e, w

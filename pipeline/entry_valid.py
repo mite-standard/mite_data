@@ -7,13 +7,18 @@ from mite_extras import MiteParser
 from mite_schema import SchemaManager
 
 from mite_data_lib.models.reserved import ReserveService
-from mite_data_lib.models.validation import DataRule, ValidationContext, ValidationIssue
+from mite_data_lib.models.validation import (
+    DataRule,
+    RepoRule,
+    ValidationContext,
+    ValidationIssue,
+)
 from mite_data_lib.rules import data_rules, repo_rules
 from mite_data_lib.services.prot_accessions import ProtAccessionService
 
 logger = logging.getLogger(__name__)
 
-REPO_RULES = [
+REPO_RULES: list[RepoRule] = [
     repo_rules.naming,
 ]
 

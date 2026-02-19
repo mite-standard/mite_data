@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Literal, Protocol
 
 import pandas as pd
@@ -21,6 +22,13 @@ class ValidationIssue:
     severity: Literal["error", "warning"]
     message: str
     location: str | None
+
+
+class RepoRule(Protocol):
+    def __call__(
+        self,
+        path: Path,
+    ) -> tuple[list[ValidationIssue], list[ValidationIssue]]: ...
 
 
 class DataRule(Protocol):
