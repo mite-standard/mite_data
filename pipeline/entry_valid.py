@@ -6,6 +6,7 @@ from pathlib import Path
 from mite_extras import MiteParser
 from mite_schema import SchemaManager
 
+from mite_data_lib.config.logging import setup_logger
 from mite_data_lib.models.reserved import ReserveService
 from mite_data_lib.models.validation import (
     DataRule,
@@ -115,6 +116,7 @@ def main(
 
 
 if __name__ == "__main__":
+    setup_logger()
     try:
         main(
             entries=sys.argv[1:],
