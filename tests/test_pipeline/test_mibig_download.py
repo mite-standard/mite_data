@@ -1,9 +1,12 @@
 from pathlib import Path
 
+import pytest
+
 from mite_data_lib.services.mibig import MIBiGDataService
 from pipeline.mibig_download import main
 
 
+@pytest.mark.download
 def test_mibig_main_valid():
     assert (
         main(
