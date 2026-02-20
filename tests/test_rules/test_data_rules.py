@@ -74,3 +74,21 @@ def test_uniprot_exists_invalid(ctx):
     }
     e, w = data_rules.uniprot_exists(data=d, ctx=ctx)
     assert e
+
+
+def test_genpept_exists_valid(ctx):
+    d = {
+        "accession": "MITE1234567",
+        "enzyme": {"databaseIds": {"genpept": "AAK83184.1"}},
+    }
+    e, w = data_rules.genpept_exists(data=d, ctx=ctx)
+    assert not e
+
+
+def test_genpept_exists_invalid(ctx):
+    d = {
+        "accession": "MITE1234567",
+        "enzyme": {"databaseIds": {"genpept": "nonexisting"}},
+    }
+    e, w = data_rules.genpept_exists(data=d, ctx=ctx)
+    assert e

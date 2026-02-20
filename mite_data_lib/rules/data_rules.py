@@ -110,6 +110,24 @@ def genpept_exists(
     data: dict, ctx: ValidationContext
 ) -> tuple[list[ValidationIssue], list[ValidationIssue]]:
     """Uniprot ID can be found in Uniprot repo"""
+    e = []
+    w = []
+    if genpept := data["enzyme"]["databaseIds"].get("genpept"):
+        r = requests.head(
+            url=f"https://www.ncbi.nlm.nih.gov/protein/{genpept}",
+            timeout=settings.timeout,
+            allow_redirects=False,
+        )
+        if r.status_code != 200:
+            e.append(
+                ValidationIssue(
+                    severity="error",
+                    location=data["accession"],
+                    message=f"NCBI Genpept accession '{genpept}' not found on NCBI server",
+                )
+            )
+
+    return e, w
 
 
 def wikidata_exists(

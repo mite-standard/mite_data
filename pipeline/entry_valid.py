@@ -29,6 +29,7 @@ DATA_RULES: list[DataRule] = [
     data_rules.duplicate_genpept,
     data_rules.duplicate_uniprot,
     data_rules.uniprot_exists,
+    data_rules.genpept_exists,
 ]
 
 
