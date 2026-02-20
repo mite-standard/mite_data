@@ -138,3 +138,21 @@ def test_id_matching_invalid(ctx):
     }
     e, w = data_rules.ids_matching(data=d, ctx=ctx)
     assert e
+
+
+def test_mibig_exists_valid(ctx):
+    d = {
+        "accession": "MITE1234567",
+        "enzyme": {"databaseIds": {"mibig": "BGC0000001"}},
+    }
+    e, w = data_rules.mibig_exists(data=d, ctx=ctx)
+    assert not e
+
+
+def test_mibig_exists_invalid(ctx):
+    d = {
+        "accession": "MITE1234567",
+        "enzyme": {"databaseIds": {"mibig": "BGC0000000"}},
+    }
+    e, w = data_rules.mibig_exists(data=d, ctx=ctx)
+    assert e

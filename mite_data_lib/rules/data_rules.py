@@ -177,11 +177,30 @@ def wikidata_exists(
     return e, w
 
 
+def mibig_exists(
+    data: dict, ctx: ValidationContext
+) -> tuple[list[ValidationIssue], list[ValidationIssue]]:
+    """MIBiG ID valid (mite protein found in protein list)"""
+    e = []
+    w = []
+
+    if mibig := data["enzyme"]["databaseIds"].get("mibig"):
+        if mibig not in ctx.mibig_proteins:
+            e.append(
+                ValidationIssue(
+                    severity="error",
+                    location=data["accession"],
+                    message=f"MIBIG ID '{mibig}' does not exist in MIBiG v {settings.mibig_version}",
+                )
+            )
+
+    return e, w
+
+
 def ids_matching(
     data: dict, ctx: ValidationContext
 ) -> tuple[list[ValidationIssue], list[ValidationIssue]]:
     """Uniprot ID and Genpept ID point to identical protein sequence"""
-
     e = []
     w = []
 
@@ -201,10 +220,12 @@ def ids_matching(
     return e, w
 
 
-def check_mibig(
+def check_mibig_protein(
     data: dict, ctx: ValidationContext
 ) -> tuple[list[ValidationIssue], list[ValidationIssue]]:
     """MIBiG ID valid (mite protein found in protein list)"""
+    e = []
+    w = []
 
 
 def check_rhea(

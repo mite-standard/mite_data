@@ -14,6 +14,7 @@ class ValidationContext:
 
     reserved: dict[str, ReserveData]
     proteins: pd.DataFrame
+    mibig_proteins: dict[str, list[str]]
     seq_service: SequenceService
 
 

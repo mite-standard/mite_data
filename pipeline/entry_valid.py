@@ -14,6 +14,7 @@ from mite_data_lib.models.validation import (
     ValidationIssue,
 )
 from mite_data_lib.rules import data_rules, repo_rules
+from mite_data_lib.services.mibig import MIBiGDataService
 from mite_data_lib.services.prot_accessions import ProtAccessionService
 from mite_data_lib.services.reserved import ReserveService
 from mite_data_lib.services.sequence import SequenceService
@@ -32,6 +33,7 @@ DATA_RULES: list[DataRule] = [
     data_rules.uniprot_exists,
     data_rules.genpept_exists,
     data_rules.wikidata_exists,
+    data_rules.mibig_exists,
     data_rules.ids_matching,
 ]
 
@@ -128,6 +130,7 @@ if __name__ == "__main__":
             ctx=ValidationContext(
                 reserved=ReserveService().reserved,
                 proteins=ProtAccessionService().proteins,
+                mibig_proteins=MIBiGDataService().mibig_proteins,
                 seq_service=SequenceService(),
             ),
         )

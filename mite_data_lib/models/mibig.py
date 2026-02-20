@@ -19,13 +19,6 @@ class MIBiGMetadata(BaseModel):
     hash: str
 
 
-class MIBiGProtData(BaseModel):
-    """Holds MIBiG protein information"""
-
-    model_config = dict(extra="forbid", frozen=True)
-    proteins: tuple[str]
-
-
 MIBiGDataAdapter = TypeAdapter(
     dict[Annotated[str, Field(pattern=settings.mibig_pattern)], list[str]]
 )

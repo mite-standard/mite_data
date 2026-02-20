@@ -6,6 +6,7 @@ from mite_data_lib.models.validation import ValidationContext
 from mite_data_lib.services.reserved import ReserveService
 from mite_data_lib.services.prot_accessions import ProtAccessionService
 from mite_data_lib.services.sequence import SequenceService
+from mite_data_lib.services.mibig import MIBiGDataService
 
 
 def pytest_addoption(parser):
@@ -41,4 +42,8 @@ def ctx():
             metadata=Path("tests/dummy_data/metadata/artifact_metadata.json"),
         ).proteins,
         seq_service=SequenceService(fasta=Path("tests/dummy_data/fasta")),
+        mibig_proteins=MIBiGDataService(
+            version="4.0.1",
+            path=Path("tests/dummy_data/mibig_valid"),
+        ).mibig_proteins,
     )
