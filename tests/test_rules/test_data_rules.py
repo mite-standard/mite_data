@@ -56,3 +56,21 @@ def test_duplicate_uniprot_invalid(ctx):
     }
     e, w = data_rules.duplicate_uniprot(data=d, ctx=ctx)
     assert not e
+
+
+def test_uniprot_exists_valid(ctx):
+    d = {
+        "accession": "MITE1234567",
+        "enzyme": {"databaseIds": {"uniprot": "Q93KW1"}},
+    }
+    e, w = data_rules.uniprot_exists(data=d, ctx=ctx)
+    assert not e
+
+
+def test_uniprot_exists_invalid(ctx):
+    d = {
+        "accession": "MITE1234567",
+        "enzyme": {"databaseIds": {"uniprot": "nonexisting"}},
+    }
+    e, w = data_rules.uniprot_exists(data=d, ctx=ctx)
+    assert e

@@ -1,3 +1,6 @@
+import requests
+
+from mite_data_lib.config.config import settings
 from mite_data_lib.models.validation import ValidationContext, ValidationIssue
 
 
@@ -30,7 +33,7 @@ def reserved(
                 ValidationIssue(
                     severity="error",
                     location=data["accession"],
-                    message=f"Accession {key} already reserved by {val.by} on {val.date}.",
+                    message=f"Accession '{key}' already reserved by {val.by} on {val.date}.",
                 )
             )
     return e, w
@@ -51,7 +54,7 @@ def duplicate_genpept(
                     ValidationIssue(
                         severity="error",
                         location=data["accession"],
-                        message=f"Genpept accession {row['genpept']!s} already specified in {i!s}",
+                        message=f"Genpept accession '{row['genpept']!s}' already specified in {i!s}",
                     )
                 )
     return e, w
@@ -72,13 +75,67 @@ def duplicate_uniprot(
                     ValidationIssue(
                         severity="error",
                         location=data["accession"],
-                        message=f"UniProt accession {row['uniprot']!s} already specified in {i!s}",
+                        message=f"UniProt accession '{row['uniprot']!s}' already specified in {i!s}",
                     )
                 )
     return e, w
 
 
-# TODO: not already in protein accessions/duplicate (error
+def uniprot_exists(
+    data: dict, ctx: ValidationContext
+) -> tuple[list[ValidationIssue], list[ValidationIssue]]:
+    """Uniprot ID can be found in Uniprot repo"""
+    e = []
+    w = []
+    if uniprot := data["enzyme"]["databaseIds"].get("uniprot"):
+        if uniprot.startswith("UPI"):
+            url = f"https://rest.uniprot.org/uniparc/{uniprot}.fasta"
+        else:
+            url = f"https://rest.uniprot.org/uniprotkb/{uniprot}.fasta"
+        r = requests.head(url=url, timeout=settings.timeout, allow_redirects=True)
+
+        if r.status_code != 200:
+            e.append(
+                ValidationIssue(
+                    severity="error",
+                    location=data["accession"],
+                    message=f"UniProt accession '{uniprot}' not found on Uniprot server",
+                )
+            )
+
+    return e, w
+
+
+def genpept_exists(
+    data: dict, ctx: ValidationContext
+) -> tuple[list[ValidationIssue], list[ValidationIssue]]:
+    """Uniprot ID can be found in Uniprot repo"""
+
+
+def wikidata_exists(
+    data: dict, ctx: ValidationContext
+) -> tuple[list[ValidationIssue], list[ValidationIssue]]:
+    """Wikidata ID can be found in Wikidata"""
+
+
+def ids_matching(
+    data: dict, ctx: ValidationContext
+) -> tuple[list[ValidationIssue], list[ValidationIssue]]:
+    """Uniprot ID and Genpept ID match each other (cross-ref)"""
+
+
+def check_mibig(
+    data: dict, ctx: ValidationContext
+) -> tuple[list[ValidationIssue], list[ValidationIssue]]:
+    """MIBiG ID valid (mite protein found in protein list)"""
+
+
+def check_rhea(
+    data: dict, ctx: ValidationContext
+) -> tuple[list[ValidationIssue], list[ValidationIssue]]:
+    """Check if uniprot ID has associated Rhea IDs (not always correct though)"""
+
+
 # TODO: db ids are matching (warning
 # TODO: mibig check
 # TODO: rhea check
