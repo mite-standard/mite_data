@@ -36,6 +36,7 @@ DATA_RULES: list[DataRule] = [
     data_rules.mibig_exists,
     data_rules.ids_matching,
     data_rules.check_mibig_protein,
+    data_rules.check_rhea,
 ]
 
 

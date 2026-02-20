@@ -248,7 +248,50 @@ def check_rhea(
 ) -> tuple[list[ValidationIssue], list[ValidationIssue]]:
     """Check if uniprot ID has associated Rhea IDs (not always correct though)"""
 
+    def _fetch(acc: str) -> requests.Response:
+        return requests.get(
+            url="https://www.rhea-db.org/rhea?",
+            params={
+                "query": acc,
+                "columns": "rhea-id",
+                "format": "tsv",
+                "limit": 10,
+            },
+            timeout=settings.timeout,
+        )
 
-# TODO: db ids are matching (warning
-# TODO: mibig check
-# TODO: rhea check
+    e = []
+    w = []
+
+    if uniprot := data["enzyme"]["databaseIds"].get("uniprot"):
+        known_rhea = set()
+        for reaction in data["reactions"]:
+            if val := reaction.get("databaseIds", {}).get("rhea"):
+                known_rhea.add(val)
+
+        try:
+            response = _fetch(uniprot)
+            response.raise_for_status()
+        except requests.exceptions.ConnectTimeout:
+            logger.warning(f"Warning: could not connect to Rhea: Timeout")
+            return e, w
+        except requests.HTTPError:
+            logger.warning(f"Warning: connecting to Rhea lead to HttpError")
+            return e, w
+
+        if response.status_code == 200:
+            retrieved_rhea = {
+                i.removeprefix("RHEA:") for i in response.text.split()[2:]
+            }
+
+            diff = sorted(retrieved_rhea.difference(known_rhea))
+            for rhea in diff:
+                w.append(
+                    ValidationIssue(
+                        severity="error",
+                        location=data["accession"],
+                        message=f"UniProt ID '{uniprot}' associated to Rhea entry '{rhea}' but not mentioned in MITE entry. Should it be added?",
+                    )
+                )
+
+    return e, w

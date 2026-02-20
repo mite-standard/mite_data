@@ -174,3 +174,25 @@ def test_check_mibig_protein_invalid(ctx):
     }
     e, w = data_rules.check_mibig_protein(data=d, ctx=ctx)
     assert e
+
+
+@pytest.mark.download
+def test_check_rhea_valid(ctx):
+    d = {
+        "accession": "MITE1234567",
+        "enzyme": {"databaseIds": {"uniprot": "Q8GED9"}},
+        "reactions": [{"databaseIds": {"rhea": "35531"}}],
+    }
+    e, w = data_rules.check_rhea(data=d, ctx=ctx)
+    assert not w
+
+
+@pytest.mark.download
+def test_check_rhea_invalid(ctx):
+    d = {
+        "accession": "MITE1234567",
+        "enzyme": {"databaseIds": {"uniprot": "Q8GED9"}},
+        "reactions": [{"databaseIds": {}}],
+    }
+    e, w = data_rules.check_rhea(data=d, ctx=ctx)
+    assert w
