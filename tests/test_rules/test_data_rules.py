@@ -156,3 +156,21 @@ def test_mibig_exists_invalid(ctx):
     }
     e, w = data_rules.mibig_exists(data=d, ctx=ctx)
     assert e
+
+
+def test_check_mibig_protein_valid(ctx):
+    d = {
+        "accession": "MITE1234567",
+        "enzyme": {"databaseIds": {"mibig": "BGC0000026", "genpept": "AAK83184.1"}},
+    }
+    e, w = data_rules.check_mibig_protein(data=d, ctx=ctx)
+    assert not e
+
+
+def test_check_mibig_protein_invalid(ctx):
+    d = {
+        "accession": "MITE1234567",
+        "enzyme": {"databaseIds": {"mibig": "BGC0000026", "genpept": "nonexisting"}},
+    }
+    e, w = data_rules.check_mibig_protein(data=d, ctx=ctx)
+    assert e

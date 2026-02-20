@@ -227,6 +227,21 @@ def check_mibig_protein(
     e = []
     w = []
 
+    genpept = data["enzyme"]["databaseIds"].get("genpept")
+    mibig = data["enzyme"]["databaseIds"].get("mibig")
+
+    if genpept and mibig:
+        if not genpept in ctx.mibig_proteins.get(mibig, []):
+            e.append(
+                ValidationIssue(
+                    severity="error",
+                    location=data["accession"],
+                    message=f"GenPept ID '{genpept}' not found in MIBiG v {settings.mibig_version} entry '{mibig}' - investigate!",
+                )
+            )
+
+    return e, w
+
 
 def check_rhea(
     data: dict, ctx: ValidationContext
