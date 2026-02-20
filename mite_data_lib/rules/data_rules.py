@@ -1,7 +1,12 @@
+import logging
+import time
+
 import requests
 
 from mite_data_lib.config.config import settings
 from mite_data_lib.models.validation import ValidationContext, ValidationIssue
+
+logger = logging.getLogger(__name__)
 
 
 def status(
@@ -152,8 +157,7 @@ def wikidata_exists(
             },
             timeout=settings.timeout,
         )
-        if not response.ok:
-            return False
+        response.raise_for_status()
 
         rsps = response.json()
         return rsps.get("boolean")
@@ -176,7 +180,25 @@ def wikidata_exists(
 def ids_matching(
     data: dict, ctx: ValidationContext
 ) -> tuple[list[ValidationIssue], list[ValidationIssue]]:
-    """Uniprot ID and Genpept ID match each other (cross-ref)"""
+    """Uniprot ID and Genpept ID point to identical protein sequence"""
+
+    e = []
+    w = []
+
+    uniprot = data["enzyme"]["databaseIds"].get("uniprot")
+    genpept = data["enzyme"]["databaseIds"].get("genpept")
+
+    if uniprot and genpept:
+        if not ctx.seq_service.seq_match(uniprot=uniprot, genpept=genpept):
+            e.append(
+                ValidationIssue(
+                    severity="error",
+                    location=data["accession"],
+                    message=f"Uniprot ID '{uniprot}' and GenPept ID '{genpept}' resolve to different protein sequences - investigate!",
+                )
+            )
+
+    return e, w
 
 
 def check_mibig(

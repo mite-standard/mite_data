@@ -5,6 +5,7 @@ from typing import Literal, Protocol
 import pandas as pd
 
 from mite_data_lib.models.reserved import ReserveData
+from mite_data_lib.services.sequence import SequenceService
 
 
 @dataclass(frozen=True)
@@ -13,6 +14,7 @@ class ValidationContext:
 
     reserved: dict[str, ReserveData]
     proteins: pd.DataFrame
+    seq_service: SequenceService
 
 
 @dataclass

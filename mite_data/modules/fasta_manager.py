@@ -209,7 +209,6 @@ class FastaManager(BaseModel):
             Tuple of path and data for storage
 
         Notes:
-            concurrent.futures needed to implement timeout since Biopythons Entrez lacks it and requests is blocked by NCBI
         """
 
         def fetch_ncbi(acc: str) -> Any:

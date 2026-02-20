@@ -1,3 +1,5 @@
+import pytest
+
 from mite_data_lib.rules import data_rules
 
 
@@ -15,12 +17,12 @@ def test_status_invalid(ctx):
     assert e
 
 
-def test_accession_valid(ctx):
+def test_reserved_valid(ctx):
     e, w = data_rules.reserved({"accession": "MITE1234567"}, ctx=ctx)
     assert not e
 
 
-def test_accession_invalid(ctx):
+def test_reserved_invalid(ctx):
     e, w = data_rules.reserved({"accession": "MITE9999999"}, ctx=ctx)
     assert e
 
@@ -58,6 +60,7 @@ def test_duplicate_uniprot_invalid(ctx):
     assert not e
 
 
+@pytest.mark.download
 def test_uniprot_exists_valid(ctx):
     d = {
         "accession": "MITE1234567",
@@ -67,6 +70,7 @@ def test_uniprot_exists_valid(ctx):
     assert not e
 
 
+@pytest.mark.download
 def test_uniprot_exists_invalid(ctx):
     d = {
         "accession": "MITE1234567",
@@ -76,6 +80,7 @@ def test_uniprot_exists_invalid(ctx):
     assert e
 
 
+@pytest.mark.download
 def test_genpept_exists_valid(ctx):
     d = {
         "accession": "MITE1234567",
@@ -85,6 +90,7 @@ def test_genpept_exists_valid(ctx):
     assert not e
 
 
+@pytest.mark.download
 def test_genpept_exists_invalid(ctx):
     d = {
         "accession": "MITE1234567",
@@ -94,6 +100,7 @@ def test_genpept_exists_invalid(ctx):
     assert e
 
 
+@pytest.mark.download
 def test_wikidata_exists_valid(ctx):
     d = {
         "accession": "MITE1234567",
@@ -103,10 +110,31 @@ def test_wikidata_exists_valid(ctx):
     assert not e
 
 
+@pytest.mark.download
 def test_wikidata_exists_invalid(ctx):
     d = {
         "accession": "MITE1234567",
         "enzyme": {"databaseIds": {"wikidata": "nonexisting"}},
     }
     e, w = data_rules.wikidata_exists(data=d, ctx=ctx)
+    assert e
+
+
+@pytest.mark.download
+def test_id_matching_valid(ctx):
+    d = {
+        "accession": "MITE1234567",
+        "enzyme": {"databaseIds": {"genpept": "AAK83184.1", "uniprot": "Q93KW1"}},
+    }
+    e, w = data_rules.ids_matching(data=d, ctx=ctx)
+    assert not e
+
+
+@pytest.mark.download
+def test_id_matching_invalid(ctx):
+    d = {
+        "accession": "MITE1234567",
+        "enzyme": {"databaseIds": {"genpept": "AAK83184.1", "uniprot": "Q8KSX7"}},
+    }
+    e, w = data_rules.ids_matching(data=d, ctx=ctx)
     assert e
