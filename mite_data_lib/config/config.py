@@ -38,5 +38,9 @@ class Settings(BaseModel):
     def mite_pattern(self) -> re.Pattern:
         return re.compile(r"^MITE(\d{7})$")
 
+    @property
+    def email(self) -> str:
+        return "zdoucmm@gmail.com"
+
 
 settings = Settings()

@@ -135,6 +135,43 @@ def wikidata_exists(
 ) -> tuple[list[ValidationIssue], list[ValidationIssue]]:
     """Wikidata ID can be found in Wikidata"""
 
+    def _build_query(qid: str) -> str:
+        return f"""
+        ASK {{
+            wd:{qid} ?p ?o
+        }}
+        """
+
+    def _fetch_result(query: str) -> str | bool:
+        response = requests.get(
+            "https://query.wikidata.org/sparql",
+            params={"query": query},
+            headers={
+                "User-Agent": f"mite_data_bot/0.0 (https://github.com/mite_standard/mite_data; {settings.email})",
+                "Accept": "application/sparql-results+json",
+            },
+            timeout=settings.timeout,
+        )
+        if not response.ok:
+            return False
+
+        rsps = response.json()
+        return rsps.get("boolean")
+
+    e = []
+    w = []
+    if wikidata := data["enzyme"]["databaseIds"].get("wikidata"):
+        if not _fetch_result(query=_build_query(qid=wikidata)):
+            e.append(
+                ValidationIssue(
+                    severity="error",
+                    location=data["accession"],
+                    message=f"Wikidata ID '{wikidata}' not found or has no statements",
+                )
+            )
+
+    return e, w
+
 
 def ids_matching(
     data: dict, ctx: ValidationContext
