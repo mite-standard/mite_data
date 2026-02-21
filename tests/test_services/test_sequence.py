@@ -49,4 +49,4 @@ def test_seq_match_invalid(sequence):
 @pytest.mark.download
 def test_dump_fasta(sequence):
     seq = sequence.fetch_uniprot(acc="Q93KW1")
-    sequence.dump_fasta(mite_acc="MITE0000001", acc="Q93KW1", seq=seq)
+    sequence.dump_fasta(mite_acc="MITE0000000", acc="Q93KW1", seq=seq)

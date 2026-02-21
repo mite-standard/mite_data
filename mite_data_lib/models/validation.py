@@ -18,6 +18,14 @@ class ValidationContext:
     seq_service: SequenceService
 
 
+@dataclass(frozen=True)
+class ArtifactContext:
+    """Stores context for artifact validation"""
+
+    data: Path
+    fasta: Path
+
+
 @dataclass
 class ValidationIssue:
     """Store location and description of issue"""

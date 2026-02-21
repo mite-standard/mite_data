@@ -5,6 +5,13 @@ mite_extras
 # FULL REFACTOR IN PROGRESS - README not up to date
 
 
+CI/CD logic:
+
+- Pull request into main triggers the entry triggers the [data validation pipeline](pipeline/entry_valid.py) on new/modified entries.
+- Commit to main that adds new/modified entries triggers artifact (re)building and repository checks
+- New release triggers reporisotry checks only
+
+
 
 
 
