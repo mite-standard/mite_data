@@ -2,7 +2,6 @@ import json
 import logging
 from pathlib import Path
 
-from mite_data_lib.config.config import settings
 from mite_data_lib.models.validation import ArtifactContext, ValidationIssue
 
 logger = logging.getLogger(__name__)
@@ -60,8 +59,22 @@ def fasta_check(
     return e, w
 
 
-# todo: every fasta has a mite that is not retired
+def fasta_affiliation(
+    path: Path, ctx: ArtifactContext
+) -> tuple[list[ValidationIssue], list[ValidationIssue]]:
+    """Check if fasta header matches data in MITE entry"""
+    e = []
+    w = []
 
+    for fasta in sorted(ctx.fasta.glob("*.fasta")):
+        acc = Path(fasta).stem
+        if not ctx.data.joinpath(f"{acc}.json").exists():
+            w.append(
+                ValidationIssue(
+                    severity="warning",
+                    location=path.name,
+                    message=f"Fasta file '{fasta}' is missing a MITE entry: investigate!",
+                )
+            )
 
-# interface: every function accepts path, gets context (where does the repo live, for testability)
-# reports checks as validation issues
+    return e, w
