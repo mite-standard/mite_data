@@ -46,3 +46,9 @@ class DataRule(Protocol):
     def __call__(
         self, data: dict, ctx: ValidationContext
     ) -> tuple[list[ValidationIssue], list[ValidationIssue]]: ...
+
+
+class FastaRule(Protocol):
+    def __call__(
+        self, data: dict, ctx: ArtifactContext
+    ) -> tuple[list[ValidationIssue], list[ValidationIssue]]: ...

@@ -66,9 +66,6 @@ class ValidateEntryRunner:
 
     @staticmethod
     def _load_and_validate_schema(path: Path) -> dict:
-        if not path.exists():
-            raise FileNotFoundError(f"Could not find file {path}")
-
         with open(path) as f:
             data = json.load(f)
 
