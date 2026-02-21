@@ -40,8 +40,8 @@ class ValidateArtifactRunner:
         return errors, warnings
 
 
-def main(entries: list[str] | None = None, ctx: ArtifactContext | None = None) -> None:
-    """Run artifact generation checks for
+def main(entries: list[str], ctx: ArtifactContext) -> None:
+    """Run artifact generation checks
 
     Args:
         entries: a list of MITE entry filepaths
@@ -57,12 +57,12 @@ def main(entries: list[str] | None = None, ctx: ArtifactContext | None = None) -
     warnings: list[ValidationIssue] = []
 
     if not entries:
-        RuntimeError("No entries specified - abort.")
+        raise RuntimeError("No entries specified - abort.")
 
     for f in entries:
         p = Path(f)
         if not p.exists():
-            RuntimeError(f"File {p.name} does not exists - abort.")
+            raise RuntimeError(f"File {p.name} does not exists - abort.")
 
         e, w = runner.run(path=p, ctx=ctx)
         errors.extend(e)
