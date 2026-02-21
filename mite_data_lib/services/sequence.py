@@ -90,6 +90,7 @@ class SequenceService:
         return "".join(self.fetch_ncbi(genpept)) == "".join(self.fetch_uniprot(uniprot))
 
     def dump_fasta(self, mite_acc: str, acc: str, seq: list[str]) -> None:
+        """Dump to disk"""
         path = self.fasta / f"{mite_acc}.fasta"
         with open(path, "w") as f:
             f.write(f">{mite_acc} {acc}\n{'\n'.join(seq)}")

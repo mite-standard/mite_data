@@ -14,6 +14,11 @@ FASTA_RULE: list[FastaRule] = [
     fasta_rules.fasta_check,
 ]
 
+# todo: check prot_acc
+# todo: check metadata
+# todo: check molfiles
+# todo: check summary
+
 
 class ValidateArtifactRunner:
     """Runs validation suite on artifacts"""
@@ -35,7 +40,7 @@ class ValidateArtifactRunner:
             errors.extend(e)
             warnings.extend(w)
 
-        # TODO: add artifact rules
+        # TODO: add artifact rules for integrity checks
 
         return errors, warnings
 
@@ -86,7 +91,9 @@ if __name__ == "__main__":
     try:
         main(
             entries=sys.argv[1:],
-            ctx=ArtifactContext(fasta=settings.data / "fasta"),
+            ctx=ArtifactContext(
+                fasta=settings.data / "fasta", data=settings.data / "data"
+            ),
         )
         sys.exit(0)
     except Exception as error:

@@ -1,3 +1,4 @@
+import json
 import logging
 import sys
 from pathlib import Path
@@ -5,6 +6,7 @@ from pathlib import Path
 from mite_data_lib.config.config import settings
 from mite_data_lib.config.logging import setup_logger
 from mite_data_lib.models.validation import ArtifactContext
+from mite_data_lib.services.sequence import SequenceService
 
 logger = logging.getLogger(__name__)
 
@@ -12,14 +14,49 @@ logger = logging.getLogger(__name__)
 class CreateArtifactRunner:
     """Hold artifact creation pipeline"""
 
-    @staticmethod
-    def run(path: Path, ctx: ArtifactContext):
+    def run(self, path: Path, ctx: ArtifactContext) -> None:
         """Create artifacts from entry"""
 
-        # open file
-        # steps depending on services (e.g. Sequence)
+        with open(path) as f:
+            data = json.load(f)
 
-        # create fasta entry
+        self.create_fasta(data=data, ctx=ctx)
+
+    @staticmethod
+    def create_fasta(data: dict, ctx: ArtifactContext) -> None:
+        """Create fasta entry"""
+        seq_service = SequenceService(fasta=ctx.fasta)
+
+        if uniprot := data["enzyme"]["databaseIds"].get("uniprot"):
+            seq_service.dump_fasta(
+                mite_acc=data["accession"],
+                acc=uniprot,
+                seq=seq_service.fetch_uniprot(uniprot),
+            )
+        elif genpept := data["enzyme"]["databaseIds"].get("genpept"):
+            seq_service.dump_fasta(
+                mite_acc=data["accession"],
+                acc=genpept,
+                seq=seq_service.fetch_ncbi(genpept),
+            )
+        else:
+            raise RuntimeError("Fasta download failed: no genpept or uniprot ID")
+
+    @staticmethod
+    def create_protein_acc(data: dict, ctx: ArtifactContext) -> None:
+        pass
+
+    @staticmethod
+    def create_metadata(data: dict, ctx: ArtifactContext) -> None:
+        pass
+
+    @staticmethod
+    def create_molfiles(data: dict, ctx: ArtifactContext) -> None:
+        pass
+
+    @staticmethod
+    def create_summary(data: dict, ctx: ArtifactContext) -> None:
+        pass
 
 
 def main(entries: list[str], ctx: ArtifactContext) -> None:
