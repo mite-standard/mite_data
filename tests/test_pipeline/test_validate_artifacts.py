@@ -1,7 +1,7 @@
 from pathlib import Path
 
 from mite_data_lib.models.validation import ArtifactContext
-from pipeline.validate_artifacts import ValidateArtifactRunner, main
+from pipeline.validate_artifacts import main
 
 
 def test_main_valid():
