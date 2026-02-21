@@ -9,7 +9,9 @@ from mite_data_lib.rules import fasta_rules
 @pytest.fixture
 def art_ctx() -> ArtifactContext:
     return ArtifactContext(
-        data=Path("tests/dummy_data/data"), fasta=Path("tests/dummy_data/fasta")
+        data=Path("tests/dummy_data/data"),
+        fasta=Path("tests/dummy_data/fasta"),
+        metadata=Path("tests/dummy_data/metadata"),
     )
 
 
@@ -25,7 +27,9 @@ def test_fasta_check_valid(art_ctx):
 
 def test_fasta_check_no_fasta():
     ctx = ArtifactContext(
-        data=Path("tests/dummy_data/data"), fasta=Path("tests/dummy_data/reserved")
+        data=Path("tests/dummy_data/data"),
+        fasta=Path("tests/dummy_data/reserved"),
+        metadata=Path("tests/dummy_data/metadata"),
     )
     d = {
         "status": "active",

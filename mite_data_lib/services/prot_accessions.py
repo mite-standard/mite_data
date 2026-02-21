@@ -47,8 +47,11 @@ class ProtAccessionService:
 
         return df
 
-    def update_from_entry(self, path: Path):
+    def update_from_entry(self, path: Path) -> None:
         """Update data for a single entry"""
+
+        logger.debug(f"Started updating mite_prot_accessions.csv for '{path.name}'")
+
         self._ensure_prot_acc()
 
         df = self._load_prot_acc()
@@ -92,9 +95,7 @@ class ProtAccessionService:
         self._write_prot_acc(df)
         self._write_metadata(metadata)
 
-    def create_prot_acc(self):
-        """Create derived file and dump to disk"""
-        self._build()
+        logger.debug(f"Completed updating mite_prot_accessions.csv for '{path.name}'")
 
     def _ensure_prot_acc(self):
         if self._prot_acc_exists() and self._metadata_exists():
@@ -108,6 +109,7 @@ class ProtAccessionService:
         return self.metadata.exists()
 
     def _build(self):
+        """Overwrite df, try modifying metadata if exists"""
         df_dict = {"accession": [], "status": [], "genpept": [], "uniprot": []}
         for entry in sorted(self.data.glob("*.json")):
             data = self._parse_entry(entry)

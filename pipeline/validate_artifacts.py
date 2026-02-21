@@ -96,7 +96,9 @@ if __name__ == "__main__":
         main(
             entries=sys.argv[1:],
             ctx=ArtifactContext(
-                fasta=settings.data / "fasta", data=settings.data / "data"
+                fasta=settings.data / "fasta",
+                data=settings.data / "data",
+                metadata=settings.data / "metadata",
             ),
         )
         sys.exit(0)

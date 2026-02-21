@@ -1,11 +1,13 @@
 import json
 import logging
 import sys
+from importlib.metadata import metadata
 from pathlib import Path
 
 from mite_data_lib.config.config import settings
 from mite_data_lib.config.logging import setup_logger
 from mite_data_lib.models.validation import ArtifactContext
+from mite_data_lib.services.prot_accessions import ProtAccessionService
 from mite_data_lib.services.sequence import SequenceService
 
 logger = logging.getLogger(__name__)
@@ -17,16 +19,24 @@ class CreateArtifactRunner:
     def run(self, path: Path, ctx: ArtifactContext) -> None:
         """Create artifacts from entry"""
 
+        logger.info(f"Started artifact creation for '{path.name}'")
+
         with open(path) as f:
             data = json.load(f)
 
         self.create_fasta(data=data, ctx=ctx)
+        self.create_protein_acc(path=path, ctx=ctx)
+        self.create_metadata(data=data, ctx=ctx)
+        self.create_molfiles(data=data, ctx=ctx)
+        self.create_summary(data=data, ctx=ctx)
+
+        logger.info(f"Completed artifact creation for '{path.name}'")
 
     @staticmethod
     def create_fasta(data: dict, ctx: ArtifactContext) -> None:
         """Create fasta entry"""
 
-        logger.debug("Fasta creation started")
+        logger.debug("Started fasta creation")
 
         seq_service = SequenceService(fasta=ctx.fasta)
 
@@ -45,11 +55,24 @@ class CreateArtifactRunner:
         else:
             raise RuntimeError("Fasta download failed: no genpept or uniprot ID")
 
-        logger.debug("Fasta creation completed")
+        logger.debug("Completed fasta creation")
 
     @staticmethod
-    def create_protein_acc(data: dict, ctx: ArtifactContext) -> None:
-        pass
+    def create_protein_acc(path: Path, ctx: ArtifactContext) -> None:
+        """Update or create mite protein acc file"""
+
+        logger.debug("Started MITE prot acc updating")
+
+        prot_service = ProtAccessionService(
+            data=ctx.data,
+            dump=ctx.metadata,
+            prot_acc=ctx.metadata / "mite_prot_accessions.csv",
+            metadata=ctx.metadata / "artifact_metadata.json",
+        )
+
+        prot_service.update_from_entry(path)
+
+        logger.debug("Completed MITE prot acc updating")
 
     @staticmethod
     def create_metadata(data: dict, ctx: ArtifactContext) -> None:
@@ -75,7 +98,7 @@ def main(entries: list[str], ctx: ArtifactContext) -> None:
         RuntimeError: creation failed
     """
 
-    logger.info("Artifact creation started")
+    logger.info("Started artifact creation")
 
     runner = CreateArtifactRunner()
 
@@ -86,11 +109,9 @@ def main(entries: list[str], ctx: ArtifactContext) -> None:
         p = Path(f)
         if not p.exists():
             raise RuntimeError(f"File {p.name} does not exists - abort.")
-
         runner.run(path=p, ctx=ctx)
-        logger.info(f"Created artifacts for {p.name}")
 
-    logger.info("Artifact creation completed")
+    logger.info("Completed artifact creation")
 
 
 if __name__ == "__main__":
@@ -99,7 +120,9 @@ if __name__ == "__main__":
         main(
             entries=sys.argv[1:],
             ctx=ArtifactContext(
-                data=settings.data / "data", fasta=settings.data / "fasta"
+                data=settings.data / "data",
+                fasta=settings.data / "fasta",
+                metadata=settings.data / "metadata",
             ),
         )
         sys.exit(0)

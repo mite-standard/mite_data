@@ -24,6 +24,7 @@ class ArtifactContext:
 
     data: Path
     fasta: Path
+    metadata: Path
 
 
 @dataclass
