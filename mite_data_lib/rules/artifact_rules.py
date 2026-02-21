@@ -1,3 +1,4 @@
+import json
 import logging
 from pathlib import Path
 
@@ -13,24 +14,52 @@ logger = logging.getLogger(__name__)
 def fasta_check(
     path: Path, ctx: ArtifactContext
 ) -> tuple[list[ValidationIssue], list[ValidationIssue]]:
-    """Ever non-retired mite file has a fasta file and vice versa"""
+    """Check if fasta header matches data in MITE entry"""
     e = []
     w = []
 
-    if not ctx.fasta.joinpath(f"{path.stem}.fasta").exists():
+    with open(path) as f:
+        data = json.load(f)
+
+    db_ids = [data["enzyme"]["databaseIds"].get(i) for i in ("genpept", "uniprot")]
+
+    fasta_path = ctx.fasta.joinpath(f"{path.stem}.fasta")
+    if not fasta_path.exists():
         e.append(
             ValidationIssue(
                 severity="error",
                 location=path.name,
-                message=f"Has no accompanying .fasta file in {ctx.fasta }",
+                message=f"Has no accompanying .fasta file in {ctx.fasta}",
+            )
+        )
+        return e, w
+
+    with open(fasta_path) as f:
+        fasta = f.read()
+
+    mite_acc = fasta.split()[0].removeprefix(">")
+    if mite_acc != path.stem:
+        e.append(
+            ValidationIssue(
+                severity="error",
+                location=path.name,
+                message=f"Mismatch in MITE accession in header of .fasta file {fasta_path}",
+            )
+        )
+
+    prot_acc = fasta.split()[1]
+    if not prot_acc in db_ids:
+        e.append(
+            ValidationIssue(
+                severity="error",
+                location=path.name,
+                message=f"Mismatch in protein accession in header of .fasta file {fasta_path}",
             )
         )
 
     return e, w
 
 
-# TODO: entry has an accompanying fasta
-# todo: header mite header matches the one in fasta
 # todo: every fasta has a mite that is not retired
 
 
