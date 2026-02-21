@@ -25,6 +25,9 @@ class CreateArtifactRunner:
     @staticmethod
     def create_fasta(data: dict, ctx: ArtifactContext) -> None:
         """Create fasta entry"""
+
+        logger.debug("Fasta creation started")
+
         seq_service = SequenceService(fasta=ctx.fasta)
 
         if uniprot := data["enzyme"]["databaseIds"].get("uniprot"):
@@ -41,6 +44,8 @@ class CreateArtifactRunner:
             )
         else:
             raise RuntimeError("Fasta download failed: no genpept or uniprot ID")
+
+        logger.debug("Fasta creation completed")
 
     @staticmethod
     def create_protein_acc(data: dict, ctx: ArtifactContext) -> None:
@@ -69,10 +74,13 @@ def main(entries: list[str], ctx: ArtifactContext) -> None:
     Raises:
         RuntimeError: creation failed
     """
-    if not entries:
-        raise RuntimeError("No entries specified - abort.")
+
+    logger.info("Artifact creation started")
 
     runner = CreateArtifactRunner()
+
+    if not entries:
+        raise RuntimeError("No entries specified - abort.")
 
     for f in entries:
         p = Path(f)
@@ -81,6 +89,8 @@ def main(entries: list[str], ctx: ArtifactContext) -> None:
 
         runner.run(path=p, ctx=ctx)
         logger.info(f"Created artifacts for {p.name}")
+
+    logger.info("Artifact creation completed")
 
 
 if __name__ == "__main__":

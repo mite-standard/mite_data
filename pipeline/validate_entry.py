@@ -91,18 +91,20 @@ def main(
         RuntimeError: validation failed
     """
 
+    logger.info("Entry validation started")
+
     runner = ValidateEntryRunner()
 
     errors: list[ValidationIssue] = []
     warnings: list[ValidationIssue] = []
 
     if not entries:
-        RuntimeError("No entries specified - abort.")
+        raise RuntimeError("No entries specified - abort.")
 
     for f in entries:
         p = Path(f)
         if not p.exists():
-            RuntimeError(f"File {p.name} does not exists - abort.")
+            raise RuntimeError(f"File {p.name} does not exists - abort.")
 
         e, w = runner.run(path=p, ctx=ctx)
         errors.extend(e)
@@ -118,7 +120,9 @@ def main(
         logger.fatal(m)
         for e in errors:
             logger.fatal(f"{e.severity} - {e.location} - {e.message}")
-        raise RuntimeError
+        raise RuntimeError("One or more validation errors occurred - abort")
+
+    logger.info("Entry validation completed")
 
 
 if __name__ == "__main__":
