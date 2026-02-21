@@ -3,7 +3,7 @@ from pathlib import Path
 import pytest
 
 from mite_data_lib.services.mibig import MIBiGDataService
-from pipeline.mibig_download import main
+from pipeline.create_mibig import main
 
 
 @pytest.mark.download

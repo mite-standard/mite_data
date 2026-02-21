@@ -40,7 +40,7 @@ DATA_RULES: list[DataRule] = [
 ]
 
 
-class EntryValidRunner:
+class ValidateEntryRunner:
     """Runs validation suite on entry"""
 
     def run(
@@ -94,7 +94,7 @@ def main(
         RuntimeError: validation failed
     """
 
-    runner = EntryValidRunner()
+    runner = ValidateEntryRunner()
 
     errors: list[ValidationIssue] = []
     warnings: list[ValidationIssue] = []

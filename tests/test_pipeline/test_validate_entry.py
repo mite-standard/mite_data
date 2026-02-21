@@ -2,14 +2,14 @@ from pathlib import Path
 
 import pytest
 
-from pipeline.entry_valid import EntryValidRunner, main
+from pipeline.validate_entry import ValidateEntryRunner, main
 
 data_path = Path("tests/dummy_data/data/")
 
 
 @pytest.fixture
 def entry_valid_runner():
-    return EntryValidRunner()
+    return ValidateEntryRunner()
 
 
 @pytest.mark.download
