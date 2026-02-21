@@ -39,6 +39,8 @@ class SequenceService:
             handle.close()
             return data
 
+        logger.debug(f"Started fetching protein sequence '{acc}' from NCBI")
+
         with concurrent.futures.ThreadPoolExecutor() as ex:
             future = ex.submit(_fetch, acc)
 
@@ -50,6 +52,8 @@ class SequenceService:
         lines = fasta_data.splitlines()
         if not lines or len(lines) == 1:
             raise RuntimeError(f"No sequence found for GenBank Accession {acc}")
+
+        logger.debug(f"Completed fetching protein sequence '{acc}' from NCBI")
 
         return lines[1:]
 
@@ -72,6 +76,8 @@ class SequenceService:
             else:
                 return f"https://rest.uniprot.org/uniprotkb/{uniprot}.fasta"
 
+        logger.debug(f"Started fetching protein sequence '{acc}' from UniProt")
+
         try:
             response = requests.get(_service(acc), timeout=self.timeout)
             response.raise_for_status()
@@ -83,6 +89,9 @@ class SequenceService:
         lines = response.text.strip().splitlines()
         if len(lines) <= 1:
             raise RuntimeError(f"UniProt download provided no sequence for ID {acc}")
+
+        logger.debug(f"Completed fetching protein sequence '{acc}' from UniProt")
+
         return lines[1:]
 
     def seq_match(self, genpept: str, uniprot: str) -> bool:
@@ -94,3 +103,5 @@ class SequenceService:
         path = self.fasta / f"{mite_acc}.fasta"
         with open(path, "w") as f:
             f.write(f">{mite_acc} {acc}\n{'\n'.join(seq)}")
+
+        logger.debug(f"Wrote {path.name} to disk.")

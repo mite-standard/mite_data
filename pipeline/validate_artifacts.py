@@ -56,6 +56,8 @@ def main(entries: list[str], ctx: ArtifactContext) -> None:
         RuntimeError: validation failed
     """
 
+    logger.info("Artifact validation started")
+
     runner = ValidateArtifactRunner()
 
     errors: list[ValidationIssue] = []
@@ -80,10 +82,12 @@ def main(entries: list[str], ctx: ArtifactContext) -> None:
 
     if errors:
         m = f"Artifact validation found {len(errors)} errors."
-        logger.fatal(m)
+        logger.critical(m)
         for e in errors:
-            logger.fatal(f"{e.severity} - {e.location} - {e.message}")
-        raise RuntimeError
+            logger.critical(f"{e.severity} - {e.location} - {e.message}")
+        raise RuntimeError("One or more validation errors occurred - abort")
+
+    logger.info("Artifact validation completed")
 
 
 if __name__ == "__main__":
@@ -97,5 +101,5 @@ if __name__ == "__main__":
         )
         sys.exit(0)
     except Exception as error:
-        logger.fatal(f"{error!s}")
+        logger.critical(f"{error!s}")
         sys.exit(1)
