@@ -3,7 +3,6 @@ import json
 import logging
 from hashlib import sha256
 from pathlib import Path
-from typing import Annotated
 
 import pandas as pd
 import requests
@@ -11,6 +10,7 @@ from Bio import Entrez, SeqIO
 
 from mite_data_lib.config.config import settings
 from mite_data_lib.config.filenames import names
+from mite_data_lib.models.metadata import ArtifactMetadata
 from mite_data_lib.models.summary import SummaryGeneral, SummaryMibig
 
 logger = logging.getLogger(__name__)
@@ -221,12 +221,11 @@ class SummaryGeneralStore:
             _upsert_all()
 
     def _validate_hash(self, raw: dict) -> bool:
-        metadata = json.loads(self.meta_artifact.read_text())
-        summary_hash = metadata.get("hash_general_summary")
-        if not summary_hash:
+        model = ArtifactMetadata(**json.loads(self.meta_artifact.read_text()))
+        if not model.hash_general_summary:
             return False
 
-        return self._calc_sha256(raw) == summary_hash
+        return self._calc_sha256(raw) == model.hash_general_summary
 
     @staticmethod
     def _calc_sha256(data: dict) -> str:
@@ -257,20 +256,38 @@ class SummaryGeneralStore:
         self._update_metadata(payload=payload)
 
     def _update_metadata(self, payload: dict):
-        with open(self.meta_artifact) as f:
-            metadata = json.load(f)
+        model = ArtifactMetadata(**json.loads(self.meta_artifact.read_text()))
 
-        metadata["hash_general_summary"] = self._calc_sha256(payload)
-        self.meta_artifact.write_text(
-            json.dumps(
-                metadata, ensure_ascii=False, sort_keys=True, separators=(",", ":")
-            )
-        )
+        model.hash_general_summary = self._calc_sha256(payload)
+        model.version = settings.mite_version
+
+        self.meta_artifact.write_text(model.model_dump_json())
 
     def write_to_csv(self):
-        df = pd.DataFrame([e.model_dump() for e in self.entries.values()]).sort_values(
-            "accession"
-        )
+        df = pd.DataFrame(
+            [
+                e.model_dump(
+                    include={
+                        "accession",
+                        "status",
+                        "enzyme_name",
+                        "tailoring",
+                        "cofactors_organic",
+                        "cofactors_inorganic",
+                        "enzyme_description",
+                        "reaction_description",
+                        "organism",
+                        "domain",
+                        "kingdom",
+                        "phylum",
+                        "class_name",
+                        "order",
+                        "family",
+                    }
+                )
+                for e in self.entries.values()
+            ]
+        ).sort_values("accession")
         df.to_csv(self.summary_csv, index=False)
 
 

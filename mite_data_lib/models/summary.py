@@ -29,6 +29,3 @@ class SummaryMibig(BaseModel):
     enzyme_ids: dict
     enzyme_tailoring: str
     enzyme_refs: list
-
-
-# todo: needs adapters to read, write

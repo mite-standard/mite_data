@@ -11,5 +11,4 @@ class ArtifactMetadata(BaseModel):
 
     version: str
     hash_mite_prot_acc: str | None = None
-
-    # TODO: update for the required data
+    hash_general_summary: str | None = None
