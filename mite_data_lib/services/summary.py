@@ -1,11 +1,13 @@
 import concurrent.futures
+import json
 import logging
+from hashlib import sha256
 from pathlib import Path
 from typing import Annotated
 
+import pandas as pd
 import requests
 from Bio import Entrez, SeqIO
-from pydantic import BaseModel, Field, TypeAdapter
 
 from mite_data_lib.config.config import settings
 from mite_data_lib.config.filenames import names
@@ -25,6 +27,8 @@ Entrez.email = settings.email
 
 
 class TaxonomyResolver:
+    """Resolve DB accessions into taxonomy information"""
+
     def resolve(self, model: SummaryGeneral) -> SummaryGeneral:
         if uniprot := model.enzyme_ids.get("uniprot"):
             try:
@@ -121,6 +125,8 @@ class TaxonomyResolver:
 
 
 class SummaryParser:
+    """Parse MITE entries into objects"""
+
     def parse_general(self, data: dict) -> SummaryGeneral:
         cofactors_organic = "N/A"
         if val := data["enzyme"].get("cofactors", {}).get("organic", []):
@@ -179,35 +185,92 @@ class SummaryParser:
 
 
 class SummaryMibigStore:
-    entries: TypeAdapter[
-        dict[Annotated[str, Field(pattern=settings.mibig_pattern)], list[SummaryMibig]]
-    ]
-
-    def upsert(self):
-        # todo: implement updating
-        pass
-
-    def write_to_json(self):
-        # todo: implement writing
-        pass
+    pass  # todo: fix
 
 
 class SummaryGeneralStore:
-    def __init__(self, path: Path):
-        self.path = path
+    def __init__(self, data: Path, dump: Path):
+        self.data = data
+        self.dump = dump
         self.entries: dict[str, SummaryGeneral] = {}
 
-    def upsert(self):
-        # todo: implement updating
-        pass
+        self.meta_artifact = dump / names.meta_artifact
+        self.summary_json = dump / names.summary_json
+        self.summary_csv = dump / names.summary_csv
+
+    def load(self):
+        """Load existing general metadata"""
+
+        def _upsert_all():
+            logger.warning(
+                f"{self.summary_json}: file not found or compromised hash - re-create all entries"
+            )
+            for entry in self.data.glob("MITE*.json"):
+                self.upsert(entry)
+
+        if not self.summary_json.exists():
+            _upsert_all()
+            return
+
+        raw = json.loads(self.summary_json.read_text())
+        if self._validate_hash(raw):
+            self.entries = {
+                k: SummaryGeneral.model_validate(v) for k, v in raw["entries"].items()
+            }
+        else:
+            _upsert_all()
+
+    def _validate_hash(self, raw: dict) -> bool:
+        metadata = json.loads(self.meta_artifact.read_text())
+        summary_hash = metadata.get("hash_general_summary")
+        if not summary_hash:
+            return False
+
+        return self._calc_sha256(raw) == summary_hash
+
+    @staticmethod
+    def _calc_sha256(data: dict) -> str:
+        json_str = json.dumps(
+            data, ensure_ascii=False, sort_keys=True, separators=(",", ":")
+        )
+        return sha256(json_str.encode("utf-8")).hexdigest()
+
+    def upsert(self, path: Path):
+        with open(path) as f:
+            data = json.load(f)
+        model = SummaryParser().parse_general(data=data)
+
+        self.entries[path.stem] = model
 
     def write_to_json(self):
-        # todo: implement formatting and writing
-        pass
+        payload = {
+            "version_mite_data": settings.mibig_version,
+            "entries": {k: v.model_dump() for k, v in sorted(self.entries.items())},
+        }
+
+        self.summary_json.write_text(
+            json.dumps(
+                payload, ensure_ascii=False, sort_keys=True, separators=(",", ":")
+            )
+        )
+        self._update_metadata(payload=payload)
+
+    def _update_metadata(self, payload: dict):
+        with open(self.meta_artifact) as f:
+            metadata = json.load(f)
+
+        metadata["hash_general_summary"] = self._calc_sha256(payload)
+        self.meta_artifact.write_text(
+            json.dumps(
+                metadata, ensure_ascii=False, sort_keys=True, separators=(",", ":")
+            )
+        )
 
     def write_to_csv(self):
-        # todo: implement formatting and writing
-        pass
+        df = pd.DataFrame([e.model_dump() for e in self.entries.values()]).sort_values(
+            "accession"
+        )
+        df.to_csv(self.summary_csv, index=False)
 
 
 class SummaryService:
@@ -216,31 +279,19 @@ class SummaryService:
     Attributes:
         data: Path to data dir
         dump: Path to artifact dump dir
-
     """
 
     def __init__(self, data: Path, dump: Path):
         self.data = data
         self.dump = dump
 
-    def update_from_entry(self, path: Path):
-        # todo: implement logic
-        # ensure files exist
-        # load files
-        # check version
-        # check entry exists
-        # parse data
+    def create_summary_general(self, path: Path):
+        """Upsert general summary"""
 
-        pass
+        model = SummaryGeneralStore(data=self.data, dump=self.dump)
+        model.load()
+        model.upsert(path)
+        model.write_to_json()
+        model.write_to_csv()
 
-    def _ensure_files(self):
-        pass
-
-    def _build(self):
-        pass
-
-    # todo: implement other helper methods
-
-    @staticmethod
-    def _load_json(path: Path) -> dict:
-        pass
+    # TODO: add create mibig summary

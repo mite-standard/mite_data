@@ -9,6 +9,7 @@ from mite_data_lib.config.logging import setup_logger
 from mite_data_lib.models.validation import ArtifactContext
 from mite_data_lib.services.prot_accessions import ProtAccessionService
 from mite_data_lib.services.sequence import SequenceService
+from mite_data_lib.services.summary import SummaryService
 
 logger = logging.getLogger(__name__)
 
@@ -26,9 +27,8 @@ class CreateArtifactRunner:
 
         self.create_fasta(data=data, ctx=ctx)
         self.create_protein_acc(path=path, ctx=ctx)
-        self.create_metadata(data=data, ctx=ctx)
+        self.create_summary(path=path, ctx=ctx)
         self.create_molfiles(data=data, ctx=ctx)
-        self.create_summary(data=data, ctx=ctx)
 
         logger.info(f"Completed artifact creation for '{path.name}'")
 
@@ -75,16 +75,21 @@ class CreateArtifactRunner:
         logger.debug("Completed MITE prot acc updating")
 
     @staticmethod
-    def create_metadata(data: dict, ctx: ArtifactContext) -> None:
-        pass
-
-    @staticmethod
     def create_molfiles(data: dict, ctx: ArtifactContext) -> None:
         pass
 
     @staticmethod
-    def create_summary(data: dict, ctx: ArtifactContext) -> None:
-        pass
+    def create_summary(path: Path, ctx: ArtifactContext) -> None:
+        """Update or create summary general json + csv"""
+
+        logger.info(f"Started summary upsert for entry '{path.name}'")
+
+        service = SummaryService(data=ctx.data, dump=ctx.metadata)
+        service.create_summary_general(path)
+
+        # TODO: add create mibig summary
+
+        logger.info(f"Completed summary upsert for entry '{path.name}'")
 
 
 def main(entries: list[str], ctx: ArtifactContext) -> None:

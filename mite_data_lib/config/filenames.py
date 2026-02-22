@@ -2,7 +2,7 @@ class Filenames:
     """Centralized filename config"""
 
     @property
-    def meta(self) -> str:
+    def meta_artifact(self) -> str:
         return "artifact_metadata.json"
 
     @property
