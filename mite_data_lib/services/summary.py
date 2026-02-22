@@ -239,6 +239,7 @@ class SummaryGeneralStore:
         with open(path) as f:
             data = json.load(f)
         model = SummaryParser().parse_general(data=data)
+        model = TaxonomyResolver().resolve(model)
 
         self.entries[path.stem] = model
 
