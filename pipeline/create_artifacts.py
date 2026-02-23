@@ -76,6 +76,8 @@ class CreateArtifactRunner:
 
     @staticmethod
     def create_molfiles(data: dict, ctx: ArtifactContext) -> None:
+        # TODO: implement molfile generation
+
         pass
 
     @staticmethod
@@ -86,8 +88,7 @@ class CreateArtifactRunner:
 
         service = SummaryService(data=ctx.data, dump=ctx.metadata)
         service.create_summary_general(path)
-
-        # TODO: add create mibig summary
+        service.create_summary_mibig(path)
 
         logger.info(f"Completed summary upsert for entry '{path.name}'")
 

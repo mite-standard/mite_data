@@ -185,7 +185,91 @@ class SummaryParser:
 
 
 class SummaryMibigStore:
-    pass  # todo: fix
+    def __init__(self, data: Path, dump: Path):
+        self.data = data
+        self.dump = dump
+        self.entries: dict[str, SummaryMibig] = {}
+
+        self.meta_artifact = dump / names.meta_artifact
+        self.summary_mibig = dump / names.summary_mibig
+
+    def load(self):
+        """Load existing mibig metadata"""
+
+        def _upsert_all():
+            logger.warning(
+                f"{self.summary_mibig}: file not found or compromised hash - re-create all entries"
+            )
+            for entry in self.data.glob("MITE*.json"):
+                self.upsert(entry)
+
+        if not self.summary_mibig.exists():
+            _upsert_all()
+            return
+
+        raw = json.loads(self.summary_mibig.read_text())
+        if self._validate_hash(raw):
+            for k, v in raw["entries"].items():
+                for i in v:
+                    self.entries[k] = SummaryMibig.model_validate(i)
+        else:
+            _upsert_all()
+
+    def _validate_hash(self, raw: dict) -> bool:
+        model = ArtifactMetadata(**json.loads(self.meta_artifact.read_text()))
+        if not model.hash_mibig_summary:
+            return False
+
+        return self._calc_sha256(raw) == model.hash_mibig_summary
+
+    @staticmethod
+    def _calc_sha256(data: dict) -> str:
+        json_str = json.dumps(
+            data, indent=2, ensure_ascii=False, sort_keys=True, separators=(",", ":")
+        )
+        return sha256(json_str.encode("utf-8")).hexdigest()
+
+    def upsert(self, path: Path):
+        with open(path) as f:
+            data = json.load(f)
+
+        model = SummaryParser().parse_mibig(data=data)
+        if not model:
+            return
+
+        self.entries[path.stem] = model
+
+    def write_to_json(self):
+        payload = {
+            "version_mite_data": settings.mibig_version,
+            "entries": {},
+        }
+
+        for _k, v in sorted(self.entries.items()):
+            mibig = v.enzyme_ids.get("mibig")
+            if mibig in payload["entries"]:
+                payload["entries"][mibig].append(v.model_dump())
+            else:
+                payload["entries"][mibig] = [v.model_dump()]
+
+        self.summary_mibig.write_text(
+            json.dumps(
+                payload,
+                indent=2,
+                ensure_ascii=False,
+                sort_keys=True,
+                separators=(",", ":"),
+            )
+        )
+        self._update_metadata(payload=payload)
+
+    def _update_metadata(self, payload: dict):
+        model = ArtifactMetadata(**json.loads(self.meta_artifact.read_text()))
+
+        model.hash_mibig_summary = self._calc_sha256(payload)
+        model.version = settings.mite_version
+
+        self.meta_artifact.write_text(model.model_dump_json())
 
 
 class SummaryGeneralStore:
@@ -312,4 +396,10 @@ class SummaryService:
         model.write_to_json()
         model.write_to_csv()
 
-    # TODO: add create mibig summary
+    def create_summary_mibig(self, path: Path):
+        """Upsert mibig summary"""
+
+        model = SummaryMibigStore(data=self.data, dump=self.dump)
+        model.load()
+        model.upsert(path)
+        model.write_to_json()
