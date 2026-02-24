@@ -16,15 +16,6 @@ from mite_data_lib.models.summary import SummaryGeneral, SummaryMibig
 logger = logging.getLogger(__name__)
 Entrez.email = settings.email
 
-# parse files into single json/csv/ or mibig json
-
-# similar to prot_acc
-# have build method, dump method
-# have a way to update the entries
-# also have them sorted
-
-# get taxonomy from first uniprot and if no match, ncbi
-
 
 class TaxonomyResolver:
     """Resolve DB accessions into taxonomy information"""
@@ -128,6 +119,7 @@ class SummaryParser:
     """Parse MITE entries into objects"""
 
     def parse_general(self, data: dict) -> SummaryGeneral:
+        """Parse MITE entry"""
         cofactors_organic = "N/A"
         if val := data["enzyme"].get("cofactors", {}).get("organic", []):
             cofactors_organic = "|".join(sorted(set(val)))

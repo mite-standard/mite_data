@@ -2,5 +2,10 @@
   "version": "1.23",
   "hash_mite_prot_acc": "95497a067e99bf92ff7536bf4ed88cb6bb43e3ee2e3b76e7dd1d156bb5c1c35a",
   "hash_general_summary": null,
-  "hash_mibig_summary": null
+  "hash_mibig_summary": null,
+  "smarts": null,
+  "smiles": null,
+  "product": null,
+  "reaction": null,
+  "substrate": null
 }

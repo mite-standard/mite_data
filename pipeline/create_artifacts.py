@@ -7,6 +7,7 @@ from pathlib import Path
 from mite_data_lib.config.config import settings
 from mite_data_lib.config.logging import setup_logger
 from mite_data_lib.models.validation import ArtifactContext
+from mite_data_lib.services.molfiles import MolInfoService
 from mite_data_lib.services.prot_accessions import ProtAccessionService
 from mite_data_lib.services.sequence import SequenceService
 from mite_data_lib.services.summary import SummaryService
@@ -28,7 +29,7 @@ class CreateArtifactRunner:
         self.create_fasta(data=data, ctx=ctx)
         self.create_protein_acc(path=path, ctx=ctx)
         self.create_summary(path=path, ctx=ctx)
-        self.create_molfiles(data=data, ctx=ctx)
+        self.create_molfiles(ctx=ctx)
 
         logger.info(f"Completed artifact creation for '{path.name}'")
 
@@ -75,10 +76,13 @@ class CreateArtifactRunner:
         logger.debug("Completed MITE prot acc updating")
 
     @staticmethod
-    def create_molfiles(data: dict, ctx: ArtifactContext) -> None:
-        # TODO: implement molfile generation
+    def create_molfiles(ctx: ArtifactContext) -> None:
+        logger.debug("Started Molfile creation")
 
-        pass
+        service = MolInfoService(data=ctx.data, dump=ctx.metadata)
+        service.create_molfiles()
+
+        logger.debug("Completed MITE prot acc updating")
 
     @staticmethod
     def create_summary(path: Path, ctx: ArtifactContext) -> None:
