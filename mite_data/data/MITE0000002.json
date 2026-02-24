@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000002",
-    "status": "active",
+    "status": "pending",
     "changelog": [
         {
             "version": "1",
@@ -35,6 +35,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Removed MIBiG reference since protein is not referenced there."
+        },
+        {
+            "version": "4",
+            "date": "2026-02-24",
+            "contributors": [
+                "0009-0008-3623-3734"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": ""
         }
     ],
     "enzyme": {
