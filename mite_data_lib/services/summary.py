@@ -209,9 +209,9 @@ class SummaryMibigStore:
 
         raw = json.loads(self.summary_mibig.read_text())
         if self._validate_hash(raw):
-            for k, v in raw["entries"].items():
-                for i in v:
-                    self.entries[k] = SummaryMibig.model_validate(i)
+            for _k, v in raw["entries"].items():
+                for e in v:
+                    self.entries[e["mite_accession"]] = SummaryMibig.model_validate(e)
         else:
             _upsert_all()
 
@@ -394,16 +394,24 @@ class SummaryService:
     def create_summary_general(self, path: Path):
         """Upsert general summary"""
 
+        logger.info(f"Started general summary creation for entry {path.name}")
+
         model = SummaryGeneralStore(data=self.data, dump=self.dump)
         model.load()
         model.upsert(path)
         model.write_to_json()
         model.write_to_csv()
 
+        logger.info(f"Completed general summary creation for entry {path.name}")
+
     def create_summary_mibig(self, path: Path):
         """Upsert mibig summary"""
+
+        logger.info(f"Started mibig summary creation for entry {path.name}")
 
         model = SummaryMibigStore(data=self.data, dump=self.dump)
         model.load()
         model.upsert(path)
         model.write_to_json()
+
+        logger.info(f"Completed mibig summary creation for entry {path.name}")

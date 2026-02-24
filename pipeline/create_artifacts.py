@@ -84,13 +84,15 @@ class CreateArtifactRunner:
     def create_summary(path: Path, ctx: ArtifactContext) -> None:
         """Update or create summary general json + csv"""
 
-        logger.info(f"Started summary upsert for entry '{path.name}'")
+        logger.info(f"Started summary artifact creation for entry '{path.name}'")
 
         service = SummaryService(data=ctx.data, dump=ctx.metadata)
         service.create_summary_general(path)
         service.create_summary_mibig(path)
 
-        logger.info(f"Completed summary upsert for entry '{path.name}'")
+        logger.info(
+            f"Completed summary artifact creation upsert for entry '{path.name}'"
+        )
 
 
 def main(entries: list[str], ctx: ArtifactContext) -> None:
