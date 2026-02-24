@@ -88,6 +88,7 @@ class CreateArtifactRunner:
 
         service = SummaryService(data=ctx.data, dump=ctx.metadata)
         service.create_summary_general(path)
+        service.create_summary_mibig(path)
 
         logger.info(f"Completed summary upsert for entry '{path.name}'")
 

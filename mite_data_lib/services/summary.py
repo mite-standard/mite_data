@@ -241,7 +241,7 @@ class SummaryMibigStore:
 
     def write_to_json(self):
         payload = {
-            "version_mite_data": settings.mibig_version,
+            "version_mite_data": settings.mite_version,
             "entries": {},
         }
 
@@ -328,7 +328,7 @@ class SummaryGeneralStore:
 
     def write_to_json(self):
         payload = {
-            "version_mite_data": settings.mibig_version,
+            "version_mite_data": settings.mite_version,
             "entries": {k: v.model_dump() for k, v in sorted(self.entries.items())},
         }
 
