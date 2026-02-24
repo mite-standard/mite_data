@@ -269,7 +269,7 @@ class SummaryMibigStore:
         model.hash_mibig_summary = self._calc_sha256(payload)
         model.version = settings.mite_version
 
-        self.meta_artifact.write_text(model.model_dump_json())
+        self.meta_artifact.write_text(model.model_dump_json(indent=2))
 
 
 class SummaryGeneralStore:
@@ -314,7 +314,7 @@ class SummaryGeneralStore:
     @staticmethod
     def _calc_sha256(data: dict) -> str:
         json_str = json.dumps(
-            data, ensure_ascii=False, sort_keys=True, separators=(",", ":")
+            data, indent=2, ensure_ascii=False, sort_keys=True, separators=(",", ":")
         )
         return sha256(json_str.encode("utf-8")).hexdigest()
 
@@ -334,7 +334,11 @@ class SummaryGeneralStore:
 
         self.summary_json.write_text(
             json.dumps(
-                payload, ensure_ascii=False, sort_keys=True, separators=(",", ":")
+                payload,
+                indent=2,
+                ensure_ascii=False,
+                sort_keys=True,
+                separators=(",", ":"),
             )
         )
         self._update_metadata(payload=payload)
@@ -345,7 +349,7 @@ class SummaryGeneralStore:
         model.hash_general_summary = self._calc_sha256(payload)
         model.version = settings.mite_version
 
-        self.meta_artifact.write_text(model.model_dump_json())
+        self.meta_artifact.write_text(model.model_dump_json(indent=2))
 
     def write_to_csv(self):
         df = pd.DataFrame(

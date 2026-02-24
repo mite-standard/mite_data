@@ -166,11 +166,8 @@ class ProtAccessionService:
     def _load_metadata(self) -> ArtifactMetadata:
         return ArtifactMetadata(**self._load_json(self.metadata))
 
-    def _write_metadata(self, data: ArtifactMetadata):
-        tmp = self.metadata.with_suffix(".tmp")
-        with open(tmp, "w", encoding="utf-8") as f:
-            f.write(data.model_dump_json())
-        tmp.replace(self.metadata)
+    def _write_metadata(self, model: ArtifactMetadata):
+        self.metadata.write_text(model.model_dump_json(indent=2))
 
     @staticmethod
     def _load_json(path: Path) -> dict:
