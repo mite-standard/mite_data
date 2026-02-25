@@ -7,5 +7,6 @@
   "smiles": null,
   "product": null,
   "reaction": null,
-  "substrate": null
+  "substrate": null,
+  "summary": null
 }

@@ -2,6 +2,7 @@ import concurrent.futures
 import json
 import logging
 from hashlib import sha256
+from io import StringIO
 from pathlib import Path
 
 import pandas as pd
@@ -369,6 +370,16 @@ class SummaryGeneralStore:
             ]
         ).sort_values("accession")
         df.to_csv(self.summary_csv, index=False)
+        model = ArtifactMetadata(**json.loads(self.meta_artifact.read_text()))
+        model.summary = self._calc_sha256_csv(df)
+        model.version = settings.mite_version
+        self.meta_artifact.write_text(model.model_dump_json(indent=2))
+
+    @staticmethod
+    def _calc_sha256_csv(df: pd.DataFrame) -> str:
+        buffer = StringIO()
+        df.to_csv(buffer, index=True, lineterminator="\n")
+        return sha256(buffer.getvalue().encode("utf-8")).hexdigest()
 
 
 class SummaryService:
