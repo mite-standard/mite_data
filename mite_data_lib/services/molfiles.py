@@ -65,7 +65,7 @@ class MolInfoStore:
         models = MolInfoParser().parse(data=data)
         self.entries.extend(models)
 
-    def write_csv(self):
+    def write_smarts_csv(self):
         df_smarts = (
             pd.DataFrame(
                 [
@@ -79,6 +79,7 @@ class MolInfoStore:
         df_smarts.to_csv(self.smarts, index=True)
         self._update_metadata(ref="smarts", hash_val=self._calc_sha256_csv(df_smarts))
 
+    def write_smiles_csv(self):
         df_smiles = (
             pd.DataFrame(
                 [
@@ -99,12 +100,46 @@ class MolInfoStore:
         self._update_metadata(ref="smiles", hash_val=self._calc_sha256_csv(df_smiles))
 
     def write_substrate_pickle(self):
-        pass
-        # TODO: implement
+        df_substrates = (
+            pd.DataFrame(
+                [
+                    e.model_dump(include={"idx_csv_smiles", "substrates"})
+                    for e in self.entries
+                ]
+            )
+            .rename(columns={"idx_csv_smiles": "mite_id"})
+            .sort_values("mite_id")
+        )
+        PandasTools.AddMoleculeColumnToFrame(
+            df_substrates,
+            smilesCol="substrates",
+            molCol="ROMol_substrates",
+            includeFingerprints=True,
+        )
+        with open(self.substrate, "wb") as outfile:
+            pickle.dump(obj=df_substrates, file=outfile)
+        self._update_metadata("substrate", self._calc_sha256_pickle(df_substrates))
 
     def write_product_pickle(self):
-        pass
-        # TODO: implement
+        df_products = (
+            pd.DataFrame(
+                [
+                    e.model_dump(include={"idx_csv_smiles", "products"})
+                    for e in self.entries
+                ]
+            )
+            .rename(columns={"idx_csv_smiles": "mite_id"})
+            .sort_values("mite_id")
+        )
+        PandasTools.AddMoleculeColumnToFrame(
+            df_products,
+            smilesCol="products",
+            molCol="ROMol_products",
+            includeFingerprints=True,
+        )
+        with open(self.product, "wb") as outfile:
+            pickle.dump(obj=df_products, file=outfile)
+        self._update_metadata("product", self._calc_sha256_pickle(df_products))
 
     def write_reaction_pickle(self):
         df_reaction = (
@@ -167,7 +202,8 @@ class MolInfoService:
 
         for entry in sorted(self.data.glob("MITE*.json")):
             model.insert_entry(entry)
-        model.write_csv()
+        model.write_smarts_csv()
+        model.write_smiles_csv()
         model.write_reaction_pickle()
         model.write_substrate_pickle()
         model.write_product_pickle()
