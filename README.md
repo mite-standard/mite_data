@@ -103,7 +103,7 @@ These actions are tiggered automatically and perform validation and artifact gen
 
 ```
 Pull request (affecting mite_data/data)   <-- User contribution
-├ pipeline/create_mibig.py                <-- Reference dataset
+├ pipeline/validate_mibig.py              <-- Reference dataset validation
 ├ pipeline/validate_entry.py              <-- MITE entry validation
 Commit to main (affecting mite_data/data) <-- PR merge by maintainer
 ├ pipeline/create_artifacts.py            <-- Artifact creation
@@ -120,6 +120,7 @@ These artifacts are automatically added to main to reflect the updated file.
 Every new release triggers the artifact and entry validation pipeline.
 This step is computationally expensive but provides a sanity check.
 
+If the MIBiG validation check does not pass, the MIBiG dataset needs to be updated manually (see below)
 
 ### Manual execution/development
 
@@ -143,10 +144,11 @@ uv run pytest --download # includes more time-consuming tests with network calls
 3) Run pipelines
 
 ```commandline
-uv run python pipeline/create_mibig.py
-uv run python pipeline/validate_entry.py entry1.json entry2.json entryx.json
-uv run python pipeline/create_artifacts.py
-uv run python validate_artifacts.py
+uv run python pipeline/validate_mibig.py                  <-- Checks if MIBIG Ref is valid
+uv run python pipeline/create_mibig.py                    <-- Downloads MIBiG Ref dataset
+uv run python pipeline/validate_entry.py entry1.json ...  <-- Checks entries
+uv run python pipeline/create_artifacts.py                <-- Creates artifacts
+uv run python validate_artifacts.py                       <-- Validates artifacts
 ```
 
 #### Adding new rules

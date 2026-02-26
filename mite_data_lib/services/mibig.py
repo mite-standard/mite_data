@@ -59,16 +59,14 @@ class MIBiGDataService:
                 f"Invalid formatting of MIBIG proteins file: {self.data}"
             ) from e
 
+    def check_artifacts(self):
+        if not self._is_valid_data():
+            raise RuntimeError(
+                f"MIBiG data not available, not in the expected {self.version}, or shows compromised hash. Rebuild the artifact manually."
+            )
+
     def build_artifacts(self):
         """Verify that mibig protein information exists"""
-        if self._is_valid_data():
-            logger.info(
-                f"MIBiG data already exists in the specified version {self.version} - skip download"
-            )
-            return
-        logger.info(
-            f"MIBiG data not available, not in the expected {self.version}, or shows compromised hash - start download"
-        )
         self._download_and_build()
 
     def _is_valid_data(self) -> bool:
