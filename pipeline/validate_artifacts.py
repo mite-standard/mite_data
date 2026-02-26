@@ -5,52 +5,52 @@ from pathlib import Path
 
 from mite_data_lib.config.config import settings
 from mite_data_lib.config.logging import setup_logger
-from mite_data_lib.models.validation import ArtifactContext, FastaRule, ValidationIssue
-from mite_data_lib.rules import fasta_rules
+from mite_data_lib.models.metadata import ArtifactMetadata
+from mite_data_lib.models.validation import (
+    ArtifactContext,
+    ReleaseRule,
+    ValidationIssue,
+)
+from mite_data_lib.rules import release_rules
 
 logger = logging.getLogger(__name__)
 
-FASTA_RULE: list[FastaRule] = [
-    fasta_rules.fasta_check,
+
+RELEASE_RULES: list[ReleaseRule] = [
+    release_rules.fasta_check,
+    release_rules.prot_acc_check,
+    release_rules.molfiles_check,
+    release_rules.summary_check,
+    release_rules.entry_check,
 ]
 
-# todo: check prot_acc
-# todo: check metadata
-# todo: check molfiles
-# todo: check summary
 
-
-class ValidateArtifactRunner:
+class ValidateReleaseRunner:
     """Runs validation suite on artifacts"""
 
     @staticmethod
     def run(
-        path: Path, ctx: ArtifactContext
+        ctx: ArtifactContext, meta: ArtifactMetadata
     ) -> tuple[list[ValidationIssue], list[ValidationIssue]]:
         """Validate a single entry file"""
 
         errors = []
         warnings = []
 
-        with open(path) as f:
-            data = json.load(f)
-
-        for rule in FASTA_RULE:
-            e, w = rule(data=data, ctx=ctx)
+        for rule in RELEASE_RULES:
+            e, w = rule(ctx=ctx, meta=meta)
             errors.extend(e)
             warnings.extend(w)
-
-        # TODO: add artifact rules for integrity checks
 
         return errors, warnings
 
 
-def main(entries: list[str], ctx: ArtifactContext) -> None:
-    """Run artifact generation checks
+def main(ctx: ArtifactContext, meta: ArtifactMetadata) -> None:
+    """Perform release check by running rules on data and artifacts
 
     Args:
-        entries: a list of MITE entry filepaths
         ctx: a ArtifactContext object
+        meta: a ArtifactMetadata object
 
     Raises:
         RuntimeError: validation failed
@@ -58,22 +58,14 @@ def main(entries: list[str], ctx: ArtifactContext) -> None:
 
     logger.info("Artifact validation started")
 
-    runner = ValidateArtifactRunner()
+    runner = ValidateReleaseRunner()
 
     errors: list[ValidationIssue] = []
     warnings: list[ValidationIssue] = []
 
-    if not entries:
-        raise RuntimeError("No entries specified - abort.")
-
-    for f in entries:
-        p = Path(f)
-        if not p.exists():
-            raise RuntimeError(f"File {p.name} does not exists - abort.")
-
-        e, w = runner.run(path=p, ctx=ctx)
-        errors.extend(e)
-        warnings.extend(w)
+    e, w = runner.run(ctx=ctx, meta=meta)
+    errors.extend(e)
+    warnings.extend(w)
 
     if warnings:
         logger.warning(f"Artifact validation found {len(warnings)} warnings.")
@@ -94,11 +86,17 @@ if __name__ == "__main__":
     setup_logger()
     try:
         main(
-            entries=sys.argv[1:],
             ctx=ArtifactContext(
                 fasta=settings.data / "fasta",
                 data=settings.data / "data",
                 metadata=settings.data / "metadata",
+            ),
+            meta=ArtifactMetadata(
+                **json.loads(
+                    settings.data.joinpath(
+                        "metadata/artifact_metadata.json"
+                    ).read_text()
+                )
             ),
         )
         sys.exit(0)

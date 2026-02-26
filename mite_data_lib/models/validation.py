@@ -4,6 +4,7 @@ from typing import Literal, Protocol
 
 import pandas as pd
 
+from mite_data_lib.models.metadata import ArtifactMetadata
 from mite_data_lib.models.reserved import ReserveData
 from mite_data_lib.services.sequence import SequenceService
 
@@ -49,7 +50,7 @@ class DataRule(Protocol):
     ) -> tuple[list[ValidationIssue], list[ValidationIssue]]: ...
 
 
-class FastaRule(Protocol):
+class ReleaseRule(Protocol):
     def __call__(
-        self, data: dict, ctx: ArtifactContext
+        self, ctx: ArtifactContext, meta: ArtifactMetadata
     ) -> tuple[list[ValidationIssue], list[ValidationIssue]]: ...

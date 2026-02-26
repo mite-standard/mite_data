@@ -1,12 +1,10 @@
 import json
 import logging
-import pickle
 from hashlib import sha256
 from io import StringIO
 from pathlib import Path
 
 import pandas as pd
-from rdkit.Chem import PandasTools, rdChemReactions
 
 from mite_data_lib.config.filenames import names
 from mite_data_lib.models.metadata import ArtifactMetadata
@@ -51,9 +49,6 @@ class MolInfoStore:
         self.meta_artifact = dump / names.meta_artifact
         self.smarts = dump / names.smarts
         self.smiles = dump / names.smiles
-        self.product = dump / names.product
-        self.reaction = dump / names.reaction
-        self.substrate = dump / names.substrate
 
     def insert_entry(self, path: Path):
         with open(path) as f:
@@ -99,73 +94,6 @@ class MolInfoStore:
         df_smiles.to_csv(self.smiles, index=True)
         self._update_metadata(ref="smiles", hash_val=self._calc_sha256_csv(df_smiles))
 
-    def write_substrate_pickle(self):
-        df_substrates = (
-            pd.DataFrame(
-                [
-                    e.model_dump(include={"idx_csv_smiles", "substrates"})
-                    for e in self.entries
-                ]
-            )
-            .rename(columns={"idx_csv_smiles": "mite_id"})
-            .sort_values("mite_id")
-        )
-        PandasTools.AddMoleculeColumnToFrame(
-            df_substrates,
-            smilesCol="substrates",
-            molCol="ROMol_substrates",
-            includeFingerprints=True,
-        )
-        with open(self.substrate, "wb") as outfile:
-            pickle.dump(obj=df_substrates, file=outfile)
-        self._update_metadata("substrate", self._calc_sha256_pickle(df_substrates))
-
-    def write_product_pickle(self):
-        df_products = (
-            pd.DataFrame(
-                [
-                    e.model_dump(include={"idx_csv_smiles", "products"})
-                    for e in self.entries
-                ]
-            )
-            .rename(columns={"idx_csv_smiles": "mite_id"})
-            .sort_values("mite_id")
-        )
-        PandasTools.AddMoleculeColumnToFrame(
-            df_products,
-            smilesCol="products",
-            molCol="ROMol_products",
-            includeFingerprints=True,
-        )
-        with open(self.product, "wb") as outfile:
-            pickle.dump(obj=df_products, file=outfile)
-        self._update_metadata("product", self._calc_sha256_pickle(df_products))
-
-    def write_reaction_pickle(self):
-        df_reaction = (
-            pd.DataFrame(
-                [
-                    e.model_dump(include={"idx_csv_smarts", "reactionsmarts"})
-                    for e in self.entries
-                ]
-            )
-            .rename(columns={"idx_csv_smarts": "mite_id"})
-            .sort_values("mite_id")
-        )
-        df_reaction["reaction_fps"] = df_reaction["reactionsmarts"].apply(
-            lambda x: rdChemReactions.CreateStructuralFingerprintForReaction(
-                rdChemReactions.ReactionFromSmarts(x)
-            )
-        )
-        df_reaction["diff_reaction_pfs"] = df_reaction["reactionsmarts"].apply(
-            lambda x: rdChemReactions.CreateDifferenceFingerprintForReaction(
-                rdChemReactions.ReactionFromSmarts(x)
-            )
-        )
-        with open(self.reaction, "wb") as outfile:
-            pickle.dump(obj=df_reaction, file=outfile)
-        self._update_metadata("reaction", self._calc_sha256_pickle(df_reaction))
-
     def _update_metadata(self, ref: str, hash_val: str):
         model = ArtifactMetadata(**json.loads(self.meta_artifact.read_text()))
         setattr(model, ref, hash_val)
@@ -176,11 +104,6 @@ class MolInfoStore:
         buffer = StringIO()
         df.to_csv(buffer, index=True, lineterminator="\n")
         return sha256(buffer.getvalue().encode("utf-8")).hexdigest()
-
-    @staticmethod
-    def _calc_sha256_pickle(df: pd.DataFrame) -> str:
-        data = pickle.dumps(df, protocol=pickle.HIGHEST_PROTOCOL)
-        return sha256(data).hexdigest()
 
 
 class MolInfoService:
@@ -204,8 +127,5 @@ class MolInfoService:
             model.insert_entry(entry)
         model.write_smarts_csv()
         model.write_smiles_csv()
-        model.write_reaction_pickle()
-        model.write_substrate_pickle()
-        model.write_product_pickle()
 
         logger.info(f"Completed molfile artifact creation")

@@ -30,18 +30,6 @@ class Filenames:
         return "mite_prot_accessions.csv"
 
     @property
-    def product(self) -> str:
-        return "product_list.pickle"
-
-    @property
-    def reaction(self) -> str:
-        return "reaction_fps.pickle"
-
-    @property
-    def substrate(self) -> str:
-        return "substrate_list.pickle"
-
-    @property
     def mibig_prot(self) -> str:
         return "mibig_proteins.json"
 

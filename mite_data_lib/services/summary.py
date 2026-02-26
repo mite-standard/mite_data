@@ -378,7 +378,7 @@ class SummaryGeneralStore:
     @staticmethod
     def _calc_sha256_csv(df: pd.DataFrame) -> str:
         buffer = StringIO()
-        df.to_csv(buffer, index=True, lineterminator="\n")
+        df.to_csv(buffer, index=False, lineterminator="\n")
         return sha256(buffer.getvalue().encode("utf-8")).hexdigest()
 
 
