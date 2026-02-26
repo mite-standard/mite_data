@@ -39,14 +39,14 @@ jobs:
         id: files
         run: |
           git fetch origin ${{ github.event.pull_request.base.ref }}
-          CHANGED=$(git diff --name-only --diff-filter=AM origin/${{ github.event.pull_request.base.ref }}...HEAD | grep -E 'mite_data/data/*.json$' || true)
+          CHANGED=$(git diff --name-only --diff-filter=AM origin/${{ github.event.pull_request.base.ref }}...HEAD | grep -E '*.json$' || true)
           {
             echo "changed<<EOF"
             echo "$CHANGED"
             echo "EOF"
           } >> "$GITHUB_OUTPUT"
 
-      - name: Run validation scripts on changed MITE .json files
+      - name: Run validation scripts on MITE .json files
         if: ${{ steps.files.outputs.changed != '' }}
         run: |
           echo "Running validation on changed .json files:"
