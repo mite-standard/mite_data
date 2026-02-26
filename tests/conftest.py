@@ -44,6 +44,7 @@ def ctx():
         seq_service=SequenceService(fasta=Path("tests/dummy_data/fasta")),
         mibig_proteins=MIBiGDataService(
             version="4.0.1",
+            record="abc",
             path=Path("tests/dummy_data/mibig_valid"),
         ).mibig_proteins,
     )

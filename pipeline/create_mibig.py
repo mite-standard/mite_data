@@ -18,4 +18,10 @@ def main(service: MIBiGDataService) -> None:
 
 if __name__ == "__main__":
     setup_logger()
-    main(MIBiGDataService())
+    main(
+        MIBiGDataService(
+            version=settings.mibig_version,
+            record=settings.mibig_record,
+            path=settings.data / "mibig",
+        )
+    )

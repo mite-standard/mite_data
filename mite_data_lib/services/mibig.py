@@ -1,3 +1,5 @@
+"""Download and set up MIBiG reference dataset"""
+
 import json
 import logging
 import shutil
@@ -20,15 +22,13 @@ class MIBiGDataService:
 
     def __init__(
         self,
-        version: str | None = None,
-        record: str | None = None,
-        path: Path | None = None,
-        timeout: float | None = None,
+        version: str,
+        record: str,
+        path: Path,
     ):
-        self.version = version or settings.mibig_version
-        self.record = record or settings.mibig_record
-        self.path = path or settings.data / "mibig"
-        self.timeout = timeout or settings.timeout
+        self.version = version
+        self.record = record
+        self.path = path
 
         self.data = self.path / "mibig_proteins.json"
         self.metadata = self.path / "metadata.json"
@@ -50,7 +50,7 @@ class MIBiGDataService:
             return MIBiGDataAdapter.validate_python(raw)
         except ValidationError as e:
             raise RuntimeError(
-                f"Invalid formatting of MIBIG proteins file: {self.path}"
+                f"Invalid formatting of MIBIG proteins file: {self.data}"
             ) from e
 
     def build_artifacts(self):
@@ -119,7 +119,12 @@ class MIBiGDataService:
             self._write_json(path=tmp_data, data=data)
 
             self._write_json(
-                path=tmp_metadata, data={"version": version, "record": self.record, "hash": self._calculate_sha256(data)}
+                path=tmp_metadata,
+                data={
+                    "version": version,
+                    "record": self.record,
+                    "hash": self._calculate_sha256(data),
+                },
             )
 
             if self.path.exists():
@@ -133,7 +138,7 @@ class MIBiGDataService:
         logger.info("Completed downloading MIBiG record")
 
     def _download_metadata(self) -> dict:
-        response_metadata = requests.get(self.record, timeout=self.timeout)
+        response_metadata = requests.get(self.record, timeout=settings.timeout)
         if response_metadata.status_code != 200:
             raise RuntimeError(
                 f"Error fetching 'mibig' record metadata: {response_metadata.status_code}"
@@ -143,7 +148,9 @@ class MIBiGDataService:
     def _download_data(self, metadata: dict) -> dict:
         for entry in metadata.get("files"):
             if entry.get("key", "").endswith("fasta"):
-                response = requests.get(entry["links"]["self"], timeout=self.timeout)
+                response = requests.get(
+                    entry["links"]["self"], settings=settings.timeout
+                )
                 if response.status_code != 200:
                     raise RuntimeError(
                         f"Error downloading 'mibig' record: {response.status_code}"
