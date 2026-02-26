@@ -3,7 +3,7 @@ name: Create artifacts from MITE data
 run-name: Pushed by ${{ github.actor }}
 
 permissions:
-  contents: read
+  contents: write
 on:
   push:
     branches:
@@ -43,4 +43,5 @@ jobs:
           git config user.email "github-actions@github.com"
           
           git status 
-          # TODO expand here if all works out
+
+# TODO expand here if all works out
