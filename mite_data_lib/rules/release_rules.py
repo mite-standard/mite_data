@@ -1,13 +1,8 @@
-"""Rules to validate repo pre-release"""
+"""Rules to validate repo for release"""
 
 import json
-import pickle
-from hashlib import file_digest, sha256
-from io import StringIO
+from hashlib import sha256
 
-import pandas as pd
-
-# check artifacts one by one for correspondence with hash
 from mite_extras import MiteParser
 from mite_schema import SchemaManager
 
@@ -112,7 +107,7 @@ def fasta_check(
 def prot_acc_check(
     ctx: ArtifactContext, meta: ArtifactMetadata
 ) -> tuple[list[ValidationIssue], list[ValidationIssue]]:
-    """Compare mite prot acc file with its hash"""
+    """Validate hash of mite prot acc file"""
 
     e = []
     w = []
@@ -133,6 +128,8 @@ def prot_acc_check(
 def molfiles_check(
     ctx: ArtifactContext, meta: ArtifactMetadata
 ) -> tuple[list[ValidationIssue], list[ValidationIssue]]:
+    """Validate hashes of molfiles"""
+
     def _format_error(filename: str):
         return ValidationIssue(
             severity="error",
@@ -157,6 +154,14 @@ def molfiles_check(
 def summary_check(
     ctx: ArtifactContext, meta: ArtifactMetadata
 ) -> tuple[list[ValidationIssue], list[ValidationIssue]]:
+    """Validate hashes of summary files"""
+
+    def _hash_from_json(payload: dict) -> str:
+        json_str = json.dumps(
+            payload, indent=2, ensure_ascii=False, sort_keys=True, separators=(",", ":")
+        )
+        return sha256(json_str.encode("utf-8")).hexdigest()
+
     def _format_error(filename: str):
         return ValidationIssue(
             severity="error",
@@ -184,10 +189,3 @@ def summary_check(
         e.append(_format_error("summary.csv"))
 
     return e, w
-
-
-def _hash_from_json(data: dict) -> str:
-    json_str = json.dumps(
-        data, indent=2, ensure_ascii=False, sort_keys=True, separators=(",", ":")
-    )
-    return sha256(json_str.encode("utf-8")).hexdigest()

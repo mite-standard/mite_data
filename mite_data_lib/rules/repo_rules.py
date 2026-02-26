@@ -1,3 +1,5 @@
+"""Run repo-level rules"""
+
 import re
 from pathlib import Path
 

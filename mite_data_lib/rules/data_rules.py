@@ -1,3 +1,5 @@
+"""Rules that MITE data entries need to pass to qualify for merge to main"""
+
 import logging
 
 import requests
