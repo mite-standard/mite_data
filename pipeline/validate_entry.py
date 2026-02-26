@@ -6,6 +6,7 @@ from pathlib import Path
 from mite_extras import MiteParser
 from mite_schema import SchemaManager
 
+from mite_data_lib.config.config import settings
 from mite_data_lib.config.logging import setup_logger
 from mite_data_lib.models.validation import (
     DataRule,
@@ -131,10 +132,18 @@ if __name__ == "__main__":
         main(
             entries=sys.argv[1:],
             ctx=ValidationContext(
-                reserved=ReserveService().reserved,
-                proteins=ProtAccessionService().proteins,
-                mibig_proteins=MIBiGDataService().mibig_proteins,
-                seq_service=SequenceService(),
+                reserved=ReserveService(
+                    path=settings.data.parent / "reserved/reserved_accessions.json"
+                ).reserved,
+                proteins=ProtAccessionService(
+                    data=settings.data / "data", dump=settings.data / "metadata"
+                ).proteins,
+                mibig_proteins=MIBiGDataService(
+                    version=settings.mibig_version,
+                    record=settings.mibig_record,
+                    path=settings.data / "mibig",
+                ).mibig_proteins,
+                seq_service=SequenceService(fasta=settings.data / "fasta"),
             ),
         )
         sys.exit(0)

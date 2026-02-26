@@ -1,3 +1,5 @@
+"""Generate MITE summary files"""
+
 import concurrent.futures
 import json
 import logging

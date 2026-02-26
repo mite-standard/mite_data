@@ -1,3 +1,5 @@
+"""Create mite protein accessions artifact file"""
+
 import json
 import logging
 from functools import cached_property
@@ -12,24 +14,20 @@ from mite_data_lib.models.metadata import ArtifactMetadata
 
 logger = logging.getLogger(__name__)
 
-path_prot_acc = settings.data / "metadata/mite_prot_accessions.csv"
-path_metadata = settings.data / "metadata/artifact_metadata.json"
-
 
 class ProtAccessionService:
-    """Manages mite accession file artifact generation"""
+    """Manages mite accession file artifact generation
 
-    def __init__(
-        self,
-        data: Path | None = None,
-        dump: Path | None = None,
-        prot_acc: Path | None = None,
-        metadata: Path | None = None,
-    ):
-        self.data = data or settings.data / "data"
-        self.dump = dump or settings.data / "metadata"
-        self.prot_acc = prot_acc or path_prot_acc
-        self.metadata = metadata or path_metadata
+    Attributes:
+        data: the mite data entry dir
+        dump: the artifact dump location
+    """
+
+    def __init__(self, data: Path, dump: Path):
+        self.data = data
+        self.dump = dump
+        self.prot_acc = self.dump / "mite_prot_accessions.csv"
+        self.metadata = self.dump / "artifact_metadata.json"
 
     @cached_property
     def proteins(self) -> pd.DataFrame:
@@ -65,8 +63,7 @@ class ProtAccessionService:
 
         if metadata.hash_mite_prot_acc != self._calculate_sha256(df):
             logger.warning(
-                f"Hash-based integrity compromised: {self.prot_acc}. \n"
-                "Rebuilding files"
+                f"Hash-based integrity compromised: {self.prot_acc}. Rebuilding files"
             )
             self._build()
             return

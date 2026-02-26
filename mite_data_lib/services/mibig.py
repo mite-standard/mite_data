@@ -18,7 +18,13 @@ logger = logging.getLogger(__name__)
 
 
 class MIBiGDataService:
-    """Manages MIBiG reference dataset"""
+    """Manages MIBiG reference dataset
+
+    Attributes:
+        version: the mibig version to use
+        record: the ZENODO URL of the version
+        path: the path to the artifact storage location
+    """
 
     def __init__(
         self,

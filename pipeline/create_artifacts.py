@@ -1,7 +1,8 @@
+"""Generate artifacts from mite data entries"""
+
 import json
 import logging
 import sys
-from importlib.metadata import metadata
 from pathlib import Path
 
 from mite_data_lib.config.config import settings
@@ -67,8 +68,6 @@ class CreateArtifactRunner:
         prot_service = ProtAccessionService(
             data=ctx.data,
             dump=ctx.metadata,
-            prot_acc=ctx.metadata / "mite_prot_accessions.csv",
-            metadata=ctx.metadata / "artifact_metadata.json",
         )
 
         prot_service.update_from_entry(path)

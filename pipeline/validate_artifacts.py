@@ -1,3 +1,5 @@
+"""Run validation rules on repository"""
+
 import json
 import logging
 import sys

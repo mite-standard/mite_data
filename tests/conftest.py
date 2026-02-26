@@ -38,8 +38,6 @@ def ctx():
         proteins=ProtAccessionService(
             data=Path("tests/dummy_data/data"),
             dump=Path("tests/dummy_data/metadata"),
-            prot_acc=Path("tests/dummy_data/metadata/mite_prot_accessions.csv"),
-            metadata=Path("tests/dummy_data/metadata/artifact_metadata.json"),
         ).proteins,
         seq_service=SequenceService(fasta=Path("tests/dummy_data/fasta")),
         mibig_proteins=MIBiGDataService(

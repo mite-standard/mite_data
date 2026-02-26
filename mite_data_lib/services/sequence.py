@@ -1,3 +1,5 @@
+"""Validate and get protein fasta files"""
+
 import concurrent.futures
 import logging
 from pathlib import Path
@@ -12,13 +14,17 @@ Entrez.email = settings.email
 
 
 class SequenceService:
-    """Manages downloading of sequences"""
+    """Manages downloading of sequences
 
-    def __init__(self, fasta: Path | None = None, timeout: float | None = None):
-        self.fasta = fasta or settings.data / "fasta"
-        self.timeout = timeout or settings.timeout
+    Attributes:
+        fasta: the MITE fasta file storage location
+    """
 
-    def fetch_ncbi(self, acc: str) -> list[str]:
+    def __init__(self, fasta: Path):
+        self.fasta = fasta
+
+    @staticmethod
+    def fetch_ncbi(acc: str) -> list[str]:
         """Download protein seq from NCBI
 
         Args:
@@ -45,7 +51,7 @@ class SequenceService:
             future = ex.submit(_fetch, acc)
 
             try:
-                fasta_data = future.result(timeout=self.timeout)
+                fasta_data = future.result(timeout=settings.timeout)
             except concurrent.futures.TimeoutError as e:
                 raise RuntimeError("Warning: could not connect to NCBI: Timeout") from e
 
@@ -57,7 +63,8 @@ class SequenceService:
 
         return lines[1:]
 
-    def fetch_uniprot(self, acc: str) -> list[str]:
+    @staticmethod
+    def fetch_uniprot(acc: str) -> list[str]:
         """Download protein seq from uniprot
 
         Args:
@@ -79,7 +86,7 @@ class SequenceService:
         logger.debug(f"Started fetching protein sequence '{acc}' from UniProt")
 
         try:
-            response = requests.get(_service(acc), timeout=self.timeout)
+            response = requests.get(_service(acc), timeout=settings.timeout)
             response.raise_for_status()
         except requests.exceptions.ConnectTimeout as e:
             raise RuntimeError("Could not connect to UniProt: Timeout") from e
@@ -95,7 +102,7 @@ class SequenceService:
         return lines[1:]
 
     def seq_match(self, genpept: str, uniprot: str) -> bool:
-        """Check if protein sequences are equal"""
+        """Check if protein sequences associated to IDs are equal"""
         return "".join(self.fetch_ncbi(genpept)) == "".join(self.fetch_uniprot(uniprot))
 
     def dump_fasta(self, mite_acc: str, acc: str, seq: list[str]) -> None:
