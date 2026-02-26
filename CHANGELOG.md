@@ -7,12 +7,21 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [1.23] UNRELEASED
 
+### Added
+
+- Hash-based validation of artifacts
+
 ### Changed
 
 - Separation of data and code
 - Rework of validation functionality
-- Rework of metadata updating functionality
+- Rework of artifact creation/updating functionality
+- Rework CI/CD logic
 - Rework of pre-commit logic
+
+### Removed
+
+- pickle-file generation (fingerprint generation in mite_web on startup instead)
 
 ## [1.22] 14-01-2026
 
