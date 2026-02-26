@@ -1776,7 +1776,7 @@
       "order":"Micromonosporales",
       "organism":"Actinoplanes missouriensis (strain ATCC 14538 / DSM 43046 / CBS 188.64 / JCM 3121 / NBRC 102363 / NCIMB 12654 / NRRL B-3342 / UNCC 431)",
       "phylum":"Actinomycetota",
-      "reaction_description":"N/A",
+      "reaction_description":"Hydroxylation of alkylresorcinol substrate.",
       "status":"active",
       "tailoring":"Hydroxylation"
     },
