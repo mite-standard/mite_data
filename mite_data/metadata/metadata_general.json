@@ -3168,7 +3168,7 @@
       "order":"Pezizomycotina",
       "organism":"Aspergillus versicolor",
       "phylum":"Dikarya",
-      "reaction_description":"N/A",
+      "reaction_description":"Acetylates the arginine of the diketopiperazine substrate",
       "status":"active",
       "tailoring":"Acetylation"
     },

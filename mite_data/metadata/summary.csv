@@ -143,7 +143,7 @@ MITE0000141,active,AnkF,O-methyltransferase,Methylation,N/A,N/A,N/A,Aspergillus 
 MITE0000142,active,AnkC,FAD-dependent monooxygenase,Monooxygenation,N/A,FAD,N/A,Aspergillus thermomutatus,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Eurotiomycetes
 MITE0000143,active,AvaC,Kynurenine formamidase,Hydrolysis,N/A,N/A,N/A,Aspergillus versicolor,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Eurotiomycetes
 MITE0000144,active,AvaB,FAD-dependent monooxygenase ,Monooxygenation,N/A,N/A,N/A,Aspergillus versicolor,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Eurotiomycetes
-MITE0000145,active,AvaD,GNAT family N-acetyltransferase,Acetylation,N/A,N/A,N/A,Aspergillus versicolor,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Eurotiomycetes
+MITE0000145,active,AvaD,GNAT family N-acetyltransferase,Acetylation,Acetylates the arginine of the diketopiperazine substrate,N/A,N/A,Aspergillus versicolor,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Eurotiomycetes
 MITE0000146,retired,AvaA,CRW tRNA-dependent cyclodipeptide synthase,Other,N/A,N/A,N/A,Aspergillus versicolor,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Eurotiomycetes
 MITE0000147,active,PeuJ,FMN-dependent monooxygenase,Hydroxylation,N/A,N/A,N/A,Streptomyces peucetius subsp. caesius ATCC 27952,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
 MITE0000148,retired,PtlE,Baeyer-Villiger monooxygenase,Oxidation,N/A,N/A,N/A,Streptomyces avermitilis (strain ATCC 31267 / DSM 46492 / JCM 5070 / NBRC 14893 / NCIMB 12804 / NRRL 8165 / MA-4680),Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae

@@ -37,15 +37,17 @@ jobs:
       - name: Get changed MITE files
         id: files
         run: |
-          git diff --name-only --diff-filter=AM ${{ github.event.before }}...${{ github.sha }}
-          {
-            echo "changed<<EOF"
-            echo "$CHANGED"
-            echo "EOF"
-          } >> "$GITHUB_OUTPUT"
+          CHANGED=$(git diff --name-only --diff-filter=AM ${{ github.event.before }}...${{ github.sha }})
+          echo "changed=$CHANGED" >> "$GITHUB_OUTPUT"
+
+      - name: Debug output
+        run: |
+          echo "OUTPUT:"
+          echo "${{ steps.files.outputs.changed }}"
+          echo "END"
 
       - name: Run artifact creation pipeline
-        if: ${{ steps.files.outputs.changed != '' }}
+        if: steps.files.outputs.changed
         run: |
           echo "Running artifact creation on MITE .json files:"
           while IFS= read -r file; do
