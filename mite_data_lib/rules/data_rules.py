@@ -56,13 +56,14 @@ def duplicate_genpept(
         match = df.loc[df["genpept"] == genpept]
         if not match.empty:
             for i, row in match.iterrows():
-                e.append(
-                    ValidationIssue(
-                        severity="error",
-                        location=data["accession"],
-                        message=f"Genpept accession '{row['genpept']!s}' already specified in {i!s}",
+                if i != data["accession"]:
+                    e.append(
+                        ValidationIssue(
+                            severity="error",
+                            location=data["accession"],
+                            message=f"Genpept accession '{row['genpept']!s}' already specified in {i!s}",
+                        )
                     )
-                )
     return e, w
 
 
@@ -77,13 +78,14 @@ def duplicate_uniprot(
         match = df.loc[df["uniprot"] == uniprot]
         if not match.empty:
             for i, row in match.iterrows():
-                e.append(
-                    ValidationIssue(
-                        severity="error",
-                        location=data["accession"],
-                        message=f"UniProt accession '{row['uniprot']!s}' already specified in {i!s}",
+                if i != data["accession"]:
+                    e.append(
+                        ValidationIssue(
+                            severity="error",
+                            location=data["accession"],
+                            message=f"UniProt accession '{row['uniprot']!s}' already specified in {i!s}",
+                        )
                     )
-                )
     return e, w
 
 
