@@ -7,20 +7,23 @@ Contents
 -----------------
 - [Overview](#overview)
 - [Documentation](#documentation)
-- [System Requirements](#system-requirements)
-- [Installation Guide](#installation-guide)
-- [Quick Start](#quick-start)
 - [Attribution](#attribution)
 - [For Developers](#for-developers)
 
 ## Overview
 
 **MITE** (Minimum Information about a Tailoring Enzyme) is a community-driven database for the characterization of tailoring enzymes.
-These enzymes play crucial roles in the biosynthesis of secondary or specialized metabolites, naturally occurring molecules with strong biological activities, such as antibiotic properties.
+These enzymes play crucial roles in the biosynthesis of secondary or specialized metabolites.
+These naturally occurring molecules often show strong biological activities, and many drugs (e.g. antibiotics) derive from them.
 
 This repository contains the **single source of truth** of the Minimum Information about a Tailoring Enzyme (MITE) database.
 
 For more information, visit the [MITE Data Standard Organization page](https://github.com/mite-standard) or read our [publication]( https://doi.org/10.1093/nar/gkaf969).
+
+For feature requests and suggestions, please refer to the [MITE Discussion forum](https://github.com/orgs/mite-standard/discussions/).
+
+For simple data submissions, please refer to the [MITE web portal](https://mite.bioinformatics.nl/). 
+For more complex or large-scale submission, please get in touch with us by e.g. opening an [Issue](http://github.com/mite-standard/mite_data/issues).
 
 ### MITE Accession Reservation
 
@@ -28,70 +31,17 @@ You can reserve MITE Accession IDs for your to-be-published manuscript. Please r
 
 ## Documentation
 
-This repository contains the **single source of truth** of the Minimum Information about a Tailoring Enzyme (MITE) database.
+This repository contains the **single source of truth** of the MITE database, as well as derived data artifacts.
 
-This data is in the form of JSON files controlled by [mite_schema](http://github.com/mite-standard/mite_schema) and validated by [mite_extras](https://github.com/mite-standard/mite_extras).
-These files are created by user submissions via the [MITE web portal](https://mite.bioinformatics.nl/), expert-reviewed via pull requests, and then deposited in the [Zenodo](https://doi.org/10.5281/zenodo.13294303) repository.
-From there, the [MITE web portal](https://mite.bioinformatics.nl/) and other tools such as antiSMASH pull the data for their own use.
+This data is in the form of JSON files controlled by [mite_schema](http://github.com/mite-standard/mite_schema) 
+These files are created by user submissions via the [MITE web portal](https://mite.bioinformatics.nl/).
+Upon submission, entries are automatically checked with [mite_extras](https://github.com/mite-standard/mite_extras) library and a new pull request is created.
 
-This repository also provides some CLI functionality to generate auxiliary files:
-- Metadata files summarizing information of MITE entries (`mite_data/metadata`)
-- Protein FASTA-files for all active (i.e. non-retired) MITE entries (`mite_data/fasta`)
+After user submission, our domain expert reviewers check then entries and approve the pull requests.
+Next, automatic checks are performed to check entries and automatically create the derived artifacts.
 
-For feature requests and suggestions, please refer to the [MITE Discussion forum](https://github.com/orgs/mite-standard/discussions/).
+Upon release of a new version, data is automatically backed up in its [Zenodo](https://doi.org/10.5281/zenodo.13294303) repository, from where it is used by other sources (e.g. [MITE Web](https://mite.bioinformatics.nl/))
 
-For simple data submissions, please refer to the [MITE web portal](https://mite.bioinformatics.nl/). 
-For more complex or large-scale submission, please get in touch with us by e.g. opening an [Issue](http://github.com/mite-standard/mite_data/issues).
-
-## System Requirements
-
-### OS Requirements
-
-Local installation was tested on:
-
-- Ubuntu Linux 20.04 and 22.04 (command line)
-
-#### Python dependencies
-
-Dependencies including exact versions are specified in the [pyproject.toml](./pyproject.toml) file.
-
-## Installation Guide
-
-### With `uv` from GitHub
-
-*Note: assumes that `uv` is installed locally - see the methods described [here](https://docs.astral.sh/uv/getting-started/installation/)*
-
-```commandline
-git clone https://github.com/mite-standard/mite_data
-uv sync
-uv run pre-commit install
-```
-
-## Quick Start
-
-This CLI serves two purposes:
-
-- update missing auxiliary files
-- validate files
-
-Normally, the CLI automatically start in single-file mode, triggered by `pre-commit`.
-Therefore, whenever a file is committed, `pre-commit` will download missing files, update the metadata, and perform checks.
-
-This is equivalent to:
-
-```commandline
-uv run python mite_data/main.py <your-mite-file>.json
-uv run python mite_data/validation/mite_validation.py <your-mite-file>.json
-```
-
-In some exceptional cases, you may want to trigger a full regeneration of all files.
-
-**Nota bene: This will overwrite all manual taxonomy annotations in the `metadata_general.json` file**
-
-```commandline
-uv run python ./mite_data/main.py
-uv run python mite_data/validation/mite_validation.py 
-```
 
 ## Attribution
 
@@ -109,97 +59,101 @@ This work was supported by the Netherlands Organization for Scientific Research 
 
 ## For Developers
 
-*Nota bene: for details on how to contribute to the MITE project, please refer to [CONTRIBUTING](CONTRIBUTING.md).*
+### Release checklist
 
-For installation instruction, see [above](#installation-guide)
+Workflow for release creation (for details, see below):
 
-#### Installation with `uv` from GitHub
+- Update version in [pyproject.toml](pyproject.toml) file (major is reserved to manuscript publications)
+- On [new release](https://github.com/mite-standard/mite_data/releases/new), fill in tag (`version`, prefixed with `v`), add `version` as release title, and add release notes (identical to `changelog`)
+- **IMPORTANT: SAVE AS DRAFT** - this will automatically trigger the release workflow that also performs the CI/CD checks
+- **DO NOT PUBLISH RELEASE MANUALLY**
 
-*Note: assumes that `uv` is installed locally - see the methods described [here](https://docs.astral.sh/uv/getting-started/installation/)* 
 
-All tests should be passing
-```commandline
-uv run pytest
+### Background
+
+
+The repo consists of a data part (`mite_data`) and an associated validation library (`mite_data_lib`).
+
+A number of pipelines is available to perform fully automated data validation and artifact validation and generation.
+
+Additionally, a [json file](reserved/reserved_accessions.json) allows to track reserved MITE accessions.
+
 ```
+repo/
+├ mite_data/      <-- source of truth
+|     ├ data/     <-- MITE JSON entries
+|     ├ fasta/    <-- FASTA files related to MITE entries
+|     ├ metadata/ <-- Artifacts created from MITE entries
+|     └ mibig/    <-- Artifacts created from MIBiG dataset 
+├ reserved/       <-- Reserved MITE accessions
+├ mite_data_lib/  <-- Validation library
+|     ├ config/   <-- Library-wide configuration settings
+|     ├ models/   <-- (Pydantic) data contracts
+|     ├ rules/    <-- Validation rules
+|     └ services/ <-- Artifact generation
+└ pipeline/       <-- Data processing pipelines
 
-### Updating and CI/CD
-
-*Nota bene:* All described procedures require `pre-commit` to be installed and initiated.
-
-CI/CD via GitHub Actions runs on every PR and push to the `main` branch.
-
-A new release created on the [mite_data](https://github.com/mite-standard/mite_data) GitHub page will automatically relay changes to [Zenodo](https://doi.org/10.5281/zenodo.13294303).
-
-#### Update procedure
-
-1. Merge reviewed pending pull requests (PRs) into main.
-   - Fetch changes with `git fetch`.
-   - Checkout remote branch with `git checkout -b local-<branch-uuid> origin/<branch-uuid>`.
-   - Replace content of file `mite_data/data/<uuid>.json` with reviewed content from PR on GitHub.
-   - Replace `status:pending` with `status:active` and coin a new MITE accession number. Check for any [reserved accessions](mite_data/reserved_accessions.json).
-   - Prepare a commit by running `git add . && git commit -m "reviewed entry"`
-   - Push to remote with `git push origin HEAD:<branch-uuid>`
-   - On GitHub, merge the respective PR into main and delete the feature branch.
-   - Locally, checkout the main branch, pull in changes, and remove the local feature branch with `git checkout main && git pull && git branch -d local-<branch-uuid>`
-   - Repeat for all open PRs on GitHub
-2. Create a release branch and update auxilliary files
-   - Fetch changes with `git fetch`.
-   - Create a local branch and push to remote with `git checkout -b <release>`
-   - Update version in `pyproject.toml` and `CHANGELOG.md`
-   - Sync the package version with `uv sync`
-   - Push to remote using `git push --set-upstream origin <release>`
-3. Create PR on GitHub
-   - Request a review (if applicable)
-   - Merge into main
-   - When all tests pass: create a new release (syncs data to Zenodo)
+```
 
 #### CI/CD
 
-`mite_data` employs automated checks using both `pre-commit` and CI/CD using GitHub Actions. 
 
-##### `pre-commit`
+To preserve data integrity, this repository implements several stages of CI/CD (continuous integration/continuous deployment) using GitHub Actions.
+These actions are tiggered automatically and perform validation and artifact generation in a stepwise manner, as described below.
 
-*Nota bene*: `pre-commit` applies checks only to new/modified files. 
+```
+Pull request (affecting mite_data/data)   <-- User contribution
+├ pipeline/validate_mibig.py              <-- Reference dataset validation
+├ pipeline/validate_entry.py              <-- MITE entry validation
+Commit to main (affecting mite_data/data) <-- PR merge by maintainer
+├ pipeline/create_artifacts.py            <-- Artifact creation
+New release                               <-- By maintainer
+└ pipeline/validate_artifacts.py          <-- Validate artifacts + entries
+```
 
-##### GitHub CI/CD
+Every PR affecting the `mite_data/data` directory automatically triggers data validation functions.
+Only if these pass, the PR may be merged into main.
 
-**On PR to main**
+Every commit to main affecting the `mite_data/data` directory automatically triggers artifact creation.
+These artifacts are automatically added to main to reflect the updated file.
 
-*Nota bene:* Applies checks only to new/modified files. 
+Every new release triggers the artifact and entry validation pipeline.
+This step is computationally expensive but provides a sanity check.
 
-*Summary of checks*
+If the MIBiG validation check does not pass, the MIBiG dataset needs to be updated manually (see below)
 
-Runs `.github/mite_validation.py/run_file()`:
+### Manual execution/development
 
-- File exists
-- Filename matches convention
-- File is release-ready (correct status, accession not one of [reserved](mite_data/reserved_accessions.json))
-- No duplicates (based on shared GenPept and UniProt IDs)
-- Validation checks of `mite_extras` pass
-- Check if all database Ids are correct (can be accessed/downloaded)
-- Check if UniProt and GenPept match each other (using `mite_extras`)
-- If MIBiG ID was specified, check if GenPept ID matches with MIBiG's protein list
-- Check if MITE entry can be annotated with Rhea ID (based on UniProt ID)
+For development purposes, pipelines can also be run automatically. For this, local installation is required, as follows:
 
-**On push to main**
+*Nota bene: local installation was only tested on Ubuntu Linux 20.04 and 22.04. Also assumes that `uv` is installed locally - see the methods described [here](https://docs.astral.sh/uv/getting-started/installation/)*
 
-*Nota bene:* Applies checks to all files (i.e. when a branch is merged into main). 
+1) Download and install
 
-*Summary of checks*
+```commandline
+git clone https://github.com/mite-standard/mite_data
+uv sync
+uv run pre-commit install
+```
+2) Run tests
 
-Runs `.github/mite_validation.py/run_data_dir()`:
+```commandline
+uv run pytest --download # includes more time-consuming tests with network calls
+```
 
-- File exists
-- Filename matches convention
-- File has an accompanying fasta file
-- Retired files have no accompanying fasta files
-- File is release-ready (correct status, accession not one of [reserved](mite_data/reserved_accessions.json))
-- Accessions in headers of fasta files match their corresponding IDs in MITE files
-- No duplicates (based on shared GenPept and UniProt IDs)
-- Validation checks of `mite_extras` pass
-- Check if all database Ids are correct (can be accessed/downloaded)
+3) Run pipelines
 
-Additional checks:
+```commandline
+uv run python pipeline/validate_mibig.py                  <-- Checks if MIBIG Ref is valid
+uv run python pipeline/create_mibig.py                    <-- Downloads MIBiG Ref dataset
+uv run python pipeline/validate_entry.py entry1.json ...  <-- Checks entries
+uv run python pipeline/create_artifacts.py                <-- Creates artifacts
+uv run python validate_artifacts.py                       <-- Validates artifacts
+```
 
-- Package can be installed
-- All tests passing
+#### Adding new rules
+
+All rules follow a standardized API.
+
+- Add your rule to [rules](mite_data_lib/rules). Follow the interface of the existing functions.
+- Update the corresponding [pipeline](pipeline)

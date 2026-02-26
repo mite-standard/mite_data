@@ -5,20 +5,37 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.23] UNRELEASED
+
+### Added
+
+- Hash-based validation of artifacts
+
+### Changed
+
+- Separation of data and code
+- Rework of validation functionality
+- Rework of artifact creation/updating functionality
+- Rework CI/CD logic
+- Rework of pre-commit logic
+
+### Removed
+
+- pickle-file generation (fingerprint generation in mite_web on startup instead)
 
 ## [1.22] 14-01-2026
 
-# Added
+### Added
 
 - Data update 01/26
 
-# Changed
+### Changed
 
 - Update pre-commit (change back)
 
 ## [1.21] 19-12-2025
 
-# Added
+### Added
 
 - Data update 12/25
 

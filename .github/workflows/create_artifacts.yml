@@ -1,0 +1,47 @@
+name: Create artifacts from MITE data
+
+run-name: Pushed by ${{ github.actor }}
+
+permissions:
+  contents: write
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "mite_data/data/**"
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 2
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+          cache-dependency-glob: "uv.lock"
+
+      - name: Set up Python
+        run: uv python install
+
+      - name: Install dependencies
+        run: uv sync --all-groups
+
+      - name: Run artifact creation pipeline
+        run: uv run python pipline/create_artifacts.py
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          
+          git status 
+
+# TODO expand here if all works out
