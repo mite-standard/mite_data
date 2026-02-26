@@ -1,3 +1,5 @@
+"""Setup common logger pattern to be called in application layer"""
+
 import logging
 import sys
 

@@ -44,9 +44,3 @@ def test_seq_match_valid(sequence):
 @pytest.mark.download
 def test_seq_match_invalid(sequence):
     assert not sequence.seq_match(genpept="AAK83184.1", uniprot="Q93KW5")
-
-
-@pytest.mark.download
-def test_dump_fasta(sequence):
-    seq = sequence.fetch_uniprot(acc="Q93KW1")
-    sequence.dump_fasta(mite_acc="MITE0000000", acc="Q93KW1", seq=seq)

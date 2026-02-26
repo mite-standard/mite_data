@@ -1,3 +1,5 @@
+"""Model to keep track of mibig metadata"""
+
 from typing import Annotated
 
 from pydantic import BaseModel, Field, TypeAdapter

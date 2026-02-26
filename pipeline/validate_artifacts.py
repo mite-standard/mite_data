@@ -1,7 +1,6 @@
 import json
 import logging
 import sys
-from pathlib import Path
 
 from mite_data_lib.config.config import settings
 from mite_data_lib.config.logging import setup_logger

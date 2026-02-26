@@ -1,3 +1,5 @@
+"""Model for metadata hashes"""
+
 from pydantic import BaseModel
 
 

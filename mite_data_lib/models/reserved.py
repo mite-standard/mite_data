@@ -1,3 +1,5 @@
+"""Models for keeping track of reserved MITE accessions"""
+
 from datetime import date
 from typing import Annotated
 

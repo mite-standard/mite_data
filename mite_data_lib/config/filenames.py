@@ -1,3 +1,6 @@
+"""Define common filenames for reading/writing"""
+
+
 class Filenames:
     """Centralized filename config"""
 

@@ -1,3 +1,5 @@
+"""Define common parameters and settings"""
+
 import re
 from importlib import metadata
 from pathlib import Path

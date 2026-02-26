@@ -1,7 +1,11 @@
+"""Models for summary file artifacts"""
+
 from pydantic import BaseModel
 
 
 class SummaryGeneral(BaseModel):
+    """Keep track of data parsed for general summary file"""
+
     accession: str
     status: str
     enzyme_name: str
@@ -21,6 +25,8 @@ class SummaryGeneral(BaseModel):
 
 
 class SummaryMibig(BaseModel):
+    """Keep track of data parsed for mibig summary file"""
+
     mite_accession: str
     mite_url: str
     status: str
