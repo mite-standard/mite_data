@@ -1337,7 +1337,7 @@
       "order":"Kitasatosporales",
       "organism":"Streptomyces melanosporofaciens",
       "phylum":"Actinomycetota",
-      "reaction_description":"N/A",
+      "reaction_description":"Hydroxylation of the substrate pentacycle",
       "status":"active",
       "tailoring":"Hydroxylation"
     },
