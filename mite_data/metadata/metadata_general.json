@@ -3617,7 +3617,7 @@
       "order":"Pezizomycotina",
       "organism":"Phaeosphaeria sp.",
       "phylum":"Dikarya",
-      "reaction_description":"SAM (S-adenosyl-L-methionine)-depenent O-methylation of roseopurpurin intermediate.",
+      "reaction_description":"SAM (S-adenosyl-L-methionine)-dependent O-methylation of roseopurpurin intermediate.",
       "status":"active",
       "tailoring":"Methylation"
     },

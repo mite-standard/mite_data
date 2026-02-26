@@ -34,8 +34,25 @@ jobs:
       - name: Install dependencies
         run: uv sync --all-groups
 
+      - name: Get changed MITE files
+        id: files
+        run: |
+          git fetch origin ${{ github.event.pull_request.base.ref }}
+          CHANGED=$(git diff --name-only --diff-filter=AM origin/${{ github.event.pull_request.base.ref }}...HEAD | grep -E '^mite_data/data/.+\.json$' || true)
+          {
+            echo "changed<<EOF"
+            echo "$CHANGED"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
       - name: Run artifact creation pipeline
-        run: uv run python pipeline/create_artifacts.py
+        if: ${{ steps.files.outputs.changed != '' }}
+        run: |
+          echo "Running artifact creation on MITE .json files:"
+          while IFS= read -r file; do
+            echo "  -> $file"
+            uv run python pipeline/create_artifacts.py "$file"
+          done <<< "${{ steps.files.outputs.changed }}"
 
       - name: Commit changes if any
         run: |
