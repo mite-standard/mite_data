@@ -39,7 +39,7 @@ jobs:
         id: files
         run: |
           git fetch origin ${{ github.event.pull_request.base.ref }}
-          CHANGED=$(git diff --name-only --diff-filter=AM origin/${{ github.event.pull_request.base.ref }}...HEAD | grep -E '*.json$' || true)
+          CHANGED=$(git diff --name-only --diff-filter=AM origin/${{ github.event.pull_request.base.ref }}...HEAD | grep -E '^mite_data/data/.+\.json$' || true)
           {
             echo "changed<<EOF"
             echo "$CHANGED"
