@@ -35,7 +35,7 @@ jobs:
         run: uv sync --all-groups
 
       - name: Run artifact creation pipeline
-        run: uv run python pipline/create_artifacts.py
+        run: uv run python pipeline/create_artifacts.py
 
       - name: Commit changes if any
         run: |
