@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000081",
-    "status": "active",
+    "status": "pending",
     "changelog": [
         {
             "version": "1",
@@ -23,6 +23,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Homogenized enzyme descriptions"
+        },
+        {
+            "version": "3",
+            "date": "2026-02-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": ""
         }
     ],
     "enzyme": {
