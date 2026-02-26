@@ -148,3 +148,10 @@ uv run python pipeline/validate_entry.py entry1.json entry2.json entryx.json
 uv run python pipeline/create_artifacts.py
 uv run python validate_artifacts.py
 ```
+
+#### Adding new rules
+
+All rules follow a standardized API.
+
+- Add your rule to [rules](mite_data_lib/rules). Follow the interface of the existing functions.
+- Update the corresponding [pipeline](pipeline)
