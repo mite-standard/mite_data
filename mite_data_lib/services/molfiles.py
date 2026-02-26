@@ -29,8 +29,8 @@ class MolInfoParser:
                 entries.append(
                     MolInfo(
                         accession=data["accession"],
-                        idx_csv_smarts=f"{data["accession"]}.reaction{idx_reaction}",
-                        idx_csv_smiles=f"{data["accession"]}.reaction{idx_reaction}.example{idx_example}",
+                        idx_csv_smarts=f"{data['accession']}.reaction{idx_reaction}",
+                        idx_csv_smiles=f"{data['accession']}.reaction{idx_reaction}.example{idx_example}",
                         reactionsmarts=reaction["reactionSMARTS"],
                         substrates=example["substrate"],
                         products=f"{'.'.join(example['products'])}",

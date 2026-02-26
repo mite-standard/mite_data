@@ -49,7 +49,7 @@ def fasta_check(
 
         db_ids = [data["enzyme"]["databaseIds"].get(i) for i in ("genpept", "uniprot")]
 
-        fasta_path = ctx.fasta.joinpath(f"{data["accession"]}.fasta")
+        fasta_path = ctx.fasta.joinpath(f"{data['accession']}.fasta")
 
         if data["status"] != "active":
             if fasta_path.exists():
