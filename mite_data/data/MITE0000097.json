@@ -47,8 +47,7 @@
         ],
         "databaseIds": {
             "uniprot": "UPI000D213889",
-            "genpept": "AVT42378.1",
-            "mibig": "BGC0001476"
+            "genpept": "AVT42378.1"
         }
     },
     "reactions": [
