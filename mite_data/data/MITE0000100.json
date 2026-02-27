@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000100",
-    "status": "active",
+    "status": "pending",
     "changelog": [
         {
             "version": "1",
@@ -26,6 +26,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Replaced retired UniProtKB ID with UniParc ID"
+        },
+        {
+            "version": "3",
+            "date": "2026-02-27",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": ""
         }
     ],
     "enzyme": {
