@@ -63,10 +63,11 @@ This work was supported by the Netherlands Organization for Scientific Research 
 
 Workflow for release creation (for details, see below):
 
-- Update version in [pyproject.toml](pyproject.toml) file (major is reserved to manuscript publications)
-- On [new release](https://github.com/mite-standard/mite_data/releases/new), fill in tag (as `version` in `pyproject.toml`), add v`version` as release title, and add release notes (identical to `changelog`)
-- **IMPORTANT: SAVE AS DRAFT** - this will automatically trigger the release workflow that also performs the CI/CD checks
-- **DO NOT PUBLISH RELEASE MANUALLY**
+- Merge all reviewed and approved data pull requests
+- Update minor `version` in [pyproject.toml](pyproject.toml) file, merge to main
+- In GitHub GUI, under Actions, manually trigger the `Prepare release` workflow and wait for successful passing.
+- On [new release](https://github.com/mite-standard/mite_data/releases/new), fill in tag (as `version` in `pyproject.toml`), add v`version` as release title, and add release notes (identical to `changelog`).
+- Zenodo will automatically grab the release.
 
 
 ### Background
@@ -107,8 +108,9 @@ Pull request (affecting mite_data/data)   <-- User contribution
 ├ pipeline/validate_entry.py              <-- MITE entry validation
 Commit to main (affecting mite_data/data) <-- PR merge by maintainer
 ├ pipeline/create_artifacts.py            <-- Artifact creation
-New release                               <-- By maintainer
-└ pipeline/validate_artifacts.py          <-- Validate artifacts + entries
+Updated repo                              <-- By maintainer
+├ pipeline/validate_artifacts.py          <-- Recreate all artifacts + validate entries
+└ Release                                 <-- Dispatched to Zenodo
 ```
 
 Every PR affecting the `mite_data/data` directory automatically triggers data validation functions.

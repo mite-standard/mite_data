@@ -1,14 +1,12 @@
-name: Recreate all artifacts and validate them pre-release
+name: Prepare release
 
 run-name: Pushed by ${{ github.actor }}
 
 permissions:
   contents: write
   pull-requests: write
-on:
-  push:
-    tags:
-      - "*.*"
+
+on: workflow_dispatch
 
 jobs:
   build:
@@ -54,6 +52,7 @@ jobs:
 
   build-release:
     runs-on: ubuntu-latest
+    needs: build
 
     steps:
       - name: Checkout repository
@@ -73,5 +72,3 @@ jobs:
 
       - name: Run artifact validation pipeline
         run: uv run python pipeline/validate_artifacts.py
-
-#      TODO: expand for release if all works out
