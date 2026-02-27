@@ -26,6 +26,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Replaced retired UniProtKB ID with UniParc ID"
+        },
+        {
+            "version": "3",
+            "date": "2026-02-27",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added reaction description, changed tailoring term from oxidation to dehydrogenation."
         }
     ],
     "enzyme": {
@@ -36,15 +47,15 @@
         ],
         "databaseIds": {
             "uniprot": "UPI000D213889",
-            "genpept": "AVT42378.1",
-            "mibig": "BGC0001476"
+            "genpept": "AVT42378.1"
         }
     },
     "reactions": [
         {
             "tailoring": [
-                "Oxidation"
+                "Dehydrogenation"
             ],
+            "description": "Dehydrogenates (oxidates) pseudouridine in the pseudouridimycin pathway.",
             "reactionSMARTS": "[#8:1]-[#6:2]/[#6@@:3]1-[#6@@:8](\\[#8:9])-[#6@@:6](\\[#8:7])-[#6@:5](/[#6:10]2:[#6:16](=[#8:17]):[#7:15]:[#6:13](=[#8:14]):[#7:12]:[#6:11]:2)-[#8:4]-1>>[#8:9]\\[#6@:8]1-[#6@@:6](\\[#8:7])-[#6@:5](/[#6:10]2:[#6:16](=[#8:17]):[#7:15]:[#6:13](=[#8:14]):[#7:12]:[#6:11]:2)-[#8:4]-[#6@@:3]-1/[#6:2]=[#8:1]",
             "reactions": [
                 {
@@ -52,7 +63,8 @@
                     "products": [
                         "O=C[C@H]1O[C@@H](c2c[nH]c(=O)[nH]c2=O)[C@H](O)[C@@H]1O"
                     ],
-                    "isIntermediate": false
+                    "isIntermediate": true,
+                    "description": "Dehydrogenates pseudouridine to pseudouridine aldehyde."
                 }
             ],
             "evidence": {
