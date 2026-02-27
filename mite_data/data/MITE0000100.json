@@ -26,6 +26,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Replaced retired UniProtKB ID with UniParc ID"
+        },
+        {
+            "version": "3",
+            "date": "2026-02-27",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added reaction description, removed MIBiG accession BGC0001476 (does not exist in MIBiG 4.0)."
         }
     ],
     "enzyme": {
@@ -36,8 +47,7 @@
         ],
         "databaseIds": {
             "uniprot": "UPI000D218CF8",
-            "genpept": "AVT42376.1",
-            "mibig": "BGC0001476"
+            "genpept": "AVT42376.1"
         }
     },
     "reactions": [
@@ -45,6 +55,7 @@
             "tailoring": [
                 "Amination"
             ],
+            "description": "Performs amination of 5'-oxo-pseudouridine in the pseudouridimycin pathway.",
             "reactionSMARTS": "[#8:1]\\[#6@:2]1-[#6@@:6](\\[#8:7])-[#6@:5](/[#6:8]2:[#6:14](=[#8:15]):[nH:13]:[#6:11](=[#8:12]):[nH:10]:[#6:9]:2)-[#8:4]-[#6@@:3]-1/[#6:16]=[#8]>>[#7]-[#6:16]/[#6@@:3]1-[#6@@:2](\\[#8:1])-[#6@@:6](\\[#8:7])-[#6@:5](/[#6:8]2:[#6:14](=[#8:15]):[nH:13]:[#6:11](=[#8:12]):[nH:10]:[#6:9]:2)-[#8:4]-1",
             "reactions": [
                 {
@@ -52,12 +63,14 @@
                     "products": [
                         "NC[C@H]1O[C@@H](c2c[nH]c(=O)[nH]c2=O)[C@H](O)[C@@H]1O"
                     ],
-                    "isIntermediate": false
+                    "isIntermediate": true,
+                    "description": "Converts 5'-oxo-pseudouridine to 5'-aminopseudouridine"
                 }
             ],
             "evidence": {
                 "evidenceCode": [
-                    "Knock-out studies"
+                    "Knock-out studies",
+                    "Site-directed mutagenesis"
                 ],
                 "references": [
                     "doi:10.1016/j.chembiol.2018.02.008"
