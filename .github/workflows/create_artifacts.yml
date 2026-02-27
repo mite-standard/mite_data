@@ -4,6 +4,7 @@ run-name: Pushed by ${{ github.actor }}
 
 permissions:
   contents: write
+  pull-requests: write
 on:
   push:
     branches:
@@ -50,6 +51,7 @@ jobs:
           done <<< "${{ steps.files.outputs.changed }}"
 
       - name: Create Pull Request
+        if: steps.files.outputs.changed
         id: cpr
         uses: peter-evans/create-pull-request@v8
         with:
@@ -58,10 +60,9 @@ jobs:
           title: "Automated artifact update"
           body: "This PR updates generated artifacts."
           base: main
-          commit: true
 
-      - name: Enable auto-merge
+      - name: Merge pull request
         if: steps.cpr.outputs.pull-request-number
-        run: gh pr merge ${{ steps.cpr.outputs.pull-request-number }}
+        run: gh pr merge ${{ steps.cpr.outputs.pull-request-number }} --auto
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

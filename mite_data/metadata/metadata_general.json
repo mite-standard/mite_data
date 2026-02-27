@@ -2140,7 +2140,6 @@
       "enzyme_description":"Carboxylate-amine ligase",
       "enzyme_ids":{
         "genpept":"AVT42380.1",
-        "mibig":"BGC0001476",
         "uniprot":"UPI000D1FFAB8"
       },
       "enzyme_name":"PumK",
@@ -2149,7 +2148,7 @@
       "order":"Kitasatosporales",
       "organism":"Streptomyces sp.",
       "phylum":"Actinomycetota",
-      "reaction_description":"N/A",
+      "reaction_description":"Transfers glutamine to 5'-aminopseudouridine in pseudouridimycin pathway.",
       "status":"active",
       "tailoring":"Other"
     },
