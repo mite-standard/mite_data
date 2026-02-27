@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000097",
-    "status": "pending",
+    "status": "active",
     "changelog": [
         {
             "version": "1",
@@ -34,7 +34,7 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0001-6534-6609"
             ],
             "comment": "Added reaction description, changed tailoring term from oxidation to dehydrogenation."
         }
