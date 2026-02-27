@@ -57,6 +57,9 @@ class CreateArtifactRunner:
 
         logger.debug("Started fasta creation")
 
+        if data["status"] != "active":
+            return
+
         seq_service = SequenceService(fasta=ctx.fasta)
 
         if uniprot := data["enzyme"]["databaseIds"].get("uniprot"):
