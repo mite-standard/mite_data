@@ -2119,7 +2119,6 @@
       "enzyme_description":"Oxidoreductase",
       "enzyme_ids":{
         "genpept":"AVT42378.1",
-        "mibig":"BGC0001476",
         "uniprot":"UPI000D213889"
       },
       "enzyme_name":"PumI",
@@ -2128,9 +2127,9 @@
       "order":"Kitasatosporales",
       "organism":"Streptomyces sp.",
       "phylum":"Actinomycetota",
-      "reaction_description":"N/A",
+      "reaction_description":"Dehydrogenates (oxidates) pseudouridine in the pseudouridimycin pathway.",
       "status":"active",
-      "tailoring":"Oxidation"
+      "tailoring":"Dehydrogenation"
     },
     "MITE0000098":{
       "accession":"MITE0000098",

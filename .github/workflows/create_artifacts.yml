@@ -40,12 +40,6 @@ jobs:
           CHANGED=$(git diff --name-only --diff-filter=AM ${{ github.event.before }}...${{ github.sha }})
           echo "changed=$CHANGED" >> "$GITHUB_OUTPUT"
 
-      - name: Debug output
-        run: |
-          echo "OUTPUT:"
-          echo "${{ steps.files.outputs.changed }}"
-          echo "END"
-
       - name: Run artifact creation pipeline
         if: steps.files.outputs.changed
         run: |
@@ -55,14 +49,19 @@ jobs:
             uv run python pipeline/create_artifacts.py "$file"
           done <<< "${{ steps.files.outputs.changed }}"
 
-      - name: Commit changes if any
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          
-          git add . 
-          
-          if ! git diff --cached --quiet; then
-            git commit -m "Update generated artifacts"
-            git push
-          fi
+      - name: Create Pull Request
+        id: cpr
+        uses: peter-evans/create-pull-request@v8
+        with:
+          commit-message: "Update generated artifacts"
+          branch: ci/artifacts-${{ github.sha }}
+          title: "Automated artifact update"
+          body: "This PR updates generated artifacts."
+          base: main
+          commit: true
+
+      - name: Enable auto-merge
+        if: steps.cpr.outputs.pull-request-number
+        run: gh pr merge ${{ steps.cpr.outputs.pull-request-number }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

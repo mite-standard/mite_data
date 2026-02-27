@@ -95,7 +95,7 @@ MITE0000093,active,PhmJ,FAD-dependent halogenase,Halogenation,PhmJ forms the vin
 MITE0000094,active,TnmK2,Iterative cofactorless dioxygenase,Dioxygenation,N/A,N/A,N/A,Streptomyces sp. (strain CB03234),Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
 MITE0000095,active,TnmK1,Hydrolase,Cyclization,Catalyzes D-ring-forming Michael addition,N/A,N/A,Streptomyces sp. (strain CB03234),Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
 MITE0000096,active,TnmJ,Cofactorless oxygenase,Dioxygenation,N/A,N/A,N/A,Streptomyces sp. CB03234,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
-MITE0000097,active,PumI,Oxidoreductase,Oxidation,N/A,N/A,N/A,Streptomyces sp.,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
+MITE0000097,active,PumI,Oxidoreductase,Dehydrogenation,Dehydrogenates (oxidates) pseudouridine in the pseudouridimycin pathway.,N/A,N/A,Streptomyces sp.,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
 MITE0000098,active,PumK,Carboxylate-amine ligase,Other,N/A,N/A,N/A,Streptomyces sp.,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
 MITE0000099,active,PumJ,Pseudouridine synthase,Other,N/A,N/A,N/A,Streptomyces sp.,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
 MITE0000100,active,PumG,Aminotransferase,Amination,N/A,N/A,N/A,Streptomyces sp.,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
