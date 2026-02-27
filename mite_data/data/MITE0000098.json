@@ -37,6 +37,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Replaced retired UniProtKB ID with UniParc ID"
+        },
+        {
+            "version": "4",
+            "date": "2026-02-27",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added reaction description. Reviewer 1 removed MIBIG ID BGC0001476 (does not exist in MIBiG 4.0)"
         }
     ],
     "enzyme": {
@@ -47,8 +58,7 @@
         ],
         "databaseIds": {
             "uniprot": "UPI000D1FFAB8",
-            "genpept": "AVT42380.1",
-            "mibig": "BGC0001476"
+            "genpept": "AVT42380.1"
         }
     },
     "reactions": [
@@ -56,6 +66,7 @@
             "tailoring": [
                 "Other"
             ],
+            "description": "Transfers glutamine to 5'-aminopseudouridine in pseudouridimycin pathway.",
             "reactionSMARTS": "[#7:1]-[#6:2]/[#6@@:3]1-[#6@@:8](\\[#8:9])-[#6@@:6](\\[#8:7])-[#6@:5](/[#6:10]2:[#6:16](=[#8:17]):[#7:15]:[#6:13](=[#8:14]):[#7:12]:[#6:11]:2)-[#8:4]-1>>[#7]\\[#6@](-[#6](-[#7:1]-[#6:2]/[#6@@:3]1-[#6@@:8](\\[#8:9])-[#6@@:6](\\[#8:7])-[#6@:5](/[#6:10]2:[#6:16](=[#8:17]):[#7:15]:[#6:13](=[#8:14]):[#7:12]:[#6:11]:2)-[#8:4]-1)=[#8])-[#6]-[#6]-[#6](=[#8])-[#7]",
             "reactions": [
                 {
@@ -63,7 +74,8 @@
                     "products": [
                         "NC(=O)CC[C@H](N)C(=O)NC[C@H]1O[C@@H](c2c[nH]c(=O)[nH]c2=O)[C@H](O)[C@@H]1O"
                     ],
-                    "isIntermediate": false
+                    "isIntermediate": true,
+                    "description": "Converts 5'-aminopseudouridine to glutamine-5'-aminopseudouridine"
                 }
             ],
             "evidence": {
