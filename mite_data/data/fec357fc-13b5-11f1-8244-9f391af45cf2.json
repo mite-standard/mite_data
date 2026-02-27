@@ -1,0 +1,90 @@
+{
+    "accession": "MITE0000098",
+    "status": "pending",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "0000-0003-1763-2525",
+                "0009-0008-3623-3734",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609",
+                "0000-0003-0443-9902"
+            ],
+            "comment": "Initial entry. Reviewer partially fixed general aromaticity. Reviewer 2 reworked reaction SMARTS, reaction passes."
+        },
+        {
+            "version": "2",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
+        },
+        {
+            "version": "3",
+            "date": "2025-10-27",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Replaced retired UniProtKB ID with UniParc ID"
+        },
+        {
+            "version": "4",
+            "date": "2026-02-27",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": ""
+        }
+    ],
+    "enzyme": {
+        "name": "PumK",
+        "description": "Carboxylate-amine ligase",
+        "references": [
+            "doi:10.1016/j.chembiol.2018.02.008"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI000D1FFAB8",
+            "genpept": "AVT42380.1",
+            "mibig": "BGC0001476"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Other"
+            ],
+            "reactionSMARTS": "[#7:1]-[#6:2]/[#6@@:3]1-[#6@@:8](\\[#8:9])-[#6@@:6](\\[#8:7])-[#6@:5](/[#6:10]2:[#6:16](=[#8:17]):[#7:15]:[#6:13](=[#8:14]):[#7:12]:[#6:11]:2)-[#8:4]-1>>[#7]\\[#6@](-[#6](-[#7:1]-[#6:2]/[#6@@:3]1-[#6@@:8](\\[#8:9])-[#6@@:6](\\[#8:7])-[#6@:5](/[#6:10]2:[#6:16](=[#8:17]):[#7:15]:[#6:13](=[#8:14]):[#7:12]:[#6:11]:2)-[#8:4]-1)=[#8])-[#6]-[#6]-[#6](=[#8])-[#7]",
+            "reactions": [
+                {
+                    "substrate": "NC[C@H]1O[C@@H](c2c[nH]c(=O)[nH]c2=O)[C@H](O)[C@@H]1O",
+                    "products": [
+                        "NC(=O)CC[C@H](N)C(=O)NC[C@H]1O[C@@H](c2c[nH]c(=O)[nH]c2=O)[C@H](O)[C@@H]1O"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1016/j.chembiol.2018.02.008"
+                ]
+            }
+        }
+    ]
+}
