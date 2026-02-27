@@ -39,7 +39,7 @@
       "order":"Kitasatosporales",
       "organism":"Streptomyces viridochromogenes Tue57",
       "phylum":"Actinomycetota",
-      "reaction_description":"O-methyltransferase and is responsible for methylation of the phenolic hydroxyl group in the dichloroisoeverninic acid moiety.",
+      "reaction_description":"O-methyltransferase and is responsible for the methylation of the phenolic hydroxyl group in the dichloroisoeverninic acid moiety.",
       "status":"active",
       "tailoring":"Methylation"
     },
