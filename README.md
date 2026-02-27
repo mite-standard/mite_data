@@ -64,7 +64,7 @@ This work was supported by the Netherlands Organization for Scientific Research 
 Workflow for release creation (for details, see below):
 
 - Update version in [pyproject.toml](pyproject.toml) file (major is reserved to manuscript publications)
-- On [new release](https://github.com/mite-standard/mite_data/releases/new), fill in tag (`version`, prefixed with `v`), add `version` as release title, and add release notes (identical to `changelog`)
+- On [new release](https://github.com/mite-standard/mite_data/releases/new), fill in tag (as `version` in `pyproject.toml`), add v`version` as release title, and add release notes (identical to `changelog`)
 - **IMPORTANT: SAVE AS DRAFT** - this will automatically trigger the release workflow that also performs the CI/CD checks
 - **DO NOT PUBLISH RELEASE MANUALLY**
 
