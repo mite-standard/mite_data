@@ -7,7 +7,7 @@ permissions:
   pull-requests: write
 on:
   release:
-    types: [created]
+    types: [published]
 
 jobs:
   build:
