@@ -1,0 +1,79 @@
+{
+    "accession": "MITE0000097",
+    "status": "pending",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "0000-0003-1763-2525",
+                "0009-0008-3623-3734",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609",
+                "0000-0003-0443-9902"
+            ],
+            "comment": "Initial entry. Reviewer partially fixed reactions:substrate, validation still not passing. Reviewer partially fixed reactions:products, validation still not passing. Reviewer 2 reworked reaction SMARTS, reaction passes."
+        },
+        {
+            "version": "2",
+            "date": "2025-10-27",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Replaced retired UniProtKB ID with UniParc ID"
+        },
+        {
+            "version": "3",
+            "date": "2026-02-27",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": ""
+        }
+    ],
+    "enzyme": {
+        "name": "PumI",
+        "description": "Oxidoreductase",
+        "references": [
+            "doi:10.1016/j.chembiol.2018.02.008"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI000D213889",
+            "genpept": "AVT42378.1",
+            "mibig": "BGC0001476"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Oxidation"
+            ],
+            "reactionSMARTS": "[#8:1]-[#6:2]/[#6@@:3]1-[#6@@:8](\\[#8:9])-[#6@@:6](\\[#8:7])-[#6@:5](/[#6:10]2:[#6:16](=[#8:17]):[#7:15]:[#6:13](=[#8:14]):[#7:12]:[#6:11]:2)-[#8:4]-1>>[#8:9]\\[#6@:8]1-[#6@@:6](\\[#8:7])-[#6@:5](/[#6:10]2:[#6:16](=[#8:17]):[#7:15]:[#6:13](=[#8:14]):[#7:12]:[#6:11]:2)-[#8:4]-[#6@@:3]-1/[#6:2]=[#8:1]",
+            "reactions": [
+                {
+                    "substrate": "O=c1[nH]cc([C@@H]2O[C@H](CO)[C@@H](O)[C@H]2O)c(=O)[nH]1",
+                    "products": [
+                        "O=C[C@H]1O[C@@H](c2c[nH]c(=O)[nH]c2=O)[C@H](O)[C@@H]1O"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1016/j.chembiol.2018.02.008"
+                ]
+            }
+        }
+    ]
+}
