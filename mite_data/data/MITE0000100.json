@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000100",
-    "status": "pending",
+    "status": "active",
     "changelog": [
         {
             "version": "1",
@@ -34,7 +34,7 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0001-6534-6609"
             ],
             "comment": "Added reaction description, removed MIBiG accession BGC0001476 (does not exist in MIBiG 4.0)."
         }
