@@ -30,5 +30,4 @@ def test_load_validate_invalid_json(entry_valid_runner):
 
 @pytest.mark.download
 def test_main_valid(ctx):
-    with pytest.raises(RuntimeError):
-        main(entries=[str(data_path / "MITE0000000.json")], ctx=ctx)
+    assert main(entries=[str(data_path / "MITE0000000.json")], ctx=ctx) is None

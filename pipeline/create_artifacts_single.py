@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 class CreateArtifactRunner:
     """Hold artifact creation pipeline"""
 
-    def run(self, path: Path, ctx: ArtifactContext) -> None:
+    def run_single(self, path: Path, ctx: ArtifactContext) -> None:
         """Create artifacts from entry"""
 
         logger.info(f"Started artifact creation for '{path.name}'")
@@ -33,6 +33,23 @@ class CreateArtifactRunner:
         self.create_molfiles(ctx=ctx)
 
         logger.info(f"Completed artifact creation for '{path.name}'")
+
+    def run_all(self, ctx: ArtifactContext) -> None:
+        """Create artifacts from entry"""
+
+        logger.info(f"Started artifact creation for all entries")
+
+        for entry in sorted(ctx.data.glob("MITE*.json")):
+            with open(entry) as f:
+                data = json.load(f)
+
+            self.create_fasta(data=data, ctx=ctx)
+            self.create_protein_acc(path=entry, ctx=ctx)
+            self.create_summary(path=entry, ctx=ctx)
+
+        self.create_molfiles(ctx=ctx)
+
+        logger.info(f"Completed artifact creation for all entries")
 
     @staticmethod
     def create_fasta(data: dict, ctx: ArtifactContext) -> None:
@@ -120,7 +137,7 @@ def main(entries: list[str], ctx: ArtifactContext) -> None:
         p = Path(f)
         if not p.exists():
             raise RuntimeError(f"File {p.name} does not exists - abort.")
-        runner.run(path=p, ctx=ctx)
+        runner.run_single(path=p, ctx=ctx)
 
     logger.info("Completed artifact creation")
 

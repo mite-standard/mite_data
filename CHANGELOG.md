@@ -5,11 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.23] UNRELEASED
+## [1.23] 27-02-2026
 
 ### Added
 
 - Hash-based validation of artifacts
+- Update 02/26
 
 ### Changed
 

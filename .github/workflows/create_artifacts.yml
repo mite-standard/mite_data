@@ -47,7 +47,7 @@ jobs:
           echo "Running artifact creation on MITE .json files:"
           while IFS= read -r file; do
             echo "  -> $file"
-            uv run python pipeline/create_artifacts.py "$file"
+            uv run python pipeline/create_artifacts_single.py "$file"
           done <<< "${{ steps.files.outputs.changed }}"
 
       - name: Create Pull Request
