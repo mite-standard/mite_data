@@ -144,11 +144,12 @@ uv run pytest --download # includes more time-consuming tests with network calls
 3) Run pipelines
 
 ```commandline
-uv run python pipeline/validate_mibig.py                  <-- Checks if MIBIG Ref is valid
-uv run python pipeline/create_mibig.py                    <-- Downloads MIBiG Ref dataset
-uv run python pipeline/validate_entry.py entry1.json ...  <-- Checks entries
-uv run python pipeline/create_artifacts.py                <-- Creates artifacts
-uv run python validate_artifacts.py                       <-- Validates artifacts
+uv run python pipeline/validate_mibig.py                          # Checks if MIBIG Ref is valid
+uv run python pipeline/create_mibig.py                            # Downloads MIBiG Ref dataset
+uv run python pipeline/validate_entry.py entry1.json ...          # Checks entries
+uv run python pipeline/create_artifacts_single.py entry1.json ... # Creates artifacts in single entry mode
+uv run python pipeline/create_artifacts_all.py                    # Re-creates all artifacts (expensive!)
+uv run python validate_artifacts.py                               # Validates artifacts
 ```
 
 #### Adding new rules

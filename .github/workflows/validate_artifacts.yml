@@ -1,14 +1,63 @@
-name: Validate artifacts pre-release
+name: Recreate all artifacts and validate them pre-release
 
 run-name: Pushed by ${{ github.actor }}
 
 permissions:
   contents: write
+  pull-requests: write
 on:
   release:
     types: [created]
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 2
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+          cache-dependency-glob: "uv.lock"
+
+      - name: Set up Python
+        run: uv python install
+
+      - name: Install dependencies
+        run: uv sync --all-groups
+
+      - name: Re-create all artifacts
+        run: |
+          uv run python pipeline/create_artifacts_all.py
+
+      - name: Get changed artifacts
+        id: files
+        run: |
+          CHANGED=$(git diff --name-only --diff-filter=AM ${{ github.event.before }}...${{ github.sha }})
+          echo "changed=$CHANGED" >> "$GITHUB_OUTPUT"
+
+      - name: Create Pull Request
+        if: steps.files.outputs.changed
+        id: cpr
+        uses: peter-evans/create-pull-request@v8
+        with:
+          commit-message: "Update generated artifacts"
+          branch: ci/artifacts-${{ github.sha }}
+          title: "Automated artifact update"
+          body: "This PR updates generated artifacts."
+          base: main
+
+      - name: Merge pull request
+        if: steps.cpr.outputs.pull-request-number
+        run: gh pr merge ${{ steps.cpr.outputs.pull-request-number }} --auto --merge
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   build-release:
     runs-on: ubuntu-latest
 
