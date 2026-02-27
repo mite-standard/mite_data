@@ -43,8 +43,9 @@ class CreateArtifactRunner:
             with open(entry) as f:
                 data = json.load(f)
 
-            self.create_fasta(data=data, ctx=ctx)
-            self.create_protein_acc(path=entry, ctx=ctx)
+            if data["status"] == "active":
+                self.create_fasta(data=data, ctx=ctx)
+                self.create_protein_acc(path=entry, ctx=ctx)
             self.create_summary(path=entry, ctx=ctx)
 
         self.create_molfiles(ctx=ctx)
@@ -56,9 +57,6 @@ class CreateArtifactRunner:
         """Create fasta entry"""
 
         logger.debug("Started fasta creation")
-
-        if data["status"] != "active":
-            return
 
         seq_service = SequenceService(fasta=ctx.fasta)
 
