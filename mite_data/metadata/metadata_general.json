@@ -2183,7 +2183,6 @@
       "enzyme_description":"Aminotransferase",
       "enzyme_ids":{
         "genpept":"AVT42376.1",
-        "mibig":"BGC0001476",
         "uniprot":"UPI000D218CF8"
       },
       "enzyme_name":"PumG",
@@ -2192,7 +2191,7 @@
       "order":"Kitasatosporales",
       "organism":"Streptomyces sp.",
       "phylum":"Actinomycetota",
-      "reaction_description":"N/A",
+      "reaction_description":"Performs amination of 5'-oxo-pseudouridine in the pseudouridimycin pathway.",
       "status":"active",
       "tailoring":"Amination"
     },
