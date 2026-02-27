@@ -35,14 +35,7 @@ jobs:
         run: |
           uv run python pipeline/create_artifacts_all.py
 
-      - name: Get changed artifacts
-        id: files
-        run: |
-          CHANGED=$(git diff --name-only --diff-filter=AM ${{ github.event.before }}...${{ github.sha }})
-          echo "changed=$CHANGED" >> "$GITHUB_OUTPUT"
-
       - name: Create Pull Request
-        if: steps.files.outputs.changed
         id: cpr
         uses: peter-evans/create-pull-request@v8
         with:
