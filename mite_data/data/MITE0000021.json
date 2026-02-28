@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000021",
-    "status": "active",
+    "status": "pending",
     "changelog": [
         {
             "version": "1",
@@ -13,6 +13,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer reworked reaction SMARTS to make it RDKit-compliant"
+        },
+        {
+            "version": "2",
+            "date": "2026-02-28",
+            "contributors": [
+                "0000-0001-6534-6609"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": ""
         }
     ],
     "enzyme": {
