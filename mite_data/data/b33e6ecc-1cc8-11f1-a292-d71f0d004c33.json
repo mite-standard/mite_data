@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Chlorination of lysolipin",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,48 @@
     ],
     "enzyme": {
         "name": "LlpH",
-        "databaseIds": {
-            "uniprot": "",
-            "genpept": "CAM34371"
-        },
+        "description": "Non-heme halogenase",
         "references": [
-            "doi:"
-        ]
+            "doi:10.1016/j.gene.2010.03.016",
+            "doi:10.3389/fchbi.2024.1445095"
+        ],
+        "databaseIds": {
+            "uniprot": "A7DWL5",
+            "genpept": "CAM34371.1",
+            "mibig": "BGC0000242"
+        },
+        "cofactors": {
+            "organic": [
+                "Flavin mononucleotide"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "halogenation",
+            "reactionSMARTS": "[cH:1]>>[c:1]Cl",
             "reactions": [
                 {
+                    "substrate": "CN1C(=O)c2c(cc3c(c2O)C2(O)C4=C(OCOC4=C3O)c3oc4c(O)cccc4c(=O)c3C2O)C(O)C1O",
                     "products": [
-                        ""
-                    ]
+                        "CN1C(=O)c2c(cc3c(c2O)C2(O)C4=C(OCOC4=C3O)c3oc4c(O)c(Cl)ccc4c(=O)c3C2O)C(O)C1O"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Inference from genomic data and chemical structure",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.3389/fchbi.2024.1445095"
+                ]
+            }
         }
     ]
 }
