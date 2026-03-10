@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Phosphinothricin tripeptide biosynthesis",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,41 @@
     ],
     "enzyme": {
         "name": "PepM",
-        "databaseIds": {
-            "uniprot": "",
-            "genpept": "CAJ14049.1"
-        },
+        "description": "Phosphoenolpyruvate mutase",
         "references": [
-            "doi:"
-        ]
+            "doi:10.1128/AEM.70.12.7093-7102.2004"
+        ],
+        "databaseIds": {
+            "uniprot": "Q5IW33",
+            "genpept": "CAJ14049.1"
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Other"
+            ],
+            "description": "Isomerase",
+            "reactionSMARTS": "[C:1]=[C:2]([CH3:3])[O:4][P:5](=O)(O)O>>[CH3:3][C:1](=O)[C:2][P:5](=O)(O)O",
             "reactions": [
                 {
+                    "substrate": "C=C(C)OP(=O)(O)O",
                     "products": [
-                        ""
-                    ]
+                        "CC(=O)CP(=O)(O)O"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1128/AEM.70.12.7093-7102.2004",
+                    "doi:10.1039/d5cb00254k"
+                ]
+            }
         }
     ]
 }
