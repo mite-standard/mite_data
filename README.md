@@ -140,7 +140,7 @@ uv run pre-commit install
 2) Run tests
 
 ```commandline
-uv run pytest --download # includes more time-consuming tests with network calls
+uv run pytest --download # --download option includes tests with network calls (time-consuming)
 ```
 
 3) Run pipelines

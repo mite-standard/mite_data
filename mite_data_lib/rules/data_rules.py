@@ -184,10 +184,31 @@ def mibig_exists(
     data: dict, ctx: ValidationContext
 ) -> tuple[list[ValidationIssue], list[ValidationIssue]]:
     """MIBiG ID valid (mite protein found in protein list)"""
+
+    def _mibig_api_call(mid: str) -> bool:
+        try:
+            r = requests.get(
+                url=f"https://mibig-submission-test.bioinformatics.nl/api/export/entry/{mid}",
+                timeout=settings.timeout,
+            )
+            if r.status_code == "404":
+                return False
+            r.raise_for_status()
+            return True
+        except Exception as err:
+            logger.warning(
+                f"Warning: could not connect to MIBiG Submission portal: {err!s}"
+            )
+            return False
+
     e = []
     w = []
 
-    if mibig := data["enzyme"]["databaseIds"].get("mibig"):
+    mibig = data["enzyme"]["databaseIds"].get("mibig")
+    if not mibig:
+        return e, w
+
+    if mibig.startswith("BGC"):
         if mibig not in ctx.mibig_proteins:
             e.append(
                 ValidationIssue(
@@ -196,6 +217,31 @@ def mibig_exists(
                     message=f"MIBIG ID '{mibig}' does not exist in MIBiG v {settings.mibig_version}",
                 )
             )
+    elif mibig.startswith("new"):
+        if _mibig_api_call(mibig):
+            e.append(
+                ValidationIssue(
+                    severity="error",
+                    location=data["accession"],
+                    message=f"Temporary MIBIG ID '{mibig}' exist but cannot be merged before assignment of permanent MIBiG ID.",
+                )
+            )
+        else:
+            e.append(
+                ValidationIssue(
+                    severity="error",
+                    location=data["accession"],
+                    message=f"Temporary MIBIG ID '{mibig}' does not exist in MIBiG Submission portal.",
+                )
+            )
+    else:
+        e.append(
+            ValidationIssue(
+                severity="error",
+                location=data["accession"],
+                message=f"MIBIG ID '{mibig}' does not follow naming convention (does not start with 'BGC' or 'new').",
+            )
+        )
 
     return e, w
 
