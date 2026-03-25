@@ -16,29 +16,45 @@
     ],
     "enzyme": {
         "name": "RslO5",
+        "description": "FMN-dependent reductase",
+        "references": [
+            "doi:10.1021/jacs.9b12736"
+        ],
         "databaseIds": {
             "uniprot": "W8QDG4",
-            "genpept": ""
+            "genpept": "AHL46723.1"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "Flavin mononucleotide"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Reduction"
+            ],
+            "description": "FMN-dependent reductive epoxide opening of intermediate from the rishirilide biosynthesis pathway.",
+            "reactionSMARTS": "[#6:1]1:[#6:5](-[#8:7]):[#6:6]2:[#6:10](-[#8:16]):[#6:11]3-[#6:12](=[#8:17])-[#6:13]4(-[#6:21](-[#6:23]-[#6:24]-[#6:25](-[#6:27])-[#6:26])=[#8:22])-[#8:19]-[#6:14]-4(-[#6:20])-[#6:15](=[#8:18])-[#6:9]:3:[#6:8]:[#6:4]:2:[#6:3]:[#6:2]:1>>[#6:1]1:[#6:5](-[#8:7]):[#6:6]2:[#6:10](-[#8:16]):[#6:11]3-[#6:12](=[#8:17])-[#6:13](-[#6:21](-[#6:23]-[#6:24]-[#6:25](-[#6:27])-[#6:26])=[#8:22])(-[#8:19])-[#6:14](-[#6:20])-[#6:15](=[#8:18])-[#6:9]:3:[#6:8]:[#6:4]:2:[#6:3]:[#6:2]:1",
             "reactions": [
                 {
+                    "substrate": "CC(C)CCC(=O)C12OC1(C)C(=O)c1cc3cccc(O)c3c(O)c1C2=O",
                     "products": [
-                        ""
-                    ]
+                        "CC(C)CCC(=O)C1(O)C(=O)c2c(cc3cccc(O)c3c2O)C(=O)C1C"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/jacs.9b12736"
+                ]
+            }
         }
     ]
 }
