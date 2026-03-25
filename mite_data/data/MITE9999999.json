@@ -1,0 +1,63 @@
+{
+    "accession": "MITE9999999",
+    "status": "active",
+    "comment": "Reduction of keto group to alcohol",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-03-25",
+            "contributors": [
+                "0000-0003-3141-732X"
+            ],
+            "reviewers": [
+                "0000-0003-4819-2251"
+            ],
+            "comment": "Added cofactor information and minor textual details"
+        }
+    ],
+    "enzyme": {
+        "name": "LepF",
+        "description": "Short chain dehydrogenase/reductase",
+        "references": [
+            "doi:10.1038/nature23882"
+        ],
+        "databaseIds": {
+            "uniprot": "B8NJH0",
+            "genpept": "EED49869.1",
+            "mibig": "BGC0001445"
+        },
+        "cofactors": {
+            "organic": [
+                "NADP"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Reduction"
+            ],
+            "description": "Reduction of a ketone intermediate to a secondary alcohol in the leporin biosynthetic pathway.",
+            "reactionSMARTS": "[#8:1]-[#6:2]1:[#6:12](:[#6:25](=[#8:26]):[#7:11]:[#6:10]:[#6:3]:1-[#6:4]1:[#6:9]:[#6:8]:[#6:7]:[#6:6]:[#6:5]:1)-[#6:13](=[#8])-[#6@@:14](-[#6:16]-[#6:17]-[#6:18]-[#6:19]=[#6:20]-[#6:21]=[#6:22]-[#6:23])/[#6:15]>>[#8:1]-[#6:2]1:[#6:12](:[#6:25](=[#8:26]):[#7:11]:[#6:10]:[#6:3]:1-[#6:4]1:[#6:9]:[#6:8]:[#6:7]:[#6:6]:[#6:5]:1)-[#6:13](-[#6@@:14](-[#6:16]-[#6:17]-[#6:18]-[#6:19]=[#6:20]-[#6:21]=[#6:22]-[#6:23])/[#6:15])-[#8:1]",
+            "reactions": [
+                {
+                    "substrate": "C/C=C/C=C/CCC[C@@H](C)C(=O)c1c(O)c(-c2ccccc2)c[nH]c1=O",
+                    "products": [
+                        "CC=CC=CCCC[C@@H](C)C(O)c1c(O)c(-c2ccccc2)c[nH]c1=O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Reduction of a ketone intermediate to a secondary alcohol in the leporin biosynthetic pathway."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1038/nature23882"
+                ]
+            }
+        }
+    ]
+}
