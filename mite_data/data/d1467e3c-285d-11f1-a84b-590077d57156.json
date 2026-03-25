@@ -16,29 +16,41 @@
     ],
     "enzyme": {
         "name": "AsaB",
+        "description": "Hydroxylase",
+        "references": [
+            "doi:10.1016/j.fgb.2018.04.009"
+        ],
         "databaseIds": {
             "uniprot": "B8N0E7",
-            "genpept": ""
-        },
-        "references": [
-            "doi:"
-        ]
+            "genpept": "EED55030.1",
+            "mibig": "BGC0001516"
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "Hydroxylation of aspergillic acid to hydroxyaspergillic acid",
+            "reactionSMARTS": "[#6:1]-[#6:2](-[#6:4]-[#6:5]1:[#6:15](=[#8:16]):[#7:13](-[#8:14]):[#6:8](-[#6:9](-[#6:11]-[#6:12])-[#6:10]):[#6:7]:[#7:6]:1)-[#6:3]>>[#6:1]-[#6:2](-[#6:4]-[#6:5]1:[#6:15](=[#8:16]):[#7:13](-[#8:14]):[#6:8](-[#6:9](-[#6:11]-[#6:12])(-[#8])-[#6:10]):[#6:7]:[#7:6]:1)-[#6:3]",
             "reactions": [
                 {
+                    "substrate": "CCC(C)c1cnc(CC(C)C)c(=O)n1O",
                     "products": [
-                        ""
-                    ]
+                        "CCC(C)(O)c1cnc(CC(C)C)c(=O)n1O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Aliphatic hydroxylation - Hydroxylation of aspergillic acid to hydroxyaspergillic acid"
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1016/j.fgb.2018.04.009"
+                ]
+            }
         }
     ]
 }
