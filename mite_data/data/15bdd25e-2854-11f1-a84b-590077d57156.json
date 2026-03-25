@@ -1,0 +1,44 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-03-25",
+            "contributors": [
+                "0009-0003-2819-1486"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "RslO5",
+        "databaseIds": {
+            "uniprot": "W8QDG4",
+            "genpept": ""
+        },
+        "references": [
+            "doi:"
+        ]
+    },
+    "reactions": [
+        {
+            "evidence": {
+                "evidenceCode": [],
+                "references": [
+                    "doi:"
+                ]
+            },
+            "reactions": [
+                {
+                    "products": [
+                        ""
+                    ]
+                }
+            ]
+        }
+    ]
+}
