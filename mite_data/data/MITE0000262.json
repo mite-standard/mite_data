@@ -1,0 +1,77 @@
+{
+    "accession": "MITE0000262",
+    "status": "active",
+    "comment": "Can only modify tryptophan in 4-position. Enzyme shows some substrate promiscuity (L-tryptophan derivatives) but does not accept D-tryptophan.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-03-08",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "TxtE",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1038/nchembio.1048"
+        ],
+        "databaseIds": {
+            "uniprot": "C9ZDC6",
+            "genpept": "CBG70284.1",
+            "mibig": "BGC0002089"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD",
+                "Flavin mononucleotide",
+                "Heme",
+                "NAD",
+                "NADP"
+            ],
+            "inorganic": [
+                "FeS"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Other"
+            ],
+            "description": "Nitrates free-floating L-tryptophan as the first committed step in the thaxtomin biosynthetic pathway.",
+            "reactionSMARTS": "[#7:1]\\[#6@:2](-[#6:13](-[#8:15])=[#8:14])-[#6:3]-[#6:4]1:[#6:8]2:[#6:9]:[#6:10]:[#6:11]:[#6:12]:[#6:7]:2:[#7:6]:[#6:5]:1>>[#7:1]\\[#6@:2](-[#6:13](-[#8:15])=[#8:14])-[#6:3]-[#6:4]1:[#6:8]2:[#6:9](-[#7;+](=[#8])-[#8;-]):[#6:10]:[#6:11]:[#6:12]:[#6:7]:2:[#7:6]:[#6:5]:1",
+            "reactions": [
+                {
+                    "substrate": "N[C@@H](Cc1c[nH]c2ccccc12)C(=O)O",
+                    "products": [
+                        "N[C@@H](Cc1c[nH]c2cccc([N+](=O)[O-])c12)C(=O)O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Nitrates L-tryptophan exclusively in 4-position. D-tryptophan is not accepted"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Site-directed mutagenesis"
+                ],
+                "references": [
+                    "doi:10.1021/jacsau.5c01378",
+                    "doi:10.1038/nchembio.1048",
+                    "doi:10.1002/cbic.201402241"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "82103",
+                "ec": "1.14.15.41"
+            }
+        }
+    ]
+}
