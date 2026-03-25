@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000009",
-    "status": "active",
+    "status": "pending",
     "changelog": [
         {
             "version": "1",
@@ -25,6 +25,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Added cofactor information"
+        },
+        {
+            "version": "3",
+            "date": "2026-03-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": ""
         }
     ],
     "enzyme": {
