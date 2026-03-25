@@ -16,29 +16,49 @@
     ],
     "enzyme": {
         "name": "AsaD",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1016/j.fgb.2018.04.009"
+        ],
         "databaseIds": {
             "uniprot": "B8N0E9",
-            "genpept": ""
+            "genpept": "EED55032.1",
+            "mibig": "BGC0001516"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "Conversion of deoxyaspergillic acid into aspergillic acid via N-hydroxylation",
+            "reactionSMARTS": "[#6:1]-[#6:2](-[#6:4]-[#6:5]1:[#6:14](=[#8:15]):[#7:13]:[#6:8](-[#6:9](-[#6:11]-[#6:12])-[#6:10]):[#6:7]:[#7:6]:1)-[#6:3]>>[#6:1]-[#6:2](-[#6:4]-[#6:5]1:[#6:14](=[#8:15]):[#7:13](-[#8]):[#6:8](-[#6:9](-[#6:11]-[#6:12])-[#6:10]):[#6:7]:[#7:6]:1)-[#6:3]",
             "reactions": [
                 {
+                    "substrate": "CCC(C)c1cnc(CC(C)C)c(=O)[nH]1",
                     "products": [
-                        ""
-                    ]
+                        "CCC(C)c1cnc(CC(C)C)c(=O)n1O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Conversion of deoxyaspergillic acid into aspergillic acid via N-hydroxylation"
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1016/j.fgb.2018.04.009"
+                ]
+            }
         }
     ]
 }
