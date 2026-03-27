@@ -1,0 +1,71 @@
+{
+    "accession": "MITE9999999",
+    "status": "active",
+    "comment": "Cytochrome P450 with monooxygenase activity",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-03-25",
+            "contributors": [
+                "0009-0003-2819-1486"
+            ],
+            "reviewers": [
+                "0000-0003-4819-2251"
+            ],
+            "comment": "Added MIBiG ID, minor textual additions."
+        }
+    ],
+    "enzyme": {
+        "name": "CYPArm2",
+        "description": "P450 Monooxygenase",
+        "references": [
+            "doi:10.1002/cbic.202300179"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A7S5T5B1",
+            "genpept": "QJQ03971.1",
+            "mibig": "BGC0002445"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Hydroxylation",
+                "Monooxygenation"
+            ],
+            "description": "Protoilludene 13-hydroxylation in the biosynthesis of armillyl orsellinate-type sesquiterpenoids",
+            "reactionSMARTS": "[#6:1]1(-[#6:7])=[#6@@:2]2/[#6:10]-[#6:11]/[#6@:3]-2(\\[#6:12])-[#6@:4]2\\[#6:9]-[#6:13](-[#6:15])(-[#6:14])-[#6:8]\\[#6@:5]-2-[#6:6]-1>>[#6:1]1(-[#6:7]-[#8])=[#6@@:2]2/[#6:10]-[#6:11]/[#6@:3]-2(\\[#6:12])-[#6@:4]2\\[#6:9]-[#6:13](-[#6:15])(-[#6:14])-[#6:8]\\[#6@:5]-2-[#6:6]-1",
+            "reactions": [
+                {
+                    "substrate": "CC1=C2CC[C@]2(C)[C@H]2CC(C)(C)C[C@H]2C1",
+                    "products": [
+                        "CC1(C)C[C@H]2CC(CO)=C3CC[C@]3(C)[C@H]2C1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "hydroxylation of 6-protoilludene to 13-hydroxy-6-protoilludene"
+                },
+                {
+                    "substrate": "CC1=C2CC[C@]2(C)[C@H]2CC(C)(C)C[C@H]2C1O",
+                    "products": [
+                        "CC1(C)C[C@H]2C(O)C(CO)=C3CC[C@]3(C)[C@H]2C1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "hydroxylation of 8\u03b1-hydroxy-6-protoilludene to 8\u03b1,13-dihydroxy-6-protoilludene"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1002/cbic.202300179"
+                ]
+            }
+        }
+    ]
+}
