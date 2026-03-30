@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Glycosyltransferase that transfers vancosamine to the C-13 hydroxyl of antaraglycone, yielding the divancosamyl intermediate antarmycin C.",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,70 @@
     ],
     "enzyme": {
         "name": "AntC",
-        "databaseIds": {
-            "uniprot": "",
-            "genpept": "WJP00495.1"
-        },
+        "description": "Glycosyltransferase",
         "references": [
-            "doi:"
-        ]
+            "doi:10.1021/jacsau.4c00912"
+        ],
+        "databaseIds": {
+            "genpept": "WJP00495.1"
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Glycosylation"
+            ],
+            "description": "Transfer of two vancosamine moieties to the C-13 and C-13' positions of antaraglycone, yielding Antarmycin C.",
+            "reactionSMARTS": "[CH3:1][CH:2]1[CH:3]([O:4][C:5]([CH:6]([CH3:7])[CH:8]([OH:9])[CH:10]([CH3:11])[CH:12]2[CH:13](/[CH:14]=[CH:15]/[CH:16]=[CH:17]/[C:18]([O:19][CH:20]([CH:21]([CH3:22])[CH:23]([OH:24])[CH:25]([CH3:26])[C:27]3([OH:28])[O:29][CH:30]([CH3:31])[CH:32]([CH3:33])[CH:34]([OH:35])[CH2:36]3)[CH:37]([CH3:38])/[CH:39]=[CH:40]/[CH:41]=[CH:42]/[C:43]([O:44]2)=[O:45])=[O:46])[CH3:47])([CH2:48][CH:49]1[OH:50])[OH:51])[CH3:52]>>[CH3:1][CH:2]4[CH:3]([CH3:52])[O:4][C:5]([CH2:48][CH:49]4[O:50]C5OC(C)C(O)C(C5)(N)C)([OH:51])[CH:6]([CH:8]([CH:10]([CH:12]6[CH:13]([CH3:47])/[CH:14]=[CH:15]/[CH:16]=[CH:17]/[C:18]([O:19][CH:20]([CH:37](/[CH:39]=[CH:40]/[CH:41]=[CH:42]/[C:43]([O:44]6)=[O:45])[CH3:38])[CH:21]([CH:23]([CH:25]([C:27]7([O:29][CH:30]([CH:32]([CH:34]([CH2:36]7)[O:35]C8CC(C(O)C(C)O8)(C)N)[CH3:33])[CH3:31])[OH:28])[CH3:26])[OH:24])[CH3:22])=[O:46])[CH3:11])[OH:9])[CH3:7]",
             "reactions": [
                 {
+                    "substrate": "CC1/C=C/C=C/C(=O)OC(C(C)C(O)C(C)C2(O)CC(O)C(C)C(C)O2)C(C)/C=C/C=C/C(=O)OC1C(C)C(O)C(C)C1(O)CC(O)C(C)C(C)O1",
                     "products": [
-                        ""
-                    ]
+                        "CC1/C=C/C=C/C(=O)OC(C(C)C(O)C(C)C2(O)CC(OC3CC(C)(N)C(O)C(C)O3)C(C)C(C)O2)C(C)/C=C/C=C/C(=O)OC1C(C)C(O)C(C)C1(O)CC(OC2CC(C)(N)C(O)C(C)O2)C(C)C(C)O1"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/jacsau.4c00912"
+                ]
+            },
+            "databaseIds": {
+                "ec": "2.4.1"
+            }
+        },
+        {
+            "tailoring": [
+                "Glycosylation"
+            ],
+            "description": "Transfer of two rhamnose moieties to the C-13 and C-13' positions of antaraglycone, yielding Antarmycin B. Observed in the delta-antB3 mutant strain.",
+            "reactionSMARTS": "[CH3:1][CH:2]1[CH:3]([O:5][C:6]([CH:8]([CH3:49])[CH:9]([OH:48])[CH:10]([CH3:47])[CH:11]2[CH:12](/[CH:14]=[CH:15]/[CH:16]=[CH:17]/[C:18]([O:19][CH:20]([CH:30]([CH3:45])[CH:31]([OH:44])[CH:32]([CH3:43])[C:33]3([OH:42])[O:34][CH:35]([CH3:41])[CH:36]([CH3:40])[CH:37]([OH:39])[CH2:38]3)[CH:21]([CH3:29])/[CH:22]=[CH:23]/[CH:24]=[CH:25]/[C:26]([O:27]2)=[O:28])=[O:46])[CH3:13])([CH2:50][CH:51]1[OH:52])[OH:7])[CH3:4]>>[CH3:1][CH:2]4[CH:3]([O:5][C:6]([CH:8]([CH3:49])[CH:9]([OH:48])[CH:10]([CH3:47])[CH:11]5[CH:12](/[CH:14]=[CH:15]/[CH:16]=[CH:17]/[C:18]([O:19][CH:20]([CH:30]([CH3:45])[CH:31]([OH:44])[CH:32]([CH3:43])[C:33]6([OH:42])[O:34][CH:35]([CH3:41])[CH:36]([CH3:40])[CH:37]([O:39]C7C(O)C(C(C(O7)C)O)O)[CH2:38]6)[CH:21]([CH3:29])/[CH:22]=[CH:23]/[CH:24]=[CH:25]/[C:26]([O:27]5)=[O:28])=[O:46])[CH3:13])([CH2:50][CH:51]4[O:52]C8OC(C(C(C8O)O)O)C)[OH:7])[CH3:4]",
+            "reactions": [
+                {
+                    "substrate": "CC1/C=C/C=C/C(=O)OC(C(C)C(O)C(C)C2(O)CC(O)C(C)C(C)O2)C(C)/C=C/C=C/C(=O)OC1C(C)C(O)C(C)C1(O)CC(O)C(C)C(C)O1",
+                    "products": [
+                        "CC1/C=C/C=C/C(=O)OC(C(C)C(O)C(C)C2(O)CC(OC3OC(C)C(O)C(O)C3O)C(C)C(C)O2)C(C)/C=C/C=C/C(=O)OC1C(C)C(O)C(C)C1(O)CC(OC2OC(C)C(O)C(O)C2O)C(C)C(C)O1"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/jacsau.4c00912"
+                ]
+            },
+            "databaseIds": {
+                "ec": "2.4.1"
+            }
         }
     ]
 }
