@@ -1,0 +1,71 @@
+{
+    "accession": "MITE9999999",
+    "status": "active",
+    "comment": "Catalyzes the first step of the tailoring cascade by performing regioselective epoxidation of the polyene chain.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-04",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "DovC",
+        "description": "Flavin-containing monooxygenase (FMO)",
+        "references": [
+            "doi:10.1039/D5SC03423J"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A1V6NNK5",
+            "genpept": "OQD66318.1"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD",
+                "NADP"
+            ],
+            "inorganic": [
+                "Zn"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Monooxygenation",
+                "Oxidation"
+            ],
+            "description": "Regioselective epoxidation at the C10\u2013C11 position of the deoxyverrucosidin polyene backbone.",
+            "reactionSMARTS": "[#6:1]1(-[#6:8]):[#6:2](=[#8:7]):[#8:3]:[#6:4](-[#6:11](=[#6:13]-[#6:14](-[#6:16])=[#6:15]-[#6:17](-[#6:19])=[#6:18]-[#6:20](-[#6:22])=[#6:21]-[#6:23](-[#6:25])=[#6:24]-[#6:26])-[#6:12]):[#6:5](-[#6:10]):[#6:6]:1-[#8:9]>>[#6:1]1(-[#6:8]):[#6:2](=[#8:7]):[#8:3]:[#6:4](-[#6:11](=[#6:13]-[#6:14](-[#6:16])=[#6:15]-[#6:17](-[#6:19])=[#6:18]-[#6:20](-[#6:22])=[#6:21]-[#6:23]2(-[#8]-[#6:24]-2-[#6:26])-[#6:25])-[#6:12]):[#6:5](-[#6:10]):[#6:6]:1-[#8:9]",
+            "reactions": [
+                {
+                    "substrate": "C/C=C(C)/C=C(C)/C=C(C)/C=C(C)/C=C(\\C)c1oc(=O)c(C)c(O)c1C",
+                    "products": [
+                        "CC(=CC(C)=CC1(C)OC1C)C=C(C)C=C(C)c1oc(=O)c(C)c(O)c1C"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Epoxidation of the octaketide alpha-pyrone precursor to form the 10,11-epoxide intermediate."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1039/D5SC03423J"
+                ]
+            },
+            "databaseIds": {
+                "ec": "1.14.13"
+            }
+        }
+    ]
+}
