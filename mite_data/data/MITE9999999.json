@@ -1,0 +1,64 @@
+{
+    "accession": "MITE9999999",
+    "status": "active",
+    "comment": "Fe(II)- and O\u2082-dependent nonhaem iron enzyme; homologue of ergothioneine sulfoxide synthase EgtB. Catalyses oxidative C\u2013Se bond formation between hercynine and SeGlcNAc via a selenoxide intermediate that spontaneously eliminates to yield selenoneine and 2-acetamidoglucal.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-02",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "SenA",
+        "description": "selenoneine synthase",
+        "references": [
+            "doi:10.1038/s41586-022-05174-2",
+            "doi:10.1016/j.ijbiomac.2023.128428"
+        ],
+        "databaseIds": {
+            "uniprot": "A0AAJ6N6I6",
+            "genpept": "CAN7372359.1"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Other"
+            ],
+            "description": "Oxidative C\u2013Se bond formation between hercynine and SeGlcNAc, yielding a selenoxide intermediate (GlcNAc-SEN=O) that spontaneously undergoes selenoxide elimination to produce selenoneine and 2-acetamidoglucal (2AG).",
+            "reactionSMARTS": "[#6:1]1:[#7:5]:[#6:4](-[#6:6]\\[#6@:7](-[#7;+:11](-[#6:14])(-[#6:13])-[#6:12])-[#6:8](-[#8:10])=[#8:9]):[#6:3]:[#7:2]:1>>[#6]-[#6](-[#7]/[#6@]1-[#6@](\\[#34](-[#6:1]2:[#7:5]:[#6:4](-[#6:6]\\[#6@:7](-[#7;+:11](-[#6:13])(-[#6:12])-[#6:14])-[#6:8](-[#8:10])=[#8:9]):[#6:3]:[#7:2]:2)=[#8])-[#8]-[#6@](\\[#6]-[#8])-[#6@@](/[#8])-[#6@@]-1\\[#8])=[#8]",
+            "reactions": [
+                {
+                    "substrate": "C[N+](C)(C)[C@@H](Cc1cnc[nH]1)C(=O)[O-]",
+                    "products": [
+                        "CC(=O)N[C@@H]1[C@@H](O)[C@H](O)[C@@H](CO)O[C@H]1[Se](=O)c1ncc(C[C@@H](C(=O)[O-])[N+](C)(C)C)[nH]1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "hercynine + SeGlcNAc \u2192 Product: selenoneine + 2-acetamidoglucal (2AG)"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Site-directed mutagenesis"
+                ],
+                "references": [
+                    "doi:10.1038/s41586-022-05174-2"
+                ]
+            }
+        }
+    ]
+}
