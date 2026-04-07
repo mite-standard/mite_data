@@ -16,29 +16,48 @@
     ],
     "enzyme": {
         "name": "LtxB",
+        "description": "Cytochrome P450 monooxygenase",
+        "references": [
+            "doi:10.1021/np900481a"
+        ],
         "databaseIds": {
-            "uniprot": "",
+            "uniprot": "Q5V8A7",
             "genpept": "AAT12284.1"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Cyclization",
+                "Oxidation"
+            ],
+            "description": "Oxidative cyclization",
+            "reactionSMARTS": "[#6:1]-[#7:2]-[#6:3](-[#6:7](=[#8:22])-[#7:8]-[#6:9](-[#6:20]-[#8:21])-[#6:10]-[#6:11]1:[#6:19]2:[#6:14](:[#6:15]:[#6:16]:[#6:17]:[#6:18]:2):[#7:13]:[#6:12]:1)-[#6:4](-[#6:6])-[#6:5]>>[#6:1]-[#7:2]1-[#6:18]2:[#6:17]:[#6:16]:[#6:15]:[#6:14]3:[#7:13]:[#6:12]:[#6:11](:[#6:19]:2:3)-[#6:10]-[#6:9](-[#6:20]-[#8:21])-[#7:8]-[#6:7](=[#8:22])-[#6:3]-1-[#6:4](-[#6:6])-[#6:5]",
             "reactions": [
                 {
+                    "substrate": "CNC(C(=O)NC(CO)Cc1c[nH]c2ccccc12)C(C)C",
                     "products": [
-                        ""
-                    ]
+                        "CC(C)C1C(=O)NC(CO)Cc2c[nH]c3cccc(c23)N1C"
+                    ],
+                    "isIntermediate": false
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1021/np900481a"
+                ]
+            }
         }
     ]
 }
