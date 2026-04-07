@@ -16,29 +16,50 @@
     ],
     "enzyme": {
         "name": "AriF",
+        "description": "cyclase",
+        "references": [
+            "doi:10.1002/anie.202312490"
+        ],
         "databaseIds": {
             "uniprot": "A0A1I5P2L5",
-            "genpept": ""
+            "genpept": "SFP28100.1"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Cyclization"
+            ],
+            "description": "Cyclization of the eunicellane skeleton into Arida-3,6,15-tirene (6/7/5-fused tricyclic compound) by bond formation between C2 and C6",
+            "reactionSMARTS": "[#6:1]1-[#6:2]-[#6@:3](/[#6:10])-[#6@:4]2\\[#6:12]-[#6:13]-[#6:14](-[#6:16])=[#6:15]-[#6:17]-[#6:18]-[#6:19](-[#6:20])=[#6:11]-[#6@:5]-2\\[#6@@:6]-1/[#6:7](=[#6:9])-[#6:8]>>[#6:1]1-[#6:2]-[#6@:3](/[#6:10])-[#6@:4]2\\[#6:12]-[#6:13]-[#6:14](-[#6:16])-[#6:17]3-[#6:18](-[#6:19](-[#6:20]-[#6:15]-3)=[#6:11])-[#6@:5]-2\\[#6@@:6]-1/[#6:7](=[#6:9])-[#6:8]",
             "reactions": [
                 {
+                    "substrate": "C=C(C)[C@@H]1CC[C@H](C)[C@H]2CC/C(C)=C/CC/C(C)=C/[C@H]21",
                     "products": [
-                        ""
-                    ]
+                        "C=C1CCC2C(C)CC[C@H]3[C@@H](C12)[C@H](C(=C)C)CC[C@@H]3C"
+                    ],
+                    "isIntermediate": true,
+                    "description": "cyclization of eunicellane skeleton"
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1002/anie.202312490"
+                ]
+            }
         }
     ]
 }
