@@ -16,29 +16,54 @@
     ],
     "enzyme": {
         "name": "SxtT",
+        "description": "Rieske oxygenase",
+        "references": [
+            "doi:10.1021/jacs.8b08901"
+        ],
         "databaseIds": {
-            "uniprot": "",
+            "uniprot": "C3RVQ0",
             "genpept": "ACG63840.1"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "inorganic": [
+                "FeS"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Hydroxylation",
+                "Monooxygenation",
+                "Oxidation"
+            ],
+            "description": "Hydroxylation",
+            "reactionSMARTS": "[#7:1]12/[#6@@:2]3(-[#7:10]-[#6:11](=[#7:14])-[#7:12]-[#6@@:3]-3/[#6:4](-[#6:15]-[#8:16])-[#7:5]-[#6:6]-1=[#7:13])-[#6@@:7](/[#8:17])-[#6:8]-[#6:9]-2>>[#7:1]12/[#6@@:2]3(-[#7:10]-[#6:11](=[#7:14])-[#7:12]-[#6@@:3]-3/[#6:4](-[#6:15]-[#8:16])-[#7:5]-[#6:6]-1=[#7:13])-[#6@@:7](-[#8:18])(/[#8:17])-[#6:8]-[#6:9]-2",
             "reactions": [
                 {
+                    "substrate": "N=C1N[C@@H]2C(CO)NC(=N)N3CC[C@H](O)[C@@]23N1",
                     "products": [
-                        ""
-                    ]
+                        "N=C1N[C@@H]2C(CO)NC(=N)N3CCC(O)(O)[C@@]23N1"
+                    ],
+                    "isIntermediate": true
+                },
+                {
+                    "substrate": "N=C1N[C@@H]2C(COC(N)=O)NC(=N)N3CC[C@H](O)[C@@]23N1",
+                    "products": [
+                        "N=C1N[C@@H]2C(COC(N)=O)NC(=N)N3CCC(O)(O)[C@@]23N1"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/jacs.8b08901"
+                ]
+            }
         }
     ]
 }
