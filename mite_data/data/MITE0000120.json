@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000120",
-    "status": "active",
+    "status": "pending",
     "changelog": [
         {
             "version": "1",
@@ -24,6 +24,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Fixed enzyme name to be more computer readable."
+        },
+        {
+            "version": "3",
+            "date": "2026-04-13",
+            "contributors": [
+                "0000-0002-3677-2972"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": ""
         }
     ],
     "enzyme": {
