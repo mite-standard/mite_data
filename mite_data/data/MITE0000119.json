@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000119",
-    "status": "active",
+    "status": "pending",
     "changelog": [
         {
             "version": "1",
@@ -13,6 +13,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer fixed reactions:substrate. Reviewer 1 fixed reactions:products. Reviewer 2 replaced CXSMARTS with normal SMARTS."
+        },
+        {
+            "version": "2",
+            "date": "2026-04-13",
+            "contributors": [
+                "0000-0002-3677-2972"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": ""
         }
     ],
     "enzyme": {
