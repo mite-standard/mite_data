@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Diiron radical halogenase",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,49 @@
     ],
     "enzyme": {
         "name": "NocO",
+        "description": "Halogenase",
+        "references": [
+            "doi:10.1021/acs.biochem.4c00720"
+        ],
         "databaseIds": {
-            "uniprot": "",
+            "uniprot": "A0A7U3NLB0",
             "genpept": "QOV09192.1"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "NADP"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Diiron radical halogenase",
+            "reactionSMARTS": "[#6](-[#6]-[#6]-[#6]-[#6]-[#6]-[#6]-[#6]-[#6]-[#6]-[#6]-[#6])(=[#8])-[*]>>[#6](-[#6]-[#6]-[#6]-[#6]-[#6]-[#6]-[#6]-[#6]-[#6]-[#6]-[#6]-[Cl])(=[#8])-[*]",
             "reactions": [
                 {
+                    "substrate": "*C(=O)CCCCCCCCCCC",
                     "products": [
-                        ""
-                    ]
+                        "*C(=O)CCCCCCCCCCCCl"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Chlorination of NocM-tethered dodecanoyl thioester"
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure",
+                    "Site-directed mutagenesis"
+                ],
+                "references": [
+                    "doi:10.1021/acs.biochem.4c00720"
+                ]
+            }
         }
     ]
 }
