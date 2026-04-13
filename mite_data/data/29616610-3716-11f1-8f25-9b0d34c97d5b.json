@@ -15,30 +15,41 @@
         }
     ],
     "enzyme": {
-        "name": "mppA",
-        "databaseIds": {
-            "uniprot": "R9UQS5",
-            "genpept": ""
-        },
+        "name": "mppC",
+        "description": "dehydrogenase",
         "references": [
-            "doi:"
-        ]
+            "doi:10.1039/C4RA11713A"
+        ],
+        "databaseIds": {
+            "uniprot": "R9UQ88",
+            "genpept": "AGN71608.1",
+            "mibig": "BGC0000027"
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Dehydration"
+            ],
+            "description": "Dehydration of compound 25 to compound 26 in the article",
+            "reactionSMARTS": "[*,H]-[#6]-[#6]-[#6]-[#6]-[#6](-[#6]-[#6](-[#8]-[#6@]1(-[#6](=[#8])-[#6]2-[#6](-[#6]=[#6](-[#8]-[#6]=2)-[#6]=[#6]-[#6])=[#6]-[#6]-1=[#8])/[#6])=[#8])=[#8]>>[*,H]-[#6]-[#6]-[#6]-[#6]-[#6](=[#8])-[#6]-[#6](=[#8])-[#8]-[#6@]1(/[#6])-[#6](=[#8])-[#6]=[#6]2-[#6]=[#6](-[#6]=[#6]-[#6])-[#8]-[#6]-[#6]-2-[#6]-1=[#8]",
             "reactions": [
                 {
+                    "substrate": "*CCCCC(=O)CC(=O)O[C@]1(C)C(=O)C=C2C=C(/C=C/C)OC=C2C1=O",
                     "products": [
-                        ""
-                    ]
+                        "*CCCCC(=O)CC(=O)O[C@]1(C)C(=O)C=C2C=C(C=CC)OCC2C1=O"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1039/C4RA11713A"
+                ]
+            }
         }
     ]
 }
