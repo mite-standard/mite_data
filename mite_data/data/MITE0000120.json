@@ -34,19 +34,38 @@
             "reviewers": [
                 "BBBBBBBBBBBBBBBBBBBBBBBB"
             ],
-            "comment": ""
+            "comment": "I have updated references, enzyme co-factors and auxiliary enzymes."
         }
     ],
     "enzyme": {
         "name": "ZopL9/ZopK",
         "description": "AsaB-like alphaKGDD",
         "references": [
-            "doi:10.1039/d0sc04309e"
+            "doi:10.1039/d0sc04309e",
+            "doi:10.1039/d5ra02147b"
+        ],
+        "auxiliaryEnzymes": [
+            {
+                "name": "ZopL2/ZopQ",
+                "description": "Isochorismatase-like enzyme",
+                "databaseIds": {
+                    "uniprot": "A0A7R6QM07",
+                    "genpept": "QTE75990.1"
+                }
+            }
         ],
         "databaseIds": {
             "uniprot": "A0A7R6QUG3",
             "genpept": "QTE75983.1",
             "mibig": "BGC0002224"
+        },
+        "cofactors": {
+            "organic": [
+                "a-Ketoglutaric acid"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
         }
     },
     "reactions": [
@@ -54,7 +73,7 @@
             "tailoring": [
                 "Ring contraction"
             ],
-            "description": "Catalyzes a ring contraction of the nine-membered central ring to yield a octadride ring",
+            "description": "Catalyzes ring contraction of a nine-membered ring to an eight-membered ring.",
             "reactionSMARTS": "[#6:1]-[#6:2]-[#6:3]-[#6:4]-[#6:5]\\[#6@:6]1-[#6:24]2-[#6:25](-[#8:27]-[#6:28](=[#8:29])-[#6:23]=2-[#6:22]-[#6@@:17](\\[#6:18]-[#6:19]-[#6:20]-[#6:21])-[#6@@](\\[#8])-[#6:9]2-[#6:10](-[#8:12]-[#6:13](=[#8:14])-[#6:8]=2-[#6:7]-1)=[#8:11])=[#8:26]>>[#6:1]-[#6:2]-[#6:3]-[#6:4]-[#6:5]\\[#6@:6]1-[#6:24]2-[#6:25](-[#8:27]-[#6:28](=[#8:29])-[#6:23]=2-[#6:22]-[#6@@:17](\\[#6:18]-[#6:19]-[#6:20]-[#6:21])-[#6:9]2-[#6:10](-[#8:12]-[#6:13](=[#8:14])-[#6:8]=2-[#6:7]-1)=[#8:11])=[#8:26]",
             "reactions": [
                 {
@@ -63,7 +82,7 @@
                         "CCCCC[C@@H]1CC2=C(C(=O)OC2=O)[C@H](CCCC)CC2=C1C(=O)OC2=O"
                     ],
                     "isIntermediate": true,
-                    "description": "Converts 5-hydroxy-deoxyscytalidin to deoxyzopfiellin"
+                    "description": "Ring contraction of 5-hydroxy-deoxyscytalidin to deoxyzopfiellin"
                 }
             ],
             "evidence": {
@@ -72,7 +91,8 @@
                     "Knock-out studies"
                 ],
                 "references": [
-                    "doi:10.1039/d0sc04309e"
+                    "doi:10.1039/d0sc04309e",
+                    "doi:10.1039/d5ra02147b"
                 ]
             }
         },
@@ -89,15 +109,17 @@
                         "CCCCC[C@@H]1CC2=C(C(=O)OC2=O)[C@H](O)[C@H](CCCC)CC2=C1C(=O)OC2=O"
                     ],
                     "isIntermediate": true,
-                    "description": "Converts deoxyscytalidin to 5-hydroxy-deoxyscytalidin"
+                    "description": "Hydroxylation of deoxyscytalidin (C5) to 5-hydroxy-deoxyscytalidin"
                 }
             ],
             "evidence": {
                 "evidenceCode": [
+                    "In vitro assay",
                     "Knock-out studies"
                 ],
                 "references": [
-                    "doi:10.1039/d0sc04309e"
+                    "doi:10.1039/d0sc04309e",
+                    "doi:10.1039/d5ra02147b"
                 ]
             }
         }
