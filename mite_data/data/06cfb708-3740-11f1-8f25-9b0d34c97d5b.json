@@ -1,0 +1,67 @@
+{
+    "accession": "MITE0000119",
+    "status": "pending",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0003-0443-9902",
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Initial entry. Reviewer fixed reactions:substrate. Reviewer 1 fixed reactions:products. Reviewer 2 replaced CXSMARTS with normal SMARTS."
+        },
+        {
+            "version": "2",
+            "date": "2026-04-13",
+            "contributors": [
+                "0000-0002-3677-2972"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": ""
+        }
+    ],
+    "enzyme": {
+        "name": "ScyL2",
+        "description": "AsaB-like alphaKGDD",
+        "references": [
+            "doi:10.1039/d0sc04309e"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A8A5D4W2",
+            "genpept": "QTE75998.1",
+            "mibig": "BGC0002223"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "reactionSMARTS": "[#6:1]-[#6:2]-[#6:3]-[#6:4]-[#6:5]\\[#6@:6]1-[#6:18]2-[#6:19](-[#8:21]-[#6:22](=[#8:23])-[#6:17]=2-[#6:16]-[#6@@:11](\\[#6:12]-[#6:13]-[#6:14]-[#6:15])-[#6:10]-[#6:9]2-[#6:24](-[#8:26]-[#6:27](=[#8:28])-[#6:8]=2-[#6:7]-1)=[#8:25])=[#8:20]>>[#6:1]-[#6:2]-[#6:3]-[#6:4]-[#6:5]\\[#6@:6]1-[#6:18]2-[#6:19](-[#8:21]-[#6:22](=[#8:23])-[#6:17]=2-[#6:16]-[#6@@:11](/[#8])(-[#6:12]-[#6:13]-[#6:14]-[#6:15])-[#6:10]-[#6:9]2-[#6:24](-[#8:26]-[#6:27](=[#8:28])-[#6:8]=2-[#6:7]-1)=[#8:25])=[#8:20]",
+            "reactions": [
+                {
+                    "substrate": "CCCCC[C@@H]1CC2=C(C[C@H](CCCC)CC3=C1C(=O)OC3=O)C(=O)OC2=O",
+                    "products": [
+                        "CCCCC[C@@H]1CC2=C(C(=O)OC2=O)C[C@@](CCCC)(O)CC2=C1C(=O)OC2=O"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1039/d0sc04309e"
+                ]
+            }
+        }
+    ]
+}
