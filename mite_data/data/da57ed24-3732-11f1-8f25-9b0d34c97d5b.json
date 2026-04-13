@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Catalyzes the two-step oxidation and decarboxylation of L-cysteine",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,57 @@
     ],
     "enzyme": {
         "name": "SbzM",
+        "description": "Cupin dioxygenase",
+        "references": [
+            "doi:10.1038/s41929-026-01493-z",
+            "doi:10.1038/s41467-018-08093-x"
+        ],
         "databaseIds": {
             "uniprot": "P0DY49",
-            "genpept": ""
+            "genpept": "BBG06562.1",
+            "mibig": "BGC0001925"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "inorganic": [
+                "Ni",
+                "Zn"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Decarboxylation",
+                "Oxidation"
+            ],
+            "description": "Two step oxidation and decarboxylation of L-cysteine with an amide transfer to the thiol group.",
+            "reactionSMARTS": "[#7:2]-[#6:1](/[#6:6]-[#16:7])-[#6:3](=[#8:4])-[#8:5].[#8:8]=[#8:9].[#8:10]=[#8:11].[#8:12]>>[#8:12]=[#6:1]-[#6:6]-[#16:7](=[#8:8])(-[#7:2])=[#8:10].[#8:4]=[#6:3]=[#8:5].[#8:9].[#8:11]",
             "reactions": [
                 {
+                    "substrate": "N[C@@H](CS)C(=O)O.O.O=O.O=O",
                     "products": [
-                        ""
-                    ]
+                        "NS(=O)(=O)CC=O",
+                        "O",
+                        "O",
+                        "O=C=O"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Site-directed mutagenesis"
+                ],
+                "references": [
+                    "doi:10.1038/s41929-026-01493-z"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "81871",
+                "ec": "1.13.11.95"
+            }
         }
     ]
 }
