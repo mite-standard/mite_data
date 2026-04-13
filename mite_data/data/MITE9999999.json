@@ -1,0 +1,65 @@
+{
+    "accession": "MITE9999999",
+    "status": "active",
+    "comment": "NAD(P)H-dependent oxidoreductase ",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-13",
+            "contributors": [
+                "0000-0001-5730-3326"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "MppC",
+        "description": "NAD(P)H-dependent oxidoreductase ",
+        "references": [
+            "doi:10.1039/C4RA11713A",
+            "doi:10.1039/C7SC00475C"
+        ],
+        "databaseIds": {
+            "uniprot": "R9UQ88",
+            "genpept": "AGN71608.1",
+            "mibig": "BGC0000027"
+        },
+        "cofactors": {
+            "organic": [
+                "NAD",
+                "NADP"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Reduction"
+            ],
+            "description": "proposed reduction and isomerization - NAD(P)H-dependent oxidoreductase ",
+            "reactionSMARTS": "[*,H]-[#6]-[#6]-[#6]-[#6]-[#6](-[#6]-[#6](-[#8]-[#6@]1(-[#6](=[#8])-[#6]2-[#6](-[#6]=[#6](-[#8]-[#6]=2)-[#6]=[#6]-[#6])=[#6]-[#6]-1=[#8])/[#6])=[#8])=[#8]>>[*,H]-[#6]-[#6]-[#6]-[#6]-[#6](=[#8])-[#6]-[#6](=[#8])-[#8]-[#6@]1(/[#6])-[#6](=[#8])-[#6]=[#6]2-[#6]=[#6](-[#6]=[#6]-[#6])-[#8]-[#6]-[#6]-2-[#6]-1=[#8]",
+            "reactions": [
+                {
+                    "substrate": "*CCCCC(=O)CC(=O)O[C@]1(C)C(=O)C=C2C=C(/C=C/C)OC=C2C1=O",
+                    "products": [
+                        "*CCCCC(=O)CC(=O)O[C@]1(C)C(=O)C=C2C=C(C=CC)OCC2C1=O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "MppC induces a structural change in the pyranoquinone structure, likely by a redox-sequence or double bond migration,  making C-5 a better electron acceptor MppC activity determines the regioselectivity of the spontaneous Knoevenagel condensation."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1039/C4RA11713A"
+                ]
+            }
+        }
+    ]
+}
