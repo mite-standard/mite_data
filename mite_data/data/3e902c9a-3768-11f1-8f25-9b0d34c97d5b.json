@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Cytochrome P450 catalyzing the hydroxylation of peregrinol to form labd-13Z-ene-9,15,16-triol",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,44 @@
     ],
     "enzyme": {
         "name": "VacCYP76BK",
-        "databaseIds": {
-            "uniprot": "A0A2K9RG08.1",
-            "genpept": ""
-        },
+        "description": "Cytochrome P450",
         "references": [
-            "doi:"
-        ]
+            "doi:10.1111/tpj.13822"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A2K9RG08",
+            "genpept": "AUT77126.1"
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Hydroxylation",
+                "Monooxygenation"
+            ],
+            "description": "VacCYP76BK1 catalyzes 16-hydroxylation of peregrinol to labd-13Z-ene-9,15,16-triol",
+            "reactionSMARTS": "[C;H1,H2,H3:1]>>[C:1][OH]",
             "reactions": [
                 {
+                    "substrate": "C/C(=C\\CO)CC[C@@]1(O)[C@H](C)CC[C@H]2C(C)(C)CCC[C@@]21C",
                     "products": [
-                        ""
-                    ]
+                        "C[C@@H]1CC[C@H]2C(C)(C)CCC[C@]2(C)[C@@]1(O)CC/C(=C/CO)CO"
+                    ],
+                    "isIntermediate": true,
+                    "description": "16-hydroxylation of peregrinol to labd-13Z-ene-9,15,16-triol"
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1111/tpj.13822"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "62192"
+            }
         }
     ]
 }
