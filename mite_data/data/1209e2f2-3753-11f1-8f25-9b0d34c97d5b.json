@@ -1,0 +1,105 @@
+{
+    "accession": "MITE0000120",
+    "status": "pending",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0003-0443-9902",
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Initial entry. Reviewer fixed reactionSMARTS:reactionSMARTS. Reviewer fixed reactions:substrate. Reviewer fixed reactions:products. Reviewer 2 fixed incorrect protein databaseIDs (pointed to ZopA instead); fixed reaction SMARTS numbering"
+        },
+        {
+            "version": "2",
+            "date": "2025-08-13",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Fixed enzyme name to be more computer readable."
+        },
+        {
+            "version": "3",
+            "date": "2026-04-13",
+            "contributors": [
+                "0000-0002-3677-2972"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": ""
+        }
+    ],
+    "enzyme": {
+        "name": "ZopL9/ZopK",
+        "description": "AsaB-like alphaKGDD",
+        "references": [
+            "doi:10.1039/d0sc04309e"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A7R6QUG3",
+            "genpept": "QTE75983.1",
+            "mibig": "BGC0002224"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Ring contraction"
+            ],
+            "description": "Catalyzes a ring contraction of the nine-membered central ring to yield a octadride ring",
+            "reactionSMARTS": "[#6:1]-[#6:2]-[#6:3]-[#6:4]-[#6:5]\\[#6@:6]1-[#6:24]2-[#6:25](-[#8:27]-[#6:28](=[#8:29])-[#6:23]=2-[#6:22]-[#6@@:17](\\[#6:18]-[#6:19]-[#6:20]-[#6:21])-[#6@@](\\[#8])-[#6:9]2-[#6:10](-[#8:12]-[#6:13](=[#8:14])-[#6:8]=2-[#6:7]-1)=[#8:11])=[#8:26]>>[#6:1]-[#6:2]-[#6:3]-[#6:4]-[#6:5]\\[#6@:6]1-[#6:24]2-[#6:25](-[#8:27]-[#6:28](=[#8:29])-[#6:23]=2-[#6:22]-[#6@@:17](\\[#6:18]-[#6:19]-[#6:20]-[#6:21])-[#6:9]2-[#6:10](-[#8:12]-[#6:13](=[#8:14])-[#6:8]=2-[#6:7]-1)=[#8:11])=[#8:26]",
+            "reactions": [
+                {
+                    "substrate": "CCCCC[C@@H]1CC2=C(C(=O)OC2=O)[C@H](O)[C@H](CCCC)CC2=C1C(=O)OC2=O",
+                    "products": [
+                        "CCCCC[C@@H]1CC2=C(C(=O)OC2=O)[C@H](CCCC)CC2=C1C(=O)OC2=O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Converts 5-hydroxy-deoxyscytalidin to deoxyzopfiellin"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1039/d0sc04309e"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "Hydroxylation of nine-membered central ring in preparation of ring contraction",
+            "reactionSMARTS": "[#6:1]-[#6:2]-[#6:3]-[#6:4]-[#6:5]\\[#6@:6]1-[#6:18]2-[#6:19](-[#8:21]-[#6:22](=[#8:23])-[#6:17]=2-[#6:16]-[#6@@:11](\\[#6:12]-[#6:13]-[#6:14]-[#6:15])-[#6:10]-[#6:9]2-[#6:24](-[#8:26]-[#6:27](=[#8:28])-[#6:8]=2-[#6:7]-1)=[#8:25])=[#8:20]>>[#6:1]-[#6:2]-[#6:3]-[#6:4]-[#6:5]\\[#6@:6]1-[#6:18]2-[#6:19](-[#8:21]-[#6:22](=[#8:23])-[#6:17]=2-[#6:16]-[#6@@:11](\\[#6:12]-[#6:13]-[#6:14]-[#6:15])-[#6@@:10](\\[#8])-[#6:9]2-[#6:24](-[#8:26]-[#6:27](=[#8:28])-[#6:8]=2-[#6:7]-1)=[#8:25])=[#8:20]",
+            "reactions": [
+                {
+                    "substrate": "CCCCC[C@@H]1CC2=C(C[C@H](CCCC)CC3=C1C(=O)OC3=O)C(=O)OC2=O",
+                    "products": [
+                        "CCCCC[C@@H]1CC2=C(C(=O)OC2=O)[C@H](O)[C@H](CCCC)CC2=C1C(=O)OC2=O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Converts deoxyscytalidin to 5-hydroxy-deoxyscytalidin"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1039/d0sc04309e"
+                ]
+            }
+        }
+    ]
+}
