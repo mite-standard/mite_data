@@ -1,0 +1,57 @@
+{
+    "accession": "MITE9999999",
+    "status": "active",
+    "comment": "Mpp7 controls subsequent (spontaneous) regioselective Knoevenagel condensation ",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-13",
+            "contributors": [
+                "0000-0001-5730-3326"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "Mpp7",
+        "description": "Dehydratase",
+        "references": [
+            "doi:10.1016/j.tetlet.2014.01.090"
+        ],
+        "databaseIds": {
+            "uniprot": "R9UMJ8",
+            "genpept": "AGN71622.1",
+            "mibig": "BGC0000027"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Dehydration"
+            ],
+            "description": "Mpp7 controls regioselective Knoevenagel condensation ",
+            "reactionSMARTS": "[#6:1]-[#6:2]=[#6:3]-[#6:4]1-[#8:27]-[#6:26]-[#6:10]2-[#6:11](=[#8:25])-[#6@:12](\\[#6:24])(-[#8:13]-[#6:14](=[#8:23])-[#6:15]-[#6:16](=[#8:22])-[#6:17]-[#6:18]-[#6:19]-[#6:20]-[*,H])-[#6:8](=[#8])-[#6:7]-[#6:6]=2-[#6:5]=1>>[#6:1]-[#6:2]=[#6:3]-[#6:4]1-[#8:27]-[#6:26]-[#6:10]2-[#6:11](=[#8:25])-[#6@:12]3(\\[#6:24])-[#8:13]-[#6:14](=[#8:23])-[#6:15](-[#6:16](=[#8:22])-[#6:17]-[#6:18]-[#6:19]-[#6:20]-[*,H])=[#6:8]-3-[#6:7]-[#6:6]=2-[#6:5]=1",
+            "reactions": [
+                {
+                    "substrate": "*CCCCC(=O)CC(=O)O[C@]1(C)C(=O)CC2=C(COC(/C=C/C)=C2)C1=O",
+                    "products": [
+                        "*CCCCC(=O)C1=C2CC3=C(COC(C=CC)=C3)C(=O)[C@]2(C)OC1=O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Mpp7 controls regioselective Knoevenagel condensation: Mpp7 mediates regioselective aldol condensation on the C6 ketone group and that the subsequent dehydration step is spontaneous, whereas the absence of Mpp7 leads to lactone ring formation on C9a. "
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1016/j.tetlet.2014.01.090"
+                ]
+            }
+        }
+    ]
+}
