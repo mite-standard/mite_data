@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Metal dependent dioxygenase. Product depends on metal bound.",
     "changelog": [
         {
             "version": "1",
@@ -11,34 +12,86 @@
             "reviewers": [
                 "BBBBBBBBBBBBBBBBBBBBBBBB"
             ],
-            "comment": "New entry."
+            "comment": "New entry. "
         }
     ],
     "enzyme": {
         "name": "ARD",
+        "description": "Dioxygenase",
+        "references": [
+            "doi:10.1021/acs.biochem.5b01319"
+        ],
         "databaseIds": {
             "uniprot": "Q99JT9",
-            "genpept": ""
+            "genpept": "AAH05695.1"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "inorganic": [
+                "Fe",
+                "Ni"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "Iron dependent reaction",
+            "reactionSMARTS": "[#8]-[#6]=[#6:3](-[#6:5](=[#8:10])-[#6:6]-[#6:7]-[#16:8]-[#6:9])-[#8:4].[#8:11]=[#8]>>[#6:5](-[#6:3](=[#8:11])-[#8:4])(-[#6:6]-[#6:7]-[#16:8]-[#6:9])=[#8:10].[#8:11]-[#6:5]=[#8:10]",
             "reactions": [
                 {
+                    "substrate": "CSCCC(=O)/C(O)=C/O.O=O",
                     "products": [
-                        ""
-                    ]
+                        "CSCCC(=O)C(=O)O",
+                        "O=CO"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Iron Dependent; 10 times faster"
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acs.biochem.5b01319"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "24504",
+                "ec": "1.13.11.54"
+            }
+        },
+        {
+            "tailoring": [
+                "Decarboxylation",
+                "Oxidation"
+            ],
+            "description": "Nickle dependent reaction",
+            "reactionSMARTS": "[#8]-[#6]=[#6:3](-[#6:5](=[#8:10])-[#6:6]-[#6:7]-[#16:8]-[#6:9])-[#8:4].[#8:11]=[#8]>>[#6:5](-[#8])(-[#6:6]-[#6:7]-[#16:8]-[#6:9])=[#8:10].[#8:11]-[#6:5]=[#8:10].[#6;-]#[#8;+]",
+            "reactions": [
+                {
+                    "substrate": "CSCCC(=O)/C(O)=C/O.O=O",
+                    "products": [
+                        "CSCCC(=O)O",
+                        "O=CO",
+                        "[C-]#[O+]"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Nickle dependent "
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acs.biochem.5b01319"
+                ]
+            }
         }
     ]
 }
