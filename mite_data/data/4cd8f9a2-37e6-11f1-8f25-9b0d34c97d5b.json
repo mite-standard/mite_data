@@ -1,0 +1,44 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-14",
+            "contributors": [
+                "0000-0003-2971-646X"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "RusF",
+        "databaseIds": {
+            "uniprot": "",
+            "genpept": "CDM37407.1"
+        },
+        "references": [
+            "doi:"
+        ]
+    },
+    "reactions": [
+        {
+            "evidence": {
+                "evidenceCode": [],
+                "references": [
+                    "doi:"
+                ]
+            },
+            "reactions": [
+                {
+                    "products": [
+                        ""
+                    ]
+                }
+            ]
+        }
+    ]
+}
