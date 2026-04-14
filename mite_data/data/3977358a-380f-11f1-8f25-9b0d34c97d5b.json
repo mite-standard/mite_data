@@ -16,29 +16,48 @@
     ],
     "enzyme": {
         "name": "MgsK",
+        "description": "Cytochrome P450 monooxygenase",
+        "references": [
+            "doi:10.1021/ja4002635"
+        ],
         "databaseIds": {
             "uniprot": "D0U2E7",
-            "genpept": ""
+            "genpept": "ACY01394.1",
+            "mibig": "BGC0000177"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "C-8 hydroxylation of iso-migrastatin",
+            "reactionSMARTS": "[#6:1]-[#6:2](\\[#6@:20]1-[#6@@:33](/[#6:34])-[#6@:31](/[#6:32])-[#6:30]-[#6:29]=[#6:28]-[#6:27]-[#6:26]-[#6:25]=[#6:24]-[#6:22](=[#8:23])-[#8:21]-1)=[#6:3]-[#6@@:4](-[#6:6](-[#6:8]-[#6@@:9](-[#6:11]-[#6:12]1-[#6:19]-[#6:17](=[#8:18])-[#7:16]-[#6:14](=[#8:15])-[#6:13]-1)/[#8:10])=[#8:7])\\[#6:5]>>[#6:1]-[#6:2](\\[#6@:20]1-[#6@@:33](/[#6:34])-[#6@:31](/[#6:32])-[#6@@:30](\\[#8])-[#6:29]=[#6:28]-[#6:27]-[#6:26]-[#6:25]=[#6:24]-[#6:22](=[#8:23])-[#8:21]-1)=[#6:3]-[#6@@:4](-[#6:6](-[#6:8]-[#6@@:9](-[#6:11]-[#6:12]1-[#6:19]-[#6:17](=[#8:18])-[#7:16]-[#6:14](=[#8:15])-[#6:13]-1)/[#8:10])=[#8:7])\\[#6:5]",
             "reactions": [
                 {
+                    "substrate": "C/C(=C\\[C@H](C)C(=O)C[C@H](O)CC1CC(=O)NC(=O)C1)[C@@H]1OC(=O)/C=C/CC/C=C/C[C@@H](C)[C@@H]1C",
                     "products": [
-                        ""
-                    ]
+                        "CC(=C[C@H](C)C(=O)C[C@H](O)CC1CC(=O)NC(=O)C1)[C@@H]1OC(=O)C=CCCC=C[C@H](O)[C@@H](C)[C@@H]1C"
+                    ],
+                    "isIntermediate": false
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/ja4002635"
+                ]
+            }
         }
     ]
 }
