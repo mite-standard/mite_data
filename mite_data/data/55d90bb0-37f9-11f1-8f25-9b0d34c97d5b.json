@@ -16,29 +16,45 @@
     ],
     "enzyme": {
         "name": "MgsJ",
+        "description": "O-Methyltransferase",
+        "references": [
+            "doi:10.1021/ja4002635"
+        ],
         "databaseIds": {
             "uniprot": "D0U2E8",
-            "genpept": ""
+            "genpept": "ACY01395.1",
+            "mibig": "BGC0000177"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "MgsJ is responsible for O-methylation of the HO-C-8 in iso-migrastatin biosynthesis",
+            "reactionSMARTS": "[#8:1]/[#6@@:2]1-[#6@@:33](/[#6:34])-[#6@:31](/[#6:32])-[#6@:12](/[#6:13](=[#6:15]-[#6@@:16](-[#6:18](-[#6:20]=[#6:21]-[#6:22]-[#6:23]2-[#6:30]-[#6:28](=[#8:29])-[#7:27]-[#6:25](=[#8:26])-[#6:24]-2)=[#8:19])/[#6:17])-[#6:14])-[#8:11]-[#6:9](=[#8:10])-[#6:8]=[#6:7]-[#6:6]-[#6:5]-[#6:4]=[#6:3]-1>>[#6]-[#8:1]/[#6@@:2]1-[#6@@:33](/[#6:34])-[#6@:31](/[#6:32])-[#6@:12](/[#6:13](=[#6:15]-[#6@@:16](-[#6:18](-[#6:20]=[#6:21]-[#6:22]-[#6:23]2-[#6:30]-[#6:28](=[#8:29])-[#7:27]-[#6:25](=[#8:26])-[#6:24]-2)=[#8:19])/[#6:17])-[#6:14])-[#8:11]-[#6:9](=[#8:10])-[#6:8]=[#6:7]-[#6:6]-[#6:5]-[#6:4]=[#6:3]-1",
             "reactions": [
                 {
+                    "substrate": "C/C(=C\\[C@H](C)C(=O)/C=C/CC1CC(=O)NC(=O)C1)[C@@H]1OC(=O)/C=C\\CC/C=C/[C@H](O)[C@@H](C)[C@@H]1C",
                     "products": [
-                        ""
-                    ]
+                        "CO[C@H]1C=CCCC=CC(=O)O[C@@H](C(C)=C[C@H](C)C(=O)C=CCC2CC(=O)NC(=O)C2)[C@@H](C)[C@@H]1C"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/ja4002635"
+                ]
+            }
         }
     ]
 }
