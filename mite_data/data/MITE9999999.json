@@ -1,0 +1,62 @@
+{
+    "accession": "MITE9999999",
+    "status": "active",
+    "comment": "C-8 hydroxylation of iso-migrastatin core structure",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-14",
+            "contributors": [
+                "0000-0002-4540-6501"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "MgsK",
+        "description": "oxidoreductase",
+        "references": [
+            "doi:10.1021/ja4002635"
+        ],
+        "databaseIds": {
+            "uniprot": "D0U2E7",
+            "genpept": "ACY01394.1",
+            "mibig": "BGC0000177"
+        },
+        "cofactors": {
+            "organic": [
+                "NADP"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "C-8 hydroxylation of iso-migrastatin core structure",
+            "reactionSMARTS": "[#6:1]-[#6:2](\\[#6@:20]1-[#6@@:33](/[#6:34])-[#6@:31](/[#6:32])-[#6:30]-[#6:29]=[#6:28]-[#6:27]-[#6:26]-[#6:25]=[#6:24]-[#6:22](=[#8:23])-[#8:21]-1)=[#6:3]-[#6@@:4](-[#6:6](-[#6:8]-[#6@@:9](-[#6:11]-[#6:12]1-[#6:19]-[#6:17](=[#8:18])-[#7:16]-[#6:14](=[#8:15])-[#6:13]-1)/[#8:10])=[#8:7])\\[#6:5]>>[#6:1]-[#6:2](\\[#6@:20]1-[#6@@:33](/[#6:34])-[#6@:31](/[#6:32])-[#6@@:30](\\[#8])-[#6:29]=[#6:28]-[#6:27]-[#6:26]-[#6:25]=[#6:24]-[#6:22](=[#8:23])-[#8:21]-1)=[#6:3]-[#6@@:4](-[#6:6](-[#6:8]-[#6@@:9](-[#6:11]-[#6:12]1-[#6:19]-[#6:17](=[#8:18])-[#7:16]-[#6:14](=[#8:15])-[#6:13]-1)/[#8:10])=[#8:7])\\[#6:5]",
+            "reactions": [
+                {
+                    "substrate": "C/C(=C\\[C@H](C)C(=O)C[C@H](O)CC1CC(=O)NC(=O)C1)[C@@H]1OC(=O)/C=C/CC/C=C/C[C@@H](C)[C@@H]1C",
+                    "products": [
+                        "CC(=C[C@H](C)C(=O)C[C@H](O)CC1CC(=O)NC(=O)C1)[C@@H]1OC(=O)C=CCCC=C[C@H](O)[C@@H](C)[C@@H]1C"
+                    ],
+                    "isIntermediate": false,
+                    "description": "C-8 hydroxylation of iso-migrastatin core structure"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/ja4002635"
+                ]
+            }
+        }
+    ]
+}
