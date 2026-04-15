@@ -275,3 +275,4 @@ MITE0000273,active,DarH,Halogenase,Halogenation,"Bromination of C-8 of W1 of dar
 MITE0000274,active,MppC,NAD(P)H-dependent oxidoreductase,Reduction,proposed reduction and isomerization - NAD(P)H-dependent oxidoreductase,NAD|NADP,N/A,Monascus pilosus,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Eurotiomycetes
 MITE0000275,active,MppB,acyltransferase,Acylation,Transferring the acyl group on the pyranoquinone,N/A,N/A,Monascus pilosus,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Eurotiomycetes
 MITE0000276,active,Mpp7,Dehydratase,Dehydration,Mpp7 controls regioselective Knoevenagel condensation,N/A,N/A,Monascus pilosus,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Eurotiomycetes
+MITE0000277,active,LtxC,Prenyltransferase / Geranyl transferase,Prenylation,Prenyltransferase / Geranyl transferase,N/A,N/A,Lyngbya majuscula,Bacteria,Bacillati,Cyanobacteriota,Cyanophyceae,Oscillatoriophycideae,Oscillatoriales
