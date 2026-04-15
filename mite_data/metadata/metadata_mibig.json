@@ -104,6 +104,22 @@
         "mite_accession":"MITE0000275",
         "mite_url":"https://bioregistry.io/mite:MITE0000275",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Dehydratase",
+        "enzyme_ids":{
+          "genpept":"AGN71622.1",
+          "mibig":"BGC0000027",
+          "uniprot":"R9UMJ8"
+        },
+        "enzyme_name":"Mpp7",
+        "enzyme_refs":[
+          "doi:10.1016/j.tetlet.2014.01.090"
+        ],
+        "enzyme_tailoring":"Dehydration",
+        "mite_accession":"MITE0000276",
+        "mite_url":"https://bioregistry.io/mite:MITE0000276",
+        "status":"active"
       }
     ],
     "BGC0000031":[
