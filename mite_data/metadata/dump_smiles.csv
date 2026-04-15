@@ -365,3 +365,4 @@
 363,MITE0000264.reaction1.example1,Cc1cc(O)cc2oc(=O)cc(O)c12,COc1cc(=O)oc2cc(O)cc(C)c12
 364,MITE0000265.reaction1.example1,COc1cc(=O)oc2cc(O)cc(C)c12,COc1cc(=O)oc2c(-c3c(O)cc(C)c4c(OC)cc(=O)oc34)c(O)cc(C)c12
 365,MITE0000266.reaction1.example1,COc1cc(=O)oc2cc(O)cc(C)c12,COc1cc(=O)oc2cc(O)c(-c3c(O)cc(C)c4c(OC)cc(=O)oc34)c(C)c12
+366,MITE0000267.reaction1.example1,COc1cc(C)c2c(OC)cc(=O)oc2c1,COc1cc(C)c2c(OC)c(-c3c(OC)cc(C)c4c(OC)cc(=O)oc34)c(=O)oc2c1

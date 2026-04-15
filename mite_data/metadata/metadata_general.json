@@ -5764,6 +5764,28 @@
       "reaction_description":"Regio- and stereoselective oxidative phenolic coupling of 7-demethylsiderin monomers forming the bicoumarin M-desertorin A",
       "status":"active",
       "tailoring":"Biaryl bond formation"
+    },
+    "MITE0000267":{
+      "accession":"MITE0000267",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"EED53482.1",
+        "mibig":"BGC0001304",
+        "uniprot":"B8N8R3"
+      },
+      "enzyme_name":"AfvE",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Aspergillus flavus (strain ATCC 200026 / FGSC A1120 / IAM 13836 / NRRL 3357 / JCM 12722 / SRRC 167)",
+      "phylum":"Dikarya",
+      "reaction_description":"Oxidative phenolic coupling of siderin monomers forming the bicoumarin 3-8-bisiderin",
+      "status":"active",
+      "tailoring":"Biaryl bond formation"
     }
   },
   "version_mite_data":"1.23"
