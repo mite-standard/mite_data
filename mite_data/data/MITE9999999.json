@@ -1,0 +1,65 @@
+{
+    "accession": "MITE9999999",
+    "status": "active",
+    "comment": "Oxidizes the C-8 alcohol of convirensic acid into the aldehyde group of virensic acid.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-13",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "Dsd6",
+        "description": "FAD-linked oxidoreductase (Alcohol Oxidase)",
+        "references": [
+            "doi:10.1111/nph.70731"
+        ],
+        "databaseIds": {
+            "genpept": "XRW97415.1"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "Oxidation of the C-8 hydroxymethyl group to a formyl (aldehyde) group.",
+            "reactionSMARTS": "[#8:1]=[#6:2]1-[#6:20]2:[#6:21](:[#6:23]:[#6:24](-[#8:25]):[#6:8](-[#6:9]-[#8]):[#6:7]:2-[#8:6]-[#6:5]2:[#6:10](:[#6:12](-[#6:17](=[#8:19])-[#8:18]):[#6:13](:[#6:15](-[#6:16]):[#6:4]:2-[#8:3]-1)-[#8:14])-[#6:11])-[#6:22]>>[#8:1]=[#6:2]1-[#6:20]2:[#6:21](:[#6:23]:[#6:24](-[#8:25]):[#6:8](-[#6:9]=[#8:1]):[#6:7]:2-[#8:6]-[#6:5]2:[#6:10](:[#6:12](-[#6:17](=[#8:19])-[#8:18]):[#6:13](:[#6:15](-[#6:16]):[#6:4]:2-[#8:3]-1)-[#8:14])-[#6:11])-[#6:22]",
+            "reactions": [
+                {
+                    "substrate": "Cc1cc(O)c(CO)c2c1C(=O)Oc1c(C)c(O)c(C(=O)O)c(C)c1O2",
+                    "products": [
+                        "Cc1cc(O)c(C=O)c2c1C(=O)Oc1c(C)c(O)c(C(=O)O)c(C)c1O2"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Oxidation of Convirensic acid to Virensic acid."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Inference from genomic data and chemical structure",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1111/nph.70731"
+                ]
+            },
+            "databaseIds": {
+                "ec": "1.1.1.1"
+            }
+        }
+    ]
+}
