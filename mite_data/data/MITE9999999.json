@@ -1,0 +1,64 @@
+{
+    "accession": "MITE9999999",
+    "status": "active",
+    "comment": "CYP450 catalyzing benzylic C-H oxidation",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-14",
+            "contributors": [
+                "0000-0003-2971-646X"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "RusF",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1021/acs.orglett.5c00328"
+        ],
+        "databaseIds": {
+            "uniprot": "W6R6G5",
+            "genpept": "CDM37407.1"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Hydroxylation",
+                "Monooxygenation",
+                "Oxidation"
+            ],
+            "description": "CYP450 catalyzing benzylic C-H oxidation",
+            "reactionSMARTS": "[#6:1]1:[#6:5]:[#6:6]:[#6:4](-[#6:10]-[#6:11]-[#6:12]=[#6:13]-[#6:14]-[#6:15]-[#6:16]-[#6:17]-[#6:18]):[#6:2](-[#6:8]=[#8:9]):[#6:3]:1-[#8:7]>>[#6:1]1:[#6:5]:[#6:6]:[#6:4](-[#6@:10](/[#8])-[#6:11]-[#6:12]=[#6:13]-[#6:14]-[#6:15]-[#6:16]-[#6:17]-[#6:18]):[#6:2](-[#6:8]=[#8:9]):[#6:3]:1-[#8:7]",
+            "reactions": [
+                {
+                    "substrate": "CCCCC/C=C/CCc1cccc(O)c1C=O",
+                    "products": [
+                        "CCCCCC=CC[C@@H](O)c1cccc(O)c1C=O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "CYP450 catalyzing benzylic C-H oxidation"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Inference from genomic data and chemical structure"
+                ],
+                "references": [
+                    "doi:10.1021/acs.orglett.5c00328"
+                ]
+            }
+        }
+    ]
+}
