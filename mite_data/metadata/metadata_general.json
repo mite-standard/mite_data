@@ -6018,6 +6018,27 @@
       "reaction_description":"Oxidative cyclization",
       "status":"active",
       "tailoring":"Cyclization|Oxidation"
+    },
+    "MITE0000279":{
+      "accession":"MITE0000279",
+      "class_name":"Betaproteobacteria",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Selenoneine synthase",
+      "enzyme_ids":{
+        "genpept":"CAN7372359.1",
+        "uniprot":"UPI000781CA7D"
+      },
+      "enzyme_name":"SenA",
+      "family":"Comamonadaceae",
+      "kingdom":"Pseudomonadati",
+      "order":"Burkholderiales",
+      "organism":"Variovorax paradoxus",
+      "phylum":"Pseudomonadota",
+      "reaction_description":"Oxidative C–Se bond formation between hercynine and SeGlcNAc, yielding a selenoxide intermediate (GlcNAc-SEN=O) that spontaneously undergoes selenoxide elimination to produce selenoneine and 2-acetamidoglucal (2AG).",
+      "status":"active",
+      "tailoring":"Other"
     }
   },
   "version_mite_data":"1.23"
