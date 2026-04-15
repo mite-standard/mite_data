@@ -1,0 +1,61 @@
+{
+    "accession": "MITE9999999",
+    "status": "active",
+    "comment": "SfmD catalyzes the regioselective hydroxylation of 3-methyl-l-tyrosine (3-Me-l-Tyr) to produce 3-hydroxy-5-methyl-l-tyrosine (3-OH-5-Me-l-Tyr) ",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-13",
+            "contributors": [
+                "0000-0002-6077-7490"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "SfmD",
+        "description": "Heme-containing peroxygenase",
+        "references": [
+            "doi:10.1039/D0SC06369J"
+        ],
+        "databaseIds": {
+            "uniprot": "B0CN28",
+            "genpept": "ABI22134.1"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Monooxygenation"
+            ],
+            "description": "hydroxylating 3-Me-l-Tyr to 3-OH-5-Me-l-Tyr",
+            "reactionSMARTS": "[#6:1]1(-[#6:13]):[#6:2](-[#8:14]):[#6:3]:[#6:4]:[#6:5](-[#6:7]-[#6:8](-[#7:11])-[#6:9](=[#8:12])-[#8:10]):[#6:6]:1>>[#6:1]1(-[#6:13]):[#6:2](-[#8:14]):[#6:3](-[#8]):[#6:4]:[#6:5](-[#6:7]-[#6:8](-[#7:11])-[#6:9](=[#8:12])-[#8:10]):[#6:6]:1",
+            "reactions": [
+                {
+                    "substrate": "Cc1cc(CC(N)C(=O)O)ccc1O",
+                    "products": [
+                        "Cc1cc(CC(N)C(=O)O)cc(O)c1O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Heme-containing peroxygenase; SfmD catalyzes the regioselective hydroxylation of 3-methyl-l-tyrosine (3-Me-l-Tyr) to produce 3-hydroxy-5-methyl-l-tyrosine (3-OH-5-Me-l-Tyr) "
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1039/D0SC06369J"
+                ]
+            }
+        }
+    ]
+}
