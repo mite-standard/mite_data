@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000277",
     "status": "active",
     "changelog": [
         {
@@ -11,7 +11,7 @@
             "reviewers": [
                 "0000-0002-8323-5416"
             ],
-            "comment": "updated description"
+            "comment": "New entry. Reviewer 1 updated description"
         }
     ],
     "enzyme": {
