@@ -1,0 +1,65 @@
+{
+    "accession": "MITE9999999",
+    "status": "active",
+    "comment": "deamination, maturation of prodrug in extracellular space",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-13",
+            "contributors": [
+                "0000-0003-0455-2227"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "SfmCy2",
+        "description": "Oxidoreductase",
+        "references": [
+            "doi:10.1002/anie.201704726"
+        ],
+        "databaseIds": {
+            "uniprot": "B0CN23",
+            "genpept": "ABI22129.1",
+            "mibig": "BGC0000422"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Deamination"
+            ],
+            "description": "Deamination of saframycin to give active compound.",
+            "reactionSMARTS": "[#8:11]=[#6:10]1-[#6:12](=[#6:16](-[#6:17](=[#8:18])-[#6:19]2-[#6:20]\\[#6@:21]3-[#6@:28]4-[#6:29]5-[#6:39](=[#8:40])-[#6:36](-[#8:37]-[#6:38])=[#6:34](-[#6:35])-[#6:32](=[#8:33])-[#6:30]=5-[#6:31]-[#6@:25](/[#7:26]/4-[#6:27])-[#6@:23](/[#8:24])-[#7:22]-3-[#6@@:8](\\[#6:7]-[#7:6]-[#6:4](=[#8:5])-[#6:2]([#7:3])-[#6:1])-[#6:9]-1=2)-[#6:15])-[#8:13]-[#6:14].[#8:41]>>[#8:11]=[#6:10]1-[#6:12](=[#6:16](-[#6:17](=[#8:18])-[#6:19]2-[#6:20]\\[#6@:21]3-[#6@:28]4-[#6:29]5-[#6:39](=[#8:40])-[#6:36](-[#8:37]-[#6:38])=[#6:34](-[#6:35])-[#6:32](=[#8:33])-[#6:30]=5-[#6:31]-[#6@:25](/[#7:26]/4-[#6:27])-[#6@:23](/[#8:24])-[#7:22]-3-[#6@@:8](\\[#6:7]-[#7:6]-[#6:4](=[#8:5])-[#6:2](=[#8:41])-[#6:1])-[#6:9]-1=2)-[#6:15])-[#8:13]-[#6:14].[#7]",
+            "reactions": [
+                {
+                    "substrate": "COC1=C(C)C(=O)C2=C(C1=O)[C@@H]1[C@@H]3CC4=C(C(=O)C(OC)=C(C)C4=O)[C@H](CNC(=O)C(C)N)N3[C@@H](O)[C@H](C2)N1C.O",
+                    "products": [
+                        "COC1=C(C)C(=O)C2=C(C1=O)[C@@H]1[C@@H]3CC4=C(C(=O)C(OC)=C(C)C4=O)[C@H](CNC(=O)C(C)=O)N3[C@@H](O)[C@H](C2)N1C",
+                        "N"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Deamination of saframycin (in extracellular space)"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1002/anie.201704726"
+                ]
+            }
+        }
+    ]
+}
