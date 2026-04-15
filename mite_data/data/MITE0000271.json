@@ -1,7 +1,7 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000271",
     "status": "active",
-    "comment": "oxidation to carboxylic acid C-20",
+    "comment": "Oxidation to carboxylic acid C-20",
     "changelog": [
         {
             "version": "1",
@@ -16,8 +16,8 @@
         }
     ],
     "enzyme": {
-        "name": "Luc3 ",
-        "description": "aldehyde dehydrogenase",
+        "name": "Luc3",
+        "description": "Aldehyde dehydrogenase",
         "references": [
             "doi:10.1038/s41429-022-00529-3"
         ],
