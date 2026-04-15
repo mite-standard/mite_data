@@ -5701,6 +5701,27 @@
       "reaction_description":"Forms two C–C bonds in the precursor peptide WgkA: Trp18-C5 to Lys20-Cα and Trp18-C6 to Lys20-Cδ. The stereochemistry at Lys Cα and Cδ in the product is not known.",
       "status":"active",
       "tailoring":"Cyclization"
+    },
+    "MITE0000264":{
+      "accession":"MITE0000264",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Eukaryota",
+      "enzyme_description":"O-Methyltransferase",
+      "enzyme_ids":{
+        "genpept":"CAK47959.1",
+        "uniprot":"A2QK65"
+      },
+      "enzyme_name":"KtnB",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Aspergillus niger (strain ATCC MYA-4892 / CBS 513.88 / FGSC A1513)",
+      "phylum":"Dikarya",
+      "reaction_description":"Methylation of 4,7-O-didemethylsiderin into 7-O-demethylsiderin",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.23"
