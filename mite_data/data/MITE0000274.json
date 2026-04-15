@@ -1,7 +1,7 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000274",
     "status": "active",
-    "comment": "NAD(P)H-dependent oxidoreductase ",
+    "comment": "NAD(P)H-dependent oxidoreductase",
     "changelog": [
         {
             "version": "1",
@@ -17,7 +17,7 @@
     ],
     "enzyme": {
         "name": "MppC",
-        "description": "NAD(P)H-dependent oxidoreductase ",
+        "description": "NAD(P)H-dependent oxidoreductase",
         "references": [
             "doi:10.1039/C4RA11713A",
             "doi:10.1039/C7SC00475C"
@@ -39,7 +39,7 @@
             "tailoring": [
                 "Reduction"
             ],
-            "description": "proposed reduction and isomerization - NAD(P)H-dependent oxidoreductase ",
+            "description": "proposed reduction and isomerization - NAD(P)H-dependent oxidoreductase",
             "reactionSMARTS": "[*,H]-[#6]-[#6]-[#6]-[#6]-[#6](-[#6]-[#6](-[#8]-[#6@]1(-[#6](=[#8])-[#6]2-[#6](-[#6]=[#6](-[#8]-[#6]=2)-[#6]=[#6]-[#6])=[#6]-[#6]-1=[#8])/[#6])=[#8])=[#8]>>[*,H]-[#6]-[#6]-[#6]-[#6]-[#6](=[#8])-[#6]-[#6](=[#8])-[#8]-[#6@]1(/[#6])-[#6](=[#8])-[#6]=[#6]2-[#6]=[#6](-[#6]=[#6]-[#6])-[#8]-[#6]-[#6]-2-[#6]-1=[#8]",
             "reactions": [
                 {
