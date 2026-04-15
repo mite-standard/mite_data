@@ -366,3 +366,5 @@
 364,MITE0000265.reaction1.example1,COc1cc(=O)oc2cc(O)cc(C)c12,COc1cc(=O)oc2c(-c3c(O)cc(C)c4c(OC)cc(=O)oc34)c(O)cc(C)c12
 365,MITE0000266.reaction1.example1,COc1cc(=O)oc2cc(O)cc(C)c12,COc1cc(=O)oc2cc(O)c(-c3c(O)cc(C)c4c(OC)cc(=O)oc34)c(C)c12
 366,MITE0000267.reaction1.example1,COc1cc(C)c2c(OC)cc(=O)oc2c1,COc1cc(C)c2c(OC)c(-c3c(OC)cc(C)c4c(OC)cc(=O)oc34)c(=O)oc2c1
+367,MITE0000268.reaction1.example1,CC1/C=C/C=C/C(=O)OC(C(C)C(O)C(C)C2(O)CC(O)C(C)C(C)O2)C(C)/C=C/C=C/C(=O)OC1C(C)C(O)C(C)C1(O)CC(O)C(C)C(C)O1,CC1C=CC=CC(=O)OC(C(C)C(O)C(C)C2(O)CC(OC3CC(C)(N)C(O)C(C)O3)C(C)C(C)O2)C(C)C=CC=CC(=O)OC1C(C)C(O)C(C)C1(O)CC(OC2CC(C)(N)C(O)C(C)O2)C(C)C(C)O1
+368,MITE0000268.reaction2.example1,CC1/C=C/C=C/C(=O)OC(C(C)C(O)C(C)C2(O)CC(O)C(C)C(C)O2)C(C)/C=C/C=C/C(=O)OC1C(C)C(O)C(C)C1(O)CC(O)C(C)C(C)O1,CC1C=CC=CC(=O)OC(C(C)C(O)C(C)C2(O)CC(OC3OC(C)C(O)C(O)C3O)C(C)C(C)O2)C(C)C=CC=CC(=O)OC1C(C)C(O)C(C)C1(O)CC(OC2OC(C)C(O)C(O)C2O)C(C)C(C)O1
