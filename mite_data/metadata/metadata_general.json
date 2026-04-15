@@ -5786,6 +5786,26 @@
       "reaction_description":"Oxidative phenolic coupling of siderin monomers forming the bicoumarin 3-8-bisiderin",
       "status":"active",
       "tailoring":"Biaryl bond formation"
+    },
+    "MITE0000268":{
+      "accession":"MITE0000268",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Glycosyltransferase",
+      "enzyme_ids":{
+        "genpept":"WJP00495.1"
+      },
+      "enzyme_name":"AntC",
+      "family":"Pseudonocardiaceae",
+      "kingdom":"Bacillati",
+      "order":"Pseudonocardiales",
+      "organism":"Pseudonocardia alni",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Transfer of two vancosamine moieties to the C-13 and C-13' positions of antaraglycone, yielding Antarmycin C.",
+      "status":"active",
+      "tailoring":"Glycosylation"
     }
   },
   "version_mite_data":"1.23"
