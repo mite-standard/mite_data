@@ -71,6 +71,25 @@
         "status":"active"
       }
     ],
+    "BGC0000027":[
+      {
+        "enzyme_description":"NAD(P)H-dependent oxidoreductase",
+        "enzyme_ids":{
+          "genpept":"AGN71608.1",
+          "mibig":"BGC0000027",
+          "uniprot":"R9UQ88"
+        },
+        "enzyme_name":"MppC",
+        "enzyme_refs":[
+          "doi:10.1039/C4RA11713A",
+          "doi:10.1039/C7SC00475C"
+        ],
+        "enzyme_tailoring":"Reduction",
+        "mite_accession":"MITE0000274",
+        "mite_url":"https://bioregistry.io/mite:MITE0000274",
+        "status":"active"
+      }
+    ],
     "BGC0000031":[
       {
         "enzyme_description":"Cytochrome P450",
