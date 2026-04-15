@@ -5722,6 +5722,27 @@
       "reaction_description":"Methylation of 4,7-O-didemethylsiderin into 7-O-demethylsiderin",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000265":{
+      "accession":"MITE0000265",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"CAK47961.1",
+        "uniprot":"A2QK67"
+      },
+      "enzyme_name":"KtnC",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Aspergillus niger (strain ATCC MYA-4892 / CBS 513.88 / FGSC A1513)",
+      "phylum":"Dikarya",
+      "reaction_description":"Regio- and stereoselective oxidative phenolic coupling of 7-demethylsiderin monomers forming the bicoumarin P-orlandin",
+      "status":"active",
+      "tailoring":"Biaryl bond formation"
     }
   },
   "version_mite_data":"1.23"
