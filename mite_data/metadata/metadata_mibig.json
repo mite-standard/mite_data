@@ -2758,6 +2758,24 @@
         "status":"active"
       }
     ],
+    "BGC0002089":[
+      {
+        "enzyme_description":"Cytochrome P450",
+        "enzyme_ids":{
+          "genpept":"CBG70284.1",
+          "mibig":"BGC0002089",
+          "uniprot":"C9ZDC6"
+        },
+        "enzyme_name":"TxtE",
+        "enzyme_refs":[
+          "doi:10.1038/nchembio.1048"
+        ],
+        "enzyme_tailoring":"Other",
+        "mite_accession":"MITE0000262",
+        "mite_url":"https://bioregistry.io/mite:MITE0000262",
+        "status":"active"
+      }
+    ],
     "BGC0002099":[
       {
         "enzyme_description":"Cytochrome P450",

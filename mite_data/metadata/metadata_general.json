@@ -5659,6 +5659,28 @@
       "reaction_description":"3-methyl-2-indolic acid (MIA) synthase involved in nosiheptide biosynthesis",
       "status":"active",
       "tailoring":"Carboxylation|Deamination|Decarboxylation"
+    },
+    "MITE0000262":{
+      "accession":"MITE0000262",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"FeS",
+      "cofactors_organic":"FAD|Flavin mononucleotide|Heme|NAD|NADP",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"CBG70284.1",
+        "mibig":"BGC0002089",
+        "uniprot":"C9ZDC6"
+      },
+      "enzyme_name":"TxtE",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces scabiei (strain 87.22)",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Nitrates free-floating L-tryptophan as the first committed step in the thaxtomin biosynthetic pathway.",
+      "status":"active",
+      "tailoring":"Other"
     }
   },
   "version_mite_data":"1.23"
