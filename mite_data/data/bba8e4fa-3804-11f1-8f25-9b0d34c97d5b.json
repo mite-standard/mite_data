@@ -1,0 +1,55 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-14",
+            "contributors": [
+                "0000-0001-5730-3326"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "PatH",
+        "description": "M-cresol hydroxylase",
+        "references": [
+            "doi:10.1111/1462-2920.14542"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A075TRL5",
+            "genpept": "AIG62144.1",
+            "mibig": "BGC0000120"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "Hydroxylation of compound 4 to compound 5 in patulin biosynthetic pathway (Figure 3)",
+            "reactionSMARTS": "[#8:1]-[#6:2]1:[#6:8]:[#6:7]:[#6:6]:[#6:4](-[#6:5]):[#6:3]:1>>[#8:1]-[#6:2]1:[#6:8]:[#6:7]:[#6:6]:[#6:4](-[#6:5]-[#8]):[#6:3]:1",
+            "reactions": [
+                {
+                    "substrate": "Cc1cccc(O)c1",
+                    "products": [
+                        "OCc1cccc(O)c1"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1111/1462-2920.14542"
+                ]
+            }
+        }
+    ]
+}
