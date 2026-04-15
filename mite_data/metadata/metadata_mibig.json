@@ -2085,6 +2085,24 @@
         "status":"active"
       }
     ],
+    "BGC0001304":[
+      {
+        "enzyme_description":"Cytochrome P450",
+        "enzyme_ids":{
+          "genpept":"EED53482.1",
+          "mibig":"BGC0001304",
+          "uniprot":"B8N8R3"
+        },
+        "enzyme_name":"AfvE",
+        "enzyme_refs":[
+          "doi:10.1128/ec.00092-15"
+        ],
+        "enzyme_tailoring":"Biaryl bond formation",
+        "mite_accession":"MITE0000267",
+        "mite_url":"https://bioregistry.io/mite:MITE0000267",
+        "status":"active"
+      }
+    ],
     "BGC0001306":[
       {
         "enzyme_description":"Oxidase",
