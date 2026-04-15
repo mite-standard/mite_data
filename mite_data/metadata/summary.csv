@@ -19,7 +19,7 @@ MITE0000017,active,MtmW,Ketoreductase,Reduction,N/A,NADP,N/A,Streptomyces argill
 MITE0000018,active,MtmGIV,Glycosyltransferase,Glycosylation,N/A,N/A,N/A,Streptomyces argillaceus,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
 MITE0000019,active,MtmGIII,Glycosyltransferase,Glycosylation,N/A,N/A,N/A,Streptomyces argillaceus,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
 MITE0000020,active,MtmGII,Glycosyltransferase,Glycosylation,N/A,N/A,N/A,Streptomyces argillaceus,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
-MITE0000021,active,SsfM2,O-methyltransferase,Methylation,N/A,N/A,N/A,Streptomyces sp. SF2575,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
+MITE0000021,active,SsfM2,O-methyltransferase,Methylation,O-methylation of the tetracyclin intermediate,N/A,N/A,Streptomyces sp. SF2575,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
 MITE0000022,active,SsfM4,C-methyltransferase,Methylation,SsfM4 catalyzes C6-methylation,SAM,FeS,Streptomyces sp. SF2575,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
 MITE0000023,active,SsfM1,O-methyltransferase,Methylation,O-methylation of tetrycycline intermediate.,SAM,FeS,Streptomyces sp. SF2575,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
 MITE0000024,active,XanH,FAD Halogenase,Halogenation,Chlorinates the xantholipin intermediate.,FAD,N/A,Streptomyces flavogriseus,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae

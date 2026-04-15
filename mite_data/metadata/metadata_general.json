@@ -457,7 +457,7 @@
       "order":"Kitasatosporales",
       "organism":"Streptomyces sp. SF2575",
       "phylum":"Actinomycetota",
-      "reaction_description":"N/A",
+      "reaction_description":"O-methylation of the tetracyclin intermediate",
       "status":"active",
       "tailoring":"Methylation"
     },
