@@ -1,0 +1,60 @@
+{
+    "accession": "MITE0000264",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-03-24",
+            "contributors": [
+                "0000-0003-3141-732X"
+            ],
+            "reviewers": [
+                "0000-0001-5863-7248"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "KtnB",
+        "description": "O-Methyltransferase",
+        "references": [
+            "doi:10.1002/anie.201203603"
+        ],
+        "databaseIds": {
+            "uniprot": "A2QK65",
+            "genpept": "CAK47959.1"
+        },
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "Methylation of 4,7-O-didemethylsiderin into 7-O-demethylsiderin",
+            "reactionSMARTS": "[#6:1]1(:[#6:2]:[#6:3](-[#8:14]):[#6:4]:[#6:5]2:[#6:6]:1:[#6:7](:[#6:8]:[#6:9](:[#8:10]:2)=[#8:11])-[#8:12])-[#6:15]>>[#6:1]1(:[#6:2]:[#6:3](-[#8:14]):[#6:4]:[#6:5]2:[#6:6]:1:[#6:7](:[#6:8]:[#6:9](:[#8:10]:2)=[#8:11])-[#8:12]-[#6:13])-[#6:15]",
+            "reactions": [
+                {
+                    "substrate": "Cc1cc(O)cc2oc(=O)cc(O)c12",
+                    "products": [
+                        "COc1cc(=O)oc2cc(O)cc(C)c12"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Methylation of 4,7-O-didemethylsiderin into 7-O-demethylsiderin"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1002/anie.201203603"
+                ]
+            }
+        }
+    ]
+}
