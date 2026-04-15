@@ -5826,6 +5826,27 @@
       "reaction_description":"Transfer of β-D-glucose to the C-24 hydroxyl of one α-L-vancosamine moiety of antarmycin C, yielding antarmycin A",
       "status":"active",
       "tailoring":"Glycosylation"
+    },
+    "MITE0000270":{
+      "accession":"MITE0000270",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Methyltransferase",
+      "enzyme_ids":{
+        "genpept":"BBQ09592.1",
+        "uniprot":"A0A6J4B4P7"
+      },
+      "enzyme_name":"Luc1",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Fusarium sp",
+      "phylum":"Dikarya",
+      "reaction_description":"demethyllucilactaene to Lucilactaene by the methyltransferase Luc1",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.23"
