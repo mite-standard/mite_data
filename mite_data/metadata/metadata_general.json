@@ -5997,6 +5997,27 @@
       "reaction_description":"Prenyltransferase / Geranyl transferase",
       "status":"active",
       "tailoring":"Prenylation"
+    },
+    "MITE0000278":{
+      "accession":"MITE0000278",
+      "class_name":"Cyanophyceae",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme|NADP",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"AAT12284.1",
+        "uniprot":"Q5V8A7"
+      },
+      "enzyme_name":"LtxB",
+      "family":"Oscillatoriales",
+      "kingdom":"Bacillati",
+      "order":"Oscillatoriophycideae",
+      "organism":"Lyngbya majuscula",
+      "phylum":"Cyanobacteriota",
+      "reaction_description":"Oxidative cyclization",
+      "status":"active",
+      "tailoring":"Cyclization|Oxidation"
     }
   },
   "version_mite_data":"1.23"
