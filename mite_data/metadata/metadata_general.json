@@ -5976,6 +5976,27 @@
       "reaction_description":"Mpp7 controls regioselective Knoevenagel condensation",
       "status":"active",
       "tailoring":"Dehydration"
+    },
+    "MITE0000277":{
+      "accession":"MITE0000277",
+      "class_name":"Cyanophyceae",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Prenyltransferase / Geranyl transferase",
+      "enzyme_ids":{
+        "genpept":"AAT12285.1",
+        "uniprot":"Q5V8A6"
+      },
+      "enzyme_name":"LtxC",
+      "family":"Oscillatoriales",
+      "kingdom":"Bacillati",
+      "order":"Oscillatoriophycideae",
+      "organism":"Lyngbya majuscula",
+      "phylum":"Cyanobacteriota",
+      "reaction_description":"Prenyltransferase / Geranyl transferase",
+      "status":"active",
+      "tailoring":"Prenylation"
     }
   },
   "version_mite_data":"1.23"
