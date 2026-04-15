@@ -13,7 +13,7 @@ MITE0000011,active,MpaG,O-methyltransferase,Methylation,Catalyzes the O-methylat
 MITE0000012,active,GrhO5,Flavoprotein monooxygenase,Monooxygenation,N/A,FAD,N/A,Streptomyces sp. JP95,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
 MITE0000013,active,GrhO6,Flavoprotein monooxygenase,Monooxygenation,N/A,FAD,N/A,Streptomyces sp. JP95,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
 MITE0000014,active,MtmMI,O-methyltransferase,Methylation,4-DPMC is the first stable intermediate of the mithramycin biosynthesis. This is converted into PMC by methylation at C-4-O through the MtmMI methyltransferase in Streptomyces argillaceus,SAM,FeS,Streptomyces argillaceus,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
-MITE0000015,active,MtmMII,C-methyltransferase,Methylation,N/A,SAM,FeS,Streptomyces argillaceus,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
+MITE0000015,active,MtmMII,C-methyltransferase,Methylation,C-methylation in the mithramycin biosynthetic pathway.,SAM,FeS,Streptomyces argillaceus,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
 MITE0000016,active,MtmOIV,Oxygenase,Decarboxylation|Oxidation,N/A,FAD,N/A,Streptomyces argillaceus,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
 MITE0000017,active,MtmW,Ketoreductase,Reduction,N/A,NADP,N/A,Streptomyces argillaceus,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
 MITE0000018,active,MtmGIV,Glycosyltransferase,Glycosylation,N/A,N/A,N/A,Streptomyces argillaceus,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae

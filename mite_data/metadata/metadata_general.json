@@ -325,7 +325,7 @@
       "order":"Kitasatosporales",
       "organism":"Streptomyces argillaceus",
       "phylum":"Actinomycetota",
-      "reaction_description":"N/A",
+      "reaction_description":"C-methylation in the mithramycin biosynthetic pathway.",
       "status":"active",
       "tailoring":"Methylation"
     },
