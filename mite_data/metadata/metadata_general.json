@@ -5910,6 +5910,28 @@
       "reaction_description":"Bromination of C-8 of W1 of darobactin A, yielding bromodarobactin A.",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000274":{
+      "accession":"MITE0000274",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"NAD|NADP",
+      "domain":"Eukaryota",
+      "enzyme_description":"NAD(P)H-dependent oxidoreductase",
+      "enzyme_ids":{
+        "genpept":"AGN71608.1",
+        "mibig":"BGC0000027",
+        "uniprot":"R9UQ88"
+      },
+      "enzyme_name":"MppC",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Monascus pilosus",
+      "phylum":"Dikarya",
+      "reaction_description":"proposed reduction and isomerization - NAD(P)H-dependent oxidoreductase",
+      "status":"active",
+      "tailoring":"Reduction"
     }
   },
   "version_mite_data":"1.23"
