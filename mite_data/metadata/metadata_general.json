@@ -5954,6 +5954,28 @@
       "reaction_description":"Transferring the acyl group on the pyranoquinone",
       "status":"active",
       "tailoring":"Acylation"
+    },
+    "MITE0000276":{
+      "accession":"MITE0000276",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Dehydratase",
+      "enzyme_ids":{
+        "genpept":"AGN71622.1",
+        "mibig":"BGC0000027",
+        "uniprot":"R9UMJ8"
+      },
+      "enzyme_name":"Mpp7",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Monascus pilosus",
+      "phylum":"Dikarya",
+      "reaction_description":"Mpp7 controls regioselective Knoevenagel condensation",
+      "status":"active",
+      "tailoring":"Dehydration"
     }
   },
   "version_mite_data":"1.23"

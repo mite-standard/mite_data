@@ -274,3 +274,4 @@ MITE0000272,active,Luc2,Cytochrome P450,Monooxygenation|Other," Luc2 oxidizes th
 MITE0000273,active,DarH,Halogenase,Halogenation,"Bromination of C-8 of W1 of darobactin A, yielding bromodarobactin A.",FAD,N/A,Pseudoalteromonas luteoviolacea H33,Bacteria,Pseudomonadati,Pseudomonadota,Gammaproteobacteria,Alteromonadales,Pseudoalteromonadaceae
 MITE0000274,active,MppC,NAD(P)H-dependent oxidoreductase,Reduction,proposed reduction and isomerization - NAD(P)H-dependent oxidoreductase,NAD|NADP,N/A,Monascus pilosus,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Eurotiomycetes
 MITE0000275,active,MppB,acyltransferase,Acylation,Transferring the acyl group on the pyranoquinone,N/A,N/A,Monascus pilosus,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Eurotiomycetes
+MITE0000276,active,Mpp7,Dehydratase,Dehydration,Mpp7 controls regioselective Knoevenagel condensation,N/A,N/A,Monascus pilosus,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Eurotiomycetes
