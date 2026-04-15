@@ -1,0 +1,55 @@
+{
+    "accession": "MITE0000277",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-07",
+            "contributors": [
+                "0000-0003-4087-0708"
+            ],
+            "reviewers": [
+                "0000-0002-8323-5416"
+            ],
+            "comment": "New entry. Reviewer 1 updated description"
+        }
+    ],
+    "enzyme": {
+        "name": "LtxC",
+        "description": "Prenyltransferase / Geranyl transferase",
+        "references": [
+            "doi:10.1021/ja047876g"
+        ],
+        "databaseIds": {
+            "uniprot": "Q5V8A6",
+            "genpept": "AAT12285.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Prenylation"
+            ],
+            "description": "Prenyltransferase / Geranyl transferase",
+            "reactionSMARTS": "[#6:1]-[#7:2]1-[#6:17]2:[#6:22]:[#6:21]:[#6:20]:[#6:19]3:[#7:13]:[#6:12]:[#6:11](:[#6:18]:2:3)-[#6:10]-[#6:9](-[#6:14]-[#8:15])-[#7:8]-[#6:7](=[#8:16])-[#6:3]-1-[#6:4](-[#6:6])-[#6:5]>>[#6:1]-[#7:2]1-[#6:17]2:[#6:22]:[#6:21]:[#6:20](-[#6](-[#6]=[#6])(-[#6])-[#6]-[#6]-[#6]=[#6](-[#6])-[#6]):[#6:19]3:[#7:13]:[#6:12]:[#6:11](:[#6:18]:2:3)-[#6:10]-[#6:9](-[#6:14]-[#8:15])-[#7:8]-[#6:7](=[#8:16])-[#6:3]-1-[#6:4](-[#6:6])-[#6:5]",
+            "reactions": [
+                {
+                    "substrate": "CC(C)C1C(=O)NC(CO)Cc2c[nH]c3cccc(c23)N1C",
+                    "products": [
+                        "C=CC(C)(CCC=C(C)C)c1ccc2c3c(c[nH]c13)CC(CO)NC(=O)C(C(C)C)N2C"
+                    ],
+                    "isIntermediate": false,
+                    "description": "catalyze the transfer of a geranyl group to (\u2212)-indolactam V as the final step in the biosynthesis of lyngbyatoxin A"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1021/ja047876g"
+                ]
+            }
+        }
+    ]
+}
