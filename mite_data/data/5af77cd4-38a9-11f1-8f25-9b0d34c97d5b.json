@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Radical SAM catalyzes formal dehydration of CTP to afford anti-viral ddhCTP",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,49 @@
     ],
     "enzyme": {
         "name": "RSAD2",
-        "databaseIds": {
-            "uniprot": "Q8WXG1",
-            "genpept": ""
-        },
+        "description": "Radical S-adenosyl methionine",
         "references": [
-            "doi:"
-        ]
+            "doi:10.1038/s41586-018-0238-4"
+        ],
+        "databaseIds": {
+            "uniprot": "O70600",
+            "genpept": "CAA68971.1"
+        },
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ],
+            "inorganic": [
+                "FeS"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Dehydration"
+            ],
+            "description": "Formal dehydration of CTP to afford anti-viral ddhCTP",
+            "reactionSMARTS": "[#6:1]1:[#6:7](-[#7:8]):[#7:6]:[#6:4](=[#8:5]):[#7:3](/[#6@@:9]2-[#8:13]-[#6@:12](/[#6:14]-[#8:15]-[#15@@:16](-[#8:19]-[#15@@:20](-[#8:23]-[#15:24](-[#8:27])(-[#8:26])=[#8:25])(\\[#8:22])=[#8:21])(\\[#8:18])=[#8:17])-[#6@@:11](\\[#8])-[#6@:10]-2\\[#8:29]):[#6:2]:1>>[#6:1]1:[#6:7](-[#7:8]):[#7:6]:[#6:4](=[#8:5]):[#7:3](/[#6@@:9]2-[#8:13]-[#6:12](-[#6:14]-[#8:15]-[#15@@:16](-[#8:19]-[#15@@:20](-[#8:23]-[#15:24](-[#8:27])(-[#8:26])=[#8:25])(\\[#8:22])=[#8:21])(\\[#8:18])=[#8:17])=[#6:11]-[#6@:10]-2\\[#8:29]):[#6:2]:1",
             "reactions": [
                 {
+                    "substrate": "Nc1ccn(C2OC(COP(=O)(O)OP(=O)(O)OP(=O)(O)O)C(O)C2O)c(=O)n1",
                     "products": [
-                        ""
-                    ]
+                        "Nc1ccn(C2OC(COP(=O)(O)OP(=O)(O)OP(=O)(O)O)=CC2O)c(=O)n1"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Inference from genomic data and chemical structure",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1038/s41586-018-0238-4"
+                ]
+            }
         }
     ]
 }
