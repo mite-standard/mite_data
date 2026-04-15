@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000275",
     "status": "active",
     "comment": "Transferring the acyl group on the pyranoquinone ",
     "changelog": [
@@ -32,7 +32,7 @@
             "tailoring": [
                 "Acylation"
             ],
-            "description": "Transferring the acyl group on the pyranoquinone ",
+            "description": "Transferring the acyl group on the pyranoquinone",
             "reactionSMARTS": "[#8:1]=[#6:2]1-[#6:16]=[#6:15]2-[#6:7](=[#6:8]-[#8:9]-[#6:10](=[#6:14]-2)-[#6:11]=[#6:12]-[#6:13])-[#6:6](=[#8:17])-[#6@@:3]-1(/[#8:5])-[#6:4]>>[#8:1]=[#6:2]1-[#6:16]=[#6:15]2-[#6:7](=[#6:8]-[#8:9]-[#6:10](=[#6:14]-2)-[#6:11]=[#6:12]-[#6:13])-[#6:6](=[#8:17])-[#6@@:3]-1(-[#8:5]-[#6](=[#8])-[#6](=[#8])-[#6]-[#6]-[#6]-[#6]-[#6])/[#6:4]",
             "reactions": [
                 {
@@ -41,7 +41,7 @@
                         "CC=CC1=CC2=CC(=O)[C@@](C)(OC(=O)C(=O)CCCCC)C(=O)C2=CO1"
                     ],
                     "isIntermediate": true,
-                    "description": "Transferring the acyl group on the pyranoquinone "
+                    "description": "Transferring the acyl group on the pyranoquinone"
                 }
             ],
             "evidence": {
