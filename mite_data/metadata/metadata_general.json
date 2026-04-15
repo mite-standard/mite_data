@@ -5847,6 +5847,27 @@
       "reaction_description":"demethyllucilactaene to Lucilactaene by the methyltransferase Luc1",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000271":{
+      "accession":"MITE0000271",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Aldehyde dehydrogenase",
+      "enzyme_ids":{
+        "genpept":"BBQ09590.1",
+        "uniprot":"A0A6J4B898"
+      },
+      "enzyme_name":"Luc3",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Fusarium sp",
+      "phylum":"Dikarya",
+      "reaction_description":"Luc3 is involved in the biosynthesis by further oxidation of the C-20 alcoholic analog (Prelucilactaene G) into a carboxylic derivative",
+      "status":"active",
+      "tailoring":"Dehydrogenation"
     }
   },
   "version_mite_data":"1.23"
