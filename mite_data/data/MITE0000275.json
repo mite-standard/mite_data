@@ -1,0 +1,57 @@
+{
+    "accession": "MITE0000275",
+    "status": "active",
+    "comment": "Transferring the acyl group on the pyranoquinone ",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-13",
+            "contributors": [
+                "0000-0001-5730-3326"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "MppB",
+        "description": "acyltransferase",
+        "references": [
+            "doi:10.1007/s00253-013-4745-9"
+        ],
+        "databaseIds": {
+            "uniprot": "R9UMI5",
+            "genpept": "AGN71607.1",
+            "mibig": "BGC0000027"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Acylation"
+            ],
+            "description": "Transferring the acyl group on the pyranoquinone",
+            "reactionSMARTS": "[#8:1]=[#6:2]1-[#6:16]=[#6:15]2-[#6:7](=[#6:8]-[#8:9]-[#6:10](=[#6:14]-2)-[#6:11]=[#6:12]-[#6:13])-[#6:6](=[#8:17])-[#6@@:3]-1(/[#8:5])-[#6:4]>>[#8:1]=[#6:2]1-[#6:16]=[#6:15]2-[#6:7](=[#6:8]-[#8:9]-[#6:10](=[#6:14]-2)-[#6:11]=[#6:12]-[#6:13])-[#6:6](=[#8:17])-[#6@@:3]-1(-[#8:5]-[#6](=[#8])-[#6](=[#8])-[#6]-[#6]-[#6]-[#6]-[#6])/[#6:4]",
+            "reactions": [
+                {
+                    "substrate": "C/C=C/C1=CC2=CC(=O)[C@@](C)(O)C(=O)C2=CO1",
+                    "products": [
+                        "CC=CC1=CC2=CC(=O)[C@@](C)(OC(=O)C(=O)CCCCC)C(=O)C2=CO1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Transferring the acyl group on the pyranoquinone"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1007/s00253-013-4745-9"
+                ]
+            }
+        }
+    ]
+}
