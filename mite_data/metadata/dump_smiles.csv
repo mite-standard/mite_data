@@ -374,3 +374,4 @@
 372,MITE0000272.reaction1.example1,CC(C)=C/C(C)=C/C=C/C=C/C=C(\C)C(=O)CC(=O)NC(CO)CCO,CC(=CC=CC=CC=C(C)C(=O)C12OC1C(O)(CCO)NC2=O)C=C(C)CO
 373,MITE0000273.reaction1.example1,NCCCC1c2ccc3c(c[nH]c3c2)C2Oc3cccc4c(c[nH]c34)CC(N)C(=O)NC(CC(N)=O)C(=O)NC2C(=O)NC(CO)C(=O)NC1C(=O)NC(CO)C(=O)NC(Cc1ccccc1)C(=O)O,NCCCC1c2ccc3c(c[nH]c3c2)C2Oc3cc(Br)cc4c(c[nH]c34)CC(N)C(=O)NC(CC(N)=O)C(=O)NC2C(=O)NC(CO)C(=O)NC1C(=O)NC(CO)C(=O)NC(Cc1ccccc1)C(=O)O
 374,MITE0000274.reaction1.example1,*CCCCC(=O)CC(=O)O[C@]1(C)C(=O)C=C2C=C(/C=C/C)OC=C2C1=O,*CCCCC(=O)CC(=O)O[C@]1(C)C(=O)C=C2C=C(C=CC)OCC2C1=O
+375,MITE0000275.reaction1.example1,C/C=C/C1=CC2=CC(=O)[C@@](C)(O)C(=O)C2=CO1,CC=CC1=CC2=CC(=O)[C@@](C)(OC(=O)C(=O)CCCCC)C(=O)C2=CO1

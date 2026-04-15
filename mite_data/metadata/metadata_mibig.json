@@ -88,6 +88,22 @@
         "mite_accession":"MITE0000274",
         "mite_url":"https://bioregistry.io/mite:MITE0000274",
         "status":"active"
+      },
+      {
+        "enzyme_description":"acyltransferase",
+        "enzyme_ids":{
+          "genpept":"AGN71607.1",
+          "mibig":"BGC0000027",
+          "uniprot":"R9UMI5"
+        },
+        "enzyme_name":"MppB",
+        "enzyme_refs":[
+          "doi:10.1007/s00253-013-4745-9"
+        ],
+        "enzyme_tailoring":"Acylation",
+        "mite_accession":"MITE0000275",
+        "mite_url":"https://bioregistry.io/mite:MITE0000275",
+        "status":"active"
       }
     ],
     "BGC0000031":[
