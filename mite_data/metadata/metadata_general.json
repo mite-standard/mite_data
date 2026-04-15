@@ -5806,6 +5806,26 @@
       "reaction_description":"Transfer of two vancosamine moieties to the C-13 and C-13' positions of antaraglycone, yielding Antarmycin C.",
       "status":"active",
       "tailoring":"Glycosylation"
+    },
+    "MITE0000269":{
+      "accession":"MITE0000269",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Glycosyltransferase",
+      "enzyme_ids":{
+        "genpept":"WJP00505.1"
+      },
+      "enzyme_name":"AntD",
+      "family":"Pseudonocardiaceae",
+      "kingdom":"Bacillati",
+      "order":"Pseudonocardiales",
+      "organism":"Pseudonocardia alni",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Transfer of β-D-glucose to the C-24 hydroxyl of one α-L-vancosamine moiety of antarmycin C, yielding antarmycin A",
+      "status":"active",
+      "tailoring":"Glycosylation"
     }
   },
   "version_mite_data":"1.23"
