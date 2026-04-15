@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000272",
     "status": "active",
     "comment": " Luc2 might be involved in C-20 hydroxylation",
     "changelog": [
@@ -17,7 +17,7 @@
     ],
     "enzyme": {
         "name": "Luc2",
-        "description": "P450 monooxygenase",
+        "description": "Cytochrome P450",
         "references": [
             "doi:10.1038/s41429-022-00529-3"
         ],
