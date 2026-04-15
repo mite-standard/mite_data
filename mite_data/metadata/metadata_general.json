@@ -5889,6 +5889,27 @@
       "reaction_description":" Luc2 oxidizes the C-20, but Luc3 is required for the full oxidation of the C-20 methyl group into the carboxylic acid",
       "status":"active",
       "tailoring":"Monooxygenation|Other"
+    },
+    "MITE0000273":{
+      "accession":"MITE0000273",
+      "class_name":"Gammaproteobacteria",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD",
+      "domain":"Bacteria",
+      "enzyme_description":"Halogenase",
+      "enzyme_ids":{
+        "genpept":"KZN44487.1",
+        "uniprot":"A0A166ZN72"
+      },
+      "enzyme_name":"DarH",
+      "family":"Pseudoalteromonadaceae",
+      "kingdom":"Pseudomonadati",
+      "order":"Alteromonadales",
+      "organism":"Pseudoalteromonas luteoviolacea H33",
+      "phylum":"Pseudomonadota",
+      "reaction_description":"Bromination of C-8 of W1 of darobactin A, yielding bromodarobactin A.",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.23"
