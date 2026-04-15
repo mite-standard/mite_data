@@ -5868,6 +5868,27 @@
       "reaction_description":"Luc3 is involved in the biosynthesis by further oxidation of the C-20 alcoholic analog (Prelucilactaene G) into a carboxylic derivative",
       "status":"active",
       "tailoring":"Dehydrogenation"
+    },
+    "MITE0000272":{
+      "accession":"MITE0000272",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"BBQ09591.1",
+        "uniprot":"A0A6J4BC30"
+      },
+      "enzyme_name":"Luc2",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Fusarium sp",
+      "phylum":"Dikarya",
+      "reaction_description":" Luc2 oxidizes the C-20, but Luc3 is required for the full oxidation of the C-20 methyl group into the carboxylic acid",
+      "status":"active",
+      "tailoring":"Monooxygenation|Other"
     }
   },
   "version_mite_data":"1.23"
