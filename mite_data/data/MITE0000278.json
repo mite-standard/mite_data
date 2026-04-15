@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000278",
     "status": "active",
     "changelog": [
         {
@@ -11,12 +11,12 @@
             "reviewers": [
                 "0000-0002-8323-5416"
             ],
-            "comment": "Added description. Updated intermediate product and co-factors"
+            "comment": "New entry. Reviewer 1 added description, updated intermediate product and co-factors"
         }
     ],
     "enzyme": {
         "name": "LtxB",
-        "description": "Cytochrome P450 monooxygenase",
+        "description": "Cytochrome P450",
         "references": [
             "doi:10.1021/np900481a"
         ],
