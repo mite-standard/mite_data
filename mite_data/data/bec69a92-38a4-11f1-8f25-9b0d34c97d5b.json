@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "C-H hydroxylation",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,47 @@
     ],
     "enzyme": {
         "name": "TraB",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1007/s00253-021-11674-4"
+        ],
         "databaseIds": {
             "uniprot": "A0A481WNM6",
-            "genpept": ""
+            "genpept": "QBK15050.1"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Hydroxylation",
+                "Oxidation"
+            ],
+            "description": "Cytochrome P450 mediated C-H oxidation",
+            "reactionSMARTS": "[#6:1]1(-[#8:8])=[#6:2](-[#6:9](=[#8:11])-[#6:10]-[#6:12]-[#6:13]-[#6:14]-[#6:15])-[#6:3](=[#8:6])-[#8:4]-[#6@:5]-1/[#6:7]-[#6:16](=[#8:18])-[#8:17]>>[#6:1]1(-[#8:8])=[#6:2](-[#6:9](=[#8:11])-[#6:10]-[#6:12]-[#6@@:13](\\[#8])-[#6:14]-[#6:15])-[#6:3](=[#8:6])-[#8:4]-[#6@:5]-1/[#6:7]-[#6:16](=[#8:18])-[#8:17]",
             "reactions": [
                 {
+                    "substrate": "CCCCCC(=O)C1=C(O)[C@H](CC(=O)O)OC1=O",
                     "products": [
-                        ""
-                    ]
+                        "CC[C@H](O)CCC(=O)C1=C(O)[C@H](CC(=O)O)OC1=O"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Inference from genomic data and chemical structure",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1007/s00253-021-11674-4"
+                ]
+            }
         }
     ]
 }
