@@ -1,0 +1,59 @@
+{
+    "accession": "MITE0000269",
+    "status": "active",
+    "comment": "Membrane-associated glycosyltransferase that transfers \u03b2-D-glucose from UDP-D-glucose to the C-24 hydroxyl of one \u03b1-L-vancosamine moiety of antarmycin C, yielding antarmycin A.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-03-29",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 replaced reaction SMILES with reaction SMARTS"
+        }
+    ],
+    "enzyme": {
+        "name": "AntD",
+        "description": "Glycosyltransferase",
+        "references": [
+            "doi:10.1021/jacsau.4c00912"
+        ],
+        "databaseIds": {
+            "genpept": "WJP00505.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Glycosylation"
+            ],
+            "description": "Transfer of \u03b2-D-glucose to the C-24 hydroxyl of one \u03b1-L-vancosamine moiety of antarmycin C, yielding antarmycin A",
+            "reactionSMARTS": "[#6:1]-[#6:2]1-[#6:46](-[#6:47](-[#6:49](-[#6:51](-[#6:53]2(-[#8:72]-[#6:70](-[#6:71])-[#6:68](-[#6:69])-[#6:56](-[#8:57]-[#6:58]3-[#8:67]-[#6:65](-[#6:66])-[#6:63](-[#8:64])-[#6:60](-[#7:62])(-[#6:61])-[#6:59]-3)-[#6:55]-2)-[#8:54])-[#6:52])-[#8:50])-[#6:48])-[#8:45]-[#6:43](=[#8:44])-[#6:42]=[#6:41]-[#6:40]=[#6:39]-[#6:37](-[#6:38])-[#6:10](-[#6:11](-[#6:13](-[#6:15](-[#6:17]2(-[#8:36]-[#6:34](-[#6:35])-[#6:32](-[#6:33])-[#6:20](-[#8:21]-[#6:22]3-[#8:31]-[#6:29](-[#6:30])-[#6:27](-[#8:28])-[#6:24](-[#7:26])(-[#6:25])-[#6:23]-3)-[#6:19]-2)-[#8:18])-[#6:16])-[#8:14])-[#6:12])-[#8:9]-[#6:7](=[#8:8])-[#6:6]=[#6:5]-[#6:4]=[#6:3]-1>>[#6:1]-[#6:2]1-[#6:46](-[#6:47](-[#6:49](-[#6:51](-[#6:53]2(-[#8:72]-[#6:70](-[#6:71])-[#6:68](-[#6:69])-[#6:56](-[#8:57]-[#6:58]3-[#8:67]-[#6:65](-[#6:66])-[#6:63](-[#8:64])-[#6:60](-[#7:62])(-[#6:61])-[#6:59]-3)-[#6:55]-2)-[#8:54])-[#6:52])-[#8:50])-[#6:48])-[#8:45]-[#6:43](=[#8:44])-[#6:42]=[#6:41]-[#6:40]=[#6:39]-[#6:37](-[#6:38])-[#6:10](-[#6:11](-[#6:13](-[#6:15](-[#6:17]2(-[#8:36]-[#6:34](-[#6:35])-[#6:32](-[#6:33])-[#6:20](-[#8:21]-[#6:22]3-[#8:31]-[#6:29](-[#6:30])-[#6:27](-[#8:28]-[#6]4-[#6](-[#8])-[#6](-[#8])-[#6](-[#8])-[#6](-[#6]-[#8])-[#8]-4)-[#6:24](-[#7:26])(-[#6:25])-[#6:23]-3)-[#6:19]-2)-[#8:18])-[#6:16])-[#8:14])-[#6:12])-[#8:9]-[#6:7](=[#8:8])-[#6:6]=[#6:5]-[#6:4]=[#6:3]-1",
+            "reactions": [
+                {
+                    "substrate": "CC1/C=C/C=C/C(=O)OC(C(C)C(O)C(C)C2(O)CC(OC3CC(C)(N)C(O)C(C)O3)C(C)C(C)O2)C(C)/C=C/C=C/C(=O)OC1C(C)C(O)C(C)C1(O)CC(OC2CC(C)(N)C(O)C(C)O2)C(C)C(C)O1",
+                    "products": [
+                        "CC1C=CC=CC(=O)OC(C(C)C(O)C(C)C2(O)CC(OC3CC(C)(N)C(OC4OC(CO)C(O)C(O)C4O)C(C)O3)C(C)C(C)O2)C(C)C=CC=CC(=O)OC1C(C)C(O)C(C)C1(O)CC(OC2CC(C)(N)C(O)C(C)O2)C(C)C(C)O1"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Glucosylation of antarmycin C (3) to yield antarmycin A (1), validated by in vitro microsomal fraction assay using UDP-D-glucose as sugar donor."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/jacsau.4c00912"
+                ]
+            },
+            "databaseIds": {
+                "ec": "2.4.1"
+            }
+        }
+    ]
+}
