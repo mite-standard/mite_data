@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000279",
     "status": "active",
     "comment": "Fe(II)- and O\u2082-dependent nonhaem iron enzyme; homologue of ergothioneine sulfoxide synthase EgtB. Catalyses oxidative C\u2013Se bond formation between hercynine and SeGlcNAc via a selenoxide intermediate that spontaneously eliminates to yield selenoneine and 2-acetamidoglucal.",
     "changelog": [
@@ -17,7 +17,7 @@
     ],
     "enzyme": {
         "name": "SenA",
-        "description": "selenoneine synthase",
+        "description": "Selenoneine synthase",
         "references": [
             "doi:10.1038/s41586-022-05174-2",
             "doi:10.1016/j.ijbiomac.2023.128428"
