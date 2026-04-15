@@ -5932,6 +5932,28 @@
       "reaction_description":"proposed reduction and isomerization - NAD(P)H-dependent oxidoreductase",
       "status":"active",
       "tailoring":"Reduction"
+    },
+    "MITE0000275":{
+      "accession":"MITE0000275",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"acyltransferase",
+      "enzyme_ids":{
+        "genpept":"AGN71607.1",
+        "mibig":"BGC0000027",
+        "uniprot":"R9UMI5"
+      },
+      "enzyme_name":"MppB",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Monascus pilosus",
+      "phylum":"Dikarya",
+      "reaction_description":"Transferring the acyl group on the pyranoquinone",
+      "status":"active",
+      "tailoring":"Acylation"
     }
   },
   "version_mite_data":"1.23"
