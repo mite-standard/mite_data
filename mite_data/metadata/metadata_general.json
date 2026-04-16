@@ -6061,6 +6061,27 @@
       "reaction_description":"Cleavage of BytA to afford 3-NO2-Tyr",
       "status":"active",
       "tailoring":"Hydrolysis"
+    },
+    "MITE0000281":{
+      "accession":"MITE0000281",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"XCX13213.1",
+        "uniprot":"UPI0037A34D79"
+      },
+      "enzyme_name":"RufO",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces atratus",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Oxidative nitration of tyrosine using NO",
+      "status":"active",
+      "tailoring":"Monooxygenation"
     }
   },
   "version_mite_data":"1.23"
