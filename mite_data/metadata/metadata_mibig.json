@@ -1464,6 +1464,22 @@
         "mite_accession":"MITE0000285",
         "mite_url":"https://bioregistry.io/mite:MITE0000285",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Flavin-containing monooxygenase",
+        "enzyme_ids":{
+          "genpept":"EED49424.1",
+          "mibig":"BGC0000627",
+          "uniprot":"B8NM73"
+        },
+        "enzyme_name":"UstF2",
+        "enzyme_refs":[
+          "doi:10.1002/anie.201602611"
+        ],
+        "enzyme_tailoring":"Decarboxylation|Dehydration|Hydroxylation",
+        "mite_accession":"MITE0000286",
+        "mite_url":"https://bioregistry.io/mite:MITE0000286",
+        "status":"active"
       }
     ],
     "BGC0000653":[

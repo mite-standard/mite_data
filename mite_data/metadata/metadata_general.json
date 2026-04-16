@@ -6167,6 +6167,28 @@
       "reaction_description":"Production of ustiloxin B via condensation of an aldehyde intermediate with an enamine formed after decarboxylation of the aspartic acid ",
       "status":"active",
       "tailoring":"Decarboxylation|Other"
+    },
+    "MITE0000286":{
+      "accession":"MITE0000286",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD|NADP",
+      "domain":"Eukaryota",
+      "enzyme_description":"Flavin-containing monooxygenase",
+      "enzyme_ids":{
+        "genpept":"EED49424.1",
+        "mibig":"BGC0000627",
+        "uniprot":"B8NM73"
+      },
+      "enzyme_name":"UstF2",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Aspergillus flavus (strain ATCC 200026 / FGSC A1120 / IAM 13836 / NRRL 3357 / JCM 12722 / SRRC 167)",
+      "phylum":"Dikarya",
+      "reaction_description":"Conversion of ustiloxin H to its oxime-derivative through two sequential N-hydroxylations followed by a decarboxylative dehydration",
+      "status":"active",
+      "tailoring":"Decarboxylation|Dehydration|Hydroxylation"
     }
   },
   "version_mite_data":"1.23"
