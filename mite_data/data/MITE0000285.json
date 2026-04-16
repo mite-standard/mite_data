@@ -1,0 +1,64 @@
+{
+    "accession": "MITE0000285",
+    "status": "active",
+    "comment": "Condensation an enamine formed after decarboxylation of the aspartic acid to an aldehyde intermediate.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-04",
+            "contributors": [
+                "0000-0003-3141-732X"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "UstD",
+        "description": "PLP-dependent enzyme",
+        "references": [
+            "doi:10.1002/anie.201602611"
+        ],
+        "databaseIds": {
+            "uniprot": "B8NM72",
+            "genpept": "EED49423.1",
+            "mibig": "BGC0000627"
+        },
+        "cofactors": {
+            "organic": [
+                "Pyridoxal phosphate"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Decarboxylation",
+                "Other"
+            ],
+            "description": "Production of ustiloxin B via condensation of an aldehyde intermediate with an enamine formed after decarboxylation of the aspartic acid ",
+            "reactionSMARTS": "[#8:1]=[#6:2]1-[#6@:22](-[#6@@:25](-[#6:27]2:[#6:33](-[#16:34](=[#8:38])-[#6:35]-[#6:36]=[#8:37]):[#6:32]:[#6:30](-[#8:31]):[#6:29](-[#8:20]-[#6@@:16](-[#6:18]-[#6:19])(\\[#6:17])-[#6@@:8](\\[#6:9](=[#8:15])-[#7:10]-[#6:11]-[#6:12](=[#8:14])-[#8:13])-[#7:7]-[#6:6](=[#8:21])-[#6@:4](/[#6:5])-[#7:3]-1):[#6:28]:2)/[#8:26])/[#7:23]-[#6:24]>>[#8:1]=[#6:2]1-[#6@:22](-[#6@@:25](-[#6:27]2:[#6:33](-[#16:34](=[#8:38])-[#6:8]-[#6@@:16](\\[#8:20])-[#6:17]-[#6@:35](/[#7])-[#6:36](=[#8:37])-[#8]):[#6:32]:[#6:30](-[#8:31]):[#6:29](-[#8:20]-[#6@@:16](-[#6:18]-[#6:19])(\\[#6:17])-[#6@@:8](\\[#6:9](=[#8:15])-[#7:10]-[#6:11]-[#6:12](=[#8:14])-[#8:13])-[#7:7]-[#6:6](=[#8:21])-[#6@:4](/[#6:5])-[#7:3]-1):[#6:28]:2)/[#8:26])/[#7:23]-[#6:24]",
+            "reactions": [
+                {
+                    "substrate": "CC[C@@]1(C)Oc2cc(c(S(=O)CC=O)cc2O)[C@@H](O)[C@H](NC)C(=O)N[C@@H](C)C(=O)N[C@@H]1C(=O)NCC(=O)O",
+                    "products": [
+                        "CC[C@@]1(C)Oc2cc(c(S(=O)C[C@H](O)C[C@H](N)C(=O)O)cc2O)[C@@H](O)[C@H](NC)C(=O)N[C@@H](C)C(=O)N[C@@H]1C(=O)NCC(=O)O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Production of ustiloxin B via condensation of an aldehyde intermediate with an enamine formed after decarboxylation of the aspartic acid "
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1002/anie.201602611"
+                ]
+            }
+        }
+    ]
+}
