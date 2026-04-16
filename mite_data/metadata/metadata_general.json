@@ -6082,6 +6082,27 @@
       "reaction_description":"Oxidative nitration of tyrosine using NO",
       "status":"active",
       "tailoring":"Monooxygenation"
+    },
+    "MITE0000282":{
+      "accession":"MITE0000282",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme|NADP",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"OQD66320.1",
+        "uniprot":"A0A1V6NNU6"
+      },
+      "enzyme_name":"DovE",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Penicillium decumbens",
+      "phylum":"Dikarya",
+      "reaction_description":"Regioselective epoxidation of the 2,5-dihydrofuran moiety.",
+      "status":"active",
+      "tailoring":"Monooxygenation|Oxidation"
     }
   },
   "version_mite_data":"1.23"
