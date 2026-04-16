@@ -6048,7 +6048,9 @@
       "domain":"Bacteria",
       "enzyme_description":"Aminopeptidase",
       "enzyme_ids":{
-        "genpept":"XCX13201.1"
+        "genpept":"BBA20960.1",
+        "mibig":"BGC0001763",
+        "uniprot":"A0A224AVC8"
       },
       "enzyme_name":"RufB",
       "family":"Streptomycetaceae",

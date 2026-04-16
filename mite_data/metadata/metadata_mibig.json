@@ -2588,6 +2588,22 @@
         "mite_accession":"MITE0000184",
         "mite_url":"https://bioregistry.io/mite:MITE0000184",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Aminopeptidase",
+        "enzyme_ids":{
+          "genpept":"BBA20960.1",
+          "mibig":"BGC0001763",
+          "uniprot":"A0A224AVC8"
+        },
+        "enzyme_name":"RufB",
+        "enzyme_refs":[
+          "doi:10.1016/j.chempr.2025.102438"
+        ],
+        "enzyme_tailoring":"Hydrolysis",
+        "mite_accession":"MITE0000280",
+        "mite_url":"https://bioregistry.io/mite:MITE0000280",
+        "status":"active"
       }
     ],
     "BGC0001881":[
