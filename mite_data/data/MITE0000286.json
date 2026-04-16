@@ -1,7 +1,7 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000286",
     "status": "active",
-    "comment": "Conversion of amino-carboxyl moiety to its oxime-derivative through two sequential N-hydroxylations followed by a decarboxylative dehydration",
+    "comment": "Conversion of amino-carboxyl moiety to its oxime-derivative through two sequential N-hydroxylations followed by a decarboxylative dehydration.",
     "changelog": [
         {
             "version": "1",
