@@ -34,7 +34,7 @@
         ],
         "databaseIds": {
             "uniprot": "A0A224AU14",
-            "genpept": "XCX13213.1",
+            "genpept": "XCX13213.1"
         },
         "cofactors": {
             "inorganic": [
