@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000282",
     "status": "active",
     "comment": "Catalyzes the final tailoring step: a second regioselective epoxidation on the 2,5-dihydrofuran ring to yield the terminal epoxytetrahydrofuran system.",
     "changelog": [
@@ -17,7 +17,7 @@
     ],
     "enzyme": {
         "name": "DovE",
-        "description": "Cytochrome P450 monooxygenase",
+        "description": "Cytochrome P450",
         "references": [
             "doi:10.1039/D5SC03423J",
             "doi:10.1038/nmicrobiol.2017.44"
