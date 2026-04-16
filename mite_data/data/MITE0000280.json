@@ -1,0 +1,58 @@
+{
+    "accession": "MITE0000280",
+    "status": "active",
+    "comment": "RufB is a serine aminopeptidase that cleaves the nitrated BytA pentapeptide",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-14",
+            "contributors": [
+                "0000-0003-2971-646X"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423",
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 2 removed UniProt ID A0A224AUB0 since it resolves to a different AA sequence (GenPept XCX13201.1 starts with a different N-terminal leader MDFPTRQGTFSTGL)."
+        }
+    ],
+    "enzyme": {
+        "name": "RufB",
+        "description": "Aminopeptidase",
+        "references": [
+            "doi:10.1016/j.chempr.2025.102438"
+        ],
+        "databaseIds": {
+            "genpept": "XCX13201.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Hydrolysis"
+            ],
+            "description": "Cleavage of BytA to afford 3-NO2-Tyr",
+            "reactionSMARTS": "[#7:1](-[*])\\[#6@:2](-[#6:11](-[#7]-[*])=[#8:12])-[#6:3]-[#6:4]1:[#6:10]:[#6:9](-[#7;+:14](-[#8;-:16])=[#8:15]):[#6:7](-[#8:8]):[#6:6]:[#6:5]:1>>[#7:1]\\[#6@:2](-[#6:11](-[#8])=[#8:12])-[#6:3]-[#6:4]1:[#6:10]:[#6:9](-[#7;+:14](-[#8;-:16])=[#8:15]):[#6:7](-[#8:8]):[#6:6]:[#6:5]:1",
+            "reactions": [
+                {
+                    "substrate": "CSCC[C@H](N)C(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@@H](Cc1ccc(O)c([N+](=O)[O-])c1)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](Cc1c[nH]cn1)C(=O)O",
+                    "products": [
+                        "N[C@@H](Cc1ccc(O)c([N+](=O)[O-])c1)C(=O)O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Cleavage of BytA to afford 3-NO2-Tyr"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure",
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1016/j.chempr.2025.102438"
+                ]
+            }
+        }
+    ]
+}
