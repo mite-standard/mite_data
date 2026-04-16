@@ -6145,6 +6145,28 @@
       "reaction_description":"Regioselective epoxidation at the C10–C11 position of the deoxyverrucosidin polyene backbone.",
       "status":"active",
       "tailoring":"Monooxygenation|Oxidation"
+    },
+    "MITE0000285":{
+      "accession":"MITE0000285",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"Pyridoxal phosphate",
+      "domain":"Eukaryota",
+      "enzyme_description":"PLP-dependent enzyme",
+      "enzyme_ids":{
+        "genpept":"EED49423.1",
+        "mibig":"BGC0000627",
+        "uniprot":"B8NM72"
+      },
+      "enzyme_name":"UstD",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Aspergillus flavus (strain ATCC 200026 / FGSC A1120 / IAM 13836 / NRRL 3357 / JCM 12722 / SRRC 167)",
+      "phylum":"Dikarya",
+      "reaction_description":"Production of ustiloxin B via condensation of an aldehyde intermediate with an enamine formed after decarboxylation of the aspartic acid ",
+      "status":"active",
+      "tailoring":"Decarboxylation|Other"
     }
   },
   "version_mite_data":"1.23"

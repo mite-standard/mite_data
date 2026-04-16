@@ -1448,6 +1448,24 @@
         "status":"active"
       }
     ],
+    "BGC0000627":[
+      {
+        "enzyme_description":"PLP-dependent enzyme",
+        "enzyme_ids":{
+          "genpept":"EED49423.1",
+          "mibig":"BGC0000627",
+          "uniprot":"B8NM72"
+        },
+        "enzyme_name":"UstD",
+        "enzyme_refs":[
+          "doi:10.1002/anie.201602611"
+        ],
+        "enzyme_tailoring":"Decarboxylation|Other",
+        "mite_accession":"MITE0000285",
+        "mite_url":"https://bioregistry.io/mite:MITE0000285",
+        "status":"active"
+      }
+    ],
     "BGC0000653":[
       {
         "enzyme_description":"Baeyer-Villiger monooxygenase",
