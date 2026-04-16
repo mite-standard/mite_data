@@ -6211,6 +6211,28 @@
       "reaction_description":"oxidation of the S to S=O",
       "status":"active",
       "tailoring":"Oxidation"
+    },
+    "MITE0000288":{
+      "accession":"MITE0000288",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"EED49415.1",
+        "mibig":"BGC0000627",
+        "uniprot":"B8NM64"
+      },
+      "enzyme_name":"UstC",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Aspergillus flavus (strain ATCC 200026 / FGSC A1120 / IAM 13836 / NRRL 3357 / JCM 12722 / SRRC 167)",
+      "phylum":"Dikarya",
+      "reaction_description":"Oxidative coupling of a cysteine residue to the phenyl ring (C-S bond formation)",
+      "status":"active",
+      "tailoring":"Other"
     }
   },
   "version_mite_data":"1.23"
