@@ -10,9 +10,10 @@
                 "0000-0003-3141-732X"
             ],
             "reviewers": [
-                "0000-0002-9747-3423"
+                "0000-0002-9747-3423",
+                "0000-0001-6534-6609"
             ],
-            "comment": "New entry."
+            "comment": "New entry. Reviewer 2 replaced UniProt w UniParc ID for amino acid consistency."
         }
     ],
     "enzyme": {
@@ -22,7 +23,7 @@
             "doi:10.1002/anie.201602611"
         ],
         "databaseIds": {
-            "uniprot": "B8NM78",
+            "uniprot": "UPI00018F617E",
             "genpept": "EED49429.1",
             "mibig": "BGC0000627"
         },
