@@ -16,29 +16,40 @@
     ],
     "enzyme": {
         "name": "SorR",
+        "description": "reductase",
+        "references": [
+            "doi:10.1016/S0378-1119(02)00396-7"
+        ],
         "databaseIds": {
             "uniprot": "Q9ADL7",
-            "genpept": ""
-        },
-        "references": [
-            "doi:"
-        ]
+            "genpept": "AAK19893.1",
+            "mibig": "BGC0000147"
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Reduction"
+            ],
+            "description": "Possibily carry out the reaction from soraphen X to soraphen B (Figure 4A)",
+            "reactionSMARTS": "[#8:1]=[#6:16]1-[#8:17]-[#6@@:24](-[#6:25]-[#6:26]-[#6:27]-[#6:28]-[#6@@:31](-[#6@@:33](-[#6:34]-[#6:35]-[#6@:36](\\[#6:37])-[#6:3](-[#6@:5](-[#6@@:7](-[#6@:10](-[#6:13](-[#6@@:15]-1\\[#6:14])(-[#8])-[#8:11])/[#8:9]-[#6:8])\\[#8:6])/[#6:4])-[#8:2])/[#8:32])/[#8:30]-[#6:29])\\[#6:23]1:[#6:22]:[#6:21]:[#6:20]:[#6:19]:[#6:18]:1>>[#8:1]=[#6:16]1-[#8:17]-[#6@@:24](-[#6:25]-[#6:26]-[#6:27]-[#6:28]-[#6@@:31](-[#6@@:33](-[#6:34]-[#6:35]-[#6@:36](/[#6:37])-[#6@:3]2-[#6@:5](-[#6@@:7](-[#6@:10](-[#6@:13](-[#6@@:15]-1/[#6:14])(\\[#8:11])-[#8:2]/2)/[#8:9]-[#6:8])\\[#8:6])/[#6:4])\\[#8:32])\\[#8:30]-[#6:29])/[#6:23]1:[#6:18]:[#6:19]:[#6:20]:[#6:21]:[#6:22]:1",
             "reactions": [
                 {
+                    "substrate": "CO[C@H]1CCCC[C@@H](c2ccccc2)OC(=O)[C@@H](C)C(O)(O)[C@H](OC)[C@@H](O)[C@H](C)C(O)[C@@H](C)CC[C@H]1O",
                     "products": [
-                        ""
-                    ]
+                        "CO[C@H]1CCCC[C@@H](c2ccccc2)OC(=O)[C@@H](C)[C@@]2(O)O[C@H]([C@@H](C)[C@H](O)[C@H]2OC)[C@@H](C)CC[C@H]1O"
+                    ],
+                    "isIntermediate": false
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure"
+                ],
+                "references": [
+                    "doi:10.1016/S0378-1119(02)00396-7"
+                ]
+            }
         }
     ]
 }
