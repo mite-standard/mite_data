@@ -10,9 +10,10 @@
                 "0000-0003-2971-646X"
             ],
             "reviewers": [
-                "0000-0002-9747-3423"
+                "0000-0002-9747-3423",
+                "0000-0001-6534-6609"
             ],
-            "comment": "New entry."
+            "comment": "New entry. Reviewer 2 removed UniProt ID A0A224AUB0 since it resolves to a different AA sequence (GenPept XCX13201.1 starts with a different N-terminal leader MDFPTRQGTFSTGL)."
         }
     ],
     "enzyme": {
@@ -22,7 +23,6 @@
             "doi:10.1016/j.chempr.2025.102438"
         ],
         "databaseIds": {
-            "uniprot": "A0A224AUB0",
             "genpept": "XCX13201.1"
         }
     },
