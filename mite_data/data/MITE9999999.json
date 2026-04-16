@@ -1,0 +1,63 @@
+{
+    "accession": "MITE9999999",
+    "status": "active",
+    "comment": "N-methylation of peptide bond in ustiloxin biosynthesis",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-04",
+            "contributors": [
+                "0000-0003-3141-732X"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "UstM",
+        "description": "N-Methyltransferase",
+        "references": [
+            "doi:10.1002/anie.201602611"
+        ],
+        "databaseIds": {
+            "uniprot": "B8NM78",
+            "genpept": "EED49429.1",
+            "mibig": "BGC0000627"
+        },
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "N-methylation of N-desmethylustiloxin F to ustiloxin F",
+            "reactionSMARTS": "[#8:1]=[#6:2]1-[#6@:22](-[#6@@:24](-[#6:26]2:[#6:32]:[#6:31]:[#6:29](-[#8:30]):[#6:28](-[#8:20]-[#6@@:16](-[#6:18]-[#6:19])(\\[#6:17])-[#6@@:8](\\[#6:9](=[#8:15])-[#7:10]-[#6:11]-[#6:12](=[#8:14])-[#8:13])-[#7:7]-[#6:6](=[#8:21])-[#6@:4](/[#6:5])-[#7:3]-1):[#6:27]:2)/[#8:25])/[#7:23]>>[#8:1]=[#6:2]1-[#6@:22](-[#6@@:24](-[#6:26]2:[#6:32]:[#6:31]:[#6:29](-[#8:30]):[#6:28](-[#8:20]-[#6@@:16](-[#6:18]-[#6:19])(\\[#6:17])-[#6@@:8](\\[#6:9](=[#8:15])-[#7:10]-[#6:11]-[#6:12](=[#8:14])-[#8:13])-[#7:7]-[#6:6](=[#8:21])-[#6@:4](/[#6:5])-[#7:3]-1):[#6:27]:2)/[#8:25])/[#7:23]-[#6]",
+            "reactions": [
+                {
+                    "substrate": "CC[C@@]1(C)Oc2cc(ccc2O)[C@@H](O)[C@H](N)C(=O)N[C@@H](C)C(=O)N[C@@H]1C(=O)NCC(=O)O",
+                    "products": [
+                        "CC[C@@]1(C)Oc2cc(ccc2O)[C@@H](O)[C@H](NC)C(=O)N[C@@H](C)C(=O)N[C@@H]1C(=O)NCC(=O)O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "N-methylation of N-desmethylustiloxin F to ustiloxin F"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1002/anie.201602611"
+                ]
+            }
+        }
+    ]
+}
