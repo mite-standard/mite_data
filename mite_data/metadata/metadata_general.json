@@ -6103,6 +6103,27 @@
       "reaction_description":"Regioselective epoxidation of the 2,5-dihydrofuran moiety.",
       "status":"active",
       "tailoring":"Monooxygenation|Oxidation"
+    },
+    "MITE0000283":{
+      "accession":"MITE0000283",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Epoxide expandase (Cyclase)",
+      "enzyme_ids":{
+        "genpept":"OQD66319.1",
+        "uniprot":"A0A1V6NP10"
+      },
+      "enzyme_name":"DovD",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Penicillium decumbens",
+      "phylum":"Dikarya",
+      "reaction_description":"Conversion of a 10,11-epoxide polyene intermediate into a tetrahydrofuran (2,5-dihydrofuran) derivative.",
+      "status":"active",
+      "tailoring":"Cyclization|Ring expansion"
     }
   },
   "version_mite_data":"1.23"
