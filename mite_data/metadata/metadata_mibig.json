@@ -1512,6 +1512,22 @@
         "mite_accession":"MITE0000288",
         "mite_url":"https://bioregistry.io/mite:MITE0000288",
         "status":"active"
+      },
+      {
+        "enzyme_description":"N-Methyltransferase",
+        "enzyme_ids":{
+          "genpept":"EED49429.1",
+          "mibig":"BGC0000627",
+          "uniprot":"UPI00018F617E"
+        },
+        "enzyme_name":"UstM",
+        "enzyme_refs":[
+          "doi:10.1002/anie.201602611"
+        ],
+        "enzyme_tailoring":"Methylation",
+        "mite_accession":"MITE0000289",
+        "mite_url":"https://bioregistry.io/mite:MITE0000289",
+        "status":"active"
       }
     ],
     "BGC0000653":[
