@@ -1,0 +1,62 @@
+{
+    "accession": "MITE9999999",
+    "status": "active",
+    "comment": "amide bond synthetases that catalyze amide bond formation between deazapurine and various amine substrates,  designated as deazapurine amide bond synthetases ",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-13",
+            "contributors": [
+                "0000-0001-6496-2071"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "RoyL",
+        "description": "Deazapurine amide bond synthetase",
+        "references": [
+            "doi:10.1021/jacs.5c13285"
+        ],
+        "databaseIds": {
+            "uniprot": "A0ABY4V3C4",
+            "genpept": "USC51049.1"
+        },
+        "cofactors": {
+            "organic": [
+                "Adenosine triphosphate"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Acylation"
+            ],
+            "description": "Amide bond between the 7-carboxyl group of 7-carboxy-7-deazaguanine (CDG) and the \u03b5-amine of lysine",
+            "reactionSMARTS": "[#7:1]-[#6:2]1:[#7:14]:[#6:12](=[#8:13]):[#6:11]2:[#6:4](:[#7:5]:[#6:6]:[#6:7]:2-[#6:8](-[#8])=[#8:9]):[#7:3]:1.[#6:15](-[#6:19]-[#6@:20](/[#7:24])-[#6:21](-[#8:23])=[#8:22])-[#6:16]-[#6:17]-[#7:18]>>[#7:1]-[#6:2]1:[#7:14]:[#6:12](=[#8:13]):[#6:11]2:[#6:4](:[#7:5]:[#6:6]:[#6:7]:2-[#6:8](=[#8:9])-[#7:18]-[#6:17]-[#6:16]-[#6:15]-[#6:19]-[#6@:20](/[#7:24])-[#6:21](-[#8:23])=[#8:22]):[#7:3]:1",
+            "reactions": [
+                {
+                    "substrate": "NCCCC[C@H](N)C(=O)O.Nc1nc2[nH]cc(C(=O)O)c2c(=O)[nH]1",
+                    "products": [
+                        "Nc1nc2[nH]cc(C(=O)NCCCC[C@H](N)C(=O)O)c2c(=O)[nH]1"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Amide bond formation on the 7-carboxyl group of 7-carboxy-7-deazaguanine (CDG)"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Site-directed mutagenesis"
+                ],
+                "references": [
+                    "doi:10.1021/jacs.5c13285"
+                ]
+            }
+        }
+    ]
+}
