@@ -380,3 +380,4 @@
 378,MITE0000278.reaction1.example1,CNC(C(=O)NC(CO)Cc1c[nH]c2ccccc12)C(C)C,CC(C)C1C(=O)NC(CO)Cc2c[nH]c3cccc(c23)N1C
 379,MITE0000279.reaction1.example1,C[N+](C)(C)[C@@H](Cc1cnc[nH]1)C(=O)[O-],CC(=O)N[C@@H]1[C@@H](O)[C@H](O)[C@@H](CO)O[C@H]1[Se](=O)c1ncc(C[C@@H](C(=O)[O-])[N+](C)(C)C)[nH]1
 380,MITE0000280.reaction1.example1,CSCC[C@H](N)C(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@@H](Cc1ccc(O)c([N+](=O)[O-])c1)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](Cc1c[nH]cn1)C(=O)O,N[C@@H](Cc1ccc(O)c([N+](=O)[O-])c1)C(=O)O
+381,MITE0000281.reaction1.example1,CSCC[C@H](N)C(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](Cc1c[nH]cn1)C(=O)O,CSCC[C@H](N)C(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@@H](Cc1ccc(O)c([N+](=O)[O-])c1)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](Cc1c[nH]cn1)C(=O)O
