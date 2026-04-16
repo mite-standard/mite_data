@@ -27,13 +27,13 @@
                 "name": "RufN",
                 "description": "Nitric oxide synthase",
                 "databaseIds": {
-                    "uniprot": "A0A224AVD6",
+                    "uniprot": "UPI003A64A6A9",
                     "genpept": "XCX13212.1"
                 }
             }
         ],
         "databaseIds": {
-            "uniprot": "A0A224AU14",
+            "uniprot": "UPI0037A34D79",
             "genpept": "XCX13213.1"
         },
         "cofactors": {
