@@ -6233,6 +6233,28 @@
       "reaction_description":"Oxidative coupling of a cysteine residue to the phenyl ring (C-S bond formation)",
       "status":"active",
       "tailoring":"Other"
+    },
+    "MITE0000289":{
+      "accession":"MITE0000289",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Eukaryota",
+      "enzyme_description":"N-Methyltransferase",
+      "enzyme_ids":{
+        "genpept":"EED49429.1",
+        "mibig":"BGC0000627",
+        "uniprot":"UPI00018F617E"
+      },
+      "enzyme_name":"UstM",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Aspergillus flavus NRRL3357",
+      "phylum":"Dikarya",
+      "reaction_description":"N-methylation of N-desmethylustiloxin F to ustiloxin F",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.23"
