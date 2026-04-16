@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Cytochrome P450",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,46 @@
     ],
     "enzyme": {
         "name": "AspB",
-        "databaseIds": {
-            "uniprot": "",
-            "genpept": "WP_030881046"
-        },
+        "description": "Cytochrome P450",
         "references": [
-            "doi:"
-        ]
+            "doi:10.1021/acs.orglett.9b02666"
+        ],
+        "databaseIds": {
+            "uniprot": "A0ACD6BAV5"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Biaryl bond formation",
+                "Oxidation"
+            ],
+            "description": "tryptophan dimerization",
+            "reactionSMARTS": "[#6:1]1:[#6:19]:[#6:18]2:[#6:4](:[#7:5]:[#6:6]:[#6:7]:2-[#6:8]-[#6:21]2-[#6:16](=[#8:17])-[#7:15]3-[#6:20](-[#6:12]-[#6:13]-[#6:14]-3)-[#6:10](=[#8:11])-[#7:9]-2):[#6:3]:[#6:2]:1>>[#6:1]1:[#6:19]:[#6:18]2:[#6:4](:[#7:5](-[#6:2]3:[#6:3]:[#6:4]4:[#6:18](:[#6:19]:[#6:1]:3):[#6:7](-[#6:8]-[#6:21]3-[#6:16](=[#8:17])-[#7:15]5-[#6:20](-[#6:12]-[#6:13]-[#6:14]-5)-[#6:10](=[#8:11])-[#7:9]-3):[#6:6]:[#7:5]:4):[#6:6]:[#6:7]:2-[#6:8]-[#6:21]2-[#6:16](=[#8:17])-[#7:15]3-[#6:20](-[#6:12]-[#6:13]-[#6:14]-3)-[#6:10](=[#8:11])-[#7:9]-2):[#6:3]:[#6:2]:1",
             "reactions": [
                 {
+                    "substrate": "O=C1NC(Cc2c[nH]c3ccccc23)C(=O)N2CCCC12",
                     "products": [
-                        ""
-                    ]
+                        "O=C1NC(Cc2c[nH]c3cc(-n4cc(CC5NC(=O)C6CCCN6C5=O)c5ccccc54)ccc23)C(=O)N2CCCC12"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Inference from genomic data and chemical structure",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acs.orglett.9b02666"
+                ]
+            }
         }
     ]
 }
