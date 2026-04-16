@@ -1496,6 +1496,22 @@
         "mite_accession":"MITE0000287",
         "mite_url":"https://bioregistry.io/mite:MITE0000287",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Cytochrome P450",
+        "enzyme_ids":{
+          "genpept":"EED49415.1",
+          "mibig":"BGC0000627",
+          "uniprot":"B8NM64"
+        },
+        "enzyme_name":"UstC",
+        "enzyme_refs":[
+          "doi:10.1002/anie.201602611"
+        ],
+        "enzyme_tailoring":"Other",
+        "mite_accession":"MITE0000288",
+        "mite_url":"https://bioregistry.io/mite:MITE0000288",
+        "status":"active"
       }
     ],
     "BGC0000653":[
