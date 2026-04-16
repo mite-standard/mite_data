@@ -1,0 +1,55 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-16",
+            "contributors": [
+                "0000-0001-5730-3326"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "SCO6272",
+        "description": "monooxygenase",
+        "references": [
+            "doi:10.1039/C2SC20410J"
+        ],
+        "databaseIds": {
+            "uniprot": "Q9EX55",
+            "genpept": "CAC22143.1",
+            "mibig": "BGC0000038"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Monooxygenation"
+            ],
+            "description": "Catalyse an monooxygenation reaction from compound 4 to compound 5 in the biosynthesis of coelimycin P1 (Scheme 1)",
+            "reactionSMARTS": "[#6:1]-[#6:2]=[#6:3]-[#6:4]=[#6:5]-[#6:6]=[#6:7]-[#6@:8](-[#6:10]=[#6:11]-[#6:12]-[#6:13]-[#7:14])\\[#8:9]>>[#6:1]-[#6:2]=[#6:3]-[#6:4]=[#6:5]-[#6:6]1-[#6:7](-[#6@:8](-[#6:10]=[#6:11]-[#6:12]-[#6:13]-[#7:14])\\[#8:9])-[#8]-1",
+            "reactions": [
+                {
+                    "substrate": "C/C=C/C=C/C=C/[C@@H](O)/C=C\\CCN",
+                    "products": [
+                        "CC=CC=CC1OC1[C@@H](O)C=CCCN"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1039/C2SC20410J"
+                ]
+            }
+        }
+    ]
+}
