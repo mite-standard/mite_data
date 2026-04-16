@@ -16,29 +16,40 @@
     ],
     "enzyme": {
         "name": "SCO6281",
+        "description": "monooxygenase",
+        "references": [
+            "doi:10.1039/C2SC20410J"
+        ],
         "databaseIds": {
             "uniprot": "Q93S08",
-            "genpept": ""
-        },
-        "references": [
-            "doi:"
-        ]
+            "genpept": "CAC37882.1",
+            "mibig": "BGC0000038"
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Monooxygenation"
+            ],
+            "description": "Possibly carry out the oxygenation of compound 7 to compound 8 in the biosynthesis of coelimycin P1 (Scheme 1)",
+            "reactionSMARTS": "[#6:1]-[#6:2]=[#6:3]-[#6:4]1-[#6:6](-[#6:7]2-[#6:9](-[#6@:10](-[#6:12]=[#6:13]-[#6:14]-[#6:15]-[#7:16])\\[#8:11])-[#8:8]-2)-[#8:5]-1>>[#6:12]1=[#6:13]-[#6:14]-[#6:15]-[#7:16]-[#6:10]-1(-[#6:9]1-[#6:7](-[#6:6]2-[#6:4](-[#6:3]=[#6:2]-[#6:1])-[#8:5]-2)-[#8:8]-1)-[#8:11]",
             "reactions": [
                 {
+                    "substrate": "C/C=C/C1OC1C1OC1[C@@H](O)/C=C\\CCN",
                     "products": [
-                        ""
-                    ]
+                        "CC=CC1OC1C1OC1C1(O)C=CCCN1"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1039/C2SC20410J"
+                ]
+            }
         }
     ]
 }
