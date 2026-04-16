@@ -6189,6 +6189,28 @@
       "reaction_description":"Conversion of ustiloxin H to its oxime-derivative through two sequential N-hydroxylations followed by a decarboxylative dehydration",
       "status":"active",
       "tailoring":"Decarboxylation|Dehydration|Hydroxylation"
+    },
+    "MITE0000287":{
+      "accession":"MITE0000287",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD|NADP",
+      "domain":"Eukaryota",
+      "enzyme_description":"Flavin-containing monooxygenase",
+      "enzyme_ids":{
+        "genpept":"EED49414.1",
+        "mibig":"BGC0000627",
+        "uniprot":"B8NM63"
+      },
+      "enzyme_name":"UstF1",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Aspergillus flavus (strain ATCC 200026 / FGSC A1120 / IAM 13836 / NRRL 3357 / JCM 12722 / SRRC 167)",
+      "phylum":"Dikarya",
+      "reaction_description":"oxidation of the S to S=O",
+      "status":"active",
+      "tailoring":"Oxidation"
     }
   },
   "version_mite_data":"1.23"

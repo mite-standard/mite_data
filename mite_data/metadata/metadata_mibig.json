@@ -1480,6 +1480,22 @@
         "mite_accession":"MITE0000286",
         "mite_url":"https://bioregistry.io/mite:MITE0000286",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Flavin-containing monooxygenase",
+        "enzyme_ids":{
+          "genpept":"EED49414.1",
+          "mibig":"BGC0000627",
+          "uniprot":"B8NM63"
+        },
+        "enzyme_name":"UstF1",
+        "enzyme_refs":[
+          "doi:10.1002/anie.201602611"
+        ],
+        "enzyme_tailoring":"Oxidation",
+        "mite_accession":"MITE0000287",
+        "mite_url":"https://bioregistry.io/mite:MITE0000287",
+        "status":"active"
       }
     ],
     "BGC0000653":[
