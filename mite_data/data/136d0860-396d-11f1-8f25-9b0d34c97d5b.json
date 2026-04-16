@@ -16,29 +16,40 @@
     ],
     "enzyme": {
         "name": "SCO6279",
+        "description": "aminotransferase",
+        "references": [
+            "doi:10.1039/C2SC20410J"
+        ],
         "databaseIds": {
             "uniprot": "Q93S10",
-            "genpept": ""
-        },
-        "references": [
-            "doi:"
-        ]
+            "genpept": "CAC37880.1",
+            "mibig": "BGC0000038"
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Amination"
+            ],
+            "description": "Possibly carry out the amination reation from compound 3 to compound 4 in the biosynthesis of coelimycin P1 (Scheme 1)",
+            "reactionSMARTS": "[#8]=[#6:2]-[#6:3]-[#6:4]=[#6:5]-[#6@@:7](-[#6:8]=[#6:9]-[#6:10]=[#6:11]-[#6:12]=[#6:13]-[#6:14])\\[#8:6]>>[#7]-[#6:2]-[#6:3]-[#6:4]=[#6:5]-[#6@@:7](-[#6:8]=[#6:9]-[#6:10]=[#6:11]-[#6:12]=[#6:13]-[#6:14])\\[#8:6]",
             "reactions": [
                 {
+                    "substrate": "C/C=C/C=C/C=C/[C@@H](O)/C=C\\CC=O",
                     "products": [
-                        ""
-                    ]
+                        "CC=CC=CC=C[C@@H](O)C=CCCN"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure"
+                ],
+                "references": [
+                    "doi:10.1039/C2SC20410J"
+                ]
+            }
         }
     ]
 }
