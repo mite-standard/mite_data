@@ -6124,6 +6124,27 @@
       "reaction_description":"Conversion of a 10,11-epoxide polyene intermediate into a tetrahydrofuran (2,5-dihydrofuran) derivative.",
       "status":"active",
       "tailoring":"Cyclization|Ring expansion"
+    },
+    "MITE0000284":{
+      "accession":"MITE0000284",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Zn",
+      "cofactors_organic":"FAD|NADP",
+      "domain":"Eukaryota",
+      "enzyme_description":"Flavin-containing monooxygenase (FMO)",
+      "enzyme_ids":{
+        "genpept":"OQD66318.1",
+        "uniprot":"A0A1V6NNK5"
+      },
+      "enzyme_name":"DovC",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Penicillium decumbens",
+      "phylum":"Dikarya",
+      "reaction_description":"Regioselective epoxidation at the C10–C11 position of the deoxyverrucosidin polyene backbone.",
+      "status":"active",
+      "tailoring":"Monooxygenation|Oxidation"
     }
   },
   "version_mite_data":"1.23"
