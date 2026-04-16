@@ -6039,6 +6039,26 @@
       "reaction_description":"Oxidative C–Se bond formation between hercynine and SeGlcNAc, yielding a selenoxide intermediate (GlcNAc-SEN=O) that spontaneously undergoes selenoxide elimination to produce selenoneine and 2-acetamidoglucal (2AG).",
       "status":"active",
       "tailoring":"Other"
+    },
+    "MITE0000280":{
+      "accession":"MITE0000280",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Aminopeptidase",
+      "enzyme_ids":{
+        "genpept":"XCX13201.1"
+      },
+      "enzyme_name":"RufB",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces atratus",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Cleavage of BytA to afford 3-NO2-Tyr",
+      "status":"active",
+      "tailoring":"Hydrolysis"
     }
   },
   "version_mite_data":"1.23"
