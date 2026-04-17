@@ -6466,6 +6466,27 @@
       "reaction_description":"Phe β-hydroxylation tailoring enzyme in atrovimycin biosynthesis",
       "status":"active",
       "tailoring":"Hydroxylation"
+    },
+    "MITE0000300":{
+      "accession":"MITE0000300",
+      "class_name":"Bacilli",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Multinuclear nonheme Fe-dependent oxidative enzyme",
+      "enzyme_ids":{
+        "genpept":"RRN73831.1",
+        "uniprot":"UPI000F64476A"
+      },
+      "enzyme_name":"PbsC",
+      "family":"Bacillaceae",
+      "kingdom":"Bacillati",
+      "order":"Bacillales",
+      "organism":"Peribacillus simplex",
+      "phylum":"Bacillota",
+      "reaction_description":"Hydroxylation of Phe8 and Phe10 residues in PbsA3 precursor peptide",
+      "status":"active",
+      "tailoring":"Hydroxylation"
     }
   },
   "version_mite_data":"1.23"
