@@ -6384,6 +6384,27 @@
       "reaction_description":"Protoilludene 13-hydroxylation in the biosynthesis of armillyl orsellinate-type sesquiterpenoids",
       "status":"active",
       "tailoring":"Hydroxylation|Monooxygenation"
+    },
+    "MITE0000296":{
+      "accession":"MITE0000296",
+      "class_name":"Cyanophyceae",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Halogenase",
+      "enzyme_ids":{
+        "genpept":"ARU81117.1",
+        "uniprot":"K7S6E6"
+      },
+      "enzyme_name":"CylC",
+      "family":"Nostocaceae",
+      "kingdom":"Bacillati",
+      "order":"Nostocales",
+      "organism":"Cylindrospermum licheniforme UTEX B 2014",
+      "phylum":"Cyanobacteriota",
+      "reaction_description":"halogenates sp3-carbons of ACP-bound fatty acids",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.23"
