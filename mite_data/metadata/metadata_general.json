@@ -6277,6 +6277,27 @@
       "reaction_description":"PtmT3, a type I diterpene synthase, was determined to be a (16R)-ent-kauran-16-ol synthase that converts ent-copalyl diphosphate to (16R)-ent-kauran-16-ol",
       "status":"active",
       "tailoring":"Cyclization"
+    },
+    "MITE0000291":{
+      "accession":"MITE0000291",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"O-Glycosyltransferase",
+      "enzyme_ids":{
+        "genpept":"AAL14252.1",
+        "uniprot":"Q939Q6"
+      },
+      "enzyme_name":"JadS",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces venezuelae (strain ATCC 10712 / CBS 650.69 / DSM 40230 / JCM 4526 / NBRC 13096 / PD 04745)",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Transfer of L-digitoxose to the aglycone of jadomycin B from an NDP-L-digitoxose.",
+      "status":"active",
+      "tailoring":"Glycosylation"
     }
   },
   "version_mite_data":"1.23"
