@@ -241,6 +241,24 @@
         "status":"active"
       }
     ],
+    "BGC0000072":[
+      {
+        "enzyme_description":"Cytochrome P450",
+        "enzyme_ids":{
+          "genpept":"AIT55258.1",
+          "mibig":"BGC0000072",
+          "uniprot":"A0A097I351"
+        },
+        "enzyme_name":"GulG",
+        "enzyme_refs":[
+          "doi:10.1002/chem.201404291"
+        ],
+        "enzyme_tailoring":"Hydroxylation",
+        "mite_accession":"MITE0000303",
+        "mite_url":"https://bioregistry.io/mite:MITE0000303",
+        "status":"active"
+      }
+    ],
     "BGC0000093":[
       {
         "enzyme_description":"O-methyltransferase",
