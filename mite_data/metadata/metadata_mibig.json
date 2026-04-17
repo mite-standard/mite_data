@@ -2162,6 +2162,22 @@
         "mite_accession":"MITE0000290",
         "mite_url":"https://bioregistry.io/mite:MITE0000290",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Cytochrome P450",
+        "enzyme_ids":{
+          "genpept":"ACO31280.1",
+          "mibig":"BGC0001140",
+          "uniprot":"D8L2V0"
+        },
+        "enzyme_name":"PtmO5",
+        "enzyme_refs":[
+          "doi:10.1021/jacs.6b09818"
+        ],
+        "enzyme_tailoring":"Hydroxylation|Oxidation",
+        "mite_accession":"MITE0000302",
+        "mite_url":"https://bioregistry.io/mite:MITE0000302",
+        "status":"active"
       }
     ],
     "BGC0001168":[
