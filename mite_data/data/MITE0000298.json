@@ -1,0 +1,63 @@
+{
+    "accession": "MITE0000298",
+    "status": "active",
+    "comment": "Pathway proceeds from deoxyaspergillic acid formed by AsaC, to aspergillic acid via hydroxylation by AsaD, and further to hydroxyaspergillic acid through AsaB. A defining property of aspergillic acid is its ability to chelate ferric iron (Fe3+). See also MIBiG entry BGC0001516)",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-03-25",
+            "contributors": [
+                "0000-0003-3141-732X"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423",
+                "0000-0001-5863-7248"
+            ],
+            "comment": "New entry. Reviewer 2 added cofactor information - reaction cannot work without iron."
+        }
+    ],
+    "enzyme": {
+        "name": "AsaB",
+        "description": "Hydroxylase",
+        "references": [
+            "doi:10.1016/j.fgb.2018.04.009",
+            "doi:10.1038/s41598-025-22432-1",
+            "doi:10.3389/ffunb.2022.1029195"
+        ],
+        "databaseIds": {
+            "uniprot": "B8N0E7"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "Hydroxylation of aspergillic acid to hydroxyaspergillic acid",
+            "reactionSMARTS": "[#6:1]-[#6:2](-[#6:4]-[#6:5]1:[#6:15](=[#8:16]):[#7:13](-[#8:14]):[#6:8](-[#6:9](-[#6:11]-[#6:12])-[#6:10]):[#6:7]:[#7:6]:1)-[#6:3]>>[#6:1]-[#6:2](-[#6:4]-[#6:5]1:[#6:15](=[#8:16]):[#7:13](-[#8:14]):[#6:8](-[#6:9](-[#6:11]-[#6:12])(-[#8])-[#6:10]):[#6:7]:[#7:6]:1)-[#6:3]",
+            "reactions": [
+                {
+                    "substrate": "CCC(C)c1cnc(CC(C)C)c(=O)n1O",
+                    "products": [
+                        "CCC(C)(O)c1cnc(CC(C)C)c(=O)n1O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Aliphatic hydroxylation - Hydroxylation of aspergillic acid to hydroxyaspergillic acid"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1016/j.fgb.2018.04.009"
+                ]
+            }
+        }
+    ]
+}
