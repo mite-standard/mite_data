@@ -6298,6 +6298,27 @@
       "reaction_description":"Transfer of L-digitoxose to the aglycone of jadomycin B from an NDP-L-digitoxose.",
       "status":"active",
       "tailoring":"Glycosylation"
+    },
+    "MITE0000292":{
+      "accession":"MITE0000292",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"Flavin mononucleotide",
+      "domain":"Bacteria",
+      "enzyme_description":"FMN-dependent reductase",
+      "enzyme_ids":{
+        "genpept":"AHL46723.1",
+        "uniprot":"W8QDG4"
+      },
+      "enzyme_name":"RslO5",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces bottropensis",
+      "phylum":"Actinomycetota",
+      "reaction_description":"FMN-dependent reductive epoxide opening of intermediate from the rishirilide biosynthesis pathway.",
+      "status":"active",
+      "tailoring":"Reduction"
     }
   },
   "version_mite_data":"1.23"
