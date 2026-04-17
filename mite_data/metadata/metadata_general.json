@@ -6487,6 +6487,27 @@
       "reaction_description":"Hydroxylation of Phe8 and Phe10 residues in PbsA3 precursor peptide",
       "status":"active",
       "tailoring":"Hydroxylation"
+    },
+    "MITE0000301":{
+      "accession":"MITE0000301",
+      "class_name":"Not found",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD",
+      "domain":"Bacteria",
+      "enzyme_description":"Halogenase",
+      "enzyme_ids":{
+        "genpept":"AEM44263.1",
+        "uniprot":"A0ACD6B8K5"
+      },
+      "enzyme_name":"FasV",
+      "family":"Not found",
+      "kingdom":"environmental samples",
+      "order":"Not found",
+      "organism":"uncultured bacterium",
+      "phylum":"Not found",
+      "reaction_description":"FasV catalyzes five successive chlorinations in the biosynthesis of naphthacemycin B13.",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.23"
