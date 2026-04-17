@@ -6362,6 +6362,28 @@
       "reaction_description":"Reduction of a ketone intermediate to a secondary alcohol in the leporin biosynthetic pathway.",
       "status":"active",
       "tailoring":"Reduction"
+    },
+    "MITE0000295":{
+      "accession":"MITE0000295",
+      "class_name":"Basidiomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"Heme",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"QJQ03971.1",
+        "mibig":"BGC0002445",
+        "uniprot":"A0A7S5T5B1"
+      },
+      "enzyme_name":"CYPArm2",
+      "family":"Agaricomycetes",
+      "kingdom":"Fungi",
+      "order":"Agaricomycotina",
+      "organism":"Armillaria gallica",
+      "phylum":"Dikarya",
+      "reaction_description":"Protoilludene 13-hydroxylation in the biosynthesis of armillyl orsellinate-type sesquiterpenoids",
+      "status":"active",
+      "tailoring":"Hydroxylation|Monooxygenation"
     }
   },
   "version_mite_data":"1.23"
