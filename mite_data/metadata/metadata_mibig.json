@@ -2145,6 +2145,25 @@
         "status":"active"
       }
     ],
+    "BGC0001140":[
+      {
+        "enzyme_description":"type I diterpene synthase",
+        "enzyme_ids":{
+          "genpept":"ACO31279.1",
+          "mibig":"BGC0001140",
+          "uniprot":"D8L2U9"
+        },
+        "enzyme_name":"PtmT3",
+        "enzyme_refs":[
+          "doi:10.1021/jacs.6b09818",
+          "doi:10.1021/acs.biochem.5c00282"
+        ],
+        "enzyme_tailoring":"Cyclization",
+        "mite_accession":"MITE0000290",
+        "mite_url":"https://bioregistry.io/mite:MITE0000290",
+        "status":"active"
+      }
+    ],
     "BGC0001168":[
       {
         "enzyme_description":"Leucyl/Phenylalanine-tRNA-protein transferase",

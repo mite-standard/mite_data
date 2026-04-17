@@ -6255,6 +6255,28 @@
       "reaction_description":"N-methylation of N-desmethylustiloxin F to ustiloxin F",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000290":{
+      "accession":"MITE0000290",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"type I diterpene synthase",
+      "enzyme_ids":{
+        "genpept":"ACO31279.1",
+        "mibig":"BGC0001140",
+        "uniprot":"D8L2U9"
+      },
+      "enzyme_name":"PtmT3",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces platensis",
+      "phylum":"Actinomycetota",
+      "reaction_description":"PtmT3, a type I diterpene synthase, was determined to be a (16R)-ent-kauran-16-ol synthase that converts ent-copalyl diphosphate to (16R)-ent-kauran-16-ol",
+      "status":"active",
+      "tailoring":"Cyclization"
     }
   },
   "version_mite_data":"1.23"
