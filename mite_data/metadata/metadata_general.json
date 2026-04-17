@@ -6530,6 +6530,28 @@
       "reaction_description":"PtmO5, a cytochrome P450 monooxygenase, catalyzes the 11S,16S-ether ring formation in Platensimycin biosynthesis",
       "status":"active",
       "tailoring":"Hydroxylation|Oxidation"
+    },
+    "MITE0000303":{
+      "accession":"MITE0000303",
+      "class_name":"Myxococcia",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"AIT55258.1",
+        "mibig":"BGC0000072",
+        "uniprot":"A0A097I351"
+      },
+      "enzyme_name":"GulG",
+      "family":"Cystobacterineae",
+      "kingdom":"Pseudomonadati",
+      "order":"Myxococcales",
+      "organism":"Pyxidicoccus fallax",
+      "phylum":"Myxococcota",
+      "reaction_description":"Hydroxylation reaction towards gulmirecin.",
+      "status":"active",
+      "tailoring":"Hydroxylation"
     }
   },
   "version_mite_data":"1.23"
