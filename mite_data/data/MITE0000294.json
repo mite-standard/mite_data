@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000294",
     "status": "active",
     "comment": "Reduction of keto group to alcohol",
     "changelog": [
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0003-4819-2251"
             ],
-            "comment": "Added cofactor information and minor textual details"
+            "comment": "New entry. Reviewer 1 added cofactor information and minor textual details."
         }
     ],
     "enzyme": {
