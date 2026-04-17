@@ -16,7 +16,7 @@
     ],
     "enzyme": {
         "name": "PtmO5",
-        "description": "Cytochrome P450 monooxygenase",
+        "description": "Cytochrome P450",
         "references": [
             "doi:10.1021/jacs.6b09818"
         ],
