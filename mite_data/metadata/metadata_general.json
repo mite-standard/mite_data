@@ -6552,6 +6552,27 @@
       "reaction_description":"Hydroxylation reaction towards gulmirecin.",
       "status":"active",
       "tailoring":"Hydroxylation"
+    },
+    "MITE0000304":{
+      "accession":"MITE0000304",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"QBK15050.1",
+        "uniprot":"A0A481WNM6"
+      },
+      "enzyme_name":"TraB",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Penicillium crustosum",
+      "phylum":"Dikarya",
+      "reaction_description":"Cytochrome P450 mediated C-H oxidation",
+      "status":"active",
+      "tailoring":"Hydroxylation|Oxidation"
     }
   },
   "version_mite_data":"1.23"
