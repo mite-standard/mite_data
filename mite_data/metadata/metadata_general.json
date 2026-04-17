@@ -6594,6 +6594,27 @@
       "reaction_description":"Reduction of an aldehyde to a hydroxyl moiety",
       "status":"active",
       "tailoring":"Reduction"
+    },
+    "MITE0000306":{
+      "accession":"MITE0000306",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"CDM37407.1",
+        "uniprot":"W6R6G5"
+      },
+      "enzyme_name":"RusF",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Penicillium roqueforti (strain FM164)",
+      "phylum":"Dikarya",
+      "reaction_description":"Oxidation of hydroxyl to ketone",
+      "status":"active",
+      "tailoring":"Dehydrogenation|Oxidation"
     }
   },
   "version_mite_data":"1.23"
