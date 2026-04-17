@@ -3264,6 +3264,24 @@
         "status":"active"
       }
     ],
+    "BGC0002445":[
+      {
+        "enzyme_description":"Cytochrome P450",
+        "enzyme_ids":{
+          "genpept":"QJQ03971.1",
+          "mibig":"BGC0002445",
+          "uniprot":"A0A7S5T5B1"
+        },
+        "enzyme_name":"CYPArm2",
+        "enzyme_refs":[
+          "doi:10.1002/cbic.202300179"
+        ],
+        "enzyme_tailoring":"Hydroxylation|Monooxygenation",
+        "mite_accession":"MITE0000295",
+        "mite_url":"https://bioregistry.io/mite:MITE0000295",
+        "status":"active"
+      }
+    ],
     "BGC0002514":[
       {
         "enzyme_description":"Acetyltransferase",
