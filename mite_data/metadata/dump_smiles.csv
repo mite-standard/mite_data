@@ -393,3 +393,4 @@
 391,MITE0000291.reaction1.example1,CC[C@H](C)[C@H]1C(=O)O[C@H]2c3cc(C)cc(O)c3C3=C(C(=O)c4c(O)cccc4C3=O)N12,CC[C@H](C)[C@H]1C(=O)O[C@H]2c3cc(C)cc(O)c3C3=C(C(=O)c4c(O[C@H]5C[C@@H](O)[C@@H](O)[C@H](C)O5)cccc4C3=O)N12
 392,MITE0000292.reaction1.example1,CC(C)CCC(=O)C12OC1(C)C(=O)c1cc3cccc(O)c3c(O)c1C2=O,CC(C)CCC(=O)C1(O)C(=O)c2c(cc3cccc(O)c3c2O)C(=O)C1C
 393,MITE0000293.reaction1.example1,CCCCCc1cccc(O)c1CO,CCCC[C@H](O)c1cccc(O)c1CO
+394,MITE0000294.reaction1.example1,C/C=C/C=C/CCC[C@@H](C)C(=O)c1c(O)c(-c2ccccc2)c[nH]c1=O,CC=CC=CCCC[C@@H](C)C(O)c1c(O)c(-c2ccccc2)c[nH]c1=O

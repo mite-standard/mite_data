@@ -2432,6 +2432,24 @@
         "status":"active"
       }
     ],
+    "BGC0001445":[
+      {
+        "enzyme_description":"Short chain dehydrogenase/reductase",
+        "enzyme_ids":{
+          "genpept":"EED49869.1",
+          "mibig":"BGC0001445",
+          "uniprot":"B8NJH0"
+        },
+        "enzyme_name":"LepF",
+        "enzyme_refs":[
+          "doi:10.1038/nature23882"
+        ],
+        "enzyme_tailoring":"Reduction",
+        "mite_accession":"MITE0000294",
+        "mite_url":"https://bioregistry.io/mite:MITE0000294",
+        "status":"active"
+      }
+    ],
     "BGC0001476":[
       {
         "enzyme_description":"Oxidoreductase",
