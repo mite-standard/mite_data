@@ -10,9 +10,10 @@
                 "0000-0002-3947-4444"
             ],
             "reviewers": [
-                "0000-0002-9747-3423"
+                "0000-0002-9747-3423",
+                "0000-0001-6534-6609"
             ],
-            "comment": "Add new MNIO enzyme PbsC (+PbsD partner)"
+            "comment": "New entry. Added new MNIO enzyme PbsC (+PbsD partner). Reviewer 2 replaced retired UniProtKB IDs with UniParc Ids."
         }
     ],
     "enzyme": {
@@ -26,15 +27,14 @@
                 "name": "PbsD",
                 "description": "RRE-containing partner protein",
                 "databaseIds": {
-                    "uniprot": "A0A426H1Z1",
+                    "uniprot": "UPI000F633073",
                     "genpept": "RRN73830.1"
                 }
             }
         ],
         "databaseIds": {
-            "uniprot": "A0A3R8NIS4",
-            "genpept": "RRN73831.1",
-            "mibig": "new0000058"
+            "uniprot": "UPI000F64476A",
+            "genpept": "RRN73831.1"
         },
         "cofactors": {
             "inorganic": [
