@@ -6340,6 +6340,28 @@
       "reaction_description":"Hydroxylation of an intermediate from the biosynthesis of Annullatin D.",
       "status":"active",
       "tailoring":"Hydroxylation|Monooxygenation"
+    },
+    "MITE0000294":{
+      "accession":"MITE0000294",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"NADP",
+      "domain":"Eukaryota",
+      "enzyme_description":"Short chain dehydrogenase/reductase",
+      "enzyme_ids":{
+        "genpept":"EED49869.1",
+        "mibig":"BGC0001445",
+        "uniprot":"B8NJH0"
+      },
+      "enzyme_name":"LepF",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Aspergillus flavus (strain ATCC 200026 / FGSC A1120 / IAM 13836 / NRRL 3357 / JCM 12722 / SRRC 167)",
+      "phylum":"Dikarya",
+      "reaction_description":"Reduction of a ketone intermediate to a secondary alcohol in the leporin biosynthetic pathway.",
+      "status":"active",
+      "tailoring":"Reduction"
     }
   },
   "version_mite_data":"1.23"
