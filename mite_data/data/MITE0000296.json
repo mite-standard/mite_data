@@ -1,0 +1,61 @@
+{
+    "accession": "MITE0000296",
+    "status": "active",
+    "comment": "Specific chlorination acting on acyl-carrier bound substrates",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-03-25",
+            "contributors": [
+                "0009-0004-7657-0138"
+            ],
+            "reviewers": [
+                "0000-0002-8323-5416"
+            ],
+            "comment": "updated cofactor information and description"
+        }
+    ],
+    "enzyme": {
+        "name": "CylC",
+        "description": "Halogenase",
+        "references": [
+            "doi:10.1021/acs.biochem.4c00720"
+        ],
+        "databaseIds": {
+            "uniprot": "K7S6E6",
+            "genpept": "ARU81117.1"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "halogenates sp3-carbons of ACP-bound fatty acids",
+            "reactionSMARTS": "[#6:11]-[#6:10]-[#6:9]-[#6:8]-[#6:7]-[#6:6]-[#6:5]-[#6:4]-[#6:3]-[#6:2](=[O:12])-[#16:1]-[$([#1,*])]>>[#6:11]-[#6:10]-[#6:9]-[#6:8]-[#6@@H:7](Cl)-[#6:6]-[#6:5]-[#6:4]-[#6:3]-[#6:2](=[O:12])-[#16:1]-[$([#1,*])]",
+            "reactions": [
+                {
+                    "substrate": "*SC(=O)CCCCCCCCC",
+                    "products": [
+                        "*SC(=O)CCCC[C@H](Cl)CCCC"
+                    ],
+                    "isIntermediate": false,
+                    "description": "halogenates sp3-carbons of ACP-bound fatty acids"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1021/acs.biochem.4c00720"
+                ]
+            }
+        }
+    ]
+}
