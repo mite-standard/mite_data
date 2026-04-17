@@ -6508,6 +6508,28 @@
       "reaction_description":"FasV catalyzes five successive chlorinations in the biosynthesis of naphthacemycin B13.",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000302":{
+      "accession":"MITE0000302",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"ACO31280.1",
+        "mibig":"BGC0001140",
+        "uniprot":"D8L2V0"
+      },
+      "enzyme_name":"PtmO5",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces platensis",
+      "phylum":"Actinomycetota",
+      "reaction_description":"PtmO5, a cytochrome P450 monooxygenase, catalyzes the 11S,16S-ether ring formation in Platensimycin biosynthesis",
+      "status":"active",
+      "tailoring":"Hydroxylation|Oxidation"
     }
   },
   "version_mite_data":"1.23"
