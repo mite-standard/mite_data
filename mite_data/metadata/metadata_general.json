@@ -6445,6 +6445,27 @@
       "reaction_description":"Hydroxylation of aspergillic acid to hydroxyaspergillic acid",
       "status":"active",
       "tailoring":"Hydroxylation"
+    },
+    "MITE0000299":{
+      "accession":"MITE0000299",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"UWU44317.1",
+        "uniprot":"UPI001C228B40"
+      },
+      "enzyme_name":"avm28",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces atrovirens",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Phe β-hydroxylation tailoring enzyme in atrovimycin biosynthesis",
+      "status":"active",
+      "tailoring":"Hydroxylation"
     }
   },
   "version_mite_data":"1.23"
