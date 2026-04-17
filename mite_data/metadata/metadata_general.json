@@ -6319,6 +6319,27 @@
       "reaction_description":"FMN-dependent reductive epoxide opening of intermediate from the rishirilide biosynthesis pathway.",
       "status":"active",
       "tailoring":"Reduction"
+    },
+    "MITE0000293":{
+      "accession":"MITE0000293",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"Heme",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"CDM34454.1",
+        "uniprot":"W6QJR1"
+      },
+      "enzyme_name":"AnuE",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Penicillium roqueforti (strain FM164)",
+      "phylum":"Dikarya",
+      "reaction_description":"Hydroxylation of an intermediate from the biosynthesis of Annullatin D.",
+      "status":"active",
+      "tailoring":"Hydroxylation|Monooxygenation"
     }
   },
   "version_mite_data":"1.23"
