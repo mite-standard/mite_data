@@ -1,7 +1,7 @@
 {
     "accession": "MITE0000298",
     "status": "active",
-    "comment": "Pathway proceeds from deoxyaspergillic acid formed by AsaC, to aspergillic acid via hydroxylation by AsaD, and further to hydroxyaspergillic acid through AsaB. A defining property of aspergillic acid is its ability to chelate ferric iron (Fe3+)",
+    "comment": "Pathway proceeds from deoxyaspergillic acid formed by AsaC, to aspergillic acid via hydroxylation by AsaD, and further to hydroxyaspergillic acid through AsaB. A defining property of aspergillic acid is its ability to chelate ferric iron (Fe3+). See also MIBiG entry BGC0001516)",
     "changelog": [
         {
             "version": "1",
@@ -10,9 +10,10 @@
                 "0000-0003-3141-732X"
             ],
             "reviewers": [
-                "0000-0002-9747-3423"
+                "0000-0002-9747-3423",
+                "0000-0001-5863-7248"
             ],
-            "comment": "New entry."
+            "comment": "New entry. Reviewer 2 added cofactor information - reaction cannot work without iron."
         }
     ],
     "enzyme": {
@@ -24,9 +25,12 @@
             "doi:10.3389/ffunb.2022.1029195"
         ],
         "databaseIds": {
-            "uniprot": "B8N0E7",
-            "genpept": "EED55030.1",
-            "mibig": "BGC0001516"
+            "uniprot": "B8N0E7"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ]
         }
     },
     "reactions": [
