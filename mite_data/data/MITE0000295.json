@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000295",
     "status": "active",
     "comment": "Cytochrome P450 with monooxygenase activity",
     "changelog": [
@@ -12,12 +12,12 @@
             "reviewers": [
                 "0000-0003-4819-2251"
             ],
-            "comment": "Added MIBiG ID, minor textual additions."
+            "comment": "New entry. Reviewer 1 added MIBiG ID, minor textual additions."
         }
     ],
     "enzyme": {
         "name": "CYPArm2",
-        "description": "P450 Monooxygenase",
+        "description": "Cytochrome P450",
         "references": [
             "doi:10.1002/cbic.202300179"
         ],
