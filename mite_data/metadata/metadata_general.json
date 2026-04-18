@@ -6656,6 +6656,28 @@
       "reaction_description":"Hydroxylation of acyl dihydroxyphenylacetic acids.",
       "status":"active",
       "tailoring":"Hydroxylation"
+    },
+    "MITE0000309":{
+      "accession":"MITE0000309",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD",
+      "domain":"Bacteria",
+      "enzyme_description":"Oxidoreductase",
+      "enzyme_ids":{
+        "genpept":"ABI22129.1",
+        "mibig":"BGC0000422",
+        "uniprot":"B0CN23"
+      },
+      "enzyme_name":"SfmCy2",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces lavendulae",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Deamination of saframycin to give active compound.",
+      "status":"active",
+      "tailoring":"Deamination"
     }
   },
   "version_mite_data":"1.23"

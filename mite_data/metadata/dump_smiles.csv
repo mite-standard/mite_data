@@ -413,3 +413,4 @@
 411,MITE0000308.reaction1.example1,CCCCCCCC(=O)c1c(O)cc(O)cc1CC(=O)O,CCCCCCCC(=O)c1c(CC(=O)O)cc(O)c(O)c1O
 412,MITE0000308.reaction1.example2,CCCCCC(=O)c1c(O)cc(O)cc1CC(=O)O,CCCCCC(=O)c1c(CC(=O)O)cc(O)c(O)c1O
 413,MITE0000308.reaction1.example3,C[C@@H](O)CCCCCCCC(=O)c1c(O)cc(O)cc1CC(=O)O,C[C@@H](O)CCCCCCCC(=O)c1c(CC(=O)O)cc(O)c(O)c1O
+414,MITE0000309.reaction1.example1,COC1=C(C)C(=O)C2=C(C1=O)[C@@H]1[C@@H]3CC4=C(C(=O)C(OC)=C(C)C4=O)[C@H](CNC(=O)C(C)N)N3[C@@H](O)[C@H](C2)N1C.O,COC1=C(C)C(=O)C2=C(C1=O)[C@@H]1[C@@H]3CC4=C(C(=O)C(OC)=C(C)C4=O)[C@H](CNC(=O)C(C)=O)N3[C@@H](O)[C@H](C2)N1C.N
