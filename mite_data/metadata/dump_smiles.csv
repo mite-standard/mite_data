@@ -418,3 +418,4 @@
 416,MITE0000311.reaction1.example1,Cc1cc(CC(N)C(=O)O)ccc1O,Cc1cc(CC(N)C(=O)O)cc(O)c1O
 417,MITE0000311.reaction2.example1,N[C@H](C(O)=O)Cc1ccc(O)cc1,N[C@H](C(O)=O)Cc1ccc(O)c(O)c1
 418,MITE0000312.reaction1.example1,*C(=O)CCCCCCCCCCC,*C(=O)CCCCCCCCCCCCl
+419,MITE0000313.reaction1.example1,Cc1cc(O)c(CO)c2c1C(=O)Oc1c(C)c(O)c(C(=O)O)c(C)c1O2,Cc1cc(O)c(C=O)c2c1C(=O)Oc1c(C)c(O)c(C(=O)O)c(C)c1O2

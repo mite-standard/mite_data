@@ -6742,6 +6742,26 @@
       "reaction_description":"Diiron radical halogenase.",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000313":{
+      "accession":"MITE0000313",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD",
+      "domain":"Eukaryota",
+      "enzyme_description":"FAD-linked oxidoreductase (Alcohol Oxidase)",
+      "enzyme_ids":{
+        "genpept":"XRW97415.1"
+      },
+      "enzyme_name":"Dsd6",
+      "family":"Lecanoromycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Parmelia sp. 050094",
+      "phylum":"Dikarya",
+      "reaction_description":"Oxidation of the C-8 hydroxymethyl group to a formyl (aldehyde) group.",
+      "status":"active",
+      "tailoring":"Oxidation"
     }
   },
   "version_mite_data":"1.23"
