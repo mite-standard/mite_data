@@ -6678,6 +6678,27 @@
       "reaction_description":"Deamination of saframycin to give active compound.",
       "status":"active",
       "tailoring":"Deamination"
+    },
+    "MITE0000310":{
+      "accession":"MITE0000310",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD",
+      "domain":"Eukaryota",
+      "enzyme_description":"flavin-dependent monooxygenase — hydroxylase",
+      "enzyme_ids":{
+        "genpept":"KIA75686.1",
+        "uniprot":"A0A0C1BVY7"
+      },
+      "enzyme_name":"OpaC2",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Aspergillus ustus",
+      "phylum":"Dikarya",
+      "reaction_description":"Regio- and stereospecific hydroxylation at the C-3 position of the oxepin-containing quinazolinone scaffold.",
+      "status":"active",
+      "tailoring":"Hydroxylation"
     }
   },
   "version_mite_data":"1.23"
