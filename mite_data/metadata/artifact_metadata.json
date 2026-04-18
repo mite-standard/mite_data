@@ -1,9 +1,9 @@
 {
   "version": "1.23",
-  "hash_mite_prot_acc": "220c8d096ac8139e5f29798793613d000b72967d5f6fcb44e7355db285ffec4e",
-  "hash_general_summary": "347f77c9c7b883c2fb4054bddf1647ffe9d0033c3607ab74d2abbda320426a5d",
-  "summary": "a13ccea80faeaf2ab0ee02c3f9815352e19af9295ae5da1158b09f3c419f2439",
+  "hash_mite_prot_acc": "e6c842808f128428e8c589bb1c97771873b0cee955924a743babfba1a13868e2",
+  "hash_general_summary": "b8f782129bcb07528c2ffd05d73b3cc9cc433570cbe29ec8fcaf924ac8e1b9ee",
+  "summary": "5eb8a7394eed6dfe744cff288d00e325df8e90e9c94f919dccea52e3fa298fbc",
   "hash_mibig_summary": "d716f38606c1861cb5703d4d40fa914f8c4655048a0893ba365a3f1e24cc3271",
-  "smarts": "12974414de34419fb45bc532637a0cf6223713d639c2779004a02733166ff5d9",
-  "smiles": "b259081617891c42b0709b610ba2b65ba7bb61feab57fdbae63f2ff8e2a916f6"
+  "smarts": "4bdc95fe373921d54d108f51e9480aff73bc8b81ef41ce1402aad21dc1494ae4",
+  "smiles": "632012ea2bfc0386a402dadb729321b2dba28d4136a469ecd9d0b0763ae8332d"
 }

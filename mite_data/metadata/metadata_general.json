@@ -6762,6 +6762,26 @@
       "reaction_description":"Oxidation of the C-8 hydroxymethyl group to a formyl (aldehyde) group.",
       "status":"active",
       "tailoring":"Oxidation"
+    },
+    "MITE0000314":{
+      "accession":"MITE0000314",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme|NADP",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450 monooxygenase",
+      "enzyme_ids":{
+        "genpept":"XRW97419.1"
+      },
+      "enzyme_name":"Dsd3",
+      "family":"Lecanoromycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Parmelia sp. 050094",
+      "phylum":"Dikarya",
+      "reaction_description":"Oxidative cyclization (ether bond formation) and C-8 hydroxylation of a depside to a depsidone.",
+      "status":"active",
+      "tailoring":"Cyclization"
     }
   },
   "version_mite_data":"1.23"
