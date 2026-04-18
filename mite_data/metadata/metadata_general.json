@@ -6721,6 +6721,27 @@
       "reaction_description":"hydroxylating 3-Me-l-Tyr to 3-OH-5-Me-l-Tyr",
       "status":"active",
       "tailoring":"Monooxygenation"
+    },
+    "MITE0000312":{
+      "accession":"MITE0000312",
+      "class_name":"Cyanophyceae",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"NADP",
+      "domain":"Bacteria",
+      "enzyme_description":"Halogenase",
+      "enzyme_ids":{
+        "genpept":"QOV09192.1",
+        "uniprot":"UPI001881292C"
+      },
+      "enzyme_name":"NocO",
+      "family":"Nodulariaceae",
+      "kingdom":"Bacillati",
+      "order":"Nostocales",
+      "organism":"Nodularia sp. LEGE 06071",
+      "phylum":"Cyanobacteriota",
+      "reaction_description":"Diiron radical halogenase.",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.23"
