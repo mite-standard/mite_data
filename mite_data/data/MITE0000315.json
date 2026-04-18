@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000315",
     "status": "active",
     "comment": "Oxidation of syn-pimara-7,15-diene to, sequentially, syn-pimara-7,15-dien-19-ol, syn-pimara-7,15-dien-19-al, and syn-pimara-7,15-dien-19-oic acid. The same behavior with syn-stemod-13(17)-ene",
     "changelog": [
@@ -23,8 +23,7 @@
             "doi:10.1111/j.1365-313X.2010.04408.x"
         ],
         "databaseIds": {
-            "uniprot": "Q0JF01",
-            "genpept": "CAE04106.1"
+            "uniprot": "Q0JF01"
         },
         "cofactors": {
             "organic": [
