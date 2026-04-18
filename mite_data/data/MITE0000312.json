@@ -1,0 +1,65 @@
+{
+    "accession": "MITE0000312",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-13",
+            "contributors": [
+                "0000-0001-9433-5204"
+            ],
+            "reviewers": [
+                "0000-0002-8323-5416",
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 updated evidence qualifiers. Reviewer 2 added atom mapping."
+        }
+    ],
+    "enzyme": {
+        "name": "NocO",
+        "description": "Halogenase",
+        "references": [
+            "doi:10.1021/acs.biochem.4c00720"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI001881292C",
+            "genpept": "QOV09192.1"
+        },
+        "cofactors": {
+            "organic": [
+                "NADP"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Diiron radical halogenase.",
+            "reactionSMARTS": "[#6:1](-[*])(=[#8:13])-[#6:2]-[#6:3]-[#6:4]-[#6:5]-[#6:6]-[#6:7]-[#6:8]-[#6:9]-[#6:10]-[#6:11]-[#6:12]>>[#6:1](-[*])(=[#8:13])-[#6:2]-[#6:3]-[#6:4]-[#6:5]-[#6:6]-[#6:7]-[#6:8]-[#6:9]-[#6:10]-[#6:11]-[#6:12]-Cl",
+            "reactions": [
+                {
+                    "substrate": "*C(=O)CCCCCCCCCCC",
+                    "products": [
+                        "*C(=O)CCCCCCCCCCCCl"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Chlorination of NocM-tethered dodecanoyl thioester."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acs.biochem.4c00720"
+                ]
+            }
+        }
+    ]
+}
