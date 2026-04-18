@@ -1,7 +1,6 @@
 {
     "accession": "MITE0000312",
     "status": "active",
-    "comment": "Diiron radical halogenase",
     "changelog": [
         {
             "version": "1",
@@ -39,7 +38,7 @@
             "tailoring": [
                 "Halogenation"
             ],
-            "description": "Diiron radical halogenase",
+            "description": "Diiron radical halogenase.",
             "reactionSMARTS": "[#6](-[#6]-[#6]-[#6]-[#6]-[#6]-[#6]-[#6]-[#6]-[#6]-[#6]-[#6])(=[#8])-[*]>>[#6](-[#6]-[#6]-[#6]-[#6]-[#6]-[#6]-[#6]-[#6]-[#6]-[#6]-[#6]-[Cl])(=[#8])-[*]",
             "reactions": [
                 {
@@ -48,7 +47,7 @@
                         "*C(=O)CCCCCCCCCCCCl"
                     ],
                     "isIntermediate": true,
-                    "description": "Chlorination of NocM-tethered dodecanoyl thioester"
+                    "description": "Chlorination of NocM-tethered dodecanoyl thioester."
                 }
             ],
             "evidence": {
