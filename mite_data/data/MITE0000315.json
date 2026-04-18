@@ -1,0 +1,74 @@
+{
+    "accession": "MITE0000315",
+    "status": "active",
+    "comment": "Oxidation of syn-pimara-7,15-diene to, sequentially, syn-pimara-7,15-dien-19-ol, syn-pimara-7,15-dien-19-al, and syn-pimara-7,15-dien-19-oic acid. The same behavior with syn-stemod-13(17)-ene",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-13",
+            "contributors": [
+                "0000-0002-7239-6767"
+            ],
+            "reviewers": [
+                "0000-0001-5863-7248",
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 added \"hydroxylation \" and \"monooxygenation\" to tailoring reaction. Reviewer 2 generalized reaction to minimal common substructure and added second example."
+        }
+    ],
+    "enzyme": {
+        "name": "OsCYP99A3",
+        "description": "9-beta-pimara-7,15-diene oxidase",
+        "references": [
+            "doi:10.1111/j.1365-313X.2010.04408.x"
+        ],
+        "databaseIds": {
+            "uniprot": "Q0JF01"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Hydroxylation",
+                "Monooxygenation",
+                "Oxidation"
+            ],
+            "description": "Oxidation of primaradien/stemoden-oic acid core structure.",
+            "reactionSMARTS": "[#6:1]1-[#6:2]~[#6:3]-[#6:4]-[#6:5]2-[#6:6](-[#6:7])(-[#6:8])-[#6:9]-[#6:10]-[#6:11]-[#6:12]-1-2-[#6:13]>>[#6:13]-[#6:12]12-[#6:1]-[#6:2]~[#6:3]-[#6:4]-[#6:5]-1-[#6:6](-[#6:8])(-[#6:7](=[#8])-[#8])-[#6:9]-[#6:10]-[#6:11]-2",
+            "reactions": [
+                {
+                    "substrate": "C=CC1(C)CCC2C(=CCC3C(C)(C)CCCC23C)C1",
+                    "products": [
+                        "C=CC1(C)CCC2C(=CCC3C(C)(C(=O)O)CCCC23C)C1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Oxidation of syn-pimara-7,15-diene to syn-pimara-7,15-dien-19-oic acid."
+                },
+                {
+                    "substrate": "C=C1CCC23CC1CC2CCC1C3(C)CCCC1(C)C",
+                    "products": [
+                        "C=C1CCC23CC1CC2CCC1C3(C)CCCC1(C)C(=O)O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Oxidation of syn-stemod-13(17)-ene to syn-stemod-13(17)-en-19-oic acid"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1111/j.1365-313X.2010.04408.x"
+                ]
+            },
+            "databaseIds": {
+                "ec": "1.14.14.111"
+            }
+        }
+    ]
+}
