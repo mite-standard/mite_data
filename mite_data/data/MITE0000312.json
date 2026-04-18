@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000312",
     "status": "active",
     "comment": "Diiron radical halogenase",
     "changelog": [
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0002-8323-5416"
             ],
-            "comment": "Updated evidence"
+            "comment": "New entry. Reviewer 1 updated evidence qualifiers."
         }
     ],
     "enzyme": {
