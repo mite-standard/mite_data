@@ -780,6 +780,22 @@
         "mite_accession":"MITE0000032",
         "mite_url":"https://bioregistry.io/mite:MITE0000032",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Oxidoreductase",
+        "enzyme_ids":{
+          "genpept":"ABI22129.1",
+          "mibig":"BGC0000422",
+          "uniprot":"B0CN23"
+        },
+        "enzyme_name":"SfmCy2",
+        "enzyme_refs":[
+          "doi:10.1002/anie.201704726"
+        ],
+        "enzyme_tailoring":"Deamination",
+        "mite_accession":"MITE0000309",
+        "mite_url":"https://bioregistry.io/mite:MITE0000309",
+        "status":"active"
       }
     ],
     "BGC0000440":[

@@ -307,3 +307,4 @@ MITE0000305,active,RusE,FAD-linked oxidoreductase,Reduction,Reduction of an alde
 MITE0000306,active,RusF,Cytochrome P450,Dehydrogenation|Oxidation,Oxidation of hydroxyl to ketone,N/A,Fe,Penicillium roqueforti (strain FM164),Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Eurotiomycetes
 MITE0000307,active,AspB,Cytochrome P450,Biaryl bond formation|Oxidation,tryptophan dimerization by C-C coupling,N/A,Fe,Streptomyces sp. NRRL S-1868,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
 MITE0000308,active,Cyt1,FAD-dependent monooxygenase,Hydroxylation,Hydroxylation of acyl dihydroxyphenylacetic acids.,FAD|NAD|NADP,N/A,Gnomonia sp,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Sordariomycetes
+MITE0000309,active,SfmCy2,Oxidoreductase,Deamination,Deamination of saframycin to give active compound.,FAD,N/A,Streptomyces lavendulae,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
