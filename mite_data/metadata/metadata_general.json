@@ -6678,6 +6678,28 @@
       "reaction_description":"Deamination of saframycin to give active compound.",
       "status":"active",
       "tailoring":"Deamination"
+    },
+    "MITE0000311":{
+      "accession":"MITE0000311",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Ascorbic acid|Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"Heme-containing peroxygenase",
+      "enzyme_ids":{
+        "genpept":"ABI22134.1",
+        "mibig":"BGC0000422",
+        "uniprot":"B0CN28"
+      },
+      "enzyme_name":"SfmD",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces lavendulae",
+      "phylum":"Actinomycetota",
+      "reaction_description":"hydroxylating 3-Me-l-Tyr to 3-OH-5-Me-l-Tyr",
+      "status":"active",
+      "tailoring":"Monooxygenation"
     }
   },
   "version_mite_data":"1.23"

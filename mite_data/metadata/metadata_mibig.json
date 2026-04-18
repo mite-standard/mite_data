@@ -796,6 +796,22 @@
         "mite_accession":"MITE0000309",
         "mite_url":"https://bioregistry.io/mite:MITE0000309",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Heme-containing peroxygenase",
+        "enzyme_ids":{
+          "genpept":"ABI22134.1",
+          "mibig":"BGC0000422",
+          "uniprot":"B0CN28"
+        },
+        "enzyme_name":"SfmD",
+        "enzyme_refs":[
+          "doi:10.1039/D0SC06369J"
+        ],
+        "enzyme_tailoring":"Monooxygenation",
+        "mite_accession":"MITE0000311",
+        "mite_url":"https://bioregistry.io/mite:MITE0000311",
+        "status":"active"
       }
     ],
     "BGC0000440":[
