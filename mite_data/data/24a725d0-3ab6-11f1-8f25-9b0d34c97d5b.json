@@ -1,0 +1,64 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "comment": "Involved in the biosynthesis of fluorometabolites",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-17",
+            "contributors": [
+                "0000-0001-7044-2419"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "flA1",
+        "description": "Fluorinase",
+        "references": [
+            "doi:10.1016/j.pep.2019.105508"
+        ],
+        "databaseIds": {
+            "uniprot": "Q70GK9",
+            "genpept": "CAE46446.1",
+            "mibig": "BGC0000903"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Catalyzes the formation of a C-F bond by combining S-adenosyl-L-methionine (SAM) and fluoride to generate 5'-fluoro-5'-deoxyadenosine (5'-FDA) and L-methionine. It can also use 2'-deoxyadenosine in place of adenosine as substrate",
+            "reactionSMARTS": "[#6:1]-[#16;+:2](-[#6:10]/[#6@@:11]1-[#6@@:26](\\[#8:27])-[#6@@:24](\\[#8:25])-[#6@:13](/[#7:14]2:[#6:23]3:[#6:17](:[#6:18](:[#7:20]:[#6:21]:[#7:22]:3)-[#7:19]):[#7:16]:[#6:15]:2)-[#8:12]-1)-[#6:3]-[#6:4]-[#6@@:5](-[#6:7](-[#8:9])=[#8:8])\\[#7:6]>>F-[#6:10]/[#6@@:11]1-[#6@@:26](\\[#8:27])-[#6@@:24](\\[#8:25])-[#6@:13](/[#7:14]2:[#6:23]3:[#6:17](:[#6:18](:[#7:20]:[#6:21]:[#7:22]:3)-[#7:19]):[#7:16]:[#6:15]:2)-[#8:12]-1",
+            "reactions": [
+                {
+                    "substrate": "C[S+](CC[C@H](N)C(=O)O)C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O",
+                    "products": [
+                        "Nc1ncnc2c1ncn2[C@@H]1O[C@H](CF)[C@@H](O)[C@H]1O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Catalyzes the formation of a C-F bond by combining S-adenosyl-L-methionine (SAM) and fluoride to generate 5'-fluoro-5'-deoxyadenosine (5'-FDA) and L-methionine."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Inference from genomic data and chemical structure",
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1016/j.pep.2019.105508"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "16661",
+                "ec": "2.5.1.63"
+            }
+        }
+    ]
+}
