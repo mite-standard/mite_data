@@ -6635,6 +6635,27 @@
       "reaction_description":"tryptophan dimerization by C-C coupling",
       "status":"active",
       "tailoring":"Biaryl bond formation|Oxidation"
+    },
+    "MITE0000308":{
+      "accession":"MITE0000308",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD|NAD|NADP",
+      "domain":"Eukaryota",
+      "enzyme_description":"FAD-dependent monooxygenase",
+      "enzyme_ids":{
+        "genpept":"XCG46251.1",
+        "uniprot":"A0AAU8CJ00"
+      },
+      "enzyme_name":"Cyt1",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Gnomonia sp",
+      "phylum":"Dikarya",
+      "reaction_description":"Hydroxylation of acyl dihydroxyphenylacetic acids.",
+      "status":"active",
+      "tailoring":"Hydroxylation"
     }
   },
   "version_mite_data":"1.23"

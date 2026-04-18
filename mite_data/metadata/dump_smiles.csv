@@ -410,3 +410,6 @@
 408,MITE0000305.reaction1.example1,CCCCCC=CCCc1cccc(O)c1C=O,CCCCCC=CCCc1cccc(O)c1CO
 409,MITE0000306.reaction1.example1,CCCCC/C=C/CC(O)c1cccc(O)c1C=O,CCCCCC=CCC(=O)c1cccc(O)c1C=O
 410,MITE0000307.reaction1.example1,O=C1NC(Cc2c[nH]c3ccccc23)C(=O)N2CCCC12,O=C1NC(Cc2c[nH]c3cc(-n4cc(CC5NC(=O)C6CCCN6C5=O)c5ccccc54)ccc23)C(=O)N2CCCC12
+411,MITE0000308.reaction1.example1,CCCCCCCC(=O)c1c(O)cc(O)cc1CC(=O)O,CCCCCCCC(=O)c1c(CC(=O)O)cc(O)c(O)c1O
+412,MITE0000308.reaction1.example2,CCCCCC(=O)c1c(O)cc(O)cc1CC(=O)O,CCCCCC(=O)c1c(CC(=O)O)cc(O)c(O)c1O
+413,MITE0000308.reaction1.example3,C[C@@H](O)CCCCCCCC(=O)c1c(O)cc(O)cc1CC(=O)O,C[C@@H](O)CCCCCCCC(=O)c1c(CC(=O)O)cc(O)c(O)c1O

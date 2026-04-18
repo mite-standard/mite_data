@@ -306,3 +306,4 @@ MITE0000304,active,TraB,Cytochrome P450,Hydroxylation|Oxidation,Cytochrome P450 
 MITE0000305,active,RusE,FAD-linked oxidoreductase,Reduction,Reduction of an aldehyde to a hydroxyl moiety,FAD,N/A,Penicillium roqueforti (strain FM164),Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Eurotiomycetes
 MITE0000306,active,RusF,Cytochrome P450,Dehydrogenation|Oxidation,Oxidation of hydroxyl to ketone,N/A,Fe,Penicillium roqueforti (strain FM164),Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Eurotiomycetes
 MITE0000307,active,AspB,Cytochrome P450,Biaryl bond formation|Oxidation,tryptophan dimerization by C-C coupling,N/A,Fe,Streptomyces sp. NRRL S-1868,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
+MITE0000308,active,Cyt1,FAD-dependent monooxygenase,Hydroxylation,Hydroxylation of acyl dihydroxyphenylacetic acids.,FAD|NAD|NADP,N/A,Gnomonia sp,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Sordariomycetes
