@@ -6782,6 +6782,26 @@
       "reaction_description":"Oxidative cyclization (ether bond formation) and C-8 hydroxylation of a depside to a depsidone.",
       "status":"active",
       "tailoring":"Cyclization"
+    },
+    "MITE0000315":{
+      "accession":"MITE0000315",
+      "class_name":"Embryophyta",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"Heme",
+      "domain":"Eukaryota",
+      "enzyme_description":"9-beta-pimara-7,15-diene oxidase",
+      "enzyme_ids":{
+        "uniprot":"Q0JF01"
+      },
+      "enzyme_name":"OsCYP99A3",
+      "family":"Spermatophyta",
+      "kingdom":"Viridiplantae",
+      "order":"Tracheophyta",
+      "organism":"Oryza sativa subsp. japonica",
+      "phylum":"Streptophyta",
+      "reaction_description":"Oxidation of primaradien/stemoden-oic acid core structure.",
+      "status":"active",
+      "tailoring":"Hydroxylation|Monooxygenation|Oxidation"
     }
   },
   "version_mite_data":"1.23"
