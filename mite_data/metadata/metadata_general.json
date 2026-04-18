@@ -6615,6 +6615,26 @@
       "reaction_description":"Oxidation of hydroxyl to ketone",
       "status":"active",
       "tailoring":"Dehydrogenation|Oxidation"
+    },
+    "MITE0000307":{
+      "accession":"MITE0000307",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "uniprot":"A0ACD6BAV5"
+      },
+      "enzyme_name":"AspB",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces sp. NRRL S-1868",
+      "phylum":"Actinomycetota",
+      "reaction_description":"tryptophan dimerization by C-C coupling",
+      "status":"active",
+      "tailoring":"Biaryl bond formation|Oxidation"
     }
   },
   "version_mite_data":"1.23"
