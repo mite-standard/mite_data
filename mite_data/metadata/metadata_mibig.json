@@ -2514,6 +2514,22 @@
         "mite_accession":"MITE0000294",
         "mite_url":"https://bioregistry.io/mite:MITE0000294",
         "status":"active"
+      },
+      {
+        "enzyme_description":"SAM-dependent pericyclase",
+        "enzyme_ids":{
+          "genpept":"EED49872.1",
+          "mibig":"BGC0001445",
+          "uniprot":"B8NJH3"
+        },
+        "enzyme_name":"LepI",
+        "enzyme_refs":[
+          "doi:10.1038/nature23882"
+        ],
+        "enzyme_tailoring":"Cyclization|Dehydration|Other",
+        "mite_accession":"MITE0000316",
+        "mite_url":"https://bioregistry.io/mite:MITE0000316",
+        "status":"active"
       }
     ],
     "BGC0001476":[

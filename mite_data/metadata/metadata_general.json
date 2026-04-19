@@ -6802,6 +6802,28 @@
       "reaction_description":"Oxidation of primaradien/stemoden-oic acid core structure.",
       "status":"active",
       "tailoring":"Hydroxylation|Monooxygenation|Oxidation"
+    },
+    "MITE0000316":{
+      "accession":"MITE0000316",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Eukaryota",
+      "enzyme_description":"SAM-dependent pericyclase",
+      "enzyme_ids":{
+        "genpept":"EED49872.1",
+        "mibig":"BGC0001445",
+        "uniprot":"B8NJH3"
+      },
+      "enzyme_name":"LepI",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Aspergillus flavus (strain ATCC 200026 / FGSC A1120 / IAM 13836 / NRRL 3357 / JCM 12722 / SRRC 167)",
+      "phylum":"Dikarya",
+      "reaction_description":"Stereoselective dehydration",
+      "status":"active",
+      "tailoring":"Cyclization|Dehydration|Other"
     }
   },
   "version_mite_data":"1.23"
