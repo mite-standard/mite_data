@@ -6932,6 +6932,28 @@
       "reaction_description":"N-hydroxylation of Leporin C to Leporin B",
       "status":"active",
       "tailoring":"Hydroxylation"
+    },
+    "MITE0000322":{
+      "accession":"MITE0000322",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"monooxygenase / hydroxylase",
+      "enzyme_ids":{
+        "genpept":"AAF71769.1",
+        "mibig":"BGC0000115",
+        "uniprot":"Q9L4X0"
+      },
+      "enzyme_name":"NysL",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces noursei",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Cytochrome P450 monooxygenase responsible for C10-hydroxylation in last step of nystatin A1 biosynthesis",
+      "status":"active",
+      "tailoring":"Hydroxylation|Monooxygenation"
     }
   },
   "version_mite_data":"1.23"

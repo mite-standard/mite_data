@@ -311,6 +311,25 @@
         "status":"active"
       }
     ],
+    "BGC0000115":[
+      {
+        "enzyme_description":"monooxygenase / hydroxylase",
+        "enzyme_ids":{
+          "genpept":"AAF71769.1",
+          "mibig":"BGC0000115",
+          "uniprot":"Q9L4X0"
+        },
+        "enzyme_name":"NysL",
+        "enzyme_refs":[
+          "doi:10.1007/s00253-004-1802-4",
+          "doi:10.1128/AEM.72.4.2514-2519.2006"
+        ],
+        "enzyme_tailoring":"Hydroxylation|Monooxygenation",
+        "mite_accession":"MITE0000322",
+        "mite_url":"https://bioregistry.io/mite:MITE0000322",
+        "status":"active"
+      }
+    ],
     "BGC0000120":[
       {
         "enzyme_description":"Decarboxylase",
