@@ -366,6 +366,24 @@
         "status":"active"
       }
     ],
+    "BGC0000177":[
+      {
+        "enzyme_description":"oxidoreductase",
+        "enzyme_ids":{
+          "genpept":"ACY01394.1",
+          "mibig":"BGC0000177",
+          "uniprot":"D0U2E7"
+        },
+        "enzyme_name":"MgsK",
+        "enzyme_refs":[
+          "doi:10.1021/ja4002635"
+        ],
+        "enzyme_tailoring":"Hydroxylation",
+        "mite_accession":"MITE0000326",
+        "mite_url":"https://bioregistry.io/mite:MITE0000326",
+        "status":"active"
+      }
+    ],
     "BGC0000230":[
       {
         "enzyme_description":"Flavoprotein monooxygenase",
