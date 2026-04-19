@@ -6976,6 +6976,28 @@
       "reaction_description":"C-8 hydroxylation of iso-migrastatin core structure",
       "status":"active",
       "tailoring":"Hydroxylation"
+    },
+    "MITE0000327":{
+      "accession":"MITE0000327",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Oxidoreductase",
+      "enzyme_ids":{
+        "genpept":"ACY01394.1",
+        "mibig":"BGC0000177",
+        "uniprot":"D0U2E7"
+      },
+      "enzyme_name":"MgsI",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces platensis subsp. rosaceus",
+      "phylum":"Actinomycetota",
+      "reaction_description":"MgsI is responsible for enoyl reduction of the C-16/C-17 olefin in iso-migrastatin biosynthesis",
+      "status":"active",
+      "tailoring":"Reduction"
     }
   },
   "version_mite_data":"1.23"

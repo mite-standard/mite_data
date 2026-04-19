@@ -382,6 +382,22 @@
         "mite_accession":"MITE0000326",
         "mite_url":"https://bioregistry.io/mite:MITE0000326",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Oxidoreductase",
+        "enzyme_ids":{
+          "genpept":"ACY01394.1",
+          "mibig":"BGC0000177",
+          "uniprot":"D0U2E7"
+        },
+        "enzyme_name":"MgsI",
+        "enzyme_refs":[
+          "doi:10.1021/ja4002635"
+        ],
+        "enzyme_tailoring":"Reduction",
+        "mite_accession":"MITE0000327",
+        "mite_url":"https://bioregistry.io/mite:MITE0000327",
+        "status":"active"
       }
     ],
     "BGC0000230":[
