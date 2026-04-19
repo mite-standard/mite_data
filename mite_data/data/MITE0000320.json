@@ -24,8 +24,7 @@
         ],
         "databaseIds": {
             "uniprot": "Q5AUN2",
-            "genpept": "CBF73676.1",
-            "mibig": "BGC0000101"
+            "genpept": "CBF73676.1"
         }
     },
     "reactions": [
