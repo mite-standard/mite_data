@@ -1,0 +1,60 @@
+{
+    "accession": "MITE0000324",
+    "status": "retired",
+    "retirementReasons": [
+        "ObiH is involved in precursor biosynthesis and not a tailoring enzyme per se."
+    ],
+    "comment": "Aldehydes are converted to the corresponding \u03b2-hydroxy-\u03b1-amino acids by Transaldolase ObiH",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-13",
+            "contributors": [
+                "0000-0002-6077-7490"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423",
+                "0000-0001-5863-7248"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "ObiH",
+        "description": "Transaldolase",
+        "references": [
+            "doi:10.1038/s41467-019-11383-7"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A1X9LWZ7",
+            "genpept": "ARJ35753.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Other"
+            ],
+            "description": "Transaldolase",
+            "reactionSMARTS": "[#6:1]1(-[#6:7]-[#6:8](=[#8])):[#6:2]:[#6:3]:[#6:4]:[#6:5]:[#6:6]:1>>[#6:1]1(-[#6:7]-[#6:8](-[#8])-[#6](-[#7])-[#6](=[#8])-[#8]):[#6:6]:[#6:5]:[#6:4]:[#6:3]:[#6:2]:1",
+            "reactions": [
+                {
+                    "substrate": "O=CCc1ccccc1",
+                    "products": [
+                        "NC(C(=O)O)C(O)Cc1ccccc1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Aldehydes are converted to the corresponding \u03b2-hydroxy-\u03b1-amino acids by Transaldolase ObiH"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1038/s41467-019-11383-7"
+                ]
+            }
+        }
+    ]
+}
