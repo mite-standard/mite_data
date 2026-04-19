@@ -6998,6 +6998,28 @@
       "reaction_description":"MgsI is responsible for enoyl reduction of the C-16/C-17 olefin in iso-migrastatin biosynthesis",
       "status":"active",
       "tailoring":"Reduction"
+    },
+    "MITE0000328":{
+      "accession":"MITE0000328",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"O-Methyltransferase",
+      "enzyme_ids":{
+        "genpept":"ACY01395.1",
+        "mibig":"BGC0000177",
+        "uniprot":"D0U2E8"
+      },
+      "enzyme_name":"MgsJ",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces platensis subsp. rosaceus",
+      "phylum":"Actinomycetota",
+      "reaction_description":"MgsJ is responsible for O-methylation of the HO-C-8 in iso-migrastatin biosynthesis",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.23"
