@@ -1,0 +1,89 @@
+{
+    "accession": "MITE0000316",
+    "status": "active",
+    "comment": "S-adenosyl-l-methionine (SAM)-dependent enzyme, LepI, that can catalyse stereoselective dehydration followed by three pericyclic transformations: intramolecular Diels\u2013Alder and hetero-Diels\u2013Alder reactions via a single ambimodal transition state, and a retro-Claisen rearrangement",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-03-25",
+            "contributors": [
+                "0000-0003-3141-732X"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "LepI",
+        "description": "SAM-dependent pericyclase",
+        "references": [
+            "doi:10.1038/nature23882"
+        ],
+        "databaseIds": {
+            "uniprot": "B8NJH3",
+            "genpept": "EED49872.1",
+            "mibig": "BGC0001445"
+        },
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Dehydration"
+            ],
+            "description": "Stereoselective dehydration",
+            "reactionSMARTS": "[#8:1]-[#6:2]1:[#6:12](:[#6:25](=[#8:26]):[#7:11]:[#6:10]:[#6:3]:1-[#6:4]1:[#6:9]:[#6:8]:[#6:7]:[#6:6]:[#6:5]:1)-[#6:13](-[#6@@:15](-[#6:17]-[#6:18]-[#6:19]-[#6:20]=[#6:21]-[#6:22]=[#6:23]-[#6:24])/[#6:16])-[#8]>>[#8:1]=[#6:2]1-[#6:12](=[#6:16]-[#6@@:15](-[#6:17]-[#6:18]-[#6:19]-[#6:20]=[#6:21]-[#6:22]=[#6:23]-[#6:24])/[#6:13])-[#6:25](=[#8:26])-[#7:11]-[#6:10]=[#6:3]-1-[#6:4]1:[#6:5]:[#6:6]:[#6:7]:[#6:8]:[#6:9]:1",
+            "reactions": [
+                {
+                    "substrate": "C/C=C/C=C/CCC[C@@H](C)C(O)c1c(O)c(-c2ccccc2)c[nH]c1=O",
+                    "products": [
+                        "CC=CC=CCCC[C@@H](C)C=C1C(=O)NC=C(c2ccccc2)C1=O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Dehydration reaction"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1038/nature23882"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Cyclization",
+                "Other"
+            ],
+            "description": "Hetero Diels-Alder reaction",
+            "reactionSMARTS": "[#8:1]=[#6:2]1-[#6:14](=[#6:15]-[#6@@:16](-[#6:18]-[#6:19]-[#6:20]-[#6:21]=[#6:22]-[#6:23]=[#6:24]-[#6:25])/[#6:17])-[#6:12](=[#8:13])-[#7:11]-[#6:10]=[#6:3]-1-[#6:4]1:[#6:9]:[#6:8]:[#6:7]:[#6:6]:[#6:5]:1>>[#6:17]/[#6@:16]1-[#6:18]2-[#6:14]3-[#6:12](=[#8:13])-[#7:11]-[#6:10]=[#6:3](-[#6:4]4-[#6:5]=[#6:6]-[#6:7]=[#6:8]-[#6:9]=4)-[#6:2]=3-[#8:1]-[#6@@:20](/[#6:21]=[#6:22]-[#6:23])-[#6:19]-2-[#6:25]-[#6:24]-[#6:15]-1",
+            "reactions": [
+                {
+                    "substrate": "C/C=C/C=C/CCC[C@@H](C)/C=C1/C(=O)NC=C(c2ccccc2)C1=O",
+                    "products": [
+                        "CC=C[C@@H]1Oc2c(-c3ccccc3)c[nH]c(=O)c2C2C1CCC[C@H]2C"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Hetero Diels-Alder reaction"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1038/nature23882"
+                ]
+            }
+        }
+    ]
+}
