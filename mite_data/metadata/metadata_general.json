@@ -7041,6 +7041,27 @@
       "reaction_description":"Sesquiterpen cyclisation from FPP to Germacrene A",
       "status":"active",
       "tailoring":"Cyclization"
+    },
+    "MITE0000330":{
+      "accession":"MITE0000330",
+      "class_name":"Bacilli",
+      "cofactors_inorganic":"Mn",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Arginase",
+      "enzyme_ids":{
+        "genpept":"RRN73829.1",
+        "uniprot":"UPI000F631A9A"
+      },
+      "enzyme_name":"PbsE",
+      "family":"Bacillaceae",
+      "kingdom":"Bacillati",
+      "order":"Bacillales",
+      "organism":"Peribacillus simplex",
+      "phylum":"Bacillota",
+      "reaction_description":"Deguanidination of R9 of dihydroxylated PbsA3",
+      "status":"active",
+      "tailoring":"Other"
     }
   },
   "version_mite_data":"1.23"
