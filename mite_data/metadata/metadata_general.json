@@ -6889,6 +6889,27 @@
       "reaction_description":"halogenation",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000320":{
+      "accession":"MITE0000320",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Oxidoreductase",
+      "enzyme_ids":{
+        "genpept":"CBF73676.1",
+        "uniprot":"Q5AUN2"
+      },
+      "enzyme_name":"XptC",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Emericella nidulans (strain FGSC A4 / ATCC 38163 / CBS 112.46 / NRRL 194 / M139)",
+      "phylum":"Dikarya",
+      "reaction_description":"Oxidation reactions of primary alcohol to an aldehyde.",
+      "status":"active",
+      "tailoring":"Oxidation"
     }
   },
   "version_mite_data":"1.23"
