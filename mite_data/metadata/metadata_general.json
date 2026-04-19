@@ -6612,9 +6612,9 @@
       "order":"Pezizomycotina",
       "organism":"Penicillium roqueforti (strain FM164)",
       "phylum":"Dikarya",
-      "reaction_description":"Oxidation of hydroxyl to ketone",
+      "reaction_description":"Catalyzes benzylic C-H oxidation to alcohol",
       "status":"active",
-      "tailoring":"Dehydrogenation|Oxidation"
+      "tailoring":"Hydroxylation|Monooxygenation|Oxidation"
     },
     "MITE0000307":{
       "accession":"MITE0000307",
