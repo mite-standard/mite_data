@@ -1,7 +1,9 @@
 {
     "accession": "MITE0000324",
     "status": "retired",
-    "retirementReasons": "ObiH is involved in precursor biosynthesis and not a tailoring enzyme per se.",
+    "retirementReasons": [
+        "ObiH is involved in precursor biosynthesis and not a tailoring enzyme per se."
+    ],
     "comment": "Aldehydes are converted to the corresponding \u03b2-hydroxy-\u03b1-amino acids by Transaldolase ObiH",
     "changelog": [
         {
