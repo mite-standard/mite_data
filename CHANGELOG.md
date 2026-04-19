@@ -6,6 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [1.26] 19-04-2026
+
+### Fixed
+
+- Metadata fixes
+
+## [1.25] 19-04-2026
+
+### Fixed
+
+- Fixed reaction SMARTS in MITE0000330 breaking deployment of `mite_web`
+
 ## [1.24] 19-04-2026
 
 ### Added
