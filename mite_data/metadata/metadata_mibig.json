@@ -398,6 +398,22 @@
         "mite_accession":"MITE0000327",
         "mite_url":"https://bioregistry.io/mite:MITE0000327",
         "status":"active"
+      },
+      {
+        "enzyme_description":"O-Methyltransferase",
+        "enzyme_ids":{
+          "genpept":"ACY01395.1",
+          "mibig":"BGC0000177",
+          "uniprot":"D0U2E8"
+        },
+        "enzyme_name":"MgsJ",
+        "enzyme_refs":[
+          "doi:10.1021/ja4002635"
+        ],
+        "enzyme_tailoring":"Methylation",
+        "mite_accession":"MITE0000328",
+        "mite_url":"https://bioregistry.io/mite:MITE0000328",
+        "status":"active"
       }
     ],
     "BGC0000230":[
