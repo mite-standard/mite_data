@@ -1,0 +1,65 @@
+{
+    "accession": "MITE0000319",
+    "status": "active",
+    "comment": "Chlorination of lysolipin",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-03-10",
+            "contributors": [
+                "0000-0003-3099-5777"
+            ],
+            "reviewers": [
+                "0000-0003-3290-1017",
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 2 revised reaction SMARTS to represent the experimentally proven substrate specificity."
+        }
+    ],
+    "enzyme": {
+        "name": "LlpH",
+        "description": "Non-heme halogenase",
+        "references": [
+            "doi:10.1016/j.gene.2010.03.016",
+            "doi:10.3389/fchbi.2024.1445095"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI000159BAD4",
+            "genpept": "CAM34371.1",
+            "mibig": "BGC0000242"
+        },
+        "cofactors": {
+            "organic": [
+                "Flavin mononucleotide"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "halogenation",
+            "reactionSMARTS": "[#6:1]-[#7:2]1-[#6:38](-[#8:39])-[#6:36](-[#8:37])-[#6:6]2:[#6:7]:[#6:8]3-[#6:20](-[#8:21])=[#6:19]4-[#6:14]5=[#6:15](-[#6:22]6:[#6:33](-[#6:34](-[#8:35])-[#6:12]-5(-[#8:13])-[#6:9]:3:[#6:10](-[#8:11]):[#6:5]:2-[#6:3]-1=[#8:4]):[#6:31](=[#8:32]):[#6:30]1:[#6:24](:[#6:25](:[#6:27]:[#6:28]:[#6:29]:1)-[#8:26]):[#8:23]:6)-[#8:16]-[#6:17]-[#8:18]-4>>[#6:1]-[#7:2]1-[#6:38](-[#8:39])-[#6:36](-[#8:37])-[#6:6]2:[#6:7]:[#6:8]3-[#6:20](-[#8:21])=[#6:19]4-[#6:14]5=[#6:15](-[#6:22]6:[#6:33](-[#6:34](-[#8:35])-[#6:12]-5(-[#8:13])-[#6:9]:3:[#6:10](-[#8:11]):[#6:5]:2-[#6:3]-1=[#8:4]):[#6:31](=[#8:32]):[#6:30]1:[#6:24](:[#6:25](:[#6:27](-Cl):[#6:28]:[#6:29]:1)-[#8:26]):[#8:23]:6)-[#8:16]-[#6:17]-[#8:18]-4",
+            "reactions": [
+                {
+                    "substrate": "CN1C(=O)c2c(cc3c(c2O)C2(O)C4=C(OCOC4=C3O)c3oc4c(O)cccc4c(=O)c3C2O)C(O)C1O",
+                    "products": [
+                        "CN1C(=O)c2c(cc3c(c2O)C2(O)C4=C(OCOC4=C3O)c3oc4c(O)c(Cl)ccc4c(=O)c3C2O)C(O)C1O"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Inference from genomic data and chemical structure",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1016/j.gene.2010.03.016"
+                ]
+            }
+        }
+    ]
+}
