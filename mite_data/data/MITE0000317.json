@@ -1,7 +1,7 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000317",
     "status": "active",
-    "comment": "amide bond synthetases that catalyze amide bond formation between deazapurine and various amine substrates,  designated as deazapurine amide bond synthetases ",
+    "comment": "Amide bond synthetases that catalyze amide bond formation between deazapurine and various amine substrates, designated as deazapurine amide bond synthetases.",
     "changelog": [
         {
             "version": "1",
@@ -10,6 +10,7 @@
                 "0000-0001-6496-2071"
             ],
             "reviewers": [
+                "0000-0001-5863-7248",
                 "0000-0002-9747-3423"
             ],
             "comment": "New entry."
