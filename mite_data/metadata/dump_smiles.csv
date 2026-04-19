@@ -429,3 +429,4 @@
 427,MITE0000318.reaction1.example1,CO[C@H]1CCCC[C@@H](c2ccccc2)OC(=O)[C@@H](C)[C@@]2(O)O[C@H]([C@@H](C)[C@H](O)[C@H]2OC)[C@@H](C)/C=C/[C@H]1O,CO[C@H]1CCCC[C@@H](c2ccccc2)OC(=O)[C@@H](C)[C@@]2(O)O[C@H]([C@@H](C)[C@H](O)[C@H]2OC)[C@@H](C)C=C[C@H]1OC
 428,MITE0000319.reaction1.example1,CN1C(=O)c2c(cc3c(c2O)C2(O)C4=C(OCOC4=C3O)c3oc4c(O)cccc4c(=O)c3C2O)C(O)C1O,CN1C(=O)c2c(cc3c(c2O)C2(O)C4=C(OCOC4=C3O)c3oc4c(O)c(Cl)ccc4c(=O)c3C2O)C(O)C1O
 429,MITE0000320.reaction1.example1,CC(C)=CCOc1c(C)cc2oc3c(CC=C(C)C)ccc(O)c3c(=O)c2c1CO,CC(C)=CCOc1c(C)cc2oc3c(CC=C(C)C)ccc(O)c3c(=O)c2c1C=O
+430,MITE0000321.reaction1.example1,C/C=C/[C@@H]1Oc2c(-c3ccccc3)c[nH]c(=O)c2C2C1CCC[C@H]2C,CC=C[C@@H]1Oc2c(-c3ccccc3)cn(O)c(=O)c2C2C1CCC[C@H]2C

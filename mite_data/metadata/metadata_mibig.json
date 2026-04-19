@@ -2567,6 +2567,23 @@
         "mite_accession":"MITE0000316",
         "mite_url":"https://bioregistry.io/mite:MITE0000316",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Cytochrome P450",
+        "enzyme_ids":{
+          "genpept":"EED49867.1",
+          "mibig":"BGC0001445",
+          "uniprot":"B8NJG8"
+        },
+        "enzyme_name":"LepD",
+        "enzyme_refs":[
+          "doi:10.1038/nature23882",
+          "doi:10.1016/j.fgb.2015.05.010"
+        ],
+        "enzyme_tailoring":"Hydroxylation",
+        "mite_accession":"MITE0000321",
+        "mite_url":"https://bioregistry.io/mite:MITE0000321",
+        "status":"active"
       }
     ],
     "BGC0001476":[
