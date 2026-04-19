@@ -13,7 +13,7 @@
                 "0000-0002-9747-3423",
                 "0000-0001-6534-6609"
             ],
-            "comment": "New entry. Reviewer 2 fixed reaction SMARTS to correctly represent the core structure."
+            "comment": "New entry. Reviewer 2 fixed reaction SMARTS to correctly represent the core structure and corrected protein cross-refs."
         }
     ],
     "enzyme": {
@@ -23,8 +23,8 @@
             "doi:10.1021/ja4002635"
         ],
         "databaseIds": {
-            "uniprot": "D0U2E7",
-            "genpept": "ACY01394.1",
+            "uniprot": "D0U2E9",
+            "genpept": "ACY01396.1",
             "mibig": "BGC0000177"
         },
         "cofactors": {
