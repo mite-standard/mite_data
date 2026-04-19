@@ -6824,6 +6824,27 @@
       "reaction_description":"Stereoselective dehydration",
       "status":"active",
       "tailoring":"Cyclization|Dehydration|Other"
+    },
+    "MITE0000317":{
+      "accession":"MITE0000317",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"Adenosine triphosphate",
+      "domain":"Bacteria",
+      "enzyme_description":"Deazapurine amide bond synthetase",
+      "enzyme_ids":{
+        "genpept":"USC51049.1",
+        "uniprot":"A0ABY4V3C4"
+      },
+      "enzyme_name":"RoyL",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces filamentosus",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Amide bond between the 7-carboxyl group of 7-carboxy-7-deazaguanine (CDG) and the ε-amine of lysine",
+      "status":"active",
+      "tailoring":"Acylation"
     }
   },
   "version_mite_data":"1.23"
