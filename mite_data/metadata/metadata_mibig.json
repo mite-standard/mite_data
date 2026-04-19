@@ -383,6 +383,25 @@
         "status":"active"
       }
     ],
+    "BGC0000242":[
+      {
+        "enzyme_description":"Non-heme halogenase",
+        "enzyme_ids":{
+          "genpept":"CAM34371.1",
+          "mibig":"BGC0000242",
+          "uniprot":"UPI000159BAD4"
+        },
+        "enzyme_name":"LlpH",
+        "enzyme_refs":[
+          "doi:10.1016/j.gene.2010.03.016",
+          "doi:10.3389/fchbi.2024.1445095"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000319",
+        "mite_url":"https://bioregistry.io/mite:MITE0000319",
+        "status":"active"
+      }
+    ],
     "BGC0000247":[
       {
         "enzyme_description":"O-methyltransferase",
