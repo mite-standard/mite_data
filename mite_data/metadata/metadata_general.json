@@ -7020,6 +7020,27 @@
       "reaction_description":"MgsJ is responsible for O-methylation of the HO-C-8 in iso-migrastatin biosynthesis",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000329":{
+      "accession":"MITE0000329",
+      "class_name":"Embryophyta",
+      "cofactors_inorganic":"Mg",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Terpene Synthase",
+      "enzyme_ids":{
+        "genpept":"BAN81912.1",
+        "uniprot":"T2HP27"
+      },
+      "enzyme_name":"AaGAS",
+      "family":"Spermatophyta",
+      "kingdom":"Viridiplantae",
+      "order":"Tracheophyta",
+      "organism":"Artemisia absinthium",
+      "phylum":"Streptophyta",
+      "reaction_description":"Sesquiterpen cyclisation from FPP to Germacrene A",
+      "status":"active",
+      "tailoring":"Cyclization"
     }
   },
   "version_mite_data":"1.23"
