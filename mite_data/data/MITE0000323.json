@@ -1,7 +1,7 @@
 {
     "accession": "MITE0000323",
-    "status": "active",
-    "comment": "standalone ArCP\u2013TE  didomain protein (standalone ArCP\u2013TE  didomain protein, acting trans)  ",
+    "status": "retired",
+    "comment": "standalone ArCP\u2013TE  didomain protein (standalone ArCP\u2013TE  didomain protein, acting trans).",
     "changelog": [
         {
             "version": "1",
@@ -10,9 +10,10 @@
                 "0000-0003-2163-5526"
             ],
             "reviewers": [
-                "0000-0002-9747-3423"
+                "0000-0002-9747-3423",
+                "0000-0001-6534-6609"
             ],
-            "comment": "New entry."
+            "comment": "New entry. Reviewer 2 fixed reaction SMARTS to show full substrate specificity, retired entry due to not being a tailoring enzyme."
         }
     ],
     "enzyme": {
