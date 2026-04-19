@@ -1,7 +1,7 @@
 {
     "accession": "MITE0000320",
     "status": "active",
-    "comment": "XptC-catalysed oxidation to give the aldehyde.",
+    "comment": "XptC-catalysed oxidation to give the aldehyde in the emodin pathway (see MIBiG entry BGC0000101).",
     "changelog": [
         {
             "version": "1",
@@ -10,9 +10,10 @@
                 "0000-0001-5730-3326"
             ],
             "reviewers": [
-                "0000-0002-9747-3423"
+                "0000-0002-9747-3423",
+                "0000-0001-6534-6609"
             ],
-            "comment": "New entry."
+            "comment": "New entry. Reviewer 2 removed MIBiG cross-reference - MIBiG entry does not contain protein reference."
         }
     ],
     "enzyme": {
