@@ -1,6 +1,9 @@
 {
-    "accession": "MITE9999999",
-    "status": "active",
+    "accession": "MITE0000331",
+    "status": "retired",
+    "retirementReasons": [
+        "Luc5 is a scaffold-forming Hybrid PKS-NRPS synthetase and therefore out of scope of MITE."
+    ],
     "changelog": [
         {
             "version": "1",
@@ -15,7 +18,7 @@
         }
     ],
     "enzyme": {
-        "name": "luc5",
+        "name": "Luc5",
         "description": "Hybrid PKS-NRPS synthetase",
         "references": [
             "doi:10.1038/s41429-022-00529-3"
