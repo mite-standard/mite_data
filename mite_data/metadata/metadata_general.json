@@ -6955,6 +6955,67 @@
       "status":"active",
       "tailoring":"Hydroxylation|Monooxygenation"
     },
+    "MITE0000323":{
+      "accession":"MITE0000323",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Thioesterase",
+      "enzyme_ids":{
+        "genpept":"MHN9097960.1"
+      },
+      "enzyme_name":"KinT",
+      "family":"Pseudonocardiaceae",
+      "kingdom":"Bacillati",
+      "order":"Pseudonocardiales",
+      "organism":"Actinokineospora sp. UV203",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Intramolecular  cyclization of hydroxy-ornithine in kineochelin siderophore",
+      "status":"retired",
+      "tailoring":"Cyclization"
+    },
+    "MITE0000324":{
+      "accession":"MITE0000324",
+      "class_name":"Gammaproteobacteria",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Transaldolase",
+      "enzyme_ids":{
+        "genpept":"ARJ35753.1",
+        "uniprot":"A0A1X9LWZ7"
+      },
+      "enzyme_name":"ObiH",
+      "family":"Pseudomonadaceae",
+      "kingdom":"Pseudomonadati",
+      "order":"Pseudomonadales",
+      "organism":"Pseudomonas fluorescens",
+      "phylum":"Pseudomonadota",
+      "reaction_description":"Transaldolase",
+      "status":"retired",
+      "tailoring":"Other"
+    },
+    "MITE0000325":{
+      "accession":"MITE0000325",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Lysine/ornithine N-oxygenase",
+      "enzyme_ids":{
+        "genpept":"MHN9096792.1"
+      },
+      "enzyme_name":"KinO",
+      "family":"Pseudonocardiaceae",
+      "kingdom":"Bacillati",
+      "order":"Pseudonocardiales",
+      "organism":"Actinokineospora sp. UV203",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Monooxygenation in the ornithine N5 position",
+      "status":"retired",
+      "tailoring":"Monooxygenation"
+    },
     "MITE0000326":{
       "accession":"MITE0000326",
       "class_name":"Actinomycetes",
@@ -7062,6 +7123,28 @@
       "reaction_description":"Deguanidination of R9 of dihydroxylated PbsA3",
       "status":"active",
       "tailoring":"Other"
+    },
+    "MITE0000331":{
+      "accession":"MITE0000331",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Hybrid PKS-NRPS synthetase",
+      "enzyme_ids":{
+        "genpept":"BBQ09587.1",
+        "mibig":"BGC0002261",
+        "uniprot":"A0A6J4B487"
+      },
+      "enzyme_name":"Luc5",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Fusarium sp",
+      "phylum":"Dikarya",
+      "reaction_description":"condenses one acetyl-CoA unit with six malonyl-CoA units and a homoserine, followed by a reductive release of an alcohol intermediate, prelucilactaene B ",
+      "status":"retired",
+      "tailoring":"Other|Reduction"
     }
   },
   "version_mite_data":"1.23"

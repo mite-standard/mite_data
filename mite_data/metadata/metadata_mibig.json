@@ -3369,6 +3369,24 @@
         "status":"active"
       }
     ],
+    "BGC0002261":[
+      {
+        "enzyme_description":"Hybrid PKS-NRPS synthetase",
+        "enzyme_ids":{
+          "genpept":"BBQ09587.1",
+          "mibig":"BGC0002261",
+          "uniprot":"A0A6J4B487"
+        },
+        "enzyme_name":"Luc5",
+        "enzyme_refs":[
+          "doi:10.1038/s41429-022-00529-3"
+        ],
+        "enzyme_tailoring":"Other|Reduction",
+        "mite_accession":"MITE0000331",
+        "mite_url":"https://bioregistry.io/mite:MITE0000331",
+        "status":"retired"
+      }
+    ],
     "BGC0002300":[
       {
         "enzyme_description":"L-Ornithine N(5)-oxygenase",
