@@ -424,3 +424,4 @@
 422,MITE0000315.reaction1.example2,C=C1CCC23CC1CC2CCC1C3(C)CCCC1(C)C,C=C1CCC23CC1CC2CCC1C3(C)CCCC1(C)C(=O)O
 423,MITE0000316.reaction1.example1,C/C=C/C=C/CCC[C@@H](C)C(O)c1c(O)c(-c2ccccc2)c[nH]c1=O,CC=CC=CCCC[C@@H](C)C=C1C(=O)NC=C(c2ccccc2)C1=O
 424,MITE0000316.reaction2.example1,C/C=C/C=C/CCC[C@@H](C)/C=C1/C(=O)NC=C(c2ccccc2)C1=O,CC=C[C@@H]1Oc2c(-c3ccccc3)c[nH]c(=O)c2C2C1CCC[C@H]2C
+425,MITE0000317.reaction1.example1,NCCCC[C@H](N)C(=O)O.Nc1nc2[nH]cc(C(=O)O)c2c(=O)[nH]1,Nc1nc2[nH]cc(C(=O)NCCCC[C@H](N)C(=O)O)c2c(=O)[nH]1
