@@ -1,7 +1,7 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000324",
     "status": "active",
-    "comment": " aldehydes are converted to the corresponding \u03b2-hydroxy-\u03b1-amino acids by Transaldolase ObiH",
+    "comment": "Aldehydes are converted to the corresponding \u03b2-hydroxy-\u03b1-amino acids by Transaldolase ObiH",
     "changelog": [
         {
             "version": "1",
@@ -10,7 +10,8 @@
                 "0000-0002-6077-7490"
             ],
             "reviewers": [
-                "0000-0002-9747-3423"
+                "0000-0002-9747-3423",
+                "0000-0001-5863-7248"
             ],
             "comment": "New entry."
         }
@@ -40,7 +41,7 @@
                         "NC(C(=O)O)C(O)Cc1ccccc1"
                     ],
                     "isIntermediate": true,
-                    "description": " aldehydes are converted to the corresponding \u03b2-hydroxy-\u03b1-amino acids by Transaldolase ObiH"
+                    "description": "Aldehydes are converted to the corresponding \u03b2-hydroxy-\u03b1-amino acids by Transaldolase ObiH"
                 }
             ],
             "evidence": {
