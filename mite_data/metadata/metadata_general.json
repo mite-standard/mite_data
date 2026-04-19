@@ -6867,6 +6867,28 @@
       "reaction_description":"Responsible for the post-PKS O-methylation of the hydroxyl at C11, from soraphen C to soraphen A ",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000319":{
+      "accession":"MITE0000319",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"Flavin mononucleotide",
+      "domain":"Bacteria",
+      "enzyme_description":"Non-heme halogenase",
+      "enzyme_ids":{
+        "genpept":"CAM34371.1",
+        "mibig":"BGC0000242",
+        "uniprot":"UPI000159BAD4"
+      },
+      "enzyme_name":"LlpH",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces tendae",
+      "phylum":"Actinomycetota",
+      "reaction_description":"halogenation",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.23"
