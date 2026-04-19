@@ -6954,6 +6954,28 @@
       "reaction_description":"Cytochrome P450 monooxygenase responsible for C10-hydroxylation in last step of nystatin A1 biosynthesis",
       "status":"active",
       "tailoring":"Hydroxylation|Monooxygenation"
+    },
+    "MITE0000326":{
+      "accession":"MITE0000326",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"NADP",
+      "domain":"Bacteria",
+      "enzyme_description":"oxidoreductase",
+      "enzyme_ids":{
+        "genpept":"ACY01396.1",
+        "mibig":"BGC0000177",
+        "uniprot":"D0U2E9"
+      },
+      "enzyme_name":"MgsK",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces platensis subsp. rosaceus",
+      "phylum":"Actinomycetota",
+      "reaction_description":"C-8 hydroxylation of iso-migrastatin core structure",
+      "status":"active",
+      "tailoring":"Hydroxylation"
     }
   },
   "version_mite_data":"1.23"
