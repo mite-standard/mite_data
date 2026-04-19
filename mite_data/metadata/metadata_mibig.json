@@ -329,6 +329,24 @@
         "status":"active"
       }
     ],
+    "BGC0000147":[
+      {
+        "enzyme_description":"O-methyltransferase",
+        "enzyme_ids":{
+          "genpept":"AAK19894.1",
+          "mibig":"BGC0000147",
+          "uniprot":"Q9ADL4"
+        },
+        "enzyme_name":"SorM",
+        "enzyme_refs":[
+          "doi:10.1016/S0378-1119(02)00396-7"
+        ],
+        "enzyme_tailoring":"Methylation",
+        "mite_accession":"MITE0000318",
+        "mite_url":"https://bioregistry.io/mite:MITE0000318",
+        "status":"active"
+      }
+    ],
     "BGC0000230":[
       {
         "enzyme_description":"Flavoprotein monooxygenase",

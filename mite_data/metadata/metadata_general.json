@@ -6845,6 +6845,28 @@
       "reaction_description":"Amide bond between the 7-carboxyl group of 7-carboxy-7-deazaguanine (CDG) and the ε-amine of lysine",
       "status":"active",
       "tailoring":"Acylation"
+    },
+    "MITE0000318":{
+      "accession":"MITE0000318",
+      "class_name":"Polyangia",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"O-methyltransferase",
+      "enzyme_ids":{
+        "genpept":"AAK19894.1",
+        "mibig":"BGC0000147",
+        "uniprot":"Q9ADL4"
+      },
+      "enzyme_name":"SorM",
+      "family":"Polyangiaceae",
+      "kingdom":"Pseudomonadati",
+      "order":"Polyangiales",
+      "organism":"Sorangium cellulosum",
+      "phylum":"Myxococcota",
+      "reaction_description":"Responsible for the post-PKS O-methylation of the hydroxyl at C11, from soraphen C to soraphen A ",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.23"
