@@ -6910,6 +6910,28 @@
       "reaction_description":"Oxidation reactions of primary alcohol to an aldehyde.",
       "status":"active",
       "tailoring":"Oxidation"
+    },
+    "MITE0000321":{
+      "accession":"MITE0000321",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"EED49867.1",
+        "mibig":"BGC0001445",
+        "uniprot":"B8NJG8"
+      },
+      "enzyme_name":"LepD",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Aspergillus flavus (strain ATCC 200026 / FGSC A1120 / IAM 13836 / NRRL 3357 / JCM 12722 / SRRC 167)",
+      "phylum":"Dikarya",
+      "reaction_description":"N-hydroxylation of Leporin C to Leporin B",
+      "status":"active",
+      "tailoring":"Hydroxylation"
     }
   },
   "version_mite_data":"1.23"
