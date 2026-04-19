@@ -1,0 +1,63 @@
+{
+    "accession": "MITE0000328",
+    "status": "active",
+    "comment": "O-methylation of the HO-C-8",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-14",
+            "contributors": [
+                "0000-0002-4540-6501"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423",
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 2 fixed reaction SMARTS to depict experimentally verified substrate specificity."
+        }
+    ],
+    "enzyme": {
+        "name": "MgsJ",
+        "description": "O-Methyltransferase",
+        "references": [
+            "doi:10.1021/ja4002635"
+        ],
+        "databaseIds": {
+            "uniprot": "D0U2E8",
+            "genpept": "ACY01395.1",
+            "mibig": "BGC0000177"
+        },
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "MgsJ is responsible for O-methylation of the HO-C-8 in iso-migrastatin biosynthesis",
+            "reactionSMARTS": "[#6:1]1=[#6:2]-[#6:3]-[#6:4]-[#6:5]=[#6:6]-[#6:8](-[#8:9]-[#6@:28](-[#6@:30](-[#6@@:32](-[#6@:33]-1\\[#8:34])/[#8:31])\\[#6:29])\\[#6:27](=[#6:26]-[#6@@:25](-[#6:24](-[#6:23]~[#6:22]-[#6:21]-[#6:20]1-[#6:19]-[#6:18](=[#8:17])-[#7:16]-[#6:15](=[#8:14])-[#6:13]-1)=[#8:12])\\[#6:11])-[#6:10])=[#8:7]>>[#6:1]1=[#6:2]-[#6:3]-[#6:4]-[#6:5]=[#6:6]-[#6:8](-[#8:9]-[#6@:28](-[#6@:30](-[#6@@:32](-[#6@:33]-1\\[#8:34]-[#6])/[#8:31])\\[#6:29])\\[#6:27](=[#6:26]-[#6@@:25](-[#6:24](-[#6:23]~[#6:22]-[#6:21]-[#6:20]1-[#6:19]-[#6:18](=[#8:17])-[#7:16]-[#6:15](=[#8:14])-[#6:13]-1)=[#8:12])\\[#6:11])-[#6:10])=[#8:7]",
+            "reactions": [
+                {
+                    "substrate": "C/C(=C\\[C@H](C)C(=O)CCCC1CC(=O)NC(=O)C1)[C@@H]1OC(=O)/C=C\\CC/C=C/[C@H](O)[C@@H](O)[C@@H]1C",
+                    "products": [
+                        "CO[C@H]1C=CCCC=CC(=O)O[C@@H](C(C)=C[C@H](C)C(=O)CCCC2CC(=O)NC(=O)C2)[C@@H](C)[C@@H]1O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "MgsJ is responsible for O-methylation of the HO-C-8 in iso-migrastatin biosynthesis"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/ja4002635"
+                ]
+            }
+        }
+    ]
+}
