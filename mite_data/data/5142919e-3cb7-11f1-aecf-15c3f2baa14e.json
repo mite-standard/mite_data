@@ -16,29 +16,40 @@
     ],
     "enzyme": {
         "name": "Dsd3",
-        "databaseIds": {
-            "uniprot": "A0A179H0I7.1",
-            "genpept": ""
-        },
+        "description": "Cytochrome P450 monooxygenase",
         "references": [
-            "doi:"
-        ]
+            "doi:10.1111/nph.70731"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A179H0I7",
+            "genpept": "OAQ83755.1"
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Monooxygenation"
+            ],
+            "description": "Monooxygenation",
+            "reactionSMARTS": "[#6:1]1(-[#6:9]):[#6:5](-[#8:7]):[#6:6]:[#6:4](-[#6:8]):[#6:2]2-[#6:11](=[#8:13])-[#8:12]-[#6:14]3:[#6:18](-[#8:10]-[#6:3]:1:2):[#6:19](-[#6:23]):[#6:17](-[#6:22](=[#8:25])-[#8:24]):[#6:15](-[#8:21]):[#6:16]:3-[#6:20]>>[#6:1]1(:[#6:3]2:[#6:2](-[#6:11](-[#8:12]-[#6:14]3:[#6:16](-[#6:20]):[#6:15](-[#8:21]):[#6:17](-[#6:22](-[#8:24])=[#8:25]):[#6:19](-[#6:23]):[#6:18]:3-[#8:10]-2)=[#8:13]):[#6:4](-[#6:8]):[#6:6]:[#6:5]:1-[#8:7])-[#6:9]-[#8]",
             "reactions": [
                 {
+                    "substrate": "Cc1cc(O)c(C)c2c1C(=O)Oc1c(C)c(O)c(C(=O)O)c(C)c1O2",
                     "products": [
-                        ""
-                    ]
+                        "Cc1cc(O)c(CO)c2c1C(=O)Oc1c(C)c(O)c(C(=O)O)c(C)c1O2"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Catalyze convirensic acid from hypoprotocetratic acid"
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1111/nph.70731"
+                ]
+            }
         }
     ]
 }
