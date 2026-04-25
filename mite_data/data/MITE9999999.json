@@ -1,6 +1,9 @@
 {
     "accession": "MITE9999999",
-    "status": "active",
+    "status": "retired",
+    "retirementReason": [
+        "MmARD does not relate to natural product biosynthesis"
+    ],
     "comment": "Metal dependent dioxygenase. Product depends on metal bound.",
     "changelog": [
         {
