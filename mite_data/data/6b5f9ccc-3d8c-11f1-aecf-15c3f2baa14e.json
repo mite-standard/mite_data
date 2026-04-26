@@ -1,0 +1,44 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-26",
+            "contributors": [
+                "0000-0002-8834-593X"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "auraA",
+        "databaseIds": {
+            "uniprot": "UPI0039BD93EE",
+            "genpept": ""
+        },
+        "references": [
+            "doi:"
+        ]
+    },
+    "reactions": [
+        {
+            "evidence": {
+                "evidenceCode": [],
+                "references": [
+                    "doi:"
+                ]
+            },
+            "reactions": [
+                {
+                    "products": [
+                        ""
+                    ]
+                }
+            ]
+        }
+    ]
+}
