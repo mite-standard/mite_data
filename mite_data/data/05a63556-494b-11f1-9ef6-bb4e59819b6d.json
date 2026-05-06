@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Converts Colletorin D into Colletochlorin D and Colletorin B into Colletochlorin B.",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,40 @@
     ],
     "enzyme": {
         "name": "CTC2",
+        "description": "Halogenase",
+        "references": [
+            "doi:10.1016/j.ymben.2023.10.002"
+        ],
         "databaseIds": {
             "uniprot": "A0A1B7YCJ8",
-            "genpept": ""
-        },
-        "references": [
-            "doi:"
-        ]
+            "genpept": "OBR09776.1",
+            "mibig": "BGC0002812"
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Chlorination of Colletorin D to produce Colletochlorin D",
+            "reactionSMARTS": "CC(C)=CCc1c(O)cc(C)c(C=O)c1O>>CC(C)=CCc1c(O)c(Cl)c(C)c(C=O)c1O",
             "reactions": [
                 {
+                    "substrate": "CC(C)=CCc1c(O)cc(C)c(C=O)c1O",
                     "products": [
-                        ""
-                    ]
+                        "CC(C)=CCc1c(O)c(Cl)c(C)c(C=O)c1O"
+                    ],
+                    "isIntermediate": false
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1016/j.ymben.2023.10.002"
+                ]
+            }
         }
     ]
 }
