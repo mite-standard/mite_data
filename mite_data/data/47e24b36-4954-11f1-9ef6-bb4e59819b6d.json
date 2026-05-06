@@ -16,29 +16,40 @@
     ],
     "enzyme": {
         "name": "XilC",
+        "description": "Cytochrome P450 monooxygenase",
+        "references": [
+            "doi:10.3390/jof8050493"
+        ],
         "databaseIds": {
             "uniprot": "A0A9P5GH02",
-            "genpept": ""
-        },
-        "references": [
-            "doi:"
-        ]
+            "genpept": "KAF7517449.1"
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "hydroxylation of prexylariolide D",
+            "reactionSMARTS": "[#6]-[#6]-[#6]-[#6]-c1ccc(=O)oc1-[#6]>>[#6]-[#6]-[#6]-[#6](-[#8])-c1ccc(=O)oc1-[#6]",
             "reactions": [
                 {
+                    "substrate": "CCCCc1ccc(=O)oc1C",
                     "products": [
-                        ""
-                    ]
+                        "CCCC(O)c1ccc(=O)oc1C"
+                    ],
+                    "isIntermediate": false
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.3390/jof8050493"
+                ]
+            }
         }
     ]
 }
