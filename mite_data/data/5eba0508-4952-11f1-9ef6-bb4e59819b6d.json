@@ -16,29 +16,160 @@
     ],
     "enzyme": {
         "name": "ucdE",
-        "databaseIds": {
-            "uniprot": "",
-            "genpept": "A0A0C1C2W0.1"
-        },
+        "description": "Prenyltransferase",
         "references": [
-            "doi:"
-        ]
+            "doi:10.1021/acs.jafc.6c03303"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A0C1C2W0",
+            "genpept": "KIA75360.1"
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Prenylation"
+            ],
+            "description": "prenylation of ortho-dihydroxyphenyl moiety",
+            "reactionSMARTS": "[#8]-c1cc(-[#8])c2c(c1)oc(-c1ccc(-[#8])c(-[#8])c1)c(-[#8])c2=O>>[#6]\\[#6](-[#6])=[#6]\\[#6]-c1c(-[#8])c(-[#8])ccc1-c1oc2cc(-[#8])cc(-[#8])c2c(=O)c1-[#8]",
             "reactions": [
                 {
+                    "substrate": "O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12",
                     "products": [
-                        ""
-                    ]
+                        "CC(C)=CCc1c(-c2oc3cc(O)cc(O)c3c(=O)c2O)ccc(O)c1O"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acs.jafc.6c03303"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Prenylation"
+            ],
+            "description": "prenylation of ortho-dihydroxyphenyl moiety",
+            "reactionSMARTS": "[#8]-c1cc(-[#8])c2c(c1)oc(cc2=O)-c1ccc(-[#8])c(-[#8])c1>>[#6]\\[#6](-[#6])=[#6]\\[#6]-c1c(-[#8])c(-[#8])ccc1-c1cc(=O)c2c(-[#8])cc(-[#8])cc2o1",
+            "reactions": [
+                {
+                    "substrate": "O=c1cc(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12",
+                    "products": [
+                        "CC(C)=CCc1c(-c2cc(=O)c3c(O)cc(O)cc3o2)ccc(O)c1O"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acs.jafc.6c03303"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Prenylation"
+            ],
+            "description": "prenylation of ortho-dihydroxyphenyl moiety",
+            "reactionSMARTS": "[#8]-c1ccc2c(c1)oc(-c1ccc(-[#8])c(-[#8])c1)c(-[#8])c2=O>>[#6]\\[#6](-[#6])=[#6]\\[#6]-c1c(-[#8])c(-[#8])ccc1-c1oc2cc(-[#8])ccc2c(=O)c1-[#8]",
+            "reactions": [
+                {
+                    "substrate": "O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)ccc12",
+                    "products": [
+                        "CC(C)=CCc1c(-c2oc3cc(O)ccc3c(=O)c2O)ccc(O)c1O"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acs.jafc.6c03303"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Prenylation"
+            ],
+            "description": "prenylation of ortho-dihydroxyphenyl moiety",
+            "reactionSMARTS": "[#8]-c1ccc(cc1-[#8])-c1cc(=O)c2ccccc2o1>>[#6]\\[#6](-[#6])=[#6]\\[#6]-c1c(-[#8])c(-[#8])ccc1-c1cc(=O)c2ccccc2o1",
+            "reactions": [
+                {
+                    "substrate": "O=c1cc(-c2ccc(O)c(O)c2)oc2ccccc12",
+                    "products": [
+                        "CC(C)=CCc1c(-c2cc(=O)c3ccccc3o2)ccc(O)c1O"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acs.jafc.6c03303"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Prenylation"
+            ],
+            "description": "prenylation of Urolithin C",
+            "reactionSMARTS": "[#8]-c1ccc2c(c1)oc(=O)c1cc(-[#8])c(-[#8])cc21>>[#6]\\[#6](-[#6])=[#6]/[#6]-c1c(-[#8])c(-[#8])cc2c1c1ccc(-[#8])cc1oc2=O",
+            "reactions": [
+                {
+                    "substrate": "O=c1oc2cc(O)ccc2c2cc(O)c(O)cc12",
+                    "products": [
+                        "CC(C)=CCc1c(O)c(O)cc2c(=O)oc3cc(O)ccc3c12"
+                    ],
+                    "isIntermediate": false,
+                    "description": "prenylation of Urolithin C"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acs.jafc.6c03303"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Prenylation"
+            ],
+            "description": "prenylation of dihydroxynaphthalene",
+            "reactionSMARTS": "[#8]-c1cc2ccccc2cc1-[#8]>>[#6]\\[#6](-[#6])=[#6]/[#6]-c1c(-[#8])c(-[#8])cc2ccccc12",
+            "reactions": [
+                {
+                    "substrate": "Oc1cc2ccccc2cc1O",
+                    "products": [
+                        "CC(C)=CCc1c(O)c(O)cc2ccccc12"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acs.jafc.6c03303"
+                ]
+            }
         }
     ]
 }
