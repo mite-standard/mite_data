@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Tyrosinase-like protein",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,45 @@
     ],
     "enzyme": {
         "name": "PhomQ2",
+        "description": "Hydroxylase",
+        "references": [
+            "doi:10.1002/anie.202111076"
+        ],
         "databaseIds": {
             "uniprot": "A0A8J9RRY2",
-            "genpept": ""
+            "genpept": "BDA39150.1",
+            "mibig": "BGC0001398"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "inorganic": [
+                "Cu"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "Hydroxylation of the tyrosine moiety.",
+            "reactionSMARTS": "CC[C@H](C)[C@H](NC(=O)[C@@H]1CCCN1C(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](N)Cc1ccc(O)c(Cl)c1)C(C)C)[C@@H](C)CC)C(=O)N[C@@H](CC(=O)O)C(=O)O>>CC[C@H](C)[C@H](NC(=O)[C@@H]1CCCN1C(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](N)Cc1cc(O)c(O)c(Cl)c1)C(C)C)[C@@H](C)CC)C(=O)N[C@@H](CC(=O)O)C(=O)O",
             "reactions": [
                 {
+                    "substrate": "CC[C@H](C)[C@H](NC(=O)[C@@H]1CCCN1C(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](N)Cc1ccc(O)c(Cl)c1)C(C)C)[C@@H](C)CC)C(=O)N[C@@H](CC(=O)O)C(=O)O",
                     "products": [
-                        ""
-                    ]
+                        "CC[C@H](C)[C@H](NC(=O)[C@@H]1CCCN1C(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](N)Cc1cc(O)c(O)c(Cl)c1)C(C)C)[C@@H](C)CC)C(=O)N[C@@H](CC(=O)O)C(=O)O"
+                    ],
+                    "isIntermediate": false
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1002/anie.202111076"
+                ]
+            }
         }
     ]
 }
