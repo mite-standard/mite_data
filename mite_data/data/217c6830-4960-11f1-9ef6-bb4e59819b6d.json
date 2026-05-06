@@ -16,29 +16,63 @@
     ],
     "enzyme": {
         "name": "btcB",
+        "description": "Cytochrome P450 monooxygenase",
+        "references": [
+            "doi:10.1016/j.tetlet.2018.02.022"
+        ],
         "databaseIds": {
             "uniprot": "UPI001C7C9CCE",
-            "genpept": ""
-        },
-        "references": [
-            "doi:"
-        ]
+            "mibig": "BGC0001528"
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "Converts betaestacin I to betaestacin III.",
+            "reactionSMARTS": "C/C1=C/C[C@@H]2[C@H](C(C)C)CC[C@@]2(C)C/C=C(\\C)CCC2[C@@H](C)CC[C@@H]12>>C/C1=C/C[C@@H]2[C@H]([C@H](C)CO)CC[C@@]2(C)C/C=C(\\C)C/C=C2\\[C@@H](C)CC[C@@H]12",
             "reactions": [
                 {
+                    "substrate": "C/C1=C/C[C@@H]2[C@H](C(C)C)CC[C@@]2(C)C/C=C(\\C)CCC2[C@@H](C)CC[C@@H]12",
                     "products": [
-                        ""
-                    ]
+                        "C/C1=C/C[C@@H]2[C@H]([C@H](C)CO)CC[C@@]2(C)C/C=C(\\C)C/C=C2\\[C@@H](C)CC[C@@H]12"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1016/j.tetlet.2018.02.022"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "Converts betaestacin III to betaestacin IV.",
+            "reactionSMARTS": "C/C1=C/C[C@@H]2[C@H]([C@H](C)CO)CC[C@@]2(C)C/C=C(\\C)C/C=C2\\[C@@H](C)CC[C@@H]12>>C/C1=C/C[C@@H]2[C@H]([C@H](C)C(=O)O)CC[C@@]2(C)C/C=C(\\C)C/C=C2\\[C@@H](C)CC[C@@H]12",
+            "reactions": [
+                {
+                    "substrate": "C/C1=C/C[C@@H]2[C@H]([C@H](C)CO)CC[C@@]2(C)C/C=C(\\C)C/C=C2\\[C@@H](C)CC[C@@H]12",
+                    "products": [
+                        "C/C1=C/C[C@@H]2[C@H]([C@H](C)C(=O)O)CC[C@@]2(C)C/C=C(\\C)C/C=C2\\[C@@H](C)CC[C@@H]12"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1016/j.tetlet.2018.02.022"
+                ]
+            }
         }
     ]
 }
