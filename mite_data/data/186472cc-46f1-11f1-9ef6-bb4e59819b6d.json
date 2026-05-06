@@ -16,29 +16,45 @@
     ],
     "enzyme": {
         "name": "PhzF",
+        "description": "Isomerase",
+        "references": [
+            "doi:10.1038/s41598-017-06278-w"
+        ],
         "databaseIds": {
             "uniprot": "Q51792",
-            "genpept": ""
-        },
-        "references": [
-            "doi:"
-        ]
+            "genpept": "AAC18905.1"
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Other"
+            ],
+            "description": "catalyzes the isomerization of (2S,3S)-2,3-dihydro-3-hydroxyanthranilic acid to (1R,6S)-6-amino-5-oxocyclohex-2-ene-1-carboxylic acid",
+            "reactionSMARTS": "[#6:1]1-[#6:5]=[#6:6]-[#6@:4](/[#8:10])-[#6@@:2](\\[#7:11])-[#6:3]=1-[#6:7](=[#8:9])-[#8:8]>>[#6:1]1=[#6:5]-[#6:6]-[#6&H0:4](=[#8:10])-[#6@@:2](\\[#7:11])-[#6@@:3]-1/[#6:7](=[#8:9])-[#8:8]",
             "reactions": [
                 {
+                    "substrate": "N[C@H]1C(C(=O)O)=CC=C[C@@H]1O",
                     "products": [
-                        ""
-                    ]
+                        "N[C@@H]1C(=O)CC=C[C@H]1C(=O)O"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure",
+                    "In vitro assay",
+                    "Site-directed mutagenesis"
+                ],
+                "references": [
+                    "doi:10.1038/s41598-017-06278-w"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "28182",
+                "ec": "5.3.3.17"
+            }
         }
     ]
 }
