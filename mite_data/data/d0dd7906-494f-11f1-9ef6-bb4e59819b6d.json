@@ -11,34 +11,84 @@
             "reviewers": [
                 "BBBBBBBBBBBBBBBBBBBBBBBB"
             ],
-            "comment": "New entry."
+            "comment": "Add new entry for YtkG"
         }
     ],
     "enzyme": {
         "name": "YtkG",
-        "databaseIds": {
-            "uniprot": "",
-            "genpept": "ADZ13540.1"
-        },
+        "description": "AMP-dependent acyl-CoA ligase",
         "references": [
-            "doi:"
-        ]
+            "doi:10.1002/anie.202522109"
+        ],
+        "databaseIds": {
+            "uniprot": "I3NN52",
+            "genpept": "ADZ13540.1",
+            "mibig": "BGC0000466"
+        },
+        "cofactors": {
+            "organic": [
+                "Adenosine triphosphate",
+                "Coenzyme A"
+            ],
+            "inorganic": [
+                "Mg"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Dehydration"
+            ],
+            "description": "CoA ligation to the carboxylic acid moiety.",
+            "reactionSMARTS": "[#6:1]1(-[#8:7]-[#6:9]):[#6:5]:[#6:6]2:[#6:12]:[#6:11](-[#6:13](=[#8:15])-[#8:14]):[#7:10]:[#6:4]:2:[#6:2]:[#6:3]:1-[#8:8]>>[#6:1]1(-[#8:7]-[#6:9]):[#6:5]:[#6:6]2:[#6:4](:[#7:10]:[#6:11](-[#6:13](=[#8:15])-[#16]-[#6]-[#6]-[#7]-[#6](=[#8])-[#6]-[#6]-[#7]-[#6](=[#8])-[#6@](\\[#8])-[#6](-[#6]-[#8:14]-[#15](-[#8]-[#15](-[#8]-[#6]\\[#6@]3-[#8]-[#6@@](\\[#7]4:[#6]5:[#6](:[#6](-[#7]):[#7]:[#6]:[#7]:5):[#7]:[#6]:4)-[#6@](/[#8])-[#6@@]-3/[#8]-[#15](-[#8])(-[#8])=[#8])(-[#8])=[#8])(-[#8])=[#8])(-[#6])-[#6]):[#6:12]:2):[#6:2]:[#6:3]:1-[#8:8]",
             "reactions": [
                 {
+                    "substrate": "COc1cc2cc(C(=O)O)[nH]c2cc1O",
                     "products": [
-                        ""
-                    ]
+                        "COc1cc2cc(C(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](O)[C@@H]3OP(=O)(O)O)[nH]c2cc1O"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1002/anie.202522109"
+                ]
+            },
+            "databaseIds": {
+                "ec": "6.2.1"
+            }
+        },
+        {
+            "tailoring": [
+                "Dehydration"
+            ],
+            "description": "CoA ligation to the carboxylic acid moiety.",
+            "reactionSMARTS": "[#6:1]1(-[#8:8]):[#6:5](-[#8:7]-[#6:15]):[#6:6]:[#6:4]:[#6:2]2:[#6:11]:[#6:10](-[#6:12](=[#8:14])-[#8:13]):[#7:9]:[#6:3]:1:2>>[#16](-[#6:12](=[#8:14])-[#6:10]1:[#7:9]:[#6:3]2:[#6:2](:[#6:11]:1):[#6:4]:[#6:6]:[#6:5](-[#8:7]-[#6:15]):[#6:1]:2-[#8:8])-[#6]-[#6]-[#7]-[#6](=[#8])-[#6]-[#6]-[#7]-[#6](=[#8])-[#6@](\\[#8])-[#6](-[#6]-[#8:13]-[#15](-[#8]-[#15](-[#8]-[#6]\\[#6@]1-[#8]-[#6@@](\\[#7]2:[#6]3:[#6](:[#6](-[#7]):[#7]:[#6]:[#7]:3):[#7]:[#6]:2)-[#6@](/[#8])-[#6@@]-1/[#8]-[#15](-[#8])(-[#8])=[#8])(-[#8])=[#8])(-[#8])=[#8])(-[#6])-[#6]",
+            "reactions": [
+                {
+                    "substrate": "COc1ccc2cc(C(=O)O)[nH]c2c1O",
+                    "products": [
+                        "COc1ccc2cc(C(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](O)[C@@H]3OP(=O)(O)O)[nH]c2c1O"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1002/anie.202522109"
+                ]
+            },
+            "databaseIds": {
+                "ec": "6.2.1"
+            }
         }
     ]
 }
