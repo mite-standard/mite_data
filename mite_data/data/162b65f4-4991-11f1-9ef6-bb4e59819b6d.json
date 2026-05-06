@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Dideacetyl fusicoccin A C-19 hydroxylase",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,43 @@
     ],
     "enzyme": {
         "name": "PaP450-5",
-        "databaseIds": {
-            "uniprot": "UPI00029CEA81",
-            "genpept": ""
-        },
+        "description": "Hydroxylase",
         "references": [
-            "doi:"
-        ]
+            "doi:10.1371/journal.pone.0042090"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI00029CEA81"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "Dideacetyl fusicoccin A C-19 hydroxylase",
+            "reactionSMARTS": "C=CC(C)(C)OC[C@H]1O[C@H](O[C@@H]2C3=C(C(C)C)C[C@H](O)[C@@]3(C)/C=C3/C(COC)CC[C@@H]3[C@H](C)C2O)[C@H](O)[C@@H](O)[C@@H]1O>>C=CC(C)(C)OC[C@H]1O[C@H](O[C@@H]2C3=C(C(C)CO)C[C@H](O)[C@@]3(C)/C=C3/C(COC)CC[C@@H]3[C@H](C)C2O)[C@H](O)[C@@H](O)[C@@H]1O",
             "reactions": [
                 {
+                    "substrate": "C=CC(C)(C)OC[C@H]1O[C@H](O[C@@H]2C3=C(C(C)C)C[C@H](O)[C@@]3(C)/C=C3/C(COC)CC[C@@H]3[C@H](C)C2O)[C@H](O)[C@@H](O)[C@@H]1O",
                     "products": [
-                        ""
-                    ]
+                        "C=CC(C)(C)OC[C@H]1O[C@H](O[C@@H]2C3=C(C(C)CO)C[C@H](O)[C@@]3(C)/C=C3/C(COC)CC[C@@H]3[C@H](C)C2O)[C@H](O)[C@@H](O)[C@@H]1O"
+                    ],
+                    "isIntermediate": false
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1371/journal.pone.0042090"
+                ]
+            }
         }
     ]
 }
