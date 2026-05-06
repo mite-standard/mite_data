@@ -16,29 +16,44 @@
     ],
     "enzyme": {
         "name": "dpchC",
-        "databaseIds": {
-            "uniprot": "A0A1B7YCK2",
-            "genpept": ""
-        },
+        "description": "Prenyl transferase",
         "references": [
-            "doi:"
-        ]
+            "doi:10.1038/s41467-020-15664-4"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI0008011BC3",
+            "mibig": "BGC0002429"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Mg"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Prenylation"
+            ],
+            "description": "Prenylation (geranylgeranylpyrophosphate) of the dpchA PKS product",
+            "reactionSMARTS": "Cc1oc(=O)cc(O)c1C>>CC(C)=CCC/C(C)=C/CC/C(C)=C/CC/C(C)=C/Cc1c(O)c(C)c(C)oc1=O",
             "reactions": [
                 {
+                    "substrate": "Cc1oc(=O)cc(O)c1C",
                     "products": [
-                        ""
-                    ]
+                        "CC(C)=CCC/C(C)=C/CC/C(C)=C/CC/C(C)=C/Cc1c(O)c(C)c(C)oc1=O"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1038/s41467-020-15664-4"
+                ]
+            }
         }
     ]
 }
