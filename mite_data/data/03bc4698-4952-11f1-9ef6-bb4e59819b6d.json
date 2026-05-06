@@ -16,29 +16,44 @@
     ],
     "enzyme": {
         "name": "dpchE",
-        "databaseIds": {
-            "uniprot": "H1VM35",
-            "genpept": ""
-        },
+        "description": "FAD-dependent monooxygenase",
         "references": [
-            "doi:"
-        ]
+            "doi:10.1038/s41467-020-15664-4"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI000249C05A",
+            "mibig": "BGC0002429"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "Epoxidation at C10-C11.",
+            "reactionSMARTS": "CC(C)=CCC/C(C)=C/CC/C(C)=C/CC/C(C)=C/Cc1c(O)c(C)c(C)oc1=O>>CC(C)=CCCC1(C)OC1CC/C(C)=C/CC/C(C)=C/Cc1c(O)c(C)c(C)oc1=O",
             "reactions": [
                 {
+                    "substrate": "CC(C)=CCC/C(C)=C/CC/C(C)=C/CC/C(C)=C/Cc1c(O)c(C)c(C)oc1=O",
                     "products": [
-                        ""
-                    ]
+                        "CC(C)=CCCC1(C)OC1CC/C(C)=C/CC/C(C)=C/Cc1c(O)c(C)c(C)oc1=O"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1038/s41467-020-15664-4"
+                ]
+            }
         }
     ]
 }
