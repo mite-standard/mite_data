@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Non-heme iron enzyme that catalyzes C-S bond formation during ergothioneine biosynthesis.",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,49 @@
     ],
     "enzyme": {
         "name": "EgtB",
-        "databaseIds": {
-            "uniprot": "",
-            "genpept": "WP_011731158.1"
-        },
+        "description": "Sulfoxide synthase",
         "references": [
-            "doi:"
-        ]
+            "doi:10.1002/anie.201410045"
+        ],
+        "databaseIds": {
+            "uniprot": "G7CFI3",
+            "genpept": "EHI13262.1"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Monooxygenation",
+                "Oxidation"
+            ],
+            "description": "Iron-dependent sulfoxidation of trimethylhistidine.",
+            "reactionSMARTS": "[CH2:1]([C@H:12]([NH2:16])[C:13]([OH:15])=[O:14])[CH2:2][C:3]([NH:5][C@H:6]([C:9]([OH:11])=[O:10])[CH2:7]S)=[O:4].[cH:17]1[n:18][c:19]([CH2:22][C@H:23]([N+:25]([CH3:28])([CH3:27])[CH3:26])[C:24](=[O:30])[OH:29])[cH:20][nH:21]1>>[c:17]1(S(=O)[CH2:7][C@@H:6]([C:9](=[O:10])[OH:11])[NH:5][C:3](=[O:4])[CH2:2][CH2:1][C@H:12]([NH2:16])[C:13](=[O:14])[OH:15])[n:18][c:19]([CH2:22][C@H:23]([N+:25]([CH3:26])([CH3:28])[CH3:27])[C:24](=[O:30])[OH:29])[cH:20][nH:21]1",
             "reactions": [
                 {
+                    "substrate": "C[N+](C)(C)[C@@H](Cc1c[nH]cn1)C(=O)O.N[C@@H](CCC(=O)N[C@@H](CS)C(=O)O)C(=O)O",
                     "products": [
-                        ""
-                    ]
+                        "C[N+](C)(C)[C@@H](Cc1c[nH]c(S(=O)C[C@H](NC(=O)CC[C@H](N)C(=O)O)C(=O)O)n1)C(=O)O"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Site-directed mutagenesis"
+                ],
+                "references": [
+                    "doi:10.1002/anie.201410045"
+                ]
+            },
+            "databaseIds": {
+                "ec": "1.14.99.50"
+            }
         }
     ]
 }
