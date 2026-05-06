@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000119",
-    "status": "pending",
+    "status": "active",
     "changelog": [
         {
             "version": "1",
@@ -21,7 +21,7 @@
                 "0000-0002-3677-2972"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0009-0008-3623-3734"
             ],
             "comment": "I have added in enzyme co-factors, auxiliary enzymes and new references. "
         }
