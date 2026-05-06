@@ -16,29 +16,39 @@
     ],
     "enzyme": {
         "name": "PatI",
+        "description": "Cytochrome P450 monooxygenase",
+        "references": [
+            "doi:10.1111/1462-2920.14542"
+        ],
         "databaseIds": {
             "uniprot": "A0A075TMP8",
-            "genpept": ""
-        },
-        "references": [
-            "doi:"
-        ]
+            "genpept": "AIG62145.1"
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "m-hydroxybenzyl alcohol hydroxylase",
+            "reactionSMARTS": "[#8]-[#6]-c1cccc(-[#8])c1>>[#8]-[#6]-c1cc(-[#8])ccc1-[#8]",
             "reactions": [
                 {
+                    "substrate": "OCc1cccc(O)c1",
                     "products": [
-                        ""
-                    ]
+                        "OCc1cc(O)ccc1O"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1111/1462-2920.14542"
+                ]
+            }
         }
     ]
 }
