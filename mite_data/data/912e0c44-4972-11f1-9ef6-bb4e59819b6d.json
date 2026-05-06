@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Fusicoccadiene C-8 hydroxylase",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,38 @@
     ],
     "enzyme": {
         "name": "PaP450-2",
-        "databaseIds": {
-            "uniprot": "UPI00029D3BFB",
-            "genpept": ""
-        },
+        "description": "Hydroxylase",
         "references": [
-            "doi:"
-        ]
+            "doi:10.1371/journal.pone.0042090"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI00029D3BFB"
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "C-8 hydroxylation",
+            "reactionSMARTS": "CC1=C2C[C@]3(C)CCC(C(C)C)=C3CC[C@@H](C)[C@H]2CC1>>CC1=C2C[C@]3(C)CCC(C(C)C)=C3CC(O)[C@@H](C)[C@H]2CC1",
             "reactions": [
                 {
+                    "substrate": "CC1=C2C[C@]3(C)CCC(C(C)C)=C3CC[C@@H](C)[C@H]2CC1",
                     "products": [
-                        ""
-                    ]
+                        "CC1=C2C[C@]3(C)CCC(C(C)C)=C3CC(O)[C@@H](C)[C@H]2CC1"
+                    ],
+                    "isIntermediate": false
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1371/journal.pone.0042090"
+                ]
+            }
         }
     ]
 }
