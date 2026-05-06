@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Glucose-1-phosphate thymidylyltransferase",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,40 @@
     ],
     "enzyme": {
         "name": "SipS7",
-        "databaseIds": {
-            "uniprot": "",
-            "genpept": "WP_075263839.1"
-        },
+        "description": "Transferase",
         "references": [
-            "doi:"
-        ]
+            "doi:10.1128/AEM.01462-18"
+        ],
+        "databaseIds": {
+            "uniprot": "Q9L9E6",
+            "genpept": "AAF67515.1"
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Other"
+            ],
+            "description": "Glucose-1-phosphate thymidylyltransferase   R = TDP",
+            "reactionSMARTS": "[#6:1]1(-[#6:7]-[#8:8])-[#6:2](-[#8:9])-[#6:3](-[#8:10])-[#6:4](-[#8:11])-[#6:5](-[#8:12]-[#15](-[#8;-])(-[#8;-])=[#8])-[#8:6]-1>>[#6:1]1(-[#6:7]-[#8:8])-[#6:2](-[#8:9])-[#6:3](-[#8:10])-[#6:4](-[#8:11])-[#6:5](-[#8:12]-[*])-[#8:6]-1",
             "reactions": [
                 {
+                    "substrate": "O=P([O-])([O-])OC1OC(CO)C(O)C(O)C1O",
                     "products": [
-                        ""
-                    ]
+                        "*OC1OC(CO)C(O)C(O)C1O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Glucose-1-phosphate thymidylyltransferase"
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure"
+                ],
+                "references": [
+                    "doi:10.1128/AEM.01462-18"
+                ]
+            }
         }
     ]
 }
