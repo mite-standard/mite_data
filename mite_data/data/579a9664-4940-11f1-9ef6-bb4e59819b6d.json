@@ -16,29 +16,47 @@
     ],
     "enzyme": {
         "name": "lom28",
-        "databaseIds": {
-            "uniprot": "",
-            "genpept": "AHZ61862"
-        },
+        "description": "flavin-dependent oxygenase",
         "references": [
-            "doi:"
-        ]
+            "doi:10.1016/j.tet.2014.03.009"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A059UH17",
+            "genpept": "AHZ61862.1"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD",
+                "Flavin mononucleotide",
+                "NAD",
+                "NADP"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Other"
+            ],
+            "description": "oxidative C-C bond cleavage",
+            "reactionSMARTS": "[#6]-[#6]-c1cc(-[#8])c2c(c1)cc(-[#8])c1c(-[#8])c3c(-[#8])cccc3c(-[#8])c21>>[#6]-[#6]-c1cc(-[#8])c(c(-[#6]=O)c1)-c1c(-[#8])c2cccc(-[#8])c2c(-[#8])c1-[#6](-[#8])=O",
             "reactions": [
                 {
+                    "substrate": "CCc1cc(O)c2c(c1)cc(O)c1c(O)c3c(O)cccc3c(O)c12",
                     "products": [
-                        ""
-                    ]
+                        "CCc1cc(O)c(-c2c(C(=O)O)c(O)c3c(O)cccc3c2O)c(C=O)c1"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure"
+                ],
+                "references": [
+                    "doi:10.1016/j.tet.2014.03.009"
+                ]
+            }
         }
     ]
 }
