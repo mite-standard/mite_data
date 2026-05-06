@@ -16,29 +16,45 @@
     ],
     "enzyme": {
         "name": "btcC",
+        "description": "Cytochrome P450 monooxygenase",
+        "references": [
+            "doi:10.1016/j.tetlet.2018.02.022"
+        ],
         "databaseIds": {
             "uniprot": "A0A484FVL2",
-            "genpept": ""
+            "genpept": "ENH79268.1",
+            "mibig": "BGC0001528"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "Converts betaestacin IV to betaestacin Va.",
+            "reactionSMARTS": "C/C1=C/C[C@@H]2[C@H]([C@H](C)C(=O)O)CC[C@@]2(C)C/C=C(\\C)C/C=C2\\[C@@H](C)CC[C@@H]12>>C/C1=C/C[C@@H]2[C@H]([C@H](C)C(=O)O)CC[C@@]2(C)C[C@@H](O)[C@](C)(O)C/C=C2/[C@H]1CC[C@@]2(C)O",
             "reactions": [
                 {
+                    "substrate": "C/C1=C/C[C@@H]2[C@H]([C@H](C)C(=O)O)CC[C@@]2(C)C/C=C(\\C)C/C=C2\\[C@@H](C)CC[C@@H]12",
                     "products": [
-                        ""
-                    ]
+                        "C/C1=C/C[C@@H]2[C@H]([C@H](C)C(=O)O)CC[C@@]2(C)C[C@@H](O)[C@](C)(O)C/C=C2/[C@H]1CC[C@@]2(C)O"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1016/j.tetlet.2018.02.022"
+                ]
+            }
         }
     ]
 }
