@@ -16,29 +16,38 @@
     ],
     "enzyme": {
         "name": "SpeD",
-        "databaseIds": {
-            "uniprot": "",
-            "genpept": "WGH00047"
-        },
+        "description": "Cytochrome P450",
         "references": [
-            "doi:"
-        ]
+            "doi:10.1021/acs.jnatprod.3c00155"
+        ],
+        "databaseIds": {
+            "genpept": "WGH00047.1"
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "indole C-2 oxidation of cyclopiazonic acid during speradine biosynthesis",
+            "reactionSMARTS": "[#6:1]-[#6:2](=[#6:4]1-[#6:24](=[#8:25])-[#7:23]2-[#6:7](-[#6:8]3-[#6:19](-[#6:20]-2(-[#6:22])-[#6:21])-[#6:18]-[#6:16]2:[#6:17]4:[#6:12](:[#6:13]:[#6:14]:[#6:15]:2):[#7:11]:[#6:10]:[#6:9]-3:4)-[#6:5]-1=[#8:6])-[#8:3]>>[#6:1]-[#6:2](=[#6:4]1-[#6:24](=[#8:25])-[#7:23]2-[#6:7](-[#6:8]3-[#6:19](-[#6:20]-2(-[#6:21])-[#6:22])-[#6:18]-[#6:16]2:[#6:17]4:[#6:12](:[#6:13]:[#6:14]:[#6:15]:2)-[#7:11]-[#6:10](=[#8])-[#6:9]-3-4)-[#6:5]-1=[#8:6])-[#8:3]",
             "reactions": [
                 {
+                    "substrate": "C/C(O)=C1\\C(=O)C2C3c4c[nH]c5cccc(c45)CC3C(C)(C)N2C1=O",
                     "products": [
-                        ""
-                    ]
+                        "CC(O)=C1C(=O)C2C3C4C(=O)Nc5cccc(c54)CC3C(C)(C)N2C1=O"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1021/acs.jnatprod.3c00155"
+                ]
+            }
         }
     ]
 }
