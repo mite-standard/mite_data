@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "C-9 hydroxylation",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,38 @@
     ],
     "enzyme": {
         "name": "PaP450-3",
-        "databaseIds": {
-            "uniprot": "UPI00029CE97C",
-            "genpept": ""
-        },
+        "description": "Hydroxylase",
         "references": [
-            "doi:"
-        ]
+            "doi:10.1371/journal.pone.0042090"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI00029CE97C"
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "C-9 hydroxylation",
+            "reactionSMARTS": "CC(C)C1=C2CC(O)[C@@H](C)[C@H]3CCC(CO)/C3=C/[C@]2(C)CC1>>CC(C)C1=C2C(O)C(O)[C@@H](C)[C@H]3CCC(CO)/C3=C/[C@]2(C)CC1",
             "reactions": [
                 {
+                    "substrate": "CC(C)C1=C2CC(O)[C@@H](C)[C@H]3CCC(CO)/C3=C/[C@]2(C)CC1",
                     "products": [
-                        ""
-                    ]
+                        "CC(C)C1=C2C(O)C(O)[C@@H](C)[C@H]3CCC(CO)/C3=C/[C@]2(C)CC1"
+                    ],
+                    "isIntermediate": false
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1371/journal.pone.0042090"
+                ]
+            }
         }
     ]
 }
