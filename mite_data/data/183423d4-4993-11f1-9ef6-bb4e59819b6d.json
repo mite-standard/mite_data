@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "dTDP-4-dehydro-6-deoxyglucose aminotransferase",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,40 @@
     ],
     "enzyme": {
         "name": "SipS13",
-        "databaseIds": {
-            "uniprot": "",
-            "genpept": "WP_075263832"
-        },
+        "description": "Transferase",
         "references": [
-            "doi:"
-        ]
+            "doi:10.1128/AEM.01462-18"
+        ],
+        "databaseIds": {
+            "uniprot": "O33942",
+            "genpept": "AAB84075.1"
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Other"
+            ],
+            "description": "dTDP-4-dehydro-6-deoxyglucose aminotransferase",
+            "reactionSMARTS": "[#6:1]1(-[#6:7])-[#6:2](-[#7:8])-[#6:3](-[#8:9])-[#6:4]-[#6:5](-[#8:10]-[*])-[#8:6]-1>>[#6:1]1(-[#6:7])-[#6:2](-[#7:8](-[#6])-[#6])-[#6:3](-[#8:9])-[#6:4]-[#6:5](-[#8:10]-[*])-[#8:6]-1",
             "reactions": [
                 {
+                    "substrate": "*OC1CC(O)C(N)C(C)O1",
                     "products": [
-                        ""
-                    ]
+                        "*OC1CC(O)C(N(C)C)C(C)O1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "dTDP-4-dehydro-6-deoxyglucose aminotransferase"
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure"
+                ],
+                "references": [
+                    "doi:10.1128/AEM.01462-18"
+                ]
+            }
         }
     ]
 }
