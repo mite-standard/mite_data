@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "CH63R_05477",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,43 @@
     ],
     "enzyme": {
         "name": "dpchG",
-        "databaseIds": {
-            "uniprot": "UPI000249F075",
-            "genpept": ""
-        },
+        "description": "Short chain dehydrogenase/reductase",
         "references": [
-            "doi:"
-        ]
+            "doi:10.1038/s41467-020-15664-4"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI000249F075"
+        },
+        "cofactors": {
+            "organic": [
+                "NADP"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "Oxidation of the 8S hydroxy group to a ketone.",
+            "reactionSMARTS": "C=C1CC[C@@H]2[C@](C)(CC[C@H](O)[C@@]2(C)CCC=C(C)C)[C@@H]1Cc1c(O)c(C)c(C)oc1=O>>C=C1CC[C@@H]2[C@](C)(CCC(=O)[C@@]2(C)CCC=C(C)C)[C@@H]1Cc1c(O)c(C)c(C)oc1=O",
             "reactions": [
                 {
+                    "substrate": "C=C1CC[C@@H]2[C@](C)(CC[C@H](O)[C@@]2(C)CCC=C(C)C)[C@@H]1Cc1c(O)c(C)c(C)oc1=O",
                     "products": [
-                        ""
-                    ]
+                        "C=C1CC[C@@H]2[C@](C)(CCC(=O)[C@@]2(C)CCC=C(C)C)[C@@H]1Cc1c(O)c(C)c(C)oc1=O"
+                    ],
+                    "isIntermediate": false
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1038/s41467-020-15664-4"
+                ]
+            }
         }
     ]
 }
