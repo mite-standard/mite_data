@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "CH63R_05476",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,39 @@
     ],
     "enzyme": {
         "name": "dpchB",
+        "description": "Terpene cyclase",
+        "references": [
+            "doi:10.1038/s41467-020-15664-4"
+        ],
         "databaseIds": {
             "uniprot": "UPI0007FBB145",
-            "genpept": ""
-        },
-        "references": [
-            "doi:"
-        ]
+            "mibig": "BGC0002429"
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Cyclization"
+            ],
+            "description": "Cyclisation",
+            "reactionSMARTS": "CC(C)=CCCC1(C)OC1CC/C(C)=C/CC/C(C)=C/Cc1c(O)c(C)c(C)oc1=O>>C=C1CC[C@@H]2[C@](C)(CC[C@H](O)[C@@]2(C)CCC=C(C)C)[C@@H]1Cc1c(O)c(C)c(C)oc1=O",
             "reactions": [
                 {
+                    "substrate": "CC(C)=CCCC1(C)OC1CC/C(C)=C/CC/C(C)=C/Cc1c(O)c(C)c(C)oc1=O",
                     "products": [
-                        ""
-                    ]
+                        "C=C1CC[C@@H]2[C@](C)(CC[C@H](O)[C@@]2(C)CCC=C(C)C)[C@@H]1Cc1c(O)c(C)c(C)oc1=O"
+                    ],
+                    "isIntermediate": false
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1038/s41467-020-15664-4"
+                ]
+            }
         }
     ]
 }
