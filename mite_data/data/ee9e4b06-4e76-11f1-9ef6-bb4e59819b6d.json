@@ -16,29 +16,38 @@
     ],
     "enzyme": {
         "name": "ApiE",
-        "databaseIds": {
-            "uniprot": "",
-            "genpept": "WWZ69539.1"
-        },
+        "description": "FAD-dependent monooxygenase",
         "references": [
-            "doi:"
-        ]
+            "doi:10.1101/2025.05.13.653897"
+        ],
+        "databaseIds": {
+            "genpept": "WWZ69539.1"
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "Pyridine hydroxylation",
+            "reactionSMARTS": "[CH3:1]/[CH:2]=[C:3](/[C@@H:5]([C@@H:7](/[CH:9]=[C:10](/[CH:12]=[CH:13]/[CH2:14]/[C:15](=[CH:17]/[CH2:18][c:19]1[n:28][c:25]([O:26][CH3:27])[cH:24][c:22]([OH:23])[c:20]1[CH3:21])/[CH3:16])\\[CH3:11])[CH3:8])[OH:6])\\[CH3:4]>>[CH3:1]/[CH:2]=[C:3](/[C@@H:5]([C@@H:7](/[CH:9]=[C:10](/[CH:12]=[CH:13]/[CH2:14]/[C:15](=[CH:17]/[CH2:18][c:19]1[n:28][c:25]([O:26][CH3:27])[c:24](O)[c:22]([OH:23])[c:20]1[CH3:21])/[CH3:16])\\[CH3:11])[CH3:8])[OH:6])\\[CH3:4]",
             "reactions": [
                 {
+                    "substrate": "C/C=C(\\C)[C@H](O)[C@H](C)/C=C(C)/C=C/C/C(C)=C/Cc1nc(OC)cc(O)c1C",
                     "products": [
-                        ""
-                    ]
+                        "C/C=C(\\C)[C@H](O)[C@H](C)/C=C(C)/C=C/C/C(C)=C/Cc1nc(OC)c(O)c(O)c1C"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure"
+                ],
+                "references": [
+                    "doi:10.1101/2025.05.13.653897"
+                ]
+            }
         }
     ]
 }
