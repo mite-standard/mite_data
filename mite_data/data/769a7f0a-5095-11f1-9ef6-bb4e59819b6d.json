@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Oxidative ring rearrangement and decarboxylation of 7-chloro-L-tryptophan to monodechloroaminopyrrolnitrin.",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,58 @@
     ],
     "enzyme": {
         "name": "PrnB",
-        "databaseIds": {
-            "uniprot": "",
-            "genpept": "ABW69175.1"
-        },
+        "description": "Heme-dependent oxygenase",
         "references": [
-            "doi:"
-        ]
+            "doi:10.1021/bi7012189"
+        ],
+        "databaseIds": {
+            "uniprot": "P95481",
+            "genpept": "ABW69175.1",
+            "mibig": "BGC0000924"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Decarboxylation",
+                "Heterocyclization",
+                "Oxidation",
+                "Ring contraction"
+            ],
+            "description": "Oxidative indole ring rearrangement and decarboxylation of 7-chloro-L-tryptophan to monodechloroaminopyrrolnitrin.",
+            "reactionSMARTS": "N[C@@H](Cc1c[nH]c2c(Cl)cccc12)C(=O)O>>Nc1c(Cl)cccc1-c1cc[nH]c1",
             "reactions": [
                 {
+                    "substrate": "N[C@@H](Cc1c[nH]c2c(Cl)cccc12)C(=O)O",
                     "products": [
-                        ""
-                    ]
+                        "Nc1c(Cl)cccc1-c1cc[nH]c1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "PrnB converts 7-chloro-L-tryptophan to monodechloroaminopyrrolnitrin by oxidative indole rearrangement and decarboxylation."
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Inference from genomic data and chemical structure",
+                    "In vitro assay",
+                    "Knock-out studies",
+                    "Site-directed mutagenesis"
+                ],
+                "references": [
+                    "doi:10.1021/bi7012189",
+                    "doi:10.1074/jbc.M110.120485",
+                    "doi:10.1016/j.jbc.2024.108123"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "50952"
+            }
         }
     ]
 }
