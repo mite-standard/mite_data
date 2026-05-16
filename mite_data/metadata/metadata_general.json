@@ -7145,7 +7145,28 @@
       "reaction_description":"condenses one acetyl-CoA unit with six malonyl-CoA units and a homoserine, followed by a reductive release of an alcohol intermediate, prelucilactaene B ",
       "status":"retired",
       "tailoring":"Other|Reduction"
+    },
+    "MITE0000332":{
+      "accession":"MITE0000332",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"SFP28100.1",
+        "uniprot":"A0A1I5P2L5"
+      },
+      "enzyme_name":"AriF",
+      "family":"Pseudonocardiaceae",
+      "kingdom":"Bacillati",
+      "order":"Pseudonocardiales",
+      "organism":"Amycolatopsis arida",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Formation of tricyclic terpene skeleton by intramolecular cyclization.",
+      "status":"active",
+      "tailoring":"Cyclization"
     }
   },
-  "version_mite_data":"1.24"
+  "version_mite_data":"1.26"
 }
