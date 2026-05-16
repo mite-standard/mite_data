@@ -16,29 +16,69 @@
     ],
     "enzyme": {
         "name": "AndK",
+        "description": "Cytochrome P450 monooxygenase",
+        "references": [
+            "doi:10.1021/ja508127q"
+        ],
         "databaseIds": {
             "uniprot": "A0A097ZPE4",
-            "genpept": ""
+            "genpept": "BAP81865.1",
+            "mibig": "BGC0002612"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "First step in the convertion of 3,5-dimethylorsellinic acid to 5,7-dihydroxy-4,6-dimethylphtalide.",
+            "reactionSMARTS": "[#6]1(-[#6](=[#8])-[#8]):[#6](-[#6]):[#6](-[#6]):[#6](-[#8]):[#6](-[#6]):[#6]:1-[#8]>>[#6]1(-[#6](=[#8])-[#8]):[#6](-[#6]-[#8]):[#6](-[#6]):[#6](-[#8]):[#6](-[#6]):[#6]:1-[#8]",
             "reactions": [
                 {
+                    "substrate": "Cc1c(C)c(C(=O)O)c(O)c(C)c1O",
                     "products": [
-                        ""
-                    ]
+                        "Cc1c(O)c(C)c(CO)c(C(=O)O)c1O"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1021/ja508127q"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Cyclization"
+            ],
+            "description": "Second step in the convertion of 3,5-dimethylorsellinic acid to 5,7-dihydroxy-4,6-dimethylphtalide.",
+            "reactionSMARTS": "[#6]1(-[#6](=[#8])-[#8]):[#6](-[#6]-[#8]):[#6](-[#6]):[#6](-[#8]):[#6](-[#6]):[#6]:1-[#8]>>[#6]12-[#6](-[#8]-[#6]-[#6]:1:[#6](-[#6]):[#6](-[#8]):[#6](-[#6]):[#6]:2-[#8])=[#8]",
+            "reactions": [
+                {
+                    "substrate": "Cc1c(O)c(C)c(CO)c(C(=O)O)c1O",
+                    "products": [
+                        "Cc1c(O)c(C)c2c(c1O)C(=O)OC2"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1021/ja508127q"
+                ]
+            }
         }
     ]
 }
