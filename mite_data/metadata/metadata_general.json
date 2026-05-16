@@ -7361,6 +7361,26 @@
       "reaction_description":"Hydroxylation of diterpene scaffold",
       "status":"active",
       "tailoring":"Hydroxylation"
+    },
+    "MITE0000343":{
+      "accession":"MITE0000343",
+      "class_name":"Not found",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD|NAD",
+      "domain":"Not found",
+      "enzyme_description":"Flavin-dependent S-hydroxylase",
+      "enzyme_ids":{
+        "uniprot":"UPI00041FAA4D"
+      },
+      "enzyme_name":"TaaH",
+      "family":"Not found",
+      "kingdom":"Not found",
+      "order":"Not found",
+      "organism":"Not found",
+      "phylum":"Not found",
+      "reaction_description":"Hydroxylation of thiocarboxylic acid into sulfenic acid",
+      "status":"active",
+      "tailoring":"Hydroxylation"
     }
   },
   "version_mite_data":"1.26"
