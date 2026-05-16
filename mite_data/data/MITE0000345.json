@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000345",
     "status": "active",
     "comment": "dimethylallyl tryptophan synthase (DMATS)-type PT",
     "changelog": [
@@ -17,7 +17,7 @@
     ],
     "enzyme": {
         "name": "AuraA",
-        "description": "prenyltransferase",
+        "description": "Prenyltransferase",
         "references": [
             "doi:10.1038/s41467-024-55537-8"
         ],
