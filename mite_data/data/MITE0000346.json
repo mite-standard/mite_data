@@ -1,0 +1,62 @@
+{
+    "accession": "MITE0000346",
+    "status": "active",
+    "comment": "Rieske nonheme iron-dependent oxygenase",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-03",
+            "contributors": [
+                "0000-0001-9487-1525"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "MarG",
+        "description": "Rieske nonheme iron-dependent oxygenase",
+        "references": [
+            "doi:10.1021/jo5023553",
+            "doi:10.1021/ja411544w"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A067YNS9",
+            "genpept": "AHF22859.1",
+            "mibig": "BGC0000091"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Cyclization",
+                "Heterocyclization",
+                "Oxidation"
+            ],
+            "description": "Cyclization of 23-hydroxyundecylprodiginine to form the macrocycle and spiroaminal moieties of premarineosin A",
+            "reactionSMARTS": "[#6:1]-[#6:2](-[#6:4]-[#6:5]-[#6:6]-[#6:7]-[#6:8]-[#6:9]-[#6:10]-[#6:11]-[#6:12]-[#6:13]1:[#7:30]:[#6:16](-[#6:17]=[#6:18]2-[#7:29]=[#6:23](-[#6:24]3:[#7:28]:[#6:27]:[#6:26]:[#6:25]:3)-[#6:22]=[#6:19]-2-[#8:20]-[#6:21]):[#6:15]:[#6:14]:1)-[#8:3]>>[#6:1]/[#6@:2]1-[#8:3]-[#6:18]2(-[#7:29]=[#6:23](-[#6:24]3-[#7:28]-[#6:27]=[#6:26]-[#6:25]=3)-[#6:22]=[#6:19]-2-[#8:20]-[#6:21])-[#6@:17]2/[#6:16]3=[#6:15]-[#6:14]=[#6:13](-[#6:12]-[#6:11]-[#6:10]-[#6:9]-[#6:8]-[#6:7]-[#6:6]\\[#6@@:5]-2-[#6:4]-1)-[#7:30]-3",
+            "reactions": [
+                {
+                    "substrate": "COC1=CC(c2ccc[nH]2)=N/C1=C/c1ccc(CCCCCCCCCC(C)O)[nH]1",
+                    "products": [
+                        "COC1=CC(c2ccc[nH]2)=NC12O[C@H](C)C[C@H]1CCCCCCCc3ccc([nH]3)[C@@H]12"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Cyclization of 23-hydroxyundecylprodiginine to form the macrocycle and spiroaminal moieties of premarineosin A"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/jo5023553",
+                    "doi:10.1021/ja411544w"
+                ]
+            }
+        }
+    ]
+}
