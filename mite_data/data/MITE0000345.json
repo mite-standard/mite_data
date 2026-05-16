@@ -1,0 +1,57 @@
+{
+    "accession": "MITE0000345",
+    "status": "active",
+    "comment": "dimethylallyl tryptophan synthase (DMATS)-type PT",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-26",
+            "contributors": [
+                "0000-0002-8834-593X"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "AuraA",
+        "description": "Prenyltransferase",
+        "references": [
+            "doi:10.1038/s41467-024-55537-8"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI0039BD93EE",
+            "genpept": "XJW06602.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "C-prenylation on the imidazole moiety of dihydroviridamine (imidazole-C-dimethylallyl products)",
+            "reactionSMARTS": "[#6:1]-[#6:2](-[#6:4]1-[#6:16](=[#8:17])-[#7:15]-[#6:8](-[#6:9]-[#6:10]2:[#7:14]:[#6:13]:[#7:12]:[#6:11]:2)-[#6:6](=[#8:7])-[#7:5]-1)-[#6:3]>>[#6]-[#6](=[#6]-[#6]-[#6:13]1:[#7:12]:[#6:11]:[#6:10](-[#6:9]-[#6:8]2-[#6:6](=[#8:7])-[#7:5]-[#6:4](-[#6:2](-[#6:1])-[#6:3])-[#6:16](=[#8:17])-[#7:15]-2):[#7:14]:1)-[#6]",
+            "reactions": [
+                {
+                    "substrate": "CC(C)C1NC(=O)C(Cc2c[nH]cn2)NC1=O",
+                    "products": [
+                        "CC(C)=CCc1nc(CC2NC(=O)C(C(C)C)NC2=O)c[nH]1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "C-prenylation on the imidazole moiety of dihydroviridamine (imidazole-C-dimethylallyl products)"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1038/s41467-024-55537-8"
+                ]
+            }
+        }
+    ]
+}
