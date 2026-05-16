@@ -450,3 +450,4 @@
 448,MITE0000343.reaction1.example1,CCC[C@H](C)C[C@H](C)[C@H](O)[C@@H](C)c1nc(C(=O)S)cs1,CCC[C@H](C)C[C@H](C)[C@H](O)[C@@H](C)c1nc(C(=O)SO)cs1
 449,MITE0000344.reaction1.example1,NCCCCC(N)C(=O)NC(CS)C(=O)NCC(=O)O,NCCCCC(N)C1=NC(=C(S)NCC(=O)O)C(=O)O1
 450,MITE0000345.reaction1.example1,CC(C)C1NC(=O)C(Cc2c[nH]cn2)NC1=O,CC(C)=CCc1nc(CC2NC(=O)C(C(C)C)NC2=O)c[nH]1
+451,MITE0000346.reaction1.example1,COC1=CC(c2ccc[nH]2)=N/C1=C/c1ccc(CCCCCCCCCC(C)O)[nH]1,COC1=CC(c2ccc[nH]2)=NC12O[C@H](C)C[C@H]1CCCCCCCc3ccc([nH]3)[C@@H]12

@@ -327,6 +327,25 @@
         "status":"active"
       }
     ],
+    "BGC0000091":[
+      {
+        "enzyme_description":"Rieske nonheme iron-dependent oxygenase",
+        "enzyme_ids":{
+          "genpept":"AHF22859.1",
+          "mibig":"BGC0000091",
+          "uniprot":"A0A067YNS9"
+        },
+        "enzyme_name":"MarG",
+        "enzyme_refs":[
+          "doi:10.1021/jo5023553",
+          "doi:10.1021/ja411544w"
+        ],
+        "enzyme_tailoring":"Cyclization|Heterocyclization|Oxidation",
+        "mite_accession":"MITE0000346",
+        "mite_url":"https://bioregistry.io/mite:MITE0000346",
+        "status":"active"
+      }
+    ],
     "BGC0000093":[
       {
         "enzyme_description":"O-methyltransferase",
