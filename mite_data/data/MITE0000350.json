@@ -1,0 +1,71 @@
+{
+    "accession": "MITE0000350",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-06",
+            "contributors": [
+                "0009-0000-8651-1669"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 expanded descriptions, fixed substrate specificity, and fixed DOIs."
+        }
+    ],
+    "enzyme": {
+        "name": "Ulm24",
+        "description": "Flavin-dependent halogenase",
+        "references": [
+            "doi:10.1021/acs.jnatprod.7b00660"
+        ],
+        "auxiliaryEnzymes": [
+            {
+                "name": "Ulm26",
+                "description": "Flavin reductase",
+                "databaseIds": {
+                    "uniprot": "A0A2D3E324",
+                    "genpept": "ATU31803.1"
+                }
+            }
+        ],
+        "databaseIds": {
+            "uniprot": "A0A2D3E318",
+            "genpept": "ATU31801.1",
+            "mibig": "BGC0001814"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "5-halogenation of L-tryptophan in the ulleungmycin pathway. Exact occurrence of halogenation in the pathway currently undefined.",
+            "reactionSMARTS": "[#7:1]\\[#6@:2](-[#6:13]=[#8:14])-[#6:3]-[#6:4]1:[#6:8]2:[#6:9]:[#6:10]:[#6:11]:[#6:12]:[#6:7]:2:[#7:6]:[#6:5]:1>>[#7:1]\\[#6@:2](-[#6:13]=[#8:14])-[#6:3]-[#6:4]1:[#6:8]2:[#6:9]:[#6:10](-[Cl]):[#6:11]:[#6:12]:[#6:7]:2:[#7:6]:[#6:5]:1",
+            "reactions": [
+                {
+                    "substrate": "N[C@@H](Cc1c[nH]c2ccccc12)C(=O)O",
+                    "products": [
+                        "N[C@@H](Cc1c[nH]c2ccc(Cl)cc12)C(=O)O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Halogenation of free-floating tryptophan as precursor used in the ulleungmycin pathway."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure"
+                ],
+                "references": [
+                    "doi:10.1021/acs.jnatprod.7b00660"
+                ]
+            }
+        }
+    ]
+}
