@@ -1,0 +1,62 @@
+{
+    "accession": "MITE0000348",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-03",
+            "contributors": [
+                "0000-0001-9487-1525"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423",
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 2 removed MIBiG BGC cross-reference (was BGC0000924) since it describes the gene cluster from Pseudomonas chlororaphis, while the paper describes the one from Pseudomonas fluorescens."
+        }
+    ],
+    "enzyme": {
+        "name": "PrnC",
+        "description": "Flavin-dependent halogenase",
+        "references": [
+            "doi:10.1038/s42004-023-01083-1",
+            "doi:10.1002/1615-4169(200108)343:6/7%3C591::AID-ADSC591%3E3.0.CO;2-E"
+        ],
+        "databaseIds": {
+            "uniprot": "P95482",
+            "genpept": "AAB97506.1"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Site-specific chlorination of pyrrolic heterocycles.",
+            "reactionSMARTS": "[#6:1]1(:[#6:10]:[#6:11]:[#6:9]:[#6:7](-[Cl:13]):[#6:8]:1-[#7:12])-[#6:2]1:[#6:4]:[#6:3]:[#7:5]:[#6:6]:1>>[#6:1]1(:[#6:10]:[#6:11]:[#6:9]:[#6:7](-[Cl:13]):[#6:8]:1-[#7:12])-[#6:2]1:[#6:4](-[Cl]):[#6:3]:[#7:5]:[#6:6]:1",
+            "reactions": [
+                {
+                    "substrate": "Nc1c(Cl)cccc1-c1cc[nH]c1",
+                    "products": [
+                        "Nc1c(Cl)cccc1-c1c[nH]cc1Cl"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Chlorination of monodechloroaminopyrrolnitrin to form aminopyrrolnitrin."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1038/s42004-023-01083-1"
+                ]
+            }
+        }
+    ]
+}
