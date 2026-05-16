@@ -9,9 +9,10 @@
                 "0000-0001-9487-1525"
             ],
             "reviewers": [
-                "0000-0002-9747-3423"
+                "0000-0002-9747-3423",
+                "0000-0001-6534-6609"
             ],
-            "comment": "New entry."
+            "comment": "New entry. Reviewer 2 removed MIBiG BGC cross-reference (was BGC0000924) since it describes the gene cluster from Pseudomonas chlororaphis, while the paper describes the one from Pseudomonas fluorescens."
         }
     ],
     "enzyme": {
@@ -23,8 +24,7 @@
         ],
         "databaseIds": {
             "uniprot": "P95482",
-            "genpept": "AAB97506.1",
-            "mibig": "BGC0000924"
+            "genpept": "AAB97506.1"
         },
         "cofactors": {
             "organic": [
