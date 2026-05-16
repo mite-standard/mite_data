@@ -1,0 +1,57 @@
+{
+    "accession": "MITE0000335",
+    "status": "active",
+    "comment": "Cytochrome P450 monooxygenase; M-cresol hydroxylase",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-14",
+            "contributors": [
+                "0000-0001-5730-3326"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "PatH",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1111/1462-2920.14542"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A075TRL5",
+            "genpept": "AIG62144.1",
+            "mibig": "BGC0000120"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "Hydroxylation of m-cresol in patulin biosynthetic pathway.",
+            "reactionSMARTS": "[#8:1]-[#6:2]1:[#6:8]:[#6:7]:[#6:6]:[#6:4](-[#6:5]):[#6:3]:1>>[#8:1]-[#6:2]1:[#6:8]:[#6:7]:[#6:6]:[#6:4](-[#6:5]-[#8]):[#6:3]:1",
+            "reactions": [
+                {
+                    "substrate": "Cc1cccc(O)c1",
+                    "products": [
+                        "OCc1cccc(O)c1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Hydroxylation of m-cresol in patulin biosynthetic pathway."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1111/1462-2920.14542"
+                ]
+            }
+        }
+    ]
+}
