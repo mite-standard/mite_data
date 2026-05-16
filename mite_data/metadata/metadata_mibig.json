@@ -3003,6 +3003,24 @@
         "status":"active"
       }
     ],
+    "BGC0001814":[
+      {
+        "enzyme_description":"Flavin-dependent halogenase",
+        "enzyme_ids":{
+          "genpept":"ATU31801.1",
+          "mibig":"BGC0001814",
+          "uniprot":"A0A2D3E318"
+        },
+        "enzyme_name":"Ulm24",
+        "enzyme_refs":[
+          "doi:10.1021/acs.jnatprod.7b00660"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000350",
+        "mite_url":"https://bioregistry.io/mite:MITE0000350",
+        "status":"active"
+      }
+    ],
     "BGC0001881":[
       {
         "enzyme_description":"O-methyltransferase",
