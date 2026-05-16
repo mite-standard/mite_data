@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000338",
     "status": "active",
     "changelog": [
         {
@@ -16,7 +16,7 @@
     ],
     "enzyme": {
         "name": "SCO6279",
-        "description": "aminotransferase",
+        "description": "Aminotransferase",
         "references": [
             "doi:10.1039/C2SC20410J"
         ],
@@ -31,7 +31,7 @@
             "tailoring": [
                 "Amination"
             ],
-            "description": "Possibly carry out the amination reation from compound 3 to compound 4 in the biosynthesis of coelimycin P1 (Scheme 1)",
+            "description": "Putatively responsible for amination reaction from compound 3 to compound 4 in the biosynthesis of coelimycin P1 (Scheme 1)",
             "reactionSMARTS": "[#8]=[#6:2]-[#6:3]-[#6:4]=[#6:5]-[#6@@:7](-[#6:8]=[#6:9]-[#6:10]=[#6:11]-[#6:12]=[#6:13]-[#6:14])\\[#8:6]>>[#7]-[#6:2]-[#6:3]-[#6:4]=[#6:5]-[#6@@:7](-[#6:8]=[#6:9]-[#6:10]=[#6:11]-[#6:12]=[#6:13]-[#6:14])\\[#8:6]",
             "reactions": [
                 {
