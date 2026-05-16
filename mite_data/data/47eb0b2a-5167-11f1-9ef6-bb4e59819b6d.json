@@ -16,29 +16,41 @@
     ],
     "enzyme": {
         "name": "AscJ",
+        "description": "Short-chain dehydrogenase/reductase",
+        "references": [
+            "doi:10.1073/pnas.1819254116"
+        ],
         "databaseIds": {
             "uniprot": "A0A455R5K2",
-            "genpept": ""
-        },
-        "references": [
-            "doi:"
-        ]
+            "genpept": "BBF25320.1",
+            "mibig": "BGC0001924"
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "Converts Ascofuranol to Ascofuranone.",
+            "reactionSMARTS": "[#6]-[#6](-[#6]-[#6]-[#6]=[#6](-[#6]1-[#8]-[#6](-[#6])(-[#6])-[#6@@](/[#8])-[#6]-1)-[#6])=[#6]-[#6]-[#6]1:[#6](-[#8]):[#6](-[#6]=[#8]):[#6](-[#6]):[#6](-[Cl]):[#6]:1-[#8;-]>>[#6]1(-[#8;-]):[#6](-[#6]-[#6]=[#6](-[#6])-[#6]-[#6]-[#6]=[#6](-[#6]2-[#8]-[#6](-[#6])(-[#6])-[#6](=[#8])-[#6]-2)-[#6]):[#6](-[#8]):[#6](-[#6]=[#8]):[#6](-[#6]):[#6]:1-[Cl]",
             "reactions": [
                 {
+                    "substrate": "CC(=CCc1c([O-])c(Cl)c(C)c(C=O)c1O)CCC=C(C)C1C[C@H](O)C(C)(C)O1",
                     "products": [
-                        ""
-                    ]
+                        "CC(=CCc1c([O-])c(Cl)c(C)c(C=O)c1O)CCC=C(C)C1CC(=O)C(C)(C)O1"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1073/pnas.1819254116"
+                ]
+            }
         }
     ]
 }
