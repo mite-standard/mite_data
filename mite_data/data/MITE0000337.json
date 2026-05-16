@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000337",
     "status": "active",
     "changelog": [
         {
@@ -16,7 +16,7 @@
     ],
     "enzyme": {
         "name": "SCO6272",
-        "description": "monooxygenase",
+        "description": "Oxidoreductase",
         "references": [
             "doi:10.1039/C2SC20410J"
         ],
