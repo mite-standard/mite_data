@@ -2024,6 +2024,24 @@
         "status":"active"
       }
     ],
+    "BGC0000903":[
+      {
+        "enzyme_description":"Fluorinase",
+        "enzyme_ids":{
+          "genpept":"CAJ20006.1",
+          "mibig":"BGC0000903",
+          "uniprot":"Q70GK9"
+        },
+        "enzyme_name":"FlA1",
+        "enzyme_refs":[
+          "doi:10.1016/j.pep.2019.105508"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000340",
+        "mite_url":"https://bioregistry.io/mite:MITE0000340",
+        "status":"active"
+      }
+    ],
     "BGC0000932":[
       {
         "enzyme_description":"Flavoprotein dioxygenase",

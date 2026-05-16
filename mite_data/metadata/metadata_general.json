@@ -7296,6 +7296,28 @@
       "reaction_description":"Putatively responsible for oxygenation of compound 7 to compound 8 in the biosynthesis of coelimycin P1 (Scheme 1)",
       "status":"active",
       "tailoring":"Monooxygenation"
+    },
+    "MITE0000340":{
+      "accession":"MITE0000340",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Fluorinase",
+      "enzyme_ids":{
+        "genpept":"CAJ20006.1",
+        "mibig":"BGC0000903",
+        "uniprot":"Q70GK9"
+      },
+      "enzyme_name":"FlA1",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptantibioticus cattleyicolor",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Catalyzes the formation of a C-F bond by combining S-adenosyl-L-methionine (SAM) and fluoride to generate 5'-fluoro-5'-deoxyadenosine (5'-FDA) and L-methionine. It can also use 2'-deoxyadenosine in place of adenosine as substrate",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.26"

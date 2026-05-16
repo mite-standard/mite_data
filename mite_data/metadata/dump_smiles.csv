@@ -443,3 +443,4 @@
 441,MITE0000337.reaction1.example1,C/C=C/C=C/C=C/[C@@H](O)/C=C\CCN,CC=CC=CC1OC1[C@@H](O)C=CCCN
 442,MITE0000338.reaction1.example1,C/C=C/C=C/C=C/[C@@H](O)/C=C\CC=O,CC=CC=CC=C[C@@H](O)C=CCCN
 443,MITE0000339.reaction1.example1,C/C=C/C1OC1C1OC1[C@@H](O)/C=C\CCN,CC=CC1OC1C1OC1C1(O)C=CCCN1
+444,MITE0000340.reaction1.example1,C[S+](CC[C@H](N)C(=O)O)C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O,Nc1ncnc2c1ncn2[C@@H]1O[C@H](CF)[C@@H](O)[C@H]1O
