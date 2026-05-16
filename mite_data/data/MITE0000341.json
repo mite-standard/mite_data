@@ -1,0 +1,66 @@
+{
+    "accession": "MITE0000341",
+    "status": "active",
+    "comment": "MoeH5 is a flexible carbohydrate tailoring enzyme performing carboxyamidation using substrates, such as glycine, ammonia and C5N unit to convert the carboxyl group of  terminal sugar of moenomycins (galacturonic acid) into carboxyamidated products - nosokomycins B, moenomycin G, moenomycin A",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-20",
+            "contributors": [
+                "0000-0001-5904-5957"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423",
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 2 made reaction more generalized by removing balancing reactants O, N."
+        }
+    ],
+    "enzyme": {
+        "name": "MoeH5",
+        "description": "GAT superfamily amidotransferase",
+        "references": [
+            "doi:10.1111/mmi.12437"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A006",
+            "genpept": "ABJ90159.1",
+            "wikidata": "Q37653429"
+        },
+        "cofactors": {
+            "organic": [
+                "Adenosine triphosphate"
+            ],
+            "inorganic": [
+                "Mg"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Other"
+            ],
+            "description": "Carboxyamidation of terminal galacturonate of nosokomycin A with ammonia as a donor substrate",
+            "reactionSMARTS": "[#6]=[#6](-[#6]-[#6]-[#6](-[#6]=[#6]-[#6]-[#6]-[#6](=[#6]-[#6]-[#8]\\[#6@](-[#6](-[#8])=[#8])-[#6]-[#8]-[#15](-[#8]/[#6@@]1-[#6@](/[#8]/[#6@@]2-[#6@@](\\[#7]-[#6](=[#8])-[#6])-[#6@](/[#8])-[#6@@](\\[#8]\\[#6@@]3-[#6@@](/[#7]-[#6](=[#8])-[#6])-[#6@](\\[#8])-[#6@@](/[#8]\\[#6@@]4-[#6@@](/[#8])-[#6@](\\[#8])-[#6@](\\[#8])-[#6@](\\[#6](-[#8])=[#8])-[#8]-4)-[#6@](\\[#6])-[#8]-3)-[#6@](/[#6]-[#8]/[#6@@]3-[#6@@](\\[#8])-[#6@](/[#8])-[#6@@](\\[#8])-[#6@](/[#6]-[#8])-[#8]-3)-[#8]-2)-[#6@@](\\[#8]-[#6](=[#8])-[#7])-[#6@@](/[#8])(-[#6])-[#6@@](\\[#6](=[#8])-[#7])-[#8]-1)(-[#8])=[#8])-[#6])(-[#6])-[#6])-[#6]-[#6]=[#6](-[#6]-[#6]-[#6]=[#6](-[#6])-[#6])-[#6]>>[#6]=[#6](-[#6]-[#6]-[#6](-[#6]=[#6]-[#6]-[#6]-[#6](=[#6]-[#6]-[#8]\\[#6@](-[#6](-[#8])=[#8])-[#6]-[#8]-[#15](-[#8]/[#6@@]1-[#6@](/[#8]/[#6@@]2-[#6@@](\\[#7]-[#6](=[#8])-[#6])-[#6@](/[#8])-[#6@@](\\[#8]\\[#6@@]3-[#6@@](/[#7]-[#6](=[#8])-[#6])-[#6@](\\[#8])-[#6@@](/[#8]\\[#6@@]4-[#6@@](/[#8])-[#6@](\\[#8])-[#6@](\\[#8])-[#6@](\\[#6](=[#8])-[#7])-[#8]-4)-[#6@](\\[#6])-[#8]-3)-[#6@](/[#6]-[#8]/[#6@@]3-[#6@@](\\[#8])-[#6@](/[#8])-[#6@@](\\[#8])-[#6@](/[#6]-[#8])-[#8]-3)-[#8]-2)-[#6@@](\\[#8]-[#6](=[#8])-[#7])-[#6@@](/[#8])(-[#6])-[#6@@](\\[#6](=[#8])-[#7])-[#8]-1)(-[#8])=[#8])-[#6])(-[#6])-[#6])-[#6]-[#6]=[#6](-[#6]-[#6]-[#6]=[#6](-[#6])-[#6])-[#6]",
+            "reactions": [
+                {
+                    "substrate": "C=C(C/C=C(\\C)CCC=C(C)C)CCC(C)(C)/C=C/CC/C(C)=C\\CO[C@@H](COP(=O)(O)O[C@H]1O[C@H](C(N)=O)[C@@](C)(O)[C@H](OC(N)=O)[C@H]1O[C@H]1O[C@@H](CO[C@H]2O[C@@H](CO)[C@H](O)[C@@H](O)[C@@H]2O)[C@H](O[C@H]2O[C@@H](C)[C@H](O[C@H]3O[C@@H](C(=O)O)[C@@H](O)[C@@H](O)[C@@H]3O)[C@@H](O)[C@@H]2NC(C)=O)[C@@H](O)[C@@H]1NC(C)=O)C(=O)O",
+                    "products": [
+                        "C=C(CC=C(C)CCC=C(C)C)CCC(C)(C)C=CCCC(C)=CCO[C@@H](COP(=O)(O)O[C@H]1O[C@H](C(N)=O)[C@@](C)(O)[C@H](OC(N)=O)[C@H]1O[C@H]1O[C@@H](CO[C@H]2O[C@@H](CO)[C@H](O)[C@@H](O)[C@@H]2O)[C@H](O[C@H]2O[C@@H](C)[C@H](O[C@H]3O[C@@H](C(N)=O)[C@@H](O)[C@@H](O)[C@@H]3O)[C@@H](O)[C@@H]2NC(C)=O)[C@@H](O)[C@@H]1NC(C)=O)C(=O)O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "carboxyamidation of ammonia ion and nosokomycin A"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1111/mmi.12437"
+                ]
+            }
+        }
+    ]
+}
