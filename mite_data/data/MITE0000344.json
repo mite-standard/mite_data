@@ -1,7 +1,7 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000344",
     "status": "active",
-    "comment": "The multinuclear nonheme iron-dependent oxidase",
+    "comment": "Multinuclear nonheme iron-dependent oxidase",
     "changelog": [
         {
             "version": "1",
@@ -17,7 +17,7 @@
     ],
     "enzyme": {
         "name": "HvfB",
-        "description": "The multinuclear nonheme iron-dependent oxidase",
+        "description": "A multinuclear nonheme iron-dependent oxidase",
         "references": [
             "doi:10.1073/pnas.2408092121"
         ],
