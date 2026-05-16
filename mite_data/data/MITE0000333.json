@@ -1,0 +1,97 @@
+{
+    "accession": "MITE0000333",
+    "status": "retired",
+    "retirementReason": [
+        "MmARD does not relate to natural product biosynthesis"
+    ],
+    "comment": "Metal dependent dioxygenase. Product depends on metal bound.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-13",
+            "contributors": [
+                "0000-0003-0455-2227"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 has improved descriptions. "
+        }
+    ],
+    "enzyme": {
+        "name": "MmARD",
+        "description": "Dioxygenase",
+        "references": [
+            "doi:10.1021/acs.biochem.5b01319"
+        ],
+        "databaseIds": {
+            "uniprot": "Q99JT9",
+            "genpept": "AAH05695.1"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Fe",
+                "Ni"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "Penultimate step in methionine salvage pathway.",
+            "reactionSMARTS": "[#8]-[#6]=[#6:3](-[#6:5](=[#8:10])-[#6:6]-[#6:7]-[#16:8]-[#6:9])-[#8:4]>>[#6:5](-[#6:3](=[#8:11])-[#8:4])(-[#6:6]-[#6:7]-[#16:8]-[#6:9])=[#8:10]",
+            "reactions": [
+                {
+                    "substrate": "CSCCC(=O)/C(O)=C/O",
+                    "products": [
+                        "CSCCC(=O)C(=O)O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Catalyzes the cleavage of 1,2-dihydroxy-3-keto-5-(thiomethyl)pent-1-ene (acireductone) by O2 to formate and the ketoacid precursor of methionine."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acs.biochem.5b01319"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "24504",
+                "ec": "1.13.11.54"
+            }
+        },
+        {
+            "tailoring": [
+                "Decarboxylation",
+                "Oxidation"
+            ],
+            "description": "Nickle dependent reaction",
+            "reactionSMARTS": "[#8]-[#6]=[#6:3](-[#6:5](=[#8:10])-[#6:6]-[#6:7]-[#16:8]-[#6:9])-[#8:4]>>[#6:5](-[#8])(-[#6:6]-[#6:7]-[#16:8]-[#6:9])=[#8:10]",
+            "reactions": [
+                {
+                    "substrate": "CSCCC(=O)/C(O)=C/O",
+                    "products": [
+                        "CSCCC(=O)O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Nickle dependent "
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acs.biochem.5b01319"
+                ]
+            }
+        }
+    ]
+}
