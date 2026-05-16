@@ -7340,6 +7340,27 @@
       "reaction_description":"Carboxyamidation of terminal galacturonate of nosokomycin A with ammonia as a donor substrate",
       "status":"active",
       "tailoring":"Other"
+    },
+    "MITE0000342":{
+      "accession":"MITE0000342",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"SFP28132.1",
+        "uniprot":"A0A1I5P286"
+      },
+      "enzyme_name":"AriG",
+      "family":"Pseudonocardiaceae",
+      "kingdom":"Bacillati",
+      "order":"Pseudonocardiales",
+      "organism":"Amycolatopsis arida",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Hydroxylation of diterpene scaffold",
+      "status":"active",
+      "tailoring":"Hydroxylation"
     }
   },
   "version_mite_data":"1.26"
