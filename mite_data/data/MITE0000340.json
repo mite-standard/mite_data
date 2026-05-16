@@ -10,9 +10,10 @@
                 "0000-0001-7044-2419"
             ],
             "reviewers": [
-                "0000-0002-9747-3423"
+                "0000-0002-9747-3423",
+                "0000-0001-6534-6609"
             ],
-            "comment": "New entry."
+            "comment": "New entry. Reviewer 2 aligned GenPept ID with MIBiG ID."
         }
     ],
     "enzyme": {
@@ -23,7 +24,7 @@
         ],
         "databaseIds": {
             "uniprot": "Q70GK9",
-            "genpept": "CAE46446.1",
+            "genpept": "CAJ20006.1",
             "mibig": "BGC0000903"
         }
     },
