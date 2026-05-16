@@ -1,0 +1,65 @@
+{
+    "accession": "MITE0000343",
+    "status": "active",
+    "comment": "Hydroxylation of thiocarboxylic acid into sulfenic acid",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-20",
+            "contributors": [
+                "0000-0002-3947-4444"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "Add new entry for Taah flavin-dependent S-hydroxylase"
+        }
+    ],
+    "enzyme": {
+        "name": "TaaH",
+        "description": "Flavin-dependent S-hydroxylase",
+        "references": [
+            "doi:10.1038/s41557-025-01833-9"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI00041FAA4D"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD",
+                "NAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "Hydroxylation of thiocarboxylic acid into sulfenic acid",
+            "reactionSMARTS": "[#16:1]1:[#6:3](-[#6@@:9](-[#6@@:11](/[#8:13])-[#6@:12](-[#6:15]-[#6@@:16](\\[#6:18])-[#6:17]-[#6:19]-[#6:20])\\[#6:14])/[#6:10]):[#7:2]:[#6:4](-[#6:6](-[#16:8])=[#8:7]):[#6:5]:1>>[#16:1]1:[#6:3](-[#6@@:9](-[#6@@:11](/[#8:13])-[#6@:12](-[#6:15]-[#6@@:16](\\[#6:18])-[#6:17]-[#6:19]-[#6:20])\\[#6:14])/[#6:10]):[#7:2]:[#6:4](-[#6:6](-[#16:8]-[#8])=[#8:7]):[#6:5]:1",
+            "reactions": [
+                {
+                    "substrate": "CCC[C@H](C)C[C@H](C)[C@H](O)[C@@H](C)c1nc(C(=O)S)cs1",
+                    "products": [
+                        "CCC[C@H](C)C[C@H](C)[C@H](O)[C@@H](C)c1nc(C(=O)SO)cs1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Hydroxylation of thiocarboxylic acid into sulfenic acid"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1038/s41557-025-01833-9"
+                ]
+            },
+            "databaseIds": {
+                "ec": "1.14.13"
+            }
+        }
+    ]
+}
