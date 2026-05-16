@@ -272,6 +272,22 @@
         "mite_accession":"MITE0000338",
         "mite_url":"https://bioregistry.io/mite:MITE0000338",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Oxidoreductase",
+        "enzyme_ids":{
+          "genpept":"CAC37882.1",
+          "mibig":"BGC0000038",
+          "uniprot":"Q93S08"
+        },
+        "enzyme_name":"SCO6281",
+        "enzyme_refs":[
+          "doi:10.1039/C2SC20410J"
+        ],
+        "enzyme_tailoring":"Monooxygenation",
+        "mite_accession":"MITE0000339",
+        "mite_url":"https://bioregistry.io/mite:MITE0000339",
+        "status":"active"
       }
     ],
     "BGC0000055":[
