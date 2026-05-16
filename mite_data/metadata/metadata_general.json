@@ -6778,9 +6778,9 @@
       "order":"Pezizomycotina",
       "organism":"Parmelia sp. 050094",
       "phylum":"Dikarya",
-      "reaction_description":"Oxidative cyclization (ether bond formation) and C-8 hydroxylation of a depside to a depsidone.",
+      "reaction_description":"Oxidative cyclization (ether bond formation) of a depside to a depsidone.",
       "status":"active",
-      "tailoring":"Cyclization"
+      "tailoring":"Cyclization|Hydroxylation"
     },
     "MITE0000315":{
       "accession":"MITE0000315",
