@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000343",
     "status": "active",
     "comment": "Hydroxylation of thiocarboxylic acid into sulfenic acid",
     "changelog": [
@@ -17,13 +17,12 @@
     ],
     "enzyme": {
         "name": "TaaH",
-        "description": "flavin-dependent S-hydroxylase",
+        "description": "Flavin-dependent S-hydroxylase",
         "references": [
             "doi:10.1038/s41557-025-01833-9"
         ],
         "databaseIds": {
-            "uniprot": "UPI00041FAA4D",
-            "mibig": "new0000420"
+            "uniprot": "UPI00041FAA4D"
         },
         "cofactors": {
             "organic": [
