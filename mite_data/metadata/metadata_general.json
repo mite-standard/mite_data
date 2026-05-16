@@ -7208,6 +7208,28 @@
       "reaction_description":"Hydroxylation of m-cresol in patulin biosynthetic pathway.",
       "status":"active",
       "tailoring":"Hydroxylation"
+    },
+    "MITE0000336":{
+      "accession":"MITE0000336",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"O-methyltransferase",
+      "enzyme_ids":{
+        "genpept":"CAE02607.1",
+        "mibig":"BGC0000024",
+        "uniprot":"Q70KH3"
+      },
+      "enzyme_name":"AurI",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces thioluteus",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Methylation of hydroxy group on aromatic ring in the aureothin biosynthesis pathway.",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.26"

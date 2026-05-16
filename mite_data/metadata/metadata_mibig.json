@@ -16,6 +16,24 @@
         "mite_accession":"MITE0000190",
         "mite_url":"https://bioregistry.io/mite:MITE0000190",
         "status":"active"
+      },
+      {
+        "enzyme_description":"O-methyltransferase",
+        "enzyme_ids":{
+          "genpept":"CAE02607.1",
+          "mibig":"BGC0000024",
+          "uniprot":"Q70KH3"
+        },
+        "enzyme_name":"AurI",
+        "enzyme_refs":[
+          "doi:10.1021/ja102751h",
+          "doi:10.1002/cbic.200500161",
+          "doi:10.1016/j.chembiol.2003.11.009"
+        ],
+        "enzyme_tailoring":"Methylation",
+        "mite_accession":"MITE0000336",
+        "mite_url":"https://bioregistry.io/mite:MITE0000336",
+        "status":"active"
       }
     ],
     "BGC0000026":[
