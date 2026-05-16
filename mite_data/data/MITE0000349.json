@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000349",
     "status": "active",
     "comment": "catalyzes the oxidative ring expansion to oxepins",
     "changelog": [
@@ -17,7 +17,7 @@
     ],
     "enzyme": {
         "name": "OpaB",
-        "description": "monooxygenase ",
+        "description": "Cytochrome P450",
         "references": [
             "doi:10.1038/s41467-020-18713-0"
         ],
