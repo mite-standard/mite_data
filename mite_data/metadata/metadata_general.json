@@ -7487,6 +7487,27 @@
       "reaction_description":"Site-specific chlorination of pyrrolic heterocycles.",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000349":{
+      "accession":"MITE0000349",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"KIA75457.1",
+        "uniprot":"A0A0C1E1L9"
+      },
+      "enzyme_name":"OpaB",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Aspergillus ustus",
+      "phylum":"Dikarya",
+      "reaction_description":"OpaB catalyzes the oxepin ring formation to convert protuboxepin K into protuboxepin A",
+      "status":"active",
+      "tailoring":"Hydroxylation|Oxidation|Ring expansion"
     }
   },
   "version_mite_data":"1.26"
