@@ -2592,13 +2592,12 @@
     "MITE0000119":{
       "accession":"MITE0000119",
       "class_name":"Ascomycota",
-      "cofactors_inorganic":"N/A",
-      "cofactors_organic":"N/A",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"a-Ketoglutaric acid",
       "domain":"Eukaryota",
       "enzyme_description":"AsaB-like alphaKGDD",
       "enzyme_ids":{
         "genpept":"QTE75998.1",
-        "mibig":"BGC0002223",
         "uniprot":"A0A8A5D4W2"
       },
       "enzyme_name":"ScyL2",
@@ -2607,7 +2606,7 @@
       "order":"Pezizomycotina",
       "organism":"Scytalidium album",
       "phylum":"Dikarya",
-      "reaction_description":"N/A",
+      "reaction_description":"Hydroxylation of deoxyscytalidin C6 to scytalidin ",
       "status":"active",
       "tailoring":"Hydroxylation"
     },
