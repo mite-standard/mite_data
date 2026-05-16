@@ -16,29 +16,49 @@
     ],
     "enzyme": {
         "name": "AscH",
+        "description": "Cytochrome P450 monooxygenase",
+        "references": [
+            "doi:10.1073/pnas.1819254116"
+        ],
         "databaseIds": {
             "uniprot": "A0A455R624",
-            "genpept": ""
+            "genpept": "BBF25322.1",
+            "mibig": "BGC0001924"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "NADP"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "Ilicicolin A epoxide is hydroxylated by AscH to give 16-hydroxy-ilicicolin A epoxide.",
+            "reactionSMARTS": "[#6]1(-[#8;-]):[#6](-[#6]-[#6]=[#6](-[#6])-[#6]-[#6]-[#6]=[#6](-[#6])-[#6]-[#6]\\[#6@@]2-[#8]-[#6]-2(-[#6])-[#6]):[#6](-[#8]):[#6](-[#6]=[#8]):[#6](-[#6]):[#6]:1-[Cl]>>[#6]1(-[#8;-]):[#6](-[#6]-[#6]=[#6](-[#6])-[#6]-[#6]-[#6]=[#6](-[#6])-[#6@@](/[#8])-[#6]\\[#6@@]2-[#8]-[#6]-2(-[#6])-[#6]):[#6](-[#8]):[#6](-[#6]=[#8]):[#6](-[#6]):[#6]:1-[Cl]",
             "reactions": [
                 {
+                    "substrate": "C/C(=C\\Cc1c([O-])c(Cl)c(C)c(C=O)c1O)CC/C=C(\\C)CC[C@@H]1OC1(C)C",
                     "products": [
-                        ""
-                    ]
+                        "CC(=CCc1c([O-])c(Cl)c(C)c(C=O)c1O)CCC=C(C)[C@@H](O)C[C@@H]1OC1(C)C"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1073/pnas.1819254116"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "63104"
+            }
         }
     ]
 }
