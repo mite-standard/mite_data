@@ -1,0 +1,66 @@
+{
+    "accession": "MITE0000332",
+    "status": "active",
+    "comment": "Cytochrome P450 with cyclization activity",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-07",
+            "contributors": [
+                "0009-0003-2819-1486"
+            ],
+            "reviewers": [
+                "0000-0003-4819-2251"
+            ],
+            "comment": "New entry. Reviewer 1 corrected cofactor and SMILES/SMARTS."
+        }
+    ],
+    "enzyme": {
+        "name": "AriF",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1002/anie.202312490"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A1I5P2L5",
+            "genpept": "SFP28100.1"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Cyclization"
+            ],
+            "description": "Formation of tricyclic terpene skeleton by intramolecular cyclization.",
+            "reactionSMARTS": "[CH2:1]=[C:2]([C@H:4]1[C@H:20]2[C@H:9]([CH2:10][CH2:11][C:12](=[CH:14][CH2:15][CH2:16][C:17](=[CH:19]2)[CH3:18])[CH3:13])[C@@H:7]([CH3:8])[CH2:6][CH2:5]1)[CH3:3]>>[CH2:19]=[C:17]1[C@H:18]2[C:14](=[C:12]([CH2:11][CH2:10][C@@H:9]3[C@@H:7]([CH3:8])[CH2:6][CH2:5][C@@H:4]([C:2]([CH3:3])=[CH2:1])[C@@H:20]32)[CH3:13])[CH2:15][CH2:16]1",
+            "reactions": [
+                {
+                    "substrate": "C=C(C)[C@@H]1CC[C@H](C)[C@H]2CC/C(C)=C/CC/C(C)=C/[C@H]21",
+                    "products": [
+                        "C=C1CCC2=C(C)CC[C@H]3[C@H]([C@@H]12)[C@H](C(=C)C)CC[C@@H]3C"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Cyclization of benditerpe-2,6,15-triene into arida-3,6-15-triene"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1002/anie.202312490"
+                ]
+            }
+        }
+    ]
+}
