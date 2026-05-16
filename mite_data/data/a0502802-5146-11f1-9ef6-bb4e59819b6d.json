@@ -16,29 +16,46 @@
     ],
     "enzyme": {
         "name": "AscE",
+        "description": "Bifunctional cytochrome P450/NADPH P450 reductase",
+        "references": [
+            "doi:10.1073/pnas.1819254116"
+        ],
         "databaseIds": {
             "uniprot": "A0A455R5H4",
-            "genpept": ""
+            "genpept": "BBF25317.1",
+            "mibig": "BGC0001923"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "NADP"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "Converts Ilicicolin A to Ilicicolin A epoxide by stereoselective epoxidation of the terminal double bond of the prenyl group.",
+            "reactionSMARTS": "[#6]-[#6](=[#6]-[#6]-[#6]-[#6](=[#6]-[#6]-[#6]-[#6](=[#6]-[#6]-[#6]1:[#6](-[#8]):[#6](-[#6]=[#8]):[#6](-[#6]):[#6](-[Cl]):[#6]:1-[#8])-[#6])-[#6])-[#6]>>[#6]-[#6]1(-[#8]\\[#6@@]-1-[#6]-[#6]-[#6](=[#6]-[#6]-[#6]-[#6](=[#6]-[#6]-[#6]1:[#6](-[#8]):[#6](-[#6]=[#8]):[#6](-[#6]):[#6](-[Cl]):[#6]:1-[#8])-[#6])-[#6])-[#6]",
             "reactions": [
                 {
+                    "substrate": "CC(C)=CCCC(C)=CCCC(C)=CCc1c(O)c(Cl)c(C)c(C=O)c1O",
                     "products": [
-                        ""
-                    ]
+                        "CC(=CCc1c(O)c(Cl)c(C)c(C=O)c1O)CCC=C(C)CC[C@H]1OC1(C)C"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1073/pnas.1819254116"
+                ]
+            }
         }
     ]
 }
