@@ -7402,6 +7402,27 @@
       "reaction_description":"Heterocyclization and Oxidation of Cys",
       "status":"active",
       "tailoring":"Heterocyclization|Oxidation"
+    },
+    "MITE0000345":{
+      "accession":"MITE0000345",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Prenyltransferase",
+      "enzyme_ids":{
+        "genpept":"XJW06602.1",
+        "uniprot":"UPI0039BD93EE"
+      },
+      "enzyme_name":"AuraA",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Penicillium solitum",
+      "phylum":"Dikarya",
+      "reaction_description":"C-prenylation on the imidazole moiety of dihydroviridamine (imidazole-C-dimethylallyl products)",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.26"
