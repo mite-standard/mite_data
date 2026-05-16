@@ -7508,6 +7508,28 @@
       "reaction_description":"OpaB catalyzes the oxepin ring formation to convert protuboxepin K into protuboxepin A",
       "status":"active",
       "tailoring":"Hydroxylation|Oxidation|Ring expansion"
+    },
+    "MITE0000350":{
+      "accession":"MITE0000350",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD",
+      "domain":"Bacteria",
+      "enzyme_description":"Flavin-dependent halogenase",
+      "enzyme_ids":{
+        "genpept":"ATU31801.1",
+        "mibig":"BGC0001814",
+        "uniprot":"A0A2D3E318"
+      },
+      "enzyme_name":"Ulm24",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces sp. KCB13F003",
+      "phylum":"Actinomycetota",
+      "reaction_description":"5-halogenation of L-tryptophan in the ulleungmycin pathway. Exact occurrence of halogenation in the pathway currently undefined.",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.26"
