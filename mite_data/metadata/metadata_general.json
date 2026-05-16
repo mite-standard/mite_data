@@ -7186,6 +7186,28 @@
       "reaction_description":"Regiospecific 5-halogenation of L-tryptophan",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000335":{
+      "accession":"MITE0000335",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"AIG62144.1",
+        "mibig":"BGC0000120",
+        "uniprot":"A0A075TRL5"
+      },
+      "enzyme_name":"PatH",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Penicillium expansum",
+      "phylum":"Dikarya",
+      "reaction_description":"Hydroxylation of m-cresol in patulin biosynthetic pathway.",
+      "status":"active",
+      "tailoring":"Hydroxylation"
     }
   },
   "version_mite_data":"1.26"
