@@ -7318,6 +7318,28 @@
       "reaction_description":"Catalyzes the formation of a C-F bond by combining S-adenosyl-L-methionine (SAM) and fluoride to generate 5'-fluoro-5'-deoxyadenosine (5'-FDA) and L-methionine. It can also use 2'-deoxyadenosine in place of adenosine as substrate",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000341":{
+      "accession":"MITE0000341",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Mg",
+      "cofactors_organic":"Adenosine triphosphate",
+      "domain":"Bacteria",
+      "enzyme_description":"GAT superfamily amidotransferase",
+      "enzyme_ids":{
+        "genpept":"ABJ90159.1",
+        "uniprot":"A0A006",
+        "wikidata":"Q37653429"
+      },
+      "enzyme_name":"MoeH5",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces viridosporus",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Carboxyamidation of terminal galacturonate of nosokomycin A with ammonia as a donor substrate",
+      "status":"active",
+      "tailoring":"Other"
     }
   },
   "version_mite_data":"1.26"
