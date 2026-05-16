@@ -7423,6 +7423,28 @@
       "reaction_description":"C-prenylation on the imidazole moiety of dihydroviridamine (imidazole-C-dimethylallyl products)",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000346":{
+      "accession":"MITE0000346",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Rieske nonheme iron-dependent oxygenase",
+      "enzyme_ids":{
+        "genpept":"AHF22859.1",
+        "mibig":"BGC0000091",
+        "uniprot":"A0A067YNS9"
+      },
+      "enzyme_name":"MarG",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces sp. CNQ-617",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Cyclization of 23-hydroxyundecylprodiginine to form the macrocycle and spiroaminal moieties of premarineosin A",
+      "status":"active",
+      "tailoring":"Cyclization|Heterocyclization|Oxidation"
     }
   },
   "version_mite_data":"1.26"
