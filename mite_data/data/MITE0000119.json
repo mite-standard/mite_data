@@ -21,9 +21,10 @@
                 "0000-0002-3677-2972"
             ],
             "reviewers": [
-                "0009-0008-3623-3734"
+                "0009-0008-3623-3734",
+                "0000-0001-6534-6609"
             ],
-            "comment": "I have added in enzyme co-factors, auxiliary enzymes and new references. "
+            "comment": "Added in enzyme co-factors, auxiliary enzymes and new references. Reviewer 2 removed MIBiG BGC crosslink - entry does not exist."
         }
     ],
     "enzyme": {
@@ -45,8 +46,7 @@
         ],
         "databaseIds": {
             "uniprot": "A0A8A5D4W2",
-            "genpept": "QTE75998.1",
-            "mibig": "BGC0002223"
+            "genpept": "QTE75998.1"
         },
         "cofactors": {
             "organic": [
