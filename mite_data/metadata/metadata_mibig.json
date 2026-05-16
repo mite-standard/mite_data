@@ -240,6 +240,24 @@
         "status":"active"
       }
     ],
+    "BGC0000038":[
+      {
+        "enzyme_description":"Oxidoreductase",
+        "enzyme_ids":{
+          "genpept":"CAC22143.1",
+          "mibig":"BGC0000038",
+          "uniprot":"Q9EX55"
+        },
+        "enzyme_name":"SCO6272",
+        "enzyme_refs":[
+          "doi:10.1039/C2SC20410J"
+        ],
+        "enzyme_tailoring":"Monooxygenation",
+        "mite_accession":"MITE0000337",
+        "mite_url":"https://bioregistry.io/mite:MITE0000337",
+        "status":"active"
+      }
+    ],
     "BGC0000055":[
       {
         "enzyme_description":"Cytochrome P450",
