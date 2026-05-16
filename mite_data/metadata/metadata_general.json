@@ -7165,6 +7165,27 @@
       "reaction_description":"Formation of tricyclic terpene skeleton by intramolecular cyclization.",
       "status":"active",
       "tailoring":"Cyclization"
+    },
+    "MITE0000334":{
+      "accession":"MITE0000334",
+      "class_name":"Gammaproteobacteria",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD|NAD",
+      "domain":"Bacteria",
+      "enzyme_description":"Flavid-dependent halogenase",
+      "enzyme_ids":{
+        "genpept":"CDL84606.1",
+        "uniprot":"W1J423"
+      },
+      "enzyme_name":"XszenFHal",
+      "family":"Morganellaceae",
+      "kingdom":"Pseudomonadati",
+      "order":"Enterobacterales",
+      "organism":"Xenorhabdus szentirmaii DSM 16338",
+      "phylum":"Pseudomonadota",
+      "reaction_description":"Regiospecific 5-halogenation of L-tryptophan",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.26"
