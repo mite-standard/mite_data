@@ -1,0 +1,61 @@
+{
+    "accession": "MITE0000347",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-03",
+            "contributors": [
+                "0009-0003-1714-1678"
+            ],
+            "reviewers": [
+                "0000-0002-7493-459X"
+            ],
+            "comment": "New entry. Reviewer 1 corrected intermediate product to false and edited description."
+        }
+    ],
+    "enzyme": {
+        "name": "PhzF",
+        "description": "Isomerase",
+        "references": [
+            "doi:10.1038/s41598-017-06278-w"
+        ],
+        "databaseIds": {
+            "uniprot": "Q51792",
+            "genpept": "AAC18905.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Other"
+            ],
+            "description": "PhzF catalyzes the isomerization of (2\u2009S,3\u2009S)-2,3-dihydro-3-hydroxy anthranilic acid (DHHA) to (1\u2009R,6\u2009S)-6-amino-5-oxo-2-cyclohexene-1-carboxylic acid (AOCHC)",
+            "reactionSMARTS": "[#6:1]1-[#6:5]=[#6:6]-[#6@:4](/[#8:10])-[#6@@:2](\\[#7:11])-[#6:3]=1-[#6:7](=[#8:9])-[#8:8]>>[#6:1]1=[#6:5]-[#6:6]-[#6&H0:4](=[#8:10])-[#6@@:2](\\[#7:11])-[#6@@:3]-1/[#6:7](=[#8:9])-[#8:8]",
+            "reactions": [
+                {
+                    "substrate": "N[C@H]1C(C(=O)O)=CC=C[C@@H]1O",
+                    "products": [
+                        "N[C@@H]1C(=O)CC=C[C@H]1C(=O)O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "PhzF catalyzes the isomerization of (2\u2009S,3\u2009S)-2,3-dihydro-3-hydroxy anthranilic acid (DHHA) to (1\u2009R,6\u2009S)-6-amino-5-oxo-2-cyclohexene-1-carboxylic acid (AOCHC)"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure",
+                    "In vitro assay",
+                    "Site-directed mutagenesis"
+                ],
+                "references": [
+                    "doi:10.1038/s41598-017-06278-w"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "28182",
+                "ec": "5.3.3.17"
+            }
+        }
+    ]
+}
