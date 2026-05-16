@@ -1,0 +1,62 @@
+{
+    "accession": "MITE0000344",
+    "status": "active",
+    "comment": "Multinuclear nonheme iron-dependent oxidase",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-04-20",
+            "contributors": [
+                "0000-0003-2163-5526"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "HvfB",
+        "description": "A multinuclear nonheme iron-dependent oxidase",
+        "references": [
+            "doi:10.1073/pnas.2408092121"
+        ],
+        "databaseIds": {
+            "uniprot": "Q4QL35",
+            "genpept": "AAX88262.1"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Heterocyclization",
+                "Oxidation"
+            ],
+            "description": "Heterocyclization and Oxidation of Cys",
+            "reactionSMARTS": "[#7]-[#6]-[#6]-[#6]-[#6]-[#6](-[#6](-[#7]-[#6](-[#6](-[#7]-[#6]-[#6](-[#8])=[#8])=[#8])-[#6]-[#16])=[#8])-[#7]>>[#7]-[#6]-[#6]-[#6]-[#6]-[#6](-[#6]1-[#8]-[#6](=[#8])-[#6](=[#6](-[#7]-[#6]-[#6](-[#8])=[#8])-[#16])-[#7]=1)-[#7]",
+            "reactions": [
+                {
+                    "substrate": "NCCCCC(N)C(=O)NC(CS)C(=O)NCC(=O)O",
+                    "products": [
+                        "NCCCCC(N)C1=NC(=C(S)NCC(=O)O)C(=O)O1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Lys-Cys-Gly to oxazolone and thioamide pair"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1073/pnas.2408092121"
+                ]
+            }
+        }
+    ]
+}
