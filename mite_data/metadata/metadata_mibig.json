@@ -3712,6 +3712,22 @@
         "mite_accession":"MITE0000352",
         "mite_url":"https://bioregistry.io/mite:MITE0000352",
         "status":"active"
+      },
+      {
+        "enzyme_description":"FAD-dependent epoxidase",
+        "enzyme_ids":{
+          "genpept":"BAP81859.1",
+          "mibig":"BGC0002612",
+          "uniprot":"A0A097ZPF7"
+        },
+        "enzyme_name":"AndE",
+        "enzyme_refs":[
+          "doi:10.1021/ja508127q"
+        ],
+        "enzyme_tailoring":"Oxidation",
+        "mite_accession":"MITE0000353",
+        "mite_url":"https://bioregistry.io/mite:MITE0000353",
+        "status":"active"
       }
     ],
     "BGC0002643":[
