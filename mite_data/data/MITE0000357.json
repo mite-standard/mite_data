@@ -1,0 +1,62 @@
+{
+    "accession": "MITE0000357",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-17",
+            "contributors": [
+                "0000-0002-0771-9611"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 expanded reaction descriptions."
+        }
+    ],
+    "enzyme": {
+        "name": "AndJ",
+        "description": "FAD-dependent Baeyer-Villiger monooxygenase",
+        "references": [
+            "doi:10.1021/ja508127q"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A097ZPG2",
+            "genpept": "BAP81864.1",
+            "mibig": "BGC0002612"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Oxidation",
+                "Ring expansion"
+            ],
+            "description": "Baeyer-Villiger oxidation of meroterpenoid intermediate in the anditomin biosynthetic pathway.",
+            "reactionSMARTS": "[#6@@]123/[#6]/[#6@@]4(-[#6])-[#6](=[#8])-[#6@@]5\\[#6](=[#8])-[#8]-[#6]\\[#6@@]-1-5-[#6@](\\[#6])(-[#6]-4=[#8])-[#6]-[#6]-2-[#6@]1(/[#6])-[#6](-[#6@@](-[#6](-[#6]=[#6]-1)=[#8])(\\[#6])/[#6])-[#6]-[#6]-3>>[#6@@]123/[#6]/[#6@@]4(-[#6])-[#6](=[#8])-[#6@@]5\\[#6](=[#8])-[#8]-[#6]\\[#6@@]-1-5-[#6@](\\[#6])(-[#6]-4=[#8])-[#6]-[#6]-2-[#6@]1(/[#6])-[#6](-[#6@@](-[#8]-[#6](=[#8])-[#6]=[#6]-1)(\\[#6])/[#6])-[#6]-[#6]-3",
+            "reactions": [
+                {
+                    "substrate": "CC1(C)C(=O)C=C[C@@]2(C)C1CC[C@@]13C[C@@]4(C)C(=O)[C@H]5C(=O)OC[C@]51[C@@](C)(CC23)C4=O",
+                    "products": [
+                        "CC1(C)OC(=O)C=C[C@@]2(C)C1CC[C@@]13C[C@@]4(C)C(=O)[C@H]5C(=O)OC[C@]51[C@@](C)(CC23)C4=O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Conversion of andiconin to andilesin D by introduction of a lacton ring.."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1021/ja508127q"
+                ]
+            }
+        }
+    ]
+}
