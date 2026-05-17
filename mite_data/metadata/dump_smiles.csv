@@ -455,3 +455,5 @@
 453,MITE0000348.reaction1.example1,Nc1c(Cl)cccc1-c1cc[nH]c1,Nc1c(Cl)cccc1-c1c[nH]cc1Cl
 454,MITE0000349.reaction1.example1,CC[C@@H](C)[C@@H]1NC(=O)[C@@H](Cc2ccccc2)n2c1nc1ccccc1c2=O,CCC(C)[C@@H]1NC(=O)[C@@H](Cc2ccccc2)n2c1nc1c(c2=O)C=CC=CO1
 455,MITE0000350.reaction1.example1,N[C@@H](Cc1c[nH]c2ccccc12)C(=O)O,N[C@@H](Cc1c[nH]c2ccc(Cl)cc12)C(=O)O
+456,MITE0000351.reaction1.example1,Cc1c(C)c(C(=O)O)c(O)c(C)c1O,Cc1c(O)c(C)c(CO)c(C(=O)O)c1O
+457,MITE0000351.reaction2.example1,Cc1c(O)c(C)c(CO)c(C(=O)O)c1O,Cc1c(O)c(C)c2c(c1O)C(=O)OC2
