@@ -7574,6 +7574,28 @@
       "reaction_description":"Prenylation as the third step in the anditomin biosynthetic pathway.",
       "status":"active",
       "tailoring":"Prenylation"
+    },
+    "MITE0000353":{
+      "accession":"MITE0000353",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD",
+      "domain":"Eukaryota",
+      "enzyme_description":"FAD-dependent epoxidase",
+      "enzyme_ids":{
+        "genpept":"BAP81859.1",
+        "mibig":"BGC0002612",
+        "uniprot":"A0A097ZPF7"
+      },
+      "enzyme_name":"AndE",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Emericella variicolor",
+      "phylum":"Dikarya",
+      "reaction_description":"Epoxidation of farnesyl-DHDMP to give epoxyfarnesyl-DHDMP in the anditomin biosynthetic pathway..",
+      "status":"active",
+      "tailoring":"Oxidation"
     }
   },
   "version_mite_data":"1.26"
