@@ -3792,6 +3792,22 @@
         "mite_accession":"MITE0000357",
         "mite_url":"https://bioregistry.io/mite:MITE0000357",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Short-chain dehydrogenase",
+        "enzyme_ids":{
+          "genpept":"BAP81863.1",
+          "mibig":"BGC0002612",
+          "uniprot":"A0A097ZPE8"
+        },
+        "enzyme_name":"AndI",
+        "enzyme_refs":[
+          "doi:10.1021/ja508127q"
+        ],
+        "enzyme_tailoring":"Reduction",
+        "mite_accession":"MITE0000358",
+        "mite_url":"https://bioregistry.io/mite:MITE0000358",
+        "status":"active"
       }
     ],
     "BGC0002643":[
