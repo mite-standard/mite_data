@@ -7662,6 +7662,28 @@
       "reaction_description":"Dehydrogenation of meroterpenoid precursor before cyclization in the anditomin biosynthetic pathway.",
       "status":"active",
       "tailoring":"Cyclization|Dehydrogenation"
+    },
+    "MITE0000357":{
+      "accession":"MITE0000357",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD",
+      "domain":"Eukaryota",
+      "enzyme_description":"FAD-dependent Baeyer-Villiger monooxygenase",
+      "enzyme_ids":{
+        "genpept":"BAP81864.1",
+        "mibig":"BGC0002612",
+        "uniprot":"A0A097ZPG2"
+      },
+      "enzyme_name":"AndJ",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Emericella variicolor",
+      "phylum":"Dikarya",
+      "reaction_description":"Baeyer-Villiger oxidation of meroterpenoid intermediate in the anditomin biosynthetic pathway.",
+      "status":"active",
+      "tailoring":"Oxidation|Ring expansion"
     }
   },
   "version_mite_data":"1.26"
