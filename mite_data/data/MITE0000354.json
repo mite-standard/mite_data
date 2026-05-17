@@ -1,0 +1,56 @@
+{
+    "accession": "MITE0000354",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-16",
+            "contributors": [
+                "0000-0002-0771-9611"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 improed reaction descriptions."
+        }
+    ],
+    "enzyme": {
+        "name": "AndB",
+        "description": "Terpene cyclase",
+        "references": [
+            "doi:10.1021/ja508127q"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A097ZPD8",
+            "genpept": "BAP81856.1",
+            "mibig": "BGC0002612"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Cyclization"
+            ],
+            "description": "Cyclization of the meroterpenoid intermediate in the anditomin biosynthetic pathway.",
+            "reactionSMARTS": "[#6]12-[#6](-[#8]-[#6]-[#6]=1-[#6@](/[#6]-[#6]=[#6](-[#6]-[#6]-[#6]=[#6](-[#6]-[#6]-[#6@@]1/[#8]-[#6]-1(-[#6])-[#6])-[#6])-[#6])(\\[#6])-[#6](=[#8])-[#6](-[#6])=[#6]-2-[#8])=[#8]>>[#8]=[#6]1-[#6]2-[#6](=[#8])-[#6](-[#6])=[#6]3-[#8]-[#6@@]4(-[#6](-[#6]-[#6@]-3(/[#6])-[#6]=2-[#6]-[#8]-1)-[#6@]1(/[#6])-[#6](-[#6@@](-[#6@](-[#6]-[#6]-1)/[#8])(\\[#6])/[#6])-[#6]-[#6]-4)\\[#6]",
+            "reactions": [
+                {
+                    "substrate": "CC(=CC[C@@]1(C)C(=O)C(C)=C(O)C2=C1COC2=O)CCC=C(C)CC[C@@H]1OC1(C)C",
+                    "products": [
+                        "CC1=C2O[C@@]3(C)CCC4C(C)(C)[C@@H](O)CC[C@]4(C)C3C[C@]2(C)C2=C(C(=O)OC2)C1=O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Converts epoxyfarnesyl-DHDMP to preandiloid A."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1021/ja508127q"
+                ]
+            }
+        }
+    ]
+}
