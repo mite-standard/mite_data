@@ -3696,6 +3696,22 @@
         "mite_accession":"MITE0000351",
         "mite_url":"https://bioregistry.io/mite:MITE0000351",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Prenyltransferase",
+        "enzyme_ids":{
+          "genpept":"BAP81858.1",
+          "mibig":"BGC0002612",
+          "uniprot":"A0A097ZPE3"
+        },
+        "enzyme_name":"AndD",
+        "enzyme_refs":[
+          "doi:10.1021/ja508127q"
+        ],
+        "enzyme_tailoring":"Prenylation",
+        "mite_accession":"MITE0000352",
+        "mite_url":"https://bioregistry.io/mite:MITE0000352",
+        "status":"active"
       }
     ],
     "BGC0002643":[
