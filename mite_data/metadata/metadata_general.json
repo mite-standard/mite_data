@@ -7684,6 +7684,28 @@
       "reaction_description":"Baeyer-Villiger oxidation of meroterpenoid intermediate in the anditomin biosynthetic pathway.",
       "status":"active",
       "tailoring":"Oxidation|Ring expansion"
+    },
+    "MITE0000358":{
+      "accession":"MITE0000358",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"NADP",
+      "domain":"Eukaryota",
+      "enzyme_description":"Short-chain dehydrogenase",
+      "enzyme_ids":{
+        "genpept":"BAP81863.1",
+        "mibig":"BGC0002612",
+        "uniprot":"A0A097ZPE8"
+      },
+      "enzyme_name":"AndI",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Emericella variicolor",
+      "phylum":"Dikarya",
+      "reaction_description":"Reduction of meroterpenoid intermediate in the anditomin biosynthetic pathway.",
+      "status":"active",
+      "tailoring":"Reduction"
     }
   },
   "version_mite_data":"1.26"
