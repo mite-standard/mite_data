@@ -3760,6 +3760,22 @@
         "mite_accession":"MITE0000355",
         "mite_url":"https://bioregistry.io/mite:MITE0000355",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Dioxygenase",
+        "enzyme_ids":{
+          "genpept":"BAP81855.1",
+          "mibig":"BGC0002612",
+          "uniprot":"A0A097ZPD5"
+        },
+        "enzyme_name":"AndA",
+        "enzyme_refs":[
+          "doi:10.1021/ja508127q"
+        ],
+        "enzyme_tailoring":"Cyclization|Dehydrogenation",
+        "mite_accession":"MITE0000356",
+        "mite_url":"https://bioregistry.io/mite:MITE0000356",
+        "status":"active"
       }
     ],
     "BGC0002643":[

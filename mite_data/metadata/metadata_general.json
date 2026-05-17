@@ -7640,6 +7640,28 @@
       "reaction_description":"Oxidation of meroterpenoid intermediate in the anditomin biosynthetic pathway.",
       "status":"active",
       "tailoring":"Oxidation"
+    },
+    "MITE0000356":{
+      "accession":"MITE0000356",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Ascorbic acid|a-Ketoglutaric acid",
+      "domain":"Eukaryota",
+      "enzyme_description":"Dioxygenase",
+      "enzyme_ids":{
+        "genpept":"BAP81855.1",
+        "mibig":"BGC0002612",
+        "uniprot":"A0A097ZPD5"
+      },
+      "enzyme_name":"AndA",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Emericella variicolor",
+      "phylum":"Dikarya",
+      "reaction_description":"Dehydrogenation of meroterpenoid precursor before cyclization in the anditomin biosynthetic pathway.",
+      "status":"active",
+      "tailoring":"Cyclization|Dehydrogenation"
     }
   },
   "version_mite_data":"1.26"
