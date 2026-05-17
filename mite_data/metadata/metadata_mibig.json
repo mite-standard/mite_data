@@ -3840,6 +3840,22 @@
         "mite_accession":"MITE0000360",
         "mite_url":"https://bioregistry.io/mite:MITE0000360",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Dioxygenase",
+        "enzyme_ids":{
+          "genpept":"BAP81860.1",
+          "mibig":"BGC0002612",
+          "uniprot":"A0A097ZPD9"
+        },
+        "enzyme_name":"AndF",
+        "enzyme_refs":[
+          "doi:10.1021/ja508127q"
+        ],
+        "enzyme_tailoring":"Dehydrogenation|Dioxygenation|Ring expansion",
+        "mite_accession":"MITE0000361",
+        "mite_url":"https://bioregistry.io/mite:MITE0000361",
+        "status":"active"
       }
     ],
     "BGC0002643":[
