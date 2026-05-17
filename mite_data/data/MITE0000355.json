@@ -1,0 +1,57 @@
+{
+    "accession": "MITE0000355",
+    "status": "active",
+    "comment": "Short-chain dehydrogenase/reductase",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-16",
+            "contributors": [
+                "0000-0002-0771-9611"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 improved reaction description."
+        }
+    ],
+    "enzyme": {
+        "name": "AndC",
+        "description": "Dehydrogenase",
+        "references": [
+            "doi:10.1021/ja508127q"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A097ZPC9",
+            "genpept": "BAP81857.1",
+            "mibig": "BGC0002612"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "Oxidation of meroterpenoid intermediate in the anditomin biosynthetic pathway.",
+            "reactionSMARTS": "[#8]=[#6]1-[#6]2-[#6](=[#8])-[#6](-[#6])=[#6]3-[#8]-[#6@@]4(-[#6](-[#6]-[#6@]-3(/[#6])-[#6]=2-[#6]-[#8]-1)-[#6@]1(/[#6])-[#6](-[#6@@](-[#6@](-[#6]-[#6]-1)/[#8])(\\[#6])/[#6])-[#6]-[#6]-4)\\[#6]>>[#8]=[#6]1-[#6]2-[#6](=[#8])-[#6](-[#6])=[#6]3-[#8]-[#6@@]4(-[#6](-[#6]-[#6@]-3(/[#6])-[#6]=2-[#6]-[#8]-1)-[#6@]1(/[#6])-[#6](-[#6@@](-[#6](-[#6]-[#6]-1)=[#8])(\\[#6])/[#6])-[#6]-[#6]-4)\\[#6]",
+            "reactions": [
+                {
+                    "substrate": "CC1=C2O[C@@]3(C)CCC4C(C)(C)[C@@H](O)CC[C@]4(C)C3C[C@]2(C)C2=C(C(=O)OC2)C1=O",
+                    "products": [
+                        "CC1=C2O[C@@]3(C)CCC4C(C)(C)C(=O)CC[C@]4(C)C3C[C@]2(C)C2=C(C(=O)OC2)C1=O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Conversion of preandiloid A at C-3 hydroxyl to give preandiloid B."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1021/ja508127q"
+                ]
+            }
+        }
+    ]
+}
