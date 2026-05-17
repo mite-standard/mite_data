@@ -1,0 +1,57 @@
+{
+    "accession": "MITE0000360",
+    "status": "active",
+    "comment": "Andilesin B originates from the spontaneous elimination of acetate from Acetylandilesin A (produced by AndG). AndH reduces Andilesin B to produce Andilesin C.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-17",
+            "contributors": [
+                "0000-0002-0771-9611"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 improved reaction descriptions."
+        }
+    ],
+    "enzyme": {
+        "name": "AndH",
+        "description": "Short-chain dehydrogenase/reductase",
+        "references": [
+            "doi:10.1021/ja508127q"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A097ZPD4",
+            "genpept": "BAP81862.1",
+            "mibig": "BGC0002612"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Reduction"
+            ],
+            "description": "Reduction of meroterpenoid intermediate andilesin B in the andilesin biosynthetic pathway.",
+            "reactionSMARTS": "[#6@@]123/[#6]/[#6@@]4(-[#6])-[#6]=[#6@]5\\[#6](=[#8])-[#8]-[#6]\\[#6@@]-1-5-[#6@](\\[#6])(-[#6]-4=[#8])-[#6]-[#6]-2-[#6@]1(/[#6])-[#6](-[#6@@](-[#8]-[#6](=[#8])-[#6]=[#6]-1)(\\[#6])/[#6])-[#6]-[#6]-3>>[#6@@]123/[#6]/[#6@@]4(-[#6])-[#6]-[#6@@]5\\[#6](=[#8])-[#8]-[#6]\\[#6@@]-1-5-[#6@](\\[#6])(-[#6]-4=[#8])-[#6]-[#6]-2-[#6@]1(/[#6])-[#6](-[#6@@](-[#8]-[#6](=[#8])-[#6]=[#6]-1)(\\[#6])/[#6])-[#6]-[#6]-3",
+            "reactions": [
+                {
+                    "substrate": "CC1(C)OC(=O)C=C[C@@]2(C)C1CC[C@@]13C[C@@]4(C)C=C5C(=O)OC[C@]51[C@@](C)(CC23)C4=O",
+                    "products": [
+                        "CC1(C)OC(=O)C=C[C@@]2(C)C1CC[C@@]13C[C@@]4(C)C[C@H]5C(=O)OC[C@]51[C@@](C)(CC23)C4=O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Conversion of andilesin B to andilesin C."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1021/ja508127q"
+                ]
+            }
+        }
+    ]
+}
