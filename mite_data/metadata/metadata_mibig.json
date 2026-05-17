@@ -3808,6 +3808,22 @@
         "mite_accession":"MITE0000358",
         "mite_url":"https://bioregistry.io/mite:MITE0000358",
         "status":"active"
+      },
+      {
+        "enzyme_description":"O-acetyltransferase",
+        "enzyme_ids":{
+          "genpept":"BAP81861.1",
+          "mibig":"BGC0002612",
+          "uniprot":"A0A097ZPE2"
+        },
+        "enzyme_name":"AndG",
+        "enzyme_refs":[
+          "doi:10.1021/ja508127q"
+        ],
+        "enzyme_tailoring":"Acetylation",
+        "mite_accession":"MITE0000359",
+        "mite_url":"https://bioregistry.io/mite:MITE0000359",
+        "status":"active"
       }
     ],
     "BGC0002643":[
