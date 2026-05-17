@@ -1,0 +1,89 @@
+{
+    "accession": "MITE0000351",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-16",
+            "contributors": [
+                "0000-0002-0771-9611"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 improved reaction description and corrected the name of the first intermediate product of AndK."
+        }
+    ],
+    "enzyme": {
+        "name": "AndK",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1021/ja508127q"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A097ZPE4",
+            "genpept": "BAP81865.1",
+            "mibig": "BGC0002612"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "Hydroxylation as the first step in the anditomin biosynthetic pathway.",
+            "reactionSMARTS": "[#6]1(-[#6](=[#8])-[#8]):[#6](-[#6]):[#6](-[#6]):[#6](-[#8]):[#6](-[#6]):[#6]:1-[#8]>>[#6]1(-[#6](=[#8])-[#8]):[#6](-[#6]-[#8]):[#6](-[#6]):[#6](-[#8]):[#6](-[#6]):[#6]:1-[#8]",
+            "reactions": [
+                {
+                    "substrate": "Cc1c(C)c(C(=O)O)c(O)c(C)c1O",
+                    "products": [
+                        "Cc1c(O)c(C)c(CO)c(C(=O)O)c1O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Convertion of 3,5-dimethylorsellinic acid to 4,6-dihydroxy-2-(hydroxymethyl)-3-methylbenzoic acid."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1021/ja508127q"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Cyclization"
+            ],
+            "description": "Cyclization as second step in the anditomin biosynthetic pathway.",
+            "reactionSMARTS": "[#6]1(-[#6](=[#8])-[#8]):[#6](-[#6]-[#8]):[#6](-[#6]):[#6](-[#8]):[#6](-[#6]):[#6]:1-[#8]>>[#6]12-[#6](-[#8]-[#6]-[#6]:1:[#6](-[#6]):[#6](-[#8]):[#6](-[#6]):[#6]:2-[#8])=[#8]",
+            "reactions": [
+                {
+                    "substrate": "Cc1c(O)c(C)c(CO)c(C(=O)O)c1O",
+                    "products": [
+                        "Cc1c(O)c(C)c2c(c1O)C(=O)OC2"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Convertion of 4,6-dihydroxy-2-(hydroxymethyl)-3-methylbenzoic acid to 5,7-dihydroxy-4,6-dimethylphtalide."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1021/ja508127q"
+                ]
+            }
+        }
+    ]
+}
