@@ -3824,6 +3824,22 @@
         "mite_accession":"MITE0000359",
         "mite_url":"https://bioregistry.io/mite:MITE0000359",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Short-chain dehydrogenase/reductase",
+        "enzyme_ids":{
+          "genpept":"BAP81862.1",
+          "mibig":"BGC0002612",
+          "uniprot":"A0A097ZPD4"
+        },
+        "enzyme_name":"AndH",
+        "enzyme_refs":[
+          "doi:10.1021/ja508127q"
+        ],
+        "enzyme_tailoring":"Reduction",
+        "mite_accession":"MITE0000360",
+        "mite_url":"https://bioregistry.io/mite:MITE0000360",
+        "status":"active"
       }
     ],
     "BGC0002643":[
