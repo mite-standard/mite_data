@@ -3680,6 +3680,24 @@
         "status":"active"
       }
     ],
+    "BGC0002612":[
+      {
+        "enzyme_description":"Cytochrome P450",
+        "enzyme_ids":{
+          "genpept":"BAP81865.1",
+          "mibig":"BGC0002612",
+          "uniprot":"A0A097ZPE4"
+        },
+        "enzyme_name":"AndK",
+        "enzyme_refs":[
+          "doi:10.1021/ja508127q"
+        ],
+        "enzyme_tailoring":"Cyclization|Hydroxylation",
+        "mite_accession":"MITE0000351",
+        "mite_url":"https://bioregistry.io/mite:MITE0000351",
+        "status":"active"
+      }
+    ],
     "BGC0002643":[
       {
         "enzyme_description":"Flavin-dependent halogenase",

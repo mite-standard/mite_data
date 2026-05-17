@@ -7530,6 +7530,28 @@
       "reaction_description":"5-halogenation of L-tryptophan in the ulleungmycin pathway. Exact occurrence of halogenation in the pathway currently undefined.",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000351":{
+      "accession":"MITE0000351",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"BAP81865.1",
+        "mibig":"BGC0002612",
+        "uniprot":"A0A097ZPE4"
+      },
+      "enzyme_name":"AndK",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Emericella variicolor",
+      "phylum":"Dikarya",
+      "reaction_description":"Hydroxylation as the first step in the anditomin biosynthetic pathway.",
+      "status":"active",
+      "tailoring":"Cyclization|Hydroxylation"
     }
   },
   "version_mite_data":"1.26"
