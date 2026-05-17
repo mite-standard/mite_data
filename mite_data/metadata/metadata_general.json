@@ -7596,6 +7596,28 @@
       "reaction_description":"Epoxidation of farnesyl-DHDMP to give epoxyfarnesyl-DHDMP in the anditomin biosynthetic pathway..",
       "status":"active",
       "tailoring":"Oxidation"
+    },
+    "MITE0000354":{
+      "accession":"MITE0000354",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Terpene cyclase",
+      "enzyme_ids":{
+        "genpept":"BAP81856.1",
+        "mibig":"BGC0002612",
+        "uniprot":"A0A097ZPD8"
+      },
+      "enzyme_name":"AndB",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Emericella variicolor",
+      "phylum":"Dikarya",
+      "reaction_description":"Cyclization of the meroterpenoid intermediate in the anditomin biosynthetic pathway.",
+      "status":"active",
+      "tailoring":"Cyclization"
     }
   },
   "version_mite_data":"1.26"

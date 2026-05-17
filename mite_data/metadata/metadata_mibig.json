@@ -3728,6 +3728,22 @@
         "mite_accession":"MITE0000353",
         "mite_url":"https://bioregistry.io/mite:MITE0000353",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Terpene cyclase",
+        "enzyme_ids":{
+          "genpept":"BAP81856.1",
+          "mibig":"BGC0002612",
+          "uniprot":"A0A097ZPD8"
+        },
+        "enzyme_name":"AndB",
+        "enzyme_refs":[
+          "doi:10.1021/ja508127q"
+        ],
+        "enzyme_tailoring":"Cyclization",
+        "mite_accession":"MITE0000354",
+        "mite_url":"https://bioregistry.io/mite:MITE0000354",
+        "status":"active"
       }
     ],
     "BGC0002643":[
