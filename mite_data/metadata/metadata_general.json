@@ -7552,6 +7552,28 @@
       "reaction_description":"Hydroxylation as the first step in the anditomin biosynthetic pathway.",
       "status":"active",
       "tailoring":"Cyclization|Hydroxylation"
+    },
+    "MITE0000352":{
+      "accession":"MITE0000352",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Mg",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Prenyltransferase",
+      "enzyme_ids":{
+        "genpept":"BAP81858.1",
+        "mibig":"BGC0002612",
+        "uniprot":"A0A097ZPE3"
+      },
+      "enzyme_name":"AndD",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Emericella variicolor",
+      "phylum":"Dikarya",
+      "reaction_description":"Prenylation as the third step in the anditomin biosynthetic pathway.",
+      "status":"active",
+      "tailoring":"Prenylation"
     }
   },
   "version_mite_data":"1.26"
