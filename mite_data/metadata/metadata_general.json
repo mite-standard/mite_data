@@ -7618,6 +7618,28 @@
       "reaction_description":"Cyclization of the meroterpenoid intermediate in the anditomin biosynthetic pathway.",
       "status":"active",
       "tailoring":"Cyclization"
+    },
+    "MITE0000355":{
+      "accession":"MITE0000355",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Dehydrogenase",
+      "enzyme_ids":{
+        "genpept":"BAP81857.1",
+        "mibig":"BGC0002612",
+        "uniprot":"A0A097ZPC9"
+      },
+      "enzyme_name":"AndC",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Emericella variicolor",
+      "phylum":"Dikarya",
+      "reaction_description":"Oxidation of meroterpenoid intermediate in the anditomin biosynthetic pathway.",
+      "status":"active",
+      "tailoring":"Oxidation"
     }
   },
   "version_mite_data":"1.26"
