@@ -1,0 +1,96 @@
+{
+    "accession": "MITE0000356",
+    "status": "active",
+    "comment": "Nonheme iron-dependent dioxygenase",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-16",
+            "contributors": [
+                "0000-0002-0771-9611"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 improved descriptions."
+        }
+    ],
+    "enzyme": {
+        "name": "AndA",
+        "description": "Dioxygenase",
+        "references": [
+            "doi:10.1021/ja508127q"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A097ZPD5",
+            "genpept": "BAP81855.1",
+            "mibig": "BGC0002612"
+        },
+        "cofactors": {
+            "organic": [
+                "Ascorbic acid",
+                "a-Ketoglutaric acid"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Dehydrogenation"
+            ],
+            "description": "Dehydrogenation of meroterpenoid precursor before cyclization in the anditomin biosynthetic pathway.",
+            "reactionSMARTS": "[#8]=[#6]1-[#6]2-[#6](=[#8])-[#6](-[#6])=[#6]3-[#8]-[#6@@]4(-[#6](-[#6]-[#6@]-3(/[#6])-[#6]=2-[#6]-[#8]-1)-[#6@]1(/[#6])-[#6](-[#6@@](-[#6](-[#6]-[#6]-1)=[#8])(\\[#6])/[#6])-[#6]-[#6]-4)\\[#6]>>[#8]=[#6]1-[#6]2-[#6](=[#8])-[#6](-[#6])=[#6]3-[#8]-[#6@@]4(-[#6](-[#6]-[#6@]-3(/[#6])-[#6]=2-[#6]-[#8]-1)-[#6@]1(/[#6])-[#6](-[#6@@](-[#6](-[#6]=[#6]-1)=[#8])(\\[#6])/[#6])-[#6]-[#6]-4)\\[#6]",
+            "reactions": [
+                {
+                    "substrate": "CC1=C2O[C@@]3(C)CCC4C(C)(C)C(=O)CC[C@]4(C)C3C[C@]2(C)C2=C(C(=O)OC2)C1=O",
+                    "products": [
+                        "CC1=C2O[C@@]3(C)CCC4C(C)(C)C(=O)C=C[C@]4(C)C3C[C@]2(C)C2=C(C(=O)OC2)C1=O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Conversion of preandiloid B yielding the enone preandiloid C."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/ja508127q"
+                ]
+            },
+            "databaseIds": {
+                "ec": "1.14.11"
+            }
+        },
+        {
+            "tailoring": [
+                "Cyclization"
+            ],
+            "description": "Structural rearrangement generating a bicyclo[2.2.2]octane core in the anditomin biosynthetic pathway.",
+            "reactionSMARTS": "[#8]=[#6]1-[#6]2-[#6](=[#8])-[#6](-[#6])=[#6]3-[#8]-[#6@@]4(-[#6](-[#6]-[#6@]-3(/[#6])-[#6]=2-[#6]-[#8]-1)-[#6@]1(/[#6])-[#6](-[#6@@](-[#6](-[#6]=[#6]-1)=[#8])(\\[#6])/[#6])-[#6]-[#6]-4)\\[#6]>>[#6@@]123/[#6]/[#6@@]4(-[#6])-[#6](=[#8])-[#6@@]5\\[#6](=[#8])-[#8]-[#6]\\[#6@@]-1-5-[#6@](\\[#6])(-[#6]-4=[#8])-[#6]-[#6]-2-[#6@]1(/[#6])-[#6](-[#6@@](-[#6](-[#6]=[#6]-1)=[#8])(\\[#6])/[#6])-[#6]-[#6]-3",
+            "reactions": [
+                {
+                    "substrate": "CC1=C2O[C@@]3(C)CCC4C(C)(C)C(=O)C=C[C@]4(C)C3C[C@]2(C)C2=C(C(=O)OC2)C1=O",
+                    "products": [
+                        "CC1(C)C(=O)C=C[C@@]2(C)C1CC[C@@]13C[C@@]4(C)C(=O)[C@H]5C(=O)OC[C@]51[C@@](C)(CC23)C4=O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Conversion of preandiloid C to andiconin."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/ja508127q"
+                ]
+            }
+        }
+    ]
+}
