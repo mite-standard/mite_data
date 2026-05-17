@@ -7728,6 +7728,28 @@
       "reaction_description":"Acetylation of intermediate meroterpenoid in the andilesin biosynthetic pathway.",
       "status":"active",
       "tailoring":"Acetylation"
+    },
+    "MITE0000360":{
+      "accession":"MITE0000360",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Short-chain dehydrogenase/reductase",
+      "enzyme_ids":{
+        "genpept":"BAP81862.1",
+        "mibig":"BGC0002612",
+        "uniprot":"A0A097ZPD4"
+      },
+      "enzyme_name":"AndH",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Emericella variicolor",
+      "phylum":"Dikarya",
+      "reaction_description":"Reduction of meroterpenoid intermediate andilesin B in the andilesin biosynthetic pathway.",
+      "status":"active",
+      "tailoring":"Reduction"
     }
   },
   "version_mite_data":"1.26"
