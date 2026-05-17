@@ -1,0 +1,64 @@
+{
+    "accession": "MITE0000358",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-17",
+            "contributors": [
+                "0000-0002-0771-9611"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 added MIBiG crossref and improved reaction descriptions."
+        }
+    ],
+    "enzyme": {
+        "name": "AndI",
+        "description": "Short-chain dehydrogenase",
+        "references": [
+            "doi:10.1021/ja508127q"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A097ZPE8",
+            "genpept": "BAP81863.1",
+            "mibig": "BGC0002612"
+        },
+        "cofactors": {
+            "organic": [
+                "NADP"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Reduction"
+            ],
+            "description": "Reduction of meroterpenoid intermediate in the anditomin biosynthetic pathway.",
+            "reactionSMARTS": "[#6@@]123/[#6]/[#6@@]4(-[#6])-[#6](=[#8])-[#6@@]5\\[#6](=[#8])-[#8]-[#6]\\[#6@@]-1-5-[#6@](\\[#6])(-[#6]-4=[#8])-[#6]-[#6]-2-[#6@]1(/[#6])-[#6](-[#6@@](-[#8]-[#6](=[#8])-[#6]=[#6]-1)(\\[#6])/[#6])-[#6]-[#6]-3>>[#6@@]123/[#6]/[#6@@]4(-[#6])-[#6@](\\[#8])-[#6@@]5\\[#6](=[#8])-[#8]-[#6]\\[#6@@]-1-5-[#6@](\\[#6])(-[#6]-4=[#8])-[#6]-[#6]-2-[#6@]1(/[#6])-[#6](-[#6@@](-[#8]-[#6](=[#8])-[#6]=[#6]-1)(\\[#6])/[#6])-[#6]-[#6]-3",
+            "reactions": [
+                {
+                    "substrate": "CC1(C)OC(=O)C=C[C@@]2(C)C1CC[C@@]13C[C@@]4(C)C(=O)[C@H]5C(=O)OC[C@]51[C@@](C)(CC23)C4=O",
+                    "products": [
+                        "CC1(C)OC(=O)C=C[C@@]2(C)C1CC[C@]13C[C@]4(C)C(=O)[C@](C)(CC21)[C@]31COC(=O)[C@@H]1[C@H]4O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Conversion of andilesin D to yield andilesin A."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1021/ja508127q"
+                ]
+            },
+            "databaseIds": {
+                "ec": "1.1.1"
+            }
+        }
+    ]
+}
