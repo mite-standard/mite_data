@@ -1,0 +1,57 @@
+{
+    "accession": "MITE0000371",
+    "status": "active",
+    "comment": "dTDP-4-dehydro-6-deoxyglucose aminotransferase. MIBiG BGC BGC0001452",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-06",
+            "contributors": [
+                "0000-0001-9433-5204"
+            ],
+            "reviewers": [
+                "0000-0003-3290-1017",
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 revised UniProt/GenPept/MiBIG IDs. Reviewer 2 removed MIBIG crossref (was BGC0001452) since it does not contain NCBI protein accession IDs."
+        }
+    ],
+    "enzyme": {
+        "name": "SipS13",
+        "description": "Aminotransferase",
+        "references": [
+            "doi:10.1128/AEM.01462-18"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI000D1B57A2",
+            "genpept": "PSK68976.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Other"
+            ],
+            "description": "dTDP-4-dehydro-6-deoxyglucose aminotransferase",
+            "reactionSMARTS": "[#6:1]1(-[#6:7])-[#6:2](-[#7:8])-[#6:3](-[#8:9])-[#6:4]-[#6:5](-[#8:10]-[*])-[#8:6]-1>>[#6:1]1(-[#6:7])-[#6:2](-[#7:8](-[#6])-[#6])-[#6:3](-[#8:9])-[#6:4]-[#6:5](-[#8:10]-[*])-[#8:6]-1",
+            "reactions": [
+                {
+                    "substrate": "*OC1CC(O)C(N)C(C)O1",
+                    "products": [
+                        "*OC1CC(O)C(N(C)C)C(C)O1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "dTDP-4-dehydro-6-deoxyglucose aminotransferase"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure"
+                ],
+                "references": [
+                    "doi:10.1128/AEM.01462-18"
+                ]
+            }
+        }
+    ]
+}
