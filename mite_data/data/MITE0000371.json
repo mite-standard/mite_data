@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000371",
     "status": "active",
     "comment": "dTDP-4-dehydro-6-deoxyglucose aminotransferase",
     "changelog": [
@@ -12,12 +12,12 @@
             "reviewers": [
                 "0000-0003-3290-1017"
             ],
-            "comment": "Revised UniProt/GenPept/MiBIG IDs"
+            "comment": "New entry. Reviewer 1 revised UniProt/GenPept/MiBIG IDs."
         }
     ],
     "enzyme": {
         "name": "SipS13",
-        "description": "Transferase",
+        "description": "Aminotransferase",
         "references": [
             "doi:10.1128/AEM.01462-18"
         ],
