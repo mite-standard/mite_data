@@ -1,0 +1,55 @@
+{
+    "accession": "MITE0000363",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-06",
+            "contributors": [
+                "0009-0003-1714-1678"
+            ],
+            "reviewers": [
+                "0000-0002-7493-459X"
+            ],
+            "comment": "New entry. Reviewer 1 changed intermediate product to false."
+        }
+    ],
+    "enzyme": {
+        "name": "OpaF",
+        "description": "O-methyltransferase",
+        "references": [
+            "doi:10.1038/s41467-020-18713-0"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A0C1E5J2",
+            "genpept": "KIA75453.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "Catalyzes the conversion of Oxepinamide E to the end product Oxepinamide F by methylation of the hydroxyl group at C-12.",
+            "reactionSMARTS": "[#6:1]1(=[#8:25])-[#7:2]-[#6:3](-[#6@@:16](\\[#6:19])-[#6:17]-[#6:18])=[#6:4]2-[#7:7]=[#6:8]3-[#8:13]-[#6:15]=[#6:14]-[#6:12]=[#6:11]-[#6@:9]-3(\\[#8:20])-[#6:10](=[#8:21])-[#7:5]-2-[#6@:6]-1\\[#6:22]-[#6:23]1:[#6:28]:[#6:29]:[#6:27]:[#6:26]:[#6:24]:1>>[#6:1]1(=[#8:25])-[#7:2]-[#6:3](-[#6@@:16](\\[#6:19])-[#6:17]-[#6:18])=[#6:4]2-[#7:7]=[#6:8]3-[#8:13]-[#6:15]=[#6:14]-[#6:12]=[#6:11]-[#6@:9]-3(\\[#8:20]-[#6])-[#6:10](=[#8:21])-[#7:5]-2-[#6@:6]-1\\[#6:22]-[#6:23]1:[#6:28]:[#6:29]:[#6:27]:[#6:26]:[#6:24]:1",
+            "reactions": [
+                {
+                    "substrate": "CC[C@H](C)C1=C2N=C3OC=CC=C[C@]3(O)C(=O)N2[C@@H](Cc2ccccc2)C(=O)N1",
+                    "products": [
+                        "CC[C@H](C)C1=C2N=C3OC=CC=C[C@]3(OC)C(=O)N2[C@@H](Cc2ccccc2)C(=O)N1"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Methylation of the hydroxyl group at C-12."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1038/s41467-020-18713-0"
+                ]
+            }
+        }
+    ]
+}
