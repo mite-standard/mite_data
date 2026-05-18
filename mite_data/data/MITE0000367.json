@@ -1,0 +1,59 @@
+{
+    "accession": "MITE0000367",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-12",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 correccted genpept ID, removed uniprot ID, improved descriptions."
+        }
+    ],
+    "enzyme": {
+        "name": "LigI",
+        "description": "O-methyltransferase",
+        "references": [
+            "doi:10.1021/jacs.5c03802"
+        ],
+        "databaseIds": {
+            "genpept": "YCL08179.1"
+        },
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "Catalyzes O-methylation of the ring-contracted intermediate in the ligustrone biosynthetic pathway.",
+            "reactionSMARTS": "[#8:1]=[#6:2]1-[#6:5]2:[#6:8](:[#6:10]3:[#6:16]4:[#8:17]:[#6:18](:[#6:20]:[#6:21](=[#8:22]):[#6:15]:4:[#6:13](-[#8:14]):[#6:12]:[#6:11]:3:[#6:7]:[#6:6]:2-[#6:4]=[#6:3]-1)-[#6:19])-[#8:9]>>[#8:1]=[#6:2]1-[#6:5]2:[#6:8](:[#6:10]3:[#6:16]4:[#8:17]:[#6:18](:[#6:20]:[#6:21](=[#8:22]):[#6:15]:4:[#6:13](-[#8:14]):[#6:12]:[#6:11]:3:[#6:7]:[#6:6]:2-[#6:4]=[#6:3]-1)-[#6:19])-[#8:9]-[#6]",
+            "reactions": [
+                {
+                    "substrate": "Cc1cc(=O)c2c(O)cc3cc4c(c(O)c3c2o1)C(=O)C=C4",
+                    "products": [
+                        "COc1c2c(cc3cc(O)c4c(=O)cc(C)oc4c13)C=CC2=O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Conversion of ring-contracted intermediate to ligustrone A."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/jacs.5c03802"
+                ]
+            }
+        }
+    ]
+}
