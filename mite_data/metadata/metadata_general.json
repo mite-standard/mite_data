@@ -7962,6 +7962,27 @@
       "reaction_description":"Conversion of E-ascladiol to patulin",
       "status":"active",
       "tailoring":"Cyclization"
+    },
+    "MITE0000371":{
+      "accession":"MITE0000371",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Aminotransferase",
+      "enzyme_ids":{
+        "genpept":"PSK68976.1",
+        "uniprot":"UPI000D1B57A2"
+      },
+      "enzyme_name":"SipS13",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces sp. CS149",
+      "phylum":"Actinomycetota",
+      "reaction_description":"dTDP-4-dehydro-6-deoxyglucose aminotransferase",
+      "status":"active",
+      "tailoring":"Other"
     }
   },
   "version_mite_data":"1.26"
