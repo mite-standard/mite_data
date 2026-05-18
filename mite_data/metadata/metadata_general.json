@@ -7941,6 +7941,27 @@
       "reaction_description":"AsmI is directly involved in the oxidation of the alkene group of benzoxazolinate",
       "status":"active",
       "tailoring":"Monooxygenation"
+    },
+    "MITE0000370":{
+      "accession":"MITE0000370",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Patulin synthase",
+      "enzyme_ids":{
+        "genpept":"AIG62134.1",
+        "uniprot":"A0A075TRK9"
+      },
+      "enzyme_name":"PatE",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Penicillium expansum",
+      "phylum":"Dikarya",
+      "reaction_description":"Conversion of E-ascladiol to patulin",
+      "status":"active",
+      "tailoring":"Cyclization"
     }
   },
   "version_mite_data":"1.26"
