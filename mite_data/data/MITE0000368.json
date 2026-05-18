@@ -1,0 +1,58 @@
+{
+    "accession": "MITE0000368",
+    "status": "active",
+    "comment": "AsmK functions as a desaturase in the biosynthetic pathway of the ashimides.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-11",
+            "contributors": [
+                "0009-0005-5667-8069"
+            ],
+            "reviewers": [
+                "0000-0002-7493-459X",
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 changed intermediate product to false. Reviewer 2 fixed protein cross-refs."
+        }
+    ],
+    "enzyme": {
+        "name": "AsmK",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1039/C8SC05670F"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI000F70C51F",
+            "genpept": "QKW60390.1",
+            "mibig": "BGC0002288"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Monooxygenation"
+            ],
+            "description": "Desaturates alanine building block to form a 2-aminoacrylic acid containing intermediate.",
+            "reactionSMARTS": "[#6:1]1:[#6:12]:[#6:11](-[#6:13](-[#8:15]-[#6:16]\\[#6@@:17](-[#6:19](=[#8:31])-[#7:20]-[#6:21]-[#6:22](=[#8:24])-[#7:23](-[#6:26])-[#6:25](-[#6:28](-[#16:30])=[#8:29])-[#6])-[#7:18])=[#8:14]):[#6:4]2-[#7:5]-[#6:6](=[#8:10])-[#6:7](=[#6:9])-[#8:8]-[#6:3]:2:[#6:2]:1>>[#6:1]1:[#6:12]:[#6:11](-[#6:13](-[#8:15]-[#6:16]-[#6@@:17](-[#6:19](=[#8:31])-[#7:20]-[#6:21]-[#6:22](=[#8:24])-[#7:23](-[#6:26])-[#6:25](-[#6:28](-[#16:30])=[#8:29])=[#6:1])\\[#7:18])=[#8:14]):[#6:4]2-[#7:5]-[#6:6](=[#8:10])-[#6:7](=[#6:9])-[#8:8]-[#6:3]:2:[#6:2]:1",
+            "reactions": [
+                {
+                    "substrate": "C=C1Oc2cccc(C(=O)OC[C@H](N)C(=O)NCC(=O)N(C)C(C)C(=O)S)c2NC1=O",
+                    "products": [
+                        "C=C1Oc2cccc(C(=O)OC[C@H](N)C(=O)NCC(=O)N(C)C(=C)C(=O)S)c2NC1=O"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1039/C8SC05670F"
+                ]
+            }
+        }
+    ]
+}
