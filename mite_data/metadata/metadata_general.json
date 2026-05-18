@@ -7836,6 +7836,27 @@
       "reaction_description":"Chlorination of Colletorin D to produce Colletochlorin D",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000365":{
+      "accession":"MITE0000365",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"NADP",
+      "domain":"Eukaryota",
+      "enzyme_description":"Alcohol dehydrogenase",
+      "enzyme_ids":{
+        "genpept":"AIG62135.1",
+        "uniprot":"A0A075TMP0"
+      },
+      "enzyme_name":"PatD",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Penicillium expansum",
+      "phylum":"Dikarya",
+      "reaction_description":"ring opening and reduction of neopatulin to E-ascladiol",
+      "status":"active",
+      "tailoring":"Reduction"
     }
   },
   "version_mite_data":"1.26"
