@@ -1,0 +1,91 @@
+{
+    "accession": "MITE0000369",
+    "status": "active",
+    "comment": "AsmI oxidizes the alkene group of a benzoxazolinate moiety in ashimide biosynthesis",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-11",
+            "contributors": [
+                "0009-0005-5667-8069"
+            ],
+            "reviewers": [
+                "0000-0001-5863-7248",
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 adjusted cofactors and description. Reviewer 2 fixed reaction SMARTS and SMILES, fixed protein crossrefs."
+        }
+    ],
+    "enzyme": {
+        "name": "AsmI",
+        "description": "Monooxygenase",
+        "references": [
+            "doi:10.1039/C8SC05670F"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI0010C47D0D",
+            "genpept": "QKW60388.1",
+            "mibig": "BGC0002288"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Monooxygenation"
+            ],
+            "description": "AsmI is directly involved in the oxidation of the alkene group of benzoxazolinate",
+            "reactionSMARTS": "[#6:1]=[#6:2]1-[#8:31]-[#6:7]2:[#6:8]:[#6:9]:[#6:10]:[#6:11](-[#6:12](=[#8:30])-[#8:13]-[#6:14]/[#6@@:15]3-[#7:29]-[#6:27](=[#8:28])-[#6@:19]4(\\[#6:25]-[#8:26])-[#7:20](-[#6:24])-[#6:21](=[#8:23])-[#6:22]-[#7:18]-4-[#6:16]-3=[#8:17]):[#6:6]:2-[#7:5]-[#6:3]-1=[#8:4]>>[#6:1]1-[#8]-[#6:2]2-1-[#8:31]-[#6:7]1:[#6:8]:[#6:9]:[#6:10]:[#6:11](-[#6:12](=[#8:30])-[#8:13]-[#6:14]/[#6@@:15]3-[#7:29]-[#6:27](=[#8:28])-[#6@:19]4(\\[#6:25]-[#8:26])-[#7:20](-[#6:24])-[#6:21](=[#8:23])-[#6:22]-[#7:18]-4-[#6:16]-3=[#8:17]):[#6:6]:1-[#7:5]-[#6:3]-2=[#8:4]",
+            "reactions": [
+                {
+                    "substrate": "C=C1Oc2cccc(C(=O)OC[C@@H]3NC(=O)[C@]4(CO)N(C)C(=O)CN4C3=O)c2NC1=O",
+                    "products": [
+                        "CN1C(=O)CN2C(=O)[C@H](COC(=O)c3cccc4c3NC(=O)C3(CO3)O4)NC(=O)[C@]12CO"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1039/C8SC05670F"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Monooxygenation"
+            ],
+            "description": "AsmI is directly involved in the oxidation of the alkene group of benzoxazolinate",
+            "reactionSMARTS": "[#6:1]=[#6:2]1-[#6:30](=[#8:31])-[#7:29]-[#6:28]2:[#6:4](:[#6:5]:[#6:6]:[#6:7]:[#6:8]:2-[#6:9](-[#8:11]-[#6:12]\\[#6@:13]2-[#6:26](=[#8:27])-[#7:25]3-[#6@:17](-[#7:20](-[#6:22](-[#6:24]-3)=[#8:23])-[#6:21])(/[#6:18]-[Cl:19])-[#6:15](=[#8:16])-[#7:14]-2)=[#8:10])-[#8:3]-1>>[#6:1]1-[#8]-[#6:2]2-1-[#6:30](=[#8:31])-[#7:29]-[#6:28]1:[#6:4](:[#6:5]:[#6:6]:[#6:7]:[#6:8]:1-[#6:9](-[#8:11]-[#6:12]\\[#6@:13]1-[#6:26](=[#8:27])-[#7:25]3-[#6@:17](-[#7:20](-[#6:22](-[#6:24]-3)=[#8:23])-[#6:21])(/[#6:18]-[Cl:19])-[#6:15](=[#8:16])-[#7:14]-1)=[#8:10])-[#8:3]-2",
+            "reactions": [
+                {
+                    "substrate": "C=C1Oc2cccc(C(=O)OC[C@@H]3NC(=O)[C@]4(CCl)N(C)C(=O)CN4C3=O)c2NC1=O",
+                    "products": [
+                        "CN1C(=O)CN2C(=O)[C@H](COC(=O)c3cccc4c3NC(=O)C3(CO3)O4)NC(=O)[C@]12CCl"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1039/C8SC05670F"
+                ]
+            }
+        }
+    ]
+}
