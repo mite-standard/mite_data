@@ -18,7 +18,7 @@
     ],
     "enzyme": {
         "name": "AsmI",
-        "description": "monooxygenase",
+        "description": "Monooxygenase",
         "references": [
             "doi:10.1039/C8SC05670F"
         ],
