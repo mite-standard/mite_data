@@ -8004,6 +8004,27 @@
       "reaction_description":"opaC is a FAD-containing monooxygenase and could be a good candidate for a consecutive hydroxylation at C12 of the oxepin ring",
       "status":"active",
       "tailoring":"Monooxygenation"
+    },
+    "MITE0000373":{
+      "accession":"MITE0000373",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme|NADP",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450 enzyme (oxepinase)",
+      "enzyme_ids":{
+        "genpept":"KIA75687.1",
+        "uniprot":"A0A0C1E2D7"
+      },
+      "enzyme_name":"OpaB2",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Aspergillus ustus",
+      "phylum":"Dikarya",
+      "reaction_description":"Stereoselective formation of a 1H-oxepin ring from a quinazolinone-containing benzodiazepinedione precursor via an arene oxide intermediate.",
+      "status":"active",
+      "tailoring":"Ring expansion"
     }
   },
   "version_mite_data":"1.26"
