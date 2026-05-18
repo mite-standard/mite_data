@@ -7813,6 +7813,28 @@
       "reaction_description":"Catalyzes the conversion of Oxepinamide E to the end product Oxepinamide F by methylation of the hydroxyl group at C-12.",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000364":{
+      "accession":"MITE0000364",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Halogenase",
+      "enzyme_ids":{
+        "genpept":"OBR09776.1",
+        "mibig":"BGC0002812",
+        "uniprot":"A0A1B7YCJ8"
+      },
+      "enzyme_name":"CTC2",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Colletotrichum higginsianum (strain IMI 349063)",
+      "phylum":"Dikarya",
+      "reaction_description":"Chlorination of Colletorin D to produce Colletochlorin D",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.26"
