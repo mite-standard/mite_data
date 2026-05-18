@@ -1,0 +1,65 @@
+{
+    "accession": "MITE0000366",
+    "status": "active",
+    "comment": "Catalyzes the oxidative ring contraction",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-12",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 corrected genpept accession, removed incorrect uniprot ID, corrected the reaction and substrate, improved descriptions."
+        }
+    ],
+    "enzyme": {
+        "name": "LigK",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1021/jacs.5c03802"
+        ],
+        "databaseIds": {
+            "genpept": "YCL08181.1"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Ring contraction"
+            ],
+            "description": "Oxidative ring contraction of a 1,2-dione in the ligustrone biosynthethic pathway.",
+            "reactionSMARTS": "[#6:1]-[#6:2]1:[#8:18]:[#6:17]2:[#6:6](:[#6:7](:[#6:9]:[#6:10]3:[#6:16]:2:[#6:14](-[#8:15]):[#6:13]2-[#6:19](-[#6:21]=[#6:22](-[#8:25])-[#6:23](=[#8:24])-[#6:12]:2:[#6:11]:3)=[#8:20])-[#8:8]):[#6:4](=[#8:5]):[#6:3]:1>>[#6:1]-[#6:2]1:[#8:18]:[#6:17]2:[#6:6](:[#6:7](:[#6:9]:[#6:10]3:[#6:16]:2:[#6:14](-[#8:15]):[#6:13]2-[#6:19](=[#8:20])-[#6:21]=[#6:22]-[#6:12]:2:[#6:11]:3)-[#8:8]):[#6:4](=[#8:5]):[#6:3]:1",
+            "reactions": [
+                {
+                    "substrate": "Cc1cc(=O)c2c(O)cc3cc4c(c(O)c3c2o1)C(=O)C=C(O)C4=O",
+                    "products": [
+                        "Cc1cc(=O)c2c(O)cc3cc4c(c(O)c3c2o1)C(=O)C=C4"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Oxidative ring contraction of a anthracene dione intermediate in the formation of lugustrone A."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Inference from genomic data and chemical structure",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/jacs.5c03802"
+                ]
+            }
+        }
+    ]
+}
