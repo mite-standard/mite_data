@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000367",
     "status": "active",
     "changelog": [
         {
@@ -34,7 +34,7 @@
             "tailoring": [
                 "Methylation"
             ],
-            "description": "Catalyzes O-methylation of the ring-contracted intermediate in the ligustrone biosynthetic pathway",
+            "description": "Catalyzes O-methylation of the ring-contracted intermediate in the ligustrone biosynthetic pathway.",
             "reactionSMARTS": "[#8:1]=[#6:2]1-[#6:5]2:[#6:8](:[#6:10]3:[#6:16]4:[#8:17]:[#6:18](:[#6:20]:[#6:21](=[#8:22]):[#6:15]:4:[#6:13](-[#8:14]):[#6:12]:[#6:11]:3:[#6:7]:[#6:6]:2-[#6:4]=[#6:3]-1)-[#6:19])-[#8:9]>>[#8:1]=[#6:2]1-[#6:5]2:[#6:8](:[#6:10]3:[#6:16]4:[#8:17]:[#6:18](:[#6:20]:[#6:21](=[#8:22]):[#6:15]:4:[#6:13](-[#8:14]):[#6:12]:[#6:11]:3:[#6:7]:[#6:6]:2-[#6:4]=[#6:3]-1)-[#6:19])-[#8:9]-[#6]",
             "reactions": [
                 {
@@ -43,7 +43,7 @@
                         "COc1c2c(cc3cc(O)c4c(=O)cc(C)oc4c13)C=CC2=O"
                     ],
                     "isIntermediate": false,
-                    "description": "Conversion of ring-contracted intermediate to ligustrone A "
+                    "description": "Conversion of ring-contracted intermediate to ligustrone A."
                 }
             ],
             "evidence": {
