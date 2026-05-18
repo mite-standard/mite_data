@@ -474,3 +474,4 @@
 472,MITE0000365.reaction1.example1,O=C1C=C2COC(O)C=C2O1,O=C1C=C(CO)/C(=C\CO)O1
 473,MITE0000366.reaction1.example1,Cc1cc(=O)c2c(O)cc3cc4c(c(O)c3c2o1)C(=O)C=C(O)C4=O,Cc1cc(=O)c2c(O)cc3cc4c(c(O)c3c2o1)C(=O)C=C4
 474,MITE0000367.reaction1.example1,Cc1cc(=O)c2c(O)cc3cc4c(c(O)c3c2o1)C(=O)C=C4,COc1c2c(cc3cc(O)c4c(=O)cc(C)oc4c13)C=CC2=O
+475,MITE0000368.reaction1.example1,C=C1Oc2cccc(C(=O)OC[C@H](N)C(=O)NCC(=O)N(C)C(C)C(=O)S)c2NC1=O,C=C1Oc2cccc(C(=O)OC[C@H](N)C(=O)NCC(=O)N(C)C(=C)C(=O)S)c2NC1=O

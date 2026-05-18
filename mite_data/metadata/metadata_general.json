@@ -7897,6 +7897,28 @@
       "reaction_description":"Catalyzes O-methylation of the ring-contracted intermediate in the ligustrone biosynthetic pathway.",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000368":{
+      "accession":"MITE0000368",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"QKW60390.1",
+        "mibig":"BGC0002288",
+        "uniprot":"UPI000F70C51F"
+      },
+      "enzyme_name":"AsmK",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces sp. NA03103",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Desaturates alanine building block to form a 2-aminoacrylic acid containing intermediate.",
+      "status":"active",
+      "tailoring":"Monooxygenation"
     }
   },
   "version_mite_data":"1.26"
