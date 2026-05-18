@@ -3560,6 +3560,22 @@
         "mite_accession":"MITE0000368",
         "mite_url":"https://bioregistry.io/mite:MITE0000368",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Monooxygenase",
+        "enzyme_ids":{
+          "genpept":"QKW60388.1",
+          "mibig":"BGC0002288",
+          "uniprot":"UPI0010C47D0D"
+        },
+        "enzyme_name":"AsmI",
+        "enzyme_refs":[
+          "doi:10.1039/C8SC05670F"
+        ],
+        "enzyme_tailoring":"Monooxygenation",
+        "mite_accession":"MITE0000369",
+        "mite_url":"https://bioregistry.io/mite:MITE0000369",
+        "status":"active"
       }
     ],
     "BGC0002300":[

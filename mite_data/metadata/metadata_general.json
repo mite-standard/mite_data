@@ -7919,6 +7919,28 @@
       "reaction_description":"Desaturates alanine building block to form a 2-aminoacrylic acid containing intermediate.",
       "status":"active",
       "tailoring":"Monooxygenation"
+    },
+    "MITE0000369":{
+      "accession":"MITE0000369",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"Monooxygenase",
+      "enzyme_ids":{
+        "genpept":"QKW60388.1",
+        "mibig":"BGC0002288",
+        "uniprot":"UPI0010C47D0D"
+      },
+      "enzyme_name":"AsmI",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces sp. NA03103",
+      "phylum":"Actinomycetota",
+      "reaction_description":"AsmI is directly involved in the oxidation of the alkene group of benzoxazolinate",
+      "status":"active",
+      "tailoring":"Monooxygenation"
     }
   },
   "version_mite_data":"1.26"
