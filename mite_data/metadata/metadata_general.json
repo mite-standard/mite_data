@@ -7877,6 +7877,26 @@
       "reaction_description":"Oxidative ring contraction of a 1,2-dione in the ligustrone biosynthethic pathway.",
       "status":"active",
       "tailoring":"Ring contraction"
+    },
+    "MITE0000367":{
+      "accession":"MITE0000367",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Eukaryota",
+      "enzyme_description":"O-methyltransferase",
+      "enzyme_ids":{
+        "genpept":"YCL08179.1"
+      },
+      "enzyme_name":"LigI",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Penicillium paradoxum",
+      "phylum":"Dikarya",
+      "reaction_description":"Catalyzes O-methylation of the ring-contracted intermediate in the ligustrone biosynthetic pathway.",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.26"
