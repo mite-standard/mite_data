@@ -7497,6 +7497,7 @@
       "enzyme_description":"Cytochrome P450",
       "enzyme_ids":{
         "genpept":"KIA75457.1",
+        "mibig":"BGC0002208",
         "uniprot":"A0A0C1E1L9"
       },
       "enzyme_name":"OpaB",

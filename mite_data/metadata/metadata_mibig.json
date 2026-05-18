@@ -3438,6 +3438,24 @@
         "status":"active"
       }
     ],
+    "BGC0002208":[
+      {
+        "enzyme_description":"Cytochrome P450",
+        "enzyme_ids":{
+          "genpept":"KIA75457.1",
+          "mibig":"BGC0002208",
+          "uniprot":"A0A0C1E1L9"
+        },
+        "enzyme_name":"OpaB",
+        "enzyme_refs":[
+          "doi:10.1038/s41467-020-18713-0"
+        ],
+        "enzyme_tailoring":"Hydroxylation|Oxidation|Ring expansion",
+        "mite_accession":"MITE0000349",
+        "mite_url":"https://bioregistry.io/mite:MITE0000349",
+        "status":"active"
+      }
+    ],
     "BGC0002223":[
       {
         "enzyme_description":"AsaB-like alphaKGDD",
