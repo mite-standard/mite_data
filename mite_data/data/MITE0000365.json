@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000365",
     "status": "active",
     "changelog": [
         {
@@ -11,7 +11,7 @@
             "reviewers": [
                 "0000-0001-5863-7248"
             ],
-            "comment": "added evidence \"in vitro\", added cofactor \"NADP\", adjusted tailoring term to \"reduction\", added \"intermediate true\""
+            "comment": "New entry. Reviewer 1 added evidence \"in vitro\", added cofactor \"NADP\", adjusted tailoring term to \"reduction\", added \"intermediate true\""
         }
     ],
     "enzyme": {
