@@ -1,0 +1,54 @@
+{
+    "accession": "MITE0000362",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-06",
+            "contributors": [
+                "0000-0002-3025-2407"
+            ],
+            "reviewers": [
+                "0000-0002-7493-459X"
+            ],
+            "comment": "Improved description: SalbB catalyze guaninylation of cyclo-l-Trp-l-Leu (cWL)"
+        }
+    ],
+    "enzyme": {
+        "name": "salbB",
+        "description": "Oxidoreductase",
+        "references": [
+            "doi:10.1021/acs.jnatprod.4c00837"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI0012386E32"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Other"
+            ],
+            "description": "SalbB catalyze guaninylation of cyclo-l-Trp-l-Leu (cWL)",
+            "reactionSMARTS": "[#6:1]-[#6:2](-[#6:4]/[#6@:5]1-[#6:21](=[#8:22])-[#7:20]-[#6@@:9](/[#6:10]-[#6:11]2:[#6:19]3:[#6:14](:[#6:15]:[#6:16]:[#6:17]:[#6:18]:3):[#7:13]:[#6:12]:2)-[#6:7](=[#8:8])-[#7:6]-1)-[#6:3]>>[#6:3]-[#6:2](-[#6:4]/[#6@:5]1-[#6:21](=[#8:22])-[#7:20]2-[#6:12]3-[#7:13]-[#6:14]4:[#6:19](-[#6@@:11]-3(\\[#6]3:[#7]:[#6]5:[#6](:[#6](:[#7]:[#6](:[#7]:5)-[#7])=[#8]):[#7]:3)-[#6:10]/[#6@:9]-2-[#6:7](=[#8:8])-[#7:6]-1):[#6:18]:[#6:17]:[#6:16]:[#6:15]:4)-[#6:1]",
+            "reactions": [
+                {
+                    "substrate": "CC(C)C[C@@H]1NC(=O)[C@H](Cc2c[nH]c3ccccc23)NC1=O",
+                    "products": [
+                        "CC(C)C[C@@H]1NC(=O)[C@@H]2C[C@]3(C4=NC5=NC(N)=NC(=O)C5=N4)c4ccccc4NC3N2C1=O"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Inference from genomic data and chemical structure"
+                ],
+                "references": [
+                    "doi:10.1021/acs.jnatprod.4c00837"
+                ]
+            }
+        }
+    ]
+}
