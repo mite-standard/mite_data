@@ -7857,6 +7857,26 @@
       "reaction_description":"ring opening and reduction of neopatulin to E-ascladiol",
       "status":"active",
       "tailoring":"Reduction"
+    },
+    "MITE0000366":{
+      "accession":"MITE0000366",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"YCL08181.1"
+      },
+      "enzyme_name":"LigK",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Penicillium paradoxum",
+      "phylum":"Dikarya",
+      "reaction_description":"Oxidative ring contraction of a 1,2-dione in the ligustrone biosynthethic pathway.",
+      "status":"active",
+      "tailoring":"Ring contraction"
     }
   },
   "version_mite_data":"1.26"
