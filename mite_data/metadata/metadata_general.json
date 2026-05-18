@@ -7792,6 +7792,27 @@
       "reaction_description":"SalbB catalyze guaninylation of cyclo-l-Trp-l-Leu (cWL)",
       "status":"active",
       "tailoring":"Other"
+    },
+    "MITE0000363":{
+      "accession":"MITE0000363",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"O-methyltransferase",
+      "enzyme_ids":{
+        "genpept":"KIA75453.1",
+        "uniprot":"A0A0C1E5J2"
+      },
+      "enzyme_name":"OpaF",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Aspergillus ustus",
+      "phylum":"Dikarya",
+      "reaction_description":"Catalyzes the conversion of Oxepinamide E to the end product Oxepinamide F by methylation of the hydroxyl group at C-12.",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.26"
