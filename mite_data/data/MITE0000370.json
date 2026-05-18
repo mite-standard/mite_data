@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000370",
     "status": "active",
     "changelog": [
         {
@@ -28,9 +28,9 @@
     "reactions": [
         {
             "tailoring": [
-                "Other"
+                "Cyclization"
             ],
-            "description": "conversion of E-ascladiol to patulin",
+            "description": "Conversion of E-ascladiol to patulin",
             "reactionSMARTS": "[#8]-[#6]\\[#6]=[#6]-1\\[#8]-[#6](=O)-[#6]=[#6]-1-[#6]-[#8]>>[#8]-[#6]-1-[#8]-[#6]-[#6]=[#6]-2-[#8]-[#6](=O)-[#6]=[#6]-1-2",
             "reactions": [
                 {
