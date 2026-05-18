@@ -1,7 +1,7 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000368",
     "status": "active",
-    "comment": "AsmK functions as a desaturase in the biosynthetic pathway of the ashimides",
+    "comment": "AsmK functions as a desaturase in the biosynthetic pathway of the ashimides.",
     "changelog": [
         {
             "version": "1",
@@ -12,12 +12,12 @@
             "reviewers": [
                 "0000-0002-7493-459X"
             ],
-            "comment": "No intermediate product"
+            "comment": "New entry. Reviewer 1 changed intermediate product to false"
         }
     ],
     "enzyme": {
-        "name": "asmK",
-        "description": "cytochrome P450 monooxygenase",
+        "name": "AsmK",
+        "description": "Cytochrome P450",
         "references": [
             "doi:10.1039/C8SC05670F"
         ],
@@ -32,7 +32,7 @@
             "tailoring": [
                 "Monooxygenation"
             ],
-            "description": "alanine building block is desaturated by AsmK to form a 2-aminoacrylic acid containing intermediate.",
+            "description": "Desaturates alanine building block to form a 2-aminoacrylic acid containing intermediate.",
             "reactionSMARTS": "[#6:1]1:[#6:12]:[#6:11](-[#6:13](-[#8:15]-[#6:16]\\[#6@@:17](-[#6:19](=[#8:31])-[#7:20]-[#6:21]-[#6:22](=[#8:24])-[#7:23](-[#6:26])-[#6:25](-[#6:28](-[#16:30])=[#8:29])-[#6])-[#7:18])=[#8:14]):[#6:4]2-[#7:5]-[#6:6](=[#8:10])-[#6:7](=[#6:9])-[#8:8]-[#6:3]:2:[#6:2]:1>>[#6:1]1:[#6:12]:[#6:11](-[#6:13](-[#8:15]-[#6:16]-[#6@@:17](-[#6:19](=[#8:31])-[#7:20]-[#6:21]-[#6:22](=[#8:24])-[#7:23](-[#6:26])-[#6:25](-[#6:28](-[#16:30])=[#8:29])=[#6:1])\\[#7:18])=[#8:14]):[#6:4]2-[#7:5]-[#6:6](=[#8:10])-[#6:7](=[#6:9])-[#8:8]-[#6:3]:2:[#6:2]:1",
             "reactions": [
                 {
