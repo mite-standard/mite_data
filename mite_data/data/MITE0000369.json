@@ -13,7 +13,7 @@
                 "0000-0001-5863-7248",
                 "0000-0001-6534-6609"
             ],
-            "comment": "New entry. Reviewer 1 adjusted cofactors and description. Reviewer 2 fixed reaction SMARTS and SMILES."
+            "comment": "New entry. Reviewer 1 adjusted cofactors and description. Reviewer 2 fixed reaction SMARTS and SMILES, fixed protein crossrefs."
         }
     ],
     "enzyme": {
@@ -23,8 +23,8 @@
             "doi:10.1039/C8SC05670F"
         ],
         "databaseIds": {
-            "uniprot": "A0A7H8P372",
-            "genpept": "QCE20604.1",
+            "uniprot": "UPI0010C47D0D",
+            "genpept": "QKW60388.1",
             "mibig": "BGC0002288"
         },
         "cofactors": {
