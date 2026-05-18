@@ -1,0 +1,55 @@
+{
+    "accession": "MITE0000370",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-06",
+            "contributors": [
+                "0009-0006-4188-3294"
+            ],
+            "reviewers": [
+                "0000-0001-9078-9292"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "PatE",
+        "description": "Patulin synthase",
+        "references": [
+            "doi:10.1111/1462-2920.14542"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A075TRK9",
+            "genpept": "AIG62134.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Cyclization"
+            ],
+            "description": "Conversion of E-ascladiol to patulin",
+            "reactionSMARTS": "[#8]-[#6]\\[#6]=[#6]-1\\[#8]-[#6](=O)-[#6]=[#6]-1-[#6]-[#8]>>[#8]-[#6]-1-[#8]-[#6]-[#6]=[#6]-2-[#8]-[#6](=O)-[#6]=[#6]-1-2",
+            "reactions": [
+                {
+                    "substrate": "O=C1C=C(CO)/C(=C\\CO)O1",
+                    "products": [
+                        "O=C1C=C2C(=CCOC2O)O1"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1111/1462-2920.14542"
+                ]
+            }
+        }
+    ]
+}
