@@ -1,0 +1,60 @@
+{
+    "accession": "MITE0000365",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-06",
+            "contributors": [
+                "0009-0006-4188-3294"
+            ],
+            "reviewers": [
+                "0000-0001-5863-7248"
+            ],
+            "comment": "New entry. Reviewer 1 added evidence \"in vitro\", added cofactor \"NADP\", adjusted tailoring term to \"reduction\", added \"intermediate true\""
+        }
+    ],
+    "enzyme": {
+        "name": "PatD",
+        "description": "Alcohol dehydrogenase",
+        "references": [
+            "doi:10.1111/1462-2920.14542"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A075TMP0",
+            "genpept": "AIG62135.1"
+        },
+        "cofactors": {
+            "organic": [
+                "NADP"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Reduction"
+            ],
+            "description": "ring opening and reduction of neopatulin to E-ascladiol",
+            "reactionSMARTS": "[#8]-[#6]-1-[#8]-[#6]-[#6]-2=[#6]-[#6](=O)-[#8]-[#6]-2=[#6]-1>>[#8]-[#6]\\[#6]=[#6]-1\\[#8]-[#6](=O)-[#6]=[#6]-1-[#6]-[#8]",
+            "reactions": [
+                {
+                    "substrate": "O=C1C=C2COC(O)C=C2O1",
+                    "products": [
+                        "O=C1C=C(CO)/C(=C\\CO)O1"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1111/1462-2920.14542"
+                ]
+            }
+        }
+    ]
+}
