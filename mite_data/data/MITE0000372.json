@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000372",
     "status": "active",
     "changelog": [
         {
@@ -16,7 +16,7 @@
     ],
     "enzyme": {
         "name": "opaC",
-        "description": "Monooxygenation",
+        "description": "Monooxygenase",
         "references": [
             "doi:10.1038/s41467-020-18713-0"
         ],
