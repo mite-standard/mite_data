@@ -1,0 +1,56 @@
+{
+    "accession": "MITE0000372",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-07",
+            "contributors": [
+                "0009-0000-2122-2487"
+            ],
+            "reviewers": [
+                "0000-0002-7493-459X"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "opaC",
+        "description": "Monooxygenase",
+        "references": [
+            "doi:10.1038/s41467-020-18713-0"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A0C1BV72",
+            "genpept": "KIA75456.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Monooxygenation"
+            ],
+            "description": "opaC is a FAD-containing monooxygenase and could be a good candidate for a consecutive hydroxylation at C12 of the oxepin ring",
+            "reactionSMARTS": "[#6:1]-[#6:2]-[#6:3](-[#6:5]1-[#6:18]2:[#7:19]:[#6:20]3-[#8:28]-[#6:27]=[#6:26]-[#6:25]=[#6:24]-[#6:21]:3:[#6:22](=[#8:23]):[#7:17]:2-[#6:9](-[#6:10]-[#6:11]2:[#6:16]:[#6:15]:[#6:14]:[#6:13]:[#6:12]:2)-[#6:7](=[#8:8])-[#7:6]-1)-[#6:4]>>[#6:1]-[#6:2]-[#6:3](-[#6:5]1=[#6:18]2-[#7:19]=[#6:20]3-[#8:28]-[#6:27]=[#6:26]-[#6:25]=[#6:24]-[#6:21]-3(-[#8])-[#6:22](=[#8:23])-[#7:17]-2-[#6:9](-[#6:10]-[#6:11]2:[#6:12]:[#6:13]:[#6:14]:[#6:15]:[#6:16]:2)-[#6:7](=[#8:8])-[#7:6]-1)-[#6:4]",
+            "reactions": [
+                {
+                    "substrate": "CCC(C)C1NC(=O)C(Cc2ccccc2)n2c1nc1c(c2=O)C=CC=CO1",
+                    "products": [
+                        "CCC(C)C1=C2N=C3OC=CC=CC3(O)C(=O)N2C(Cc2ccccc2)C(=O)N1"
+                    ],
+                    "isIntermediate": false,
+                    "description": "The regio-and stereo specific hydroxylation of Protuboxepin A by opaC is accompanied by a doublebond migration, leading to the conversion of a 1H-oxepin to a 3H-oxepin system in 15-epi-oxepinamide E"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1038/s41467-020-18713-0"
+                ]
+            }
+        }
+    ]
+}
