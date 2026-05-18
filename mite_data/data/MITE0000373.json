@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000373",
     "status": "active",
     "comment": "inserts an oxygen atom into the quinazolinone precursor, catalyzing the arene oxide/ring expansion to generate the 1H-oxepin scaffold",
     "changelog": [
@@ -10,7 +10,8 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "0000-0001-6534-6609"
+                "0000-0001-6534-6609",
+                "0000-0002-9747-3423"
             ],
             "comment": "New entry. Reviewer 1 fixed reaction (was epoxidation)."
         }
