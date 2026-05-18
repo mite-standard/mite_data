@@ -7983,6 +7983,27 @@
       "reaction_description":"dTDP-4-dehydro-6-deoxyglucose aminotransferase",
       "status":"active",
       "tailoring":"Other"
+    },
+    "MITE0000372":{
+      "accession":"MITE0000372",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Monooxygenase",
+      "enzyme_ids":{
+        "genpept":"KIA75456.1",
+        "uniprot":"A0A0C1BV72"
+      },
+      "enzyme_name":"opaC",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Aspergillus ustus",
+      "phylum":"Dikarya",
+      "reaction_description":"opaC is a FAD-containing monooxygenase and could be a good candidate for a consecutive hydroxylation at C12 of the oxepin ring",
+      "status":"active",
+      "tailoring":"Monooxygenation"
     }
   },
   "version_mite_data":"1.26"
