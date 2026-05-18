@@ -10,9 +10,10 @@
                 "0009-0005-5667-8069"
             ],
             "reviewers": [
-                "0000-0002-7493-459X"
+                "0000-0002-7493-459X",
+                "0000-0001-6534-6609"
             ],
-            "comment": "New entry. Reviewer 1 changed intermediate product to false"
+            "comment": "New entry. Reviewer 1 changed intermediate product to false. Reviewer 2 fixed protein cross-refs."
         }
     ],
     "enzyme": {
@@ -23,7 +24,7 @@
         ],
         "databaseIds": {
             "uniprot": "UPI000F70C51F",
-            "genpept": "QCE20606.1",
+            "genpept": "QKW60390.1",
             "mibig": "BGC0002288"
         }
     },
