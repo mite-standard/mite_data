@@ -34,7 +34,7 @@
             "reviewers": [
                 "BBBBBBBBBBBBBBBBBBBBBBBB"
             ],
-            "comment": ""
+            "comment": "Test entry"
         }
     ],
     "enzyme": {
@@ -50,11 +50,11 @@
             "mibig": "BGC0000026"
         },
         "cofactors": {
-            "inorganic": [
-                "FeS"
-            ],
             "organic": [
                 "SAM"
+            ],
+            "inorganic": [
+                "FeS"
             ]
         }
     },
