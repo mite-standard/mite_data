@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Sequential Aromatic Hydroxylation and C\u2500N Coupling in Ahp\u2010Bicyclodepsipeptides",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,49 @@
     ],
     "enzyme": {
         "name": "Dlm16",
-        "databaseIds": {
-            "uniprot": "UPI003A8AF188",
-            "genpept": ""
-        },
+        "description": "Cytochrome P450",
         "references": [
-            "doi:"
-        ]
+            "doi:10.1002/anie.202513520"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI003A8AF188"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Cyclization",
+                "Hydroxylation"
+            ],
+            "description": "Side-chain macrocyclization of FR901277 and delmomycin A2, is catalyzed by Dlm16, through a sequential process initiated by ortho-hydroxylation of the tyrosine ring, followed by intramolecular C\u2500N coupling between the resulting catechol moiety and the terminal NH2 of the ureido group.",
+            "reactionSMARTS": "[#6:1]-[#6:2]=[#6:3]1-[#6:68](=[#8:69])-[#7:67]-[#6:62]2-[#6:63]-[#6:64]-[#6:65](-[#8:66])-[#7:59](-[#6:60]-2=[#8:61])-[#6:51](-[#6:52]-[#6:53]2:[#6:58]:[#6:57]:[#6:56]:[#6:55]:[#6:54]:2)-[#6:49](=[#8:50])-[#7:47](-[#6:48])-[#6:38](-[#6:39]-[#6:40]2:[#6:46]:[#6:45]:[#6:43](-[#8:44]):[#6:42]:[#6:41]:2)-[#6:36](=[#8:37])-[#7:35]-[#6:31](-[#6:32](-[#6:34])-[#6:33])-[#6:29](=[#8:30])-[#8:28]-[#6:26](-[#6:27])-[#6:7](-[#7:8]-[#6:9](-[#6:11](-[#7:19]-[#6:20](-[#6:22]-[#6:23](-[#6:25])-[#6:24])=[#8:21])-[#6:12]-[#6:13]-[#6:14]-[#7:15]-[#6:16](=[#8:18])-[#7:17])=[#8:10])-[#6:5](=[#8:6])-[#7:4]-1>>[#6:1]-[#6:2]=[#6:3]1-[#6:68](=[#8:69])-[#7:67]-[#6:62]2-[#6:63]-[#6:64]-[#6:65](-[#8:66])-[#7:59](-[#6:60]-2=[#8:61])-[#6:51](-[#6:52]-[#6:53]2:[#6:54]:[#6:55]:[#6:56]:[#6:57]:[#6:58]:2)-[#6:49](=[#8:50])-[#7:47](-[#6:48])-[#6:38]2-[#6:36](-[#7:35]-[#6:31](-[#6:29](-[#8:28]-[#6:26](-[#6:27])-[#6:7](-[#7:8]-[#6:9](-[#6:11](-[#6:12]-[#6:13]-[#6:14]-[#7:15]-[#6:16](-[#7:17]-[#6:41]3:[#6:40](-[#6:39]-2):[#6:46]:[#6:45](-[#8]):[#6:43](-[#8:44]):[#6:42]:3)=[#8:18])-[#7:19]-[#6:20](-[#6:22]-[#6:23](-[#6:24])-[#6:25])=[#8:21])=[#8:10])-[#6:5](=[#8:6])-[#7:4]-1)=[#8:30])-[#6:32](-[#6:33])-[#6:34])=[#8:37]",
             "reactions": [
                 {
+                    "substrate": "C/C=C1\\NC(=O)C(NC(=O)C(CCCNC(N)=O)NC(=O)CC(C)C)C(C)OC(=O)C(C(C)C)NC(=O)C(Cc2ccc(O)cc2)N(C)C(=O)C(Cc2ccccc2)N2C(=O)C(CCC2O)NC1=O",
                     "products": [
-                        ""
-                    ]
+                        "CC=C1NC(=O)C2NC(=O)C(NC(=O)CC(C)C)CCCNC(=O)Nc3cc(O)c(O)cc3CC(C(=O)NC(C(C)C)C(=O)OC2C)N(C)C(=O)C(Cc2ccccc2)N2C(=O)C(CCC2O)NC1=O"
+                    ],
+                    "isIntermediate": false
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Site-directed mutagenesis"
+                ],
+                "references": [
+                    "doi:10.1002/anie.202513520"
+                ]
+            }
         }
     ]
 }
