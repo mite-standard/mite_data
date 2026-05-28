@@ -1,0 +1,64 @@
+{
+    "accession": "MITE0000383",
+    "status": "active",
+    "comment": "GroI oxidizes the allylic C-17 position of gromomycin C to form a keto group",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-24",
+            "contributors": [
+                "0009-0008-8086-5325"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "GroI",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1002/anie.202422270"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI0034576DF7"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Monooxygenation"
+            ],
+            "description": "GroI incorporates a keto group at C-17 of gromomycin C, leading to the formation of gromomycin B",
+            "reactionSMARTS": "[#7:1]=[#6:2]1-[#7:37]-[#6:36]=[#6:6]2-[#6:7]3(-[#6:31](-[#6:33]-[#6:34](-[#8:35])-[#6:4]-2(-[#6:5])-[#7:3]-1)-[#6:12]1(-[#6:14]-[#6:15]-[#6:16]2-[#6:22](-[#6:29])(-[#6:23]-[#6:24]-[#6:25]=[#6:26](-[#6:28])-[#6:27])-[#6:21]-[#6:20]-[#6:19]=[#6:18]-2-[#6:10]-1(-[#6:11])-[#6:9]-[#6:8]-3)-[#6:13])-[#6:30]>>[#7:1]=[#6:2]1-[#7:37]-[#6:36]=[#6:6]2-[#6:7]3(-[#6:31](-[#6:33]-[#6:34](-[#8:35])-[#6:4]-2(-[#6:5])-[#7:3]-1)-[#6:12]1(-[#6:14]-[#6:15]-[#6:16]2-[#6:22](-[#6:29])(-[#6:23]-[#6:24]-[#6:25]=[#6:26](-[#6:27])-[#6:28])-[#6:21]-[#6:20](=[#8])-[#6:19]=[#6:18]-2-[#6:10]-1(-[#6:11])-[#6:9]-[#6:8]-3)-[#6:13])-[#6:30]",
+            "reactions": [
+                {
+                    "substrate": "CC(C)=CCCC1(C)CCC=C2C1CCC1(C)C3CC(O)C4(C)NC(=N)NC=C4C3(C)CCC21C",
+                    "products": [
+                        "CC(C)=CCCC1(C)CC(=O)C=C2C1CCC1(C)C3CC(O)C4(C)NC(=N)NC=C4C3(C)CCC21C"
+                    ],
+                    "isIntermediate": true,
+                    "description": "GroI incorporates a keto group at C-17 of gromomycin C, leading to the formation of gromomycin B"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1002/anie.202422270"
+                ]
+            }
+        }
+    ]
+}
