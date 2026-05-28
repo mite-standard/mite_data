@@ -1,0 +1,67 @@
+{
+    "accession": "MITE0000400",
+    "status": "active",
+    "comment": "Monensin hydroxylase",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-27",
+            "contributors": [
+                "0009-0008-8086-5325"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "MonD",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1046/j.1365-2958.2003.03571.x",
+            "doi:10.3762/bjoc.10.34"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI000005D0CA",
+            "genpept": "AAO65808.1",
+            "mibig": "BGC0000100"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "The preferred order of events in monensin biosynthesis is hydroxylation at C-26 catalysed by MonD, followed by O-methylation at the hydroxy group at C-3 catalysed by MonE",
+            "reactionSMARTS": "[#6:1]-[#6:2]-[#6:3]1(-[#6:30]2-[#6:34](-[#6:35])-[#6:33]-[#6:32](-[#6:36]3-[#6:44](-[#6:45])-[#6:43]-[#6:41](-[#6:42])-[#6:38](-[#6:40])(-[#8:39])-[#8:37]-3)-[#8:31]-2)-[#8:7]-[#6:6](-[#6:8]2(-[#8:29]-[#6:12]3(-[#8:19]-[#6:18](-[#6:20](-[#6:22](-[#6:24](-[#6:26](=[#8:28])-[*])-[#6:25])-[#8:23])-[#6:21])-[#6:16](-[#6:17])-[#6:14](-[#8:15])-[#6:13]-3)-[#6:11]-[#6:10]-2)-[#6:9])-[#6:5]-[#6:4]-1>>[#6:1]-[#6:2]-[#6:3]1(-[#6:30]2-[#6:34](-[#6:35])-[#6:33]-[#6:32](-[#6:36]3-[#6:44](-[#6:45])-[#6:43]-[#6:41](-[#6:42])-[#6:38](-[#6:40]-[#8])(-[#8:39])-[#8:37]-3)-[#8:31]-2)-[#8:7]-[#6:6](-[#6:8]2(-[#8:29]-[#6:12]3(-[#8:19]-[#6:18](-[#6:20](-[#6:22](-[#6:24](-[#6:26](=[#8:28])-[*])-[#6:25])-[#8:23])-[#6:21])-[#6:16](-[#6:17])-[#6:14](-[#8:15])-[#6:13]-3)-[#6:11]-[#6:10]-2)-[#6:9])-[#6:5]-[#6:4]-1",
+            "reactions": [
+                {
+                    "substrate": "*C(=O)C(C)C(O)C(C)C1OC2(CCC(C)(C3CCC(CC)(C4OC(C5OC(C)(O)C(C)CC5C)CC4C)O3)O2)CC(O)C1C",
+                    "products": [
+                        "*C(=O)C(C)C(O)C(C)C1OC2(CCC(C)(C3CCC(CC)(C4OC(C5OC(O)(CO)C(C)CC5C)CC4C)O3)O2)CC(O)C1C"
+                    ],
+                    "isIntermediate": true,
+                    "description": "MonD catalyzes hydroxylation at C-26 of dehydroxydemethylmonensin to produce intermediate demethylmonensin"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure"
+                ],
+                "references": [
+                    "doi:10.1046/j.1365-2958.2003.03571.x",
+                    "doi:10.3762/bjoc.10.34"
+                ]
+            }
+        }
+    ]
+}
