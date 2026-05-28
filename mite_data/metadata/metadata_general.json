@@ -8068,6 +8068,28 @@
       "reaction_description":"Prenylates orsellinic acid in the ascochlorin/ascofuranone biosynthetic pathway.",
       "status":"active",
       "tailoring":"Prenylation"
+    },
+    "MITE0000375":{
+      "accession":"MITE0000375",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"Adenosine triphosphate|NADP",
+      "domain":"Eukaryota",
+      "enzyme_description":"NRPS-like Oxidoreductase",
+      "enzyme_ids":{
+        "genpept":"BBF25314.1",
+        "mibig":"BGC0001923",
+        "uniprot":"A0A455R7E6"
+      },
+      "enzyme_name":"AscB",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Acremonium egyptiacum",
+      "phylum":"Dikarya",
+      "reaction_description":"Reduces ilicicolinic acid B in the ascochlorin/ascofuranone biosynthetic pathway.",
+      "status":"active",
+      "tailoring":"Reduction"
     }
   },
   "version_mite_data":"1.27"
