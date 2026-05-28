@@ -8328,6 +8328,27 @@
       "reaction_description":"O-methylation of fusicoccin terpene scaffold to yield methylated derivatives.",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000387":{
+      "accession":"MITE0000387",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"α-Ketoglutarate-Dependent Dioxygenase",
+      "enzyme_ids":{
+        "genpept":"ACO31282.1",
+        "uniprot":"D8L2V2"
+      },
+      "enzyme_name":"PtmO6",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces platensis",
+      "phylum":"Actinomycetota",
+      "reaction_description":"stereoselective C7 α-hydroxylation in platensimycin biosynthesis",
+      "status":"active",
+      "tailoring":"Oxidation"
     }
   },
   "version_mite_data":"1.27"
