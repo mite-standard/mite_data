@@ -8519,6 +8519,27 @@
       "reaction_description":"Macrocyclisation",
       "status":"active",
       "tailoring":"Cyclization|Oxidation"
+    },
+    "MITE0000396":{
+      "accession":"MITE0000396",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Aromatic prenyltransferase",
+      "enzyme_ids":{
+        "genpept":"AMB20850.1",
+        "uniprot":"A0A1B0UHJ4"
+      },
+      "enzyme_name":"AtaPT",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Aspergillus terreus",
+      "phylum":"Dikarya",
+      "reaction_description":"C-prenylation of acylphloroglucinols",
+      "status":"active",
+      "tailoring":"Prenylation"
     }
   },
   "version_mite_data":"1.27"

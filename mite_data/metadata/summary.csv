@@ -394,3 +394,4 @@ MITE0000392,active,PaP450-1,Cytochrome P450,Hydroxylation,C-16 hydroxylation of 
 MITE0000393,active,PaP450-2,Cytochrome P450,Hydroxylation,C-8 hydroxylation in the fusicoccin A biosynthetic pathway,Heme,Fe,Phomopsis amygdali,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Sordariomycetes
 MITE0000394,active,PhomYa,Hydroxylase,Hydroxylation,Hydroxylation of the C-beta of the tyrosine moiety.,N/A,N/A,Diaporthe leptostromiformis,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Sordariomycetes
 MITE0000395,active,PhomYb,Oxidase,Cyclization|Oxidation,Macrocyclisation,N/A,N/A,Diaporthe leptostromiformis,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Sordariomycetes
+MITE0000396,active,AtaPT,Aromatic prenyltransferase,Prenylation,C-prenylation of acylphloroglucinols,N/A,N/A,Aspergillus terreus,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Eurotiomycetes
