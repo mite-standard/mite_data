@@ -1,0 +1,63 @@
+{
+    "accession": "MITE0000391",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-06",
+            "contributors": [
+                "0000-0002-0771-9611"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 replaced reaction SMILES with reaction SMARTS, added genpept and uniprot ID, improved descriptions."
+        }
+    ],
+    "enzyme": {
+        "name": "PaP450-3",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1371/journal.pone.0042090"
+        ],
+        "databaseIds": {
+            "uniprot": "L0MYS5",
+            "genpept": "BAM71032.1"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "C-9 hydroxylation of precursor in the fusicoccin A biosynthetic pathway.",
+            "reactionSMARTS": "[#6:1](\\[#6@@:2]1-[#6:20]-[#6:19]\\[#6@:18]2-[#6:3]-1=[#6:4]-[#6@:5]1(-[#6:13](-[#6:14]-[#6@@:15](\\[#8:21])-[#6@:16]-2\\[#6:17])=[#6:9](-[#6:10](-[#6:12])-[#6:11])-[#6:8]-[#6:7]-1)\\[#6:6])-[#8:22]>>[#6:1](\\[#6@@:2]1-[#6:20]-[#6:19]\\[#6@:18]2-[#6:3]-1=[#6:4]-[#6@:5]1(-[#6:13](-[#6@:14](/[#8])-[#6@@:15](\\[#8:21])-[#6@:16]-2\\[#6:17])=[#6:9](-[#6:10](-[#6:12])-[#6:11])-[#6:8]-[#6:7]-1)\\[#6:6])-[#8:22]",
+            "reactions": [
+                {
+                    "substrate": "CC(C)C1=C2C[C@@H](O)[C@@H](C)[C@H]3CC[C@@H](CO)C3=C[C@]2(C)CC1",
+                    "products": [
+                        "CC(C)C1=C2[C@H](O)[C@@H](O)[C@@H](C)[C@H]3CC[C@@H](CO)C3=C[C@]2(C)CC1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Conversion of fusicocca-1,10(14)-diene-8b,16-diol to fusicoccin H aglycon."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1371/journal.pone.0042090"
+                ]
+            }
+        }
+    ]
+}
