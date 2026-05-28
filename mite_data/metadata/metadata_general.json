@@ -8433,6 +8433,27 @@
       "reaction_description":"C-9 hydroxylation of precursor in the fusicoccin A biosynthetic pathway.",
       "status":"active",
       "tailoring":"Hydroxylation"
+    },
+    "MITE0000392":{
+      "accession":"MITE0000392",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"BAM71037.1",
+        "uniprot":"L0MYS8"
+      },
+      "enzyme_name":"PaP450-1",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Phomopsis amygdali",
+      "phylum":"Dikarya",
+      "reaction_description":"C-16 hydroxylation of precursor in the Fusicoccin A biosynthetic pathway.",
+      "status":"active",
+      "tailoring":"Hydroxylation"
     }
   },
   "version_mite_data":"1.27"
