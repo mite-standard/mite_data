@@ -8222,6 +8222,28 @@
       "reaction_description":"Cyclization of meroterpenoid intermediate in the ascofuranone biosynthetic pathway.",
       "status":"active",
       "tailoring":"Cyclization"
+    },
+    "MITE0000382":{
+      "accession":"MITE0000382",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"NADP",
+      "domain":"Eukaryota",
+      "enzyme_description":"Short-chain dehydrogenase/reductase",
+      "enzyme_ids":{
+        "genpept":"BBF25320.1",
+        "mibig":"BGC0001924",
+        "uniprot":"A0A455R5K2"
+      },
+      "enzyme_name":"AscJ",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Acremonium egyptiacum",
+      "phylum":"Dikarya",
+      "reaction_description":"Oxidizes intermediate meroterpenoid in the ascofuranone biosynthetic pathway, leading to mature ascofuranone.",
+      "status":"active",
+      "tailoring":"Oxidation"
     }
   },
   "version_mite_data":"1.27"
