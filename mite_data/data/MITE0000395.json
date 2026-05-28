@@ -1,0 +1,57 @@
+{
+    "accession": "MITE0000395",
+    "status": "active",
+    "comment": "UstYa family oxidase",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-06",
+            "contributors": [
+                "0009-0008-4645-6771"
+            ],
+            "reviewers": [
+                "0000-0001-5863-7248"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "PhomYb",
+        "description": "Oxidase",
+        "references": [
+            "doi:10.1002/anie.202111076"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A142I729",
+            "genpept": "BDA39141.1",
+            "mibig": "BGC0001398"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Cyclization",
+                "Oxidation"
+            ],
+            "description": "Macrocyclisation",
+            "reactionSMARTS": "CC[C@H](C)[C@H](NC(=O)[C@@H]1CCCN1C(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](N)Cc1cc(O)c(O)c(Cl)c1)C(C)C)[C@@H](C)CC)C(=O)N[C@@H](CC(=O)O)C(=O)O>>C=C(C)[C@@H]1NC(=O)[C@@H](N)Cc2cc(Cl)c(O)c(c2)O[C@](C)(CC)[C@@H](C(=O)N2CCC[C@H]2C(=O)N[C@H](C(=O)N[C@@H](CC(=O)O)C(=O)O)[C@@H](C)CC)NC1=O",
+            "reactions": [
+                {
+                    "substrate": "CC[C@H](C)[C@H](NC(=O)[C@@H]1CCCN1C(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](N)Cc1cc(O)c(O)c(Cl)c1)C(C)C)[C@@H](C)CC)C(=O)N[C@@H](CC(=O)O)C(=O)O",
+                    "products": [
+                        "C=C(C)[C@@H]1NC(=O)[C@@H](N)Cc2cc(Cl)c(O)c(c2)O[C@](C)(CC)[C@@H](C(=O)N2CCC[C@H]2C(=O)N[C@H](C(=O)N[C@@H](CC(=O)O)C(=O)O)[C@@H](C)CC)NC1=O"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1002/anie.202111076"
+                ]
+            }
+        }
+    ]
+}
