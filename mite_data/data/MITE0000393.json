@@ -1,0 +1,63 @@
+{
+    "accession": "MITE0000393",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-06",
+            "contributors": [
+                "0009-0008-4645-6771"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 replaced reaction SMILES with reaction SMARTS, added GenPept ID, improved descriptions."
+        }
+    ],
+    "enzyme": {
+        "name": "PaP450-2",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1371/journal.pone.0042090"
+        ],
+        "databaseIds": {
+            "uniprot": "L0N063",
+            "genpept": "BAM71030.1"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "C-8 hydroxylation in the fusicoccin A biosynthetic pathway",
+            "reactionSMARTS": "[#6:1]-[#6:2]1-[#6:20]-[#6:19]\\[#6@:18]2-[#6:3]=1-[#6:4]-[#6@:5]1(-[#6:13](-[#6:14]-[#6:15]-[#6@:16]-2\\[#6:17])=[#6:9](-[#6:10](-[#6:12])-[#6:11])-[#6:8]-[#6:7]-1)\\[#6:6]>>[#6:1]-[#6:2]1-[#6:20]-[#6:19]\\[#6@:18]2-[#6:3]=1-[#6:4]-[#6@:5]1(-[#6:13](-[#6:14]-[#6@@:15](\\[#8])-[#6@:16]-2\\[#6:17])=[#6:9](-[#6:10](-[#6:12])-[#6:11])-[#6:8]-[#6:7]-1)\\[#6:6]",
+            "reactions": [
+                {
+                    "substrate": "CC1=C2C[C@]3(C)CCC(C(C)C)=C3CC[C@@H](C)[C@H]2CC1",
+                    "products": [
+                        "CC1=C2C[C@]3(C)CCC(C(C)C)=C3C[C@@H](O)[C@@H](C)[C@H]2CC1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Conversion of fusicocca-2,10(14)-diene to fusicocca-2,10(14)-diene-8b-ol"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1371/journal.pone.0042090"
+                ]
+            }
+        }
+    ]
+}
