@@ -8370,6 +8370,27 @@
       "reaction_description":"C-5 β-hydroxylation in platensimycin biosynthesis",
       "status":"active",
       "tailoring":"Oxidation"
+    },
+    "MITE0000389":{
+      "accession":"MITE0000389",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"BAM71037.1",
+        "uniprot":"L0MYS8"
+      },
+      "enzyme_name":"PaP450-5",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Phomopsis amygdali",
+      "phylum":"Dikarya",
+      "reaction_description":"hydroxylation of fusicoccin J in the fusicoccin A biosynthetic pathway",
+      "status":"active",
+      "tailoring":"Hydroxylation"
     }
   },
   "version_mite_data":"1.27"
