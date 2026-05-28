@@ -389,3 +389,4 @@ MITE0000387,active,PtmO6,α-Ketoglutarate-Dependent Dioxygenase,Oxidation,stereo
 MITE0000388,active,PtmU3,Nonheme diiron monooxygenase,Oxidation,C-5 β-hydroxylation in platensimycin biosynthesis,N/A,N/A,Streptomyces platensis,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
 MITE0000389,active,PaP450-5,Cytochrome P450,Hydroxylation,hydroxylation of fusicoccin J in the fusicoccin A biosynthetic pathway,Heme,Fe,Phomopsis amygdali,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Sordariomycetes
 MITE0000390,active,PaP450-4,Cytochrome P450,Hydroxylation,Hydroxylase involved in the fusicoccin biosynthetic pathway.,Heme,Fe,Phomopsis amygdali,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Sordariomycetes
+MITE0000391,active,PaP450-3,Cytochrome P450,Hydroxylation,C-9 hydroxylation of precursor in the fusicoccin A biosynthetic pathway.,Heme,Fe,Phomopsis amygdali,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Sordariomycetes
