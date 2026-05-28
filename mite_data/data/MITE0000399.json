@@ -1,0 +1,66 @@
+{
+    "accession": "MITE0000399",
+    "status": "active",
+    "comment": "Monensin 3-O-methyl transferase (SAM-dependent methyltransferase superfamily)",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-27",
+            "contributors": [
+                "0009-0008-8086-5325"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 added cofactor information."
+        }
+    ],
+    "enzyme": {
+        "name": "MonE",
+        "description": "O-methyltransferase",
+        "references": [
+            "doi:10.1046/j.1365-2958.2003.03571.x",
+            "doi:10.3762/bjoc.10.34"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI000005D0C6",
+            "genpept": "AAO65792.1",
+            "mibig": "BGC0000100"
+        },
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "MonE catalyzes O-methylation of the hydroxy group at C-3 of demethylmonensin",
+            "reactionSMARTS": "[#6:1]-[#6:2]-[#6:3]1(-[#6:30]2-[#6:34](-[#6:35])-[#6:33]-[#6:32](-[#6:36]3-[#6:45](-[#6:46])-[#6:44]-[#6:42](-[#6:43])-[#6:38](-[#6:40]-[#8:41])(-[#8:39])-[#8:37]-3)-[#8:31]-2)-[#8:7]-[#6:6](-[#6:8]2(-[#8:29]-[#6:12]3(-[#8:19]-[#6:18](-[#6:20](-[#6:22](-[#6:24](-[#6:26](=[#8:28])-[*])-[#6:25])-[#8:23])-[#6:21])-[#6:16](-[#6:17])-[#6:14](-[#8:15])-[#6:13]-3)-[#6:11]-[#6:10]-2)-[#6:9])-[#6:5]-[#6:4]-1>>[#6:1]-[#6:2]-[#6:3]1(-[#6:30]2-[#6:34](-[#6:35])-[#6:33]-[#6:32](-[#6:36]3-[#6:45](-[#6:46])-[#6:44]-[#6:42](-[#6:43])-[#6:38](-[#6:40]-[#8:41])(-[#8:39])-[#8:37]-3)-[#8:31]-2)-[#8:7]-[#6:6](-[#6:8]2(-[#8:29]-[#6:12]3(-[#8:19]-[#6:18](-[#6:20](-[#6:22](-[#6:24](-[#6:26](=[#8:28])-[*])-[#6:25])-[#8:23]-[#6])-[#6:21])-[#6:16](-[#6:17])-[#6:14](-[#8:15])-[#6:13]-3)-[#6:11]-[#6:10]-2)-[#6:9])-[#6:5]-[#6:4]-1",
+            "reactions": [
+                {
+                    "substrate": "*C(=O)C(C)C(O)C(C)C1OC2(CCC(C)(C3CCC(CC)(C4OC(C5OC(O)(CO)C(C)CC5C)CC4C)O3)O2)CC(O)C1C",
+                    "products": [
+                        "*C(=O)C(C)C(OC)C(C)C1OC2(CCC(C)(C3CCC(CC)(C4OC(C5OC(O)(CO)C(C)CC5C)CC4C)O3)O2)CC(O)C1C"
+                    ],
+                    "isIntermediate": true,
+                    "description": "After hydroxylation by MonD and O-methylation by MonE, the ACP-bound product is hydrolysed by MonCII (thioesterase) to release free monensin A"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1046/j.1365-2958.2003.03571.x",
+                    "doi:10.3762/bjoc.10.34",
+                    "doi:10.1038/s41467-023-41889-0"
+                ]
+            }
+        }
+    ]
+}
