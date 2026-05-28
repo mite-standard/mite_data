@@ -2741,6 +2741,22 @@
         "mite_accession":"MITE0000394",
         "mite_url":"https://bioregistry.io/mite:MITE0000394",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Oxidase",
+        "enzyme_ids":{
+          "genpept":"BDA39141.1",
+          "mibig":"BGC0001398",
+          "uniprot":"A0A142I729"
+        },
+        "enzyme_name":"PhomYb",
+        "enzyme_refs":[
+          "doi:10.1002/anie.202111076"
+        ],
+        "enzyme_tailoring":"Cyclization|Oxidation",
+        "mite_accession":"MITE0000395",
+        "mite_url":"https://bioregistry.io/mite:MITE0000395",
+        "status":"active"
       }
     ],
     "BGC0001435":[
