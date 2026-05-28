@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+"accession": "MITE0000386",
     "status": "active",
     "comment": "Methylation of Fusicoccin Q to give Fusicoccin P and related terpenoid intermediates.",
     "changelog": [
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0003-4819-2251"
             ],
-            "comment": "Revised SMARTS/SMILES, added side reactions observed in vitro, added cofactor information."
+            "comment": "New entry. Reviewer 1 revised SMARTS/SMILES, added side reactions observed in vitro, added cofactor information."
         }
     ],
     "enzyme": {
