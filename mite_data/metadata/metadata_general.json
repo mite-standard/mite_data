@@ -8046,7 +8046,29 @@
       "reaction_description":"Stereoselective formation of a 1H-oxepin ring from a quinazolinone-containing benzodiazepinedione precursor via an arene oxide intermediate.",
       "status":"active",
       "tailoring":"Ring expansion"
+    },
+    "MITE0000374":{
+      "accession":"MITE0000374",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Mg",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Prenyltransferase",
+      "enzyme_ids":{
+        "genpept":"BBF25313.1",
+        "mibig":"BGC0001923",
+        "uniprot":"A0A455R413"
+      },
+      "enzyme_name":"AscA",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Acremonium egyptiacum",
+      "phylum":"Dikarya",
+      "reaction_description":"Prenylates orsellinic acid in the ascochlorin/ascofuranone biosynthetic pathway.",
+      "status":"active",
+      "tailoring":"Prenylation"
     }
   },
-  "version_mite_data":"1.26"
+  "version_mite_data":"1.27"
 }

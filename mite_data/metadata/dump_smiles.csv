@@ -481,3 +481,4 @@
 479,MITE0000371.reaction1.example1,*OC1CC(O)C(N)C(C)O1,*OC1CC(O)C(N(C)C)C(C)O1
 480,MITE0000372.reaction1.example1,CCC(C)C1NC(=O)C(Cc2ccccc2)n2c1nc1c(c2=O)C=CC=CO1,CCC(C)C1=C2N=C3OC=CC=CC3(O)C(=O)N2C(Cc2ccccc2)C(=O)N1
 481,MITE0000373.reaction1.example1,C[C@@H]1C(=O)N[C@@H](Cc2ccccc2)c2nc3ccccc3c(=O)n21,C[C@@H]1C(=O)N[C@@H](Cc2ccccc2)c2nc3c(c(=O)n21)C=CC=CO3
+482,MITE0000374.reaction1.example1,Cc1cc(O)cc(O)c1C(=O)O,CC(C)=CCCC(C)=CCCC(C)=CCc1c(O)cc(C)c(C(=O)O)c1O
