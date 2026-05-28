@@ -8497,6 +8497,28 @@
       "reaction_description":"Hydroxylation of the C-beta of the tyrosine moiety.",
       "status":"active",
       "tailoring":"Hydroxylation"
+    },
+    "MITE0000395":{
+      "accession":"MITE0000395",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Oxidase",
+      "enzyme_ids":{
+        "genpept":"BDA39141.1",
+        "mibig":"BGC0001398",
+        "uniprot":"A0A142I729"
+      },
+      "enzyme_name":"PhomYb",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Diaporthe leptostromiformis",
+      "phylum":"Dikarya",
+      "reaction_description":"Macrocyclisation",
+      "status":"active",
+      "tailoring":"Cyclization|Oxidation"
     }
   },
   "version_mite_data":"1.27"
