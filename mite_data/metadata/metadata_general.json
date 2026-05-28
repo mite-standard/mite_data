@@ -8178,6 +8178,28 @@
       "reaction_description":"Oxidation of meroterpenoid precursor in the ascochlorin biosynthetic pathway, resulting in mature ascochlorin.",
       "status":"active",
       "tailoring":"Oxidation"
+    },
+    "MITE0000380":{
+      "accession":"MITE0000380",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme|NADP",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"BBF25322.1",
+        "mibig":"BGC0001924",
+        "uniprot":"A0A455R624"
+      },
+      "enzyme_name":"AscH",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Acremonium egyptiacum",
+      "phylum":"Dikarya",
+      "reaction_description":"Hydroxylation of meroterpenoid intermediate in the ascofuranone biosynthetic pathway.",
+      "status":"active",
+      "tailoring":"Hydroxylation"
     }
   },
   "version_mite_data":"1.27"
