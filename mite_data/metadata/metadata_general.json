@@ -8391,6 +8391,27 @@
       "reaction_description":"hydroxylation of fusicoccin J in the fusicoccin A biosynthetic pathway",
       "status":"active",
       "tailoring":"Hydroxylation"
+    },
+    "MITE0000390":{
+      "accession":"MITE0000390",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"BAM71035.1",
+        "uniprot":"L0N065"
+      },
+      "enzyme_name":"PaP450-4",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Phomopsis amygdali",
+      "phylum":"Dikarya",
+      "reaction_description":"Hydroxylase involved in the fusicoccin biosynthetic pathway.",
+      "status":"active",
+      "tailoring":"Hydroxylation"
     }
   },
   "version_mite_data":"1.27"
