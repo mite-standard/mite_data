@@ -8561,6 +8561,26 @@
       "reaction_description":"long-chain acyl-CoA dehydrogenase, is responsible for the formation of the double bond between C3 and C4",
       "status":"active",
       "tailoring":"Dehydrogenation"
+    },
+    "MITE0000398":{
+      "accession":"MITE0000398",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"Heme",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"UHY14094.1"
+      },
+      "enzyme_name":"VdoD",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Penicillium palitans",
+      "phylum":"Dikarya",
+      "reaction_description":"Hydroxylation of alkaloid scaffold in the viridicatol biosynthetic pathway.",
+      "status":"active",
+      "tailoring":"Hydroxylation"
     }
   },
   "version_mite_data":"1.27"

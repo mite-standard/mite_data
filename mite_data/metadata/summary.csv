@@ -396,3 +396,4 @@ MITE0000394,active,PhomYa,Hydroxylase,Hydroxylation,Hydroxylation of the C-beta 
 MITE0000395,active,PhomYb,Oxidase,Cyclization|Oxidation,Macrocyclisation,N/A,N/A,Diaporthe leptostromiformis,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Sordariomycetes
 MITE0000396,active,AtaPT,Aromatic prenyltransferase,Prenylation,C-prenylation of acylphloroglucinols,N/A,N/A,Aspergillus terreus,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Eurotiomycetes
 MITE0000397,active,PtmO4,long-chain acyl-CoA dehydrogenase,Dehydrogenation,"long-chain acyl-CoA dehydrogenase, is responsible for the formation of the double bond between C3 and C4",FAD,N/A,Streptomyces platensis,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
+MITE0000398,active,VdoD,Cytochrome P450,Hydroxylation,Hydroxylation of alkaloid scaffold in the viridicatol biosynthetic pathway.,Heme,N/A,Penicillium palitans,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Eurotiomycetes
