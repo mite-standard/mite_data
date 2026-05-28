@@ -8603,6 +8603,28 @@
       "reaction_description":"MonE catalyzes O-methylation of the hydroxy group at C-3 of demethylmonensin",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000400":{
+      "accession":"MITE0000400",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"AAO65808.1",
+        "mibig":"BGC0000100",
+        "uniprot":"UPI000005D0CA"
+      },
+      "enzyme_name":"MonD",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces virginiae",
+      "phylum":"Actinomycetota",
+      "reaction_description":"The preferred order of events in monensin biosynthesis is hydroxylation at C-26 catalysed by MonD, followed by O-methylation at the hydroxy group at C-3 catalysed by MonE",
+      "status":"active",
+      "tailoring":"Hydroxylation"
     }
   },
   "version_mite_data":"1.27"

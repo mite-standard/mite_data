@@ -397,6 +397,23 @@
         "mite_accession":"MITE0000399",
         "mite_url":"https://bioregistry.io/mite:MITE0000399",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Cytochrome P450",
+        "enzyme_ids":{
+          "genpept":"AAO65808.1",
+          "mibig":"BGC0000100",
+          "uniprot":"UPI000005D0CA"
+        },
+        "enzyme_name":"MonD",
+        "enzyme_refs":[
+          "doi:10.1046/j.1365-2958.2003.03571.x",
+          "doi:10.3762/bjoc.10.34"
+        ],
+        "enzyme_tailoring":"Hydroxylation",
+        "mite_accession":"MITE0000400",
+        "mite_url":"https://bioregistry.io/mite:MITE0000400",
+        "status":"active"
       }
     ],
     "BGC0000104":[
