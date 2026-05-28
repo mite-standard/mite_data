@@ -8286,6 +8286,27 @@
       "reaction_description":"Ind7 (N-methyltransferase) catalyzes the transfer of a methyl group from S-adenosyl-L-methionine (SAM) to N-demethylindolmycin, producing mature indolmycin.",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000385":{
+      "accession":"MITE0000385",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"O-prenyltransferase",
+      "enzyme_ids":{
+        "genpept":"BAL68129.1",
+        "uniprot":"H7CE84"
+      },
+      "enzyme_name":"PaPT",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Phomopsis amygdali",
+      "phylum":"Dikarya",
+      "reaction_description":"O-prenylation on glucose moiety of diterpene glycosides intermediates of fusicoccin A biosynthetic pathway.",
+      "status":"active",
+      "tailoring":"Prenylation"
     }
   },
   "version_mite_data":"1.27"
