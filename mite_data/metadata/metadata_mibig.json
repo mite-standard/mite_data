@@ -3073,6 +3073,24 @@
         "status":"active"
       }
     ],
+    "BGC0001923":[
+      {
+        "enzyme_description":"Prenyltransferase",
+        "enzyme_ids":{
+          "genpept":"BBF25313.1",
+          "mibig":"BGC0001923",
+          "uniprot":"A0A455R413"
+        },
+        "enzyme_name":"AscA",
+        "enzyme_refs":[
+          "doi:10.1073/pnas.181925411"
+        ],
+        "enzyme_tailoring":"Prenylation",
+        "mite_accession":"MITE0000374",
+        "mite_url":"https://bioregistry.io/mite:MITE0000374",
+        "status":"active"
+      }
+    ],
     "BGC0001945":[
       {
         "enzyme_description":"L-lysine cyclodeaminase",
@@ -4402,5 +4420,5 @@
       }
     ]
   },
-  "version_mite_data":"1.26"
+  "version_mite_data":"1.27"
 }
