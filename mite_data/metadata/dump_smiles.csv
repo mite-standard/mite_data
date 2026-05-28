@@ -491,3 +491,4 @@
 489,MITE0000381.reaction1.example1,C/C(=C\Cc1c(O)c(Cl)c(C)c(C=O)c1O)CC/C=C(\C)[C@@H](O)C[C@@H]1OC1(C)C,CC(=CCc1c(O)c(Cl)c(C)c(C=O)c1O)CCC=C(C)C1C[C@H](O)C(C)(C)O1
 490,MITE0000382.reaction1.example1,CC(=CCc1c([O-])c(Cl)c(C)c(C=O)c1O)CCC=C(C)C1C[C@H](O)C(C)(C)O1,CC(=CCc1c([O-])c(Cl)c(C)c(C=O)c1O)CCC=C(C)C1CC(=O)C(C)(C)O1
 491,MITE0000383.reaction1.example1,CC(C)=CCCC1(C)CCC=C2C1CCC1(C)C3CC(O)C4(C)NC(=N)NC=C4C3(C)CCC21C,CC(C)=CCCC1(C)CC(=O)C=C2C1CCC1(C)C3CC(O)C4(C)NC(=N)NC=C4C3(C)CCC21C
+492,MITE0000384.reaction1.example1,C[C@@H](c1c[nH]c2ccccc12)[C@H]1OC(N)=NC1=O,CNC1=NC(=O)[C@@H]([C@@H](C)c2c[nH]c3ccccc23)O1
