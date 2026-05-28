@@ -3203,6 +3203,22 @@
         "mite_accession":"MITE0000381",
         "mite_url":"https://bioregistry.io/mite:MITE0000381",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Short-chain dehydrogenase/reductase",
+        "enzyme_ids":{
+          "genpept":"BBF25320.1",
+          "mibig":"BGC0001924",
+          "uniprot":"A0A455R5K2"
+        },
+        "enzyme_name":"AscJ",
+        "enzyme_refs":[
+          "doi:10.1073/pnas.1819254116"
+        ],
+        "enzyme_tailoring":"Oxidation",
+        "mite_accession":"MITE0000382",
+        "mite_url":"https://bioregistry.io/mite:MITE0000382",
+        "status":"active"
       }
     ],
     "BGC0001945":[
