@@ -1,0 +1,71 @@
+{
+    "accession": "MITE0000377",
+    "status": "active",
+    "comment": "Bifunctional cytochrome P450/NADPH P450 reductase",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-16",
+            "contributors": [
+                "0000-0002-0771-9611"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 improved reaction description, added RHEA crossref, specified Fe, Heme as cofactors."
+        }
+    ],
+    "enzyme": {
+        "name": "AscE",
+        "description": "Cytochrome P450/NADPH P450 reductase",
+        "references": [
+            "doi:10.1073/pnas.1819254116"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A455R5H4",
+            "genpept": "BBF25317.1",
+            "mibig": "BGC0001923"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme",
+                "NADP"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "Epoxidation in intermediate meroterpenoid in the ascochlorin/ascofuranone biosynthetic pathway.",
+            "reactionSMARTS": "[#6]-[#6](=[#6]-[#6]-[#6]-[#6](=[#6]-[#6]-[#6]-[#6](=[#6]-[#6]-[#6]1:[#6](-[#8]):[#6](-[#6]=[#8]):[#6](-[#6]):[#6](-[Cl]):[#6]:1-[#8])-[#6])-[#6])-[#6]>>[#6]-[#6]1(-[#8]\\[#6@@]-1-[#6]-[#6]-[#6](=[#6]-[#6]-[#6]-[#6](=[#6]-[#6]-[#6]1:[#6](-[#8]):[#6](-[#6]=[#8]):[#6](-[#6]):[#6](-[Cl]):[#6]:1-[#8])-[#6])-[#6])-[#6]",
+            "reactions": [
+                {
+                    "substrate": "CC(C)=CCCC(C)=CCCC(C)=CCc1c(O)c(Cl)c(C)c(C=O)c1O",
+                    "products": [
+                        "CC(=CCc1c(O)c(Cl)c(C)c(C=O)c1O)CCC=C(C)CC[C@H]1OC1(C)C"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Converts Ilicicolin A to Ilicicolin A epoxide by stereoselective epoxidation of the terminal double bond of the prenyl group."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1073/pnas.1819254116"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "63092",
+                "ec": "1.14.14"
+            }
+        }
+    ]
+}
