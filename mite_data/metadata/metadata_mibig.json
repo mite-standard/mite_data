@@ -3105,6 +3105,22 @@
         "mite_accession":"MITE0000375",
         "mite_url":"https://bioregistry.io/mite:MITE0000375",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Flavin-dependent halogenase",
+        "enzyme_ids":{
+          "genpept":"BBF25316.1",
+          "mibig":"BGC0001923",
+          "uniprot":"A0A455R7M0"
+        },
+        "enzyme_name":"AscD",
+        "enzyme_refs":[
+          "doi:10.1073/pnas.1819254116"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000376",
+        "mite_url":"https://bioregistry.io/mite:MITE0000376",
+        "status":"active"
       }
     ],
     "BGC0001945":[
