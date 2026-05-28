@@ -8134,6 +8134,28 @@
       "reaction_description":"Epoxidation in intermediate meroterpenoid in the ascochlorin/ascofuranone biosynthetic pathway.",
       "status":"active",
       "tailoring":"Oxidation"
+    },
+    "MITE0000378":{
+      "accession":"MITE0000378",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Terpene cyclase",
+      "enzyme_ids":{
+        "genpept":"BBF25318.1",
+        "mibig":"BGC0001923",
+        "uniprot":"A0A455RAK9"
+      },
+      "enzyme_name":"AscF",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Acremonium egyptiacum",
+      "phylum":"Dikarya",
+      "reaction_description":"Cyclization of intermediate terpenoid in the ascochlorin biosynthetic pathway.",
+      "status":"active",
+      "tailoring":"Cyclization"
     }
   },
   "version_mite_data":"1.27"
