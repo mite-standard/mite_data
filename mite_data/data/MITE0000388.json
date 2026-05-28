@@ -1,7 +1,7 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000388",
     "status": "active",
-    "comment": "CoA-linked substrates are necessary ",
+    "comment": "Substrates must be CoA-linked to be accepted by the enzyme.",
     "changelog": [
         {
             "version": "1",
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0003-3290-1017"
             ],
-            "comment": "Added the reaction 2"
+            "comment": "New entry. Reviewer 1 added the reaction 2."
         }
     ],
     "enzyme": {
