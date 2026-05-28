@@ -2725,6 +2725,24 @@
         "status":"active"
       }
     ],
+    "BGC0001398":[
+      {
+        "enzyme_description":"Hydroxylase",
+        "enzyme_ids":{
+          "genpept":"BDA39139.1",
+          "mibig":"BGC0001398",
+          "uniprot":"A0A8J9WH54"
+        },
+        "enzyme_name":"PhomYa",
+        "enzyme_refs":[
+          "doi:10.1002/anie.202111076"
+        ],
+        "enzyme_tailoring":"Hydroxylation",
+        "mite_accession":"MITE0000394",
+        "mite_url":"https://bioregistry.io/mite:MITE0000394",
+        "status":"active"
+      }
+    ],
     "BGC0001435":[
       {
         "enzyme_description":"Alcohol dehydrogenase/reductase",

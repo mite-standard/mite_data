@@ -8475,6 +8475,28 @@
       "reaction_description":"C-8 hydroxylation in the fusicoccin A biosynthetic pathway",
       "status":"active",
       "tailoring":"Hydroxylation"
+    },
+    "MITE0000394":{
+      "accession":"MITE0000394",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Hydroxylase",
+      "enzyme_ids":{
+        "genpept":"BDA39139.1",
+        "mibig":"BGC0001398",
+        "uniprot":"A0A8J9WH54"
+      },
+      "enzyme_name":"PhomYa",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Diaporthe leptostromiformis",
+      "phylum":"Dikarya",
+      "reaction_description":"Hydroxylation of the C-beta of the tyrosine moiety.",
+      "status":"active",
+      "tailoring":"Hydroxylation"
     }
   },
   "version_mite_data":"1.27"
