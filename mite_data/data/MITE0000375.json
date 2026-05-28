@@ -1,0 +1,66 @@
+{
+    "accession": "MITE0000375",
+    "status": "active",
+    "comment": "NRPS-like oxidoreductase with carboxylic acid reductase activity.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-16",
+            "contributors": [
+                "0000-0002-0771-9611"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 improved reaction descriptions, added Rhea crossref."
+        }
+    ],
+    "enzyme": {
+        "name": "AscB",
+        "description": "NRPS-like Oxidoreductase",
+        "references": [
+            "doi:10.1073/pnas.1819254116"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A455R7E6",
+            "genpept": "BBF25314.1",
+            "mibig": "BGC0001923"
+        },
+        "cofactors": {
+            "organic": [
+                "Adenosine triphosphate",
+                "NADP"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Reduction"
+            ],
+            "description": "Reduces ilicicolinic acid B in the ascochlorin/ascofuranone biosynthetic pathway.",
+            "reactionSMARTS": "[#6]-[#6](-[#6])=[#6]-[#6]-[#6]-[#6](-[#6])=[#6]-[#6]-[#6]-[#6](-[#6])=[#6]-[#6]-[#6]1:[#6](-[#8]):[#6]:[#6](-[#6]):[#6](-[#6](=[#8])-[#8]):[#6]:1-[#8]>>[#6]-[#6](-[#6])=[#6]-[#6]-[#6]-[#6](-[#6])=[#6]-[#6]-[#6]-[#6](-[#6])=[#6]-[#6]-[#6]1:[#6](-[#8]):[#6]:[#6](-[#6]):[#6](-[#6]=[#8]):[#6]:1-[#8]",
+            "reactions": [
+                {
+                    "substrate": "CC(C)=CCC/C(C)=C/CC/C(C)=C/Cc1c(O)cc(C)c(C(=O)O)c1O",
+                    "products": [
+                        "CC(C)=CCCC(C)=CCCC(C)=CCc1c(O)cc(C)c(C=O)c1O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Reduction of the carboxylic acid to an aldehyde, converting ilicicolinic acid B to ilicicolin B."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1073/pnas.1819254116"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "63080"
+            }
+        }
+    ]
+}
