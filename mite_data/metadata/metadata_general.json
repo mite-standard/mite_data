@@ -8264,6 +8264,28 @@
       "reaction_description":"GroI incorporates a keto group at C-17 of gromomycin C, leading to the formation of gromomycin B",
       "status":"active",
       "tailoring":"Monooxygenation"
+    },
+    "MITE0000384":{
+      "accession":"MITE0000384",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"N-methyltransferase",
+      "enzyme_ids":{
+        "genpept":"AJT38688.1",
+        "mibig":"BGC0001206",
+        "uniprot":"A0A0D4BSP3"
+      },
+      "enzyme_name":"Ind7",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces griseus",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Ind7 (N-methyltransferase) catalyzes the transfer of a methyl group from S-adenosyl-L-methionine (SAM) to N-demethylindolmycin, producing mature indolmycin.",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.27"

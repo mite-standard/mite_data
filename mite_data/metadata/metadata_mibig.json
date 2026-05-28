@@ -2494,6 +2494,24 @@
         "status":"active"
       }
     ],
+    "BGC0001206":[
+      {
+        "enzyme_description":"N-methyltransferase",
+        "enzyme_ids":{
+          "genpept":"AJT38688.1",
+          "mibig":"BGC0001206",
+          "uniprot":"A0A0D4BSP3"
+        },
+        "enzyme_name":"Ind7",
+        "enzyme_refs":[
+          "doi:10.1073/pnas.1419964112"
+        ],
+        "enzyme_tailoring":"Methylation",
+        "mite_accession":"MITE0000384",
+        "mite_url":"https://bioregistry.io/mite:MITE0000384",
+        "status":"active"
+      }
+    ],
     "BGC0001237":[
       {
         "enzyme_description":"Cytochrome P450",
