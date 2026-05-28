@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000385",
     "status": "active",
     "comment": "Converts Fusicoccin P to Fusicoccin J.",
     "changelog": [
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0003-4819-2251"
             ],
-            "comment": "Revised SMARTS/SMILES, added secondary reaction described in literature."
+            "comment": "New entry. Reviewer 1 revised SMARTS/SMILES, added secondary reaction described in literature."
         }
     ],
     "enzyme": {
