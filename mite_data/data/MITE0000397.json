@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000397",
     "status": "active",
     "changelog": [
         {
@@ -11,7 +11,7 @@
             "reviewers": [
                 "0000-0001-5863-7248"
             ],
-            "comment": "changed reaction term, added FAD cofactor, corrected to \"intermediate true\""
+            "comment": "New entry. Reviewer 1 changed reaction term, added FAD cofactor, corrected intermediate to true."
         }
     ],
     "enzyme": {
