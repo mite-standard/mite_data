@@ -8156,6 +8156,28 @@
       "reaction_description":"Cyclization of intermediate terpenoid in the ascochlorin biosynthetic pathway.",
       "status":"active",
       "tailoring":"Cyclization"
+    },
+    "MITE0000379":{
+      "accession":"MITE0000379",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme|NADP",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"BBF25319.1",
+        "mibig":"BGC0001923",
+        "uniprot":"A0A455R4X0"
+      },
+      "enzyme_name":"AscG",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Acremonium egyptiacum",
+      "phylum":"Dikarya",
+      "reaction_description":"Oxidation of meroterpenoid precursor in the ascochlorin biosynthetic pathway, resulting in mature ascochlorin.",
+      "status":"active",
+      "tailoring":"Oxidation"
     }
   },
   "version_mite_data":"1.27"
