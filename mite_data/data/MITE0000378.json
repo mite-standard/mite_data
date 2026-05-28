@@ -1,0 +1,61 @@
+{
+    "accession": "MITE0000378",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-16",
+            "contributors": [
+                "0000-0002-0771-9611"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 fixed reaction SMARTS and product, added RHEA ID."
+        }
+    ],
+    "enzyme": {
+        "name": "AscF",
+        "description": "Terpene cyclase",
+        "references": [
+            "doi:10.1073/pnas.1819254116"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A455RAK9",
+            "genpept": "BBF25318.1",
+            "mibig": "BGC0001923"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Cyclization"
+            ],
+            "description": "Cyclization of intermediate terpenoid in the ascochlorin biosynthetic pathway.",
+            "reactionSMARTS": "[#6:1]-[#6:2](-[#6:17]-[#6:18]-[#6:19]=[#6:20](-[#6:22]-[#6:23]\\[#6@@:24]1-[#6:26](-[#6:28])(-[#6:27])-[#8:25]-1)-[#6:21])=[#6:3]-[#6:4]-[#6:5]1:[#6:15](-[#8:16]):[#6:12](-[#6:13]=[#8:14]):[#6:10](-[#6:11]):[#6:8](-[Cl:9]):[#6:6]:1-[#8:7]>>[#6:1]-[#6:2](-[#6:17]-[#6:18]-[#6@@:19]1(\\[#6:27])-[#6@:26](\\[#6:28])-[#6&H0:24](=[#8:25])-[#6:23]-[#6:22]-[#6@@:20]-1\\[#6:21])=[#6:3]-[#6:4]-[#6:5]1:[#6:15](-[#8:16]):[#6:12](-[#6:13]=[#8:14]):[#6:10](-[#6:11]):[#6:8](-[Cl:9]):[#6:6]:1-[#8:7]",
+            "reactions": [
+                {
+                    "substrate": "CC(=CCc1c(O)c(Cl)c(C)c(C=O)c1O)CCC=C(C)CC[C@H]1OC1(C)C",
+                    "products": [
+                        "CC(=CCc1c(O)c(Cl)c(C)c(C=O)c1O)CC[C@@]1(C)[C@H](C)C(=O)CC[C@@H]1C"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Following protonation of the terminal epoxide of Ilicicolin A epoxide, AscF converts ilicicolin A via a monocyclic tertiarycation to ilicicolin C."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1073/pnas.1819254116"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "63096",
+                "ec": "5.4.99"
+            }
+        }
+    ]
+}
