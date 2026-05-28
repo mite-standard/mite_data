@@ -1,0 +1,61 @@
+{
+    "accession": "MITE0000381",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-16",
+            "contributors": [
+                "0000-0002-0771-9611"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 fixed reaction SMARTS and product, added RHEA ID and EC number, improved reaction descriptions."
+        }
+    ],
+    "enzyme": {
+        "name": "AscI",
+        "description": "Terpene cyclase",
+        "references": [
+            "doi:10.1073/pnas.1819254116"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A455R4Z0",
+            "genpept": "BBF25321.1",
+            "mibig": "BGC0001924"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Cyclization"
+            ],
+            "description": "Cyclization of meroterpenoid intermediate in the ascofuranone biosynthetic pathway.",
+            "reactionSMARTS": "[#6]1(-[#8]):[#6](-[#6]-[#6]=[#6](-[#6])-[#6]-[#6]-[#6]=[#6](-[#6])-[#6@@](/[#8])-[#6]\\[#6@@]2-[#8]-[#6]-2(-[#6])-[#6]):[#6](-[#8]):[#6](-[#6]=[#8]):[#6](-[#6]):[#6]:1-[Cl]>>[#6]1(-[#8]):[#6](-[#6]-[#6]=[#6](-[#6])-[#6]-[#6]-[#6]=[#6](-[#6]2-[#8]-[#6](-[#6])(-[#6])-[#6@@](/[#8])-[#6]-2)-[#6]):[#6](-[#8]):[#6](-[#6]=[#8]):[#6](-[#6]):[#6]:1-[Cl]",
+            "reactions": [
+                {
+                    "substrate": "C/C(=C\\Cc1c(O)c(Cl)c(C)c(C=O)c1O)CC/C=C(\\C)[C@@H](O)C[C@@H]1OC1(C)C",
+                    "products": [
+                        "CC(=CCc1c(O)c(Cl)c(C)c(C=O)c1O)CCC=C(C)C1C[C@H](O)C(C)(C)O1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Converts 16-hydroxy-ilicicolin A epoxide to ascofuranol by cyclisation to form a tetrahydrofuran ring."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1073/pnas.1819254116"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "63108",
+                "ec": "5.4.99"
+            }
+        }
+    ]
+}
