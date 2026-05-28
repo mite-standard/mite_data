@@ -3121,6 +3121,22 @@
         "mite_accession":"MITE0000376",
         "mite_url":"https://bioregistry.io/mite:MITE0000376",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Cytochrome P450/NADPH P450 reductase",
+        "enzyme_ids":{
+          "genpept":"BBF25317.1",
+          "mibig":"BGC0001923",
+          "uniprot":"A0A455R5H4"
+        },
+        "enzyme_name":"AscE",
+        "enzyme_refs":[
+          "doi:10.1073/pnas.1819254116"
+        ],
+        "enzyme_tailoring":"Oxidation",
+        "mite_accession":"MITE0000377",
+        "mite_url":"https://bioregistry.io/mite:MITE0000377",
+        "status":"active"
       }
     ],
     "BGC0001945":[

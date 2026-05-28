@@ -8112,6 +8112,28 @@
       "reaction_description":"Halogenation of meroterpenoid precursor in the ascochlorin/ascofuranone biosynthetic pathway.",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000377":{
+      "accession":"MITE0000377",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme|NADP",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450/NADPH P450 reductase",
+      "enzyme_ids":{
+        "genpept":"BBF25317.1",
+        "mibig":"BGC0001923",
+        "uniprot":"A0A455R5H4"
+      },
+      "enzyme_name":"AscE",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Acremonium egyptiacum",
+      "phylum":"Dikarya",
+      "reaction_description":"Epoxidation in intermediate meroterpenoid in the ascochlorin/ascofuranone biosynthetic pathway.",
+      "status":"active",
+      "tailoring":"Oxidation"
     }
   },
   "version_mite_data":"1.27"
