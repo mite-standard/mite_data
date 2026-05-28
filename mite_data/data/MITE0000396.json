@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000396",
     "status": "active",
     "comment": "Fungal aromatic prenyltransferase from Aspergillus terreus active on phloroglucinol substrates",
     "changelog": [
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0003-4819-2251"
             ],
-            "comment": "Minor additions to textual fields, correction of reaction SMARTS and substrate-product SMILES."
+            "comment": "New entry. Reviewer 1 added minor additions to textual fields, correction of reaction SMARTS and substrate-product SMILES."
         }
     ],
     "enzyme": {
