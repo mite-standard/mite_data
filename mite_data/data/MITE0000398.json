@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000398",
     "status": "active",
     "changelog": [
         {
@@ -11,7 +11,7 @@
             "reviewers": [
                 "0000-0003-4819-2251"
             ],
-            "comment": "Minor textual additions, added cofactor information."
+            "comment": "New entry. REviewer 1 added minor textual additions, added cofactor information."
         }
     ],
     "enzyme": {
