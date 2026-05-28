@@ -1,0 +1,65 @@
+{
+    "accession": "MITE0000376",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-16",
+            "contributors": [
+                "0000-0002-0771-9611"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 improved reaction descriptions, added RHEA cross-reference"
+        }
+    ],
+    "enzyme": {
+        "name": "AscD",
+        "description": "Flavin-dependent halogenase",
+        "references": [
+            "doi:10.1073/pnas.1819254116"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A455R7M0",
+            "genpept": "BBF25316.1",
+            "mibig": "BGC0001923"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Halogenation of meroterpenoid precursor in the ascochlorin/ascofuranone biosynthetic pathway.",
+            "reactionSMARTS": "[#6]-[#6](=[#6]-[#6]-[#6]-[#6](=[#6]-[#6]-[#6]-[#6](=[#6]-[#6]-[#6]1:[#6](-[#8]):[#6](-[#6]=[#8]):[#6](-[#6]):[#6]:[#6]:1-[#8])-[#6])-[#6])-[#6]>>[#6]-[#6](=[#6]-[#6]-[#6]-[#6](=[#6]-[#6]-[#6]-[#6](=[#6]-[#6]-[#6]1:[#6](-[#8]):[#6](-[#6]=[#8]):[#6](-[#6]):[#6](-[Cl]):[#6]:1-[#8])-[#6])-[#6])-[#6]",
+            "reactions": [
+                {
+                    "substrate": "CC(C)=CCCC(C)=CCCC(C)=CCc1c(O)cc(C)c(C=O)c1O",
+                    "products": [
+                        "CC(C)=CCCC(C)=CCCC(C)=CCc1c(O)c(Cl)c(C)c(C=O)c1O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Chlorination of ilicicolin B to give ilicicolin A."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1073/pnas.1819254116"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "63084",
+                "ec": "1.14.99"
+            }
+        }
+    ]
+}
