@@ -1,0 +1,69 @@
+{
+    "accession": "MITE0000380",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-16",
+            "contributors": [
+                "0000-0002-0771-9611"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 improved reaction descriptions, added cofactors."
+        }
+    ],
+    "enzyme": {
+        "name": "AscH",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1073/pnas.1819254116"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A455R624",
+            "genpept": "BBF25322.1",
+            "mibig": "BGC0001924"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme",
+                "NADP"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "Hydroxylation of meroterpenoid intermediate in the ascofuranone biosynthetic pathway.",
+            "reactionSMARTS": "[#6]1(-[#8;-]):[#6](-[#6]-[#6]=[#6](-[#6])-[#6]-[#6]-[#6]=[#6](-[#6])-[#6]-[#6]\\[#6@@]2-[#8]-[#6]-2(-[#6])-[#6]):[#6](-[#8]):[#6](-[#6]=[#8]):[#6](-[#6]):[#6]:1-[Cl]>>[#6]1(-[#8;-]):[#6](-[#6]-[#6]=[#6](-[#6])-[#6]-[#6]-[#6]=[#6](-[#6])-[#6@@](/[#8])-[#6]\\[#6@@]2-[#8]-[#6]-2(-[#6])-[#6]):[#6](-[#8]):[#6](-[#6]=[#8]):[#6](-[#6]):[#6]:1-[Cl]",
+            "reactions": [
+                {
+                    "substrate": "C/C(=C\\Cc1c([O-])c(Cl)c(C)c(C=O)c1O)CC/C=C(\\C)CC[C@@H]1OC1(C)C",
+                    "products": [
+                        "CC(=CCc1c([O-])c(Cl)c(C)c(C=O)c1O)CCC=C(C)[C@@H](O)C[C@@H]1OC1(C)C"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Ilicicolin A epoxide is hydroxylated by AscH to give 16-hydroxy-ilicicolin A epoxide."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1073/pnas.1819254116"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "63104"
+            }
+        }
+    ]
+}
