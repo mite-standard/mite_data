@@ -529,3 +529,4 @@
 527,MITE0000396.reaction8.example1,CC(C)C(=O)c1c(O)cc(O)cc1O,CC(C)=CCCC(C)=CCCC(C)=CCOc1cc(O)c(C(=O)C(C)C)c(O)c1
 528,MITE0000396.reaction8.example2,CC(C)CC(=O)c1c(O)cc(O)cc1O,CC(C)=CCCC(C)=CCCC(C)=CCOc1cc(O)c(C(=O)CC(C)C)c(O)c1
 529,MITE0000396.reaction8.example3,O=C(c1ccccc1)c1c(O)cc(O)cc1O,CC(C)=CCCC(C)=CCCC(C)=CCOc1cc(O)c(C(=O)c2ccccc2)c(O)c1
+530,MITE0000397.reaction1.example1,*C(=O)[C](C)CCC[C@]1(C)[C]2[C]3C[C]4C[C@]2(C=CC1=O)C[C@@]4(C)O3,*C(=O)C(C)=CCC[C@@]1(C)C(=O)C=C[C@@]23CC4CC(O[C@]4(C)C2)C31

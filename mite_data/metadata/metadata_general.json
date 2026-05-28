@@ -8540,6 +8540,27 @@
       "reaction_description":"C-prenylation of acylphloroglucinols",
       "status":"active",
       "tailoring":"Prenylation"
+    },
+    "MITE0000397":{
+      "accession":"MITE0000397",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD",
+      "domain":"Bacteria",
+      "enzyme_description":"long-chain acyl-CoA dehydrogenase",
+      "enzyme_ids":{
+        "genpept":"ACO31278.1",
+        "uniprot":"D8L2U8"
+      },
+      "enzyme_name":"PtmO4",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces platensis",
+      "phylum":"Actinomycetota",
+      "reaction_description":"long-chain acyl-CoA dehydrogenase, is responsible for the formation of the double bond between C3 and C4",
+      "status":"active",
+      "tailoring":"Dehydrogenation"
     }
   },
   "version_mite_data":"1.27"
