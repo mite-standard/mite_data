@@ -1,0 +1,59 @@
+{
+    "accession": "MITE0000397",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-06",
+            "contributors": [
+                "0000-0002-4540-6501"
+            ],
+            "reviewers": [
+                "0000-0001-5863-7248"
+            ],
+            "comment": "New entry. Reviewer 1 changed reaction term, added FAD cofactor, corrected intermediate to true."
+        }
+    ],
+    "enzyme": {
+        "name": "PtmO4",
+        "description": "long-chain acyl-CoA dehydrogenase",
+        "references": [
+            "doi:10.1039/C5MB00303B"
+        ],
+        "databaseIds": {
+            "uniprot": "D8L2U8",
+            "genpept": "ACO31278.1"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Dehydrogenation"
+            ],
+            "description": "long-chain acyl-CoA dehydrogenase, is responsible for the formation of the double bond between C3 and C4",
+            "reactionSMARTS": "[#6:1]/[#6@:2](-[#6:22]=[#8:23])-[#6:3]-[#6:4]-[#6:5]-[#6@@:6]1(-[#6@:21]2-[#6@:12]3(-[#6:20]-[#6@:18]4(/[#6:19])-[#6@@:14](-[#6:15]\\[#6@@:16]\\2-[#8:17]-4)\\[#6:13]-3)\\[#6:11]=[#6:10]-[#6:8]-1=[#8:9])/[#6:7]>>[#6:1]-[#6:2](-[#6:22]=[#8:23])=[#6:3]-[#6:4]-[#6:5]-[#6@@:6]1(-[#6@:21]2-[#6@:12]3(-[#6:20]-[#6@:18]4(/[#6:19])-[#6@@:14](-[#6:15]\\[#6@@:16]\\2-[#8:17]-4)\\[#6:13]-3)\\[#6:11]=[#6:10]-[#6:8]-1=[#8:9])/[#6:7]",
+            "reactions": [
+                {
+                    "substrate": "*C(=O)[C](C)CCC[C@]1(C)[C]2[C]3C[C]4C[C@]2(C=CC1=O)C[C@@]4(C)O3",
+                    "products": [
+                        "*C(=O)C(C)=CCC[C@@]1(C)C(=O)C=C[C@@]23CC4CC(O[C@]4(C)C2)C31"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1039/C5MB00303B"
+                ]
+            }
+        }
+    ]
+}
