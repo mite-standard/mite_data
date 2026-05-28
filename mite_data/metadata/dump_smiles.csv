@@ -504,3 +504,4 @@
 502,MITE0000389.reaction1.example1,C=CC(C)(C)OC[C@H]1O[C@H](O[C@H]2C3=C(C(C)C)C[C@@H](O)[C@@]3(C)C=C3[C@H](COC)CC[C@@H]3[C@H](C)[C@@H]2O)[C@H](O)[C@@H](O)[C@@H]1O,C=CC(C)(C)OC[C@H]1O[C@H](O[C@H]2C3=C([C@@H](C)CO)C[C@@H](O)[C@@]3(C)C=C3[C@H](COC)CC[C@@H]3[C@H](C)[C@@H]2O)[C@H](O)[C@@H](O)[C@@H]1O
 503,MITE0000390.reaction1.example1,CC(C)C1=C2[C@H](O[C@H]3O[C@H](CO)[C@@H](O)[C@H](O)[C@H]3O)[C@@H](O)[C@@H](C)[C@H]3CC[C@@H](CO)C3=C[C@]2(C)CC1,CC(C)C1=C2[C@H](O[C@H]3O[C@H](CO)[C@@H](O)[C@H](O)[C@H]3O)[C@@H](O)[C@@H](C)[C@H]3CC[C@@H](CO)C3=C[C@]2(C)[C@H](O)C1
 504,MITE0000391.reaction1.example1,CC(C)C1=C2C[C@@H](O)[C@@H](C)[C@H]3CC[C@@H](CO)C3=C[C@]2(C)CC1,CC(C)C1=C2[C@H](O)[C@@H](O)[C@@H](C)[C@H]3CC[C@@H](CO)C3=C[C@]2(C)CC1
+505,MITE0000392.reaction1.example1,CC1=C2C[C@]3(C)CCC(C(C)C)=C3C[C@@H](O)[C@@H](C)[C@H]2CC1,CC(C)C1=C2C[C@@H](O)[C@@H](C)[C@H]3CCC(CO)=C3C[C@]2(C)CC1
