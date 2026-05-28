@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000387",
     "status": "active",
     "comment": "PtmO3 and PtmO6 are both C7 \u03b2-hydroxylases",
     "changelog": [
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0003-3290-1017"
             ],
-            "comment": "Added reaction 2"
+            "comment": "New entry. Reviewer 1 added reaction 2."
         }
     ],
     "enzyme": {
