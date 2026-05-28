@@ -8581,6 +8581,28 @@
       "reaction_description":"Hydroxylation of alkaloid scaffold in the viridicatol biosynthetic pathway.",
       "status":"active",
       "tailoring":"Hydroxylation"
+    },
+    "MITE0000399":{
+      "accession":"MITE0000399",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"O-methyltransferase",
+      "enzyme_ids":{
+        "genpept":"AAO65792.1",
+        "mibig":"BGC0000100",
+        "uniprot":"UPI000005D0C6"
+      },
+      "enzyme_name":"MonE",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces virginiae",
+      "phylum":"Actinomycetota",
+      "reaction_description":"MonE catalyzes O-methylation of the hydroxy group at C-3 of demethylmonensin",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.27"
