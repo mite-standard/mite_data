@@ -8090,6 +8090,28 @@
       "reaction_description":"Reduces ilicicolinic acid B in the ascochlorin/ascofuranone biosynthetic pathway.",
       "status":"active",
       "tailoring":"Reduction"
+    },
+    "MITE0000376":{
+      "accession":"MITE0000376",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD",
+      "domain":"Eukaryota",
+      "enzyme_description":"Flavin-dependent halogenase",
+      "enzyme_ids":{
+        "genpept":"BBF25316.1",
+        "mibig":"BGC0001923",
+        "uniprot":"A0A455R7M0"
+      },
+      "enzyme_name":"AscD",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Acremonium egyptiacum",
+      "phylum":"Dikarya",
+      "reaction_description":"Halogenation of meroterpenoid precursor in the ascochlorin/ascofuranone biosynthetic pathway.",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.27"
