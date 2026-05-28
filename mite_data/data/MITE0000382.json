@@ -1,0 +1,66 @@
+{
+    "accession": "MITE0000382",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-16",
+            "contributors": [
+                "0000-0002-0771-9611"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 added RHEA ID and EC number, added cofactors, improved reaction description."
+        }
+    ],
+    "enzyme": {
+        "name": "AscJ",
+        "description": "Short-chain dehydrogenase/reductase",
+        "references": [
+            "doi:10.1073/pnas.1819254116"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A455R5K2",
+            "genpept": "BBF25320.1",
+            "mibig": "BGC0001924"
+        },
+        "cofactors": {
+            "organic": [
+                "NADP"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "Oxidizes intermediate meroterpenoid in the ascofuranone biosynthetic pathway, leading to mature ascofuranone.",
+            "reactionSMARTS": "[#6]-[#6](-[#6]-[#6]-[#6]=[#6](-[#6]1-[#8]-[#6](-[#6])(-[#6])-[#6@@](/[#8])-[#6]-1)-[#6])=[#6]-[#6]-[#6]1:[#6](-[#8]):[#6](-[#6]=[#8]):[#6](-[#6]):[#6](-[Cl]):[#6]:1-[#8;-]>>[#6]1(-[#8;-]):[#6](-[#6]-[#6]=[#6](-[#6])-[#6]-[#6]-[#6]=[#6](-[#6]2-[#8]-[#6](-[#6])(-[#6])-[#6](=[#8])-[#6]-2)-[#6]):[#6](-[#8]):[#6](-[#6]=[#8]):[#6](-[#6]):[#6]:1-[Cl]",
+            "reactions": [
+                {
+                    "substrate": "CC(=CCc1c([O-])c(Cl)c(C)c(C=O)c1O)CCC=C(C)C1C[C@H](O)C(C)(C)O1",
+                    "products": [
+                        "CC(=CCc1c([O-])c(Cl)c(C)c(C=O)c1O)CCC=C(C)C1CC(=O)C(C)(C)O1"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Converts Ascofuranol to Ascofuranone by oxidation."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1073/pnas.1819254116"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "63112",
+                "ec": "1.1.99"
+            }
+        }
+    ]
+}
