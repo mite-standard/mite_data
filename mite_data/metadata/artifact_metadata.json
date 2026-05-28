@@ -1,9 +1,9 @@
 {
   "version": "1.27",
-  "hash_mite_prot_acc": "66e35a423a0a2110eaa2605bb2a343604e02df240eb5012e34113a1435c99d6c",
-  "hash_general_summary": "364eaa8fddd10241846804200ad2ac8f9f4a4efe66982e8bb3482ab0b15a3db4",
-  "summary": "47ceec0a343324483e1466106464e3c8b93e59d1b5e5b15d53ada8595b7b36c5",
-  "hash_mibig_summary": "7664c3073d999ead9c246cf1f53e8d87e3bc05b96da79ded9215d3bb90e16aad",
-  "smarts": "1a996ebaf73ebbaabcf6251df2cd4097b8f1fe1fadb193b1dc041dc6754d0957",
-  "smiles": "ec75736fc97b36aeffd28b66e4f4d19310ac02ad05c86312ae13a313c2afbc2a"
+  "hash_mite_prot_acc": "b98b981b25fe3d2e8315d0ec70cb7bc84e41865e4fe2ac383d729df2f9b92810",
+  "hash_general_summary": "23a7fd6cac1a3e6a869563f85e740f540f476534d6c9902123f826c7f397de4d",
+  "summary": "a016b8f9e744ca8ed34e31086fa1cb8502eed9f93b1e0ffd199bffb96b6c8521",
+  "hash_mibig_summary": "7326e2b9923aa71dd52f2999c5729b606e944c47866b3d4b372efb3288014e49",
+  "smarts": "f4e0a1c8cc8c209c86784c9f571723ba9145c67af80278a1d40da76ed8c43cac",
+  "smiles": "bf2da1c7be06c774c5d8b40649cf23e83f1098d5d4c478479c607b4428f37091"
 }

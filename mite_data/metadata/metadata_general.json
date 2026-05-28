@@ -8200,6 +8200,28 @@
       "reaction_description":"Hydroxylation of meroterpenoid intermediate in the ascofuranone biosynthetic pathway.",
       "status":"active",
       "tailoring":"Hydroxylation"
+    },
+    "MITE0000381":{
+      "accession":"MITE0000381",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Terpene cyclase",
+      "enzyme_ids":{
+        "genpept":"BBF25321.1",
+        "mibig":"BGC0001924",
+        "uniprot":"A0A455R4Z0"
+      },
+      "enzyme_name":"AscI",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Acremonium egyptiacum",
+      "phylum":"Dikarya",
+      "reaction_description":"Cyclization of meroterpenoid intermediate in the ascofuranone biosynthetic pathway.",
+      "status":"active",
+      "tailoring":"Cyclization"
     }
   },
   "version_mite_data":"1.27"
