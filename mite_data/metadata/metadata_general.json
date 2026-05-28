@@ -8307,6 +8307,27 @@
       "reaction_description":"O-prenylation on glucose moiety of diterpene glycosides intermediates of fusicoccin A biosynthetic pathway.",
       "status":"active",
       "tailoring":"Prenylation"
+    },
+    "MITE0000386":{
+      "accession":"MITE0000386",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Eukaryota",
+      "enzyme_description":"O-Methyltransferase",
+      "enzyme_ids":{
+        "genpept":"BAM71033.1",
+        "uniprot":"L0MXX3"
+      },
+      "enzyme_name":"PaMT",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Phomopsis amygdali",
+      "phylum":"Dikarya",
+      "reaction_description":"O-methylation of fusicoccin terpene scaffold to yield methylated derivatives.",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.27"
