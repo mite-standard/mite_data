@@ -134,7 +134,7 @@ For development purposes, pipelines can also be run automatically. For this, loc
 
 ```commandline
 git clone https://github.com/mite-standard/mite_data
-uv sync
+uv sync --extra dev
 uv run pre-commit install
 ```
 2) Run tests
