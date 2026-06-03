@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Associated MIBiG BGC BGC0001353 was retired",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,41 @@
     ],
     "enzyme": {
         "name": "ChlH",
+        "description": "Flavin-dependent halogenase",
+        "references": [
+            "doi:10.1021/acs.jnatprod.4c01199"
+        ],
         "databaseIds": {
             "uniprot": "A0A1H0TT13",
-            "genpept": ""
-        },
-        "references": [
-            "doi:"
-        ]
+            "genpept": "SDP57011.1"
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "(iterative) di-, mono-, nonchlorination of L-Tryptophan aminoacidsgroups in the chlorolassin pathway prior to lasso formation",
+            "reactionSMARTS": "[NH2:1][C@H:2]([CH:13]=[O:14])[CH2:3][c:4]1[c:8]2[cH:9][cH:10][cH:11][cH:12][c:7]2[nH:6][cH:5]1>>[NH2:1][C@H:2]([CH:13]=[O:14])[CH2:3][c:4]1[c:8]2[cH:9][c:10](Cl)[cH:11][cH:12][c:7]2[nH:6][cH:5]1",
             "reactions": [
                 {
+                    "substrate": "N[C@H](C=O)Cc1c[nH]c2ccccc12",
                     "products": [
-                        ""
-                    ]
+                        "N[C@H](C=O)Cc1c[nH]c2ccc(Cl)cc12"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Halogenation of free-floating tryptophan aminoacidgroups as prescurser in the chlorolassin pathway "
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acs.jnatprod.4c01199"
+                ]
+            }
         }
     ]
 }
