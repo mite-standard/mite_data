@@ -1,6 +1,7 @@
 {
     "accession": "MITE0000120",
-    "status": "pending",
+    "status": "active",
+    "comment": "\u03b1KG dependent enzyme that catalyzes oxidative ring contraction in the zopfiellin biosynthetic pathway. ",
     "changelog": [
         {
             "version": "1",
@@ -32,17 +33,18 @@
                 "0000-0002-3677-2972"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0003-4819-2251"
             ],
-            "comment": "I have updated references, enzyme co-factors and auxiliary enzymes."
+            "comment": "Added additional reference and evidence qualifier (heterologous expression)."
         }
     ],
     "enzyme": {
         "name": "ZopL9/ZopK",
-        "description": "AsaB-like alphaKGDD",
+        "description": "Alpha-ketoglutarate dependent dioxygenase",
         "references": [
             "doi:10.1039/d0sc04309e",
-            "doi:10.1039/d5ra02147b"
+            "doi:10.1039/d5ra02147b",
+            "doi:10.1021/acs.orglett.0c00340"
         ],
         "auxiliaryEnzymes": [
             {
@@ -92,7 +94,8 @@
                 ],
                 "references": [
                     "doi:10.1039/d0sc04309e",
-                    "doi:10.1039/d5ra02147b"
+                    "doi:10.1039/d5ra02147b",
+                    "doi:10.1021/acs.orglett.0c00340"
                 ]
             }
         },
@@ -114,12 +117,14 @@
             ],
             "evidence": {
                 "evidenceCode": [
+                    "Heterologous expression",
                     "In vitro assay",
                     "Knock-out studies"
                 ],
                 "references": [
                     "doi:10.1039/d0sc04309e",
-                    "doi:10.1039/d5ra02147b"
+                    "doi:10.1039/d5ra02147b",
+                    "doi:10.1021/acs.orglett.0c00340"
                 ]
             }
         }
