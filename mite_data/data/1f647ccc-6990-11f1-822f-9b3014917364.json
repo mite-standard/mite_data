@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "N-methyltransferases",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,46 @@
     ],
     "enzyme": {
         "name": "GutE24309",
+        "description": "class I SAM-dependent methyltransferase",
+        "references": [
+            "doi:10.1002/anie.201906891"
+        ],
         "databaseIds": {
             "uniprot": "UPI0012FEA4E9",
-            "genpept": ""
+            "mibig": "BGC0003080"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "GutE transfer a methyl group to N9\u2032 of the guaninyl residue after GutD catalyzed coupling reaction to form guanitrypmycin A1",
+            "reactionSMARTS": "[#8:1]-[#6:2]1-[#7:12]2-[#6:27]3-[#7:29]-[#6:30]4-[#6:35]-[#6:34]-[#6:33]-[#6:32]-[#6:31]-4-[#6:15]-3(-[#6:16]3-[#7:26]-[#6:25]4-[#7:23]-[#6:21](-[#7:22])-[#7:20]-[#6:19](-[#8:24])-[#6:18]-4-[#7:17]-3)-[#6:14]-[#6:13]-2-[#6:36](-[#8:37])-[#7:4]-[#6:3]-1-[#6:5]-[#6:6]1-[#6:11]-[#6:10]-[#6:9]-[#6:8]-[#6:7]-1>>[#8:1]-[#6:2]1-[#7:12]2-[#6:27]3-[#7:29]-[#6:30]4-[#6:35]-[#6:34]-[#6:33]-[#6:32]-[#6:31]-4-[#6:15]-3(-[#6:16]3-[#7:26](-[#6:2])-[#6:25]4-[#7:23]-[#6:21](-[#7:22])-[#7:20]-[#6:19](-[#8:24])-[#6:18]-4-[#7:17]-3)-[#6:14]-[#6:13]-2-[#6:36](-[#8:37])-[#7:4]-[#6:3]-1-[#6:5]-[#6:6]1-[#6:11]-[#6:10]-[#6:9]-[#6:8]-[#6:7]-1",
             "reactions": [
                 {
+                    "substrate": "NC1NC(O)C2NC(C34CC5C(O)NC(CC6CCCCC6)C(O)N5C3NC3CCCCC34)NC2N1",
                     "products": [
-                        ""
-                    ]
+                        "CN1C2NC(N)NC(O)C2NC1C12CC3C(O)NC(CC4CCCCC4)C(O)N3C1NC1CCCCC12"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1002/anie.201906891"
+                ]
+            }
         }
     ]
 }
