@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000081",
-    "status": "active",
+    "status": "pending",
     "changelog": [
         {
             "version": "1",
@@ -34,6 +34,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Added reaction description"
+        },
+        {
+            "version": "4",
+            "date": "2026-06-16",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": ""
         }
     ],
     "enzyme": {
