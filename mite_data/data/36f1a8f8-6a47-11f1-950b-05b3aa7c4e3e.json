@@ -16,29 +16,47 @@
     ],
     "enzyme": {
         "name": "PcmE",
+        "description": "Methyltransferase",
+        "references": [
+            "doi:10.1021/acs.orglett.9b02461"
+        ],
         "databaseIds": {
             "uniprot": "UPI001258AF34",
-            "genpept": ""
+            "genpept": "QEI22737.1",
+            "mibig": "BGC0001986"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "PcmE transfers a methyl group to the guaninyl residue after P450-catalyzed coupling reaction to produce cyclodipeptide named purincyclamide",
+            "reactionSMARTS": "[#8]=[#6]1-[#6](-[#6]-[#6]2-[#6]-[#6]-[#6](-[#8])-[#6]-[#6]-2)-[#7]-[#6](=[#8])-[#6]2-[#7]-1-[#6]1-[#6](-[#6]-2)(-[#6]2-[#7]-[#6]3-[#6](-[#7]-[#6](-[#7]-[#6]-3=[#8])-[#7])-[#7]-2)-[#6]2-[#6](-[#6]-[#6]-[#6]-[#6]-2)-[#7]-1>>[#8]=[#6]1-[#6](-[#6]-[#6]2-[#6]-[#6]-[#6](-[#8])-[#6]-[#6]-2)-[#7]-[#6](=[#8])-[#6]2-[#7]-1-[#6]1-[#6](-[#6]-2)(-[#6]2-[#7]-[#6]3-[#6](-[#7]-[#6](-[#7]-[#6]-3=[#8])-[#7])-[#7]-2-[#6])-[#6]2-[#6](-[#6]-[#6]-[#6]-[#6]-2)-[#7]-1",
             "reactions": [
                 {
+                    "substrate": "NC1NC(=O)C2NC(C34CC5C(=O)NC(CC6CCC(O)CC6)C(=O)N5C3NC3CCCCC34)NC2N1",
                     "products": [
-                        ""
-                    ]
+                        "CN1C2NC(N)NC(=O)C2NC1C12CC3C(=O)NC(CC4CCC(O)CC4)C(=O)N3C1NC1CCCCC12"
+                    ],
+                    "isIntermediate": false
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/acs.orglett.9b02461"
+                ]
+            }
         }
     ]
 }
