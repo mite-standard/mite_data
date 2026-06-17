@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000400",
-    "status": "active",
+    "status": "pending",
     "comment": "Monensin hydroxylase",
     "changelog": [
         {
@@ -13,6 +13,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "New entry."
+        },
+        {
+            "version": "2",
+            "date": "2026-06-17",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": ""
         }
     ],
     "enzyme": {
