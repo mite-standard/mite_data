@@ -16,29 +16,56 @@
     ],
     "enzyme": {
         "name": "CYP867E38",
+        "description": "cytochrome P450",
+        "references": [
+            "doi:10.1038/s41467-022-32879-9"
+        ],
+        "auxiliaryEnzymes": [
+            {
+                "name": "GbPOR2",
+                "description": "cytochrome P450 oxidoreductase",
+                "databaseIds": {
+                    "genpept": "UTS77797.1"
+                }
+            }
+        ],
         "databaseIds": {
-            "uniprot": "",
             "genpept": "UTS77785.1"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Hydroxylation",
+                "Oxidation"
+            ],
+            "description": "aromatic hydroxylation",
+            "reactionSMARTS": "[#8]-[#6](=[#8])-[#6]=[#6](-[#6])-[#6@](\\[#6](-[#6])(-[#6])-[#6])-[#6]-[#6]-[#6]1:[#6]:[#6](-[#6](-[#6])-[#6]):[#6]:[#6]:[#6]:1>>[#8]-[#6](=[#8])-[#6]=[#6](-[#6])-[#6@](\\[#6](-[#6])(-[#6])-[#6])-[#6]-[#6]-[#6]1:[#6]:[#6](-[#6](-[#6])-[#6]):[#6](-[#8]):[#6]:[#6]:1",
             "reactions": [
                 {
+                    "substrate": "C/C(=C\\C(=O)O)[C@@H](CCc1cccc(C(C)C)c1)C(C)(C)C",
                     "products": [
-                        ""
-                    ]
+                        "CC(=CC(=O)O)[C@@H](CCc1ccc(O)c(C(C)C)c1)C(C)(C)C"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1038/s41467-022-32879-9"
+                ]
+            }
         }
     ]
 }
