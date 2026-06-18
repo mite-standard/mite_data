@@ -16,29 +16,44 @@
     ],
     "enzyme": {
         "name": "CpMAS",
+        "description": "Oxidoreductase",
+        "references": [
+            "doi:10.1073/pnas.1914373117"
+        ],
         "databaseIds": {
-            "uniprot": "",
+            "uniprot": "A0A6F8PFR7",
             "genpept": "BBM89983.1"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "NAD"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Dehydrogenation"
+            ],
+            "description": "dehydrogenation from alcohol to ketone",
+            "reactionSMARTS": "[#6]1-[#6@](/[#8])-[#6@]2(\\[#6])/[#6](=[#8])-[#8]-[#6]3-[#6]=[#6]4-[#6]-[#6@@](/[#6]=[#6])(\\[#6])-[#6]-[#6]\\[#6@]-4-[#6@@](/[#6])(-[#6]-1)-[#6@]-2/3>>[#6]1-[#6](=[#8])-[#6@]2(\\[#6])/[#6](=[#8])-[#8]-[#6]3-[#6]=[#6]4-[#6]-[#6@@](/[#6]=[#6])(\\[#6])-[#6]-[#6]\\[#6@]-4-[#6@@](/[#6])(-[#6]-1)-[#6@]-2/3",
             "reactions": [
                 {
+                    "substrate": "C=C[C@]1(C)CC[C@@H]2C(=CC3OC(=O)[C@]4(C)[C@H]3[C@]2(C)CC[C@@H]4O)C1",
                     "products": [
-                        ""
-                    ]
+                        "C=C[C@]1(C)CC[C@@H]2C(=CC3OC(=O)[C@@]4(C)C(=O)CC[C@@]2(C)[C@@H]34)C1"
+                    ],
+                    "isIntermediate": false
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1073/pnas.1914373117"
+                ]
+            }
         }
     ]
 }
