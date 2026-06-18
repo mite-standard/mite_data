@@ -16,29 +16,55 @@
     ],
     "enzyme": {
         "name": "CYP720B31",
+        "description": "cytochrome P450",
+        "references": [
+            "doi:10.1038/s41467-022-32879-9"
+        ],
+        "auxiliaryEnzymes": [
+            {
+                "name": "GbPOR2",
+                "description": "cytochrome P450 oxidoreductase",
+                "databaseIds": {
+                    "genpept": "UTS77797.1"
+                }
+            }
+        ],
         "databaseIds": {
-            "uniprot": "",
             "genpept": "UTS77786.1"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Mg"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "Lactone formation and hydroxylation forming Ginkgolactone D",
+            "reactionSMARTS": "[#8]-[#6](=[#8])-[#6]=[#6](-[#6])-[#6@](\\[#6](-[#6])(-[#6])-[#6])-[#6]-[#6]-[#6]1:[#6](-[#8]):[#6]:[#6](-[#6](-[#6])-[#6]):[#6](-[#8]):[#6]:1>>[#8]1-[#6](-[#8])-[#6](=[#6]-[#6]-1=[#8])-[#6@](\\[#6](-[#6])(-[#6])-[#6])-[#6]-[#6]-[#6]1:[#6](-[#8]):[#6]:[#6](-[#6](-[#6])-[#6]):[#6](-[#8]):[#6]:1",
             "reactions": [
                 {
+                    "substrate": "C/C(=C\\C(=O)O)[C@@H](CCc1cc(O)c(C(C)C)cc1O)C(C)(C)C",
                     "products": [
-                        ""
-                    ]
+                        "CC(C)c1cc(O)c(CC[C@H](C2=CC(=O)OC2O)C(C)(C)C)cc1O"
+                    ],
+                    "isIntermediate": false
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1038/s41467-022-32879-9"
+                ]
+            }
         }
     ]
 }
