@@ -16,29 +16,72 @@
     ],
     "enzyme": {
         "name": "CYP970A14",
+        "description": "cytochrome P450",
+        "references": [
+            "doi:10.1073/pnas.1914373117"
+        ],
         "databaseIds": {
-            "uniprot": "",
+            "uniprot": "A0A6F8PFQ4",
             "genpept": "BBM89984.1"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Carboxylation"
+            ],
+            "description": "carboxylation of syn-pimaradiene",
+            "reactionSMARTS": "[#6]1-[#6]-[#6@](\\[#6])(/[#6])-[#6@@]2/[#6]-[#6]=[#6]3-[#6]-[#6@@](/[#6]=[#6])(\\[#6])-[#6]-[#6]\\[#6@]-3-[#6@@]-2(/[#6])-[#6]-1>>[#6]1-[#6]-[#6@](\\[#6])(/[#6](=[#8])-[#8])-[#6@@]2/[#6]-[#6]=[#6]3-[#6]-[#6@@](/[#6]=[#6])(\\[#6])-[#6]-[#6]\\[#6@]-3-[#6@@]-2(/[#6])-[#6]-1",
             "reactions": [
                 {
+                    "substrate": "C=C[C@]1(C)CC[C@@H]2C(=CC[C@H]3C(C)(C)CCC[C@]23C)C1",
                     "products": [
-                        ""
-                    ]
+                        "C=C[C@]1(C)CC[C@@H]2C(=CC[C@@H]3[C@]2(C)CCC[C@]3(C)C(=O)O)C1"
+                    ],
+                    "isIntermediate": false
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1073/pnas.1914373117"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Carboxylation",
+                "Oxidation"
+            ],
+            "description": "carboxylation of 3-OH-syn-pimaradiene",
+            "reactionSMARTS": "[#6]1-[#6@](/[#8])-[#6@](\\[#6])(/[#6])-[#6@@]2/[#6]-[#6]=[#6]3-[#6]-[#6@@](/[#6]=[#6])(\\[#6])-[#6]-[#6]\\[#6@]-3-[#6@@]-2(/[#6])-[#6]-1>>[#6]1-[#6@](/[#8])-[#6@](\\[#6])(/[#6](=[#8])-[#8])-[#6@@]2/[#6]-[#6]=[#6]3-[#6]-[#6@@](/[#6]=[#6])(\\[#6])-[#6]-[#6]\\[#6@]-3-[#6@@]-2(/[#6])-[#6]-1",
+            "reactions": [
+                {
+                    "substrate": "C=C[C@]1(C)CC[C@@H]2C(=CC[C@H]3C(C)(C)[C@@H](O)CC[C@]23C)C1",
+                    "products": [
+                        "C=C[C@]1(C)CC[C@@H]2C(=CC[C@@H]3[C@]2(C)CC[C@H](O)[C@]3(C)C(=O)O)C1"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1073/pnas.1914373117"
+                ]
+            }
         }
     ]
 }
