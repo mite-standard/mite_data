@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "C4-halogenation of a carrierbound-S-L-Threonin (L-Thr-S-SyrB1) in the syringomycin E pathway.",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,105 @@
     ],
     "enzyme": {
         "name": "SyrB2",
+        "description": "nonheme Fe2+, \u03b1-ketoglutarate-dependent halogenase",
+        "references": [
+            "doi:10.1073/pnas.0504412102",
+            "doi:10.1002/cbic.200500480"
+        ],
         "databaseIds": {
             "uniprot": "Q9RBY6",
-            "genpept": ""
+            "genpept": "AAD50521.1"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "a-Ketoglutaric acid"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Single chlorination of L-Thr-S-SyrB1 complex using oxygen",
+            "reactionSMARTS": "[#6@@:1](-[#6:8])(-[#6@@:3](-[#6:5](-[#16:7]-[*])=[#8:6])\\[#7:4])\\[#8:2]>>[#6@@:1](-[#6:8]-[Cl])(-[#6@@:3](-[#6:5](-[#16:7]-[*])=[#8:6])\\[#7:4])\\[#8:2]",
             "reactions": [
                 {
+                    "substrate": "*SC(=O)[C](N)[C](C)O",
                     "products": [
-                        ""
-                    ]
+                        "*SC(=O)C(N)C(O)CCl"
+                    ],
+                    "isIntermediate": true,
+                    "description": "C4-monochlorination of L-Threonin "
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Chemical probe",
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1002/cbic.200500480"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Single bromination of L-Thr-S-SyrB1 complex using oxygen. It is possible with bromide surplus but chlorination is always more likely.",
+            "reactionSMARTS": "[#6@@:1](-[#6:8])(-[#6@@:3](-[#6:5](-[#16:7]-[*])=[#8:6])\\[#7:4])\\[#8:2]>>[#6@@:1](-[#6:8]-Br)(-[#6@@:3](-[#6:5](-[#16:7]-[*])=[#8:6])\\[#7:4])\\[#8:2]",
+            "reactions": [
+                {
+                    "substrate": "*SC(=O)[C](N)[C](C)O",
+                    "products": [
+                        "*SC(=O)C(N)C(O)CBr"
+                    ],
+                    "isIntermediate": true,
+                    "description": "C4-monobromination of L-Threonin "
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Chemical probe",
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1002/cbic.200500480"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Double chlorination of L-Thr-S-SyrB1 complex using oxygen. Dichlorination is only possible in vitro",
+            "reactionSMARTS": "[#6@@:1](-[#6:8])(-[#6@@:3](-[#6:5](-[#16:7]-[*])=[#8:6])\\[#7:4])\\[#8:2]>>[#6@@:1](-[#6:8](-[Cl])-[Cl])(-[#6@@:3](-[#6:5](-[#16:7]-[*])=[#8:6])\\[#7:4])\\[#8:2]",
+            "reactions": [
+                {
+                    "substrate": "*SC(=O)[C](N)[C](C)O",
+                    "products": [
+                        "*SC(=O)C(N)C(O)C(Cl)Cl"
+                    ],
+                    "isIntermediate": true,
+                    "description": "C4-dichlorination of L-Threonin "
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Chemical probe",
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1002/cbic.200500480"
+                ]
+            }
         }
     ]
 }
