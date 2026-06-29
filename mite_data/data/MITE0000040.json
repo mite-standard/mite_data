@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000040",
-    "status": "active",
+    "status": "pending",
     "changelog": [
         {
             "version": "1",
@@ -34,6 +34,17 @@
                 "0000-0002-9747-3423"
             ],
             "comment": "Added cofactor information. Fixed reaction SMARTS indexing."
+        },
+        {
+            "version": "4",
+            "date": "2026-06-29",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": ""
         }
     ],
     "enzyme": {
