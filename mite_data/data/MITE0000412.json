@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000412",
     "status": "active",
     "comment": "Cytochrome P450 catalyzing the hydroxylation of peregrinol to form labd-13Z-ene-9,15,16-triol",
     "changelog": [
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0003-4819-2251"
             ],
-            "comment": "Fixed reaction SMARTS, added cofactor and evidence qualifier."
+            "comment": "New entry. Reviewer 1 fixed reaction SMARTS, added cofactor and evidence qualifier."
         }
     ],
     "enzyme": {
