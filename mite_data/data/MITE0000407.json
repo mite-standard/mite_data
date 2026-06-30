@@ -1,7 +1,7 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000407",
     "status": "active",
-    "comment": "Luz27 is a membrane-bound acyltransferase that mediates the subsequent O-acetylation extracellularly",
+    "comment": "Luz27 is a membrane-bound acyltransferase that mediates the subsequent O-acetylation extracellularly.",
     "changelog": [
         {
             "version": "1",
@@ -17,7 +17,7 @@
     ],
     "enzyme": {
         "name": "Luz27",
-        "description": "acyltransferase",
+        "description": "Acetyltransferase",
         "references": [
             "doi:10.1002/anie.202105312"
         ],
