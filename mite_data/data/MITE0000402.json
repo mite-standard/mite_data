@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000402",
     "status": "active",
     "comment": "C4-halogenation of a carrierbound-S-L-Threonin (L-Thr-S-SyrB1) in the syringomycin E pathway.",
     "changelog": [
@@ -49,7 +49,7 @@
                         "*SC(=O)C(N)C(O)CCl"
                     ],
                     "isIntermediate": true,
-                    "description": "C4-monochlorination of L-Threonin "
+                    "description": "C4-monochlorination of L-threonin"
                 }
             ],
             "evidence": {
@@ -76,7 +76,7 @@
                         "*SC(=O)C(N)C(O)CBr"
                     ],
                     "isIntermediate": true,
-                    "description": "C4-monobromination of L-Threonin "
+                    "description": "C4-monobromination of L-threonin"
                 }
             ],
             "evidence": {
@@ -103,7 +103,7 @@
                         "*SC(=O)C(N)C(O)C(Cl)Cl"
                     ],
                     "isIntermediate": true,
-                    "description": "C4-dichlorination of L-Threonin "
+                    "description": "C4-dichlorination of L-threonin"
                 }
             ],
             "evidence": {
