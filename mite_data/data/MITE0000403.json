@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000403",
     "status": "active",
     "comment": "Single chlorination of the early intermediate Hydroxymethylglutaryl (HMG) in the curacin A pathway. HMG is thioesterified to an acyl carrier protein (ACP). Stereochemistry could not be depicted due to incompatibility with validation engine.",
     "changelog": [
@@ -40,7 +40,7 @@
             "tailoring": [
                 "Halogenation"
             ],
-            "description": "Single Chlorination of Hydroxymethylglutaryl through conformational switch driven by \u03b1-ketoglutaric acid  ",
+            "description": "Single Chlorination of Hydroxymethylglutaryl through conformational switch driven by \u03b1-ketoglutaric acid.",
             "reactionSMARTS": "[#6:1](-[#6:7](-[#16:9]-[*])=[#8:8])-[#6:2](-[#6:12])(-[#8:11])-[#6:3]-[#6:4](=[#8:6])-[#8:5]>>[#6:1](-[#6:7](-[#16:9]-[*])=[#8:8])-[#6:2](-[#6:12])(-[#8:11])-[#6:3](-[Cl])-[#6:4](=[#8:6])-[#8:5]",
             "reactions": [
                 {
@@ -49,7 +49,7 @@
                         "*SC(=O)CC(C)(O)C(Cl)C(=O)O"
                     ],
                     "isIntermediate": false,
-                    "description": "Single C4-chlorination of Hydroxymethylglutaryl"
+                    "description": "Single C4-chlorination of hydroxymethylglutaryl."
                 }
             ],
             "evidence": {
