@@ -1,7 +1,7 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000410",
     "status": "active",
-    "comment": "Glycosyltransferase involved in the last biosynthetic step of nystatin A1",
+    "comment": "Glycosyltransferase involved in the last biosynthetic step of nystatin A1.",
     "changelog": [
         {
             "version": "1",
@@ -12,12 +12,12 @@
             "reviewers": [
                 "0000-0003-4819-2251"
             ],
-            "comment": "Fixed reaction SMARTS and substrate/product SMILES, reaction description, evidence qualifier, refereces."
+            "comment": "New entry. Reviewer 1 fixed reaction SMARTS and substrate/product SMILES, reaction description, evidence qualifier, refereces."
         }
     ],
     "enzyme": {
         "name": "NysDI",
-        "description": "Mycosaminyltransferase ",
+        "description": "Mycosaminyltransferase",
         "references": [
             "doi:10.1007/s00253-004-1802-4",
             "doi:10.1002/cbic.200800349"
@@ -47,7 +47,7 @@
                         "CC1O[C@@H](O[C@H]2C=CC=CC=CC=CCCC=CC=C[C@H](C)[C@@H](O)[C@@H](C)[C@H](C)OC(=O)C[C@H](O)C[C@H](O)C[C@H](O)CC[C@@H](O)[C@H](O)C[C@]3(O)C[C@H](O)[C@@H](C(=O)O)[C@H](C2)O3)C(O)[C@H](N)[C@@H]1O"
                     ],
                     "isIntermediate": true,
-                    "description": "O-glycosylation of nystatin A1 aglycon with mycosamine group to yield final product nystatin A1 "
+                    "description": "O-glycosylation of nystatin A1 aglycon with mycosamine group to yield final product nystatin A1."
                 }
             ],
             "evidence": {
