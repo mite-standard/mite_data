@@ -1,7 +1,7 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000411",
     "status": "active",
-    "comment": "Catalyzes oxidation of a methyl group in nystatin biosynthesis",
+    "comment": "Catalyzes oxidation of a methyl group in nystatin biosynthesis.",
     "changelog": [
         {
             "version": "1",
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0003-4819-2251"
             ],
-            "comment": "Fixed reaction SMARTS and substrate/product SMILES, added cofactor information, added reference and evidence qualifier."
+            "comment": "New entry. Reviewer 1 fixed reaction SMARTS and substrate/product SMILES, added cofactor information, added reference and evidence qualifier."
         }
     ],
     "enzyme": {
