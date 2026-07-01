@@ -8667,6 +8667,28 @@
       "reaction_description":"Single chlorination of L-Thr-S-SyrB1 complex using oxygen",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000403":{
+      "accession":"MITE0000403",
+      "class_name":"Cyanophyceae",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"a-Ketoglutaric acid",
+      "domain":"Bacteria",
+      "enzyme_description":"Non-heme halogenase",
+      "enzyme_ids":{
+        "genpept":"AAT70096.1",
+        "mibig":"BGC0001165",
+        "uniprot":"Q6DNF2"
+      },
+      "enzyme_name":"CurA",
+      "family":"Oscillatoriales",
+      "kingdom":"Bacillati",
+      "order":"Oscillatoriophycideae",
+      "organism":"Lyngbya majuscula",
+      "phylum":"Cyanobacteriota",
+      "reaction_description":"Single Chlorination of Hydroxymethylglutaryl through conformational switch driven by α-ketoglutaric acid.",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.28"
