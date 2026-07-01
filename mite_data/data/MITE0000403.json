@@ -1,0 +1,66 @@
+{
+    "accession": "MITE0000403",
+    "status": "active",
+    "comment": "Single chlorination of the early intermediate Hydroxymethylglutaryl (HMG) in the curacin A pathway. HMG is thioesterified to an acyl carrier protein (ACP). Stereochemistry could not be depicted due to incompatibility with validation engine.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-06-18",
+            "contributors": [
+                "0009-0000-8651-1669"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 updated general comment."
+        }
+    ],
+    "enzyme": {
+        "name": "CurA",
+        "description": "Non-heme halogenase",
+        "references": [
+            "doi:10.1073/pnas.1006738107"
+        ],
+        "databaseIds": {
+            "uniprot": "Q6DNF2",
+            "genpept": "AAT70096.1",
+            "mibig": "BGC0001165"
+        },
+        "cofactors": {
+            "organic": [
+                "a-Ketoglutaric acid"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Single Chlorination of Hydroxymethylglutaryl through conformational switch driven by \u03b1-ketoglutaric acid.",
+            "reactionSMARTS": "[#6:1](-[#6:7](-[#16:9]-[*])=[#8:8])-[#6:2](-[#6:12])(-[#8:11])-[#6:3]-[#6:4](=[#8:6])-[#8:5]>>[#6:1](-[#6:7](-[#16:9]-[*])=[#8:8])-[#6:2](-[#6:12])(-[#8:11])-[#6:3](-[Cl])-[#6:4](=[#8:6])-[#8:5]",
+            "reactions": [
+                {
+                    "substrate": "*SC(=O)CC(C)(O)CC(=O)O",
+                    "products": [
+                        "*SC(=O)CC(C)(O)C(Cl)C(=O)O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Single C4-chlorination of hydroxymethylglutaryl."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1073/pnas.1006738107"
+                ]
+            }
+        }
+    ]
+}
