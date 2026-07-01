@@ -2493,6 +2493,24 @@
         "status":"active"
       }
     ],
+    "BGC0001165":[
+      {
+        "enzyme_description":"Non-heme halogenase",
+        "enzyme_ids":{
+          "genpept":"AAT70096.1",
+          "mibig":"BGC0001165",
+          "uniprot":"Q6DNF2"
+        },
+        "enzyme_name":"CurA",
+        "enzyme_refs":[
+          "doi:10.1073/pnas.1006738107"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000403",
+        "mite_url":"https://bioregistry.io/mite:MITE0000403",
+        "status":"active"
+      }
+    ],
     "BGC0001168":[
       {
         "enzyme_description":"Leucyl/Phenylalanine-tRNA-protein transferase",
