@@ -8625,7 +8625,28 @@
       "reaction_description":"The preferred order of events in monensin biosynthesis is hydroxylation at C-26 catalysed by MonD, followed by O-methylation at the hydroxy group at C-3 catalysed by MonE",
       "status":"active",
       "tailoring":"Hydroxylation"
+    },
+    "MITE0000401":{
+      "accession":"MITE0000401",
+      "class_name":"Gammaproteobacteria",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Cyclopropane-forming enzyme",
+      "enzyme_ids":{
+        "genpept":"AAO58150.1",
+        "uniprot":"Q87W54"
+      },
+      "enzyme_name":"CmaC",
+      "family":"Pseudomonadaceae",
+      "kingdom":"Pseudomonadati",
+      "order":"Pseudomonadales",
+      "organism":"Pseudomonas syringae pv. tomato (strain ATCC BAA-871 / DC3000)",
+      "phylum":"Pseudomonadota",
+      "reaction_description":"Intramolecular nuclophilic attack of α-C eliminating the chlor-substituent on γ-C",
+      "status":"active",
+      "tailoring":"Cyclization"
     }
   },
-  "version_mite_data":"1.27"
+  "version_mite_data":"1.28"
 }
