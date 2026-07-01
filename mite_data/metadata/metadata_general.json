@@ -8732,6 +8732,27 @@
       "reaction_description":"Bicyclic halogenation through C5 radical intermediate product in the hectochlorin biosynthetic pathway.",
       "status":"active",
       "tailoring":"Dehydrogenation|Halogenation|Monooxygenation|Oxidation"
+    },
+    "MITE0000406":{
+      "accession":"MITE0000406",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Flavin-dependent halogenase",
+      "enzyme_ids":{
+        "genpept":"SDP57011.1",
+        "uniprot":"A0A1H0TT13"
+      },
+      "enzyme_name":"ChlH",
+      "family":"Pseudonocardiaceae",
+      "kingdom":"Bacillati",
+      "order":"Pseudonocardiales",
+      "organism":"Lentzea jiangxiensis",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Minimal aminoacid sequence necessary for Chloration: ChlA(-7) DFADLTNGIGSQNPWDTAWLWD",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.28"
