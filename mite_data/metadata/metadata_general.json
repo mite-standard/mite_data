@@ -8774,6 +8774,27 @@
       "reaction_description":"Luz27 performs stepwise O-acetylations on the 4-OH groups of 4-OH-Thp residues to afford a final product, luzopeptin A",
       "status":"active",
       "tailoring":"Acetylation"
+    },
+    "MITE0000408":{
+      "accession":"MITE0000408",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"MCK2216163.1",
+        "uniprot":"UPI001F59E914"
+      },
+      "enzyme_name":"Luz26",
+      "family":"Thermomonosporaceae",
+      "kingdom":"Bacillati",
+      "order":"Streptosporangiales",
+      "organism":"Actinomadura luzonensis",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Luz26 is a multitasking tailoring P450 that catalyzes both hydroxylations and C-N bond desaturations to furnish the 4-OH-Thp subunits resulting in di-deacetylated derivative luzopeptin C",
+      "status":"active",
+      "tailoring":"Dehydrogenation|Hydroxylation|Other"
     }
   },
   "version_mite_data":"1.28"
