@@ -8860,6 +8860,27 @@
       "reaction_description":"Oxidation of a methyl group to yield carboxylated functional group.",
       "status":"active",
       "tailoring":"Oxidation"
+    },
+    "MITE0000412":{
+      "accession":"MITE0000412",
+      "class_name":"Embryophyta",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"Heme",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"AUT77126.1",
+        "uniprot":"A0A2K9RG08"
+      },
+      "enzyme_name":"VacCYP76BK",
+      "family":"Spermatophyta",
+      "kingdom":"Viridiplantae",
+      "order":"Tracheophyta",
+      "organism":"Vitex agnus-castus",
+      "phylum":"Streptophyta",
+      "reaction_description":"Hydroxylation of diol-diterpene peregrinol",
+      "status":"active",
+      "tailoring":"Hydroxylation|Monooxygenation"
     }
   },
   "version_mite_data":"1.28"
