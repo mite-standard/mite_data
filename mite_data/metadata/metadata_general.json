@@ -8646,6 +8646,27 @@
       "reaction_description":"Intramolecular nuclophilic attack of α-C eliminating the chlor-substituent on γ-C",
       "status":"active",
       "tailoring":"Cyclization"
+    },
+    "MITE0000402":{
+      "accession":"MITE0000402",
+      "class_name":"Gammaproteobacteria",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"a-Ketoglutaric acid",
+      "domain":"Bacteria",
+      "enzyme_description":"Nonheme halogenase",
+      "enzyme_ids":{
+        "genpept":"AAD50521.1",
+        "uniprot":"Q9RBY6"
+      },
+      "enzyme_name":"SyrB2",
+      "family":"Pseudomonadaceae",
+      "kingdom":"Pseudomonadati",
+      "order":"Pseudomonadales",
+      "organism":"Pseudomonas syringae pv. syringae",
+      "phylum":"Pseudomonadota",
+      "reaction_description":"Single chlorination of L-Thr-S-SyrB1 complex using oxygen",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.28"
