@@ -8816,6 +8816,28 @@
       "reaction_description":" Luz25 is a P450 hydroxylase responsible for beta-hydroxylation at the N-Methylvaline residues of the luzopeptin scaffold",
       "status":"active",
       "tailoring":"Hydroxylation"
+    },
+    "MITE0000410":{
+      "accession":"MITE0000410",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Mg",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Mycosaminyltransferase",
+      "enzyme_ids":{
+        "genpept":"AAF71773.1",
+        "mibig":"BGC0000115",
+        "uniprot":"Q9L4W6"
+      },
+      "enzyme_name":"NysDI",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces noursei",
+      "phylum":"Actinomycetota",
+      "reaction_description":"O-glycosylation of polyene aglycon",
+      "status":"active",
+      "tailoring":"Glycosylation"
     }
   },
   "version_mite_data":"1.28"
