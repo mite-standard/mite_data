@@ -2165,6 +2165,24 @@
         "status":"active"
       }
     ],
+    "BGC0001000":[
+      {
+        "enzyme_description":"Fatty acyl halogenase",
+        "enzyme_ids":{
+          "genpept":"AAY42394.1",
+          "mibig":"BGC0001000",
+          "uniprot":"Q1EDB4"
+        },
+        "enzyme_name":"HctB",
+        "enzyme_refs":[
+          "doi:10.1002/cbic.201300345"
+        ],
+        "enzyme_tailoring":"Dehydrogenation|Halogenation|Monooxygenation|Oxidation",
+        "mite_accession":"MITE0000405",
+        "mite_url":"https://bioregistry.io/mite:MITE0000405",
+        "status":"active"
+      }
+    ],
     "BGC0001001":[
       {
         "enzyme_description":"Flavin-dependent halogenase",

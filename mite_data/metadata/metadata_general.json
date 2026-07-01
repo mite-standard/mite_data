@@ -8710,6 +8710,28 @@
       "reaction_description":"Chlorination of CMA-S-CmaD",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000405":{
+      "accession":"MITE0000405",
+      "class_name":"Cyanophyceae",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"a-Ketoglutaric acid",
+      "domain":"Bacteria",
+      "enzyme_description":"Fatty acyl halogenase",
+      "enzyme_ids":{
+        "genpept":"AAY42394.1",
+        "mibig":"BGC0001000",
+        "uniprot":"Q1EDB4"
+      },
+      "enzyme_name":"HctB",
+      "family":"Oscillatoriales",
+      "kingdom":"Bacillati",
+      "order":"Oscillatoriophycideae",
+      "organism":"Lyngbya majuscula",
+      "phylum":"Cyanobacteriota",
+      "reaction_description":"Bicyclic halogenation through C5 radical intermediate product in the hectochlorin biosynthetic pathway.",
+      "status":"active",
+      "tailoring":"Dehydrogenation|Halogenation|Monooxygenation|Oxidation"
     }
   },
   "version_mite_data":"1.28"

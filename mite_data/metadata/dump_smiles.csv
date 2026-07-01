@@ -539,3 +539,6 @@
 537,MITE0000402.reaction3.example1,*SC(=O)[C](N)[C](C)O,*SC(=O)C(N)C(O)C(Cl)Cl
 538,MITE0000403.reaction1.example1,*SC(=O)CC(C)(O)CC(=O)O,*SC(=O)CC(C)(O)C(Cl)C(=O)O
 539,MITE0000404.reaction1.example1,*SC(=O)C(N)C(C)CC,*SC(=O)C(N)C(CC)CCl
+540,MITE0000405.reaction1.example1,*SC(=O)CCCCC,*SC(=O)CCCC(C)(Cl)Cl
+541,MITE0000405.reaction2.example1,*SC(=O)CCCCC,*SC(=O)CCC=C(C)Cl
+542,MITE0000405.reaction3.example1,*SC(=O)CCCCC,*SC(=O)CCCC(C)=O
