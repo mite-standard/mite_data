@@ -1,0 +1,120 @@
+{
+    "accession": "MITE0000405",
+    "status": "active",
+    "comment": "Mononuclear non-heme iron enzyme with high substrate- and reaction promiscuity, including halogenation (Cl, Br), oxygenation, and vinyl-chloride formation. Consists of unusual three-domain structure with N-terminal catalytic halogenase domain, an ACBP, and an substrate-anchoring ACP.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-06-10",
+            "contributors": [
+                "0009-0000-8651-1669"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "HctB",
+        "description": "Fatty acyl halogenase",
+        "references": [
+            "doi:10.1002/cbic.201300345"
+        ],
+        "databaseIds": {
+            "uniprot": "Q1EDB4",
+            "genpept": "AAY42394.1",
+            "mibig": "BGC0001000"
+        },
+        "cofactors": {
+            "organic": [
+                "a-Ketoglutaric acid"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Bicyclic halogenation through C5 radical intermediate product in the hectochlorin biosynthetic pathway.",
+            "reactionSMARTS": "[*]-[#16:2]-[#6:3](=[#8:9])-[#6:4]-[#6:5]-[#6:6]-[#6:7]-[#6:8]>>[*]-[#16:2]-[#6:3](=[#8:9])-[#6:4]-[#6:5]-[#6:6]-[#6:7](-[Cl])(-[Cl])-[#6:8]",
+            "reactions": [
+                {
+                    "substrate": "*SC(=O)CCCCC",
+                    "products": [
+                        "*SC(=O)CCCC(C)(Cl)Cl"
+                    ],
+                    "isIntermediate": true,
+                    "description": "C5 dichlorination of fatty acyl substrate."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1002/cbic.201300345"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Dehydrogenation",
+                "Halogenation"
+            ],
+            "description": "Bicyclic halogenation and dehydrogenation through C5 radical intermediate product  in the hectochlorin biosynthetic pathway.",
+            "reactionSMARTS": "[*]-[#16:2]-[#6:3](=[#8:9])-[#6:4]-[#6:5]-[#6:6]-[#6:7]-[#6:8]>>[*]-[#16:2]-[#6:3](=[#8:9])-[#6:4]-[#6:5]-[#6:6]=[#6:7](-[Cl])-[#6:8]",
+            "reactions": [
+                {
+                    "substrate": "*SC(=O)CCCCC",
+                    "products": [
+                        "*SC(=O)CCC=C(C)Cl"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Single C5 chlorination and C4, C5 dehydrogenation resulting in a vinyl-chloride product of fatty acyl substrate."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1002/cbic.201300345"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Monooxygenation",
+                "Oxidation"
+            ],
+            "description": "Bicyclic monooxygenation through C5 radical intermediate product  in the hectochlorin biosynthetic pathway.",
+            "reactionSMARTS": "[*]-[#16:2]-[#6:3](=[#8:9])-[#6:4]-[#6:5]-[#6:6]-[#6:7]-[#6:8]>>[*]-[#16:2]-[#6:3](=[#8:9])-[#6:4]-[#6:5]-[#6:6]-[#6:7](=[#8])-[#6:8]",
+            "reactions": [
+                {
+                    "substrate": "*SC(=O)CCCCC",
+                    "products": [
+                        "*SC(=O)CCCC(C)=O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "C5 monoxygenation of fatty acyl substrate, resulting in keto-moiety."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1002/cbic.201300345"
+                ]
+            }
+        }
+    ]
+}
