@@ -451,6 +451,23 @@
         "mite_accession":"MITE0000322",
         "mite_url":"https://bioregistry.io/mite:MITE0000322",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Mycosaminyltransferase",
+        "enzyme_ids":{
+          "genpept":"AAF71773.1",
+          "mibig":"BGC0000115",
+          "uniprot":"Q9L4W6"
+        },
+        "enzyme_name":"NysDI",
+        "enzyme_refs":[
+          "doi:10.1007/s00253-004-1802-4",
+          "doi:10.1002/cbic.200800349"
+        ],
+        "enzyme_tailoring":"Glycosylation",
+        "mite_accession":"MITE0000410",
+        "mite_url":"https://bioregistry.io/mite:MITE0000410",
+        "status":"active"
       }
     ],
     "BGC0000120":[
