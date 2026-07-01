@@ -8689,6 +8689,27 @@
       "reaction_description":"Single Chlorination of Hydroxymethylglutaryl through conformational switch driven by α-ketoglutaric acid.",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000404":{
+      "accession":"MITE0000404",
+      "class_name":"Gammaproteobacteria",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"a-Ketoglutaric acid",
+      "domain":"Bacteria",
+      "enzyme_description":"Non-heme halogenase",
+      "enzyme_ids":{
+        "genpept":"AAO58149.1",
+        "uniprot":"Q87W55"
+      },
+      "enzyme_name":"CmaB",
+      "family":"Pseudomonadaceae",
+      "kingdom":"Pseudomonadati",
+      "order":"Pseudomonadales",
+      "organism":"Pseudomonas syringae pv. tomato (strain ATCC BAA-871 / DC3000)",
+      "phylum":"Pseudomonadota",
+      "reaction_description":"Chlorination of CMA-S-CmaD",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.28"
