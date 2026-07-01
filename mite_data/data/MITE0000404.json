@@ -1,0 +1,65 @@
+{
+    "accession": "MITE0000404",
+    "status": "active",
+    "comment": "\u03b3-halogenation of a carrierbound-S-alloisoleucine (CMA-S-CmaD) as intermediate product for cyclopropyl amino acid biosynthesis through CmaC",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-06-18",
+            "contributors": [
+                "0009-0000-8651-1669"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Replaced chiral structures with flat ones due to validation engine incompatibility."
+        }
+    ],
+    "enzyme": {
+        "name": "CmaB",
+        "description": "Non-heme halogenase",
+        "references": [
+            "doi:10.1038/nature03797"
+        ],
+        "databaseIds": {
+            "uniprot": "Q87W55",
+            "genpept": "AAO58149.1"
+        },
+        "cofactors": {
+            "organic": [
+                "a-Ketoglutaric acid"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Chlorination of CMA-S-CmaD",
+            "reactionSMARTS": "*-[#16]-[#6](-[#6](-[#6](-[#6]-[#6])-[#6])-[#7])=[#8]>>[*,H]-[#16]-[#6](-[#6](-[#6](-[#6]-[Cl])-[#6]-[#6])-[#7])=[#8]",
+            "reactions": [
+                {
+                    "substrate": "*SC(=O)C(N)C(C)CC",
+                    "products": [
+                        "*SC(=O)C(N)C(CC)CCl"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Single chlorination of CMA thioester"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1038/nature03797"
+                ]
+            }
+        }
+    ]
+}
