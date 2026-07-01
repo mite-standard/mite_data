@@ -8795,6 +8795,27 @@
       "reaction_description":"Luz26 is a multitasking tailoring P450 that catalyzes both hydroxylations and C-N bond desaturations to furnish the 4-OH-Thp subunits resulting in di-deacetylated derivative luzopeptin C",
       "status":"active",
       "tailoring":"Dehydrogenation|Hydroxylation|Other"
+    },
+    "MITE0000409":{
+      "accession":"MITE0000409",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"MCK2216164.1",
+        "uniprot":"UPI001F56E2E2"
+      },
+      "enzyme_name":"Luz25",
+      "family":"Thermomonosporaceae",
+      "kingdom":"Bacillati",
+      "order":"Streptosporangiales",
+      "organism":"Actinomadura luzonensis",
+      "phylum":"Actinomycetota",
+      "reaction_description":" Luz25 is a P450 hydroxylase responsible for beta-hydroxylation at the N-Methylvaline residues of the luzopeptin scaffold",
+      "status":"active",
+      "tailoring":"Hydroxylation"
     }
   },
   "version_mite_data":"1.28"
