@@ -8838,6 +8838,28 @@
       "reaction_description":"O-glycosylation of polyene aglycon",
       "status":"active",
       "tailoring":"Glycosylation"
+    },
+    "MITE0000411":{
+      "accession":"MITE0000411",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"P450 monooxygenase",
+      "enzyme_ids":{
+        "genpept":"AAF71771.1",
+        "mibig":"BGC0000115",
+        "uniprot":"Q9L4W8"
+      },
+      "enzyme_name":"NysN",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces noursei",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Oxidation of a methyl group to yield carboxylated functional group.",
+      "status":"active",
+      "tailoring":"Oxidation"
     }
   },
   "version_mite_data":"1.28"

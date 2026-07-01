@@ -468,6 +468,23 @@
         "mite_accession":"MITE0000410",
         "mite_url":"https://bioregistry.io/mite:MITE0000410",
         "status":"active"
+      },
+      {
+        "enzyme_description":"P450 monooxygenase",
+        "enzyme_ids":{
+          "genpept":"AAF71771.1",
+          "mibig":"BGC0000115",
+          "uniprot":"Q9L4W8"
+        },
+        "enzyme_name":"NysN",
+        "enzyme_refs":[
+          "doi:10.1007/s00253-004-1802-4",
+          "doi:10.1016/j.chembiol.2008.08.009 "
+        ],
+        "enzyme_tailoring":"Oxidation",
+        "mite_accession":"MITE0000411",
+        "mite_url":"https://bioregistry.io/mite:MITE0000411",
+        "status":"active"
       }
     ],
     "BGC0000120":[
