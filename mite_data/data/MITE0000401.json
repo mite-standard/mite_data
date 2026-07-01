@@ -1,0 +1,59 @@
+{
+    "accession": "MITE0000401",
+    "status": "active",
+    "comment": "Cyclopropanforming catalyst of \u03b3-chloro-l-allo-Isoleucine intermediate in the coronatine pathway. See also MIBiG BGC0000328. Addition of Zn2+ increases enzyme activity.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-06-23",
+            "contributors": [
+                "0009-0000-8651-1669"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 tried to replace structures but validation engine does not support chiral structures."
+        }
+    ],
+    "enzyme": {
+        "name": "CmaC",
+        "description": "Cyclopropane-forming enzyme",
+        "references": [
+            "doi:10.1021/bi061930j",
+            "doi:10.1038/nature03797"
+        ],
+        "databaseIds": {
+            "uniprot": "Q87W54",
+            "genpept": "AAO58150.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Cyclization"
+            ],
+            "description": "Intramolecular nuclophilic attack of \u03b1-C eliminating the chlor-substituent on \u03b3-C",
+            "reactionSMARTS": "[#16:1](-[*])-[#6:2](-[#6:4](-[#6:6](-[#6:9]-[Cl])-[#6:7]-[#6:8])-[#7:5])=[#8:3]>>[#16:1](-[*])-[#6:2](-[#6:4]1(-[#6:9]-[#6:6]-1-[#6:7]-[#6:8])-[#7:5])=[#8:3]",
+            "reactions": [
+                {
+                    "substrate": "*SC(=O)C(N)C(CC)CCl",
+                    "products": [
+                        "*SC(=O)C1(N)CC1CC"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Cyclization step forming coronamyl-S-CmaD"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1038/nature03797",
+                    "doi:10.1021/bi061930j"
+                ]
+            }
+        }
+    ]
+}
