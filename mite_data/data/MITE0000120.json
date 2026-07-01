@@ -33,9 +33,10 @@
                 "0000-0002-3677-2972"
             ],
             "reviewers": [
-                "0000-0003-4819-2251"
+                "0000-0003-4819-2251",
+                "0000-0001-6534-6609"
             ],
-            "comment": "Added additional reference and evidence qualifier (heterologous expression)."
+            "comment": "Added additional reference and evidence qualifier (heterologous expression). Reviewer 2 fixed retired uniprot entry."
         }
     ],
     "enzyme": {
@@ -51,7 +52,7 @@
                 "name": "ZopL2/ZopQ",
                 "description": "Isochorismatase-like enzyme",
                 "databaseIds": {
-                    "uniprot": "A0A7R6QM07",
+                    "uniprot": "UPI001AF1AE05",
                     "genpept": "QTE75990.1"
                 }
             }
