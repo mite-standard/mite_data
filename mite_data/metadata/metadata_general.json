@@ -8753,6 +8753,27 @@
       "reaction_description":"Minimal aminoacid sequence necessary for Chloration: ChlA(-7) DFADLTNGIGSQNPWDTAWLWD",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000407":{
+      "accession":"MITE0000407",
+      "class_name":"Not found",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Not found",
+      "enzyme_description":"Acetyltransferase",
+      "enzyme_ids":{
+        "genpept":"MCK2216162.1",
+        "uniprot":"UPI001F57AB4F"
+      },
+      "enzyme_name":"Luz27",
+      "family":"Not found",
+      "kingdom":"Not found",
+      "order":"Not found",
+      "organism":"Not found",
+      "phylum":"Not found",
+      "reaction_description":"Luz27 performs stepwise O-acetylations on the 4-OH groups of 4-OH-Thp residues to afford a final product, luzopeptin A",
+      "status":"active",
+      "tailoring":"Acetylation"
     }
   },
   "version_mite_data":"1.28"
