@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "CihB catalyzes an oxidative intramolecular C\u2212N bond linkage between two Trp units of the precursor peptide CihA to produce Cihunamides",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,48 @@
     ],
     "enzyme": {
         "name": "CihB",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1002/anie.202300998"
+        ],
         "databaseIds": {
             "uniprot": "UPI0027A012A4",
-            "genpept": ""
+            "genpept": "WGZ76221.1"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Biaryl bond formation"
+            ],
+            "description": "CihB oxidatively couples the two tryptophan residues, forming an intramolecular C\u2013N bond between indole C-7 of l-Trp-1 and indole N-1 of l-Trp-2",
+            "reactionSMARTS": "[#6:1]-[#6:2]-[#6:3](-[#6:45])-[#6:4](-[#7:22]-[#6:23](=[#8:44])-[#6:24](-[#6:40]-[#6:41](=[#8:43])-[#7:42])-[#7:25]-[#6:26](=[#8:39])-[#6:27](-[#7:38])-[#6:28]-[#6:29]1:[#6:32]2:[#6:37]:[#6:36]:[#6:35]:[#6:34]:[#6:33]:2:[#7:31]:[#6:30]:1)-[#6:5](=[#8:21])-[#7:6]-[#6:7](-[#6:11]-[#6:12]1:[#6:15]2:[#6:20]:[#6:19]:[#6:18]:[#6:17]:[#6:16]:2:[#7:14]:[#6:13]:1)-[#6:8](=[#8:10])-[#8:9]>>[#6:1]-[#6:2]-[#6:3](-[#6:45])-[#6:4]1-[#7:22]-[#6:23](=[#8:44])-[#6:24](-[#6:40]-[#6:41](=[#8:43])-[#7:42])-[#7:25]-[#6:26](=[#8:39])-[#6:27](-[#7:38])-[#6:28]-[#6:29]2:[#6:32]3:[#6:37]:[#6:36]:[#6:35]:[#6:34](-[#7:14]4:[#6:16]5:[#6:17]:[#6:18]:[#6:19]:[#6:20]:[#6:15]:5:[#6:12](:[#6:13]:4)-[#6:11]-[#6:7](-[#6:8](=[#8:10])-[#8:9])-[#7:6]-[#6:5]-1=[#8:21]):[#6:33]:3:[#7:31]:[#6:30]:2",
             "reactions": [
                 {
+                    "substrate": "CCC(C)C(NC(=O)C(CC(N)=O)NC(=O)C(N)Cc1c[nH]c2ccccc12)C(=O)NC(Cc1c[nH]c2ccccc12)C(=O)O",
                     "products": [
-                        ""
-                    ]
+                        "CCC(C)C1NC(=O)C(CC(N)=O)NC(=O)C(N)Cc2c[nH]c3c(cccc23)-n2cc(c3ccccc32)CC(C(=O)O)NC1=O"
+                    ],
+                    "isIntermediate": false
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Inference from genomic data and chemical structure"
+                ],
+                "references": [
+                    "doi:10.1002/anie.202300998"
+                ]
+            }
         }
     ]
 }
