@@ -1,6 +1,7 @@
 {
     "accession": "MITE0000210",
     "status": "active",
+    "comment": "UniProtKB ID P0CU31 and GenPept ID EAQ93007.1 differ in sequence; UniProtKB P0CU31 is the correct one.",
     "changelog": [
         {
             "version": "1",
@@ -11,7 +12,7 @@
             "reviewers": [
                 "0000-0003-4819-2251"
             ],
-            "comment": "new entry"
+            "comment": "New entry"
         },
         {
             "version": "2",
