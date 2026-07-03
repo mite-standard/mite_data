@@ -1,6 +1,7 @@
 {
     "accession": "MITE0000163",
     "status": "active",
+    "comment": "Previously referenced retired MIBiG ID BGC0003093.",
     "changelog": [
         {
             "version": "1",
@@ -12,6 +13,17 @@
                 "0000-0002-8323-5416"
             ],
             "comment": "Initial entry. Reviewer 1 checked crosslinks and factual correctness, corrected GenePeptID to UPG58737.1, added reaction description."
+        },
+        {
+            "version": "2",
+            "date": "2026-07-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed retired MIBIG ID."
         }
     ],
     "enzyme": {
@@ -22,8 +34,7 @@
         ],
         "databaseIds": {
             "uniprot": "UPI0020648AC1",
-            "genpept": "UPG58737.1",
-            "mibig": "BGC0003093"
+            "genpept": "UPG58737.1"
         }
     },
     "reactions": [
