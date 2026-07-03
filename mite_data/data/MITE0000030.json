@@ -1,6 +1,7 @@
 {
     "accession": "MITE0000030",
     "status": "active",
+    "comment": "Mismatch between protein sequences of UniProt A8CF74 and GenPept ABV56598.1 - UniProt sequence correct.",
     "changelog": [
         {
             "version": "1",

@@ -1,6 +1,7 @@
 {
     "accession": "MITE0000099",
     "status": "active",
+    "comment": "Previously referenced retired MIBiG entry BGC0001476.",
     "changelog": [
         {
             "version": "1",
@@ -26,6 +27,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Replaced retired UniProtKB ID with UniParc ID"
+        },
+        {
+            "version": "3",
+            "date": "2025-07-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed retired MIBiG BGC."
         }
     ],
     "enzyme": {
@@ -36,8 +48,7 @@
         ],
         "databaseIds": {
             "uniprot": "UPI000D22683E",
-            "genpept": "AVT42379.1",
-            "mibig": "BGC0001476"
+            "genpept": "AVT42379.1"
         }
     },
     "reactions": [

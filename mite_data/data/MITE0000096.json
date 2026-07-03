@@ -1,6 +1,7 @@
 {
     "accession": "MITE0000096",
     "status": "active",
+    "comment": "Cofactorless. Previously referenced retired MIBiG entry BGC0001378.",
     "changelog": [
         {
             "version": "1",
@@ -24,18 +25,28 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Replaced retired UniProtKB ID with UniParc ID"
+        },
+        {
+            "version": "3",
+            "date": "2025-07-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed retired MIBiG BGC."
         }
     ],
     "enzyme": {
         "name": "TnmJ",
-        "description": "Cofactorless oxygenase",
+        "description": "Oxygenase",
         "references": [
             "doi:10.1038/s41589-023-01476-2"
         ],
         "databaseIds": {
             "uniprot": "UPI00076F29F8",
-            "genpept": "AME18009.1",
-            "mibig": "BGC0001378"
+            "genpept": "AME18009.1"
         }
     },
     "reactions": [

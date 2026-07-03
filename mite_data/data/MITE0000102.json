@@ -1,6 +1,7 @@
 {
     "accession": "MITE0000102",
     "status": "active",
+    "comment": "Previously referenced retired MIBiG entry BGC0001487.",
     "changelog": [
         {
             "version": "1",
@@ -13,6 +14,17 @@
                 "0000-0001-6660-2715"
             ],
             "comment": "Initial entry. Reviewer 1 changed enzyme type and added enzyme description."
+        },
+        {
+            "version": "2",
+            "date": "2025-07-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed retired MIBiG BGC."
         }
     ],
     "enzyme": {
@@ -23,8 +35,7 @@
         ],
         "databaseIds": {
             "uniprot": "A0A2S1JZI9",
-            "genpept": "AWF83809.1",
-            "mibig": "BGC0001487"
+            "genpept": "AWF83809.1"
         }
     },
     "reactions": [

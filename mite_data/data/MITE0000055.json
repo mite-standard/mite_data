@@ -1,6 +1,7 @@
 {
     "accession": "MITE0000055",
     "status": "active",
+    "comment": "Mismatch between protein sequences of UniProt Q9X2V9 and GenPept AAD28496.1 - UniProt sequence correct.",
     "changelog": [
         {
             "version": "1",
