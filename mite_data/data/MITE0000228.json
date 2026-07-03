@@ -1,7 +1,7 @@
 {
     "accession": "MITE0000228",
     "status": "active",
-    "comment": "Authentic product of BGC not observed. GenPept ID identified in SI of referenced paper",
+    "comment": "Authentic product of BGC not observed. GenPept ID identified in SI of referenced paper.",
     "changelog": [
         {
             "version": "1",
@@ -13,6 +13,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Initial entry."
+        },
+        {
+            "version": "3",
+            "date": "2026-07-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Replaced retired UniProtKB ID with UniParc ID."
         }
     ],
     "enzyme": {
@@ -22,7 +33,7 @@
             "doi:10.1021/acs.orglett.5c03981"
         ],
         "databaseIds": {
-            "uniprot": "A0A9X8N8D0",
+            "uniprot": "UPI0009192F31",
             "genpept": "SHN27822.1"
         }
     },
