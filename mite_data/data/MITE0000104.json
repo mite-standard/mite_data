@@ -1,6 +1,7 @@
 {
     "accession": "MITE0000104",
     "status": "active",
+    "comment": "Heterodimer TrlCD. Previously referenced retired MIBiG entry BGC0001487.",
     "changelog": [
         {
             "version": "1",
@@ -13,18 +14,28 @@
                 "0000-0003-0443-9902"
             ],
             "comment": "Initial entry. Reviewer partially fixed general aromaticity."
+        },
+        {
+            "version": "2",
+            "date": "2025-07-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed retired MIBiG BGC."
         }
     ],
     "enzyme": {
         "name": "TrlC",
-        "description": "Oxygenase component of flavoprotein monooxygenase TrlCD",
+        "description": "Flavoprotein monooxygenase",
         "references": [
             "doi:10.1039/d4sc01715c"
         ],
         "databaseIds": {
             "uniprot": "A0A2S1JZG6",
-            "genpept": "AWF83807.1",
-            "mibig": "BGC0001487"
+            "genpept": "AWF83807.1"
         },
         "auxiliaryEnzymes": [
             {
