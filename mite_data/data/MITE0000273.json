@@ -13,6 +13,17 @@
                 "0000-0002-9747-3423"
             ],
             "comment": "New entry."
+        },
+        {
+            "version": "2",
+            "date": "2026-07-05",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Replaced retired UniProt ID with UniParc ID."
         }
     ],
     "enzyme": {
@@ -22,7 +33,7 @@
             "doi:10.1016/j.chembiol.2023.06.011"
         ],
         "databaseIds": {
-            "uniprot": "A0A166ZN72",
+            "uniprot": "UPI0007B0A84C",
             "genpept": "KZN44487.1"
         },
         "cofactors": {
