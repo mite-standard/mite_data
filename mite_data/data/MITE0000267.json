@@ -1,6 +1,7 @@
 {
     "accession": "MITE0000267",
     "status": "active",
+    "comment": "AA sequences in UniProt ID B8N8R3 and GenPept ID EED53482.1 differ: UniProt sequence is correct.",
     "changelog": [
         {
             "version": "1",
@@ -12,6 +13,17 @@
                 "0000-0001-5863-7248"
             ],
             "comment": "New entry."
+        },
+        {
+            "version": "2",
+            "date": "2026-07-05",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added note to specify reason for diverging AA sequences Uniprot vs GenPept."
         }
     ],
     "enzyme": {
