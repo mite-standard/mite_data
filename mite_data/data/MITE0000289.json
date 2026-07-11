@@ -1,7 +1,7 @@
 {
     "accession": "MITE0000289",
     "status": "active",
-    "comment": "N-methylation of peptide bond in ustiloxin biosynthesis",
+    "comment": "N-methylation of peptide bond in ustiloxin biosynthesis. Was previously associated to MIBiG ID BGC0000627 (retired GenPept ID 'EED49429.1')",
     "changelog": [
         {
             "version": "1",
@@ -14,6 +14,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "New entry. Reviewer 2 replaced UniProt w UniParc ID for amino acid consistency."
+        },
+        {
+            "version": "2",
+            "date": "2026-07-11",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed genpept ID and MIBiG cross-ref due to retirement of the former."
         }
     ],
     "enzyme": {
@@ -23,9 +34,7 @@
             "doi:10.1002/anie.201602611"
         ],
         "databaseIds": {
-            "uniprot": "UPI00018F617E",
-            "genpept": "EED49429.1",
-            "mibig": "BGC0000627"
+            "uniprot": "UPI00018F617E"
         },
         "cofactors": {
             "organic": [
