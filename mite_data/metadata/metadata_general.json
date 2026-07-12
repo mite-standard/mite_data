@@ -8903,6 +8903,27 @@
       "reaction_description":"Itarate dichlorination of tiacumicin B precourser",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000414":{
+      "accession":"MITE0000414",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD|NAD",
+      "domain":"Bacteria",
+      "enzyme_description":"FADH2-dependent monooxygenases",
+      "enzyme_ids":{
+        "genpept":"AAL06674.1",
+        "uniprot":"UPI00000BF692"
+      },
+      "enzyme_name":"SgcC",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces globisporus",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Hydroxylation of 3-chloro-β-tyrosyl-S-SgcC2",
+      "status":"active",
+      "tailoring":"Hydroxylation"
     }
   },
   "version_mite_data":"1.28"
