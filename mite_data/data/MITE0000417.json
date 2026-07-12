@@ -1,0 +1,58 @@
+{
+    "accession": "MITE0000417",
+    "status": "active",
+    "comment": "Cyclopropanforming enzyme of \u03b3-chloroisoleucine thetered as thioester on the carrierprotein KtzC in the Kutzneride pathway. Stereochemistry could not be depicted due to incompatibility with validation engine.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-06-25",
+            "contributors": [
+                "0009-0000-8651-1669"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "KtzA",
+        "description": "acyl-CoA dehydrogenase flavoprotein",
+        "references": [
+            "doi:10.1021/ja8064667"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI00015D3A85",
+            "genpept": "ABV56581.1",
+            "mibig": "BGC0000378"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Cyclization"
+            ],
+            "description": "KtzA deprotonates the C\u03b1 resulting in an intramolecular attack on the C\u03b3, eliminating the chlor substituent which forces the collaps into a cyclopropane ring",
+            "reactionSMARTS": "[#6:1]-[#6:2]-[#6:3](-[#6:5](-[#6:7](-[#16:9]-[*])=[#8:8])-[#7:6])-[#6:4]-[Cl]>>[*]-[#16:9]-[#6:7](-[#6:5]1(-[#6:3](-[#6:2]-[#6:1])-[#6:4]-1)-[#7:6])=[#8:8]",
+            "reactions": [
+                {
+                    "substrate": "*SC(=O)C(N)C(CC)CCl",
+                    "products": [
+                        "*SC(=O)C1(N)CC1CC"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Cyclization of \u03b3-chloroisoleucine thioester"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/ja8064667"
+                ]
+            }
+        }
+    ]
+}
