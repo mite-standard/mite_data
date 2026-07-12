@@ -8946,6 +8946,26 @@
       "reaction_description":"Chlorination of β-tyrosyl-S-SgcC2. Stereochemistry is determined by SgcC1, therefore SgcC3 functions independently of stereochemistry. ",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000416":{
+      "accession":"MITE0000416",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"a-Ketoglutaric acid",
+      "domain":"Bacteria",
+      "enzyme_description":"Nonheme halogenase",
+      "enzyme_ids":{
+        "uniprot":"A0ACD6BAX6"
+      },
+      "enzyme_name":"CytC3",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces sp",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Single chlorination of L-Aba-S-CytC2 complex using oxygen",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.28"
