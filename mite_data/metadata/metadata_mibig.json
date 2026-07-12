@@ -1005,6 +1005,22 @@
         "mite_accession":"MITE0000030",
         "mite_url":"https://bioregistry.io/mite:MITE0000030",
         "status":"active"
+      },
+      {
+        "enzyme_description":"acyl-CoA dehydrogenase flavoprotein",
+        "enzyme_ids":{
+          "genpept":"ABV56581.1",
+          "mibig":"BGC0000378",
+          "uniprot":"UPI00015D3A85"
+        },
+        "enzyme_name":"KtzA",
+        "enzyme_refs":[
+          "doi:10.1021/ja8064667"
+        ],
+        "enzyme_tailoring":"Cyclization",
+        "mite_accession":"MITE0000417",
+        "mite_url":"https://bioregistry.io/mite:MITE0000417",
+        "status":"active"
       }
     ],
     "BGC0000404":[
