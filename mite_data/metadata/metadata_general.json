@@ -8966,6 +8966,28 @@
       "reaction_description":"Single chlorination of L-Aba-S-CytC2 complex using oxygen",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000417":{
+      "accession":"MITE0000417",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"acyl-CoA dehydrogenase flavoprotein",
+      "enzyme_ids":{
+        "genpept":"ABV56581.1",
+        "mibig":"BGC0000378",
+        "uniprot":"UPI00015D3A85"
+      },
+      "enzyme_name":"KtzA",
+      "family":"Pseudonocardiaceae",
+      "kingdom":"Bacillati",
+      "order":"Pseudonocardiales",
+      "organism":"Kutzneria sp. 744",
+      "phylum":"Actinomycetota",
+      "reaction_description":"KtzA deprotonates the Cα resulting in an intramolecular attack on the Cγ, eliminating the chlor substituent which forces the collaps into a cyclopropane ring",
+      "status":"active",
+      "tailoring":"Cyclization"
     }
   },
   "version_mite_data":"1.28"
