@@ -1,0 +1,119 @@
+{
+    "accession": "MITE0000413",
+    "status": "active",
+    "comment": "Iterate halogenation of a substrate named \"compund 9\" defined as unchlorinated tiacumicin B in the tiacumicin B pathway. Non subtrate: free standing orsellinic Acid, I, F.  The flavin auxiliary enzyme is no itdentified yet, therefore flavin-reductase SsuE gen was expressed instead.  ",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-07-02",
+            "contributors": [
+                "0009-0000-8651-1669"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "TiaM",
+        "description": "Flavin-dependent halogenase",
+        "references": [
+            "doi:10.1021/ja109445q"
+        ],
+        "databaseIds": {
+            "uniprot": "E9LIP1",
+            "genpept": "ADU85999.1",
+            "mibig": "BGC0000165"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD",
+                "NAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Itarate dichlorination of tiacumicin B precourser",
+            "reactionSMARTS": "[CH3:1][CH2:2][c:3]1[ch:4][c:5]([OH:6])[ch:7][c:8]([OH:9])[c:10]1[C:11](=[O:12])[O:13][C@@H:14]1[C@@H:15]([OH:16])[C@@H:17]([O:18][CH3:19])[C@@H:20]([O:21][CH2:22]/[C:23]2=[C:24]/[CH:25]=[CH:26]/[CH2:27][C@@H:28]([OH:29])/[C:30]([CH3:31])=[CH:32]\\[C@@H:33]([CH2:34][CH3:35])[C@@H:36]([O:37][C@@H:38]3[O:39][C:40]([CH3:41])([CH3:42])[C@@H:43]([O:44][C:45](=[O:46])[CH:47]([CH3:48])[CH3:49])[C@@H:50]([OH:51])[C@@H:52]3[OH:53])/[C:54]([CH3:55])=[CH:56]\\[C:57]([CH3:58])=[CH:59]\\[CH2:60][C@@H:61]([C@@H:62]([CH3:63])[OH:64])[O:65][C:66]2=[O:67])[O:68][C@@H:69]1[CH3:70]>>[CH3:1][CH2:2][c:3]1[c:4](Cl)[c:5]([OH:6])[c:7](Cl)[c:8]([OH:9])[c:10]1[C:11](=[O:12])[O:13][C@@H:14]1[C@@H:15]([OH:16])[C@@H:17]([O:18][CH3:19])[C@@H:20]([O:21][CH2:22]/[C:23]2=[C:24]/[CH:25]=[CH:26]/[CH2:27][C@@H:28]([OH:29])/[C:30]([CH3:31])=[CH:32]\\[C@@H:33]([CH2:34][CH3:35])[C@@H:36]([O:37][C@@H:38]3[O:39][C:40]([CH3:41])([CH3:42])[C@@H:43]([O:44][C:45](=[O:46])[CH:47]([CH3:48])[CH3:49])[C@@H:50]([OH:51])[C@@H:52]3[OH:53])/[C:54]([CH3:55])=[CH:56]\\[C:57]([CH3:58])=[CH:59]\\[CH2:60][C@@H:61]([C@@H:62]([CH3:63])[OH:64])[O:65][C:66]2=[O:67])[O:68][C@@H:69]1[CH3:70]",
+            "reactions": [
+                {
+                    "substrate": "CCc1cc(O)cc(O)c1C(=O)O[C@H]1[C@H](O)[C@H](OC)[C@H](OC/C2=C/C=C/C[C@H](O)/C(C)=C\\[C@H](CC)[C@@H](O[C@@H]3OC(C)(C)[C@@H](OC(=O)C(C)C)[C@H](O)[C@@H]3O)/C(C)=C\\C(C)=C\\C[C@@H]([C@@H](C)O)OC2=O)O[C@@H]1C",
+                    "products": [
+                        "CCc1c(Cl)c(O)c(Cl)c(O)c1C(=O)O[C@H]1[C@H](O)[C@H](OC)[C@H](OC/C2=C/C=C/C[C@H](O)/C(C)=C\\[C@H](CC)[C@@H](O[C@@H]3OC(C)(C)[C@@H](OC(=O)C(C)C)[C@H](O)[C@@H]3O)/C(C)=C\\C(C)=C\\C[C@@H]([C@@H](C)O)OC2=O)O[C@@H]1C"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Dichlorination of homo-orsellinic acid moiety"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/ja109445q"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Itarate chlorination followed by a bromination of tiacumicin B precourser",
+            "reactionSMARTS": "[CH3:1][CH2:2][c:3]1[ch:4][c:5]([OH:6])[ch:7][c:8]([OH:9])[c:10]1[C:11](=[O:12])[O:13][C@@H:14]1[C@@H:15]([OH:16])[C@@H:17]([O:18][CH3:19])[C@@H:20]([O:21][CH2:22]/[C:23]2=[C:24]/[CH:25]=[CH:26]/[CH2:27][C@@H:28]([OH:29])/[C:30]([CH3:31])=[CH:32]\\[C@@H:33]([CH2:34][CH3:35])[C@@H:36]([O:37][C@@H:38]3[O:39][C:40]([CH3:41])([CH3:42])[C@@H:43]([O:44][C:45](=[O:46])[CH:47]([CH3:48])[CH3:49])[C@@H:50]([OH:51])[C@@H:52]3[OH:53])/[C:54]([CH3:55])=[CH:56]\\[C:57]([CH3:58])=[CH:59]\\[CH2:60][C@@H:61]([C@@H:62]([CH3:63])[OH:64])[O:65][C:66]2=[O:67])[O:68][C@@H:69]1[CH3:70]>>[CH3:1][CH2:2][c:3]1[c:4](Cl)[c:5]([OH:6])[c:7](Br)[c:8]([OH:9])[c:10]1[C:11](=[O:12])[O:13][C@@H:14]1[C@@H:15]([OH:16])[C@@H:17]([O:18][CH3:19])[C@@H:20]([O:21][CH2:22]/[C:23]2=[C:24]/[CH:25]=[CH:26]/[CH2:27][C@@H:28]([OH:29])/[C:30]([CH3:31])=[CH:32]\\[C@@H:33]([CH2:34][CH3:35])[C@@H:36]([O:37][C@@H:38]3[O:39][C:40]([CH3:41])([CH3:42])[C@@H:43]([O:44][C:45](=[O:46])[CH:47]([CH3:48])[CH3:49])[C@@H:50]([OH:51])[C@@H:52]3[OH:53])/[C:54]([CH3:55])=[CH:56]\\[C:57]([CH3:58])=[CH:59]\\[CH2:60][C@@H:61]([C@@H:62]([CH3:63])[OH:64])[O:65][C:66]2=[O:67])[O:68][C@@H:69]1[CH3:70]",
+            "reactions": [
+                {
+                    "substrate": "CCc1cc(O)cc(O)c1C(=O)O[C@H]1[C@H](O)[C@H](OC)[C@H](OC/C2=C/C=C/C[C@H](O)/C(C)=C\\[C@H](CC)[C@@H](O[C@@H]3OC(C)(C)[C@@H](OC(=O)C(C)C)[C@H](O)[C@@H]3O)/C(C)=C\\C(C)=C\\C[C@@H]([C@@H](C)O)OC2=O)O[C@@H]1C",
+                    "products": [
+                        "CCc1c(Cl)c(O)c(Br)c(O)c1C(=O)O[C@H]1[C@H](O)[C@H](OC)[C@H](OC/C2=C/C=C/C[C@H](O)/C(C)=C\\[C@H](CC)[C@@H](O[C@@H]3OC(C)(C)[C@@H](OC(=O)C(C)C)[C@H](O)[C@@H]3O)/C(C)=C\\C(C)=C\\C[C@@H]([C@@H](C)O)OC2=O)O[C@@H]1C"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Chlorination and bromination of homo-orsellinic acid moiety"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/ja109445q"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Itarate dibromination of tiacumicin B precourser",
+            "reactionSMARTS": "[CH3:1][CH2:2][c:3]1[ch:4][c:5]([OH:6])[ch:7][c:8]([OH:9])[c:10]1[C:11](=[O:12])[O:13][C@@H:14]1[C@@H:15]([OH:16])[C@@H:17]([O:18][CH3:19])[C@@H:20]([O:21][CH2:22]/[C:23]2=[C:24]/[CH:25]=[CH:26]/[CH2:27][C@@H:28]([OH:29])/[C:30]([CH3:31])=[CH:32]\\[C@@H:33]([CH2:34][CH3:35])[C@@H:36]([O:37][C@@H:38]3[O:39][C:40]([CH3:41])([CH3:42])[C@@H:43]([O:44][C:45](=[O:46])[CH:47]([CH3:48])[CH3:49])[C@@H:50]([OH:51])[C@@H:52]3[OH:53])/[C:54]([CH3:55])=[CH:56]\\[C:57]([CH3:58])=[CH:59]\\[CH2:60][C@@H:61]([C@@H:62]([CH3:63])[OH:64])[O:65][C:66]2=[O:67])[O:68][C@@H:69]1[CH3:70]>>[CH3:1][CH2:2][c:3]1[c:4](Br)[c:5]([OH:6])[c:7](Br)[c:8]([OH:9])[c:10]1[C:11](=[O:12])[O:13][C@@H:14]1[C@@H:15]([OH:16])[C@@H:17]([O:18][CH3:19])[C@@H:20]([O:21][CH2:22]/[C:23]2=[C:24]/[CH:25]=[CH:26]/[CH2:27][C@@H:28]([OH:29])/[C:30]([CH3:31])=[CH:32]\\[C@@H:33]([CH2:34][CH3:35])[C@@H:36]([O:37][C@@H:38]3[O:39][C:40]([CH3:41])([CH3:42])[C@@H:43]([O:44][C:45](=[O:46])[CH:47]([CH3:48])[CH3:49])[C@@H:50]([OH:51])[C@@H:52]3[OH:53])/[C:54]([CH3:55])=[CH:56]\\[C:57]([CH3:58])=[CH:59]\\[CH2:60][C@@H:61]([C@@H:62]([CH3:63])[OH:64])[O:65][C:66]2=[O:67])[O:68][C@@H:69]1[CH3:70]",
+            "reactions": [
+                {
+                    "substrate": "CCc1cc(O)cc(O)c1C(=O)O[C@H]1[C@H](O)[C@H](OC)[C@H](OC/C2=C/C=C/C[C@H](O)/C(C)=C\\[C@H](CC)[C@@H](O[C@@H]3OC(C)(C)[C@@H](OC(=O)C(C)C)[C@H](O)[C@@H]3O)/C(C)=C\\C(C)=C\\C[C@@H]([C@@H](C)O)OC2=O)O[C@@H]1C",
+                    "products": [
+                        "CCc1c(Br)c(O)c(Br)c(O)c1C(=O)O[C@H]1[C@H](O)[C@H](OC)[C@H](OC/C2=C/C=C/C[C@H](O)/C(C)=C\\[C@H](CC)[C@@H](O[C@@H]3OC(C)(C)[C@@H](OC(=O)C(C)C)[C@H](O)[C@@H]3O)/C(C)=C\\C(C)=C\\C[C@@H]([C@@H](C)O)OC2=O)O[C@@H]1C"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Dibromination of homo-orsellinic acid moiety"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/ja109445q"
+                ]
+            }
+        }
+    ]
+}
