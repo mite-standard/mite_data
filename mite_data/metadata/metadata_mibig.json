@@ -2849,6 +2849,24 @@
         "status":"active"
       }
     ],
+    "BGC0001397":[
+      {
+        "enzyme_description":"Flavin-dependent halogenase",
+        "enzyme_ids":{
+          "genpept":"ALU98528.1",
+          "mibig":"BGC0001397",
+          "uniprot":"UPI00049230B8"
+        },
+        "enzyme_name":"SgcC3",
+        "enzyme_refs":[
+          "doi:10.1021/ja072311g"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000415",
+        "mite_url":"https://bioregistry.io/mite:MITE0000415",
+        "status":"active"
+      }
+    ],
     "BGC0001398":[
       {
         "enzyme_description":"Hydroxylase",
