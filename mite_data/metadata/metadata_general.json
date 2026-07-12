@@ -8881,6 +8881,28 @@
       "reaction_description":"Hydroxylation of diol-diterpene peregrinol",
       "status":"active",
       "tailoring":"Hydroxylation|Monooxygenation"
+    },
+    "MITE0000413":{
+      "accession":"MITE0000413",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD|NAD",
+      "domain":"Bacteria",
+      "enzyme_description":"Flavin-dependent halogenase",
+      "enzyme_ids":{
+        "genpept":"ADU85999.1",
+        "mibig":"BGC0000165",
+        "uniprot":"E9LIP1"
+      },
+      "enzyme_name":"TiaM",
+      "family":"Micromonosporaceae",
+      "kingdom":"Bacillati",
+      "order":"Micromonosporales",
+      "organism":"Dactylosporangium aurantiacum subsp. hamdenensis",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Itarate dichlorination of tiacumicin B precourser",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.28"

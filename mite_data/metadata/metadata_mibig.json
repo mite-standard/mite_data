@@ -539,6 +539,24 @@
         "status":"active"
       }
     ],
+    "BGC0000165":[
+      {
+        "enzyme_description":"Flavin-dependent halogenase",
+        "enzyme_ids":{
+          "genpept":"ADU85999.1",
+          "mibig":"BGC0000165",
+          "uniprot":"E9LIP1"
+        },
+        "enzyme_name":"TiaM",
+        "enzyme_refs":[
+          "doi:10.1021/ja109445q"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000413",
+        "mite_url":"https://bioregistry.io/mite:MITE0000413",
+        "status":"active"
+      }
+    ],
     "BGC0000177":[
       {
         "enzyme_description":"oxidoreductase",
