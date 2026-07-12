@@ -34,8 +34,7 @@
         ],
         "databaseIds": {
             "uniprot": "UPI000A29AD50",
-            "genpept": "CAH8278777.1",
-            "mibig": "BGC0002857"
+            "genpept": "CAH8278777.1"
         }
     },
     "reactions": [

@@ -36,7 +36,7 @@
             "reviewers": [
                 "0000-0001-6534-6609"
             ],
-            "comment": "Removed retired MIBiG BGC"
+            "comment": "Removed retired MIBiG BGC, replaced retired UniProtKB ID with UniParc"
         }
     ],
     "enzyme": {
@@ -46,7 +46,7 @@
             "doi:10.1002/cbic.201500467"
         ],
         "databaseIds": {
-            "uniprot": "A0A125SL25",
+            "uniprot": "UPI00076F78A1",
             "genpept": "AMH40426.1"
         },
         "cofactors": {

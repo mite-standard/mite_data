@@ -32,8 +32,7 @@
             "doi:10.1038/s41467-020-19153-6"
         ],
         "databaseIds": {
-            "uniprot": "UPI000A29E8C9",
-            "mibig": "BGC0002857"
+            "uniprot": "UPI000A29E8C9"
         }
     },
     "reactions": [
