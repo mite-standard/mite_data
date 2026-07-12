@@ -1,0 +1,182 @@
+{
+    "accession": "MITE0000414",
+    "status": "active",
+    "comment": "Hydroxylation of aminoacyl-S-carrier (3-chloro-\u03b2-tyrosyl-S-SgcC2) in the lidamycin pathway. Stereochemistry could not be depicted due to incompatibility with validation engine. Additional C-3-substituted substrates: iodine, bromine, chlorine, methyl, and non-substituted.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-07-02",
+            "contributors": [
+                "0009-0000-8651-1669"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "SgcC",
+        "description": "FADH2-dependent monooxygenases",
+        "references": [
+            "doi:10.1021/acs.biochem.6b00713"
+        ],
+        "auxiliaryEnzymes": [
+            {
+                "name": "SgcE6",
+                "description": "Flavin reductase",
+                "databaseIds": {
+                    "uniprot": "UPI0036DA773B",
+                    "genpept": "ALU98460.1"
+                }
+            }
+        ],
+        "databaseIds": {
+            "uniprot": "UPI00000BF692",
+            "genpept": "AAL06674.1"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD",
+                "NAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "Hydroxylation of 3-chloro-\u03b2-tyrosyl-S-SgcC2",
+            "reactionSMARTS": "[#7:1]-[#6:2](-[#6:11](-[#16:13]-[*])=[#8:12])-[#6:3]-[#6:4]1:[#6:10]:[#6:9]:[#6:7](-[#8:8]):[#6:6](-[Cl:15]):[#6:5]:1>>[#7:1]-[#6:2](-[#6:11](-[#16:13]-[*])=[#8:12])-[#6:3]-[#6:4]1:[#6:10]:[#6:9](-[#8]):[#6:7](-[#8:8]):[#6:6](-[Cl:15]):[#6:5]:1",
+            "reactions": [
+                {
+                    "substrate": "*SC(=O)C(N)Cc1ccc(O)c(Cl)c1",
+                    "products": [
+                        "*SC(=O)C(N)Cc1cc(O)c(O)c(Cl)c1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Hydroxylation of position 5"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Inference from genomic data and chemical structure",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acs.biochem.6b00713"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "Hydroxylation of 3-iodo-\u03b2-tyrosyl-S-SgcC2.",
+            "reactionSMARTS": "[#7:1]-[#6:2](-[#6:11](-[#16:13]-[*])=[#8:12])-[#6:3]-[#6:4]1:[#6:10]:[#6:9]:[#6:7](-[#8:8]):[#6:6](-[I:15]):[#6:5]:1>>[#7:1]-[#6:2](-[#6:11](-[#16:13]-[*])=[#8:12])-[#6:3]-[#6:4]1:[#6:10]:[#6:9](-[#8]):[#6:7](-[#8:8]):[#6:6](-[I:15]):[#6:5]:1",
+            "reactions": [
+                {
+                    "substrate": "*SC(=O)C(N)Cc1ccc(O)c(I)c1",
+                    "products": [
+                        "*SC(=O)C(N)Cc1cc(O)c(O)c(I)c1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Hydroxylation of position 5"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Inference from genomic data and chemical structure",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acs.biochem.6b00713"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "Hydroxylation of 3-bromo-\u03b2-tyrosyl-S-SgcC2.",
+            "reactionSMARTS": "[#7:1]-[#6:2](-[#6:11](-[#16:13]-[*])=[#8:12])-[#6:3]-[#6:4]1:[#6:10]:[#6:9]:[#6:7](-[#8:8]):[#6:6](-Br):[#6:5]:1>>[#7:1]-[#6:2](-[#6:11](-[#16:13]-[*])=[#8:12])-[#6:3]-[#6:4]1:[#6:10]:[#6:9](-[#8]):[#6:7](-[#8:8]):[#6:6](-Br):[#6:5]:1",
+            "reactions": [
+                {
+                    "substrate": "*SC(=O)C(N)Cc1ccc(O)c(Br)c1",
+                    "products": [
+                        "*SC(=O)C(N)Cc1cc(O)c(O)c(Br)c1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Hydroxylation of position 5"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Inference from genomic data and chemical structure",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acs.biochem.6b00713"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "Hydroxylation of 3-methyl-\u03b2-tyrosyl-S-SgcC2.",
+            "reactionSMARTS": "[#7:1]-[#6:2](-[#6:11](-[#16:13]-[*])=[#8:12])-[#6:3]-[#6:4]1:[#6:10]:[#6:9]:[#6:7](-[#8:8]):[#6:6](-[#6:15]):[#6:5]:1>>[#7:1]-[#6:2](-[#6:11](-[#16:13]-[*])=[#8:12])-[#6:3]-[#6:4]1:[#6:10]:[#6:9](-[#8]):[#6:7](-[#8:8]):[#6:6](-[#6:15]):[#6:5]:1",
+            "reactions": [
+                {
+                    "substrate": "*SC(=O)C(N)Cc1ccc(O)c(C)c1",
+                    "products": [
+                        "*SC(=O)C(N)Cc1cc(C)c(O)c(O)c1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Hydroxylation of position 5"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Inference from genomic data and chemical structure",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acs.biochem.6b00713"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "Hydroxylation of \u03b2-tyrosyl-S-SgcC2.",
+            "reactionSMARTS": "[#7:1]-[#6:2](-[#6:11](-[#16:13]-[*])=[#8:12])-[#6:3]-[#6:4]1:[#6:10]:[#6:9]:[#6:7](-[#8:8]):[#6:6]:[#6:5]:1>>[#7:1]-[#6:2](-[#6:11](-[#16:13]-[*])=[#8:12])-[#6:3]-[#6:4]1:[#6:10]:[#6:9](-[#8]):[#6:7](-[#8:8]):[#6:6]:[#6:5]:1",
+            "reactions": [
+                {
+                    "substrate": "*SC(=O)C(N)Cc1ccc(O)cc1",
+                    "products": [
+                        "*SC(=O)C(N)Cc1ccc(O)c(O)c1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Hydroxylation of position 5"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Inference from genomic data and chemical structure",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acs.biochem.6b00713"
+                ]
+            }
+        }
+    ]
+}
