@@ -1,6 +1,7 @@
 {
     "accession": "MITE0000161",
     "status": "active",
+    "comment": "Previously referenced retired MIBiG ID BGC0003093.",
     "changelog": [
         {
             "version": "1",
@@ -13,6 +14,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer 2 reworked reaction SMARTS numbering, replaced CXSMARTS with normal SMARTS, reaciont passes."
+        },
+        {
+            "version": "2",
+            "date": "2026-07-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed retired MIBIG ID."
         }
     ],
     "enzyme": {
@@ -22,8 +34,7 @@
             "doi:10.1021/acs.orglett.2c01050"
         ],
         "databaseIds": {
-            "genpept": "UPG58740.1",
-            "mibig": "BGC0003093"
+            "genpept": "UPG58740.1"
         }
     },
     "reactions": [

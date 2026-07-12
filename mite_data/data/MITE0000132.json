@@ -1,6 +1,7 @@
 {
     "accession": "MITE0000132",
     "status": "active",
+    "comment": "Previously referenced retired MIBiG ID BGC0002857.",
     "changelog": [
         {
             "version": "1",
@@ -12,6 +13,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Initial entry. Reviewer 1 fixed reaction SMARTS numbering and database IDs. The original submission specified RefSeq ID XP_020870152.1, which was changed to its GenPept equivalent."
+        },
+        {
+            "version": "2",
+            "date": "2026-07-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed retired MIBIG ID."
         }
     ],
     "enzyme": {
@@ -22,8 +34,7 @@
         ],
         "databaseIds": {
             "uniprot": "D7MUV7",
-            "genpept": "EFH40094.1",
-            "mibig": "BGC0002857"
+            "genpept": "EFH40094.1"
         }
     },
     "reactions": [

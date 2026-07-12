@@ -1,7 +1,7 @@
 {
     "accession": "MITE0000286",
     "status": "active",
-    "comment": "Conversion of amino-carboxyl moiety to its oxime-derivative through two sequential N-hydroxylations followed by a decarboxylative dehydration.",
+    "comment": "Diverging sequences between UniProt ID 'B8NM73' and GenPept ID 'EED49424.1' due to erroneous gene model prediction of the latter.",
     "changelog": [
         {
             "version": "1",
@@ -13,6 +13,17 @@
                 "0000-0002-9747-3423"
             ],
             "comment": "New entry."
+        },
+        {
+            "version": "2",
+            "date": "2026-07-11",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added comment re diverging sequences between Genpept and UniProt entries."
         }
     ],
     "enzyme": {

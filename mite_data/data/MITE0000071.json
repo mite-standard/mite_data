@@ -35,6 +35,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Removed MIBiG cross-reference due to genpept ID mismatch."
+        },
+        {
+            "version": "4",
+            "date": "2026-07-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Replaced retired UniProtKB ID with UniParc ID."
         }
     ],
     "enzyme": {
@@ -44,7 +55,7 @@
             "doi:10.1038/nchembio.1564"
         ],
         "databaseIds": {
-            "uniprot": "U6BGC3",
+            "uniprot": "UPI0003C95F91",
             "genpept": "AHA34035.1"
         },
         "cofactors": {

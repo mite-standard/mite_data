@@ -1,6 +1,7 @@
 {
     "accession": "MITE0000165",
     "status": "active",
+    "comment": "Previously referenced retired MIBiG ID BGC0003093.",
     "changelog": [
         {
             "version": "1",
@@ -12,6 +13,17 @@
                 "0000-0003-0443-9902"
             ],
             "comment": "Initial entry. Reviewer fixed reactionSMARTS:reactionSMARTS."
+        },
+        {
+            "version": "2",
+            "date": "2026-07-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed retired MIBIG ID."
         }
     ],
     "enzyme": {
@@ -21,8 +33,7 @@
             "doi:10.1021/acs.orglett.2c01050"
         ],
         "databaseIds": {
-            "genpept": "UPG58743.1",
-            "mibig": "BGC0003093"
+            "genpept": "UPG58743.1"
         }
     },
     "reactions": [

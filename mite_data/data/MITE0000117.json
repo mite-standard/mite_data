@@ -1,6 +1,7 @@
 {
     "accession": "MITE0000117",
     "status": "active",
+    "comment": "Previously referenced retired MIBiG ID BGC0002069.",
     "changelog": [
         {
             "version": "1",
@@ -36,17 +37,27 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Homogenized enzyme descriptions"
+        },
+        {
+            "version": "4",
+            "date": "2025-07-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed retired MIBiG BGC ID."
         }
     ],
     "enzyme": {
         "name": "StoR",
-        "description": "NADPH-dependent oxidoreductase",
+        "description": "Oxidoreductase",
         "references": [
             "doi:10.1002/anie.201914154"
         ],
         "databaseIds": {
-            "genpept": "TMU76675.1",
-            "mibig": "BGC0002069"
+            "genpept": "TMU76675.1"
         },
         "cofactors": {
             "organic": [

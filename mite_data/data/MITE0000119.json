@@ -25,6 +25,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Added in enzyme co-factors, auxiliary enzymes and new references. Reviewer 2 removed MIBiG BGC crosslink - entry does not exist."
+        },
+        {
+            "version": "3",
+            "date": "2025-07-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Replaced retired UniProtKB ID with UniParc ID."
         }
     ],
     "enzyme": {
@@ -39,13 +50,13 @@
                 "name": "ScyR4",
                 "description": "Isochorismatase-like enzyme",
                 "databaseIds": {
-                    "uniprot": "A0A8A5D5K7",
+                    "uniprot": "UPI001BB71B94",
                     "genpept": "QTE76004.1"
                 }
             }
         ],
         "databaseIds": {
-            "uniprot": "A0A8A5D4W2",
+            "uniprot": "UPI001BB5DFC0",
             "genpept": "QTE75998.1"
         },
         "cofactors": {

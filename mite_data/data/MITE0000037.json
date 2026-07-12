@@ -14,6 +14,17 @@
                 "0000-0002-9747-3423"
             ],
             "comment": "Initial entry. Reviewer 1 fixed reaction SMARTS and reworked the reactions to take the actual vancomycin precursor instead of a truncated example structure. Reviewer 2 changed text of enzyme description and enzyme reaction description."
+        },
+        {
+            "version": "2",
+            "date": "2026-07-02",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Fixed retired UniProtKB accession with UniParc accession."
         }
     ],
     "enzyme": {
@@ -25,7 +36,7 @@
             "doi:10.1016/S1074-5521(02)00270-3"
         ],
         "databaseIds": {
-            "uniprot": "P96565",
+            "uniprot": "UPI00000BB433",
             "genpept": "AEI58873.1",
             "mibig": "BGC0000455"
         }

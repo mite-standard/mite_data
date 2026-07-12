@@ -1,6 +1,7 @@
 {
     "accession": "MITE0000194",
     "status": "active",
+    "comment": "Previously associated with retired MIBIG ID BGC0003093",
     "changelog": [
         {
             "version": "1",
@@ -23,6 +24,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Added cofactor information"
+        },
+        {
+            "version": "2",
+            "date": "2026-07-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed retired MIBIG ID."
         }
     ],
     "enzyme": {
@@ -33,8 +45,7 @@
         ],
         "databaseIds": {
             "uniprot": "UPI0020472753",
-            "genpept": "UPG58744.1",
-            "mibig": "BGC0003093"
+            "genpept": "UPG58744.1"
         },
         "cofactors": {
             "inorganic": [

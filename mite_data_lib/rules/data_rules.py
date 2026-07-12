@@ -257,12 +257,21 @@ def ids_matching(
     genpept = data["enzyme"]["databaseIds"].get("genpept")
 
     if uniprot and genpept:
-        if not ctx.seq_service.seq_match(uniprot=uniprot, genpept=genpept):
+        try:
+            if not ctx.seq_service.seq_match(uniprot=uniprot, genpept=genpept):
+                e.append(
+                    ValidationIssue(
+                        severity="error",
+                        location=data["accession"],
+                        message=f"Uniprot ID '{uniprot}' and GenPept ID '{genpept}' resolve to different protein sequences - investigate!",
+                    )
+                )
+        except Exception as err:
             e.append(
                 ValidationIssue(
                     severity="error",
                     location=data["accession"],
-                    message=f"Uniprot ID '{uniprot}' and GenPept ID '{genpept}' resolve to different protein sequences - investigate!",
+                    message=f"{err!s}",
                 )
             )
 

@@ -1,7 +1,7 @@
 {
     "accession": "MITE0000173",
     "status": "active",
-    "comment": "Defining step of scabrirubin biosynthesis",
+    "comment": "Defining step of scabrirubin biosynthesis. Previously referenced retired MIBiG ID BGC0003121.",
     "changelog": [
         {
             "version": "1",
@@ -35,18 +35,28 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Added cofactor information"
+        },
+        {
+            "version": "4",
+            "date": "2026-07-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed retired MIBIG ID."
         }
     ],
     "enzyme": {
-        "name": "ScaB aka EmbB",
+        "name": "ScaB/EmbB",
         "description": "Cytochrome P450",
         "references": [
             "doi:10.1039/D4SC03469D"
         ],
         "databaseIds": {
             "uniprot": "UPI00039B9B9D",
-            "genpept": "MYS84939.1",
-            "mibig": "BGC0003121"
+            "genpept": "MYS84939.1"
         },
         "cofactors": {
             "inorganic": [

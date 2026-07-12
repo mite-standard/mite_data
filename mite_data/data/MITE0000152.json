@@ -1,5 +1,6 @@
 {
     "accession": "MITE0000152",
+    "comment": "Previously referenced retired MIBiG ID BGC0003035.",
     "status": "active",
     "changelog": [
         {
@@ -35,6 +36,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Replaced retired UniProtKB ID with UniParc ID"
+        },
+        {
+            "version": "4",
+            "date": "2026-07-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed retired MIBIG ID."
         }
     ],
     "enzyme": {
@@ -45,8 +57,7 @@
         ],
         "databaseIds": {
             "uniprot": "UPI00062E048D",
-            "genpept": "AKH82808.1",
-            "mibig": "BGC0003035"
+            "genpept": "AKH82808.1"
         },
         "cofactors": {
             "inorganic": [

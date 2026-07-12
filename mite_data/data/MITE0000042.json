@@ -25,6 +25,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Adjusted reaction depiction to implement editorial guidelines (no depiction of non-covalent bound cofactors)."
+        },
+        {
+            "version": "3",
+            "date": "2026-07-02",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Fixed retired UniProtKB accession with UniParc accession."
         }
     ],
     "enzyme": {
@@ -37,7 +48,7 @@
             "doi:10.1021/bi010050w"
         ],
         "databaseIds": {
-            "uniprot": "P96564",
+            "uniprot": "UPI00000BE4DE",
             "genpept": "AEI58872.1",
             "mibig": "BGC0000455"
         }

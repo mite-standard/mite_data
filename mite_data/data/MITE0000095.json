@@ -1,6 +1,7 @@
 {
     "accession": "MITE0000095",
     "status": "active",
+    "comment": "Previously referenced retired MIBiG entry BGC0001378.",
     "changelog": [
         {
             "version": "1",
@@ -24,6 +25,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Homogenized enzyme descriptions"
+        },
+        {
+            "version": "3",
+            "date": "2025-07-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed retired MIBiG BGC."
         }
     ],
     "enzyme": {
@@ -34,8 +46,7 @@
         ],
         "databaseIds": {
             "uniprot": "A0A125SA14",
-            "genpept": "AME18010.1",
-            "mibig": "BGC0001378"
+            "genpept": "AME18010.1"
         }
     },
     "reactions": [

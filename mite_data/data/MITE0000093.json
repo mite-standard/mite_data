@@ -1,7 +1,7 @@
 {
     "accession": "MITE0000093",
     "status": "active",
-    "comment": "Note: structural revision of phormidolide A -- 10.1039/d0cc03055d",
+    "comment": "Note: structural revision of phormidolide A -- 10.1039/d0cc03055d. Previously referenced retired MIBiG entry BGC0001350.",
     "changelog": [
         {
             "version": "1",
@@ -26,6 +26,17 @@
                 "0000-0002-9747-3423"
             ],
             "comment": "Added cofactor information"
+        },
+        {
+            "version": "3",
+            "date": "2025-07-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed retired MIBiG BGC, replaced retired UniProtKB ID with UniParc"
         }
     ],
     "enzyme": {
@@ -35,9 +46,8 @@
             "doi:10.1002/cbic.201500467"
         ],
         "databaseIds": {
-            "uniprot": "A0A125SL25",
-            "genpept": "AMH40426.1",
-            "mibig": "BGC0001350"
+            "uniprot": "UPI00076F78A1",
+            "genpept": "AMH40426.1"
         },
         "cofactors": {
             "organic": [

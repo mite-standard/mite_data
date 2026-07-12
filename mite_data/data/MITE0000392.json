@@ -12,6 +12,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "New entry. Reviewer 1 replaced reaction SMILES with reaction SMARTS, added Genpept and UniProt IDs, improved descriptions."
+        },
+        {
+            "version": "2",
+            "date": "2026-07-11",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Fixed Genpept and UniProt IDs."
         }
     ],
     "enzyme": {
@@ -21,8 +32,8 @@
             "doi:10.1371/journal.pone.0042090"
         ],
         "databaseIds": {
-            "uniprot": "L0MYS8",
-            "genpept": "BAM71037.1"
+            "uniprot": "L0MXJ1",
+            "genpept": "BAM71029.1"
         },
         "cofactors": {
             "organic": [

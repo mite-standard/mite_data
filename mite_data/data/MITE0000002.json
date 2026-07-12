@@ -35,6 +35,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Removed MIBiG reference since protein is not referenced there."
+        },
+        {
+            "version": "4",
+            "date": "2026-07-02",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Fixed retired UniProtKB accession with UniParc accession."
         }
     ],
     "enzyme": {
@@ -45,7 +56,7 @@
             "doi:10.1016/S1074-5521(01)00040-0"
         ],
         "databaseIds": {
-            "uniprot": "L8PIQ8",
+            "uniprot": "UPI0002ABF9ED",
             "genpept": "ELS56114.1"
         },
         "cofactors": {

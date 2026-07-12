@@ -1,6 +1,7 @@
 {
     "accession": "MITE0000128",
     "status": "active",
+    "comment": "Previously referenced retired MIBiG ID BGC0002841.",
     "changelog": [
         {
             "version": "1",
@@ -27,6 +28,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Added cofactor information"
+        },
+        {
+            "version": "3",
+            "date": "2026-07-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed retired MIBIG ID."
         }
     ],
     "enzyme": {
@@ -36,8 +48,7 @@
             "doi:10.1128/aem.00806-22"
         ],
         "databaseIds": {
-            "genpept": "UUL71895.1",
-            "mibig": "BGC0002841"
+            "genpept": "UUL71895.1"
         },
         "cofactors": {
             "organic": [

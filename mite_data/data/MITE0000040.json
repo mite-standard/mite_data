@@ -34,6 +34,17 @@
                 "0000-0002-9747-3423"
             ],
             "comment": "Added cofactor information. Fixed reaction SMARTS indexing."
+        },
+        {
+            "version": "4",
+            "date": "2026-07-02",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Fixed retired UniProtKB accession with UniParc accession."
         }
     ],
     "enzyme": {
@@ -45,7 +56,7 @@
             "doi:10.1039/C4OB00474D"
         ],
         "databaseIds": {
-            "uniprot": "P96563",
+            "uniprot": "UPI000003CAA4",
             "genpept": "AEI58871.1",
             "mibig": "BGC0000455"
         },
