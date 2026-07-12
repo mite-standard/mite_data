@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000413",
     "status": "active",
     "comment": "Iterate halogenation of a substrate named \"compund 9\" defined as unchlorinated tiacumicin B in the tiacumicin B pathway. Non subtrate: free standing orsellinic Acid, I, F.  The flavin auxiliary enzyme is no itdentified yet, therefore flavin-reductase SsuE gen was expressed instead.  ",
     "changelog": [
