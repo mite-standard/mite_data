@@ -8924,6 +8924,28 @@
       "reaction_description":"Hydroxylation of 3-chloro-β-tyrosyl-S-SgcC2",
       "status":"active",
       "tailoring":"Hydroxylation"
+    },
+    "MITE0000415":{
+      "accession":"MITE0000415",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Flavin-dependent halogenase",
+      "enzyme_ids":{
+        "genpept":"ALU98528.1",
+        "mibig":"BGC0001397",
+        "uniprot":"UPI00049230B8"
+      },
+      "enzyme_name":"SgcC3",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces globisporus C-1027",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Chlorination of β-tyrosyl-S-SgcC2. Stereochemistry is determined by SgcC1, therefore SgcC3 functions independently of stereochemistry. ",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.28"
