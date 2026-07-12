@@ -31,7 +31,7 @@
       "enzyme_description":"O-methyltransferase",
       "enzyme_ids":{
         "genpept":"ELS56114.1",
-        "uniprot":"L8PIQ8"
+        "uniprot":"UPI0002ABF9ED"
       },
       "enzyme_name":"AviG4",
       "family":"Streptomycetaceae",
@@ -250,7 +250,6 @@
       "enzyme_description":"Flavoprotein monooxygenase",
       "enzyme_ids":{
         "genpept":"AAM33672.1",
-        "mibig":"BGC0000230",
         "uniprot":"Q8KSX7"
       },
       "enzyme_name":"GrhO5",
@@ -272,7 +271,6 @@
       "enzyme_description":"Flavoprotein monooxygenase",
       "enzyme_ids":{
         "genpept":"AAM33673.1",
-        "mibig":"BGC0000230",
         "uniprot":"Q8KSX5"
       },
       "enzyme_name":"GrhO6",
@@ -537,13 +535,13 @@
       "enzyme_ids":{
         "genpept":"AEI58869.1",
         "mibig":"BGC0000311",
-        "uniprot":"F8STX7"
+        "uniprot":"UPI00021436EF"
       },
       "enzyme_name":"OxyB",
       "family":"Pseudonocardiaceae",
       "kingdom":"Bacillati",
       "order":"Pseudonocardiales",
-      "organism":"Amycolatopsis orientalis",
+      "organism":"Amycolatopsis orientalis HCCB10007",
       "phylum":"Actinomycetota",
       "reaction_description":"Introduces the first crosslink (biaryl ether) between hpg4 and bht6 of the balhimycin precursor.",
       "status":"retired",
@@ -559,13 +557,13 @@
       "enzyme_ids":{
         "genpept":"AEI58868.1",
         "mibig":"BGC0000311",
-        "uniprot":"F8STX6"
+        "uniprot":"UPI00021436EE"
       },
       "enzyme_name":"OxyA",
       "family":"Pseudonocardiaceae",
       "kingdom":"Bacillati",
       "order":"Pseudonocardiales",
-      "organism":"Amycolatopsis orientalis",
+      "organism":"Amycolatopsis orientalis HCCB10007",
       "phylum":"Actinomycetota",
       "reaction_description":"Introduces the second crosslink (biaryl ether).",
       "status":"retired",
@@ -801,13 +799,13 @@
       "enzyme_ids":{
         "genpept":"AEI58873.1",
         "mibig":"BGC0000455",
-        "uniprot":"P96565"
+        "uniprot":"UPI00000BB433"
       },
       "enzyme_name":"GtfE",
       "family":"Pseudonocardiaceae",
       "kingdom":"Bacillati",
       "order":"Pseudonocardiales",
-      "organism":"Amycolatopsis orientalis",
+      "organism":"Amycolatopsis orientalis HCCB10007",
       "phylum":"Actinomycetota",
       "reaction_description":"Transfers glucose onto hpg4 in the vancomycin and teicoplanin aglycone.",
       "status":"active",
@@ -823,13 +821,13 @@
       "enzyme_ids":{
         "genpept":"AEI58868.1",
         "mibig":"BGC0000455",
-        "uniprot":"F8STX6"
+        "uniprot":"UPI00021436EE"
       },
       "enzyme_name":"OxyA",
       "family":"Pseudonocardiaceae",
       "kingdom":"Bacillati",
       "order":"Pseudonocardiales",
-      "organism":"Amycolatopsis orientalis",
+      "organism":"Amycolatopsis orientalis HCCB10007",
       "phylum":"Actinomycetota",
       "reaction_description":"Introduces the second biaryl-ether crosslink between bht2 and hpg4 in the vancomycin and balhimycin precursor. The reaction occurs while the vancomycin precursor is bound to the PCP of module 6 or 7. The enzyme only accepts the chlorinated precursor.",
       "status":"active",
@@ -845,13 +843,13 @@
       "enzyme_ids":{
         "genpept":"AEI58876.1",
         "mibig":"BGC0000455",
-        "uniprot":"E9LY85"
+        "uniprot":"UPI0001F73423"
       },
       "enzyme_name":"Vmt",
       "family":"Pseudonocardiaceae",
       "kingdom":"Bacillati",
       "order":"Pseudonocardiales",
-      "organism":"Amycolatopsis orientalis",
+      "organism":"Amycolatopsis orientalis HCCB10007",
       "phylum":"Actinomycetota",
       "reaction_description":"Methylates the N-terminus of the vancomycin backbone. Substrate specificity not known in detail. SMARTS has been designed to be not too unspecific by accident. True substrate specificity might be broader than assumed here.",
       "status":"active",
@@ -867,13 +865,13 @@
       "enzyme_ids":{
         "genpept":"AEI58871.1",
         "mibig":"BGC0000455",
-        "uniprot":"P96563"
+        "uniprot":"UPI000003CAA4"
       },
       "enzyme_name":"VhaA",
       "family":"Pseudonocardiaceae",
       "kingdom":"Bacillati",
       "order":"Pseudonocardiales",
-      "organism":"Amycolatopsis orientalis",
+      "organism":"Amycolatopsis orientalis HCCB10007",
       "phylum":"Actinomycetota",
       "reaction_description":"Chlorinates bht 2 and bht 6 of vancomycin. The bond to the PCP domain of module 2 of the vancomycin NRPS might be important for the reaction. There is no study on the substrate specificity for the second chlorination reaction in vancomycin biosynthesis on bht 6 so far.",
       "status":"active",
@@ -889,13 +887,13 @@
       "enzyme_ids":{
         "genpept":"AEI58869.1",
         "mibig":"BGC0000455",
-        "uniprot":"F8STX7"
+        "uniprot":"UPI00021436EF"
       },
       "enzyme_name":"OxyB",
       "family":"Pseudonocardiaceae",
       "kingdom":"Bacillati",
       "order":"Pseudonocardiales",
-      "organism":"Amycolatopsis orientalis",
+      "organism":"Amycolatopsis orientalis HCCB10007",
       "phylum":"Actinomycetota",
       "reaction_description":"Introduces the first biaryl-ether crosslink between hpg4 and bht6 in the vancomycin and balhimycin precursors. Reaction occurs while the backbone precursor is bound to the PCP domain of module 6 or 7. The link to the PCP domain is required for the reaction.",
       "status":"active",
@@ -911,13 +909,13 @@
       "enzyme_ids":{
         "genpept":"AEI58872.1",
         "mibig":"BGC0000455",
-        "uniprot":"P96564"
+        "uniprot":"UPI00000BE4DE"
       },
       "enzyme_name":"GtfD",
       "family":"Pseudonocardiaceae",
       "kingdom":"Bacillati",
       "order":"Pseudonocardiales",
-      "organism":"Amycolatopsis orientalis",
+      "organism":"Amycolatopsis orientalis HCCB10007",
       "phylum":"Actinomycetota",
       "reaction_description":"Transfers vancosamine onto glucose on hpg4 of vancomycin pseudoaglycone.",
       "status":"active",
@@ -1548,7 +1546,7 @@
       "enzyme_description":"Flavin-dependent halogenase",
       "enzyme_ids":{
         "genpept":"AHA34035.1",
-        "uniprot":"U6BGC3"
+        "uniprot":"UPI0003C95F91"
       },
       "enzyme_name":"Bmp2",
       "family":"Pseudoalteromonadaceae",
@@ -1592,7 +1590,7 @@
       "enzyme_ids":{
         "genpept":"CCC55916.1",
         "mibig":"BGC0000973",
-        "uniprot":"H1ZYT5"
+        "uniprot":"UPI000249FC56"
       },
       "enzyme_name":"ClmAH",
       "family":"Streptomycetaceae",
@@ -1614,7 +1612,7 @@
       "enzyme_ids":{
         "genpept":"CCC55912.1",
         "mibig":"BGC0000973",
-        "uniprot":"H1ZYV7"
+        "uniprot":"UPI000249FC52"
       },
       "enzyme_name":"ClmM1",
       "family":"Streptomycetaceae",
@@ -1636,7 +1634,7 @@
       "enzyme_ids":{
         "genpept":"CCC55909.1",
         "mibig":"BGC0000973",
-        "uniprot":"H1ZYV4"
+        "uniprot":"UPI000249FC4F"
       },
       "enzyme_name":"ClmM2",
       "family":"Streptomycetaceae",
@@ -2031,8 +2029,7 @@
       "enzyme_description":"FAD-dependent halogenase",
       "enzyme_ids":{
         "genpept":"AMH40426.1",
-        "mibig":"BGC0001350",
-        "uniprot":"A0A125SL25"
+        "uniprot":"UPI00076F78A1"
       },
       "enzyme_name":"PhmJ",
       "family":"Leptolyngbyaceae",
@@ -2053,7 +2050,6 @@
       "enzyme_description":"Iterative cofactorless dioxygenase",
       "enzyme_ids":{
         "genpept":"AME18011.1",
-        "mibig":"BGC0001378",
         "uniprot":"A0A125SA15"
       },
       "enzyme_name":"TnmK2",
@@ -2075,7 +2071,6 @@
       "enzyme_description":"Hydrolase",
       "enzyme_ids":{
         "genpept":"AME18010.1",
-        "mibig":"BGC0001378",
         "uniprot":"A0A125SA14"
       },
       "enzyme_name":"TnmK1",
@@ -2094,10 +2089,9 @@
       "cofactors_inorganic":"N/A",
       "cofactors_organic":"N/A",
       "domain":"Bacteria",
-      "enzyme_description":"Cofactorless oxygenase",
+      "enzyme_description":"Oxygenase",
       "enzyme_ids":{
         "genpept":"AME18009.1",
-        "mibig":"BGC0001378",
         "uniprot":"UPI00076F29F8"
       },
       "enzyme_name":"TnmJ",
@@ -2161,7 +2155,6 @@
       "enzyme_description":"Pseudouridine synthase",
       "enzyme_ids":{
         "genpept":"AVT42379.1",
-        "mibig":"BGC0001476",
         "uniprot":"UPI000D22683E"
       },
       "enzyme_name":"PumJ",
@@ -2226,7 +2219,6 @@
       "enzyme_description":"Flavoprotein monooxygenase",
       "enzyme_ids":{
         "genpept":"AWF83809.1",
-        "mibig":"BGC0001487",
         "uniprot":"A0A2S1JZI9"
       },
       "enzyme_name":"TrlE",
@@ -2248,7 +2240,6 @@
       "enzyme_description":"Decarboxylase/Hydrolase",
       "enzyme_ids":{
         "genpept":"AWF83810.1",
-        "mibig":"BGC0001487",
         "uniprot":"A0A2S1JZI6"
       },
       "enzyme_name":"TrlF",
@@ -2267,10 +2258,9 @@
       "cofactors_inorganic":"N/A",
       "cofactors_organic":"N/A",
       "domain":"Bacteria",
-      "enzyme_description":"Oxygenase component of flavoprotein monooxygenase TrlCD",
+      "enzyme_description":"Flavoprotein monooxygenase",
       "enzyme_ids":{
         "genpept":"AWF83807.1",
-        "mibig":"BGC0001487",
         "uniprot":"A0A2S1JZG6"
       },
       "enzyme_name":"TrlC",
@@ -2314,7 +2304,6 @@
       "enzyme_description":"Terpene cyclase",
       "enzyme_ids":{
         "genpept":"ATN39899.1",
-        "mibig":"BGC0001664",
         "uniprot":"A0A2D1CM82"
       },
       "enzyme_name":"MstE",
@@ -2403,7 +2392,7 @@
       "enzyme_ids":{
         "genpept":"AXG22420.1",
         "mibig":"BGC0002024",
-        "uniprot":"A0A3S7PZH4"
+        "uniprot":"UPI00100571B0"
       },
       "enzyme_name":"NgnN4",
       "family":"Nocardiaceae",
@@ -2425,7 +2414,7 @@
       "enzyme_ids":{
         "genpept":"AXG22416.1",
         "mibig":"BGC0002024",
-        "uniprot":"A0A3S7PZF2"
+        "uniprot":"UPI0010058256"
       },
       "enzyme_name":"NgnO3",
       "family":"Nocardiaceae",
@@ -2447,7 +2436,7 @@
       "enzyme_ids":{
         "genpept":"AXG22409.1",
         "mibig":"BGC0002024",
-        "uniprot":"A0A3S7Q0I4"
+        "uniprot":"UPI0010052BAD"
       },
       "enzyme_name":"Ngnp1",
       "family":"Nocardiaceae",
@@ -2469,7 +2458,7 @@
       "enzyme_ids":{
         "genpept":"AXG22404.1",
         "mibig":"BGC0002024",
-        "uniprot":"A0A3S7PZF0"
+        "uniprot":"UPI001005A892"
       },
       "enzyme_name":"NgnD",
       "family":"Nocardiaceae",
@@ -2491,7 +2480,7 @@
       "enzyme_ids":{
         "genpept":"AXG22413.1",
         "mibig":"BGC0002024",
-        "uniprot":"A0A3S7PZH2"
+        "uniprot":"UPI00100556BE"
       },
       "enzyme_name":"NgnM",
       "family":"Nocardiaceae",
@@ -2513,7 +2502,7 @@
       "enzyme_ids":{
         "genpept":"AXG22415.1",
         "mibig":"BGC0002024",
-        "uniprot":"A0A3S7PZF3"
+        "uniprot":"UPI00100569C8"
       },
       "enzyme_name":"NgnP2",
       "family":"Nocardiaceae",
@@ -2529,12 +2518,11 @@
       "accession":"MITE0000116",
       "class_name":"Gammaproteobacteria",
       "cofactors_inorganic":"N/A",
-      "cofactors_organic":"N/A",
+      "cofactors_organic":"NADP",
       "domain":"Bacteria",
-      "enzyme_description":"NADPH-dependent oxidoreductase",
+      "enzyme_description":"Oxidoreductase",
       "enzyme_ids":{
-        "genpept":"TMU80020.1",
-        "mibig":"BGC0002069"
+        "genpept":"TMU80020.1"
       },
       "enzyme_name":"StoC",
       "family":"Pseudomonadaceae",
@@ -2552,10 +2540,9 @@
       "cofactors_inorganic":"N/A",
       "cofactors_organic":"NADP",
       "domain":"Bacteria",
-      "enzyme_description":"NADPH-dependent oxidoreductase",
+      "enzyme_description":"Oxidoreductase",
       "enzyme_ids":{
-        "genpept":"TMU76675.1",
-        "mibig":"BGC0002069"
+        "genpept":"TMU76675.1"
       },
       "enzyme_name":"StoR",
       "family":"Pseudomonadaceae",
@@ -2573,10 +2560,9 @@
       "cofactors_inorganic":"N/A",
       "cofactors_organic":"NADP",
       "domain":"Bacteria",
-      "enzyme_description":"NADPH-dependent oxidoreductase",
+      "enzyme_description":"Oxidoreductase",
       "enzyme_ids":{
         "genpept":"TNB95040.1",
-        "mibig":"BGC0002076",
         "uniprot":"A0A5C4KWK7"
       },
       "enzyme_name":"AcaR",
@@ -2598,7 +2584,7 @@
       "enzyme_description":"AsaB-like alphaKGDD",
       "enzyme_ids":{
         "genpept":"QTE75998.1",
-        "uniprot":"A0A8A5D4W2"
+        "uniprot":"UPI001BB5DFC0"
       },
       "enzyme_name":"ScyL2",
       "family":"Leotiomycetes",
@@ -2613,14 +2599,13 @@
     "MITE0000120":{
       "accession":"MITE0000120",
       "class_name":"Ascomycota",
-      "cofactors_inorganic":"N/A",
-      "cofactors_organic":"N/A",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"a-Ketoglutaric acid",
       "domain":"Eukaryota",
-      "enzyme_description":"AsaB-like alphaKGDD",
+      "enzyme_description":"Alpha-ketoglutarate dependent dioxygenase",
       "enzyme_ids":{
         "genpept":"QTE75983.1",
-        "mibig":"BGC0002224",
-        "uniprot":"A0A7R6QUG3"
+        "uniprot":"UPI001AFA59BC"
       },
       "enzyme_name":"ZopL9/ZopK",
       "family":"Sordariomycetes",
@@ -2628,7 +2613,7 @@
       "order":"Pezizomycotina",
       "organism":"Diffractella curvata",
       "phylum":"Dikarya",
-      "reaction_description":"Catalyzes a ring contraction of the nine-membered central ring to yield a octadride ring",
+      "reaction_description":"Catalyzes ring contraction of a nine-membered ring to an eight-membered ring.",
       "status":"active",
       "tailoring":"Hydroxylation|Ring contraction"
     },
@@ -2758,7 +2743,7 @@
       "family":"Hapalosiphonaceae",
       "kingdom":"Bacillati",
       "order":"Nostocales",
-      "organism":"Aetokthonos hydrillicola Thurmond2011",
+      "organism":"Aetokthonos hydrillicola (strain Thurmond2011)",
       "phylum":"Cyanobacteriota",
       "reaction_description":"Bromination of L-tryptophan, leading to 5-bromotryptophan",
       "status":"active",
@@ -2780,7 +2765,7 @@
       "family":"Hapalosiphonaceae",
       "kingdom":"Bacillati",
       "order":"Nostocales",
-      "organism":"Aetokthonos hydrillicola Thurmond2011",
+      "organism":"Aetokthonos hydrillicola (strain Thurmond2011)",
       "phylum":"Cyanobacteriota",
       "reaction_description":"Bromination of 5-bromoindole, leading to 3,5-tribromoindole",
       "status":"active",
@@ -2794,8 +2779,7 @@
       "domain":"Bacteria",
       "enzyme_description":"Halogenase",
       "enzyme_ids":{
-        "genpept":"UUL71895.1",
-        "mibig":"BGC0002841"
+        "genpept":"UUL71895.1"
       },
       "enzyme_name":"OrfA",
       "family":"Streptomycetaceae",
@@ -2879,7 +2863,6 @@
       "enzyme_description":"Acetyltransferase",
       "enzyme_ids":{
         "genpept":"EFH40094.1",
-        "mibig":"BGC0002857",
         "uniprot":"D7MUV7"
       },
       "enzyme_name":"THAA2",
@@ -2901,7 +2884,6 @@
       "enzyme_description":"Cytochrome P450",
       "enzyme_ids":{
         "genpept":"EFH41844.1",
-        "mibig":"BGC0002857",
         "uniprot":"D7MKC1"
       },
       "enzyme_name":"THAH",
@@ -2923,7 +2905,6 @@
       "enzyme_description":"Oxidosqualene cyclase",
       "enzyme_ids":{
         "genpept":"CAH8278777.1",
-        "mibig":"BGC0002857",
         "uniprot":"UPI000A29AD50"
       },
       "enzyme_name":"THAS",
@@ -2945,7 +2926,6 @@
       "enzyme_description":"Cytochrome P450",
       "enzyme_ids":{
         "genpept":"EFH40098.1",
-        "mibig":"BGC0002857",
         "uniprot":"D7MKC0"
       },
       "enzyme_name":"THAO",
@@ -2966,7 +2946,6 @@
       "domain":"Not found",
       "enzyme_description":"Acyltransferase subfamily IIIa",
       "enzyme_ids":{
-        "mibig":"BGC0002857",
         "uniprot":"UPI000A29E8C9"
       },
       "enzyme_name":"THAA1",
@@ -3240,7 +3219,6 @@
       "enzyme_description":"Cytochrome P450",
       "enzyme_ids":{
         "genpept":"SCL44650.1",
-        "mibig":"BGC0003008",
         "uniprot":"A0A1C6TS88"
       },
       "enzyme_name":"MciB",
@@ -3303,7 +3281,6 @@
       "enzyme_description":"Cytochrome P450",
       "enzyme_ids":{
         "genpept":"AKH82808.1",
-        "mibig":"BGC0003035",
         "uniprot":"UPI00062E048D"
       },
       "enzyme_name":"ScnB",
@@ -3387,7 +3364,6 @@
       "enzyme_description":"Flavin-dependent monooxygenase",
       "enzyme_ids":{
         "genpept":"UPG58742.1",
-        "mibig":"BGC0003093",
         "uniprot":"UPI0020464A74"
       },
       "enzyme_name":"PhoM",
@@ -3409,7 +3385,6 @@
       "enzyme_description":"Short-chain dehydrogenases/reductase",
       "enzyme_ids":{
         "genpept":"UPG58741.1",
-        "mibig":"BGC0003093",
         "uniprot":"UPI00205DA260"
       },
       "enzyme_name":"PhoL",
@@ -3431,7 +3406,6 @@
       "enzyme_description":"Dioxygenase",
       "enzyme_ids":{
         "genpept":"UPG58739.1",
-        "mibig":"BGC0003093",
         "uniprot":"UPI00204975FE"
       },
       "enzyme_name":"PhoJ",
@@ -3453,7 +3427,6 @@
       "enzyme_description":"Dehydratase",
       "enzyme_ids":{
         "genpept":"UPG58733.1",
-        "mibig":"BGC0003093",
         "uniprot":"UPI002070062C"
       },
       "enzyme_name":"PhoD",
@@ -3475,7 +3448,6 @@
       "enzyme_description":"Short-chain dehydrogenases/reductase",
       "enzyme_ids":{
         "genpept":"UPG58732.1",
-        "mibig":"BGC0003093",
         "uniprot":"UPI00205CF1EC"
       },
       "enzyme_name":"PhoC",
@@ -3496,8 +3468,7 @@
       "domain":"Eukaryota",
       "enzyme_description":"Reductase",
       "enzyme_ids":{
-        "genpept":"UPG58740.1",
-        "mibig":"BGC0003093"
+        "genpept":"UPG58740.1"
       },
       "enzyme_name":"PhoK",
       "family":"Sordariomycetes",
@@ -3518,7 +3489,6 @@
       "enzyme_description":"Anthrone oxygenase",
       "enzyme_ids":{
         "genpept":"UPG58736.1",
-        "mibig":"BGC0003093",
         "uniprot":"UPI00206D4B6A"
       },
       "enzyme_name":"PhoG",
@@ -3540,7 +3510,6 @@
       "enzyme_description":"Decarboxylase",
       "enzyme_ids":{
         "genpept":"UPG58737.1",
-        "mibig":"BGC0003093",
         "uniprot":"UPI0020648AC1"
       },
       "enzyme_name":"PhoH",
@@ -3562,7 +3531,6 @@
       "enzyme_description":"Short-chain dehydrogenases/reductase",
       "enzyme_ids":{
         "genpept":"UPG58745.1",
-        "mibig":"BGC0003093",
         "uniprot":"UPI00205EBDF6"
       },
       "enzyme_name":"PhoP",
@@ -3583,8 +3551,7 @@
       "domain":"Eukaryota",
       "enzyme_description":"Isomerase",
       "enzyme_ids":{
-        "genpept":"UPG58743.1",
-        "mibig":"BGC0003093"
+        "genpept":"UPG58743.1"
       },
       "enzyme_name":"PhoN",
       "family":"Sordariomycetes",
@@ -3752,10 +3719,9 @@
       "enzyme_description":"Cytochrome P450",
       "enzyme_ids":{
         "genpept":"MYS84939.1",
-        "mibig":"BGC0003121",
         "uniprot":"UPI00039B9B9D"
       },
-      "enzyme_name":"ScaB aka EmbB",
+      "enzyme_name":"ScaB/EmbB",
       "family":"Streptomycetaceae",
       "kingdom":"Bacillati",
       "order":"Kitasatosporales",
@@ -3825,7 +3791,7 @@
       "family":"Agaricomycetes",
       "kingdom":"Fungi",
       "order":"Agaricomycotina",
-      "organism":"Rhodocybe pseudopiperita",
+      "organism":"Clitopilus pseudopiperitus",
       "phylum":"Dikarya",
       "reaction_description":"Hydroxylation, Ple1 catalyzed hydroxylation on the α position of the acetyl side chain",
       "status":"active",
@@ -3847,7 +3813,7 @@
       "family":"Agaricomycetes",
       "kingdom":"Fungi",
       "order":"Agaricomycotina",
-      "organism":"Rhodocybe pseudopiperita",
+      "organism":"Clitopilus pseudopiperitus",
       "phylum":"Dikarya",
       "reaction_description":"Acetylation, O-acetylation of mutilin to produce 14-acetyl-mutilin",
       "status":"active",
@@ -3869,7 +3835,7 @@
       "family":"Agaricomycetes",
       "kingdom":"Fungi",
       "order":"Agaricomycotina",
-      "organism":"Rhodocybe pseudopiperita",
+      "organism":"Clitopilus pseudopiperitus",
       "phylum":"Dikarya",
       "reaction_description":"Hydroxylation",
       "status":"active",
@@ -3891,7 +3857,7 @@
       "family":"Agaricomycetes",
       "kingdom":"Fungi",
       "order":"Agaricomycotina",
-      "organism":"Rhodocybe pseudopiperita",
+      "organism":"Clitopilus pseudopiperitus",
       "phylum":"Dikarya",
       "reaction_description":"Hydroxylation",
       "status":"active",
@@ -3907,7 +3873,7 @@
       "enzyme_ids":{
         "genpept":"EOY45603.1",
         "mibig":"BGC0001168",
-        "uniprot":"A0A7U9H9E4"
+        "uniprot":"UPI0003430BF9"
       },
       "enzyme_name":"SLI_0884",
       "family":"Streptomycetaceae",
@@ -3929,7 +3895,7 @@
       "enzyme_ids":{
         "genpept":"QPI18725.1",
         "mibig":"BGC0002125",
-        "uniprot":"A0A7S9SW80"
+        "uniprot":"UPI0009E4F1A2"
       },
       "enzyme_name":"FrsC",
       "family":"Chromobacteriaceae",
@@ -4213,7 +4179,6 @@
       "enzyme_description":"Cytochrome P450",
       "enzyme_ids":{
         "genpept":"UPG58744.1",
-        "mibig":"BGC0003093",
         "uniprot":"UPI0020472753"
       },
       "enzyme_name":"PhoO",
@@ -4935,7 +4900,7 @@
       "enzyme_description":"Crotonobetainyl-CoA:carnitine CoA-transferase",
       "enzyme_ids":{
         "genpept":"SHN27822.1",
-        "uniprot":"A0A9X8N8D0"
+        "uniprot":"UPI0009192F31"
       },
       "enzyme_name":"LlpCT",
       "family":"Streptomycetaceae",
@@ -5898,7 +5863,7 @@
       "enzyme_description":"Halogenase",
       "enzyme_ids":{
         "genpept":"KZN44487.1",
-        "uniprot":"A0A166ZN72"
+        "uniprot":"UPI0007B0A84C"
       },
       "enzyme_name":"DarH",
       "family":"Pseudoalteromonadaceae",
@@ -6207,7 +6172,7 @@
       "order":"Pezizomycotina",
       "organism":"Aspergillus flavus (strain ATCC 200026 / FGSC A1120 / IAM 13836 / NRRL 3357 / JCM 12722 / SRRC 167)",
       "phylum":"Dikarya",
-      "reaction_description":"oxidation of the S to S=O",
+      "reaction_description":"Oxidation of the S to S=O in the cystein residue",
       "status":"active",
       "tailoring":"Oxidation"
     },
@@ -6235,22 +6200,20 @@
     },
     "MITE0000289":{
       "accession":"MITE0000289",
-      "class_name":"Ascomycota",
+      "class_name":"Not found",
       "cofactors_inorganic":"N/A",
       "cofactors_organic":"SAM",
-      "domain":"Eukaryota",
+      "domain":"Not found",
       "enzyme_description":"N-Methyltransferase",
       "enzyme_ids":{
-        "genpept":"EED49429.1",
-        "mibig":"BGC0000627",
         "uniprot":"UPI00018F617E"
       },
       "enzyme_name":"UstM",
-      "family":"Eurotiomycetes",
-      "kingdom":"Fungi",
-      "order":"Pezizomycotina",
-      "organism":"Aspergillus flavus NRRL3357",
-      "phylum":"Dikarya",
+      "family":"Not found",
+      "kingdom":"Not found",
+      "order":"Not found",
+      "organism":"Not found",
+      "phylum":"Not found",
       "reaction_description":"N-methylation of N-desmethylustiloxin F to ustiloxin F",
       "status":"active",
       "tailoring":"Methylation"
@@ -6307,7 +6270,7 @@
       "enzyme_description":"FMN-dependent reductase",
       "enzyme_ids":{
         "genpept":"AHL46723.1",
-        "uniprot":"W8QDG4"
+        "uniprot":"UPI00042E4834"
       },
       "enzyme_name":"RslO5",
       "family":"Streptomycetaceae",
@@ -6496,7 +6459,7 @@
       "enzyme_description":"Halogenase",
       "enzyme_ids":{
         "genpept":"AEM44263.1",
-        "uniprot":"A0ACD6B8K5"
+        "uniprot":"UPI00021E37CA"
       },
       "enzyme_name":"FasV",
       "family":"Not found",
@@ -8302,7 +8265,7 @@
       "family":"Sordariomycetes",
       "kingdom":"Fungi",
       "order":"Pezizomycotina",
-      "organism":"Phomopsis amygdali",
+      "organism":"Diaporthe amygdali",
       "phylum":"Dikarya",
       "reaction_description":"O-prenylation on glucose moiety of diterpene glycosides intermediates of fusicoccin A biosynthetic pathway.",
       "status":"active",
@@ -8323,7 +8286,7 @@
       "family":"Sordariomycetes",
       "kingdom":"Fungi",
       "order":"Pezizomycotina",
-      "organism":"Phomopsis amygdali",
+      "organism":"Diaporthe amygdali",
       "phylum":"Dikarya",
       "reaction_description":"O-methylation of fusicoccin terpene scaffold to yield methylated derivatives.",
       "status":"active",
@@ -8386,7 +8349,7 @@
       "family":"Sordariomycetes",
       "kingdom":"Fungi",
       "order":"Pezizomycotina",
-      "organism":"Phomopsis amygdali",
+      "organism":"Diaporthe amygdali",
       "phylum":"Dikarya",
       "reaction_description":"hydroxylation of fusicoccin J in the fusicoccin A biosynthetic pathway",
       "status":"active",
@@ -8407,7 +8370,7 @@
       "family":"Sordariomycetes",
       "kingdom":"Fungi",
       "order":"Pezizomycotina",
-      "organism":"Phomopsis amygdali",
+      "organism":"Diaporthe amygdali",
       "phylum":"Dikarya",
       "reaction_description":"Hydroxylase involved in the fusicoccin biosynthetic pathway.",
       "status":"active",
@@ -8428,7 +8391,7 @@
       "family":"Sordariomycetes",
       "kingdom":"Fungi",
       "order":"Pezizomycotina",
-      "organism":"Phomopsis amygdali",
+      "organism":"Diaporthe amygdali",
       "phylum":"Dikarya",
       "reaction_description":"C-9 hydroxylation of precursor in the fusicoccin A biosynthetic pathway.",
       "status":"active",
@@ -8442,14 +8405,14 @@
       "domain":"Eukaryota",
       "enzyme_description":"Cytochrome P450",
       "enzyme_ids":{
-        "genpept":"BAM71037.1",
-        "uniprot":"L0MYS8"
+        "genpept":"BAM71029.1",
+        "uniprot":"L0MXJ1"
       },
       "enzyme_name":"PaP450-1",
       "family":"Sordariomycetes",
       "kingdom":"Fungi",
       "order":"Pezizomycotina",
-      "organism":"Phomopsis amygdali",
+      "organism":"Diaporthe amygdali",
       "phylum":"Dikarya",
       "reaction_description":"C-16 hydroxylation of precursor in the Fusicoccin A biosynthetic pathway.",
       "status":"active",
@@ -8470,7 +8433,7 @@
       "family":"Sordariomycetes",
       "kingdom":"Fungi",
       "order":"Pezizomycotina",
-      "organism":"Phomopsis amygdali",
+      "organism":"Diaporthe amygdali",
       "phylum":"Dikarya",
       "reaction_description":"C-8 hydroxylation in the fusicoccin A biosynthetic pathway",
       "status":"active",
@@ -8756,21 +8719,21 @@
     },
     "MITE0000407":{
       "accession":"MITE0000407",
-      "class_name":"Not found",
+      "class_name":"Actinomycetes",
       "cofactors_inorganic":"N/A",
       "cofactors_organic":"N/A",
-      "domain":"Not found",
+      "domain":"Bacteria",
       "enzyme_description":"Acetyltransferase",
       "enzyme_ids":{
         "genpept":"MCK2216162.1",
         "uniprot":"UPI001F57AB4F"
       },
       "enzyme_name":"Luz27",
-      "family":"Not found",
-      "kingdom":"Not found",
-      "order":"Not found",
-      "organism":"Not found",
-      "phylum":"Not found",
+      "family":"Thermomonosporaceae",
+      "kingdom":"Bacillati",
+      "order":"Streptosporangiales",
+      "organism":"Actinomadura luzonensis",
+      "phylum":"Actinomycetota",
       "reaction_description":"Luz27 performs stepwise O-acetylations on the 4-OH groups of 4-OH-Thp residues to afford a final product, luzopeptin A",
       "status":"active",
       "tailoring":"Acetylation"

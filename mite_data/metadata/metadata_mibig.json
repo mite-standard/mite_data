@@ -852,7 +852,7 @@
         "enzyme_ids":{
           "genpept":"AEI58869.1",
           "mibig":"BGC0000311",
-          "uniprot":"F8STX7"
+          "uniprot":"UPI00021436EF"
         },
         "enzyme_name":"OxyB",
         "enzyme_refs":[
@@ -870,7 +870,7 @@
         "enzyme_ids":{
           "genpept":"AEI58868.1",
           "mibig":"BGC0000311",
-          "uniprot":"F8STX6"
+          "uniprot":"UPI00021436EE"
         },
         "enzyme_name":"OxyA",
         "enzyme_refs":[
@@ -1225,7 +1225,7 @@
         "enzyme_ids":{
           "genpept":"AEI58873.1",
           "mibig":"BGC0000455",
-          "uniprot":"P96565"
+          "uniprot":"UPI00000BB433"
         },
         "enzyme_name":"GtfE",
         "enzyme_refs":[
@@ -1243,7 +1243,7 @@
         "enzyme_ids":{
           "genpept":"AEI58868.1",
           "mibig":"BGC0000455",
-          "uniprot":"F8STX6"
+          "uniprot":"UPI00021436EE"
         },
         "enzyme_name":"OxyA",
         "enzyme_refs":[
@@ -1262,7 +1262,7 @@
         "enzyme_ids":{
           "genpept":"AEI58876.1",
           "mibig":"BGC0000455",
-          "uniprot":"E9LY85"
+          "uniprot":"UPI0001F73423"
         },
         "enzyme_name":"Vmt",
         "enzyme_refs":[
@@ -1278,7 +1278,7 @@
         "enzyme_ids":{
           "genpept":"AEI58871.1",
           "mibig":"BGC0000455",
-          "uniprot":"P96563"
+          "uniprot":"UPI000003CAA4"
         },
         "enzyme_name":"VhaA",
         "enzyme_refs":[
@@ -1296,7 +1296,7 @@
         "enzyme_ids":{
           "genpept":"AEI58869.1",
           "mibig":"BGC0000455",
-          "uniprot":"F8STX7"
+          "uniprot":"UPI00021436EF"
         },
         "enzyme_name":"OxyB",
         "enzyme_refs":[
@@ -1316,7 +1316,7 @@
         "enzyme_ids":{
           "genpept":"AEI58872.1",
           "mibig":"BGC0000455",
-          "uniprot":"P96564"
+          "uniprot":"UPI00000BE4DE"
         },
         "enzyme_name":"GtfD",
         "enzyme_refs":[
@@ -2205,7 +2205,7 @@
         "enzyme_ids":{
           "genpept":"CCC55916.1",
           "mibig":"BGC0000973",
-          "uniprot":"H1ZYT5"
+          "uniprot":"UPI000249FC56"
         },
         "enzyme_name":"ClmAH",
         "enzyme_refs":[
@@ -2221,7 +2221,7 @@
         "enzyme_ids":{
           "genpept":"CCC55912.1",
           "mibig":"BGC0000973",
-          "uniprot":"H1ZYV7"
+          "uniprot":"UPI000249FC52"
         },
         "enzyme_name":"ClmM1",
         "enzyme_refs":[
@@ -2237,7 +2237,7 @@
         "enzyme_ids":{
           "genpept":"CCC55909.1",
           "mibig":"BGC0000973",
-          "uniprot":"H1ZYV4"
+          "uniprot":"UPI000249FC4F"
         },
         "enzyme_name":"ClmM2",
         "enzyme_refs":[
@@ -2619,7 +2619,7 @@
         "enzyme_ids":{
           "genpept":"EOY45603.1",
           "mibig":"BGC0001168",
-          "uniprot":"A0A7U9H9E4"
+          "uniprot":"UPI0003430BF9"
         },
         "enzyme_name":"SLI_0884",
         "enzyme_refs":[
@@ -3471,7 +3471,7 @@
         "enzyme_ids":{
           "genpept":"AXG22420.1",
           "mibig":"BGC0002024",
-          "uniprot":"A0A3S7PZH4"
+          "uniprot":"UPI00100571B0"
         },
         "enzyme_name":"NgnN4",
         "enzyme_refs":[
@@ -3487,7 +3487,7 @@
         "enzyme_ids":{
           "genpept":"AXG22416.1",
           "mibig":"BGC0002024",
-          "uniprot":"A0A3S7PZF2"
+          "uniprot":"UPI0010058256"
         },
         "enzyme_name":"NgnO3",
         "enzyme_refs":[
@@ -3503,7 +3503,7 @@
         "enzyme_ids":{
           "genpept":"AXG22409.1",
           "mibig":"BGC0002024",
-          "uniprot":"A0A3S7Q0I4"
+          "uniprot":"UPI0010052BAD"
         },
         "enzyme_name":"Ngnp1",
         "enzyme_refs":[
@@ -3519,7 +3519,7 @@
         "enzyme_ids":{
           "genpept":"AXG22404.1",
           "mibig":"BGC0002024",
-          "uniprot":"A0A3S7PZF0"
+          "uniprot":"UPI001005A892"
         },
         "enzyme_name":"NgnD",
         "enzyme_refs":[
@@ -3535,7 +3535,7 @@
         "enzyme_ids":{
           "genpept":"AXG22413.1",
           "mibig":"BGC0002024",
-          "uniprot":"A0A3S7PZH2"
+          "uniprot":"UPI00100556BE"
         },
         "enzyme_name":"NgnM",
         "enzyme_refs":[
@@ -3551,7 +3551,7 @@
         "enzyme_ids":{
           "genpept":"AXG22415.1",
           "mibig":"BGC0002024",
-          "uniprot":"A0A3S7PZF3"
+          "uniprot":"UPI00100569C8"
         },
         "enzyme_name":"NgnP2",
         "enzyme_refs":[
@@ -3674,7 +3674,7 @@
         "enzyme_ids":{
           "genpept":"QPI18725.1",
           "mibig":"BGC0002125",
-          "uniprot":"A0A7S9SW80"
+          "uniprot":"UPI0009E4F1A2"
         },
         "enzyme_name":"FrsC",
         "enzyme_refs":[
