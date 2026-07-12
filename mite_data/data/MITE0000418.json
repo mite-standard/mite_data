@@ -1,0 +1,63 @@
+{
+    "accession": "MITE0000418",
+    "status": "active",
+    "comment": "Single chlorination of carrierbound-S-isoleucine (L-Ile-S-KtzC) in the Kutzneride pathway. UniProt A8CF92 retired. Non Substrate: Allo-isoleucine",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-06-24",
+            "contributors": [
+                "0009-0000-8651-1669"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "KtzD",
+        "description": "Nonheme halogenase",
+        "references": [
+            "doi:10.1021/ja8064667"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI00015D3A82",
+            "genpept": "ABV56584.1",
+            "mibig": "BGC0000378"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Oxygen and carrierprotein KtzC dependent halogenation",
+            "reactionSMARTS": "[#6:1]-[#6:2]-[#6:3](-[#6:5](-[#6:7](-[#16:9]-[*])=[#8:8])\\[#7:6])/[#6:4]>>[#6:1]-[#6:2]-[#6:3](-[#6:5](-[#6:7](-[#16:9]-[*])=[#8:8])\\[#7:6])/[#6:4]-[Cl]",
+            "reactions": [
+                {
+                    "substrate": "*SC(=O)[C](N)[C](C)CC",
+                    "products": [
+                        "*SC(=O)C(N)C(CC)CCl"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Single chlorination of L-Isoleucine-S-KtzC"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/ja8064667"
+                ]
+            }
+        }
+    ]
+}
