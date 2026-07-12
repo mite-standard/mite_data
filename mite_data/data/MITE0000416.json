@@ -1,0 +1,143 @@
+{
+    "accession": "MITE0000416",
+    "status": "active",
+    "comment": " Tandem halogenation of aminoacyl-S-carrier substrates (l-Aba-S-CytC2 and l-Val-S-CytC2) in \u03b3,\u03b3-dichloroaminobutyrate biosynthesis. L-Val-S-CytC2 yields a higher amount of dichlorinated product. CytC3 and SyrB2 are similar in structure. Neither GenPept nor MiBig entry",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-06-29",
+            "contributors": [
+                "0009-0000-8651-1669"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "CytC3",
+        "description": "Nonheme halogenase",
+        "references": [
+            "doi:10.1021/ja8097355",
+            "doi:10.1016/j.chembiol.2006.09.012"
+        ],
+        "databaseIds": {
+            "uniprot": "A0ACD6BAX6"
+        },
+        "cofactors": {
+            "organic": [
+                "a-Ketoglutaric acid"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Single chlorination of L-Aba-S-CytC2 complex using oxygen",
+            "reactionSMARTS": "[#6:1]-[#6:2]-[#6:3](-[#6:5](-[#16:7]-[*])=[#8:6])-[#7:4]>>[#6:1](-[Cl])-[#6:2]-[#6:3](-[#6:5](-[#16:7]-[*])=[#8:6])-[#7:4]",
+            "reactions": [
+                {
+                    "substrate": "*SC(=O)C(N)CC",
+                    "products": [
+                        "*SC(=O)C(N)CCCl"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Inference from genomic data and chemical structure",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1016/j.chembiol.2006.09.012"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Tandem dichlorination of L-Val-S-CytC2 complex using oxygen",
+            "reactionSMARTS": "[#6:1]-[#6:2]-[#6:3](-[#6:5](-[#16:7]-[*])=[#8:6])-[#7:4]>>[#6:1](-[Cl])(-[Cl])-[#6:2]-[#6:3](-[#6:5](-[#16:7]-[*])=[#8:6])-[#7:4]",
+            "reactions": [
+                {
+                    "substrate": "*SC(=O)C(N)CC",
+                    "products": [
+                        "*SC(=O)C(N)CC(Cl)Cl"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Inference from genomic data and chemical structure",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1016/j.chembiol.2006.09.012"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Tandem dichlorination of l-Aba-S-CytC2 complex using oxygen",
+            "reactionSMARTS": "[#6:1]-[#6:2](-[#6:9])-[#6:3](-[#6:5](-[#16:7]-[*])=[#8:6])-[#7:4]>>[#6:1](-[Cl])(-[Cl])-[#6:2](-[#6:9])-[#6:3](-[#6:5](-[#16:7]-[*])=[#8:6])-[#7:4]",
+            "reactions": [
+                {
+                    "substrate": "*SC(=O)C(N)C(C)C",
+                    "products": [
+                        "*SC(=O)C(N)C(C)C(Cl)Cl"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Inference from genomic data and chemical structure",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1016/j.chembiol.2006.09.012"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Single chlorination of L-Val-S-CytC2 complex using oxygen",
+            "reactionSMARTS": "[#6:1]-[#6:2](-[#6:9])-[#6:3](-[#6:5](-[#16:7]-[*])=[#8:6])-[#7:4]>>[#6:1](-[Cl])-[#6:2](-[#6:9])-[#6:3](-[#6:5](-[#16:7]-[*])=[#8:6])-[#7:4]",
+            "reactions": [
+                {
+                    "substrate": "*SC(=O)C(N)C(C)C",
+                    "products": [
+                        "*SC(=O)C(N)C(C)CCl"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Inference from genomic data and chemical structure",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1016/j.chembiol.2006.09.012"
+                ]
+            }
+        }
+    ]
+}
