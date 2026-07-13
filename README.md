@@ -151,7 +151,7 @@ uv run python pipeline/create_mibig.py                            # Downloads MI
 uv run python pipeline/validate_entry.py entry1.json ...          # Checks entries
 uv run python pipeline/create_artifacts_single.py entry1.json ... # Creates artifacts in single entry mode
 uv run python pipeline/create_artifacts_all.py                    # Re-creates all artifacts (expensive!)
-uv run python validate_artifacts.py                               # Validates artifacts
+uv run python pipeline/validate_artifacts.py                      # Validates artifacts
 ```
 
 #### Adding new rules
