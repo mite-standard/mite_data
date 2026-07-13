@@ -201,7 +201,7 @@ wheels = [
 
 [[package]]
 name = "mite-data"
-version = "1.28"
+version = "1.29"
 source = { editable = "." }
 dependencies = [
     { name = "biopython" },
