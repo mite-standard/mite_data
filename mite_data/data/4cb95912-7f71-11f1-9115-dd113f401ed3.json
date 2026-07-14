@@ -16,29 +16,51 @@
     ],
     "enzyme": {
         "name": "AbmV",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1021/acs.orglett.8b01997"
+        ],
         "databaseIds": {
             "uniprot": "A0A2P1BT33",
-            "genpept": ""
+            "genpept": "AVI57422.1",
+            "mibig": "BGC0001694"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Heterocyclization",
+                "Hydroxylation",
+                "Other"
+            ],
+            "description": "Tandem Ether Installation and Hydroxylation",
+            "reactionSMARTS": "[#6:1]1-[#6:18](=[#8:21])-[#6:16]2-[#6:17](-[#8:20]\\[#6@@:8]3(-[#6:15]=2-[#8:23])-[#6:14]-[#6@:12](/[#6:13])-[#6:10](-[#6:11])=[#6:9]-[#6:7]-3-[#6:6]=[#6:5]-[#6:4](=[#8:22])-[#6@@:3](\\[#6:19])-[#6:2]-1)=[#8:24]>>[#6:1]1-[#6:18](=[#8:21])-[#6:16]2-[#6:17](-[#8:20]\\[#6@@:8]34-[#6:15]=2-[#8:23]-[#6@:10](-[#6:12](-[#6:13])-[#6:14]-3)(/[#6:11])-[#6:9](-[#8])-[#6:7]-4-[#6:6]=[#6:5]-[#6:4](=[#8:22])-[#6@@:3](\\[#6:19])-[#6:2]-1)=[#8:24]",
             "reactions": [
                 {
+                    "substrate": "CC1=CC2/C=C/C(=O)[C@@H](C)CCC(=O)C3=C(O)[C@@]2(C[C@@H]1C)OC3=O",
                     "products": [
-                        ""
-                    ]
+                        "CC1C[C@@]23OC(=O)C4=C2O[C@]1(C)C(O)C3C=CC(=O)[C@@H](C)CCC4=O"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/acs.orglett.8b01997"
+                ]
+            }
         }
     ]
 }
