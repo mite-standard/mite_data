@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "oxidise glucose prior to glycosyltransfer",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,48 @@
     ],
     "enzyme": {
         "name": "CalE10",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1021/ja807557a"
+        ],
         "databaseIds": {
             "uniprot": "Q8KNC8",
-            "genpept": ""
+            "genpept": "AAM94800.1",
+            "mibig": "BGC0000033"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "NDP-aminosugar N-oxidation",
+            "reactionSMARTS": "[#8:1][#6@:24]1[#6:25][#6@:26]([#7:32]2:[#6:33]:[#6:34]([#6:35]):[#6:28](=[#8:27]):[#7:29]:[#6:31]:2=[#8:30])[#8:22][#6@@:23]1[#6:21][#8:20][#15:19](=[#8:18])([#8:17])[#8:16][#15:15](=[#8:14])([#8:13])[#8:12][#6@@:11]1[#6@@:10]([#6@:9]([#6@@:8]([#6@:7]([#8:6]1)[#6:5])[#7:4])[#8:3])[#8:2]>>[#8:1][#6@:24]1[#6:25][#6@:26]([#7:32]2:[#6:33]:[#6:34]([#6:35]):[#6:28](=[#8:27]):[#7:29]:[#6:31]:2=[#8:30])[#8:22][#6@@:23]1[#6:21][#8:20][#15:19](=[#8:18])([#8:17])[#8:16][#15:15](=[#8:14])([#8:13])[#8:12][#6@@:11]1[#6@@:10]([#6@:9]([#6@@:8]([#6@:7]([#8:6]1)[#6:5])[#7:4][#8])[#8:3])[#8:2]",
             "reactions": [
                 {
+                    "substrate": "Cc1cn([C@H]2C[C@H](O)[C@@H](COP(=O)(O)OP(=O)(O)O[C@H]3O[C@H](C)[C@@H](N)[C@H](O)[C@H]3O)O2)c(=O)[nH]c1=O",
                     "products": [
-                        ""
-                    ]
+                        "Cc1cn([C@H]2C[C@H](O)[C@@H](COP(=O)(O)OP(=O)(O)O[C@H]3O[C@H](C)[C@@H](NO)[C@H](O)[C@H]3O)O2)c(=O)[nH]c1=O"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/ja807557a"
+                ]
+            }
         }
     ]
 }
