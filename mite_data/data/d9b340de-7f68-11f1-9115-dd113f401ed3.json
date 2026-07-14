@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "epoxidation and hydroxylation of a macrolide in a stepwise manner",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,51 @@
     ],
     "enzyme": {
         "name": "gfsF",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1002/cbic.201000214"
+        ],
         "databaseIds": {
             "uniprot": "E0D207",
-            "genpept": ""
+            "genpept": "BAJ16472.1",
+            "mibig": "BGC0000058"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Hydroxylation",
+                "Monooxygenation",
+                "Other"
+            ],
+            "description": "epoxidation and hydroxylation of a macrolide",
+            "reactionSMARTS": "[C:1]1=[C:10]-[C@@:11](/[O:32])-[C@:12](\\[C:35])-[C:13]=[C:14](-[C:34])-[C:15]=[C:16](-[C:33])-[C:17](-[O:28]\\[C@:7](-[C@@:8](\\[C:36])-[C:9]/[C:18]=[C:19]/[C:20]-[C@@:21](\\[O:31])-[C@@:22](\\[C:39])-[C@@:23](/[O:30])-[C@:24](/[C:38])-[C@@:25](/[O:29]-[C:37])-[C:26])-[C:6]-[C:5]=[C:4]-[C:3]-[C:2]-1)=[O:27]>>[C@:1]12[O][C@@:10]1[C@@:11](/[O:32])[C@:12](\\[C:35])[C:13]=[C:14](-[C:34])[C:15]=[C:16](-[C:33])[C:17](-[O:28]\\[C@:7](-[C@@:8](\\[C:36])-[C:9]/[C:18]=[C:19]/[C:20]-[C@@:21](\\[O:31])-[C@@:22](\\[C:39])-[C@@:23](/[O:30])-[C@:24](/[C:38])-[C@@:25](/[O:29]-[C:37])-[C:26])-[C:6]-[C:5]=[C:4]-[C:3]-[C@@:2]2[O])=[O:27]",
             "reactions": [
                 {
+                    "substrate": "CO[C@@H](C)[C@@H](C)[C@H](O)[C@H](C)[C@@H](O)C/C=C/C[C@H](C)[C@@H]1C/C=C/CC/C=C/[C@@H](O)[C@H](C)/C=C(C)\\C=C(\\C)C(=O)O1",
                     "products": [
-                        ""
-                    ]
+                        "CO[C@@H](C)[C@@H](C)[C@H](O)[C@H](C)[C@@H](O)C/C=C/C[C@H](C)[C@@H]1CC=CC[C@@H](O)[C@@H]2O[C@H]2[C@@H](O)[C@H](C)C=C(C)C=C(C)C(=O)O1"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1002/cbic.201000214"
+                ]
+            }
         }
     ]
 }
