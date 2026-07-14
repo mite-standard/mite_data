@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Halogenation of dihydroresorcylide in the radicicol pathway. Rdc2 additionally halogenases dihydroresorcylide and specific hydroxyquinolines. Non Substrate: 2/4/8-Hydroxyquinoline isomers, quinoline",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,179 @@
     ],
     "enzyme": {
         "name": "Rdc2",
+        "description": "Flavin-dependent halogenase",
+        "references": [
+            "doi:10.1002/cbic.201000439",
+            "doi:10.1016/j.tetlet.2016.10.044"
+        ],
         "databaseIds": {
             "uniprot": "B3FWT7",
-            "genpept": ""
+            "genpept": "ACD39771.1",
+            "mibig": "BGC0000134"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "FAD",
+                "NAD"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Iterate chlorination of dihydroresorcylide. Reaction Smarts shows all derivates trough \"any bound\".",
+            "reactionSMARTS": "[#6:1]/[#6@@:2]1-[#8:21]-[#6:19](=[#8:20])-[#6:12]2:[#6:13](-[#8:18]):[#6:14]:[#6:15](-[#8:17]):[#6:16]:[#6:11]:2-[#6:10]-[#6:8](=[#8:9])-[#6:7]-[#6:6]-[#6:5]~[#6:4]-[#6:3]-1>>[#6:1]/[#6@@:2]1-[#8:21]-[#6:19](=[#8:20])-[#6:12]2:[#6:13](-[#8:18]):[#6:14](-[Cl]):[#6:15](-[#8:17]):[#6:16](-[Cl]):[#6:11]:2-[#6:10]-[#6:8](=[#8:9])-[#6:7]-[#6:6]-[#6:5]~[#6:4]-[#6:3]-1",
             "reactions": [
                 {
+                    "substrate": "C[C]1CCCCCC(=O)Cc2cc(O)cc(O)c2C(=O)O1",
                     "products": [
-                        ""
-                    ]
+                        "CC1CCCCCC(=O)Cc2c(Cl)c(O)c(Cl)c(O)c2C(=O)O1"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Chlorination occurs sequentially at C13 and then C15."
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1002/cbic.201000439"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Iterate bromination of dihydroresorcylide. Reaction Smarts shows all derivates trough \"any bound\".",
+            "reactionSMARTS": "[#6:1]/[#6@@:2]1-[#8:21]-[#6:19](=[#8:20])-[#6:12]2:[#6:13](-[#8:18]):[#6:14]:[#6:15](-[#8:17]):[#6:16]:[#6:11]:2-[#6:10]-[#6:8](=[#8:9])-[#6:7]-[#6:6]-[#6:5]~[#6:4]-[#6:3]-1>>[#6:1]/[#6@@:2]1-[#8:21]-[#6:19](=[#8:20])-[#6:12]2:[#6:13](-[#8:18]):[#6:14](-Br):[#6:15](-[#8:17]):[#6:16](-Br):[#6:11]:2-[#6:10]-[#6:8](=[#8:9])-[#6:7]-[#6:6]-[#6:5]~[#6:4]-[#6:3]-1",
+            "reactions": [
+                {
+                    "substrate": "C[C]1CCCCCC(=O)Cc2cc(O)cc(O)c2C(=O)O1",
+                    "products": [
+                        "CC1CCCCCC(=O)Cc2c(Br)c(O)c(Br)c(O)c2C(=O)O1"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Bromination occurs sequentially at C13 and then C15."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1002/cbic.201000439"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Chlorination of 3-Hydroxyquinoline on position 4",
+            "reactionSMARTS": "[#6:1]1:[#6:6]:[#6:5]2-[#6:7]-[#6:8](-[#8:11])=[#6:9]-[#7:10]-[#6:4]:2:[#6:3]:[#6:2]:1>>[#6:1]1:[#6:6]:[#6:5]2-[#6:7](-[Cl])-[#6:8](-[#8:11])=[#6:9]-[#7:10]-[#6:4]:2:[#6:3]:[#6:2]:1",
+            "reactions": [
+                {
+                    "substrate": "OC1=CNc2ccccc2C1",
+                    "products": [
+                        "OC1=CNc2ccccc2C1Cl"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Product: 3-Hydroxy-4-chloroquinoline (3a)"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1016/j.tetlet.2016.10.044"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Chlorination of 5-Hydroxyquinoline on position 6",
+            "reactionSMARTS": "[#6:1]1:[#6:6](-[#8:11]):[#6:5]2-[#6:7]-[#6:8]=[#6:9]-[#7:10]-[#6:4]:2:[#6:3]:[#6:2]:1>>[#6:1]1(-[Cl]):[#6:6](-[#8:11]):[#6:5]2-[#6:7]-[#6:8]=[#6:9]-[#7:10]-[#6:4]:2:[#6:3]:[#6:2]:1",
+            "reactions": [
+                {
+                    "substrate": "Oc1cccc2c1CC=CN2",
+                    "products": [
+                        "Oc1c(Cl)ccc2c1CC=CN2"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Product: 5-Hydroxy-6-chloroquinoline (5a)"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1016/j.tetlet.2016.10.044"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Chlorination of 6-Hydroxyquinoline on position 5",
+            "reactionSMARTS": "[#6:1]1(-[#8:11]):[#6:6]:[#6:5]2-[#6:7]-[#6:8]=[#6:9]-[#7:10]-[#6:4]:2:[#6:3]:[#6:2]:1>>[#6:1]1(-[#8:11]):[#6:6](-[Cl]):[#6:5]2-[#6:7]-[#6:8]=[#6:9]-[#7:10]-[#6:4]:2:[#6:3]:[#6:2]:1",
+            "reactions": [
+                {
+                    "substrate": "Oc1ccc2c(c1)CC=CN2",
+                    "products": [
+                        "Oc1ccc2c(c1Cl)CC=CN2"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Product: 5-Chloro-6-hydroxyquinoline (6a)"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1016/j.tetlet.2016.10.044"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Chlorination of 7-Hydroxyquinoline on position 6",
+            "reactionSMARTS": "[#6:1]1:[#6:6]:[#6:5]2-[#6:7]-[#6:8]=[#6:9]-[#7:10]-[#6:4]:2:[#6:3]:[#6:2]:1-[#8:11]>>[#6:1]1:[#6:6]:[#6:5]2-[#6:7]-[#6:8]=[#6:9]-[#7:10]-[#6:4]:2:[#6:3](-[Cl]):[#6:2]:1-[#8:11]",
+            "reactions": [
+                {
+                    "substrate": "Oc1ccc2c(c1)NC=CC2",
+                    "products": [
+                        "Oc1ccc2c(c1Cl)NC=CC2"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Product: 7-Hydroxy-8-chloroquinoline (7a)"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1016/j.tetlet.2016.10.044"
+                ]
+            }
         }
     ]
 }
