@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000378",
-    "status": "pending",
+    "status": "active",
     "changelog": [
         {
             "version": "1",
@@ -20,7 +20,7 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "reviewers": [
-                "BBBBBBBBBBBBBBBBBBBBBBBB"
+                "0000-0001-6534-6609"
             ],
             "comment": "Removed stereochemistry information to fix validation errors."
         }
