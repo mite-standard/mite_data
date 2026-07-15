@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000378",
-    "status": "active",
+    "status": "pending",
     "changelog": [
         {
             "version": "1",
@@ -12,6 +12,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "New entry. Reviewer 1 fixed reaction SMARTS and product, added RHEA ID."
+        },
+        {
+            "version": "2",
+            "date": "2026-07-15",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": ""
         }
     ],
     "enzyme": {
