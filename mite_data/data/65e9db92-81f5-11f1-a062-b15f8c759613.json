@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "DnrK also known as Carminomycin 4-O-methyltransferase is involved in the biosynthesis of anthracycline daunorubicin.",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,51 @@
     ],
     "enzyme": {
         "name": "DnrK",
+        "description": "O-methyl transferase",
+        "references": [
+            "doi:10.1128/jb.175.12.3900-3904.1993"
+        ],
         "databaseIds": {
             "uniprot": "Q06528",
-            "genpept": ""
+            "genpept": "AAA26712.1"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "DnrK catalyzes the methylation of the 4-hydroxyl group in tetracyclic ring system of carminomycin to form daunorubicin",
+            "reactionSMARTS": "[#6:1]/[#6@@:2]1-[#8:7]-[#6@@:6](\\[#8:8]/[#6@@:9]2-[#6:18]3:[#6:13](:[#6:14](-[#8:31]):[#6:15]4-[#6:24](=[#8:25])-[#6:23]5:[#6:26]:[#6:27]:[#6:28]:[#6:29](-[#8:30]):[#6:22]:5-[#6:20](=[#8:21])-[#6:16]:4:[#6:17]:3-[#8:19])-[#6:12]-[#6@@:11](/[#8:35])(\\[#6:32](-[#6:34])=[#8:33])-[#6:10]-2)-[#6:5]-[#6@:4](/[#7:36])-[#6@@:3]-1/[#8:37]>>[#6:1]/[#6@@:2]1-[#8:7]-[#6@@:6](\\[#8:8]/[#6@@:9]2-[#6:18]3:[#6:13](:[#6:14](-[#8:31]):[#6:15]4-[#6:24](=[#8:25])-[#6:23]5:[#6:26]:[#6:27]:[#6:28]:[#6:29](-[#8:30]-[#6]):[#6:22]:5-[#6:20](=[#8:21])-[#6:16]:4:[#6:17]:3-[#8:19])-[#6:12]-[#6@@:11](/[#8:35])(\\[#6:32](-[#6:34])=[#8:33])-[#6:10]-2)-[#6:5]-[#6@:4](/[#7:36])-[#6@@:3]-1/[#8:37]",
             "reactions": [
                 {
+                    "substrate": "CC(=O)[C@]1(O)Cc2c(O)c3c(c(O)c2[C@@H](O[C@H]2C[C@H](N)[C@H](O)[C@H](C)O2)C1)C(=O)c1c(O)cccc1C3=O",
                     "products": [
-                        ""
-                    ]
+                        "COc1cccc2c1C(=O)c1c(O)c3c(c(O)c1C2=O)C[C@@](O)(C(C)=O)C[C@@H]3O[C@H]1C[C@H](N)[C@H](O)[C@H](C)O1"
+                    ],
+                    "isIntermediate": false,
+                    "description": "DnrK has a broad substrate specificity and can methylate other anthracyclines in addition to carminomycin, for instance \u03f5-rhodomycin T"
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1128/jb.175.12.3900-3904.1993",
+                    "doi:10.1074/jbc.M407081200"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "38311",
+                "ec": "2.1.1.292"
+            }
         }
     ]
 }
