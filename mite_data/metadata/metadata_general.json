@@ -8995,6 +8995,27 @@
       "reaction_description":"Chlorination of ring B of the aglycone intermediate",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000420":{
+      "accession":"MITE0000420",
+      "class_name":"Myxococcia",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"N-methyltransferase",
+      "enzyme_ids":{
+        "genpept":"UID85537.1",
+        "mibig":"BGC0002631"
+      },
+      "enzyme_name":"BytZ",
+      "family":"Cystobacterineae",
+      "kingdom":"Pseudomonadati",
+      "order":"Myxococcales",
+      "organism":"Pyxidicoccus fallax",
+      "phylum":"Myxococcota",
+      "reaction_description":"BytZ catalyzes N-terminal methylation of the mature cyclized peptide.",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.30"

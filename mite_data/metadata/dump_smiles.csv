@@ -569,3 +569,4 @@
 567,MITE0000418.reaction1.example1,*SC(=O)[C](N)[C](C)CC,*SC(=O)C(N)C(CC)CCl
 568,MITE0000419.reaction1.example1,CC(C)=CCc1cc(C(=O)Nc2c(O)c3ccc(O)cc3oc2=O)ccc1O,CC(C)=CCc1cc(C(=O)Nc2c(O)c3ccc(O)c(Cl)c3oc2=O)ccc1O
 569,MITE0000419.reaction2.example1,CC(C)=CCc1cc(C(=O)Nc2c(O)c3ccc(O)cc3oc2=O)ccc1O,CC(C)=CCc1cc(C(=O)Nc2c(O)c3ccc(O)c(Br)c3oc2=O)ccc1O
+570,MITE0000420.reaction1.example1,CC(C)C[C@@H]1NC(=O)[C@@H](N)Cc2ccc(O)c(c2)-n2cncc2C[C@@H](C(=O)O)NC1=O,CN[C@H]1Cc2ccc(O)c(c2)-n2cncc2C[C@@H](C(=O)O)NC(=O)[C@H](CC(C)C)NC1=O
