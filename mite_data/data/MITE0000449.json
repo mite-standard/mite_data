@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000449",
     "status": "active",
     "changelog": [
         {
@@ -22,7 +22,8 @@
         ],
         "databaseIds": {
             "uniprot": "UPI00006C98DF",
-            "genpept": "ABC84455.1"
+            "genpept": "ABC84455.1",
+            "mibig": "BGC0000114"
         },
         "cofactors": {
             "organic": [
