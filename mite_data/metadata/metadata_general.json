@@ -9211,6 +9211,28 @@
       "reaction_description":"NascB catalyzes oxidative dimerization of two molecules of cyclo-(l-tryptophan-l-proline), resulting in simultaneous pyrroloindoline ring formation and C3–C5′ carbon–carbon bond formation to produce naseseazine C.",
       "status":"active",
       "tailoring":"Other|Oxidation"
+    },
+    "MITE0000430":{
+      "accession":"MITE0000430",
+      "class_name":"Polyangia",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Tryptophan halogenase",
+      "enzyme_ids":{
+        "genpept":"CAJ46693.1",
+        "mibig":"BGC0000969",
+        "uniprot":"UPI0000DB3B9B"
+      },
+      "enzyme_name":"CmdE",
+      "family":"Polyangiaceae",
+      "kingdom":"Pseudomonadati",
+      "order":"Polyangiales",
+      "organism":"Chondromyces crocatus",
+      "phylum":"Myxococcota",
+      "reaction_description":" CmdE encodes a halogenase responsible for formation of the 2-chlorotryptophan residues in chondramide B",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.30"

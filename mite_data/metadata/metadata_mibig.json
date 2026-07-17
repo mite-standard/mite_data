@@ -2256,6 +2256,24 @@
         "status":"active"
       }
     ],
+    "BGC0000969":[
+      {
+        "enzyme_description":"Tryptophan halogenase",
+        "enzyme_ids":{
+          "genpept":"CAJ46693.1",
+          "mibig":"BGC0000969",
+          "uniprot":"UPI0000DB3B9B"
+        },
+        "enzyme_name":"CmdE",
+        "enzyme_refs":[
+          "doi:10.1016/j.chembiol.2006.06.002"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000430",
+        "mite_url":"https://bioregistry.io/mite:MITE0000430",
+        "status":"active"
+      }
+    ],
     "BGC0000973":[
       {
         "enzyme_description":"Amidohydrolase",
