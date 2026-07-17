@@ -1,0 +1,65 @@
+{
+    "accession": "MITE0000423",
+    "status": "active",
+    "comment": "BarH performs the terminal oxidative decarboxylation to form fully oxidized, conjugated thiazole ring in the biosynthesis of barbamide",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-07-05",
+            "contributors": [
+                "0009-0008-8086-5325"
+            ],
+            "reviewers": [
+                "0000-0002-8323-5416"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "BarH",
+        "description": "Non-Heme Diiron Monooxygenase",
+        "references": [
+            "doi:10.1021/acs.orglett.3c04083",
+            "doi:10.1016/S0378-1119(02)00860-0"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI00000C04FF",
+            "genpept": "AAN32982.1"
+        },
+        "cofactors": {
+            "organic": [
+                "Ascorbic acid"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Decarboxylation",
+                "Dehydrogenation"
+            ],
+            "description": "BarH catalyzes the terminal oxidative decarboxylation and final dehydrogenation that generates a thiazole ring from a thiazoline intermediate during the biosynthesis of barbamide",
+            "reactionSMARTS": "[#6:1]-[#6:2](-[#6:25](-[Cl:28])(-[Cl:27])-[Cl:26])-[#6:3]-[#6:4](-[#8:23]-[#6:24])-[#6:5]-[#6:6](-[#7:8](-[#6:10](-[#6:18]1-[#16:22]-[#6:21]-[#6:20](-[#6](-[#8])=[#8])-[#7:19]=1)-[#6:11]-[#6:12]1:[#6:17]:[#6:16]:[#6:15]:[#6:14]:[#6:13]:1)-[#6:9])=[#8:7]>>[#6:1]-[#6:2](-[#6:25](-[Cl:28])(-[Cl:26])-[Cl:27])-[#6:3]-[#6:4](-[#8:23]-[#6:24])-[#6:5]-[#6:6](-[#7:8](-[#6:10](-[#6:18]1:[#16:22]:[#6:21]:[#6:20]:[#7:19]:1)-[#6:11]-[#6:12]1:[#6:17]:[#6:16]:[#6:15]:[#6:14]:[#6:13]:1)-[#6:9])=[#8:7]",
+            "reactions": [
+                {
+                    "substrate": "COC(CC(=O)N(C)C(Cc1ccccc1)C1=NC(C(=O)O)CS1)CC(C)C(Cl)(Cl)Cl",
+                    "products": [
+                        "COC(CC(=O)N(C)C(Cc1ccccc1)c1nccs1)CC(C)C(Cl)(Cl)Cl"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acs.orglett.3c04083"
+                ]
+            }
+        }
+    ]
+}
