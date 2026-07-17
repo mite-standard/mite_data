@@ -8973,7 +8973,29 @@
       "reaction_description":"Oxygen and carrierprotein KtzC dependent halogenation",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000419":{
+      "accession":"MITE0000419",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD",
+      "domain":"Bacteria",
+      "enzyme_description":"Flavin-dependent halogenase",
+      "enzyme_ids":{
+        "genpept":"AAN65237.1",
+        "mibig":"BGC0000832",
+        "uniprot":"Q8GHB4"
+      },
+      "enzyme_name":"CloHal",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces roseochromogenus subsp. oscitans",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Chlorination of ring B of the aglycone intermediate",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
-  "version_mite_data":"1.28"
+  "version_mite_data":"1.30"
 }
