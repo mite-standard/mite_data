@@ -1,0 +1,90 @@
+{
+    "accession": "MITE0000419",
+    "status": "active",
+    "comment": "Halogenation of the coupled aglycone containing ring A and B in the clorobiocin pathway. Bromine has higher affinity to CloHal but yields less bromobiocin due to lower turnover rate. Iodination and fluorination not possible ",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-07-13",
+            "contributors": [
+                "0009-0000-8651-1669"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "CloHal",
+        "description": "Flavin-dependent halogenase",
+        "references": [
+            "doi:10.1128/spectrum.00423-24",
+            "doi:10.1016/S1074-5521(03)00051-6"
+        ],
+        "databaseIds": {
+            "uniprot": "Q8GHB4",
+            "genpept": "AAN65237.1",
+            "mibig": "BGC0000832"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Chlorination of ring B of the aglycone intermediate",
+            "reactionSMARTS": "[#6:1]1(-[#8:28]):[#6:6]:[#6:5]:[#6:4]2:[#6:7](-[#8:27]):[#6:8](-[#7:12]-[#6:13](-[#6:15]3:[#6:20]:[#6:19]:[#6:18](-[#8:21]):[#6:17](-[#6:22]-[#6:23]=[#6:24](-[#6:26])-[#6:25]):[#6:16]:3)=[#8:14]):[#6:9](:[#8:11]:[#6:3]:2:[#6:2]:1)=[#8:10]>>[#6:1]1(-[#8:28]):[#6:6]:[#6:5]:[#6:4]2:[#6:7](-[#8:27]):[#6:8](-[#7:12]-[#6:13](-[#6:15]3:[#6:20]:[#6:19]:[#6:18](-[#8:21]):[#6:17](-[#6:22]-[#6:23]=[#6:24](-[#6:25])-[#6:26]):[#6:16]:3)=[#8:14]):[#6:9](:[#8:11]:[#6:3]:2:[#6:2]:1-[Cl])=[#8:10]",
+            "reactions": [
+                {
+                    "substrate": "CC(C)=CCc1cc(C(=O)Nc2c(O)c3ccc(O)cc3oc2=O)ccc1O",
+                    "products": [
+                        "CC(C)=CCc1cc(C(=O)Nc2c(O)c3ccc(O)c(Cl)c3oc2=O)ccc1O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "C-8 chlorination of the aminocoumarin moiety"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1128/spectrum.00423-24"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Bromination of ring B of the aglycone intermediate",
+            "reactionSMARTS": "[#6:1]1(-[#8:28]):[#6:6]:[#6:5]:[#6:4]2:[#6:7](-[#8:27]):[#6:8](-[#7:12]-[#6:13](-[#6:15]3:[#6:20]:[#6:19]:[#6:18](-[#8:21]):[#6:17](-[#6:22]-[#6:23]=[#6:24](-[#6:26])-[#6:25]):[#6:16]:3)=[#8:14]):[#6:9](:[#8:11]:[#6:3]:2:[#6:2]:1)=[#8:10]>>[#6:1]1(-[#8:28]):[#6:6]:[#6:5]:[#6:4]2:[#6:7](-[#8:27]):[#6:8](-[#7:12]-[#6:13](-[#6:15]3:[#6:20]:[#6:19]:[#6:18](-[#8:21]):[#6:17](-[#6:22]-[#6:23]=[#6:24](-[#6:25])-[#6:26]):[#6:16]:3)=[#8:14]):[#6:9](:[#8:11]:[#6:3]:2:[#6:2]:1-Br)=[#8:10]",
+            "reactions": [
+                {
+                    "substrate": "CC(C)=CCc1cc(C(=O)Nc2c(O)c3ccc(O)cc3oc2=O)ccc1O",
+                    "products": [
+                        "CC(C)=CCc1cc(C(=O)Nc2c(O)c3ccc(O)c(Br)c3oc2=O)ccc1O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "C-8 bromination of the aminocoumarin moiety"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1128/spectrum.00423-24"
+                ]
+            }
+        }
+    ]
+}
