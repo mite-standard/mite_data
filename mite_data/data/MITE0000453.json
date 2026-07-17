@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000453",
     "status": "active",
     "comment": "The cytochrome P450 monooxygenase btcC further catalyzes the multistep oxidation of betaestacin IV to produce several compounds, including betaestacins Va, Vb, Vc and VI ",
     "changelog": [
@@ -27,6 +27,9 @@
             "mibig": "BGC0001528"
         },
         "cofactors": {
+            "organic": [
+                "Heme"
+            ],
             "inorganic": [
                 "Fe"
             ]
