@@ -9365,6 +9365,28 @@
       "reaction_description":"BcmF performs dehydrogenation of the isoleucyl side chain to produce the final product bicyclomycin",
       "status":"active",
       "tailoring":"Dehydrogenation"
+    },
+    "MITE0000437":{
+      "accession":"MITE0000437",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme|NADP",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"PPT15946.1",
+        "mibig":"BGC0001468",
+        "uniprot":"UPI000C089C81"
+      },
+      "enzyme_name":"BcmD",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces cinnamoneus",
+      "phylum":"Actinomycetota",
+      "reaction_description":"BcmD catalyzes hydroxylation to form intermediate product dihydrobicyclomycin in the biosynthesis of bicyclomycin.",
+      "status":"active",
+      "tailoring":"Hydroxylation"
     }
   },
   "version_mite_data":"1.30"
