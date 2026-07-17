@@ -3522,6 +3522,24 @@
         "status":"active"
       }
     ],
+    "BGC0001948":[
+      {
+        "enzyme_description":"Cytochrome P450",
+        "enzyme_ids":{
+          "genpept":"AWF71596.1",
+          "mibig":"BGC0001948",
+          "uniprot":"UPI000A3766A8"
+        },
+        "enzyme_name":"NascB",
+        "enzyme_refs":[
+          "doi:10.1038/s41467-018-06528-z"
+        ],
+        "enzyme_tailoring":"Other|Oxidation",
+        "mite_accession":"MITE0000429",
+        "mite_url":"https://bioregistry.io/mite:MITE0000429",
+        "status":"active"
+      }
+    ],
     "BGC0002024":[
       {
         "enzyme_description":"Proline adenyltransferase",
