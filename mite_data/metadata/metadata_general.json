@@ -9578,6 +9578,28 @@
       "reaction_description":"NanG5 represents a glycosyltransferase that attaches the deoxysugar moiety (4-O-methyl-L-rhodinose) to the nanchangmycin aglycone at C-19",
       "status":"active",
       "tailoring":"Glycosylation"
+    },
+    "MITE0000447":{
+      "accession":"MITE0000447",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"AAP42875.1",
+        "mibig":"BGC0000105",
+        "uniprot":"UPI000019B38C"
+      },
+      "enzyme_name":"NanP",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces nanchangensis",
+      "phylum":"Actinomycetota",
+      "reaction_description":"NanP is involved in the oxidation of the methyl group at C-30 to generate ACP-bound nanchangmycin aglycone",
+      "status":"active",
+      "tailoring":"Hydroxylation|Oxidation"
     }
   },
   "version_mite_data":"1.30"
