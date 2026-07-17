@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000431",
     "status": "active",
     "changelog": [
         {
@@ -16,7 +16,7 @@
     ],
     "enzyme": {
         "name": "ThdD",
-        "description": "Amido transferase",
+        "description": "Amidotransferase",
         "references": [
             "doi:10.1002/cbic.201400016",
             "doi:10.1002/cbic.201500670"
