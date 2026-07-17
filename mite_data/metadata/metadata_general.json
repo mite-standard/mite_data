@@ -9600,6 +9600,28 @@
       "reaction_description":"NanP is involved in the oxidation of the methyl group at C-30 to generate ACP-bound nanchangmycin aglycone",
       "status":"active",
       "tailoring":"Hydroxylation|Oxidation"
+    },
+    "MITE0000448":{
+      "accession":"MITE0000448",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"ABC84463.1",
+        "mibig":"BGC0000114",
+        "uniprot":"UPI00006C98E2"
+      },
+      "enzyme_name":"NigD",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces violaceusniger",
+      "phylum":"Actinomycetota",
+      "reaction_description":"The last step in the biosynthesis of nigericin is the hydroxylation of the 30th carbon by NigD",
+      "status":"active",
+      "tailoring":"Hydroxylation"
     }
   },
   "version_mite_data":"1.30"

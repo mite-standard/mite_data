@@ -470,6 +470,25 @@
         "status":"active"
       }
     ],
+    "BGC0000114":[
+      {
+        "enzyme_description":"Cytochrome P450",
+        "enzyme_ids":{
+          "genpept":"ABC84463.1",
+          "mibig":"BGC0000114",
+          "uniprot":"UPI00006C98E2"
+        },
+        "enzyme_name":"NigD",
+        "enzyme_refs":[
+          "doi:10.1016/j.chembiol.2007.05.011",
+          "doi:10.1021/acs.jafc.5c12869"
+        ],
+        "enzyme_tailoring":"Hydroxylation",
+        "mite_accession":"MITE0000448",
+        "mite_url":"https://bioregistry.io/mite:MITE0000448",
+        "status":"active"
+      }
+    ],
     "BGC0000115":[
       {
         "enzyme_description":"monooxygenase / hydroxylase",
