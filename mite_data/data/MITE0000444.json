@@ -1,0 +1,62 @@
+{
+    "accession": "MITE0000444",
+    "status": "active",
+    "comment": "Catalyzes N-hydroxylation of nanangelenin C.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-29",
+            "contributors": [
+                "0000-0001-9260-4650"
+            ],
+            "reviewers": [
+                "0000-0002-4540-6501"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "NanF",
+        "description": "FAD-dependent oxidoreductase",
+        "references": [
+            "doi:10.1021/jacs.0c01605"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A6G9KH61",
+            "genpept": "QIQ51367.1"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Hydroxylation",
+                "Oxidation"
+            ],
+            "description": "N-hydroxylation of nanangelenin C",
+            "reactionSMARTS": "[#6:1]12:[#6:28]:[#6:27]:[#6:26]:[#6:25]:[#6:24]:1-[#6:22](=[#8:23])-[#6:21]-[#6@:5](-[#7:6]-[#6:7](-[#6:9]1:[#6:14](-[#7:15]-[#6:16](-[#6:19]=[#6:20])(-[#6:18])-[#6:17]):[#6:13]:[#6:12]:[#6:11]:[#6:10]:1)=[#8:8])-[#6:3](=[#8:4])-[#7:2]-2>>[#6:1]12:[#6:28]:[#6:27]:[#6:26]:[#6:25]:[#6:24]:1-[#6:22](=[#8:23])-[#6:21]-[#6@:5](-[#7:6]-[#6:7](-[#6:9]1:[#6:14](-[#7:15](-[#8])-[#6:16](-[#6:19]=[#6:20])(-[#6:18])-[#6:17]):[#6:13]:[#6:12]:[#6:11]:[#6:10]:1)=[#8:8])-[#6:3](=[#8:4])-[#7:2]-2",
+            "reactions": [
+                {
+                    "substrate": "C=CC(C)(C)Nc1ccccc1C(=O)N[C@H]1CC(=O)c2ccccc2NC1=O",
+                    "products": [
+                        "C=CC(C)(C)N(O)c1ccccc1C(=O)N[C@H]1CC(=O)c2ccccc2NC1=O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "N-hydroxylation of nanangelenin C"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1021/jacs.0c01605"
+                ]
+            }
+        }
+    ]
+}
