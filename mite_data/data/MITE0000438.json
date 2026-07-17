@@ -1,0 +1,66 @@
+{
+    "accession": "MITE0000438",
+    "status": "active",
+    "comment": "P450 enzyme CYP121 catalyzes intramolecular C-C bond formation in the biosynthesis of mycocyclosin",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-06-14",
+            "contributors": [
+                "0009-0008-8086-5325"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "New entry. Reviewer 1 changd reference; doi was not correct. 10.1073/pnas.0812191106"
+        }
+    ],
+    "enzyme": {
+        "name": "Cyp121",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1073/pnas.081219110"
+        ],
+        "databaseIds": {
+            "uniprot": "A5U4V9",
+            "genpept": "ABQ74059.1"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme",
+                "NADP"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Biaryl bond formation",
+                "Oxidation"
+            ],
+            "description": "CYP121 catalyzes the formation of an intramolecular C-C bond between 2 tyrosyl carbon atoms of cyclodipeptide cyclo(l-Tyr-l-Tyr)",
+            "reactionSMARTS": "[#6:1](-[#6:19]1:[#6:20]:[#6:15]:[#6:16](-[#8:21]):[#6:17]:[#6:18]:1)/[#6@@:2]1-[#7:24]-[#6:22](=[#8:23])-[#6@:6](-[#6:7]-[#6:8]2:[#6:13]:[#6:12]:[#6:11](-[#8:14]):[#6:10]:[#6:9]:2)/[#7:5]-[#6:3]-1=[#8:4]>>[#6:7]1-[#6:8]2:[#6:13]:[#6:12](:[#6:11](-[#8:14]):[#6:10]:[#6:9]:2)-[#6:17]2:[#6:16](-[#8:21]):[#6:15]:[#6:20]:[#6:19](:[#6:18]:2)-[#6:1]-[#6@:2]2-[#6:3](-[#7:5]-[#6@@:6]/1-[#6:22](-[#7:24]/2)=[#8:23])=[#8:4]",
+            "reactions": [
+                {
+                    "substrate": "O=C1N[C@@H](Cc2ccc(O)cc2)C(=O)N[C@H]1Cc1ccc(O)cc1",
+                    "products": [
+                        "O=C1N[C@H]2Cc3ccc(O)c(c3)-c3cc(ccc3O)C[C@@H]1NC2=O"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1073/pnas.0812191106"
+                ]
+            }
+        }
+    ]
+}
