@@ -9123,6 +9123,28 @@
       "reaction_description":"The cittilin methyltransferase CitC specifically methylates cittilin B, to yield the major derivative cittilin A",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000426":{
+      "accession":"MITE0000426",
+      "class_name":"Myxococcia",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"QLH55579.1",
+        "mibig":"BGC0002043",
+        "uniprot":"UPI0002F6195D"
+      },
+      "enzyme_name":"CitB",
+      "family":"Cystobacterineae",
+      "kingdom":"Pseudomonadati",
+      "order":"Myxococcales",
+      "organism":"Myxococcus xanthus DK 1622",
+      "phylum":"Myxococcota",
+      "reaction_description":"CitB catalyzes the oxidative formation of C–C and C–O cross-links within the CitA precursor peptide and MxPep is responsible for maturation of the peptide by removing the leader sequence generating the intermediate product cittilin B.",
+      "status":"active",
+      "tailoring":"Biaryl bond formation|Oxidation"
     }
   },
   "version_mite_data":"1.30"
