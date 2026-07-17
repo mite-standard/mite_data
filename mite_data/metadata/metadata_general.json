@@ -9101,6 +9101,28 @@
       "reaction_description":"DolJ catalyzes oxidative decarboxylation to form the terminal thiazole moiety of Dolastatin 10",
       "status":"active",
       "tailoring":"Decarboxylation"
+    },
+    "MITE0000425":{
+      "accession":"MITE0000425",
+      "class_name":"Myxococcia",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"O-methyltransferase",
+      "enzyme_ids":{
+        "genpept":"QLH55580.1",
+        "mibig":"BGC0002043",
+        "uniprot":"UPI00004FDDBF"
+      },
+      "enzyme_name":"CitC",
+      "family":"Cystobacterineae",
+      "kingdom":"Pseudomonadati",
+      "order":"Myxococcales",
+      "organism":"Myxococcus xanthus DK 1622",
+      "phylum":"Myxococcota",
+      "reaction_description":"The cittilin methyltransferase CitC specifically methylates cittilin B, to yield the major derivative cittilin A",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.30"
