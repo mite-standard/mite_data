@@ -9514,6 +9514,27 @@
       "reaction_description":"Reverse prenylation of nanangelenin B to produce nanangelenin C.",
       "status":"active",
       "tailoring":"Prenylation"
+    },
+    "MITE0000444":{
+      "accession":"MITE0000444",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD",
+      "domain":"Eukaryota",
+      "enzyme_description":"FAD-dependent oxidoreductase",
+      "enzyme_ids":{
+        "genpept":"QIQ51367.1",
+        "uniprot":"A0A6G9KH61"
+      },
+      "enzyme_name":"NanF",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Aspergillus nanangensis",
+      "phylum":"Dikarya",
+      "reaction_description":"N-hydroxylation of nanangelenin C",
+      "status":"active",
+      "tailoring":"Hydroxylation|Oxidation"
     }
   },
   "version_mite_data":"1.30"
