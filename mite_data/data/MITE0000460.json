@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000460",
     "status": "active",
     "comment": "Specialized purine nucleoside phosphorylase acting on 5\u2032-fluoro-5\u2032-deoxyadenosine; essential for generating fluorinated intermediates in organofluorine biosynthesis (FAc and 4-FT)",
     "changelog": [
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0002-4540-6501"
             ],
-            "comment": "nomenclature adjusted"
+            "comment": "New entry. Reviewer 1 adjusted nomenclature."
         }
     ],
     "enzyme": {
