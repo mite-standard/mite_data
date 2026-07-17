@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000440",
     "status": "active",
     "changelog": [
         {
@@ -23,7 +23,7 @@
         "auxiliaryEnzymes": [
             {
                 "name": "SlnE",
-                "description": "ferridoxin protein",
+                "description": "Ferridoxin protein",
                 "databaseIds": {
                     "uniprot": "UPI000247F57A",
                     "genpept": "AEZ53957.1"
