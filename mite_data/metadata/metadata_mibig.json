@@ -2940,6 +2940,23 @@
         "mite_accession":"MITE0000432",
         "mite_url":"https://bioregistry.io/mite:MITE0000432",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Tryptophan 6-halogenase",
+        "enzyme_ids":{
+          "genpept":"ANW12118.1",
+          "mibig":"BGC0001374",
+          "uniprot":"UPI0000EA332E"
+        },
+        "enzyme_name":"ThdH",
+        "enzyme_refs":[
+          "doi:10.1002/cbic.201400016",
+          "doi:10.1002/anie.7072895"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000433",
+        "mite_url":"https://bioregistry.io/mite:MITE0000433",
+        "status":"active"
       }
     ],
     "BGC0001378":[

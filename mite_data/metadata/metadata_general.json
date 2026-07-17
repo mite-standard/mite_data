@@ -9277,6 +9277,28 @@
       "reaction_description":"ThdN (homologue to ThnJ) converts 6-chlorotryptophan to 6-chloroindole-3-pyruvate",
       "status":"active",
       "tailoring":"Deamination"
+    },
+    "MITE0000433":{
+      "accession":"MITE0000433",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD",
+      "domain":"Bacteria",
+      "enzyme_description":"Tryptophan 6-halogenase",
+      "enzyme_ids":{
+        "genpept":"ANW12118.1",
+        "mibig":"BGC0001374",
+        "uniprot":"UPI0000EA332E"
+      },
+      "enzyme_name":"ThdH",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces albogriseolus",
+      "phylum":"Actinomycetota",
+      "reaction_description":"ThdH catalyzes regioselective chlorination of L-tryptophan at the C6 position of its indole ring during the biosynthesis of thienodolin",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.30"
