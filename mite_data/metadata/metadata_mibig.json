@@ -4532,6 +4532,25 @@
         "status":"active"
       }
     ],
+    "BGC0002750":[
+      {
+        "enzyme_description":"Cytochrome P450",
+        "enzyme_ids":{
+          "genpept":"ASY31956.1",
+          "mibig":"BGC0002750",
+          "uniprot":"UPI00020E54BD"
+        },
+        "enzyme_name":"TrpB",
+        "enzyme_refs":[
+          "doi:10.1002/anie.202208361",
+          "doi:10.1021/jacs.7b06176"
+        ],
+        "enzyme_tailoring":"Biaryl bond formation|Other",
+        "mite_accession":"MITE0000435",
+        "mite_url":"https://bioregistry.io/mite:MITE0000435",
+        "status":"active"
+      }
+    ],
     "BGC0002751":[
       {
         "enzyme_description":"Cytochrome P40",
