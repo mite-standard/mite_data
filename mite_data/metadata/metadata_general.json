@@ -9016,6 +9016,27 @@
       "reaction_description":"BytZ catalyzes N-terminal methylation of the mature cyclized peptide.",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000421":{
+      "accession":"MITE0000421",
+      "class_name":"Myxococcia",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"UID85536.1",
+        "mibig":"BGC0002631"
+      },
+      "enzyme_name":"BytO",
+      "family":"Cystobacterineae",
+      "kingdom":"Pseudomonadati",
+      "order":"Myxococcales",
+      "organism":"Pyxidicoccus fallax",
+      "phylum":"Myxococcota",
+      "reaction_description":"BytO catalyzes C–N biaryl cross-link between histidine and tyrosine of precursor peptide (MNYLH)",
+      "status":"active",
+      "tailoring":"Biaryl bond formation"
     }
   },
   "version_mite_data":"1.30"

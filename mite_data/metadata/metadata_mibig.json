@@ -4319,6 +4319,22 @@
         "mite_accession":"MITE0000420",
         "mite_url":"https://bioregistry.io/mite:MITE0000420",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Cytochrome P450",
+        "enzyme_ids":{
+          "genpept":"UID85536.1",
+          "mibig":"BGC0002631"
+        },
+        "enzyme_name":"BytO",
+        "enzyme_refs":[
+          "doi:10.3390/molecules26247483",
+          "doi:10.1021/jacs.5c17257"
+        ],
+        "enzyme_tailoring":"Biaryl bond formation",
+        "mite_accession":"MITE0000421",
+        "mite_url":"https://bioregistry.io/mite:MITE0000421",
+        "status":"active"
       }
     ],
     "BGC0002643":[
