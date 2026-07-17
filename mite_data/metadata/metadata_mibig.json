@@ -521,6 +521,26 @@
         "status":"active"
       }
     ],
+    "BGC0000134":[
+      {
+        "enzyme_description":"Halogenase",
+        "enzyme_ids":{
+          "genpept":"ACD39771.1",
+          "mibig":"BGC0000134",
+          "uniprot":"UPI00017691F7"
+        },
+        "enzyme_name":"Rdc2",
+        "enzyme_refs":[
+          "doi:10.1128/AEM.00478-08",
+          "doi:10.1074/jbc.M110.183574",
+          "doi:10.1016/j.bmcl.2012.12.038"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000427",
+        "mite_url":"https://bioregistry.io/mite:MITE0000427",
+        "status":"active"
+      }
+    ],
     "BGC0000147":[
       {
         "enzyme_description":"O-methyltransferase",

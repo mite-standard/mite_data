@@ -9145,6 +9145,28 @@
       "reaction_description":"CitB catalyzes the oxidative formation of C–C and C–O cross-links within the CitA precursor peptide and MxPep is responsible for maturation of the peptide by removing the leader sequence generating the intermediate product cittilin B.",
       "status":"active",
       "tailoring":"Biaryl bond formation|Oxidation"
+    },
+    "MITE0000427":{
+      "accession":"MITE0000427",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD",
+      "domain":"Eukaryota",
+      "enzyme_description":"Halogenase",
+      "enzyme_ids":{
+        "genpept":"ACD39771.1",
+        "mibig":"BGC0000134",
+        "uniprot":"UPI00017691F7"
+      },
+      "enzyme_name":"Rdc2",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Pochonia chlamydosporia",
+      "phylum":"Dikarya",
+      "reaction_description":"Rdc2 catalyzes the regioselective chlorination of a late-stage intermediate (monocillin II to pochonin D) during radicicol biosynthesis",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.30"
