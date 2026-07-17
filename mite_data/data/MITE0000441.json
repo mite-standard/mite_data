@@ -1,0 +1,67 @@
+{
+    "accession": "MITE0000441",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-06-01",
+            "contributors": [
+                "0009-0008-8086-5325"
+            ],
+            "reviewers": [
+                "0000-0002-4540-6501"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "SlnM",
+        "description": "O-methyltransferase",
+        "references": [
+            "doi:10.1002/anie.201503561",
+            "doi:10.1128/AEM.06701-11"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI000247F579",
+            "genpept": "AEZ53956.1",
+            "mibig": "BGC0000144"
+        },
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Dehydration",
+                "Other"
+            ],
+            "description": "SlnM, performs an unprecedented function by formation of the \u039418,19 double bond and bis(spiroacetal)",
+            "reactionSMARTS": "[#6:1]-[#6:2]\\[#6@@:3](-[#6:33](-[#6@:35](-[#6@@:37](/[#8:53])-[#6@@:38](-[#6@@:40]1\\[#8:45]-[#6:44](/[#6@:46](-[#6:49](-[#8:51])=[#8:50])-[#6:47]-[#6:48])-[#6:43]-[#6:42]-[#6@@:41]-1\\[#6:52])/[#6:39])\\[#6:36])=[#8:34])-[#6@@:4](/[#8:9])-[#6@@:5](\\[#6:32])-[#6:6]-[#6@@:7](\\[#6:31])-[#6:8]1-[#8:14]-[#6@@:13]2(/[#8:18]-[#6@@:17](-[#6@@:20]3-[#8:25]-[#6@@:24](/[#6:26])-[#6@@:23](\\[#8:29])(-[#6:27]-[#6:28])-[#6:22]-[#6:21]\\3)(/[#6:19])-[#6:16]-[#6:15]-2)-[#6@:12](\\[#8:30])-[#6:11](-[#6:10]=1)-[#8]>>[#6:1]-[#6:2]\\[#6@@:3](-[#6:33](-[#6@:35](-[#6@@:37](/[#8:53])-[#6@@:38](-[#6@@:40]1\\[#8:45]-[#6:44](/[#6@:46](-[#6:49](-[#8:51])=[#8:50])-[#6:47]-[#6:48])-[#6:43]-[#6:42]-[#6@@:41]-1\\[#6:52])/[#6:39])\\[#6:36])=[#8:34])-[#6@:4]1/[#8:9]/[#6@:8]2(-[#8:14]-[#6@@:13]3(/[#8:18]-[#6@@:17](-[#6@@:20]4-[#8:25]-[#6@@:24](/[#6:26])-[#6@@:23](\\[#8:29])(-[#6:27]-[#6:28])-[#6:22]-[#6:21]\\4)(/[#6:19])-[#6:16]-[#6:15]-3)-[#6@:12](\\[#8:30])-[#6:11]=[#6:10]-2)-[#6@:7](\\[#6:31])-[#6:6]-[#6@@:5]-1\\[#6:32]",
+            "reactions": [
+                {
+                    "substrate": "CC[C@@H](C(=O)O)C1CC[C@H](C)[C@H]([C@@H](C)[C@H](O)[C@H](C)C(=O)[C@H](CC)[C@@H](O)[C@@H](C)C[C@@H](C)C2=CC(O)[C@@H](O)[C@@]3(CC[C@@](C)([C@H]4CC[C@](O)(CC)[C@H](C)O4)O3)O2)O1",
+                    "products": [
+                        "CC[C@@H](C(=O)O)C1CC[C@H](C)[C@H]([C@@H](C)[C@H](O)[C@H](C)C(=O)[C@H](CC)[C@H]2O[C@@]3(C=C[C@@H](O)[C@@]4(CC[C@@](C)([C@H]5CC[C@](O)(CC)[C@H](C)O5)O4)O3)[C@H](C)C[C@@H]2C)O1"
+                    ],
+                    "isIntermediate": false,
+                    "description": "SlnM, a methyltransferase homologue, utilizes SAM as a co\u2010factor, for the formation of \u039418,19 double bond and bis(spiroacetal) in the last step of salinomycin biosynthesis."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Knock-out studies",
+                    "Site-directed mutagenesis"
+                ],
+                "references": [
+                    "doi:10.1002/anie.201503561",
+                    "doi:10.1128/AEM.06701-11"
+                ]
+            }
+        }
+    ]
+}
