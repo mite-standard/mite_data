@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000462",
     "status": "active",
     "comment": "Non-heme iron enzyme that catalyzes C-S bond formation during ergothioneine biosynthesis.",
     "changelog": [
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0002-5203-4662"
             ],
-            "comment": "changed from rxn smiles to rxn smarts, and updated reaction term"
+            "comment": "New entry. Reviewer 1 changed from rxn smiles to rxn smarts, and updated reaction term"
         }
     ],
     "enzyme": {
