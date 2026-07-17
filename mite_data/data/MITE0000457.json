@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000457",
     "status": "active",
     "changelog": [
         {
@@ -11,7 +11,7 @@
             "reviewers": [
                 "0009-0008-3623-3734"
             ],
-            "comment": "Corrected \u2013CH\u2082CH\u2083 to \u2013CH\u2082OH, specified aromatic hydroxylation, and updated the SMILES accordingly."
+            "comment": "New entry. Reviewer 1 corrected \u2013CH\u2082CH\u2083 to \u2013CH\u2082OH, specified aromatic hydroxylation, and updated the SMILES accordingly."
         }
     ],
     "enzyme": {
@@ -24,6 +24,14 @@
             "uniprot": "A0A017SFB8",
             "genpept": "EYE95339.1",
             "mibig": "BGC0002234"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
         }
     },
     "reactions": [
