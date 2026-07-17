@@ -9299,6 +9299,28 @@
       "reaction_description":"ThdH catalyzes regioselective chlorination of L-tryptophan at the C6 position of its indole ring during the biosynthesis of thienodolin",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000434":{
+      "accession":"MITE0000434",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P40",
+      "enzyme_ids":{
+        "genpept":"SDY48146.1",
+        "mibig":"BGC0002751",
+        "uniprot":"UPI000898B31C"
+      },
+      "enzyme_name":"AmyB",
+      "family":"Pseudonocardiaceae",
+      "kingdom":"Bacillati",
+      "order":"Pseudonocardiales",
+      "organism":"Amycolatopsis xylanica",
+      "phylum":"Actinomycetota",
+      "reaction_description":"AmyB introduces atropospecific one carbon-carbon and two carbon-nitrogen bonds",
+      "status":"active",
+      "tailoring":"Biaryl bond formation|Other"
     }
   },
   "version_mite_data":"1.30"
