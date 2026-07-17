@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000450",
     "status": "active",
     "comment": "RebM is the rebeccamycin sugar 4\u2032-O-methyltransferase that catalyzes the final tailoring step in rebeccamycin biosynthesis. It transfers a methyl group from S-adenosyl-L-methionine to the 4\u2032-hydroxy group of 4\u2032-demethylrebeccamycin, forming rebeccamycin and S-adenosyl-L-homocysteine.",
     "changelog": [
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0002-5203-4662"
             ],
-            "comment": "fixed ambiguous stereochemistry in smarts"
+            "comment": "New entry. Reviewer 1 fixed ambiguous stereochemistry in smarts."
         }
     ],
     "enzyme": {
