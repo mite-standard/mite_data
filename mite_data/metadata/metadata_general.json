@@ -9408,6 +9408,28 @@
       "reaction_description":"CYP121 catalyzes the formation of an intramolecular C-C bond between 2 tyrosyl carbon atoms of cyclodipeptide cyclo(l-Tyr-l-Tyr)",
       "status":"active",
       "tailoring":"Biaryl bond formation|Oxidation"
+    },
+    "MITE0000439":{
+      "accession":"MITE0000439",
+      "class_name":"Bacilli",
+      "cofactors_inorganic":"FeS",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"Radical SAM enzyme",
+      "enzyme_ids":{
+        "genpept":"ABJ66529.1",
+        "mibig":"BGC0001209",
+        "uniprot":"UPI0000E5643D"
+      },
+      "enzyme_name":"StrB",
+      "family":"Streptococcaceae",
+      "kingdom":"Bacillati",
+      "order":"Lactobacillales",
+      "organism":"Streptococcus thermophilus LMD-9",
+      "phylum":"Bacillota",
+      "reaction_description":"StrB installs the Lys-to-Trp crosslink through a C-C bond between the Cβ of Lys and the aromatic C7 of Trp",
+      "status":"active",
+      "tailoring":"Biaryl bond formation|Cyclization"
     }
   },
   "version_mite_data":"1.30"
