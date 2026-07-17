@@ -9255,6 +9255,28 @@
       "reaction_description":"ThdD (homologue to ThnA) catalyzes the amidation of the carboxylic acid to complete thienodolin biosynthesis",
       "status":"active",
       "tailoring":"Amination"
+    },
+    "MITE0000432":{
+      "accession":"MITE0000432",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"Pyridoxal phosphate",
+      "domain":"Bacteria",
+      "enzyme_description":"Aminotransferase",
+      "enzyme_ids":{
+        "genpept":"ANW12120.1",
+        "mibig":"BGC0001374",
+        "uniprot":"UPI0002B7707F"
+      },
+      "enzyme_name":"ThdN",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces albogriseolus",
+      "phylum":"Actinomycetota",
+      "reaction_description":"ThdN (homologue to ThnJ) converts 6-chlorotryptophan to 6-chloroindole-3-pyruvate",
+      "status":"active",
+      "tailoring":"Deamination"
     }
   },
   "version_mite_data":"1.30"
