@@ -3130,6 +3130,25 @@
         "status":"active"
       }
     ],
+    "BGC0001468":[
+      {
+        "enzyme_description":"2OG-Fe(II) oxygenase",
+        "enzyme_ids":{
+          "genpept":"PPT15945.1",
+          "mibig":"BGC0001468",
+          "uniprot":"UPI000C07B921"
+        },
+        "enzyme_name":"BcmF",
+        "enzyme_refs":[
+          "doi:10.1038/s41598-019-56747-7",
+          "doi:10.1021/acs.biochem.7b00943"
+        ],
+        "enzyme_tailoring":"Dehydrogenation",
+        "mite_accession":"MITE0000436",
+        "mite_url":"https://bioregistry.io/mite:MITE0000436",
+        "status":"active"
+      }
+    ],
     "BGC0001476":[
       {
         "enzyme_description":"Pseudouridine synthase",
