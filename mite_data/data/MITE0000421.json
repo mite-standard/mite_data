@@ -1,0 +1,67 @@
+{
+    "accession": "MITE0000421",
+    "status": "active",
+    "comment": "BytO installs C\u2013N biaryl linkage in the myxarylin biosynthesis and also demonstrated broad substrate tolerance",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-07-07",
+            "contributors": [
+                "0009-0008-8086-5325"
+            ],
+            "reviewers": [
+                "0000-0001-5863-7248"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "BytO",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.3390/molecules26247483",
+            "doi:10.1021/jacs.5c17257"
+        ],
+        "databaseIds": {
+            "genpept": "UID85536.1",
+            "mibig": "BGC0002631"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Biaryl bond formation"
+            ],
+            "description": "BytO catalyzes C\u2013N biaryl cross-link between histidine and tyrosine of precursor peptide (MNYLH)",
+            "reactionSMARTS": "[#6:1]-[#16:2]-[#6:3]-[#6:4]-[#6:5](-[#6:7](=[#8:47])-[#7:8]-[#6:9](-[#6:14](=[#8:46])-[#7:15]-[#6:16](-[#6:25](=[#8:45])-[#7:26]-[#6:27](-[#6:32](=[#8:44])-[#7:33]-[#6:34](-[#6:41](=[#8:43])-[#8:42])-[#6:35]-[#6:36]1:[#7:40]:[#6:39]:[#7:38]:[#6:37]:1)-[#6:28]-[#6:29](-[#6:31])-[#6:30])-[#6:17]-[#6:18]1:[#6:24]:[#6:23]:[#6:21](-[#8:22]):[#6:20]:[#6:19]:1)-[#6:10]-[#6:11](=[#8:13])-[#7:12])-[#7:6]>>[#6:1]-[#16:2]-[#6:3]-[#6:4]-[#6:5](-[#6:7](=[#8:47])-[#7:8]-[#6:9](-[#6:14](=[#8:46])-[#7:15]-[#6:16]1-[#6:25](=[#8:45])-[#7:26]-[#6:27](-[#6:32](=[#8:44])-[#7:33]-[#6:34](-[#6:41](=[#8:43])-[#8:42])-[#6:35]-[#6:36]2:[#6:37]:[#7:38]:[#6:39]:[#7:40]:2-[#6:20]2:[#6:19]:[#6:18](:[#6:24]:[#6:23]:[#6:21]:2-[#8:22])-[#6:17]-1)-[#6:28]-[#6:29](-[#6:31])-[#6:30])-[#6:10]-[#6:11](=[#8:13])-[#7:12])-[#7:6]",
+            "reactions": [
+                {
+                    "substrate": "CSCCC(N)C(=O)NC(CC(N)=O)C(=O)NC(Cc1ccc(O)cc1)C(=O)NC(CC(C)C)C(=O)NC(Cc1cnc[nH]1)C(=O)O",
+                    "products": [
+                        "CSCCC(N)C(=O)NC(CC(N)=O)C(=O)NC1Cc2ccc(O)c(c2)-n2cncc2CC(C(=O)O)NC(=O)C(CC(C)C)NC1=O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "BytO catalyzes C\u2013N biaryl cross-link within the BytA precursor peptide (MNYLH), generating the characteristic bicyclic scaffold of myxarylin"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.3390/molecules26247483",
+                    "doi:10.1021/jacs.5c17257"
+                ]
+            }
+        }
+    ]
+}
