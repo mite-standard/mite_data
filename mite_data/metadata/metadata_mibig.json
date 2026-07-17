@@ -627,6 +627,24 @@
         "status":"active"
       }
     ],
+    "BGC0000209":[
+      {
+        "enzyme_description":"Halogenase",
+        "enzyme_ids":{
+          "genpept":"AEI98659.1",
+          "mibig":"BGC0000209",
+          "uniprot":"UPI00038473B8"
+        },
+        "enzyme_name":"CtcP",
+        "enzyme_refs":[
+          "doi:10.1016/j.ymben.2013.06.003"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000428",
+        "mite_url":"https://bioregistry.io/mite:MITE0000428",
+        "status":"active"
+      }
+    ],
     "BGC0000230":[
       {
         "enzyme_description":"Flavoprotein monooxygenase",
