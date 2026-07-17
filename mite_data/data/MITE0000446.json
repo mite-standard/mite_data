@@ -1,0 +1,59 @@
+{
+    "accession": "MITE0000446",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-28",
+            "contributors": [
+                "0009-0008-8086-5325"
+            ],
+            "reviewers": [
+                "0000-0002-4540-6501"
+            ],
+            "comment": "New entry. Reviewer 1 changed description"
+        }
+    ],
+    "enzyme": {
+        "name": "NanG5",
+        "description": "Glycosyltransferase",
+        "references": [
+            "doi:10.1016/S1074-5521(03)00092-9",
+            "doi:10.1016/j.chembiol.2008.04.006"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI000019B37E",
+            "genpept": "AAP42861.1",
+            "mibig": "BGC0000105"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Glycosylation"
+            ],
+            "description": "NanG5 represents a glycosyltransferase that attaches the deoxysugar moiety (4-O-methyl-L-rhodinose) to the nanchangmycin aglycone at C-19",
+            "reactionSMARTS": "[#6:1]-[#6:2](-[#6:41](-[#6:43](-[#6:45]-[#6:46](-[#6:48](-[*])=[#8:49])-[#6:47])-[#6:44])=[#8:42])-[#6:3]-[#6:4](-[#6:6]1-[#6:39](-[#6:40])-[#6:37](-[#8:38])-[#6:36]-[#6:8]2(-[#8:35]-[#6:11](-[#6:13]3-[#8:34]-[#6:18]4(-[#6:32](-[#6:33])-[#6:31]-[#6:20](-[#6:21]5-[#6:29](-[#6:30])-[#6:28]-[#6:26](-[#6:27])-[#6:23](-[#8:25])(-[#6:24]-[#8:51])-[#8:22]-5)-[#8:19]-4)-[#6:16](-[#6:17])-[#6:15](-[#8:52])-[#6:14]-3)(-[#6:12])-[#6:10]-[#6:9]-2)-[#8:7]-1)-[#6:5]>>[#6:48](-[*])(-[#6:46](-[#6:47])-[#6:45]-[#6:43](-[#6:44])-[#6:41](=[#8:42])-[#6:2](-[#6:3]-[#6:4](-[#6:6]1-[#6:39](-[#6:40])-[#6:37](-[#8:38])-[#6:36]-[#6:8]2(-[#8:35]-[#6:11](-[#6:13]3-[#8:34]-[#6:18]4(-[#6:32](-[#6:33])-[#6:31]-[#6:20](-[#6:21]5-[#6:29](-[#6:30])-[#6:28]-[#6:26](-[#6:27])-[#6:23](-[#6:24]-[#8:51])(-[#8:25])-[#8:22]-5)-[#8:19]-4)-[#6:16](-[#6:17])-[#6:15](-[#8:52]-[#6]4-[#8]-[#6](-[#6])-[#6](-[#8]-[#6])-[#6]-[#6]-4)-[#6:14]-3)(-[#6:12])-[#6:10]-[#6:9]-2)-[#8:7]-1)-[#6:5])-[#6:1])=[#8:49]",
+            "reactions": [
+                {
+                    "substrate": "*C(=O)C(C)CC(C)C(=O)C(C)CC(C)C1OC2(CCC(C)(C3CC(O)C(C)C4(OC(C5OC(O)(CO)C(C)CC5C)CC4C)O3)O2)CC(O)C1C",
+                    "products": [
+                        "*C(=O)C(C)CC(C)C(=O)C(C)CC(C)C1OC2(CCC(C)(C3CC(OC4CCC(OC)C(C)O4)C(C)C4(OC(C5OC(O)(CO)C(C)CC5C)CC4C)O3)O2)CC(O)C1C"
+                    ],
+                    "isIntermediate": true,
+                    "description": "ACP-bound nanchangmycin aglycone is glycosylated with 4-O-methyl-L-rhodinose at the C-19 hydroxyl under the control of NanG5, before final hydrolytic release of nanchangmycin by the NanE thioesterase."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1016/S1074-5521(03)00092-9",
+                    "doi:10.1016/j.chembiol.2008.04.006"
+                ]
+            }
+        }
+    ]
+}
