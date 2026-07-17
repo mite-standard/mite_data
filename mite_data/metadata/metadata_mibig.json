@@ -434,6 +434,25 @@
         "status":"active"
       }
     ],
+    "BGC0000105":[
+      {
+        "enzyme_description":"Glycosyltransferase",
+        "enzyme_ids":{
+          "genpept":"AAP42861.1",
+          "mibig":"BGC0000105",
+          "uniprot":"UPI000019B37E"
+        },
+        "enzyme_name":"NanG5",
+        "enzyme_refs":[
+          "doi:10.1016/S1074-5521(03)00092-9",
+          "doi:10.1016/j.chembiol.2008.04.006"
+        ],
+        "enzyme_tailoring":"Glycosylation",
+        "mite_accession":"MITE0000446",
+        "mite_url":"https://bioregistry.io/mite:MITE0000446",
+        "status":"active"
+      }
+    ],
     "BGC0000115":[
       {
         "enzyme_description":"monooxygenase / hydroxylase",
