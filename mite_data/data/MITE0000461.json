@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000461",
     "status": "active",
     "changelog": [
         {
@@ -32,7 +32,7 @@
                 "Heme"
             ],
             "inorganic": [
-                "FeS"
+                "Fe"
             ]
         }
     },
