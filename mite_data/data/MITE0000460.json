@@ -10,9 +10,10 @@
                 "0000-0001-7044-2419"
             ],
             "reviewers": [
-                "0000-0002-4540-6501"
+                "0000-0002-4540-6501",
+                "0000-0001-6534-6609"
             ],
-            "comment": "New entry. Reviewer 1 adjusted nomenclature."
+            "comment": "New entry. Reviewer 1 adjusted nomenclature. Reviewer 2 fixed MIBiG cross-links."
         }
     ],
     "enzyme": {
@@ -24,8 +25,8 @@
             "doi:10.1016/j.bioorg.2007.04.001"
         ],
         "databaseIds": {
-            "uniprot": "F8JUK2",
-            "genpept": "CCB76862.1",
+            "uniprot": "Q1EMV9",
+            "genpept": "CAJ20005.1",
             "mibig": "BGC0000903"
         }
     },
