@@ -9233,6 +9233,28 @@
       "reaction_description":" CmdE encodes a halogenase responsible for formation of the 2-chlorotryptophan residues in chondramide B",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000431":{
+      "accession":"MITE0000431",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Amidotransferase",
+      "enzyme_ids":{
+        "genpept":"ANW12109.1",
+        "mibig":"BGC0001374",
+        "uniprot":"UPI0002B76286"
+      },
+      "enzyme_name":"ThdD",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces albogriseolus",
+      "phylum":"Actinomycetota",
+      "reaction_description":"ThdD (homologue to ThnA) catalyzes the amidation of the carboxylic acid to complete thienodolin biosynthesis",
+      "status":"active",
+      "tailoring":"Amination"
     }
   },
   "version_mite_data":"1.30"
