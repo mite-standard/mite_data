@@ -1,0 +1,66 @@
+{
+    "accession": "MITE0000434",
+    "status": "active",
+    "comment": "A cytochrome P450 monooxygenase, AmyB is responsible for the atropospecific formation of one carbon-carbon and two carbon-nitrogen bonds on precursor peptide",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-06-22",
+            "contributors": [
+                "0009-0008-8086-5325"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 added cofactors."
+        }
+    ],
+    "enzyme": {
+        "name": "AmyB",
+        "description": "Cytochrome P40",
+        "references": [
+            "doi:10.1002/anie.202208361"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI000898B31C",
+            "genpept": "SDY48146.1",
+            "mibig": "BGC0002751"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Biaryl bond formation",
+                "Other"
+            ],
+            "description": "AmyB introduces atropospecific one carbon-carbon and two carbon-nitrogen bonds",
+            "reactionSMARTS": "[#6:1]-[#6:2]-[#6:3](-[#6:5](-[#6:33](-[#7:35]-[#6:36](-[#6:47](-[#7:49]-[#6:50](-[#6:61](-[#8:63])=[#8:62])-[#6:51]-[#6:52]1:[#6:60]2:[#6:55](:[#6:56]:[#6:57]:[#6:58]:[#6:59]:2):[#7:54]:[#6:53]:1)=[#8:48])-[#6:37]-[#6:38]1:[#6:46]2:[#6:41](:[#6:42]:[#6:43]:[#6:44]:[#6:45]:2):[#7:40]:[#6:39]:1)=[#8:34])-[#7:6]-[#6:7](-[#6:9](-[#7:18]-[#6:19](-[#6:21](-[#6:23]-[#6:24]1:[#6:32]2:[#6:27](:[#6:28]:[#6:29]:[#6:30]:[#6:31]:2):[#7:26]:[#6:25]:1)-[#7:22])=[#8:20])-[#6:10]-[#6:11]1:[#6:17]:[#6:16]:[#6:14](-[#8:15]):[#6:13]:[#6:12]:1)=[#8:8])-[#6:4]>>[#6:1]-[#6:2]-[#6:3](-[#6:5]1-[#6:33](=[#8:34])-[#7:35]2-[#6:39]3-[#7:40]-[#6:41]4:[#6:46](-[#6:38]-3(-[#6:37]-[#6:36]-2-[#6:47](-[#7:49]-[#6:50](-[#6:61](-[#8:63])=[#8:62])-[#6:51]-[#6:52]2:[#6:60]3:[#6:55](:[#6:56]:[#6:57]:[#6:58]:[#6:59]:3):[#7:54]:[#6:53]:2)=[#8:48])-[#6:30]2:[#6:29]:[#6:28]:[#6:27]3:[#7:26]5:[#6:25]:[#6:24](-[#6:23]-[#6:21](-[#6:19](-[#7:18]-[#6:9](-[#6:10]-[#6:11]6:[#6:12]:[#6:13]-5:[#6:14](-[#8:15]):[#6:16]:[#6:17]:6)-[#6:7](=[#8:8])-[#7:6]-1)=[#8:20])-[#7:22]):[#6:32]:3:[#6:31]:2):[#6:45]:[#6:44]:[#6:43]:[#6:42]:4)-[#6:4]",
+            "reactions": [
+                {
+                    "substrate": "CCC(C)C(NC(=O)C(Cc1ccc(O)cc1)NC(=O)C(N)Cc1c[nH]c2ccccc12)C(=O)NC(Cc1c[nH]c2ccccc12)C(=O)NC(Cc1c[nH]c2ccccc12)C(=O)O",
+                    "products": [
+                        "CCC(C)C1NC(=O)C2Cc3ccc(O)c(c3)-n3cc(c4cc(ccc43)C34CC(C(=O)NC(Cc5c[nH]c6ccccc56)C(=O)O)N(C1=O)C3Nc1ccccc14)CC(N)C(=O)N2"
+                    ],
+                    "isIntermediate": true,
+                    "description": "AmyB introduces one C-C and two C-N bonds on the precursor peptide followed by maturation by protease yielding hexapeptide amyxirubin A (AWYIWW) and pentapeptide amyxirubin B (WYIWW)"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1002/anie.202208361"
+                ]
+            }
+        }
+    ]
+}
