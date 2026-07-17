@@ -9473,6 +9473,26 @@
       "reaction_description":"SlnM, performs an unprecedented function by formation of the Δ18,19 double bond and bis(spiroacetal)",
       "status":"active",
       "tailoring":"Dehydration|Other"
+    },
+    "MITE0000442":{
+      "accession":"MITE0000442",
+      "class_name":"Not found",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Not found",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "uniprot":"UPI000748C2AE"
+      },
+      "enzyme_name":"LyoI",
+      "family":"Not found",
+      "kingdom":"Not found",
+      "order":"Not found",
+      "organism":"Not found",
+      "phylum":"Not found",
+      "reaction_description":"The hydro-2,2′-bifuran region of pre-lysocellin is oxidized by LyoI to form a hydro-2,2′-bifuran-2-ol (hemiketal) moiety, resulting in the final lysocellin product.",
+      "status":"active",
+      "tailoring":"Hydroxylation|Oxidation"
     }
   },
   "version_mite_data":"1.30"
