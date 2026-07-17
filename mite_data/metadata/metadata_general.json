@@ -9037,6 +9037,27 @@
       "reaction_description":"BytO catalyzes C–N biaryl cross-link between histidine and tyrosine of precursor peptide (MNYLH)",
       "status":"active",
       "tailoring":"Biaryl bond formation"
+    },
+    "MITE0000422":{
+      "accession":"MITE0000422",
+      "class_name":"Cyanophyceae",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Ascorbic acid",
+      "domain":"Bacteria",
+      "enzyme_description":"Non-Heme Diiron Oxygenase",
+      "enzyme_ids":{
+        "genpept":"BBU25148.1",
+        "uniprot":"UPI00419E3F48"
+      },
+      "enzyme_name":"LynB7",
+      "family":"Coleofasciculaceae",
+      "kingdom":"Bacillati",
+      "order":"Coleofasciculales",
+      "organism":"Moorena bouillonii",
+      "phylum":"Cyanobacteriota",
+      "reaction_description":"LynB7 catalyzes the oxidative decarboxylation of 2-thiazoline-4-carboxylic acid to fully conjugated 2-thiazole moiety in the lyngbyapeptin B biosynthesis",
+      "status":"active",
+      "tailoring":"Decarboxylation|Dehydrogenation"
     }
   },
   "version_mite_data":"1.30"
