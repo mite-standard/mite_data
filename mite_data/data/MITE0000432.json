@@ -1,0 +1,61 @@
+{
+    "accession": "MITE0000432",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-06-25",
+            "contributors": [
+                "0009-0008-8086-5325"
+            ],
+            "reviewers": [
+                "0000-0001-5701-0590"
+            ],
+            "comment": "New entry. Reviewer 1 changed rxn smiles to rxn smarts"
+        }
+    ],
+    "enzyme": {
+        "name": "ThdN",
+        "description": "Aminotransferase",
+        "references": [
+            "doi:10.1002/cbic.201400016",
+            "doi:10.1002/cbic.201500670"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI0002B7707F",
+            "genpept": "ANW12120.1",
+            "mibig": "BGC0001374"
+        },
+        "cofactors": {
+            "organic": [
+                "Pyridoxal phosphate"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Deamination"
+            ],
+            "description": "ThdN (homologue to ThnJ) converts 6-chlorotryptophan to 6-chloroindole-3-pyruvate",
+            "reactionSMARTS": "[#7:1]-[#6:2](-[#6:13](=[#8:15])-[#8:14])-[#6:3]-[#6:4]1:[#6:12]2:[#6:7](:[#6:8]:[#6:9](:[#6:10]:[#6:11]:2)-[Cl:16]):[#7:6]:[#6:5]:1>>[#8:1]=[#6:2](-[#6:13](=[#8:15])-[#8:14])-[#6:3]-[#6:4]1:[#6:12]2:[#6:7](:[#6:8]:[#6:9](:[#6:10]:[#6:11]:2)-[Cl:16]):[#7:6]:[#6:5]:1",
+            "reactions": [
+                {
+                    "substrate": "NC(Cc1c[nH]c2cc(Cl)ccc12)C(=O)O",
+                    "products": [
+                        "O=C(O)C(=O)Cc1c[nH]c2cc(Cl)ccc12"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1002/cbic.201400016"
+                ]
+            }
+        }
+    ]
+}
