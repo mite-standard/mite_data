@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000436",
     "status": "active",
     "changelog": [
         {
@@ -11,7 +11,7 @@
             "reviewers": [
                 "0000-0002-8323-5416"
             ],
-            "comment": "Added 2-OG and Fe as cofactors"
+            "comment": "New entry. Reviewer 1 added 2-OG and Fe as cofactors."
         }
     ],
     "enzyme": {
