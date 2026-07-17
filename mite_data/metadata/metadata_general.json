@@ -9387,6 +9387,27 @@
       "reaction_description":"BcmD catalyzes hydroxylation to form intermediate product dihydrobicyclomycin in the biosynthesis of bicyclomycin.",
       "status":"active",
       "tailoring":"Hydroxylation"
+    },
+    "MITE0000438":{
+      "accession":"MITE0000438",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme|NADP",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"ABQ74059.1",
+        "uniprot":"A5U4V9"
+      },
+      "enzyme_name":"Cyp121",
+      "family":"Mycobacteriaceae",
+      "kingdom":"Bacillati",
+      "order":"Mycobacteriales",
+      "organism":"Mycobacterium tuberculosis (strain ATCC 25177 / H37Ra)",
+      "phylum":"Actinomycetota",
+      "reaction_description":"CYP121 catalyzes the formation of an intramolecular C-C bond between 2 tyrosyl carbon atoms of cyclodipeptide cyclo(l-Tyr-l-Tyr)",
+      "status":"active",
+      "tailoring":"Biaryl bond formation|Oxidation"
     }
   },
   "version_mite_data":"1.30"
