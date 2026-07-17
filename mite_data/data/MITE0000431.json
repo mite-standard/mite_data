@@ -1,0 +1,59 @@
+{
+    "accession": "MITE0000431",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-06-25",
+            "contributors": [
+                "0009-0008-8086-5325"
+            ],
+            "reviewers": [
+                "0000-0001-5701-0590"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "ThdD",
+        "description": "Amidotransferase",
+        "references": [
+            "doi:10.1002/cbic.201400016",
+            "doi:10.1002/cbic.201500670"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI0002B76286",
+            "genpept": "ANW12109.1",
+            "mibig": "BGC0001374"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Amination"
+            ],
+            "description": "ThdD (homologue to ThnA) catalyzes the amidation of the carboxylic acid to complete thienodolin biosynthesis",
+            "reactionSMARTS": "[#8:1]=[#6:2](-[#6:4]1:[#16:16]:[#6:7]2:[#7:8]:[#6:9]3:[#6:15](:[#6:6]:2:[#6:5]:1):[#6:14]:[#6:13]:[#6:11](-[Cl:12]):[#6:10]:3)-[#8]>>[#16:16]1:[#6:7]2:[#6:6](:[#6:5]:[#6:4]:1-[#6:2](=[#8:1])-[#7:8]):[#6:15]1:[#6:14]:[#6:13]:[#6:11](:[#6:10]:[#6:9]:1:[#7:8]:2)-[Cl:12]",
+            "reactions": [
+                {
+                    "substrate": "O=C(O)c1cc2c([nH]c3cc(Cl)ccc32)s1",
+                    "products": [
+                        "NC(=O)c1cc2c([nH]c3cc(Cl)ccc32)s1"
+                    ],
+                    "isIntermediate": false,
+                    "description": "ThdD as an amidotransferase catalyzes the conversion of the carboxylic acid group of 6-chlorothieno[2,3-b]indole-2-carboxylic acid to the amido group of thienodolin"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1002/cbic.201400016"
+                ]
+            }
+        }
+    ]
+}
