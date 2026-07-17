@@ -9451,6 +9451,28 @@
       "reaction_description":"The P450 monooxygenase SlnF performs the hydroxylation at C-20 in cognate with ferredoxin SlnE",
       "status":"active",
       "tailoring":"Hydroxylation|Oxidation"
+    },
+    "MITE0000441":{
+      "accession":"MITE0000441",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"O-methyltransferase",
+      "enzyme_ids":{
+        "genpept":"AEZ53956.1",
+        "mibig":"BGC0000144",
+        "uniprot":"UPI000247F579"
+      },
+      "enzyme_name":"SlnM",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces albus",
+      "phylum":"Actinomycetota",
+      "reaction_description":"SlnM, performs an unprecedented function by formation of the Δ18,19 double bond and bis(spiroacetal)",
+      "status":"active",
+      "tailoring":"Dehydration|Other"
     }
   },
   "version_mite_data":"1.30"
