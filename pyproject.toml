@@ -21,7 +21,6 @@ keywords = [
     "genomics"
 ]
 classifiers = [
-    "Programming Language :: Python :: 3.12",
     "Operating System :: POSIX :: Linux",
     "Topic :: Scientific/Engineering :: Bio-Informatics",
     "Topic :: Scientific/Engineering :: Chemistry"
