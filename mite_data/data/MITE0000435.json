@@ -1,0 +1,67 @@
+{
+    "accession": "MITE0000435",
+    "status": "active",
+    "comment": "TrpB installs three crosslinks on the precursor peptide, generating highly constrained atropopeptide scaffold",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-06-22",
+            "contributors": [
+                "0009-0008-8086-5325"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "TrpB",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1002/anie.202208361",
+            "doi:10.1021/jacs.7b06176"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI00020E54BD",
+            "genpept": "ASY31956.1",
+            "mibig": "BGC0002750"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Biaryl bond formation",
+                "Other"
+            ],
+            "description": "P450 monooxygenase, TrpB is responsible for the atropospecific formation of one carbon-carbon and two carbon-nitrogen bonds",
+            "reactionSMARTS": "[#6:1]-[#6:2]-[#6:3](-[#6:5](-[#7:44]-[#6:42](=[#8:43])-[#6:34](-[#6:35]-[#6:36]1:[#6:40]:[#6:39]:[#6:38](:[#6:66]:[#6:37]:1)-[#8:41])-[#7:33]-[#6:31](=[#8:32])-[#6:30](-[#7:45]-[#6:46](-[#6:48](-[#7:50])-[#6:49])=[#8:47])-[#6:29]-[#6:28]1:[#6:22]2:[#6:23](:[#7:26]:[#6:27]:1):[#6:24]:[#6:25]:[#6:20]:[#6:21]:2)-[#6:6](-[#7:8]-[#6:9](-[#6:51](-[#7:53]-[#6:54](-[#6:63](-[#8:65])=[#8:64])-[#6:55]-[#6:56]1:[#6:61]:[#6:60]:[#6:59](-[#8:62]):[#6:58]:[#6:57]:1)=[#8:52])-[#6:10]-[#6:11]1-[#6:19]2:[#6:14](:[#6:15]:[#6:16]:[#6:17]:[#6:18]:2)-[#7:13]-[#6:12]-1)=[#8:7])-[#6:4]>>[#6:1]-[#6:2]-[#6:3](-[#6:5]1-[#7:44]-[#6:42](=[#8:43])-[#6:34]2-[#6:35]-[#6:36]3:[#6:40]:[#6:39]:[#6:38](-[#8:41]):[#6:66](-[#7:26]4:[#6:27]:[#6:28](-[#6:29]-[#6:30](-[#7:45]-[#6:46](-[#6:48](-[#7:50])-[#6:49])=[#8:47])-[#6:31](-[#7:33]-2)=[#8:32]):[#6:22]2:[#6:23]:4:[#6:24]:[#6:25]:[#6:20](:[#6:21]:2)-[#6:11]24-[#6:19]5:[#6:14](:[#6:15]:[#6:16]:[#6:17]:[#6:18]:5)-[#7:13]-[#6:12]-2-[#7:8](-[#6:9](-[#6:51](-[#7:53]-[#6:54](-[#6:63](-[#8:65])=[#8:64])-[#6:55]-[#6:56]2:[#6:57]:[#6:58]:[#6:59](-[#8:62]):[#6:60]:[#6:61]:2)=[#8:52])-[#6:10]-4)-[#6:6]-1=[#8:7]):[#6:37]:3)-[#6:4]",
+            "reactions": [
+                {
+                    "substrate": "CCC(C)C(NC(=O)C(Cc1ccc(O)cc1)NC(=O)C(Cc1c[nH]c2ccccc12)NC(=O)C(C)N)C(=O)NC(CC1CNc2ccccc21)C(=O)NC(Cc1ccc(O)cc1)C(=O)O",
+                    "products": [
+                        "CCC(C)C1NC(=O)C2Cc3ccc(O)c(c3)-n3cc(c4cc(ccc43)C34CC(C(=O)NC(Cc5ccc(O)cc5)C(=O)O)N(C1=O)C3Nc1ccccc14)CC(NC(=O)C(C)N)C(=O)N2"
+                    ],
+                    "isIntermediate": true,
+                    "description": "TrpB installs three crosslinks on the precursor peptide followed by protease activity to generate the highly constrained  hexa- and pentapeptide products Tryptorubin A (AWYIWY) and B (WYIWY)."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1002/anie.202208361"
+                ]
+            }
+        }
+    ]
+}
