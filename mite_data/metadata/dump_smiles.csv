@@ -572,3 +572,4 @@
 570,MITE0000420.reaction1.example1,CC(C)C[C@@H]1NC(=O)[C@@H](N)Cc2ccc(O)c(c2)-n2cncc2C[C@@H](C(=O)O)NC1=O,CN[C@H]1Cc2ccc(O)c(c2)-n2cncc2C[C@@H](C(=O)O)NC(=O)[C@H](CC(C)C)NC1=O
 571,MITE0000421.reaction1.example1,CSCCC(N)C(=O)NC(CC(N)=O)C(=O)NC(Cc1ccc(O)cc1)C(=O)NC(CC(C)C)C(=O)NC(Cc1cnc[nH]1)C(=O)O,CSCCC(N)C(=O)NC(CC(N)=O)C(=O)NC1Cc2ccc(O)c(c2)-n2cncc2CC(C(=O)O)NC(=O)C(CC(C)C)NC1=O
 572,MITE0000422.reaction1.example1,COc1ccc(C[C@@H](C(=O)N(C)[C@H](C(=O)N(C)[C@@H](Cc2ccc(OC)cc2)C(=O)N[C@@H](C)C2=N[C@H](C(=O)O)CS2)C(C)C)N(C)C(=O)CC(C)OC)cc1,COc1ccc(C[C@@H](C(=O)N(C)[C@H](C(=O)N(C)[C@@H](Cc2ccc(OC)cc2)C(=O)N[C@@H](C)c2nccs2)C(C)C)N(C)C(=O)CC(C)OC)cc1
+573,MITE0000423.reaction1.example1,COC(CC(=O)N(C)C(Cc1ccccc1)C1=NC(C(=O)O)CS1)CC(C)C(Cl)(Cl)Cl,COC(CC(=O)N(C)C(Cc1ccccc1)c1nccs1)CC(C)C(Cl)(Cl)Cl
