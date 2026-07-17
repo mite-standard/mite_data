@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000435",
     "status": "active",
     "comment": "TrpB installs three crosslinks on the precursor peptide, generating highly constrained atropopeptide scaffold",
     "changelog": [
@@ -26,6 +26,14 @@
             "uniprot": "UPI00020E54BD",
             "genpept": "ASY31956.1",
             "mibig": "BGC0002750"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
         }
     },
     "reactions": [
