@@ -1,0 +1,69 @@
+{
+    "accession": "MITE0000448",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-27",
+            "contributors": [
+                "0009-0008-8086-5325"
+            ],
+            "reviewers": [
+                "0000-0002-8323-5416"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "NigD",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1016/j.chembiol.2007.05.011",
+            "doi:10.1021/acs.jafc.5c12869"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI00006C98E2",
+            "genpept": "ABC84463.1",
+            "mibig": "BGC0000114"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "The last step in the biosynthesis of nigericin is the hydroxylation of the 30th carbon by NigD",
+            "reactionSMARTS": "[#6:2](-[#6:3])(-[#6:4](-[#8:5])=[#8:6])-[#6:7]1-[#8:9]-[#6:10](-[#6:11]-[#6:12]2-[#6:13]-[#6:14](-[#8:15]-[#6])-[#6:16](-[#6:17])-[#6:18]3(-[#8:19]-[#6:20](-[#6:21])(-[#6:25]4-[#6:27]-[#6:28]-[#6:29](-[#6:30])(-[#6:32]5-[#8:34]-[#6:35](-[#6:40]6-[#8:42]-[#6:43](-[#8:44])(-[#6:45])-[#6:46](-[#6:47])-[#6:48]-[#6:49]-6-[#6:50])-[#6:37]-[#6:38]-5-[#6:39])-[#8:31]-4)-[#6:22]-[#6:23]-3-[#6:24])-[#8:51]-2)-[#6:52]-[#6:53]-[#6:54]-1-[#6:55]>>[#6:2](-[#6:3])(-[#6:4](-[#8:5])=[#8:6])-[#6:7]1-[#8:9]-[#6:10](-[#6:11]-[#6:12]2-[#6:13]-[#6:14](-[#8:15]-[#6])-[#6:16](-[#6:17])-[#6:18]3(-[#8:19]-[#6:20](-[#6:21])(-[#6:25]4-[#6:27]-[#6:28]-[#6:29](-[#6:30])(-[#6:32]5-[#8:34]-[#6:35](-[#6:40]6-[#8:42]-[#6:43](-[#8:44])(-[#6:45]-[#8])-[#6:46](-[#6:47])-[#6:48]-[#6:49]-6-[#6:50])-[#6:37]-[#6:38]-5-[#6:39])-[#8:31]-4)-[#6:22]-[#6:23]-3-[#6:24])-[#8:51]-2)-[#6:52]-[#6:53]-[#6:54]-1-[#6:55]",
+            "reactions": [
+                {
+                    "substrate": "COC1CC(CC2CCC(C)C(C(C)C(=O)O)O2)OC2(OC(C)(C3CCC(C)(C4OC(C5OC(C)(O)C(C)CC5C)CC4C)O3)CC2C)C1C",
+                    "products": [
+                        "COC1CC(CC2CCC(C)C(C(C)C(=O)O)O2)OC2(OC(C)(C3CCC(C)(C4OC(C5OC(O)(CO)C(C)CC5C)CC4C)O3)CC2C)C1C"
+                    ],
+                    "isIntermediate": false,
+                    "description": "An inhibitor of cytochrome P450 mono-oxygenases led to the accumulation of grisorixin (C-30-dehydroxylnigericin) and overexpression of nigD variant (mimicking demalonylation) increases nigericin production."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure",
+                    "In vitro assay",
+                    "Site-directed mutagenesis"
+                ],
+                "references": [
+                    "doi:10.1016/j.chembiol.2007.05.011",
+                    "doi:10.1021/acs.jafc.5c12869",
+                    "doi:10.1016/j.nbt.2025.02.002"
+                ]
+            }
+        }
+    ]
+}
