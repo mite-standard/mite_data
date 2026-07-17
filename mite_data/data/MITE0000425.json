@@ -1,0 +1,62 @@
+{
+    "accession": "MITE0000425",
+    "status": "active",
+    "comment": "CitC is a SAM-dependent O-methyltransferase that catalyzes O-methylation of the bicyclic cittilin intermediate cittilin B, producing the mature metabolite cittilin A.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-07-03",
+            "contributors": [
+                "0009-0008-8086-5325"
+            ],
+            "reviewers": [
+                "0000-0001-5701-0590"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "CitC",
+        "description": "O-methyltransferase",
+        "references": [
+            "doi:10.1021/acschembio.0c00430"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI00004FDDBF",
+            "genpept": "QLH55580.1",
+            "mibig": "BGC0002043"
+        },
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "The cittilin methyltransferase CitC specifically methylates cittilin B, to yield the major derivative cittilin A",
+            "reactionSMARTS": "[#6:1]-[#6:2]-[#6@@:3](-[#6@:5]1/[#6:29](=[#8:30])-[#7:28]-[#6@@:27]2-[#6:31](-[#7:33]-[#6@@:34](-[#6:38]-[#6:39]3:[#6:44]:[#6:43]:[#6:42](-[#8:45]-[#6:22]4:[#6:23]:[#6:24](-[#6:26]/2):[#6:25]:[#6:19](:[#6:20]:4-[#8:21])-[#6:14]2:[#6:15](:[#6:17]:[#6:18]:[#6:12](:[#6:13]:2)-[#6:11]-[#6@:9](/[#7:10])-[#6:7](=[#8:8])-[#7:6]-1)-[#8:16]):[#6:41]:[#6:40]:3)\\[#6:35](-[#8:37])=[#8:36])=[#8:32])\\[#6:4]>>[#6:1]-[#6:2]-[#6@@:3](-[#6@:5]1/[#6:29](=[#8:30])-[#7:28]-[#6@@:27]2-[#6:31](-[#7:33]-[#6@@:34](-[#6:38]-[#6:39]3:[#6:44]:[#6:43]:[#6:42](-[#8:45]-[#6:22]4:[#6:23]:[#6:24](-[#6:26]/2):[#6:25]:[#6:19](:[#6:20]:4-[#8:21])-[#6:14]2:[#6:15](:[#6:17]:[#6:18]:[#6:12](:[#6:13]:2)-[#6:11]-[#6@:9](/[#7:10])-[#6:7](=[#8:8])-[#7:6]-1)-[#8:16]-[#6]):[#6:41]:[#6:40]:3)\\[#6:35](-[#8:37])=[#8:36])=[#8:32])\\[#6:4]",
+            "reactions": [
+                {
+                    "substrate": "CC[C@H](C)[C@@H]1NC(=O)[C@@H](N)Cc2ccc(O)c(c2)-c2cc3cc(c2O)Oc2ccc(cc2)C[C@@H](C(=O)O)NC(=O)[C@H](C3)NC1=O",
+                    "products": [
+                        "CC[C@H](C)[C@@H]1NC(=O)[C@@H](N)Cc2ccc(OC)c(c2)-c2cc3cc(c2O)Oc2ccc(cc2)C[C@@H](C(=O)O)NC(=O)[C@H](C3)NC1=O"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acschembio.0c00430"
+                ]
+            }
+        }
+    ]
+}
