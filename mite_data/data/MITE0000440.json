@@ -1,0 +1,76 @@
+{
+    "accession": "MITE0000440",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-06-01",
+            "contributors": [
+                "0009-0008-8086-5325"
+            ],
+            "reviewers": [
+                "0000-0002-4540-6501"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "SlnF",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1128/AEM.06701-11"
+        ],
+        "auxiliaryEnzymes": [
+            {
+                "name": "SlnE",
+                "description": "Ferridoxin protein",
+                "databaseIds": {
+                    "uniprot": "UPI000247F57A",
+                    "genpept": "AEZ53957.1"
+                }
+            }
+        ],
+        "databaseIds": {
+            "uniprot": "UPI00024E0A7A",
+            "genpept": "AEZ53958.1"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Hydroxylation",
+                "Oxidation"
+            ],
+            "description": "The P450 monooxygenase SlnF performs the hydroxylation at C-20 in cognate with ferredoxin SlnE",
+            "reactionSMARTS": "[#6:1]-[#6:2]-[#6:3](-[#6:25](-[#6:51](-[#6:52])-[#6:50]-[#6:48](-[#6:49])-[#6:27]1-[#8:47]-[#6:31]2(-[#8:46]-[#6:34](-[#6:36]3-[#8:45]-[#6:43](-[#6:44])-[#6:39](-[#6:41]-[#6:42])(-[#8:40])-[#6:38]-[#6:37]-3)(-[#6:35])-[#6:33]-[#6:32]-2)-[#6:30]-[#6:29](-[#8:53])-[#6:28]=1)-[#8:26])-[#6:4](-[#6:6](-[#6:8](-[#6:10](-[#6:12]1-[#6:23](-[#6:24])-[#6:22]-[#6:21]-[#6:14](-[#6:15](-[#6:18](-[*])=[#8:19])-[#6:16]-[#6:17])-[#8:13]-1)-[#6:11])-[#8:9])-[#6:7])=[#8:5]>>[#6:1]-[#6:2]-[#6:3](-[#6:25](-[#6:51](-[#6:52])-[#6:50]-[#6:48](-[#6:49])-[#6:27]1-[#8:47]-[#6:31]2(-[#8:46]-[#6:34](-[#6:36]3-[#8:45]-[#6:43](-[#6:44])-[#6:39](-[#6:41]-[#6:42])(-[#8:40])-[#6:38]-[#6:37]-3)(-[#6:35])-[#6:33]-[#6:32]-2)-[#6:30](-[#8])-[#6:29](-[#8:53])-[#6:28]=1)-[#8:26])-[#6:4](-[#6:6](-[#6:8](-[#6:10](-[#6:12]1-[#6:23](-[#6:24])-[#6:22]-[#6:21]-[#6:14](-[#6:15](-[#6:18](-[*])=[#8:19])-[#6:16]-[#6:17])-[#8:13]-1)-[#6:11])-[#8:9])-[#6:7])=[#8:5]",
+            "reactions": [
+                {
+                    "substrate": "*C(=O)C(CC)C1CCC(C)C(C(C)C(O)C(C)C(=O)C(CC)C(O)C(C)CC(C)C2=CC(O)CC3(CCC(C)(C4CCC(O)(CC)C(C)O4)O3)O2)O1",
+                    "products": [
+                        "*C(=O)C(CC)C1CCC(C)C(C(C)C(O)C(C)C(=O)C(CC)C(O)C(C)CC(C)C2=CC(O)C(O)C3(CCC(C)(C4CCC(O)(CC)C(C)O4)O3)O2)O1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "The final steps of salinomycin assembly involve C-20 hydroxylation by SlnE/SlnF followed by polyether chain release from the PKS by thioesterases SlnDI/SlnDII. Lastly, the methyltransferase-like enzyme SlnM catalyzes the spirocyclization-coupled dehydration of OH-19 and forms the final product salinomycin."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1128/AEM.06701-11",
+                    "doi:10.3390/md20060393"
+                ]
+            }
+        }
+    ]
+}
