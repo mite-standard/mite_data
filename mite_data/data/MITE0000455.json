@@ -1,7 +1,7 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000455",
     "status": "active",
-    "comment": "sol5 gene encodes a oxidase/Diels-Alderase that catalyzes the final step of solanapyrone biosynthesis. ",
+    "comment": "sol5 gene encodes a oxidase/Diels-Alderase that catalyzes the final step of solanapyrone biosynthesis. Functionality of Sol5 is unclear; it functions as both oxidase and cyclase; annotated as FAD-dependent oxidase",
     "changelog": [
         {
             "version": "1",
@@ -12,12 +12,12 @@
             "reviewers": [
                 "0000-0002-9747-3423"
             ],
-            "comment": "functionality of Sol5 is unclear; it functions as both oxidase and cyclase; annotated as FAD-dependent oxidase"
+            "comment": "New entry."
         }
     ],
     "enzyme": {
         "name": "sol5",
-        "description": "FAD-dependent monooxygenase and Diels-Alderase ",
+        "description": "FAD-dependent monooxygenase and Diels-Alderase",
         "references": [
             "doi:10.1094/MPMI-08-14-0234-R"
         ],
