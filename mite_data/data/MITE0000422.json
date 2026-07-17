@@ -1,0 +1,64 @@
+{
+    "accession": "MITE0000422",
+    "status": "active",
+    "comment": "LynB7 functions as a termination-stage oxidative decarboxylase that synthesizes the C-terminal thiazole ring of lyngbyapeptin B",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-07-05",
+            "contributors": [
+                "0009-0008-8086-5325"
+            ],
+            "reviewers": [
+                "0000-0002-8323-5416"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "LynB7",
+        "description": "Non-Heme Diiron Oxygenase",
+        "references": [
+            "doi:10.1021/acschembio.3c00011"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI00419E3F48",
+            "genpept": "BBU25148.1"
+        },
+        "cofactors": {
+            "organic": [
+                "Ascorbic acid"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Decarboxylation",
+                "Dehydrogenation"
+            ],
+            "description": "LynB7 catalyzes the oxidative decarboxylation of 2-thiazoline-4-carboxylic acid to fully conjugated 2-thiazole moiety in the lyngbyapeptin B biosynthesis",
+            "reactionSMARTS": "[#6:1]/[#6@:2](-[#7:8]-[#6:9](/[#6@@:11](-[#7:21](-[#6:23](/[#6@@:25](-[#7:29](-[#6:31](\\[#6@@:33](-[#7:43](-[#6:45](-[#6:47]-[#6:48](-[#8:50]-[#6:51])-[#6:49])=[#8:46])-[#6:44])-[#6:34]-[#6:35]1:[#6:40]:[#6:39]:[#6:38](-[#8:41]-[#6:42]):[#6:37]:[#6:36]:1)=[#8:32])-[#6:30])-[#6:26](-[#6:28])-[#6:27])=[#8:24])-[#6:22])-[#6:12]-[#6:13]1:[#6:18]:[#6:17]:[#6:16](-[#8:19]-[#6:20]):[#6:15]:[#6:14]:1)=[#8:10])-[#6:3]1-[#16:7]-[#6:6]/[#6@@:5](-[#6](-[#8])=[#8])-[#7:4]=1>>[#6:1]/[#6@:2](-[#7:8]-[#6:9](/[#6@@:11](-[#7:21](-[#6:23](/[#6@@:25](-[#7:29](-[#6:31](\\[#6@@:33](-[#7:43](-[#6:45](-[#6:47]-[#6:48](-[#8:50]-[#6:51])-[#6:49])=[#8:46])-[#6:44])-[#6:34]-[#6:35]1:[#6:40]:[#6:39]:[#6:38](-[#8:41]-[#6:42]):[#6:37]:[#6:36]:1)=[#8:32])-[#6:30])-[#6:26](-[#6:27])-[#6:28])=[#8:24])-[#6:22])-[#6:12]-[#6:13]1:[#6:14]:[#6:15]:[#6:16](-[#8:19]-[#6:20]):[#6:17]:[#6:18]:1)=[#8:10])-[#6:3]1:[#16:7]:[#6:6]:[#6:5]:[#7:4]:1",
+            "reactions": [
+                {
+                    "substrate": "COc1ccc(C[C@@H](C(=O)N(C)[C@H](C(=O)N(C)[C@@H](Cc2ccc(OC)cc2)C(=O)N[C@@H](C)C2=N[C@H](C(=O)O)CS2)C(C)C)N(C)C(=O)CC(C)OC)cc1",
+                    "products": [
+                        "COc1ccc(C[C@@H](C(=O)N(C)[C@H](C(=O)N(C)[C@@H](Cc2ccc(OC)cc2)C(=O)N[C@@H](C)c2nccs2)C(C)C)N(C)C(=O)CC(C)OC)cc1"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acschembio.3c00011"
+                ]
+            }
+        }
+    ]
+}
