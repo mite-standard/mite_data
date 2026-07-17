@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000438",
     "status": "active",
     "comment": "P450 enzyme CYP121 catalyzes intramolecular C-C bond formation in the biosynthesis of mycocyclosin",
     "changelog": [
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0002-9747-3423"
             ],
-            "comment": "change of reference; doi was not correct. 10.1073/pnas.0812191106"
+            "comment": "New entry. Reviewer 1 changd reference; doi was not correct. 10.1073/pnas.0812191106"
         }
     ],
     "enzyme": {
