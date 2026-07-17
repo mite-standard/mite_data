@@ -3582,6 +3582,24 @@
         "status":"active"
       }
     ],
+    "BGC0002043":[
+      {
+        "enzyme_description":"O-methyltransferase",
+        "enzyme_ids":{
+          "genpept":"QLH55580.1",
+          "mibig":"BGC0002043",
+          "uniprot":"UPI00004FDDBF"
+        },
+        "enzyme_name":"CitC",
+        "enzyme_refs":[
+          "doi:10.1021/acschembio.0c00430"
+        ],
+        "enzyme_tailoring":"Methylation",
+        "mite_accession":"MITE0000425",
+        "mite_url":"https://bioregistry.io/mite:MITE0000425",
+        "status":"active"
+      }
+    ],
     "BGC0002069":[
       {
         "enzyme_description":"NADPH-dependent oxidoreductase",
