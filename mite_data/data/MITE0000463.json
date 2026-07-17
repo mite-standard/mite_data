@@ -10,9 +10,10 @@
                 "0000-0001-9487-1525"
             ],
             "reviewers": [
-                "0000-0002-5203-4662"
+                "0000-0002-5203-4662",
+                "0000-0001-6534-6609"
             ],
-            "comment": "New entry. Reviewer 1 added EC number"
+            "comment": "New entry. Reviewer 1 added EC number. Reviewer 2 fixed crossref to MIBiG."
         }
     ],
     "enzyme": {
@@ -22,8 +23,8 @@
             "doi:10.1126/science.1116510"
         ],
         "databaseIds": {
-            "uniprot": "P95480",
-            "genpept": "AAB97504.1",
+            "uniprot": "A8W2Z0",
+            "genpept": "ABW69174.1",
             "mibig": "BGC0000924"
         },
         "cofactors": {
