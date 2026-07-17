@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000437",
     "status": "active",
     "comment": "Hydroxylation",
     "changelog": [
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0002-8323-5416"
             ],
-            "comment": "added NADP as a cofactor"
+            "comment": "New entry. Reviewer 1 added NADP as a cofactor"
         }
     ],
     "enzyme": {
@@ -29,7 +29,11 @@
         },
         "cofactors": {
             "organic": [
+                "Heme",
                 "NADP"
+            ],
+            "inorganic": [
+                "Fe"
             ]
         }
     },
@@ -38,7 +42,7 @@
             "tailoring": [
                 "Hydroxylation"
             ],
-            "description": "BcmD catalyzes hydroxylation to form intermediate product dihydrobicyclomycin in the biosynthesis of bicyclomycin ",
+            "description": "BcmD catalyzes hydroxylation to form intermediate product dihydrobicyclomycin in the biosynthesis of bicyclomycin.",
             "reactionSMARTS": "[#6:2](-[#6@:9]12\\[#8:20]-[#6:19]-[#6:18]-[#6:17](-[#6:21])-[#6:13](-[#7:14]-[#6:15]-1=[#8:16])-[#6:11](=[#8:12])-[#7:10]-2)(-[#6@:4](-[#6:7]-[#8:8])(\\[#8:6])-[#6:5])-[#8:3]>>[#6:2](-[#6@:9]12\\[#8:20]-[#6:19]-[#6:18]-[#6:17](-[#6:21])-[#6@@:13](-[#7:14]-[#6:15]-1=[#8:16])(/[#8:3])-[#6:11](=[#8:12])-[#7:10]-2)(-[#6@:4](-[#6:7]-[#8:8])(\\[#8:6])-[#6:5])-[#8:3]",
             "reactions": [
                 {
