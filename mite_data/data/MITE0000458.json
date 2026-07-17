@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000458",
     "status": "active",
     "comment": "Thiocarboxylic acid S-methyltransferase",
     "changelog": [
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0003-4819-2251"
             ],
-            "comment": "Redrawn correct rxn SMARTS, redrawn SMILES, added non-native rxn, textual additions, added MIBiG reference."
+            "comment": "New entry. Reviewer 1 redrew correct rxn SMARTS, redrew SMILES, added non-native rxn, textual additions, added MIBiG reference."
         }
     ],
     "enzyme": {
