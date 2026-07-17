@@ -8,10 +8,10 @@ module-root = ""
 
 [project]
 name = "mite_data"
-version = "1.29"
+version = "1.30"
 description = "Data storage and auxiliary functions for mite_data."
 readme = "README.md"
-requires-python = ">=3.12.0,<3.13.0" # because of rdkit 2024 in mite_extras
+requires-python = ">=3.12.0"
 license-files = ["LICENSE"]
 authors = [
     { name = "Mitja M. Zdouc", email = "zdoucmm@gmail.com" }
@@ -21,7 +21,6 @@ keywords = [
     "genomics"
 ]
 classifiers = [
-    "Programming Language :: Python :: 3.12",
     "Operating System :: POSIX :: Linux",
     "Topic :: Scientific/Engineering :: Bio-Informatics",
     "Topic :: Scientific/Engineering :: Chemistry"
@@ -29,12 +28,11 @@ classifiers = [
 
 dependencies = [
     "biopython~=1.85",
-    "mite_extras",
-    "mite_schema",
+    "mite_extras>=1.6.6",
+    "mite_schema>=1.8.5",
     "pandas~=2.3",
     "pydantic~=2.11",
     "requests~=2.32",
-    "rdkit==2024.3.6"
 ]
 
 [project.optional-dependencies]
