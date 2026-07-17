@@ -2144,6 +2144,25 @@
         "status":"active"
       }
     ],
+    "BGC0000832":[
+      {
+        "enzyme_description":"Flavin-dependent halogenase",
+        "enzyme_ids":{
+          "genpept":"AAN65237.1",
+          "mibig":"BGC0000832",
+          "uniprot":"Q8GHB4"
+        },
+        "enzyme_name":"CloHal",
+        "enzyme_refs":[
+          "doi:10.1128/spectrum.00423-24",
+          "doi:10.1016/S1074-5521(03)00051-6"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000419",
+        "mite_url":"https://bioregistry.io/mite:MITE0000419",
+        "status":"active"
+      }
+    ],
     "BGC0000851":[
       {
         "enzyme_description":"Cyclic dipeptide oxidase",
@@ -4776,5 +4795,5 @@
       }
     ]
   },
-  "version_mite_data":"1.28"
+  "version_mite_data":"1.30"
 }
