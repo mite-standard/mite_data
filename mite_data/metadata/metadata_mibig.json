@@ -541,6 +541,25 @@
         "status":"active"
       }
     ],
+    "BGC0000144":[
+      {
+        "enzyme_description":"O-methyltransferase",
+        "enzyme_ids":{
+          "genpept":"AEZ53956.1",
+          "mibig":"BGC0000144",
+          "uniprot":"UPI000247F579"
+        },
+        "enzyme_name":"SlnM",
+        "enzyme_refs":[
+          "doi:10.1002/anie.201503561",
+          "doi:10.1128/AEM.06701-11"
+        ],
+        "enzyme_tailoring":"Dehydration|Other",
+        "mite_accession":"MITE0000441",
+        "mite_url":"https://bioregistry.io/mite:MITE0000441",
+        "status":"active"
+      }
+    ],
     "BGC0000147":[
       {
         "enzyme_description":"O-methyltransferase",
