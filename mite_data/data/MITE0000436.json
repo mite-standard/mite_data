@@ -1,0 +1,65 @@
+{
+    "accession": "MITE0000436",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-06-14",
+            "contributors": [
+                "0009-0008-8086-5325"
+            ],
+            "reviewers": [
+                "0000-0002-8323-5416"
+            ],
+            "comment": "New entry. Reviewer 1 added 2-OG and Fe as cofactors."
+        }
+    ],
+    "enzyme": {
+        "name": "BcmF",
+        "description": "2OG-Fe(II) oxygenase",
+        "references": [
+            "doi:10.1038/s41598-019-56747-7",
+            "doi:10.1021/acs.biochem.7b00943"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI000C07B921",
+            "genpept": "PPT15945.1",
+            "mibig": "BGC0001468"
+        },
+        "cofactors": {
+            "organic": [
+                "a-Ketoglutaric acid"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Dehydrogenation"
+            ],
+            "description": "BcmF performs dehydrogenation of the isoleucyl side chain to produce the final product bicyclomycin",
+            "reactionSMARTS": "[#6:1](-[#8:21])(-[#6@@:16](-[#6:20])(/[#8:19])-[#6:17]-[#8:18])\\[#6@@:2]12-[#7:15]-[#6:13](=[#8:14])-[#6@@:8](\\[#8:12])(-[#7:9]-[#6:10]-1=[#8:11])-[#6:6](-[#6])-[#6:5]-[#6:4]-[#8:3]-2>>[#6:1](-[#8:21])(-[#6@@:16](-[#6:20])(/[#8:19])-[#6:17]-[#8:18])\\[#6@@:2]12-[#7:15]-[#6:13](=[#8:14])-[#6@@:8](\\[#8:12])(-[#7:9]-[#6:10]-1=[#8:11])-[#6:6](=[#6:1])-[#6:5]-[#6:4]-[#8:3]-2",
+            "reactions": [
+                {
+                    "substrate": "CC1CCO[C@]2(C(O)[C@@](C)(O)CO)NC(=O)[C@@]1(O)NC2=O",
+                    "products": [
+                        "C=C1CCO[C@]2(C(O)[C@@](C)(O)CO)NC(=O)[C@@]1(O)NC2=O"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1038/s41598-019-56747-7"
+                ]
+            }
+        }
+    ]
+}
