@@ -1,0 +1,74 @@
+{
+    "accession": "MITE0000428",
+    "status": "active",
+    "comment": "CtcP is a flavin-dependent halogenase involved in the biosynthesis of the antibiotic chlortetracycline.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-06-26",
+            "contributors": [
+                "0009-0008-8086-5325"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Fixed reaction SMARTS and added additional comments."
+        }
+    ],
+    "enzyme": {
+        "name": "CtcP",
+        "description": "Halogenase",
+        "references": [
+            "doi:10.1016/j.ymben.2013.06.003"
+        ],
+        "auxiliaryEnzymes": [
+            {
+                "name": "CtcQ",
+                "description": "Flavin reductase",
+                "databaseIds": {
+                    "uniprot": "UPI0000602190",
+                    "genpept": "AEI98660.1"
+                }
+            }
+        ],
+        "databaseIds": {
+            "uniprot": "UPI00038473B8",
+            "genpept": "AEI98659.1",
+            "mibig": "BGC0000209"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "CtcP catalyzes the regioselective C-7 chlorination of the tetracycline scaffold to produce chlortetracycline. 4-epi-tetracyclin (4R) is a non-substrate.",
+            "reactionSMARTS": "[#6:1]-[#7:2](/[#6@:4]1-[#6:32]2-[#6@@:13](-[#6:15](=[#6:17]3-[#6:30](-[#6:31]-2)-[#6@@:27](\\[#8:29])(-[#6:28])-[#6:26]2:[#6:20](:[#6:21](:[#6:23]:[#6:24]:[#6:25]:2)-[#8:22])-[#6:18]-3=[#8:19])-[#8:16])(/[#8:14])-[#6:11](=[#8:12])-[#6:7](-[#6:8](=[#8:10])-[#7:9])=[#6:5]-1-[#8:6])-[#6:3]>>[#6:1]-[#7:2](/[#6@:4]1-[#6:32]2-[#6@@:13](-[#6:15](=[#6:17]3-[#6:30](-[#6:31]-2)-[#6@@:27](\\[#8:29])(-[#6:28])-[#6:26]2:[#6:20](:[#6:21](:[#6:23]:[#6:24]:[#6:25]:2-[Cl])-[#8:22])-[#6:18]-3=[#8:19])-[#8:16])(/[#8:14])-[#6:11](=[#8:12])-[#6:7](-[#6:8](=[#8:10])-[#7:9])=[#6:5]-1-[#8:6])-[#6:3]",
+            "reactions": [
+                {
+                    "substrate": "CN(C)[C@@H]1C(O)=C(C(N)=O)C(=O)[C@@]2(O)C(O)=C3C(=O)c4c(O)cccc4[C@@](C)(O)C3CC12",
+                    "products": [
+                        "CN(C)[C@@H]1C(O)=C(C(N)=O)C(=O)[C@@]2(O)C(O)=C3C(=O)c4c(O)ccc(Cl)c4[C@@](C)(O)C3CC12"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Chlorination of the (4S) tetracycline as last step in the chlortetracyclin biosynthetic pathway."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1016/j.ymben.2013.06.003"
+                ]
+            }
+        }
+    ]
+}
