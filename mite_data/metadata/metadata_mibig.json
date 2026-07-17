@@ -2743,6 +2743,24 @@
         "status":"active"
       }
     ],
+    "BGC0001209":[
+      {
+        "enzyme_description":"Radical SAM enzyme",
+        "enzyme_ids":{
+          "genpept":"ABJ66529.1",
+          "mibig":"BGC0001209",
+          "uniprot":"UPI0000E5643D"
+        },
+        "enzyme_name":"StrB",
+        "enzyme_refs":[
+          "doi:10.1038/nchem.2237"
+        ],
+        "enzyme_tailoring":"Biaryl bond formation|Cyclization",
+        "mite_accession":"MITE0000439",
+        "mite_url":"https://bioregistry.io/mite:MITE0000439",
+        "status":"active"
+      }
+    ],
     "BGC0001237":[
       {
         "enzyme_description":"Cytochrome P450",
