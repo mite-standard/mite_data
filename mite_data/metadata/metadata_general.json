@@ -9535,6 +9535,27 @@
       "reaction_description":"N-hydroxylation of nanangelenin C",
       "status":"active",
       "tailoring":"Hydroxylation|Oxidation"
+    },
+    "MITE0000445":{
+      "accession":"MITE0000445",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Acetyltransferase",
+      "enzyme_ids":{
+        "genpept":"QIQ51362.1",
+        "uniprot":"A0A6G9KH50"
+      },
+      "enzyme_name":"NanB",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Aspergillus nanangensis",
+      "phylum":"Dikarya",
+      "reaction_description":"Acetylation of an intermediate to produce nanangelenin F.",
+      "status":"active",
+      "tailoring":"Acetylation"
     }
   },
   "version_mite_data":"1.30"
