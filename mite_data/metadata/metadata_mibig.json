@@ -2906,6 +2906,25 @@
         "status":"active"
       }
     ],
+    "BGC0001374":[
+      {
+        "enzyme_description":"Amidotransferase",
+        "enzyme_ids":{
+          "genpept":"ANW12109.1",
+          "mibig":"BGC0001374",
+          "uniprot":"UPI0002B76286"
+        },
+        "enzyme_name":"ThdD",
+        "enzyme_refs":[
+          "doi:10.1002/cbic.201400016",
+          "doi:10.1002/cbic.201500670"
+        ],
+        "enzyme_tailoring":"Amination",
+        "mite_accession":"MITE0000431",
+        "mite_url":"https://bioregistry.io/mite:MITE0000431",
+        "status":"active"
+      }
+    ],
     "BGC0001378":[
       {
         "enzyme_description":"Iterative cofactorless dioxygenase",
