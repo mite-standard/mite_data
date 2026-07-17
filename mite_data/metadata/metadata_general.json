@@ -9556,6 +9556,28 @@
       "reaction_description":"Acetylation of an intermediate to produce nanangelenin F.",
       "status":"active",
       "tailoring":"Acetylation"
+    },
+    "MITE0000446":{
+      "accession":"MITE0000446",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Glycosyltransferase",
+      "enzyme_ids":{
+        "genpept":"AAP42861.1",
+        "mibig":"BGC0000105",
+        "uniprot":"UPI000019B37E"
+      },
+      "enzyme_name":"NanG5",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces nanchangensis",
+      "phylum":"Actinomycetota",
+      "reaction_description":"NanG5 represents a glycosyltransferase that attaches the deoxysugar moiety (4-O-methyl-L-rhodinose) to the nanchangmycin aglycone at C-19",
+      "status":"active",
+      "tailoring":"Glycosylation"
     }
   },
   "version_mite_data":"1.30"
