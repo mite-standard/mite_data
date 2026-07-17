@@ -9493,6 +9493,27 @@
       "reaction_description":"The hydro-2,2′-bifuran region of pre-lysocellin is oxidized by LyoI to form a hydro-2,2′-bifuran-2-ol (hemiketal) moiety, resulting in the final lysocellin product.",
       "status":"active",
       "tailoring":"Hydroxylation|Oxidation"
+    },
+    "MITE0000443":{
+      "accession":"MITE0000443",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Prenyltransferase",
+      "enzyme_ids":{
+        "genpept":"QIQ51364.1",
+        "uniprot":"A0A6G9KJL7"
+      },
+      "enzyme_name":"NanD",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Aspergillus nanangensis",
+      "phylum":"Dikarya",
+      "reaction_description":"Reverse prenylation of nanangelenin B to produce nanangelenin C.",
+      "status":"active",
+      "tailoring":"Prenylation"
     }
   },
   "version_mite_data":"1.30"
