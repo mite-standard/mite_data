@@ -9321,6 +9321,28 @@
       "reaction_description":"AmyB introduces atropospecific one carbon-carbon and two carbon-nitrogen bonds",
       "status":"active",
       "tailoring":"Biaryl bond formation|Other"
+    },
+    "MITE0000435":{
+      "accession":"MITE0000435",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"ASY31956.1",
+        "mibig":"BGC0002750",
+        "uniprot":"UPI00020E54BD"
+      },
+      "enzyme_name":"TrpB",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces sp. CLI2509",
+      "phylum":"Actinomycetota",
+      "reaction_description":"P450 monooxygenase, TrpB is responsible for the atropospecific formation of one carbon-carbon and two carbon-nitrogen bonds",
+      "status":"active",
+      "tailoring":"Biaryl bond formation|Other"
     }
   },
   "version_mite_data":"1.30"
