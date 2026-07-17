@@ -9430,6 +9430,27 @@
       "reaction_description":"StrB installs the Lys-to-Trp crosslink through a C-C bond between the Cβ of Lys and the aromatic C7 of Trp",
       "status":"active",
       "tailoring":"Biaryl bond formation|Cyclization"
+    },
+    "MITE0000440":{
+      "accession":"MITE0000440",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"AEZ53958.1",
+        "uniprot":"UPI00024E0A7A"
+      },
+      "enzyme_name":"SlnF",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces albus",
+      "phylum":"Actinomycetota",
+      "reaction_description":"The P450 monooxygenase SlnF performs the hydroxylation at C-20 in cognate with ferredoxin SlnE",
+      "status":"active",
+      "tailoring":"Hydroxylation|Oxidation"
     }
   },
   "version_mite_data":"1.30"
