@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000422",
     "status": "active",
     "comment": "LynB7 functions as a termination-stage oxidative decarboxylase that synthesizes the C-terminal thiazole ring of lyngbyapeptin B",
     "changelog": [
@@ -17,7 +17,7 @@
     ],
     "enzyme": {
         "name": "LynB7",
-        "description": "Non-Heme Diiron oxygenase",
+        "description": "Non-Heme Diiron Oxygenase",
         "references": [
             "doi:10.1021/acschembio.3c00011"
         ],
