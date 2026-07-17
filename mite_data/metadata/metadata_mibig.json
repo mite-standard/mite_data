@@ -3598,6 +3598,22 @@
         "mite_accession":"MITE0000425",
         "mite_url":"https://bioregistry.io/mite:MITE0000425",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Cytochrome P450",
+        "enzyme_ids":{
+          "genpept":"QLH55579.1",
+          "mibig":"BGC0002043",
+          "uniprot":"UPI0002F6195D"
+        },
+        "enzyme_name":"CitB",
+        "enzyme_refs":[
+          "doi:10.1021/acschembio.0c00430"
+        ],
+        "enzyme_tailoring":"Biaryl bond formation|Oxidation",
+        "mite_accession":"MITE0000426",
+        "mite_url":"https://bioregistry.io/mite:MITE0000426",
+        "status":"active"
       }
     ],
     "BGC0002069":[
