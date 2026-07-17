@@ -10,9 +10,10 @@
                 "0009-0008-4645-6771"
             ],
             "reviewers": [
-                "0000-0002-9747-3423"
+                "0000-0002-9747-3423",
+                "0000-0001-6534-6609"
             ],
-            "comment": "New entry."
+            "comment": "New entry. Reviewer 2 fixed the entry cross-references with MIBiG."
         }
     ],
     "enzyme": {
@@ -22,8 +23,8 @@
             "doi:10.1016/j.tetlet.2018.02.022"
         ],
         "databaseIds": {
-            "uniprot": "A0A484FVL2",
-            "genpept": "ENH79268.1",
+            "uniprot": "A0A2Z6FZ20",
+            "genpept": "BBE36500.1",
             "mibig": "BGC0001528"
         },
         "cofactors": {
