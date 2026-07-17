@@ -4532,6 +4532,24 @@
         "status":"active"
       }
     ],
+    "BGC0002751":[
+      {
+        "enzyme_description":"Cytochrome P40",
+        "enzyme_ids":{
+          "genpept":"SDY48146.1",
+          "mibig":"BGC0002751",
+          "uniprot":"UPI000898B31C"
+        },
+        "enzyme_name":"AmyB",
+        "enzyme_refs":[
+          "doi:10.1002/anie.202208361"
+        ],
+        "enzyme_tailoring":"Biaryl bond formation|Other",
+        "mite_accession":"MITE0000434",
+        "mite_url":"https://bioregistry.io/mite:MITE0000434",
+        "status":"active"
+      }
+    ],
     "BGC0002812":[
       {
         "enzyme_description":"Halogenase",
