@@ -9167,6 +9167,28 @@
       "reaction_description":"Rdc2 catalyzes the regioselective chlorination of a late-stage intermediate (monocillin II to pochonin D) during radicicol biosynthesis",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000428":{
+      "accession":"MITE0000428",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD",
+      "domain":"Bacteria",
+      "enzyme_description":"Halogenase",
+      "enzyme_ids":{
+        "genpept":"AEI98659.1",
+        "mibig":"BGC0000209",
+        "uniprot":"UPI00038473B8"
+      },
+      "enzyme_name":"CtcP",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Kitasatospora aureofaciens",
+      "phylum":"Actinomycetota",
+      "reaction_description":"CtcP catalyzes the regioselective C-7 chlorination of the tetracycline scaffold to produce chlortetracycline. 4-epi-tetracyclin (4R) is a non-substrate.",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.30"
