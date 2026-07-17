@@ -4472,6 +4472,24 @@
         "status":"active"
       }
     ],
+    "BGC0002886":[
+      {
+        "enzyme_description":"Non-Heme Diiron Monooxygenase",
+        "enzyme_ids":{
+          "genpept":"WZC35280.1",
+          "mibig":"BGC0002886",
+          "uniprot":"UPI003369BCD6"
+        },
+        "enzyme_name":"DolJ",
+        "enzyme_refs":[
+          "doi:10.1021/acs.orglett.3c04083"
+        ],
+        "enzyme_tailoring":"Decarboxylation",
+        "mite_accession":"MITE0000424",
+        "mite_url":"https://bioregistry.io/mite:MITE0000424",
+        "status":"active"
+      }
+    ],
     "BGC0002964":[
       {
         "enzyme_description":"FMN-dependent monooxygenase",
