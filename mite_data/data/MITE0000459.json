@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000459",
     "status": "active",
     "comment": "Catalyzes hydrozylation of m-hydroxybenzyl alcohol to gentisyl alcohol",
     "changelog": [
@@ -17,7 +17,7 @@
     ],
     "enzyme": {
         "name": "PatI",
-        "description": "Cytochrome P450 monooxygenase",
+        "description": "Cytochrome P450",
         "references": [
             "doi:10.1111/1462-2920.14542"
         ],
@@ -29,6 +29,9 @@
         "cofactors": {
             "organic": [
                 "Heme"
+            ],
+            "inorganic": [
+                "Fe"
             ]
         }
     },
