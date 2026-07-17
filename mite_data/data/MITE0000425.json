@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000425",
     "status": "active",
     "comment": "CitC is a SAM-dependent O-methyltransferase that catalyzes O-methylation of the bicyclic cittilin intermediate cittilin B, producing the mature metabolite cittilin A.",
     "changelog": [
@@ -17,7 +17,7 @@
     ],
     "enzyme": {
         "name": "CitC",
-        "description": "Methyltransferase",
+        "description": "O-methyltransferase",
         "references": [
             "doi:10.1021/acschembio.0c00430"
         ],
