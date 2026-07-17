@@ -9343,6 +9343,28 @@
       "reaction_description":"P450 monooxygenase, TrpB is responsible for the atropospecific formation of one carbon-carbon and two carbon-nitrogen bonds",
       "status":"active",
       "tailoring":"Biaryl bond formation|Other"
+    },
+    "MITE0000436":{
+      "accession":"MITE0000436",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"a-Ketoglutaric acid",
+      "domain":"Bacteria",
+      "enzyme_description":"2OG-Fe(II) oxygenase",
+      "enzyme_ids":{
+        "genpept":"PPT15945.1",
+        "mibig":"BGC0001468",
+        "uniprot":"UPI000C07B921"
+      },
+      "enzyme_name":"BcmF",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces cinnamoneus",
+      "phylum":"Actinomycetota",
+      "reaction_description":"BcmF performs dehydrogenation of the isoleucyl side chain to produce the final product bicyclomycin",
+      "status":"active",
+      "tailoring":"Dehydrogenation"
     }
   },
   "version_mite_data":"1.30"
