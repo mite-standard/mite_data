@@ -9189,6 +9189,28 @@
       "reaction_description":"CtcP catalyzes the regioselective C-7 chlorination of the tetracycline scaffold to produce chlortetracycline. 4-epi-tetracyclin (4R) is a non-substrate.",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000429":{
+      "accession":"MITE0000429",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"AWF71596.1",
+        "mibig":"BGC0001948",
+        "uniprot":"UPI000A3766A8"
+      },
+      "enzyme_name":"NascB",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces sp.",
+      "phylum":"Actinomycetota",
+      "reaction_description":"NascB catalyzes oxidative dimerization of two molecules of cyclo-(l-tryptophan-l-proline), resulting in simultaneous pyrroloindoline ring formation and C3–C5′ carbon–carbon bond formation to produce naseseazine C.",
+      "status":"active",
+      "tailoring":"Other|Oxidation"
     }
   },
   "version_mite_data":"1.30"
