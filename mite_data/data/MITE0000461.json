@@ -1,6 +1,7 @@
 {
     "accession": "MITE0000461",
     "status": "active",
+    "comment": "Was previously associated to MIBiG BGC BGC0000898 but unclear which enzyme is referenced.",
     "changelog": [
         {
             "version": "1",
@@ -9,9 +10,10 @@
                 "0000-0001-9487-1525"
             ],
             "reviewers": [
-                "0000-0003-3290-1017"
+                "0000-0003-3290-1017",
+                "0000-0001-6534-6609"
             ],
-            "comment": "New entry."
+            "comment": "New entry. Reviewer 2 moved MIBIG reference to comment due to lack of clear connection to a specific enzyme in the BGC."
         }
     ],
     "enzyme": {
@@ -24,8 +26,7 @@
         ],
         "databaseIds": {
             "uniprot": "O87605",
-            "genpept": "AAC64105.1",
-            "mibig": "BGC0000898"
+            "genpept": "AAC64105.1"
         },
         "cofactors": {
             "organic": [
