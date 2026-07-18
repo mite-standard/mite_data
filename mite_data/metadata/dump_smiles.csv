@@ -611,3 +611,4 @@
 609,MITE0000458.reaction1.example1,COc1c(O)ccc2cc(C(=O)S)[nH]c12,COc1c(O)ccc2cc(C(=O)SC)[nH]c12
 610,MITE0000458.reaction1.example2,COc1cc2cc(C(=O)S)[nH]c2cc1O,COc1cc2cc(C(=O)SC)[nH]c2cc1O
 611,MITE0000459.reaction1.example1,OCc1cccc(O)c1,OCc1cc(O)ccc1O
+612,MITE0000460.reaction1.example1,Nc1ncnc2c1ncn2[C@@H]1O[C@H](CF)[C@@H](O)[C@H]1O,O=P(O)(O)OC1OC(CF)C(O)C1O
