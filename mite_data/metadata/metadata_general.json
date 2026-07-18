@@ -9883,6 +9883,27 @@
       "reaction_description":"Phosphate-dependent purine nucleoside phosphorylase that catalyzes the reversible phosphorolysis of 5′-fluoro-5′-deoxyadenosine (5′-FDA), yielding adenine and a fluorinated sugar phosphate. This reaction constitutes a key step in microbial organofluorine biosynthesis, channeling fluorinated intermediates toward fluoroacetate and 4-fluorothreonine production. Gene inactivation abolishes downstream fluorometabolite formation, supporting its essential role in pathway flux.",
       "status":"active",
       "tailoring":"Other"
+    },
+    "MITE0000461":{
+      "accession":"MITE0000461",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"AAC64105.1",
+        "uniprot":"O87605"
+      },
+      "enzyme_name":"PikC",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces venezuelae",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Hydroxylation of narbomycin to form pikromycin",
+      "status":"active",
+      "tailoring":"Hydroxylation"
     }
   },
   "version_mite_data":"1.30"
