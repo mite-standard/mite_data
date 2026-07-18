@@ -2395,6 +2395,24 @@
         "mite_accession":"MITE0000340",
         "mite_url":"https://bioregistry.io/mite:MITE0000340",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Purine nucleoside phosphorylase",
+        "enzyme_ids":{
+          "genpept":"CAJ20005.1",
+          "mibig":"BGC0000903",
+          "uniprot":"Q1EMV9"
+        },
+        "enzyme_name":"FlB",
+        "enzyme_refs":[
+          "doi:10.1016/j.pep.2019.105508",
+          "doi:10.1016/j.bioorg.2012.06.002",
+          "doi:10.1016/j.bioorg.2007.04.001"
+        ],
+        "enzyme_tailoring":"Other",
+        "mite_accession":"MITE0000460",
+        "mite_url":"https://bioregistry.io/mite:MITE0000460",
+        "status":"active"
       }
     ],
     "BGC0000924":[

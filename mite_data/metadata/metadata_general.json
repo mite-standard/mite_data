@@ -9861,6 +9861,28 @@
       "reaction_description":"Hydroxylation of m-hydroxybenzyl alcohol to yield gentysil alcohol, step 4 of patulin biosynthesis",
       "status":"active",
       "tailoring":"Hydroxylation"
+    },
+    "MITE0000460":{
+      "accession":"MITE0000460",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Purine nucleoside phosphorylase",
+      "enzyme_ids":{
+        "genpept":"CAJ20005.1",
+        "mibig":"BGC0000903",
+        "uniprot":"Q1EMV9"
+      },
+      "enzyme_name":"FlB",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptantibioticus cattleyicolor",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Phosphate-dependent purine nucleoside phosphorylase that catalyzes the reversible phosphorolysis of 5′-fluoro-5′-deoxyadenosine (5′-FDA), yielding adenine and a fluorinated sugar phosphate. This reaction constitutes a key step in microbial organofluorine biosynthesis, channeling fluorinated intermediates toward fluoroacetate and 4-fluorothreonine production. Gene inactivation abolishes downstream fluorometabolite formation, supporting its essential role in pathway flux.",
+      "status":"active",
+      "tailoring":"Other"
     }
   },
   "version_mite_data":"1.30"
