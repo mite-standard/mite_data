@@ -3554,6 +3554,24 @@
         "status":"active"
       }
     ],
+    "BGC0001675":[
+      {
+        "enzyme_description":"cofactor-independent monooxygenase",
+        "enzyme_ids":{
+          "genpept":"AQW35073.1",
+          "mibig":"BGC0001675",
+          "uniprot":"A0A1S6QMP3"
+        },
+        "enzyme_name":"MrqO5",
+        "enzyme_refs":[
+          "doi:10.1021/acschembio.5c00695"
+        ],
+        "enzyme_tailoring":"Decarboxylation",
+        "mite_accession":"MITE0000465",
+        "mite_url":"https://bioregistry.io/mite:MITE0000465",
+        "status":"active"
+      }
+    ],
     "BGC0001706":[
       {
         "enzyme_description":"FAD-dependent monooxygenase",
