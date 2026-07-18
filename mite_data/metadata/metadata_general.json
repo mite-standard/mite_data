@@ -9904,6 +9904,27 @@
       "reaction_description":"Hydroxylation of narbomycin to form pikromycin",
       "status":"active",
       "tailoring":"Hydroxylation"
+    },
+    "MITE0000462":{
+      "accession":"MITE0000462",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Sulfoxide synthase",
+      "enzyme_ids":{
+        "genpept":"EHI13262.1",
+        "uniprot":"G7CFI3"
+      },
+      "enzyme_name":"EgtB",
+      "family":"Mycobacteriaceae",
+      "kingdom":"Bacillati",
+      "order":"Mycobacteriales",
+      "organism":"Mycolicibacterium thermoresistibile (strain ATCC 19527 / DSM 44167 / CIP 105390 / JCM 6362 / NCTC 10409 / 316)",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Iron-dependent sulfoxidation of trimethylhistidine.",
+      "status":"active",
+      "tailoring":"Oxidation"
     }
   },
   "version_mite_data":"1.30"
