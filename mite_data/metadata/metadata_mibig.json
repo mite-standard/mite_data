@@ -2270,6 +2270,24 @@
         "mite_accession":"MITE0000070",
         "mite_url":"https://bioregistry.io/mite:MITE0000070",
         "status":"active"
+      },
+      {
+        "enzyme_description":"SAM-dependent O-methyltransferase",
+        "enzyme_ids":{
+          "genpept":"BAC10678.1",
+          "mibig":"BGC0000821",
+          "uniprot":"Q8KZ94"
+        },
+        "enzyme_name":"RebM",
+        "enzyme_refs":[
+          "doi:10.1074/jbc.M800503200",
+          "doi:10.1002/cbic.200500504",
+          "doi:10.1271/bbb.67.127"
+        ],
+        "enzyme_tailoring":"Methylation",
+        "mite_accession":"MITE0000450",
+        "mite_url":"https://bioregistry.io/mite:MITE0000450",
+        "status":"active"
       }
     ],
     "BGC0000832":[
