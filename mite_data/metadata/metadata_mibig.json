@@ -2610,6 +2610,24 @@
         "status":"active"
       }
     ],
+    "BGC0001063":[
+      {
+        "enzyme_description":"Rieske-oxygenase-like enzyme",
+        "enzyme_ids":{
+          "genpept":"CAA16434.1",
+          "mibig":"BGC0001063",
+          "uniprot":"O54095"
+        },
+        "enzyme_name":"RedG",
+        "enzyme_refs":[
+          "doi:10.1038/nchem.1024"
+        ],
+        "enzyme_tailoring":"Cyclization",
+        "mite_accession":"MITE0000454",
+        "mite_url":"https://bioregistry.io/mite:MITE0000454",
+        "status":"active"
+      }
+    ],
     "BGC0001077":[
       {
         "enzyme_description":"Alkylresorcinol monooxygenase",

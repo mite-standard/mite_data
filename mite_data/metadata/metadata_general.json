@@ -9732,6 +9732,28 @@
       "reaction_description":"The cytochrome P450 monooxygenase btcC further catalyzes the multistep oxidation of betaestacin IV to produce several compounds, including betaestacins Va, Vb, Vc and VI ",
       "status":"active",
       "tailoring":"Oxidation"
+    },
+    "MITE0000454":{
+      "accession":"MITE0000454",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"FeS",
+      "cofactors_organic":"NADP",
+      "domain":"Bacteria",
+      "enzyme_description":"Rieske-oxygenase-like enzyme",
+      "enzyme_ids":{
+        "genpept":"CAA16434.1",
+        "mibig":"BGC0001063",
+        "uniprot":"O54095"
+      },
+      "enzyme_name":"RedG",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces coelicolor (strain ATCC BAA-471 / A3(2) / M145)",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Cyclization of undecylprodigiosin into streptorubin B",
+      "status":"active",
+      "tailoring":"Cyclization"
     }
   },
   "version_mite_data":"1.30"
