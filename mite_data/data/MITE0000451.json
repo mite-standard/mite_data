@@ -1,0 +1,66 @@
+{
+    "accession": "MITE0000451",
+    "status": "active",
+    "comment": "RebG is the rebeccamycin indolocarbazole N-glycosyltransferase. It catalyzes N-glycosylation of the rebeccamycin aglycone, dichloroarcyriaflavin A, to form 4\u2032-demethylrebeccamycin ",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-15",
+            "contributors": [
+                "0009-0005-2489-2079"
+            ],
+            "reviewers": [
+                "0000-0002-5203-4662"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "RebG",
+        "description": "N-glycosyltransferase",
+        "references": [
+            "doi:10.1002/cbic.200500504",
+            "doi:10.1271/bbb.67.127"
+        ],
+        "databaseIds": {
+            "uniprot": "Q8KHE4",
+            "genpept": "BAC10673.1",
+            "mibig": "BGC0000821"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Glycosylation"
+            ],
+            "description": "N-glycosylation of dichloroarcyriaflavin A to 4\u2032-demethylrebeccamycin.",
+            "reactionSMARTS": "[#8:1]=[#6:2]1-[#6:7]2:[#6:8]3:[#6:17](:[#6:18]4:[#6:27](:[#6:6]:2-[#6:4](=[#8:5])-[#7:3]-1):[#6:26]1:[#6:20](:[#6:21](:[#6:23]:[#6:24]:[#6:25]:1)-[Cl:22]):[#7:19]:4):[#7:16]:[#6:15]1:[#6:9]:3:[#6:10]:[#6:11]:[#6:12]:[#6:13]:1-[Cl:14]>>[#8:1]=[#6:2]1-[#6:7]2:[#6:8]3:[#6:17](:[#6:18]4:[#6:27](:[#6:6]:2-[#6:4](=[#8:5])-[#7:3]-1):[#6:26]1:[#6:20](:[#6:21](:[#6:23]:[#6:24]:[#6:25]:1)-[Cl:22]):[#7:19]:4):[#7:16](/[#6@@]1-[#8]-[#6@](/[#6]-[#8])-[#6@@](\\[#8])-[#6@](/[#8])-[#6@]-1\\[#8]):[#6:15]1:[#6:9]:3:[#6:10]:[#6:11]:[#6:12]:[#6:13]:1-[Cl:14]",
+            "reactions": [
+                {
+                    "substrate": "O=C1NC(=O)c2c1c1c3cccc(Cl)c3[nH]c1c1[nH]c3c(Cl)cccc3c21",
+                    "products": [
+                        "O=C1NC(=O)c2c1c1c3cccc(Cl)c3[nH]c1c1c2c2cccc(Cl)c2n1[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "N-glycosylation of dichloroarcyriaflavin A to 4\u2032-demethylrebeccamycin."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Inference from genomic data and chemical structure",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1271/bbb.67.127",
+                    "doi:10.1002/cbic.200500504",
+                    "doi:10.1016/S1074-5521(02)00126-6"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "27397",
+                "ec": "4.3.3.5"
+            }
+        }
+    ]
+}
