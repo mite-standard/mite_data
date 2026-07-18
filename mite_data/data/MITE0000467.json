@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000467",
     "status": "active",
     "changelog": [
         {
@@ -11,12 +11,12 @@
             "reviewers": [
                 "0000-0002-4540-6501"
             ],
-            "comment": "Changed Description"
+            "comment": "New entry. Reviewer 1 changed Description"
         }
     ],
     "enzyme": {
         "name": "atr2",
-        "description": "Cytochrome P450 monooxygenase",
+        "description": "Cytochrome P450",
         "references": [
             "doi:10.1128/mBio.01111-21"
         ],
