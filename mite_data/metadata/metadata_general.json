@@ -9795,6 +9795,28 @@
       "reaction_description":"Prenylation of polyketide pyrone substrate in the biosynthetic pathway of decalin-containing diterpenoid pyrones",
       "status":"active",
       "tailoring":"Prenylation"
+    },
+    "MITE0000457":{
+      "accession":"MITE0000457",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"EYE95339.1",
+        "mibig":"BGC0002234",
+        "uniprot":"A0A017SFB8"
+      },
+      "enzyme_name":"FogE",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Aspergillus ruber (strain CBS 135680)",
+      "phylum":"Dikarya",
+      "reaction_description":"aromatic hydroxylation of flavoglaucin biosynthetic intermediate",
+      "status":"active",
+      "tailoring":"Hydroxylation"
     }
   },
   "version_mite_data":"1.30"
