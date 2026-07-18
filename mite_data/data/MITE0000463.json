@@ -1,0 +1,66 @@
+{
+    "accession": "MITE0000463",
+    "status": "active",
+    "comment": "Catalyzes chlorination of tryptophan at C7 position to yield 7-chloro-L-tryptophan in pyrrolnitrin biosynthesis",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-06",
+            "contributors": [
+                "0000-0001-9487-1525"
+            ],
+            "reviewers": [
+                "0000-0002-5203-4662",
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 added EC number. Reviewer 2 fixed crossref to MIBiG."
+        }
+    ],
+    "enzyme": {
+        "name": "PrnA",
+        "description": "Tryptophan 7-halogenase",
+        "references": [
+            "doi:10.1126/science.1116510"
+        ],
+        "databaseIds": {
+            "uniprot": "A8W2Z0",
+            "genpept": "ABW69174.1",
+            "mibig": "BGC0000924"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Chlorination of tryptophan at C7 position to yield 7-chloro-L-tryptophan in pyrrolnitrin biosynthesis",
+            "reactionSMARTS": "[#6:1]1:[#6:6]2:[#6:9](-[#6:10]-[#6@@:11](\\[#7;+:14])-[#6:12](-[#8;-:13])=[#8:15]):[#6:8]:[#7:7]:[#6:5]:2:[#6:4]:[#6:3]:[#6:2]:1>>[#6:1]1:[#6:6]2:[#6:9](-[#6:10]-[#6@@:11](\\[#7;+:14])-[#6:12](-[#8;-:13])=[#8:15]):[#6:8]:[#7:7]:[#6:5]:2:[#6:4](-[Cl]):[#6:3]:[#6:2]:1",
+            "reactions": [
+                {
+                    "substrate": "[NH3+][C@H](Cc1c[nH]c2ccccc12)C(=O)[O-]",
+                    "products": [
+                        "[NH3+][C@H](Cc1c[nH]c2c(Cl)cccc12)C(=O)[O-]"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Chlorination of tryptophan at C7 position to yield 7-chloro-L-tryptophan in pyrrolnitrin biosynthesis"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1126/science.1116510"
+                ]
+            },
+            "databaseIds": {
+                "ec": "1.14.19.9"
+            }
+        }
+    ]
+}
