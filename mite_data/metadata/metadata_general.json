@@ -10012,6 +10012,27 @@
       "reaction_description":"Hydroxylation",
       "status":"active",
       "tailoring":"Hydroxylation|Monooxygenation|Oxidation"
+    },
+    "MITE0000467":{
+      "accession":"MITE0000467",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"Heme|NADP",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"QXF68952.1",
+        "uniprot":"A0A8F4SN83"
+      },
+      "enzyme_name":"atr2",
+      "family":"Lecanoromycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Stereocaulon alpinum",
+      "phylum":"Dikarya",
+      "reaction_description":"benzylic hydroxylation of 4-O-demethylbarbatic acid (or proatranorin I) to proatranorin II (or atranorin) ",
+      "status":"active",
+      "tailoring":"Hydroxylation"
     }
   },
   "version_mite_data":"1.30"
