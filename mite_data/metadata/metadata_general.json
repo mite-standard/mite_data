@@ -9666,6 +9666,28 @@
       "reaction_description":"4′-O-methylation of 4′-demethylrebeccamycin to rebeccamycin using SAM as the methyl donor.",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000451":{
+      "accession":"MITE0000451",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"N-glycosyltransferase",
+      "enzyme_ids":{
+        "genpept":"BAC10673.1",
+        "mibig":"BGC0000821",
+        "uniprot":"Q8KHE4"
+      },
+      "enzyme_name":"RebG",
+      "family":"Pseudonocardiaceae",
+      "kingdom":"Bacillati",
+      "order":"Pseudonocardiales",
+      "organism":"Lentzea aerocolonigenes",
+      "phylum":"Actinomycetota",
+      "reaction_description":"N-glycosylation of dichloroarcyriaflavin A to 4′-demethylrebeccamycin.",
+      "status":"active",
+      "tailoring":"Glycosylation"
     }
   },
   "version_mite_data":"1.30"
