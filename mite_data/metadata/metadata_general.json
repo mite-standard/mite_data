@@ -9839,6 +9839,28 @@
       "reaction_description":"S-methylation of thiocarboxylic acid moiety in the biosynthetic pathway of yatakemycin.",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000459":{
+      "accession":"MITE0000459",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"AIG62145.1",
+        "mibig":"BGC0000120",
+        "uniprot":"A0A075TMP8"
+      },
+      "enzyme_name":"PatI",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Penicillium expansum",
+      "phylum":"Dikarya",
+      "reaction_description":"Hydroxylation of m-hydroxybenzyl alcohol to yield gentysil alcohol, step 4 of patulin biosynthesis",
+      "status":"active",
+      "tailoring":"Hydroxylation"
     }
   },
   "version_mite_data":"1.30"

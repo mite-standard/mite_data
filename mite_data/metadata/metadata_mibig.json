@@ -590,6 +590,22 @@
         "mite_accession":"MITE0000335",
         "mite_url":"https://bioregistry.io/mite:MITE0000335",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Cytochrome P450",
+        "enzyme_ids":{
+          "genpept":"AIG62145.1",
+          "mibig":"BGC0000120",
+          "uniprot":"A0A075TMP8"
+        },
+        "enzyme_name":"PatI",
+        "enzyme_refs":[
+          "doi:10.1111/1462-2920.14542"
+        ],
+        "enzyme_tailoring":"Hydroxylation",
+        "mite_accession":"MITE0000459",
+        "mite_url":"https://bioregistry.io/mite:MITE0000459",
+        "status":"active"
       }
     ],
     "BGC0000134":[
