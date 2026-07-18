@@ -2288,6 +2288,23 @@
         "mite_accession":"MITE0000450",
         "mite_url":"https://bioregistry.io/mite:MITE0000450",
         "status":"active"
+      },
+      {
+        "enzyme_description":"N-glycosyltransferase",
+        "enzyme_ids":{
+          "genpept":"BAC10673.1",
+          "mibig":"BGC0000821",
+          "uniprot":"Q8KHE4"
+        },
+        "enzyme_name":"RebG",
+        "enzyme_refs":[
+          "doi:10.1002/cbic.200500504",
+          "doi:10.1271/bbb.67.127"
+        ],
+        "enzyme_tailoring":"Glycosylation",
+        "mite_accession":"MITE0000451",
+        "mite_url":"https://bioregistry.io/mite:MITE0000451",
+        "status":"active"
       }
     ],
     "BGC0000832":[
