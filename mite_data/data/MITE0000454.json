@@ -1,0 +1,65 @@
+{
+    "accession": "MITE0000454",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-06",
+            "contributors": [
+                "0000-0001-9487-1525"
+            ],
+            "reviewers": [
+                "0009-0008-3623-3734"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "RedG",
+        "description": "Rieske-oxygenase-like enzyme",
+        "references": [
+            "doi:10.1038/nchem.1024"
+        ],
+        "databaseIds": {
+            "uniprot": "O54095",
+            "genpept": "CAA16434.1",
+            "mibig": "BGC0001063"
+        },
+        "cofactors": {
+            "organic": [
+                "NADP"
+            ],
+            "inorganic": [
+                "FeS"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Cyclization"
+            ],
+            "description": "Cyclization of undecylprodigiosin into streptorubin B",
+            "reactionSMARTS": "[#6:1]-[#6:2]-[#6:3]-[#6:4]-[#6:5]-[#6:6]-[#6:7]-[#6:8]-[#6:9]-[#6:10]-[#6:11]-[#6:12]1:[#7:16]:[#6:15](-[#6:17]=[#6:18]2-[#6:19](-[#8:28]-[#6:29])=[#6:20]-[#6:21](-[#6:23]3:[#7:27]:[#6:26]:[#6:25]:[#6:24]:3)=[#7:22]-2):[#6:14]:[#6:13]:1>>[#6:1]-[#6:2]-[#6:3]-[#6:4]/[#6@@:5]1-[#6:14]2:[#6:15](-[#6:17]=[#6:18]3-[#6:19](-[#8:28]-[#6:29])=[#6:20]-[#6:21](-[#6:23]4:[#7:27]:[#6:26]:[#6:25]:[#6:24]:4)=[#7:22]-3):[#7:16]:[#6:12](:[#6:13]:2)-[#6:11]-[#6:10]-[#6:9]-[#6:8]-[#6:7]-[#6:6]-1",
+            "reactions": [
+                {
+                    "substrate": "CCCCCCCCCCCc1ccc(/C=C2\\N=C(c3ccc[nH]3)C=C2OC)[nH]1",
+                    "products": [
+                        "CCCC[C@H]1CCCCCCc2cc1c(C=C1N=C(c3ccc[nH]3)C=C1OC)[nH]2"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Cyclization of undecylprodigiosin into streptorubin B"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1038/nchem.1024"
+                ]
+            }
+        }
+    ]
+}
