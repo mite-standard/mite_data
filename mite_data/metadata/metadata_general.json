@@ -9688,6 +9688,28 @@
       "reaction_description":"N-glycosylation of dichloroarcyriaflavin A to 4′-demethylrebeccamycin.",
       "status":"active",
       "tailoring":"Glycosylation"
+    },
+    "MITE0000452":{
+      "accession":"MITE0000452",
+      "class_name":"Gammaproteobacteria",
+      "cofactors_inorganic":"Fe|FeS",
+      "cofactors_organic":"Flavin mononucleotide|NADP",
+      "domain":"Bacteria",
+      "enzyme_description":"Rieske N-oxygenase",
+      "enzyme_ids":{
+        "genpept":"ABW69177.1",
+        "mibig":"BGC0000924",
+        "uniprot":"A8W2Z3"
+      },
+      "enzyme_name":"PrnD",
+      "family":"Pseudomonadaceae",
+      "kingdom":"Pseudomonadati",
+      "order":"Pseudomonadales",
+      "organism":"Pseudomonas chlororaphis",
+      "phylum":"Pseudomonadota",
+      "reaction_description":"Oxidation of the arylamine group of aminopyrrolnitrin to the corresponding arylnitro group in pyrrolnitrin.",
+      "status":"active",
+      "tailoring":"Monooxygenation|Oxidation"
     }
   },
   "version_mite_data":"1.30"
