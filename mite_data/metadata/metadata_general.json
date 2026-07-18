@@ -9969,6 +9969,28 @@
       "reaction_description":"Converts Colletorin D acid into Colletorin D",
       "status":"active",
       "tailoring":"Reduction"
+    },
+    "MITE0000465":{
+      "accession":"MITE0000465",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"cofactor-independent monooxygenase",
+      "enzyme_ids":{
+        "genpept":"AQW35073.1",
+        "mibig":"BGC0001675",
+        "uniprot":"A0A1S6QMP3"
+      },
+      "enzyme_name":"MrqO5",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces griseoruber",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Decarboxylation of aromatic type II polyketide biosynthesis intermediate",
+      "status":"active",
+      "tailoring":"Decarboxylation"
     }
   },
   "version_mite_data":"1.30"
