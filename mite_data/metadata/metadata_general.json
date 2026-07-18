@@ -9754,6 +9754,27 @@
       "reaction_description":"Cyclization of undecylprodigiosin into streptorubin B",
       "status":"active",
       "tailoring":"Cyclization"
+    },
+    "MITE0000455":{
+      "accession":"MITE0000455",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD",
+      "domain":"Eukaryota",
+      "enzyme_description":"FAD-dependent monooxygenase and Diels-Alderase",
+      "enzyme_ids":{
+        "genpept":"BAJ09785.1",
+        "uniprot":"D7UQ40"
+      },
+      "enzyme_name":"sol5",
+      "family":"Dothideomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Alternaria solani",
+      "phylum":"Dikarya",
+      "reaction_description":"Oxidation and Diels–Alder cycloaddition",
+      "status":"active",
+      "tailoring":"Cyclization|Oxidation"
     }
   },
   "version_mite_data":"1.30"
