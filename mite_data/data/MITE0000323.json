@@ -37,7 +37,7 @@
                 {
                     "substrate": "*C(=O)[C](CCCNO)NC(=O)[C](CO)NC(=O)[C](CO)NC(=O)[C](CCCN(O)C=O)NC(=O)CNC(=O)[C@]1N=C(c2ccccc2O)O[C@]1C",
                     "products": [
-                        "C[C@]1OC(c2ccccc2O)=N[C@]1C(=O)NCC(=O)NC(CCCN(O)C=O)C(=O)NC(CO)C(=O)NC(CO)C(=O)NC1CCCN(O)C1=O"
+                        "CC1OC(c2ccccc2O)=NC1C(=O)NCC(=O)NC(CCCN(O)C=O)C(=O)NC(CO)C(=O)NC(CO)C(=O)NC1CCCN(O)C1=O"
                     ],
                     "isIntermediate": true,
                     "description": "Intramolecular cyclization of hydroxy-ornithine in kineochelin siderophore"
