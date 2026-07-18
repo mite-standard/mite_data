@@ -1,0 +1,68 @@
+{
+    "accession": "MITE0000460",
+    "status": "active",
+    "comment": "Specialized purine nucleoside phosphorylase acting on 5\u2032-fluoro-5\u2032-deoxyadenosine; essential for generating fluorinated intermediates in organofluorine biosynthesis (FAc and 4-FT)",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-06",
+            "contributors": [
+                "0000-0001-7044-2419"
+            ],
+            "reviewers": [
+                "0000-0002-4540-6501",
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 adjusted nomenclature. Reviewer 2 fixed MIBiG cross-links."
+        }
+    ],
+    "enzyme": {
+        "name": "FlB",
+        "description": "Purine nucleoside phosphorylase",
+        "references": [
+            "doi:10.1016/j.pep.2019.105508",
+            "doi:10.1016/j.bioorg.2012.06.002",
+            "doi:10.1016/j.bioorg.2007.04.001"
+        ],
+        "databaseIds": {
+            "uniprot": "Q1EMV9",
+            "genpept": "CAJ20005.1",
+            "mibig": "BGC0000903"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Other"
+            ],
+            "description": "Phosphate-dependent purine nucleoside phosphorylase that catalyzes the reversible phosphorolysis of 5\u2032-fluoro-5\u2032-deoxyadenosine (5\u2032-FDA), yielding adenine and a fluorinated sugar phosphate. This reaction constitutes a key step in microbial organofluorine biosynthesis, channeling fluorinated intermediates toward fluoroacetate and 4-fluorothreonine production. Gene inactivation abolishes downstream fluorometabolite formation, supporting its essential role in pathway flux.",
+            "reactionSMARTS": "[#8:1]/[#6@@:2]1-[#6@@:4](-[#6@:7](-[#8:8]-[#6@:9]-1\\[#7]1:[#6]:[#7]:[#6]2:[#6]:1:[#7]:[#6]:[#7]:[#6]:2-[#7])\\[#6:6]-[F:5])/[#8:3]>>[#8:1]-[#6:2]1-[#6:4](-[#6:7](-[#8:8]-[#6:9]-1-[#8]-[#15](=[#8])(-[#8])-[#8])-[#6:6]-[F:5])-[#8:3]",
+            "reactions": [
+                {
+                    "substrate": "Nc1ncnc2c1ncn2[C@@H]1O[C@H](CF)[C@@H](O)[C@H]1O",
+                    "products": [
+                        "O=P(O)(O)OC1OC(CF)C(O)C1O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Phosphate-dependent phosphorolysis of 5\u2032-fluoro-5\u2032-deoxyadenosine, cleaving the N-glycosidic bond to yield adenine and a fluorinated ribose-1-phosphate (5-fluoro-5-deoxyribose-1-phosphate)"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure",
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1016/j.pep.2019.105508",
+                    "doi:10.1016/j.bioorg.2012.06.002",
+                    "doi:10.1016/j.bioorg.2007.04.001"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "19805",
+                "ec": "2.4.2.1"
+            }
+        }
+    ]
+}
