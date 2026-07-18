@@ -9775,6 +9775,26 @@
       "reaction_description":"Oxidation and Diels–Alder cycloaddition",
       "status":"active",
       "tailoring":"Cyclization|Oxidation"
+    },
+    "MITE0000456":{
+      "accession":"MITE0000456",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Mg",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Prenyl transferase",
+      "enzyme_ids":{
+        "uniprot":"P9WEX2"
+      },
+      "enzyme_name":"DpasC",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Apiospora sacchari",
+      "phylum":"Dikarya",
+      "reaction_description":"Prenylation of polyketide pyrone substrate in the biosynthetic pathway of decalin-containing diterpenoid pyrones",
+      "status":"active",
+      "tailoring":"Prenylation"
     }
   },
   "version_mite_data":"1.30"
