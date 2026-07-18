@@ -1,0 +1,74 @@
+{
+    "accession": "MITE0000452",
+    "status": "active",
+    "comment": "PrnD (aminopyrrolnitrin oxygenase) catalyzes the final N-oxygenation step in pyrrolnitrin biosynthesis, converting aminopyrrolnitrin into pyrrolnitrin by oxidation of an arylamine to an arylnitro group",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-14",
+            "contributors": [
+                "0009-0005-2489-2079"
+            ],
+            "reviewers": [
+                "0000-0002-4540-6501"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "PrnD",
+        "description": "Rieske N-oxygenase",
+        "references": [
+            "doi:10.1074/jbc.M505334200",
+            "doi:10.1111/j.1574-6941.2009.00792.x."
+        ],
+        "databaseIds": {
+            "uniprot": "A8W2Z3",
+            "genpept": "ABW69177.1",
+            "mibig": "BGC0000924"
+        },
+        "cofactors": {
+            "organic": [
+                "Flavin mononucleotide",
+                "NADP"
+            ],
+            "inorganic": [
+                "Fe",
+                "FeS"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Monooxygenation",
+                "Oxidation"
+            ],
+            "description": "Oxidation of the arylamine group of aminopyrrolnitrin to the corresponding arylnitro group in pyrrolnitrin.",
+            "reactionSMARTS": "[#6:1]1:[#6:5]:[#6:6](-[Cl:9]):[#6:4](-[#7]):[#6:2](-[#6:7]2:[#6:11]:[#7:10]:[#6:12]:[#6:13]:2-[Cl:14]):[#6:3]:1>>[#6:6]1(-[Cl:9]):[#6:4](-[#7;+](-[#8;-])=[#8]):[#6:2](-[#6:7]2:[#6:11]:[#7:10]:[#6:12]:[#6:13]:2-[Cl:14]):[#6:3]:[#6:1]:[#6:5]:1",
+            "reactions": [
+                {
+                    "substrate": "Nc1c(Cl)cccc1-c1c[nH]cc1Cl",
+                    "products": [
+                        "O=[N+]([O-])c1c(Cl)cccc1-c1c[nH]cc1Cl"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Oxidation of the arylamine group of aminopyrrolnitrin to the corresponding arylnitro group in pyrrolnitrin"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Site-directed mutagenesis"
+                ],
+                "references": [
+                    "doi:10.1074/jbc.M505334200"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "46136"
+            }
+        }
+    ]
+}
