@@ -1,0 +1,56 @@
+{
+    "accession": "MITE0000464",
+    "status": "active",
+    "comment": "NRPS-like carboxylic acid reductase",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-06",
+            "contributors": [
+                "0000-0002-0771-9611"
+            ],
+            "reviewers": [
+                "0000-0002-5203-4662"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "CTC3",
+        "description": "Reductase",
+        "references": [
+            "doi:10.1016/j.ymben.2023.10.002"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A1B7YD80",
+            "genpept": "OBR09778.1",
+            "mibig": "BGC0002812"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Reduction"
+            ],
+            "description": "Converts Colletorin D acid into Colletorin D",
+            "reactionSMARTS": "CC(C)=CCc1c(O)cc(C)c(C(=O)O)c1O>>CC(C)=CCc1c(O)cc(C)c(C=O)c1O",
+            "reactions": [
+                {
+                    "substrate": "CC(C)=CCc1c(O)cc(C)c(C(=O)O)c1O",
+                    "products": [
+                        "CC(C)=CCc1c(O)cc(C)c(C=O)c1O"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1016/j.ymben.2023.10.002"
+                ]
+            }
+        }
+    ]
+}
