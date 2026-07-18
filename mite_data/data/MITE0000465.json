@@ -1,0 +1,55 @@
+{
+    "accession": "MITE0000465",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-06",
+            "contributors": [
+                "0000-0001-6660-2715"
+            ],
+            "reviewers": [
+                "0000-0003-3290-1017"
+            ],
+            "comment": "New entry. Reviewer 1 revised of the product structure."
+        }
+    ],
+    "enzyme": {
+        "name": "MrqO5",
+        "description": "cofactor-independent monooxygenase",
+        "references": [
+            "doi:10.1021/acschembio.5c00695"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A1S6QMP3",
+            "genpept": "AQW35073.1",
+            "mibig": "BGC0001675"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Decarboxylation"
+            ],
+            "description": "Decarboxylation of aromatic type II polyketide biosynthesis intermediate",
+            "reactionSMARTS": "[cH:1]1[cH:3][c:2]2[c:4]([cH:9][c:10]3[c:8]([cH:7]2)[cH:11][c:12]([CH2:15][C:16](=O)O)[c:14]([C:19]([CH2:20][C:21]([CH3:22])=[O:24])=[O:23])[cH:13]3)[cH:6][cH:5]1>>[cH:1]1[cH:3][c:2]2[c:4]([cH:9][c:10]3[c:8]([cH:7]2)[cH:11][c:12]([CH3:15])[c:14]([C:19]([CH2:20][C:21]([CH3:22])=[O:24])=[O:23])[cH:13]3)[cH:6][cH:5]1",
+            "reactions": [
+                {
+                    "substrate": "CC(=O)CC(=O)c1cc2cc3ccccc3cc2cc1CC(=O)O",
+                    "products": [
+                        "CC(=O)CC(=O)c1cc2cc3ccccc3cc2cc1C"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acschembio.5c00695"
+                ]
+            }
+        }
+    ]
+}
