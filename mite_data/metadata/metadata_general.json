@@ -9947,6 +9947,28 @@
       "reaction_description":"Chlorination of tryptophan at C7 position to yield 7-chloro-L-tryptophan in pyrrolnitrin biosynthesis",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000464":{
+      "accession":"MITE0000464",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Reductase",
+      "enzyme_ids":{
+        "genpept":"OBR09778.1",
+        "mibig":"BGC0002812",
+        "uniprot":"A0A1B7YD80"
+      },
+      "enzyme_name":"CTC3",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Colletotrichum higginsianum (strain IMI 349063)",
+      "phylum":"Dikarya",
+      "reaction_description":"Converts Colletorin D acid into Colletorin D",
+      "status":"active",
+      "tailoring":"Reduction"
     }
   },
   "version_mite_data":"1.30"

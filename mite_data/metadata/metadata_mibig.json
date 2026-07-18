@@ -4905,6 +4905,22 @@
         "mite_accession":"MITE0000364",
         "mite_url":"https://bioregistry.io/mite:MITE0000364",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Reductase",
+        "enzyme_ids":{
+          "genpept":"OBR09778.1",
+          "mibig":"BGC0002812",
+          "uniprot":"A0A1B7YD80"
+        },
+        "enzyme_name":"CTC3",
+        "enzyme_refs":[
+          "doi:10.1016/j.ymben.2023.10.002"
+        ],
+        "enzyme_tailoring":"Reduction",
+        "mite_accession":"MITE0000464",
+        "mite_url":"https://bioregistry.io/mite:MITE0000464",
+        "status":"active"
       }
     ],
     "BGC0002841":[
