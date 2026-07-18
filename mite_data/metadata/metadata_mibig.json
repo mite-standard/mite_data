@@ -487,6 +487,22 @@
         "mite_accession":"MITE0000448",
         "mite_url":"https://bioregistry.io/mite:MITE0000448",
         "status":"active"
+      },
+      {
+        "enzyme_description":"SAM-dependent methyltransferase",
+        "enzyme_ids":{
+          "genpept":"ABC84455.1",
+          "mibig":"BGC0000114",
+          "uniprot":"UPI00006C98DF"
+        },
+        "enzyme_name":"NigE",
+        "enzyme_refs":[
+          "doi:10.1016/j.chembiol.2007.05.011"
+        ],
+        "enzyme_tailoring":"Methylation",
+        "mite_accession":"MITE0000449",
+        "mite_url":"https://bioregistry.io/mite:MITE0000449",
+        "status":"active"
       }
     ],
     "BGC0000115":[
