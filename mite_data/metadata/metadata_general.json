@@ -9991,6 +9991,27 @@
       "reaction_description":"Decarboxylation of aromatic type II polyketide biosynthesis intermediate",
       "status":"active",
       "tailoring":"Decarboxylation"
+    },
+    "MITE0000466":{
+      "accession":"MITE0000466",
+      "class_name":"Cyanophyceae",
+      "cofactors_inorganic":"FeS",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Rieske oxygenase",
+      "enzyme_ids":{
+        "genpept":"ACG63840.1",
+        "uniprot":"C3RVQ0"
+      },
+      "enzyme_name":"SxtT",
+      "family":"Aerosakkonematales",
+      "kingdom":"Bacillati",
+      "order":"Oscillatoriophycideae",
+      "organism":"Microseira wollei",
+      "phylum":"Cyanobacteriota",
+      "reaction_description":"Hydroxylation",
+      "status":"active",
+      "tailoring":"Hydroxylation|Monooxygenation|Oxidation"
     }
   },
   "version_mite_data":"1.30"

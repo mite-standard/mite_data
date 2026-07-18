@@ -618,3 +618,5 @@
 616,MITE0000463.reaction1.example1,[NH3+][C@H](Cc1c[nH]c2ccccc12)C(=O)[O-],[NH3+][C@H](Cc1c[nH]c2c(Cl)cccc12)C(=O)[O-]
 617,MITE0000464.reaction1.example1,CC(C)=CCc1c(O)cc(C)c(C(=O)O)c1O,CC(C)=CCc1c(O)cc(C)c(C=O)c1O
 618,MITE0000465.reaction1.example1,CC(=O)CC(=O)c1cc2cc3ccccc3cc2cc1CC(=O)O,CC(=O)CC(=O)c1cc2cc3ccccc3cc2cc1C
+619,MITE0000466.reaction1.example1,N=C1N[C@@H]2C(CO)NC(=N)N3CC[C@H](O)[C@@]23N1,N=C1N[C@@H]2C(CO)NC(=N)N3CCC(O)(O)[C@@]23N1
+620,MITE0000466.reaction1.example2,N=C1N[C@@H]2C(COC(N)=O)NC(=N)N3CC[C@H](O)[C@@]23N1,N=C1N[C@@H]2C(COC(N)=O)NC(=N)N3CCC(O)(O)[C@@]23N1
