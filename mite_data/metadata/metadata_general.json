@@ -9622,6 +9622,28 @@
       "reaction_description":"The last step in the biosynthesis of nigericin is the hydroxylation of the 30th carbon by NigD",
       "status":"active",
       "tailoring":"Hydroxylation"
+    },
+    "MITE0000449":{
+      "accession":"MITE0000449",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"SAM-dependent methyltransferase",
+      "enzyme_ids":{
+        "genpept":"ABC84455.1",
+        "mibig":"BGC0000114",
+        "uniprot":"UPI00006C98DF"
+      },
+      "enzyme_name":"NigE",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces violaceusniger",
+      "phylum":"Actinomycetota",
+      "reaction_description":"NigE, encoding a S-adenosylmethionine (SAM)-dependent O-methyltransferase, catalyzes O-methylation of the C-11 hydroxy group in the Nigericin biosynthesis",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.30"
