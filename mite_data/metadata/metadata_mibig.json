@@ -2363,6 +2363,25 @@
         "status":"active"
       }
     ],
+    "BGC0000924":[
+      {
+        "enzyme_description":"Rieske N-oxygenase",
+        "enzyme_ids":{
+          "genpept":"ABW69177.1",
+          "mibig":"BGC0000924",
+          "uniprot":"A8W2Z3"
+        },
+        "enzyme_name":"PrnD",
+        "enzyme_refs":[
+          "doi:10.1074/jbc.M505334200",
+          "doi:10.1111/j.1574-6941.2009.00792.x."
+        ],
+        "enzyme_tailoring":"Monooxygenation|Oxidation",
+        "mite_accession":"MITE0000452",
+        "mite_url":"https://bioregistry.io/mite:MITE0000452",
+        "status":"active"
+      }
+    ],
     "BGC0000932":[
       {
         "enzyme_description":"Flavoprotein dioxygenase",
