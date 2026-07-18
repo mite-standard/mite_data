@@ -608,3 +608,5 @@
 606,MITE0000455.reaction1.example1,C/C=C/C=C/CCCC/C=C/c1cc(OC)c(CO)c(=O)o1,COc1cc([C@H]2[C@@H]3CCCC[C@@H]3C=C[C@@H]2C)oc(=O)c1C=O
 607,MITE0000456.reaction1.example1,Cc1oc(=O)cc(O)c1C,CC(C)=CCCC(C)=CCCC(C)=CCCC(C)=CCc1c(O)c(C)c(C)oc1=O
 608,MITE0000457.reaction1.example1,CCCCCCCc1cccc(O)c1CO,CCCCCCCc1c(O)ccc(O)c1CO
+609,MITE0000458.reaction1.example1,COc1c(O)ccc2cc(C(=O)S)[nH]c12,COc1c(O)ccc2cc(C(=O)SC)[nH]c12
+610,MITE0000458.reaction1.example2,COc1cc2cc(C(=O)S)[nH]c2cc1O,COc1cc2cc(C(=O)SC)[nH]c2cc1O

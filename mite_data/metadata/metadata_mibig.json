@@ -1477,6 +1477,24 @@
         "status":"active"
       }
     ],
+    "BGC0000466":[
+      {
+        "enzyme_description":"SAM-dependent methyltransferase",
+        "enzyme_ids":{
+          "genpept":"ADZ13559.1",
+          "mibig":"BGC0000466",
+          "uniprot":"I3NN71"
+        },
+        "enzyme_name":"YtkW",
+        "enzyme_refs":[
+          "doi:10.1002/anie.202522109"
+        ],
+        "enzyme_tailoring":"Methylation",
+        "mite_accession":"MITE0000458",
+        "mite_url":"https://bioregistry.io/mite:MITE0000458",
+        "status":"active"
+      }
+    ],
     "BGC0000469":[
       {
         "enzyme_description":"Cytochrome P450",

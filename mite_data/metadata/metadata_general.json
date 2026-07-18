@@ -9817,6 +9817,28 @@
       "reaction_description":"aromatic hydroxylation of flavoglaucin biosynthetic intermediate",
       "status":"active",
       "tailoring":"Hydroxylation"
+    },
+    "MITE0000458":{
+      "accession":"MITE0000458",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"SAM-dependent methyltransferase",
+      "enzyme_ids":{
+        "genpept":"ADZ13559.1",
+        "mibig":"BGC0000466",
+        "uniprot":"I3NN71"
+      },
+      "enzyme_name":"YtkW",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces sp. TP-A2060",
+      "phylum":"Actinomycetota",
+      "reaction_description":"S-methylation of thiocarboxylic acid moiety in the biosynthetic pathway of yatakemycin.",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.30"
