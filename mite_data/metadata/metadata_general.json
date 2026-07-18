@@ -10033,6 +10033,28 @@
       "reaction_description":"benzylic hydroxylation of 4-O-demethylbarbatic acid (or proatranorin I) to proatranorin II (or atranorin) ",
       "status":"active",
       "tailoring":"Hydroxylation"
+    },
+    "MITE0000468":{
+      "accession":"MITE0000468",
+      "class_name":"Polyangia",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"NADP",
+      "domain":"Bacteria",
+      "enzyme_description":"Oxidoreductase",
+      "enzyme_ids":{
+        "genpept":"AAK19893.1",
+        "mibig":"BGC0000147",
+        "uniprot":"Q9ADL7"
+      },
+      "enzyme_name":"SorR",
+      "family":"Polyangiaceae",
+      "kingdom":"Pseudomonadati",
+      "order":"Polyangiales",
+      "organism":"Sorangium cellulosum",
+      "phylum":"Myxococcota",
+      "reaction_description":"Possibily oxidation of soraphen x, followed by hemiacetalization to soraphen B ",
+      "status":"active",
+      "tailoring":"Reduction"
     }
   },
   "version_mite_data":"1.30"
