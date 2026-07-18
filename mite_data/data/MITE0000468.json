@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000468",
     "status": "active",
     "comment": "Although SorR is homologous to reductase domains of PKSs, it could conceivably function in the reverse as an oxidase",
     "changelog": [
@@ -12,12 +12,12 @@
             "reviewers": [
                 "0000-0002-4540-6501"
             ],
-            "comment": "Refine finding"
+            "comment": "New entry. Reviewer 1 refined findings."
         }
     ],
     "enzyme": {
         "name": "SorR",
-        "description": "oxidoreductase",
+        "description": "Oxidoreductase",
         "references": [
             "doi:10.1016/S0378-1119(02)00396-7"
         ],
