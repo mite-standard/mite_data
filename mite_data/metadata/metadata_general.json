@@ -9644,6 +9644,28 @@
       "reaction_description":"NigE, encoding a S-adenosylmethionine (SAM)-dependent O-methyltransferase, catalyzes O-methylation of the C-11 hydroxy group in the Nigericin biosynthesis",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000450":{
+      "accession":"MITE0000450",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"SAM-dependent O-methyltransferase",
+      "enzyme_ids":{
+        "genpept":"BAC10678.1",
+        "mibig":"BGC0000821",
+        "uniprot":"Q8KZ94"
+      },
+      "enzyme_name":"RebM",
+      "family":"Pseudonocardiaceae",
+      "kingdom":"Bacillati",
+      "order":"Pseudonocardiales",
+      "organism":"Lentzea aerocolonigenes",
+      "phylum":"Actinomycetota",
+      "reaction_description":"4′-O-methylation of 4′-demethylrebeccamycin to rebeccamycin using SAM as the methyl donor.",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.30"
