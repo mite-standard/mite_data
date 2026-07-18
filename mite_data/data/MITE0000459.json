@@ -1,0 +1,66 @@
+{
+    "accession": "MITE0000459",
+    "status": "active",
+    "comment": "Catalyzes hydrozylation of m-hydroxybenzyl alcohol to gentisyl alcohol",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-06",
+            "contributors": [
+                "0009-0006-4188-3294"
+            ],
+            "reviewers": [
+                "0000-0003-4819-2251"
+            ],
+            "comment": "Fixed rxn SMARTS, added MIBiG reference, cofactor, evidence qualifier, textual additions."
+        }
+    ],
+    "enzyme": {
+        "name": "PatI",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1111/1462-2920.14542"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A075TMP8",
+            "genpept": "AIG62145.1",
+            "mibig": "BGC0000120"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "Hydroxylation of m-hydroxybenzyl alcohol to yield gentysil alcohol, step 4 of patulin biosynthesis",
+            "reactionSMARTS": "[#8:1]-[#6:2]-[#6:3]1:[#6:9]:[#6:7](-[#8:8]):[#6:6]:[#6:5]:[#6:4]:1>>[#8:1]-[#6:2]-[#6:3]1:[#6:4](-[#8]):[#6:5]:[#6:6]:[#6:7](-[#8:8]):[#6:9]:1",
+            "reactions": [
+                {
+                    "substrate": "OCc1cccc(O)c1",
+                    "products": [
+                        "OCc1cc(O)ccc1O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Hydroxylation of m-hydroxybenzyl alcohol to gentysil alcohol"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1111/1462-2920.14542"
+                ]
+            }
+        }
+    ]
+}
