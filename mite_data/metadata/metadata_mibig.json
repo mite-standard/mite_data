@@ -663,6 +663,22 @@
         "mite_accession":"MITE0000318",
         "mite_url":"https://bioregistry.io/mite:MITE0000318",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Oxidoreductase",
+        "enzyme_ids":{
+          "genpept":"AAK19893.1",
+          "mibig":"BGC0000147",
+          "uniprot":"Q9ADL7"
+        },
+        "enzyme_name":"SorR",
+        "enzyme_refs":[
+          "doi:10.1016/S0378-1119(02)00396-7"
+        ],
+        "enzyme_tailoring":"Reduction",
+        "mite_accession":"MITE0000468",
+        "mite_url":"https://bioregistry.io/mite:MITE0000468",
+        "status":"active"
       }
     ],
     "BGC0000165":[
