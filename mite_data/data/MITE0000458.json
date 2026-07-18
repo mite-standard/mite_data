@@ -1,0 +1,73 @@
+{
+    "accession": "MITE0000458",
+    "status": "active",
+    "comment": "Thiocarboxylic acid S-methyltransferase",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-06",
+            "contributors": [
+                "0000-0002-3947-4444"
+            ],
+            "reviewers": [
+                "0000-0003-4819-2251"
+            ],
+            "comment": "New entry. Reviewer 1 redrew correct rxn SMARTS, redrew SMILES, added non-native rxn, textual additions, added MIBiG reference."
+        }
+    ],
+    "enzyme": {
+        "name": "YtkW",
+        "description": "SAM-dependent methyltransferase",
+        "references": [
+            "doi:10.1002/anie.202522109"
+        ],
+        "databaseIds": {
+            "uniprot": "I3NN71",
+            "genpept": "ADZ13559.1",
+            "mibig": "BGC0000466"
+        },
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "S-methylation of thiocarboxylic acid moiety in the biosynthetic pathway of yatakemycin.",
+            "reactionSMARTS": "[#6:1]1:[#6:12](-[#8:13]):[#6:11]:[#6:10]:[#6:3]2:[#6:4]:[#6:5](-[#6:7](=[#8:9])-[#16:8]):[#7:6]:[#6:2]:1:2>>[#6:1]1:[#6:12](-[#8:13]):[#6:11]:[#6:10]:[#6:3]2:[#6:4]:[#6:5](-[#6:7](=[#8:9])-[#16:8]-[#6]):[#7:6]:[#6:2]:1:2",
+            "reactions": [
+                {
+                    "substrate": "COc1c(O)ccc2cc(C(=O)S)[nH]c12",
+                    "products": [
+                        "COc1c(O)ccc2cc(C(=O)SC)[nH]c12"
+                    ],
+                    "isIntermediate": true,
+                    "description": "S-methylation on thiocarboxylic acid moiety of subunit A of yatakemycin."
+                },
+                {
+                    "substrate": "COc1cc2cc(C(=O)S)[nH]c2cc1O",
+                    "products": [
+                        "COc1cc2cc(C(=O)SC)[nH]c2cc1O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "S-methylation on thiocarboxylic acid moiety of a non-native substrate analogue"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1002/anie.202522109"
+                ]
+            },
+            "databaseIds": {
+                "ec": "2.1.1"
+            }
+        }
+    ]
+}
