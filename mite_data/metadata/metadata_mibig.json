@@ -3414,6 +3414,24 @@
         "status":"active"
       }
     ],
+    "BGC0001528":[
+      {
+        "enzyme_description":"Cytochrome P450 monooxygenase",
+        "enzyme_ids":{
+          "genpept":"BBE36500.1",
+          "mibig":"BGC0001528",
+          "uniprot":"A0A2Z6FZ20"
+        },
+        "enzyme_name":"btcC",
+        "enzyme_refs":[
+          "doi:10.1016/j.tetlet.2018.02.022"
+        ],
+        "enzyme_tailoring":"Oxidation",
+        "mite_accession":"MITE0000453",
+        "mite_url":"https://bioregistry.io/mite:MITE0000453",
+        "status":"active"
+      }
+    ],
     "BGC0001611":[
       {
         "enzyme_description":"Persulfide methyltransferase",
