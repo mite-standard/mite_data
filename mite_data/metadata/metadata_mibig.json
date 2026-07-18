@@ -2432,6 +2432,22 @@
         "mite_accession":"MITE0000452",
         "mite_url":"https://bioregistry.io/mite:MITE0000452",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Tryptophan 7-halogenase",
+        "enzyme_ids":{
+          "genpept":"ABW69174.1",
+          "mibig":"BGC0000924",
+          "uniprot":"A8W2Z0"
+        },
+        "enzyme_name":"PrnA",
+        "enzyme_refs":[
+          "doi:10.1126/science.1116510"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000463",
+        "mite_url":"https://bioregistry.io/mite:MITE0000463",
+        "status":"active"
       }
     ],
     "BGC0000932":[
