@@ -603,3 +603,4 @@
 601,MITE0000450.reaction1.example1,O=C1NC(=O)c2c1c1c3cccc(Cl)c3[nH]c1c1c2c2cccc(Cl)c2n1[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O,CO[C@H]1[C@H](O)[C@@H](O)[C@H](n2c3c(Cl)cccc3c3c4c(c5c6cccc(Cl)c6[nH]c5c32)C(=O)NC4=O)O[C@@H]1CO
 602,MITE0000451.reaction1.example1,O=C1NC(=O)c2c1c1c3cccc(Cl)c3[nH]c1c1[nH]c3c(Cl)cccc3c21,O=C1NC(=O)c2c1c1c3cccc(Cl)c3[nH]c1c1c2c2cccc(Cl)c2n1[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O
 603,MITE0000452.reaction1.example1,Nc1c(Cl)cccc1-c1c[nH]cc1Cl,O=[N+]([O-])c1c(Cl)cccc1-c1c[nH]cc1Cl
+604,MITE0000453.reaction1.example1,C/C1=C/C[C@@H]2[C@H]([C@H](C)C(=O)O)CC[C@@]2(C)C/C=C(\C)C/C=C2\[C@@H](C)CC[C@@H]12,C/C1=C/C[C@@H]2[C@H]([C@H](C)C(=O)O)CC[C@@]2(C)C[C@@H](O)[C@](C)(O)C/C=C2/[C@H]1CC[C@@]2(C)O

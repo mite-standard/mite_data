@@ -9710,6 +9710,28 @@
       "reaction_description":"Oxidation of the arylamine group of aminopyrrolnitrin to the corresponding arylnitro group in pyrrolnitrin.",
       "status":"active",
       "tailoring":"Monooxygenation|Oxidation"
+    },
+    "MITE0000453":{
+      "accession":"MITE0000453",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450 monooxygenase",
+      "enzyme_ids":{
+        "genpept":"BBE36500.1",
+        "mibig":"BGC0001528",
+        "uniprot":"A0A2Z6FZ20"
+      },
+      "enzyme_name":"btcC",
+      "family":"Dothideomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Neocamarosporium betae",
+      "phylum":"Dikarya",
+      "reaction_description":"The cytochrome P450 monooxygenase btcC further catalyzes the multistep oxidation of betaestacin IV to produce several compounds, including betaestacins Va, Vb, Vc and VI ",
+      "status":"active",
+      "tailoring":"Oxidation"
     }
   },
   "version_mite_data":"1.30"
