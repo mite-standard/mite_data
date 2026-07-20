@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "DoxA is a Cytochrome P-450 monooxygenase involved in the biosynthesis of anthracycline daunorubicin",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,105 @@
     ],
     "enzyme": {
         "name": "DoxA",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1128/jb.179.8.2641-2650.1997",
+            "doi:10.1128/jb.181.1.298-304.1999",
+            "doi:10.1038/s41467-026-69194-6"
+        ],
         "databaseIds": {
             "uniprot": "Q59971",
-            "genpept": ""
+            "genpept": "AAB08049.1"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "DoxA hydroxylates 13-deoxydaunorubicin to form 13-dihydrodaunorubicin",
+            "reactionSMARTS": "[#6:1]-[#6:2]-[#6@:3]1(-[#6:25]-[#6@:14](/[#8:15]\\[#6@:16]2-[#8:24]-[#6@:22](/[#6:23])-[#6@:20](/[#8:21])-[#6@:18](/[#7:19])-[#6:17]-2)-[#6:13]2:[#6:6](:[#6:7](:[#6:9]3-[#6:35](=[#8:36])-[#6:34]4:[#6:28](:[#6:29](:[#6:31]:[#6:32]:[#6:33]:4)-[#8:30]-[#6:37])-[#6:26](=[#8:27])-[#6:10]:3:[#6:11]:2-[#8:12])-[#8:8])-[#6:5]-1)/[#8:4]>>[#6:37]-[#8:30]-[#6:29]1:[#6:28]2-[#6:26](-[#6:10]3:[#6:9](-[#6:35](=[#8:36])-[#6:34]:2:[#6:33]:[#6:32]:[#6:31]:1):[#6:7](-[#8:8]):[#6:6]1-[#6:5]-[#6@:3](-[#6:25]-[#6@:14](/[#8:15]\\[#6@@:16]2-[#8:24]-[#6@@:22](/[#6:23])-[#6@@:20](/[#8:21])-[#6@@:18](/[#7:19])-[#6:17]-2)-[#6:13]:1:[#6:11]:3-[#8:12])(-[#6:2](-[#8])-[#6:1])/[#8:4])=[#8:27]",
             "reactions": [
                 {
+                    "substrate": "CC[C@]1(O)Cc2c(O)c3c(c(O)c2[C@@H](O[C@@H]2C[C@@H](N)[C@@H](O)[C@@H](C)O2)C1)C(=O)c1c(OC)cccc1C3=O",
                     "products": [
-                        ""
-                    ]
+                        "COc1cccc2c1C(=O)c1c(O)c3c(c(O)c1C2=O)C[C@@](O)(C(C)O)C[C@@H]3O[C@H]1C[C@H](N)[C@H](O)[C@H](C)O1"
+                    ],
+                    "isIntermediate": false,
+                    "description": "DoxA catalyzes the C-13 hydroxylation of 13-deoxycarminomycin and 13-deoxydaunorubicin to yield 13-dihydrocarminomycin and 13-dihydrodaunorubicin, respectively. Further it performs oxidation of these 13-dihydro-anthracyclines to form, carminomycin and daunorubicin. In addition, the invitro C-14 hydroxylation of daunorubicin gives doxorubicin."
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1128/jb.179.8.2641-2650.1997",
+                    "doi:10.1128/jb.181.1.298-304.1999"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "37851",
+                "ec": "1.14.13.181"
+            }
+        },
+        {
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "DoxA oxidize 13-dihydrodaunorubicin to form daunorubicin",
+            "reactionSMARTS": "[#6:1]-[#6:2](-[#8])-[#6@:3]1(-[#6:25]-[#6@:14](/[#8:15]\\[#6@:16]2-[#8:24]-[#6@:22](/[#6:23])-[#6@:20](/[#8:21])-[#6@:18](/[#7:19])-[#6:17]-2)-[#6:13]2:[#6:6](:[#6:7](:[#6:9]3-[#6:35](=[#8:36])-[#6:34]4:[#6:28](:[#6:29](:[#6:31]:[#6:32]:[#6:33]:4)-[#8:30]-[#6:37])-[#6:26](=[#8:27])-[#6:10]:3:[#6:11]:2-[#8:12])-[#8:8])-[#6:5]-1)/[#8:4]>>[#6:37]-[#8:30]-[#6:29]1:[#6:28]2-[#6:26](-[#6:10]3:[#6:9](-[#6:35](=[#8:36])-[#6:34]:2:[#6:33]:[#6:32]:[#6:31]:1):[#6:7](-[#8:8]):[#6:6]1-[#6:5]-[#6@:3](-[#6:25]-[#6@:14](/[#8:15]\\[#6@@:16]2-[#8:24]-[#6@@:22](/[#6:23])-[#6@@:20](/[#8:21])-[#6@@:18](/[#7:19])-[#6:17]-2)-[#6:13]:1:[#6:11]:3-[#8:12])(-[#6:2](=[#8:4])-[#6:1])/[#8:4])=[#8:27]",
+            "reactions": [
+                {
+                    "substrate": "COc1cccc2c1C(=O)c1c(O)c3c(c(O)c1C2=O)C[C@@](O)(C(C)O)C[C@@H]3O[C@@H]1C[C@@H](N)[C@@H](O)[C@@H](C)O1",
+                    "products": [
+                        "COc1cccc2c1C(=O)c1c(O)c3c(c(O)c1C2=O)C[C@@](O)(C(C)=O)C[C@@H]3O[C@H]1C[C@H](N)[C@H](O)[C@H](C)O1"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1128/jb.179.8.2641-2650.1997",
+                    "doi:10.1128/jb.181.1.298-304.1999"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "DoxA hydroxylates daunorubicin at C-14 to form doxorubicin",
+            "reactionSMARTS": "[#6:1]-[#6:2](=[#8:38])-[#6@:3]1(-[#6:25]-[#6@:14](/[#8:15]\\[#6@:16]2-[#8:24]-[#6@:22](/[#6:23])-[#6@:20](/[#8:21])-[#6@:18](/[#7:19])-[#6:17]-2)-[#6:13]2:[#6:6](:[#6:7](:[#6:9]3-[#6:35](=[#8:36])-[#6:34]4:[#6:28](:[#6:29](:[#6:31]:[#6:32]:[#6:33]:4)-[#8:30]-[#6:37])-[#6:26](=[#8:27])-[#6:10]:3:[#6:11]:2-[#8:12])-[#8:8])-[#6:5]-1)/[#8:4]>>[#6:37]-[#8:30]-[#6:29]1:[#6:28]2-[#6:26](-[#6:10]3:[#6:9](-[#6:35](=[#8:36])-[#6:34]:2:[#6:33]:[#6:32]:[#6:31]:1):[#6:7](-[#8:8]):[#6:6]1-[#6:5]-[#6@:3](-[#6:25]-[#6@:14](/[#8:15]\\[#6@@:16]2-[#8:24]-[#6@@:22](/[#6:23])-[#6@@:20](/[#8:21])-[#6@@:18](/[#7:19])-[#6:17]-2)-[#6:13]:1:[#6:11]:3-[#8:12])(-[#6:2](=[#8:38])-[#6:1]-[#8])/[#8:4])=[#8:27]",
+            "reactions": [
+                {
+                    "substrate": "COc1cccc2c1C(=O)c1c(O)c3c(c(O)c1C2=O)C[C@@](O)(C(C)=O)C[C@@H]3O[C@@H]1C[C@@H](N)[C@@H](O)[C@@H](C)O1",
+                    "products": [
+                        "COc1cccc2c1C(=O)c1c(O)c3c(c(O)c1C2=O)C[C@@](O)(C(=O)CO)C[C@@H]3O[C@H]1C[C@H](N)[C@H](O)[C@H](C)O1"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1128/jb.179.8.2641-2650.1997",
+                    "doi:10.1128/jb.181.1.298-304.1999"
+                ]
+            }
         }
     ]
 }
