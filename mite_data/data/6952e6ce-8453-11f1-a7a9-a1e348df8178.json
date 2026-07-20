@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "DauK is a Carminomycin 4-O-methyltransferase from Streptomyces sp. strain C5. It is a homologue of DnrK from S. peucetius. Both are involved in the biosynthetic pathway of the anthracycline daunorubicin.",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,126 @@
     ],
     "enzyme": {
         "name": "DauK",
+        "description": "O-methyl transferase",
+        "references": [
+            "doi:10.1128/jb.177.3.536-543.1995",
+            "doi:10.1128/jb.179.8.2641-2650.1997",
+            "doi:10.1021/acs.jnatprod.3c00947"
+        ],
         "databaseIds": {
             "uniprot": "Q55216",
-            "genpept": ""
+            "genpept": "AAB16938.1"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "DauK catalyzes the transfer of a methyl group from S-adenosyl-L-methionine to the 4-O-position of carminomycin to form daunorubicin.",
+            "reactionSMARTS": "[#6:1]/[#6@@:2]1-[#8:7]-[#6@@:6](\\[#8:8]/[#6@@:9]2-[#6:18]3:[#6:13](:[#6:14](-[#8:31]):[#6:15]4-[#6:24](=[#8:25])-[#6:23]5:[#6:26]:[#6:27]:[#6:28]:[#6:29](-[#8:30]):[#6:22]:5-[#6:20](=[#8:21])-[#6:16]:4:[#6:17]:3-[#8:19])-[#6:12]-[#6@@:11](/[#8:35])(\\[#6:32](-[#6:34])=[#8:33])-[#6:10]-2)-[#6:5]-[#6@:4](/[#7:36])-[#6@@:3]-1/[#8:37]>>[#6:1]/[#6@@:2]1-[#8:7]-[#6@@:6](\\[#8:8]/[#6@@:9]2-[#6:18]3:[#6:13](:[#6:14](-[#8:31]):[#6:15]4-[#6:24](=[#8:25])-[#6:23]5:[#6:26]:[#6:27]:[#6:28]:[#6:29](-[#8:30]-[#6]):[#6:22]:5-[#6:20](=[#8:21])-[#6:16]:4:[#6:17]:3-[#8:19])-[#6:12]-[#6@@:11](/[#8:35])(\\[#6:32](-[#6:34])=[#8:33])-[#6:10]-2)-[#6:5]-[#6@:4](/[#7:36])-[#6@@:3]-1/[#8:37]",
             "reactions": [
                 {
+                    "substrate": "CC(=O)[C@]1(O)Cc2c(O)c3c(c(O)c2[C@@H](O[C@H]2C[C@H](N)[C@H](O)[C@H](C)O2)C1)C(=O)c1c(O)cccc1C3=O",
                     "products": [
-                        ""
-                    ]
+                        "COc1cccc2c1C(=O)c1c(O)c3c(c(O)c1C2=O)C[C@@](O)(C(C)=O)C[C@@H]3O[C@H]1C[C@H](N)[C@H](O)[C@H](C)O1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "DauK is responsible for methylating the C-4 hydroxyl group of anthracycline intermediates (such as rhodomycin D and carminomycin derivatives) in the biosynthetic pathway of daunorubicin and doxorubicin. "
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1128/jb.177.3.536-543.1995",
+                    "doi:10.1128/jb.179.8.2641-2650.1997",
+                    "doi:10.1099/00221287-139-6-1353"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "38311",
+                "ec": "2.1.1.292"
+            }
+        },
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "DauK methylates 13-dihydrocarminomycin to form 13-dihydrodaunorubicin",
+            "reactionSMARTS": "[#6:1]-[#6:2](-[#6@:4]1(-[#6:26]-[#6@:15](/[#8:16]\\[#6@:17]2-[#8:25]-[#6@:23](/[#6:24])-[#6@:21](/[#8:22])-[#6@:19](/[#7:20])-[#6:18]-2)-[#6:14]2:[#6:7](:[#6:8](:[#6:10]3-[#6:36](=[#8:37])-[#6:35]4:[#6:29](:[#6:30](:[#6:32]:[#6:33]:[#6:34]:4)-[#8:31])-[#6:27](=[#8:28])-[#6:11]:3:[#6:12]:2-[#8:13])-[#8:9])-[#6:6]-1)/[#8:5])-[#8:3]>>[#6]-[#8:31]-[#6:30]1:[#6:29]2-[#6:27](-[#6:11]3:[#6:10](-[#6:36](=[#8:37])-[#6:35]:2:[#6:34]:[#6:33]:[#6:32]:1):[#6:8](-[#8:9]):[#6:7]1-[#6:6]-[#6@:4](-[#6:26]-[#6@:15](/[#8:16]\\[#6@@:17]2-[#8:25]-[#6@@:23](/[#6:24])-[#6@@:21](/[#8:22])-[#6@@:19](/[#7:20])-[#6:18]-2)-[#6:14]:1:[#6:12]:3-[#8:13])(-[#6:2](-[#8:3])-[#6:1])/[#8:5])=[#8:28]",
+            "reactions": [
+                {
+                    "substrate": "CC(O)[C@]1(O)Cc2c(O)c3c(c(O)c2[C@@H](O[C@@H]2C[C@@H](N)[C@@H](O)[C@@H](C)O2)C1)C(=O)c1c(O)cccc1C3=O",
+                    "products": [
+                        "COc1cccc2c1C(=O)c1c(O)c3c(c(O)c1C2=O)C[C@@](O)(C(C)O)C[C@@H]3O[C@H]1C[C@H](N)[C@H](O)[C@H](C)O1"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1128/jb.179.8.2641-2650.1997"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "DauK methylates 13-deoxycarminomycin to form 13-deoxydaunorubicin",
+            "reactionSMARTS": "[#6:1]-[#6:2]-[#6@:3]1(-[#6:25]-[#6@:14](/[#8:15]\\[#6@:16]2-[#8:24]-[#6@:22](/[#6:23])-[#6@:20](/[#8:21])-[#6@:18](/[#7:19])-[#6:17]-2)-[#6:13]2:[#6:6](:[#6:7](:[#6:9]3-[#6:35](=[#8:36])-[#6:34]4:[#6:28](:[#6:29](:[#6:31]:[#6:32]:[#6:33]:4)-[#8:30])-[#6:26](=[#8:27])-[#6:10]:3:[#6:11]:2-[#8:12])-[#8:8])-[#6:5]-1)/[#8:4]>>[#6]-[#8:30]-[#6:29]1:[#6:28]2-[#6:26](-[#6:10]3:[#6:9](-[#6:35](=[#8:36])-[#6:34]:2:[#6:33]:[#6:32]:[#6:31]:1):[#6:7](-[#8:8]):[#6:6]1-[#6:5]-[#6@:3](-[#6:25]-[#6@:14](/[#8:15]\\[#6@@:16]2-[#8:24]-[#6@@:22](/[#6:23])-[#6@@:20](/[#8:21])-[#6@@:18](/[#7:19])-[#6:17]-2)-[#6:13]:1:[#6:11]:3-[#8:12])(-[#6:2]-[#6:1])/[#8:4])=[#8:27]",
+            "reactions": [
+                {
+                    "substrate": "CC[C@]1(O)Cc2c(O)c3c(c(O)c2[C@@H](O[C@@H]2C[C@@H](N)[C@@H](O)[C@@H](C)O2)C1)C(=O)c1c(O)cccc1C3=O",
+                    "products": [
+                        "CC[C@]1(O)Cc2c(O)c3c(c(O)c2[C@@H](O[C@H]2C[C@H](N)[C@H](O)[C@H](C)O2)C1)C(=O)c1c(OC)cccc1C3=O"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1128/jb.179.8.2641-2650.1997"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "DauK methylates 10-carboxy-13-deoxycarminomycin to form  10-carboxy-13-deoxydaunorubicin",
+            "reactionSMARTS": "[#6:1]-[#6:2]-[#6@:3]1(-[#6:25]-[#6@:14](/[#8:15]\\[#6@:16]2-[#8:24]-[#6@:22](/[#6:23])-[#6@:20](/[#8:21])-[#6@:18](/[#7:19])-[#6:17]-2)-[#6:13]2:[#6:6](:[#6:7](:[#6:9]3-[#6:35](=[#8:36])-[#6:34]4:[#6:28](:[#6:29](:[#6:31]:[#6:32]:[#6:33]:4)-[#8:30])-[#6:26](=[#8:27])-[#6:10]:3:[#6:11]:2-[#8:12])-[#8:8])-[#6:5]-1-[#6:37](=[#8:39])-[#8:38])/[#8:4]>>[#6]-[#8:30]-[#6:29]1:[#6:28]2-[#6:26](-[#6:10]3:[#6:9](-[#6:35](=[#8:36])-[#6:34]:2:[#6:33]:[#6:32]:[#6:31]:1):[#6:7](-[#8:8]):[#6:6]1-[#6:5](-[#6:37](=[#8:39])-[#8:38])-[#6@:3](-[#6:25]-[#6@:14](/[#8:15]\\[#6@@:16]2-[#8:24]-[#6@@:22](/[#6:23])-[#6@@:20](/[#8:21])-[#6@@:18](/[#7:19])-[#6:17]-2)-[#6:13]:1:[#6:11]:3-[#8:12])(-[#6:2]-[#6:1])/[#8:4])=[#8:27]",
+            "reactions": [
+                {
+                    "substrate": "CC[C@@]1(O)C[C@H](O[C@@H]2C[C@@H](N)[C@@H](O)[C@@H](C)O2)c2c(O)c3c(c(O)c2C1C(=O)O)C(=O)c1cccc(O)c1C3=O",
+                    "products": [
+                        "CC[C@@]1(O)C[C@H](O[C@H]2C[C@H](N)[C@H](O)[C@H](C)O2)c2c(O)c3c(c(O)c2C1C(=O)O)C(=O)c1cccc(OC)c1C3=O"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1128/jb.179.8.2641-2650.1997"
+                ]
+            }
         }
     ]
 }
