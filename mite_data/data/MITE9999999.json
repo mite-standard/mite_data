@@ -1,0 +1,92 @@
+{
+    "accession": "MITE9999999",
+    "status": "active",
+    "comment": "Dichlorination of an aminoacyl-S-carrier substrate (pyrrolyl-S-PltL)in the pyoluteorin pathway. Flavin reductase is not encoded in pyolteorin genecluster. SsuE was used instead. Concentrationdependent Br possible. Stereochemistry could not be depicted due to incompatibility with validation engine.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-07-08",
+            "contributors": [
+                "0009-0000-8651-1669"
+            ],
+            "reviewers": [
+                "0000-0002-4540-6501"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "PltA",
+        "description": "Flavin-dependent halogenase",
+        "references": [
+            "doi:10.1073/pnas.0506964102",
+            "doi:10.1016/j.jsb.2015.09.013"
+        ],
+        "databaseIds": {
+            "uniprot": "Q4KCZ0",
+            "genpept": "AAD24884.1",
+            "mibig": "BGC0000127"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD",
+                "NAD",
+                "NADP"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Iterate dichlorination of pyrrolyl-S-PltL complex.",
+            "reactionSMARTS": "[#7:1]1:[#6:3]:[#6:2]:[#6:4]:[#6:5](-[#6:99](=[#8:98])-[#16:97]-[*]):1>>[#7:1]1:[#6:3](-[Cl]):[#6:2](-[Cl]):[#6:4]:[#6:5](-[#6:99](=[#8:98])-[#16:97]-[*]):1",
+            "reactions": [
+                {
+                    "substrate": "*SC(=O)c1ccc[nH]1",
+                    "products": [
+                        "*SC(=O)c1cc(Cl)c(Cl)[nH]1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Initial chlorination of position 5 followed by 4 of pyrrolyl-S-PltL complex yielding 4,5-dichloropyrrolyl-S-PltL"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1016/j.jsb.2015.09.013"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "iterate bromination of pyrrolyl-S-PltL complex.",
+            "reactionSMARTS": "[#7:1]1:[#6:3]:[#6:2]:[#6:4]:[#6:5](-[#6:99](=[#8:98])-[#16:97]-[*]):1>>[#7:1]1:[#6:3](-Br):[#6:2](-Br):[#6:4]:[#6:5](-[#6:99](=[#8:98])-[#16:97]-[*]):1",
+            "reactions": [
+                {
+                    "substrate": "*SC(=O)c1ccc[nH]1",
+                    "products": [
+                        "*SC(=O)c1cc(Br)c(Br)[nH]1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Initial bromination of position 5 followed by 4 of pyrrolyl-S-PltL complex yielding 4,5-dichloropyrrolyl-S-PltL"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1016/j.jsb.2015.09.013"
+                ]
+            }
+        }
+    ]
+}
