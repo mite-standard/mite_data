@@ -1,0 +1,55 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-06",
+            "contributors": [
+                "0000-0002-4540-6501"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "PtmC",
+        "description": "arylamine N-acetyltransferase",
+        "references": [
+            "doi:10.1021/acschembio.0c00773 "
+        ],
+        "databaseIds": {
+            "uniprot": "D8L2W0",
+            "genpept": "ACO31290.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Other"
+            ],
+            "description": "PtmC belongs to the arylamine N-acetyltransferase (NAT) family of enzymes in Thioplatensimycin, Thioplatencin, and Thioplatensilin biosynthesis",
+            "reactionSMARTS": "[#6]-[#6](-[#6@](-[#6](-[#7]-[#6]-[#6]-[#6](-[#7]-[#6]-[#6]-[#16]-[#6](-[#6]-[#6]-[#6@]1(-[#6@]2-[#6@@]3(-[#6]-[#6@@]4(/[#6])-[#6@](-[#6]/[#6@@]/2-[#8]-4)\\[#6]-3)\\[#6]=[#6]-[#6]-1=[#8])/[#6])=[#8])=[#8])=[#8])/[#8])(-[#6]-[#8]-[#15](-[#8]-[#15](-[#8]-[#6]/[#6@@]1-[#6@@](\\[#8]-[#15](-[#8])(-[#8])=[#8])-[#6@@](\\[#8])-[#6@](/[#7]2:[#6]3:[#6](:[#6](:[#7]:[#6]:[#7]:3)-[#7]):[#7]:[#6]:2)-[#8]-1)(-[#8])=[#8])(-[#8])=[#8])-[#6]>>[#6]/[#6@@]12-[#8]/[#6@]3-[#6]\\[#6@@]-1-[#6]-[#6@]1(-[#6@@]-3\\[#6@@](-[#6]-[#6]-[#6](-[#7]-[#6]3:[#6](-[#8]):[#6](-[#6](-[#16])=[#8]):[#6]:[#6]:[#6]:3-[#8])=[#8])(\\[#6])-[#6](=[#8])-[#6]=[#6]-1)/[#6]-2",
+            "reactions": [
+                {
+                    "substrate": "CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCSC(=O)CC[C@]1(C)C(=O)C=C[C@]23C[C@H]4C[C@H](O[C@@]4(C)C2)[C@H]31",
+                    "products": [
+                        "C[C@]12C[C@@]34C=CC(=O)[C@@](C)(CCC(=O)Nc5c(O)ccc(C(=O)S)c5O)[C@@H]3[C@H](C[C@@H]1C4)O2"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/acschembio.0c00773 "
+                ]
+            }
+        }
+    ]
+}
