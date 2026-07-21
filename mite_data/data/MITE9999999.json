@@ -1,0 +1,62 @@
+{
+    "accession": "MITE9999999",
+    "status": "active",
+    "comment": "epoxidation reaction catalyzed by GerPI P450 at the C12\u2013C13 position in dihydrochalcomycin biosynthesis",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-07-14",
+            "contributors": [
+                "0000-0003-3002-6458"
+            ],
+            "reviewers": [
+                "0000-0002-4540-6501"
+            ],
+            "comment": "Changed Description"
+        }
+    ],
+    "enzyme": {
+        "name": "GerPI",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1007/s00203-010-0648-7"
+        ],
+        "databaseIds": {
+            "genpept": "ABB52529.1"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "epoxidation reaction catalyzed by GerPI P450 at the C12\u2013C13 position in dihydrochalcomycin biosynthesis",
+            "reactionSMARTS": "[#6:1]-[#8:2]-[#6:3]1-[#6:47](-[#8:48])-[#6@:8]([#8:9][#6@:10]2-[#6@@:45]([#6:46])-[#6:44]-[#6@:41](-[#6:42])(-[#8:43])-[#6:39](=[#8:40])-[#6:38]-[#6:37]-[#6:36]=[#6:35]-[#6@:20]([#6:21]-[#8:22][#6@:23]3-[#6@@:32]([#8:33]-[#6:34])-[#6@:29]([#8:30]-[#6:31])-[#6@:27]([#8:28])-[#6@@:25]([#6:26])-[#8:24]-3)-[#6@@:18]([#6:19])-[#8:17]-[#6:15](=[#8:16])-[#6:14]=[#6:13]-[#6@@:11]-2[#6:12])-[#8:7]-[#6@@:5]([#6:6])-[#6:4]-1>>[#6:1]-[#8:2]-[#6:3]1-[#6:47](-[#8:48])-[#6@:8]([#8:9][#6@:10]2-[#6@@:45]([#6:46])-[#6:44]-[#6@:41](-[#6:42])(-[#8:43])-[#6:39](=[#8:40])-[#6:38]-[#6:37]-[#6@:36]3[#8][#6@:35]3[#6@:20]([#6:21]-[#8:22][#6@:23]3-[#6@@:32]([#8:33]-[#6:34])-[#6@:29]([#8:30]-[#6:31])-[#6@:27]([#8:28])-[#6@@:25]([#6:26])-[#8:24]-3)-[#6@@:18]([#6:19])-[#8:17]-[#6:15](=[#8:16])-[#6:14]=[#6:13]-[#6@@:11]-2[#6:12])-[#8:7]-[#6@@:5]([#6:6])-[#6:4]-1",
+            "reactions": [
+                {
+                    "substrate": "COC1C[C@H](C)O[C@@H](O[C@@H]2[C@@H](C)C=CC(=O)O[C@H](C)[C@@H](CO[C@@H]3O[C@H](C)[C@@H](O)[C@@H](OC)[C@@H]3OC)C=CCCC(=O)[C@@](C)(O)C[C@@H]2C)C1O",
+                    "products": [
+                        "COC1C[C@H](C)O[C@@H](O[C@@H]2[C@@H](C)C=CC(=O)O[C@H](C)[C@@H](CO[C@@H]3O[C@H](C)[C@@H](O)[C@@H](OC)[C@@H]3OC)[C@H]3O[C@H]3CCC(=O)[C@@](C)(O)C[C@@H]2C)C1O"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1007/s00203-010-0648-7"
+                ]
+            }
+        }
+    ]
+}
