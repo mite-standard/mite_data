@@ -1,0 +1,66 @@
+{
+    "accession": "MITE9999999",
+    "status": "active",
+    "comment": "hydroxylation and dehydrogenation were performed sequentially by RosC to form the formyl group at C-20 in rosamicin biosynthesis",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-07-14",
+            "contributors": [
+                "0000-0003-3002-6458"
+            ],
+            "reviewers": [
+                "0000-0002-4540-6501"
+            ],
+            "comment": "Changed Description and Reference"
+        }
+    ],
+    "enzyme": {
+        "name": "RosC",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1128/aac.02092-12"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A7H8XFM0",
+            "genpept": "QLD23833.1",
+            "mibig": "BGC0002086"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme",
+                "NADP"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "two-step oxidation (hydroxylation and dehydrogenation)",
+            "reactionSMARTS": "[#6:1]-[#6:2]-[#6@:3]1\\[#8:22]-[#6:21](=[#8:25])-[#6:20]-[#6@@:18](\\[#8:23])-[#6@:17](\\[#6:19])-[#6@@:16](\\[#8:24]-[#6:29]2-[#8:35]-[#6:33](-[#6:34])-[#6:32]-[#6:31](-[#7:36](-[#6:38])-[#6:37])-[#6:30]-2-[#8:39])-[#6@@:12](\\[#6:14]-[#6:15])-[#6:11]-[#6@@:10](\\[#6:13])-[#6:9](=[#8:26])-[#6:8]=[#6:7]-[#6@@:6]2(/[#8:40]/[#6@:5]-2-[#6@@:4]-1/[#6:27])-[#6:28]>>[#6:1]-[#6:2]-[#6@:3]1\\[#8:22]-[#6:21](=[#8:25])-[#6:20]-[#6@@:18](\\[#8:23])-[#6@:17](\\[#6:19])-[#6@@:16](\\[#8:24]-[#6:29]2-[#8:35]-[#6:33](-[#6:34])-[#6:32]-[#6:31](-[#7:36](-[#6:38])-[#6:37])-[#6:30]-2-[#8:39])-[#6@@:12](\\[#6:14]-[#6:15]=[#8])-[#6:11]-[#6@@:10](\\[#6:13])-[#6:9](=[#8:26])-[#6:8]=[#6:7]-[#6@@:6]2(/[#8:40]/[#6@:5]-2-[#6@@:4]-1/[#6:27])-[#6:28]",
+            "reactions": [
+                {
+                    "substrate": "CC[C@H]1C[C@@H](C)C(=O)C=C[C@]2(C)O[C@@H]2[C@H](C)[C@@H](CC)OC(=O)C[C@@H](O)[C@H](C)[C@H]1OC1OC(C)CC(N(C)C)C1O",
+                    "products": [
+                        "CC[C@H]1OC(=O)C[C@@H](O)[C@H](C)[C@@H](OC2OC(C)CC(N(C)C)C2O)[C@@H](CC=O)C[C@@H](C)C(=O)C=C[C@]2(C)O[C@@H]2[C@@H]1C"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1128/aac.02092-12"
+                ]
+            }
+        }
+    ]
+}
