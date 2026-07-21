@@ -1,0 +1,121 @@
+{
+    "accession": "MITE9999999",
+    "status": "active",
+    "comment": "p-Terphenyl prenyltransferase",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-06",
+            "contributors": [
+                "0009-0005-5325-1764"
+            ],
+            "reviewers": [
+                "0000-0003-4819-2251"
+            ],
+            "comment": "New entry. Added missing known reactions, grouped all reactions together under 1 reaction SMARTS."
+        }
+    ],
+    "enzyme": {
+        "name": "UcdE",
+        "description": "Prenyltransferase",
+        "references": [
+            "doi:10.1021/acs.jafc.6c03303"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A0C1C2W0",
+            "genpept": "KIA75360.1",
+            "mibig": "BGC0003077"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Prenylation"
+            ],
+            "description": "Prenylation of ortho-dihydroxyphenyl moiety",
+            "reactionSMARTS": "[#6:1]1:[#6:2](-[#8:3]):[#6:4](-[#8:5]):[#6:6]:[#6:7]:[#6:8]:1>>[#6:6]1:[#6:7]:[#6:8]:[#6:1](-[#6]-[#6]=[#6](-[#6])-[#6]):[#6:2](-[#8:3]):[#6:4]:1-[#8:5]",
+            "reactions": [
+                {
+                    "substrate": "COc1cc(-c2ccc(O)c(O)c2)c(OC)c(O)c1-c1ccc(O)c(O)c1",
+                    "products": [
+                        "COc1cc(-c2ccc(O)c(O)c2CC=C(C)C)c(OC)c(O)c1-c1ccc(O)c(O)c1"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Prenylation of dihydroxyterphenyllin to yield usterphenyllin B (native reaction)."
+                },
+                {
+                    "substrate": "COc1cc(-c2ccc(O)c(O)c2CC=C(C)C)c(OC)c(O)c1-c1ccc(O)c(O)c1",
+                    "products": [
+                        "COc1cc(-c2ccc(O)c(O)c2CC=C(C)C)c(OC)c(O)c1-c1cc(O)c(O)c(CC=C(C)C)c1"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Prenylation of usterphenyllin B to yield usterphenyllin A (native reaction)."
+                },
+                {
+                    "substrate": "COc1cc(-c2ccc(O)c(O)c2CC=C(C)C)c(OC)c(O)c1-c1ccc(O)c(O)c1",
+                    "products": [
+                        "COc1cc(-c2ccc(O)c(O)c2CC=C(C)C)c(OC)c(O)c1-c1ccc(O)c(O)c1CC=C(C)C"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Prenylation of usterphenyllin B to yield bisprenylated derivative."
+                },
+                {
+                    "substrate": "O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12",
+                    "products": [
+                        "CC(C)=CCc1c(-c2oc3cc(O)cc(O)c3c(=O)c2O)ccc(O)c1O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Prenylation of quercetin."
+                },
+                {
+                    "substrate": "O=c1cc(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12",
+                    "products": [
+                        "CC(C)=CCc1c(-c2cc(=O)c3c(O)cc(O)cc3o2)ccc(O)c1O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Prenylation of luteolin."
+                },
+                {
+                    "substrate": "O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)ccc12",
+                    "products": [
+                        "CC(C)=CCc1c(-c2oc3cc(O)ccc3c(=O)c2O)ccc(O)c1O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Prenylation of fisetin."
+                },
+                {
+                    "substrate": "O=c1cc(-c2ccc(O)c(O)c2)oc2ccccc12",
+                    "products": [
+                        "CC(C)=CCc1c(-c2cc(=O)c3ccccc3o2)ccc(O)c1O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Prenylation of 3',4'-dihydroxyflavone."
+                },
+                {
+                    "substrate": "O=c1oc2cc(O)ccc2c2cc(O)c(O)cc12",
+                    "products": [
+                        "CC(C)=CCc1c(O)c(O)cc2c(=O)oc3cc(O)ccc3c12"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Prenylation of urolithin C."
+                },
+                {
+                    "substrate": "Oc1cc2ccccc2cc1O",
+                    "products": [
+                        "CC(C)=CCc1c(O)c(O)cc2ccccc12"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Prenylation of 2,3-Dihydroxynaphthalene."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acs.jafc.6c03303"
+                ]
+            }
+        }
+    ]
+}
