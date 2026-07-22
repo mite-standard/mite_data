@@ -1,0 +1,119 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "comment": "L-tryptophan methyltransferase",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-07-22",
+            "contributors": [
+                "0009-0008-8086-5325"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "TrpM",
+        "description": "Methyltransferase",
+        "references": [
+            "doi:10.1002/cbic.201800336",
+            "doi:10.1002/btpr.3492"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A346RP51",
+            "genpept": "AXS67848.1"
+        },
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "TrpM catalyzes N-methylation of L-tryptophan to produce L-abrine (N-alpha-methyl-L-tryptophan)",
+            "reactionSMARTS": "[#7:1]-[#6:2](-[#6:13](-[#8:15])=[#8:14])-[#6:3]-[#6:4]1:[#6:8]2:[#6:9]:[#6:10]:[#6:11]:[#6:12]:[#6:7]:2:[#7:6]:[#6:5]:1>>[#6:2](-[#7:1]-[#6])(-[#6:13](-[#8:15])=[#8:14])-[#6:3]-[#6:4]1:[#6:8]2:[#6:9]:[#6:10]:[#6:11]:[#6:12]:[#6:7]:2:[#7:6]:[#6:5]:1",
+            "reactions": [
+                {
+                    "substrate": "NC(Cc1c[nH]c2ccccc12)C(=O)O",
+                    "products": [
+                        "CNC(Cc1c[nH]c2ccccc12)C(=O)O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "TrpM methyltransferase catalyzes iterative N-methylations to produce L-abrine (N-alpha-methyl-L-tryptophan), N,N-alpha-dimethyl-L-tryptophan and L-hypaphorine (N,N,N-alpha-trimethyl-L-tryptophan). TrpM can also N-methylate the non-native amino acid substrate, 4-hydroxytryptophan."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1002/cbic.201800336"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "80771"
+            }
+        },
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "TrpM catalyzes N-methylation of L-abrine (N-alpha-methyl-L-tryptophan) to form N,N-alpha-dimethyl-L-tryptophan",
+            "reactionSMARTS": "[#6:1]-[#7:2]-[#6:3](-[#6:14](-[#8:16])=[#8:15])-[#6:4]-[#6:5]1:[#6:13]2:[#6:8](:[#6:9]:[#6:10]:[#6:11]:[#6:12]:2):[#7:7]:[#6:6]:1>>[#6:1]-[#7:2](-[#6])-[#6:3](-[#6:14](-[#8:16])=[#8:15])-[#6:4]-[#6:5]1:[#6:13]2:[#6:8](:[#6:9]:[#6:10]:[#6:11]:[#6:12]:2):[#7:7]:[#6:6]:1",
+            "reactions": [
+                {
+                    "substrate": "CNC(Cc1c[nH]c2ccccc12)C(=O)O",
+                    "products": [
+                        "CN(C)C(Cc1c[nH]c2ccccc12)C(=O)O"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1002/cbic.201800336"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "80847"
+            }
+        },
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "TrpM catalyzes N-methylation of N,N-alpha-dimethyl-L-tryptophan to yield L-hypaphorine (N,N,N-alpha-trimethyl-L-tryptophan)",
+            "reactionSMARTS": "[#6]-[#7](-[#6:4](-[#6:8]-[#6:9]1:[#6:17]:[#7:16]:[#6:11]2:[#6:12]:[#6:13]:[#6:14]:[#6:15]:[#6:10]:1:2)-[#6:5](=[#8:7])-[#8:6])-[#6]>>[#6]-[#7;+](-[#6])(-[#6:4](-[#6:8]-[#6:9]1:[#6:17]:[#7:16]:[#6:11]2:[#6:12]:[#6:13]:[#6:14]:[#6:15]:[#6:10]:1:2)-[#6:5](=[#8:7])-[#8:6])-[#6]",
+            "reactions": [
+                {
+                    "substrate": "CN(C)C(Cc1c[nH]c2ccccc12)C(=O)O",
+                    "products": [
+                        "C[N+](C)(C)C(Cc1c[nH]c2ccccc12)C(=O)O"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1002/cbic.201800336"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "80851"
+            }
+        }
+    ]
+}
