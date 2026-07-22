@@ -1,0 +1,59 @@
+{
+    "accession": "MITE9999999",
+    "status": "active",
+    "comment": "SDR-mediated oxidation of the 8S hydroxy group to a ketone in higginsianin biosynthesis",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-06",
+            "contributors": [
+                "0000-0002-0771-9611"
+            ],
+            "reviewers": [
+                "0000-0002-4540-6501"
+            ],
+            "comment": "UniPort ID changed"
+        }
+    ],
+    "enzyme": {
+        "name": "dpchG",
+        "description": "Short chain dehydrogenase/reductase",
+        "references": [
+            "doi:10.1038/s41467-020-15664-4"
+        ],
+        "databaseIds": {
+            "uniprot": "H1VN83"
+        },
+        "cofactors": {
+            "organic": [
+                "NADP"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "SDR-mediated oxidation of the 8S hydroxy group to a ketone in higginsianin biosynthesis",
+            "reactionSMARTS": "C=C1CC[C@@H]2[C@](C)(CC[C@H](O)[C@@]2(C)CCC=C(C)C)[C@@H]1Cc1c(O)c(C)c(C)oc1=O>>C=C1CC[C@@H]2[C@](C)(CCC(=O)[C@@]2(C)CCC=C(C)C)[C@@H]1Cc1c(O)c(C)c(C)oc1=O",
+            "reactions": [
+                {
+                    "substrate": "C=C1CC[C@@H]2[C@](C)(CC[C@H](O)[C@@]2(C)CCC=C(C)C)[C@@H]1Cc1c(O)c(C)c(C)oc1=O",
+                    "products": [
+                        "C=C1CC[C@@H]2[C@](C)(CCC(=O)[C@@]2(C)CCC=C(C)C)[C@@H]1Cc1c(O)c(C)c(C)oc1=O"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1038/s41467-020-15664-4"
+                ]
+            }
+        }
+    ]
+}
