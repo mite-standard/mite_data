@@ -1,0 +1,63 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-07-14",
+            "contributors": [
+                "0000-0003-3002-6458"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "AbyV",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1002/anie.202213053"
+        ],
+        "databaseIds": {
+            "uniprot": "F4F6Q5",
+            "genpept": "AEK75512.1",
+            "mibig": "BGC0000001"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Other"
+            ],
+            "description": "Epoxidation",
+            "reactionSMARTS": "[#6@@:1]1(/[#6:5])-[#6:4](=[#8:15])-[#6:6]=[#6:23]/[#6@@:7]2-[#6:11]=[#6:12]-[#6@:13](/[#6:20])-[#6:19]-[#6@@:8]3-2/[#6:22](-[#8:24])=[#6:9](-[#6:17](=[#8:18])-[#8:16]\\3)-[#6:10](=[#8:14])-[#6@:3](/[#6:21])-[#6:2]-1>>[#6@@:1]1(/[#6:5])-[#6:4](=[#8:15])-[#6:6]=[#6:23]/[#6@@:7]2-[#6@:11]3\\[#8]\\[#6@:12]-3-[#6@:13](/[#6:20])-[#6:19]-[#6@@:8]3-2/[#6:22](-[#8:24])=[#6:9](-[#6:17](=[#8:18])-[#8:16]\\3)-[#6:10](=[#8:14])-[#6@:3](/[#6:21])-[#6:2]-1",
+            "reactions": [
+                {
+                    "substrate": "C[C@@H]1C[C@H](C)C(=O)C=C[C@@H]2C=C[C@H](C)C[C@@]23OC(=O)C(=C3O)C1=O",
+                    "products": [
+                        "C[C@@H]1C[C@H](C)C(=O)C=C[C@@H]2[C@H]3O[C@H]3[C@H](C)C[C@@]23OC(=O)C(=C3O)C1=O"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1002/anie.202213053"
+                ]
+            }
+        }
+    ]
+}
