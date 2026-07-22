@@ -1,0 +1,72 @@
+{
+    "accession": "MITE9999999",
+    "status": "active",
+    "comment": "FAD-depended oxidoreductase",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-06",
+            "contributors": [
+                "0009-0006-4188-3294"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "PatO",
+        "description": "FAD-depended  oxidoreductase",
+        "references": [
+            "doi:10.1111/1462-2920.14542"
+        ],
+        "auxiliaryEnzymes": [
+            {
+                "name": "PatJ",
+                "description": "Probable oxidoreductase",
+                "databaseIds": {
+                    "uniprot": "A0A075TR41",
+                    "genpept": "AIG62147.1"
+                }
+            }
+        ],
+        "databaseIds": {
+            "uniprot": "A0A075TR33",
+            "genpept": "AIG62142.1"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Oxidation",
+                "Reduction"
+            ],
+            "description": "aldehyde reduction and epoxidation",
+            "reactionSMARTS": "[#8]-c1ccc(-[#8])c(-[#6]=O)c1>>[#8]-[#6]-[#6]-1=[#6]-[#6](-[#8])-[#6]-2-[#8]-[#6]-2-[#6]-1=O",
+            "reactions": [
+                {
+                    "substrate": "O=Cc1cc(O)ccc1O",
+                    "products": [
+                        "O=C1C(CO)=CC(O)C2OC12"
+                    ],
+                    "isIntermediate": true,
+                    "description": "aldehyde reduction and epoxidation"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1111/1462-2920.14542"
+                ]
+            }
+        }
+    ]
+}
