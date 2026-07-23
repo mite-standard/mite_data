@@ -1,0 +1,372 @@
+{
+    "accession": "MITE9999999",
+    "status": "active",
+    "comment": "Aryl halogenation of various substrates through viral enzymes. MIBig has currently no viral gen clusters in its repository. No specific flavinreductase was identified. PrnF was used instead. PDB ID: 6QGM. Very poor chlorinating activity.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-07-22",
+            "contributors": [
+                "0009-0000-8651-1669"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "VirX1",
+        "description": "Flavin-dependent halogenase",
+        "references": [
+            "doi:10.1038/s41557-019-0349-z"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI00126783B3"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD",
+                "NAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Halogenation of 6-Azaindole yielding 3-Iodo-6-Azaindole",
+            "reactionSMARTS": "[#6:1]1:[#6:5]2:[#6:6]:[#6:7]:[#7:8]:[#6:9]:[#6:4]:2:[#7:3]:[#6:2]:1>>[#6:1]1(-I):[#6:5]2:[#6:6]:[#6:7]:[#7:8]:[#6:9]:[#6:4]:2:[#7:3]:[#6:2]:1",
+            "reactions": [
+                {
+                    "substrate": "c1cc2cc[nH]c2cn1",
+                    "products": [
+                        "Ic1c[nH]c2cnccc12"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1038/s41557-019-0349-z"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Halogenation of 6-Azaindole yielding 3-Bromo-6-Azaindole",
+            "reactionSMARTS": "[#6:1]1:[#6:5]2:[#6:6]:[#6:7]:[#7:8]:[#6:9]:[#6:4]:2:[#7:3]:[#6:2]:1>>[#6:1]1(-Br):[#6:5]2:[#6:6]:[#6:7]:[#7:8]:[#6:9]:[#6:4]:2:[#7:3]:[#6:2]:1",
+            "reactions": [
+                {
+                    "substrate": "c1cc2cc[nH]c2cn1",
+                    "products": [
+                        "Brc1c[nH]c2cnccc12"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1038/s41557-019-0349-z"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Halogantion of 5-Amino-3-methyl-1-phenylpyrazole yielding 5-Amino-4-iodo-3-methyl-1-phenylpyrazole.",
+            "reactionSMARTS": "[#6:1]-[#6:2]1:[#6:6]:[#6:5](-[#7:7]):[#7:4](-[#6:8]2:[#6:13]:[#6:12]:[#6:11]:[#6:10]:[#6:9]:2):[#7:3]:1>>[#6:1]-[#6:2]1:[#6:6](-[Cl]):[#6:5](-[#7:7]):[#7:4](-[#6:8]2:[#6:9]:[#6:10]:[#6:11]:[#6:12]:[#6:13]:2):[#7:3]:1",
+            "reactions": [
+                {
+                    "substrate": "Cc1cc(N)n(-c2ccccc2)n1",
+                    "products": [
+                        "Cc1nn(-c2ccccc2)c(N)c1Cl"
+                    ],
+                    "isIntermediate": false,
+                    "description": "The regiochemistry was confirmed by comparing the synthesized products with theoretical predictions."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1038/s41557-019-0349-z"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Halogantion of 5-Amino-3-methyl-1-phenylpyrazole yielding 5-Amino-4-bromo-3-methyl-1-phenylpyrazole.",
+            "reactionSMARTS": "[#6:1]-[#6:2]1:[#6:6]:[#6:5](-[#7:7]):[#7:4](-[#6:8]2:[#6:13]:[#6:12]:[#6:11]:[#6:10]:[#6:9]:2):[#7:3]:1>>[#6:1]-[#6:2]1:[#6:6](-Br):[#6:5](-[#7:7]):[#7:4](-[#6:8]2:[#6:9]:[#6:10]:[#6:11]:[#6:12]:[#6:13]:2):[#7:3]:1",
+            "reactions": [
+                {
+                    "substrate": "Cc1cc(N)n(-c2ccccc2)n1",
+                    "products": [
+                        "Cc1nn(-c2ccccc2)c(N)c1Br"
+                    ],
+                    "isIntermediate": false,
+                    "description": "The regiochemistry was confirmed by comparing the synthesized products with theoretical predictions."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1038/s41557-019-0349-z"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Halogantion of pindolol yielding 3-Iodo pindolol.",
+            "reactionSMARTS": "[#6:1]-[#6:2](-[#7:4]-[#6:5]-[#6@:6](/[#8:18])-[#6:7]-[#8:8]-[#6:9]1:[#6:14]2:[#6:15]:[#6:16]:[#7:17]:[#6:13]:2:[#6:12]:[#6:11]:[#6:10]:1)-[#6:3]>>[#6:3]-[#6:2](-[#7:4]-[#6:5]-[#6@:6](/[#8:18])-[#6:7]-[#8:8]-[#6:9]1:[#6:14]2:[#6:15](-[I;125]):[#6:16]:[#7:17]:[#6:13]:2:[#6:12]:[#6:11]:[#6:10]:1)-[#6:1]",
+            "reactions": [
+                {
+                    "substrate": "CC(C)NC[C@H](O)COc1cccc2[nH]ccc12",
+                    "products": [
+                        "CC(C)NC[C@H](O)COc1cccc2[nH]cc([125I])c12"
+                    ],
+                    "isIntermediate": false,
+                    "description": "The regiochemistry was confirmed by comparing the synthesized products with theoretical predictions."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1038/s41557-019-0349-z"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Halogantion of pindolol yielding 3-Bromo pindolol.",
+            "reactionSMARTS": "[#6:1]-[#6:2](-[#7:4]-[#6:5]-[#6@:6](/[#8:18])-[#6:7]-[#8:8]-[#6:9]1:[#6:14]2:[#6:15]:[#6:16]:[#7:17]:[#6:13]:2:[#6:12]:[#6:11]:[#6:10]:1)-[#6:3]>>[#6:3]-[#6:2](-[#7:4]-[#6:5]-[#6@:6](/[#8:18])-[#6:7]-[#8:8]-[#6:9]1:[#6:14]2:[#6:15](-[Br;125]):[#6:16]:[#7:17]:[#6:13]:2:[#6:12]:[#6:11]:[#6:10]:1)-[#6:1]",
+            "reactions": [
+                {
+                    "substrate": "CC(C)NC[C@H](O)COc1cccc2[nH]ccc12",
+                    "products": [
+                        "CC(C)NC[C@H](O)COc1cccc2[nH]cc(Br)c12"
+                    ],
+                    "isIntermediate": false,
+                    "description": "The regiochemistry was confirmed by comparing the synthesized products with theoretical predictions."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1038/s41557-019-0349-z"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Halogenation of isoquinolin-6-ol yielding 5-Iodo-isoquinolin-6-ol",
+            "reactionSMARTS": "[#6:1]1:[#6:10](-[#8:11]):[#6:9]:[#6:4]2:[#6:5]:[#6:6]:[#7:7]:[#6:8]:[#6:3]:2:[#6:2]:1>>[#6:1]1:[#6:10](-[#8:11]):[#6:9]:[#6:4]2:[#6:5]:[#6:6]:[#7:7]:[#6:8](-I):[#6:3]:2:[#6:2]:1",
+            "reactions": [
+                {
+                    "substrate": "Oc1ccc2cnccc2c1",
+                    "products": [
+                        "Oc1ccc2c(I)nccc2c1"
+                    ],
+                    "isIntermediate": false,
+                    "description": "The regiochemistry was confirmed by comparing the synthesized products with theoretical predictions."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1038/s41557-019-0349-z"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Halogenation of isoquinolin-6-ol yielding 5-Bromo-isoquinolin-6-ol",
+            "reactionSMARTS": "[#6:1]1:[#6:10](-[#8:11]):[#6:9]:[#6:4]2:[#6:5]:[#6:6]:[#7:7]:[#6:8]:[#6:3]:2:[#6:2]:1>>[#6:1]1:[#6:10](-[#8:11]):[#6:9]:[#6:4]2:[#6:5]:[#6:6]:[#7:7]:[#6:8](-Br):[#6:3]:2:[#6:2]:1",
+            "reactions": [
+                {
+                    "substrate": "Oc1ccc2cnccc2c1",
+                    "products": [
+                        "Oc1ccc2c(Br)nccc2c1"
+                    ],
+                    "isIntermediate": false,
+                    "description": "The regiochemistry was confirmed by comparing the synthesized products with theoretical predictions."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1038/s41557-019-0349-z"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Halogination of 5-Amino-3-methylisoxazole yielding 5-Amino-4-iodo-3-methylisoxazole",
+            "reactionSMARTS": "[#6:1]-[#6:2]1:[#6:6]:[#6:5](-[#7:7]):[#8:4]:[#7:3]:1>>[#6:1]-[#6:2]1:[#6:6](-I):[#6:5](-[#7:7]):[#8:4]:[#7:3]:1",
+            "reactions": [
+                {
+                    "substrate": "Cc1cc(N)on1",
+                    "products": [
+                        "Cc1noc(N)c1I"
+                    ],
+                    "isIntermediate": false,
+                    "description": "The regiochemistry was confirmed by comparing the synthesized products with theoretical predictions."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1038/s41557-019-0349-z"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Halogenation of quinolin-6-ol yielding 5-Iodoquinolin-6-ol",
+            "reactionSMARTS": "[#6:1]1:[#6:11]:[#7:10]:[#6:4]2:[#6:5]:[#6:6]:[#6:7](-[#8:9]):[#6:8]:[#6:3]:2:[#6:2]:1>>[#6:1]1:[#6:11]:[#7:10]:[#6:4]2:[#6:5]:[#6:6]:[#6:7](-[#8:9]):[#6:8](-I):[#6:3]:2:[#6:2]:1",
+            "reactions": [
+                {
+                    "substrate": "Oc1ccc2ncccc2c1",
+                    "products": [
+                        "Oc1ccc2ncccc2c1I"
+                    ],
+                    "isIntermediate": false,
+                    "description": "The regiochemistry was confirmed by comparing the synthesized products with theoretical predictions."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1038/s41557-019-0349-z"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Halogenation of quinolin-6-ol yielding 5-Bromooquinolin-6-ol",
+            "reactionSMARTS": "[#6:1]1:[#6:11]:[#7:10]:[#6:4]2:[#6:5]:[#6:6]:[#6:7](-[#8:9]):[#6:8]:[#6:3]:2:[#6:2]:1>>[#6:1]1:[#6:11]:[#7:10]:[#6:4]2:[#6:5]:[#6:6]:[#6:7](-[#8:9]):[#6:8](-Br):[#6:3]:2:[#6:2]:1",
+            "reactions": [
+                {
+                    "substrate": "Oc1ccc2ncccc2c1",
+                    "products": [
+                        "Oc1ccc2ncccc2c1Br"
+                    ],
+                    "isIntermediate": false,
+                    "description": "The regiochemistry was confirmed by comparing the synthesized products with theoretical predictions."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1038/s41557-019-0349-z"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Halogenation of 6-amino-quinolin yielding 6-amino-5-Iodoquinolin",
+            "reactionSMARTS": "[#6:1]1:[#6:11]:[#7:10]:[#6:4]2:[#6:5]:[#6:6]:[#6:7](-[#7]):[#6:8]:[#6:3]:2:[#6:2]:1>>[#6:1]1:[#6:11]:[#7:10]:[#6:4]2:[#6:5]:[#6:6]:[#6:7](-[#7]):[#6:8](-I):[#6:3]:2:[#6:2]:1",
+            "reactions": [
+                {
+                    "substrate": "Nc1ccc2ncccc2c1",
+                    "products": [
+                        "Nc1ccc2ncccc2c1I"
+                    ],
+                    "isIntermediate": false,
+                    "description": "The regiochemistry was confirmed by comparing the synthesized products with theoretical predictions."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1038/s41557-019-0349-z"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Halogenation of 8-aminoquinoline yielding 5-Iodo-8-aminoquinoline",
+            "reactionSMARTS": "[#6:1]1:[#6:10]:[#7:9]:[#6:8]2:[#6:3](:[#6:4]:[#6:5]:[#6:6]:[#6:7]:2-[#7:11]):[#6:2]:1>>[#6:1]1:[#6:10]:[#7:9]:[#6:8]2:[#6:3](:[#6:4](-I):[#6:5]:[#6:6]:[#6:7]:2-[#7:11]):[#6:2]:1",
+            "reactions": [
+                {
+                    "substrate": "Nc1cccc2cccnc12",
+                    "products": [
+                        "Nc1ccc(I)c2cccnc12"
+                    ],
+                    "isIntermediate": false,
+                    "description": "The regiochemistry was confirmed by comparing the synthesized products with theoretical predictions."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1038/s41557-019-0349-z"
+                ]
+            }
+        }
+    ]
+}
