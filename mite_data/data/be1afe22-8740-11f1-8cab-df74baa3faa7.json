@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Splitting of pyruvate from chorismate yielding 4-Hydroxybenzoate in the biosynthetic pathways of Pseudoalteromonas ssp. yielding various polybrominated dimers.",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,44 @@
     ],
     "enzyme": {
         "name": "Bmp6",
-        "databaseIds": {
-            "uniprot": "",
-            "genpept": "AHA34039.1"
-        },
+        "description": "Chorismate pyruvate lyase",
         "references": [
-            "doi:"
-        ]
+            "doi:10.1038/nchembio.1564.",
+            "doi:10.1099/00221287-140-4-897"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI0003C966DB",
+            "genpept": "AHA34039.1",
+            "mibig": "BGC0000890"
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Other"
+            ],
+            "description": "Iterate abstraction of the hydrogen on C4 of chorismate followed by the loss of the C3-enolpyruvyl group",
+            "reactionSMARTS": "[#6]=[#6](-[#8]\\[#6@:7]1-[#6@:12](/[#8:13])-[#6:11]=[#6:10]-[#6:9](-[#6:14](-[#8:16])=[#8:15])=[#6:8]-1)-[#6](-[#8])=[#8]>>[#6:11]1:[#6@:12](/[#8:13]):[#6:7]:[#6:8]:[#6:9](-[#6:14](-[#8:16])=[#8:15]):[#6:10]:1",
             "reactions": [
                 {
+                    "substrate": "C=C(O[C@@H]1C=C(C(=O)O)C=C[C@H]1O)C(=O)O",
                     "products": [
-                        ""
-                    ]
+                        "O=C(O)c1ccc(O)cc1"
+                    ],
+                    "isIntermediate": true
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1038/nchembio.1564.",
+                    "doi:10.1099/00221287-140-4-897"
+                ]
+            }
         }
     ]
 }
