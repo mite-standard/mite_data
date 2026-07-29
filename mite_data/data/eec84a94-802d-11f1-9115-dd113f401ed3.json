@@ -1,0 +1,65 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "comment": "CalM also mentioned as SchM functions as a SAM-dependent N-methyltransferase in the biosynthesis of calcimycin (A23187)",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-07-15",
+            "contributors": [
+                "0009-0008-8086-5325"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "CalM/SchM",
+        "description": "N-methyltransferase",
+        "references": [
+            "doi:10.1128/AAC.01130-10",
+            "doi:10.1016/j.biochi.2013.03.014"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI000213054F",
+            "genpept": "AEH42477.1",
+            "mibig": "BGC0000032"
+        },
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "CalM catalyzes methyl transfer to N-demethyl calcimycin to get the final product calcimycin",
+            "reactionSMARTS": "[#6:1]-[#6:2]1-[#6:23](-[#6:24]-[#6:25]2:[#8:29]:[#6:28]3:[#6:30]:[#6:31]:[#6:32](-[#7:37]):[#6:33](-[#6:34](-[#8:36])=[#8:35]):[#6:27]:3:[#7:26]:2)-[#8:22]-[#6:5]2(-[#8:10]-[#6:9](-[#6:11](-[#6:13](-[#6:15]3:[#7:19]:[#6:18]:[#6:17]:[#6:16]:3)=[#8:14])-[#6:12])-[#6:8](-[#6:20])-[#6:7]-[#6:6]-2-[#6:21])-[#6:4]-[#6:3]-1>>[#6:1]-[#6:2]1-[#6:23](-[#6:24]-[#6:25]2:[#8:29]:[#6:28]3:[#6:30]:[#6:31]:[#6:32](-[#7:37]-[#6]):[#6:33](-[#6:34](-[#8:36])=[#8:35]):[#6:27]:3:[#7:26]:2)-[#8:22]-[#6:5]2(-[#8:10]-[#6:9](-[#6:11](-[#6:13](-[#6:15]3:[#7:19]:[#6:18]:[#6:17]:[#6:16]:3)=[#8:14])-[#6:12])-[#6:8](-[#6:20])-[#6:7]-[#6:6]-2-[#6:21])-[#6:4]-[#6:3]-1",
+            "reactions": [
+                {
+                    "substrate": "CC1CCC2(OC1Cc1nc3c(C(=O)O)c(N)ccc3o1)OC(C(C)C(=O)c1ccc[nH]1)C(C)CC2C",
+                    "products": [
+                        "CNc1ccc2oc(CC3OC4(CCC3C)OC(C(C)C(=O)c3ccc[nH]3)C(C)CC4C)nc2c1C(=O)O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "CalM/SchM is a type of N-methyltransferase responsible for the transfers of a methyl group to the precursor N-demethyl calcimycin to produce the antibiotic calcimycin (A23187) in Streptomyces chartreusis."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1016/j.biochi.2013.03.014",
+                    "doi:10.1128/AAC.01130-10"
+                ]
+            }
+        }
+    ]
+}
