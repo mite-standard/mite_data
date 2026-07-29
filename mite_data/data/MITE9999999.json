@@ -1,0 +1,77 @@
+{
+    "accession": "MITE9999999",
+    "status": "active",
+    "comment": "Dichlorination of CoA-S-acetoacetyl in the chloramphenicol pathway. No specific flavin reductase was identified in this genecluster. Additional GenPept: AAK08979.2",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-07-14",
+            "contributors": [
+                "0009-0000-8651-1669"
+            ],
+            "reviewers": [
+                "0000-0002-4540-6501"
+            ],
+            "comment": "Reference added"
+        }
+    ],
+    "enzyme": {
+        "name": "CmlS",
+        "description": "Flavin-dependent halogenase",
+        "references": [
+            "doi:10.1016/j.jmb.2010.01.020",
+            "doi:10.1099/mic.0.26319-0",
+            "doi:10.1107/S1744309108043091"
+        ],
+        "auxiliaryEnzymes": [
+            {
+                "name": "CmlK",
+                "description": "Long-chain fatty acid CoA ligase",
+                "databaseIds": {
+                    "uniprot": "F2RB86",
+                    "genpept": "CCA54214.1"
+                }
+            }
+        ],
+        "databaseIds": {
+            "uniprot": "F2RB87",
+            "genpept": "CCA54215.1",
+            "mibig": "BGC0000893"
+        },
+        "cofactors": {
+            "organic": [
+                "Coenzyme A",
+                "FAD",
+                "NAD",
+                "NADP"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Dichlorination of acetoacetyl-CoA, catalyzed through E44 residue, which removes structurally protons reducing the acidity in the pocket.",
+            "reactionSMARTS": "[#6]-[#6](-[#6:4]-[#6:5](-[#16:7]-[*])=[#8:6])=[#8]>>Cl-[#6:4](-[Cl])-[#6:5](-[#16:7]-[*])=[#8:6]",
+            "reactions": [
+                {
+                    "substrate": "*SC(=O)CC(C)=O",
+                    "products": [
+                        "*SC(=O)C(Cl)Cl"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1016/j.jmb.2010.01.020",
+                    "doi:10.1099/mic.0.26319-0"
+                ]
+            }
+        }
+    ]
+}
