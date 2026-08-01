@@ -1,0 +1,65 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "comment": "Cytochrome P450, GutD catalyzes the vital C\u2212C linkage between indole ring of the cyclodipeptides with the nucleobase guanine",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-06-16",
+            "contributors": [
+                "0009-0008-8086-5325"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "GutD24309",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1002/anie.201906891"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI00067D7091",
+            "mibig": "BGC0003080"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Other"
+            ],
+            "description": "GutD24309 catalyze the regio- and stereospecific transfer of a guaninyl moiety to C3 of the indole ring in cyclo-l-Trp-l-Phe to produce guanitrypmycin B1-1 and  guanitrypmycin C1-1",
+            "reactionSMARTS": "[#8]-[#6]1-[#7]-[#6](-[#6](-[#8])-[#7]-[#6]-1-[#6]-[#6]1-[#6]-[#6]-[#6]-[#6]-[#6]-1)-[#6]-[#6]1-[#6]2-[#6]-[#6]-[#6]-[#6]-[#6]-2-[#7]-[#6]-1>>[#8]-[#6]1-[#7]2-[#6]3-[#7]-[#6]4-[#6]-[#6]-[#6]-[#6]-[#6]-4-[#6]-3(-[#6]3-[#7]-[#6]4-[#7]-[#6](-[#7])-[#7]-[#6](-[#8])-[#6]-4-[#7]-3)-[#6]-[#6]-2-[#6](-[#8])-[#7]-[#6]-1-[#6]-[#6]1-[#6]-[#6]-[#6]-[#6]-[#6]-1",
+            "reactions": [
+                {
+                    "substrate": "OC1NC(CC2CNC3CCCCC23)C(O)NC1CC1CCCCC1",
+                    "products": [
+                        "NC1NC(O)C2NC(C34CC5C(O)NC(CC6CCCCC6)C(O)N5C3NC3CCCCC34)NC2N1"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1002/anie.201906891"
+                ]
+            }
+        }
+    ]
+}
