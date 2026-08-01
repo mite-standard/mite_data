@@ -1,0 +1,64 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "comment": "Oxidizes ent-Kaurene to the Gibberellin-precursor ent-Kaurenoic acid",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-06-18",
+            "contributors": [
+                "0009-0004-3333-272X"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "PpKO",
+        "description": "cytochrome P450",
+        "references": [
+            "doi:10.1016/j.febslet.2011.04.057"
+        ],
+        "databaseIds": {
+            "uniprot": "F2ZAE0",
+            "genpept": "BAK19917.1"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Carboxylation",
+                "Oxidation"
+            ],
+            "description": "Carboxylates ent-Kaurene to ent-Kaurenoic acid",
+            "reactionSMARTS": "[#6]1-[#6]-[#6@](\\[#6])(/[#6])-[#6@]2\\[#6]-[#6]-[#6@]34/[#6]-[#6](=[#6])/[#6@](-[#6]-[#6]-[#6]-3-[#6@]-2(\\[#6])-[#6]-1)-[#6]-4>>[#6]1-[#6]-[#6@](\\[#6](-[#8])=[#8])(/[#6])-[#6@]2\\[#6]-[#6]-[#6@]34/[#6]-[#6](=[#6])/[#6@](-[#6]-[#6]-[#6]-3-[#6@]-2(\\[#6])-[#6]-1)-[#6]-4",
+            "reactions": [
+                {
+                    "substrate": "C=C1C[C@@]23CC[C@@H]4C(C)(C)CCC[C@@]4(C)C2CC[C@@H]1C3",
+                    "products": [
+                        "C=C1C[C@@]23CC[C@@H]4[C@](C)(C(=O)O)CCC[C@@]4(C)C2CC[C@@H]1C3"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1016/j.febslet.2011.04.057"
+                ]
+            }
+        }
+    ]
+}
