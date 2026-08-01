@@ -1,0 +1,60 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "comment": "Converts higginsianin B to higginsianin A (CH63R_05482).",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-06",
+            "contributors": [
+                "0000-0002-0771-9611"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "dpchF",
+        "description": "FAD-dependent oxidoreductase",
+        "references": [
+            "doi:10.1038/s41467-020-15664-4"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI000249F361",
+            "mibig": "BGC0002429"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Cyclization"
+            ],
+            "description": "Converts higginsianin B to higginsianin A.",
+            "reactionSMARTS": "C=C1CC[C@H]2[C@](C)(CCC=C(C)C)[C@H](O)CC[C@]2(C)[C@@H]1Cc1c(O)c(C)c(C)oc1=O>>C=C1CC[C@@H]2[C@](C)(CC[C@H]3O[C@H](C=C(C)C)C[C@@]23C)[C@@H]1Cc1c(O)c(C)c(C)oc1=O",
+            "reactions": [
+                {
+                    "substrate": "C=C1CC[C@H]2[C@](C)(CCC=C(C)C)[C@H](O)CC[C@]2(C)[C@@H]1Cc1c(O)c(C)c(C)oc1=O",
+                    "products": [
+                        "C=C1CC[C@@H]2[C@](C)(CC[C@H]3O[C@H](C=C(C)C)C[C@@]23C)[C@@H]1Cc1c(O)c(C)c(C)oc1=O"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1038/s41467-020-15664-4"
+                ]
+            }
+        }
+    ]
+}
