@@ -1,0 +1,54 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-15",
+            "contributors": [
+                "0000-0002-0771-9611"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "PaGT",
+        "description": "Glycosyltransferase",
+        "references": [
+            "doi:10.1371/journal.pone.0042090 "
+        ],
+        "databaseIds": {
+            "uniprot": "L0MZK0",
+            "genpept": "BAM71031.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Glycosylation"
+            ],
+            "description": "Glycosylation of Fusicoccin H aglycon to give Fusicoccin H. UDP-Glucose as a donor of glucose.",
+            "reactionSMARTS": "[#8:1]/[#6@@:2]1-[#6@@:4](-[#6:6]2-[#6:11](=[#6:12]-[#6@:13]3(-[#6:21]-[#6:20]-[#6:16](-[#6:17](-[#6:19])-[#6:18])=[#6:15]-3-[#6@:3]-1\\[#8:23])/[#6:14])-[#6@@:9](/[#6:10]-[#8:22])-[#6:8]-[#6:7]-2)/[#6:5]>>[#8:1]/[#6@@:2]1-[#6@@:4](-[#6:6]2-[#6:11](=[#6:12]-[#6@:13]3(-[#6:21]-[#6:20]-[#6:16](-[#6:17](-[#6:18])-[#6:19])=[#6:15]-3-[#6@:3]-1\\[#8@@:23]/[#6@@]1-[#6](-[#8])-[#6](-[#8])-[#6](-[#8])/[#6@](-[#6]-[#8])/[#8@]/1)/[#6:14])-[#6@@:9](/[#6:10]-[#8:22])-[#6:8]-[#6:7]-2)/[#6:5]",
+            "reactions": [
+                {
+                    "substrate": "CC(C)C1=C2[C@@H](O)[C@H](O)[C@H](C)C3CC[C@H](CO)/C3=C/[C@@]2(C)CC1",
+                    "products": [
+                        "CC(C)C1=C2[C@@H](O[C@H]3O[C@@H](CO)C(O)C(O)C3O)[C@H](O)[C@H](C)C3CC[C@H](CO)C3=C[C@@]2(C)CC1"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1371/journal.pone.0042090 "
+                ]
+            }
+        }
+    ]
+}
