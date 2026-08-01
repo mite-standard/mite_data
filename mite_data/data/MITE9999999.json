@@ -1,0 +1,62 @@
+{
+    "accession": "MITE9999999",
+    "status": "active",
+    "comment": "GedL performs dichlorination in the geodin biosynthetic pathway to produce intermediate dihydrogeodin",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-06-27",
+            "contributors": [
+                "0009-0008-8086-5325"
+            ],
+            "reviewers": [
+                "0000-0001-5863-7248"
+            ],
+            "comment": "added FAD as likely cofactor and corrected substrate/product"
+        }
+    ],
+    "enzyme": {
+        "name": "GedL",
+        "description": "Halogenase",
+        "references": [
+            "doi:10.1371/journal.pone.0072871"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI0000E2D8B1",
+            "genpept": "EAU31633.1",
+            "mibig": "BGC0002592"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "GedL dichlorinates the late-stage aromatic polyketide intermediate sulochrin, to afford dihydrogeodin",
+            "reactionSMARTS": "[#6:1]-[#6:2]1:[#6:3]:[#6:4](-[#8:12]):[#6:5](-[#6:9](=[#8:10])-[#6:11]2:[#6:13](-[#6:21](=[#8:22])-[#8:23]-[#6:24]):[#6:14]:[#6:15](-[#8:16]):[#6:17]:[#6:18]:2-[#8:19]-[#6:20]):[#6:6](-[#8:8]):[#6:7]:1>>[#6:1]-[#6:2]1:[#6:7](-[Cl]):[#6:6](-[#8:8]):[#6:5](-[#6:9](=[#8:10])-[#6:11]2:[#6:13](-[#6:21](=[#8:22])-[#8:23]-[#6:24]):[#6:14]:[#6:15](-[#8:16]):[#6:17]:[#6:18]:2-[#8:19]-[#6:20]):[#6:4](-[#8:12]):[#6:3]:1-[Cl]",
+            "reactions": [
+                {
+                    "substrate": "COC(=O)c1cc(O)cc(OC)c1C(=O)c1c(O)cc(C)cc1O",
+                    "products": [
+                        "COC(=O)c1cc(O)cc(OC)c1C(=O)c1c(O)c(Cl)c(C)c(Cl)c1O"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1371/journal.pone.0072871"
+                ]
+            }
+        }
+    ]
+}
