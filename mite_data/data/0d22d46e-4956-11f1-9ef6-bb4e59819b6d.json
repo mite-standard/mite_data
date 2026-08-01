@@ -1,0 +1,59 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-06",
+            "contributors": [
+                "0000-0002-0771-9611"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "dpchH",
+        "description": "Short chain dehydrogenase/reductase",
+        "references": [
+            "doi:10.1038/s41467-020-15664-4"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI000801A2F8",
+            "mibig": "BGC0002429"
+        },
+        "cofactors": {
+            "organic": [
+                "NAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Reduction"
+            ],
+            "description": "Reduction of the ketone to give the 8R hydroxy group (Higginsianin B).",
+            "reactionSMARTS": "C=C1CC[C@@H]2[C@](C)(CCC(=O)[C@@]2(C)CCC=C(C)C)[C@@H]1Cc1c(O)c(C)c(C)oc1=O>>C=C1CC[C@H]2[C@](C)(CCC=C(C)C)[C@H](O)CC[C@]2(C)[C@@H]1Cc1c(O)c(C)c(C)oc1=O",
+            "reactions": [
+                {
+                    "substrate": "C=C1CC[C@@H]2[C@](C)(CCC(=O)[C@@]2(C)CCC=C(C)C)[C@@H]1Cc1c(O)c(C)c(C)oc1=O",
+                    "products": [
+                        "C=C1CC[C@H]2[C@](C)(CCC=C(C)C)[C@H](O)CC[C@]2(C)[C@@H]1Cc1c(O)c(C)c(C)oc1=O"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1038/s41467-020-15664-4"
+                ]
+            }
+        }
+    ]
+}
