@@ -1,0 +1,64 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "comment": "GutD5737 (also known as P450NB5737) catalyzes the transfer of a guanine moiety to the indole ring of the cyclodipeptide (cyclo-l-Trp-l-Trp) via a C\u2013N bond",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-06-17",
+            "contributors": [
+                "0009-0008-8086-5325"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "GutD5737",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1021/acs.orglett.8b02051",
+            "doi:10.1021/acs.orglett.9b03491"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI0003697F9C"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Other"
+            ],
+            "description": "GutD5737 catalyze the transfer of a guaninyl moiety to N1 of cWW, resulting in the formation of guanitrypmycin C3\u20131",
+            "reactionSMARTS": "[#8:1]=[#6:2]1-[#6:3](-[#6:14]-[#6:6]2-[#6:5]-[#7:13]-[#6:12]3-[#6:11]-[#6:10]-[#6:9]-[#6:8]-[#6:7]-2-3)-[#7:4]-[#6:27](=[#8:28])-[#6:16](-[#6:17]-[#6:18]2-[#6:19]-[#7:20]-[#6:21]3-[#6:22]-2-[#6:23]-[#6:24]-[#6:25]-[#6:26]-3)-[#7:15]-1.[#7]1-[#6]-[#7]-[#6]2-[#6](=[#8])-[#7]-[#6](-[#7])-[#7]-[#6]-1-2>>[#8:28]=[#6:27]1-[#6:16](-[#6:17]-[#6:18]2-[#6:19]-[#7:20](-[#6]3-[#7]-[#6]4-[#6](-[#7]-[#6](-[#7]-[#6]-4=[#8])-[#7])-[#7]-3)-[#6:21]3-[#6:26]-[#6:25]-[#6:24]-[#6:23]-[#6:22]-2-3)-[#7:15]-[#6:2](=[#8:1])-[#6:3](-[#6:14]-[#6:6]2-[#6:5]-[#7:13]-[#6:12]3-[#6:7]-2-[#6:8]-[#6:9]-[#6:10]-[#6:11]-3)-[#7:4]-1",
+            "reactions": [
+                {
+                    "substrate": "NC1NC(=O)C2NCNC2N1.O=C1NC(CC2CNC3CCCCC23)C(=O)NC1CC1CNC2CCCCC12",
+                    "products": [
+                        "NC1NC(=O)C2NC(N3CC(CC4NC(=O)C(CC5CNC6CCCCC56)NC4=O)C4CCCCC43)NC2N1"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acs.orglett.8b02051"
+                ]
+            }
+        }
+    ]
+}
