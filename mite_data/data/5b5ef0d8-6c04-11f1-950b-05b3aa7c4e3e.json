@@ -1,0 +1,63 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "comment": "GtmD attaches a guanine nucleobase via C\u2013N bond formation to cW\u0394M, creating the intermediate guatrypmethine A and B",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-06-19",
+            "contributors": [
+                "0009-0008-8086-5325"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "GtmD",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1021/acscatal.1c04609"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI0009A20572"
+        },
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Other"
+            ],
+            "description": "GtmD executes an intermolecular C\u2013N coupling at the C-3 position of the tryptophan moiety of cW\u0394M and the N-9' position of guanine",
+            "reactionSMARTS": "[#6:1]-[#16:2]-[#6:3]-[#6:4]-[#6:5]1-[#6:21](=[#8:22])-[#7:20]-[#6:9](-[#6:10]-[#6:11]2-[#6:19]3-[#6:14](-[#6:15]-[#6:16]-[#6:17]-[#6:18]-3)-[#7:13]-[#6:12]-2)-[#6:7](=[#8:8])-[#7:6]-1>>[#6:1]-[#16:2]-[#6:3]-[#6:4]-[#6:5]1-[#6:21](=[#8:22])-[#7:20]2-[#6:12]3-[#6:11](-[#6:19]4-[#6:14](-[#7:13]-3)-[#6:15]-[#6:16]-[#6:17]-[#6:18]-4)(-[#7]3-[#6]4-[#6](-[#6](-[#7]-[#6](-[#7]-4)-[#7])=[#8])-[#7]-[#6]-3)-[#6:10]-[#6:9]-2-[#6:7](=[#8:8])-[#7:6]-1",
+            "reactions": [
+                {
+                    "substrate": "CSCCC1NC(=O)C(CC2CNC3CCCCC23)NC1=O",
+                    "products": [
+                        "CSCCC1NC(=O)C2CC3(N4CNC5C(=O)NC(N)NC54)C4CCCCC4NC3N2C1=O"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Inference from genomic data and chemical structure"
+                ],
+                "references": [
+                    "doi:10.1021/acscatal.1c04609"
+                ]
+            }
+        }
+    ]
+}
