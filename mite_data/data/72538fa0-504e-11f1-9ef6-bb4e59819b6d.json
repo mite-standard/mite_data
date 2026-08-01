@@ -1,0 +1,55 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "comment": "Converts dideacetyl-Fusicoccin A to 3'-O-deacetyl-Fusicoccin A.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-15",
+            "contributors": [
+                "0000-0002-0771-9611"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "PaAT-2",
+        "description": "O-acetyltransferase",
+        "references": [
+            "doi:10.1371/journal.pone.0042090"
+        ],
+        "databaseIds": {
+            "uniprot": "L0MZK4",
+            "genpept": "BAM71036.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Acetylation"
+            ],
+            "description": "Converts dideacetyl-Fusicoccin A to 3'-O-deacetyl-Fusicoccin A.",
+            "reactionSMARTS": "[#6:1]=[#6:2]-[#6:3](-[#8:6]-[#6:7]/[#6@@:8]1-[#6:41](-[#8:42])-[#6:39](-[#8:40])-[#6:37](-[#8:38])-[#6@:10](/[#8:11]/[#6@:12]2-[#6@:35](\\[#8:36])-[#6@:33](\\[#6:34])-[#6:26]3-[#6:27]-[#6:28]-[#6@:29](\\[#6:30]-[#8:31]-[#6:32])-[#6:25]-3=[#6:24]-[#6@:22]3(\\[#6:23])-[#6:13]-2=[#6:14](-[#6:19]-[#6@@:20]-3/[#8:21])-[#6:15](-[#6:17]-[#8:18])-[#6:16])-[#8:9]-1)(-[#6:5])-[#6:4]>>[#6:1]=[#6:2]-[#6:3](-[#8:6]-[#6:7]/[#6@@:8]1-[#6:41](-[#8:42])-[#6:39](-[#8:40])-[#6:37](-[#8:38])-[#6@:10](/[#8:11]/[#6@:12]2-[#6@:35](\\[#8:36])-[#6@:33](\\[#6:34])-[#6:26]3-[#6:27]-[#6:28]-[#6@:29](\\[#6:30]-[#8:31]-[#6:32])-[#6:25]-3=[#6:24]-[#6@:22]3(\\[#6:23])-[#6:13]-2=[#6:14](-[#6:19]-[#6@@:20]-3/[#8:21])-[#6:15](-[#6:17]-[#8:18]-[#6](=[#8])-[#6])-[#6:16])-[#8:9]-1)(-[#6:5])-[#6:4]",
+            "reactions": [
+                {
+                    "substrate": "C=CC(C)(C)OC[C@H]1O[C@@H](O[C@@H]2C3=C(C(C)CO)C[C@H](O)[C@]3(C)C=C3C(CC[C@@H]3COC)[C@@H](C)[C@H]2O)C(O)C(O)C1O",
+                    "products": [
+                        "C=CC(C)(C)OC[C@H]1O[C@@H](O[C@@H]2C3=C(C(C)COC(C)=O)C[C@H](O)[C@]3(C)C=C3C(CC[C@@H]3COC)[C@@H](C)[C@H]2O)C(O)C(O)C1O"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1371/journal.pone.0042090"
+                ]
+            }
+        }
+    ]
+}
