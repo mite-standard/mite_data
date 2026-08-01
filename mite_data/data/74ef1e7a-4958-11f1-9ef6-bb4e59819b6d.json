@@ -1,0 +1,55 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-06",
+            "contributors": [
+                "0000-0002-4540-6501"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "PtmU1",
+        "description": "Dehydratase",
+        "references": [
+            "doi:10.1021/acs.biochem.5c00282 "
+        ],
+        "databaseIds": {
+            "uniprot": "D8L2T6",
+            "genpept": "ACO31266.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Dehydration"
+            ],
+            "description": "PtmU1 was shown to be a stereospecific dehydratase responsible for construction of the C6\u2013C7 enone functionality",
+            "reactionSMARTS": "[#6]/[#6@](-[#6](-[#16]-[#6]-[#6]-[#7]-[#6](-[#6]-[#6]-[#7]-[#6](-[#6@@](-[#6](-[#6]-[#8]-[#15](-[#8]-[#15](-[#8]-[#6]\\[#6@@]1-[#6@@](/[#8]-[#15](-[#8])(-[#8])=[#8])-[#6@@](/[#8])-[#6@](\\[#7]2:[#6]3:[#6](:[#6](:[#7]:[#6]:[#7]:3)-[#7]):[#7]:[#6]:2)-[#8]-1)(-[#8])=[#8])(-[#8])=[#8])(-[#6])-[#6])\\[#8])=[#8])=[#8])=[#8])-[#6]-[#6]-[#6]-[#6@]1(-[#6]2-[#6@@]3(\\[#6]-[#6@@]4(\\[#6])-[#6](-[#6]\\[#6@@]-2-[#8]-4)-[#6]-3)-[#6@](\\[#8])-[#6]-[#6]-1=[#8])\\[#6]>>[#6]/[#6@](-[#6](-[#16]-[#6]-[#6]-[#7]-[#6](-[#6]-[#6]-[#7]-[#6](-[#6@@](-[#6](-[#6]-[#8]-[#15](-[#8]-[#15](-[#8]-[#6]\\[#6@@]1-[#6@@](/[#8]-[#15](-[#8])(-[#8])=[#8])-[#6@@](/[#8])-[#6@](\\[#7]2:[#6]3:[#6](:[#6](:[#7]:[#6]:[#7]:3)-[#7]):[#7]:[#6]:2)-[#8]-1)(-[#8])=[#8])(-[#8])=[#8])(-[#6])-[#6])\\[#8])=[#8])=[#8])=[#8])-[#6]-[#6]-[#6]-[#6@]1(-[#6]2-[#6@@]3(-[#6]-[#6@@]4(\\[#6])-[#6](-[#6]\\[#6@@]-2-[#8]-4)-[#6]-3)/[#6]=[#6]-[#6]-1=[#8])\\[#6]",
+            "reactions": [
+                {
+                    "substrate": "C[C@@H](CCC[C@]1(C)C(=O)C[C@@H](O)[C@]23CC4C[C@H](O[C@@]4(C)C2)C31)C(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O",
+                    "products": [
+                        "C[C@@H](CCC[C@]1(C)C(=O)C=C[C@]23CC4C[C@H](O[C@@]4(C)C2)C31)C(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/acs.biochem.5c00282 "
+                ]
+            }
+        }
+    ]
+}
