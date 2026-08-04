@@ -10,9 +10,10 @@
                 "0009-0008-8086-5325"
             ],
             "reviewers": [
-                "0009-0008-6482-7206"
+                "0009-0008-6482-7206",
+                "0000-0001-6534-6609"
             ],
-            "comment": "New entry. Exchanged UniParc ID with UniProt ID."
+            "comment": "New entry. Reviewer 1 exchanged UniParc ID with UniProt ID."
         }
     ],
     "enzyme": {
