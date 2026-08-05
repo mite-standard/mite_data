@@ -1,7 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "active",
-    "comment": "Halogenation of phloroglucinol in the pyoluteorin pathway and various drugs. PltM yields a product, which regulates pyoluteorin biosythesis. Dihalogenation is much more likely. Non product: Fluorinated product. Auxiliary enzyme flavin reductase not in genecluster.",
+    "comment": "Halogenation of phloroglucinol in the pyoluteorin pathway and various drugs. PltM yields a product, which regulates pyoluteorin biosynthesis. Dihalogenation is much more likely. Nonproduct: Fluorinated product. Auxiliary enzyme flavin reductase not in genecluster.",
     "changelog": [
         {
             "version": "1",
@@ -10,9 +10,9 @@
                 "0009-0000-8651-1669"
             ],
             "reviewers": [
-                "0000-0001-6585-0696"
+                "0009-0008-6482-7206"
             ],
-            "comment": "New entry."
+            "comment": "New entry. Corrected spelling in description."
         }
     ],
     "enzyme": {
@@ -47,7 +47,7 @@
                     "products": [
                         "Oc1cc(O)c(Cl)c(O)c1"
                     ],
-                    "isIntermediate": false,
+                    "isIntermediate": true,
                     "description": "Chlorinates phloroglucinol to 2-chlorophloroglucinol"
                 }
             ],
@@ -73,7 +73,7 @@
                     "products": [
                         "Oc1cc(O)c(Cl)c(O)c1Cl"
                     ],
-                    "isIntermediate": false,
+                    "isIntermediate": true,
                     "description": "Chlorinates phloroglucinol to 2,4-dichlorophloroglucinol"
                 }
             ],
@@ -98,7 +98,7 @@
                     "products": [
                         "Oc1cc(O)c(Br)c(O)c1"
                     ],
-                    "isIntermediate": false,
+                    "isIntermediate": true,
                     "description": "Brominates phloroglucinol to 2-bromophloroglucinol"
                 }
             ],
@@ -124,7 +124,7 @@
                     "products": [
                         "Oc1cc(O)c(I)c(O)c1"
                     ],
-                    "isIntermediate": false,
+                    "isIntermediate": true,
                     "description": "Iodinates phloroglucinol to 2-iodophloroglucinol"
                 }
             ],
@@ -150,7 +150,7 @@
                     "products": [
                         "Oc1cc(O)c(I)c(O)c1I"
                     ],
-                    "isIntermediate": false,
+                    "isIntermediate": true,
                     "description": "Iodinates phloroglucinol to 2,4-iodophloroglucinol"
                 }
             ],
@@ -176,7 +176,7 @@
                     "products": [
                         "Oc1ccc(/C=C/c2cc(O)c(Cl)c(O)c2)cc1"
                     ],
-                    "isIntermediate": false,
+                    "isIntermediate": true,
                     "description": "Chlorinates resveratrol"
                 }
             ],
@@ -202,7 +202,7 @@
                     "products": [
                         "Oc1cc(O)c(Cl)cc1Cl"
                     ],
-                    "isIntermediate": false,
+                    "isIntermediate": true,
                     "description": "Chlorinates resorcinol to 4,6-dichlororesorcinol"
                 }
             ],
@@ -228,7 +228,7 @@
                     "products": [
                         "Oc1cc(O)c(Br)cc1Br"
                     ],
-                    "isIntermediate": false,
+                    "isIntermediate": true,
                     "description": "Brominates resorcinol to 4,6-bromoresorcinol"
                 }
             ],
@@ -254,7 +254,7 @@
                     "products": [
                         "Oc1c(Cl)cc(Cl)c(O)c1Cl"
                     ],
-                    "isIntermediate": false,
+                    "isIntermediate": true,
                     "description": "Chlorinates 2-chlororesorcinol to 2,4,6-dichlororesorcinol"
                 }
             ],
@@ -280,7 +280,7 @@
                     "products": [
                         "OCc1c(Cl)c(O)cc(O)c1Cl"
                     ],
-                    "isIntermediate": false,
+                    "isIntermediate": true,
                     "description": "Chlorinates 3,5-Dihydroxybenzyl alcohol to 2,6-dichloro-3,5-dihydroxybenzyl alcohol"
                 }
             ],
@@ -306,7 +306,7 @@
                     "products": [
                         "CC(=O)c1c(O)c(Cl)c(O)c(Cl)c1O"
                     ],
-                    "isIntermediate": false,
+                    "isIntermediate": true,
                     "description": "Dichlorination of phloroacetophenone to 3,5-chloro-phloroacetophenon"
                 }
             ],
@@ -332,8 +332,33 @@
                     "products": [
                         "Nc1cc(O)c(Cl)cc1Cl"
                     ],
-                    "isIntermediate": false,
+                    "isIntermediate": true,
                     "description": "Chlorinates 3-aminophenol to 4,6-chloro-3-aminophenol"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1038/s41467-019-09215-9"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Dichlorination of various 1,3-diphenols. Non-substrates: carboxylic acid derivatives",
+            "reactionSMARTS": "[#6:1]1:[#6:7](-[#8:8]):[#6:6]:[#6:4](-[#8:5]):[#6:3]:[#6:2]:1-[*]>>[#6:1]1(:[#6:7](-[#8:8]):[#6:6]:[#6:4](-[#8:5]):[#6:3](-[Cl]):[#6:2]:1-[*])-[Cl]",
+            "reactions": [
+                {
+                    "substrate": "*c1cc(O)cc(O)c1",
+                    "products": [
+                        "*c1c(Cl)c(O)cc(O)c1Cl"
+                    ],
+                    "isIntermediate": true
                 }
             ],
             "evidence": {
