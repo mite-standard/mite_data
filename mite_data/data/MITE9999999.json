@@ -1,7 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "active",
-    "comment": "Halogenation of phloroglucinol in the pyoluteorin pathway and various drugs. PltM yields a product, which regulates pyoluteorin biosynthesis. Dihalogenation is much more likely. Nonproduct: Fluorinated product. Auxiliary enzyme flavin reductase not in genecluster.",
+    "comment": "PltM is involved pyoluteorin biosynthesis pathway. It is a bona fide phenol-halogenase with an extraordinary substrate and halide scope, which does not accept tryptophan. Dihalogenation of substrates is much more likely. Nonproduct: Fluorinated product. Auxiliary enzyme flavin reductase not in genecluster.",
     "changelog": [
         {
             "version": "1",
@@ -10,9 +10,10 @@
                 "0009-0000-8651-1669"
             ],
             "reviewers": [
-                "0009-0008-6482-7206"
+                "0009-0008-6482-7206",
+                "0000-0001-6534-6609"
             ],
-            "comment": "New entry. Corrected spelling in description."
+            "comment": "New entry. Reviewer 1 corrected spelling in description. Reviewer 2 fixed generalized reaction."
         }
     ],
     "enzyme": {
@@ -35,6 +36,32 @@
         }
     },
     "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Iodination of various 1,3-diphenols. Non-substrates: carboxylic acid derivatives",
+            "reactionSMARTS": "[#6:1]1:[#6:7](-[#8:8]):[#6:6]:[#6:4](-[#8:5]):[#6:3]:[#6:2]:1>>[#6:1]1:[#6:7](-[#8:8]):[#6:6](-I):[#6:4](-[#8:5]):[#6:3]:[#6:2]:1",
+            "reactions": [
+                {
+                    "substrate": "c1c(/C=C/c2cc(O)cc(O)c2)ccc(O)c1",
+                    "products": [
+                        "c1c(/C=C/c2cc(O)c(I)c(O)c2)ccc(O)c1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Iodinates reservatrol."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1038/s41467-019-09215-9"
+                ]
+            }
+        },
         {
             "tailoring": [
                 "Halogenation"
@@ -334,31 +361,6 @@
                     ],
                     "isIntermediate": true,
                     "description": "Chlorinates 3-aminophenol to 4,6-chloro-3-aminophenol"
-                }
-            ],
-            "evidence": {
-                "evidenceCode": [
-                    "Heterologous expression",
-                    "In vitro assay"
-                ],
-                "references": [
-                    "doi:10.1038/s41467-019-09215-9"
-                ]
-            }
-        },
-        {
-            "tailoring": [
-                "Halogenation"
-            ],
-            "description": "Dichlorination of various 1,3-diphenols. Non-substrates: carboxylic acid derivatives",
-            "reactionSMARTS": "[#6:1]1:[#6:7](-[#8:8]):[#6:6]:[#6:4](-[#8:5]):[#6:3]:[#6:2]:1-[*]>>[#6:1]1(:[#6:7](-[#8:8]):[#6:6]:[#6:4](-[#8:5]):[#6:3](-[Cl]):[#6:2]:1-[*])-[Cl]",
-            "reactions": [
-                {
-                    "substrate": "*c1cc(O)cc(O)c1",
-                    "products": [
-                        "*c1c(Cl)c(O)cc(O)c1Cl"
-                    ],
-                    "isIntermediate": true
                 }
             ],
             "evidence": {
