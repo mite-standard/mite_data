@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "PasC functions as a GCN5-related N-acetyltransferase (GNAT) family acyltransferase that catalyzes the N-terminal acetylation of a ether cross-linked hexapeptide (QWTFRF) intermediate to produce mature daropeptide, aphotorhaptin A",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,42 @@
     ],
     "enzyme": {
         "name": "PasC",
+        "description": "N-acetyltransferase",
+        "references": [
+            "doi:10.1073/pnas.2617449123"
+        ],
         "databaseIds": {
             "uniprot": "UPI00018343E5",
-            "genpept": ""
-        },
-        "references": [
-            "doi:"
-        ]
+            "genpept": "CAQ83237.1"
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Acetylation"
+            ],
+            "description": "PasC catalyzes the addition of N-terminal acetyl group in the ether-linked hexapeptide scaffold QWTFRF to yield aphotorhaptin A",
+            "reactionSMARTS": "[#6:1]-[#6@@:2](-[#6@@:4]1-[#6:29](-[#7:31]\\[#6@@:32](-[#6:40](-[#7:42]-[#6@:43](-[#6:51](-[#7:53]-[#6@@:54](-[#6:62](-[#8:64])=[#8:63])\\[#6:55]-[#6:56]2:[#6:61]:[#6:60]:[#6:59]:[#6:58]:[#6:57]:2)=[#8:52])/[#6:44]-[#6:45]-[#6:46]-[#7:47]-[#6:48](-[#7:50])=[#7:49])=[#8:41])-[#6@@:33](/[#8:65]-[#6:14]2:[#6:13]3:[#6:18](:[#6:10](:[#6:11]:[#7:12]:3)-[#6:9]\\[#6@:8](-[#7:19]-[#6:20](-[#6@:22](/[#6:24]-[#6:25]-[#6:26](=[#8:28])-[#7:27])-[#7:23])=[#8:21])-[#6:6](=[#8:7])-[#7:5]/1):[#6:17]:[#6:16]:[#6:15]:2)-[#6:34]1:[#6:39]:[#6:38]:[#6:37]:[#6:36]:[#6:35]:1)=[#8:30])/[#8:3]>>[#6:1]-[#6@@:2](-[#6@@:4]1-[#6:29](-[#7:31]\\[#6@@:32](-[#6:40](-[#7:42]-[#6@:43](-[#6:51](-[#7:53]-[#6@@:54](-[#6:62](-[#8:64])=[#8:63])\\[#6:55]-[#6:56]2:[#6:61]:[#6:60]:[#6:59]:[#6:58]:[#6:57]:2)=[#8:52])/[#6:44]-[#6:45]-[#6:46]-[#7:47]-[#6:48](-[#7:50])=[#7:49])=[#8:41])-[#6@@:33](/[#8:65]-[#6:14]2:[#6:15]:[#6:16]:[#6:17]:[#6:18]3:[#6:13]:2:[#7:12]:[#6:11]:[#6:10]:3-[#6:9]\\[#6@:8](-[#7:19]-[#6:20](-[#6@:22](/[#6:24]-[#6:25]-[#6:26](=[#8:28])-[#7:27])-[#7:23]-[#6](=[#8])-[#6])=[#8:21])-[#6:6](=[#8:7])-[#7:5]/1)-[#6:34]1:[#6:35]:[#6:36]:[#6:37]:[#6:38]:[#6:39]:1)=[#8:30])/[#8:3]",
             "reactions": [
                 {
+                    "substrate": "C[C@H](O)[C@H]1NC(=O)[C@@H](NC(=O)[C@@H](N)CCC(N)=O)Cc2c[nH]c3c(cccc23)O[C@@H](c2ccccc2)[C@H](C(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@H](Cc2ccccc2)C(=O)O)NC1=O",
                     "products": [
-                        ""
-                    ]
+                        "CC(=O)N[C@@H](CCC(N)=O)C(=O)N[C@H]1Cc2c[nH]c3c(cccc23)O[C@@H](c2ccccc2)[C@H](C(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@H](Cc2ccccc2)C(=O)O)NC(=O)[C@@H]([C@H](C)O)NC1=O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "The core motif of PasA precursor peptide is ether cross-linked by PasB followed by proteolysis. The cleaved ether cross-linked hexapeptide (QWTFRF) is acetylated at N-terminal of Gln by PasC to produce mature aphotorhaptin A (Ac-QWTFRF). Aphotorhaptin A is a photorhaptin analog distinguished by an additional N-acetylated Gln residue at its N-terminus. PasC also exhibits remarkable substrate promiscuity towards diverse acyl-CoA donors and peptide substrates."
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Site-directed mutagenesis"
+                ],
+                "references": [
+                    "doi:10.1073/pnas.2617449123"
+                ]
+            }
         }
     ]
 }
