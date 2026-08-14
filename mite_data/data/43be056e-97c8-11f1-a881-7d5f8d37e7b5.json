@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Catalyzes the intramolecular coupling reaction of griseophenone B in the griseofulvin pathway yielding desmethyl-dehydrogriseofulvin A. No specific CYP oxireductase was found in the genome cluster.",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,55 @@
     ],
     "enzyme": {
         "name": "GsfF",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1021/cb400541z",
+            "doi:10.1016/j.chembiol.2010.03.015"
+        ],
         "databaseIds": {
             "uniprot": "D7PI20",
-            "genpept": ""
+            "genpept": "ADI24958.2",
+            "mibig": "BGC0000070"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "Heme"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Cyclization"
+            ],
+            "description": "GsfF catalyzes the intramolecular coupling reaction of griseophenone B, through either a di-radical ring coupling mechanism or an arene oxide intermediate. CYP oxireductase is required.",
+            "reactionSMARTS": "[#6:1]-[#8:2]-[#6:3]1:[#6:22](-[Cl:23]):[#6:20](-[#8:21]):[#6:7](-[#6:8](-[#6:10]2:[#6:17](-[#8:18]-[#6:19]):[#6:16]:[#6:14](-[#8]):[#6:13]:[#6:11]:2-[#6:12])=[#8:9]):[#6:5](-[#8:6]):[#6:4]:1>>[#6:1]-[#8:2]-[#6:3]1:[#6:22](-[Cl:23]):[#6:20]2-[#8@@:21]\\[#6@@:10]3(/[#6:8](=[#8:9])-[#6:7]:2:[#6:5](-[#8:6]):[#6:4]:1)-[#6:17](-[#8:18]-[#6:19])=[#6:16]-[#6:14](=[#8:2])-[#6:13]=[#6:11]-3-[#6:12]",
             "reactions": [
                 {
+                    "substrate": "COc1cc(O)c(C(=O)c2c(C)cc(O)cc2OC)c(O)c1Cl",
                     "products": [
-                        ""
-                    ]
+                        "COC1=CC(=O)C=C(C)[C@@]12Oc1c(Cl)c(OC)cc(O)c1C2=O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Oxidative coupling of orcinol and phloroglucinol yielding desmethyl-dehydrogriseofulvin A"
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/cb400541z"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "73935"
+            }
         }
     ]
 }
