@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Halogenation of both D-tryptophan and L-tryptophan. MIBiG: BGC0000382 shows no gene for putative halogenase and no identification for flavin reductase auxiliary enzyme stfre found.",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,156 @@
     ],
     "enzyme": {
         "name": "SttH",
+        "description": "Flavin-dependent halogenase",
+        "references": [
+            "doi:10.1007/s10529-011-0595-7",
+            "doi:10.1002/cbic.201600051"
+        ],
         "databaseIds": {
             "uniprot": "E9P162",
-            "genpept": ""
+            "genpept": "ADW94630.1"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "FAD",
+                "NAD"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Lysine activates HOCl, which attacks L-tryptophan to form a Wheland intermediate. Aromaticity is restored through deprotonation by a glutamate residue, yielding 6-chloro-tryptophan or 6-bromo-tryptophan.",
+            "reactionSMARTS": "[#7:1]-[#6:2](-[#6:3]-[c:4]1[c:5][nH1:6][c:7]2[c:8][c:9][c:10][c:11][c:12]12)-[#6:13](-[#8:14])=[O:15]>>[#7:1]-[#6:2](-[#6:3]-[c:4]1[c:5][nH1:6][c:7]2[c:8][c:9](-[#17,#35:10])[c:11][c:12][c:13]12)-[#6:14](-[#8:15])=[O]",
             "reactions": [
                 {
+                    "substrate": "N[C@@H](Cc1c[nH]c2ccccc12)C(=O)O",
                     "products": [
-                        ""
-                    ]
+                        "N[C@@H](Cc1c[nH]c2cc(Cl)ccc12)C(=O)O",
+                        "N[C@@H](Cc1c[nH]c2cc(Br)ccc12)C(=O)O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Halogenation of tryptophan yielding 6-chloro-tryptophan or 6-bromo-tryptophan"
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1007/s10529-011-0595-7"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "55900"
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Single chlorination of kynurenine",
+            "reactionSMARTS": "[#6:1]1:[#6:6]:[#6:5](-[#6:7](-[#6:9]-[#6@:10](/[#7:14])-[#6:11](-[#8:13])=[#8:12])=[#8:8]):[#6:4](-[#7:15]):[#6:3]:[#6:2]:1>>[#6:1]1(-[Cl]):[#6:6]:[#6:5](-[#6:7](-[#6:9]-[#6@:10](/[#7:14])-[#6:11](-[#8:13])=[#8:12])=[#8:8]):[#6:4](-[#7:15]):[#6:3]:[#6:2]:1",
+            "reactions": [
+                {
+                    "substrate": "Nc1ccccc1C(=O)C[C@H](N)C(=O)O",
+                    "products": [
+                        "Nc1ccc(Cl)cc1C(=O)C[C@H](N)C(=O)O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Chlorination of kynurenine to C5-chloro-kynurenine"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1002/cbic.201600051"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Single chlorination of anthranilamide",
+            "reactionSMARTS": "[#6:1]1:[#6:6]:[#6:5](-[#6:7](-[#7:9])=[#8:8]):[#6:4](-[#7:10]):[#6:3]:[#6:2]:1>>[#6:1]1(-[Cl]):[#6:6]:[#6:5](-[#6:7](-[#7:9])=[#8:8]):[#6:4](-[#7:10]):[#6:3]:[#6:2]:1",
+            "reactions": [
+                {
+                    "substrate": "NC(=O)c1ccccc1N",
+                    "products": [
+                        "NC(=O)c1cc(Cl)ccc1N"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Chlorination of anthranilamide to C5-chloro-anthranilamide"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1002/cbic.201600051"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Single chlorination of anthranilic acid",
+            "reactionSMARTS": "[#6:1]1:[#6:6]:[#6:5](-[#6:7](-[#8:9])=[#8:8]):[#6:4](-[#7:10]):[#6:3]:[#6:2]:1>>[#6:1]1(-[Cl]):[#6:6]:[#6:5](-[#6:7](-[#8:9])=[#8:8]):[#6:4](-[#7:10]):[#6:3]:[#6:2]:1",
+            "reactions": [
+                {
+                    "substrate": "Nc1ccccc1C(=O)O",
+                    "products": [
+                        "Nc1ccc(Cl)cc1C(=O)O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Chlorination of anthranilic acid to C5-chloro-anthranilic acid"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1002/cbic.201600051"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Single chlorination of  N-phenylanthranilic acid",
+            "reactionSMARTS": "[#6:1]1:[#6:6]:[#6:5]:[#6:4](-[#7:7]-[#6:8]2:[#6:13](-[#6:14](-[#8:16])=[#8:15]):[#6:12]:[#6:11]:[#6:10]:[#6:9]:2):[#6:3]:[#6:2]:1>>[#6:1]1(-[Cl]):[#6:2]:[#6:3]:[#6:4](-[#7:7]-[#6:8]2:[#6:13](-[#6:14](-[#8:16])=[#8:15]):[#6:12]:[#6:11]:[#6:10]:[#6:9]:2):[#6:5]:[#6:6]:1",
+            "reactions": [
+                {
+                    "substrate": "O=C(O)c1ccccc1Nc1ccccc1",
+                    "products": [
+                        "O=C(O)c1ccccc1Nc1ccc(Cl)cc1"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Chlorination of N-phenylanthranilic acid acid to N-phenylanthranilic acid"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1002/cbic.201600051"
+                ]
+            }
         }
     ]
 }
