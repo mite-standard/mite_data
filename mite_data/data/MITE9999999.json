@@ -1,0 +1,105 @@
+{
+    "accession": "MITE9999999",
+    "status": "active",
+    "comment": "Carbazole halogenase.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-06-12",
+            "contributors": [
+                "0000-0002-3947-4444"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "Addition of co-factor"
+        }
+    ],
+    "enzyme": {
+        "name": "CczH",
+        "description": "Halogenase",
+        "references": [
+            "doi:10.1021/acs.orglett.5c04621"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A367F480",
+            "genpept": "YAS72840.1"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD",
+                "NAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "C-4 chlorination of carbazole",
+            "reactionSMARTS": "[#6:1]1:[#6:13]:[#6:12]2:[#6:4](:[#7:5]:[#6:6]3:[#6:11]:2:[#6:10]:[#6:9]:[#6:8]:[#6:7]:3):[#6:3]:[#6:2]:1>>[#6:1]1:[#6:13](-[Cl]):[#6:12]2:[#6:4](:[#7:5]:[#6:6]3:[#6:11]:2:[#6:10]:[#6:9]:[#6:8]:[#6:7]:3):[#6:3]:[#6:2]:1",
+            "reactions": [
+                {
+                    "substrate": "COc1ccc2[nH]c3ccccc3c2c1",
+                    "products": [
+                        "COc1ccc2[nH]c3ccccc3c2c1Cl"
+                    ],
+                    "isIntermediate": true,
+                    "description": "C-4 chlorination of 3-methoxycarbazole"
+                },
+                {
+                    "substrate": "Oc1ccc2[nH]c3ccccc3c2c1",
+                    "products": [
+                        "Oc1ccc2[nH]c3ccccc3c2c1Cl"
+                    ],
+                    "isIntermediate": true,
+                    "description": "C-4 chlorination of 3-hydroxycarbazole"
+                },
+                {
+                    "substrate": "COc1ccc2[nH]c3ccc(OC)cc3c2c1",
+                    "products": [
+                        "COc1ccc2[nH]c3ccc(OC)c(Cl)c3c2c1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "C-4 chlorination of 3,6-dimethoxycarbazole"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/acs.orglett.5c04621"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "C-6 chlorination of carbazole",
+            "reactionSMARTS": "[#6:1]1:[#6:13]:[#6:12]2:[#6:4](:[#7:5]:[#6:6]3:[#6:11]:2:[#6:10]:[#6:9]:[#6:8]:[#6:7]:3):[#6:3]:[#6:2]:1>>[#6:1]1(-[Cl]):[#6:13]:[#6:12]2:[#6:4](:[#7:5]:[#6:6]3:[#6:11]:2:[#6:10]:[#6:9]:[#6:8]:[#6:7]:3):[#6:3]:[#6:2]:1",
+            "reactions": [
+                {
+                    "substrate": "On1c2ccccc2c2ccccc21",
+                    "products": [
+                        "On1c2ccccc2c2cc(Cl)ccc21"
+                    ],
+                    "isIntermediate": true,
+                    "description": "C-6 chlorination of N-hydroxycarbazole"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/acs.orglett.5c04621"
+                ]
+            }
+        }
+    ]
+}
