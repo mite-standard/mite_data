@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Melleolide halogenation in Armillaria mellea. Putative MiBiG entry has been retired (BGC0001401)",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,76 @@
     ],
     "enzyme": {
         "name": "ArmH3",
+        "description": "Flavin-dependent halogenase",
+        "references": [
+            "doi:10.1128/AEM.03168-15"
+        ],
         "databaseIds": {
             "uniprot": "A0A0U2JT80",
-            "genpept": ""
+            "genpept": "ALT31850.1"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "FAD",
+                "NAD"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Single chlorination of melleolide F as a representative scaffold for various melleloides.",
+            "reactionSMARTS": "[#6:1](-[#8:16])-[#6:2]1-[#6@:10]2(\\[#8:29])-[#6@:11](/[#8:17]-[#6:25](=[#8:26])-[#6:24]3:[#6:19](:[#6:20]:[#6:21](-[#8:28]):[#6:22]:[#6:23]:3-[#8:27])-[#6:18])-[#6:12]-[#6@:9]-2(\\[#6:13])-[#6:8]2-[#6:4](-[#6:5]-[#6@:6](/[#6:15])(\\[#6:14])-[#6:7]-2)-[#6:3]=1>>[#6:1](-[#8:16])-[#6:2]1-[#6@:10]2(\\[#8:29])-[#6@:11](/[#8:17]-[#6:25](=[#8:26])-[#6:24]3:[#6:19](:[#6:20](-[Cl]):[#6:21](-[#8:28]):[#6:22]:[#6:23]:3-[#8:27])-[#6:18])-[#6:12]-[#6@:9]-2(\\[#6:13])-[#6:8]2-[#6:4](-[#6:5]-[#6@:6](/[#6:15])(\\[#6:14])-[#6:7]-2)-[#6:3]=1",
             "reactions": [
                 {
+                    "substrate": "Cc1cc(O)cc(O)c1C(=O)O[C@@H]1C[C@]2(C)C3CC(C)(C)CC3C=C(CO)[C@]12O",
                     "products": [
-                        ""
-                    ]
+                        "Cc1c(Cl)c(O)cc(O)c1C(=O)O[C@@H]1C[C@]2(C)C3CC(C)(C)CC3C=C(CO)[C@]12O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Chlorinating melleolide F to 6'-chloromelleolide F"
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1128/AEM.03168-15"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "67160"
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Single bromination of melleolide F as a representative scaffold for various melleloides.",
+            "reactionSMARTS": "[#6:1](-[#8:16])-[#6:2]1-[#6@:10]2(\\[#8:29])-[#6@:11](/[#8:17]-[#6:25](=[#8:26])-[#6:24]3:[#6:19](:[#6:20]:[#6:21](-[#8:28]):[#6:22]:[#6:23]:3-[#8:27])-[#6:18])-[#6:12]-[#6@:9]-2(\\[#6:13])-[#6:8]2-[#6:4](-[#6:5]-[#6@:6](/[#6:15])(\\[#6:14])-[#6:7]-2)-[#6:3]=1>>[#6:1](-[#8:16])-[#6:2]1-[#6@:10]2(\\[#8:29])-[#6@:11](/[#8:17]-[#6:25](=[#8:26])-[#6:24]3:[#6:19](:[#6:20](-Br):[#6:21](-[#8:28]):[#6:22]:[#6:23]:3-[#8:27])-[#6:18])-[#6:12]-[#6@:9]-2(\\[#6:13])-[#6:8]2-[#6:4](-[#6:5]-[#6@:6](/[#6:15])(\\[#6:14])-[#6:7]-2)-[#6:3]=1",
+            "reactions": [
+                {
+                    "substrate": "Cc1cc(O)cc(O)c1C(=O)O[C@@H]1C[C@]2(C)C3CC(C)(C)CC3C=C(CO)[C@]12O",
+                    "products": [
+                        "Cc1c(Br)c(O)cc(O)c1C(=O)O[C@@H]1C[C@]2(C)C3CC(C)(C)CC3C=C(CO)[C@]12O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Brominating melleolide F to 6'-bromomelleolide F"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1128/AEM.03168-15"
+                ]
+            }
         }
     ]
 }
