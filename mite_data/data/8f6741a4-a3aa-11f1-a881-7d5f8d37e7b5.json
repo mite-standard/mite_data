@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "AoiF is a SAM-dependent O-methyltransferase performing a tandem methylation in the biosynthesis of 8-methyldiaporthin",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,49 @@
     ],
     "enzyme": {
         "name": "AoiF",
+        "description": "O-methyltransferase",
+        "references": [
+            "doi:10.1002/cbic.201200107"
+        ],
         "databaseIds": {
             "uniprot": "UPI000067881C",
-            "genpept": ""
+            "genpept": "BAE65964.1",
+            "mibig": "BGC0002236"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "AoiF catalyzes double methyltransfer reactions to biosynthesize 8-methyldiaporthin",
+            "reactionSMARTS": "[#6:1]\\[#6@@:2](-[#6:4]-[#6:5]1:[#8:17]:[#6:15](=[#8:16]):[#6:14]2:[#6:7](:[#6:8]:[#6:9](:[#6:11]:[#6:12]:2-[#8:13])-[#8:10]):[#6:6]:1)-[#8:3]>>[#6]\\[#6@@](-[#6]-[#6]1:[#8]:[#6](=[#8]):[#6]2:[#6](:[#6]:[#6](:[#6]:[#6]:2-[#8])-[#8]-[#6]):[#6]:1)-[#8].[#6:1]\\[#6@@:2](-[#6:4]-[#6:5]1:[#8:17]:[#6:15](=[#8:16]):[#6:14]2:[#6:7](:[#6:8]:[#6:9](:[#6:11]:[#6:12]:2-[#8:13]-[#6])-[#8:10]-[#6]):[#6:6]:1)-[#8:3]",
             "reactions": [
                 {
+                    "substrate": "C[C@H](O)Cc1cc2cc(O)cc(O)c2c(=O)o1",
                     "products": [
-                        ""
-                    ]
+                        "COc1cc(O)c2c(=O)oc(C[C@H](C)O)cc2c1",
+                        "COc1cc(OC)c2c(=O)oc(C[C@H](C)O)cc2c1"
+                    ],
+                    "isIntermediate": false,
+                    "description": "AoiF catalyzes first O-methylation in Orthosporin to produce diaporthin, followed by subsequent methylation on diaporthin to produce 8-methyldiaporthin."
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Inference from genomic data and chemical structure"
+                ],
+                "references": [
+                    "doi:10.1002/cbic.201200107",
+                    "doi:10.1021/jacs.1c02868"
+                ]
+            }
         }
     ]
 }
