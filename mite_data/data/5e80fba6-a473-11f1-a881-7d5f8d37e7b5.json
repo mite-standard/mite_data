@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "DiaC is an SDR family ketoreductase. ",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,74 @@
     ],
     "enzyme": {
         "name": "DiaC",
+        "description": "short-chain dehydrogenase/reductase (SDR)",
+        "references": [
+            "doi:10.1021/jacs.1c02868"
+        ],
         "databaseIds": {
             "uniprot": "UPI00006779B5",
-            "genpept": ""
+            "genpept": "BAE62225.1",
+            "mibig": "BGC0002237"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "NADP"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Hydroxylation",
+                "Reduction"
+            ],
+            "description": "DiaC performs C10 ketoreduction in the biosynthesis of dichlorodiaporthin",
+            "reactionSMARTS": "[#6:1]-[#6:2](-[#6:4]-[#6:5](-[#6:7]-[#6:8]1:[#8:20]:[#6:18](=[#8:19]):[#6:17]2:[#6:10](:[#6:11]:[#6:12](:[#6:14]:[#6:15]:2-[#8:16])-[#8:13]):[#6:9]:1)=[#8])=[#8:3]>>[#6:1]-[#6:2](-[#6:4]-[#6@@:5](-[#6:7]-[#6:8]1:[#8:20]:[#6:18](=[#8:19]):[#6:17]2:[#6:10](:[#6:11]:[#6:12](:[#6:14]:[#6:15]:2-[#8:16])-[#8:13]):[#6:9]:1)/[#8:3])=[#8:3]",
             "reactions": [
                 {
+                    "substrate": "CC(=O)CC(=O)Cc1cc2cc(O)cc(O)c2c(=O)o1",
                     "products": [
-                        ""
-                    ]
+                        "CC(=O)C[C@H](O)Cc1cc2cc(O)cc(O)c2c(=O)o1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "DiaC is particularly efficient toward the deacetylated chlorinated intermediate of dichlorodiaporthin."
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/jacs.1c02868"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Hydroxylation",
+                "Reduction"
+            ],
+            "description": "DiaC performs C10 ketoreduction of the deacetylated chlorinated intermediate in the dichlorodiaporthin biosynthesis.",
+            "reactionSMARTS": "[#8:1]-[#6:2]1:[#6:7]:[#6:6]2:[#6:8]:[#6:9](-[#6:13]-[#6:14](=[#8])-[#6:15](-[Cl:19])-[Cl:18]):[#8:10]:[#6:11](=[#8:12]):[#6:5]:2:[#6:4](-[#8:17]):[#6:3]:1>>[#8:1]-[#6:2]1:[#6:7]:[#6:6]2:[#6:8]:[#6:9](-[#6:13]-[#6@@:14](/[#8:1])-[#6:15](-[Cl:19])-[Cl:18]):[#8:10]:[#6:11](=[#8:12]):[#6:5]:2:[#6:4](-[#8:17]):[#6:3]:1",
+            "reactions": [
+                {
+                    "substrate": "O=C(Cc1cc2cc(O)cc(O)c2c(=O)o1)C(Cl)Cl",
+                    "products": [
+                        "O=c1oc(C[C@@H](O)C(Cl)Cl)cc2cc(O)cc(O)c12"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/jacs.1c02868"
+                ]
+            }
         }
     ]
 }
