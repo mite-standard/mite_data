@@ -1,0 +1,66 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "comment": "Chlorination of  dechloroaspirochlorine in the aspirochlorine pathway. No flavin reductase in gene cluster found.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-08-31",
+            "contributors": [
+                "0009-0000-8651-1669"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "AclH",
+        "description": "Flavin-dependent halogenase",
+        "references": [
+            "doi:10.1002/anie.201407624",
+            "doi:10.1002/ange.201806740"
+        ],
+        "databaseIds": {
+            "uniprot": "Q2UPC7",
+            "genpept": "BAE56588.1",
+            "mibig": "BGC0001123"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD",
+                "NAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Chlorination occurs only after subtraction of the phenyl moiety of the precursor through a retro-aldol reaction.",
+            "reactionSMARTS": "[#6:1]-[#8:2]-[#7:3]1-[#6@:10]23-[#8:18]-[#6:17]4:[#6:12](:[#6:13]:[#6:14]:[#6:15](-[#8:19]):[#6:16]:4)-[#6@@:11]-2\\[#16:20]-[#16:21]-[#6@:6](-[#7:7]-[#6:8]/3=[#8:9])/[#6:4]-1=[#8:5]>>[#6:1]-[#8:2]-[#7:3]1-[#6@:10]23-[#8:18]-[#6:17]4:[#6:12](:[#6:13]:[#6:14](-[Cl]):[#6:15](-[#8:19]):[#6:16]:4)-[#6@@:11]-2\\[#16:20]-[#16:21]-[#6@:6](-[#7:7]-[#6:8]/3=[#8:9])/[#6:4]-1=[#8:5]",
+            "reactions": [
+                {
+                    "substrate": "CON1C(=O)[C@H]2NC(=O)[C@]13Oc1cc(O)ccc1[C@@H]3SS2",
+                    "products": [
+                        "CON1C(=O)[C@H]2NC(=O)[C@]13Oc1cc(O)c(Cl)cc1[C@@H]3SS2"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Single chlorination of dechloroaspirochlorine to aspirochlorine"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1002/ange.201806740"
+                ]
+            }
+        }
+    ]
+}
