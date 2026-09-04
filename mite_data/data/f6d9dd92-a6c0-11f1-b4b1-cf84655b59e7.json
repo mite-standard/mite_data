@@ -1,0 +1,88 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "comment": "Halogenation of naphthomycin E in the naphthomycin A pathway. Cross complementation of nat1 by asm12 in their biosynthetic pathways, respectively.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-09-02",
+            "contributors": [
+                "0009-0000-8651-1669"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "Nat1",
+        "description": "Flavin-dependent halogenase",
+        "references": [
+            "doi:10.1039/C1MB05036B"
+        ],
+        "databaseIds": {
+            "uniprot": "F8QPG4",
+            "genpept": "ADM46362.1",
+            "mibig": "BGC0000106"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD",
+                "NAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Chlorination of naphthomycin E.",
+            "reactionSMARTS": "[#6:1]\\[#6@@:2]1-[#6@@:40](/[#8:41])-[#6:39]-[#6:37](=[#8:38])-[#6:36](-[#6:42])=[#6:35]-[#6:34]-[#6@:33](/[#8:43])-[#6:32]=[#6:31]-[#6@:30](\\[#6:44])-[#6@:29](/[#8:45])-[#6@@:28](\\[#6:46])-[#6:27]=[#6:26](-[#6:47])-[#6:24](=[#8:25])-[#6:23]2:[#6:16]3:[#6:17](:[#6:20]:[#6:21](-[#6:49]):[#6:22]:2-[#8:48])-[#6:18](=[#8:19])-[#6:12](=[#6:13]-[#6:14]-3=[#8:15])-[#7:11]-[#6:9](=[#8:10])-[#6:8](-[#6:50])=[#6:7]-[#6:6]=[#6:5]-[#6:4]=[#6:3]-1>>[#6:1]\\[#6@@:2]1-[#6@@:40](/[#8:41])-[#6:39]-[#6:37](=[#8:38])-[#6:36](-[#6:42])=[#6:35]-[#6:34]-[#6@:33](/[#8:43])-[#6:32]=[#6:31]-[#6@:30](\\[#6:44])-[#6@:29](/[#8:45])-[#6@@:28](\\[#6:46])-[#6:27]=[#6:26](-[#6:47])-[#6:24](=[#8:25])-[#6:23]2:[#6:16]3:[#6:17](:[#6:20]:[#6:21](-[#6:49]):[#6:22]:2-[#8:48])-[#6:18](=[#8:19])-[#6:12](=[#6:13](-[Cl])-[#6:14]-3=[#8:15])-[#7:11]-[#6:9](=[#8:10])-[#6:8](-[#6:50])=[#6:7]-[#6:6]=[#6:5]-[#6:4]=[#6:3]-1",
+            "reactions": [
+                {
+                    "substrate": "C/C1=C/C=C\\C=C\\[C@H](C)[C@@H](O)CC(=O)/C(C)=C/C[C@H](O)/C=C/[C@H](C)[C@H](O)[C@@H](C)/C=C(\\C)C(=O)c2c(O)c(C)cc3c2C(=O)C=C(NC1=O)C3=O",
+                    "products": [
+                        "CC1=CC[C@H](O)C=C[C@H](C)[C@H](O)[C@@H](C)C=C(C)C(=O)c2c(O)c(C)cc3c2C(=O)C(Cl)=C(NC(=O)C(C)=CC=CC=C[C@H](C)[C@@H](O)CC1=O)C3=O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Single chlorination of C-30 of naphthomycin E to naphthomycin A"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1039/C1MB05036B"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Chlorination of proansamitocin (Putative Asm12 substrate) in the ansamitocin P-3 pathway ",
+            "reactionSMARTS": "[#6]/[#6@@]1-[#6@:31](\\[#8:32])-[#6:30]-[#6:28](=[#8:29])-[#7:27]-[#6:26]2:[#6:33]:[#6:21](:[#6:22]:[#6:23](:[#6:25]:2)-[#8:24])-[#6:20]-[#6:18](-[#6:19])=[#6:17]-[#6:16]=[#6:15]-[#6@@:12](\\[#8:13]-[#6])-[#6:10](=[#8])-[#6@:8](\\[#6:9])-[#6@:6](\\[#8:7])-[#6:4](-[#6:5])=[#6]-1>>[#6]-[#8]-[#6:26]1:[#6:25](-[Cl]):[#6]2-[#7:27](-[#6:28](-[#6:30]-[#6@@:31](-[#6@:12]3(-[#6@@:10](-[#6@:8](-[#6@@:6]4-[#8:7]-[#6](=[#8])-[#7]-[#6@:5](-[#6@@](-[#6:15]=[#6:16]-[#6:17]=[#6:18](-[#6:20]-[#6:21](:[#6:22]:2):[#6:33]:1)-[#6:19])\\[#8:24]-[#6:23])(/[#8])-[#6:4]\\4)/[#6:9])/[#8:13]-3)\\[#6])\\[#8:32]-[#6](-[#6;v])=[#8])=[#8:29])-[#6]",
+            "reactions": [
+                {
+                    "substrate": "CO[C@@H]1/C=C/C=C(\\C)Cc2cc(O)cc(c2)NC(=O)C[C@@H](O)[C@@H](C)/C=C(\\C)[C@@H](O)[C@@H](C)C1=O",
+                    "products": [
+                        "COc1cc2cc(c1Cl)N(C)C(=O)C[C@H](OC(C)=O)[C@]1(C)O[C@@H]1[C@@H](C)[C@@H]1C[C@@](O)(NC(=O)O1)[C@H](OC)C=CC=C(C)C2"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Single chlorination of proansamitocin"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1039/C1MB05036B"
+                ]
+            }
+        }
+    ]
+}
