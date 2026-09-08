@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Halogenation of aminoacyl-S-carrier (L-proline-S-Clz18) in the chlorizidine A pathway. The exact role of adenyltransferase Clz14 and acyl-CoA dehydrogenase Clz15 are not proven. No flavin reductase was found in the gene cluster. Chirality not possible due to RDKit implementation issues.",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,48 @@
     ],
     "enzyme": {
         "name": "Clz5",
+        "description": "Flavin-dependent halogenase",
+        "references": [
+            "doi:10.1021/ja409520v"
+        ],
         "databaseIds": {
             "uniprot": "U6A3L4",
-            "genpept": ""
+            "genpept": "AHA12077.1",
+            "mibig": "BGC0001172"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "FAD",
+                "NAD"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Dichlorination of L-proline-S-Clz18 together with Clz14 and Clz15 in an unknown Sequenz.",
+            "reactionSMARTS": "[#8:1]=[#6:2](-[#16:8]-[*])-[#6:3]1-[#7:7]-[#6:6]-[#6:5]-[#6:4]-1>>[#8:1]=[#6:2](-[#16:8]-[*])-[c:3]1:[nH:7]:[c:6](-[Cl]):[c:5](-[Cl]):[cH:4]:1",
             "reactions": [
                 {
+                    "substrate": "*SC(=O)[C]1CCCN1",
                     "products": [
-                        ""
-                    ]
+                        "*SC(=O)c1cc(Cl)c(Cl)[nH]1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Dichlorination of L-prolin to  Dichloro-"
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/ja409520v"
+                ]
+            }
         }
     ]
 }
