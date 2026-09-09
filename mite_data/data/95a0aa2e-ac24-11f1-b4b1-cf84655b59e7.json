@@ -1,0 +1,65 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "comment": "Halogenation of aminoacyl-S-carrier (pyrrole-2-carboxyl-S-HrmL) in the hormaomycin pathway. Tethering the pyrrole moiety to the carrier proteins Clon5/Clon1 from a different strain (BGC0000832) results in low yields of chlorinated products.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-09-09",
+            "contributors": [
+                "0009-0000-8651-1669"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "HrmQ",
+        "description": "Flavin-dependent halogenase",
+        "references": [
+            "doi:10.1016/j.chembiol.2010.12.018",
+            "doi:10.1002/cbic.200800186"
+        ],
+        "databaseIds": {
+            "uniprot": "C1IHU5",
+            "genpept": "ACE80255.1",
+            "mibig": "BGC0000374"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD",
+                "NAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Single chlorination of pyrrole-2-carboxyl-S-HrmL on position 5",
+            "reactionSMARTS": "[#6:1]1:[#6:5]:[#6:4](-[#6:6](-[#16:8]-[*])=[#8:7]):[#7:3]:[#6:2]:1>>[#6:1]1:[#6:5]:[#6:4](-[#6:6](-[#16:8]-[*])=[#8:7]):[#7:3]:[#6:2]:1-[Cl]",
+            "reactions": [
+                {
+                    "substrate": "*SC(=O)c1ccc[nH]1",
+                    "products": [
+                        "*SC(=O)c1ccc(Cl)[nH]1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Chlorination of pyrrole-2-carboxyl-S-HrmL yielding 5-chloro-pyrrole-2-carboxyl-S-HrmL"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1016/j.chembiol.2010.12.018"
+                ]
+            }
+        }
+    ]
+}
