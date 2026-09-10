@@ -1,0 +1,63 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "comment": "Halogenation of ochratoxin B in the ochratoxin A pathway. No flavin reductase was identified in this gene cluster.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-09-10",
+            "contributors": [
+                "0009-0000-8651-1669"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "AcOTAhal",
+        "description": "Flavin-dependent halogenase",
+        "references": [
+            "doi:10.1128/AEM.01209-16"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A2I7UGF8",
+            "genpept": "AUS29481.1",
+            "mibig": "BGC0002605"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD",
+                "NAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Single chlorination of ochratoxin B",
+            "reactionSMARTS": "[#6:1]\\[#6@:2]1-[#8:12]-[#6:10](=[#8:11])-[#6:9]2:[#6:4](:[#6:5]:[#6:6]:[#6:7](-[#6:14](-[#7:16]/[#6@:17](-[#6:25](-[#8:27])=[#8:26])-[#6:18]-[#6:19]3:[#6:24]:[#6:23]:[#6:22]:[#6:21]:[#6:20]:3)=[#8:15]):[#6:8]:2-[#8:13])-[#6:3]-1>>[#6:1]\\[#6@:2]1-[#8:12]-[#6:10](=[#8:11])-[#6:9]2:[#6:4](:[#6:5](-[Cl]):[#6:6]:[#6:7](-[#6:14](-[#7:16]/[#6@:17](-[#6:25](-[#8:27])=[#8:26])-[#6:18]-[#6:19]3:[#6:20]:[#6:21]:[#6:22]:[#6:23]:[#6:24]:3)=[#8:15]):[#6:8]:2-[#8:13])-[#6:3]-1",
+            "reactions": [
+                {
+                    "substrate": "C[C@@H]1Cc2ccc(C(=O)N[C@@H](Cc3ccccc3)C(=O)O)c(O)c2C(=O)O1",
+                    "products": [
+                        "C[C@@H]1Cc2c(Cl)cc(C(=O)N[C@@H](Cc3ccccc3)C(=O)O)c(O)c2C(=O)O1"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Chlorination of ochratoxin B to ochratoxin A"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1128/AEM.01209-16"
+                ]
+            }
+        }
+    ]
+}
