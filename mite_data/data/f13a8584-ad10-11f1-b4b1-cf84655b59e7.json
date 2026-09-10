@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Mpy16 dichlorinates the carrierbound substrate pyrrolyl-S-Mpy15 to 4,5-chloro-pyrrolyl-S-Mpy15 which yields monodeoxypyoluteorin downstream, an intermediate in the marinopyrrole pathway.",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,58 @@
     ],
     "enzyme": {
         "name": "Mpy16",
+        "description": "Flavin-dependent halogenase",
+        "references": [
+            "doi:10.1021/ja305670f"
+        ],
+        "auxiliaryEnzymes": [
+            {
+                "name": "Mpy1",
+                "description": "Flavin reductase",
+                "databaseIds": {
+                    "uniprot": "J7H188",
+                    "genpept": "AFP87518.1"
+                }
+            }
+        ],
         "databaseIds": {
             "uniprot": "J7H1A1",
-            "genpept": ""
+            "genpept": "AFP87533.1",
+            "mibig": "BGC0001159"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "FAD",
+                "NAD"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Dichlorination of pyrrolyl-S-Mpy15 on position 4 and 5.",
+            "reactionSMARTS": "[#6:1]1:[#6:9]:[#7:8]:[#6:3](-[#6:4](=[#8:7])-[#16:5]-[*]):[#6:2]:1>>[#6:1]1(-[Cl]):[#6:9](-[Cl]):[#7:8]:[#6:3](-[#6:4](=[#8:7])-[#16:5]-[*]):[#6:2]:1",
             "reactions": [
                 {
+                    "substrate": "*SC(=O)c1ccc[nH]1",
                     "products": [
-                        ""
-                    ]
+                        "*SC(=O)c1cc(Cl)c(Cl)[nH]1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Dichlorination of pyrrolyl-S-Mpy15 to 4,5-chloro-pyrrolyl-S-Mpy15"
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/ja305670f"
+                ]
+            }
         }
     ]
 }
