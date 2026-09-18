@@ -1,0 +1,73 @@
+{
+    "accession": "MITE9999999",
+    "status": "active",
+    "comment": "Dichlorination of a L-pyrrolyl-S-carrier protein intermediate in the chlorizidine A pathway. Chirality not possible due to RDKit implementation issues.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-09-07",
+            "contributors": [
+                "0009-0000-8651-1669"
+            ],
+            "reviewers": [
+                "0009-0008-6482-7206"
+            ],
+            "comment": "New entry. Updated substrate from prolin to pyrrolyl. Added aux enzyme. "
+        }
+    ],
+    "enzyme": {
+        "name": "Clz5",
+        "description": "Flavin-dependent halogenase",
+        "references": [
+            "doi:10.1021/ja409520v"
+        ],
+        "auxiliaryEnzymes": [
+            {
+                "name": "Clz15",
+                "description": "Dehydrogenase",
+                "databaseIds": {
+                    "uniprot": "U6A3M6",
+                    "genpept": "AHA12087.1"
+                }
+            }
+        ],
+        "databaseIds": {
+            "uniprot": "U6A3L4",
+            "genpept": "AHA12077.1",
+            "mibig": "BGC0001172"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Dichlorination of L-pyrrolyl-S-Clz18",
+            "reactionSMARTS": "[#6:1]1:[#6:2]:[#7:3]:[#6:4](-[#6:6](=[#8:7])-[#16:8]-[*]):[#6:5]:1>>[#6:1]1(-[Cl]):[#6:2](-[Cl]):[#7:3]:[#6:4](-[#6:6](=[#8:7])-[#16:8]-[*]):[#6:5]:1",
+            "reactions": [
+                {
+                    "substrate": "*SC(=O)c1ccc[nH]1",
+                    "products": [
+                        "*SC(=O)c1cc(Cl)c(Cl)[nH]1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Dichlorination of L-pyrrolyl to dichloro-L-pyrrolyl"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/ja409520v"
+                ]
+            }
+        }
+    ]
+}
