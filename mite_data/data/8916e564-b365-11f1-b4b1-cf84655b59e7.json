@@ -1,0 +1,67 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "comment": "Oxireduction of an aminoacyl-S-carrier (L-prolin-S-Clz18) in the chlorizidine A pathway.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-09-18",
+            "contributors": [
+                "0009-0000-8651-1669"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "Clz15",
+        "description": "acyl-CoA dehydrogenase ",
+        "references": [
+            "doi:10.1021/ja409520v"
+        ],
+        "auxiliaryEnzymes": [
+            {
+                "name": "Clz5",
+                "description": "Flavin-dependent halogenase",
+                "databaseIds": {
+                    "uniprot": "U6A3L4",
+                    "genpept": "AHA12077.1"
+                }
+            }
+        ],
+        "databaseIds": {
+            "uniprot": "U6A3M6",
+            "genpept": "AHA12087.1",
+            "mibig": "BGC0001172"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Dehydrogenation"
+            ],
+            "description": "acyl-CoA dehydrogenase, is responsible for the formation pyrrolyl.",
+            "reactionSMARTS": "[O:1]=[C:2]([C:3]1[C:4][C:5][C:6][N:7]1)[S:8]*>>[O:1]=[C:2]([C:3]1:[CH:4]:[C:5]:[C:6]:[NH:7]:1)[S:8]*",
+            "reactions": [
+                {
+                    "substrate": "*SC(=O)C1CCCN1",
+                    "products": [
+                        "*SC(=O)c1ccc[nH]1"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Dehydrogenation L-prolin to L-pyrrolyl"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/ja409520v"
+                ]
+            }
+        }
+    ]
+}
