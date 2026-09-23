@@ -1,7 +1,7 @@
 {
     "accession": "MITE0000406",
     "status": "pending",
-    "comment": "Halogenation of ChlA prescurser peptide in the chlorolassin pathway. Dichloration is the most likley outcome. Terminal tryptophan (Pos: 14) is never chorinated.",
+    "comment": "Halogenation of ChlA precursor peptide in the chlorolassin pathway. Dichloration is the most likely outcome. Terminal tryptophan (Pos: 14) is never chlorinated.",
     "changelog": [
         {
             "version": "1",
@@ -23,7 +23,7 @@
             "reviewers": [
                 "BBBBBBBBBBBBBBBBBBBBBBBB"
             ],
-            "comment": ""
+            "comment": "Fixed typos"
         }
     ],
     "enzyme": {
