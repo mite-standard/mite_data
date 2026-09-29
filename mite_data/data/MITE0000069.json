@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000069",
-    "status": "active",
+    "status": "pending",
     "changelog": [
         {
             "version": "1",
@@ -45,6 +45,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Fixed genpept ID to correspond with MIBiG."
+        },
+        {
+            "version": "5",
+            "date": "2026-09-29",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": ""
         }
     ],
     "enzyme": {
