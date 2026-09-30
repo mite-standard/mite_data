@@ -3206,7 +3206,7 @@
         "status":"active"
       },
       {
-        "enzyme_description":"Tryptophan 6-halogenase",
+        "enzyme_description":"Flavin-dependent halogenase",
         "enzyme_ids":{
           "genpept":"ANW12118.1",
           "mibig":"BGC0001374",
@@ -3215,7 +3215,9 @@
         "enzyme_name":"ThdH",
         "enzyme_refs":[
           "doi:10.1002/cbic.201400016",
-          "doi:10.1002/anie.7072895"
+          "doi:10.1002/anie.7072895",
+          "doi:10.1074/jbc.RA120.016004",
+          "doi:10.1002/cbic.202200569"
         ],
         "enzyme_tailoring":"Halogenation",
         "mite_accession":"MITE0000433",

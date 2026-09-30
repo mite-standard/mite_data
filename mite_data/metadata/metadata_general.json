@@ -9284,7 +9284,7 @@
       "cofactors_inorganic":"N/A",
       "cofactors_organic":"FAD",
       "domain":"Bacteria",
-      "enzyme_description":"Tryptophan 6-halogenase",
+      "enzyme_description":"Flavin-dependent halogenase",
       "enzyme_ids":{
         "genpept":"ANW12118.1",
         "mibig":"BGC0001374",
@@ -9296,7 +9296,7 @@
       "order":"Kitasatosporales",
       "organism":"Streptomyces albogriseolus",
       "phylum":"Actinomycetota",
-      "reaction_description":"ThdH catalyzes regioselective chlorination of L-tryptophan at the C6 position of its indole ring during the biosynthesis of thienodolin",
+      "reaction_description":"ThdH catalyzes regioselective chlorination of L-tryptophan at the C6 position of its indole ring during the biosynthesis of thienodolin. Lysine activates HOCl, which attacks L-tryptophan to form a Wheland intermediate. Aromaticity is restored through deprotonation by a glutamate residue, yielding 6-chloro-L-tryptophan.",
       "status":"active",
       "tailoring":"Halogenation"
     },
