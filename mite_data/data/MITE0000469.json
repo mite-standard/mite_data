@@ -1,7 +1,7 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000469",
     "status": "active",
-    "comment": "Catalyzes the intramolecular coupling reaction of griseophenone B in the griseofulvin pathway yielding desmethyl-dehydrogriseofulvin A. ",
+    "comment": "Catalyzes the intramolecular coupling reaction of griseophenone B in the griseofulvin pathway yielding desmethyl-dehydrogriseofulvin A.",
     "changelog": [
         {
             "version": "1",
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0002-4540-6501"
             ],
-            "comment": "Text was corrected"
+            "comment": "New entry. Reviewer 1 corrected text."
         }
     ],
     "enzyme": {
