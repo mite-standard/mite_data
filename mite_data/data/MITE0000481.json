@@ -1,6 +1,9 @@
 {
-    "accession": "MITE9999999",
-    "status": "active",
+    "accession": "MITE0000481",
+    "status": "retired",
+    "retirementReasons": [
+        "Not a tailoring enzyme."
+    ],
     "comment": "Catalyzes the two-step oxidation and decarboxylation of L-cysteine",
     "changelog": [
         {
@@ -10,9 +13,10 @@
                 "0000-0003-0455-2227"
             ],
             "reviewers": [
-                "0000-0001-6534-6609"
+                "0000-0001-6534-6609",
+                "0000-0003-4819-2251"
             ],
-            "comment": "New entry."
+            "comment": "New entry. Reviewer 1 retired entry."
         }
     ],
     "enzyme": {
