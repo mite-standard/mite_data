@@ -309,6 +309,25 @@
         "status":"active"
       }
     ],
+    "BGC0000070":[
+      {
+        "enzyme_description":"Cytochrome P450",
+        "enzyme_ids":{
+          "genpept":"ADI24958.2",
+          "mibig":"BGC0000070",
+          "uniprot":"D7PI20"
+        },
+        "enzyme_name":"GsfF",
+        "enzyme_refs":[
+          "doi:10.1021/cb400541z",
+          "doi:10.1016/j.chembiol.2010.03.015"
+        ],
+        "enzyme_tailoring":"Cyclization",
+        "mite_accession":"MITE0000469",
+        "mite_url":"https://bioregistry.io/mite:MITE0000469",
+        "status":"active"
+      }
+    ],
     "BGC0000072":[
       {
         "enzyme_description":"Cytochrome P450",

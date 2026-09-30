@@ -10055,6 +10055,28 @@
       "reaction_description":"Possibily oxidation of soraphen x, followed by hemiacetalization to soraphen B ",
       "status":"active",
       "tailoring":"Reduction"
+    },
+    "MITE0000469":{
+      "accession":"MITE0000469",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme|NADP",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"ADI24958.2",
+        "mibig":"BGC0000070",
+        "uniprot":"D7PI20"
+      },
+      "enzyme_name":"GsfF",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Penicillium aethiopicum",
+      "phylum":"Dikarya",
+      "reaction_description":"GsfF catalyzes the intramolecular coupling reaction of griseophenone B, through either a di-radical ring coupling mechanism or an arene oxide intermediate. CYP oxireductase is required.",
+      "status":"active",
+      "tailoring":"Cyclization"
     }
   },
   "version_mite_data":"1.30"
