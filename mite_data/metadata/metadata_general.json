@@ -10077,6 +10077,27 @@
       "reaction_description":"GsfF catalyzes the intramolecular coupling reaction of griseophenone B, through either a di-radical ring coupling mechanism or an arene oxide intermediate. CYP oxireductase is required.",
       "status":"active",
       "tailoring":"Cyclization"
+    },
+    "MITE0000470":{
+      "accession":"MITE0000470",
+      "class_name":"Cyanophyceae",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Prenyltransferase",
+      "enzyme_ids":{
+        "genpept":"MCW6049891.1",
+        "uniprot":"UPI0022389DA3"
+      },
+      "enzyme_name":"AutF",
+      "family":"Oscillatoriales",
+      "kingdom":"Bacillati",
+      "order":"Oscillatoriophycideae",
+      "organism":"Lyngbya sp. CCAP 1446/10",
+      "phylum":"Cyanobacteriota",
+      "reaction_description":"AutF catalyses prenylation to nitrogen of the guanidinium moiety in arginine to yield autumnalamide A",
+      "status":"active",
+      "tailoring":"Prenylation"
     }
   },
   "version_mite_data":"1.30"
