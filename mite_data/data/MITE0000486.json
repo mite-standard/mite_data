@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000486",
     "status": "active",
     "comment": "P450 enzyme SpeD act as oxidase to convert indole to indolin-2-one during speradine biosynthesis",
     "changelog": [
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0002-4540-6501"
             ],
-            "comment": "Changed comment"
+            "comment": "New entry. Reviewer 1 changed comment"
         }
     ],
     "enzyme": {
