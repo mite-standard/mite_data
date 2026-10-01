@@ -10098,6 +10098,28 @@
       "reaction_description":"AutF catalyses prenylation to nitrogen of the guanidinium moiety in arginine to yield autumnalamide A",
       "status":"active",
       "tailoring":"Prenylation"
+    },
+    "MITE0000482":{
+      "accession":"MITE0000482",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Cu",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Monooxygenase, Oxidoreductase",
+      "enzyme_ids":{
+        "genpept":"BDA39150.1",
+        "mibig":"BGC0001398",
+        "uniprot":"A0A8J9RRY2"
+      },
+      "enzyme_name":"PhomQ2",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Diaporthe leptostromiformis",
+      "phylum":"Dikarya",
+      "reaction_description":"Hydroxylation of the tyrosine moiety",
+      "status":"active",
+      "tailoring":"Hydroxylation|Oxidation"
     }
   },
   "version_mite_data":"1.30"
