@@ -16,29 +16,44 @@
     ],
     "enzyme": {
         "name": "GedA",
-        "databaseIds": {
-            "uniprot": "Q0CCY5",
-            "genpept": ""
-        },
+        "description": "O-methyltransferase",
         "references": [
-            "doi:"
-        ]
+            "doi:10.1021/acs.jafc.2c01281"
+        ],
+        "databaseIds": {
+            "uniprot": "Q0CCY5"
+        },
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "O-methylation of the anthraquinone emodin to form questin",
+            "reactionSMARTS": "[#6:1]-[#6:2]1:[#6:8]:[#6:7]2-[#6:9](-[#6:11]3:[#6:18](-[#6:19](=[#8:20])-[#6:6]:2:[#6:4](-[#8:5]):[#6:3]:1):[#6:16](-[#8:17]):[#6:15]:[#6:13](-[#8:14]):[#6:12]:3)=[#8:10]>>[#6:1]-[#6:2]1:[#6:8]:[#6:7]2-[#6:9](-[#6:11]3:[#6:18](-[#6:19](=[#8:20])-[#6:6]:2:[#6:4](-[#8:5]):[#6:3]:1):[#6:16](-[#8:17]-[#6]):[#6:15]:[#6:13](-[#8:14]):[#6:12]:3)=[#8:10]",
             "reactions": [
                 {
+                    "substrate": "Cc1cc(O)c2c(c1)C(=O)c1cc(O)cc(O)c1C2=O",
                     "products": [
-                        ""
-                    ]
+                        "COc1cc(O)cc2c1C(=O)c1c(O)cc(C)cc1C2=O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Regiospecific O-methylation of the anthraquinone emodin to form questin"
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acs.jafc.2c01281"
+                ]
+            }
         }
     ]
 }
