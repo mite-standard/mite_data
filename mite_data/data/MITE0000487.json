@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000487",
     "status": "active",
     "comment": "SDR-mediated oxidation of the 8S hydroxy group to a ketone in higginsianin biosynthesis",
     "changelog": [
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0002-4540-6501"
             ],
-            "comment": "UniPort ID changed"
+            "comment": "New entry. Reviewer 1 changed UniPort ID."
         }
     ],
     "enzyme": {
