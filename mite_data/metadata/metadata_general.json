@@ -10142,6 +10142,27 @@
       "reaction_description":"Chlorination of tyrosine of the core peptide",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000485":{
+      "accession":"MITE0000485",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Eukaryota",
+      "enzyme_description":"O-methyltransferase",
+      "enzyme_ids":{
+        "genpept":"QXF68951.1",
+        "uniprot":"A0A8F4PN06"
+      },
+      "enzyme_name":"Atr3",
+      "family":"Lecanoromycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Stereocaulon alpinum",
+      "phylum":"Dikarya",
+      "reaction_description":"SAM-dependent methyltransferase",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.30"
