@@ -10203,6 +10203,27 @@
       "reaction_description":"SDR-mediated oxidation of the 8S hydroxy group to a ketone in higginsianin biosynthesis",
       "status":"active",
       "tailoring":"Oxidation"
+    },
+    "MITE0000488":{
+      "accession":"MITE0000488",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"KAF7517449.1",
+        "uniprot":"A0A9P5GH02"
+      },
+      "enzyme_name":"XilC",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Penicillium crustosum",
+      "phylum":"Dikarya",
+      "reaction_description":"hydroxylation of prexylariolide D",
+      "status":"active",
+      "tailoring":"Hydroxylation"
     }
   },
   "version_mite_data":"1.30"
