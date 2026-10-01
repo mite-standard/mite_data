@@ -474,3 +474,4 @@ MITE0000483,active,PhomQ1,"Halogenase, Oxidoreductase",Halogenation,Chlorination
 MITE0000485,active,Atr3,O-methyltransferase,Methylation,SAM-dependent methyltransferase,SAM,N/A,Stereocaulon alpinum,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Lecanoromycetes
 MITE0000486,active,SpeD,Cytochrome P450,Oxidation,indole C-2 oxidation of cyclopiazonic acid during speradine biosynthesis,Heme,Fe,Penicillium palitans,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Eurotiomycetes
 MITE0000487,active,dpchG,Short chain dehydrogenase/reductase,Oxidation,SDR-mediated oxidation of the 8S hydroxy group to a ketone in higginsianin biosynthesis,NADP,N/A,Colletotrichum higginsianum (strain IMI 349063),Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Sordariomycetes
+MITE0000488,active,XilC,Cytochrome P450,Hydroxylation,hydroxylation of prexylariolide D,N/A,N/A,Penicillium crustosum,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Eurotiomycetes
