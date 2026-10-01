@@ -16,29 +16,45 @@
     ],
     "enzyme": {
         "name": "CsOMT5",
+        "description": "O-methyltransferase",
+        "references": [
+            "doi:10.1186/s13068-025-02625-6"
+        ],
         "databaseIds": {
-            "uniprot": "",
             "genpept": "YFT68982.1"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "Regiospecific 8-O-methylation of the anthraquinone endocrocin to form dermolutein ",
+            "reactionSMARTS": "[#6:1]-[#6:2]1:[#6:8](-[#6:9](-[#8:11])=[#8:10]):[#6:6](-[#8:7]):[#6:5]2-[#6:12](-[#6:14]3:[#6:21](-[#6:22](=[#8:23])-[#6:4]:2:[#6:3]:1):[#6:20]:[#6:18](-[#8:19]):[#6:17]:[#6:15]:3-[#8:16])=[#8:13]>>[#6:1]-[#6:2]1:[#6:8](-[#6:9](-[#8:11])=[#8:10]):[#6:6](-[#8:7]):[#6:5]2-[#6:12](-[#6:14]3:[#6:21](-[#6:22](=[#8:23])-[#6:4]:2:[#6:3]:1):[#6:20]:[#6:18](-[#8:19]):[#6:17]:[#6:15]:3-[#8:16]-[#6])=[#8:13]",
             "reactions": [
                 {
+                    "substrate": "Cc1cc2c(c(O)c1C(=O)O)C(=O)c1c(O)cc(O)cc1C2=O",
                     "products": [
-                        ""
-                    ]
+                        "COc1cc(O)cc2c1C(=O)c1c(cc(C)c(C(=O)O)c1O)C2=O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Regiospecific O-methylation of the anthraquinone endocrocin at its C8-OH group to form dermolutein."
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1186/s13068-025-02625-6"
+                ]
+            }
         }
     ]
 }
