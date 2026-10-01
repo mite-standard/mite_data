@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000488",
     "status": "active",
     "changelog": [
         {
@@ -11,12 +11,12 @@
             "reviewers": [
                 "0000-0002-4540-6501"
             ],
-            "comment": "Stereochemistry edited and experimental evidence changed"
+            "comment": "New entry. Reviewer 1 edited stereochemistry and experimental evidence."
         }
     ],
     "enzyme": {
         "name": "XilC",
-        "description": "Cytochrome P450 monooxygenase",
+        "description": "Cytochrome P450",
         "references": [
             "doi:10.3390/jof8050493"
         ],
