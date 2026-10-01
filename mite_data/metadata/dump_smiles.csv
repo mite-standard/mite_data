@@ -632,3 +632,12 @@
 630,MITE0000486.reaction1.example1,C/C(O)=C1\C(=O)C2C3c4c[nH]c5cccc(c45)CC3C(C)(C)N2C1=O,CC(O)=C1C(=O)C2C3C4C(=O)Nc5cccc(c54)CC3C(C)(C)N2C1=O
 631,MITE0000487.reaction1.example1,C=C1CC[C@@H]2[C@](C)(CC[C@H](O)[C@@]2(C)CCC=C(C)C)[C@@H]1Cc1c(O)c(C)c(C)oc1=O,C=C1CC[C@@H]2[C@](C)(CCC(=O)[C@@]2(C)CCC=C(C)C)[C@@H]1Cc1c(O)c(C)c(C)oc1=O
 632,MITE0000488.reaction1.example1,CCCCc1ccc(=O)oc1C,CCC[C@H](O)c1ccc(=O)oc1C
+633,MITE0000489.reaction1.example1,COc1cc(-c2ccc(O)c(O)c2)c(OC)c(O)c1-c1ccc(O)c(O)c1,COc1cc(-c2ccc(O)c(O)c2CC=C(C)C)c(OC)c(O)c1-c1ccc(O)c(O)c1
+634,MITE0000489.reaction1.example2,COc1cc(-c2ccc(O)c(O)c2CC=C(C)C)c(OC)c(O)c1-c1ccc(O)c(O)c1,COc1cc(-c2ccc(O)c(O)c2CC=C(C)C)c(OC)c(O)c1-c1cc(O)c(O)c(CC=C(C)C)c1
+635,MITE0000489.reaction1.example3,COc1cc(-c2ccc(O)c(O)c2CC=C(C)C)c(OC)c(O)c1-c1ccc(O)c(O)c1,COc1cc(-c2ccc(O)c(O)c2CC=C(C)C)c(OC)c(O)c1-c1ccc(O)c(O)c1CC=C(C)C
+636,MITE0000489.reaction1.example4,O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12,CC(C)=CCc1c(-c2oc3cc(O)cc(O)c3c(=O)c2O)ccc(O)c1O
+637,MITE0000489.reaction1.example5,O=c1cc(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12,CC(C)=CCc1c(-c2cc(=O)c3c(O)cc(O)cc3o2)ccc(O)c1O
+638,MITE0000489.reaction1.example6,O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)ccc12,CC(C)=CCc1c(-c2oc3cc(O)ccc3c(=O)c2O)ccc(O)c1O
+639,MITE0000489.reaction1.example7,O=c1cc(-c2ccc(O)c(O)c2)oc2ccccc12,CC(C)=CCc1c(-c2cc(=O)c3ccccc3o2)ccc(O)c1O
+640,MITE0000489.reaction1.example8,O=c1oc2cc(O)ccc2c2cc(O)c(O)cc12,CC(C)=CCc1c(O)c(O)cc2c(=O)oc3cc(O)ccc3c12
+641,MITE0000489.reaction1.example9,Oc1cc2ccccc2cc1O,CC(C)=CCc1c(O)c(O)cc2ccccc12

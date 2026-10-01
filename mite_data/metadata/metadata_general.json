@@ -10224,6 +10224,28 @@
       "reaction_description":"hydroxylation of prexylariolide D",
       "status":"active",
       "tailoring":"Hydroxylation"
+    },
+    "MITE0000489":{
+      "accession":"MITE0000489",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Prenyltransferase",
+      "enzyme_ids":{
+        "genpept":"KIA75360.1",
+        "mibig":"BGC0003077",
+        "uniprot":"A0A0C1C2W0"
+      },
+      "enzyme_name":"UcdE",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Aspergillus ustus",
+      "phylum":"Dikarya",
+      "reaction_description":"Prenylation of ortho-dihydroxyphenyl moiety",
+      "status":"active",
+      "tailoring":"Prenylation"
     }
   },
   "version_mite_data":"1.30"
