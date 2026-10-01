@@ -1,0 +1,44 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-10-01",
+            "contributors": [
+                "0000-0002-5485-9780"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "CsOMT5",
+        "databaseIds": {
+            "uniprot": "",
+            "genpept": "YFT68982.1"
+        },
+        "references": [
+            "doi:"
+        ]
+    },
+    "reactions": [
+        {
+            "evidence": {
+                "evidenceCode": [],
+                "references": [
+                    "doi:"
+                ]
+            },
+            "reactions": [
+                {
+                    "products": [
+                        ""
+                    ]
+                }
+            ]
+        }
+    ]
+}
