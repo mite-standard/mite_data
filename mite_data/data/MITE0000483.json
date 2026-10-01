@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000483",
     "status": "active",
     "comment": "Tyrosinase-like protein, potentially halogenating the tyrosine of the core peptide",
     "changelog": [
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0002-9747-3423"
             ],
-            "comment": "expanded description"
+            "comment": "New entry. Reviewer 1 expanded description"
         }
     ],
     "enzyme": {
