@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000490",
     "status": "active",
     "comment": "FAD-dependent epoxidation on isoprenoid chain of polyketide pyrone substrate.",
     "changelog": [
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0003-4819-2251"
             ],
-            "comment": "Replaced enzyme name and Uniprot ID with homologous enzyme from the same reference (belongs to same pathway as DpasC), minor textual additions, fixed reaction SMARTS."
+            "comment": "New entry. Reviewer 1 replaced enzyme name and Uniprot ID with homologous enzyme from the same reference (belongs to same pathway as DpasC), minor textual additions, fixed reaction SMARTS."
         }
     ],
     "enzyme": {
