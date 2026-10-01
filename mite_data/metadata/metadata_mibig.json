@@ -5164,6 +5164,24 @@
         "status":"active"
       }
     ],
+    "BGC0003077":[
+      {
+        "enzyme_description":"Prenyltransferase",
+        "enzyme_ids":{
+          "genpept":"KIA75360.1",
+          "mibig":"BGC0003077",
+          "uniprot":"A0A0C1C2W0"
+        },
+        "enzyme_name":"UcdE",
+        "enzyme_refs":[
+          "doi:10.1021/acs.jafc.6c03303"
+        ],
+        "enzyme_tailoring":"Prenylation",
+        "mite_accession":"MITE0000489",
+        "mite_url":"https://bioregistry.io/mite:MITE0000489",
+        "status":"active"
+      }
+    ],
     "BGC0003089":[
       {
         "enzyme_description":"O-methyltransferase",
