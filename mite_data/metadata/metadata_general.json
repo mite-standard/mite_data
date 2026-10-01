@@ -10120,6 +10120,28 @@
       "reaction_description":"Hydroxylation of the tyrosine moiety",
       "status":"active",
       "tailoring":"Hydroxylation|Oxidation"
+    },
+    "MITE0000483":{
+      "accession":"MITE0000483",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Cu",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"Halogenase, Oxidoreductase",
+      "enzyme_ids":{
+        "genpept":"BDA39149.1",
+        "mibig":"BGC0001398",
+        "uniprot":"A0A8J9R8H5"
+      },
+      "enzyme_name":"PhomQ1",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Diaporthe leptostromiformis",
+      "phylum":"Dikarya",
+      "reaction_description":"Chlorination of tyrosine of the core peptide",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.30"
