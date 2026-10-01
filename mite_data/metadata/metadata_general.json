@@ -10164,6 +10164,26 @@
       "status":"active",
       "tailoring":"Methylation"
     },
+    "MITE0000486":{
+      "accession":"MITE0000486",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Eukaryota",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"WGH00047.1"
+      },
+      "enzyme_name":"SpeD",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Penicillium palitans",
+      "phylum":"Dikarya",
+      "reaction_description":"indole C-2 oxidation of cyclopiazonic acid during speradine biosynthesis",
+      "status":"active",
+      "tailoring":"Oxidation"
+    },
     "MITE0000487":{
       "accession":"MITE0000487",
       "class_name":"Ascomycota",
