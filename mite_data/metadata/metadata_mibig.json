@@ -3360,6 +3360,22 @@
         "mite_accession":"MITE0000482",
         "mite_url":"https://bioregistry.io/mite:MITE0000482",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Halogenase, Oxidoreductase",
+        "enzyme_ids":{
+          "genpept":"BDA39149.1",
+          "mibig":"BGC0001398",
+          "uniprot":"A0A8J9R8H5"
+        },
+        "enzyme_name":"PhomQ1",
+        "enzyme_refs":[
+          "doi:10.1002/anie.202111076"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000483",
+        "mite_url":"https://bioregistry.io/mite:MITE0000483",
+        "status":"active"
       }
     ],
     "BGC0001435":[
