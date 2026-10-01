@@ -10246,6 +10246,26 @@
       "reaction_description":"Prenylation of ortho-dihydroxyphenyl moiety",
       "status":"active",
       "tailoring":"Prenylation"
+    },
+    "MITE0000490":{
+      "accession":"MITE0000490",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD|NADP",
+      "domain":"Eukaryota",
+      "enzyme_description":"FAD-dependent monooxygenase",
+      "enzyme_ids":{
+        "uniprot":"P9WEX4"
+      },
+      "enzyme_name":"DpasE",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Apiospora sacchari",
+      "phylum":"Dikarya",
+      "reaction_description":"Epoxidation at C10-C11 of isoprenoid chain.",
+      "status":"active",
+      "tailoring":"Oxidation"
     }
   },
   "version_mite_data":"1.30"

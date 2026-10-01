@@ -476,3 +476,4 @@ MITE0000486,active,SpeD,Cytochrome P450,Oxidation,indole C-2 oxidation of cyclop
 MITE0000487,active,dpchG,Short chain dehydrogenase/reductase,Oxidation,SDR-mediated oxidation of the 8S hydroxy group to a ketone in higginsianin biosynthesis,NADP,N/A,Colletotrichum higginsianum (strain IMI 349063),Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Sordariomycetes
 MITE0000488,active,XilC,Cytochrome P450,Hydroxylation,hydroxylation of prexylariolide D,N/A,N/A,Penicillium crustosum,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Eurotiomycetes
 MITE0000489,active,UcdE,Prenyltransferase,Prenylation,Prenylation of ortho-dihydroxyphenyl moiety,N/A,N/A,Aspergillus ustus,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Eurotiomycetes
+MITE0000490,active,DpasE,FAD-dependent monooxygenase,Oxidation,Epoxidation at C10-C11 of isoprenoid chain.,FAD|NADP,N/A,Apiospora sacchari,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Sordariomycetes
