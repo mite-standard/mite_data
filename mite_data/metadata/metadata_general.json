@@ -10393,6 +10393,28 @@
       "reaction_description":"AchB catalyses biaryl bond formation between Tyr and His of Nle-KYWH substrate",
       "status":"active",
       "tailoring":"Biaryl bond formation|Oxidation"
+    },
+    "MITE0000498":{
+      "accession":"MITE0000498",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme|NADP",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"QLD23833.1",
+        "mibig":"BGC0002086",
+        "uniprot":"UPI00001A741D"
+      },
+      "enzyme_name":"RosC",
+      "family":"Micromonosporaceae",
+      "kingdom":"Bacillati",
+      "order":"Micromonosporales",
+      "organism":"Micromonospora carbonacea subsp. aurantiaca",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Two-step oxidation (hydroxylation and dehydrogenation)",
+      "status":"active",
+      "tailoring":"Oxidation"
     }
   },
   "version_mite_data":"1.30"
