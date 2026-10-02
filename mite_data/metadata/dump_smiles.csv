@@ -649,3 +649,4 @@
 647,MITE0000495.reaction2.example1,CCCCC([NH3+])C(=O)NC(CCCNC(=N)N)C(=O)NC(Cc1ccc(O)cc1)C(=O)NC(C(=O)NC(Cc1c[nH]cn1)C(=O)O)C(C)C,CCCCC([NH3+])C(=O)NC(CCCNC(=N)N)C(=O)NC1Cc2ccc(O)c(c2)-c2nc(c[nH]2)CC(C(=O)O)NC(=O)C(C(C)C)NC1=O
 648,MITE0000495.reaction3.example1,CCCCC([NH3+])C(=O)NC(CCCNC(=N)N)C(=O)NC(Cc1ccc(O)cc1)C(=O)NC(CC(C)C)C(=O)NC(Cc1ccc(O)cc1)C(=O)O,CCCCC([NH3+])C(=O)NC(CCCNC(=N)N)C(=O)NC1Cc2ccc(O)c(c2)-c2cc(ccc2O)CC(C(=O)O)NC(=O)C(CC(C)C)NC1=O
 649,MITE0000495.reaction4.example1,CCCCC([NH3+])C(=O)NC(CCCNC(=N)N)C(=O)NC(Cc1ccc(O)cc1)C(=O)NC(CC(C)C)C(=O)NC(Cc1c[nH]c2ccccc12)C(=O)O,CCCCC([NH3+])C(=O)NC(CCCNC(=N)N)C(=O)NC1Cc2ccc(O)c(c2)-n2cc(c3ccccc32)CC(C(=O)O)NC(=O)C(CC(C)C)NC1=O
+650,MITE0000496.reaction1.example1,CCCCC([NH3+])C(=O)NC(CCCNC(=N)N)C(=O)NC(Cc1ccc(O)cc1)C(=O)NC(Cc1c[nH]c2ccccc12)C(=O)NC(Cc1ccc(O)cc1)C(=O)O,CCCCC([NH3+])C(=O)NC(CCCNC(=N)N)C(=O)NC1Cc2ccc(O)c(c2)-c2cc(ccc2O)CC(C(=O)O)NC(=O)C(Cc2c[nH]c3ccccc23)NC1=O
