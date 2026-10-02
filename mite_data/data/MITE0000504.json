@@ -1,7 +1,7 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000504",
     "status": "active",
-    "comment": "epoxidation reaction catalyzed by GerPI P450 at the C12\u2013C13 position in dihydrochalcomycin biosynthesis",
+    "comment": "Epoxidation reaction catalyzed by GerPI P450 at the C12\u2013C13 position in dihydrochalcomycin biosynthesis",
     "changelog": [
         {
             "version": "1",
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0002-4540-6501"
             ],
-            "comment": "Changed Description"
+            "comment": "New entry. Reviewer 1 changed Description"
         }
     ],
     "enzyme": {
