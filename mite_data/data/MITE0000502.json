@@ -1,7 +1,7 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000502",
     "status": "active",
-    "comment": "Catalyzes the conversion of 6-deoxyerythronolide B (6-DEB) to erythronolide B (EB) by the insertion of an oxygen at the 6S position of 6-DEB. ",
+    "comment": "Catalyzes the conversion of 6-deoxyerythronolide B (6-DEB) to erythronolide B (EB) by the insertion of an oxygen at the 6S position of 6-DEB.",
     "changelog": [
         {
             "version": "1",
@@ -12,11 +12,11 @@
             "reviewers": [
                 "0000-0002-4540-6501"
             ],
-            "comment": "Changed Description"
+            "comment": "New entry. Reviewer 1 changed Description"
         }
     ],
     "enzyme": {
-        "name": "eryF",
+        "name": "EryF",
         "description": "Cytochrome P450",
         "references": [
             "doi:10.1021/bi00059a004"
