@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000492",
     "status": "active",
     "comment": "DnrK also known as Carminomycin 4-O-methyltransferase is involved in the biosynthesis of anthracycline daunorubicin.",
     "changelog": [
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0009-0008-6482-7206"
             ],
-            "comment": "New entry. Daunorubicin is an intermediate for the endproduct Doxorubicin.."
+            "comment": "New entry. Daunorubicin is an intermediate for the endproduct Doxorubicin."
         }
     ],
     "enzyme": {
