@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000495",
     "status": "active",
     "comment": "Cytochrome P450 catalyzes biaryl bond formation",
     "changelog": [
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0002-9747-3423"
             ],
-            "comment": "added oxidation"
+            "comment": "New entry. Reviewer 1 added Oxidation tailoring term."
         }
     ],
     "enzyme": {
