@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000508",
     "status": "active",
     "comment": "Carbazole halogenase.",
     "changelog": [
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0002-9747-3423"
             ],
-            "comment": "Addition of co-factor"
+            "comment": "New entry. Reviewer 1 added organic co-factor."
         }
     ],
     "enzyme": {
