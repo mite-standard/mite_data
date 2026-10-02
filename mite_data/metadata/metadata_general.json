@@ -10352,6 +10352,27 @@
       "reaction_description":"SavB catalyses C-C biaryl bond formation between Tyr-His on the MRYVH motif",
       "status":"active",
       "tailoring":"Biaryl bond formation|Oxidation"
+    },
+    "MITE0000496":{
+      "accession":"MITE0000496",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"GAA4216681.1",
+        "uniprot":"UPI00194451D2"
+      },
+      "enzyme_name":"AciB",
+      "family":"Micromonosporaceae",
+      "kingdom":"Bacillati",
+      "order":"Micromonosporales",
+      "organism":"Actinocatenispora rupis",
+      "phylum":"Actinomycetota",
+      "reaction_description":"AciB catalyses C–C bond formation between Tyr3C-Tyr5C of a synthetic Nle-RYWY substrate",
+      "status":"active",
+      "tailoring":"Biaryl bond formation"
     }
   },
   "version_mite_data":"1.30"
