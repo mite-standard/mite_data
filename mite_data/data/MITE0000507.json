@@ -1,7 +1,7 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000507",
     "status": "active",
-    "comment": "Dichlorination of an aminoacyl-S-carrier substrate (pyrrolyl-S-PltL)in the pyoluteorin pathway. Flavin reductase is not encoded in pyolteorin genecluster. SsuE was used instead. Concentrationdependent Br possible. Stereochemistry could not be depicted due to incompatibility with validation engine.",
+    "comment": "Dichlorination of an aminoacyl-S-carrier substrate (pyrrolyl-S-PltL)in the pyoluteorin pathway. Flavin reductase is not encoded in pyolteorin genecluster. SsuE was used instead. Concentration-dependent Br possible. Stereochemistry could not be depicted due to incompatibility with validation engine.",
     "changelog": [
         {
             "version": "1",
