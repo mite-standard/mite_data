@@ -10266,6 +10266,27 @@
       "reaction_description":"Epoxidation at C10-C11 of isoprenoid chain.",
       "status":"active",
       "tailoring":"Oxidation"
+    },
+    "MITE0000492":{
+      "accession":"MITE0000492",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"O-methyltransferase",
+      "enzyme_ids":{
+        "genpept":"AAA26712.1",
+        "uniprot":"Q06528"
+      },
+      "enzyme_name":"DnrK",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces peucetius",
+      "phylum":"Actinomycetota",
+      "reaction_description":"DnrK catalyzes the methylation of the 4-hydroxyl group in tetracyclic ring system of carminomycin to form daunorubicin",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.30"
