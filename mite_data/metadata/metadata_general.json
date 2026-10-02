@@ -10309,6 +10309,28 @@
       "reaction_description":"CalM catalyzes methyl transfer to N-demethyl calcimycin to get the final product calcimycin",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000494":{
+      "accession":"MITE0000494",
+      "class_name":"Polyangia",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD",
+      "domain":"Bacteria",
+      "enzyme_description":"Flavin-dependent halogenase",
+      "enzyme_ids":{
+        "genpept":"CAQ43074.1",
+        "mibig":"BGC0000970",
+        "uniprot":"UPI0001932834"
+      },
+      "enzyme_name":"CndH",
+      "family":"Polyangiaceae",
+      "kingdom":"Pseudomonadati",
+      "order":"Polyangiales",
+      "organism":"Chondromyces crocatus",
+      "phylum":"Myxococcota",
+      "reaction_description":"Single chlorination of carrierbound chondrochloren precurser (phenol moiety)",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.30"

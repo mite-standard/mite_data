@@ -2540,6 +2540,25 @@
         "status":"active"
       }
     ],
+    "BGC0000970":[
+      {
+        "enzyme_description":"Flavin-dependent halogenase",
+        "enzyme_ids":{
+          "genpept":"CAQ43074.1",
+          "mibig":"BGC0000970",
+          "uniprot":"UPI0001932834"
+        },
+        "enzyme_name":"CndH",
+        "enzyme_refs":[
+          "doi:10.1016/j.jmb.2008.10.057",
+          "doi:10.1016/j.chembiol.2008.11.005"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000494",
+        "mite_url":"https://bioregistry.io/mite:MITE0000494",
+        "status":"active"
+      }
+    ],
     "BGC0000973":[
       {
         "enzyme_description":"Amidohydrolase",
