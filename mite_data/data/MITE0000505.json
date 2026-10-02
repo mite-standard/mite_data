@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000505",
     "status": "active",
     "comment": "AryC is a Cytochrome P450 monooxygenase responsible for the C-C biaryl bond formation in arylomycins.",
     "changelog": [
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0002-4540-6501"
             ],
-            "comment": "Organic cofactor added"
+            "comment": "New entry. Reviewer 1 added organic cofactor."
         }
     ],
     "enzyme": {
