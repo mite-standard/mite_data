@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000509",
     "status": "active",
     "comment": "Methylation of C-hydroxycarbazole and derivatives.",
     "changelog": [
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0002-9747-3423"
             ],
-            "comment": "Add new entry for CczI"
+            "comment": "New entry."
         }
     ],
     "enzyme": {
