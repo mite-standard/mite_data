@@ -4239,6 +4239,24 @@
         "status":"active"
       }
     ],
+    "BGC0002086":[
+      {
+        "enzyme_description":"Cytochrome P450",
+        "enzyme_ids":{
+          "genpept":"QLD23833.1",
+          "mibig":"BGC0002086",
+          "uniprot":"UPI00001A741D"
+        },
+        "enzyme_name":"RosC",
+        "enzyme_refs":[
+          "doi:10.1128/aac.02092-12"
+        ],
+        "enzyme_tailoring":"Oxidation",
+        "mite_accession":"MITE0000498",
+        "mite_url":"https://bioregistry.io/mite:MITE0000498",
+        "status":"active"
+      }
+    ],
     "BGC0002089":[
       {
         "enzyme_description":"Cytochrome P450",
