@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000499",
     "status": "active",
     "comment": "CalE10 as the key oxidase involved in calicheamicin hydroxylamino glycoside formation",
     "changelog": [
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0002-4540-6501"
             ],
-            "comment": "Changed Description"
+            "comment": "New entry. Reviwer 1 changed Description."
         }
     ],
     "enzyme": {
