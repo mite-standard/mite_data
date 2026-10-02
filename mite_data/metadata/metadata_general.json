@@ -10287,6 +10287,28 @@
       "reaction_description":"DnrK catalyzes the methylation of the 4-hydroxyl group in tetracyclic ring system of carminomycin to form daunorubicin",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000493":{
+      "accession":"MITE0000493",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"N-methyltransferase",
+      "enzyme_ids":{
+        "genpept":"AEH42477.1",
+        "mibig":"BGC0000032",
+        "uniprot":"UPI000213054F"
+      },
+      "enzyme_name":"CalM/SchM",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces chartreusis NRRL 3882",
+      "phylum":"Actinomycetota",
+      "reaction_description":"CalM catalyzes methyl transfer to N-demethyl calcimycin to get the final product calcimycin",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.30"
