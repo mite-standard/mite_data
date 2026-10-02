@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000506",
     "status": "active",
     "comment": "Halogenation of dihydroresorcylide in the radicicol pathway. Rdc2 additionally halogenases dihydroresorcylide and specific hydroxyquinolines. Non Substrate: 2/4/8-Hydroxyquinoline isomers, quinoline",
     "changelog": [
@@ -39,7 +39,7 @@
             "tailoring": [
                 "Halogenation"
             ],
-            "description": "Iterate chlorination of dihydroresorcylide. Reaction Smarts shows all derivates trough \"any bound\".",
+            "description": "Iterate chlorination of dihydroresorcylide. Reaction SMARTS shows all derivates trough 'any bond'.",
             "reactionSMARTS": "[#6:1]/[#6@@:2]1-[#8:21]-[#6:19](=[#8:20])-[#6:12]2:[#6:13](-[#8:18]):[#6:14]:[#6:15](-[#8:17]):[#6:16]:[#6:11]:2-[#6:10]-[#6:8](=[#8:9])-[#6:7]-[#6:6]-[#6:5]~[#6:4]-[#6:3]-1>>[#6:1]/[#6@@:2]1-[#8:21]-[#6:19](=[#8:20])-[#6:12]2:[#6:13](-[#8:18]):[#6:14](-[Cl]):[#6:15](-[#8:17]):[#6:16](-[Cl]):[#6:11]:2-[#6:10]-[#6:8](=[#8:9])-[#6:7]-[#6:6]-[#6:5]~[#6:4]-[#6:3]-1",
             "reactions": [
                 {
@@ -65,7 +65,7 @@
             "tailoring": [
                 "Halogenation"
             ],
-            "description": "Iterate bromination of dihydroresorcylide. Reaction Smarts shows all derivates trough \"any bound\".",
+            "description": "Iterate bromination of dihydroresorcylide. Reaction SMARTS shows all derivates trough 'any bond'.",
             "reactionSMARTS": "[#6:1]/[#6@@:2]1-[#8:21]-[#6:19](=[#8:20])-[#6:12]2:[#6:13](-[#8:18]):[#6:14]:[#6:15](-[#8:17]):[#6:16]:[#6:11]:2-[#6:10]-[#6:8](=[#8:9])-[#6:7]-[#6:6]-[#6:5]~[#6:4]-[#6:3]-1>>[#6:1]/[#6@@:2]1-[#8:21]-[#6:19](=[#8:20])-[#6:12]2:[#6:13](-[#8:18]):[#6:14](-Br):[#6:15](-[#8:17]):[#6:16](-Br):[#6:11]:2-[#6:10]-[#6:8](=[#8:9])-[#6:7]-[#6:6]-[#6:5]~[#6:4]-[#6:3]-1",
             "reactions": [
                 {
