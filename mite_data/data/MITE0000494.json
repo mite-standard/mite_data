@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000494",
     "status": "active",
     "comment": "Chlorination of carrier-bound phenol in the chondrochloren A pathway. Carrier protein and flavinreductase are unknown.",
     "changelog": [
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0002-4540-6501"
             ],
-            "comment": "Reference added"
+            "comment": "New entry. Reviewer 1 added reference."
         }
     ],
     "enzyme": {
