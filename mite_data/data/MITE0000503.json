@@ -1,7 +1,7 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000503",
     "status": "active",
-    "comment": "epoxidation and hydroxylation of a macrolide FD-891 in a stepwise manner",
+    "comment": "Epoxidation and hydroxylation of a macrolide FD-891 in a stepwise manner",
     "changelog": [
         {
             "version": "1",
@@ -12,11 +12,11 @@
             "reviewers": [
                 "0000-0002-4540-6501"
             ],
-            "comment": "Changed Description"
+            "comment": "New entry. Reviewer 1 changed Description"
         }
     ],
     "enzyme": {
-        "name": "gfsF",
+        "name": "GfsF",
         "description": "Cytochrome P450",
         "references": [
             "doi:10.1002/cbic.201000214"
