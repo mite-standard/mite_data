@@ -642,3 +642,4 @@
 640,MITE0000489.reaction1.example8,O=c1oc2cc(O)ccc2c2cc(O)c(O)cc12,CC(C)=CCc1c(O)c(O)cc2c(=O)oc3cc(O)ccc3c12
 641,MITE0000489.reaction1.example9,Oc1cc2ccccc2cc1O,CC(C)=CCc1c(O)c(O)cc2ccccc12
 642,MITE0000490.reaction1.example1,CC(C)=CCC/C(C)=C/CC/C(C)=C/CC/C(C)=C/Cc1c(O)c(C)c(C)oc1=O,CC(C)=CCCC1(C)OC1CCC(C)=CCCC(C)=CCc1c(O)c(C)c(C)oc1=O
+643,MITE0000492.reaction1.example1,CC(=O)[C@]1(O)Cc2c(O)c3c(c(O)c2[C@@H](O[C@H]2C[C@H](N)[C@H](O)[C@H](C)O2)C1)C(=O)c1c(O)cccc1C3=O,COc1cccc2c1C(=O)c1c(O)c3c(c(O)c1C2=O)C[C@@](O)(C(C)=O)C[C@@H]3O[C@H]1C[C@H](N)[C@H](O)[C@H](C)O1
