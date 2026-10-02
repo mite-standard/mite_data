@@ -10331,6 +10331,27 @@
       "reaction_description":"Single chlorination of carrierbound chondrochloren precurser (phenol moiety)",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000495":{
+      "accession":"MITE0000495",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"RKT69193.1",
+        "uniprot":"UPI000EB4BB5B"
+      },
+      "enzyme_name":"SavB",
+      "family":"Pseudonocardiaceae",
+      "kingdom":"Bacillati",
+      "order":"Pseudonocardiales",
+      "organism":"Saccharothrix variisporea",
+      "phylum":"Actinomycetota",
+      "reaction_description":"SavB catalyses C-C biaryl bond formation between Tyr-His on the MRYVH motif",
+      "status":"active",
+      "tailoring":"Biaryl bond formation|Oxidation"
     }
   },
   "version_mite_data":"1.30"
