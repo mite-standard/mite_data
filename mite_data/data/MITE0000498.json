@@ -10,9 +10,10 @@
                 "0000-0003-3002-6458"
             ],
             "reviewers": [
-                "0000-0002-4540-6501"
+                "0000-0002-4540-6501",
+                "0000-0001-6534-6609"
             ],
-            "comment": "New entry. Reviewer 1 changed Description and Reference"
+            "comment": "New entry. Reviewer 1 changed Description and Reference. Reviewer 2 changed retired UniProtKB ID to UniParc ID."
         }
     ],
     "enzyme": {
@@ -22,7 +23,7 @@
             "doi:10.1128/aac.02092-12"
         ],
         "databaseIds": {
-            "uniprot": "A0A7H8XFM0",
+            "uniprot": "UPI00001A741D",
             "genpept": "QLD23833.1",
             "mibig": "BGC0002086"
         },
