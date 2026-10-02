@@ -257,6 +257,22 @@
         "mite_accession":"MITE0000008",
         "mite_url":"https://bioregistry.io/mite:MITE0000008",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Cytochrome P450",
+        "enzyme_ids":{
+          "genpept":"AAM94800.1",
+          "mibig":"BGC0000033",
+          "uniprot":"Q8KNC8"
+        },
+        "enzyme_name":"CalE10",
+        "enzyme_refs":[
+          "doi:10.1021/ja807557a"
+        ],
+        "enzyme_tailoring":"Oxidation",
+        "mite_accession":"MITE0000499",
+        "mite_url":"https://bioregistry.io/mite:MITE0000499",
+        "status":"active"
       }
     ],
     "BGC0000038":[
