@@ -10567,6 +10567,28 @@
       "reaction_description":"AryC catalyzes C-C biaryl bond formation resulting in Arylomycin A2.",
       "status":"active",
       "tailoring":"Biaryl bond formation"
+    },
+    "MITE0000507":{
+      "accession":"MITE0000507",
+      "class_name":"Gammaproteobacteria",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD|NAD|NADP",
+      "domain":"Bacteria",
+      "enzyme_description":"Flavin-dependent halogenase",
+      "enzyme_ids":{
+        "genpept":"AAD24884.1",
+        "mibig":"BGC0000127",
+        "uniprot":"Q4KCZ0"
+      },
+      "enzyme_name":"PltA",
+      "family":"Pseudomonadaceae",
+      "kingdom":"Pseudomonadati",
+      "order":"Pseudomonadales",
+      "organism":"Pseudomonas fluorescens (strain ATCC BAA-477 / NRRL B-23932 / Pf-5)",
+      "phylum":"Pseudomonadota",
+      "reaction_description":"Iterate dichlorination of pyrrolyl-S-PltL complex.",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.30"
