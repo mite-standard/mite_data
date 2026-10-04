@@ -359,6 +359,22 @@
         "mite_accession":"MITE0000501",
         "mite_url":"https://bioregistry.io/mite:MITE0000501",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Cytochrome P450",
+        "enzyme_ids":{
+          "genpept":"AAU93799.1",
+          "mibig":"BGC0000054",
+          "uniprot":"Q5Y9H2"
+        },
+        "enzyme_name":"EryF",
+        "enzyme_refs":[
+          "doi:10.1021/bi00059a004"
+        ],
+        "enzyme_tailoring":"Hydroxylation|Monooxygenation",
+        "mite_accession":"MITE0000502",
+        "mite_url":"https://bioregistry.io/mite:MITE0000502",
+        "status":"active"
       }
     ],
     "BGC0000055":[

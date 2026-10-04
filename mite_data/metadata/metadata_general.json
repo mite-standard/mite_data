@@ -10481,6 +10481,28 @@
       "reaction_description":"EryK is responsible for the C-12 hydroxylation of the macrolactone ring, one of the last steps in erythromycin biosynthesis",
       "status":"active",
       "tailoring":"Hydroxylation|Monooxygenation"
+    },
+    "MITE0000502":{
+      "accession":"MITE0000502",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme|NADP",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"AAU93799.1",
+        "mibig":"BGC0000054",
+        "uniprot":"Q5Y9H2"
+      },
+      "enzyme_name":"EryF",
+      "family":"Nocardioidaceae",
+      "kingdom":"Bacillati",
+      "order":"Propionibacteriales",
+      "organism":"Aeromicrobium erythreum",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Catalyzes the conversion of 6-deoxyerythronolide B (6-DEB) to erythronolide B (EB) by the insertion of an oxygen at the 6S position of 6-DEB. Requires the participation of a ferredoxin and a ferredoxin reductase for the transfer of electrons from NADPH to the P450 monooxygenase",
+      "status":"active",
+      "tailoring":"Hydroxylation|Monooxygenation"
     }
   },
   "version_mite_data":"1.30"
