@@ -10459,6 +10459,28 @@
       "reaction_description":"GerPII P450 catalyzes hydroxylation at the C8 position of dihydrochalcomycin precursor",
       "status":"active",
       "tailoring":"Hydroxylation"
+    },
+    "MITE0000501":{
+      "accession":"MITE0000501",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"AAU93795.1",
+        "mibig":"BGC0000054",
+        "uniprot":"Q5Y9H6"
+      },
+      "enzyme_name":"EryK",
+      "family":"Nocardioidaceae",
+      "kingdom":"Bacillati",
+      "order":"Propionibacteriales",
+      "organism":"Aeromicrobium erythreum",
+      "phylum":"Actinomycetota",
+      "reaction_description":"EryK is responsible for the C-12 hydroxylation of the macrolactone ring, one of the last steps in erythromycin biosynthesis",
+      "status":"active",
+      "tailoring":"Hydroxylation|Monooxygenation"
     }
   },
   "version_mite_data":"1.30"
