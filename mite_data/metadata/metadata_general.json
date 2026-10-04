@@ -10437,6 +10437,28 @@
       "reaction_description":"NDP-aminosugar N-oxidation",
       "status":"active",
       "tailoring":"Oxidation"
+    },
+    "MITE0000500":{
+      "accession":"MITE0000500",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"ABB52528.1",
+        "mibig":"BGC0000047",
+        "uniprot":"UPI00005DC563"
+      },
+      "enzyme_name":"GerPII",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces sp. KCTC 0041BP",
+      "phylum":"Actinomycetota",
+      "reaction_description":"GerPII P450 catalyzes hydroxylation at the C8 position of dihydrochalcomycin precursor",
+      "status":"active",
+      "tailoring":"Hydroxylation"
     }
   },
   "version_mite_data":"1.30"

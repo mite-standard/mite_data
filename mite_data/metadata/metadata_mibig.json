@@ -325,6 +325,24 @@
         "status":"active"
       }
     ],
+    "BGC0000047":[
+      {
+        "enzyme_description":"Cytochrome P450",
+        "enzyme_ids":{
+          "genpept":"ABB52528.1",
+          "mibig":"BGC0000047",
+          "uniprot":"UPI00005DC563"
+        },
+        "enzyme_name":"GerPII",
+        "enzyme_refs":[
+          "doi:10.1007/s00203-010-0648-7"
+        ],
+        "enzyme_tailoring":"Hydroxylation",
+        "mite_accession":"MITE0000500",
+        "mite_url":"https://bioregistry.io/mite:MITE0000500",
+        "status":"active"
+      }
+    ],
     "BGC0000055":[
       {
         "enzyme_description":"Cytochrome P450",
