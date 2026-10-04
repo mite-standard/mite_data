@@ -10503,6 +10503,28 @@
       "reaction_description":"Catalyzes the conversion of 6-deoxyerythronolide B (6-DEB) to erythronolide B (EB) by the insertion of an oxygen at the 6S position of 6-DEB. Requires the participation of a ferredoxin and a ferredoxin reductase for the transfer of electrons from NADPH to the P450 monooxygenase",
       "status":"active",
       "tailoring":"Hydroxylation|Monooxygenation"
+    },
+    "MITE0000503":{
+      "accession":"MITE0000503",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"BAJ16472.1",
+        "mibig":"BGC0000058",
+        "uniprot":"E0D207"
+      },
+      "enzyme_name":"GfsF",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces halstedii",
+      "phylum":"Actinomycetota",
+      "reaction_description":"GfsF catalyzes both epoxidation and hydroxylation as a dual functional P450 monooxygenase in the biosynthesis of FD-891",
+      "status":"active",
+      "tailoring":"Hydroxylation|Monooxygenation|Other"
     }
   },
   "version_mite_data":"1.30"
