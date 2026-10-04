@@ -396,6 +396,24 @@
         "status":"active"
       }
     ],
+    "BGC0000058":[
+      {
+        "enzyme_description":"Cytochrome P450",
+        "enzyme_ids":{
+          "genpept":"BAJ16472.1",
+          "mibig":"BGC0000058",
+          "uniprot":"E0D207"
+        },
+        "enzyme_name":"GfsF",
+        "enzyme_refs":[
+          "doi:10.1002/cbic.201000214"
+        ],
+        "enzyme_tailoring":"Hydroxylation|Monooxygenation|Other",
+        "mite_accession":"MITE0000503",
+        "mite_url":"https://bioregistry.io/mite:MITE0000503",
+        "status":"active"
+      }
+    ],
     "BGC0000070":[
       {
         "enzyme_description":"Cytochrome P450",
