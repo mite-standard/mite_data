@@ -732,6 +732,25 @@
         "status":"active"
       }
     ],
+    "BGC0000127":[
+      {
+        "enzyme_description":"Flavin-dependent halogenase",
+        "enzyme_ids":{
+          "genpept":"AAD24884.1",
+          "mibig":"BGC0000127",
+          "uniprot":"Q4KCZ0"
+        },
+        "enzyme_name":"PltA",
+        "enzyme_refs":[
+          "doi:10.1073/pnas.0506964102",
+          "doi:10.1016/j.jsb.2015.09.013"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000507",
+        "mite_url":"https://bioregistry.io/mite:MITE0000507",
+        "status":"active"
+      }
+    ],
     "BGC0000134":[
       {
         "enzyme_description":"Halogenase",
