@@ -10525,6 +10525,26 @@
       "reaction_description":"GfsF catalyzes both epoxidation and hydroxylation as a dual functional P450 monooxygenase in the biosynthesis of FD-891",
       "status":"active",
       "tailoring":"Hydroxylation|Monooxygenation|Other"
+    },
+    "MITE0000504":{
+      "accession":"MITE0000504",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"ABB52529.1"
+      },
+      "enzyme_name":"GerPI",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces sp. KCTC 0041BP",
+      "phylum":"Actinomycetota",
+      "reaction_description":"epoxidation reaction catalyzed by GerPI P450 at the C12–C13 position in dihydrochalcomycin biosynthesis",
+      "status":"active",
+      "tailoring":"Oxidation"
     }
   },
   "version_mite_data":"1.30"
