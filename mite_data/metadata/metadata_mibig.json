@@ -1130,6 +1130,25 @@
         "status":"active"
       }
     ],
+    "BGC0000306":[
+      {
+        "enzyme_description":"Cytochrome P450",
+        "enzyme_ids":{
+          "genpept":"EWS95123.1",
+          "mibig":"BGC0000306",
+          "uniprot":"UPI0001AEDB4C"
+        },
+        "enzyme_name":"AryC",
+        "enzyme_refs":[
+          "doi:10.1021/ja2040877",
+          "doi:10.1002/chem.202103389"
+        ],
+        "enzyme_tailoring":"Biaryl bond formation",
+        "mite_accession":"MITE0000505",
+        "mite_url":"https://bioregistry.io/mite:MITE0000505",
+        "status":"active"
+      }
+    ],
     "BGC0000311":[
       {
         "enzyme_description":"Cytochrome P450",
