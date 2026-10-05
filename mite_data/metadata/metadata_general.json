@@ -10099,6 +10099,27 @@
       "status":"active",
       "tailoring":"Prenylation"
     },
+    "MITE0000471":{
+      "accession":"MITE0000471",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"WXH40812.1",
+        "uniprot":"UPI00160C074B"
+      },
+      "enzyme_name":"SneP",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces netropsis",
+      "phylum":"Actinomycetota",
+      "reaction_description":"SneP catalyzes C–C and an ether linkage on the YSYY motif",
+      "status":"active",
+      "tailoring":"Biaryl bond formation|Cyclization|Oxidation"
+    },
     "MITE0000482":{
       "accession":"MITE0000482",
       "class_name":"Ascomycota",
