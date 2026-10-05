@@ -1,6 +1,9 @@
 {
-    "accession": "MITE9999999",
-    "status": "active",
+    "accession": "MITE0000506",
+    "status": "retired",
+    "retirementReasons": [
+        "Not a tailoring enzyme."
+    ],
     "comment": "Radical SAM catalyzes formal dehydration of CTP to afford anti-viral ddhCTP",
     "changelog": [
         {
@@ -10,7 +13,8 @@
                 "0000-0003-2971-646X"
             ],
             "reviewers": [
-                "0000-0001-6534-6609"
+                "0000-0001-6534-6609",
+                "0000-0003-3290-1017"
             ],
             "comment": "New entry."
         }
