@@ -10,9 +10,10 @@
                 "0000-0002-3947-4444"
             ],
             "reviewers": [
-                "0000-0002-9747-3423"
+                "0000-0002-9747-3423",
+                "0000-0001-6534-6609"
             ],
-            "comment": "New entry. Reviewer 1 added organic co-factor."
+            "comment": "New entry. Reviewer 1 added organic co-factor. Reviewer 2 changed UniProtKB accession to UniParc."
         }
     ],
     "enzyme": {
@@ -22,7 +23,7 @@
             "doi:10.1021/acs.orglett.5c04621"
         ],
         "databaseIds": {
-            "uniprot": "A0A367F480",
+            "uniprot": "UPI00406FE18B",
             "genpept": "YAS72840.1"
         },
         "cofactors": {
