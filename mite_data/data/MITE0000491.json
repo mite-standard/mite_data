@@ -1,6 +1,9 @@
 {
-    "accession": "MITE9999999",
-    "status": "active",
+    "accession": "MITE0000491",
+    "status": "retired",
+    "retirementReasons": [
+        "Not a tailoring enzyme"
+    ],
     "changelog": [
         {
             "version": "1",
@@ -9,14 +12,15 @@
                 "0000-0003-0455-2227"
             ],
             "reviewers": [
-                "0000-0001-6534-6609"
+                "0000-0001-6534-6609",
+                "0000-0001-5863-7248"
             ],
             "comment": "New entry."
         }
     ],
     "enzyme": {
-        "name": "safC",
-        "description": "o methyltransferase",
+        "name": "SafC",
+        "description": "O-methyltransferase",
         "references": [
             "doi:10.1128/AEM.00011-07"
         ],
