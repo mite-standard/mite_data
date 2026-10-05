@@ -10631,6 +10631,27 @@
       "reaction_description":"Iterate dichlorination of pyrrolyl-S-PltL complex.",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000512":{
+      "accession":"MITE0000512",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"Methyltransferase",
+      "enzyme_ids":{
+        "genpept":"SDM14659.1",
+        "uniprot":"A0A1G9QUF4"
+      },
+      "enzyme_name":"DlpM",
+      "family":"Streptosporangiaceae",
+      "kingdom":"Bacillati",
+      "order":"Streptosporangiales",
+      "organism":"Nonomuraea jiangxiensis",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Methylation of aspartatic acid on the C-termini of lasso peptide.",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.30"
