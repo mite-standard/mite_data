@@ -1,0 +1,79 @@
+{
+    "accession": "MITE0000484",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-06",
+            "contributors": [
+                "0009-0008-4645-6771"
+            ],
+            "reviewers": [
+                "0000-0002-4540-6501",
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 2 changed reaction SMILES to reaction SMARTS."
+        }
+    ],
+    "enzyme": {
+        "name": "BtcB",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1016/j.tetlet.2018.02.022"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI001C7C9CCE",
+            "mibig": "BGC0001528"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "Converts betaestacin I to betaestacin III.",
+            "reactionSMARTS": "[#6]-[#6]1-[#6@]2-[#6](-[#6@](-[#6]-[#6]/2)/[#6])-[#6]-[#6]-[#6](-[#6])=[#6]-[#6]-[#6@@]2(\\[#6])-[#6@@](-[#6@@](-[#6]-[#6]-2)\\[#6](-[#6])-[#6])\\[#6]-[#6]=1>>[#6]-[#6]1-[#6]-[#6]=[#6]2-[#6@](-[#6]-[#6]-[#6@]-2/[#6])/[#6](-[#6])=[#6]-[#6]/[#6@]2-[#6@](-[#6]-[#6]/[#6@]-2-[#6@@](-[#6]-[#8])/[#6])(/[#6])-[#6]-[#6]=1",
+            "reactions": [
+                {
+                    "substrate": "C/C1=C/C[C@@H]2[C@H](C(C)C)CC[C@@]2(C)C/C=C(\\C)CCC2[C@@H](C)CC[C@@H]12",
+                    "products": [
+                        "CC1=CC[C@]2(C)CC[C@H]([C@H](C)CO)[C@@H]2CC=C(C)[C@H]2CC[C@H](C)C2=CC1"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1016/j.tetlet.2018.02.022"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "Converts betaestacin III to betaestacin IV.",
+            "reactionSMARTS": "[#6:1]-[#6:2]1-[#6@:26]2-[#6:21](-[#6@:22](-[#6:24]-[#6:25]/2)/[#6:23])=[#6:20]-[#6:19]-[#6:17](-[#6:18])=[#6:16]-[#6:15]-[#6@@:13]2(\\[#6:14])-[#6@@:5](-[#6@@:6](\\[#6:11]-[#6:12]-2)-[#6@@:7](-[#6:9]-[#8:10])\\[#6:8])\\[#6:4]-[#6:3]=1>>[#6:1]-[#6:2]1-[#6@:26]2-[#6:21](-[#6@:22](-[#6:24]-[#6:25]/2)/[#6:23])=[#6:20]-[#6:19]-[#6:17](-[#6:18])=[#6:16]-[#6:15]-[#6@@:13]2(\\[#6:14])-[#6@@:5](-[#6@@:6](\\[#6:11]-[#6:12]-2)-[#6@@:7](-[#6:9](-[#8:10])=[#8])\\[#6:8])\\[#6:4]-[#6:3]=1",
+            "reactions": [
+                {
+                    "substrate": "C/C1=C/C[C@@H]2[C@H]([C@H](C)CO)CC[C@@]2(C)C/C=C(\\C)C/C=C2\\[C@@H](C)CC[C@@H]12",
+                    "products": [
+                        "C/C1=C/C[C@@H]2[C@H]([C@H](C)C(=O)O)CC[C@@]2(C)C/C=C(\\C)C/C=C2\\[C@@H](C)CC[C@@H]12"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1016/j.tetlet.2018.02.022"
+                ]
+            }
+        }
+    ]
+}
