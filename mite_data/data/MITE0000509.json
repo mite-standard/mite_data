@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0002-9747-3423"
             ],
-            "comment": "New entry."
+            "comment": "New entry. Reviewer 2 changed UniProtKB to UniParc."
         }
     ],
     "enzyme": {
@@ -22,7 +22,7 @@
             "doi:10.1021/acs.orglett.5c04621"
         ],
         "databaseIds": {
-            "uniprot": "A0A367F2Z6",
+            "uniprot": "UPI00409A41F8",
             "genpept": "YAS72841.1"
         },
         "cofactors": {
