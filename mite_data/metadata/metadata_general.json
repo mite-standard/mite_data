@@ -10632,6 +10632,27 @@
       "status":"active",
       "tailoring":"Halogenation"
     },
+    "MITE0000508":{
+      "accession":"MITE0000508",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD|NAD",
+      "domain":"Bacteria",
+      "enzyme_description":"Halogenase",
+      "enzyme_ids":{
+        "genpept":"YAS72840.1",
+        "uniprot":"UPI00406FE18B"
+      },
+      "enzyme_name":"CczH",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces diacarni",
+      "phylum":"Actinomycetota",
+      "reaction_description":"C-4 chlorination of carbazole",
+      "status":"active",
+      "tailoring":"Halogenation"
+    },
     "MITE0000509":{
       "accession":"MITE0000509",
       "class_name":"Actinomycetes",
