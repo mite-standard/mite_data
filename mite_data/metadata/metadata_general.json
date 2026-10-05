@@ -10632,6 +10632,27 @@
       "status":"active",
       "tailoring":"Halogenation"
     },
+    "MITE0000511":{
+      "accession":"MITE0000511",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Eukaryota",
+      "enzyme_description":"O-acetyltransferase",
+      "enzyme_ids":{
+        "genpept":"BAM71034.1",
+        "uniprot":"L0MXJ3"
+      },
+      "enzyme_name":"PaAT-1",
+      "family":"Sordariomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Diaporthe amygdali",
+      "phylum":"Dikarya",
+      "reaction_description":"Converts 3'-O-deacetyl-Fusicoccin A to Fusicoccin A.",
+      "status":"active",
+      "tailoring":"Acetylation"
+    },
     "MITE0000512":{
       "accession":"MITE0000512",
       "class_name":"Actinomycetes",
