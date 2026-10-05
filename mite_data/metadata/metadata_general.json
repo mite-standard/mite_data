@@ -10120,6 +10120,28 @@
       "status":"active",
       "tailoring":"Biaryl bond formation|Cyclization|Oxidation"
     },
+    "MITE0000473":{
+      "accession":"MITE0000473",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD|NADP",
+      "domain":"Eukaryota",
+      "enzyme_description":"Flavin-dependent halogenase",
+      "enzyme_ids":{
+        "genpept":"ADI24948.1",
+        "mibig":"BGC0000070",
+        "uniprot":"D7PI14"
+      },
+      "enzyme_name":"gsfI",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Penicillium aethiopicum",
+      "phylum":"Dikarya",
+      "reaction_description":"Single chlorination of griseophenone C yielding griseophenone B.",
+      "status":"active",
+      "tailoring":"Halogenation"
+    },
     "MITE0000482":{
       "accession":"MITE0000482",
       "class_name":"Ascomycota",

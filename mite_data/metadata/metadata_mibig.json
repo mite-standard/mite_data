@@ -431,6 +431,23 @@
         "mite_accession":"MITE0000469",
         "mite_url":"https://bioregistry.io/mite:MITE0000469",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Flavin-dependent halogenase",
+        "enzyme_ids":{
+          "genpept":"ADI24948.1",
+          "mibig":"BGC0000070",
+          "uniprot":"D7PI14"
+        },
+        "enzyme_name":"gsfI",
+        "enzyme_refs":[
+          "doi:10.1021/cb400541z",
+          "doi:10.1016/j.chembiol.2010.03.015"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000473",
+        "mite_url":"https://bioregistry.io/mite:MITE0000473",
+        "status":"active"
       }
     ],
     "BGC0000072":[
