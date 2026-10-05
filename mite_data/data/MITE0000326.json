@@ -11,6 +11,7 @@
             ],
             "reviewers": [
                 "0000-0002-9747-3423",
+                "0000-0001-9078-9292",
                 "0000-0001-6534-6609"
             ],
             "comment": "New entry. Reviewer 2 fixed reaction SMARTS to correctly represent the core structure and corrected protein cross-refs."
