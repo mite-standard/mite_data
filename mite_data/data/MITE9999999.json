@@ -24,7 +24,7 @@
         ],
         "databaseIds": {
             "uniprot": "D7PI14",
-            "genpept": "ADI24948.1",
+            "genpept": "ADI24948",
             "mibig": "BGC0000070"
         },
         "cofactors": {
