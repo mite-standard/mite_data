@@ -10120,6 +10120,28 @@
       "status":"active",
       "tailoring":"Biaryl bond formation|Cyclization|Oxidation"
     },
+    "MITE0000472":{
+      "accession":"MITE0000472",
+      "class_name":"Gammaproteobacteria",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Chorismate pyruvate lyase",
+      "enzyme_ids":{
+        "genpept":"AHA34039.1",
+        "mibig":"BGC0000890",
+        "uniprot":"UPI0003C966DB"
+      },
+      "enzyme_name":"Bmp6",
+      "family":"Pseudoalteromonadaceae",
+      "kingdom":"Pseudomonadati",
+      "order":"Alteromonadales",
+      "organism":"Pseudoalteromonas phenolica O-BC30",
+      "phylum":"Pseudomonadota",
+      "reaction_description":"Iterate abstraction of the hydrogen on C4 of chorismate followed by the loss of the C3-enolpyruvyl group",
+      "status":"active",
+      "tailoring":"Dehydrogenation"
+    },
     "MITE0000473":{
       "accession":"MITE0000473",
       "class_name":"Ascomycota",

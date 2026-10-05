@@ -2576,6 +2576,25 @@
         "status":"active"
       }
     ],
+    "BGC0000890":[
+      {
+        "enzyme_description":"Chorismate pyruvate lyase",
+        "enzyme_ids":{
+          "genpept":"AHA34039.1",
+          "mibig":"BGC0000890",
+          "uniprot":"UPI0003C966DB"
+        },
+        "enzyme_name":"Bmp6",
+        "enzyme_refs":[
+          "doi:10.1038/nchembio.1564",
+          "doi:10.1099/00221287-140-4-897"
+        ],
+        "enzyme_tailoring":"Dehydrogenation",
+        "mite_accession":"MITE0000472",
+        "mite_url":"https://bioregistry.io/mite:MITE0000472",
+        "status":"active"
+      }
+    ],
     "BGC0000903":[
       {
         "enzyme_description":"Fluorinase",
