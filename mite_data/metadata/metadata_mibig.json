@@ -611,6 +611,24 @@
         "status":"active"
       }
     ],
+    "BGC0000106":[
+      {
+        "enzyme_description":"Flavin-dependent halogenase",
+        "enzyme_ids":{
+          "genpept":"ADM46362.1",
+          "mibig":"BGC0000106",
+          "uniprot":"F8QPG4"
+        },
+        "enzyme_name":"Nat1",
+        "enzyme_refs":[
+          "doi:10.1039/C1MB05036B"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000477",
+        "mite_url":"https://bioregistry.io/mite:MITE0000477",
+        "status":"active"
+      }
+    ],
     "BGC0000114":[
       {
         "enzyme_description":"Cytochrome P450",
