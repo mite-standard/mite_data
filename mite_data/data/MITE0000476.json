@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000476",
     "status": "active",
     "comment": "Aryl halogenation of various substrates through viral enzymes. MIBig has currently no viral gen clusters in its repository. No specific flavinreductase was identified. PrnF was used instead. PDB ID: 6QGM. Very poor chlorinating activity.",
     "changelog": [
@@ -10,9 +10,10 @@
                 "0009-0000-8651-1669"
             ],
             "reviewers": [
-                "0000-0001-6534-6609"
+                "0000-0001-6534-6609",
+                "0009-0008-6482-7206"
             ],
-            "comment": "New entry."
+            "comment": "New entry. Removed NAD as Cofactor. Corrected spelling mistakes."
         }
     ],
     "enzyme": {
@@ -86,7 +87,7 @@
             "tailoring": [
                 "Halogenation"
             ],
-            "description": "Halogantion of 5-Amino-3-methyl-1-phenylpyrazole yielding 5-Amino-4-iodo-3-methyl-1-phenylpyrazole.",
+            "description": "Halogenation of 5-Amino-3-methyl-1-phenylpyrazole yielding 5-Amino-4-iodo-3-methyl-1-phenylpyrazole.",
             "reactionSMARTS": "[#6:1]-[#6:2]1:[#6:6]:[#6:5](-[#7:7]):[#7:4](-[#6:8]2:[#6:13]:[#6:12]:[#6:11]:[#6:10]:[#6:9]:2):[#7:3]:1>>[#6:1]-[#6:2]1:[#6:6](-[Cl]):[#6:5](-[#7:7]):[#7:4](-[#6:8]2:[#6:9]:[#6:10]:[#6:11]:[#6:12]:[#6:13]:2):[#7:3]:1",
             "reactions": [
                 {
@@ -112,7 +113,7 @@
             "tailoring": [
                 "Halogenation"
             ],
-            "description": "Halogantion of 5-Amino-3-methyl-1-phenylpyrazole yielding 5-Amino-4-bromo-3-methyl-1-phenylpyrazole.",
+            "description": "Halogenation of 5-Amino-3-methyl-1-phenylpyrazole yielding 5-Amino-4-bromo-3-methyl-1-phenylpyrazole.",
             "reactionSMARTS": "[#6:1]-[#6:2]1:[#6:6]:[#6:5](-[#7:7]):[#7:4](-[#6:8]2:[#6:13]:[#6:12]:[#6:11]:[#6:10]:[#6:9]:2):[#7:3]:1>>[#6:1]-[#6:2]1:[#6:6](-Br):[#6:5](-[#7:7]):[#7:4](-[#6:8]2:[#6:9]:[#6:10]:[#6:11]:[#6:12]:[#6:13]:2):[#7:3]:1",
             "reactions": [
                 {
@@ -164,7 +165,7 @@
             "tailoring": [
                 "Halogenation"
             ],
-            "description": "Halogantion of pindolol yielding 3-Bromo pindolol.",
+            "description": "Halogenation of pindolol yielding 3-Bromo pindolol.",
             "reactionSMARTS": "[#6:1]-[#6:2](-[#7:4]-[#6:5]-[#6@:6](/[#8:18])-[#6:7]-[#8:8]-[#6:9]1:[#6:14]2:[#6:15]:[#6:16]:[#7:17]:[#6:13]:2:[#6:12]:[#6:11]:[#6:10]:1)-[#6:3]>>[#6:3]-[#6:2](-[#7:4]-[#6:5]-[#6@:6](/[#8:18])-[#6:7]-[#8:8]-[#6:9]1:[#6:14]2:[#6:15](-[Br;125]):[#6:16]:[#7:17]:[#6:13]:2:[#6:12]:[#6:11]:[#6:10]:1)-[#6:1]",
             "reactions": [
                 {
@@ -242,7 +243,7 @@
             "tailoring": [
                 "Halogenation"
             ],
-            "description": "Halogination of 5-Amino-3-methylisoxazole yielding 5-Amino-4-iodo-3-methylisoxazole",
+            "description": "Halogenation of 5-Amino-3-methylisoxazole yielding 5-Amino-4-iodo-3-methylisoxazole",
             "reactionSMARTS": "[#6:1]-[#6:2]1:[#6:6]:[#6:5](-[#7:7]):[#8:4]:[#7:3]:1>>[#6:1]-[#6:2]1:[#6:6](-I):[#6:5](-[#7:7]):[#8:4]:[#7:3]:1",
             "reactions": [
                 {
