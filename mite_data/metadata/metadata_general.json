@@ -10186,6 +10186,28 @@
       "status":"active",
       "tailoring":"Halogenation"
     },
+    "MITE0000479":{
+      "accession":"MITE0000479",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"Coenzyme A|FAD|NAD|NADP",
+      "domain":"Bacteria",
+      "enzyme_description":"Flavin-dependent halogenase",
+      "enzyme_ids":{
+        "genpept":"CCA54215.1",
+        "mibig":"BGC0000893",
+        "uniprot":"F2RB87"
+      },
+      "enzyme_name":"CmlS",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces venezuelae (strain ATCC 10712 / CBS 650.69 / DSM 40230 / JCM 4526 / NBRC 13096 / PD 04745)",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Dichlorination of acetoacetyl-CoA, catalyzed through E44 residue, which removes structurally protons reducing the acidity in the pocket.",
+      "status":"active",
+      "tailoring":"Halogenation"
+    },
     "MITE0000482":{
       "accession":"MITE0000482",
       "class_name":"Ascomycota",
