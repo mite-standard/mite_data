@@ -10164,6 +10164,28 @@
       "status":"active",
       "tailoring":"Halogenation"
     },
+    "MITE0000477":{
+      "accession":"MITE0000477",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD",
+      "domain":"Bacteria",
+      "enzyme_description":"Flavin-dependent halogenase",
+      "enzyme_ids":{
+        "genpept":"ADM46362.1",
+        "mibig":"BGC0000106",
+        "uniprot":"F8QPG4"
+      },
+      "enzyme_name":"Nat1",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces sp. CS",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Chlorination of naphthomycin E.",
+      "status":"active",
+      "tailoring":"Halogenation"
+    },
     "MITE0000482":{
       "accession":"MITE0000482",
       "class_name":"Ascomycota",
