@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000477",
     "status": "active",
     "comment": "Halogenation of naphthomycin E in the naphthomycin A pathway. Cross complementation of nat1 by asm12 in their biosynthetic pathways, respectively.",
     "changelog": [
@@ -10,9 +10,10 @@
                 "0009-0000-8651-1669"
             ],
             "reviewers": [
-                "0000-0001-6534-6609"
+                "0000-0001-6534-6609",
+                "0009-0008-6482-7206"
             ],
-            "comment": "New entry. Reviewer 1 fixed reaction specificity."
+            "comment": "New entry. Reviewer 1 fixed reaction specificity. Reviewer 2 removed NAD as cofactor."
         }
     ],
     "enzyme": {
@@ -28,8 +29,7 @@
         },
         "cofactors": {
             "organic": [
-                "FAD",
-                "NAD"
+                "FAD"
             ]
         }
     },
