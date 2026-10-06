@@ -10164,6 +10164,26 @@
       "status":"active",
       "tailoring":"Halogenation"
     },
+    "MITE0000476":{
+      "accession":"MITE0000476",
+      "class_name":"Not found",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD|NAD",
+      "domain":"Not found",
+      "enzyme_description":"Flavin-dependent halogenase",
+      "enzyme_ids":{
+        "uniprot":"UPI00126783B3"
+      },
+      "enzyme_name":"VirX1",
+      "family":"Not found",
+      "kingdom":"Not found",
+      "order":"Not found",
+      "organism":"Not found",
+      "phylum":"Not found",
+      "reaction_description":"Halogenation of 6-Azaindole yielding 3-Iodo-6-Azaindole",
+      "status":"active",
+      "tailoring":"Halogenation"
+    },
     "MITE0000482":{
       "accession":"MITE0000482",
       "class_name":"Ascomycota",
