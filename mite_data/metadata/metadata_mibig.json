@@ -2593,6 +2593,22 @@
         "mite_accession":"MITE0000472",
         "mite_url":"https://bioregistry.io/mite:MITE0000472",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Flavin-dependent halogenase",
+        "enzyme_ids":{
+          "genpept":"AHA34038.1",
+          "mibig":"BGC0000890",
+          "uniprot":"UPI0003C9DACA"
+        },
+        "enzyme_name":"Bmp5",
+        "enzyme_refs":[
+          "doi:10.1038/nchembio.1564"
+        ],
+        "enzyme_tailoring":"Decarboxylation|Halogenation",
+        "mite_accession":"MITE0000475",
+        "mite_url":"https://bioregistry.io/mite:MITE0000475",
+        "status":"active"
       }
     ],
     "BGC0000903":[

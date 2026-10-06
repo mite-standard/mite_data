@@ -10164,6 +10164,28 @@
       "status":"active",
       "tailoring":"Halogenation"
     },
+    "MITE0000475":{
+      "accession":"MITE0000475",
+      "class_name":"Gammaproteobacteria",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD|NAD",
+      "domain":"Bacteria",
+      "enzyme_description":"Flavin-dependent halogenase",
+      "enzyme_ids":{
+        "genpept":"AHA34038.1",
+        "mibig":"BGC0000890",
+        "uniprot":"UPI0003C9DACA"
+      },
+      "enzyme_name":"Bmp5",
+      "family":"Pseudoalteromonadaceae",
+      "kingdom":"Pseudomonadati",
+      "order":"Alteromonadales",
+      "organism":"Pseudoalteromonas phenolica O-BC30",
+      "phylum":"Pseudomonadota",
+      "reaction_description":"Decarboxylation and iterative bromination of 4-Hydroxybenzoat. ",
+      "status":"active",
+      "tailoring":"Decarboxylation|Halogenation"
+    },
     "MITE0000482":{
       "accession":"MITE0000482",
       "class_name":"Ascomycota",
