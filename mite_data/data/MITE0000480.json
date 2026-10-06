@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000480",
     "status": "active",
     "comment": "GedL performs dichlorination in the geodin biosynthetic pathway to produce intermediate dihydrogeodin",
     "changelog": [
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0001-5863-7248"
             ],
-            "comment": "added FAD as likely cofactor and corrected substrate/product"
+            "comment": "New entry. Reviewer 1 added FAD as likely cofactor and corrected substrate/product."
         }
     ],
     "enzyme": {
