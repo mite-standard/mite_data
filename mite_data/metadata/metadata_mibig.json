@@ -2613,6 +2613,26 @@
         "status":"active"
       }
     ],
+    "BGC0000893":[
+      {
+        "enzyme_description":"Flavin-dependent halogenase",
+        "enzyme_ids":{
+          "genpept":"CCA54215.1",
+          "mibig":"BGC0000893",
+          "uniprot":"F2RB87"
+        },
+        "enzyme_name":"CmlS",
+        "enzyme_refs":[
+          "doi:10.1016/j.jmb.2010.01.020",
+          "doi:10.1099/mic.0.26319-0",
+          "doi:10.1107/S1744309108043091"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000479",
+        "mite_url":"https://bioregistry.io/mite:MITE0000479",
+        "status":"active"
+      }
+    ],
     "BGC0000903":[
       {
         "enzyme_description":"Fluorinase",
