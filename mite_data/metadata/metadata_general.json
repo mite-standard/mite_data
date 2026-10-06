@@ -10164,6 +10164,27 @@
       "status":"active",
       "tailoring":"Halogenation"
     },
+    "MITE0000474":{
+      "accession":"MITE0000474",
+      "class_name":"Embryophyta",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Eukaryota",
+      "enzyme_description":"O-methyltransferase",
+      "enzyme_ids":{
+        "genpept":"AIL54541.1",
+        "uniprot":"UPI0004F8735F"
+      },
+      "enzyme_name":"N4OMT",
+      "family":"Spermatophyta",
+      "kingdom":"Viridiplantae",
+      "order":"Tracheophyta",
+      "organism":"Narcissus aff. pseudonarcissus MK-2014",
+      "phylum":"Streptophyta",
+      "reaction_description":"N4OMT catalyzes methylation at the 4’-hydroxyl of norbelladine to form 4-O’-methylnorbelladine (4OMN)",
+      "status":"active",
+      "tailoring":"Methylation"
+    },
     "MITE0000482":{
       "accession":"MITE0000482",
       "class_name":"Ascomycota",
