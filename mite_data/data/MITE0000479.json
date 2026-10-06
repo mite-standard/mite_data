@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000479",
     "status": "active",
     "comment": "Dichlorination of CoA-S-acetoacetyl in the chloramphenicol pathway. No specific flavin reductase was identified in this genecluster. Additional GenPept: AAK08979.2",
     "changelog": [
@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0002-4540-6501"
             ],
-            "comment": "Reference added"
+            "comment": "New entry. Reviewer 1 added a reference."
         }
     ],
     "enzyme": {
