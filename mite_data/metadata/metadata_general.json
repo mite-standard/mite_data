@@ -10186,6 +10186,28 @@
       "status":"active",
       "tailoring":"Halogenation"
     },
+    "MITE0000478":{
+      "accession":"MITE0000478",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"SAM-dependent halogenases",
+      "enzyme_ids":{
+        "genpept":"ABP53500.1",
+        "mibig":"BGC0001041",
+        "uniprot":"A4X3Q0"
+      },
+      "enzyme_name":"SalL",
+      "family":"Micromonosporaceae",
+      "kingdom":"Bacillati",
+      "order":"Micromonosporales",
+      "organism":"Salinispora tropica (strain ATCC BAA-916 / DSM 44818 / JCM 13857 / NBRC 105044 / CNB-440)",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Single chlorination of SAM yielding  5′-ClDA and L-Methionin through SN2 nucleophilic substitution",
+      "status":"active",
+      "tailoring":"Halogenation"
+    },
     "MITE0000482":{
       "accession":"MITE0000482",
       "class_name":"Ascomycota",

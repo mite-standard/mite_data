@@ -2859,6 +2859,25 @@
         "status":"retired"
       }
     ],
+    "BGC0001041":[
+      {
+        "enzyme_description":"SAM-dependent halogenases",
+        "enzyme_ids":{
+          "genpept":"ABP53500.1",
+          "mibig":"BGC0001041",
+          "uniprot":"A4X3Q0"
+        },
+        "enzyme_name":"SalL",
+        "enzyme_refs":[
+          "doi:10.1021/acs.jcim.9b01079",
+          "doi:10.1038/nchembio.2007.56"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000478",
+        "mite_url":"https://bioregistry.io/mite:MITE0000478",
+        "status":"active"
+      }
+    ],
     "BGC0001052":[
       {
         "enzyme_description":"Cytochrome P450",
