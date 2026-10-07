@@ -10208,6 +10208,28 @@
       "status":"active",
       "tailoring":"Halogenation"
     },
+    "MITE0000480":{
+      "accession":"MITE0000480",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD",
+      "domain":"Eukaryota",
+      "enzyme_description":"Halogenase",
+      "enzyme_ids":{
+        "genpept":"EAU31633.1",
+        "mibig":"BGC0002592",
+        "uniprot":"UPI0000E2D8B1"
+      },
+      "enzyme_name":"GedL",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Aspergillus terreus NIH2624",
+      "phylum":"Dikarya",
+      "reaction_description":"GedL dichlorinates the late-stage aromatic polyketide intermediate sulochrin, to afford dihydrogeodin",
+      "status":"active",
+      "tailoring":"Halogenation"
+    },
     "MITE0000482":{
       "accession":"MITE0000482",
       "class_name":"Ascomycota",

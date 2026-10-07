@@ -4949,6 +4949,24 @@
         "status":"active"
       }
     ],
+    "BGC0002592":[
+      {
+        "enzyme_description":"Halogenase",
+        "enzyme_ids":{
+          "genpept":"EAU31633.1",
+          "mibig":"BGC0002592",
+          "uniprot":"UPI0000E2D8B1"
+        },
+        "enzyme_name":"GedL",
+        "enzyme_refs":[
+          "doi:10.1371/journal.pone.0072871"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000480",
+        "mite_url":"https://bioregistry.io/mite:MITE0000480",
+        "status":"active"
+      }
+    ],
     "BGC0002612":[
       {
         "enzyme_description":"Cytochrome P450",
