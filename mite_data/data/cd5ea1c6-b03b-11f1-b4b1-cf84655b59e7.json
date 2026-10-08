@@ -1,0 +1,124 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "comment": "Halogenation of free L-tryptophan in the taromycin A pathway. Tar14 has a broad substrate spectrum, halogenating variouse tryptophan derivates including halogented substrates. However, no iodization possible.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-09-14",
+            "contributors": [
+                "0009-0000-8651-1669"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "Tar14",
+        "description": "Flavin-dependent halogenase",
+        "references": [
+            "doi:10.1002/anie.201901571"
+        ],
+        "auxiliaryEnzymes": [
+            {
+                "name": "Tar15",
+                "description": "Flavin reductase",
+                "databaseIds": {
+                    "uniprot": "W5VGI7",
+                    "genpept": "AHH53513.1"
+                }
+            }
+        ],
+        "databaseIds": {
+            "uniprot": "W5VG40",
+            "genpept": "AHH53512.1",
+            "mibig": "BGC0000439"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD",
+                "NAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Halogenation of various substrates including pre halogenated derivates.",
+            "reactionSMARTS": "[#7:1]-[#6:2](-[#6:13](-[#8:15])=[#8:14])-[#6:3]-[#6:4](~[#6:8]1:[#6:9]:[#6:10]:[#6:11]:[#6:12]:[#6:7]:1~[#7:6])~[*:5]>>[#7:1]-[#6:2](-[#6:13](-[#8:15])=[#8:14])-[#6:3]-[#6:4](~[#6:8]1:[#6:9]:[#6:10]:[#6:11](-[Cl]):[#6:12]:[#6:7]:1~[#7:6])~[*:5]",
+            "reactions": [
+                {
+                    "substrate": "NC(Cc1c[nH]c2ccccc12)C(=O)O",
+                    "products": [
+                        "NC(Cc1c[nH]c2cc(Cl)ccc12)C(=O)O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "C6-halogenation of L-tryptophan (D-tryptophan yields 15%)"
+                },
+                {
+                    "substrate": "Nc1ccccc1C(=O)CC(N)C(=O)O",
+                    "products": [
+                        "Nc1cc(Cl)ccc1C(=O)CC(N)C(=O)O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "C4-halogenation of kynurenine. A dechlorinated intermediate in the taromycin A pathway (conversion 30%)"
+                },
+                {
+                    "substrate": "NC(Cc1c[nH]c2c(Br)cccc12)C(=O)O",
+                    "products": [
+                        "NC(Cc1c[nH]c2c(Br)c(Cl)ccc12)C(=O)O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "C6-halogenation of L-7-Br-tryptophan (conversion 100%)"
+                },
+                {
+                    "substrate": "NC(Cc1c[nH]c2cccc(F)c12)C(=O)O",
+                    "products": [
+                        "NC(Cc1c[nH]c2cc(Cl)cc(F)c12)C(=O)O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "C6-halogenation of D/L-4-F-tryptophan (conversion 10%)"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1002/anie.201901571"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Halogenation of various substrates including pre halogenated derivates.",
+            "reactionSMARTS": "[#7:1]-[#6:2](-[#6:13](-[#8:15])=[#8:14])-[#6:3]-[#6:4](~[#6:8]1:[#6:9]:[#6:10]:[#6:11]:[#6:12]:[#6:7]:1~[#7:6])~[*:5]>>[#7:1]-[#6:2](-[#6:13](-[#8:15])=[#8:14])-[#6:3]-[#6:4](~[#6:8]1:[#6:9]:[#6:10]:[#6:11](-Br):[#6:12]:[#6:7]:1~[#7:6])~[*:5]",
+            "reactions": [
+                {
+                    "substrate": "NC(Cc1c[nH]c2ccccc12)C(=O)O",
+                    "products": [
+                        "NC(Cc1c[nH]c2cc(Br)ccc12)C(=O)O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "C6-Bromination of L-tryptophan"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1002/anie.201901571"
+                ]
+            }
+        }
+    ]
+}
