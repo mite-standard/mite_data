@@ -1,0 +1,44 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-10-08",
+            "contributors": [
+                "0000-0002-5485-9780"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "CsHAL2",
+        "databaseIds": {
+            "uniprot": "",
+            "genpept": "PZ397352"
+        },
+        "references": [
+            "doi:"
+        ]
+    },
+    "reactions": [
+        {
+            "evidence": {
+                "evidenceCode": [],
+                "references": [
+                    "doi:"
+                ]
+            },
+            "reactions": [
+                {
+                    "products": [
+                        ""
+                    ]
+                }
+            ]
+        }
+    ]
+}
