@@ -1,0 +1,67 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "comment": "Halogenation of various peptidyl-S-carrier in the teicoplanin pathway. he carrier proteins PCP 1 and 2 were expressed through gene tcp9, while PCP 6 was expressed by tcp11. Stereochemistry could not be depicted due to incompatibility with validation engine. ",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-09-14",
+            "contributors": [
+                "0009-0000-8651-1669"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "Tcp21",
+        "description": "Flavin-dependent halogenase",
+        "references": [
+            "doi:10.1039/c7sc00460e",
+            "doi:10.1007/s00044-025-03488-0",
+            "doi:10.1111/febs.15350"
+        ],
+        "databaseIds": {
+            "uniprot": "Q70AY7",
+            "genpept": "CAE53362.1",
+            "mibig": "BGC0000440"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD",
+                "NAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Chlorination of carrier-S-L-tyrosine. Substrate together with a carrier protein determine the selectivity. The activity of the L-tyrosine moiety with different carrier proteins in the same pathway could hint at regulatory activities. Carrier proteins: PCP1,2 and 6",
+            "reactionSMARTS": "[#7:1]-[#6:2](-[#6:11](-[#16:13]-[*])=[#8:12])-[#6:3]-[#6:4]1:[#6:10]:[#6:9]:[#6:7](-[#8:8]):[#6:6]:[#6:5]:1>>[#7:1]-[#6:2](-[#6:11](-[#16:13]-[*])=[#8:12])-[#6:3]-[#6:4]1:[#6:10]:[#6:9]:[#6:7](-[#8:8]):[#6:6](-[Cl]):[#6:5]:1",
+            "reactions": [
+                {
+                    "substrate": "*SC(=O)C(N)Cc1ccc(O)cc1",
+                    "products": [
+                        "*SC(=O)C(N)Cc1ccc(O)c(Cl)c1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Chlorination in position 3 of carrier-bound L-tyrosine."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1039/c7sc00460e",
+                    "doi:10.1007/s00044-025-03488-0"
+                ]
+            }
+        }
+    ]
+}
