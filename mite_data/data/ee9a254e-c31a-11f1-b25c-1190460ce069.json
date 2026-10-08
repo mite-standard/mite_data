@@ -16,29 +16,44 @@
     ],
     "enzyme": {
         "name": "CsHAL2",
-        "databaseIds": {
-            "uniprot": "",
-            "genpept": "PZ397352"
-        },
+        "description": "FAD dependent halogenase",
         "references": [
-            "doi:"
-        ]
+            "doi:10.1016/j.ijbiomac.2026.154764"
+        ],
+        "databaseIds": {
+            "genpept": "YGB79289.1"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Regiospecific chlorination of the anthraquinone dermolutein to form chlorodermolutein",
+            "reactionSMARTS": "[#6]-[#6]1:[#6](-[#6](-[#8])=[#8]):[#6](-[#8]):[#6]2-[#6](-[#6]3:[#6](-[#6](=[#8])-[#6]:2:[#6]:1):[#6]:[#6](-[#8]):[#6]:[#6]:3-[#8]-[#6])=[#8]>>[#6]-[#6]1:[#6](-[#6](-[#8])=[#8]):[#6](-[#8]):[#6]2-[#6](-[#6]3:[#6](-[#6](=[#8])-[#6]:2:[#6]:1):[#6](-[Cl]):[#6](-[#8]):[#6]:[#6]:3-[#8]-[#6])=[#8]",
             "reactions": [
                 {
+                    "substrate": "COc1cc(O)cc2c1C(=O)c1c(cc(C)c(C(=O)O)c1O)C2=O",
                     "products": [
-                        ""
-                    ]
+                        "COc1cc(O)c(Cl)c2c1C(=O)c1c(cc(C)c(C(=O)O)c1O)C2=O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Regiospecific chlorination of the anthraquinone dermolutein to form 5-chlorodermolutein"
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1016/j.ijbiomac.2026.154764"
+                ]
+            }
         }
     ]
 }
