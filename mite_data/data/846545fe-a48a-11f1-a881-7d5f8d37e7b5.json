@@ -1,0 +1,114 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "comment": "AoiQ is a bifunctional methyltransferase (MT) and flavin-dependent halogenase (FDH) that catalyzes dimethylation and gem-dichlorination in the biosynthesis of 8-methyldichlorodiaporthin",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-08-30",
+            "contributors": [
+                "0009-0008-8086-5325"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "AoiQ",
+        "description": "bifunctional methyltransferase-halogenase",
+        "references": [
+            "doi:10.1021/jacs.1c02868",
+            "doi:10.1002/anie.201604516"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI0001F2A4ED",
+            "mibig": "BGC0002237"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD",
+                "SAM"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation",
+                "Methylation"
+            ],
+            "description": "AoiQ catalyzes dimethylation and gem-dichlorination of 1,3-diketone substrates to produce 8-methyldichlorodiaporthin",
+            "reactionSMARTS": "[#8:1]-[#6:2]1:[#6:7]:[#6:6]2:[#6:8]:[#6:9](-[#6:13]-[#6:14](=[#8])-[#6:15]-[#6](=[#8])-[#6]):[#8:10]:[#6:11](=[#8:12]):[#6:5]:2:[#6:4](-[#8:17]):[#6:3]:1>>[#8:1](-[#6])-[#6:2]1:[#6:7]:[#6:6]2:[#6:8]:[#6:9](-[#6:13]-[#6@@:14](/[#8])-[#6:15](-[Cl])-[Cl]):[#8:10]:[#6:11](=[#8:12]):[#6:5]:2:[#6:4](-[#8:17]-[#6]):[#6:3]:1",
+            "reactions": [
+                {
+                    "substrate": "CC(=O)CC(=O)Cc1cc2cc(O)cc(O)c2c(=O)o1",
+                    "products": [
+                        "COc1cc(OC)c2c(=O)oc(C[C@@H](O)C(Cl)Cl)cc2c1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "AoiQ is a bifunctional enzyme, first performs an unusual geminal \u03b1,\u03b1-dichlorination of the 1,3-diketone substrate. The resulting dichlorinated intermediate undergoes nonenzymatic deacetylation, followed by C10 ketoreduction catalyzed by the SDR enzyme DiaC, or catalyzed by heterologous host endogenous ketoreductases. The resulting dichlorinated diaporthin scaffold is subsequently O-methylated by the MT domain of AoiQ to produce 8-methyldichlorodiaporthin."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1021/jacs.1c02868"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "AoiQ-FDH domain catalyzes dichlorination of 1,3-diketone substrate",
+            "reactionSMARTS": "[#8:1]-[#6:2]1:[#6:7]:[#6:6]2:[#6:8]:[#6:9](-[#6:13]-[#6:14](=[#8:16])-[#6:15]-[#6](=[#8])-[#6]):[#8:10]:[#6:11](=[#8:12]):[#6:5]:2:[#6:4](-[#8:17]):[#6:3]:1>>[#8:1]-[#6:2]1:[#6:7]:[#6:6]2:[#6:8]:[#6:9](-[#6:13]-[#6:14](=[#8:16])-[#6:15](-[Cl])-[Cl]):[#8:10]:[#6:11](=[#8:12]):[#6:5]:2:[#6:4](-[#8:17]):[#6:3]:1",
+            "reactions": [
+                {
+                    "substrate": "CC(=O)CC(=O)Cc1cc2cc(O)cc(O)c2c(=O)o1",
+                    "products": [
+                        "O=C(Cc1cc2cc(O)cc(O)c2c(=O)o1)C(Cl)Cl"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/jacs.1c02868"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "AoiQ-MT domain catalyzes dimethylation on dichlorinated diaporthin scaffold",
+            "reactionSMARTS": "[#8:1]-[#6:2]1:[#6:19]:[#6:17](-[#8:18]):[#6:16]2:[#6:4](:[#6:5]:[#6:6](:[#8:13]:[#6:14]:2=[#8:15])-[#6:7]-[#6@@:8](-[#6:10](-[Cl:12])-[Cl:11])/[#8:9]):[#6:3]:1>>[#8:1](-[#6])-[#6:2]1:[#6:19]:[#6:17](-[#8:18]-[#6]):[#6:16]2:[#6:4](:[#6:5]:[#6:6](:[#8:13]:[#6:14]:2=[#8:15])-[#6:7]-[#6@@:8](-[#6:10](-[Cl:12])-[Cl:11])/[#8:9]):[#6:3]:1",
+            "reactions": [
+                {
+                    "substrate": "O=c1oc(C[C@H](O)C(Cl)Cl)cc2cc(O)cc(O)c12",
+                    "products": [
+                        "COc1cc(OC)c2c(=O)oc(C[C@H](O)C(Cl)Cl)cc2c1"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/jacs.1c02868"
+                ]
+            }
+        }
+    ]
+}
