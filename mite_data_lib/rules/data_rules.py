@@ -121,12 +121,33 @@ def genpept_exists(
     e = []
     w = []
     if genpept := data["enzyme"]["databaseIds"].get("genpept"):
-        r = requests.head(
-            url=f"https://www.ncbi.nlm.nih.gov/protein/{genpept}",
-            timeout=settings.timeout,
-            allow_redirects=False,
-        )
-        if r.status_code != 200:
+        url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
+
+        try:
+            response = requests.get(
+                url,
+                params={
+                    "db": "protein",
+                    "term": f"{genpept}[Accession]",
+                    "retmode": "json",
+                    "retmax": 1,
+                },
+                timeout=settings.timeout,
+            )
+            response.raise_for_status()
+
+            if int(response.json()["esearchresult"]["count"]) == 0:
+                raise ValueError
+
+        except requests.RequestException as err:
+            e.append(
+                ValidationIssue(
+                    severity="error",
+                    location=data["accession"],
+                    message=f"API call to NCBI server with Genpept ID '{genpept}' failed: {err!s}",
+                )
+            )
+        except (ValueError, KeyError, TypeError):
             e.append(
                 ValidationIssue(
                     severity="error",
