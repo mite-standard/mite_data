@@ -1,0 +1,63 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "comment": "VemK halogenates venemycin to form 2-chloro venemycin",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-08-29",
+            "contributors": [
+                "0009-0008-8086-5325"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "VemK",
+        "description": "Flavin-dependent halogenase",
+        "references": [
+            "doi:10.1021/acschembio.9b00554",
+            "doi:10.1002/cbic.201600396"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI00100512FD",
+            "genpept": "QAT18852.1"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "VemK catalyzes the regioselective halogenation of the pyrone moiety in venemycin to produce 2-chloro venemycin",
+            "reactionSMARTS": "[#8:1]=[#6:2]1:[#8:16]:[#6:7](-[#6:8]2:[#6:15]:[#6:13](-[#8:14]):[#6:12]:[#6:10](-[#8:11]):[#6:9]:2):[#6:6]:[#6:4](-[#8:5]):[#6:3]:1>>[#8:1]=[#6:2]1:[#8:16]:[#6:7](-[#6:8]2:[#6:15]:[#6:13](-[#8:14]):[#6:12]:[#6:10](-[#8:11]):[#6:9]:2):[#6:6]:[#6:4](-[#8:5]):[#6:3]:1-[Cl]",
+            "reactions": [
+                {
+                    "substrate": "O=c1cc(O)cc(-c2cc(O)cc(O)c2)o1",
+                    "products": [
+                        "O=c1oc(-c2cc(O)cc(O)c2)cc(O)c1Cl"
+                    ],
+                    "isIntermediate": false,
+                    "description": "VemK acts as a single-component Flavin-dependent halogenase. VemK could also use bromide in vitro, leading to the formation of 2-bromo venemycin."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acschembio.9b00554"
+                ]
+            }
+        }
+    ]
+}
