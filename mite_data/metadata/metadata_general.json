@@ -11017,6 +11017,27 @@
       "reaction_description":"Single chlorination of melleolide F as a representative scaffold for various melleloides.",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000522":{
+      "accession":"MITE0000522",
+      "class_name":"Basidiomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Eukaryota",
+      "enzyme_description":"N-Methyltransferase",
+      "enzyme_ids":{
+        "genpept":"AXS67848.1",
+        "uniprot":"A0A346RP51"
+      },
+      "enzyme_name":"TrpM",
+      "family":"Agaricomycetes",
+      "kingdom":"Fungi",
+      "order":"Agaricomycotina",
+      "organism":"Psilocybe serbica",
+      "phylum":"Dikarya",
+      "reaction_description":"TrpM catalyzes N-methylation of L-tryptophan to produce L-abrine (N-alpha-methyl-L-tryptophan)",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.30"
