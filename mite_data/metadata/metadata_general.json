@@ -10868,6 +10868,28 @@
       "reaction_description":"Dichlorination of pyrrolyl-S-Mpy15 on position 4 and 5.",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000515":{
+      "accession":"MITE0000515",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD",
+      "domain":"Bacteria",
+      "enzyme_description":"Flavin-dependent halogenase",
+      "enzyme_ids":{
+        "genpept":"AAM54090.1",
+        "mibig":"BGC0000020",
+        "uniprot":"Q8KUG0"
+      },
+      "enzyme_name":"Asm12",
+      "family":"Pseudonocardiaceae",
+      "kingdom":"Bacillati",
+      "order":"Pseudonocardiales",
+      "organism":"Actinosynnema pretiosum subsp. auranticum",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Chlorination of proansamitocin in the ansamitocin P-3 pathway",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.30"

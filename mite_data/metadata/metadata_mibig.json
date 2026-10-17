@@ -1,5 +1,24 @@
 {
   "entries":{
+    "BGC0000020":[
+      {
+        "enzyme_description":"Flavin-dependent halogenase",
+        "enzyme_ids":{
+          "genpept":"AAM54090.1",
+          "mibig":"BGC0000020",
+          "uniprot":"Q8KUG0"
+        },
+        "enzyme_name":"Asm12",
+        "enzyme_refs":[
+          "doi:10.1021/ja038166y",
+          "doi:10.1039/C1MB05036B"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000515",
+        "mite_url":"https://bioregistry.io/mite:MITE0000515",
+        "status":"active"
+      }
+    ],
     "BGC0000024":[
       {
         "enzyme_description":"Cytochrome P450",
