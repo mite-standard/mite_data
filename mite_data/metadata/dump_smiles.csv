@@ -718,3 +718,5 @@
 716,MITE0000519.reaction2.example1,Cc1cc(O)cc(O)c1C(=O)O[C@@H]1C[C@]2(C)C3CC(C)(C)CC3C=C(CO)[C@]12O,Cc1c(Br)c(O)cc(O)c1C(=O)O[C@@H]1C[C@]2(C)C3CC(C)(C)CC3C=C(CO)[C@]12O
 717,MITE0000520.reaction1.example1,Cc1cc(O)cc(O)c1C(=O)O[C@@H]1C[C@]2(C)C3CC(C)(C)CC3C=C(CO)[C@]12O,Cc1c(Cl)c(O)cc(O)c1C(=O)O[C@@H]1C[C@]2(C)C3CC(C)(C)CC3C=C(CO)[C@]12O
 718,MITE0000520.reaction2.example1,Cc1cc(O)cc(O)c1C(=O)O[C@@H]1C[C@]2(C)C3CC(C)(C)CC3C=C(CO)[C@]12O,Cc1c(Br)c(O)cc(O)c1C(=O)O[C@@H]1C[C@]2(C)C3CC(C)(C)CC3C=C(CO)[C@]12O
+719,MITE0000521.reaction1.example1,Cc1cc(O)cc(O)c1C(=O)O[C@@H]1C[C@]2(C)C3CC(C)(C)CC3C=C(CO)[C@]12O,Cc1c(Cl)c(O)cc(O)c1C(=O)O[C@@H]1C[C@]2(C)C3CC(C)(C)CC3C=C(CO)[C@]12O
+720,MITE0000521.reaction2.example1,Cc1cc(O)cc(O)c1C(=O)O[C@@H]1C[C@]2(C)C3CC(C)(C)CC3C=C(CO)[C@]12O,Cc1c(Br)c(O)cc(O)c1C(=O)O[C@@H]1C[C@]2(C)C3CC(C)(C)CC3C=C(CO)[C@]12O
