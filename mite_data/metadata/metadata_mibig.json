@@ -3173,6 +3173,24 @@
         "status":"active"
       }
     ],
+    "BGC0001159":[
+      {
+        "enzyme_description":"Flavin-dependent halogenase",
+        "enzyme_ids":{
+          "genpept":"AFP87533.1",
+          "mibig":"BGC0001159",
+          "uniprot":"J7H1A1"
+        },
+        "enzyme_name":"Mpy16",
+        "enzyme_refs":[
+          "doi:10.1021/ja305670f"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000514",
+        "mite_url":"https://bioregistry.io/mite:MITE0000514",
+        "status":"active"
+      }
+    ],
     "BGC0001165":[
       {
         "enzyme_description":"Non-heme halogenase",
