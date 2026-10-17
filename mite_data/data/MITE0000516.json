@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000516",
     "status": "active",
     "comment": "Halogenation of aminoacyl-S-carrier (pyrrole-2-carboxyl-S-HrmL) in the hormaomycin pathway. Tethering the pyrrole moiety to the carrier proteins Clon5/Clon1 from a different strain (BGC0000832) results in low yields of chlorinated products.",
     "changelog": [
@@ -10,7 +10,8 @@
                 "0009-0000-8651-1669"
             ],
             "reviewers": [
-                "0009-0008-6482-7206"
+                "0009-0008-6482-7206",
+                "0000-0001-6534-6609"
             ],
             "comment": "New entry. Removed 1 wrong cofactor and evidence qualifier."
         }
