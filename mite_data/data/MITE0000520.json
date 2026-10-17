@@ -1,7 +1,7 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000520",
     "status": "active",
-    "comment": "Melleolide halogenation in Armillaria mellea. Putative MiBiG entry has been retired (BGC0001401). Same reaction as ArmH1, ArmH2, ArmH3, ArmH5.",
+    "comment": "Melleolide halogenation in Armillaria mellea. Associated MiBiG entry has been retired (BGC0001401). Same reaction as ArmH1, ArmH2, ArmH3, ArmH5.",
     "changelog": [
         {
             "version": "1",
