@@ -10912,6 +10912,27 @@
       "reaction_description":"Single chlorination of pyrrole-2-carboxyl-S-HrmL on position 5",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000517":{
+      "accession":"MITE0000517",
+      "class_name":"Basidiomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD|NAD",
+      "domain":"Eukaryota",
+      "enzyme_description":"Flavin-dependent halogenase",
+      "enzyme_ids":{
+        "genpept":"AEM76785.1",
+        "uniprot":"G3FLZ7"
+      },
+      "enzyme_name":"ArmH1",
+      "family":"Agaricomycetes",
+      "kingdom":"Fungi",
+      "order":"Agaricomycotina",
+      "organism":"Armillaria mellea",
+      "phylum":"Dikarya",
+      "reaction_description":"Single Chlorination of melleolide F representing melleloids as whole.",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.30"
