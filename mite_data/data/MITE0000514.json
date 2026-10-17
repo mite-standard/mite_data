@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000514",
     "status": "active",
     "comment": "Mpy16 dichlorinates the carrier-bound substrate pyrrolyl-S-Mpy15 to 4,5-dichloro-pyrrolyl-S-Mpy15 which yields monodeoxypyoluteorin downstream, an intermediate in the marinopyrrole pathway.",
     "changelog": [
@@ -10,7 +10,8 @@
                 "0009-0000-8651-1669"
             ],
             "reviewers": [
-                "0009-0008-6482-7206"
+                "0009-0008-6482-7206",
+                "0000-0001-6534-6609"
             ],
             "comment": "New entry. Removed 1 Cofactor. Corrected spelling mistakes."
         }
