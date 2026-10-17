@@ -1349,6 +1349,23 @@
         "mite_accession":"MITE0000195",
         "mite_url":"https://bioregistry.io/mite:MITE0000195",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Flavin-dependent halogenase",
+        "enzyme_ids":{
+          "genpept":"ACE80255.1",
+          "mibig":"BGC0000374",
+          "uniprot":"C1IHU5"
+        },
+        "enzyme_name":"HrmQ",
+        "enzyme_refs":[
+          "doi:10.1016/j.chembiol.2010.12.018",
+          "doi:10.1002/cbic.200800186"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000516",
+        "mite_url":"https://bioregistry.io/mite:MITE0000516",
+        "status":"active"
       }
     ],
     "BGC0000378":[
