@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000513",
     "status": "active",
     "comment": "Halogenation of ochratoxin B in the ochratoxin A pathway. No flavin reductase was identified in this gene cluster.",
     "changelog": [
@@ -10,7 +10,8 @@
                 "0009-0000-8651-1669"
             ],
             "reviewers": [
-                "0009-0008-6482-7206"
+                "0009-0008-6482-7206",
+                "0000-0001-6534-6609"
             ],
             "comment": "New entry. Removed NAD as cofactor."
         }
@@ -20,7 +21,7 @@
         "description": "Flavin-dependent halogenase",
         "references": [
             "doi:10.1128/AEM.01209-16"
-        ],
+        ],0000-0001-6534-6609
         "databaseIds": {
             "uniprot": "A0A2I7UGF8",
             "genpept": "AUS29481.1",
