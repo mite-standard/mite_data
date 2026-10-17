@@ -10890,6 +10890,28 @@
       "reaction_description":"Chlorination of proansamitocin in the ansamitocin P-3 pathway",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000516":{
+      "accession":"MITE0000516",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD",
+      "domain":"Bacteria",
+      "enzyme_description":"Flavin-dependent halogenase",
+      "enzyme_ids":{
+        "genpept":"ACE80255.1",
+        "mibig":"BGC0000374",
+        "uniprot":"C1IHU5"
+      },
+      "enzyme_name":"HrmQ",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces griseoflavus",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Single chlorination of pyrrole-2-carboxyl-S-HrmL on position 5",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.30"
