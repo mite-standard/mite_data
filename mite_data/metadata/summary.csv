@@ -504,3 +504,4 @@ MITE0000509,active,CczI,O-methyltransferase,Biaryl bond formation|Methylation|Re
 MITE0000510,active,CczA,Cytochrome P450,Hydroxylation|Oxidation,N-hydroxylation of carbazole,NADP,N/A,Streptomyces diacarni,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae
 MITE0000511,active,PaAT-1,O-acetyltransferase,Acetylation,Converts 3'-O-deacetyl-Fusicoccin A to Fusicoccin A.,N/A,N/A,Diaporthe amygdali,Eukaryota,Fungi,Dikarya,Ascomycota,Pezizomycotina,Sordariomycetes
 MITE0000512,active,DlpM,Methyltransferase,Methylation,Methylation of aspartatic acid on the C-termini of lasso peptide.,SAM,N/A,Nonomuraea jiangxiensis,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Streptosporangiales,Streptosporangiaceae
+MITE0000514,active,Mpy16,Flavin-dependent halogenase,Halogenation,Dichlorination of pyrrolyl-S-Mpy15 on position 4 and 5.,FAD,N/A,Streptomyces sp. CNQ-418,Bacteria,Bacillati,Actinomycetota,Actinomycetes,Kitasatosporales,Streptomycetaceae

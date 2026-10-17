@@ -10846,6 +10846,28 @@
       "reaction_description":"Methylation of aspartatic acid on the C-termini of lasso peptide.",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000514":{
+      "accession":"MITE0000514",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD",
+      "domain":"Bacteria",
+      "enzyme_description":"Flavin-dependent halogenase",
+      "enzyme_ids":{
+        "genpept":"AFP87533.1",
+        "mibig":"BGC0001159",
+        "uniprot":"J7H1A1"
+      },
+      "enzyme_name":"Mpy16",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces sp. CNQ-418",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Dichlorination of pyrrolyl-S-Mpy15 on position 4 and 5.",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.30"
