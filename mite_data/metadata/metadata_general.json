@@ -10996,6 +10996,27 @@
       "reaction_description":"Single chlorination of melleolide F as a representative scaffold for various melleloides.",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000521":{
+      "accession":"MITE0000521",
+      "class_name":"Basidiomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD|NAD",
+      "domain":"Eukaryota",
+      "enzyme_description":"Flavin-dependent halogenase",
+      "enzyme_ids":{
+        "genpept":"ALT31852.1",
+        "uniprot":"A0A0U3C228"
+      },
+      "enzyme_name":"ArmH5",
+      "family":"Agaricomycetes",
+      "kingdom":"Fungi",
+      "order":"Agaricomycotina",
+      "organism":"Armillaria mellea",
+      "phylum":"Dikarya",
+      "reaction_description":"Single chlorination of melleolide F as a representative scaffold for various melleloides.",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.30"
