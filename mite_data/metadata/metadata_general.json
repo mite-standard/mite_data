@@ -11038,6 +11038,27 @@
       "reaction_description":"TrpM catalyzes N-methylation of L-tryptophan to produce L-abrine (N-alpha-methyl-L-tryptophan)",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000523":{
+      "accession":"MITE0000523",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme|NADP",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"AAB08049.1",
+        "uniprot":"Q59971"
+      },
+      "enzyme_name":"DoxA",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces sp. (strain C5)",
+      "phylum":"Actinomycetota",
+      "reaction_description":"DoxA hydroxylates 13-deoxydaunorubicin to form 13-dihydrodaunorubicin",
+      "status":"active",
+      "tailoring":"Hydroxylation|Oxidation"
     }
   },
   "version_mite_data":"1.30"
