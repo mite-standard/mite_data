@@ -11166,6 +11166,27 @@
       "reaction_description":"ScaP installs a C-N cross-link (Trp1-C to Trp4-N) on the motif WHIW of ScaA precursor peptide. The mature product Canumycin, is trimethylated at the free N-terminus of the Trp1 residue by the N-methyltransferase. ScaA: MRKLLRRVTGRRVNRQAWHIW",
       "status":"active",
       "tailoring":"Biaryl bond formation|Cyclization|Oxidation"
+    },
+    "MITE0000529":{
+      "accession":"MITE0000529",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"WMW29964.1",
+        "uniprot":"UPI0029217F1E"
+      },
+      "enzyme_name":"SspP",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces spectabilis",
+      "phylum":"Actinomycetota",
+      "reaction_description":"SspP catalyzes dual C–N cross-links alongside an aryl ether linkage within the core WYWY motif",
+      "status":"active",
+      "tailoring":"Biaryl bond formation"
     }
   },
   "version_mite_data":"1.30"
