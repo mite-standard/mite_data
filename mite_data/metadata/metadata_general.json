@@ -11250,6 +11250,27 @@
       "reaction_description":"SmiP catalyzes C–N cross-link between two indole rings of tryptophan on the core motif WYW",
       "status":"active",
       "tailoring":"Biaryl bond formation"
+    },
+    "MITE0000533":{
+      "accession":"MITE0000533",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"QRV29427.1",
+        "uniprot":"UPI000B1CBA07"
+      },
+      "enzyme_name":"SalP",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces californicus",
+      "phylum":"Actinomycetota",
+      "reaction_description":"SalP catalyzes a C–N cross-link between the phenyl ring of tyrosine and the indole ring of tryptophan",
+      "status":"active",
+      "tailoring":"Biaryl bond formation"
     }
   },
   "version_mite_data":"1.30"
