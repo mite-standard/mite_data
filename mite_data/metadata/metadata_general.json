@@ -11229,6 +11229,27 @@
       "reaction_description":"AxyP catalyzes two C–N bonds within the core motif WNW",
       "status":"active",
       "tailoring":"Biaryl bond formation"
+    },
+    "MITE0000532":{
+      "accession":"MITE0000532",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"QKW47141.1",
+        "uniprot":"UPI00159265F0"
+      },
+      "enzyme_name":"SmiP",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces microflavus",
+      "phylum":"Actinomycetota",
+      "reaction_description":"SmiP catalyzes C–N cross-link between two indole rings of tryptophan on the core motif WYW",
+      "status":"active",
+      "tailoring":"Biaryl bond formation"
     }
   },
   "version_mite_data":"1.30"
