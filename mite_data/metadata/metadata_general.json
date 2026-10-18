@@ -11187,6 +11187,27 @@
       "reaction_description":"SspP catalyzes dual C–N cross-links alongside an aryl ether linkage within the core WYWY motif",
       "status":"active",
       "tailoring":"Biaryl bond formation"
+    },
+    "MITE0000530":{
+      "accession":"MITE0000530",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"SHF91911.1",
+        "uniprot":"UPI000910CE4E"
+      },
+      "enzyme_name":"ShiP",
+      "family":"Pseudonocardiaceae",
+      "kingdom":"Bacillati",
+      "order":"Pseudonocardiales",
+      "organism":"Streptoalloteichus hindustanus",
+      "phylum":"Actinomycetota",
+      "reaction_description":"ShiP catalyzes two C-N bond formation on the core motif WDW",
+      "status":"active",
+      "tailoring":"Biaryl bond formation"
     }
   },
   "version_mite_data":"1.30"
