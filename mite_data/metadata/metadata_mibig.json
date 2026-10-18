@@ -4344,6 +4344,25 @@
         "status":"active"
       }
     ],
+    "BGC0001925":[
+      {
+        "enzyme_description":"Cupin dioxygenase",
+        "enzyme_ids":{
+          "genpept":"BBG06562.1",
+          "mibig":"BGC0001925",
+          "uniprot":"P0DY49"
+        },
+        "enzyme_name":"SbzM",
+        "enzyme_refs":[
+          "doi:10.1038/s41929-026-01493-z",
+          "doi:10.1038/s41467-018-08093-x"
+        ],
+        "enzyme_tailoring":"Decarboxylation|Oxidation",
+        "mite_accession":"MITE0000481",
+        "mite_url":"https://bioregistry.io/mite:MITE0000481",
+        "status":"retired"
+      }
+    ],
     "BGC0001945":[
       {
         "enzyme_description":"L-lysine cyclodeaminase",
@@ -5371,6 +5390,24 @@
         "mite_accession":"MITE0000127",
         "mite_url":"https://bioregistry.io/mite:MITE0000127",
         "status":"active"
+      }
+    ],
+    "BGC0002706":[
+      {
+        "enzyme_description":"O-methyltransferase",
+        "enzyme_ids":{
+          "genpept":"AAC44130.1",
+          "mibig":"BGC0002706",
+          "uniprot":"Q50859"
+        },
+        "enzyme_name":"SafC",
+        "enzyme_refs":[
+          "doi:10.1128/AEM.00011-07"
+        ],
+        "enzyme_tailoring":"Methylation",
+        "mite_accession":"MITE0000491",
+        "mite_url":"https://bioregistry.io/mite:MITE0000491",
+        "status":"retired"
       }
     ],
     "BGC0002750":[
