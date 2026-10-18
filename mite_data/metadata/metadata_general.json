@@ -10164,6 +10164,69 @@
       "status":"active",
       "tailoring":"Halogenation"
     },
+    "MITE0000474":{
+      "accession":"MITE0000474",
+      "class_name":"Embryophyta",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Eukaryota",
+      "enzyme_description":"O-methyltransferase",
+      "enzyme_ids":{
+        "genpept":"AIL54541.1",
+        "uniprot":"UPI0004F8735F"
+      },
+      "enzyme_name":"N4OMT",
+      "family":"Spermatophyta",
+      "kingdom":"Viridiplantae",
+      "order":"Tracheophyta",
+      "organism":"Narcissus aff. pseudonarcissus MK-2014",
+      "phylum":"Streptophyta",
+      "reaction_description":"N4OMT catalyzes methylation at the 4’-hydroxyl of norbelladine to form 4-O’-methylnorbelladine (4OMN)",
+      "status":"active",
+      "tailoring":"Methylation"
+    },
+    "MITE0000475":{
+      "accession":"MITE0000475",
+      "class_name":"Gammaproteobacteria",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD|NAD",
+      "domain":"Bacteria",
+      "enzyme_description":"Flavin-dependent halogenase",
+      "enzyme_ids":{
+        "genpept":"AHA34038.1",
+        "mibig":"BGC0000890",
+        "uniprot":"UPI0003C9DACA"
+      },
+      "enzyme_name":"Bmp5",
+      "family":"Pseudoalteromonadaceae",
+      "kingdom":"Pseudomonadati",
+      "order":"Alteromonadales",
+      "organism":"Pseudoalteromonas phenolica O-BC30",
+      "phylum":"Pseudomonadota",
+      "reaction_description":"Decarboxylation and iterative bromination of 4-Hydroxybenzoat. ",
+      "status":"active",
+      "tailoring":"Decarboxylation|Halogenation"
+    },
+    "MITE0000476":{
+      "accession":"MITE0000476",
+      "class_name":"Not found",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD|NAD",
+      "domain":"Not found",
+      "enzyme_description":"Flavin-dependent halogenase",
+      "enzyme_ids":{
+        "uniprot":"UPI00126783B3"
+      },
+      "enzyme_name":"VirX1",
+      "family":"Not found",
+      "kingdom":"Not found",
+      "order":"Not found",
+      "organism":"Not found",
+      "phylum":"Not found",
+      "reaction_description":"Halogenation of 6-Azaindole yielding 3-Iodo-6-Azaindole",
+      "status":"active",
+      "tailoring":"Halogenation"
+    },
     "MITE0000477":{
       "accession":"MITE0000477",
       "class_name":"Actinomycetes",
@@ -10183,6 +10246,28 @@
       "organism":"Streptomyces sp. CS",
       "phylum":"Actinomycetota",
       "reaction_description":"Chlorination of naphthomycin E.",
+      "status":"active",
+      "tailoring":"Halogenation"
+    },
+    "MITE0000478":{
+      "accession":"MITE0000478",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"SAM-dependent halogenases",
+      "enzyme_ids":{
+        "genpept":"ABP53500.1",
+        "mibig":"BGC0001041",
+        "uniprot":"A4X3Q0"
+      },
+      "enzyme_name":"SalL",
+      "family":"Micromonosporaceae",
+      "kingdom":"Bacillati",
+      "order":"Micromonosporales",
+      "organism":"Salinispora tropica (strain ATCC BAA-916 / DSM 44818 / JCM 13857 / NBRC 105044 / CNB-440)",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Single chlorination of SAM yielding  5′-ClDA and L-Methionin through SN2 nucleophilic substitution",
       "status":"active",
       "tailoring":"Halogenation"
     },
@@ -10846,6 +10931,28 @@
       "reaction_description":"Methylation of aspartatic acid on the C-termini of lasso peptide.",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000513":{
+      "accession":"MITE0000513",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD",
+      "domain":"Eukaryota",
+      "enzyme_description":"Flavin-dependent halogenase",
+      "enzyme_ids":{
+        "genpept":"AUS29481.1",
+        "mibig":"BGC0002605",
+        "uniprot":"A0A2I7UGF8"
+      },
+      "enzyme_name":"AcOTAhal",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Aspergillus carbonarius",
+      "phylum":"Dikarya",
+      "reaction_description":"Single chlorination of ochratoxin B",
+      "status":"active",
+      "tailoring":"Halogenation"
     },
     "MITE0000514":{
       "accession":"MITE0000514",

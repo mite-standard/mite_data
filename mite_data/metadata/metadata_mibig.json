@@ -2663,6 +2663,22 @@
         "mite_accession":"MITE0000472",
         "mite_url":"https://bioregistry.io/mite:MITE0000472",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Flavin-dependent halogenase",
+        "enzyme_ids":{
+          "genpept":"AHA34038.1",
+          "mibig":"BGC0000890",
+          "uniprot":"UPI0003C9DACA"
+        },
+        "enzyme_name":"Bmp5",
+        "enzyme_refs":[
+          "doi:10.1038/nchembio.1564"
+        ],
+        "enzyme_tailoring":"Decarboxylation|Halogenation",
+        "mite_accession":"MITE0000475",
+        "mite_url":"https://bioregistry.io/mite:MITE0000475",
+        "status":"active"
       }
     ],
     "BGC0000893":[
@@ -2929,6 +2945,25 @@
         "mite_accession":"MITE0000078",
         "mite_url":"https://bioregistry.io/mite:MITE0000078",
         "status":"retired"
+      }
+    ],
+    "BGC0001041":[
+      {
+        "enzyme_description":"SAM-dependent halogenases",
+        "enzyme_ids":{
+          "genpept":"ABP53500.1",
+          "mibig":"BGC0001041",
+          "uniprot":"A4X3Q0"
+        },
+        "enzyme_name":"SalL",
+        "enzyme_refs":[
+          "doi:10.1021/acs.jcim.9b01079",
+          "doi:10.1038/nchembio.2007.56"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000478",
+        "mite_url":"https://bioregistry.io/mite:MITE0000478",
+        "status":"active"
       }
     ],
     "BGC0001052":[
@@ -5071,6 +5106,24 @@
         "enzyme_tailoring":"Halogenation",
         "mite_accession":"MITE0000480",
         "mite_url":"https://bioregistry.io/mite:MITE0000480",
+        "status":"active"
+      }
+    ],
+    "BGC0002605":[
+      {
+        "enzyme_description":"Flavin-dependent halogenase",
+        "enzyme_ids":{
+          "genpept":"AUS29481.1",
+          "mibig":"BGC0002605",
+          "uniprot":"A0A2I7UGF8"
+        },
+        "enzyme_name":"AcOTAhal",
+        "enzyme_refs":[
+          "doi:10.1128/AEM.01209-16"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000513",
+        "mite_url":"https://bioregistry.io/mite:MITE0000513",
         "status":"active"
       }
     ],
