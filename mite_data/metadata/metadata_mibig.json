@@ -3174,6 +3174,25 @@
         "status":"active"
       }
     ],
+    "BGC0001123":[
+      {
+        "enzyme_description":"Flavin-dependent halogenase",
+        "enzyme_ids":{
+          "genpept":"BAE56588.1",
+          "mibig":"BGC0001123",
+          "uniprot":"Q2UPC7"
+        },
+        "enzyme_name":"AclH",
+        "enzyme_refs":[
+          "doi:10.1002/anie.201407624",
+          "doi:10.1002/ange.201806740"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000525",
+        "mite_url":"https://bioregistry.io/mite:MITE0000525",
+        "status":"active"
+      }
+    ],
     "BGC0001140":[
       {
         "enzyme_description":"type I diterpene synthase",

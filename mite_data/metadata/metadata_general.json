@@ -11081,6 +11081,28 @@
       "reaction_description":"Dichlorination of L-pyrrolyl-S-Clz18",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000525":{
+      "accession":"MITE0000525",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD|NAD",
+      "domain":"Eukaryota",
+      "enzyme_description":"Flavin-dependent halogenase",
+      "enzyme_ids":{
+        "genpept":"BAE56588.1",
+        "mibig":"BGC0001123",
+        "uniprot":"Q2UPC7"
+      },
+      "enzyme_name":"AclH",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Aspergillus oryzae (strain ATCC 42149 / RIB 40)",
+      "phylum":"Dikarya",
+      "reaction_description":"Chlorination occurs only after subtraction of the phenyl moiety of the precursor through a retro-aldol reaction.",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.30"
