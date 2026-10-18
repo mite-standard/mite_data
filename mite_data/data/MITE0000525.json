@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000525",
     "status": "active",
     "comment": "Chlorination of  dechloroaspirochlorine in the aspirochlorine pathway. No flavin reductase in gene cluster found.",
     "changelog": [
@@ -10,7 +10,8 @@
                 "0009-0000-8651-1669"
             ],
             "reviewers": [
-                "0009-0008-6482-7206"
+                "0009-0008-6482-7206",
+                "0000-0001-6534-6609"
             ],
             "comment": "New entry."
         }
