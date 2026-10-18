@@ -11292,6 +11292,27 @@
       "reaction_description":"SlyP catalyzes biaryl bond formation between Y-Y on MRYAY pentapeptide",
       "status":"active",
       "tailoring":"Biaryl bond formation"
+    },
+    "MITE0000535":{
+      "accession":"MITE0000535",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"O-methyltransferase",
+      "enzyme_ids":{
+        "genpept":"AAB16938.1",
+        "uniprot":"Q55216"
+      },
+      "enzyme_name":"DauK",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces sp. (strain C5)",
+      "phylum":"Actinomycetota",
+      "reaction_description":"DauK catalyzes the SAM-dependent 4-O-methylation of carminomycin to form daunorubicin.",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.30"
