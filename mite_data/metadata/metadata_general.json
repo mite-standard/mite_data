@@ -11103,6 +11103,27 @@
       "reaction_description":"Chlorination occurs only after subtraction of the phenyl moiety of the precursor through a retro-aldol reaction.",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000526":{
+      "accession":"MITE0000526",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD",
+      "domain":"Bacteria",
+      "enzyme_description":"Flavin-dependent halogenase",
+      "enzyme_ids":{
+        "genpept":"ADW94630.1",
+        "uniprot":"E9P162"
+      },
+      "enzyme_name":"SttH",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces toxytricini",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Lysine activates HOCl, which attacks L-tryptophan to form a Wheland intermediate. Aromaticity is restored through deprotonation by a glutamate residue, yielding 6-chloro-tryptophan or 6-bromo-tryptophan.",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.30"
