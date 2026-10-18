@@ -11271,6 +11271,27 @@
       "reaction_description":"SalP catalyzes a C–N cross-link between the phenyl ring of tyrosine and the indole ring of tryptophan",
       "status":"active",
       "tailoring":"Biaryl bond formation"
+    },
+    "MITE0000534":{
+      "accession":"MITE0000534",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"USA00038.1",
+        "uniprot":"A0A0P4RBM4"
+      },
+      "enzyme_name":"SlyP",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces lydicamycinicus",
+      "phylum":"Actinomycetota",
+      "reaction_description":"SlyP catalyzes biaryl bond formation between Y-Y on MRYAY pentapeptide",
+      "status":"active",
+      "tailoring":"Biaryl bond formation"
     }
   },
   "version_mite_data":"1.30"
