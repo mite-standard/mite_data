@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000524",
     "status": "active",
     "comment": "Dichlorination of a L-pyrrolyl-S-carrier protein intermediate in the chlorizidine A pathway. Chirality not possible due to RDKit implementation issues.",
     "changelog": [
@@ -10,9 +10,10 @@
                 "0009-0000-8651-1669"
             ],
             "reviewers": [
-                "0009-0008-6482-7206"
+                "0009-0008-6482-7206",
+                "0000-0001-6534-6609"
             ],
-            "comment": "New entry. Updated substrate from prolin to pyrrolyl. Added aux enzyme. "
+            "comment": "New entry. Reviewer 1 updated substrate from prolin to pyrrolyl, added aux enzyme."
         }
     ],
     "enzyme": {
