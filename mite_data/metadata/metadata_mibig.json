@@ -803,6 +803,22 @@
         "mite_accession":"MITE0000507",
         "mite_url":"https://bioregistry.io/mite:MITE0000507",
         "status":"active"
+      },
+      {
+        "enzyme_description":"Flavin-dependent halogenase",
+        "enzyme_ids":{
+          "genpept":"AAD24882.1",
+          "mibig":"BGC0000127",
+          "uniprot":"Q9X3Q8"
+        },
+        "enzyme_name":"PltM",
+        "enzyme_refs":[
+          "doi:10.1038/s41467-019-09215-9"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000527",
+        "mite_url":"https://bioregistry.io/mite:MITE0000527",
+        "status":"active"
       }
     ],
     "BGC0000134":[

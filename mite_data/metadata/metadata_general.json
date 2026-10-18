@@ -11124,6 +11124,28 @@
       "reaction_description":"Lysine activates HOCl, which attacks L-tryptophan to form a Wheland intermediate. Aromaticity is restored through deprotonation by a glutamate residue, yielding 6-chloro-tryptophan or 6-bromo-tryptophan.",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000527":{
+      "accession":"MITE0000527",
+      "class_name":"Gammaproteobacteria",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD|NAD|NADP",
+      "domain":"Bacteria",
+      "enzyme_description":"Flavin-dependent halogenase",
+      "enzyme_ids":{
+        "genpept":"AAD24882.1",
+        "mibig":"BGC0000127",
+        "uniprot":"Q9X3Q8"
+      },
+      "enzyme_name":"PltM",
+      "family":"Pseudomonadaceae",
+      "kingdom":"Pseudomonadati",
+      "order":"Pseudomonadales",
+      "organism":"Pseudomonas fluorescens",
+      "phylum":"Pseudomonadota",
+      "reaction_description":"Iodination of various 1,3-diphenols. Non-substrates: carboxylic acid derivatives",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.30"
