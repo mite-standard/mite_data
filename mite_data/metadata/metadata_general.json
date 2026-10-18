@@ -11208,6 +11208,27 @@
       "reaction_description":"ShiP catalyzes two C-N bond formation on the core motif WDW",
       "status":"active",
       "tailoring":"Biaryl bond formation"
+    },
+    "MITE0000531":{
+      "accession":"MITE0000531",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme",
+      "domain":"Bacteria",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "genpept":"SDW64743.1",
+        "uniprot":"UPI00089BB51F"
+      },
+      "enzyme_name":"AxyP",
+      "family":"Pseudonocardiaceae",
+      "kingdom":"Bacillati",
+      "order":"Pseudonocardiales",
+      "organism":"Amycolatopsis xylanica",
+      "phylum":"Actinomycetota",
+      "reaction_description":"AxyP catalyzes two C–N bonds within the core motif WNW",
+      "status":"active",
+      "tailoring":"Biaryl bond formation"
     }
   },
   "version_mite_data":"1.30"
