@@ -746,3 +746,4 @@
 740,MITE0000527.reaction7.example1,Oc1ccc(/C=C/c2cc(O)cc(O)c2)cc1,Oc1ccc(/C=C/c2cc(O)c(Cl)c(O)c2)cc1
 741,MITE0000527.reaction8.example1,Oc1cccc(O)c1,Oc1cc(O)c(Cl)cc1Cl
 742,MITE0000527.reaction9.example1,Oc1cccc(O)c1,Oc1cc(O)c(Br)cc1Br
+747,MITE0000528.reaction1.example1,CCC(C)C(NC(=O)C(Cc1c[nH]cn1)NC(=O)C(Cc1c[nH]c2ccccc12)NC(=O)C(C)NC(=O)C(CCC(N)=O)NC(=O)C(CCCNC(=N)N)NC(=O)C(CC(N)=O)NC(=O)C(NC(=O)C(CCCNC(=N)N)NC(=O)C(CCCNC(=N)N)NC(=O)CNC(=O)C(NC(=O)C(NC(=O)C(CCCNC(=N)N)NC(=O)C(CCCNC(=N)N)NC(=O)C(CC(C)C)NC(=O)C(CC(C)C)NC(=O)C(CCCCN)NC(=O)C(CCCNC(=N)N)NC(=O)C(N)CCSC)C(C)C)C(C)O)C(C)C)C(=O)NC(Cc1c[nH]c2ccccc12)C(=O)O,CCC(C)C1NC(=O)C(Cc2c[nH]cn2)NC(=O)C(NC(=O)C(C)NC(=O)C(CCC(N)=O)NC(=O)C(CCCNC(=N)N)NC(=O)C(CC(N)=O)NC(=O)C(NC(=O)C(CCCNC(=N)N)NC(=O)C(CCCNC(=N)N)NC(=O)CNC(=O)C(NC(=O)C(NC(=O)C(CCCNC(=N)N)NC(=O)C(CCCNC(=N)N)NC(=O)C(CC(C)C)NC(=O)C(CC(C)C)NC(=O)C(CCCCN)NC(=O)C(CCCNC(=N)N)NC(=O)C(N)CCSC)C(C)C)C(C)O)C(C)C)Cc2c[nH]c3ccc(cc23)-n2cc(c3ccccc32)CC(C(=O)O)NC1=O

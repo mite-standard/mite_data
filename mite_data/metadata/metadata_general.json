@@ -11146,6 +11146,26 @@
       "reaction_description":"Iodination of various 1,3-diphenols. Non-substrates: carboxylic acid derivatives",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000528":{
+      "accession":"MITE0000528",
+      "class_name":"Not found",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"Heme|NADP",
+      "domain":"Not found",
+      "enzyme_description":"Cytochrome P450",
+      "enzyme_ids":{
+        "uniprot":"UPI001160DEFE"
+      },
+      "enzyme_name":"ScaP",
+      "family":"Not found",
+      "kingdom":"Not found",
+      "order":"Not found",
+      "organism":"Not found",
+      "phylum":"Not found",
+      "reaction_description":"ScaP installs a C-N cross-link (Trp1-C to Trp4-N) on the motif WHIW of ScaA precursor peptide. The mature product Canumycin, is trimethylated at the free N-terminus of the Trp1 residue by the N-methyltransferase. ScaA: MRKLLRRVTGRRVNRQAWHIW",
+      "status":"active",
+      "tailoring":"Biaryl bond formation|Cyclization|Oxidation"
     }
   },
   "version_mite_data":"1.30"
