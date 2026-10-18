@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000528",
     "status": "active",
     "comment": "C\u2013N bond formation between W-W on the core peptide WHIW",
     "changelog": [
@@ -10,9 +10,10 @@
                 "0009-0008-8086-5325"
             ],
             "reviewers": [
-                "0009-0008-6482-7206"
+                "0009-0008-6482-7206",
+                "0000-0001-6534-6609"
             ],
-            "comment": "New entry. Added missing Tailoring reaction terms and cofactor. Compresseded the reactions descriptions into 1 description to reduce redundancies. "
+            "comment": "New entry. Added missing Tailoring reaction terms and cofactor. Compresseded the reactions descriptions into 1 description."
         }
     ],
     "enzyme": {
