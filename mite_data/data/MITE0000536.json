@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000536",
     "status": "active",
     "comment": "FAD-depended oxidoreductase",
     "changelog": [
@@ -10,14 +10,15 @@
                 "0009-0006-4188-3294"
             ],
             "reviewers": [
-                "0000-0002-9747-3423"
+                "0000-0002-9747-3423",
+                "0000-0001-6534-6609"
             ],
-            "comment": "New entry."
+            "comment": "New entry. Reviewer 2 fixed reaction SMARTS."
         }
     ],
     "enzyme": {
         "name": "PatO",
-        "description": "FAD-depended  oxidoreductase",
+        "description": "FAD-depended oxidoreductase",
         "references": [
             "doi:10.1111/1462-2920.14542"
         ],
@@ -48,7 +49,7 @@
                 "Reduction"
             ],
             "description": "aldehyde reduction and epoxidation",
-            "reactionSMARTS": "[#8]-c1ccc(-[#8])c(-[#6]=O)c1>>[#8]-[#6]-[#6]-1=[#6]-[#6](-[#8])-[#6]-2-[#8]-[#6]-2-[#6]-1=O",
+            "reactionSMARTS": "[#8]=[#6:2]-[#6:3]1:[#6:9](-[#8]):[#6:8]:[#6:7]:[#6:5](-[#8:6]):[#6:4]:1>>[#8]=[#6:9]1-[#6:8]2-[#6:7](-[#8]-2)-[#6:5](-[#8:6])-[#6:4]=[#6:3]-1-[#6:2]-[#8]",
             "reactions": [
                 {
                     "substrate": "O=Cc1cc(O)ccc1O",
