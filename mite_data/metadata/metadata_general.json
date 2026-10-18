@@ -11313,6 +11313,27 @@
       "reaction_description":"DauK catalyzes the SAM-dependent 4-O-methylation of carminomycin to form daunorubicin.",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000536":{
+      "accession":"MITE0000536",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD",
+      "domain":"Eukaryota",
+      "enzyme_description":"FAD-depended oxidoreductase",
+      "enzyme_ids":{
+        "genpept":"AIG62142.1",
+        "uniprot":"A0A075TR33"
+      },
+      "enzyme_name":"PatO",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Penicillium expansum",
+      "phylum":"Dikarya",
+      "reaction_description":"aldehyde reduction and epoxidation",
+      "status":"active",
+      "tailoring":"Oxidation|Reduction"
     }
   },
   "version_mite_data":"1.30"
