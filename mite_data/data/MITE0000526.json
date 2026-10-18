@@ -1,7 +1,7 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000526",
     "status": "active",
-    "comment": "Halogenation of both D-tryptophan and L-tryptophan. MIBiG: BGC0000382 shows no gene for putative halogenase and no pathway-specific flavin reductase identified.",
+    "comment": "Paper claims halogenation of both L- and D-tryptophan but no evidence provided. Associated MIBiG entry BGC0000382 shows no gene for putative halogenase and no pathway-specific flavin reductase identified.",
     "changelog": [
         {
             "version": "1",
@@ -10,7 +10,8 @@
                 "0009-0000-8651-1669"
             ],
             "reviewers": [
-                "0009-0008-6482-7206"
+                "0009-0008-6482-7206",
+                "0000-0001-6534-6609"
             ],
             "comment": "New entry. Removed wrong cofactor. Corrected some spelling mistakes."
         }
