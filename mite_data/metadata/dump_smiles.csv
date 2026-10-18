@@ -728,3 +728,8 @@
 726,MITE0000523.reaction3.example1,COc1cccc2c1C(=O)c1c(O)c3c(c(O)c1C2=O)C[C@@](O)(C(C)=O)C[C@@H]3O[C@@H]1C[C@@H](N)[C@@H](O)[C@@H](C)O1,COc1cccc2c1C(=O)c1c(O)c3c(c(O)c1C2=O)C[C@@](O)(C(=O)CO)C[C@@H]3O[C@H]1C[C@H](N)[C@H](O)[C@H](C)O1
 727,MITE0000524.reaction1.example1,*SC(=O)c1ccc[nH]1,*SC(=O)c1cc(Cl)c(Cl)[nH]1
 728,MITE0000525.reaction1.example1,CON1C(=O)[C@H]2NC(=O)[C@]13Oc1cc(O)ccc1[C@@H]3SS2,CON1C(=O)[C@H]2NC(=O)[C@]13Oc1cc(O)c(Cl)cc1[C@@H]3SS2
+729,MITE0000526.reaction1.example1,N[C@@H](Cc1c[nH]c2ccccc12)C(=O)O,N[C@@H](Cc1c[nH]c2cc(Cl)ccc12)C(=O)O.N[C@@H](Cc1c[nH]c2cc(Br)ccc12)C(=O)O
+730,MITE0000526.reaction2.example1,Nc1ccccc1C(=O)C[C@H](N)C(=O)O,Nc1ccc(Cl)cc1C(=O)C[C@H](N)C(=O)O
+731,MITE0000526.reaction3.example1,NC(=O)c1ccccc1N,NC(=O)c1cc(Cl)ccc1N
+732,MITE0000526.reaction4.example1,Nc1ccccc1C(=O)O,Nc1ccc(Cl)cc1C(=O)O
+733,MITE0000526.reaction5.example1,O=C(O)c1ccccc1Nc1ccccc1,O=C(O)c1ccccc1Nc1ccc(Cl)cc1
