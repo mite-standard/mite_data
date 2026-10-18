@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000535",
     "status": "active",
     "comment": "DauK is a Carminomycin 4-O-methyltransferase from Streptomyces sp. strain C5. It is a homologue of DnrK from S. peucetius. Both are involved in the biosynthetic pathway of the anthracycline daunorubicin.",
     "changelog": [
@@ -10,7 +10,8 @@
                 "0009-0008-8086-5325"
             ],
             "reviewers": [
-                "0009-0008-6482-7206"
+                "0009-0008-6482-7206",
+                "0000-0001-6534-6609"
             ],
             "comment": "New entry. Removed 1 wrong source. Added RHOD to MRHO reaction."
         }
