@@ -10315,6 +10315,28 @@
       "status":"active",
       "tailoring":"Halogenation"
     },
+    "MITE0000481":{
+      "accession":"MITE0000481",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Ni|Zn",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Cupin dioxygenase",
+      "enzyme_ids":{
+        "genpept":"BBG06562.1",
+        "mibig":"BGC0001925",
+        "uniprot":"P0DY49"
+      },
+      "enzyme_name":"SbzM",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces sp",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Two step oxidation and decarboxylation of L-cysteine with an amide transfer to the thiol group.",
+      "status":"retired",
+      "tailoring":"Decarboxylation|Oxidation"
+    },
     "MITE0000482":{
       "accession":"MITE0000482",
       "class_name":"Ascomycota",
@@ -10503,6 +10525,28 @@
       "reaction_description":"Epoxidation at C10-C11 of isoprenoid chain.",
       "status":"active",
       "tailoring":"Oxidation"
+    },
+    "MITE0000491":{
+      "accession":"MITE0000491",
+      "class_name":"Myxococcia",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"O-methyltransferase",
+      "enzyme_ids":{
+        "genpept":"AAC44130.1",
+        "mibig":"BGC0002706",
+        "uniprot":"Q50859"
+      },
+      "enzyme_name":"SafC",
+      "family":"Cystobacterineae",
+      "kingdom":"Pseudomonadati",
+      "order":"Myxococcales",
+      "organism":"Myxococcus xanthus",
+      "phylum":"Myxococcota",
+      "reaction_description":"O methylation of hydroxyltyrosine",
+      "status":"retired",
+      "tailoring":"Methylation"
     },
     "MITE0000492":{
       "accession":"MITE0000492",
@@ -10804,6 +10848,27 @@
       "reaction_description":"AryC catalyzes C-C biaryl bond formation resulting in Arylomycin A2.",
       "status":"active",
       "tailoring":"Biaryl bond formation"
+    },
+    "MITE0000506":{
+      "accession":"MITE0000506",
+      "class_name":"Craniata",
+      "cofactors_inorganic":"FeS",
+      "cofactors_organic":"SAM",
+      "domain":"Eukaryota",
+      "enzyme_description":"Radical S-adenosyl methionine",
+      "enzyme_ids":{
+        "genpept":"CAA68971.1",
+        "uniprot":"O70600"
+      },
+      "enzyme_name":"RSAD2",
+      "family":"Euteleostomi",
+      "kingdom":"Metazoa",
+      "order":"Vertebrata",
+      "organism":"Rattus norvegicus",
+      "phylum":"Chordata",
+      "reaction_description":"Formal dehydration of CTP to afford anti-viral ddhCTP",
+      "status":"retired",
+      "tailoring":"Dehydration"
     },
     "MITE0000507":{
       "accession":"MITE0000507",
