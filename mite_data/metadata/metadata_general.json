@@ -11059,6 +11059,28 @@
       "reaction_description":"DoxA hydroxylates 13-deoxydaunorubicin to form 13-dihydrodaunorubicin",
       "status":"active",
       "tailoring":"Hydroxylation|Oxidation"
+    },
+    "MITE0000524":{
+      "accession":"MITE0000524",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD",
+      "domain":"Bacteria",
+      "enzyme_description":"Flavin-dependent halogenase",
+      "enzyme_ids":{
+        "genpept":"AHA12077.1",
+        "mibig":"BGC0001172",
+        "uniprot":"U6A3L4"
+      },
+      "enzyme_name":"Clz5",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces sp. CNH287",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Dichlorination of L-pyrrolyl-S-Clz18",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.30"

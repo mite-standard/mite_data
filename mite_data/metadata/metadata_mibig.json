@@ -3264,6 +3264,24 @@
         "status":"active"
       }
     ],
+    "BGC0001172":[
+      {
+        "enzyme_description":"Flavin-dependent halogenase",
+        "enzyme_ids":{
+          "genpept":"AHA12077.1",
+          "mibig":"BGC0001172",
+          "uniprot":"U6A3L4"
+        },
+        "enzyme_name":"Clz5",
+        "enzyme_refs":[
+          "doi:10.1021/ja409520v"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000524",
+        "mite_url":"https://bioregistry.io/mite:MITE0000524",
+        "status":"active"
+      }
+    ],
     "BGC0001179":[
       {
         "enzyme_description":"Monooxygenase",
