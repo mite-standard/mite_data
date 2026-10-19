@@ -1,6 +1,3 @@
-mite_extras
-=========
-
 [![DOI](https://zenodo.org/badge/834042284.svg)](https://zenodo.org/doi/10.5281/zenodo.13294303)
 
 Contents
@@ -156,7 +153,7 @@ uv run python pipeline/validate_artifacts.py                      # Validates ar
 
 #### Adding new rules
 
-All rules follow a standardized API.
+All rules follow a standardized API:
 
 - Add your rule to [rules](mite_data_lib/rules). Follow the interface of the existing functions.
 - Update the corresponding [pipeline](pipeline)
