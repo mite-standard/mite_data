@@ -1,6 +1,6 @@
 {
     "accession": "MITE0000263",
-    "status": "active",
+    "status": "pending",
     "comment": "Cyclizes the precursor peptide WgkA, forming two C\u2013C bonds between Trp18 and Lys20. This is the first tailoring step in tryglysin A biosynthesis.",
     "changelog": [
         {
@@ -13,6 +13,17 @@
                 "0000-0001-5863-7248"
             ],
             "comment": "New entry."
+        },
+        {
+            "version": "2",
+            "date": "2026-10-26",
+            "contributors": [
+                "0009-0003-3131-7166"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": ""
         }
     ],
     "enzyme": {
