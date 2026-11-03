@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "C2 chlorination of nucleotide substrates in the adechlorin biosynthetic pathway.",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,69 @@
     ],
     "enzyme": {
         "name": "AdeV",
-        "databaseIds": {
-            "uniprot": "UPI0009C30FFD",
-            "genpept": ""
-        },
+        "description": "Non-heme halogenase",
         "references": [
-            "doi:"
-        ]
+            "doi:10.1002/anie.201914994",
+            "doi:10.1128/aem.02497-21"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A1U8X168",
+            "genpept": "AKQ99303.1",
+            "mibig": "BGC0001484"
+        },
+        "cofactors": {
+            "organic": [
+                "a-Ketoglutaric acid"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Chloration at the C2 position of purine 5'-monophosphate substrates by AdeV.",
+            "reactionSMARTS": "[#7:1]1(-[#6:6]2-[#6:11]-[#6:12]-[#6:13](-[#6:15]-[#8:16]-[#15:17](=[#8:20])(-[#8:19])-[#8;-:18])-[#8:14]-2):[#6:2]:[#7:3]:[#6:4]2:[#6:10]:[#7:9]:[#6:8]:[#7:7]:[#6:5]:1:2>>[#7:1]1(-[#6:6]2-[#6:11](-[Cl])-[#6:12]-[#6:13](-[#6:15]-[#8:16]-[#15:17](=[#8:20])(-[#8:19])-[#8;-:18])-[#8:14]-2):[#6:2]:[#7:3]:[#6:4]2:[#6:10]:[#7:9]:[#6:8]:[#7:7]:[#6:5]:1:2",
             "reactions": [
                 {
+                    "substrate": "Nc1ncnc2c1ncn2C1CC(O)C(COP(=O)([O-])O)O1",
                     "products": [
-                        ""
-                    ]
+                        "Nc1ncnc2c1ncn2C1OC(COP(=O)([O-])O)C(O)C1Cl"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Chlorination of the preferred substrate 2\u2019-dAMP to produce 2\u2019-Cl-2\u2019-dAMP."
+                },
+                {
+                    "substrate": "Nc1ncnc2c1ncn2C1CCC(COP(=O)([O-])O)O1",
+                    "products": [
+                        "Nc1ncnc2c1ncn2C1OC(COP(=O)([O-])O)CC1Cl"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Chlorination of 2\u2019,3\u2019-ddAMP to produce 2\u2019-Cl-2\u2019,3\u2019-ddAMP."
+                },
+                {
+                    "substrate": "O=P([O-])(O)OCC1OC(n2cnc3c(O)ncnc32)CC1O",
+                    "products": [
+                        "O=P([O-])(O)OCC1OC(n2cnc3c(O)ncnc32)C(Cl)C1O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Chlorination of 2\u2019-dIMP to produce 2\u2019-Cl-2\u2019-dIMP."
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Knock-out studies",
+                    "Site-directed mutagenesis"
+                ],
+                "references": [
+                    "doi:10.1002/anie.201914994"
+                ]
+            }
         }
     ]
 }
