@@ -46,6 +46,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Fixed retired UniProtKB accession with UniParc accession."
+        },
+        {
+            "version": "5",
+            "date": "2026-11-06",
+            "contributors": [
+                "0009-0003-3131-7166"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed erroneous FeS cofactor information."
         }
     ],
     "enzyme": {
