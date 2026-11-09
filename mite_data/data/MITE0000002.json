@@ -71,9 +71,6 @@
             "genpept": "ELS56114.1"
         },
         "cofactors": {
-            "inorganic": [
-                "FeS"
-            ],
             "organic": [
                 "SAM"
             ]

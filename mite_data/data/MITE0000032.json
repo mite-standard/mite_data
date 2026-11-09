@@ -34,6 +34,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Homogenized enzyme descriptions. Removed non-covalently bond cofactor from reaction depiction to implement editorial guidelines."
+        },
+        {
+            "version": "4",
+            "date": "2026-11-09",
+            "contributors": [
+                "0009-0003-3131-7166"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed erroneous FeS cofactor information."
         }
     ],
     "enzyme": {
@@ -50,9 +61,6 @@
         "cofactors": {
             "organic": [
                 "SAM"
-            ],
-            "inorganic": [
-                "FeS"
             ]
         }
     },

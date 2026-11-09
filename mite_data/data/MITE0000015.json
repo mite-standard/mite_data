@@ -37,6 +37,17 @@
                 "0000-0003-4819-2251"
             ],
             "comment": "Added minor description details"
+        },
+        {
+            "version": "4",
+            "date": "2026-11-09",
+            "contributors": [
+                "0009-0003-3131-7166"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed erroneous FeS cofactor information."
         }
     ],
     "enzyme": {
@@ -53,9 +64,6 @@
         "cofactors": {
             "organic": [
                 "SAM"
-            ],
-            "inorganic": [
-                "FeS"
             ]
         }
     },
