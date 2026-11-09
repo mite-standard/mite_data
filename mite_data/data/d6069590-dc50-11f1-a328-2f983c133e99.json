@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Methylates C-3 of the \u03b1-keto acid 4-methyl-2-oxovalerate; the product is transaminated to (R)-3-methyl-L-leucine, a building block of viridogrisein.",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,53 @@
     ],
     "enzyme": {
         "name": "SgvM",
+        "description": "SAM-dependent C-methyltransferase",
+        "references": [
+            "doi:10.1002/anie.201609375",
+            "doi:10.1002/cbic.202400258",
+            "doi:10.1038/s41467-023-40980-w",
+            "doi:10.1002/cbic.201200584"
+        ],
         "databaseIds": {
             "uniprot": "R9UTR3",
-            "genpept": ""
+            "genpept": "AGN74875.1",
+            "mibig": "BGC0000459"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ],
+            "inorganic": [
+                "Zn"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "C-methylation of C-3 of 4-methyl-2-oxovalerate to give (3R)-3,4-dimethyl-2-oxopentanoate",
+            "reactionSMARTS": "[#6:1]-[#6:2](-[#6:3])-[#6:4]-[#6:5](=[#8:6])-[#6:7](=[#8:8])-[#8:9]>>[#6:1]-[#6:2](-[#6:3])-[#6@@H:4](-[#6])-[#6:5](=[#8:6])-[#6:7](=[#8:8])-[#8:9]",
             "reactions": [
                 {
+                    "substrate": "CC(C)CC(=O)C(=O)O",
                     "products": [
-                        ""
-                    ]
+                        "CC(C)[C@@H](C)C(=O)C(=O)O"
+                    ],
+                    "isIntermediate": true,
+                    "description": " \u03b1-ketoleucine; the product is the precursor of (R)-3-methyl-L-leucine after transamination"
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1002/anie.201609375",
+                    "doi:10.1002/cbic.202400258"
+                ]
+            }
         }
     ]
 }
