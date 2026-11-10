@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Methylates C-3 of 3-phenylpyruvate; the product is transaminated to (2S,3S)-\u03b2-methylphenylalanine, a building block of mannopeptimycin.",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,51 @@
     ],
     "enzyme": {
         "name": "MppJ",
+        "description": "SAM-dependent C-methyltransferase",
+        "references": [
+            "doi:10.1002/cbic.200900351",
+            "doi:10.1128/AAC.01545-05"
+        ],
         "databaseIds": {
             "uniprot": "Q643C8",
-            "genpept": ""
+            "genpept": "AAU34201.1",
+            "mibig": "BGC0000388"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "C-methylation of C-3 of 3-phenylpyruvate to give (3S)-2-oxo-3-phenylbutanoate",
+            "reactionSMARTS": "[#8:1]=[#6:2](-[#8:3])-[#6:4](=[#8:5])-[#6:6]-[#6:7]1:[#6:8]:[#6:9]:[#6:10]:[#6:11]:[#6:12]:1>>[#6]-[#6@H:6](-[#6:4](=[#8:5])-[#6:2](=[#8:1])-[#8:3])-[#6:7]1:[#6:8]:[#6:9]:[#6:10]:[#6:11]:[#6:12]:1",
             "reactions": [
                 {
+                    "substrate": "O=C(O)C(=O)Cc1ccccc1",
                     "products": [
-                        ""
-                    ]
+                        "C[C@H](C(=O)C(=O)O)c1ccccc1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "the product is transaminated to (2S,3S)-\u03b2-methylphenylalanine"
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1002/cbic.200900351"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "36623",
+                "ec": "2.1.1.281"
+            }
         }
     ]
 }
