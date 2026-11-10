@@ -1,0 +1,68 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "comment": "Methylates C-3 of 5-guanidino-2-oxopentanoate; the product is transaminated by MrsB to the antibiotic 3-methyl-L-arginine.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-11-10",
+            "contributors": [
+                "0009-0003-3131-7166"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "MrsA",
+        "description": "SAM-dependent C-methyltransferase",
+        "references": [
+            "doi:10.1128/AEM.00666-09",
+            "doi:10.1002/cbic.202400258"
+        ],
+        "databaseIds": {
+            "uniprot": "D5FKJ3",
+            "genpept": "ACY54549.1",
+            "mibig": "BGC0000884"
+        },
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "C-methylation of C-3 of 5-guanidino-2-oxopentanoate to give (3R)-5-guanidino-3-methyl-2-oxopentanoate",
+            "reactionSMARTS": "[#7:1]-[#6:2](=[#7:3])-[#7:4]-[#6:5]-[#6:6]-[#6:7]-[#6:8](=[#8:9])-[#6:10](=[#8:11])-[#8:12]>>[#6]-[#6@H:7](-[#6:6]-[#6:5]-[#7:4]-[#6:2](=[#7:3])-[#7:1])-[#6:8](=[#8:9])-[#6:10](=[#8:11])-[#8:12]",
+            "reactions": [
+                {
+                    "substrate": "N=C(N)NCCCC(=O)C(=O)O",
+                    "products": [
+                        "C[C@H](CCNC(=N)N)C(=O)C(=O)O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "2-ketoarginine; the product is transaminated by MrsB to 3-methyl-L-arginine"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1128/AEM.00666-09"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "32663",
+                "ec": "2.1.1.243"
+            }
+        }
+    ]
+}
