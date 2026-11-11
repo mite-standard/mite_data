@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Methylates C-3 of 2-oxoglutarate (\u03b1-ketoglutarate); the product is transaminated to (2S,3R)-3-methyl-L-glutamate, the 3-MeGlu residue of the lipopeptide A54145. MITE0000541 (GlmT) and MITE0000542 (DptI) describe the same reaction catalyzed by homologues from the CDA and daptomycin pathways.",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,45 @@
     ],
     "enzyme": {
         "name": "LptI",
+        "description": "SAM-dependent C-methyltransferase",
+        "references": [
+            "doi:10.1021/ja074427i"
+        ],
         "databaseIds": {
             "uniprot": "Q45R73",
-            "genpept": ""
+            "genpept": "AAZ23087.1"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "C-methylation of C-3 of 2-oxoglutarate to give (3R)-3-methyl-2-oxoglutarate",
+            "reactionSMARTS": "[#8:1]=[#6:2](-[#8:3])-[#6:4]-[#6:5]-[#6:6](=[#8:7])-[#6:8](=[#8:9])-[#8:10]>>[#6]-[#6@H:5](-[#6:4]-[#6:2](=[#8:1])-[#8:3])-[#6:6](=[#8:7])-[#6:8](=[#8:9])-[#8:10]",
             "reactions": [
                 {
+                    "substrate": "O=C(O)CCC(=O)C(=O)O",
                     "products": [
-                        ""
-                    ]
+                        "C[C@H](CC(=O)O)C(=O)C(=O)O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "the product is transaminated to (2S,3R)-3-methyl-L-glutamate and incorporated into A54145 by LptD"
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/ja074427i"
+                ]
+            }
         }
     ]
 }
