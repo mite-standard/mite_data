@@ -1,0 +1,66 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "comment": "Methylates C-3 of 5-guanidino-2-oxopentanoate (the \u03b1-keto acid of arginine); the product is transaminated by the PLP-dependent aminotransferase ArgM to (2S,3R)-\u03b2-methylarginine, the rare amino acid residue of the peptidyl nucleoside antibiotic arginomycin. ArgM also generates ArgN's substrate from L",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-11-12",
+            "contributors": [
+                "0009-0003-3131-7166"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "ArgN",
+        "description": "SAM-dependent C-methyltransferase",
+        "references": [
+            "doi:10.1128/AEM.01172-14"
+        ],
+        "databaseIds": {
+            "uniprot": "M1T9N7",
+            "genpept": "AGG35704.1"
+        },
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "C-methylation of C-3 of 5-guanidino-2-oxopentanoate to give (3R)-5-guanidino-3-methyl-2-oxopentanoate",
+            "reactionSMARTS": "[#7:1]-[#6:2](=[#7:3])-[#7:4]-[#6:5]-[#6:6]-[#6:7]-[#6:8](=[#8:9])-[#6:10](=[#8:11])-[#8:12]>>[#6]-[#6@H:7](-[#6:6]-[#6:5]-[#7:4]-[#6:2](=[#7:3])-[#7:1])-[#6:8](=[#8:9])-[#6:10](=[#8:11])-[#8:12]",
+            "reactions": [
+                {
+                    "substrate": "N=C(N)NCCCC(=O)C(=O)O",
+                    "products": [
+                        "C[C@H](CCNC(=N)N)C(=O)C(=O)O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "the product is transaminated by ArgM (L-aspartate as amino donor) to (2S,3R)-\u03b2-methylarginine and incorporated into arginomycin"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1128/AEM.01172-14"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "32663",
+                "ec": "2.1.1.243"
+            }
+        }
+    ]
+}
