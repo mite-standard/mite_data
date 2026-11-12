@@ -1,0 +1,114 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "comment": "C13 chlorination of hapalindole-type alkaloids.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-11-12",
+            "contributors": [
+                "0009-0008-9239-6036"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "AmbO5",
+        "description": "Non-heme halogenase",
+        "references": [
+            "doi:10.1002/anie.201601447"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI0003D883B2",
+            "genpept": "AHB62755.1",
+            "mibig": "BGC0001126"
+        },
+        "cofactors": {
+            "organic": [
+                "a-Ketoglutaric acid"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Chlorination at the C13 position of hapalindole-type alkaloid substrates by AmbO5.",
+            "reactionSMARTS": "[#6:1]1:[#6:2]:[#6:3]:[#6:4]2:[#7:5]:[#6:6]:[#6:7](-[#6:8]3-[#6:9](-[#7;+:10]#[#6;-:11])-[#6:12](-[#6:13]=[#6:14])(-[#6:15])-[#6:16]-[#6:17]-[#6:18]-3-[#6:22](-[#6:19])~[#6:23]):[#6:20]:2:[#6:21]:1>>[#6:1]1:[#6:2]:[#6:3]:[#6:4]2:[#7:5]:[#6:6]:[#6:7](-[#6:8]3-[#6:9](-[#7;+:10]#[#6;-:11])-[#6:12](-[#6:13]=[#6:14])(-[#6:15])-[#6:16](-[Cl])-[#6:17]-[#6:18]-3-[#6:22](-[#6:19])~[#6:23]):[#6:20]:2:[#6:21]:1",
+            "reactions": [
+                {
+                    "substrate": "[C-]#[N+]C1C2c3c([nH]c4ccccc34)C(C)(C)C2CCC1(C)C=C",
+                    "products": [
+                        "[C-]#[N+]C1C2c3c([nH]c4ccccc34)C(C)(C)C2CC(Cl)C1(C)C=C"
+                    ],
+                    "isIntermediate": false,
+                    "description": "AmbO5 catalyses the conversion of 12-epi-fischerindole U into 12-epi-fischerindole G."
+                },
+                {
+                    "substrate": "[C-]#[N+]C1C(c2c[nH]c3ccccc23)C(C(=C)C)CCC1(C)C=C",
+                    "products": [
+                        "[C-]#[N+]C1C(c2c[nH]c3ccccc23)C(C(=C)C)CC(Cl)C1(C)C=C"
+                    ],
+                    "isIntermediate": false,
+                    "description": "AmbO5 catalyses the conversion of 12-epi-hapalindole C into 12-epi-hapalindole E. "
+                },
+                {
+                    "substrate": "[C-]#[N+]C1C2c3c[nH]c4cccc(c34)C(C)(C)C2CCC1(C)C=C",
+                    "products": [
+                        "[C-]#[N+]C1C2c3c[nH]c4cccc(c34)C(C)(C)C2CC(Cl)C1(C)C=C"
+                    ],
+                    "isIntermediate": true,
+                    "description": "AmbO5 catalyses the conversion of hapalindole U into hapalindole G."
+                },
+                {
+                    "substrate": "[C-]#[N+]C1C2c3c(C(C)(C)C=C)[nH]c4cccc(c34)C(C)(C)C2CCC1(C)C=C",
+                    "products": [
+                        "[C-]#[N+]C1C2c3c(C(C)(C)C=C)[nH]c4cccc(c34)C(C)(C)C2CC(Cl)C1(C)C=C"
+                    ],
+                    "isIntermediate": true,
+                    "description": "AmbO5 catalyses the conversion of ambiguine H into ambiguine A."
+                },
+                {
+                    "substrate": "[C-]#[N+]C1C(C)(C=C)CCC2C(C)(C)c3cccc4[nH]c(C(C)(C)C=C)c(c34)C12O",
+                    "products": [
+                        "[C-]#[N+]C1C(C)(C=C)C(Cl)CC2C(C)(C)c3cccc4[nH]c(C(C)(C)C=C)c(c34)C21O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "AmbO5 catalyses the conversion of ambiguine C into ambiguine B."
+                },
+                {
+                    "substrate": "[C-]#[N+]C12C=CC(C)(C)c3[nH]c4cccc5c4c3C1(O)C(CCC2(C)C=C)C5(C)C",
+                    "products": [
+                        "[C-]#[N+]C12C=CC(C)(C)c3[nH]c4cccc5c4c3C1(O)C(CC(Cl)C2(C)C=C)C5(C)C"
+                    ],
+                    "isIntermediate": true,
+                    "description": "AmbO5 catalyses the conversion of ambiguine L into ambiguine K."
+                },
+                {
+                    "substrate": "[C-]#[N+]C12C3OC3C(C)(C)c3[nH]c4cccc5c4c3C1(O)C(CCC2(C)C=C)C5(C)C",
+                    "products": [
+                        "[C-]#[N+]C12C3OC3C(C)(C)c3[nH]c4cccc5c4c3C1(O)C(CC(Cl)C2(C)C=C)C5(C)C"
+                    ],
+                    "isIntermediate": true,
+                    "description": "AmbO5 catalyses the conversion of ambiguine I into ambiguine E."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1002/anie.201601447"
+                ]
+            }
+        }
+    ]
+}
