@@ -1,0 +1,87 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "comment": "Carboxyl O-methyltransferase. Methylates the two carboxylic acid groups of 6\u2032,6\u2033-dichloro-chromopyrrolic acid in two sequential steps, via demethyl-lynamicin D, to give lynamicin D. The methyl esters are required for spiro-ring formation in spiroindimicin biosynthesis.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-11-13",
+            "contributors": [
+                "0009-0003-3131-7166"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "SpmM1",
+        "description": "SAM-dependent O-methyltransferase",
+        "references": [
+            "doi:10.1021/acs.orglett.5c01012"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A1W7CT57",
+            "genpept": "ARQ67912.1"
+        },
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "O-methylation of the C-2 carboxylic acid of 6\u2032,6\u2033-dichloro-chromopyrrolic acid to give demethyl-lynamicin D",
+            "reactionSMARTS": "[#8H:1]-[#6:2](=[#8:3])-[c:4]1[nH:5][c:6](-[#6:7](=[#8:8])-[#8H:9])[c:10][c:11]1>>[#6]-[#8:1]-[#6:2](=[#8:3])-[c:4]1[nH:5][c:6](-[#6:7](=[#8:8])-[#8H:9])[c:10][c:11]1",
+            "reactions": [
+                {
+                    "substrate": "O=C(O)c1[nH]c(C(=O)O)c(-c2c[nH]c3ccc(Cl)cc23)c1-c1c[nH]c2ccc(Cl)cc12",
+                    "products": [
+                        "COC(=O)c1[nH]c(C(=O)O)c(-c2c[nH]c3ccc(Cl)cc23)c1-c1c[nH]c2ccc(Cl)cc12"
+                    ],
+                    "isIntermediate": true,
+                    "description": "the product is methylated again at the second carboxylic acid to give lynamicin D"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/acs.orglett.5c01012"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "O-methylation of the remaining carboxylic acid of demethyl-lynamicin D to give lynamicin D",
+            "reactionSMARTS": "[#8H:1]-[#6:2](=[#8:3])-[c:4]1[nH:5][c:6](-[#6:7](=[#8:8])-[#8:9]-[#6H3:12])[c:10][c:11]1>>[#6]-[#8:1]-[#6:2](=[#8:3])-[c:4]1[nH:5][c:6](-[#6:7](=[#8:8])-[#8:9]-[#6H3:12])[c:10][c:11]1",
+            "reactions": [
+                {
+                    "substrate": "COC(=O)c1[nH]c(C(=O)O)c(-c2c[nH]c3ccc(Cl)cc23)c1-c1c[nH]c2ccc(Cl)cc12",
+                    "products": [
+                        "COC(=O)c1[nH]c(C(=O)OC)c(-c2c[nH]c3ccc(Cl)cc23)c1-c1c[nH]c2ccc(Cl)cc12"
+                    ],
+                    "isIntermediate": true,
+                    "description": "lynamicin D is an intermediate in spiroindimicin biosynthesis"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acs.orglett.5c01012"
+                ]
+            }
+        }
+    ]
+}
