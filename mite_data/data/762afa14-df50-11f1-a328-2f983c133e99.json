@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "SAM-dependent N-methyltransferase of cladoniamide biosynthesis. Methylates the imide nitrogen (N6) of an indolocarbazole C4c/C7a diol and of an indolo-oxazino-carbazole shunt metabolite.",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,72 @@
     ],
     "enzyme": {
         "name": "ClaM1",
+        "description": "SAM-dependent N-methyltransferase",
+        "references": [
+            "doi:10.1021/cb500728h"
+        ],
         "databaseIds": {
             "uniprot": "G3K6K4",
-            "genpept": ""
+            "genpept": "AEO12715.1"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "N6-methylation of an indolocarbazole C4c/C7a diol to give the N-methyl diol",
+            "reactionSMARTS": "[#7H:1]1-[#6:2](=[#8:3])-[#6X4:4](-[#8H:5])-[#6X4:6](-[#8H:7])-[#6:8]1=[#8:9]>>[#6]-[#7:1]1-[#6:2](=[#8:3])-[#6X4:4](-[#8H:5])-[#6X4:6](-[#8H:7])-[#6:8]1=[#8:9]",
             "reactions": [
                 {
+                    "substrate": "O=C1NC(=O)C2(O)c3c([nH]c4ccccc34)-c3[nH]c4ccccc4c3C12O",
                     "products": [
-                        ""
-                    ]
+                        "CN1C(=O)C2(O)c3c([nH]c4ccccc34)-c3[nH]c4ccccc4c3C2(O)C1=O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "converted further by ClaX2 and ClaM3 to cladoniamides"
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/cb500728h"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "N-methylation of an indolo-oxazino-carbazole metabolite derived from the C4c/C7a diol",
+            "reactionSMARTS": "[#7H:1]1~[#6:2](=[#8:3])~[#8:4]~[#6:5]~[#6:6]~[#6:7]1=[#8:8]>>[#6]-[#7:1]1~[#6:2](=[#8:3])~[#8:4]~[#6:5]~[#6:6]~[#6:7]1=[#8:8]",
+            "reactions": [
+                {
+                    "substrate": "O=c1[nH]c(=O)c2c(o1)c1c3ccccc3[nH]c1c1[nH]c3ccccc3c12",
+                    "products": [
+                        "Cn1c(=O)oc2c(c1=O)c1c3ccccc3[nH]c1c1[nH]c3ccccc3c12"
+                    ],
+                    "isIntermediate": false,
+                    "description": "N-methylated shunt metabolite"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/cb500728h"
+                ]
+            }
         }
     ]
 }
