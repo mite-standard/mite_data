@@ -1,0 +1,65 @@
+{
+    "accession": "MITE9999999",
+    "status": "active",
+    "comment": "Methylates C-3 of 2-oxoglutarate (\u03b1-ketoglutarate); the product is transaminated to (2S,3R)-3-methyl-L-glutamate, the 3-MeGlu residue of daptomycin. DptI is a homologue of GlmT and LptI from other pathways that catalyze the same C-3 methylation reaction.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-11-11",
+            "contributors": [
+                "0009-0003-3131-7166"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 amended comment as desired by submitter, fixed DOI, added MIBiG BGC."
+        }
+    ],
+    "enzyme": {
+        "name": "DptI",
+        "description": "SAM-dependent C-methyltransferase",
+        "references": [
+            "doi:10.1021/ja074427i",
+            "doi:10.1111/j.1365-2958.2006.05305.x"
+        ],
+        "databaseIds": {
+            "uniprot": "Q50EC5",
+            "genpept": "AAX31562.1",
+            "mibig": "BGC0000336"
+        },
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "C-methylation of C-3 of 2-oxoglutarate to give (3R)-3-methyl-2-oxoglutarate",
+            "reactionSMARTS": "[#8:1]=[#6:2](-[#8:3])-[#6:4]-[#6:5]-[#6:6](=[#8:7])-[#6:8](=[#8:9])-[#8:10]>>[#6]-[#6@H:5](-[#6:4]-[#6:2](=[#8:1])-[#8:3])-[#6:6](=[#8:7])-[#6:8](=[#8:9])-[#8:10]",
+            "reactions": [
+                {
+                    "substrate": "O=C(O)CCC(=O)C(=O)O",
+                    "products": [
+                        "C[C@H](CC(=O)O)C(=O)C(=O)O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "the product is transaminated to (2S,3R)-3-methyl-L-glutamate and incorporated into daptomycin by DptD"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/ja074427i",
+                    "doi:10.1111/j.1365-2958.2006.05305.x"
+                ]
+            }
+        }
+    ]
+}
