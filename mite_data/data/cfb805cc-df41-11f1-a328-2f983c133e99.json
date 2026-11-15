@@ -45,7 +45,7 @@
                         "COC(=O)c1[nH]c(C(=O)O)c(-c2c[nH]c3ccc(Cl)cc23)c1-c1c[nH]c2ccc(Cl)cc12"
                     ],
                     "isIntermediate": true,
-                    "description": "the product is methylated again at the second carboxylic acid to give lynamicin D"
+                    "description": "demethyl-lynamicin D; the product is methylated again at the second carboxylic acid to give lynamicin D"
                 }
             ],
             "evidence": {
