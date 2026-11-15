@@ -1,7 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
-    "comment": "Methylates C-3 of 5-guanidino-2-oxopentanoate (the \u03b1-keto acid of arginine); the product is transaminated by the PLP-dependent aminotransferase ArgM to (2S,3R)-\u03b2-methylarginine, the rare amino acid residue of the peptidyl nucleoside antibiotic arginomycin. ArgM also generates ArgN's substrate from L",
+    "comment": "Methylates C-3 of 5-guanidino-2-oxopentanoate (the α-keto acid of arginine); the product is transaminated by ArgM to (2S,3R)-β-methylarginine, a residue of the peptidyl nucleoside antibiotic arginomycin. ArgM also forms the ArgN substrate from L-arginine.",
     "changelog": [
         {
             "version": "1",
@@ -23,7 +23,8 @@
         ],
         "databaseIds": {
             "uniprot": "M1T9N7",
-            "genpept": "AGG35704.1"
+            "genpept": "AGG35704.1",
+            "mibig": "BGC0000883"
         },
         "cofactors": {
             "organic": [
