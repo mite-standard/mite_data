@@ -24,7 +24,7 @@
         "auxiliaryEnzymes": [
             {
                 "name": "WprC",
-                "description": "Chaperone protein required for cross-link formatio",
+                "description": "Chaperone protein required for cross-link formation",
                 "databaseIds": {
                     "uniprot": "UPI0029E829F6",
                     "genpept": "MDX7991758.1"
