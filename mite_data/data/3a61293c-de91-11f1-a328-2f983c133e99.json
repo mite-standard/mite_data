@@ -1,7 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
-    "comment": "PLP-dependent aminotransferase acting twice in \u03b2-methylarginine biosynthesis: it first converts L-arginine to 5-guanidino-2-oxopentanoate, the substrate of the C-methyltransferase ArgN, and then transaminates the methylated keto acid to (2S,3R)-\u03b2-methylarginine, a residue of the peptidyl nucleoside ",
+    "comment": "PLP-dependent aminotransferase acting twice in β-methylarginine biosynthesis: it converts L-arginine to 5-guanidino-2-oxopentanoate, the substrate of the C-methyltransferase ArgN, and transaminates the methylated keto acid to (2S,3R)-β-methylarginine, a residue of arginomycin.",
     "changelog": [
         {
             "version": "1",
@@ -23,7 +23,8 @@
         ],
         "databaseIds": {
             "uniprot": "M1T1K4",
-            "genpept": "AGG35703.1"
+            "genpept": "AGG35703.1",
+            "mibig": "BGC0000883"
         },
         "cofactors": {
             "organic": [
