@@ -23,7 +23,8 @@
         ],
         "databaseIds": {
             "uniprot": "G3K6K4",
-            "genpept": "AEO12715.1"
+            "genpept": "AEO12715.1",
+            "mibig": "BGC0001334"
         },
         "cofactors": {
             "organic": [
