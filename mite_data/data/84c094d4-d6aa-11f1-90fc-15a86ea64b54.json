@@ -26,6 +26,10 @@
         "databaseIds": {
             "uniprot": "Q45595",
             "genpept": "CAB16054.1"
+        },
+        "cofactors": {
+        "inorganic": ["FeS"],
+        "organic": ["SAM"]
         }
     },
     "reactions": [
