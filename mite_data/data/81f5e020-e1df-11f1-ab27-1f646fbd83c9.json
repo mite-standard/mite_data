@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "SAM-dependent N-methyltransferase of AT2433 biosynthesis. Methylates the imide nitrogen of arcyriaflavin A and its N-glucosides.",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,70 @@
     ],
     "enzyme": {
         "name": "AtmM1",
+        "description": "SAM-dependent N-methyltransferase",
+        "references": [
+            "doi:10.1016/j.chembiol.2006.05.009"
+        ],
         "databaseIds": {
             "uniprot": "Q0H2W8",
-            "genpept": ""
+            "genpept": "ABC02796.1",
+            "mibig": "BGC0000809"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "N-methylation of the imide nitrogen of an indolocarbazole (arcyriaflavin A or its N-glucoside)",
+            "reactionSMARTS": "[#7H:1]1-[#6:2](=[#8:3])-[c:4](:[c:5]-[#6:6]1=[#8:7]):[c:8]:[c:9]:[n:10]>>[#6]-[#7:1]1-[#6:2](=[#8:3])-[c:4](:[c:5]-[#6:6]1=[#8:7]):[c:8]:[c:9]:[n:10]",
             "reactions": [
                 {
+                    "substrate": "O=C1NC(=O)c2c1c1c3ccccc3[nH]c1c1c2c2ccccc2n1C1OC(CO)C(O)C(O)C1O",
                     "products": [
-                        ""
-                    ]
+                        "CN1C(=O)c2c(c3c4ccccc4n(C4OC(CO)C(O)C(O)C4O)c3c3[nH]c4ccccc4c23)C1=O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "N-methylation of the 4'-demethyl N-glucoside (96% yield)"
+                },
+                {
+                    "substrate": "COC1C(CO)OC(n2c3ccccc3c3c4c(c5c6ccccc6[nH]c5c32)C(=O)NC4=O)C(O)C1O",
+                    "products": [
+                        "COC1C(CO)OC(n2c3ccccc3c3c4c(c5c6ccccc6[nH]c5c32)C(=O)N(C)C4=O)C(O)C1O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "N-methylation of the 4'-O-methyl N-glucoside (86% yield)"
+                },
+                {
+                    "substrate": "COC1C(CO)OC(n2c3c(Cl)cccc3c3c4c(c5c6cccc(Cl)c6[nH]c5c32)C(=O)NC4=O)C(O)C1O",
+                    "products": [
+                        "COC1C(CO)OC(n2c3c(Cl)cccc3c3c4c(c5c6cccc(Cl)c6[nH]c5c32)C(=O)N(C)C4=O)C(O)C1O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "N-methylation of rebeccamycin to its N-methyl derivative (38% yield)"
+                },
+                {
+                    "substrate": "O=C1NC(=O)c2c1c1c3ccccc3[nH]c1c1[nH]c3ccccc3c21",
+                    "products": [
+                        "CN1C(=O)c2c(c3c4ccccc4[nH]c3c3[nH]c4ccccc4c23)C1=O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "N-methylation of arcyriaflavin A, the aglycon without sugar (12% yield)"
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1016/j.chembiol.2006.05.009"
+                ]
+            }
         }
     ]
 }
