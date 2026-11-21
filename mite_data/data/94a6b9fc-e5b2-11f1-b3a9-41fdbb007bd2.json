@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "SAM-dependent methyltransferase of daptide biosynthesis in Thermobifida fusca. Iteratively methylates the C-terminal 1,2-diaminopropane of the DapA precursor peptide, giving the mono-, di- and trimethyl forms. ",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,95 @@
     ],
     "enzyme": {
         "name": "TfDapM",
+        "description": "Class I methyltransferase",
+        "references": [
+            "doi:10.1021/acscentsci.5c01243"
+        ],
         "databaseIds": {
             "uniprot": "A0A9P2TDR1",
-            "genpept": ""
+            "genpept": "EOR72689.1"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "First N-methylation of the C-terminal 1,2-diaminopropane (Dap) of the TfDapA1 precursor peptide, giving the monomethylpropane-1,2-diamine (Mmp) terminus",
+            "reactionSMARTS": "[#7H2:1]-[#6X4H1:2](-[#6H3:3])-[#6H2:4]-[#7X3H1:5]-[#6:6]=[#8:7]>>[#6H3]-[#7H1:1]-[#6X4H1:2](-[#6H3:3])-[#6H2:4]-[#7X3H1:5]-[#6:6]=[#8:7]",
             "reactions": [
                 {
+                    "substrate": "CC[C@H](C)[C@H](NC(=O)[C@H](C)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](CC(C)C)NC(=O)[C@H](C)NC(=O)CNC(=O)[C@@H](NC(=O)CNC(=O)[C@H](C)NC(=O)CNC(=O)[C@@H](NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](Cc1ccccc1)NC(=O)CNC(=O)[C@@H]1CCCN1C(=O)[C@H](C)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CCSC)NC(=O)[C@H](C)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](CCSC)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](C)NC(=O)[C@@H](NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CC(N)=O)NC(=O)[C@@H]1CCCN1C(=O)[C@H](CCC(N)=O)NC(=O)[C@@H]1CCCN1C(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@@H](N)CCSC)[C@@H](C)CC)[C@@H](C)O)C(C)C)[C@@H](C)O)C(C)C)[C@@H](C)CC)[C@@H](C)O)C(=O)N[C@@H](CO)C(=O)N[C@@H](CC(C)C)C(=O)NC[C@H](C)N",
                     "products": [
-                        ""
-                    ]
+                        "CC[C@H](C)[C@H](NC(=O)[C@H](C)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](CC(C)C)NC(=O)[C@H](C)NC(=O)CNC(=O)[C@@H](NC(=O)CNC(=O)[C@H](C)NC(=O)CNC(=O)[C@@H](NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](Cc1ccccc1)NC(=O)CNC(=O)[C@@H]1CCCN1C(=O)[C@H](C)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CCSC)NC(=O)[C@H](C)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](CCSC)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](C)NC(=O)[C@@H](NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CC(N)=O)NC(=O)[C@@H]1CCCN1C(=O)[C@H](CCC(N)=O)NC(=O)[C@@H]1CCCN1C(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@@H](N)CCSC)[C@@H](C)CC)[C@@H](C)O)C(C)C)[C@@H](C)O)C(C)C)[C@@H](C)CC)[C@@H](C)O)C(=O)N[C@@H](CO)C(=O)N[C@@H](CC(C)C)C(=O)NC[C@H](C)NC"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Dap-terminated TfDapA1, made from the Thr-terminated precursor by TfDapB, TfDapC and TfDapD"
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acscentsci.5c01243"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "Second N-methylation, converting the Mmp terminus to the tertiary amine dimethylpropane-1,2-diamine (Dmp)",
+            "reactionSMARTS": "[#6H3]-[#7H1:1]-[#6X4H1:2](-[#6H3:3])-[#6H2:4]-[#7X3H1:5]-[#6:6]=[#8:7]>>[#6H3]-[#7:1](-[#6H3])-[#6X4H1:2](-[#6H3:3])-[#6H2:4]-[#7X3H1:5]-[#6:6]=[#8:7]",
+            "reactions": [
+                {
+                    "substrate": "CC[C@H](C)[C@H](NC(=O)[C@H](C)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](CC(C)C)NC(=O)[C@H](C)NC(=O)CNC(=O)[C@@H](NC(=O)CNC(=O)[C@H](C)NC(=O)CNC(=O)[C@@H](NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](Cc1ccccc1)NC(=O)CNC(=O)[C@@H]1CCCN1C(=O)[C@H](C)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CCSC)NC(=O)[C@H](C)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](CCSC)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](C)NC(=O)[C@@H](NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CC(N)=O)NC(=O)[C@@H]1CCCN1C(=O)[C@H](CCC(N)=O)NC(=O)[C@@H]1CCCN1C(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@@H](N)CCSC)[C@@H](C)CC)[C@@H](C)O)C(C)C)[C@@H](C)O)C(C)C)[C@@H](C)CC)[C@@H](C)O)C(=O)N[C@@H](CO)C(=O)N[C@@H](CC(C)C)C(=O)NC[C@H](C)NC",
+                    "products": [
+                        "CC[C@H](C)[C@H](NC(=O)[C@H](C)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](CC(C)C)NC(=O)[C@H](C)NC(=O)CNC(=O)[C@@H](NC(=O)CNC(=O)[C@H](C)NC(=O)CNC(=O)[C@@H](NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](Cc1ccccc1)NC(=O)CNC(=O)[C@@H]1CCCN1C(=O)[C@H](C)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CCSC)NC(=O)[C@H](C)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](CCSC)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](C)NC(=O)[C@@H](NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CC(N)=O)NC(=O)[C@@H]1CCCN1C(=O)[C@H](CCC(N)=O)NC(=O)[C@@H]1CCCN1C(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@@H](N)CCSC)[C@@H](C)CC)[C@@H](C)O)C(C)C)[C@@H](C)O)C(C)C)[C@@H](C)CC)[C@@H](C)O)C(=O)N[C@@H](CO)C(=O)N[C@@H](CC(C)C)C(=O)NC[C@H](C)N(C)C"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Mmp-terminated TfDapA1; the same intermediate is cyclodehydrated by the YcaO protein TfDapY"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acscentsci.5c01243"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "Third N-methylation, converting the Dmp terminus to a quaternary trimethylammonium group",
+            "reactionSMARTS": "[#6H3]-[#7X3:1](-[#6H3])-[#6X4H1:2](-[#6H3:3])-[#6H2:4]-[#7X3H1:5]-[#6:6]=[#8:7]>>[#6H3]-[#7X4+:1](-[#6H3])(-[#6H3])-[#6X4H1:2](-[#6H3:3])-[#6H2:4]-[#7X3H1:5]-[#6:6]=[#8:7]",
+            "reactions": [
+                {
+                    "substrate": "CC[C@H](C)[C@H](NC(=O)[C@H](C)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](CC(C)C)NC(=O)[C@H](C)NC(=O)CNC(=O)[C@@H](NC(=O)CNC(=O)[C@H](C)NC(=O)CNC(=O)[C@@H](NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](Cc1ccccc1)NC(=O)CNC(=O)[C@@H]1CCCN1C(=O)[C@H](C)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CCSC)NC(=O)[C@H](C)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](CCSC)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](C)NC(=O)[C@@H](NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CC(N)=O)NC(=O)[C@@H]1CCCN1C(=O)[C@H](CCC(N)=O)NC(=O)[C@@H]1CCCN1C(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@@H](N)CCSC)[C@@H](C)CC)[C@@H](C)O)C(C)C)[C@@H](C)O)C(C)C)[C@@H](C)CC)[C@@H](C)O)C(=O)N[C@@H](CO)C(=O)N[C@@H](CC(C)C)C(=O)NC[C@H](C)N(C)C",
+                    "products": [
+                        "CC[C@H](C)[C@H](NC(=O)[C@H](C)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](CC(C)C)NC(=O)[C@H](C)NC(=O)CNC(=O)[C@@H](NC(=O)CNC(=O)[C@H](C)NC(=O)CNC(=O)[C@@H](NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](Cc1ccccc1)NC(=O)CNC(=O)[C@@H]1CCCN1C(=O)[C@H](C)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CCSC)NC(=O)[C@H](C)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](CCSC)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](C)NC(=O)[C@@H](NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CC(N)=O)NC(=O)[C@@H]1CCCN1C(=O)[C@H](CCC(N)=O)NC(=O)[C@@H]1CCCN1C(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@@H](N)CCSC)[C@@H](C)CC)[C@@H](C)O)C(C)C)[C@@H](C)O)C(C)C)[C@@H](C)CC)[C@@H](C)O)C(=O)N[C@@H](CO)C(=O)N[C@@H](CC(C)C)C(=O)NC[C@H](C)[N+](C)(C)C"
+                    ],
+                    "isIntermediate": false,
+                    "description": "Dmp-terminated TfDapA1"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acscentsci.5c01243"
+                ]
+            }
         }
     ]
 }
