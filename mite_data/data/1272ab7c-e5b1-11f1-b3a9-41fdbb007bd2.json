@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "SAM-dependent methyltransferase of daptide biosynthesis in Streptomyces azureus. Methylates the C-terminal 1,2-diaminopropane of the DapA precursor peptide twice, giving the tertiary amine terminus of the azuritides.",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,72 @@
     ],
     "enzyme": {
         "name": "SaDapM",
+        "description": "Class I methyltransferase",
+        "references": [
+            "doi:10.1021/acscentsci.5c01243"
+        ],
         "databaseIds": {
             "uniprot": "A0A0K8PP62",
-            "genpept": ""
+            "genpept": "GAP49690.1"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "First N-methylation of the C-terminal 1,2-diaminopropane (Dap) of the SaDapA1 precursor peptide, giving the monomethylpropane-1,2-diamine (Mmp) terminus",
+            "reactionSMARTS": "[#7H2:1]-[#6X4H1:2](-[#6H3:3])-[#6H2:4]-[#7X3H1:5]-[#6:6]=[#8:7]>>[#6H3]-[#7H1:1]-[#6X4H1:2](-[#6H3:3])-[#6H2:4]-[#7X3H1:5]-[#6:6]=[#8:7]",
             "reactions": [
                 {
+                    "substrate": "CSCC[C@H](N)C(=O)N[C@@H](CO)C(=O)N[C@H](C(=O)N[C@@H](CC(=O)O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CC(=O)O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CCC(N)=O)C(=O)N[C@@H](Cc1ccccc1)C(=O)N[C@@H](CCC(=O)O)C(=O)N[C@@H](CCC(=O)O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CCC(=O)O)C(=O)N[C@H](C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CC(=O)O)C(=O)N[C@@H](C)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](C)C(=O)N[C@@H](CCC(=O)O)C(=O)N[C@@H](Cc1ccccc1)C(=O)NCC(=O)N[C@@H](CO)C(=O)NCC(=O)N[C@@H](Cc1ccccc1)C(=O)NCC(=O)N[C@@H](C)C(=O)NCC(=O)N[C@@H](C)C(=O)N[C@H](C(=O)N[C@@H](C)C(=O)N[C@@H](Cc1ccccc1)C(=O)N[C@@H](CO)C(=O)N[C@H](C(=O)NCC(=O)N[C@H](C(=O)N[C@@H](C)C(=O)N[C@H](C(=O)N[C@@H](Cc1ccccc1)C(=O)N[C@@H](CC(C)C)C(=O)NC[C@H](C)N)C(C)C)C(C)C)C(C)C)[C@@H](C)O)[C@@H](C)O)[C@@H](C)O",
                     "products": [
-                        ""
-                    ]
+                        "CN[C@@H](C)CNC(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@@H](NC(=O)[C@H](C)NC(=O)[C@@H](NC(=O)CNC(=O)[C@@H](NC(=O)[C@H](CO)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](C)NC(=O)[C@@H](NC(=O)[C@H](C)NC(=O)CNC(=O)[C@H](C)NC(=O)CNC(=O)[C@H](Cc1ccccc1)NC(=O)CNC(=O)[C@H](CO)NC(=O)CNC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](C)NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](CC(N)=O)NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](C)NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](CC(C)C)NC(=O)[C@@H](NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CC(=O)O)NC(=O)[C@@H](NC(=O)[C@H](CO)NC(=O)[C@@H](N)CCSC)[C@@H](C)O)[C@@H](C)O)[C@@H](C)O)C(C)C)C(C)C)C(C)C"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Dap-terminated SaDapA1, made from the Thr-terminated precursor by DapB, DapC and DapD"
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acscentsci.5c01243"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "Second N-methylation, converting the Mmp terminus to the tertiary amine dimethylpropane-1,2-diamine (Dmp) found in azuritide 3",
+            "reactionSMARTS": "[#6H3]-[#7H1:1]-[#6X4H1:2](-[#6H3:3])-[#6H2:4]-[#7X3H1:5]-[#6:6]=[#8:7]>>[#6H3]-[#7:1](-[#6H3])-[#6X4H1:2](-[#6H3:3])-[#6H2:4]-[#7X3H1:5]-[#6:6]=[#8:7]",
+            "reactions": [
+                {
+                    "substrate": "CN[C@@H](C)CNC(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@@H](NC(=O)[C@H](C)NC(=O)[C@@H](NC(=O)CNC(=O)[C@@H](NC(=O)[C@H](CO)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](C)NC(=O)[C@@H](NC(=O)[C@H](C)NC(=O)CNC(=O)[C@H](C)NC(=O)CNC(=O)[C@H](Cc1ccccc1)NC(=O)CNC(=O)[C@H](CO)NC(=O)CNC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](C)NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](CC(N)=O)NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](C)NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](CC(C)C)NC(=O)[C@@H](NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CC(=O)O)NC(=O)[C@@H](NC(=O)[C@H](CO)NC(=O)[C@@H](N)CCSC)[C@@H](C)O)[C@@H](C)O)[C@@H](C)O)C(C)C)C(C)C)C(C)C",
+                    "products": [
+                        "CSCC[C@H](N)C(=O)N[C@@H](CO)C(=O)N[C@H](C(=O)N[C@@H](CC(=O)O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CC(=O)O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CCC(N)=O)C(=O)N[C@@H](Cc1ccccc1)C(=O)N[C@@H](CCC(=O)O)C(=O)N[C@@H](CCC(=O)O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CCC(=O)O)C(=O)N[C@H](C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CC(=O)O)C(=O)N[C@@H](C)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](C)C(=O)N[C@@H](CCC(=O)O)C(=O)N[C@@H](Cc1ccccc1)C(=O)NCC(=O)N[C@@H](CO)C(=O)NCC(=O)N[C@@H](Cc1ccccc1)C(=O)NCC(=O)N[C@@H](C)C(=O)NCC(=O)N[C@@H](C)C(=O)N[C@H](C(=O)N[C@@H](C)C(=O)N[C@@H](Cc1ccccc1)C(=O)N[C@@H](CO)C(=O)N[C@H](C(=O)NCC(=O)N[C@H](C(=O)N[C@@H](C)C(=O)N[C@H](C(=O)N[C@@H](Cc1ccccc1)C(=O)N[C@@H](CC(C)C)C(=O)NC[C@H](C)N(C)C)C(C)C)C(C)C)C(C)C)[C@@H](C)O)[C@@H](C)O)[C@@H](C)O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Mmp-terminated SaDapA1; the same intermediate is cyclodehydrated by the YcaO protein SaDapY"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/acscentsci.5c01243"
+                ]
+            }
         }
     ]
 }
