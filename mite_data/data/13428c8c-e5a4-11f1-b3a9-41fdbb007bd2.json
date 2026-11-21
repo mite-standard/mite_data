@@ -1,6 +1,7 @@
 {
     "accession": "MITE9999999",
     "status": "pending",
+    "comment": "Multifunctional SAM-dependent mitomycin methyltransferase: C9a-O-methylation, C9a-methoxy loss with aziridine opening, then C1-O- and C2-N-methylation of the opened product. Experiments used S. caespitosus ATCC 27422.",
     "changelog": [
         {
             "version": "1",
@@ -16,29 +17,173 @@
     ],
     "enzyme": {
         "name": "MitM",
+        "description": "Class I methyltransferase",
+        "references": [
+            "doi:10.1021/jacs.6c02250"
+        ],
         "databaseIds": {
             "uniprot": "Q9X5Q9",
-            "genpept": ""
+            "genpept": "AAD28459.1"
         },
-        "references": [
-            "doi:"
-        ]
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
     },
     "reactions": [
         {
-            "evidence": {
-                "evidenceCode": [],
-                "references": [
-                    "doi:"
-                ]
-            },
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "C9a-O-methylation of aziridinomitosanes, both C9-S and C9-R series",
+            "reactionSMARTS": "[#6X4:1](-[#8H1:2])(-[#7X3:3])(-[#6:4])-[#6:5]>>[#6X4:1](-[#8:2]-[#6])(-[#7X3:3])(-[#6:4])-[#6:5]",
             "reactions": [
                 {
+                    "substrate": "COC1=C(C)C(=O)C2=C(C1=O)[C@@H](COC(N)=O)[C@@]1(O)[C@H]3N[C@H]3CN21",
                     "products": [
-                        ""
-                    ]
+                        "COC1=C(C)C(=O)C2=C(C1=O)[C@@H](COC(N)=O)[C@@]1(OC)[C@H]3N[C@H]3CN21"
+                    ],
+                    "isIntermediate": true,
+                    "description": "9a-O-desmethylmitomycin A (C9-S, aziridine N-H) to mitomycin A"
+                },
+                {
+                    "substrate": "COC1=C(C)C(=O)C2=C(C1=O)[C@@H](COC(N)=O)[C@@]1(O)[C@@H]3[C@H](CN21)N3C",
+                    "products": [
+                        "COC1=C(C)C(=O)C2=C(C1=O)[C@@H](COC(N)=O)[C@@]1(OC)[C@@H]3[C@H](CN21)N3C"
+                    ],
+                    "isIntermediate": true,
+                    "description": "9-epi-mitomycin B (C9-S, aziridine N-methyl) to mitomycin F"
+                },
+                {
+                    "substrate": "COC1=C(C)C(=O)C2=C(C1=O)[C@H](COC(N)=O)[C@@]1(O)[C@@H]3[C@H](CN21)N3C",
+                    "products": [
+                        "COC1=C(C)C(=O)C2=C(C1=O)[C@H](COC(N)=O)[C@@]1(OC)[C@@H]3[C@H](CN21)N3C"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Mitomycin B (C9-R, aziridine N-methyl) to mitomycin J"
                 }
-            ]
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/jacs.6c02250"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Hydrolysis",
+                "Other"
+            ],
+            "description": "MitM eliminates the C9a-methoxy group as methanol, giving an aziridinomitosene; its aziridine then opens by hydrolysis, which the paper proposes is at least partly non-enzymatic. No methyl is transferred.",
+            "reactionSMARTS": "[#6X4:1](-[#8:2]-[#6H3:3])(-[#6X4H1:5])(-[#7X3:4])-[#6:6]1-[#6:7]-[#7X3:9]-1>>[#6H0:1](=[#6H0:5])(-[#7:4])-[#6:6](-[#8H1])-[#6:7]-[#7H1:9]",
+            "reactions": [
+                {
+                    "substrate": "COC1=C(C)C(=O)C2=C(C1=O)[C@H](COC(N)=O)[C@@]1(OC)[C@@H]3[C@H](CN21)N3C",
+                    "products": [
+                        "CN[C@H]1Cn2c3c(c(COC(N)=O)c2[C@H]1O)C(=O)C(OC)=C(C)C3=O",
+                        "CN[C@H]1Cn2c3c(c(COC(N)=O)c2[C@@H]1O)C(=O)C(OC)=C(C)C3=O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Mitomycin J to the ring-opened 1-hydroxy-2-(methylamino)mitosenes; runs with SAH in place of SAM. Hydrolysis gives both the 1,2-cis and 1,2-trans isomers."
+                },
+                {
+                    "substrate": "COC1=C(C)C(=O)C2=C(C1=O)[C@@H](COC(N)=O)[C@@]1(OC)[C@@H]3[C@H](CN21)N3C",
+                    "products": [
+                        "CN[C@H]1Cn2c3c(c(COC(N)=O)c2[C@H]1O)C(=O)C(OC)=C(C)C3=O",
+                        "CN[C@H]1Cn2c3c(c(COC(N)=O)c2[C@@H]1O)C(=O)C(OC)=C(C)C3=O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Mitomycin F (C9-S series) gives the same ring-opened mitosenes"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/jacs.6c02250"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "C1-O-methylation of the ring-opened mitosene; only 1,2-trans substrates are accepted",
+            "reactionSMARTS": "[#8H1:1]-[#6X4;R:2](-[#6;a:3])-[#6X4;R:4]-[#7X3:5]>>[#8:1](-[#6])-[#6X4;R:2](-[#6;a:3])-[#6X4;R:4]-[#7X3:5]",
+            "reactions": [
+                {
+                    "substrate": "CN[C@H]1Cn2c3c(c(COC(N)=O)c2[C@@H]1O)C(=O)C(OC)=C(C)C3=O",
+                    "products": [
+                        "CN[C@H]1Cn2c3c(c(COC(N)=O)c2[C@@H]1OC)C(=O)C(OC)=C(C)C3=O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "1,2-trans 1-hydroxy-2-(methylamino)mitosene to its 1-methoxy congener; confirmed against a prepared standard"
+                },
+                {
+                    "substrate": "COC1=C(C)C(=O)c2c(c(COC(N)=O)c3n2C[C@H](N(C)C)[C@H]3O)C1=O",
+                    "products": [
+                        "COC1=C(C)C(=O)c2c(c(COC(N)=O)c3n2C[C@H](N(C)C)[C@H]3OC)C1=O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "1,2-trans 1-hydroxy-2-(dimethylamino)mitosene to the 1-methoxy-2-(dimethylamino)mitosene"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/jacs.6c02250"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "C2-N-methylation of the aziridine-derived secondary amine of the ring-opened mitosene",
+            "reactionSMARTS": "[#6H3:3]-[#7H1;X3:1]-[#6X4;R:2]-[#6X4;R:4]-[#8X2:5]>>[#6H3:3]-[#7X3:1](-[#6H3])-[#6X4;R:2]-[#6X4;R:4]-[#8X2:5]",
+            "reactions": [
+                {
+                    "substrate": "CN[C@H]1Cn2c3c(c(COC(N)=O)c2[C@H]1O)C(=O)C(OC)=C(C)C3=O",
+                    "products": [
+                        "COC1=C(C)C(=O)c2c(c(COC(N)=O)c3n2C[C@H](N(C)C)[C@@H]3O)C1=O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "1,2-cis 1-hydroxy-2-(methylamino)mitosene to the 2-(dimethylamino) congener"
+                },
+                {
+                    "substrate": "CN[C@H]1Cn2c3c(c(COC(N)=O)c2[C@@H]1O)C(=O)C(OC)=C(C)C3=O",
+                    "products": [
+                        "COC1=C(C)C(=O)c2c(c(COC(N)=O)c3n2C[C@H](N(C)C)[C@H]3O)C1=O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "1,2-trans 1-hydroxy-2-(methylamino)mitosene to the 2-(dimethylamino) congener; the enzyme-SAH-product complex was solved (PDB 22AS)"
+                },
+                {
+                    "substrate": "CN[C@H]1Cn2c3c(c(COC(N)=O)c2[C@@H]1OC)C(=O)C(OC)=C(C)C3=O",
+                    "products": [
+                        "COC1=C(C)C(=O)c2c(c(COC(N)=O)c3n2C[C@H](N(C)C)[C@H]3OC)C1=O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "1-methoxy-2-(methylamino)mitosene to the 2-(dimethylamino) congener, retaining the C1-methoxy group"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/jacs.6c02250"
+                ]
+            }
         }
     ]
 }
