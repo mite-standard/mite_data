@@ -1,0 +1,70 @@
+{
+    "accession": "MITE9999999",
+    "status": "active",
+    "comment": "Lysine chlorination at the \u03b3-carbon to produce 4-Cl-lysine. Cross-reference to MIBiG entry BGC0001994 cannot be established since the latter refers to a RefSeq ID.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-11-12",
+            "contributors": [
+                "0009-0008-9239-6036"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 removed MIBiG cross-link, removed charges from reaction, added RHEA cross-reference."
+        }
+    ],
+    "enzyme": {
+        "name": "BesD",
+        "description": "Non-heme halogenase",
+        "references": [
+            "doi:10.1038/s41589-019-0355-x",
+            "doi:10.1038/s41586-019-1020-y"
+        ],
+        "databaseIds": {
+            "uniprot": "G8XHD5",
+            "genpept": "AEW98881.1"
+        },
+        "cofactors": {
+            "organic": [
+                "a-Ketoglutaric acid"
+            ],
+            "inorganic": [
+                "Fe"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "Chlorination at the C4 position of L-lysine by BesD.",
+            "reactionSMARTS": "[#7:1]-[#6:2]-[#6:3]-[#6:4]-[#6:5]-[#6:6](-[#6:8](-[#8:10])=[#8:9])-[#7:7]>>[#7:1]-[#6:2]-[#6:3]-[#6:4](-[#6:5]-[#6:6](-[#6:8](-[#8:10])=[#8:9])-[#7:7])-[Cl]",
+            "reactions": [
+                {
+                    "substrate": "[NH3+]CCCCC([NH3+])C(=O)[O-]",
+                    "products": [
+                        "[NH3+]CCC(Cl)CC([NH3+])C(=O)[O-]"
+                    ],
+                    "isIntermediate": true,
+                    "description": "BesD catalyses the conversion of L-lysine into 4-chloro-L-lysine."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1038/s41589-019-0355-x",
+                    "doi:10.1038/s41586-019-1020-y"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "59884"
+            }
+        }
+    ]
+}
