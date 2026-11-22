@@ -1,0 +1,70 @@
+{
+    "accession": "MITE9999999",
+    "status": "active",
+    "comment": "Dedicated aziridine N-methyltransferase of mitomycin biosynthesis, SAM-dependent. Methylates the aziridine N-H of C9a-hydroxy and C9a-methoxy aziridinomitosanes. Experiments used S. caespitosus ATCC 27422. mitomycin cluster BGC0000915 (AF127374.2) exists but is retired in MIBiG 4.0",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-11-21",
+            "contributors": [
+                "0009-0003-3131-7166"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "New entry. Reviewer 1 fixed reaction SMARTS (was too ambiguous), added description of MIBiG cross-ref."
+        }
+    ],
+    "enzyme": {
+        "name": "MitN",
+        "description": "Class I methyltransferase",
+        "references": [
+            "doi:10.1021/jacs.6c02250"
+        ],
+        "databaseIds": {
+            "uniprot": "Q9X5Q8",
+            "genpept": "AAD28458.1"
+        },
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "N-methylation of the aziridine nitrogen of aziridinomitosanes",
+            "reactionSMARTS": "[#6:1]-[#8:2]-[#6:3]1-[#6:10](=[#8:11])-[#6:9]2-[#6@:12](-[#6@@:18]3(-[#7:24](-[#6:8]=2-[#6:6](=[#8:7])-[#6:4]=1-[#6:5])-[#6:23]-[#6@:22]1-[#6@@:20]-3\\[#7:21]\\1)/[#8:19])\\[#6:13]-[#8:14]-[#6:15](=[#8:17])-[#7:16]>>[#6:1]-[#8:2]-[#6:3]1-[#6:10](=[#8:11])-[#6:9]2-[#6@:12](-[#6@@:18]3(-[#7:24](-[#6:8]=2-[#6:6](=[#8:7])-[#6:4]=1-[#6:5])-[#6:23]-[#6@:22]1-[#6@@:20]-3\\[#7:21]\\1-[#6])/[#8:19])\\[#6:13]-[#8:14]-[#6:15](=[#8:17])-[#7:16]",
+            "reactions": [
+                {
+                    "substrate": "COC1=C(C)C(=O)C2=C(C1=O)[C@@H](COC(N)=O)[C@@]1(O)[C@H]3N[C@H]3CN21",
+                    "products": [
+                        "COC1=C(C)C(=O)C2=C(C1=O)[C@@H](COC(N)=O)[C@@]1(O)[C@@H]3[C@H](CN21)N3C"
+                    ],
+                    "isIntermediate": true,
+                    "description": "C9a-hydroxy substrate 3 to 4; the product is then C9a-O-methylated by MitM"
+                },
+                {
+                    "substrate": "COC1=C(C)C(=O)C2=C(C1=O)[C@@H](COC(N)=O)[C@@]1(OC)[C@H]3N[C@H]3CN21",
+                    "products": [
+                        "COC1=C(C)C(=O)C2=C(C1=O)[C@@H](COC(N)=O)[C@@]1(OC)[C@@H]3[C@H](CN21)N3C"
+                    ],
+                    "isIntermediate": true,
+                    "description": "C9a-methoxy substrate, mitomycin A (1) to mitomycin F (5)"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/jacs.6c02250"
+                ]
+            }
+        }
+    ]
+}
