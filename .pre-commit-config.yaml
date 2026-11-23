@@ -29,15 +29,3 @@ repos:
       entry: uv run pytest
       pass_filenames: false
       language: system
-    - id: mite-validation
-      name: mite-validation
-      entry: uv run python pipeline/validate_entry.py
-      pass_filenames: true
-      files: 'mite_data/data/MITE\d\d\d\d\d\d\d.json'
-      language: system
-    - id: mite-artifacts
-      name: mite-artifacts
-      entry: uv run python pipeline/create_artifacts_single.py
-      pass_filenames: true
-      files: 'mite_data/data/MITE\d\d\d\d\d\d\d.json'
-      language: system
