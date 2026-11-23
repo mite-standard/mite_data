@@ -11655,6 +11655,27 @@
       "reaction_description":"N6-methylation of an indolocarbazole C4c/C7a diol to give the N-methyl diol",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000544":{
+      "accession":"MITE0000544",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"SAM-dependent O-methyltransferase",
+      "enzyme_ids":{
+        "genpept":"ARQ67912.1",
+        "uniprot":"A0A1W7CT57"
+      },
+      "enzyme_name":"SpmM1",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces marincola",
+      "phylum":"Actinomycetota",
+      "reaction_description":"O-methylation of the C-2 carboxylic acid of 6′,6″-dichloro-chromopyrrolic acid to give demethyl-lynamicin D",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.32"
