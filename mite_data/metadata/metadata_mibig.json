@@ -2489,6 +2489,24 @@
         "status":"active"
       }
     ],
+    "BGC0000809":[
+      {
+        "enzyme_description":"SAM-dependent N-methyltransferase",
+        "enzyme_ids":{
+          "genpept":"ABC02796.1",
+          "mibig":"BGC0000809",
+          "uniprot":"Q0H2W8"
+        },
+        "enzyme_name":"AtmM1",
+        "enzyme_refs":[
+          "doi:10.1016/j.chembiol.2006.05.009"
+        ],
+        "enzyme_tailoring":"Methylation",
+        "mite_accession":"MITE0000542",
+        "mite_url":"https://bioregistry.io/mite:MITE0000542",
+        "status":"active"
+      }
+    ],
     "BGC0000821":[
       {
         "enzyme_description":"Cytochrome P450",
