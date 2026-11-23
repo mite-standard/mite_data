@@ -12063,6 +12063,28 @@
       "reaction_description":"Chlorination of carrier-S-L-tyrosine. Substrate together with a carrier protein determine the selectivity. The activity of the L-tyrosine moiety with different carrier proteins in the same pathway could hint at regulatory activities. Carrier proteins: PCP1,2 and 6",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000563":{
+      "accession":"MITE0000563",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"a-Ketoglutaric acid",
+      "domain":"Bacteria",
+      "enzyme_description":"Non-heme halogenase",
+      "enzyme_ids":{
+        "genpept":"AKQ99303.1",
+        "mibig":"BGC0001484",
+        "uniprot":"A0A1U8X168"
+      },
+      "enzyme_name":"AdeV",
+      "family":"Thermomonosporaceae",
+      "kingdom":"Bacillati",
+      "order":"Streptosporangiales",
+      "organism":"Actinomadura sp. ATCC 39365",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Chloration at the C2 position of purine 5'-monophosphate substrates by AdeV.",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.32"

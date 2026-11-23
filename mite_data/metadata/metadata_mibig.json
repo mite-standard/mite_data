@@ -4117,6 +4117,25 @@
         "status":"active"
       }
     ],
+    "BGC0001484":[
+      {
+        "enzyme_description":"Non-heme halogenase",
+        "enzyme_ids":{
+          "genpept":"AKQ99303.1",
+          "mibig":"BGC0001484",
+          "uniprot":"A0A1U8X168"
+        },
+        "enzyme_name":"AdeV",
+        "enzyme_refs":[
+          "doi:10.1002/anie.201914994",
+          "doi:10.1128/aem.02497-21"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000563",
+        "mite_url":"https://bioregistry.io/mite:MITE0000563",
+        "status":"active"
+      }
+    ],
     "BGC0001485":[
       {
         "enzyme_description":"Cytochrome P450",
