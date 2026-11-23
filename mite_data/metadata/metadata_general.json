@@ -11829,6 +11829,28 @@
       "reaction_description":"C-methylation of C-3 of 2-oxoglutarate to give (3R)-3-methyl-2-oxoglutarate",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000552":{
+      "accession":"MITE0000552",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"SAM-dependent C-methyltransferase",
+      "enzyme_ids":{
+        "genpept":"AAU34201.1",
+        "mibig":"BGC0000388",
+        "uniprot":"Q643C8"
+      },
+      "enzyme_name":"MppJ",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces hygroscopicus",
+      "phylum":"Actinomycetota",
+      "reaction_description":"C-methylation of C-3 of 3-phenylpyruvate to give (3S)-2-oxo-3-phenylbutanoate",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.32"

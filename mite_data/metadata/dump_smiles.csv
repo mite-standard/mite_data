@@ -787,3 +787,4 @@
 785,MITE0000549.reaction1.example1,O=C(O)CCC(=O)C(=O)O,C[C@H](CC(=O)O)C(=O)C(=O)O
 786,MITE0000550.reaction1.example1,O=C(O)CCC(=O)C(=O)O,C[C@H](CC(=O)O)C(=O)C(=O)O
 787,MITE0000551.reaction1.example1,O=C(O)CCC(=O)C(=O)O,C[C@H](CC(=O)O)C(=O)C(=O)O
+788,MITE0000552.reaction1.example1,O=C(O)C(=O)Cc1ccccc1,C[C@H](C(=O)C(=O)O)c1ccccc1
