@@ -11527,6 +11527,27 @@
       "reaction_description":"Cleavage of enteropeptin precursor peptide to yield final enteropeptin product.",
       "status":"active",
       "tailoring":"Hydrolysis"
+    },
+    "MITE0000538":{
+      "accession":"MITE0000538",
+      "class_name":"Bacilli",
+      "cofactors_inorganic":"Mn",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"RiPP Arginase",
+      "enzyme_ids":{
+        "genpept":"ESK61475.1",
+        "uniprot":"S1QYI7"
+      },
+      "enzyme_name":"KgrD",
+      "family":"Enterococcaceae",
+      "kingdom":"Bacillati",
+      "order":"Lactobacillales",
+      "organism":"Enterococcus cecorum DSM 20682 = ATCC 43198",
+      "phylum":"Bacillota",
+      "reaction_description":"Deguanidination of enteropeptin precursor peptide after action by KgrC",
+      "status":"active",
+      "tailoring":"Other"
     }
   },
   "version_mite_data":"1.32"
