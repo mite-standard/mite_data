@@ -11676,6 +11676,28 @@
       "reaction_description":"O-methylation of the C-2 carboxylic acid of 6′,6″-dichloro-chromopyrrolic acid to give demethyl-lynamicin D",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000545":{
+      "accession":"MITE0000545",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"Pyridoxal phosphate",
+      "domain":"Bacteria",
+      "enzyme_description":"Aminotransferase",
+      "enzyme_ids":{
+        "genpept":"AGG35703.1",
+        "mibig":"BGC0000883",
+        "uniprot":"M1T1K4"
+      },
+      "enzyme_name":"ArgM",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces arginensis",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Transamination of L-arginine with 2-oxoglutarate to give 5-guanidino-2-oxopentanoate",
+      "status":"active",
+      "tailoring":"Amination|Deamination"
     }
   },
   "version_mite_data":"1.32"

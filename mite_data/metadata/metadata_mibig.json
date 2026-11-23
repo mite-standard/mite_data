@@ -2664,6 +2664,24 @@
         "status":"active"
       }
     ],
+    "BGC0000883":[
+      {
+        "enzyme_description":"Aminotransferase",
+        "enzyme_ids":{
+          "genpept":"AGG35703.1",
+          "mibig":"BGC0000883",
+          "uniprot":"M1T1K4"
+        },
+        "enzyme_name":"ArgM",
+        "enzyme_refs":[
+          "doi:10.1128/AEM.01172-14"
+        ],
+        "enzyme_tailoring":"Amination|Deamination",
+        "mite_accession":"MITE0000545",
+        "mite_url":"https://bioregistry.io/mite:MITE0000545",
+        "status":"active"
+      }
+    ],
     "BGC0000890":[
       {
         "enzyme_description":"Chorismate pyruvate lyase",
