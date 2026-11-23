@@ -12,7 +12,7 @@
             "reviewers": [
                 "0000-0001-6534-6609"
             ],
-            "comment": "New entry."
+            "comment": "New entry. Reviewer 1 removed auxEnzyme genpept (was MDX7991759.1): retrieval issues from NCBI GenPept."
         }
     ],
     "enzyme": {
