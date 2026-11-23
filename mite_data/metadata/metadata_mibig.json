@@ -3551,6 +3551,24 @@
         "status":"active"
       }
     ],
+    "BGC0001334":[
+      {
+        "enzyme_description":"SAM-dependent N-methyltransferase",
+        "enzyme_ids":{
+          "genpept":"AEO12715.1",
+          "mibig":"BGC0001334",
+          "uniprot":"G3K6K4"
+        },
+        "enzyme_name":"ClaM1",
+        "enzyme_refs":[
+          "doi:10.1021/cb500728h"
+        ],
+        "enzyme_tailoring":"Methylation",
+        "mite_accession":"MITE0000543",
+        "mite_url":"https://bioregistry.io/mite:MITE0000543",
+        "status":"active"
+      }
+    ],
     "BGC0001335":[
       {
         "enzyme_description":"Flavin-dependent halogenase",
