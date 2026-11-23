@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000551",
     "status": "active",
     "comment": "Methylates C-3 of 2-oxoglutarate (\u03b1-ketoglutarate); the product is transaminated to (2S,3R)-3-methyl-L-glutamate, the 3-MeGlu residue of daptomycin. DptI is a homologue of GlmT and LptI from other pathways that catalyze the same C-3 methylation reaction.",
     "changelog": [
