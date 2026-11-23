@@ -1833,6 +1833,25 @@
         "mite_accession":"MITE0000043",
         "mite_url":"https://bioregistry.io/mite:MITE0000043",
         "status":"active"
+      },
+      {
+        "enzyme_description":"SAM-dependent C-methyltransferase",
+        "enzyme_ids":{
+          "genpept":"AGN74875.1",
+          "mibig":"BGC0000459",
+          "uniprot":"R9UTR3"
+        },
+        "enzyme_name":"SgvM",
+        "enzyme_refs":[
+          "doi:10.1002/anie.201609375",
+          "doi:10.1002/cbic.202400258",
+          "doi:10.1038/s41467-023-40980-w",
+          "doi:10.1002/cbic.201200584"
+        ],
+        "enzyme_tailoring":"Methylation",
+        "mite_accession":"MITE0000554",
+        "mite_url":"https://bioregistry.io/mite:MITE0000554",
+        "status":"active"
       }
     ],
     "BGC0000466":[
