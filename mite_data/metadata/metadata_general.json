@@ -11569,6 +11569,27 @@
       "reaction_description":"N-methylation of the aziridine nitrogen of aziridinomitosanes",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000540":{
+      "accession":"MITE0000540",
+      "class_name":"Bacilli",
+      "cofactors_inorganic":"FeS",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"Fe–S-dependent methyltransferase",
+      "enzyme_ids":{
+        "genpept":"ESK61478.1",
+        "uniprot":"S1R0N1"
+      },
+      "enzyme_name":"KgrB",
+      "family":"Enterococcaceae",
+      "kingdom":"Bacillati",
+      "order":"Lactobacillales",
+      "organism":"Enterococcus cecorum DSM 20682 = ATCC 43198",
+      "phylum":"Bacillota",
+      "reaction_description":"N-methylation of the side-chain amine of ornithine-41 in thiomorpholine-containing KgrA",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.32"
