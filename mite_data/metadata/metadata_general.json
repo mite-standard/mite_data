@@ -11611,6 +11611,28 @@
       "reaction_description":"Thiomorpholine formation by alpha-thioether bond between Arg41 and Cys42 of the KgrA precursor peptide",
       "status":"active",
       "tailoring":"Cyclization"
+    },
+    "MITE0000542":{
+      "accession":"MITE0000542",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"SAM-dependent N-methyltransferase",
+      "enzyme_ids":{
+        "genpept":"ABC02796.1",
+        "mibig":"BGC0000809",
+        "uniprot":"Q0H2W8"
+      },
+      "enzyme_name":"AtmM1",
+      "family":"Thermomonosporaceae",
+      "kingdom":"Bacillati",
+      "order":"Streptosporangiales",
+      "organism":"Actinomadura melliaura",
+      "phylum":"Actinomycetota",
+      "reaction_description":"N-methylation of the imide nitrogen of an indolocarbazole (arcyriaflavin A or its N-glucoside)",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.32"
