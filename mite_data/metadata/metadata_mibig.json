@@ -1221,6 +1221,24 @@
         "status":"active"
       }
     ],
+    "BGC0000291":[
+      {
+        "enzyme_description":"SAM-dependent C-methyltransferase",
+        "enzyme_ids":{
+          "genpept":"AAZ23087.1",
+          "mibig":"BGC0000291",
+          "uniprot":"Q45R73"
+        },
+        "enzyme_name":"LptI",
+        "enzyme_refs":[
+          "doi:10.1021/ja074427i"
+        ],
+        "enzyme_tailoring":"Methylation",
+        "mite_accession":"MITE0000550",
+        "mite_url":"https://bioregistry.io/mite:MITE0000550",
+        "status":"active"
+      }
+    ],
     "BGC0000306":[
       {
         "enzyme_description":"Cytochrome P450",

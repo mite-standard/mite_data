@@ -11785,6 +11785,28 @@
       "reaction_description":"C-methylation of C-3 of 2-oxoglutarate to give (3R)-3-methyl-2-oxoglutarate",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000550":{
+      "accession":"MITE0000550",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"SAM-dependent C-methyltransferase",
+      "enzyme_ids":{
+        "genpept":"AAZ23087.1",
+        "mibig":"BGC0000291",
+        "uniprot":"Q45R73"
+      },
+      "enzyme_name":"LptI",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces fradiae",
+      "phylum":"Actinomycetota",
+      "reaction_description":"C-methylation of C-3 of 2-oxoglutarate to give (3R)-3-methyl-2-oxoglutarate",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.32"
