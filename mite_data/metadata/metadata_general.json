@@ -11999,6 +11999,27 @@
       "reaction_description":"Regiospecific chlorination of the anthraquinone dermolutein to form chlorodermolutein",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000560":{
+      "accession":"MITE0000560",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Eukaryota",
+      "enzyme_description":"O-methyltransferase",
+      "enzyme_ids":{
+        "genpept":"BCR85519.1",
+        "uniprot":"A0A7R7ZLE4"
+      },
+      "enzyme_name":"AcOMT",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Aspergillus chevalieri",
+      "phylum":"Dikarya",
+      "reaction_description":"6-O-methylation of the anthraquinone emodin to form physcion",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.32"
