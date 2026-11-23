@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000546",
     "status": "active",
     "comment": "Methylates C-3 of 5-guanidino-2-oxopentanoate (the \u03b1-keto acid of arginine); the product is transaminated by ArgM to (2S,3R)-\u03b2-methylarginine, a residue of the peptidyl nucleoside antibiotic arginomycin. ArgM also forms the ArgN substrate from L-arginine.",
     "changelog": [
