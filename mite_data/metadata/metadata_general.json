@@ -11741,6 +11741,28 @@
       "reaction_description":"Chlorination at the C4 position of L-lysine by BesD.",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000548":{
+      "accession":"MITE0000548",
+      "class_name":"Cyanophyceae",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"a-Ketoglutaric acid",
+      "domain":"Bacteria",
+      "enzyme_description":"Non-heme halogenase",
+      "enzyme_ids":{
+        "genpept":"AHB62755.1",
+        "mibig":"BGC0001126",
+        "uniprot":"UPI0003D883B2"
+      },
+      "enzyme_name":"AmbO5",
+      "family":"Hapalosiphonaceae",
+      "kingdom":"Bacillati",
+      "order":"Nostocales",
+      "organism":"Fischerella ambigua UTEX 1903",
+      "phylum":"Cyanobacteriota",
+      "reaction_description":"Chlorination at the C13 position of hapalindole-type alkaloid substrates by AmbO5.",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.32"

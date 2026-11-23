@@ -3296,6 +3296,24 @@
         "status":"active"
       }
     ],
+    "BGC0001126":[
+      {
+        "enzyme_description":"Non-heme halogenase",
+        "enzyme_ids":{
+          "genpept":"AHB62755.1",
+          "mibig":"BGC0001126",
+          "uniprot":"UPI0003D883B2"
+        },
+        "enzyme_name":"AmbO5",
+        "enzyme_refs":[
+          "doi:10.1002/anie.201601447"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000548",
+        "mite_url":"https://bioregistry.io/mite:MITE0000548",
+        "status":"active"
+      }
+    ],
     "BGC0001140":[
       {
         "enzyme_description":"type I diterpene synthase",
