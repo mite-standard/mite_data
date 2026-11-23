@@ -11936,6 +11936,27 @@
       "reaction_description":"N-methylation of the N-terminal Ile1 of the kintamdin core peptide",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000557":{
+      "accession":"MITE0000557",
+      "class_name":"Bacilli",
+      "cofactors_inorganic":"FeS",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"Radical SAM enzyme",
+      "enzyme_ids":{
+        "genpept":"CAB16054.1",
+        "uniprot":"Q45595"
+      },
+      "enzyme_name":"EpeE",
+      "family":"Bacillaceae",
+      "kingdom":"Bacillati",
+      "order":"Caryophanales",
+      "organism":"Bacillus subtilis (strain 168)",
+      "phylum":"Bacillota",
+      "reaction_description":"epimerization of L-Ile12 to D-allo-Ile12 of the EpeX precursor peptide",
+      "status":"active",
+      "tailoring":"Epimerization"
     }
   },
   "version_mite_data":"1.32"
