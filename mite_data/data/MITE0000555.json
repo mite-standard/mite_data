@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000555",
     "status": "active",
     "comment": "Installs a Trp-C5 to Arg-C\u03b3 cross-link at all three WPR motifs of the precursor peptide WprA. Requires the chaperone WprC",
     "changelog": [
