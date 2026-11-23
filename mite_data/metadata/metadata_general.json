@@ -11506,7 +11506,28 @@
       "reaction_description":"aldehyde reduction and epoxidation",
       "status":"active",
       "tailoring":"Oxidation|Reduction"
+    },
+    "MITE0000537":{
+      "accession":"MITE0000537",
+      "class_name":"Bacilli",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"N/A",
+      "domain":"Bacteria",
+      "enzyme_description":"Protease/Exporter",
+      "enzyme_ids":{
+        "genpept":"ESK61474.1",
+        "uniprot":"S1RQJ4"
+      },
+      "enzyme_name":"KgrE",
+      "family":"Enterococcaceae",
+      "kingdom":"Bacillati",
+      "order":"Lactobacillales",
+      "organism":"Enterococcus cecorum DSM 20682 = ATCC 43198",
+      "phylum":"Bacillota",
+      "reaction_description":"Cleavage of enteropeptin precursor peptide to yield final enteropeptin product.",
+      "status":"active",
+      "tailoring":"Hydrolysis"
     }
   },
-  "version_mite_data":"1.31"
+  "version_mite_data":"1.32"
 }
