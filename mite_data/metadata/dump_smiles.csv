@@ -803,3 +803,4 @@
 801,MITE0000559.reaction1.example1,COc1cc(O)cc2c1C(=O)c1c(cc(C)c(C(=O)O)c1O)C2=O,COc1cc(O)c(Cl)c2c1C(=O)c1c(cc(C)c(C(=O)O)c1O)C2=O
 802,MITE0000560.reaction1.example1,Cc1cc(O)c2c(c1)C(=O)c1cc(O)cc(O)c1C2=O,COc1cc(O)c2c(c1)C(=O)c1cc(C)cc(O)c1C2=O
 803,MITE0000561.reaction1.example1,Cc1cc(O)c2c(c1)C(=O)c1cc(O)cc(O)c1C2=O,COc1cc(O)cc2c1C(=O)c1c(O)cc(C)cc1C2=O
+804,MITE0000562.reaction1.example1,*SC(=O)C(N)Cc1ccc(O)cc1,*SC(=O)C(N)Cc1ccc(O)c(Cl)c1

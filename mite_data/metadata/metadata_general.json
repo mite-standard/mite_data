@@ -12041,6 +12041,28 @@
       "reaction_description":"O-methylation of the anthraquinone emodin to form questin",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000562":{
+      "accession":"MITE0000562",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD",
+      "domain":"Bacteria",
+      "enzyme_description":"Flavin-dependent halogenase",
+      "enzyme_ids":{
+        "genpept":"CAE53362.1",
+        "mibig":"BGC0000440",
+        "uniprot":"Q70AY7"
+      },
+      "enzyme_name":"Tcp21",
+      "family":"Micromonosporaceae",
+      "kingdom":"Bacillati",
+      "order":"Micromonosporales",
+      "organism":"Actinoplanes teichomyceticus",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Chlorination of carrier-S-L-tyrosine. Substrate together with a carrier protein determine the selectivity. The activity of the L-tyrosine moiety with different carrier proteins in the same pathway could hint at regulatory activities. Carrier proteins: PCP1,2 and 6",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.32"
