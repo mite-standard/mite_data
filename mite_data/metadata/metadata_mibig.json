@@ -1352,6 +1352,25 @@
         "status":"active"
       }
     ],
+    "BGC0000336":[
+      {
+        "enzyme_description":"SAM-dependent C-methyltransferase",
+        "enzyme_ids":{
+          "genpept":"AAX31562.1",
+          "mibig":"BGC0000336",
+          "uniprot":"Q50EC5"
+        },
+        "enzyme_name":"DptI",
+        "enzyme_refs":[
+          "doi:10.1021/ja074427i",
+          "doi:10.1111/j.1365-2958.2006.05305.x"
+        ],
+        "enzyme_tailoring":"Methylation",
+        "mite_accession":"MITE0000551",
+        "mite_url":"https://bioregistry.io/mite:MITE0000551",
+        "status":"active"
+      }
+    ],
     "BGC0000374":[
       {
         "enzyme_description":"L-DOPA dioxygenase",
