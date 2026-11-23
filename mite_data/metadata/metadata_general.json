@@ -11895,6 +11895,26 @@
       "reaction_description":"C-methylation of C-3 of 4-methyl-2-oxovalerate to give (3R)-3,4-dimethyl-2-oxopentanoate",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000555":{
+      "accession":"MITE0000555",
+      "class_name":"Not found",
+      "cofactors_inorganic":"FeS",
+      "cofactors_organic":"SAM",
+      "domain":"Not found",
+      "enzyme_description":"Radical SAM enzyme",
+      "enzyme_ids":{
+        "uniprot":"UPI0029E82D08"
+      },
+      "enzyme_name":"WprB",
+      "family":"Not found",
+      "kingdom":"Not found",
+      "order":"Not found",
+      "organism":"Not found",
+      "phylum":"Not found",
+      "reaction_description":"C–C bond formation between Trp19-C5 and Arg21-Cγ of the precursor peptide WprA",
+      "status":"active",
+      "tailoring":"Cyclization"
     }
   },
   "version_mite_data":"1.32"
