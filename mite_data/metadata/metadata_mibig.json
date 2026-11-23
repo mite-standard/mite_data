@@ -1315,6 +1315,25 @@
         "status":"active"
       }
     ],
+    "BGC0000315":[
+      {
+        "enzyme_description":"SAM-dependent C-methyltransferase",
+        "enzyme_ids":{
+          "genpept":"CAB38586.1",
+          "mibig":"BGC0000315",
+          "uniprot":"Q9Z4W6"
+        },
+        "enzyme_name":"GlmT",
+        "enzyme_refs":[
+          "doi:10.1021/ja074427i",
+          "doi:10.1021/ja062960c"
+        ],
+        "enzyme_tailoring":"Methylation",
+        "mite_accession":"MITE0000549",
+        "mite_url":"https://bioregistry.io/mite:MITE0000549",
+        "status":"active"
+      }
+    ],
     "BGC0000374":[
       {
         "enzyme_description":"L-DOPA dioxygenase",

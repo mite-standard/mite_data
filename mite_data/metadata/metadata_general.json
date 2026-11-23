@@ -11763,6 +11763,28 @@
       "reaction_description":"Chlorination at the C13 position of hapalindole-type alkaloid substrates by AmbO5.",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000549":{
+      "accession":"MITE0000549",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"SAM-dependent C-methyltransferase",
+      "enzyme_ids":{
+        "genpept":"CAB38586.1",
+        "mibig":"BGC0000315",
+        "uniprot":"Q9Z4W6"
+      },
+      "enzyme_name":"GlmT",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces coelicolor (strain ATCC BAA-471 / A3(2) / M145)",
+      "phylum":"Actinomycetota",
+      "reaction_description":"C-methylation of C-3 of 2-oxoglutarate to give (3R)-3-methyl-2-oxoglutarate",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.32"
