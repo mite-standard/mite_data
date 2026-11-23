@@ -11590,6 +11590,27 @@
       "reaction_description":"N-methylation of the side-chain amine of ornithine-41 in thiomorpholine-containing KgrA",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000541":{
+      "accession":"MITE0000541",
+      "class_name":"Bacilli",
+      "cofactors_inorganic":"FeS",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"Radical SAM enzyme",
+      "enzyme_ids":{
+        "genpept":"ESK61476.1",
+        "uniprot":"S1RLF6"
+      },
+      "enzyme_name":"KgrC",
+      "family":"Enterococcaceae",
+      "kingdom":"Bacillati",
+      "order":"Lactobacillales",
+      "organism":"Enterococcus cecorum DSM 20682 = ATCC 43198",
+      "phylum":"Bacillota",
+      "reaction_description":"Thiomorpholine formation by alpha-thioether bond between Arg41 and Cys42 of the KgrA precursor peptide",
+      "status":"active",
+      "tailoring":"Cyclization"
     }
   },
   "version_mite_data":"1.32"
