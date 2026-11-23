@@ -4216,7 +4216,7 @@
     "MITE0000196":{
       "accession":"MITE0000196",
       "class_name":"Gammaproteobacteria",
-      "cofactors_inorganic":"N/A",
+      "cofactors_inorganic":"Fe",
       "cofactors_organic":"a-Ketoglutaric acid",
       "domain":"Bacteria",
       "enzyme_description":"Alpha-ketoglutarate-dependent dioxygenase ",

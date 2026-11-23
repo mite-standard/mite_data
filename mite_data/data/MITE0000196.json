@@ -34,6 +34,17 @@
                 "0000-0001-6534-6609"
             ],
             "comment": "Homogenized enzyme descriptions"
+        },
+        {
+            "version": "4",
+            "date": "2025-11-23",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information."
         }
     ],
     "enzyme": {
@@ -58,6 +69,9 @@
         "cofactors": {
             "organic": [
                 "a-Ketoglutaric acid"
+            ],
+            "inorganic": [
+                "Fe"
             ]
         }
     },
