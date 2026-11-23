@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000540",
     "status": "active",
     "comment": "Fe-S-dependent methyltransferase of the KGR pathway. Methylates the side-chain amine of ornithine-41 (made from Arg41 by KgrD) in thiomorpholine-containing KgrA, with SAM as methyl donor; not radical SAM reaction.",
     "changelog": [
