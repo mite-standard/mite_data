@@ -11873,6 +11873,28 @@
       "reaction_description":"C-methylation of C-3 of 5-guanidino-2-oxopentanoate to give (3R)-5-guanidino-3-methyl-2-oxopentanoate",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000554":{
+      "accession":"MITE0000554",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Zn",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"SAM-dependent C-methyltransferase",
+      "enzyme_ids":{
+        "genpept":"AGN74875.1",
+        "mibig":"BGC0000459",
+        "uniprot":"R9UTR3"
+      },
+      "enzyme_name":"SgvM",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces griseoviridis",
+      "phylum":"Actinomycetota",
+      "reaction_description":"C-methylation of C-3 of 4-methyl-2-oxovalerate to give (3R)-3,4-dimethyl-2-oxopentanoate",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.32"
