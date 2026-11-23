@@ -12020,6 +12020,27 @@
       "reaction_description":"6-O-methylation of the anthraquinone emodin to form physcion",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000561":{
+      "accession":"MITE0000561",
+      "class_name":"Ascomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Eukaryota",
+      "enzyme_description":"O-methyltransferase",
+      "enzyme_ids":{
+        "genpept":"EAU31622.1",
+        "uniprot":"Q0CCY5"
+      },
+      "enzyme_name":"GedA",
+      "family":"Eurotiomycetes",
+      "kingdom":"Fungi",
+      "order":"Pezizomycotina",
+      "organism":"Aspergillus terreus (strain NIH 2624 / FGSC A1156)",
+      "phylum":"Dikarya",
+      "reaction_description":"O-methylation of the anthraquinone emodin to form questin",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.32"
