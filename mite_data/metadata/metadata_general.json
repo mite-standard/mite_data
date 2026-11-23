@@ -11979,6 +11979,26 @@
       "reaction_description":"Chlorination at the C13 position of indole alkaloid substrates by WelO5.",
       "status":"active",
       "tailoring":"Halogenation"
+    },
+    "MITE0000559":{
+      "accession":"MITE0000559",
+      "class_name":"Basidiomycota",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"FAD",
+      "domain":"Eukaryota",
+      "enzyme_description":"FAD dependent halogenase",
+      "enzyme_ids":{
+        "genpept":"YGB79289.1"
+      },
+      "enzyme_name":"CsHAL2",
+      "family":"Agaricomycetes",
+      "kingdom":"Fungi",
+      "order":"Agaricomycotina",
+      "organism":"Cortinarius semisanguineus",
+      "phylum":"Dikarya",
+      "reaction_description":"Regiospecific chlorination of the anthraquinone dermolutein to form chlorodermolutein",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.32"
