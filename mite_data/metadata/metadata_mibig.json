@@ -1703,6 +1703,23 @@
         "mite_accession":"MITE0000036",
         "mite_url":"https://bioregistry.io/mite:MITE0000036",
         "status":"retired"
+      },
+      {
+        "enzyme_description":"Flavin-dependent halogenase",
+        "enzyme_ids":{
+          "genpept":"CAE53362.1",
+          "mibig":"BGC0000440",
+          "uniprot":"Q70AY7"
+        },
+        "enzyme_name":"Tcp21",
+        "enzyme_refs":[
+          "doi:10.1039/c7sc00460e",
+          "doi:10.1111/febs.15350"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000562",
+        "mite_url":"https://bioregistry.io/mite:MITE0000562",
+        "status":"active"
       }
     ],
     "BGC0000455":[
