@@ -11720,6 +11720,27 @@
       "reaction_description":"C-methylation of C-3 of 5-guanidino-2-oxopentanoate to give (3R)-5-guanidino-3-methyl-2-oxopentanoate",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000547":{
+      "accession":"MITE0000547",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"a-Ketoglutaric acid",
+      "domain":"Bacteria",
+      "enzyme_description":"Non-heme halogenase",
+      "enzyme_ids":{
+        "genpept":"AEW98881.1",
+        "uniprot":"G8XHD5"
+      },
+      "enzyme_name":"BesD",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptantibioticus cattleyicolor (strain ATCC 35852 / DSM 46488 / JCM 4925 / NBRC 14057 / NRRL 8057)",
+      "phylum":"Actinomycetota",
+      "reaction_description":"Chlorination at the C4 position of L-lysine by BesD.",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.32"
