@@ -11957,6 +11957,28 @@
       "reaction_description":"epimerization of L-Ile12 to D-allo-Ile12 of the EpeX precursor peptide",
       "status":"active",
       "tailoring":"Epimerization"
+    },
+    "MITE0000558":{
+      "accession":"MITE0000558",
+      "class_name":"Cyanophyceae",
+      "cofactors_inorganic":"Fe",
+      "cofactors_organic":"a-Ketoglutaric acid",
+      "domain":"Bacteria",
+      "enzyme_description":"Non-heme halogenase",
+      "enzyme_ids":{
+        "genpept":"AHI58816.1",
+        "mibig":"BGC0000668",
+        "uniprot":"A0A067YX61"
+      },
+      "enzyme_name":"WelO5",
+      "family":"Hapalosiphonaceae",
+      "kingdom":"Bacillati",
+      "order":"Nostocales",
+      "organism":"Hapalosiphon welwitschii UTEX B 1830",
+      "phylum":"Cyanobacteriota",
+      "reaction_description":"Chlorination at the C13 position of indole alkaloid substrates by WelO5.",
+      "status":"active",
+      "tailoring":"Halogenation"
     }
   },
   "version_mite_data":"1.32"

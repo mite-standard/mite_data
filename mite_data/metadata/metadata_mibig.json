@@ -2499,6 +2499,24 @@
         "status":"active"
       }
     ],
+    "BGC0000668":[
+      {
+        "enzyme_description":"Non-heme halogenase",
+        "enzyme_ids":{
+          "genpept":"AHI58816.1",
+          "mibig":"BGC0000668",
+          "uniprot":"A0A067YX61"
+        },
+        "enzyme_name":"WelO5",
+        "enzyme_refs":[
+          "doi:10.1038/nchembio.2112"
+        ],
+        "enzyme_tailoring":"Halogenation",
+        "mite_accession":"MITE0000558",
+        "mite_url":"https://bioregistry.io/mite:MITE0000558",
+        "status":"active"
+      }
+    ],
     "BGC0000677":[
       {
         "enzyme_description":"Cytochrome P450",
