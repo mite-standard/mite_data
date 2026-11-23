@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000549",
     "status": "active",
     "comment": "Methylates C-3 of 2-oxoglutarate (\u03b1-ketoglutarate); the product is transaminated by the branched-chain aminotransferase IlvE to (2S,3R)-3-methyl-L-glutamate, the 3-MeGlu residue of the calcium-dependent antibiotic (CDA). GlmT is a homologue of DptI and LptI from other pathways that catalyze the same",
     "changelog": [
