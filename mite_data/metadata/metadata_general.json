@@ -11915,6 +11915,27 @@
       "reaction_description":"C–C bond formation between Trp19-C5 and Arg21-Cγ of the precursor peptide WprA",
       "status":"active",
       "tailoring":"Cyclization"
+    },
+    "MITE0000556":{
+      "accession":"MITE0000556",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"N-Methyltransferase",
+      "enzyme_ids":{
+        "genpept":"UUB23872.1",
+        "uniprot":"UPI00220F8136"
+      },
+      "enzyme_name":"KinO",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces sp. RK44",
+      "phylum":"Actinomycetota",
+      "reaction_description":"N-methylation of the N-terminal Ile1 of the kintamdin core peptide",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.32"
