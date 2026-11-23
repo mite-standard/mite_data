@@ -777,3 +777,10 @@
 775,MITE0000545.reaction2.example1,C[C@H](CCNC(=N)N)C(=O)C(=O)O,C[C@H](CCNC(=N)N)[C@H](N)C(=O)O
 776,MITE0000546.reaction1.example1,N=C(N)NCCCC(=O)C(=O)O,C[C@H](CCNC(=N)N)C(=O)C(=O)O
 777,MITE0000547.reaction1.example1,[NH3+]CCCCC([NH3+])C(=O)[O-],[NH3+]CCC(Cl)CC([NH3+])C(=O)[O-]
+778,MITE0000548.reaction1.example1,[C-]#[N+]C1C2c3c([nH]c4ccccc34)C(C)(C)C2CCC1(C)C=C,[C-]#[N+]C1C2c3c([nH]c4ccccc34)C(C)(C)C2CC(Cl)C1(C)C=C
+779,MITE0000548.reaction1.example2,[C-]#[N+]C1C(c2c[nH]c3ccccc23)C(C(=C)C)CCC1(C)C=C,[C-]#[N+]C1C(c2c[nH]c3ccccc23)C(C(=C)C)CC(Cl)C1(C)C=C
+780,MITE0000548.reaction1.example3,[C-]#[N+]C1C2c3c[nH]c4cccc(c34)C(C)(C)C2CCC1(C)C=C,[C-]#[N+]C1C2c3c[nH]c4cccc(c34)C(C)(C)C2CC(Cl)C1(C)C=C
+781,MITE0000548.reaction1.example4,[C-]#[N+]C1C2c3c(C(C)(C)C=C)[nH]c4cccc(c34)C(C)(C)C2CCC1(C)C=C,[C-]#[N+]C1C2c3c(C(C)(C)C=C)[nH]c4cccc(c34)C(C)(C)C2CC(Cl)C1(C)C=C
+782,MITE0000548.reaction1.example5,[C-]#[N+]C1C(C)(C=C)CCC2C(C)(C)c3cccc4[nH]c(C(C)(C)C=C)c(c34)C12O,[C-]#[N+]C1C(C)(C=C)C(Cl)CC2C(C)(C)c3cccc4[nH]c(C(C)(C)C=C)c(c34)C21O
+783,MITE0000548.reaction1.example6,[C-]#[N+]C12C=CC(C)(C)c3[nH]c4cccc5c4c3C1(O)C(CCC2(C)C=C)C5(C)C,[C-]#[N+]C12C=CC(C)(C)c3[nH]c4cccc5c4c3C1(O)C(CC(Cl)C2(C)C=C)C5(C)C
+784,MITE0000548.reaction1.example7,[C-]#[N+]C12C3OC3C(C)(C)c3[nH]c4cccc5c4c3C1(O)C(CCC2(C)C=C)C5(C)C,[C-]#[N+]C12C3OC3C(C)(C)c3[nH]c4cccc5c4c3C1(O)C(CC(Cl)C2(C)C=C)C5(C)C
