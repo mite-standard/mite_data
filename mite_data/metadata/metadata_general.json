@@ -11851,6 +11851,28 @@
       "reaction_description":"C-methylation of C-3 of 3-phenylpyruvate to give (3S)-2-oxo-3-phenylbutanoate",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000553":{
+      "accession":"MITE0000553",
+      "class_name":"Gammaproteobacteria",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"SAM-dependent C-methyltransferase",
+      "enzyme_ids":{
+        "genpept":"ACY54549.1",
+        "mibig":"BGC0000884",
+        "uniprot":"D5FKJ3"
+      },
+      "enzyme_name":"MrsA",
+      "family":"Pseudomonadaceae",
+      "kingdom":"Pseudomonadati",
+      "order":"Pseudomonadales",
+      "organism":"Pseudomonas syringae pv. syringae",
+      "phylum":"Pseudomonadota",
+      "reaction_description":"C-methylation of C-3 of 5-guanidino-2-oxopentanoate to give (3R)-5-guanidino-3-methyl-2-oxopentanoate",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.32"
