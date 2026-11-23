@@ -1,5 +1,5 @@
 {
-    "accession": "MITE9999999",
+    "accession": "MITE0000539",
     "status": "active",
     "comment": "Dedicated aziridine N-methyltransferase of mitomycin biosynthesis, SAM-dependent. Methylates the aziridine N-H of C9a-hydroxy and C9a-methoxy aziridinomitosanes. Experiments used S. caespitosus ATCC 27422. mitomycin cluster BGC0000915 (AF127374.2) exists but is retired in MIBiG 4.0",
     "changelog": [
