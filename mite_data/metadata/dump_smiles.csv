@@ -788,3 +788,4 @@
 786,MITE0000550.reaction1.example1,O=C(O)CCC(=O)C(=O)O,C[C@H](CC(=O)O)C(=O)C(=O)O
 787,MITE0000551.reaction1.example1,O=C(O)CCC(=O)C(=O)O,C[C@H](CC(=O)O)C(=O)C(=O)O
 788,MITE0000552.reaction1.example1,O=C(O)C(=O)Cc1ccccc1,C[C@H](C(=O)C(=O)O)c1ccccc1
+789,MITE0000553.reaction1.example1,N=C(N)NCCCC(=O)C(=O)O,C[C@H](CCNC(=N)N)C(=O)C(=O)O

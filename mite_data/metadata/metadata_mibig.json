@@ -2773,6 +2773,25 @@
         "status":"active"
       }
     ],
+    "BGC0000884":[
+      {
+        "enzyme_description":"SAM-dependent C-methyltransferase",
+        "enzyme_ids":{
+          "genpept":"ACY54549.1",
+          "mibig":"BGC0000884",
+          "uniprot":"D5FKJ3"
+        },
+        "enzyme_name":"MrsA",
+        "enzyme_refs":[
+          "doi:10.1128/AEM.00666-09",
+          "doi:10.1002/cbic.202400258"
+        ],
+        "enzyme_tailoring":"Methylation",
+        "mite_accession":"MITE0000553",
+        "mite_url":"https://bioregistry.io/mite:MITE0000553",
+        "status":"active"
+      }
+    ],
     "BGC0000890":[
       {
         "enzyme_description":"Chorismate pyruvate lyase",
