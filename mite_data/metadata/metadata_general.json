@@ -11548,6 +11548,27 @@
       "reaction_description":"Deguanidination of enteropeptin precursor peptide after action by KgrC",
       "status":"active",
       "tailoring":"Other"
+    },
+    "MITE0000539":{
+      "accession":"MITE0000539",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"Class I methyltransferase",
+      "enzyme_ids":{
+        "genpept":"AAD28458.1",
+        "uniprot":"Q9X5Q8"
+      },
+      "enzyme_name":"MitN",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces lavendulae",
+      "phylum":"Actinomycetota",
+      "reaction_description":"N-methylation of the aziridine nitrogen of aziridinomitosanes",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.32"
