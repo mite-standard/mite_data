@@ -11633,6 +11633,28 @@
       "reaction_description":"N-methylation of the imide nitrogen of an indolocarbazole (arcyriaflavin A or its N-glucoside)",
       "status":"active",
       "tailoring":"Methylation"
+    },
+    "MITE0000543":{
+      "accession":"MITE0000543",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"SAM-dependent N-methyltransferase",
+      "enzyme_ids":{
+        "genpept":"AEO12715.1",
+        "mibig":"BGC0001334",
+        "uniprot":"G3K6K4"
+      },
+      "enzyme_name":"ClaM1",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces uncialis",
+      "phylum":"Actinomycetota",
+      "reaction_description":"N6-methylation of an indolocarbazole C4c/C7a diol to give the N-methyl diol",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.32"

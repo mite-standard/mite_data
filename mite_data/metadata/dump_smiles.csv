@@ -769,3 +769,5 @@
 767,MITE0000542.reaction1.example2,COC1C(CO)OC(n2c3ccccc3c3c4c(c5c6ccccc6[nH]c5c32)C(=O)NC4=O)C(O)C1O,COC1C(CO)OC(n2c3ccccc3c3c4c(c5c6ccccc6[nH]c5c32)C(=O)N(C)C4=O)C(O)C1O
 768,MITE0000542.reaction1.example3,COC1C(CO)OC(n2c3c(Cl)cccc3c3c4c(c5c6cccc(Cl)c6[nH]c5c32)C(=O)NC4=O)C(O)C1O,COC1C(CO)OC(n2c3c(Cl)cccc3c3c4c(c5c6cccc(Cl)c6[nH]c5c32)C(=O)N(C)C4=O)C(O)C1O
 769,MITE0000542.reaction1.example4,O=C1NC(=O)c2c1c1c3ccccc3[nH]c1c1[nH]c3ccccc3c21,CN1C(=O)c2c(c3c4ccccc4[nH]c3c3[nH]c4ccccc4c23)C1=O
+770,MITE0000543.reaction1.example1,O=C1NC(=O)C2(O)c3c([nH]c4ccccc34)-c3[nH]c4ccccc4c3C12O,CN1C(=O)C2(O)c3c([nH]c4ccccc34)-c3[nH]c4ccccc4c3C2(O)C1=O
+771,MITE0000543.reaction2.example1,O=c1[nH]c(=O)c2c(o1)c1c3ccccc3[nH]c1c1[nH]c3ccccc3c12,Cn1c(=O)oc2c(c1=O)c1c3ccccc3[nH]c1c1[nH]c3ccccc3c12
