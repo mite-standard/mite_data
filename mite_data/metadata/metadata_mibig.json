@@ -2680,6 +2680,22 @@
         "mite_accession":"MITE0000545",
         "mite_url":"https://bioregistry.io/mite:MITE0000545",
         "status":"active"
+      },
+      {
+        "enzyme_description":"SAM-dependent C-methyltransferase",
+        "enzyme_ids":{
+          "genpept":"AGG35704.1",
+          "mibig":"BGC0000883",
+          "uniprot":"M1T9N7"
+        },
+        "enzyme_name":"ArgN",
+        "enzyme_refs":[
+          "doi:10.1128/AEM.01172-14"
+        ],
+        "enzyme_tailoring":"Methylation",
+        "mite_accession":"MITE0000546",
+        "mite_url":"https://bioregistry.io/mite:MITE0000546",
+        "status":"active"
       }
     ],
     "BGC0000890":[

@@ -775,3 +775,4 @@
 773,MITE0000544.reaction2.example1,COC(=O)c1[nH]c(C(=O)O)c(-c2c[nH]c3ccc(Cl)cc23)c1-c1c[nH]c2ccc(Cl)cc12,COC(=O)c1[nH]c(C(=O)OC)c(-c2c[nH]c3ccc(Cl)cc23)c1-c1c[nH]c2ccc(Cl)cc12
 774,MITE0000545.reaction1.example1,N=C(N)NCCC[C@H](N)C(=O)O,N=C(N)NCCCC(=O)C(=O)O
 775,MITE0000545.reaction2.example1,C[C@H](CCNC(=N)N)C(=O)C(=O)O,C[C@H](CCNC(=N)N)[C@H](N)C(=O)O
+776,MITE0000546.reaction1.example1,N=C(N)NCCCC(=O)C(=O)O,C[C@H](CCNC(=N)N)C(=O)C(=O)O

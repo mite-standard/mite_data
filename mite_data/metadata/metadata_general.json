@@ -11698,6 +11698,28 @@
       "reaction_description":"Transamination of L-arginine with 2-oxoglutarate to give 5-guanidino-2-oxopentanoate",
       "status":"active",
       "tailoring":"Amination|Deamination"
+    },
+    "MITE0000546":{
+      "accession":"MITE0000546",
+      "class_name":"Actinomycetes",
+      "cofactors_inorganic":"N/A",
+      "cofactors_organic":"SAM",
+      "domain":"Bacteria",
+      "enzyme_description":"SAM-dependent C-methyltransferase",
+      "enzyme_ids":{
+        "genpept":"AGG35704.1",
+        "mibig":"BGC0000883",
+        "uniprot":"M1T9N7"
+      },
+      "enzyme_name":"ArgN",
+      "family":"Streptomycetaceae",
+      "kingdom":"Bacillati",
+      "order":"Kitasatosporales",
+      "organism":"Streptomyces arginensis",
+      "phylum":"Actinomycetota",
+      "reaction_description":"C-methylation of C-3 of 5-guanidino-2-oxopentanoate to give (3R)-5-guanidino-3-methyl-2-oxopentanoate",
+      "status":"active",
+      "tailoring":"Methylation"
     }
   },
   "version_mite_data":"1.32"
