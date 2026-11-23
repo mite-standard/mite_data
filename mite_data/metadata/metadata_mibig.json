@@ -1506,6 +1506,25 @@
         "status":"active"
       }
     ],
+    "BGC0000388":[
+      {
+        "enzyme_description":"SAM-dependent C-methyltransferase",
+        "enzyme_ids":{
+          "genpept":"AAU34201.1",
+          "mibig":"BGC0000388",
+          "uniprot":"Q643C8"
+        },
+        "enzyme_name":"MppJ",
+        "enzyme_refs":[
+          "doi:10.1002/cbic.200900351",
+          "doi:10.1128/AAC.01545-05"
+        ],
+        "enzyme_tailoring":"Methylation",
+        "mite_accession":"MITE0000552",
+        "mite_url":"https://bioregistry.io/mite:MITE0000552",
+        "status":"active"
+      }
+    ],
     "BGC0000404":[
       {
         "enzyme_description":"Acyl-CoA:isopenicillin N N-acyltransferase",
