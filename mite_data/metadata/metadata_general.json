@@ -25,7 +25,7 @@
     "MITE0000002":{
       "accession":"MITE0000002",
       "class_name":"Actinomycetes",
-      "cofactors_inorganic":"FeS",
+      "cofactors_inorganic":"N/A",
       "cofactors_organic":"SAM",
       "domain":"Bacteria",
       "enzyme_description":"O-methyltransferase",
@@ -46,7 +46,7 @@
     "MITE0000003":{
       "accession":"MITE0000003",
       "class_name":"Actinomycetes",
-      "cofactors_inorganic":"FeS",
+      "cofactors_inorganic":"N/A",
       "cofactors_organic":"SAM",
       "domain":"Bacteria",
       "enzyme_description":"O-methyltransferase",
@@ -68,7 +68,7 @@
     "MITE0000004":{
       "accession":"MITE0000004",
       "class_name":"Actinomycetes",
-      "cofactors_inorganic":"FeS",
+      "cofactors_inorganic":"N/A",
       "cofactors_organic":"SAM",
       "domain":"Bacteria",
       "enzyme_description":"O-methyltransferase",
@@ -112,7 +112,7 @@
     "MITE0000006":{
       "accession":"MITE0000006",
       "class_name":"Actinomycetes",
-      "cofactors_inorganic":"FeS",
+      "cofactors_inorganic":"N/A",
       "cofactors_organic":"SAM",
       "domain":"Bacteria",
       "enzyme_description":"O-methyltransferase",
@@ -134,7 +134,7 @@
     "MITE0000007":{
       "accession":"MITE0000007",
       "class_name":"Actinomycetes",
-      "cofactors_inorganic":"FeS",
+      "cofactors_inorganic":"N/A",
       "cofactors_organic":"SAM",
       "domain":"Bacteria",
       "enzyme_description":"O-methyltransferase",
@@ -178,7 +178,7 @@
     "MITE0000009":{
       "accession":"MITE0000009",
       "class_name":"Actinomycetes",
-      "cofactors_inorganic":"FeS",
+      "cofactors_inorganic":"N/A",
       "cofactors_organic":"SAM",
       "domain":"Bacteria",
       "enzyme_description":"O-methyltransferase",
@@ -222,7 +222,7 @@
     "MITE0000011":{
       "accession":"MITE0000011",
       "class_name":"Ascomycota",
-      "cofactors_inorganic":"FeS",
+      "cofactors_inorganic":"N/A",
       "cofactors_organic":"SAM",
       "domain":"Eukaryota",
       "enzyme_description":"O-methyltransferase",
@@ -286,7 +286,7 @@
     "MITE0000014":{
       "accession":"MITE0000014",
       "class_name":"Actinomycetes",
-      "cofactors_inorganic":"FeS",
+      "cofactors_inorganic":"N/A",
       "cofactors_organic":"SAM",
       "domain":"Bacteria",
       "enzyme_description":"O-methyltransferase",
@@ -308,7 +308,7 @@
     "MITE0000015":{
       "accession":"MITE0000015",
       "class_name":"Actinomycetes",
-      "cofactors_inorganic":"FeS",
+      "cofactors_inorganic":"N/A",
       "cofactors_organic":"SAM",
       "domain":"Bacteria",
       "enzyme_description":"C-methyltransferase",
@@ -462,7 +462,7 @@
     "MITE0000022":{
       "accession":"MITE0000022",
       "class_name":"Actinomycetes",
-      "cofactors_inorganic":"FeS",
+      "cofactors_inorganic":"N/A",
       "cofactors_organic":"SAM",
       "domain":"Bacteria",
       "enzyme_description":"C-methyltransferase",
@@ -484,7 +484,7 @@
     "MITE0000023":{
       "accession":"MITE0000023",
       "class_name":"Actinomycetes",
-      "cofactors_inorganic":"FeS",
+      "cofactors_inorganic":"N/A",
       "cofactors_organic":"SAM",
       "domain":"Bacteria",
       "enzyme_description":"O-methyltransferase",
@@ -660,7 +660,7 @@
     "MITE0000031":{
       "accession":"MITE0000031",
       "class_name":"Gammaproteobacteria",
-      "cofactors_inorganic":"FeS",
+      "cofactors_inorganic":"N/A",
       "cofactors_organic":"SAM",
       "domain":"Bacteria",
       "enzyme_description":"C-methyltransferase",
@@ -682,7 +682,7 @@
     "MITE0000032":{
       "accession":"MITE0000032",
       "class_name":"Actinomycetes",
-      "cofactors_inorganic":"FeS",
+      "cofactors_inorganic":"N/A",
       "cofactors_organic":"SAM",
       "domain":"Bacteria",
       "enzyme_description":"C-methyltransferase",
@@ -1605,7 +1605,7 @@
     "MITE0000074":{
       "accession":"MITE0000074",
       "class_name":"Actinomycetes",
-      "cofactors_inorganic":"FeS",
+      "cofactors_inorganic":"N/A",
       "cofactors_organic":"SAM",
       "domain":"Bacteria",
       "enzyme_description":"S-methyltransferase",
@@ -1627,7 +1627,7 @@
     "MITE0000075":{
       "accession":"MITE0000075",
       "class_name":"Actinomycetes",
-      "cofactors_inorganic":"FeS",
+      "cofactors_inorganic":"N/A",
       "cofactors_organic":"SAM",
       "domain":"Bacteria",
       "enzyme_description":"O-methyltransferase",
@@ -1671,7 +1671,7 @@
     "MITE0000077":{
       "accession":"MITE0000077",
       "class_name":"Actinomycetes",
-      "cofactors_inorganic":"FeS",
+      "cofactors_inorganic":"N/A",
       "cofactors_organic":"SAM",
       "domain":"Bacteria",
       "enzyme_description":"C-methyltransferase",
@@ -1847,7 +1847,7 @@
     "MITE0000085":{
       "accession":"MITE0000085",
       "class_name":"Actinomycetes",
-      "cofactors_inorganic":"FeS",
+      "cofactors_inorganic":"N/A",
       "cofactors_organic":"SAM",
       "domain":"Bacteria",
       "enzyme_description":"C-methyltransferase",
@@ -4533,7 +4533,7 @@
     "MITE0000211":{
       "accession":"MITE0000211",
       "class_name":"Ascomycota",
-      "cofactors_inorganic":"FeS",
+      "cofactors_inorganic":"N/A",
       "cofactors_organic":"SAM",
       "domain":"Eukaryota",
       "enzyme_description":"O-methyltransferase",
@@ -12087,5 +12087,5 @@
       "tailoring":"Halogenation"
     }
   },
-  "version_mite_data":"1.32"
+  "version_mite_data":"1.33"
 }
