@@ -1,0 +1,54 @@
+{
+    "accession": "MITE9999999",
+    "status": "pending",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2026-05-06",
+            "contributors": [
+                "0009-0006-4188-3294"
+            ],
+            "reviewers": [
+                "BBBBBBBBBBBBBBBBBBBBBBBB"
+            ],
+            "comment": "New entry."
+        }
+    ],
+    "enzyme": {
+        "name": "PatF",
+        "description": "unknown",
+        "references": [
+            "doi:10.1111/1462-2920.14542"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A075TR27",
+            "genpept": "AIG62137.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Other"
+            ],
+            "description": "conversion of phyllostine to neopatulin",
+            "reactionSMARTS": "[#8]-[#6]-[#6]-1=[#6]-[#6](=O)-[#6]-2-[#8]-[#6]-2-[#6]-1=O>>[#8]-[#6]-1-[#8]-[#6]-[#6]-2=[#6]-[#6](=O)-[#8]-[#6]-2=[#6]-1",
+            "reactions": [
+                {
+                    "substrate": "O=C1C=C(CO)C(=O)C2OC12",
+                    "products": [
+                        "O=C1C=C2COC(O)C=C2O1"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1111/1462-2920.14542"
+                ]
+            }
+        }
+    ]
+}
